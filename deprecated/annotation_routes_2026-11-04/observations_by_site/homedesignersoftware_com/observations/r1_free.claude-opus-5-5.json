@@ -1,0 +1,262 @@
+[
+ {
+  "observation": "The page title pairs a descriptive keyword phrase with the brand name, separated by a pipe",
+  "category": "meta",
+  "evidence": "title: 'Home Designer Software for DIY | Chief Architect'"
+ },
+ {
+  "observation": "The page has exactly one h1, and its wording differs slightly from the title ('Design' vs 'Designer')",
+  "category": "semantic-structure",
+  "evidence": "h1_count 1; h1 text 'Home Design Software for DIY'"
+ },
+ {
+  "observation": "The heading outline goes from h1 straight to h3 (DOWNLOAD/EXPLORE/LEARN) before the first h2",
+  "category": "semantic-structure",
+  "evidence": "heading_outline: level 1, then level 3 x3, then level 2 'Home Designer Products'"
+ },
+ {
+  "observation": "Footer column headings use h4 elements",
+  "category": "semantic-structure",
+  "evidence": "5 h4: Products, Project Type, User Center, Support, Company"
+ },
+ {
+  "observation": "The page uses landmark elements (header, nav, main, footer, 5 sections) but no article or aside",
+  "category": "semantic-structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 5, footer 1, article 0, aside 0"
+ },
+ {
+  "observation": "The page is link-heavy: 129 anchors against 669 words",
+  "category": "content-density",
+  "evidence": "counts.anchors 129; text_stats.words 669"
+ },
+ {
+  "observation": "Lists are used heavily for link groups",
+  "category": "semantic-structure",
+  "evidence": "ul 10, li 60; footer columns and the quick-link band are visible as vertical link lists"
+ },
+ {
+  "observation": "Struck-through original prices use the native <s> element",
+  "category": "semantic-structure",
+  "evidence": "s: 5; visible strikethrough on $129, $249, $595, $49, $119"
+ },
+ {
+  "observation": "Type is almost entirely the system-UI font stack, with no web fonts loaded",
+  "category": "typography",
+  "evidence": "fonts: system-ui 316 elements, Arial 1; h1 font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'; stylesheets 0"
+ },
+ {
+  "observation": "Body text is 17px with a line-height of about 1.65",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 28.05px"
+ },
+ {
+  "observation": "The heading scale runs from a 51.2px h1 to a 33.6px h2, both at weight 700",
+  "category": "typography",
+  "evidence": "h1 51.2px/700, h2 33.6px/700"
+ },
+ {
+  "observation": "The hero h1 is white on a dark blue band and wraps onto two lines",
+  "category": "typography",
+  "evidence": "h1 color rgb(255,255,255); slice_00 shows 'Home Design Software / for DIY'"
+ },
+ {
+  "observation": "The quick-link column labels are small, uppercase and letter-spaced, in gray",
+  "category": "typography",
+  "evidence": "slice_00: 'DOWNLOAD', 'EXPLORE', 'LEARN' in tracked small caps above blue links"
+ },
+ {
+  "observation": "The palette is navy/blue plus an orange accent on white and very light gray-blue",
+  "category": "color",
+  "evidence": "top_backgrounds: white, rgb(232,116,42), rgb(243,246,248), rgb(22,63,92), rgb(31,95,139)"
+ },
+ {
+  "observation": "Body text is a dark slate rather than pure black",
+  "category": "color",
+  "evidence": "body_color rgb(29,42,51)"
+ },
+ {
+  "observation": "Orange is reserved for primary purchase/download actions",
+  "category": "color",
+  "evidence": "primary_button bg rgb(232,116,42); orange used on 'Download Trial Version', 'Rent $59/mo.', 'Buy' buttons; 6 orange backgrounds"
+ },
+ {
+  "observation": "A pale blue text color is widely used, mainly in the dark footer",
+  "category": "color",
+  "evidence": "top_text_colors rgb(207,227,241) on 105 elements; footer links visible in light blue on navy in slice_03"
+ },
+ {
+  "observation": "Inline and list links use a mid blue",
+  "category": "color",
+  "evidence": "rgb(31,95,139) on 45 text elements; links like '3D Library', 'Samples Gallery' in blue"
+ },
+ {
+  "observation": "The hero background is a navy-to-blue gradient, the page's only gradient",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 1; slice_00 hero shades from darker navy at left to lighter blue at right"
+ },
+ {
+  "observation": "Sections alternate between white and a light gray-blue background",
+  "category": "layout",
+  "evidence": "rgb(243,246,248) on 5 elements; slice_01–02 show quick links, the remodeling section, the Home Designer feature and Purchase Options on gray, with the products and Learn More on white"
+ },
+ {
+  "observation": "A thin dark utility bar sits above the main header",
+  "category": "layout",
+  "evidence": "slice_00: navy strip with 'My Account', 'Contact Us', 'Cart' aligned right"
+ },
+ {
+  "observation": "The main header pairs a text wordmark (no logo image) on the left with dropdown nav items on the right",
+  "category": "component",
+  "evidence": "'Home Designer® Software / by Chief Architect®' text; nav items 'Products', 'Project Type', 'User Center', 'Support' with small caret marks; svgs 0"
+ },
+ {
+  "observation": "Content sits in a centered container of roughly 1080px on a 1440px page",
+  "category": "layout",
+  "evidence": "page_width 1440; content left edge around x=180 and right edge around x=1260 in slices"
+ },
+ {
+  "observation": "The hero is a two-column split, with text and CTAs on the left and a product box image with its own CTA on the right",
+  "category": "layout",
+  "evidence": "slice_00; image professional.png rect x 923, w 240, h 340; 'Rent $59/mo.' button below it"
+ },
+ {
+  "observation": "The hero box image is enlarged beyond its natural size",
+  "category": "imagery",
+  "evidence": "professional.png natural 130x184 rendered at 240x340"
+ },
+ {
+  "observation": "Product imagery is software box-shot artwork, not screenshots of the interface",
+  "category": "imagery",
+  "evidence": "alts: 'Home Designer Pro software box', 'Home Designer Suite box', 'Chief Architect Premier box'"
+ },
+ {
+  "observation": "The large box image in the feature section has rounded corners and a drop shadow",
+  "category": "decoration",
+  "evidence": "slice_02 professional_2.png 348x492 with rounded corners and soft shadow; box_shadows 1"
+ },
+ {
+  "observation": "Hero CTAs pair a solid orange button with a white-outlined ghost button",
+  "category": "component",
+  "evidence": "'Download Trial Version' orange, 'Purchase Software' outlined; primary_button radius 8px, padding 12px 22px"
+ },
+ {
+  "observation": "Secondary buttons throughout are outlined in blue on a white fill",
+  "category": "component",
+  "evidence": "'Compare Products', 'Learn More', 'Compare Features', 'Rent $59/mo.' card button in slices 01–02"
+ },
+ {
+  "observation": "The products are shown as three equal-width bordered cards in a row",
+  "category": "layout",
+  "evidence": "slice_01: Suite, Architectural and Pro cards; images at x 287/655/1023, y 1484"
+ },
+ {
+  "observation": "Pricing cards show the old price struck through next to a larger new price",
+  "category": "copy",
+  "evidence": "'$129 $99', '$249 $199'; Pro card 'Buy $595 $495'"
+ },
+ {
+  "observation": "Each card ends with an underlined upgrade-price link",
+  "category": "component",
+  "evidence": "'Upgrades from $29', 'Upgrades from $49 $39', 'Upgrades from $119 $99'"
+ },
+ {
+  "observation": "The Pro card differs from the others, with stacked rent and buy buttons",
+  "category": "component",
+  "evidence": "slice_01: outlined 'Rent $59/mo.' above orange 'Buy $595 $495'"
+ },
+ {
+  "observation": "Product names are split across two lines with a smaller subtitle",
+  "category": "typography",
+  "evidence": "h3 texts 'Home Designer\\nSuite', 'Home Designer\\nArchitectural', 'Home Designer\\nPro'"
+ },
+ {
+  "observation": "A horizontal gray banner cross-promotes the professional product line",
+  "category": "component",
+  "evidence": "slice_01: Premier box (99x140) + 'Chief Architect Professional Software' + 'Learn More' button"
+ },
+ {
+  "observation": "Body copy is set in two-column text blocks",
+  "category": "layout",
+  "evidence": "'Home Designer Products' and 'Home Design, Interior Design and Remodeling Software' sections show two side-by-side paragraphs"
+ },
+ {
+  "observation": "Inline links inside paragraphs are underlined",
+  "category": "copy",
+  "evidence": "'Suite', 'Architectural', 'Pro', '3D Library', 'resources for learning', 'trial' underlined in slices"
+ },
+ {
+  "observation": "The copy uses em dashes and a couple of exclamation marks, but no emoji",
+  "category": "copy",
+  "evidence": "text_stats: em_dashes 3, exclamations 2, emoji 0; 'Design your projects in both 2D and 3D!', 'Get started on your design project today!'"
+ },
+ {
+  "observation": "The copy contains dated references to 2021",
+  "category": "copy",
+  "evidence": "'What's New in 2021'; footer '© 2003–2021 Chief Architect, Inc.'"
+ },
+ {
+  "observation": "Purchase Options uses a two-segment New/Upgrade toggle",
+  "category": "component",
+  "evidence": "slice_02: filled blue 'New' segment joined to outlined 'Upgrade'; buttons 4"
+ },
+ {
+  "observation": "The purchase configurator is a narrow centered form card with labeled native select dropdowns",
+  "category": "component",
+  "evidence": "form 1, label 3, select 3, option 8; fields 'Product (Mac & PC)', 'Media', 'Backup Media'"
+ },
+ {
+  "observation": "The form shows a 'Choose a product' placeholder heading above a full-width orange Buy button",
+  "category": "component",
+  "evidence": "slice_03: 'Choose a product' bold text, orange Buy button"
+ },
+ {
+  "observation": "The footer is a five-column navy link directory, followed by a divider, a row of social links and the legal line",
+  "category": "layout",
+  "evidence": "slice_03: Products/Project Type/User Center/Support/Company columns; HomeTalk, Blog, Facebook, YouTube, Instagram, Houzz, Pinterest; rgb(22,63,92) bg"
+ },
+ {
+  "observation": "The social links are plain text with no icons",
+  "category": "component",
+  "evidence": "svgs 0; img 6 (all product boxes); slice_03 shows text-only 'Facebook', 'YouTube', etc."
+ },
+ {
+  "observation": "The legal line uses '//' as a separator",
+  "category": "copy",
+  "evidence": "'All rights reserved // Terms of Use // Privacy Policy'"
+ },
+ {
+  "observation": "Corner radii are mostly square, with small rounding on buttons and cards and no pills",
+  "category": "decoration",
+  "evidence": "radius buckets: 0 → 262, 1–7 → 37, 8–15 → 18, 16+ → 0, pill 0"
+ },
+ {
+  "observation": "Motion is minimal: some transitions, but no animations or transforms",
+  "category": "decoration",
+  "evidence": "transitions 11, animations 0, transforms 0, backdrop_blur 0"
+ },
+ {
+  "observation": "Layout uses both grid and flex",
+  "category": "dom",
+  "evidence": "display_grid 13, display_flex 11"
+ },
+ {
+  "observation": "The page has a small class vocabulary, is not utility-class (Tailwind-style), and uses one inline style block and one script",
+  "category": "dom",
+  "evidence": "classes total 72, unique 31, tailwind_like_fraction 0.014; style 1, script 1, stylesheets 0; inline_style_attrs 8"
+ },
+ {
+  "observation": "Every image has alt text, and there are a few ARIA attributes",
+  "category": "dom",
+  "evidence": "alt_missing 0; aria_attrs 5"
+ },
+ {
+  "observation": "The page has no structured data, and its meta tags are limited to charset, viewport and description",
+  "category": "meta",
+  "evidence": "jsonld_blocks 0; meta_names charset, viewport, description"
+ },
+ {
+  "observation": "The desktop page is long relative to its width",
+  "category": "layout",
+  "evidence": "page_height 4878 at page_width 1440"
+ }
+]

@@ -1,0 +1,186 @@
+{
+ "key": "c0c6936499ab",
+ "groups": [
+  {
+   "name": "Rounded corners on cards and containers",
+   "definition": "Do cards, images and containers use moderately to generously rounded corners (roughly 6–16px radii) rather than square corners?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "radius_round_share",
+    "op": ">=",
+    "value": 0.3
+   },
+   "members": [
+    "aeptexas_com#18",
+    "allstate_jobs#11",
+    "cbdoilcreamnk_com#15",
+    "homedesignersoftware_com#11",
+    "insightcentral_net#12",
+    "kneeguru_co_uk#25",
+    "merchantsavvy_co_uk#16",
+    "naturalwellbeing_com#18",
+    "newclimateeconomy_net#24",
+    "nira_org_ng#20",
+    "tellmebaby_com_au#26",
+    "thync_com#21",
+    "stgpartners_com#14",
+    "educationactivities_org#24",
+    "miamidda_com#24"
+   ]
+  },
+  {
+   "name": "Square corners everywhere",
+   "definition": "Are all elements square-cornered with no rounded corners, pills or circles?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "radius_zero_share",
+    "op": ">=",
+    "value": 0.9
+   },
+   "members": [
+    "bather_com#22",
+    "fnsouzafoundation_com#16"
+   ]
+  },
+  {
+   "name": "Soft shadowed white cards",
+   "definition": "Are cards white or cream, rounded, with soft diffuse shadows and generous padding?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#12",
+    "flygrant_com#9"
+   ]
+  },
+  {
+   "name": "Shadow only on hero image",
+   "definition": "Is a soft shadow applied sparingly, limited to the hero image or card and a few key images?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "shadow_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "homedesignersoftware_com#23",
+    "kneeguru_co_uk#11",
+    "cbdoilcreamnk_com#24",
+    "neverskipbrunch_com#17",
+    "nira_org_ng#19"
+   ]
+  },
+  {
+   "name": "Flat design without shadows or gradients",
+   "definition": "Is the styling flat, with no box shadows, gradients, or animations?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "shadow_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "bathurst12hour_com_au#26",
+    "fnsouzafoundation_com#17",
+    "newclimateeconomy_net#25",
+    "stgpartners_com#15",
+    "bluebayou_com#22",
+    "educationactivities_org#28",
+    "insightcentral_net#13",
+    "tellmebaby_com_au#30",
+    "merchantsavvy_co_uk#20"
+   ]
+  },
+  {
+   "name": "More shadows and transforms for depth",
+   "definition": "Do surfaces use many box shadows and transforms to create depth?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "shadow_count",
+    "op": ">=",
+    "value": 10
+   },
+   "members": [
+    "greatdayimprovements_com#18"
+   ]
+  },
+  {
+   "name": "Gradient hero background",
+   "definition": "Does the hero have a gradient or glow background?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#11",
+    "gravityvault_com#8",
+    "insightcentral_net#14",
+    "naturalwellbeing_com#7",
+    "merchantsavvy_co_uk#17"
+   ]
+  },
+  {
+   "name": "Dark overlay on photo backgrounds",
+   "definition": "Is a dimmed or tinted overlay placed over a photo background with white text on top?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#12",
+    "thefrangipanicreative_com#19"
+   ]
+  },
+  {
+   "name": "Alternating background bands between sections",
+   "definition": "Are sections separated by alternating solid or tinted background color bands?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#22",
+    "greatdayimprovements_com#8",
+    "merchantsavvy_co_uk#12",
+    "ridetech_com#12"
+   ]
+  },
+  {
+   "name": "Thin borders and hairline separators",
+   "definition": "Are content and sections separated by thin borders, rules or hairlines rather than hr dividers?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#25",
+    "thefrangipanicreative_com#20"
+   ]
+  },
+  {
+   "name": "Accent bar or rule on headings and quotes",
+   "definition": "Are there short accent-colored underline bars or left rules on headings or pull quotes?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "miamidda_com#16",
+    "miamidda_com#17"
+   ]
+  },
+  {
+   "name": "Decorative background graphic in hero",
+   "definition": "Does the hero include a faded decorative graphic such as stripes behind the headline?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#27"
+   ]
+  },
+  {
+   "name": "Text glyph icons without SVG or icon fonts",
+   "definition": "Are icons absent or text-based, with no SVG or icon fonts?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "svg_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "kanienkeha_net#22",
+    "stgpartners_com#26",
+    "tellmebaby_com_au#31"
+   ]
+  }
+ ]
+}

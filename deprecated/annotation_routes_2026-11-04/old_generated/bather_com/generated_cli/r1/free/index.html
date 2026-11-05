@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bather Trunk Co. — Surf &amp; Swim, Made in Canada</title>
+<meta name="description" content="Quality surf and swim products with a street-inspired approach. Spring/Summer '21 available now.">
+<style>
+:root{
+  --ink:#111;--paper:#fff;--sand:#f4efe6;--muted:#6b6b6b;--line:#e3ded3;
+  --sea:#1f4e5f;--sun:#e8643a;
+  --pad:clamp(16px,4vw,48px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+ul{list-style:none}
+h1,h2,h3{line-height:1.05;text-transform:uppercase}
+.eyebrow{font-size:.75rem;letter-spacing:.2em;font-weight:600;text-transform:uppercase}
+h2.display{font-size:clamp(2rem,5.5vw,4.25rem);font-weight:800;letter-spacing:-.02em;margin-top:.5rem}
+.btn{display:inline-block;margin-top:1.5rem;padding:.9em 1.8em;border:2px solid currentColor;font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn.dark:hover,.btn.dark:focus-visible{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+
+/* announcement + header */
+.announce{background:var(--ink);color:#fff;text-align:center;font-size:.72rem;letter-spacing:.16em;font-weight:600;padding:.7rem var(--pad);text-decoration:none;display:block}
+header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}
+.bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;padding:.9rem var(--pad)}
+.logo img{height:34px;width:auto}
+nav ul{display:flex;gap:1.6rem}
+nav a,.tools a{text-decoration:none;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+nav a:hover,.tools a:hover{text-decoration:underline;text-underline-offset:5px}
+.tools{display:flex;gap:1.4rem;justify-content:flex-end}
+@media (max-width:760px){
+  .bar{grid-template-columns:auto 1fr;grid-template-areas:"logo tools" "nav nav"}
+  .logo{grid-area:logo}.tools{grid-area:tools}nav{grid-area:nav;overflow-x:auto}
+  nav ul{gap:1.2rem}
+}
+
+/* hero */
+.panel{position:relative;display:flex;align-items:flex-end;color:#fff;background-color:var(--sea);background-size:cover;background-position:center;overflow:hidden}
+.panel::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.45),rgba(0,0,0,0) 60%)}
+.panel>div{position:relative;padding:var(--pad)}
+.hero{min-height:78vh;background-image:linear-gradient(135deg,#e8643a 0%,#f2a65a 45%,#1f4e5f 100%)}
+.hero h2{max-width:12ch}
+.split{display:grid;grid-template-columns:1fr 1fr}
+.split .panel{min-height:70vh}
+.eco{background-image:url(images/recycling.jpg);background-color:#2f6b57}
+@media (max-width:760px){.split{grid-template-columns:1fr}.split .panel{min-height:55vh}.hero{min-height:65vh}}
+
+/* featured products */
+.products{display:grid;grid-template-columns:repeat(3,1fr)}
+.products .panel{min-height:60vh}
+.p1{background-color:#c9b79c}.p2{background-color:#e8643a}.p3{background-color:#1d1d1f}
+@media (max-width:760px){.products{grid-template-columns:1fr}.products .panel{min-height:42vh}}
+
+/* collection */
+.collection{background:var(--sand);text-align:center;padding:clamp(48px,9vw,110px) var(--pad)}
+.collection .row{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--pad);margin-top:clamp(32px,5vw,64px);max-width:1100px;margin-inline:auto}
+.tile{aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;text-align:left;padding:1.5rem;background:var(--sea);color:#fff}
+.tile.a{background:var(--sun)}
+.tile h3{font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800}
+@media (max-width:760px){.collection .row{grid-template-columns:1fr}}
+
+/* browse latest */
+.latest{padding:clamp(48px,8vw,100px) var(--pad)}
+.latest>h2{text-align:center;margin-bottom:clamp(28px,4vw,56px)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--pad)}
+.card{display:block;position:relative;aspect-ratio:3/4;color:#fff;text-decoration:none;background-color:#444;background-size:cover;background-position:center;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 60%)}
+.card div{position:absolute;left:0;right:0;bottom:0;padding:1.4rem}
+.card h3{font-size:1.6rem;font-weight:800;margin:.3rem 0 .8rem}
+.card .go{font-size:.75rem;letter-spacing:.18em;font-weight:700;border-bottom:2px solid #fff;padding-bottom:2px}
+.card:hover{filter:brightness(1.08)}
+.c1{background-image:url(images/DSC05403-fb6c9277-1f50-4c43-a619-a2799879b4c5.jpg);background-color:#3c5a4a}
+.c2{background-image:url(images/Bather-Gift-Card.jpg);background-color:#b4492a}
+.c3{background-image:url(images/Bather-Hawaii-Excellent-Adventures12.jpg);background-color:#1f4e5f}
+@media (max-width:760px){.cards{grid-template-columns:1fr}.card{aspect-ratio:4/3}}
+
+/* press */
+.press{background:var(--ink);color:#fff;padding:clamp(48px,8vw,100px) var(--pad)}
+.press h2{text-align:center;margin-bottom:2.5rem}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem 2rem;max-width:1200px;margin-inline:auto}
+figure{border-top:1px solid #444;padding-top:1.25rem}
+blockquote{font-size:1.1rem;line-height:1.45}
+figcaption{margin-top:.9rem;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:#bbb}
+.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;max-width:1200px;margin:3.5rem auto 0;align-items:center;background:#fff;padding:1rem;border-radius:4px}
+.logos img{width:100%;height:auto;object-fit:contain}
+@media (max-width:900px){.quotes{grid-template-columns:1fr 1fr}.logos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.quotes{grid-template-columns:1fr}}
+
+/* ethos */
+.ethos{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.ethos .img{min-height:520px;background:url(images/Bather-resized.jpg) center/cover #d7c8ae}
+.ethos .txt{padding:clamp(32px,7vw,96px) var(--pad);display:flex;flex-direction:column;justify-content:center;gap:1.2rem;background:var(--sand)}
+.ethos p{max-width:52ch}
+@media (max-width:760px){.ethos{grid-template-columns:1fr}.ethos .img{min-height:320px}}
+
+/* journal */
+.journal{padding:clamp(48px,8vw,100px) var(--pad);max-width:1300px;margin:auto}
+.journal h2{margin-bottom:2rem}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.post .thumb{aspect-ratio:3/2;background:var(--sand);display:block;margin-bottom:1rem}
+.post:nth-child(2) .thumb{background:#cfe0dc}.post:nth-child(3) .thumb{background:#f1d3c4}
+.post h3{font-size:1.25rem;text-transform:none;line-height:1.25;margin-bottom:.6rem}
+.post h3 a{text-decoration:none}.post h3 a:hover{text-decoration:underline}
+.post p{color:var(--muted);font-size:.95rem}
+.more{display:inline-block;margin-top:.8rem;font-size:.75rem;letter-spacing:.16em;font-weight:700;text-transform:uppercase}
+.journal .all{text-align:center;margin-top:2.5rem}
+@media (max-width:900px){.posts{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:var(--sand);padding:clamp(40px,6vw,80px) var(--pad) 2rem;border-top:1px solid var(--line)}
+.cols{display:grid;grid-template-columns:1.4fr 1fr 1.4fr;gap:3rem;max-width:1300px;margin:auto}
+footer h2{font-size:.85rem;letter-spacing:.18em;margin-bottom:1rem}
+footer p{font-size:.92rem;max-width:44ch;margin-bottom:1rem}
+footer li{margin-bottom:.45rem;font-size:.92rem}
+footer li a{text-decoration:none}footer li a:hover{text-decoration:underline}
+.social{display:flex;gap:1rem;flex-wrap:wrap;margin:1.2rem 0}
+.social a{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.onepct img{height:90px;width:auto}
+form{display:flex;max-width:420px;margin-top:.5rem}
+input[type=email]{flex:1;min-width:0;padding:.85rem 1rem;border:1px solid var(--ink);background:#fff;font:inherit}
+form button{padding:0 1.4rem;border:1px solid var(--ink);background:var(--ink);color:#fff;font:inherit;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;cursor:pointer}
+form button:hover{background:var(--sun);border-color:var(--sun)}
+.legal{max-width:1300px;margin:3rem auto 0;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:1.5rem;font-size:.8rem;color:var(--muted)}
+.pay{display:flex;gap:.5rem;flex-wrap:wrap}
+.pay img{height:24px;width:auto}
+@media (max-width:860px){.cols{grid-template-columns:1fr}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<a class="announce" href="/collections/sweatsuits">FREE SHIPPING ON ORDERS OVER $150 USD</a>
+
+<header>
+  <div class="bar">
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="/collections/all">Shop</a></li>
+        <li><a href="/pages/about">About</a></li>
+        <li><a href="/blogs/journal">Journal</a></li>
+        <li><a href="/pages/stockists">Stockists</a></li>
+      </ul>
+    </nav>
+    <a class="logo" href="/" aria-label="Bather home"><img src="images/Bather-Logo.png" alt="Bather" width="115" height="41"></a>
+    <div class="tools">
+      <a href="/search">Search</a>
+      <a href="/cart">Cart</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="panel hero">
+    <div>
+      <p class="eyebrow">New Arrivals</p>
+      <h2 class="display">Spring/Summer '21 available now</h2>
+      <a class="btn" href="/collections/all">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="split">
+    <div class="panel eco">
+      <div>
+        <p class="eyebrow">Sustainability</p>
+        <h2 class="display" style="font-size:clamp(1.8rem,4vw,3.2rem)">Made with 100% recycled materials</h2>
+        <p style="max-width:42ch;margin-top:1rem">In addition to being locally-made, we've made the transition to using completely recycled fabrics for all our new surf and swim products.</p>
+        <a class="btn" href="https://bather.com/pages/about-our-fabrics">Learn More</a>
+      </div>
+    </div>
+    <div class="panel p1" style="min-height:70vh">
+      <div>
+        <p class="eyebrow">Made in Canada</p>
+        <h2 class="display" style="font-size:clamp(1.8rem,4vw,3.2rem)">Beige Hula Girl Camp Shirt</h2>
+        <a class="btn" href="https://bather.com/products/beige-hula-girl-camp-shirt/">View</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="panel p2">
+      <div>
+        <p class="eyebrow">100% Recycled Polyester</p>
+        <h2 class="display" style="font-size:clamp(1.5rem,3vw,2.4rem)">Orange Hawaiian Tropics Swim Trunk</h2>
+        <a class="btn" href="https://bather.com/products/orange-hawaiian-tropics-swim-trunk/">View</a>
+      </div>
+    </div>
+    <div class="panel p3">
+      <div>
+        <p class="eyebrow">Ultra Soft Mesh Lining</p>
+        <h2 class="display" style="font-size:clamp(1.5rem,3vw,2.4rem)">Black Bandana Swim Trunk</h2>
+        <a class="btn" href="/products/black-bandana-swim-trunk">View</a>
+      </div>
+    </div>
+    <div class="panel p1" style="background-color:#7a8f6a">
+      <div>
+        <p class="eyebrow">SS21 Available Now</p>
+        <h2 class="display" style="font-size:clamp(1.5rem,3vw,2.4rem)">The Full Collection</h2>
+        <a class="btn" href="/collections/all">Shop the Full Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="collection">
+    <p class="eyebrow">New</p>
+    <h2 class="display">Bandana Towels</h2>
+    <a class="btn dark" href="/collections/accessories">Shop Accessories</a>
+    <div class="row">
+      <div class="tile a"><h3>Bandana Towels</h3><a class="btn" href="/collections/accessories">Shop Accessories</a></div>
+      <div class="tile"><h3>Camp Shirts</h3><a class="btn" href="/collections/shirts">View All</a></div>
+    </div>
+  </section>
+
+  <section class="latest">
+    <h2 class="display">Browse the Latest</h2>
+    <div class="cards">
+      <a class="card c1" href="/pages/about"><div><p class="eyebrow">Made in Canada</p><h3>Sustainability</h3><span class="go">LEARN MORE</span></div></a>
+      <a class="card c2" href="/products/gift-card"><div><p class="eyebrow">Available Now</p><h3>Gift Cards</h3><span class="go">BUY NOW</span></div></a>
+      <a class="card c3" href="/blogs/journal"><div><p class="eyebrow">Journal</p><h3>Excellent Adventures</h3><span class="go">READ</span></div></a>
+    </div>
+  </section>
+
+  <section class="press" aria-labelledby="press-h">
+    <h2 id="press-h" class="display">In the press</h2>
+    <div class="quotes">
+      <figure><blockquote>“The guys over at Bather are all-year-round experts in swimwear.”</blockquote><figcaption>— Highsnobiety</figcaption></figure>
+      <figure><blockquote>“Bather meets our rigorous swim trunk requirements. They're even better on the beach.”</blockquote><figcaption>— GQ</figcaption></figure>
+      <figure><blockquote>“Bather's swim trunks are meant to stand out and to be easy to wear when you're not on the beach.”</blockquote><figcaption>— New York Times</figcaption></figure>
+      <figure><blockquote>“A plethora of great prints ranging from bandanas, to palm trees, to floral, that'll keep me looking good.”</blockquote><figcaption>— Well Spent</figcaption></figure>
+      <figure><blockquote>“These are the best swim trunks for summer.”</blockquote><figcaption>— Business Insider</figcaption></figure>
+      <figure><blockquote>“A Toronto-based maker of stylish, comfortable men's swimwear.”</blockquote><figcaption>— The Globe and Mail</figcaption></figure>
+    </div>
+    <div class="logos">
+      <img src="images/Highsnobiety.png" alt="Highsnobiety" loading="lazy">
+      <img src="images/GQ.png" alt="GQ" loading="lazy">
+      <img src="images/NYT.png" alt="New York Times" loading="lazy">
+      <img src="images/Well-Spent.png" alt="Well Spent" loading="lazy">
+      <img src="images/Business-Insider.png" alt="Business Insider" loading="lazy">
+      <img src="images/Globe-and-Mail.png" alt="The Globe and Mail" loading="lazy">
+    </div>
+  </section>
+
+  <section class="ethos">
+    <div class="img" role="img" aria-label="Bather swimwear"></div>
+    <div class="txt">
+      <h2 class="display" style="font-size:clamp(2rem,4vw,3.2rem)">Our Ethos</h2>
+      <p>By partnering with experienced local designers, manufacturers and fabric suppliers, we are creating a fashion brand that puts customers first and offers slow fashion at an affordable price. We don’t cut corners and we don’t look for the easy way out — a difficult scenario is one we see as exciting and the solution will always provide an exciting product to our customers.</p>
+      <p>As a proud member of 1% for the Planet, we give a portion of every sale to support ocean cleanups and marine conservation.</p>
+    </div>
+  </section>
+
+  <section class="journal" aria-labelledby="j-h">
+    <h2 id="j-h" class="display">Journal</h2>
+    <div class="posts">
+      <article class="post">
+        <a class="thumb" href="/blogs/journal/the-spring-2021-style-guide" aria-hidden="true" tabindex="-1"></a>
+        <h3><a href="/blogs/journal/the-spring-2021-style-guide">The Spring 2021 Style Guide</a></h3>
+        <p>With Spring showers in the rear-view, a seasonal closet refresh is necessary for welcoming in the warmer months that are fast approaching. As a par...</p>
+        <a class="more" href="/blogs/journal/the-spring-2021-style-guide">Read more</a>
+      </article>
+      <article class="post">
+        <a class="thumb" href="/blogs/journal/ss21-lookbook" aria-hidden="true" tabindex="-1"></a>
+        <h3><a href="/blogs/journal/ss21-lookbook">SS21 Lookbook</a></h3>
+        <p>Toronto, ON — April 15, 2021 — For Spring/Summer ’21, we are excited to announce that we are making the transition to using recycled fabrics for al...</p>
+        <a class="more" href="/blogs/journal/ss21-lookbook">Read more</a>
+      </article>
+      <article class="post">
+        <a class="thumb" href="/blogs/journal/bathers-holiday-2020-giveaway" aria-hidden="true" tabindex="-1"></a>
+        <h3><a href="/blogs/journal/bathers-holiday-2020-giveaway">Bather's Gift Guide Giveaway</a></h3>
+        <p>Open to Canada and the USA until Christmas Day This holiday season, we released our annual gift guide, full of suggestions of timeless and unique ...</p>
+        <a class="more" href="/blogs/journal/bathers-holiday-2020-giveaway">Read more</a>
+      </article>
+    </div>
+    <p class="all"><a class="btn dark" href="/blogs/journal">All Posts</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="cols">
+    <div>
+      <h2>About Bather</h2>
+      <p>Launched in 2013, we set out to create the perfect poolside compliment to a well-curated closet of essentials — quality surf and swim products with a street-inspired approach that can be worn on or off the beach.</p>
+      <p>Bather is also a proud member of <a href="https://directories.onepercentfortheplanet.org/business-members/bather-trunk-co">1% for the Planet</a>. Every purchase supports ocean cleanups and marine conservation.</p>
+      <ul class="social">
+        <li><a href="https://www.facebook.com/bathertrunks">Facebook</a></li>
+        <li><a href="https://instagram.com/bather">Instagram</a></li>
+        <li><a href="https://www.pinterest.com/bathertrunks">Pinterest</a></li>
+        <li><a href="http://lifestyle.bather.com/">Lifestyle</a></li>
+      </ul>
+      <a class="onepct" href="https://directories.onepercentfortheplanet.org/profile/bather-trunk-co"><img src="images/Member-VerticalLogo-Black.png" alt="1% for the Planet member" loading="lazy"></a>
+    </div>
+    <div>
+      <h2>More Info</h2>
+      <ul>
+        <li><a href="/pages/contact">Contact</a></li>
+        <li><a href="/pages/faq">FAQ</a></li>
+        <li><a href="/pages/sizing">Sizing</a></li>
+        <li><a href="/pages/faq">Shipping &amp; Returns</a></li>
+        <li><a href="/products/gift-card">Gift Card</a></li>
+        <li><a href="/products/gq-navy-and-black-striped-swim-trunk">GQ Best Stuff Box</a></li>
+        <li><a href="/pages/press">Press</a></li>
+        <li><a href="/pages/privacy">Privacy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Let's be friends</h2>
+      <p>Sign up to our emails and enjoy 10% off your first order, plus be the first to know about new products, promotions, events and more.</p>
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks!'">
+        <label class="sr" for="email">Email address</label>
+        <input id="email" type="email" placeholder="Email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="legal">
+    <a href="https://bather.com">© 2021 Bather Trunk Company</a>
+    <ul class="pay" aria-label="Accepted payments">
+      <li><img src="images/american-express.svg" alt="American Express"></li>
+      <li><img src="images/apple-pay.svg" alt="Apple Pay"></li>
+      <li><img src="images/diners-club.svg" alt="Diners Club"></li>
+      <li><img src="images/discover.svg" alt="Discover"></li>
+      <li><img src="images/mastercard.svg" alt="Mastercard"></li>
+      <li><img src="images/paypal.svg" alt="PayPal"></li>
+      <li><img src="images/shop-pay.svg" alt="Shop Pay"></li>
+      <li><img src="images/visa.svg" alt="Visa"></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

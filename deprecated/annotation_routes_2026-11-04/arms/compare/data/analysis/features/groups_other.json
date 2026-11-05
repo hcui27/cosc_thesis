@@ -1,0 +1,86 @@
+{
+ "key": "6ab645367205",
+ "groups": [
+  {
+   "name": "Few CSS transitions, no animations",
+   "definition": "Does the page define few or no CSS transitions and no CSS animations (minimal interactivity)?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "animation_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "aeptexas_com#23",
+    "cbdoilcreamnk_com#23"
+   ]
+  },
+  {
+   "name": "Lean self-contained markup, no scripts",
+   "definition": "Is the page markup lean and self-contained, with few elements, no or minimal scripts, and little or no inline styling?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "script_count",
+    "op": "<=",
+    "value": 1
+   },
+   "members": [
+    "bather_com#20",
+    "insightcentral_net#22",
+    "nira_org_ng#22"
+   ]
+  },
+  {
+   "name": "Frequent CSS grid layout use",
+   "definition": "Does the page use CSS grid for layout relatively often alongside flexbox?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "grid_count",
+    "op": ">=",
+    "value": 3
+   },
+   "members": [
+    "insightcentral_net#20"
+   ]
+  },
+  {
+   "name": "Small hand-written class set",
+   "definition": "Is styling done with a small hand-written set of classes rather than utility or framework classes?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "tailwind_like_fraction",
+    "op": "<=",
+    "value": 0.05
+   },
+   "members": [
+    "insightcentral_net#23"
+   ]
+  },
+  {
+   "name": "Many hover transitions",
+   "definition": "Do interactive elements use many CSS transitions for hover polish?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "transition_count",
+    "op": ">=",
+    "value": 10
+   },
+   "members": [
+    "neverskipbrunch_com#22"
+   ]
+  },
+  {
+   "name": "Single embedded style, no effects",
+   "definition": "Is styling a single embedded style block with no inline styles, shadows, animations or transforms?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "inline_style_attrs",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "thync_com#16"
+   ]
+  }
+ ]
+}

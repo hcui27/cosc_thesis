@@ -1,0 +1,587 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Side A renders mostly as an unstyled single-column document: everything sits flush left at x≈8px. Side B uses a centered, contained multi-column grid layout.",
+   "evidence": "A layout facts: display_grid 0, display_flex 0, and images at x=8/48/88. B: display_grid 17, display_flex 54, and content starts at x≈146 (B",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|00",
+    "educationactivities_org|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A uses a single typeface throughout. B pairs a sans-serif system UI font with Georgia serif.",
+   "evidence": "A fonts_by_element_count: Andada 1325. B: system-ui 384, Georgia 202.",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|03",
+    "educationactivities_org|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B uses Georgia serif for excerpts, the tagline and the search placeholder, and a bold sans for headlines.",
+   "evidence": "B_slice_01 excerpts ('US President Donald Trump made…') are in serif. The tagline 'The aim of education is the knowledge not of facts but of",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|04"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I3",
+   "text": "B's section headings (h2) are larger than A's.",
+   "evidence": "A h2 is 24px/700 and B h2 is 32px/700 per the facts. On screen, B section labels such as 'SCIENCE' look smaller and tracked, so some h2s are",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|05",
+    "educationactivities_org|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "B section headings are uppercase with letter-spacing. A section headings use title case.",
+   "evidence": "B heading_outline: 'SCIENCE', 'COLLEGE AND UNIVERSITY', 'EDUCATIONS', 'AUTHOR INFO'. A: 'College and University', 'Educations', 'Science'.",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|06",
+    "educationactivities_org|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A's body background is transparent (rendered white) with gray body text. B uses a warm off-white page background with near-black navy text.",
+   "evidence": "A body_bg rgba(0,0,0,0), body_color rgb(96,96,96). B body_bg rgb(246,244,239), body_color rgb(27,31,42).",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|07",
+    "educationactivities_org|opus|08",
+    "educationactivities_org|opus|09",
+    "educationactivities_org|sonnet|06",
+    "educationactivities_org|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "A's top bar is medium blue. B's top bar, nav band and footer use dark navy.",
+   "evidence": "A background rgb(30,115,190) on the top menu strip (A_slice_00). B background rgb(20,33,61) ×3 on the top bar, the band under the masthead a",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|10"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I7",
+   "text": "Category labels look different. In A they are red-highlighted underlined text links, sometimes on dark gray bars. In B they are small uppercase white-on-red badge chips.",
+   "evidence": "A_slice_01 shows 'Skills Development' with a red background inside a gray strip, and 'College and University' as red underlined text. B_slic",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|12",
+    "educationactivities_org|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "B places posts in bordered white cards in a 3-column grid, each with an image on top, a badge, a title, a meta line and an excerpt. A lists posts one after another, each with a fixed-size image above the text.",
+   "evidence": "B images in a row at x=147/424/702 with w=255. A images stacked at x=48 or 88 with w=300 (A image rects).",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|02",
+    "educationactivities_org|opus|14",
+    "educationactivities_org|sonnet|01",
+    "educationactivities_org|sonnet|02",
+    "educationactivities_org|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "B opens with a hero: a large featured image with an overlaid white headline on a dark gradient, plus two stacked side cards. In A, the first featured posts are text rows on gray bars with no images.",
+   "evidence": "B: Trump image rect 752×732 with overlaid title, and spaceflight/deionized images at 374×210 (B_slice_00). A_slice_00: three 'Science' rows ",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|15",
+    "educationactivities_org|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "B's top-level hero headline is an h2, while A marks every featured title as h3. Neither page has an h1.",
+   "evidence": "h1_count is 0 on both. B heading_outline begins with level 2 'Trump Declares…'; A begins with level 3 for the same title.",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|16",
+    "educationactivities_org|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "B wraps each post in an <article>. A uses no article elements and relies on figure/figcaption.",
+   "evidence": "B semantic: article 30, figure 0. A: article 0, figure 45, figcaption 13.",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|17",
+    "educationactivities_org|opus|18",
+    "educationactivities_org|opus|19",
+    "educationactivities_org|sonnet|22",
+    "educationactivities_org|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "Page titles and lang attributes differ.",
+   "evidence": "A title 'Home - Education Activitie', lang 'en-US'. B title 'Education Activities', lang 'en'.",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|23",
+    "educationactivities_org|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A shows its logo as a large 280×165 image. B shrinks the logo to 56×56 and sets the site name 'Education Activitie' next to it in large serif text.",
+   "evidence": "Education-activity.png: A rect 280×165 at y=288. B rect 56×56 at y=96, with the wordmark text visible in B_slice_00.",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|24",
+    "educationactivities_org|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "B adds a tagline quote in the masthead that is not visible in A's header.",
+   "evidence": "B_slice_00 shows the italic text 'The aim of education is the knowledge not of facts but of values.' at the right. A_slice_00 header shows n",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|25"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I15",
+   "text": "B has a 'TRENDING' label badge followed by three headline links in one horizontal row. A shows the same trending items as an inline run of broken image alt text and a 50×50 thumbnail.",
+   "evidence": "B_slice_00 second bar. In A_slice_00, the images 'Benefits-of-Digital-Marketing-Banner-50x50.png' and 'What-is-Business-English-50x50.jpg' h",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "A's primary navigation renders as a vertical bulleted nested list with a 'Primary Menu' toggle button. B shows its top category links in a horizontal row in the dark top bar.",
+   "evidence": "A_slice_00: Home, Certification › Skills Development… as a bullet list, plus the red 'Primary Menu' button (primary_button text). B_slice_00",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|27"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I17",
+   "text": "Where a post has no image, B uses text-labeled gradient placeholder tiles. A leaves those posts without any image block.",
+   "evidence": "B_slice_03: the Skills Development and Education Activities cards have navy tiles with the category name. A_slice_01/04: posts such as 'Chec",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|31"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I18",
+   "text": "A uses gray rgb(96,96,96) bars as backgrounds behind category labels and titles. B uses white cards on the beige page with tan-colored dividers.",
+   "evidence": "A top_backgrounds: rgb(96,96,96) ×16, plus the dark gray full-width strips in A_slice_00/01. B top_backgrounds: white ×42 and rgb(227,223,21",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|11",
+    "educationactivities_org|opus|29",
+    "educationactivities_org|opus|30",
+    "educationactivities_org|opus|32",
+    "educationactivities_org|sonnet|28",
+    "educationactivities_org|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "B crops thumbnails to uniform 255×144 card images and 76×60 sidebar thumbnails. A shows images at native 300×200 or 720×380 sizes.",
+   "evidence": "B image rects 255×144 and 76×60, and the hero is 752×732 from a 720×380 source. A image rects match the natural sizes 300×200 and 720×380.",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|33",
+    "educationactivities_org|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "Every B img has an alt attribute, though most are empty. Fifteen of A's img elements have no alt attribute.",
+   "evidence": "alt_missing: A 15, B 0. B image alts are mostly '' except the logo and 'James E. Turner'.",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|35",
+    "educationactivities_org|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "B's author widget shows the photo as a 96×96 circular avatar, with the name and a subtitle 'A Business Expert'. A shows the same photo as a 300×173 rectangle with a blank area around it.",
+   "evidence": "B image rect 96×96 at x=1096 (B_slice_00). A image rect 300×173 at y=15900 (A_slice_12).",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|36",
+    "educationactivities_org|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "B's Popular list is numbered 1–5 in red with thumbnails. In A, the Popular/Latest/Category tabs render as a plain bullet list followed by full 300×200 image items.",
+   "evidence": "B_slice_01: red numerals 1–5 next to 76×60 thumbnails, using an ol. A_slice_07: bullets 'Popular', 'Latest', 'Category' followed by list ite",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|37",
+    "educationactivities_org|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "B renders tags as uniform bordered pill chips. A renders a weighted tag cloud with different font sizes.",
+   "evidence": "B_slice_02 TAGS shows pills at equal size. A_slice_12 TAGS shows 'Education' and 'General' much larger than 'Languages' and 'Financial Aid'.",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|38",
+    "educationactivities_org|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "B's search field is a joined input-plus-button bar with the placeholder 'Search articles'. A shows a 'Search for:' label, a small input with the placeholder 'Search …', and a separate red button. A also has this search form twice.",
+   "evidence": "B_slice_02 SEARCH widget, and B tag_counts form 1 / input 1. A_slice_00 and A_slice_12 each show the search form, and A tag_counts form 2 / ",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|28",
+    "educationactivities_org|opus|39",
+    "educationactivities_org|sonnet|19",
+    "educationactivities_org|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "B's footer is a dark navy three-column block (Quick Links, Top Category, Latest Posts) with white text and a divider line above the copyright. A's footer content is plain bulleted lists on white, with the copyright line at the bottom.",
+   "evidence": "B_slice_04 shows the navy footer with three columns. A_slice_11/12 show the Quick Links and Top Category bullet lists and 'Copyright © All r",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|40",
+    "educationactivities_org|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "Each B section heading has a heavy underline rule and a red 'View all →' link at the right. A section headings are plain text with no rule and no view-all link.",
+   "evidence": "B_slice_01/02/03: 'SCIENCE … View all →' with a dark rule below. A_slice_01/02: 'College and University' and 'Educations' as plain gray head",
+   "side": "generated",
+   "members": [
+    "educationactivities_org|opus|41",
+    "educationactivities_org|sonnet|17",
+    "educationactivities_org|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "The section order differs. B leads with Science after the hero, adds 'ONLINE EDUCATION' and 'SKILLS DEVELOPMENT' sections, and drops the separate Science section near the bottom. A runs Skills Development items, College and University, Educations, Education Activities, then Science.",
+   "evidence": "B heading_outline: SCIENCE, COLLEGE AND UNIVERSITY, EDUCATIONS, ONLINE EDUCATION, SKILLS DEVELOPMENT, EDUCATION ACTIVITIES. A heading_outlin",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|42"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I28",
+   "text": "B separates author and date with a centered dot. A uses a slash and underlines the author link.",
+   "evidence": "B_slice_00: 'By WebEditor · 2018-10-01'. A_slice_01: 'By WebEditor / 2019-02-11', with WebEditor underlined.",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|45",
+    "educationactivities_org|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "Image file naming differs: A references WordPress-style size-suffixed variants, while B uses simplified filenames without size suffixes.",
+   "evidence": "A: 'images-78-300x200.jpg', '9-720x380.jpg', 'reddit-300x200.jpg'. B: 'images.jpg', 'reddit.jpg', 'image-07.jpg', 'Benefits-of-Digital-Marke",
+   "side": "both",
+   "members": [
+    "educationactivities_org|opus|48",
+    "educationactivities_org|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A's post titles are underlined default-style links. B's card titles are bold sans-serif with no underline.",
+   "evidence": "A slices show underlined titles and underlined 'WebEditor' links; B slices show bold non-underlined titles",
+   "side": "both",
+   "members": [
+    "educationactivities_org|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "B's classes are small and tidy: 204 total and 33 unique. A has 1653 class uses and 278 unique, typical of a WordPress theme.",
+   "evidence": "A classes total 1653 unique 278; B total 204 unique 33",
+   "side": "both",
+   "members": [
+    "educationactivities_org|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "A carries a full WordPress/SEO head: 11 meta tags including og:*, twitter:card, generator and msapplication-TileImage, a JSON-LD block, 31 link tags, 5 style blocks and 16 stylesheets. B has only charset, viewport and description meta tags, 2 link tags, 1 stylesheet and no JSON-LD.",
+   "evidence": "A meta_names list, jsonld_blocks 1, link 31, style 5, stylesheets 16; B meta_names 3, jsonld_blocks 0, link 2, stylesheets 1",
+   "side": "both",
+   "members": [
+    "educationactivities_org|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "Excerpts differ. In A they are single-line, unbroken strings shown only for some posts (e.g. 'Introduction Reddit provides…'). In B every card in the hero and Science rows has a multi-line serif excerpt, while the later cards (College and University and below) show title and meta only.",
+   "evidence": "A slice 1 single-line excerpt under 'Writing Subreddits on Reddit'; B slice 1 shows excerpts in the Science row and none in the Educations c",
+   "side": "both",
+   "members": [
+    "educationactivities_org|sonnet|31"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "The same corrupted/spun headline copy appears on both sides, e.g. 'Trump Declares Decide to Lead EPA Chemical Security Workplace' and 'Easy methods to Manage Your Dwelling'. B keeps the original wording, though the Skills Development and Education Activities sections also reappear in B's grid.",
+   "evidence": "A and B heading_outline both contain 'Trump Declares Decide to Lead EPA Chemical Security Workplace' and 'Which Instructional Platform Is Gr",
+   "side": "both",
+   "members": [
+    "educationactivities_org|sonnet|32"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "A repeats the Science posts with oversized 720×380 feature images stacked vertically. Each is followed by a category link, title, meta and excerpt. B shows these posts as a compact hero and a Science row, so the first screens carry far more distinct content.",
+   "evidence": "A image rects 720×380 at y 6670, 7218, 7766, 8315, 8863 (≈548px pitch); B hero and Science row use 374×210 and 255×144 within the first ~160",
+   "side": "both",
+   "members": [
+    "educationactivities_org|sonnet|36"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Layout is a centered, contained multi-column grid with flex rows rather than a single flush-left column.",
+   "family": "layout",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Pairs a system sans-serif for UI and headlines with a serif face for excerpts, taglines and placeholders.",
+   "family": "typography",
+   "items": [
+    "I1",
+    "I2"
+   ]
+  },
+  {
+   "statement": "Section headings are small uppercase with letter-spacing, in bold sans.",
+   "family": "typography",
+   "items": [
+    "I4",
+    "I3"
+   ]
+  },
+  {
+   "statement": "Page uses a warm off-white background with near-black navy body text.",
+   "family": "color",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Top bar, nav band and footer use a dark navy fill with white text.",
+   "family": "color",
+   "items": [
+    "I6",
+    "I25"
+   ]
+  },
+  {
+   "statement": "Category labels are small uppercase white-on-red badge chips.",
+   "family": "component",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Posts appear as bordered white cards in a 3-column grid with image, badge, title, meta and excerpt.",
+   "family": "layout",
+   "items": [
+    "I8",
+    "I18"
+   ]
+  },
+  {
+   "statement": "Page opens with a hero: large featured image with overlaid white headline on dark gradient, plus stacked side cards.",
+   "family": "layout",
+   "items": [
+    "I9",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Each post is wrapped in an article element.",
+   "family": "semantic_dom",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "Header shows a compact small logo beside a large serif site name, with an italic tagline quote.",
+   "family": "component",
+   "items": [
+    "I13",
+    "I14"
+   ]
+  },
+  {
+   "statement": "A labeled trending badge precedes a horizontal row of headline links.",
+   "family": "component",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Primary navigation is a horizontal row of category links in a dark top bar.",
+   "family": "component",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Posts without images get text-labeled gradient placeholder tiles showing the category name.",
+   "family": "imagery",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Thumbnails are cropped to uniform sizes, with small thumbnails in sidebar lists.",
+   "family": "imagery",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Author widget shows a small circular avatar with name and subtitle.",
+   "family": "imagery",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "Popular list is numbered with red numerals beside small thumbnails.",
+   "family": "component",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Tags render as uniform-size bordered pill chips.",
+   "family": "component",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "Search is a joined input-plus-button bar with short placeholder, appearing once.",
+   "family": "component",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Section headings have a heavy underline rule and a red 'View all →' link at right.",
+   "family": "component",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Meta lines separate author and date with a centered dot.",
+   "family": "copy",
+   "items": [
+    "I28"
+   ]
+  },
+  {
+   "statement": "Card titles are bold sans-serif without underline.",
+   "family": "typography",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Markup is lean: few classes, minimal head metadata, a single stylesheet and no JSON-LD.",
+   "family": "semantic_dom",
+   "items": [
+    "I31",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Every image carries an alt attribute, mostly empty for decorative images.",
+   "family": "semantic_dom",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Excerpts appear on hero and lead-row cards only; later cards show just title and meta.",
+   "family": "copy",
+   "items": [
+    "I33"
+   ]
+  },
+  {
+   "statement": "Footer is a three-column block with a divider line above the copyright.",
+   "family": "layout",
+   "items": [
+    "I25"
+   ]
+  }
+ ]
+}

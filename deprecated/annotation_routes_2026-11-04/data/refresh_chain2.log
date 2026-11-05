@@ -1,0 +1,380 @@
+[annotate] Mon Oct 26 21:02:20 EDT 2026
+[collate]
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/collate_sites.py
+sites: 28 | complete (rendered + both judges): 28
+stacks: {'static_html': 27, 'static_html+alpine': 1}
+categories: {'Business & Economy': 3, 'Education': 2, 'Entertainment': 2, 'Government & Politics': 2, 'Health': 2, 'Internet Communication': 2, 'Job Search & Careers': 1, 'Shopping & Auctions': 3, 'Social & Family': 1, 'Society & Lifestyle': 2, 'Sports': 2, 'Technology': 3, 'Travel': 2, 'Vehicles': 1}
+languages: {'en': 28}
+observations: 2379 total | per judge: {'claude-opus-5-5': 1418, 'claude-sonnet-5-5': 961} | which_side: {'generated': 2379}
+observation categories: {'layout': 423, 'typography': 287, 'component': 230, 'copy': 188, 'imagery': 185, 'color': 183, 'decoration': 135, 'components': 109, 'DOM/semantic structure': 69, 'structure': 68, 'component choices': 65, 'dom': 65}
+cost: generate $10.77, judges $19.88
+exclusions: 9 checked sites not in the final list (see exclusions.csv)
+incomplete sites: []
+[tier]
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/check_observations.py --workers 3
+28 sites to tier (0 cached)
+  tiered aeptexas_com
+  tiered allstate_jobs
+  tiered alpine8848_com
+  tiered bather_com
+  tiered bathurst12hour_com_au
+  tiered bluebayou_com
+  tiered cbdoilcreamnk_com
+  tiered educationactivities_org
+  tiered flygrant_com
+  tiered fnsouzafoundation_com
+  tiered gravityvault_com
+  tiered greatdayimprovements_com
+  tiered homedesignersoftware_com
+  tiered insightcentral_net
+  tiered kanienkeha_net
+  tiered kneeguru_co_uk
+  tiered merchantsavvy_co_uk
+  tiered miamidda_com
+  tiered naturalwellbeing_com
+  tiered neverskipbrunch_com
+  tiered newclimateeconomy_net
+  tiered nira_org_ng
+  tiered ridetech_com
+  tiered seoanalyzer_me
+  tiered stgpartners_com
+  tiered tellmebaby_com_au
+  tiered thefrangipanicreative_com
+  tiered thync_com
+
+2379 observations tiered across 28 sites: {'A': 2087, 'B': 275, 'C': 17}
+  claude-opus-5-5: {'A': 1194, 'B': 215, 'C': 9}
+  claude-sonnet-5-5: {'A': 893, 'B': 60, 'C': 8}
+  fact-checkable: 1388 (58%), contradicted 17
+[features]
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/observations_to_features.py --workers 3
+2362 usable observations; 28 sites to extract (0 cached)
+  extracted aeptexas_com
+  extracted allstate_jobs
+  extracted alpine8848_com
+  extracted bather_com
+  extracted bathurst12hour_com_au
+  extracted bluebayou_com
+  extracted cbdoilcreamnk_com
+  extracted educationactivities_org
+  extracted flygrant_com
+  extracted fnsouzafoundation_com
+  extracted gravityvault_com
+  extracted greatdayimprovements_com
+  extracted homedesignersoftware_com
+  extracted insightcentral_net
+  extracted kanienkeha_net
+  extracted kneeguru_co_uk
+  extracted merchantsavvy_co_uk
+  extracted miamidda_com
+  extracted naturalwellbeing_com
+  extracted neverskipbrunch_com
+  extracted newclimateeconomy_net
+  extracted nira_org_ng
+  extracted ridetech_com
+  extracted seoanalyzer_me
+  extracted stgpartners_com
+  extracted tellmebaby_com_au
+  extracted thefrangipanicreative_com
+  extracted thync_com
+811 site-level statements; grouping 9 families
+
+catalog: 239 features from 28 sites | detectors {'programmatic': 37, 'vision': 171, 'text': 31} | singletons 96 (40%) | in >=10 sites: 16
+[codebook]
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/build_codebook.py
+811 statements from 28 sites
+100 topics (sizes max 33, median 4) + 8 batches of singletons = 108 LLM calls
+384 raw attributes, 1717 codes
+codebook: 314 attributes (1136 values) from 384 raw attributes; 1717 codes; mentioned by >=3 sites: 166
+[elements]
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/element_map.py
+aeptexas_com 86 elements
+stgpartners_com 100 elements
+educationactivities_org 361 elements
+kanienkeha_net 301 elements
+bluebayou_com 125 elements
+fnsouzafoundation_com 63 elements
+miamidda_com 191 elements
+newclimateeconomy_net 84 elements
+kneeguru_co_uk 168 elements
+thync_com 100 elements
+insightcentral_net 82 elements
+thefrangipanicreative_com 123 elements
+cbdoilcreamnk_com 217 elements
+naturalwellbeing_com 175 elements
+neverskipbrunch_com 138 elements
+greatdayimprovements_com 42 elements
+gravityvault_com 181 elements
+bathurst12hour_com_au 153 elements
+nira_org_ng 134 elements
+homedesignersoftware_com 243 elements
+alpine8848_com 97 elements
+flygrant_com 125 elements
+ridetech_com 193 elements
+allstate_jobs 163 elements
+tellmebaby_com_au 234 elements
+merchantsavvy_co_uk 72 elements
+bather_com 171 elements
+seoanalyzer_me 127 elements
+[code]
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/code_pages_evidence.py --workers 4
+314 attributes, 28 pages, 168 calls to run
+  coded aeptexas_com 0
+  coded aeptexas_com 1
+  coded aeptexas_com 2
+  coded aeptexas_com 3
+  coded aeptexas_com 4
+  coded aeptexas_com 5
+  coded stgpartners_com 0
+  coded stgpartners_com 1
+  coded stgpartners_com 2
+  coded stgpartners_com 3
+  coded stgpartners_com 4
+  coded stgpartners_com 5
+  coded educationactivities_org 0
+  coded educationactivities_org 1
+  coded educationactivities_org 2
+  coded educationactivities_org 3
+  coded educationactivities_org 4
+  coded educationactivities_org 5
+  coded kanienkeha_net 0
+  coded kanienkeha_net 1
+  coded kanienkeha_net 2
+  coded kanienkeha_net 3
+  coded kanienkeha_net 4
+  coded kanienkeha_net 5
+  coded bluebayou_com 0
+  coded bluebayou_com 1
+  coded bluebayou_com 2
+  coded bluebayou_com 3
+  coded bluebayou_com 4
+  coded bluebayou_com 5
+  coded fnsouzafoundation_com 0
+  coded fnsouzafoundation_com 1
+  coded fnsouzafoundation_com 2
+  coded fnsouzafoundation_com 3
+  coded fnsouzafoundation_com 4
+  coded fnsouzafoundation_com 5
+  coded miamidda_com 0
+  coded miamidda_com 1
+  coded miamidda_com 2
+  coded miamidda_com 3
+  coded miamidda_com 4
+  coded miamidda_com 5
+  coded newclimateeconomy_net 0
+  coded newclimateeconomy_net 1
+  coded newclimateeconomy_net 2
+  coded newclimateeconomy_net 3
+  coded newclimateeconomy_net 4
+  coded newclimateeconomy_net 5
+  coded kneeguru_co_uk 0
+  coded kneeguru_co_uk 1
+  coded kneeguru_co_uk 2
+  coded kneeguru_co_uk 3
+  coded kneeguru_co_uk 4
+  coded kneeguru_co_uk 5
+  coded thync_com 0
+  coded thync_com 1
+  coded thync_com 2
+  coded thync_com 3
+  coded thync_com 4
+  coded thync_com 5
+  coded insightcentral_net 0
+  coded insightcentral_net 1
+  coded insightcentral_net 2
+  coded insightcentral_net 3
+  coded insightcentral_net 4
+  coded insightcentral_net 5
+  coded thefrangipanicreative_com 0
+  coded thefrangipanicreative_com 1
+  coded thefrangipanicreative_com 2
+  coded thefrangipanicreative_com 3
+  coded thefrangipanicreative_com 4
+  coded thefrangipanicreative_com 5
+  coded cbdoilcreamnk_com 0
+  coded cbdoilcreamnk_com 1
+  coded cbdoilcreamnk_com 2
+  coded cbdoilcreamnk_com 3
+  coded cbdoilcreamnk_com 4
+  coded cbdoilcreamnk_com 5
+  coded naturalwellbeing_com 0
+  coded naturalwellbeing_com 1
+  coded naturalwellbeing_com 2
+  coded naturalwellbeing_com 3
+  coded naturalwellbeing_com 4
+  coded naturalwellbeing_com 5
+  coded neverskipbrunch_com 0
+  coded neverskipbrunch_com 1
+  coded neverskipbrunch_com 2
+  coded neverskipbrunch_com 3
+  coded neverskipbrunch_com 4
+  coded neverskipbrunch_com 5
+  coded greatdayimprovements_com 0
+  coded greatdayimprovements_com 1
+  coded greatdayimprovements_com 2
+  coded greatdayimprovements_com 3
+  coded greatdayimprovements_com 4
+  coded greatdayimprovements_com 5
+  coded gravityvault_com 0
+  coded gravityvault_com 1
+  coded gravityvault_com 2
+  coded gravityvault_com 3
+  coded gravityvault_com 4
+  coded gravityvault_com 5
+  coded bathurst12hour_com_au 0
+  coded bathurst12hour_com_au 1
+  coded bathurst12hour_com_au 2
+  coded bathurst12hour_com_au 3
+  coded bathurst12hour_com_au 4
+  coded bathurst12hour_com_au 5
+  coded nira_org_ng 0
+  coded nira_org_ng 1
+  coded nira_org_ng 2
+  coded nira_org_ng 3
+  coded nira_org_ng 4
+  coded nira_org_ng 5
+  coded homedesignersoftware_com 0
+  coded homedesignersoftware_com 1
+  coded homedesignersoftware_com 2
+  coded homedesignersoftware_com 3
+  coded homedesignersoftware_com 4
+  coded homedesignersoftware_com 5
+  coded alpine8848_com 0
+  coded alpine8848_com 1
+  coded alpine8848_com 2
+  coded alpine8848_com 3
+  coded alpine8848_com 4
+  coded alpine8848_com 5
+  coded flygrant_com 0
+  coded flygrant_com 1
+  coded flygrant_com 2
+  coded flygrant_com 3
+  coded flygrant_com 4
+  coded flygrant_com 5
+  coded ridetech_com 0
+  coded ridetech_com 1
+  coded ridetech_com 2
+  coded ridetech_com 3
+  coded ridetech_com 4
+  coded ridetech_com 5
+  coded allstate_jobs 0
+  coded allstate_jobs 1
+  coded allstate_jobs 2
+  coded allstate_jobs 3
+  coded allstate_jobs 4
+  coded allstate_jobs 5
+  coded tellmebaby_com_au 0
+  coded tellmebaby_com_au 1
+  coded tellmebaby_com_au 2
+  coded tellmebaby_com_au 3
+  coded tellmebaby_com_au 4
+  coded tellmebaby_com_au 5
+  coded merchantsavvy_co_uk 0
+  coded merchantsavvy_co_uk 1
+  coded merchantsavvy_co_uk 2
+  coded merchantsavvy_co_uk 3
+  coded merchantsavvy_co_uk 4
+  coded merchantsavvy_co_uk 5
+  coded bather_com 0
+  coded bather_com 1
+  coded bather_com 2
+  coded bather_com 3
+  coded bather_com 4
+  coded bather_com 5
+  coded seoanalyzer_me 0
+  coded seoanalyzer_me 1
+  coded seoanalyzer_me 2
+  coded seoanalyzer_me 3
+  coded seoanalyzer_me 4
+  coded seoanalyzer_me 5
+written data/analysis/codebook_evidence
+[attributes]
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/analyze_attributes.py --codes-dir data/analysis/codebook_evidence --out data/analysis/codebook_evidence/analysis
+# Attribute-value variation across 28 generated pages
+314 attributes coded on at least 15 pages. Bands by modal-value share: shared (>= 0.75) 126, split (0.5-0.75) 140, varied (< 0.5) 48.
+
+Pairwise agreement between pages over all attributes: mean **0.562** (descriptive only: it equals what independent coding with the same value frequencies would give, so it measures how concentrated the choices are, not clustering). Spread across page pairs: SD 0.0439 vs permutation null 0.0254 (95% of nulls 0.0228-0.0284): some pages resemble each other MORE than independent coding would give (structure / clusters).
+
+By modal value type: shared presence (modal share >= 0.75, a feature is there) 56; shared absence/other (the modal value says the feature is absent or not applicable) 70.
+
+Top shared present values: ARIA attribute usage=aria present (1.0); CSS class naming approach=semantic custom names (1.0); alt attribute coverage=all images have alt (1.0); full-bleed exceptions=selected sections full-bleed (1.0); head meta richness=minimal basic meta (1.0); header positioning relative to hero=static or separate above hero (1.0); section title rendering=live-text (1.0); text_on_dark_or_accent_backgrounds=white (1.0); tile grid spacing=gapped (1.0); card height consistency=equal heights (0.964)
+[seed code] Mon Oct 26 21:34:36 EDT 2026
+82 seed items, 28 pages, 2 batches/page -> 56 calls (about $0.15 each, so about $8.4)
+  coded aeptexas_com 0
+  coded aeptexas_com 1
+  coded stgpartners_com 0
+  coded stgpartners_com 1
+  coded educationactivities_org 0
+  coded educationactivities_org 1
+  coded kanienkeha_net 0
+  coded kanienkeha_net 1
+  coded bluebayou_com 0
+  coded bluebayou_com 1
+  coded fnsouzafoundation_com 0
+  coded fnsouzafoundation_com 1
+  coded miamidda_com 0
+  coded miamidda_com 1
+  coded newclimateeconomy_net 0
+  coded newclimateeconomy_net 1
+  coded kneeguru_co_uk 0
+  coded kneeguru_co_uk 1
+  coded thync_com 0
+  coded thync_com 1
+  coded insightcentral_net 0
+  coded insightcentral_net 1
+  coded thefrangipanicreative_com 0
+  coded thefrangipanicreative_com 1
+  coded cbdoilcreamnk_com 0
+  coded cbdoilcreamnk_com 1
+  coded naturalwellbeing_com 0
+  coded naturalwellbeing_com 1
+  coded neverskipbrunch_com 0
+  coded neverskipbrunch_com 1
+  coded greatdayimprovements_com 0
+  coded greatdayimprovements_com 1
+  coded gravityvault_com 0
+  coded gravityvault_com 1
+  coded bathurst12hour_com_au 0
+  coded bathurst12hour_com_au 1
+  coded nira_org_ng 0
+  coded nira_org_ng 1
+  coded homedesignersoftware_com 0
+  coded homedesignersoftware_com 1
+  coded alpine8848_com 0
+  FAILED alpine8848_com 1 JSONDecodeError Expecting value: line 4 column 49 (char 172)
+  coded flygrant_com 0
+  coded flygrant_com 1
+  coded ridetech_com 0
+  coded ridetech_com 1
+  coded allstate_jobs 0
+  coded allstate_jobs 1
+  coded tellmebaby_com_au 0
+  coded tellmebaby_com_au 1
+  coded merchantsavvy_co_uk 0
+  coded merchantsavvy_co_uk 1
+  coded bather_com 0
+  coded bather_com 1
+  coded seoanalyzer_me 0
+  coded seoanalyzer_me 1
+[seed summary] Mon Oct 26 21:39:27 EDT 2026
+82 seed items; present on 0 pages: 49, 1-2: 14, 3-6: 8, 7-13: 1, 14+: 10 (no items dropped)
+top 15: Search input (27), Icon (26), Radio button (25), File upload (24), Navigation (24), Combobox (17), Footer (17), Label (15), Image (14), Progress bar (14), Pagination (10), Alert (5), Avatar (5), List (5), Rating (5)
+[compare] Mon Oct 26 21:39:27 EDT 2026
+# Seed list vs self-generated codebook
+82 seed items (external glossaries), 314 codebook attributes, 28 pages. No culling applied.
+
+## Seed items: pertinence on these pages
+- present on >= 1 page: 33 of 82; on >= 3 pages: 19; on >= half the pages: 10; on no page: 49
+- by kind (present on >= 1 page): component 33/66, page_section 0/16
+
+## Codebook attributes vs the seed list
+- ABOUT a seed item: 165 (5 is the item itself, 160 a property/variant of it)
+- ADDED by the codebook (not about any seed item): 149 of 314 (47%)
+- by family (is_item / property_of_item / none): color: 0/13/25; component: 2/60/8; copy: 0/10/20; decoration: 1/12/7; imagery: 0/15/14; layout: 0/33/22; other: 0/0/3; semantic_dom: 2/5/20; typography: 0/12/30
+- seed items no codebook attribute is about: 48 of 82; of those present on >= 3 pages (codebook gaps): 8: Radio button, File upload, Combobox, Progress bar, Rating, Progress indicator, Accordion, Popover
+
+## Distributions to compare (share of pages where the thing is present)
+- seed items (prevalence): median 0.00, mean 0.12
+- codebook attributes about the item itself: median 0.14, mean 0.34
+- codebook property/variant attributes: median 0.48, mean 0.53
+[all done] Mon Oct 26 21:40:46 EDT 2026

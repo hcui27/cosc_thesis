@@ -1,0 +1,116 @@
+{
+ "attributes": [
+  {
+   "name": "form control semantics",
+   "definition": "Whether forms and actions use native HTML elements (real buttons, labelled inputs, native selects) versus generic or custom-built substitutes.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "native form elements with explicit labels",
+     "definition": "Inputs use real label elements and native controls (select, date, radio, input), tied to labels."
+    },
+    {
+     "value": "custom or div-based controls",
+     "definition": "Controls are built from non-semantic elements or custom widgets lacking native semantics."
+    },
+    {
+     "value": "no forms present",
+     "definition": "The page has no form controls."
+    },
+    {
+     "value": "other",
+     "definition": "Form semantics do not fit the above."
+    }
+   ]
+  },
+  {
+   "name": "action element semantics",
+   "definition": "The element type used for clickable actions that do something on the page.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "real button elements",
+     "definition": "Actions use native button elements."
+    },
+    {
+     "value": "links or divs styled as buttons",
+     "definition": "Actions use anchors or non-semantic elements styled to look like buttons."
+    },
+    {
+     "value": "no actions present",
+     "definition": "The page has no action controls."
+    }
+   ]
+  },
+  {
+   "name": "DOM leanness",
+   "definition": "How minimal the page markup and scripting are: node count, script count and class vocabulary size.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "lean DOM with few scripts and small class vocabulary",
+     "definition": "Minimal markup, few scripts, and a small set of custom classes."
+    },
+    {
+     "value": "heavy DOM or script-laden",
+     "definition": "Deeply nested markup, many scripts or a large class vocabulary."
+    },
+    {
+     "value": "not stated",
+     "definition": "No indication of DOM weight."
+    }
+   ]
+  },
+  {
+   "name": "form label and placeholder copy",
+   "definition": "The text treatment of form field labels and placeholders.",
+   "family": "copy",
+   "values": [
+    {
+     "value": "sentence-case labels with helpful placeholders",
+     "definition": "Labels use sentence case and fields have descriptive placeholder text."
+    },
+    {
+     "value": "uppercase or terse labels without placeholders",
+     "definition": "Labels are uppercase or minimal and placeholders are absent."
+    },
+    {
+     "value": "other",
+     "definition": "Other label treatment."
+    }
+   ]
+  }
+ ],
+ "codes": [
+  {
+   "id": "s62",
+   "attribute": "form control semantics",
+   "value": "native form elements with explicit labels"
+  },
+  {
+   "id": "s62",
+   "attribute": "action element semantics",
+   "value": "real button elements"
+  },
+  {
+   "id": "s233",
+   "attribute": "form control semantics",
+   "value": "native form elements with explicit labels"
+  },
+  {
+   "id": "s233",
+   "attribute": "form label and placeholder copy",
+   "value": "sentence-case labels with helpful placeholders"
+  },
+  {
+   "id": "s381",
+   "attribute": "action element semantics",
+   "value": "real button elements"
+  },
+  {
+   "id": "s381",
+   "attribute": "DOM leanness",
+   "value": "lean DOM with few scripts and small class vocabulary"
+  }
+ ]
+}

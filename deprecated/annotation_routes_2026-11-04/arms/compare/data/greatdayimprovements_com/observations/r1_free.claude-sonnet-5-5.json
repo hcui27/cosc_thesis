@@ -1,0 +1,236 @@
+[
+ {
+  "observation": "A's page is 2228px tall with about 258 words and 104 anchors; B's is 1531px with about 132 words and 14 anchors. B is a condensed version of the page.",
+  "category": "content",
+  "evidence": "A_facts page_height 2228, words 258, anchors 104; B_facts page_height 1531, words 132, anchors 14",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a full horizontal primary navigation bar with six links (Products & Services, Photo Gallery, Home Improvement Tips, About Us, Specials, Customer Service) on a dark-blue band. B has no navigation links at all.",
+  "category": "layout",
+  "evidence": "A_slice_00 blue nav band at y~178; B_facts semantic nav 0 and only 14 anchors; B header holds only logos and a phone number",
+  "which_side": "A"
+ },
+ {
+  "observation": "A places a yellow/orange call-to-action box in the top right. It holds a script-font 'Improve your home today!' headline, a phone number, a blue 'Schedule Your FREE In-Home Design Consultation Today' button and a zip-code finder input. B's header has only a plain text phone number with a small 'Call us today' caption.",
+  "category": "component",
+  "evidence": "A_slice_00 top-right orange panel with zip input; B_slice_00 header right '888-468-0700 / Call us today'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The phone numbers differ between the two pages. A's header and promo use 800-230-8301. B's header shows 888-468-0700, and 800-230-8301 appears only inside the 'Save Big' banner image.",
+  "category": "copy",
+  "evidence": "A_slice_00 header 'Call us at 800-230-8301'; B_slice_00 header '888-468-0700'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's logo is displayed at its natural 215x130 size. B shrinks the same logo file to 126x76 and sets it left in a thin white header with an orange bottom border.",
+  "category": "imagery",
+  "evidence": "A_facts logo rect w215 h130; B_facts logo rect w126 h76 at x216",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages show the same three brand logos centered in the header (GDI, Patio Enclosures, Stanek). B renders them larger (79x48, 93x48, 93x48) than A (72x44, 70x36, 70x36), and A separates them with a thin vertical divider.",
+  "category": "imagery",
+  "evidence": "A_facts logo-gdi-small 72x44; B_facts 79x48; A_slice_00 divider line between logos",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a multi-image carousel track. Five 676x301 slides sit side by side at x=-137, 539, 1215 and so on, extending beyond the viewport, next to a left sidebar. B stacks five 676x301 slides at the same coordinates (x382, y128), so they overlap, and shows one at a time.",
+  "category": "layout",
+  "evidence": "A_facts rotator rects x -137..2567 y202; B_facts all hp-rotator at x382 y128 with image_overlaps 203476 px area",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero sits centered on a flat navy (rgb(15,47,85)) band, framed with a soft drop shadow and rounded corners. It has five dot pagination indicators at the bottom, one filled orange. A's hero runs against a blue gradient background with decorative swirl ornaments and has a single small blue dot indicator.",
+  "category": "decoration",
+  "evidence": "B_slice_00 navy band y103-452 with dots; A_slice_00 blue background with swirl flourishes and a blue dot at x~1118",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a left ribbon-shaped sidebar titled 'Our Products & Services', with an illustrated house image and two bulleted product lists (Patio Enclosures: 6 items; Stanek Windows: 4 items). B has no sidebar and lists no products.",
+  "category": "component",
+  "evidence": "A_slice_00 sidebar x234-538 with bullet lists; B_slice_00 has no such region",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's sidebar has a second yellow 'Book Your FREE No Obligation In-Home Consultation' panel with a blue 'Schedule Now' arrow button, sitting on a banner-style tail shape. B has no equivalent.",
+  "category": "component",
+  "evidence": "A_slice_00 y760-910 yellow panel with Schedule Now button",
+  "which_side": "A"
+ },
+ {
+  "observation": "A is a two-column layout, with a sidebar of about 300px beside a main column and an absolutely positioned bitmap-heavy look. B is a single centered column with a 720px-wide intro paragraph, and its facts show the page uses display:grid once and flex 4 times. A has no grid and 1 flex.",
+  "category": "layout",
+  "evidence": "A_facts display_grid 0, display_flex 1; B_facts display_grid 1, display_flex 4; B_slice_00 centered text",
+  "which_side": "both"
+ },
+ {
+  "observation": "The intro paragraph is set in grey Arial/Helvetica sans-serif, left-aligned, at small size in A. B sets it in Georgia serif, centered, in larger text (about 20px) on a cream background.",
+  "category": "typography",
+  "evidence": "A_facts top_text_colors rgb(77,79,81), fonts Arial 345; B_facts fonts Georgia 41, body_color rgb(43,52,64); B_slice_00 centered serif paragraph",
+  "which_side": "both"
+ },
+ {
+  "observation": "Font stacks differ. A uses Arial (345 elements) plus the webfonts HelveticaNeueW01-55Roma (104) and 75Bold (6). B uses Georgia (41) and Helvetica Neue (25) only.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count in both facts files",
+  "which_side": "both"
+ },
+ {
+  "observation": "The body background is transparent over white and gradient art in A, with page chrome built from images. B sets a warm cream body background (rgb(246,244,239)) with white, navy and orange blocks.",
+  "category": "color",
+  "evidence": "A_facts body_bg rgba(0,0,0,0); B_facts body_bg rgb(246,244,239)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is mid-blue (rgb(74,144,231)), pale blue (209,228,242), dark blue (22,93,159) and yellow-gold, with a beige (244,232,218) panel. B uses navy (15,47,85), royal blue (23,72,127) and a single orange accent (243,154,30).",
+  "category": "color",
+  "evidence": "A_facts top_backgrounds; B_facts top_backgrounds",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'What's new' heading is a blue sans-serif left-aligned line with 'What's new' in bold, in A. B centers it, makes it larger (30.4px, weight 300) and colors 'What's new' bold orange against a navy remainder.",
+  "category": "typography",
+  "evidence": "A_facts h2 21px/400; B_facts h2 30.4px/300; slices show orange 'What's new' in B",
+  "which_side": "both"
+ },
+ {
+  "observation": "The two promo banner images (financing and Save Big) appear in both pages at 284x194. A sets them directly on the page. B wraps each in a white rounded card with a thin border and padding.",
+  "category": "component",
+  "evidence": "A_slice_00 images at y701 bare; B_slice_00 white cards around images; B_facts border_radius_buckets 1_7: 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a 'Home Improvement Resource Center' section with a wood/hammer banner image header and a beige rounded panel. The panel holds a 3x2 grid of blog thumbnail cards, each with a light-blue caption bar and a chevron arrow. B omits this section.",
+  "category": "component",
+  "evidence": "A_facts h2 'HOME IMPROVEMENT RESOURCE CENTER' and six 191x136 images; B_facts has none of those images",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has a 'Get Inspired!' script graphic with a short blurb, followed by two blue glossy image-style buttons, 'Ideas & Tips Blog' and 'View Photo Gallery'. B has no such section or buttons.",
+  "category": "component",
+  "evidence": "A_slice_01 y140-270; A_facts Get-Inspired.jpg",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses handwritten script fonts rendered as images for section titles ('Have questions?', 'Corporate Office', 'Site Map', 'Back to top', 'Our Products & Services'). B keeps only the 'Corporate Office' script image, shown on a white label, and uses live bold text for 'Call Us Today' as an h3.",
+  "category": "typography",
+  "evidence": "A_facts images Have-questions.png, Corporate-Office.png, Site-Map.png; B_facts h3 'Call Us Today at 888-468-0700', only Corporate-Office.png",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is a light-blue gradient area with a speech-bubble icon, a three-column site map of 12 underlined text links, a corporate address, license numbers, and the accreditation logo strip. It ends with a dark-navy radial-glow 'Back to top' with a roof icon, then a 'Sign In' link.",
+  "category": "layout",
+  "evidence": "A_slice_01 footer; A_facts Conversation-Bubbles.png, Site-Map.png; A gradient_backgrounds 2",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's footer is two flat blocks. A royal-blue contact band holds a 'Call Us Today at' heading with the number in orange, hours and an address. A darker navy band below holds the copyright, license text, a white-backed accreditation strip and an orange '↑ Back to top' text link. B has no site map links.",
+  "category": "layout",
+  "evidence": "B_slice_00 y1021-1240 blue band; B_slice_01 navy band; B_facts footer 1, address 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's footer content is centered and its license text is light on navy, while A's license text is small dark grey on light blue, left-aligned in a column beside the logos.",
+  "category": "typography",
+  "evidence": "B_slice_01 centered license text; A_slice_01 y640-720 left column",
+  "which_side": "both"
+ },
+ {
+  "observation": "The accreditation logos are a single strip image in both. B sets it on a white rounded plate, while A shows it on the light-blue background with no plate.",
+  "category": "imagery",
+  "evidence": "A_slice_01 y630-690; B_slice_01 white box y104-160",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no semantic landmarks: header, nav, main, section and footer all count 0. It is a div-based layout, with 148 divs, 101 spans and 82 inline style attributes. B uses header 1, main 1, section 4 and footer 1, address 1, with 13 divs and 1 inline style.",
+  "category": "structure",
+  "evidence": "A_facts semantic all 0, div 148, span 101, inline_style_attrs 82; B_facts semantic header 1 main 1 section 4 footer 1, div 13",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM has many more class uses (371 total, 107 unique), whereas B has 23 total and 15 unique. A loads 7 stylesheets, 13 link tags and 28 scripts. B has a single inline style block, 0 stylesheets and 1 script.",
+  "category": "structure",
+  "evidence": "A_facts classes total 371, stylesheets 7, scripts 28; B_facts classes total 23, stylesheets 0, scripts 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's head is rich with metadata (og:description, og:site_name, og:url, msvalidate, google-site-verification, format-detection). B has only charset, viewport and description. A has no lang attribute while B sets lang='en'.",
+  "category": "structure",
+  "evidence": "A_facts meta_names list and lang ''; B_facts meta_names 3 and lang 'en'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page titles differ. A's is 'Home Improvement & Additions Contractors | Great Day Improvements'. B's is 'Great Day Improvements | Sunrooms, Windows, Doors & More'.",
+  "category": "copy",
+  "evidence": "title in each facts file",
+  "which_side": "both"
+ },
+ {
+  "observation": "Neither page has an h1 (both 0). The heading outlines differ: A has two h2s ('What's new…' and 'HOME IMPROVEMENT RESOURCE CENTER'). B has an h2 and an h3 ('Call Us Today at 888-468-0700').",
+  "category": "structure",
+  "evidence": "heading_outline and h1_count in both",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a cookie-style 'Accept and Close' button (blue rgb(22,93,159), white text, 5px radius), counted as the primary button. B's detected primary button is a round (50%) orange carousel dot with no text, and B has 5 buttons in all.",
+  "category": "component",
+  "evidence": "A_facts primary_button Accept and Close, radius 5px; B_facts primary_button radius 50%, bg rgb(243,154,30), buttons 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has more form controls: 30 input elements and a form (zip finder, hidden fields). B has none.",
+  "category": "component",
+  "evidence": "A_facts form 1, input 30; B_facts no form/input",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses far more transitions (111) and 2 gradient backgrounds. B has 10 transitions and no CSS gradients, relying on flat fills.",
+  "category": "decoration",
+  "evidence": "A_facts transitions 111, gradient_backgrounds 2; B_facts transitions 10, gradient_backgrounds 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has more box-shadows (3) and 5 pill/round radius elements (the dots) alongside 5 small-radius elements. A has 1 box shadow and 12 small-radius elements, with no pill shapes. Most of A's bevels and shadows are baked into images.",
+  "category": "decoration",
+  "evidence": "A_facts box_shadows 1, bucket_pill 0; B_facts box_shadows 3, bucket_pill 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's content width is about 980px (x230-1210), with a narrow main column at x564-1200. B centers a narrower flow of about 720px, with wide empty margins on both sides.",
+  "category": "layout",
+  "evidence": "A_slice_00 content x234-1215; B_slice_00 text x360-1080 and hero x382-1058",
+  "which_side": "both"
+ },
+ {
+  "observation": "Image alt text is reworded in B: 'Great Day Improvements', 'Patio Enclosures' and 'Sunrooms, windows, doors and more', in sentence case, with 0 missing alts. A's alts use title case, such as 'Intro Slide' and 'Commercial Solutions', and 3 images lack alt text.",
+  "category": "copy",
+  "evidence": "A_facts alt_missing 3; B_facts alt_missing 0 and alt strings",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's image filenames use hyphens and drop the rotator numeric suffixes (hp-rotator-intro.jpg versus A's hp-rotator-intro-slide-2.jpg, whats_new_save_big.jpg versus whats-new-save-big.jpg). The image set is smaller: 13 images versus 25.",
+  "category": "imagery",
+  "evidence": "A_facts 25 images; B_facts 13 images with renamed files",
+  "which_side": "both"
+ },
+ {
+  "observation": "A includes 2 emoji characters and a superscript ® (a sup tag). B writes '®' inline in the paragraph text, uses an en-dash in hours ('9am–8pm') and has no emoji.",
+  "category": "copy",
+  "evidence": "A_facts emoji 2, sup 1; B_facts emoji 0; B_slice_00 'Enclosures®' and 'Mon–Thurs: 9am–8pm'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body line-height is 'normal' (default), so text appears tight, while B sets 25.6px (1.6) on a 16px body.",
+  "category": "typography",
+  "evidence": "A_facts body_line_height normal; B_facts body_line_height 25.6px",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A, the hero tagline ('Sunrooms | Windows | Doors | And More') is baked into the hero image at the bottom, over the photo strip. B has the same baked-in text in its slide, with the pagination dots overlapping the bottom of the image.",
+  "category": "imagery",
+  "evidence": "A_slice_00 y462; B_slice_00 y388 with dots at y415",
+  "which_side": "both"
+ }
+]

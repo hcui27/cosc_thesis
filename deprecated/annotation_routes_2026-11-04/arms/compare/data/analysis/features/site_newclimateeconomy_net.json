@@ -1,0 +1,602 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page background color differs: A sets an orange-red body background, B uses white",
+   "evidence": "A body_bg rgb(213, 68, 39); B body_bg rgb(255, 255, 255)",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|00",
+    "newclimateeconomy_net|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "B's palette is built on dark green and teal, which A does not use",
+   "evidence": "B top_backgrounds include rgb(11, 61, 54) and rgb(31, 157, 122); text colors include rgb(15, 122, 94). A's accents are rgb(213, 68, 39) and ",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|01",
+    "newclimateeconomy_net|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "Logo size differs: B renders it at half its natural size, A shows a large logo with tagline",
+   "evidence": "B logo.png rect is 262x34 (natural 524x68); A's logo appears large at the top-left of A_slice_00",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|04",
+    "newclimateeconomy_net|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "Search treatment differs: A shows an underlined 'Search' text field with an icon; B shows a white boxed input with a magnifier icon image",
+   "evidence": "A_slice_00 shows 'Search' above a thin line; B has an icons-search.png image at x=636 inside a white box",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|05",
+    "newclimateeconomy_net|opus|06",
+    "newclimateeconomy_net|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "Nav placement and type differ: A's links are large regular-weight text in their own row under the logo; B's are small bold links aligned right in the top bar",
+   "evidence": "A_slice_00 shows About, News, Publications and Contact Us at about 22px, left-aligned at y≈197; B_slice_00 shows them bold at the right, y≈3",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|03",
+    "newclimateeconomy_net|opus|07",
+    "newclimateeconomy_net|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "The hero image is contained in A but bleeds to the left edge in B",
+   "evidence": "A sb_op-ed_foto.jpg rect x=120, 835x557; B sb-op-ed-foto.jpg rect x=0, 864x576",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|09",
+    "newclimateeconomy_net|sonnet|06",
+    "newclimateeconomy_net|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "A overlays the hero headline on a dark band under the photo; B puts it in a light gray panel to the right of the photo",
+   "evidence": "A_slice_00 shows the date and headline on a dark #1f1f1f-style strip; B_slice_00 shows the headline in the right column on rgb(242,245,243)",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|10"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I7",
+   "text": "Dates are mixed case in A and uppercase letter-spaced small text in B",
+   "evidence": "A shows 'April 14, 2021'; B shows 'APRIL 14, 2021' and 'MARCH 10, 2021'",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|13"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I8",
+   "text": "Section titles are italic serif in A and uppercase letter-spaced bold sans in B",
+   "evidence": "A shows 'Latest News', 'Video' and 'Upcoming Events' in italic Georgia-style type; B headings read 'LATEST NEWS', 'VIDEO' and 'UPCOMING EVEN",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|16",
+    "newclimateeconomy_net|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "'All …' links sit at the bottom of each panel in A, but in the section header row in B with a → arrow",
+   "evidence": "A_slice_00 puts 'All news ›' at the panel bottom; B_slice_00 puts 'All news →' at the right of the LATEST NEWS header rule",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|17"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I10",
+   "text": "B's section headers sit on a thick dark rule; A's panel titles use a thin light divider",
+   "evidence": "B_slice_00 and B_slice_01 show a dark line under each uppercase heading; A_slice_00 shows thin gray lines under the titles",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|18",
+    "newclimateeconomy_net|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "B nests the link text inside its h2 headings",
+   "evidence": "B heading_outline has 'LATEST NEWS\\nAll news →' and 'RECENT TWEETS\\nAll Tweets →'",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|19"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I12",
+   "text": "The lower content is three white or dark cards side by side on orange in A, and stacked full-width bands of alternating white and light gray in B",
+   "evidence": "A_slice_00 shows Video, Upcoming Events and Recent Tweets cards in one row; B shows a VIDEO band on gray, then an Events/Tweets band on whit",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|20",
+    "newclimateeconomy_net|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "The video block is a dark card with a small thumbnail and circular chevron icons beside each list item in A; B uses a large video thumbnail with a separate list",
+   "evidence": "A_slice_00/01 show circular > icons beside the video titles; B thumbnail.png rect is 688x386",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|21",
+    "newclimateeconomy_net|opus|22",
+    "newclimateeconomy_net|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "A's video thumbnail has a play-circle icon and the title overlaid at the top; B overlays the title near the player controls at the bottom",
+   "evidence": "A_slice_00 shows a circle > icon above the title; B_slice_01 shows the bold white title over the control bar",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|23",
+    "newclimateeconomy_net|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "The Upcoming Events panel shows only a 'See Past Events' link in A, while B adds an italic placeholder line",
+   "evidence": "B_slice_01 'No upcoming events at the moment.' is italic serif; A_slice_00 shows only 'See Past Events ›'",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|24",
+    "newclimateeconomy_net|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "'Read More' is styled differently: inline orange text after the A headline, versus a separate underlined green link in B",
+   "evidence": "A_slice_00 shows 'Read More' in orange at the end of the headline; B_slice_00 shows an underlined dark green 'Read More' below the headline",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|11",
+    "newclimateeconomy_net|opus|12",
+    "newclimateeconomy_net|opus|14",
+    "newclimateeconomy_net|opus|15",
+    "newclimateeconomy_net|opus|25",
+    "newclimateeconomy_net|opus|26",
+    "newclimateeconomy_net|sonnet|02",
+    "newclimateeconomy_net|sonnet|07",
+    "newclimateeconomy_net|sonnet|14",
+    "newclimateeconomy_net|sonnet|19",
+    "newclimateeconomy_net|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "Partner logos are displayed larger in B",
+   "evidence": "wri logo 110x38 in A vs 184x64 in B; customlogo 154x34 vs 255x56; folu 154x39 vs 220x56",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|28",
+    "newclimateeconomy_net|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "B gives alt text to two partner logos that A leaves empty",
+   "evidence": "customlogo.png and folu.png alt is '' in A; 'Coalition for Urban Transitions' and 'Food and Land Use Coalition' in B",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|29",
+    "newclimateeconomy_net|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "The footer sits on the orange background with white text in A, and on light gray with a dark underlined Careers link in B",
+   "evidence": "A_slice_01 shows 'Careers ›' in white on orange; B_slice_01 shows an underlined 'Careers' on gray",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|31"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I20",
+   "text": "Social icons are shown alone after 'Connect' in A, and with text labels in B",
+   "evidence": "A_slice_01 shows 'Connect' plus 5 icons; B_slice_01 shows 'YouTube', 'LinkedIn', 'Google+', 'Facebook' and 'Twitter' labels next to the icon",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|08",
+    "newclimateeconomy_net|opus|30",
+    "newclimateeconomy_net|opus|32",
+    "newclimateeconomy_net|opus|33",
+    "newclimateeconomy_net|sonnet|08",
+    "newclimateeconomy_net|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "A has one h1, which is empty; B has no h1",
+   "evidence": "A h1_count 1, text ''; B h1_count 0",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|35",
+    "newclimateeconomy_net|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "Heading hierarchy differs: A makes article titles h2, while B makes them h3 under section h2s",
+   "evidence": "A has 'Commentary: The Climate Change Battle…' as an h2; B has it as an h3. B has 6 h3s vs 2 in A",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|37"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I23",
+   "text": "Primary font differs: proxima-nova in A, the system font stack plus Georgia in B",
+   "evidence": "A fonts: proxima-nova 169; B fonts: -apple-system 53, Georgia 52",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|38",
+    "newclimateeconomy_net|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "Body text metrics differ",
+   "evidence": "A body 16px / 20px line height; B 17px / 26.35px",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|39",
+    "newclimateeconomy_net|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "Base text color is neutral gray in A and green-tinted near-black in B",
+   "evidence": "A body_color rgb(51, 51, 51); B body_color rgb(27, 42, 38)",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|40"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I26",
+   "text": "Layout techniques differ: B uses CSS grid, A uses only flex",
+   "evidence": "display_grid: A 0, B 4; display_flex: A 10, B 18",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|43",
+    "newclimateeconomy_net|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "B is taller",
+   "evidence": "page_height A 1894, B 2188; both 1440 wide",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|45",
+    "newclimateeconomy_net|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "B uses a few small rounded corners; A is fully square-cornered",
+   "evidence": "bucket_1_7: A 0, B 2; A has 180 elements at 0 radius. The Sign Up button and search box in B look slightly rounded",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|46",
+    "newclimateeconomy_net|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "B uses ARIA attributes; A has none",
+   "evidence": "aria_attrs A 0, B 4",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|48",
+    "newclimateeconomy_net|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "B uses social icons and a video thumbnail as img elements, giving it more images",
+   "evidence": "images: A 5, B 12, including icons-youtube.png, icons-twitter.png and thumbnail.png",
+   "side": "generated",
+   "members": [
+    "newclimateeconomy_net|opus|49",
+    "newclimateeconomy_net|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "Word count is the same on both sides",
+   "evidence": "text_stats.words 168 for both; no emoji, em dashes or exclamations",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|opus|50",
+    "newclimateeconomy_net|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "B's h2 is bolder and larger than A's.",
+   "evidence": "A h2 28px weight 500. B h2 30px weight 700.",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|sonnet|13"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "A has a skyline background photo, drop shadows and 2 gradients, including the dark fade on the hero caption. B has no box shadows and 1 gradient, and relies on flat bands and rules.",
+   "evidence": "A box_shadows 1, gradient_backgrounds 2. B box_shadows 0, gradient_backgrounds 1.",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "The markup is much heavier on A. It has 32 scripts, 6 style blocks, 3 stylesheets, 13 inline style attributes and 267 class uses (112 unique). B has no scripts and no stylesheets, 1 style block, 1 inline style and 34 class uses (21 unique).",
+   "evidence": "A counts: scripts 32, stylesheets 3, inline_style_attrs 13. B counts: scripts 0, stylesheets 0, inline_style_attrs 1, classes total 34.",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "A's head carries many legacy and meta tags (x-ua-compatible, MobileOptimized, HandheldFriendly, cleartype, description, generator). B's head has only charset and viewport.",
+   "evidence": "A meta_names has 8 entries. B has 2.",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "The page title differs. A is 'New Climate Economy | Commission on the Economy and Climate |', with a trailing pipe. B is simply 'New Climate Economy'.",
+   "evidence": "A_facts title vs B_facts title.",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "A's content is a fixed-width 1200px column (x120–1320). B's content sits in a narrower 1060px column (x190–1250), except for the hero photo, which bleeds to the edge.",
+   "evidence": "A card edges x120 and x1320. B section rules x190 to x1250, hero image x0.",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|sonnet|30"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I38",
+   "text": "A inserts a 'Sign Up' heading as an h2, while the B Sign Up is a button only. A search label is exposed as an h2 'Search form'.",
+   "evidence": "A heading_outline includes h2 'Search form' and 'Sign Up'. B outline has neither.",
+   "side": "both",
+   "members": [
+    "newclimateeconomy_net|sonnet|37"
+   ],
+   "tier": "A"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Palette is built on dark green and teal accents with a white page background, rather than a saturated orange or red.",
+   "family": "color",
+   "items": [
+    "I0",
+    "I1"
+   ]
+  },
+  {
+   "statement": "Base text color is a green-tinted near-black rather than neutral gray.",
+   "family": "color",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Section headings are uppercase, letter-spaced, bold sans-serif, sitting above a thick dark rule.",
+   "family": "typography",
+   "items": [
+    "I8",
+    "I10",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Dates are set in small uppercase letter-spaced text.",
+   "family": "typography",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Typography pairs a system sans-serif stack with Georgia serif, with roomy body line-height around 1.5.",
+   "family": "typography",
+   "items": [
+    "I23",
+    "I24"
+   ]
+  },
+  {
+   "statement": "Navigation links are small, bold and right-aligned in a compact top bar rather than a separate large row.",
+   "family": "layout",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Hero photo bleeds to the left edge beside a light gray text panel holding the headline, instead of a dark caption overlay.",
+   "family": "layout",
+   "items": [
+    "I5",
+    "I6",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Lower content is stacked as full-width bands alternating white and light gray, not side-by-side cards.",
+   "family": "layout",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Content sits in a narrower centered column with generous margins, using CSS grid alongside flex.",
+   "family": "layout",
+   "items": [
+    "I26",
+    "I37"
+   ]
+  },
+  {
+   "statement": "'See all' links with a → arrow sit at the right of the section header row.",
+   "family": "component",
+   "items": [
+    "I9",
+    "I11"
+   ]
+  },
+  {
+   "statement": "Read-more links are separate underlined green links placed below the headline, not inline.",
+   "family": "component",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Search is a white boxed input with a magnifier icon image, and the signup is a button only.",
+   "family": "component",
+   "items": [
+    "I3",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Video block uses a large thumbnail with the title overlaid near the bottom player controls and a separate list.",
+   "family": "component",
+   "items": [
+    "I13",
+    "I14"
+   ]
+  },
+  {
+   "statement": "Social links pair icons with text labels, and partner logos are shown large with descriptive alt text.",
+   "family": "component",
+   "items": [
+    "I17",
+    "I18",
+    "I20"
+   ]
+  },
+  {
+   "statement": "Footer sits on light gray with dark underlined links.",
+   "family": "component",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Surfaces are flat, with no box shadows, almost no gradients, and only small rounded corners on a few controls.",
+   "family": "decoration",
+   "items": [
+    "I28",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Empty states use an italic serif placeholder line such as a 'no upcoming items' message.",
+   "family": "copy",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Heading hierarchy nests article titles as h3 under section h2s, with no h1 and link text inside h2s.",
+   "family": "semantic_dom",
+   "items": [
+    "I11",
+    "I21",
+    "I22"
+   ]
+  },
+  {
+   "statement": "Markup is minimal: no external scripts or stylesheets, one style block, few classes and a bare head with only charset and viewport.",
+   "family": "semantic_dom",
+   "items": [
+    "I34",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Icons and video thumbnails are real img elements, and some ARIA attributes are used.",
+   "family": "semantic_dom",
+   "items": [
+    "I29",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Page title is a short plain brand name with no trailing separators.",
+   "family": "copy",
+   "items": [
+    "I36"
+   ]
+  }
+ ]
+}

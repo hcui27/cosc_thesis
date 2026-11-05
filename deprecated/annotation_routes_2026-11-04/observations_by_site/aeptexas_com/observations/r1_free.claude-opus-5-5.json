@@ -1,0 +1,232 @@
+[
+ {
+  "observation": "The page is titled 'AEP Texas | Knowledge Is Power' and declares lang='en'. Its head has only two meta tags: charset and viewport.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.title, facts.lang, meta_names: ['charset','viewport']"
+ },
+ {
+  "observation": "The page has a single h1, 'KNOWLEDGE IS POWER.', set in all caps with a trailing period.",
+  "category": "typography",
+  "evidence": "h1_count: 1; h1.text 'KNOWLEDGE IS POWER.'"
+ },
+ {
+  "observation": "The h1 is 72px, weight 700, white, and sits over the hero photograph.",
+  "category": "typography",
+  "evidence": "h1 font_size 72px, font_weight 700, color rgb(255,255,255); slice_00 hero"
+ },
+ {
+  "observation": "Helvetica Neue is the dominant typeface on 121 elements. Arial appears on 6 elements and is also the declared fallback.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Helvetica Neue 121, Arial 6; h1 font_family '\"Helvetica Neue\", Arial, sans-serif'"
+ },
+ {
+  "observation": "Body text is 16px with a line height of 24.8px, a ratio of about 1.55.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 24.8px"
+ },
+ {
+  "observation": "h2 headings are 35.2px bold, about half the size of the h1. They use title case (e.g. 'Bring Home Energy Savings', 'Caring for Our Community').",
+  "category": "typography",
+  "evidence": "h2 font_size 35.2px, weight 700; heading_outline level-2 texts"
+ },
+ {
+  "observation": "The three h3 card titles are all-caps and red, which sets them apart from the dark title-case h2s.",
+  "category": "typography",
+  "evidence": "heading_outline h3: 'GET REVVED UP FOR ELECTRIC CARS', etc.; slice_01 shows red uppercase card titles"
+ },
+ {
+  "observation": "A red, rgb(218,41,28), is the single accent color. It is used for buttons, the alert banner, the outage-alert band, card titles and inline links.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(218,41,28) x8; top_text_colors rgb(218,41,28) x8; primary_button bg"
+ },
+ {
+  "observation": "Body text is a near-black, rgb(29,31,32), rather than pure black. The same color is used for the dark quick-link bar and the footer background.",
+  "category": "color",
+  "evidence": "body_color rgb(29,31,32); top_backgrounds rgb(29,31,32) x2; slices 00 and 02"
+ },
+ {
+  "observation": "Section backgrounds alternate between white and a very light gray, rgb(244,245,245). This separates bands without using divider lines.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(244,245,245) x4; slices 00–02 show alternating white and gray bands"
+ },
+ {
+  "observation": "A thin light-gray utility bar at the very top holds a single underlined 'Español' link, right-aligned.",
+  "category": "layout",
+  "evidence": "slice_00 top strip with 'Español'"
+ },
+ {
+  "observation": "The header puts the logo on the left and five text nav links plus a red 'LOG IN' button on the right.",
+  "category": "layout",
+  "evidence": "slice_00: My Account, Outages, Savings, Community, Contact, LOG IN; tag_counts header 1, nav 1"
+ },
+ {
+  "observation": "The primary button 'LOG IN' has a red background, white uppercase text, a 4px radius and 12px 24px padding.",
+  "category": "component choices",
+  "evidence": "primary_button: bg rgb(218,41,28), color white, radius 4px, padding 12px 24px"
+ },
+ {
+  "observation": "The logo is an SVG file loaded through an img tag, rendered at 74×56px from a natural size of 197×150. It has the alt text 'AEP Texas'.",
+  "category": "imagery handling",
+  "evidence": "images[0] TEXAS-Primary-RGB-RG.svg rect 74x56, alt 'AEP Texas'"
+ },
+ {
+  "observation": "The hero image (phone.jpg) spans the full 1440px width at 440px high. It shows a smiling woman on a phone, darkened or washed out so the white headline stays readable.",
+  "category": "imagery handling",
+  "evidence": "images[1] rect w1440 h440, natural 2000x576; slice_00 hero"
+ },
+ {
+  "observation": "Below the hero headline is a solid red rectangular callout in bold white text about pandemic scams.",
+  "category": "component choices",
+  "evidence": "slice_00: 'Due to the pandemic, scams have been on the rise...' in red box"
+ },
+ {
+  "observation": "Directly under the hero, a dark bar splits into four equal columns of quick links separated by thin vertical dividers.",
+  "category": "layout",
+  "evidence": "slice_00: Electric Choice | Report an outage | Start, Stop, Move service | Rates & Tariffs"
+ },
+ {
+  "observation": "The 'Bring Home Energy Savings' section is center-aligned: a heading, a paragraph of about four lines, and one red CTA, 'Learn about incentives'.",
+  "category": "layout",
+  "evidence": "slice_00 centered section"
+ },
+ {
+  "observation": "Under the CTA, a light-gray tip strip with a red underlined inline link reads 'Choosing LED bulbs can help save you more money. See how'.",
+  "category": "component choices",
+  "evidence": "slice_00 gray strip with red 'See how' link"
+ },
+ {
+  "observation": "A three-column card row shows images (357×223 each) at x=160, 541 and 923, with gaps of about 24px between them.",
+  "category": "layout",
+  "evidence": "images[2..4] rect x 160/541/923, w357 h223, y1129"
+ },
+ {
+  "observation": "The cards are white with a subtle shadow and small rounded corners, set on the light-gray band. Each has an image on top, a red uppercase title and a short description.",
+  "category": "component choices",
+  "evidence": "slice_01 cards; box_shadows 3; border_radius bucket_1_7: 17"
+ },
+ {
+  "observation": "Each card image is wider in its source than its rendered 357×223 box (the electric-car image is 1302×450), so the images are cropped to a uniform aspect ratio.",
+  "category": "imagery handling",
+  "evidence": "images[2] natural 1302x450 vs rect 357x223; images[3] 630x340"
+ },
+ {
+  "observation": "A full-width red band promotes outage alerts. An underlined white heading-style link and description sit on the left; a white button with red text, 'Sign up today', sits on the right.",
+  "category": "component choices",
+  "evidence": "slice_01 red band 'Enroll in outage alerts' / 'Sign up today'"
+ },
+ {
+  "observation": "The white 'Sign up today' button reverses the primary button's colors (white background, red text) so it shows against the red band.",
+  "category": "color",
+  "evidence": "slice_01 white button with red label on red background"
+ },
+ {
+  "observation": "Three image-and-text feature rows alternate sides: meter image left, outages image right, community image left.",
+  "category": "layout",
+  "evidence": "images meter-status x160, outages-faq x744, community x160; slices 01–02"
+ },
+ {
+  "observation": "In each feature row the image is 536×357 and sits in a column at x=160 or x=744. The text column is vertically centered against the image.",
+  "category": "layout",
+  "evidence": "images[5..7] rect w536 h357; slice_01/02 centered text"
+ },
+ {
+  "observation": "Every feature row repeats the same pattern: a bold h2, one or two sentences of body text, and one red rectangular button.",
+  "category": "component choices",
+  "evidence": "'Track your order', 'Get answers', 'How we're helping' buttons in slices 01–02"
+ },
+ {
+  "observation": "Content is held in a container about 1120px wide (x=160 to 1280) on a 1440px page, leaving 160px side margins.",
+  "category": "layout",
+  "evidence": "images x160 and right edges at 1280 (923+357; 744+536); page_width 1440"
+ },
+ {
+  "observation": "Photographs show people and everyday scenes: a woman on a phone, a woman on a laptop, a smiling man, a utility worker at a meter, a suburban house under a dark sky, and children on bikes.",
+  "category": "imagery handling",
+  "evidence": "image filenames and slice content"
+ },
+ {
+  "observation": "The outage section's photo of a house is darkened and moody in tone, unlike the bright photos elsewhere on the page.",
+  "category": "imagery handling",
+  "evidence": "slice_01/02 outages-faq.jpg dark sky"
+ },
+ {
+  "observation": "Every content image has an empty alt attribute (alt=''); only the logo has descriptive alt text. No alt attributes are missing.",
+  "category": "DOM/semantic structure",
+  "evidence": "images[1..7] alt ''; alt_missing 0"
+ },
+ {
+  "observation": "Corners are mostly square: 110 elements have a 0 radius, 17 fall in the 1–7px bucket, and none are 8px or more or pill-shaped.",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets: 0:110, 1_7:17, 8_15:0, 16_plus:0, pill:0"
+ },
+ {
+  "observation": "Decorative effects are minimal: 3 box shadows, 3 transitions, and no gradients, backdrop blur, animations or transforms.",
+  "category": "decoration/effects",
+  "evidence": "effects: box_shadows 3, transitions 3, gradient 0, backdrop_blur 0, animations 0, transforms 0"
+ },
+ {
+  "observation": "The page has no SVG elements and no external stylesheets; all CSS comes from a single inline style block.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts.svgs 0, stylesheets 0; tag_counts style 1"
+ },
+ {
+  "observation": "Semantic landmarks are header, nav, main, footer and 5 sections. There are no article, aside, figure or blockquote elements.",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic: header1, nav1, main1, section5, footer1, article0, aside0, figure0"
+ },
+ {
+  "observation": "The DOM includes a dialog element containing a form with 3 labeled inputs. Its h2 'Welcome back!' suggests a login modal that does not appear in the screenshot.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts dialog1, form1, label3, input3; heading_outline 'Welcome back!'"
+ },
+ {
+  "observation": "Class usage is sparse: 44 class attributes with 24 unique names, none of them Tailwind-style utility classes.",
+  "category": "DOM/semantic structure",
+  "evidence": "classes total 44, unique 24, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Layout uses both CSS grid (5 elements) and flexbox (10 elements).",
+  "category": "layout",
+  "evidence": "layout display_grid 5, display_flex 10"
+ },
+ {
+  "observation": "The footer has a near-black background. It holds a bold white nav row (Safety, Company, Clean Energy, Business) and a 'Need help? Call us.' line with a large bold phone number, 866.223.8508.",
+  "category": "layout",
+  "evidence": "slice_02 footer"
+ },
+ {
+  "observation": "Lower footer links and legal text are small and light gray. Some items are separated by pipe characters, and social links (Twitter, Facebook, YouTube) are plain text rather than icons.",
+  "category": "copy treatment",
+  "evidence": "slice_02; top_text_colors rgb(211,213,213) x15; svgs 0"
+ },
+ {
+  "observation": "The footer copyright reads '© 1996-2021 American Electric Power', and the hero callout refers to the pandemic. Both date the content to around 2021.",
+  "category": "copy treatment",
+  "evidence": "slice_02 footer text; slice_00 red callout"
+ },
+ {
+  "observation": "The copy is brief and conversational, about 298 words in total, with one em dash ('Stay in the loop—get email...') and one exclamation mark ('Welcome to the AEP Family!').",
+  "category": "copy treatment",
+  "evidence": "text_stats words 298, em_dashes 1, exclamations 1; slice_01 text"
+ },
+ {
+  "observation": "Button labels use sentence case (e.g. 'Track your order', 'Get answers'), except the uppercase 'LOG IN' in the header.",
+  "category": "copy treatment",
+  "evidence": "slices 00–02 button labels"
+ },
+ {
+  "observation": "The page has 38 anchors, 3 buttons and only 3 ARIA attributes.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts anchors 38, buttons 3, aria_attrs 3"
+ },
+ {
+  "observation": "The page is 3501px tall at a width of 1440px, with 8 images and 1 script.",
+  "category": "layout",
+  "evidence": "layout page_height 3501, page_width 1440; counts images 8, scripts 1"
+ },
+ {
+  "observation": "Inline style attributes appear on 5 elements.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts inline_style_attrs 5"
+ }
+]

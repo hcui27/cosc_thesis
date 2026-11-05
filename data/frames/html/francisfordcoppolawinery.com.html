@@ -1,0 +1,1026 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"e980938bcf","applicationID":"11171596","transactionName":"ZANSbBFYDERQVExYX11JfW4gFiR0ZnRXX0RBCVxUBktNfl9TXUk=","queueTime":0,"applicationTime":10,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e980938bcf",applicationID:"11171596"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1209.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francis Ford Coppola Winery | Geyserville, CA</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    function getCookie(c_name) {
+        if (document.cookie.length > 0) {
+            c_start = document.cookie.indexOf(c_name + "=");
+            if (c_start != -1) {
+                c_start = c_start + c_name.length + 1;
+                c_end = document.cookie.indexOf(";", c_start);
+                if (c_end == -1) {
+                    c_end = document.cookie.length;
+                }
+                return unescape(document.cookie.substring(c_start, c_end));
+            }
+        }
+        return "";
+    }
+
+    var utm_source = getParameterByName('utm_source');
+    var utm_medium = getParameterByName('utm_medium');
+    var utm_campaign = getParameterByName('utm_campaign');
+
+    if (utm_source !== null && utm_medium !== null && utm_campaign !== null) {
+        var str = `utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}`;
+        var now = new Date();
+        var minutes = 60;
+        now.setTime(now.getTime() + (minutes * 60 * 1000));
+        document.cookie = 'utm=' + str + ';expires=' + now.toUTCString() + ';path=/;secure';
+        console.log(document.cookie)
+    }
+
+    if (window.location.pathname == '/en/store/thanks') {
+        var cookie_data = getCookie('utm');
+        var pairs = cookie_data.split('&');
+        var result = {};
+        pairs.forEach(function (pair) {
+            pair = pair.split('=');
+            result[pair[0]] = decodeURIComponent(pair[1] || '');
+        });
+        var utm_data = JSON.parse(JSON.stringify(result));
+        if (utm_data.hasOwnProperty("utm_source") && utm_data.hasOwnProperty("utm_medium") && utm_data.hasOwnProperty("utm_campaign")) {
+            window.dataLayer.push({
+                'utm_source': utm_data.utm_source,
+                'utm_medium': utm_data.utm_medium,
+                'utm_campaign': utm_data.utm_campaign
+            });
+            document.cookie = 'utm=' + str + ';expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/;secure';
+        }
+    }
+
+</script>
+
+<script type="text/javascript">
+    
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M654L8M');
+</script>
+
+<!-- Facebook Pixel Code -->
+<script type="text/javascript">
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1000869963272040');    // TFC
+    fbq('init', '144735600988355');     // GIA
+    fbq('track', 'PageView');
+</script>
+<!-- End Facebook Pixel Code -->    <meta name="description" content="Francis Ford Coppola Winery in Sonoma County California.  Home of Wine, Food &amp; Adventure.">
+    
+    <meta property="og:url" content="https://www.thefamilycoppola.com/en/ffcw" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Francis Ford Coppola Winery | Geyserville, CA" />
+    <meta property="og:description" content="Francis Ford Coppola Winery in Sonoma County California.  Home of Wine, Food &amp; Adventure." />
+    <meta property="og:image" content="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/social share image/FrancisFordCoppolaWinery.jpg" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:600,600i,800,800i&display=swap" rel="stylesheet" defer>
+    <link rel="stylesheet" href="/Content/TFC2/css/foundation_6.5.3.css">
+    <link rel="stylesheet" href="/Content/TFC2/css/motion-ui._1.2.3.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Content/TFC2/css/flickity_2.2.1.min.css">
+    <link rel="stylesheet" href="/Content/TFC2/css/flickity-fade_1.0.0.css">
+    <link rel="stylesheet" href="/Content/TFC2/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/Content/TFC2/css/tfc2.5-main.css?cb=68">
+    <link rel="stylesheet" href="/Content/TFC2/css/agegate.css?cb=4">
+    <link rel="stylesheet" href="/Content/TFC2/css/info-modal.css?cb=1">
+    <link rel="stylesheet" href="/Content/TFC2/css/cart.css?cb=2">
+    <link rel="stylesheet" href="/content/Styles/loading.css?4">
+    
+</head>
+<body data-agegate2="False" id="fcw-home">
+    
+    <input type="hidden" id="accountId" />
+    
+    <input type="hidden" id="accountEmail" value="" />
+    
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=1000869963272040&ev=PageView&noscript=1" />
+    </noscript>
+    
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=144735600988355&ev=PageView&noscript=1" />
+    </noscript>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M654L8M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+
+
+
+
+<header class="grid-container full heroHeader">
+    <nav class="grid-x">
+    <div class="cell small-12 navBar">
+        <div class="grid-x align-middle">
+            <div class="cell auto">
+                <button class="menuButton hide-for-large">
+                    <img src="/content/img/menu-icon.svg" alt="Menu"><img class="hide" src="/content/img/menu-close-icon.svg" alt="Close" style="filter: invert(0%);">
+                </button>
+            <button class="searchButton">
+                <img src="/content/img/search-icon.svg" alt="Search">
+            </button>
+            </div>
+            
+<div class="cell large-3 show-for-large main-nav-cell">
+    <ul class="dropdown menu align-right" data-dropdown-menu data-closing-time="10">
+        <li>
+            <a href="/en/store" class=" ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="shop">Shop</a>
+            <ul class="menu">
+                <li>
+                    <a href="/en/store/tfc/f/wine">
+                        <span>Wine</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/store/tfc/f/spirits">
+                        <span>Spirits</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/store/tfc/f/food">
+                        <span>Food</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/store/tfc/f/gifts">
+                        <span>Gifts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/store/tfc/f/tabletop-kitchen">
+                        <span>Tabletop<br>& Kitchen</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/store/tfc/f/cinema">
+                        <span>Cinema</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/store/gift-cards">
+                        <span>Gift Cards</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/en/store/subscriptions">
+                        <span>Wine<br>Subscriptions</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/en/wineries" class=" stopwinemenulink ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="wineries">Wineries</a>
+            <ul class="menu">
+                <li>
+                    <a href="/en/ffcw">Francis Ford<br>Coppola Winery</a>
+                </li>
+                <li>
+                    <a href="https://www.ffcwtoo.com/">Francis Ford<br />Coppola Winery Too!</a>
+                </li>
+                <li>
+                    <a href="https://www.domainedebroglie.com/">Domaine de<br>Broglie</a>
+                </li>
+                <li>
+                    <a href="/en/membership">Memberships</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/en/food" class=" ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="food">Food</a>
+            <ul class="menu">
+                <li>
+                    <a href="/en/ffcw/dine-at-the-winery">Rustic, Francis's Favorites</a>
+                </li>
+                <li>
+                    <a href="https://www.cafezoetrope.com/">Cafe Zoetrope</a>
+                </li>
+                <li>
+                    <a href="http://www.mammarellafoods.com/">Mammarella Foods</a>
+                </li>
+                <li><a href="https://www.coppolafeast.com/">Coppola Feast</a></li>
+                <li>
+                    <a href="/en/ffcw/visit/pools-and-cabines#cafe">Pool Cafe</a>
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="cell auto text-center">
+    <a href="/" class="ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="logo">
+            <img class="tfcLogo" src="https://www.thefamilycoppola.com/Content/img/tfc-logo-2019-dark.svg" alt="The Family Coppola">
+    </a>
+</div>
+<div class="cell large-3 show-for-large main-nav-cell">
+    <ul class="dropdown menu" data-dropdown-menu data-closing-time="10">
+        <li>
+            <a href="https://www.thefamilycoppolahideaways.com/" class=" ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="hideaways">Hideaways</a>
+            <ul class="menu">
+                <li>
+                    <a href="https://www.thefamilycoppolahideaways.com/en/blancaneaux-lodge"><strong>Blancaneaux Lodge</strong><br>Belize</a>
+                </li>
+                <li>
+                    <a href="https://www.thefamilycoppolahideaways.com/en/turtle-inn"><strong>Turtle Inn</strong><br>Belize</a>
+                </li>
+                <li>
+                    <a href="https://www.thefamilycoppolahideaways.com/en/turtle-inn/dwellings/coral-caye"><strong>Coral Caye</strong><br>Belize</a>
+                </li>
+                <li>
+                    <a href="https://www.thefamilycoppolahideaways.com/en/la-lancha"><strong>La Lancha</strong><br>Guatemala</a>
+                </li>
+                <li>
+                    <a href="https://www.thefamilycoppolahideaways.com/en/palazzo-margherita"><strong>Palazzo Margherita</strong><br>Italy</a>
+                </li>
+                <li>
+                    <a href="https://www.thefamilycoppolahideaways.com/en/jardin-escondido"><strong>Jardin Escondido</strong><br>Argentina</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/en/cinema" class=" ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="cinema">Cinema</a>
+            <ul class="menu">
+                <li>
+                    <a href="https://www.zoetrope.com/">American Zoetrope</a>
+                </li>
+                <li>
+                    <a href="/en/cinema/thecoppolaclub">The Coppola Club</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/en/adventure" class=" ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="adventure">Adventure</a>
+            <ul class="menu">
+                <li>
+                    <a href="/en/adventure/greatwomenspirits/story">Great Women Spirits</a>
+                </li>
+                <li>
+                    <a href="https://www.all-story.com">Zoetrope: All-Story</a>
+                </li>
+                <li>
+                    <a href="https://www.coppolafeast.com/">Coppola Feast</a>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+<div class="cell auto text-right">
+    <ul class="dropdown menu" id="accountChatDropdown" data-dropdown-menu data-closing-time="10">
+        <li>
+            <a href="/en/account/profile" class="show-for-large accountLink ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="my account">My Account</a>
+                <ul class="menu">
+                    <li>
+                        <a href="/en/account/profile">Sign In</a>
+                    </li>
+                </ul>
+        </li>
+    </ul>
+    <button class="cartButton ga-event" data-ga_event="interaction" data-ga_category="header" data-ga_action="click" data-ga_label="cart">
+        <span>0</span><img src="/Content/img/cart-icon.svg" alt="Cart"><img class="hide" src="/Content/img/cart-icon-selected.svg" alt="Cart">
+    </button>
+</div>
+
+            
+            <div class="cartFlyout grid-x hide">
+                <h4 class="cell small-6">Your Cart</h4>
+                <div class="cell small-6 align-self-middle">&nbsp;</div>
+                <hr>
+                <div class="cell small-6">
+                    <p>Subtotal</p>
+                    <p>Product Discount</p>
+                    <p>Tax</p>
+                    <h5 class="text-left">Total</h5>
+                </div>
+                <div class="cell small-6 text-right">
+                    <p>$0.00</p>
+                    <p>($0.00)</p>
+                    <p>$0.00</p>
+                    <h5 class="text-right">$0.00</h5>
+                </div>
+                <button class="close-button" type="button"><img src="/content/img/close-icon.svg" alt="Close"></button>
+            </div>
+            <div class="cartNotification grid-x hide">
+                <h6 class="cell small-12"><span id="qtext"></span> been added to your cart.</h6>
+                <hr>
+                <div class="cell small-12">
+                    <button class="button cart-notification-view-cart">View Cart</button>
+                    <button class="button cart-notification-checkout">Checkout</button>
+                </div>
+                <button class="close-button cart-notification-close" type="button">
+                    <img src="/content/img/close-icon.svg" alt="Close">
+                </button>
+            </div>
+            <div class="cell small-12 text-center searchBar hide">
+                <form class="clearfix ga-event-search" method="POST" action="/en/store/tfc/search/" id="headerSearch" data-ga_event="header search" data-ga_category="header" data-ga_action="search" data-ga_label="#headerSearch #ffcwSearchBox">
+                    <input type="text" placeholder="Search" id="ffcwSearchBox" name="ffcwSearchBox" class="headerSearch">
+                    <button type="submit" class="button ga-event-search" id="searchSubmit" data-source="as">Submit&nbsp;&nbsp;<i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <ul class="vertical menu accordion-menu cell small-12 hide align-middle" data-accordion-menu>
+        <li class="shopSub">
+            <a href="/en/store">Shop</a>
+            <ul class="menu vertical nested">
+                <li><a class="clearfix" href="/en/store/tfc/f/wine"><span>Wine</span></a></li>
+                <li><a class="clearfix" href="/en/store/tfc/f/food"><span>Food</span></a></li>
+                <li><a class="clearfix" href="/en/store/tfc/f/gifts"><span>Gifts</span></a></li>
+                <li><a class="clearfix" href="/en/store/tfc/f/tabletop-kitchen"><span>Tabletop & Kitchen</span></a></li>
+                <li><a class="clearfix" href="/en/store/tfc/f/cinema"><span>Cinema</span></a></li>
+                <li><a class="clearfix" href="/en/store/gift-cards"><span>Gift Cards</span></a></li>
+                <li><a class="clearfix" href="/en/store/subscriptions"><span>Wine Subscriptions</span></a></li>
+                <li><a class="clearfix" href="/en/store/tfc/f/seasonal"><span>Winter</span></a></li>
+            </ul>
+        </li>
+        <li class="shopSub">
+            <a href="#">Wineries</a>
+            <ul class="menu vertical nested">
+                <li><a href="https://www.francisfordcoppolawinery.com/">Francis Ford Coppola Winery</a></li>
+                <li><a href="https://www.ffcwtoo.com/">Francis Ford Coppola Winery Too!</a></li>
+                <li><a href="https://www.domainedebroglie.com/">Domaine de Broglie</a></li>
+                <li><a href="/en/membership">Memberships</a></li>
+            </ul>
+        </li>
+        <li class="shopSub">
+            <a href="#">Food</a>
+            <ul class="menu vertical nested">
+                <li><a href="https://www.francisfordcoppolawinery.com/en/visit/dine-at-the-winery/rustic">Rustic, Francis's Favorites</a></li>
+                <li><a href="https://www.cafezoetrope.com/">Cafe Zoetrope</a></li>
+                <li><a href="http://www.mammarellafoods.com/">Mammarella Foods</a></li>
+                <li><a href="https://www.coppolafeast.com/">Coppola Feast</a></li>
+                <li><a href="https://www.francisfordcoppolawinery.com/en/visit/dine-at-the-winery/pool-cafe">Pool Cafe</a></li>
+            </ul>
+        </li>
+        <li class="shopSub">
+            <a href="https://www.thefamilycoppolahideaways.com/">Hideaways</a>
+            <ul class="menu vertical nested">
+                <li><a href="https://www.thefamilycoppolahideaways.com/en/blancaneaux-lodge">Blancaneaux Lodge Belize</a></li>
+                <li><a href="https://www.thefamilycoppolahideaways.com/en/turtle-inn">Turtle Inn Belize</a></li>
+                <li><a href="https://www.thefamilycoppolahideaways.com/en/turtle-inn/dwellings/coral-caye">Coral Caye Belize</a></li>
+                <li><a href="https://www.thefamilycoppolahideaways.com/en/la-lancha">La Lancha Guatemala</a></li>
+                <li><a href="https://www.thefamilycoppolahideaways.com/en/palazzo-margherita">Palazzo Margherita Italy</a></li>
+                <li><a href="https://www.thefamilycoppolahideaways.com/en/jardin-escondido">Jardin Escondido Argentina</a></li>
+            </ul>
+        </li>
+        <li class="shopSub">
+            <a href="/en/cinema">Cinema</a>
+            <ul class="menu vertical nested">
+                <li><a href="https://www.zoetrope.com/">American Zoetrope</a></li>
+                <li><a href="/en/cinema/thecoppolaclub">The Coppola Club</a></li>
+            </ul>
+        </li>
+        <li class="shopSub">
+            <a href="#">Adventure</a>
+            <ul class="menu vertical nested">
+                <li><a href="/en/adventure/greatwomenspirits/story">Great Women Spirits</a></li>
+                <li><a href="https://www.all-story.com">Zoetrope: All-Story</a></li>
+                <li><a href="https://www.coppolafeast.com/">Coppola Feast</a></li>
+            </ul>
+        </li>
+
+        <li class="shopSub">
+            <a href="#">My Account</a>
+            <ul class="menu vertical nested">
+                <li><a href="/en/account/profile">Sign In</a></li>
+            </ul>
+        </li>
+        <li class="singleNav">
+            <a href="/en/blog">Blog</a>
+        </li>
+        <li class="singleNav">
+            <a href="/en/careers">Careers</a>
+        </li>
+        <li class="singleNav">
+            <a href="/en/store-locator">Store Locator</a>
+        </li>
+            <li class="singleNav">
+                <a href="/en/ffcw/contact-us">Contact Us</a>
+            </li>
+        <li class="smallSub">
+            <a href="#">Quick Help</a>
+            <ul class="menu vertical nested">
+                <li><a href="/en/store/shipping-and-returns">Shipping and Returns</a></li>
+                <li><a href="/en/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/en/terms-of-use">Terms of Use</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+    <section class="grid-x align-center-middle">
+        <article class="cell">
+            <div class="heroH1">Francis Ford Coppola Winery</div>
+            <div class="button-group align-center">
+                <a href="/en/ffcw/visit" class="button secondaryWhite" target="_blank">Visit Us</a>
+                <a href="https://www.thefamilycoppola.com/en/store/tfcfilterproducts?wineryfilter=ffcw" class="button gold" target="_blank">Shop Wines</a>
+            </div>
+        </article>
+		<div class="heroImage">
+			<div class="heroMask">
+				<img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/placeholder/FFCW-Hero-Photo.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/placeholder/FFCW-Hero-Photo.jpg, large]" alt="Looking over the vineyard at the Francis Ford Coppola winery rooftop. ">
+			</div>
+		</div>
+		<div class="scrollDown show-for-large" data-smooth-scroll>
+			<a href="#our-wines">Scroll<img src="/content/tfc2/img/chevron-icon.svg" alt="Scroll Down"></a>
+		</div>
+	</section>
+</header>
+<main class="grid-container full" id="mainWrapper">
+    <nav class="subNav" data-sticky data-top-anchor="mainWrapper" data-options="stickTo:top; stickyOn:small; marginTop:0;">
+    <div class="navCarousel">
+        <div class="carousel-cell nav01" data-smooth-scroll><a href="#our-wines">Our Wines</a></div>
+        <div class="carousel-cell nav02" data-smooth-scroll><a href="#visit">Visit Us</a></div>
+        <div class="carousel-cell nav03" data-smooth-scroll><a href="#events">Upcoming Events</a></div>
+        <div class="carousel-cell nav04" data-smooth-scroll><a href="#private-events">Private Events</a></div>
+        <div class="carousel-cell nav05" data-smooth-scroll><a href="#join">Join the Family</a></div>
+        <div class="carousel-cell nav06" data-smooth-scroll><a href="#our-vision">Our Vision</a></div>
+    </div>
+</nav>
+    <section class="grid-x grid-padding-x gold quote padded" style="background-image: url(https://thefamilycoppola.blob.core.windows.net/web/fcw/home/icons/francis-etch.png); background-blend-mode: multiply; background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <article class="cell auto text-left">
+        <div class="h1">"When we began to develop the idea for this winery, we wanted it to be a wonderland...a place to celebrate the love of life."</div>
+        <h4 class="quoteByLine">Francis Ford Coppola</h4>
+    </article>
+</section>
+<section class="grid-x calloutBlock bottles" id="our-wines">
+    <img class="decor wineryLogo" src="/content/tfc2/img/FFCW-Logo-Art.png" alt="FFCW Logo">
+    <article class="cell small-10 large-5 large-offset-5 padded" style="z-index: 1">
+        <div class="sectionH2 vertical">Wines</div>
+        <h3>Our award-winning wines are crafted uniquely for every wine occasion, highlighted by our popular Diamond Collection and sparkling Sofia wines, to our winery exclusive and limited production Francis Coppola Reserve wines.</h3>
+        <div class="button-group">
+            <a href="https://www.thefamilycoppola.com/en/store/" class="button secondaryGold" target="_blank">Shop Wines</a>
+            <a href="/en/ffcw/our-wines" class="button" target="_blank">Learn More</a>
+        </div>
+    </article>
+    <div class="spiralFan">
+            <img src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/wines/eleanor-fan-bottle.png" alt="Bottle of Eleanor red wine.">
+            <img src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/wines/dircut-cabsauv-fan-bottle.png" alt="Bottle of Director&#39;s Cut Cabernet Sauvignon.">
+            <img src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/wines/archimedes-fan-bottle.png" alt="Bottle of Archimedes red wine.">
+            <img src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/wines/diazin-fan-bottle.png" alt="Bottle of Diamond Collection Zinfandel.">
+            <img src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/wines/fcr-cab-fan-bottle.png" alt="Bottle of Francis Coppola Reserve Cabernet Sauvignon.">
+            <img src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/wines/sofia-rose-fan-bottle.png" alt="Bottle of Sofia Ros&#233;.">
+    </div>
+</section>
+<section class="grid-x grid-padding-x quote">
+    <article class="cell auto text-center large-text-left">
+        <div class="h1">Enjoy the best things in life - wine, food, music, dancing, games, swimming, and performances of all types.</div>
+    </article>
+</section>
+    <section class="grid-x collageGroup">
+    <article class="cell small-12">
+        <div class="collageLargeC">
+            <div class="imageMask maskCenter">
+                <img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-2-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-2-h.jpg, large]" alt="Group%20of%20three%20women%20toasting%20glasses%20of%20white%20wine.%20" style="transition-delay: 0.2s;">
+            </div>
+        </div>
+        <div class="collageMediumV2">
+            <div class="imageMask maskLeft">
+                <img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-1-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-1-h.jpg, large]" alt="Two%20glasses%20of%20wine%20and%20pizza%20on%20poolside%20table.%20" style="transition-delay: 0s;">
+            </div>
+        </div>
+    </article>
+</section>
+<section class="grid-x calloutBlock flipped deepBlueGreen" id="visit">
+    <article class="cell small-12 large-4 large-offset-1 small-order-2 large-order-1 padded">
+        <h3>Join us for Wine, Food, and Adventure! Featuring a variety of tasting experiences, culinary delights, cinematic history, and entertainment for the whole family.</h3>
+        <a href="/en/ffcw/visit" class="button">Learn More</a>
+        <div class="contactBlock lightGold">
+            <h3>Contact Us</h3>
+            <div class="media-object">
+                <div class="media-object-section">
+                    <img class="mapMarker" src="/content/tfc2/img/Map-Marker.svg" alt="Map Marker Icon">
+                </div>
+                <div class="media-object-section"><p>Address: 300 Via Archimedes<br />
+Geyserville, CA 95441<br />
+(707) 857-1471</p></div>
+            </div>
+            <p><a class="button secondaryWhite" href="/en/ffcw/contact-us">Hours of Operation</a><br />
+&nbsp;</p>
+<!--
+<p>Tasting Room | Open Daily: 12pm &ndash; 5pm<br />
+Rustic | Open Daily: 12pm &ndash; 7pm</p> -->
+        </div>
+    </article>
+    <article class="cell small-12 large-6 large-offset-1 small-order-1 large-order-2 text-right">
+        <div class="sectionH2 vertical">Visit</div>
+        <div class="mediaLarge negMargin">
+            <div class="imageMask maskRight">
+                <img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-3-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-3-h.jpg, large]" alt="Pool%20fountain%20with%20pavilion%20and%20flags%20in%20background.">
+            </div>
+        </div>
+    </article>
+</section>
+<section class="grid-x grid-padding-x padded cardSet deepBlueGreen">
+        <article class="cell small-12 large-4">
+            <div class="cardBackground" data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20amenities/FFCW-Visit-Rollover-Tasting-1-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20amenities/FFCW-Visit-Rollover-Tasting-1-h.jpg, large]"></div>
+            <div class="cardNumber">01</div>
+            <h2 class="cartTitle">Tasting Experiences</h2>
+            <p class="cardText">With more than forty wines produced on-site in our state-of-the-art winemaking facility, a restaurant serving up cuisine made to pair perfectly with our wines, all on a property surrounded by sustainably farmed vineyards, we are proud to offer a variety of Wine Experiences hosted by our knowledgeable and entertaining hospitality team.</p>
+            <img class="float-right" alt="Illustration of a wine glass and bottle of wine." src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/icons/wine-glass-bottle-white.png">
+            <a href="/en/ffcw/visit/tastings-and-experiences" class="button gold" target="_blank">Learn More</a>
+        </article>
+        <article class="cell small-12 large-4">
+            <div class="cardBackground" data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20amenities/FFCW-Visit-Rollover-Pool-2-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20amenities/FFCW-Visit-Rollover-Pool-2-h.jpg, large]"></div>
+            <div class="cardNumber">02</div>
+            <h2 class="cartTitle">Pools &amp; Park</h2>
+            <p class="cardText">Situated in the center of the park area at the winery, two swimming pools totaling 3,600 square feet are surrounded by chaise lounge chairs, which have become a welcome addition for children and adults on warm Alexander Valley days.</p>
+            <img class="float-right" alt="Illustration of umbrella" src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/icons/umbrella-white.png">
+            <a href="/en/ffcw/visit/pools-and-cabines" class="button gold" target="_blank">Learn More</a>
+        </article>
+        <article class="cell small-12 large-4">
+            <div class="cardBackground" data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20amenities/FFCW-Visit-Rollover-Tasting-3-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20amenities/FFCW-Visit-Rollover-Tasting-3-h.jpg, large]"></div>
+            <div class="cardNumber">03</div>
+            <h2 class="cartTitle">Rustic Restaurant</h2>
+            <p class="cardText">Francis Ford Coppola shares his personal pantheon of recipes at the winery’s full-service restaurant. Set in a Sonoma County-casual atmosphere, the menu embraces international as well as traditional Italian dishes.</p>
+            <img class="float-right" alt="Illustration of a slice of pizza." src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/icons/pizza-white.png">
+            <a href="/en/ffcw/dine-at-the-winery" class="button gold" target="_blank">Learn More</a>
+        </article>
+</section>
+<section class="grid-x collageGroup">
+    <article class="cell small-12">
+        <img class="decor grapes" src="/content/tfc2/img/Grapes.png" alt="Grapes Art">
+        <div class="collageLargeH">
+            <div class="imageMask maskLeft">
+                <img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-4-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-4-h.jpg, large]" alt="Woman,%20man,%20and%20child%20in%20poolside%20lounge%20chairs." style="transition-delay: 0.2s;">
+            </div>
+        </div>
+        <div class="collageMediumH">
+            <div class="imageMask maskRight">
+                <img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-5-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/visit%20us%20gallery/FFCW-VisitUs-Gallery-5-h.jpg, large]" alt="Two%20boys%20jumping%20into%20the%20pool%20with%20lifeguard%20in%20background." style="transition-delay: 0s;">
+            </div>
+        </div>
+    </article>
+</section>
+    
+<section class="grid-x grid-padding-x padded featureBlock marginTop" id="events">
+    <article class="cell auto text-center gold verticalPadding" style="background-image: url(https://thefamilycoppola.blob.core.windows.net/web/fcw/home/events/FFCW-Events-Photo.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="sectionH1">Events</div>
+        <div class="grid-x featureEventBlock">
+            <div class="cell small-12 large-9 small-order-2 large-order-1 eventBlockContent text-left">
+                    <div class="preheader" style="margin-top: 0;">Sold Out</div>
+                <h4>Mindi Abair Performance</h4>
+                <p>Two-time Grammy-nominated saxophonist and vocalist Mindi Abair will perform an acoustic set in the Pavilion on June 9th. Mindi will be joined on stage by Jazz Trumpet Great Rick Braun, and guitarist Randy &lsquo;Dynamite&rsquo; Jacobs for a night of jazz, blues, and more.</p>
+                <div class="button-group">
+                    <a href="/en/ffcw/visit/winery-events#mindi-abair-performance" class="button secondaryGold event-click" data-id="0" data-open="eventModalGallery">Learn More</a>
+                </div>
+            </div>
+
+            <div class="cell small-12 large-3 small-order-1 large-order-2 eventBlockDate deepBlueGreen flex-container align-center-middle flex-dir-column">
+                <div class="eventMonth">June</div>
+                <div class="eventDay">09</div>
+            </div>
+        </div>
+    </article>
+
+    <article class="cell small-12 text-center">
+        <div class="grid-x grid-margin-x eventBlocks align-center">
+                <div class="cell small-12 large-4 eventBlock deepBlueGreen events-eventBlock event-click flex-container flex-dir-column" style="transition-delay: 0.2s;s" data-url="/en/ffcw/visit/winery-events#wine-family-virtual-tasting">
+                            <div class="preheader" style="margin-top: 0;">Members Only</div>
+                    <h4 class="text-left">Wine Family Virtual Tasting</h4>
+                    <p class="text-left">Enjoy a virtual tasting with Director of Winemaking, Andrea Card!</p>
+                    <div class="text-left eventDate">
+June 24, 2021                    </div>
+            </div>
+                <div class="cell small-12 large-4 eventBlock deepBlueGreen events-eventBlock event-click flex-container flex-dir-column" style="transition-delay: 0.4s;s" data-url="/en/ffcw/visit/winery-events#wine-family-wednesdays">
+                            <div class="preheader" style="margin-top: 0;">Members Only</div>
+                    <h4 class="text-left">Wine Family Wednesdays</h4>
+                    <p class="text-left">Every Wednesday at RUSTIC is Wine Family Wednesday!</p>
+                    <div class="text-left eventDate">
+September 27, 2017                    </div>
+            </div>
+            <div class="cell small-12">
+                <a href="/en/ffcw/visit/winery-events" class="button secondaryGold" target="_blank">See All Events</a>
+            </div>
+        </div>
+    </article>
+    
+
+</section>
+    <section class="grid-x grid-padding-x quote" id="private-events">
+    <article class="cell small-10 text-center large-text-left">
+        <img class="decor leaf" src="/content/tfc2/img/Leaf.svg" alt="Leaf art">
+        <div class="sectionH2 vertical">Private</div>
+        <div class="h1">Let our team create a memorable experience that will leave your guests talking about it for years to come.</div>
+    </article>
+</section>
+<section class="grid-x calloutBlock flipped">
+    <img class="decor reserve" src="/content/tfc2/img/Reserve-Art.png" alt="Reserve Art">
+    <article class="cell small-12 small-order-1 large-order-1">
+        <div class="mediaMedium">
+            <div class="imageMask maskLeft">
+                <img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/private%20events%20gallery/FFCW-PrivateEvents-1-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/private%20events%20gallery/FFCW-PrivateEvents-1-h.jpg, large]" alt="People salsa dancing. ">
+            </div>
+        </div>
+    </article>
+    <article class="cell small-10 large-4 large-offset-1 small-order-3 large-order-2 padded">
+        <h3>We offer all-inclusive planning from start to finish, accommodating groups from 25-300 guests.</h3>
+        <a href="/en/ffcw/visit/private-events" class="button" target="_blank">Learn More</a>
+    </article>
+    <article class="cell small-12 large-6 large-offset-1 small-order-2 large-order-3 text-right">
+        <div class="sectionH2 vertical">Events</div>
+        <div class="mediumDiamond">
+            <div class="imageMask maskCenter">
+                <img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/private%20events%20gallery/FFCW-PrivateEvents-2-m.png, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/private%20events%20gallery/FFCW-PrivateEvents-2-h.png, large]" alt="Close up of fig and arugula salad. " style="transition-delay: 0.4s;">
+            </div>
+        </div>
+        <div class="mediaLarge">
+            <div class="imageMask maskRight">
+                <img data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/private%20events%20gallery/FFCW-PrivateEvents-3-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/private%20events%20gallery/FFCW-PrivateEvents-3-h.jpg, large]" alt="Long private event table set under canopy of colorful lanterns." style="transition-delay: 0;">
+            </div>
+        </div>
+    </article>
+</section>
+    <section class="grid-x padded featureBlock withCards" id="join">
+    <div class="cell auto blue" style="background-image: url(https://thefamilycoppola.blob.core.windows.net/web/fcw/home/join%20wine%20family/FFCW-Join-Photo.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <div class="grid-x">
+            <article class="cell auto text-center verticalPadding">
+                <div class="sectionH1">Join the Family</div>
+                <h3>Celebrate the pleasures of wine, food, and adventure!</h3>
+                <div class="button-group align-center">
+                    <a href="/en/Account/Signin?redirect=/en/ffcw/membership/join-our-wine-family" class="button secondaryWhite" target="_blank">Sign In</a>
+                    <a href="/en/ffcw/membership/join-our-wine-family" class="button gold" target="_blank">Learn More</a>
+                </div>
+            </article>
+        </div>
+        <div class="grid-x cardSet">
+                <article class="cell small-12 large-4">
+                    <div class="cardBackground" data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/join%20wine%20family/FFCW-Join-Rollover3-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/join%20wine%20family/FFCW-Join-Rollover3-h.jpg, large]"></div>
+                    <div class="cardNumber">01</div>
+                    <h2 class="cartTitle">First Access</h2>
+                    <p class="cardText">Receive exclusive access to new wines and pool cabine bookings before they are released to the general public.</p>
+                    <img class="float-right" alt="Illustration of red carpet." src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/icons/redcarpet-white.png">
+                    <a href="/en/ffcw/membership/join-our-wine-family" class="button gold" target="_blank">Learn More</a>
+                </article>
+                <article class="cell small-12 large-4">
+                    <div class="cardBackground" data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/join%20wine%20family/FFCW-Join-Rollover1-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/join%20wine%20family/FFCW-Join-Rollover1-h.jpg, large]"></div>
+                    <div class="cardNumber">02</div>
+                    <h2 class="cartTitle">Exclusive Events</h2>
+                    <p class="cardText">Enjoy member exclusive dinners, celebrations, and activities throughout the year.</p>
+                    <img class="float-right" alt="Illustration of champagne glasses." src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/icons/glasses-white.png">
+                    <a href="/en/ffcw/visit/winery-events" class="button gold" target="_blank">Learn More</a>
+                </article>
+                <article class="cell small-12 large-4">
+                    <div class="cardBackground" data-interchange="[https://thefamilycoppola.blob.core.windows.net/web/fcw/home/join%20wine%20family/FFCW-Join-Rollover2-m.jpg, small], [https://thefamilycoppola.blob.core.windows.net/web/fcw/home/join%20wine%20family/FFCW-Join-Rollover2-h.jpg, large]"></div>
+                    <div class="cardNumber">03</div>
+                    <h2 class="cartTitle">Pricing Perks</h2>
+                    <p class="cardText">25% discount on wine at any of The Family Coppola wineries, and online. 10% off food at our restaurant Rustic and our Pool Cafe at the winery, and Cafe Zoetrope in San Francisco (up to 4 people).</p>
+                    <img class="float-right" alt="Illustration of crate of wine." src="https://thefamilycoppola.blob.core.windows.net/web/fcw/home/icons/winecrate-white.png">
+                    <a href="/en/ffcw/membership/join-our-wine-family#benefits" class="button gold" target="_blank">Learn More</a>
+                </article>
+        </div>
+    </div>
+</section>
+<section class="grid-x grid-padding-x padded featureBlock cardSet"></section>
+    <section class="grid-x align-center-middle heroBlock darkBlue" style="background-image: url(https://thefamilycoppola.blob.core.windows.net/web/fcw/home/vision/Our-Vision-hero.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;" id="our-vision">
+    <article class="cell small-10 large-6 text-center gold">
+        <h2>Our Vision</h2>
+        <p>With a deep commitment to quality, authenticity, and pleasure, Francis Ford Coppola Winery is a unique destination to celebrate the best things in life.</p>
+    <a href="/en/ffcw/our-story" class="button" target="_blank">Our Story</a>
+    </article>
+</section>
+</main>
+
+    <footer class="grid-container full" data-saveditems="">
+    <div class="reveal" id="ageGate2" data-reveal data-close-on-click="false">
+        <h2>Privacy</h2>
+        <p>Your privacy is very important to us. Please review our <a href="https://www.coppolaprivacy.com/privacy-policy" target="_blank">privacy policy</a> for more information.</p>
+        <h2>Age Verification</h2>
+        <p>In order to view the requested page you must be at least 21 years of age.</p>
+        <button class="button" id="agok" data-close>I'm at least 21 years of age</button>
+    </div>
+<nav class="grid-x">
+<div class="cell medium-12 large-6 hide-for-small-only">
+    <div class="grid-x">
+        <div class="cell medium-4">
+            <ul class="menu cell small-12">
+                <li>
+                    <a href="/en/wine" class="ga-event" data-ga_event="interaction" data-ga_category="footer" data-ga_action="click" data-ga_label="wineries">Wineries</a>
+                    <ul class="menu vertical">
+                        <li><a href="/en/ffcw">Francis Ford<br>Coppola Winery</a></li>
+                        <li><a href="https://www.ffcwtoo.com/">Francis Ford<br />Coppola Winery Too!</a></li>
+                        <li><a href="https://www.domainedebroglie.com/">Domaine de<br>Broglie</a></li>
+                        <li><a href="/en/membership">Memberships</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/en/food" class="ga-event" data-ga_event="interaction" data-ga_category="footer" data-ga_action="click" data-ga_label="food">Food</a>
+                    <ul class="menu vertical">
+                        <li>
+                            <a href="/en/ffcw/dine-at-the-winery">Rustic, Francis's Favorite</a>
+                        </li>
+                        <li>
+                            <a href="/en/ffcw/visit/pools-and-cabines#cafe">Pool Cafe</a>
+                        </li>
+                        <li>
+                            <a href="https://www.cafezoetrope.com/">Cafe Zoetrope</a>
+                        </li>
+                        <li>
+                            <a href="http://www.mammarellafoods.com/">Mammarella Foods</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="cell medium-4">
+            <ul class="menu cell small-12">
+                <li>
+                    <a href="https://www.thefamilycoppolahideaways.com/" class="ga-event" data-ga_event="interaction" data-ga_category="footer" data-ga_action="click" data-ga_label="hideaways">Hideaways</a>
+                    <ul class="menu vertical">
+                        <li>
+                            <a href="https://www.thefamilycoppolahideaways.com/en/blancaneaux-lodge"><strong>Blancaneaux Lodge</strong><br>Belize</a>
+                        </li>
+                        <li>
+                            <a href="https://www.thefamilycoppolahideaways.com/en/turtle-inn"><strong>Turtle Inn</strong><br>Belize</a>
+                        </li>
+                        <li>
+                            <a href="https://www.thefamilycoppolahideaways.com/en/turtle-inn/dwellings/coral-caye"><strong>Coral Caye</strong><br>Belize</a>
+                        </li>
+                        <li>
+                            <a href="https://www.thefamilycoppolahideaways.com/en/la-lancha"><strong>La Lancha</strong><br>Guatemala</a>
+                        </li>
+                        <li>
+                            <a href="https://www.thefamilycoppolahideaways.com/en/palazzo-margherita"><strong>Palazzo Margherita</strong><br>Italy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.thefamilycoppolahideaways.com/en/jardin-escondido"><strong>Jardin Escondido</strong><br>Argentina</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/en/cinema" class="ga-event" data-ga_event="interaction" data-ga_category="footer" data-ga_action="click" data-ga_label="cinema">Cinema</a>
+                    <ul class="menu vertical">
+                        <li>
+                            <a href="https://www.zoetrope.com/">American Zoetrope</a>
+                        </li>
+                        <li>
+                            <a href="/en/cinema/thecoppolaclub">The Coppola Club</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="cell medium-4">
+            <ul class="menu cell small-12">
+                <li class="shopSub">
+                    <a href="/en/store" class="ga-event" data-ga_event="interaction" data-ga_category="footer" data-ga_action="click" data-ga_label="ship">Shop</a>
+                    <ul class="menu vertical">
+                        <li><a href="/en/store/tfc/f/wine">Wine</a></li>
+                        <li><a href="/en/store/tfc/f/spirits">Spirits</a></li>
+                        <li><a href="/en/store/tfc/f/food">Food</a></li>
+                        <li><a href="/en/store/tfc/f/gifts">Gifts</a></li>
+                        <li><a href="/en/store/tfc/f/tabletop-kitchen">Tabletop & Kitchen</a></li>
+                        <li><a href="/en/store/tfc/f/cinema">Cinema</a></li>
+                        <li><a href="/en/store/gift-cards">Gift Cards</a></li>
+                        <li><a href="/en/store/subscriptions">Wine Subscriptions</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<ul class="vertical menu accordion-menu cell small-12 show-for-small-only" data-accordion-menu>
+    <li>
+        <a href="#">Wineries</a>
+        <ul class="menu vertical nested">
+            <li><a href="/en/ffcw">Francis Ford<br>Coppola Winery</a></li>
+            <li><a href="https://www.ffcwtoo.com/">Francis Ford<br />Coppola Winery Too!</a></li>
+            <li><a href="https://www.domainedebroglie.com/">Domaine de<br>Broglie</a></li>
+            <li><a href="/en/membership">Memberships</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Food</a>
+        <ul class="menu vertical nested">
+            <li>
+                <a href="/en/ffcw/dine-at-the-winery">Rustic, Francis's Favorite</a>
+            </li>
+            <li>
+                <a href="/en/ffcw/visit/pools-and-cabines#cafe">Pool Cafe</a>
+            </li>
+            <li>
+                <a href="https://www.cafezoetrope.com/">Cafe Zoetrope</a>
+            </li>
+            <li>
+                <a href="http://www.mammarellafoods.com/">Mammarella Foods</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://www.thefamilycoppolahideaways.com/">Hideaways</a>
+        <ul class="menu vertical nested">
+            <li>
+                <a href="https://www.thefamilycoppolahideaways.com/en/blancaneaux-lodge"><strong>Blancaneaux Lodge</strong><br>Belize</a>
+            </li>
+            <li>
+                <a href="https://www.thefamilycoppolahideaways.com/en/turtle-inn"><strong>Turtle Inn</strong><br>Belize</a>
+            </li>
+            <li>
+                <a href="https://www.thefamilycoppolahideaways.com/en/turtle-inn/dwellings/coral-caye"><strong>Coral Caye</strong><br>Belize</a>
+            </li>
+            <li>
+                <a href="https://www.thefamilycoppolahideaways.com/en/la-lancha"><strong>La Lancha</strong><br>Guatemala</a>
+            </li>
+            <li>
+                <a href="https://www.thefamilycoppolahideaways.com/en/palazzo-margherita"><strong>Palazzo Margherita</strong><br>Italy</a>
+            </li>
+            <li>
+                <a href="https://www.thefamilycoppolahideaways.com/en/jardin-escondido"><strong>Jardin Escondido</strong><br>Argentina</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Cinema</a>
+        <ul class="menu vertical nested">
+            <li>
+                <a href="https://www.zoetrope.com/">American Zoetrope</a>
+            </li>
+            <li>
+                <a href="/en/cinema/thecoppolaclub">The Coppola Club</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://www.thefamilycoppola.com/en/adventure">Adventure</a>
+        <ul class="menu vertical nested">
+            <li><a href="https://www.all-story.com">Zoetrope: All-Story</a></li>
+            <li><a href="/en/adventure/greatwomenspirits/story">Great Women Spirits</a></li>
+            <li><a href="https://www.coppolafeast.com/">Coppola Feast</a></li>
+        </ul>
+    </li>
+    <li class="shopSub">
+        <a href="#">Shop</a>
+        <ul class="menu vertical nested">
+            <li><a href="/en/store/tfc/f/wine">Wine</a></li>
+            <li><a href="/en/store/tfc/f/food">Food</a></li>
+            <li><a href="/en/store/tfc/f/gifts">Gifts</a></li>
+            <li><a href="/en/store/tfc/f/tabletop-kitchen">Tabletop & Kitchen</a></li>
+            <li><a href="/en/store/tfc/f/cinema">Cinema</a></li>
+            <li><a href="/en/store/gift-cards">Gift Cards</a></li>
+            <li><a href="/en/store/subscriptions">Wine Subscriptions</a></li>
+        </ul>
+    </li>
+    <li class="singleNav"><a href="/en/ffcw/trade-and-media">Trade &amp; Media</a></li>
+    <li class="singleNav"><a href="/en/careers">Careers</a></li>
+    <li class="singleNav"><a href="/en/store-locator">Wine Locator</a></li>
+    <li class="singleNav"><a href="/en/account">My Account</a></li>
+    <li class="singleNav"><a href="/en/ffcw/contact-us">Contact Us</a></li>
+</ul>
+<div class="cell medium-12 large-6">
+    <div class="grid-x">
+        <div class="cell medium-4 hide-for-small-only">
+            <ul class="menu vertical cell small-12">
+                <li>
+                    <a href="https://www.thefamilycoppola.com/en/adventure">Adventure</a>
+                    <ul class="menu vertical">
+                        <li><a href="https://www.all-story.com">Zoetrope: All-Story</a></li>
+                        <li><a href="/en/adventure/greatwomenspirits/story">Great Women Spirits</a></li>
+                        <li><a href="https://www.coppolafeast.com/">Coppola Feast</a></li>
+                    </ul>
+                </li>
+                <li><a href="/en/ffcw/trade-and-media">Trade &amp; Media</a></li>
+                <li><a href="/en/careers">Careers</a></li>
+                <li><a href="/en/store-locator">Store Locator</a></li>
+                <li><a href="/en/account">My Account</a></li>
+                <li><a href="/en/ffcw/contact-us">Contact Us</a></li>
+                
+            </ul>
+        </div>
+        <div class="cell medium-8">
+            <a href=""><img src="/Content/img/tfc-logo-2019-dark.svg" alt="The Family Coppola"></a>
+            <h6><strong>Email Subscription</strong></h6>
+            <label for="emailaddress"><p>Enter your email to be subscribed to our weekly newsletter for special offers and exclusive discounts.</p></label>
+            <form class="clearfix">
+                <input name="__RequestVerificationToken" type="hidden" value="kLUog8PcNxai_i5Di2ObRK5xC8EdB7CxydUp1G5mzWNIFBOtvXVvmdBmNWsKv2yzKgkM0Fra1QYLIOmv0w2bBdvhd4UrriX-UL_492CdYtE1" />
+                <input type="text" placeholder="Email" id="emailaddress">
+                <button class="button goldButton" type="submit" id="signup" data-source="footer">Submit</button>
+            </form>
+            <div class="socialLinks">
+                <a href="https://www.facebook.com/coppolawine" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/coppolawine" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://www.youtube.com/coppolawine" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/coppolawine" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.yelp.com/biz/francis-ford-coppola-winery-geyserville" target="_blank"><i class="fab fa-yelp"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</nav>
+<div class="grid-x">
+    <div class="cell small-12 large-7">
+        <p>&copy; 2007-2021 The Family Coppola &#8212; All trademarks used herein are exclusive property of The Family Coppola and/or it's affiliates.</p>
+    </div>
+    <div class="cell small-12 large-5">
+        <a href="/en/store/shipping-and-returns">Shipping & Returns</a><a href="/en/supply-chain-responsibility">Supply Chain Responsibility</a><a href="https://www.coppolaprivacy.com/privacy-policy" target="_blank">Privacy Policy</a><a href="/en/terms-of-use">Terms of Use</a>
+    </div>
+</div>
+</footer>
+
+
+    <div id="JsonCart"></div>
+    
+<script type="text/javascript">
+!function (o, t) { var e = window.bronto = function () { "string" == typeof arguments[0] && e.q.push(arguments), e.go && e.go() }; e.q = e.q || []; var n = o.createElement(t), s = o.getElementsByTagName(t)[0]; s.parentNode.insertBefore(n, s), n.async = !0, n.onload = e, n.src = "https://snip.bronto.com/v2/sites/eyJ0eXBlIjoic2l0ZWhhc2giLCJpZCI6IjExNGU5ZjgxZmE0MmQ0NmIzOTNhYmU1MjQxN2VhMjA2NWEwNmYzNDc4ZjIyZTVlOGI4ZTEzZWJlMzQ0OTNmNTYifQ==/assets/bundle.js" }(document, "script");
+</script>
+<script data-name="__br_tm" type="text/javascript">
+    var _bsw = _bsw || [];
+    _bsw.push(['_bswId', '279bf5af797e7ccdb2a85fee79d034af4639d80ac445762b3ad581e5331c681a']);
+    (function () {
+        var bsw = document.createElement('script'); bsw.type = 'text/javascript'; bsw.async = true;
+        bsw.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'js.bronto.com/c/9o7fnbeqlmct10qhsr8ielbvdfyr6szelj00lrtgyljasbcfor/279bf5af797e7ccdb2a85fee79d034af4639d80ac445762b3ad581e5331c681a/s/b.min.js';
+        var t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(bsw, t);
+    })();
+</script>
+    <script src="/Content/TFC2/js/foundation_6.5.3.min.js"></script>
+    <script src="/Content/TFC2/js/flickity.pkgd_2.2.1.min.js"></script>
+    <script src="/Content/TFC2/js/flickity-fade_1.0.0.js"></script>
+    <script src="/Content/TFC2/js/tfc2.5-main.js?cb=53"></script>
+    <script src="/Content/Javascript/Signup3.js?cb=1"></script>
+    <script src="/Content/Javascript/analytics.js?cb=4"></script>
+
+    <div class="reveal" id="loadingModal" data-reveal data-close-on-click="false">
+        <h2>Loading</h2>
+        <div class="loading"></div>
+    </div>
+    <div class="reveal" id="infoModal" data-reveal>
+        <h2></h2>
+        <div class="body"></div>
+        <button class="close-button HideModal" aria-label="Close modal" type="button"><img src="/Content/img/close-icon.svg" alt="Close"></button>
+    </div>
+    
+    <script type="text/javascript">
+        $(document).foundation();
+        $('.flickityCarousel').flickity({
+            // options
+            cellAlign: 'left',
+            contain: true,
+            imagesLoaded: true
+        });
+
+        $('.navCarousel').flickity({
+            // options
+            draggable: true,
+            freeScroll: true,
+            pageDots: false,
+            cellAlign: 'center',
+            contain: true,
+            prevNextButtons: false,
+            initialIndex: '.is-active',
+            prevNextButtons: true,
+            groupCells: '100%'
+        });
+
+        $('.eventCarousel').flickity({
+            // options
+            draggable: false,
+            pageDots: false,
+            cellAlign: 'center',
+            contain: true,
+            imagesLoaded: true,
+            prevNextButtons: true
+        });
+
+        $(document).on('click', '.event-click', function (e) {
+            if ($(this).attr('href') == "#") {
+                e.preventDefault();
+            }
+            $('.eventCarousel').flickity('select', parseInt($(this).data('id')));
+        })
+
+        var tfc = new TFC();
+        tfc.addNavItemItems(['#our-wines', '#visit', '#events', '#private-events', '#join', '#our-vision']);
+        tfc.init();
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+[
+ {
+  "observation": "Page title is 'Grant Aviation — Alaskan-owned and operated', with lang='en' and a meta description. The page has no JSON-LD, one inline style block, and no external stylesheets.",
+  "category": "dom-structure",
+  "evidence": "facts.json: title, lang 'en', meta_names include description, jsonld_blocks 0, style 1, stylesheets 0"
+ },
+ {
+  "observation": "The semantic structure is clean: a single header, nav, main and footer, plus 4 sections and 2 articles. There is exactly one h1, and the heading outline runs h1 > h2 > h3. There are no aside, figure or blockquote elements.",
+  "category": "dom-structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 4, article 2, aside 0, figure 0; h1_count 1"
+ },
+ {
+  "observation": "The footer's column headings (LEGAL, FOLLOW US, CONTACT US, QUICK LINKS, PHOTOS, NEWSLETTER SIGN UP) are h3 elements, so they sit in the heading outline at the same level as the content card titles.",
+  "category": "dom-structure",
+  "evidence": "heading_outline lists these as level 3 entries; tag_counts h3 is 11"
+ },
+ {
+  "observation": "The type system pairs two families. A system sans stack (-apple-system) is used for the nav, headings, form labels and buttons. Georgia serif is used for body paragraphs, the notice, link text and the 'Book online' button.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: -apple-system 140, Georgia 50; screenshots show serif paragraphs and underlined serif links"
+ },
+ {
+  "observation": "The hero h1 'Grant Aviation' is very large, bold and white. It is left-aligned over a dark photo and has a short rust-colored rule beneath it.",
+  "category": "typography",
+  "evidence": "h1 font_size 67.2px, weight 700, color rgb(255,255,255), text_align start; slice 1 shows the red underline bar"
+ },
+ {
+  "observation": "The tagline 'Alaskan-owned and operated' is set in italic serif in a cream tone beneath the sans h1. This contrasts the sans and serif voices inside the hero.",
+  "category": "typography",
+  "evidence": "Slice 1 italic serif tagline at about y=467; Georgia in the fonts list"
+ },
+ {
+  "observation": "Small uppercase, letter-spaced labels are used as eyebrows and form labels. The rust 'WELCOME TO' sits above the section h2, and the form labels are DEPARTING FROM, TRAVELING TO, ADULTS and so on. The footer headings use the same treatment in white.",
+  "category": "typography",
+  "evidence": "Slice 1 'WELCOME TO' in rust, form labels in caps; slice 3 footer column heads in caps with tracking"
+ },
+ {
+  "observation": "The heading scale is modest below the hero. The h2 elements are 19.2px in the facts, although visually the section titles ('Grant Aviation', 'Recent News', 'Make a Reservation Today!') look larger. Body text is 16px with a 26.4px line height (1.65).",
+  "category": "typography",
+  "evidence": "h2 font_size 19.2px weight 700; body_font_size 16px, body_line_height 26.4px"
+ },
+ {
+  "observation": "The palette is warm and limited: a cream page background, white surfaces, near-black text, and a single rust-red accent. The accent is used for the CTA buttons, the phone pill, link text, arrows and rules.",
+  "category": "color",
+  "evidence": "body_bg rgb(250,246,238); body_color rgb(23,18,15); backgrounds include rgb(168,64,44) x3; link text rgb(134,48,31)"
+ },
+ {
+  "observation": "Dark bands bookend the lighter content. The hero is a dark photo, the reservation CTA band is near-black, and the footer is dark brown-black with light text.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(10,7,9) x2 and rgb(23,18,15) x2; slices 2 and 3 show black and dark footer bands"
+ },
+ {
+  "observation": "The hero background is a dark, moody close-up photograph of what looks like carved or painted Indigenous artwork. It shows pale bone-colored pieces with dotted marks and a red circular element. A dark gradient overlay darkens the left side behind the headline.",
+  "category": "imagery",
+  "evidence": "Slice 1 hero image; gradient_backgrounds 1; only one img element exists, so the hero is likely a CSS background"
+ },
+ {
+  "observation": "The only <img> is the small header logo, Logo.gif. It is rendered at 68x48 from an 83x59 source and has an empty alt attribute. The logo is a red square emblem placed next to the 'Grant Aviation' wordmark text.",
+  "category": "imagery",
+  "evidence": "images: Logo.gif alt '' natural 83x59, rect w68 h48 at x180 y12; counts images 1, svgs 0"
+ },
+ {
+  "observation": "The header is a white bar with the logo and name on the left and a horizontal nav on the right. The nav links are About Us, Flying with Us, Quyana Rewards, Contact Us and Flight Schedule. A rust-filled phone number pill (888-359-4726) ends the row as the call to action. A 'Menu' button is also in the DOM, probably for small screens.",
+  "category": "layout",
+  "evidence": "Slice 1 header; primary_button text 'Menu' with 6px radius and 8px 12px padding; buttons 2"
+ },
+ {
+  "observation": "The content sits in a fixed-width container about 1080px wide, from x=180 to x=1260 on a 1440px page. The left and right edges stay the same through the header, hero, cards and footer.",
+  "category": "layout",
+  "evidence": "Slices show consistent edges at x=180 and x=1260; page_width 1440"
+ },
+ {
+  "observation": "The hero is a two-part composition. The headline is on the left, and a floating white flight-search card is on the right with rounded corners and a soft shadow. The card is slightly translucent, and the background art shows through faintly.",
+  "category": "layout",
+  "evidence": "Slice 1 card from x=840 to x=1260; box_shadows 1; background top_backgrounds include rgba(250,246,238,0.97)"
+ },
+ {
+  "observation": "The booking form uses a fieldset with a 'Return Trip' / 'One Way' toggle. The selected option is a black filled button and the other is white with an outline. Below it are two full-width text inputs, a pair of date inputs, and three select dropdowns (Adults, Children, Infants). The rust 'Search for flights' button and an underlined 'Agent Login' link complete the card.",
+  "category": "components",
+  "evidence": "tag_counts fieldset 1, input 6, select 3, label 9, form 1; slice 1 form UI"
+ },
+ {
+  "observation": "The form controls are plain native widgets. The date inputs show the browser's mm/dd/yyyy placeholder and calendar icon, and the selects show native chevrons. The two text inputs are empty and have no placeholder text.",
+  "category": "components",
+  "evidence": "Slice 1 shows 'mm/dd/yyyy' fields and select arrows; 23 option elements"
+ },
+ {
+  "observation": "The COVID-19 notice is a long block of bold serif text in a tan panel. It has a thick rust left border, a slightly rounded corner and no heading. The text is dense and runs about 7 lines.",
+  "category": "components",
+  "evidence": "Slice 1 callout at y=907-1123, background about rgb(239,230,210) in top_backgrounds; left border in rust"
+ },
+ {
+  "observation": "After the notice, a short regular serif paragraph about careers ('Join Us!') is limited to about 60% of the container width. The right side of that row is empty.",
+  "category": "layout",
+  "evidence": "Slice 1 paragraph wraps at about x=940 within a 1080px container"
+ },
+ {
+  "observation": "A quick-links block shows 8 pill-less rectangular tiles in a 4x2 grid on a white band. Each tile has cream fill, a thin tan border, a bold sans label and a rust → arrow (Flight Schedule, Charters & Groups, Destinations, FAQs, Contact us, News, Freight & Cargo, Quyana Rewards).",
+  "category": "components",
+  "evidence": "Slice 2 tiles at y=66-190; display_grid count 7; border_radius bucket_8_15: 11"
+ },
+ {
+  "observation": "A two-column section pairs the charter flights text with a list of communities served. The communities list is itself a two-column grid of 8 towns, separated by thin hairline dividers. Both columns end in underlined rust serif links ('Keep reading…', 'Read more about Grant Aviation destinations').",
+  "category": "layout",
+  "evidence": "Slice 2 y=300-570; headings h3 'Alaska Charter Flights' and 'Communities Served by Scheduled Flights'"
+ },
+ {
+  "observation": "A full-bleed black CTA band centers a large white bold sans headline, 'Make a Reservation Today!'. Under it are a cream phone line ('888-Fly-Grant or 888-359-4726') with the number underlined, and a rust 'Book online' button set in serif bold. This is the only fully center-aligned section.",
+  "category": "layout",
+  "evidence": "Slice 2 y=649-963; Recent headings include the h2 'Make a Reservation Today!'"
+ },
+ {
+  "observation": "Recent News is two white cards side by side. They have thin tan borders and rounded corners. Each has a small date in a time element, an h3 title and an underlined serif link. The left card is mostly empty below its link, and the cards stretch to equal height.",
+  "category": "components",
+  "evidence": "tag_counts article 2, time 2; slice 2 cards 'Jun 12, 2018' and 'Mar 25, 2016'; slice 3 shows the card bottoms"
+ },
+ {
+  "observation": "The news content is dated. The newsletter is from Summer 2018, the story call from 2016, and the footer reads '2015-2021'. The notice refers to May 20, 2020.",
+  "category": "copy",
+  "evidence": "Visible text 'Jun 12, 2018', 'Mar 25, 2016', '2015-2021 Grant Aviation', 'beginning May 20, 2020'"
+ },
+ {
+  "observation": "The copy is plain and informational, with a local voice. Phrases include 'Fly Easy, Fly Grant', a vanity phone number (888-Fly-Grant), and the Yup'ik word 'Quyana' in the Rewards program name. There are 4 exclamation marks, no emoji and no em dashes in the body text.",
+  "category": "copy",
+  "evidence": "text_stats exclamations 4, emoji 0, em_dashes 0; visible nav 'Quyana Rewards'"
+ },
+ {
+  "observation": "A social section is a short h3 'Lets get Social' with a single text link to Facebook. It has no icons or buttons, and it sits as a small afterthought block on the cream background above the footer.",
+  "category": "components",
+  "evidence": "Slice 3 y=105-141; svgs 0"
+ },
+ {
+  "observation": "The footer is a four-column grid: Legal, Follow Us, Contact Us and Quick Links. Below it, Photos and Newsletter Sign Up stack in the first column. The headings are white caps and the links are white underlined sans text.",
+  "category": "layout",
+  "evidence": "Slice 3 y=280-610; headings listed in heading_outline"
+ },
+ {
+  "observation": "The footer ends with a thin horizontal rule. Below it, a copyright line sits on the left and a 'Staff Login' link on the right, in small text.",
+  "category": "layout",
+  "evidence": "Slice 3 y=648-680"
+ },
+ {
+  "observation": "Links are consistently underlined. In-content links are rust serif and footer links are white sans. Only the nav links and the quick-link tiles are free of underlines.",
+  "category": "components",
+  "evidence": "Slices 1-3 show underlined 'Keep reading…', 'Agent Login', footer links; nav and tiles unadorned; link color rgb(134,48,31) x6"
+ },
+ {
+  "observation": "Decoration is restrained. Border radii are small to medium, with no pill shapes and none at 16px or more (17 elements in the 1-7px bucket, 11 in the 8-15px bucket). There is exactly 1 box shadow, 1 gradient, no backdrop blur, no animations and no transforms. The 8 transitions are likely hover states.",
+  "category": "decoration",
+  "evidence": "effects: border_radius_buckets bucket_1_7 17, bucket_8_15 11, pill 0; box_shadows 1; gradient_backgrounds 1; animations 0; transforms 0; transitions 8"
+ },
+ {
+  "observation": "The CSS uses semantic, non-utility class names. There are 44 class uses and 28 unique classes, none of them Tailwind-like. There are 8 inline style attributes and 3 ARIA attributes.",
+  "category": "dom-structure",
+  "evidence": "classes total 44, unique 28, tailwind_like_fraction 0; counts inline_style_attrs 8, aria_attrs 3"
+ },
+ {
+  "observation": "The page uses both grid and flex. Grid is used 7 times for the quick links, the footer, the communities list and the news cards. Flex is used 5 times, likely for the header and nav.",
+  "category": "layout",
+  "evidence": "layout display_grid 7, display_flex 5"
+ },
+ {
+  "observation": "Page density is moderate. The full-page height is 3316px and the page has 459 words, 38 anchors and 32 list items. Link count is high compared with the amount of prose, because of the nav, tiles, town list and footer.",
+  "category": "content",
+  "evidence": "page_height 3316, words 459, anchors 38, li 32, ul 8"
+ },
+ {
+  "observation": "The primary button style is a flat rust fill with white bold text and a small radius of about 6px. It is used for the phone pill, 'Search for flights' and 'Book online'. The secondary controls are white or outlined, such as 'One Way', and the active toggle is near-black.",
+  "category": "components",
+  "evidence": "Slice 1 and 2 buttons; rgb(168,64,44) backgrounds x3; primary_button radius 6px"
+ },
+ {
+  "observation": "Vertical rhythm alternates between section backgrounds: white header, dark hero, cream intro, white quick-links band, cream charter section, black CTA, cream news, dark footer. Hairline borders (tan) separate the cream and white bands.",
+  "category": "layout",
+  "evidence": "Slices 1-3 background changes; top_backgrounds white x12, cream x9; thin tan border lines at y=25 and y=230 in slice 2"
+ }
+]

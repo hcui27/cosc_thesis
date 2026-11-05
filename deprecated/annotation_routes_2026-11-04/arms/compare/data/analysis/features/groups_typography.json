@@ -1,0 +1,294 @@
+{
+ "key": "b8dceaaf3766",
+ "groups": [
+  {
+   "name": "System font stack only, no web fonts",
+   "definition": "Is all text set in a generic system font stack (system-ui, Helvetica Neue/Arial) with no custom web fonts loaded?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "font_family_count",
+    "op": "<=",
+    "value": 1
+   },
+   "members": [
+    "aeptexas_com#1",
+    "allstate_jobs#4",
+    "bathurst12hour_com_au#3",
+    "bluebayou_com#4",
+    "gravityvault_com#10",
+    "homedesignersoftware_com#0",
+    "insightcentral_net#3",
+    "merchantsavvy_co_uk#2",
+    "miamidda_com#2",
+    "nira_org_ng#4",
+    "seoanalyzer_me#20",
+    "tellmebaby_com_au#0",
+    "thync_com#0",
+    "fnsouzafoundation_com#3"
+   ]
+  },
+  {
+   "name": "Single sans-serif family throughout",
+   "definition": "Is one single sans-serif family used consistently across the whole page?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "sans_primary",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "bather_com#1",
+    "kanienkeha_net#1",
+    "naturalwellbeing_com#11",
+    "stgpartners_com#0"
+   ]
+  },
+  {
+   "name": "Single serif family throughout",
+   "definition": "Is all text set in one serif family such as Georgia?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "serif_primary",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "alpine8848_com#6"
+   ]
+  },
+  {
+   "name": "Serif body with sans headings pairing",
+   "definition": "Does the page pair a sans-serif for headings/UI with a serif face for body paragraphs or excerpts?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#1",
+    "educationactivities_org#1",
+    "flygrant_com#16",
+    "kneeguru_co_uk#3",
+    "newclimateeconomy_net#4"
+   ]
+  },
+  {
+   "name": "Serif headings with sans body",
+   "definition": "Are headings set in a serif face while body text is sans-serif?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "greatdayimprovements_com#3",
+    "thefrangipanicreative_com#4",
+    "fnsouzafoundation_com#4",
+    "fnsouzafoundation_com#5",
+    "neverskipbrunch_com#2",
+    "alpine8848_com#8"
+   ]
+  },
+  {
+   "name": "Condensed heavy display headline font",
+   "definition": "Are headlines set in a heavy condensed display face such as Impact?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#5",
+    "ridetech_com#2"
+   ]
+  },
+  {
+   "name": "Small uppercase eyebrow above headings",
+   "definition": "Do small letter-spaced (uppercase or script) eyebrow labels sit above section headings?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#2",
+    "bathurst12hour_com_au#10",
+    "bluebayou_com#6",
+    "flygrant_com#12",
+    "miamidda_com#6",
+    "stgpartners_com#11",
+    "thefrangipanicreative_com#2",
+    "fnsouzafoundation_com#6",
+    "neverskipbrunch_com#3"
+   ]
+  },
+  {
+   "name": "Small uppercase letter-spaced utility labels",
+   "definition": "Are minor labels (form labels, footer headings, dates, sidebar labels, CTAs) set in small uppercase with letter spacing?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#9",
+    "newclimateeconomy_net#3",
+    "flygrant_com#9",
+    "flygrant_com#21",
+    "homedesignersoftware_com#11",
+    "educationactivities_org#2",
+    "bather_com#3"
+   ]
+  },
+  {
+   "name": "Uppercase section headings",
+   "definition": "Are main headings or card titles set in uppercase?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#0",
+    "ridetech_com#1",
+    "newclimateeconomy_net#2",
+    "kneeguru_co_uk#4"
+   ]
+  },
+  {
+   "name": "Sentence/title case, no uppercase transform",
+   "definition": "Do headings, nav and labels use sentence or title case instead of all caps?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#6",
+    "bathurst12hour_com_au#5",
+    "kanienkeha_net#2",
+    "nira_org_ng#6",
+    "seoanalyzer_me#21",
+    "allstate_jobs#6",
+    "neverskipbrunch_com#18"
+   ]
+  },
+  {
+   "name": "Bold-weight headings",
+   "definition": "Are section headings and titles set in bold weight (about 700)?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_weight",
+    "op": ">=",
+    "value": 700
+   },
+   "members": [
+    "allstate_jobs#5",
+    "homedesignersoftware_com#2",
+    "merchantsavvy_co_uk#3",
+    "tellmebaby_com_au#1",
+    "tellmebaby_com_au#2",
+    "seoanalyzer_me#5",
+    "educationactivities_org#20",
+    "greatdayimprovements_com#17"
+   ]
+  },
+  {
+   "name": "Very large hero headline",
+   "definition": "Is the hero h1 very large (e.g. about 60px or more, or filling much of the hero width)?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_size_px",
+    "op": ">=",
+    "value": 56
+   },
+   "members": [
+    "allstate_jobs#1",
+    "miamidda_com#4",
+    "naturalwellbeing_com#9",
+    "stgpartners_com#1",
+    "merchantsavvy_co_uk#0",
+    "aeptexas_com#2",
+    "neverskipbrunch_com#1"
+   ]
+  },
+  {
+   "name": "Large bold heading scale vs body",
+   "definition": "Are headings large and bold with a dramatic size jump over body text?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_body_ratio",
+    "op": ">=",
+    "value": 3
+   },
+   "members": [
+    "thefrangipanicreative_com#5",
+    "thync_com#2",
+    "gravityvault_com#11"
+   ]
+  },
+  {
+   "name": "Two-tone hero headline",
+   "definition": "Does the hero headline use two tones, with part of it in an accent color?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "insightcentral_net#5",
+    "miamidda_com#5",
+    "tellmebaby_com_au#3"
+   ]
+  },
+  {
+   "name": "Generous body line height",
+   "definition": "Is body text sized about 16-17px with a roomy line height (about 1.5-1.7)?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "body_size_px",
+    "op": ">=",
+    "value": 16
+   },
+   "members": [
+    "bathurst12hour_com_au#4",
+    "bluebayou_com#7",
+    "flygrant_com#24",
+    "greatdayimprovements_com#5",
+    "homedesignersoftware_com#1",
+    "insightcentral_net#4",
+    "kneeguru_co_uk#20",
+    "nira_org_ng#5",
+    "stgpartners_com#19",
+    "neverskipbrunch_com#23",
+    "miamidda_com#3",
+    "thync_com#1"
+   ]
+  },
+  {
+   "name": "Large lead paragraph styling",
+   "definition": "Is there a distinct larger lead/body paragraph styled differently from the rest of the copy?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#7",
+    "greatdayimprovements_com#4",
+    "thefrangipanicreative_com#3",
+    "tellmebaby_com_au#28",
+    "naturalwellbeing_com#12"
+   ]
+  },
+  {
+   "name": "Light restrained heading scale",
+   "definition": "Are section headings moderate in size and light in weight?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#10"
+   ]
+  },
+  {
+   "name": "Bold labels with regular values",
+   "definition": "Do contact lines bold only the labels while values stay regular weight?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#16"
+   ]
+  },
+  {
+   "name": "Hero h1 with accent rule and italic subtitle",
+   "definition": "Is the hero h1 accompanied by an accent rule and an italic serif subtitle?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#4"
+   ]
+  },
+  {
+   "name": "Hero subtitle as plain paragraph",
+   "definition": "Is the hero subtitle a plain sentence-case sans paragraph rather than a heading?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "seoanalyzer_me#19"
+   ]
+  }
+ ]
+}

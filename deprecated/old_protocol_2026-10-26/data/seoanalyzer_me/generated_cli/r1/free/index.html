@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEO Analyzer – Instantly Analyze Your SEO Issues</title>
+<meta name="description" content="Identify your SEO mistakes and better optimize your site content with unlimited analysis, in-depth reviews and competitive comparisons.">
+<style>
+:root{--bg:#fff;--surface:#f4f7fb;--text:#1b2433;--muted:#5b6678;--brand:#2563eb;--brand-d:#1d4ed8;--border:#e3e8f0;--good:#16a34a;--warn:#d97706;--bad:#dc2626;--hero:linear-gradient(135deg,#1e3a8a,#2563eb 60%,#38bdf8)}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1521;--surface:#171f2f;--text:#e8edf6;--muted:#9aa6bb;--border:#26314a;--brand:#60a5fa;--brand-d:#93c5fd}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--border)}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:8px}
+.logo i{width:26px;height:26px;border-radius:7px;background:var(--hero);display:inline-block}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;align-items:center}
+nav a:hover{color:var(--brand)}
+.lang{border:1px solid var(--border);border-radius:6px;padding:2px 10px;font-size:.85rem;color:var(--muted)}
+.hero{background:var(--hero);color:#fff;text-align:center;padding:96px 0 88px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.15;margin:0 0 16px}
+.hero p{font-size:1.2rem;max-width:620px;margin:0 auto 32px;opacity:.92}
+.btn{display:inline-block;background:#fff;color:#1d4ed8;font-weight:700;padding:14px 30px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.2);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.reviews{margin-top:40px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;font-size:.9rem}
+.reviews span{text-transform:uppercase;letter-spacing:.12em;font-weight:700;opacity:.8;margin-right:6px}
+.reviews a{background:rgba(255,255,255,.16);padding:6px 14px;border-radius:999px}
+.reviews a:hover{background:rgba(255,255,255,.28)}
+section{padding:72px 0}
+h2{font-size:clamp(1.5rem,3vw,2.1rem);margin:0 0 12px}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.feature{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px}
+.feature .ic{width:44px;height:44px;border-radius:12px;background:var(--brand);color:#fff;display:grid;place-items:center;font-size:1.3rem;margin-bottom:16px}
+.feature h3{margin:0 0 8px;font-size:1.15rem}
+.feature p{margin:0;color:var(--muted)}
+.recent{background:var(--surface)}
+.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px;gap:16px;flex-wrap:wrap}
+.head a{color:var(--brand);font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:24px}
+.card{background:var(--bg);border:1px solid var(--border);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 10px 28px rgba(0,0,0,.12);transform:translateY(-3px)}
+.thumb{aspect-ratio:4/3;background:var(--border);display:grid;place-items:center;color:var(--muted);font-size:.9rem;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.body{padding:18px 20px 20px}
+.body h3{margin:0 0 14px;font-size:1.05rem;color:var(--brand);overflow-wrap:anywhere}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+.stats b{display:block;font-size:1.1rem}
+.stats small{color:var(--muted);font-size:.75rem}
+.good{color:var(--good)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+.about{text-align:center}
+.about p{max-width:720px;margin:0 auto;color:var(--muted);font-size:1.1rem}
+footer{background:#0f172a;color:#cbd5e1;padding:56px 0 28px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+footer h4{color:#fff;margin:0 0 12px}
+footer ul{list-style:none;margin:0;padding:0}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid #243049;margin-top:36px;padding-top:20px;font-size:.88rem;color:#94a3b8}
+@media(max-width:600px){nav ul{gap:14px;font-size:.9rem}.hero{padding:64px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="https://seoanalyzer.me/"><i></i>Seo Analyzer</a>
+      <ul>
+        <li><a href="https://seoanalyzer.me/">Home</a></li>
+        <li><a href="https://seoanalyzer.me/site-vs-site">Site vs Site</a></li>
+        <li class="lang">EN</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Instantly Analyze Your SEO Issues</h1>
+      <p>Helps to identify your SEO mistakes and better optimize your site content.</p>
+      <a class="btn" href="https://seoanalyzer.me/">Analyze Your Site</a>
+      <div class="reviews">
+        <span>Review</span>
+        <a href="https://seoanalyzer.me/domain/h-supertools.com">H-supertools</a>
+        <a href="https://seoanalyzer.me/domain/booksandmore.blog">Booksandmore</a>
+        <a href="https://seoanalyzer.me/domain/L-ink.me">L-ink</a>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap features">
+      <div class="feature"><div class="ic" aria-hidden="true">∞</div><h3>Unlimited Analysis</h3><p>Run unlimited analysis on our most powerful servers. Stored reports make it easy to view progress and past work.</p></div>
+      <div class="feature"><div class="ic" aria-hidden="true">🔍</div><h3>In-Depth Reviews</h3><p>With our in-depth website analysis learn how to fix your SEO issues with clear definitions for each SEO metrics.</p></div>
+      <div class="feature"><div class="ic" aria-hidden="true">⚖</div><h3>Competitive Analysis</h3><p>Side-by-side SEO comparisons with your competitors. See how your SEO can improve against the competition.</p></div>
+    </div>
+  </section>
+
+  <section class="recent">
+    <div class="wrap">
+      <div class="head">
+        <h2>Recently Listed</h2>
+        <a href="https://seoanalyzer.me/recent">View More →</a>
+      </div>
+      <div class="cards">
+        <a class="card" href="https://seoanalyzer.me/domain/bulktrkr.com">
+          <div class="thumb"><img src="images/bulktrkr.com" alt="Bulktrkr.com screenshot" loading="lazy"></div>
+          <div class="body"><h3>Bulktrkr.com</h3><div class="stats">
+            <div><b class="good">72/100</b><small>Score</small></div><div><b>430,476</b><small>Global Rank</small></div><div><b class="good">99%</b><small>Page Speed</small></div></div></div>
+        </a>
+        <a class="card" href="https://seoanalyzer.me/domain/homework-solutions.blogspot.com">
+          <div class="thumb"><img src="images/homework-solutions.blogspot.com" alt="Homework-solutions.blogspot.com screenshot" loading="lazy"></div>
+          <div class="body"><h3>Homework-solutions.blogspot.com</h3><div class="stats">
+            <div><b class="warn">63/100</b><small>Score</small></div><div><b>0</b><small>Global Rank</small></div><div><b class="bad">0%</b><small>Page Speed</small></div></div></div>
+        </a>
+        <a class="card" href="https://seoanalyzer.me/domain/herblsuplements.com">
+          <div class="thumb"><img src="images/herblsuplements.com" alt="Herblsuplements.com screenshot" loading="lazy"></div>
+          <div class="body"><h3>Herblsuplements.com</h3><div class="stats">
+            <div><b class="warn">69/100</b><small>Score</small></div><div><b>0</b><small>Global Rank</small></div><div><b class="warn">75%</b><small>Page Speed</small></div></div></div>
+        </a>
+        <a class="card" href="https://seoanalyzer.me/domain/jamiesonmotors.net">
+          <div class="thumb"><img src="images/jamiesonmotors.net" alt="Jamiesonmotors.net screenshot" loading="lazy"></div>
+          <div class="body"><h3>Jamiesonmotors.net</h3><div class="stats">
+            <div><b class="bad">45/100</b><small>Score</small></div><div><b>0</b><small>Global Rank</small></div><div><b class="bad">0%</b><small>Page Speed</small></div></div></div>
+        </a>
+        <a class="card" href="https://seoanalyzer.me/domain/goldcoastshuttersolutions.com.au">
+          <div class="thumb"><img src="images/goldcoastshuttersolutions.com.au" alt="Goldcoastshuttersolutions.com.au screenshot" loading="lazy"></div>
+          <div class="body"><h3>Goldcoastshuttersolutions.com.au</h3><div class="stats">
+            <div><b class="good">72/100</b><small>Score</small></div><div><b>0</b><small>Global Rank</small></div><div><b class="bad">0%</b><small>Page Speed</small></div></div></div>
+        </a>
+        <a class="card" href="https://seoanalyzer.me/domain/portal.oouagoiwoye.edu.ng">
+          <div class="thumb">No preview available</div>
+          <div class="body"><h3>Portal.oouagoiwoye.edu.ng</h3><div class="stats">
+            <div><b class="warn">63/100</b><small>Score</small></div><div><b>185,812</b><small>Global Rank</small></div><div><b class="bad">0%</b><small>Page Speed</small></div></div></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap">
+      <h2>About Us</h2>
+      <p>Our aim to make search engine optimization (SEO) easy. We provide simple, professional-quality SEO analysis and critical SEO monitoring for websites. By making our tools intuitive and easy to understand, we've helped thousands of small-business owners, webmasters and SEO professionals improve their online presence.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>Contact Info</h4><ul><li>SE Lawnfield Rd</li><li><a href="mailto:support@h-educate.com">support@h-educate.com</a></li></ul></div>
+      <div><h4>Navigation</h4><ul><li><a href="https://seoanalyzer.me/">Home</a></li><li><a href="https://seoanalyzer.me/site-vs-site">Site vs Site</a></li></ul></div>
+    </div>
+    <div class="copy">Copyright © 2020. H-educate All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>

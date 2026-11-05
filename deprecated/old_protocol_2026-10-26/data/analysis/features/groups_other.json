@@ -1,0 +1,81 @@
+{
+ "key": "5056c29d2cd1",
+ "groups": [
+  {
+   "name": "Self-contained page without external assets",
+   "definition": "Does the page ship with no external scripts or stylesheets, using a single inline style block?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "stylesheet_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "alpine8848_com#3",
+    "educationactivities_org#21",
+    "newclimateeconomy_net#5",
+    "seoanalyzer_me#21",
+    "stgpartners_com#25"
+   ]
+  },
+  {
+   "name": "Lean lightweight markup",
+   "definition": "Is the page markup lean, with few scripts, few classes, few divs and minimal inline styles and metadata?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "script_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "allstate_jobs#27",
+    "flygrant_com#19",
+    "seoanalyzer_me#22"
+   ]
+  },
+  {
+   "name": "Minimal CSS transitions",
+   "definition": "Does the page define few or no CSS transitions, so interaction animation is minimal?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "transition_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "aeptexas_com#27"
+   ]
+  },
+  {
+   "name": "Hover transitions on interactive elements",
+   "definition": "Does the page define CSS transitions for interactive hover states?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "transition_count",
+    "op": ">=",
+    "value": 3
+   },
+   "members": [
+    "newclimateeconomy_net#26"
+   ]
+  },
+  {
+   "name": "Awkward mid-word wrapping in narrow cards",
+   "definition": "Do long words in narrow cards wrap or break mid-word, creating awkward line breaks?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#25"
+   ]
+  },
+  {
+   "name": "Mismatched or reused icons in chips",
+   "definition": "Are icons in social or link chips mismatched with their labels or reused across different chips?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#26"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "key": "2a02804dbb56",
+ "groups": [
+  {
+   "name": "Semantic landmark elements used",
+   "definition": "Does the page use HTML5 semantic landmark/sectioning elements (header, main, nav, section, article, footer, aside) rather than generic divs?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "semantic_tag_count",
+    "op": ">=",
+    "value": 4
+   },
+   "members": [
+    "aeptexas_com#16",
+    "alpine8848_com#0",
+    "bluebayou_com#1",
+    "flygrant_com#23",
+    "greatdayimprovements_com#1",
+    "insightcentral_net#7",
+    "kneeguru_co_uk#0",
+    "merchantsavvy_co_uk#16",
+    "miamidda_com#1",
+    "naturalwellbeing_com#26",
+    "nira_org_ng#2",
+    "ridetech_com#22",
+    "seoanalyzer_me#1",
+    "thync_com#15",
+    "gravityvault_com#1",
+    "tellmebaby_com_au#5",
+    "fnsouzafoundation_com#21",
+    "homedesignersoftware_com#20",
+    "neverskipbrunch_com#21",
+    "kanienkeha_net#20"
+   ]
+  },
+  {
+   "name": "Cards wrapped in article elements",
+   "definition": "Are repeated posts or cards wrapped in article elements?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "semantic_tag_count",
+    "op": ">=",
+    "value": 6
+   },
+   "members": [
+    "educationactivities_org#8",
+    "allstate_jobs#18"
+   ]
+  },
+  {
+   "name": "Clean hierarchical heading outline",
+   "definition": "Does the page have a clean, properly nested heading hierarchy (e.g. h1, then h2 sections, then h3 items) without skipped levels?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_count",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "aeptexas_com#21",
+    "allstate_jobs#7",
+    "alpine8848_com#1",
+    "bather_com#17",
+    "bathurst12hour_com_au#1",
+    "bluebayou_com#2",
+    "cbdoilcreamnk_com#0",
+    "cbdoilcreamnk_com#11",
+    "flygrant_com#20",
+    "gravityvault_com#4",
+    "homedesignersoftware_com#16",
+    "insightcentral_net#6",
+    "neverskipbrunch_com#20",
+    "stgpartners_com#2",
+    "nira_org_ng#1"
+   ]
+  },
+  {
+   "name": "Irregular or missing h1 heading",
+   "definition": "Is the heading outline irregular, such as lacking an h1 or starting at h3 or skipping levels?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "kanienkeha_net#21",
+    "naturalwellbeing_com#27",
+    "newclimateeconomy_net#17"
+   ]
+  },
+  {
+   "name": "Item titles use h3 headings",
+   "definition": "Are card or item titles marked up as h3 headings under h2 sections?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "heading_count",
+    "op": ">=",
+    "value": 5
+   },
+   "members": [
+    "tellmebaby_com_au#4"
+   ]
+  },
+  {
+   "name": "Descriptive alt text on images",
+   "definition": "Do all images carry descriptive, non-empty alt text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#21",
+    "alpine8848_com#5",
+    "bather_com#19",
+    "bluebayou_com#3",
+    "fnsouzafoundation_com#15",
+    "gravityvault_com#3",
+    "greatdayimprovements_com#18"
+   ]
+  },
+  {
+   "name": "Decorative images with empty alt",
+   "definition": "Do most images use empty alt attributes for decorative purposes?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#22",
+    "insightcentral_net#21",
+    "merchantsavvy_co_uk#15"
+   ]
+  },
+  {
+   "name": "Lean minimal DOM and styling",
+   "definition": "Is the markup lean, with few divs, classes, scripts, external stylesheets and inline styles?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "script_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "aeptexas_com#20",
+    "alpine8848_com#4",
+    "alpine8848_com#22",
+    "bathurst12hour_com_au#23",
+    "bluebayou_com#23",
+    "cbdoilcreamnk_com#19",
+    "educationactivities_org#21",
+    "flygrant_com#26",
+    "gravityvault_com#5",
+    "homedesignersoftware_com#24",
+    "kneeguru_co_uk#22",
+    "merchantsavvy_co_uk#23",
+    "miamidda_com#22",
+    "naturalwellbeing_com#28",
+    "newclimateeconomy_net#18",
+    "ridetech_com#21",
+    "stgpartners_com#25",
+    "tellmebaby_com_au#6",
+    "thefrangipanicreative_com#17"
+   ]
+  },
+  {
+   "name": "Minimal head meta tags",
+   "definition": "Does the head contain only a few basic meta tags (charset, viewport, description)?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "meta_tag_count",
+    "op": "<=",
+    "value": 3
+   },
+   "members": [
+    "alpine8848_com#2",
+    "seoanalyzer_me#22"
+   ]
+  },
+  {
+   "name": "Plain short document title",
+   "definition": "Is the document title short and plain, without keyword stuffing or decoration?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#0",
+    "miamidda_com#0"
+   ]
+  },
+  {
+   "name": "Language attribute declared",
+   "definition": "Does the html element declare a lang attribute?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#0",
+    "gravityvault_com#0",
+    "greatdayimprovements_com#0"
+   ]
+  },
+  {
+   "name": "ARIA attributes and real buttons",
+   "definition": "Does the page use ARIA attributes and real button elements for interactive controls?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "aria_attr_count",
+    "op": ">=",
+    "value": 3
+   },
+   "members": [
+    "gravityvault_com#2",
+    "fnsouzafoundation_com#22",
+    "merchantsavvy_co_uk#24",
+    "nira_org_ng#3",
+    "newclimateeconomy_net#19"
+   ]
+  },
+  {
+   "name": "Address element for contact details",
+   "definition": "Are contact details wrapped in an address element?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#3"
+   ]
+  },
+  {
+   "name": "Figure and blockquote for quotes",
+   "definition": "Are quotes marked up with figure, blockquote and figcaption elements?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "bather_com#18",
+    "thefrangipanicreative_com#9"
+   ]
+  },
+  {
+   "name": "Strikethrough prices use s tag",
+   "definition": "Are struck-through prices marked with the s element?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#20",
+    "homedesignersoftware_com#15"
+   ]
+  },
+  {
+   "name": "Details/summary disclosure widget",
+   "definition": "Does the page use a native details/summary disclosure?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#18"
+   ]
+  },
+  {
+   "name": "Navigation marked up as lists",
+   "definition": "Are navigation and link groups marked up as ul/li lists?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#3"
+   ]
+  },
+  {
+   "name": "Class names are semantic rather than utility-style.",
+   "definition": "Class names are semantic rather than utility-style.",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#24"
+   ]
+  }
+ ]
+}

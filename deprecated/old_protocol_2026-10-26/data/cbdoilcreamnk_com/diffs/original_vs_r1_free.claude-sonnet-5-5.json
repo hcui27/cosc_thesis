@@ -1,0 +1,266 @@
+[
+ {
+  "observation": "Page title is long and keyword-laden on A; B uses a short brand title.",
+  "category": "copy",
+  "evidence": "A title 'CBD Oil & Cream - CBD Products - CBD Store' vs B title 'CBD Oil'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no h1 and starts its heading outline with an h4, followed by a run of h2s. B has a single h1 followed by h2/h3 levels.",
+  "category": "semantic structure",
+  "evidence": "A h1_count 0, outline starts with level 4 'Cbd Oil For Pain Walmart'; B h1_count 1 'Where To Buy CBD Cream For Pain', with h3 product titles",
+  "which_side": "both"
+ },
+ {
+  "observation": "A is a heavy WordPress-style DOM with many scripts, stylesheets and inline styles. B is a lean, self-contained page with one style block and no scripts.",
+  "category": "DOM structure",
+  "evidence": "A: 54 scripts, 31 stylesheets, 23 style tags, 116 divs, 241 anchors, 52 inline style attrs. B: 0 scripts, 0 stylesheets, 1 style tag, 36 divs, 36 anchors, 7 inline style attrs",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's class usage is large and framework-generated. B uses a small handwritten class vocabulary.",
+  "category": "DOM structure",
+  "evidence": "A: 1300 class tokens, 368 unique. B: 60 total, 27 unique",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a modal discount popup over the page on load, with a dimmed overlay. B has no popup.",
+  "category": "component",
+  "evidence": "A slice 0: white modal with 'How to buy CBD online' graphic, red 'Hurry up! We are now offering discount for new customers!' and blue 'Get My Discount!' button, over a rgba(0,0,0,0.4) overlay. B has no modal",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's popup headline is a 36px h2 in red, and its CTA is a blue button, a color not used elsewhere on the page.",
+  "category": "color",
+  "evidence": "A heading outline includes h2 'Hurry up! We are now offering discount...'; slice 0 shows red headline text and button bg rgb(48,133,214)",
+  "which_side": "A"
+ },
+ {
+  "observation": "A opens with a long news-style paragraph in white text on a navy band above the header. B moves the same copy into a 'CBD in the news' card mid-page.",
+  "category": "layout",
+  "evidence": "A slice 0 top: centered, full-width paragraph on a rgb(21,42,81) navy background. B slice 2: white rounded card titled 'CBD in the news' on a pale green band",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header is a multi-tier block: large logo, top utility links with phone and email, a long nav menu, a search field and a 'Menu' button. B's header is one slim bar with a small logo, five links and a bold phone number.",
+  "category": "component",
+  "evidence": "A logo rect 325x97 at y=333, 'Search products…' field, email 'Info@cbdoilm…', primary_button 'Menu'. B logo 134x40 at y=14, links Shop/Featured/News/Guides/Contact Us/208-969-1282",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a full-width, 1440x617 rotating slider banner (three stacked images) that links to a gift promotion. B's hero is a two-column split with a large serif h1, a subtitle, two buttons and a single framed image.",
+  "category": "layout",
+  "evidence": "A slider images at x=0, w=1440, h=617, with overlaps of 888480px². B hero image 566x242 at x=714, y=179, text column on the left, no image overlaps",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero image is a 700px-wide slider asset stretched to full width. B shows the same asset at its natural proportions with a soft shadow and rounded corners.",
+  "category": "imagery",
+  "evidence": "A slider-1-cbd-700x300.jpg rendered 1440x617 from 700x300. B same file rendered 566x242 (about 0.81x), with box-shadow",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero has a clear typographic hierarchy: large bold Georgia h1 plus a muted sans paragraph and a pair of filled/outlined pill buttons ('Shop CBD', 'Join The Club'). A has no hero text.",
+  "category": "component",
+  "evidence": "B h1 52.8px, weight 700, Georgia, rgb(31,42,36). B primary_button 'Shop CBD' bg rgb(47,107,69), radius 999px, padding 12px 24px",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses one webfont family for most elements, a Cooper-style serif, plus Alegreya and JudgemeStar. B uses system sans (system-ui) for body and Georgia serif for headings.",
+  "category": "typography",
+  "evidence": "A fonts: Conv_CooperLtBT-Regular 601 elements, Alegreya Sans 63, Alegreya 22, JudgemeStar 20. B fonts: system-ui 135, Georgia 12, Arial 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "B pairs a serif heading face with a sans body face. A's body and headings share the Cooper-style serif look.",
+  "category": "typography",
+  "evidence": "B h1 font-family Georgia serif; body in system-ui. A body_font_size 16px in Cooper-style serif across 601 elements",
+  "which_side": "both"
+ },
+ {
+  "observation": "Heading weight and size: A h2 is 36px at weight 600 in navy. B h2 is 35.2px at weight 700 in dark green-black.",
+  "category": "typography",
+  "evidence": "A h2 36px/600. B h2 35.2px/700, color rgb(31,42,36)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's body text is slightly larger with a tighter line-height ratio.",
+  "category": "typography",
+  "evidence": "A body 16px / 25.888px. B body 17px / 27.2px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is navy-dominated (rgb 21,42,81) with a mid-green accent and a cool grey-lavender page background. B uses forest green (47,107,69) with a warm cream background, sage-tinted bands and a near-black green footer.",
+  "category": "color",
+  "evidence": "A body_bg rgb(249,249,252), top text rgb(21,42,81) x454, backgrounds rgb(21,42,81) x9. B body_bg rgb(251,250,246), backgrounds rgb(47,107,69) x7, rgb(233,239,227) x3, rgb(24,34,28)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B alternates section backgrounds (cream, sage, cream, sage) to separate sections. A keeps one near-white background and uses a patterned image band for one section.",
+  "category": "layout",
+  "evidence": "B slices: 'Cbd For Dogs' on sage rgb(233,239,227), 'CBD in the news' on sage, 'Join The Club' on sage. A slice 3 'Cbd Clinic Products' uses a cannabis-leaf photo background",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's three category cards (CBD Oils / Edibles / Topicals) have square corners and a dark navy border. B's same cards have rounded corners and no border.",
+  "category": "component",
+  "evidence": "A slices 0-1: tiles at x=140/547/954, 346px, navy outline, straight corners. B tiles x=181/548/914, 345px, rounded corners, no outline",
+  "which_side": "both"
+ },
+ {
+  "observation": "The category images are the same bitmaps in both: the title text and 'SHOP NOW' pill are baked into the image, not live text.",
+  "category": "imagery",
+  "evidence": "CBD_Drops-2.jpg, CBD_edibles-2.jpg, CBD_Topicals-2.jpg, 800x800 in both; the lettering sits inside the images",
+  "which_side": "both"
+ },
+ {
+  "observation": "A product cards use a flat white card with a faint shadow and a small gap between price and title. B cards are rounded white cards on a sage band, with bold green prices.",
+  "category": "component",
+  "evidence": "A product tiles 4-up with box-shadow; titles in navy, prices in black. B cards with ~15px radius, prices in rgb(47,107,69) bold",
+  "which_side": "both"
+ },
+ {
+  "observation": "A flags sale items with a green ribbon-flag badge at the top-left of the image. B uses a small green pill badge 'Sale!' inline next to the price.",
+  "category": "component",
+  "evidence": "A slice 1: 'SALE!' ribbon on items 3 and 4. B slice 1: 'Sale!' rounded pill beside 'From: $79.00' and '$59.99 $49.99'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Prices: A shows the old price struck through in grey, and its markup has del/ins tags. B uses a struck-through <s> element and no del/ins.",
+  "category": "DOM structure",
+  "evidence": "A tag_counts del 1, ins 1. B tag_counts s 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a 50/50 'image left, text card right' layout in which each text card is a tall white box that is mostly empty below the heading and button. B alternates image left/right and vertically centers the heading and button next to the image, with no card box.",
+  "category": "layout",
+  "evidence": "A slices 1-3: white panels (745-1305px wide) with heading and button at the top and blank space below, about 600px tall. B slices 1-2: image left for Vape and Lazarus, right for Charlotte's Web, text centered vertically",
+  "which_side": "both"
+ },
+ {
+  "observation": "The editorial lifestyle images are shown at different sizes and corners: A 549px square with square corners, B 460px square with rounded corners, indented and alternating.",
+  "category": "imagery",
+  "evidence": "A images CBD_Statue.png etc. 549x549 at x=140. B 460x460 at x=208 and x=772",
+  "which_side": "both"
+ },
+ {
+  "observation": "Section text blocks are the same three CTA labels in both, but buttons differ: A dark navy pill buttons with a 'serif' label, B solid green pills with a bold sans label.",
+  "category": "component",
+  "evidence": "A 'More CBD Questions?' navy rounded button; B 'More CBD Questions?' button in rgb(47,107,69), radius 999px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'Cbd Clinic Products' section is a banner with a faded cannabis-leaf photo background, a centered heading and two large underlined text links. B shows a left-aligned heading with two small outlined pill links.",
+  "category": "component",
+  "evidence": "A slice 3: centered 'Hemp Oil Benefits | Plus Cbd Oil' underlined with a pipe separator. B slice 3: outlined green pill chips",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's three info cards below the banner have navy borders and square corners. B's have rounded corners and no outline.",
+  "category": "decoration",
+  "evidence": "A tiles at x=140/547/954 with 346px squares and navy edge. B tiles at x=181/548/914 at 345px with rounded corners",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a navy footer with four columns, each with a heading, plus a newsletter email field and a row of five circular social icons. B has a near-black green footer with a logo and tagline column and three text columns, and no social icons.",
+  "category": "component",
+  "evidence": "A footer bg rgb(21,42,81); Font Awesome 5 Brands 5 elements (social icons). B footer rgb(24,34,28); no icon font in fonts list",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's newsletter signup is inside the footer's first column as a compact field with a check icon. B gives it its own centered 'Join The Club' band with a pill input and a separate 'Sign Up' button.",
+  "category": "component",
+  "evidence": "A footer: input placeholder 'email@example.com' with a tick, no visible button. B: 'Your email address' input with 'Sign Up' button, 1 form, 1 input, 1 button",
+  "which_side": "both"
+ },
+ {
+  "observation": "Form and control counts are far higher on A.",
+  "category": "DOM structure",
+  "evidence": "A: 3 forms, 14 inputs, 16 buttons, 1 select, 1 textarea, 4 labels. B: 1 form, 1 input, 1 button",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer logo is absent. B repeats the logo in the footer and adds a tagline.",
+  "category": "copy",
+  "evidence": "B images: cropped-Z-Logo-CBD.png at y=4862 (134x40) plus the text 'Where To Buy Cbd Cream For Pain'. A has only one logo instance",
+  "which_side": "B"
+ },
+ {
+  "observation": "The copyright and payment strip is a light bar in A and a divider line followed by a dark row in B. In B the payment icons sit on a white rounded chip at reduced size.",
+  "category": "decoration",
+  "evidence": "A payment_icons.png 307x49 at y=4928. B same file rendered 166x32 at y=5124",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer contact info differs: A shows email and wholesale email addresses; B drops them and keeps phone, hours and wholesale phone, with bold labels.",
+  "category": "copy",
+  "evidence": "A: 'Email: Info@cbdoil', 'Wholesale@cbdoil'. B: 'Phone:', 'Hours:', 'Wholesale: 208-358-0251' only",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a visible tagline and hero intro copy that A lacks, and uses 'Join The Club' as a secondary hero CTA.",
+  "category": "copy",
+  "evidence": "B: 'CBD oil, edibles, topicals and more. Sign up for exclusive deals...' and 'Join The Club' button; A has no equivalent hero copy",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's headings are keyword-stuffed and some alt texts are SEO phrases unrelated to the image (e.g. 'Cbd Distributors', 'Where Can I Buy Cbd Oil'). B's alt text describes the image or repeats the product title (e.g. 'CBD edibles', 'Cbd For Life').",
+  "category": "imagery",
+  "evidence": "A alts: 'Cbd Plus ', 'Hemp Extract ', 'Justcbd '; one image has no alt (alt_missing 1). B alt_missing 0, alts 'CBD topicals', 'The 5 Ps of CBD'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The first paragraph rendered in A is centered with unusual wide width and text wraps edge to edge. B constrains the same text to a narrow centered card with left-aligned lines.",
+  "category": "layout",
+  "evidence": "A slice 0: text spans x≈10–1430. B slice 2: card x≈310–1130, left-aligned text",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid for layout. A uses no grid and relies on flex and floats.",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 12. B display_grid 10, display_flex 10",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a narrower content column with larger side margins. A's content spans a wider area.",
+  "category": "layout",
+  "evidence": "A content x from 135 to 1305 (1170px). B content x from 180/181 to 1260 (about 1080px)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Effects: A has many more transitions, shadows and rounded elements, and one animation. B has few.",
+  "category": "decoration",
+  "evidence": "A: box_shadows 10, transitions 206, animations 1, transforms 11. B: box_shadows 1, transitions 10, animations 0, transforms 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "Corner radius: A is mostly square with small radii (2px primary button, 37 elements 1–7px). B uses larger 8–15px card radii plus 999px pills.",
+  "category": "decoration",
+  "evidence": "A buckets: 0 -> 677, 1-7 -> 37, 8-15 -> 1. B buckets: 0 -> 122, 8-15 -> 15, pill -> 11",
+  "which_side": "both"
+ },
+ {
+  "observation": "A semantic tags include an article and nine figure elements wrapping images. B has neither, using plain divs and imgs.",
+  "category": "semantic structure",
+  "evidence": "A article 1, figure 9. B article 0, figure 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's html lang is 'en-US' and it carries social/SEO meta (og:*, twitter:*, robots, keywords). B has only charset, viewport and description.",
+  "category": "DOM structure",
+  "evidence": "A meta_names include og:title, twitter:card, keywords, robots. B meta_names: charset, viewport, description; lang 'en'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The tab/nav links in B are lowercase-weight sans text in grey with a bold green phone number. A's nav items are small serif text such as 'How To Make Cannabis…' and 'Cbd Dog Treats' set in two stacked rows.",
+  "category": "typography",
+  "evidence": "B slice 0 nav: Shop, Featured, News, Guides, Contact Us, 208-969-1282 (green bold). A slice 0: nav rows 'How To Make Cannabis…' and 'Cbd Dog Treats' with a divider line",
+  "which_side": "both"
+ },
+ {
+  "observation": "B is slightly taller than A overall.",
+  "category": "layout",
+  "evidence": "A page_height 4987 vs B 5184 at width 1440",
+  "which_side": "B"
+ }
+]

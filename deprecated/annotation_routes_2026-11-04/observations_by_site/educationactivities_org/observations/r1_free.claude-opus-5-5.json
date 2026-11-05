@@ -1,0 +1,272 @@
+[
+ {
+  "observation": "The page has no h1. Its top-level headings are 16 h2s, with 29 h3s and 10 h4s under them.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json h1_count: 0, h1: null; tag_counts h2: 16, h3: 29, h4: 10"
+ },
+ {
+  "observation": "The document title is 'Education Activities', but the visible masthead wordmark reads 'Education Activitie', without the final 's'.",
+  "category": "copy treatment",
+  "evidence": "facts.json title: 'Education Activities'; logo image alt 'Education Activitie'; slice_00 masthead text"
+ },
+ {
+  "observation": "Content is wrapped in semantic landmarks: one header, nav, main, aside and footer, plus 7 sections and 30 articles.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json semantic: header 1, nav 1, main 1, aside 1, footer 1, section 7, article 30"
+ },
+ {
+  "observation": "The page uses 40 <time> elements, which matches the many post dates shown on cards and in sidebar lists.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json tag_counts time: 40; dates like '2018-10-02' visible in slice_00 through slice_03"
+ },
+ {
+  "observation": "The page loads no scripts, has one stylesheet and only one inline style attribute.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json counts scripts: 0, stylesheets: 1, inline_style_attrs: 1"
+ },
+ {
+  "observation": "The class vocabulary is small: 33 unique classes across 204 uses, and almost none look like Tailwind utilities.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json classes total 204, unique 33, tailwind_like_fraction 0.029"
+ },
+ {
+  "observation": "The page is link-dense, with 201 anchors against 847 words of text.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json anchors: 201, text_stats words: 847"
+ },
+ {
+  "observation": "Two font families are used: system-ui on most elements and Georgia as a serif accent.",
+  "category": "typography",
+  "evidence": "facts.json fonts_by_element_count system-ui 384, Georgia 202"
+ },
+ {
+  "observation": "Georgia serif is used for the wordmark, the italic tagline, card excerpts, the author subtitle and the search placeholder. Card titles and metadata use the sans-serif.",
+  "category": "typography",
+  "evidence": "slice_00 'Education Activitie' wordmark and italic quote; slice_01 serif excerpt text under 'By WebEditor'; 'A Business Expert' in serif; slice_02 'Search articles' placeholder in serif"
+ },
+ {
+  "observation": "The masthead has an italic serif tagline aligned to the right: 'The aim of education is the knowledge not of facts but of values.'",
+  "category": "copy treatment",
+  "evidence": "slice_00 right side of masthead, gray italic text"
+ },
+ {
+  "observation": "Body text is 16px with a line height of 24.8px, a ratio of 1.55.",
+  "category": "typography",
+  "evidence": "facts.json body_font_size 16px, body_line_height 24.8px"
+ },
+ {
+  "observation": "Section h2s are 32px at weight 700 in the computed styles. Visible section labels like 'SCIENCE' render in uppercase with letter-spacing.",
+  "category": "typography",
+  "evidence": "facts.json h2 font_size 32px, weight 700; slice_00 'SCIENCE', 'AUTHOR INFO' letter-spaced caps"
+ },
+ {
+  "observation": "Each section heading row has a dark rule below it and a red 'View all →' link on the right.",
+  "category": "component choices",
+  "evidence": "slice_00 SCIENCE heading with 'View all →'; slice_01 COLLEGE AND UNIVERSITY; slice_02 EDUCATIONS, ONLINE EDUCATION"
+ },
+ {
+  "observation": "The page background is a warm off-white, rgb(246,244,239), and body text is a near-black navy, rgb(27,31,42).",
+  "category": "color",
+  "evidence": "facts.json colors body_bg rgb(246, 244, 239), body_color rgb(27, 31, 42)"
+ },
+ {
+  "observation": "The accent color is a brick red, rgb(180,54,31). It is used for category badges, the Search button, 'View all' links and the ranking numbers.",
+  "category": "color",
+  "evidence": "facts.json top_backgrounds rgb(180,54,31) x33, primary_button bg rgb(180,54,31); slice_01 red numerals 1–5"
+ },
+ {
+  "observation": "Dark navy, rgb(20,33,61), fills the top utility bar, an empty band under the masthead, and the footer.",
+  "category": "color",
+  "evidence": "facts.json top_backgrounds rgb(20,33,61) x3; slice_00 top bar and band at y≈174–218; slice_04 footer"
+ },
+ {
+  "observation": "Secondary text such as bylines and dates uses a slate gray, rgb(102,112,133), and footer text uses a pale blue-gray, rgb(207,214,228).",
+  "category": "color",
+  "evidence": "facts.json top_text_colors rgb(102,112,133) x133, rgb(207,214,228) x46"
+ },
+ {
+  "observation": "A full-width navy band sits under the masthead with no visible text or links in it.",
+  "category": "layout",
+  "evidence": "slice_00 dark band between masthead (y≈174) and hero (y≈218), visually empty"
+ },
+ {
+  "observation": "The top utility bar shows a static date ('Thu. Jun 17th, 2021') on the left and five category links on the right: Education, Financial Aid, Certification, Science, Languages.",
+  "category": "component choices",
+  "evidence": "slice_00 top navy bar"
+ },
+ {
+  "observation": "A white trending strip has a red 'TRENDING' label followed by three post titles in a row, the last one cut off at the right edge.",
+  "category": "component choices",
+  "evidence": "slice_00 strip: 'TRENDING' badge, '...What are the top' cut off"
+ },
+ {
+  "observation": "The hero is a two-column grid: one large feature image about 752×732 on the left, and two stacked cards about 374px wide on the right.",
+  "category": "layout",
+  "evidence": "facts.json images rect 752x732 at x146 and 374x210 at x919 (y219, y606); slice_00"
+ },
+ {
+  "observation": "The large hero card places its badge, a white headline and the byline over the image, on a dark gradient scrim along the bottom.",
+  "category": "imagery handling",
+  "evidence": "slice_00 'Trump Declares Decide to Lead EPA Chemical Security Workplace' white text over darkened bottom of image; facts gradient_backgrounds: 8"
+ },
+ {
+  "observation": "The hero image's natural size is 720×380 but it renders at 752×732, so it is cropped to fill a near-square box.",
+  "category": "imagery handling",
+  "evidence": "facts.json Trump-Announces... natural [720,380], rect w752 h732"
+ },
+ {
+  "observation": "Below the hero, the main column is about 812px wide with a three-column card grid (cards about 255px wide), and a sidebar about 300px wide on the right.",
+  "category": "layout",
+  "evidence": "facts.json card images x 147/424/702 w255; sidebar items at x 994–1294; slice_00–02"
+ },
+ {
+  "observation": "Sections with five posts lay them out 3 + 2, which leaves an empty third column in the second row.",
+  "category": "layout",
+  "evidence": "slice_01 SCIENCE second row has two cards, empty space at right; same in COLLEGE AND UNIVERSITY, EDUCATIONS, ONLINE EDUCATION, EDUCATION ACTIVITIES"
+ },
+ {
+  "observation": "Card thumbnails render at a uniform 255×144, a 16:9 box, whatever the source aspect ratio (720×380 or 300×200).",
+  "category": "imagery handling",
+  "evidence": "facts.json images natural 720x380 and 300x200 both rendered w255 h144"
+ },
+ {
+  "observation": "Cards are white, with a thin light border, a small corner radius and no shadow.",
+  "category": "decoration/effects",
+  "evidence": "facts.json box_shadows 0, border_radius_buckets bucket_1_7: 72; top_backgrounds white x42; slice_01 card edges"
+ },
+ {
+  "observation": "Card anatomy is a thumbnail, a red uppercase category badge, a bold sans title, then a 'By WebEditor · date' line. Only some cards have a serif excerpt.",
+  "category": "component choices",
+  "evidence": "slice_01 SCIENCE cards with excerpts; COLLEGE AND UNIVERSITY 'How to prepare for JEE Advanced 2020?' has no excerpt"
+ },
+ {
+  "observation": "Because some cards have excerpts and others don't, card heights in a row differ, and shorter cards keep blank white space at the bottom.",
+  "category": "layout",
+  "evidence": "slice_01 'How to prepare for JEE' card vs 'Writing Subreddits' card in same row; slice_03 cards with empty lower area"
+ },
+ {
+  "observation": "Category badges are small rectangles with square corners: white uppercase letter-spaced text on red.",
+  "category": "component choices",
+  "evidence": "slice_00 'SCIENCE' badges; slice_01 'COLLEGE AND UNIVERSITY'; facts bucket_0 radius count 503"
+ },
+ {
+  "observation": "Every post is credited to the same byline, 'By WebEditor'.",
+  "category": "copy treatment",
+  "evidence": "slice_00–04 all card metadata lines read 'By WebEditor'"
+ },
+ {
+  "observation": "Posts in SKILLS DEVELOPMENT and EDUCATION ACTIVITIES have no image. A navy diagonal gradient block with the category name in spaced caps takes its place.",
+  "category": "imagery handling",
+  "evidence": "slice_03 'SKILLS DEVELOPMENT' and 'GENERAL' gradient tiles; facts gradient_backgrounds 8 (7 placeholders + hero scrim)"
+ },
+ {
+  "observation": "Under the EDUCATION ACTIVITIES heading, each card is badged 'GENERAL'.",
+  "category": "copy treatment",
+  "evidence": "slice_03 heading 'EDUCATION ACTIVITIES' with all five cards badged 'GENERAL'"
+ },
+ {
+  "observation": "Many post titles have odd synonym substitutions, for example 'Decide' for 'Pick', 'Workplace' for 'Office', and 'Every part' for 'Everything'. The image filenames carry the original wording.",
+  "category": "copy treatment",
+  "evidence": "heading 'Trump Declares Decide to Lead EPA Chemical Security Workplace' vs file 'Trump-Announces-Pick-to-Lead-EPA-Chemical-Safety-Office.png'"
+ },
+ {
+  "observation": "The same posts appear repeatedly: the three hero articles return in the SCIENCE section, and four items are listed in both POPULAR and LATEST POSTS.",
+  "category": "layout",
+  "evidence": "facts heading_outline duplicates; same filenames rendered at hero and y=1041; sidebar images at y1339–1730 and 1900–2189 repeat"
+ },
+ {
+  "observation": "The sidebar starts with an AUTHOR INFO card: a 96×96 circular photo, the name 'James E. Turner' in bold sans and 'A Business Expert' in serif.",
+  "category": "component choices",
+  "evidence": "slice_00 author card; facts image rect 96x96, alt 'James E. Turner'; bucket_16_plus radius 10"
+ },
+ {
+  "observation": "The POPULAR list is an ordered list with large red numerals 1–5 in front of 76×60 thumbnails, bold titles and dates, with thin dividers between items.",
+  "category": "component choices",
+  "evidence": "facts tag_counts ol: 1; images 76x60 at x1026; slice_01 red numerals"
+ },
+ {
+  "observation": "LATEST POSTS in the sidebar uses the same thumbnail, title and date rows without numbers, and lists four items.",
+  "category": "component choices",
+  "evidence": "slice_01 LATEST POSTS; facts images 76x60 at x994 y1900–2189"
+ },
+ {
+  "observation": "The CATEGORY widget is a plain text list of 11 categories, each with a thin divider line.",
+  "category": "component choices",
+  "evidence": "slice_01–02 Certification ... Skills Development list"
+ },
+ {
+  "observation": "The TAGS widget shows the categories again as outlined pill-shaped chips that wrap across rows.",
+  "category": "component choices",
+  "evidence": "slice_02 TAGS chips; facts border_radius bucket_16_plus/pill"
+ },
+ {
+  "observation": "The search widget is a text input joined to a red 'Search' button with square corners.",
+  "category": "component choices",
+  "evidence": "facts primary_button text 'Search', radius 0px, padding 0px 14px; form 1, input 1, button 1; slice_02"
+ },
+ {
+  "observation": "The sidebar ends after SEARCH, about a third of the way down the page, and the rest of the right column below it is empty.",
+  "category": "layout",
+  "evidence": "slice_02 empty right column below search; slice_03 no sidebar content"
+ },
+ {
+  "observation": "The footer is navy with three columns, QUICK LINKS, TOP CATEGORY and LATEST POSTS, with white uppercase headings.",
+  "category": "layout",
+  "evidence": "slice_04 footer"
+ },
+ {
+  "observation": "A thin divider runs above the footer bottom line, which credits the 'Daily Magazine' theme by AF themes.",
+  "category": "copy treatment",
+  "evidence": "slice_04 'Copyright © All rights reserved. | Theme: Daily Magazine by AF themes.'"
+ },
+ {
+  "observation": "The page has no box shadows, backdrop blur, animations or transforms, but declares 32 transitions.",
+  "category": "decoration/effects",
+  "evidence": "facts effects box_shadows 0, backdrop_blur 0, animations 0, transforms 0, transitions 32"
+ },
+ {
+  "observation": "Most elements have square corners: 503 elements have a 0 radius, compared with 72 at 1–7px.",
+  "category": "decoration/effects",
+  "evidence": "facts border_radius_buckets bucket_0 503, bucket_1_7 72, bucket_8_15 0"
+ },
+ {
+  "observation": "Layout uses both flexbox and grid, 54 flex containers and 17 grid containers.",
+  "category": "layout",
+  "evidence": "facts layout display_flex 54, display_grid 17"
+ },
+ {
+  "observation": "The page is 1440px wide and 5573px tall. Content sits in a centered container from roughly x=146 to x=1294.",
+  "category": "layout",
+  "evidence": "facts page_width 1440, page_height 5573; image rects start x146, sidebar ends ~1294"
+ },
+ {
+  "observation": "Every image has an alt attribute, but nearly all content thumbnails use an empty alt. Only the logo and the author photo have descriptive alt text.",
+  "category": "imagery handling",
+  "evidence": "facts alt_missing 0; images alt '' except 'Education Activitie' and 'James E. Turner'"
+ },
+ {
+  "observation": "The logo is a small raster image, rendered at 56×56 from a 280×165 source, placed next to the large serif wordmark.",
+  "category": "imagery handling",
+  "evidence": "facts Education-activity.png natural 280x165, rect 56x56; slice_00"
+ },
+ {
+  "observation": "The copy has no emoji, em dashes or exclamation marks.",
+  "category": "copy treatment",
+  "evidence": "facts text_stats emoji 0, em_dashes 0, exclamations 0"
+ },
+ {
+  "observation": "The page has a single <details>/<summary> disclosure element and 10 ARIA attributes.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts tag_counts details 1, summary 1; counts aria_attrs 10"
+ },
+ {
+  "observation": "The thumbnails mix illustrations, clip-art and stock photos, ranging from cartoon science scenes and flat icons to photos of students and a cannabis plant.",
+  "category": "imagery handling",
+  "evidence": "slice_00 cartoon hero, flask graphics; slice_01 flat icon circles, stock photos; slice_02 CBD plant, 'WHY MBA?' graphic"
+ },
+ {
+  "observation": "Some meta text is very small, for example the 'By WebEditor · 2018-10-02' lines in gray sans with a middle-dot separator.",
+  "category": "typography",
+  "evidence": "slice_00–03 byline rows; facts top_text_colors rgb(102,112,133)"
+ }
+]

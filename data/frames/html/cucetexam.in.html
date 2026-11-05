@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="shortcut icon" href="../CSS/Images/favicon.ico" />
+    <title>CUCET</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../AdminCSS/CSS/Script/bootstrap.min.css" rel="stylesheet" />
+    <script src="../AdminCSS/CSS/Script/jquery.min.js"></script>
+    <script src="../AdminCSS/CSS/Script/bootstrap.min.js"></script>
+    <script src="../AdminCSS/CSS/Script/jquery.bootstrap.newsbox.min.js"></script>
+    <link href="../AdminCSS/sb-admin-2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="../AdminCSS/CSS/Script/jquery-ui.js"></script>
+    <style>
+        body {
+            background-image: url("../CSS/Images/back.png");
+        }
+
+        #tabledetails {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #tabledetails td, #tabledetails th {
+                border: 1px solid #1874CD;
+                padding: 5px;
+            }
+
+            #tabledetails th {
+                padding-top: 6px;
+                padding-bottom: 10px;
+                text-align: left;
+                background-color: #1874CD;
+                color: white;
+            }
+
+        .non-member-list {
+            background: #1e99b7;
+            text-align: center;
+            color: #fff;
+        }
+
+            .non-member-list h1 {
+                color: #fff;
+                font-size: 28px;
+                font-family: 'Open Sans';
+                font-weight: 400;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            .non-member-list ul {
+                list-style: none;
+            }
+
+                .non-member-list ul li {
+                    display: inline-block;
+                    border-right: 1px solid #69dae4;
+                    width: 25%;
+                    padding-left: 150px;
+                    vertical-align: top;
+                }
+
+                    .non-member-list ul li:nth-child(3n) {
+                        border-right: none !important;
+                    }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .gridContainer {
+            width: 108.2%;
+            max-width: 1232px;
+            margin: auto;
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+
+        .clearfix::before, .clearfix::after {
+            content: "";
+            display: table;
+        }
+
+        .footer {
+            background: #2d3e50;
+            width: 100%;
+            line-height: 40px;
+        }
+
+        .copm_name {
+            padding-top: 25px;
+            padding-left: 134px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .news-item {
+            padding: 4px 4px;
+            margin: 0px;
+            border-bottom: 1px dotted #555;
+        }
+    </style>
+    <style>
+        blink {
+            color: #69dae4;
+            -webkit-animation: blink 1s step-end infinite;
+            animation: blink 1s step-end infinite;
+        }
+
+        @-webkit-keyframes blink {
+            67% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes blink {
+            67% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <script>
+        $(function () {
+            $('#hrefimportantdt').click(function () {
+                $("#dialogImpDate").dialog({
+                    resizable: false,
+                    height: "auto",
+                    width: 645,
+                    title: "Important Dates",
+                    modal: true,
+                    buttons: {
+                        Close: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                });
+            });
+        });
+
+        function importantdt() {
+            $("#dialogUniversites").dialog("close");
+            $("#dialogProgramme").dialog("close");
+            $("#dialogSyllabus").dialog("close");
+        }
+
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            $(".news-ticker").bootstrapNews({
+                newsPerPage: 4,
+                autoplay: true,
+                pauseOnHover: true,
+                direction: 'up',
+                newsTickerInterval: 2000,
+                onToDo: function () {
+                }
+            });
+
+            $('#media').carousel({
+                pause: true,
+                interval: false,
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <div class="well well-lg" style="background-color: #6E2C00; margin-bottom: 2px; text-align: center;">
+                <h2 style="font-weight: bold; padding-left: 5px; margin-top: 4px; color: #ffffff;">CENTRAL UNIVERSITIES COMMON ENTRANCE TEST (CUCET-2020)</h2>
+            </div>
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://cucetexam.in/" style="color: #17202A; cursor: pointer;">Home</a></li>
+                            <li><a href="https://cucetexam.in/CUCET2020/RecPages/University01Details.aspx" target="_blank" style="color: #17202A; cursor: pointer;">Universities</a></li>
+                            <li><a style="color: #17202A; cursor: pointer;" id="hrefimportantdt">Important Dates</a></li>
+                            <li><a href="https://cucetexam.in/CUCET2020/RecPages/Search01Program16Details.aspx" target="_blank" style="color: #17202A; cursor: pointer;">Programs</a></li>
+                            <li><a href="https://cucetexam.in/CUCET2020/RecPages/ContactUS.aspx" target="_blank" style="color: #17202A; cursor: pointer;">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                    <div id="dialogImpDate" style="display: none">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Sr.No</th>
+                                    <th colspan="2">Activity</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td colspan="2">Commencement of Online Registration</td>
+                                    <td>March 16<sup>th</sup>, 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td colspan="2">Closing Date of Online Registration</td>
+                                    <td>April 11<sup>th</sup>, 2020
+                                        <br />
+                                        <span style="color: red">June 06<sup>th</sup>, 2020 (Extended)</span> </td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td colspan="2">Issue of Admit Card for all Programs</td>
+                                    <td><span style="color: red">Sept. 09<sup>th</sup>, 2020</span></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: middle;">4.</td>
+                                    <td style="vertical-align: middle; width: 28%;">Exam Dates</td>
+                                    <td style="vertical-align: middle; width: 32%;">UI, PG & RP Programmes<br />
+                                        <b>(OMR Based)</b></td>
+                                    <td><span style="text-decoration-line: line-through;">May 30<sup>th</sup> & 31<sup>st</sup>, 2020</span><br />
+                                        <span style="color: red">Sept. 18<sup>th</sup> to 20<sup>th</sup>, 2020 </span></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td style="vertical-align: middle;">5.</td>
+                                    <td style="vertical-align: middle;">Answer Key Upload</td>
+                                    <td>UI, PG & RP Programmes</td>
+                                    <td><span style="text-decoration-line: line-through;">June 01<sup>st</sup>, 2020</span><br />
+                                        <span style="color: red">Sept. 21<sup>st</sup>, 2020 (10:00 AM)</span></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td style="vertical-align: middle;">6.</td>
+                                    <td style="vertical-align: middle;">Grievances, if any</td>
+                                    <td>UI, PG & RP Programmes</td>
+                                    <td><span style="text-decoration-line: line-through;">June 02<sup>nd</sup> to 04<sup>th</sup>, 2020</span><br />
+                                        <span style="color: red">Sept. 21<sup>st</sup> to 24<sup>th</sup>, 2020 </span></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td style="vertical-align: middle;">7.</td>
+                                    <td style="vertical-align: middle;">Corrected Answer Key, if any</td>
+                                    <td>UI, PG & RP Programmes</td>
+                                    <td><span style="text-decoration-line: line-through;">June 08<sup>th</sup>, 2020</span><br />
+                                        <span style="color: red">Sept. 30<sup>th</sup>, 2020 </span></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>8.</td>
+                                    <td colspan="2">Result Declaration</td>
+                                    <td><span style="text-decoration-line: line-through;">June 26<sup>th</sup>, 2020</span><br />
+                                        <span style="color: red">Oct. 17<sup>th</sup>, 2020 </span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </nav>
+            <div style="color: black; font-size: 18px; text-align: center; margin-top: 8px;">
+                
+            </div>
+            <div class="container-fluid text-center">
+                <div class="row content">
+                    <div class="col-sm-3 sidenav">
+                        
+                        <div id="divScoreCard" style="margin-bottom: 10px;">
+                            <a href="https://cucetexam.in/CUCET2020/RecPages/ScoreCard07Login16.aspx" target="_blank" class="btn btn-success form-control" style="font-size: 20px; font-weight: bold; height: 45px">Click to View Score Card</a>
+                        </div>
+                        
+                        
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Important Links</div>
+                            <div class="panel-body">
+                                <table class="table table-bordered" style="text-align: left; margin-bottom: 0px;">
+                                    <tbody>
+                                        <tr id="trRelogin">
+	<td>&#10148; <a href="https://cucetexam.in/CUCET2020/RecPages/AdvertisementEngHindi.html" target="_blank">Admission Notification</a>
+                                            </td>
+</tr>
+
+                                        
+                                        <tr id="tr3">
+	<td>&#10148; <a href="https://cucetexam.in/Document/General_Instructions.pdf" target="_blank">General Instructions</a>
+                                            </td>
+</tr>
+
+                                        
+                                        <tr id="tr5">
+	<td>&#10148; <a href="https://cucetexam.in/CUCET2020/RecPages/ExamCities.html" target="_blank">Test Centers</a>
+                                            </td>
+</tr>
+
+                                        <tr id="tr6">
+	<td>&#10148; <a href="https://cucetexam.in/CUCET2020/RecPages/ExamTimeTable.html" target="_blank">CUCET-2020 Exam Time Table</a>&nbsp 
+                                            </td>
+</tr>
+
+                                        
+                                        <tr id="tr8">
+	<td>&#10148; <a href="https://cucetexam.in/Document/Frequently_Asked_Questions.pdf" target="_blank">FAQ</a>
+                                            </td>
+</tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-left">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                <li data-target="#myCarousel" data-slide-to="5"></li>
+                                <li data-target="#myCarousel" data-slide-to="6"></li>
+                                <li data-target="#myCarousel" data-slide-to="7"></li>
+                                <li data-target="#myCarousel" data-slide-to="8"></li>
+                                <li data-target="#myCarousel" data-slide-to="9"></li>
+                                <li data-target="#myCarousel" data-slide-to="10"></li>
+                                <li data-target="#myCarousel" data-slide-to="11"></li>
+                                <li data-target="#myCarousel" data-slide-to="12"></li>
+                                <li data-target="#myCarousel" data-slide-to="13"></li>
+                                <li data-target="#myCarousel" data-slide-to="14"></li>
+                                <li data-target="#myCarousel" data-slide-to="15"></li>
+                                <li data-target="#myCarousel" data-slide-to="16"></li>
+                                <li data-target="#myCarousel" data-slide-to="17"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" style="height: 100%">
+                                <div class="item active">
+                                    <img src="../CSS/Images/Banner/Univ14CURAJBanner.jpg" alt="Central University of Rajasthan" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ1CUASMBaner.jpg" alt="Assam University" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ2BGSBanner.jpg" alt="Baba Ghulam Shah University" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ3BASEBanner.jpg" alt="BASE" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ4CUAPHBanner.jpg" alt="Central University of Andhra Pradesh" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ5CUGUJBanner.jpg" alt="Central University of Gujarat" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ6CUHARBanner.jpg" alt="Central University of Haryana" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ7CUJAMBanner.jpg" alt="Central University of Jammu" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ8CUJHDBanner.jpg" alt="Central University of Jharkhand" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ9CUKNKBanner.jpg" alt="Central University of Karnataka" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ10CUKASBanner.jpg" alt="Central University of Kashmir" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ11CUKERBanner.jpg" alt="Central University of Kerala" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ12CUODSBanner.jpg" alt="Central University of Odisha" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ13CUPUNBanner.jpg" alt="Central University of Punjab" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ15CUSBRBanner.jpg" alt="Central University of South Bihar" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ16CUTNDBanner.jpg" alt="Central University of Tamil Nadu" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ17KUBanner.jpg" alt="Khallikote University" style="width: 100%;" />
+                                </div>
+                                <div class="item">
+                                    <img src="../CSS/Images/Banner/Univ20SPUJBanner.jpg" alt="Sardar Patel University of Police" style="width: 100%;" />
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div style="padding-top: 10px; padding-bottom: 12px;">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 sidenav">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Important Notice</div>
+                            <div class="panel-body">
+                                <table class="table table-bordered" style="text-align: justify;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <ul type="square" class="news-ticker">
+                                                    <li class="news-item">
+                                                        <a style="text-decoration: none;" class="prev" href="#" target="_blank">View Final Answer Key - <a href="https://cucetexam.in/CUCET2020/RecPages/Answer07FinalKeyLogin16.aspx" target="_blank"><span style="color: red; font-weight: bold;">Click Here</span></a> </a>
+                                                    </li>
+                                                    <li class="news-item">
+                                                        <a style="text-decoration: none;" class="prev" href="#" target="_blank">Login for Registered Candidate - <a href="https://cucetexam.in/CUCET2020/RecPages/UserLogin16.aspx" target="_blank"><span style="color: red; font-weight: bold;">Click Here</span></a> </a>
+                                                    </li>
+                                                    <li class="news-item">
+                                                        <a style="text-decoration: none;" class="prev" href="#" target="_blank">Download Admit Card - <a href="https://cucetexam.in/CUCET2020/RecPages/Admit06Login23.aspx" target="_blank"><span style="color: red; font-weight: bold;">Click Here</span></a> </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="non-member-list">
+                <div>CUCET - 2020 Coordinating University</div>
+                <div style="font-size: 20px;"><strong>Central University of Rajasthan</strong></div>
+                <div><strong>Website</strong>: <a href="http://www.curaj.ac.in/" target="_blank" style="color: red; text-decoration: none;">www.curaj.ac.in</a></div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

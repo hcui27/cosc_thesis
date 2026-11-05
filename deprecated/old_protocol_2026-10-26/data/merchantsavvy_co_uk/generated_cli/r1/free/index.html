@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merchant Savvy – Payment Processing Made Simple (&amp; Cheaper)</title>
+<meta name="description" content="Compare merchant accounts and payment processors to find the best option for your business when taking card payments face to face, over the phone or online.">
+<style>
+:root{
+  --brand:#1E228C; --brand-2:#474BA0; --ink:#211C1D; --muted:#5b5866;
+  --bg:#ffffff; --soft:#f3f3fa; --line:#e2e2ef; --accent:#ffb400;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--brand)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo img{height:36px;width:auto}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+nav li{position:relative}
+nav .top{display:block;padding:22px 12px;font-weight:600;font-size:15px;color:var(--ink);text-decoration:none;cursor:default}
+nav li:hover>.top,nav li:focus-within>.top{color:var(--brand)}
+nav .sub{display:none;position:absolute;left:0;top:100%;min-width:250px;background:#fff;border:1px solid var(--line);border-radius:0 0 10px 10px;box-shadow:0 12px 30px rgba(30,34,140,.12);padding:8px}
+nav li:hover .sub,nav li:focus-within .sub{display:block}
+nav .sub a{display:block;padding:9px 12px;border-radius:6px;text-decoration:none;color:var(--ink);font-size:14.5px}
+nav .sub a:hover{background:var(--soft);color:var(--brand)}
+nav .quote{display:block;margin:14px 0 14px 8px;padding:6px 16px;background:var(--brand);color:#fff;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none}
+nav .quote:hover{background:var(--brand-2)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:8px 14px;font:600 15px inherit;font-family:inherit;color:var(--brand);cursor:pointer}
+
+/* hero */
+.hero{background:linear-gradient(135deg,#1E228C 0%,#2B2C91 55%,#474BA0 100%);color:#fff;padding:84px 0 64px;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.12;margin:0 auto 36px;max-width:16em;letter-spacing:-.02em}
+.points{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;text-align:left}
+.points li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:20px 18px 20px 54px;position:relative;font-size:16px}
+.points li::before{content:"✓";position:absolute;left:16px;top:18px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--brand);font-weight:800;display:grid;place-items:center}
+.cta{display:inline-block;margin-top:36px;background:var(--accent);color:var(--brand);font-weight:700;padding:14px 32px;border-radius:999px;text-decoration:none;font-size:17px}
+.cta:hover{filter:brightness(1.07)}
+.logos{background:#fff;border-radius:12px;padding:14px 22px;display:inline-block;margin-top:44px}
+.logos img{width:300px;max-width:100%}
+
+/* sections */
+section{padding:72px 0}
+section.alt{background:var(--soft)}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2;margin:0 0 12px;color:var(--brand);letter-spacing:-.01em}
+.lead{max-width:44em;color:var(--muted);margin:0 0 32px;font-size:17px}
+.links{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.links a{display:flex;align-items:center;justify-content:space-between;gap:8px;height:100%;padding:18px;background:#fff;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);font-weight:600;transition:.15s}
+.links a::after{content:"→";color:var(--brand-2);transition:transform .15s}
+.links a:hover{border-color:var(--brand-2);box-shadow:0 8px 22px rgba(30,34,140,.12);transform:translateY(-2px)}
+.links a:hover::after{transform:translateX(3px)}
+.links.three{grid-template-columns:repeat(3,1fr)}
+
+/* research */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.stat{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:.15s}
+.stat:hover{box-shadow:0 8px 22px rgba(30,34,140,.14);transform:translateY(-2px)}
+.stat img,.stat .ph{aspect-ratio:3/2;width:100%;object-fit:cover}
+.stat .ph{background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#fff;font-size:44px;opacity:.95}
+.stat span{display:block;padding:14px 18px;font-weight:700;color:var(--brand)}
+.stat span::after{content:" →"}
+
+/* footer */
+footer{background:#14165e;color:#cfd0ee;padding:48px 0 36px;font-size:14.5px}
+footer a{color:#fff}
+footer .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+footer .fl img{height:34px;filter:brightness(0) invert(1);margin-bottom:14px}
+footer ul{list-style:none;margin:0;padding:0;display:flex;gap:20px}
+footer .pay{margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.15)}
+footer .pay img{filter:invert(1);opacity:.75;max-width:100%}
+footer p{margin:4px 0}
+
+@media (max-width:960px){
+  .points,.links{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .menu-btn{display:block}
+  nav{display:none;position:absolute;left:0;right:0;top:68px;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px 16px;max-height:calc(100vh - 68px);overflow:auto}
+  nav.open{display:block}
+  nav ul{flex-direction:column}
+  nav .top{padding:12px 0 4px;color:var(--brand)}
+  nav .sub{display:block;position:static;border:0;box-shadow:none;padding:0 0 4px 8px;min-width:0}
+  nav .quote{display:inline-block;margin:10px 0 0}
+}
+@media (max-width:560px){
+  .hero{padding:56px 0 48px}
+  .points,.links,.links.three,.stats{grid-template-columns:1fr}
+  section{padding:52px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="https://www.merchantsavvy.co.uk" aria-label="Merchant Savvy home"><img src="images/merchant_savvy_purple.svg" alt="Merchant Savvy"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><span class="top" tabindex="0">Merchant Accounts</span>
+          <div class="sub">
+            <a href="https://www.merchantsavvy.co.uk/best-uk-merchant-accounts-card-payment-services/">Merchant Account Providers</a>
+            <a href="https://www.merchantsavvy.co.uk/high-risk-merchant-accounts/">High-Risk Merchant Accounts</a>
+            <a href="https://www.merchantsavvy.co.uk/direct-debit-recurring-payments/">Recurring Payments</a>
+            <a href="https://www.merchantsavvy.co.uk/credit-card-processing-fees/">Guide To Card Processing Fees</a>
+          </div></li>
+        <li><span class="top" tabindex="0">Card Machines</span>
+          <div class="sub">
+            <a href="https://www.merchantsavvy.co.uk/credit-card-machines-readers/">Card Machines</a>
+            <a href="https://www.merchantsavvy.co.uk/epos-systems/">EPOS Systems</a>
+            <a href="https://www.merchantsavvy.co.uk/virtual-terminals/">Virtual Terminals</a>
+          </div></li>
+        <li><span class="top" tabindex="0">Online</span>
+          <div class="sub">
+            <a href="https://www.merchantsavvy.co.uk/payment-gateways/">Payment Gateways</a>
+            <a href="https://www.merchantsavvy.co.uk/online-payment-systems/">Online Payment Systems</a>
+            <a href="https://www.merchantsavvy.co.uk/ecommerce-platforms-for-uk-businesses/">eCommerce Platforms</a>
+          </div></li>
+        <li><a class="top" href="https://www.merchantsavvy.co.uk/epos-systems/">EPOS</a></li>
+        <li><a class="quote" href="https://www.merchantsavvy.co.uk/quotes/">Quotes</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Payment Processing Made Simple (&amp; Cheaper)</h1>
+      <ul class="points">
+        <li>We'll get you preferential rates &amp; lower your card processing costs</li>
+        <li>Access 90% of the UK’s leading acquiring banks</li>
+        <li>We recommend the best route to take and why</li>
+        <li>No sales agents or multiple call centres - just one source of independent advice</li>
+      </ul>
+      <a class="cta" href="https://www.merchantsavvy.co.uk/quotes/">Get a Quote</a><br>
+      <div class="logos"><img src="images/msuk-payment-logos-olsaj0e9fmj5ffxbeu1x31du81g362lakwdto6enlg.png" alt="Accepted payment card logos" width="300" height="50"></div>
+    </div>
+  </div>
+
+  <section id="payment-processing">
+    <div class="wrap">
+      <h2>Payment Processing</h2>
+      <p class="lead">Compare merchant accounts and payment processors to find the best option for business when taking card payments face to face, over the phone or online.</p>
+      <ul class="links">
+        <li><a href="/best-uk-merchant-accounts-card-payment-services/">Merchant Account Providers</a></li>
+        <li><a href="/credit-card-machines-readers/">Card Readers &amp; Machines</a></li>
+        <li><a href="/credit-card-processing-fees/">Credit Card Processing Fees</a></li>
+        <li><a href="/high-risk-merchant-accounts/">High Risk Merchant Accounts</a></li>
+        <li><a href="/payment-gateways/">Payment Gateways</a></li>
+        <li><a href="/online-payment-systems/">Online Payment Systems</a></li>
+        <li><a href="/epos-systems/">EPOS Systems</a></li>
+        <li><a href="/virtual-terminals/">Virtual Terminals</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="finance" class="alt">
+    <div class="wrap">
+      <h2>Finance &amp; Banking</h2>
+      <p class="lead">Banking and finance options for start-ups and established business that take card payments.</p>
+      <ul class="links three">
+        <li><a href="/business-finance/merchant-cash-advance/">Merchant Cash Advance</a></li>
+        <li><a href="/business-loans/start-up-loans/">Start Up Loans</a></li>
+        <li><a href="/business-credit-cards/">Business Credit Cards</a></li>
+        <li><a href="/best-business-bank-accounts/">Business Bank Accounts</a></li>
+        <li><a href="/best-business-bank-accounts/sole-trader-bank-accounts/">Sole Trader Bank Accounts</a></li>
+        <li><a href="/best-business-bank-accounts/charity-community-bank-accounts/">Charity &amp; Community Bank Accounts</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <h2>Research &amp; Stats</h2>
+      <div class="stats">
+        <a class="stat" href="/uk-sme-data-stats-charts/"><img src="images/charts.jpg" alt="" loading="lazy"><span>UK SMEs</span></a>
+        <a class="stat" href="/mobile-payment-stats-trends/"><div class="ph" aria-hidden="true">📱</div><span>Mobile Payments</span></a>
+        <a class="stat" href="/mobile-ecommerce-statistics/"><div class="ph" aria-hidden="true">🛒</div><span>Mobile Ecommerce</span></a>
+        <a class="stat" href="/remote-working-statistics/"><div class="ph" aria-hidden="true">💻</div><span>Remote Working</span></a>
+        <a class="stat" href="/payment-fraud-statistics/"><img src="images/payment-fraud-stats.jpg" alt="" loading="lazy"><span>Payment Fraud</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div class="fl">
+        <img src="images/merchant_savvy_purple.svg" alt="Merchant Savvy">
+        <p>Copyright © ALL RIGHTS RESERVED 2021</p>
+        <p>Merchant Savvy is a division of VUBO Ltd (Company Number 09017066).</p>
+        <p>Address: Spaces, 9 Greyfriars Rd, Reading, RG1 1NU.</p>
+      </div>
+      <ul>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-use/">Terms Of Use</a></li>
+      </ul>
+    </div>
+    <div class="pay"><img src="images/payment-types-top.png" alt="Accepted payment types" width="528" height="23"></div>
+  </div>
+</footer>
+
+<script>
+  const b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
+  b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+[
+ {
+  "observation": "Page titles differ: A has a keyword-rich title naming the states, B uses a shorter brand-only title",
+  "category": "metadata",
+  "evidence": "A title: 'The Gravity Vault | Indoor Rock Climbing Gyms | NJ, NY & PA'; B title: 'The Gravity Vault Indoor Rock Gyms'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B declares a document language and A does not",
+  "category": "DOM/semantic structure",
+  "evidence": "A lang: \"\"; B lang: \"en\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has many more meta tags, including keywords, author, a duplicated viewport and google-site-verification",
+  "category": "metadata",
+  "evidence": "A meta count 18, with names including keywords, author and viewport twice; B meta count 3 (charset, viewport, description)",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has no h1, while B has one h1 hero headline",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 0; B h1_count 1, text 'New heights can always be reached.', 48px, weight 700, white, centered",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's headings form a deeper hierarchy: an h2 'Our Locations' section heading, plus each location name as an h4",
+  "category": "DOM/semantic structure",
+  "evidence": "B heading_outline has 25 entries, including h2 'Our Locations' and h4s like 'Brick, NJ'; A's outline has only 8 entries (4 h4 and 4 h3 state names), and its location names aren't in the outline",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses h5 elements heavily, while B mostly uses h4",
+  "category": "DOM/semantic structure",
+  "evidence": "A tag_counts h5: 17, h4: 4; B h5: 2, h4: 19",
+  "which_side": "both"
+ },
+ {
+  "observation": "B wraps its content in a main element and A has none",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic.main: A 0, B 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is much heavier, with more divs, classes and scripts",
+  "category": "DOM/semantic structure",
+  "evidence": "div: A 151 vs B 58; classes total/unique: A 377/140 vs B 98/26; scripts: A 17 vs B 1; stylesheets: A 3 vs B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses inline style attributes much more often",
+  "category": "DOM/semantic structure",
+  "evidence": "inline_style_attrs: A 31 vs B 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses ARIA attributes and A uses none",
+  "category": "DOM/semantic structure",
+  "evidence": "aria_attrs: A 0 vs B 10",
+  "which_side": "B"
+ },
+ {
+  "observation": "B gives every logo descriptive alt text; A's logos have empty alt text and one image is missing alt entirely",
+  "category": "imagery handling",
+  "evidence": "B logo alt 'The Gravity Vault Indoor Rock Gyms'/'The Gravity Vault'; A logo.png alt '' and alt_missing 1 (B: 0)",
+  "which_side": "B"
+ },
+ {
+  "observation": "Layout technique differs: B uses flexbox and grid, while A's measured styles use neither",
+  "category": "layout",
+  "evidence": "display_flex/display_grid: A 0/0 vs B 42/6",
+  "which_side": "B"
+ },
+ {
+  "observation": "Font families differ: A uses the Roboto webfont plus FontAwesome icons, B uses the system-ui stack",
+  "category": "typography",
+  "evidence": "A fonts: Roboto 425, FontAwesome 10; B fonts: system-ui 245 (h1 family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif')",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text color and line height differ",
+  "category": "typography",
+  "evidence": "A body_color rgb(99,99,99), line-height 24px; B body_color rgb(31,41,55), line-height 24.8px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page backgrounds differ: A is pure white and B is a light gray-blue",
+  "category": "color",
+  "evidence": "body_bg A rgb(255,255,255) vs B rgb(245,247,250)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The brand accent palettes differ: A is mid-blue with red, B is navy with orange",
+  "category": "color",
+  "evidence": "A top backgrounds include rgb(1,96,153) ×19 and rgb(237,31,36) ×3; B includes rgb(228,87,46) ×6, rgb(18,35,59) and rgb(29,53,87)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The primary buttons differ in label, color and corner radius",
+  "category": "component choices",
+  "evidence": "A primary_button: 'Go To My Gym', bg rgb(1,96,153), radius 0px; B: 'Search', bg rgb(228,87,46), radius 4px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A is almost entirely square-cornered, while B uses many rounded and pill shapes",
+  "category": "decoration/effects",
+  "evidence": "A radius buckets: 431 at 0, 2 pill, 0 at 8–15px; B: 19 at 8–15px, 13 pill, 5 at 1–7px",
+  "which_side": "B"
+ },
+ {
+  "observation": "Header structure differs: A has a white header (logo left, state dropdown and search box right) above a full-width blue nav bar with pipe separators; B has a dark navy utility strip above a white bar with the logo and inline nav",
+  "category": "layout",
+  "evidence": "A_slice_00: blue bar at y≈132 with '|' separators between items; B_slice_00: navy top strip with Gift Cards/Contact Us, Find a Location and a select, then a white nav row",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's nav has a 'Home' item with an orange underline for the active state; A's nav has no Home item",
+  "category": "component choices",
+  "evidence": "B_slice_00: 'Home' underlined in orange; A_slice_00 nav starts with 'Options to Climb'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's search is a text input with a magnifier icon, while B's top strip has an orange 'Search' button next to the state select",
+  "category": "component choices",
+  "evidence": "A_slice_00: 'Search' input with a magnifier icon; B_slice_00: orange 'Search' button",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is an inset image carousel with dot indicators and no text overlay; B's hero is a full-bleed image with an overlaid headline, subtitle and CTA button",
+  "category": "layout",
+  "evidence": "A hero image rect x 65, w 1310, with 2 dots visible; B hero rect x 0, w 1440, with h1, 'Indoor rock climbing for every age and ability, across four states.' and a 'Find a Location' button",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds marketing copy not present in A: a hero subtitle, 'Pick a state or browse them all.' and 'View location →' links",
+  "category": "copy treatment",
+  "evidence": "B_slice_00 and B_slice_01 show these strings; word count A 569 vs B 650",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's hero is a carousel, with a second header image loaded but hidden",
+  "category": "imagery handling",
+  "evidence": "A images include MAIN_WEBSITE_Header_for_Brick__1_ with a 0×0 rect, and an overlap of 579020px² between duplicate hero images",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's feature cards overlap the bottom of the hero image",
+  "category": "layout",
+  "evidence": "B hero spans y 125–524 while the cards start at y 474; image_overlaps shows 4×13450px² overlaps; visible in B_slice_00",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows a different photo on each card; B reuses one placeholder photo for every card image",
+  "category": "imagery handling",
+  "evidence": "A image files are distinct (GVUSRSP-31.jpg, IMG_8230.jpg, …); every B card image has file 'img' at a natural size of 326×233 and shows the same gym interior in the slices",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's feature blocks are unboxed, with blue titles over thin gray rules; B's are white rounded cards with shadows",
+  "category": "component choices",
+  "evidence": "A_slice_00: blue h4 titles with a divider line, no card background; B_slice_00: white rounded cards on a gray background",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages use the same number of box shadows",
+  "category": "decoration/effects",
+  "evidence": "box_shadows: A 4, B 4",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's mission block is a two-column layout, with a 'Links' list on the left and a large logo plus bold gray text on the right; B's is a centered full-width navy band with a white logo and white bold text",
+  "category": "layout",
+  "evidence": "A_slice_00–01: Links column at x 170, logo 817×176 at x 453; B_slice_00–01: navy band with centered white text and a 298×64 logo",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows its mission logo very large, while B shows it at regular scale",
+  "category": "imagery handling",
+  "evidence": "A mission logo rect 817×176; B 298×64",
+  "which_side": "A"
+ },
+ {
+  "observation": "A puts its 'Links' list mid-page next to the mission statement; B moves those links into the footer",
+  "category": "layout",
+  "evidence": "A_slice_00–01: Links (Options to Climb…Contact Us) above California; B_slice_03: footer 'Links' column",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a centered 'Our Locations' heading and pill-shaped state filter buttons (All/California/New Jersey/New York/Pennsylvania); A has neither",
+  "category": "component choices",
+  "evidence": "B_slice_01 shows the pill filters with 'All' filled navy; buttons: A 2 vs B 7",
+  "which_side": "B"
+ },
+ {
+  "observation": "State headings are styled differently: A uses bold navy text with thin rules between states, B uses navy text with a short orange underline",
+  "category": "typography",
+  "evidence": "A_slice_01–02: 'New Jersey' with a light divider line above; B_slice_01–02: 'California' with an orange underline",
+  "which_side": "both"
+ },
+ {
+  "observation": "Location grids use 3 columns on A and 4 columns on B",
+  "category": "layout",
+  "evidence": "A NJ image x positions 170/543/917 (353px wide); B NJ x positions 151/442/732/1023 (267px wide)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's location images have thin dark borders and no card container; B's are tops of rounded, bordered white cards",
+  "category": "component choices",
+  "evidence": "A_slice_01: thin dark-outlined photos with plain captions below; B_slice_01: cards with rounded corners and light borders",
+  "which_side": "both"
+ },
+ {
+  "observation": "Location names are gray regular-weight captions on A, and bold navy card titles on B",
+  "category": "typography",
+  "evidence": "A_slice_01 'Brick, NJ' in gray; B_slice_01 'Brick, NJ' in bold dark navy",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Coming Soon!' badge differs: A uses a red banner flag with an angled edge and sentence case; B uses an orange pill badge in uppercase",
+  "category": "decoration/effects",
+  "evidence": "A_slice_01/02 red flag 'Coming Soon!' (rgb(237,31,36) bg); B_slice_02 rounded 'COMING SOON!' badge",
+  "which_side": "both"
+ },
+ {
+  "observation": "Some B cards have an orange 'View location →' link and others don't; A has no such links",
+  "category": "copy treatment",
+  "evidence": "B_slice_01–03: link on cards like Brick and Radnor, absent on Nassau/Lehigh/Philadelphia; absent throughout A",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's location cards in a row stretch to equal height, leaving blank space in cards with short or no descriptions",
+  "category": "layout",
+  "evidence": "B_slice_02: Nassau County card is mostly empty to match Melville's height; A rows just end at the caption",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's description text is smaller and lighter than B's card text",
+  "category": "typography",
+  "evidence": "A_slice_01: small light-gray Roboto descriptions; B_slice_01: medium-gray system-ui text at body size",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is two thin bands: a blue newsletter/social bar with icon glyphs, then a darker blue legal bar",
+  "category": "layout",
+  "evidence": "A_slice_03: rgb(1,96,153) bar with envelope icon, e-mail input and FontAwesome social icons; rgb(1,64,102) bottom bar",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's footer is a tall dark navy block with a logo, newsletter form, text pill social links, two link columns and a divider above the legal row",
+  "category": "layout",
+  "evidence": "B_slice_03: logo, 'Signup for our Newsletter!', input plus orange 'Sign up' button, pill links 'Facebook', 'Instagram'…, Links columns",
+  "which_side": "B"
+ },
+ {
+  "observation": "Social links are icon glyphs on A and text labels on B",
+  "category": "component choices",
+  "evidence": "A uses FontAwesome (10 i elements), with icons in A_slice_03; B shows text pills 'Facebook', 'Twitter'…",
+  "which_side": "both"
+ },
+ {
+  "observation": "Newsletter submit controls differ: A uses a small checkmark icon next to a centered 'e-mail' placeholder input, B uses an orange 'Sign up' button with an 'Email address' placeholder",
+  "category": "component choices",
+  "evidence": "A_slice_03 vs B_slice_03",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both footers keep the same legal and credit copy",
+  "category": "copy treatment",
+  "evidence": "Both show '© 2021 Gravity Vault', Privacy Policy, Terms of Use, Site Map, 'Lform Design | NJ Web Design Company'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B is taller than A at the same width",
+  "category": "layout",
+  "evidence": "page_height A 4323 vs B 4732; page_width both 1440",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has more forms and selects, including optgroups in its location dropdown",
+  "category": "DOM/semantic structure",
+  "evidence": "form A 6 vs B 2; select A 2 vs B 1; optgroup A 2 vs B 0; option A 10 vs B 5",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has more links and list items",
+  "category": "DOM/semantic structure",
+  "evidence": "anchors A 84 vs B 58; li A 45 vs B 16; ul A 11 vs B 2",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has more CSS transitions; neither page uses gradients, blur, animations or transforms",
+  "category": "decoration/effects",
+  "evidence": "transitions A 10 vs B 4; gradients/backdrop_blur/animations/transforms all 0 on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages use 15 article elements for their cards and the same number of exclamation marks",
+  "category": "DOM/semantic structure",
+  "evidence": "article: A 15, B 15; exclamations: 19 on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's text contains one emoji and B's contains none",
+  "category": "copy treatment",
+  "evidence": "text_stats.emoji: A 1, B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "Content width differs: A's top cards span a wider area (x 65–1375) than its location grid (170–1270), while B keeps a consistent 150–1290 container",
+  "category": "layout",
+  "evidence": "A card images at x 65 to 1375; A location images at 170 to 1270; B cards and locations at x 150/151 to 1290",
+  "which_side": "both"
+ }
+]

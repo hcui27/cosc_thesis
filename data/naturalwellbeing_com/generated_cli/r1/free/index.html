@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Natural Wellbeing | All-Natural Supplements For Women Like You</title>
+<meta name="description" content="All-natural, plant-based dietary supplements made for women. Developed by clinical herbalists, manufactured in the USA. Free shipping on US orders above $50.">
+<style>
+:root{
+  --teal:#1a8a93;
+  --teal-dark:#126a72;
+  --teal-soft:#e6f3f4;
+  --ink:#2b3437;
+  --muted:#5f6c70;
+  --line:#dce5e7;
+  --cream:#faf8f4;
+  --white:#fff;
+  --radius:10px;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--teal-dark)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(2rem,5vw,3.2rem)}
+h2{font-size:clamp(1.6rem,3.5vw,2.2rem)}
+h3{font-size:1.3rem}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;color:var(--teal-dark);font-weight:700;margin:0 0 .6em}
+.btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;padding:12px 26px;border-radius:999px;font-weight:600;border:2px solid var(--teal);cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{background:var(--teal-dark);border-color:var(--teal-dark)}
+.btn.ghost{background:transparent;color:var(--teal-dark)}
+.btn.ghost:hover{background:var(--teal-soft)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+.announce{background:var(--teal);color:#fff;text-align:center;padding:9px 20px;font-size:.92rem}
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+.bar nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;flex-wrap:wrap}
+.bar nav a{text-decoration:none;color:var(--ink);font-size:.95rem}
+.bar nav a:hover{color:var(--teal-dark)}
+.utils{display:flex;gap:18px;font-size:.92rem}
+.utils a{color:var(--ink);text-decoration:none}
+.utils a:hover{color:var(--teal-dark)}
+
+.hero{background:linear-gradient(135deg,var(--teal-soft),var(--cream));padding:88px 0}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34em}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hero-img{border-radius:var(--radius);overflow:hidden;box-shadow:0 18px 40px rgba(26,138,147,.18)}
+.hero-img img{width:100%;height:auto}
+
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;margin-top:32px}
+.product{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:#fff;display:flex;flex-direction:column;justify-content:space-between;min-height:150px}
+.product h3{font-size:1.1rem;font-family:inherit;font-weight:600}
+.price{color:var(--teal-dark);font-weight:700;margin:0}
+.price small{font-weight:400;color:var(--muted)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+
+.collections{background:var(--cream)}
+.coll-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:32px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column}
+.card .photo{aspect-ratio:3/2;object-fit:cover;width:100%}
+.card .body{padding:22px;flex:1}
+.card .title{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.card .title img{width:44px;height:44px}
+.card h3{margin:0}
+.card h3 a{text-decoration:none;color:var(--ink)}
+.card ul{margin:0;padding-left:1.1em;color:var(--muted);font-size:.95rem}
+.card .more{display:block;padding:0 22px 22px;font-weight:600;text-decoration:none}
+
+.mission .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;margin-top:32px}
+.mission .grid h3{color:var(--teal-dark)}
+.mission .grid p{color:var(--muted);margin:0 0 .8em}
+.closing{text-align:center;font-family:Georgia,serif;font-size:1.4rem;margin:48px auto 0;max-width:28em;color:var(--teal-dark)}
+
+.support{background:var(--teal-soft)}
+.support .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:32px}
+.support .tile{background:#fff;border-radius:var(--radius);padding:28px}
+.support .tile p{color:var(--muted)}
+
+.news{background:var(--teal-dark);color:#fff;text-align:center}
+.news p{max-width:36em;margin:0 auto 1.4em;opacity:.92}
+.news form{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.news input{flex:1 1 240px;padding:13px 18px;border-radius:999px;border:0;font-size:1rem;font-family:inherit}
+.news .btn{background:#fff;color:var(--teal-dark);border-color:#fff}
+.news .btn:hover{background:var(--teal-soft)}
+.news .eyebrow{color:#bfe3e6}
+#thanks{margin-top:14px;min-height:1.5em}
+
+footer{background:#1f2a2d;color:#c9d3d5;padding:56px 0 28px;font-size:.93rem}
+footer a{color:#e8f0f1}
+footer .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px}
+footer h4{color:#fff;margin:0 0 .8em;font-size:.85rem;text-transform:uppercase;letter-spacing:.1em}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:.45em}
+footer .brand img{background:#fff;padding:8px 12px;border-radius:8px;margin-bottom:14px}
+.pay{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 0}
+.pay img{height:28px;width:auto;background:#fff;border-radius:4px;padding:3px 6px}
+.legal{border-top:1px solid #38464a;margin-top:28px;padding-top:20px;font-size:.84rem;color:#98a6a9}
+.legal p{margin:0 0 .5em}
+
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  footer .cols{grid-template-columns:1fr 1fr}
+  .bar{flex-wrap:wrap;padding:10px 0}
+  section{padding:56px 0}
+}
+@media (max-width:520px){
+  footer .cols{grid-template-columns:1fr}
+  .bar nav ul{gap:16px}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">Free shipping on every US order above $50</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a href="#top" aria-label="Natural Wellbeing home"><img src="images/nwb-logo.png" alt="Natural Wellbeing" width="140" height="46"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#mission">Our Approach</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="utils">
+      <a href="https://naturalwellbeing.com/search">Search</a>
+      <a href="https://naturalwellbeing.com/account">Account</a>
+      <a href="https://naturalwellbeing.com/cart">Cart</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Natural Wellbeing</p>
+      <h1>All-Natural Supplements For Women Like You</h1>
+      <p class="lead">Mindfully take part in your everyday wellness with plant-based formulas developed by clinical herbalists and made in the USA.</p>
+      <div class="actions">
+        <a class="btn" href="https://naturalwellbeing.com/collections/our_supplements">Shop All</a>
+        <a class="btn ghost" href="https://naturalwellbeing.com/collections/wellness-kits">Wellness Kits</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/NWB-Collection-On-Sale.png" alt="Natural Wellbeing wellness bundles collection" width="400" height="267">
+    </div>
+  </div>
+</div>
+
+<section id="shop">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Featured products</p>
+        <h2>Customer favorites</h2>
+      </div>
+      <a class="btn ghost" href="https://naturalwellbeing.com/collections/our_supplements">View all</a>
+    </div>
+    <div class="products">
+      <article class="product"><h3>Adaptogenic Stress Relief</h3><p class="price">$39.95</p></article>
+      <article class="product"><h3>Hair Essentials</h3><p class="price"><small>from</small> $29.95</p></article>
+      <article class="product"><h3>Kids' Attention Gold</h3><p class="price">$44.95</p></article>
+      <article class="product"><h3>Golden Milk Bliss</h3><p class="price">$39.95</p></article>
+      <article class="product"><h3>Marine Collagen Plus</h3><p class="price">$52.95</p></article>
+      <article class="product"><h3>Mushroom Cocoa Bliss</h3><p class="price">$47.95</p></article>
+      <article class="product"><h3>Female Libido</h3><p class="price">$39.95</p></article>
+      <article class="product"><h3>Immune Sure</h3><p class="price">$34.95</p></article>
+      <article class="product"><h3>Sleep Essentials</h3><p class="price">$32.95</p></article>
+      <article class="product"><h3>Bladder Control Plus with Urox®</h3><p class="price"><small>from</small> $39.95</p></article>
+      <article class="product"><h3>Trilex Essentials</h3><p class="price">$34.95</p></article>
+      <article class="product"><h3>B-Complex Liquid</h3><p class="price">$24.95</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="collections" id="collections">
+  <div class="wrap">
+    <p class="eyebrow">Shop by need</p>
+    <h2>Product collections</h2>
+    <div class="coll-grid">
+
+      <article class="card">
+        <img class="photo" src="images/d422347d602bb2c332e99fe4078a2926.jpg" alt="Woman exercising with a kettlebell" width="400" height="267" loading="lazy">
+        <div class="body">
+          <div class="title"><img src="images/nwb-icon-life-boosters.png" alt="" width="44" height="44"><h3><a href="https://naturalwellbeing.com/collections/life-boosters">Life Boosters</a></h3></div>
+          <ul><li>Adaptogenic Stress Relief</li><li>Golden Milk Bliss</li><li>Immune Sure</li><li>Mind Your Memory</li><li>Mushroom Cocoa Bliss</li><li>Stress Support Kit</li></ul>
+        </div>
+        <a class="more" href="https://naturalwellbeing.com/collections/life-boosters">Shop Life Boosters →</a>
+      </article>
+
+      <article class="card">
+        <img class="photo" src="images/6de103661f38b51c8249cda57e1f54f4.jpg" alt="Life Glow collection" width="400" height="266" loading="lazy">
+        <div class="body">
+          <div class="title"><img src="images/nwb-icon-life-glow.png" alt="" width="44" height="44"><h3><a href="https://naturalwellbeing.com/collections/life-glow">Life Glow</a></h3></div>
+          <ul><li>Fo-Ti Essentials</li><li>Hair Essentials</li><li>Hair Essentials + Fo-Ti Combo</li><li>Healthy Hair, Skin, Nails Kit</li><li>Marine Collagen Plus</li></ul>
+        </div>
+        <a class="more" href="https://naturalwellbeing.com/collections/life-glow">Shop Life Glow →</a>
+      </article>
+
+      <article class="card">
+        <img class="photo" src="images/a410c53cd27edaa8074effafecaae9da.jpg" alt="Life Essentials collection" width="400" height="267" loading="lazy">
+        <div class="body">
+          <div class="title"><img src="images/nwb-icon-life-essentials.png" alt="" width="44" height="44"><h3><a href="https://naturalwellbeing.com/collections/life-essentials">Life Essentials</a></h3></div>
+          <ul><li>B-Complex Liquid</li><li>Concentration Essentials</li><li>Kids' Attention Gold</li><li>Sleep Essentials</li><li>Thyroid Support Essentials</li><li>Thyroid Support Kit</li><li>Trilex Essentials</li></ul>
+        </div>
+        <a class="more" href="https://naturalwellbeing.com/collections/life-essentials">Shop Life Essentials →</a>
+      </article>
+
+      <article class="card">
+        <img class="photo" src="images/755ed481dad03b9c5e9182c0a4585a48.jpg" alt="Life Transitions collection" width="400" height="267" loading="lazy">
+        <div class="body">
+          <div class="title"><img src="images/nwb-icon-life-transitions.png" alt="" width="44" height="44"><h3><a href="https://naturalwellbeing.com/collections/life-transitions">Life Transitions</a></h3></div>
+          <ul><li>Bladder Control Plus</li><li>Female Libido</li><li>Menopause Transitions</li><li>Mindful Menopause Kit</li></ul>
+        </div>
+        <a class="more" href="https://naturalwellbeing.com/collections/life-transitions">Shop Life Transitions →</a>
+      </article>
+
+      <article class="card">
+        <img class="photo" src="images/NWB-Collection-On-Sale.png" alt="Wellness bundles on sale" width="400" height="267" loading="lazy">
+        <div class="body">
+          <div class="title"><h3><a href="https://naturalwellbeing.com/collections/wellness-bundles">Wellness Bundles</a></h3></div>
+          <ul><li>Healthy Hair, Skin, Nails Kit</li><li>Mindful Menopause Kit</li><li>Stress Support Kit</li><li>Thyroid Support Kit</li></ul>
+        </div>
+        <a class="more" href="https://naturalwellbeing.com/collections/wellness-bundles">Shop Wellness Bundles →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="mission" id="mission">
+  <div class="wrap">
+    <p class="eyebrow">Our approach</p>
+    <h2>Inspired by nature, refined by science</h2>
+    <div class="grid">
+      <div>
+        <h3>Renewing yourself naturally</h3>
+        <p>We aim to help women reconnect with optimal health. Our full range of expertly formulated plant-based supplements is meant to help restore energy, stamina and vitality, needing only a few minutes of daily self-care.</p>
+        <a href="https://naturalwellbeing.com/collections/wellness-kits">Explore wellness kits</a>
+      </div>
+      <div>
+        <h3>Inspired by nature, refined by science</h3>
+        <p>Our formulas respect the long-standing traditional uses of herbs and combine them with current scientific research. They are developed by clinical herbalists and manufactured in the USA in GMP-certified facilities, with quality and care at every step.</p>
+        <a href="https://naturalwellbeing.com/pages/the-natural-wellbeing-difference">Learn More</a>
+      </div>
+      <div>
+        <h3>Discover another way</h3>
+        <p>Thoughtful alternatives to support body and mind at every life stage, offering a caring connection with nature and a chance for daily self-care.</p>
+        <a href="https://naturalwellbeing.com/collections/our_supplements">Shop All</a>
+      </div>
+    </div>
+    <p class="closing">A vibrant mind and healthy body make life's journey best.</p>
+  </div>
+</section>
+
+<section class="support" id="support">
+  <div class="wrap">
+    <p class="eyebrow">Programs and support</p>
+    <h2>We're here for you</h2>
+    <div class="grid">
+      <div class="tile">
+        <h3>Wellbeing Rewards</h3>
+        <p>Earn points and other benefits by making Natural Wellbeing part of your daily routine.</p>
+        <a class="btn" href="https://naturalwellbeing.com/pages/rewards">Get Rewarded</a>
+      </div>
+      <div class="tile">
+        <h3>Meet Our Team</h3>
+        <p>A caring, empathetic support staff dedicated to helping you.</p>
+        <a class="btn" href="https://naturalwellbeing.com/pages/our-team">Say Hello</a>
+      </div>
+      <div class="tile">
+        <h3>Ask An Expert</h3>
+        <p>Pose your questions about any of our supplements.</p>
+        <a class="btn" href="https://naturalwellbeing.com/pages/ask-an-expert">Have a Question?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="news" id="newsletter">
+  <div class="wrap">
+    <p class="eyebrow">Newsletter</p>
+    <h2>Sign up and save</h2>
+    <p>Subscribers receive exclusive promotions, giveaways, news about new products and the latest in women's health.</p>
+    <form id="sub">
+      <label for="email" style="position:absolute;left:-9999px">Email address</label>
+      <input id="email" type="email" required placeholder="Enter your email address" autocomplete="email">
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
+    <p id="thanks" role="status"></p>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div class="brand">
+        <img src="images/nwb-logo_2.png" alt="Natural Wellbeing" width="110" height="36">
+        <p>Natural Wellbeing Distribution, Inc.<br>All-Natural Supplements For Women Like You.</p>
+        <ul>
+          <li><a href="https://www.facebook.com/naturalwellbeinghealth">Facebook</a></li>
+          <li><a href="https://www.pinterest.com/naturalwellbeing">Pinterest</a></li>
+          <li><a href="https://www.instagram.com/naturalwellbeinghealth/">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>About</h4>
+        <ul>
+          <li><a href="https://naturalwellbeing.com/pages/our-story">Our Story</a></li>
+          <li><a href="https://naturalwellbeing.com/pages/the-natural-wellbeing-difference">The Natural Wellbeing Difference</a></li>
+          <li><a href="https://blog.naturalwellbeing.com">Health Journal</a></li>
+          <li><a href="https://naturalwellbeing.com/pages/giving-back">Giving Back</a></li>
+          <li><a href="https://naturalwellbeing.com/pages/affiliate-program">Affiliate Program</a></li>
+          <li><a href="https://naturalwellbeing.com/pages/request-a-wholesale-account">Wholesale &amp; Partnership</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="https://naturalwellbeing.com/pages/frequently-asked-questions">FAQ</a></li>
+          <li><a href="https://naturalwellbeing.com/pages/our-guarantee">Our Guarantee</a></li>
+          <li><a href="https://naturalwellbeing.com/policies/shipping-policy">Shipping policy</a></li>
+          <li><a href="https://naturalwellbeing.com/policies/refund-policy">Returns</a></li>
+          <li><a href="https://naturalwellbeing.com/pages/contact-us">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18005369353">1 (800) 536-9353</a></li>
+          <li><a href="mailto:info@naturalwellbeing.com">info@naturalwellbeing.com</a></li>
+          <li>Support hours (Pacific Time):</li>
+          <li>Mon–Fri 8 am–6 pm</li>
+          <li>Sat–Sun 8 am–5 pm</li>
+          <li>Holidays 8 am–5 pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pay" aria-label="Accepted payment methods">
+      <img src="images/american-express.svg" alt="American Express">
+      <img src="images/apple-pay.svg" alt="Apple Pay">
+      <img src="images/diners-club.svg" alt="Diners Club">
+      <img src="images/discover.svg" alt="Discover">
+      <img src="images/jcb.svg" alt="JCB">
+      <img src="images/mastercard.svg" alt="Mastercard">
+      <img src="images/paypal.svg" alt="PayPal">
+      <img src="images/venmo.svg" alt="Venmo">
+      <img src="images/visa.svg" alt="Visa">
+    </div>
+    <div class="legal">
+      <p>These statements have not been evaluated by the FDA. The products are not intended to diagnose, treat, cure or prevent any disease.</p>
+      <p>© 2021 Natural Wellbeing Distribution, Inc.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('sub').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('thanks').textContent='Thanks for subscribing!';
+  this.reset();
+});
+</script>
+</body>
+</html>

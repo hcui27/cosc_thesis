@@ -1,0 +1,197 @@
+[
+ {
+  "observation": "Title and h1 are brand/tagline based. The page has a single h1 'PLAY YOUR DAY AWAY' set in Impact at 136px, weight 400, white and centered. The second line is yellow and the text has a blue offset shadow.",
+  "category": "typography",
+  "evidence": "h1_count 1; h1 font_size 136px, font_family Impact; screenshot shows the white line and the yellow line with a blue drop edge"
+ },
+ {
+  "observation": "The hero is a split-screen of two 720x560 photos side by side: a water slide on the left and a Ferris wheel on the right. The headline spans the seam between them.",
+  "category": "layout",
+  "evidence": "images at rect x0 w720 h560 and x720 w720 h560, y174; both alt-texted"
+ },
+ {
+  "observation": "Each hero half has a logo plus a text label ('WATER PARK' / 'THEME PARK') at the bottom, so the two brands are presented in parallel.",
+  "category": "component",
+  "evidence": "Blue Bayou logo at 24,646 178x64 and Dixie Landin' logo at 744,646 212x64; both overlap their hero images (image_overlaps)"
+ },
+ {
+  "observation": "Fonts come from system stacks only. Trebuchet MS is the body/UI face on 138 elements and Impact is used for 19 display elements. There are no stylesheets or scripts, and one inline style block.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Trebuchet MS 138, Impact 19, Arial 1; stylesheets 0; scripts 0; style tag 1"
+ },
+ {
+  "observation": "The top navigation is a dark navy bar. It has the Blue Bayou logo on the left and uppercase, letter-spaced links on the right, ending in the Dixie Landin' logo as a link. The 'PLAN' link is dimmer than the others.",
+  "category": "component",
+  "evidence": "header 1, nav 1; background rgb(8,42,77); logos at x160 and x1148; screenshot nav items HOME, ATTRACTIONS, TICKETS, PLAN, CALENDAR, JOBS"
+ },
+ {
+  "observation": "A full-width yellow announcement banner sits under the nav. It has a bold Impact 'OPENING DAY MAY 29, 2021' lead, a paragraph of explanatory text and a × dismiss button.",
+  "category": "component",
+  "evidence": "h2 'OPENING DAY MAY 29, 2021'; primary_button text '×' with transparent bg; top bg rgb(255,197,49)"
+ },
+ {
+  "observation": "The palette is saturated and primary-like: deep navy, golden yellow, cyan, bright blue and Coca-Cola red. The body background is a warm cream.",
+  "category": "color",
+  "evidence": "top_backgrounds navy rgb(8,42,77), yellow rgb(255,197,49), cyan rgb(18,181,214), blue rgb(10,111,194), red rgb(228,38,44); body_bg rgb(255,248,234)"
+ },
+ {
+  "observation": "Yellow is the single accent for primary CTAs, eyebrow headings and footer column titles. Red is used only for the card link text and the Coke band.",
+  "category": "color",
+  "evidence": "yellow text on 12 elements; yellow pill buttons 'GET A SEASON PASS'; red card links like 'START THE EXCITEMENT →'"
+ },
+ {
+  "observation": "Three white quick-link cards sit on a cyan band. Each has a small blue eyebrow, a large navy Impact word, and a red uppercase arrow link. The cards have large rounded corners and a hard offset shadow in a darker teal.",
+  "category": "component",
+  "evidence": "cards at y~770-940 for BUY/TICKETS, SEASON/PASSES, BIRTHDAY/PARTIES; border_radius bucket_16_plus 4; box_shadows 7"
+ },
+ {
+  "observation": "The headings use a two-tier pattern. A small h2 eyebrow ('BUY', 'SEASON', 'ENTER THE') is followed by a large h3 or h2 display word. Heading levels are therefore inverted in places, with h2 smaller than the following h3.",
+  "category": "semantic",
+  "evidence": "heading_outline: h2 BUY → h3 TICKETS; h2 SEASON → h3 PASSES; h2 BIRTHDAY → h3 PARTIES; h2 font_size 20.8px"
+ },
+ {
+  "observation": "The heading outline starts with an h2 (the banner) before the h1. There is no main element, and the footer groups use h4s.",
+  "category": "semantic",
+  "evidence": "heading_outline first item level 2 'OPENING DAY…'; semantic main 0; h4 PARKS/PLAN/TICKETS/MORE"
+ },
+ {
+  "observation": "Semantic markup is light. There are 7 sections, one header, one nav and one footer, but no main, article, aside or figure. The markup is div-heavy, with 33 divs and 44 anchors.",
+  "category": "semantic",
+  "evidence": "semantic section 7, main 0, article 0, figure 0; tag_counts div 33, a 44"
+ },
+ {
+  "observation": "The 'Land of the Giants' section is a full-bleed photo (1440x665) with a navy/blue tint overlay. Content is left-aligned in a 160px-inset column with a logo, a yellow eyebrow, a white Impact headline, a short paragraph, and a yellow pill CTA beside an outlined pill CTA.",
+  "category": "layout",
+  "evidence": "landofthegiants.jpg rect 0,994 1440x665; Blue Bayou logo at x160 y1104 222x80; screenshot buttons 'GET A SEASON PASS' / 'OR BUY TICKETS'"
+ },
+ {
+  "observation": "The 'Thrills' section repeats the same pattern but is mirrored. It uses a red-tinted photo (1440x583) with text in the right half, starting at x760, and the Dixie Landin' logo above.",
+  "category": "layout",
+  "evidence": "Thrills.jpg rect 0,1659 1440x583; Dixie logo x760 y1769 265x80; red overlay visible in screenshot"
+ },
+ {
+  "observation": "Color-tinted duotone-style overlays set the brand coding for each park: blue for the water park and red for the theme park. The photos stay visible beneath them.",
+  "category": "imagery",
+  "evidence": "Land of the Giants slice has navy/yellow tint; Thrills slice has crimson tint over the photo of a smiling rider"
+ },
+ {
+  "observation": "The primary and secondary buttons are pill-shaped. The primary is solid yellow with navy text and a soft shadow. The secondary is transparent with a white 2px-style outline and white text. The labels are uppercase and bold.",
+  "category": "component",
+  "evidence": "border_radius bucket_pill 15; screenshot 'GET A SEASON PASS' vs 'OR BUY TICKETS' repeated three times"
+ },
+ {
+  "observation": "The CTA pair 'GET A SEASON PASS / OR BUY TICKETS' recurs identically in the Giants, Thrills and Getaway sections, so the same copy is reused.",
+  "category": "copy",
+  "evidence": "Three occurrences in slices 2 and 3"
+ },
+ {
+  "observation": "The 'Stay up to date' section is a two-column grid on navy. On the left is a white card with the 'Summer is waiting for you' stencil artwork and a drop shadow. On the right is a yellow Impact heading, a line with underlined yellow links (Facebook, newsletter), and a rounded pool photo with a blue offset bottom edge.",
+  "category": "layout",
+  "evidence": "stencil png rect 160,2394 540x304; family photo rect 740,2418 540x360; display_grid 13; links are yellow underlined"
+ },
+ {
+  "observation": "The two images in the 'stay up to date' pair are different heights and are not top-aligned. The stencil card starts about 24px higher, and the right column's heading sits above its image.",
+  "category": "layout",
+  "evidence": "rects y2394 h304 vs y2418 h360"
+ },
+ {
+  "observation": "The 'Getaway' section is centered over a blue-tinted photo of what looks like a hand holding a cone or cup. It has a yellow eyebrow ('PLAN YOUR SUMMER'), a huge white Impact word, a wrapped row of outlined pill links (Park Maps, Directions, Food & Concessions, Groups, Hotels, Corporate Events), the CTA pair, and a small centered policy note.",
+  "category": "layout",
+  "evidence": "shutterstock.jpg rect 0,2850 1440x612; h2 GETAWAY; outlined chips at y~540 and ~595 in slice 3"
+ },
+ {
+  "observation": "The Coca-Cola sponsor band is a flat red full-width strip. It has a white script logo on the left, an Impact headline 'SAVE $5 WITH ANY COCA-COLA CAN' and a tilted can image on the right. The 'SAVE $5' eyebrow repeats the headline text.",
+  "category": "component",
+  "evidence": "coke-white.png 320x106 at x160; coke-can-full.png 148x234 at x1147; h3 'SAVE $5' + h2 'SAVE $5 WITH ANY COCA-COLA CAN'; bg rgb(228,38,44); transforms 1"
+ },
+ {
+  "observation": "The footer has four columns on navy (PARKS, PLAN, TICKETS, MORE). The headings are small yellow uppercase text, and the links are pale blue. Below are three circular social buttons with single letters (F, T, Y) in place of icons, then a hairline divider and a centered copyright.",
+  "category": "component",
+  "evidence": "h4 x4; ul 4; li 15; svgs 0; text color rgb(207,227,245) on 46 elements; rgba(255,255,255,0.12) backgrounds on 3 elements"
+ },
+ {
+  "observation": "There are no inline SVG icons. All iconography is raster or external images, and the arrows are text glyphs (→). The social icons are letters.",
+  "category": "imagery",
+  "evidence": "counts svgs 0; link text 'START THE EXCITEMENT →'; footer circles F, T, Y"
+ },
+ {
+  "observation": "The logos are reused many times as SVG files, with Blue Bayou 4 times and Dixie Landin' 4 times. They appear in the nav, hero, section headers and photo overlays.",
+  "category": "imagery",
+  "evidence": "images list: Blue Bayou Logo.svg at four positions, Dixie Landin Logo.svg at four positions"
+ },
+ {
+  "observation": "Alt text is present on 16 of 16 images. Decorative images (hero logo duplicates, backgrounds, brush.svg) use an empty alt, and content images have descriptive alt text.",
+  "category": "semantic",
+  "evidence": "alt_missing 0; alt '' on repeated logos, landofthegiants.jpg, Thrills.jpg; alt 'Kids splashing at the water park'"
+ },
+ {
+  "observation": "A brush.svg decoration is in the DOM with a zero-size rect, so it is not rendered visibly.",
+  "category": "imagery",
+  "evidence": "brush.svg rect 0,0,0,0, alt ''"
+ },
+ {
+  "observation": "The content width is constrained to about 1120px (x160 to x1280) on the 1440px canvas. Photo sections still bleed to the full width.",
+  "category": "layout",
+  "evidence": "nav and cards align at x160/x1280; section images are 1440 wide; page_width 1440"
+ },
+ {
+  "observation": "The section backgrounds alternate: yellow banner, split photos, cyan, tinted blue photo, tinted red photo, flat navy, tinted blue photo, red, navy footer. The result is strongly banded vertical rhythm.",
+  "category": "layout",
+  "evidence": "page_height 4181; sections visible across 4 slices"
+ },
+ {
+  "observation": "Body copy is 16px at about 1.55 line-height (24.8px) in Trebuchet. Body text is dark navy on the cream page background, and white or pale blue on dark sections.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 24.8px, body_color rgb(16,36,58); text colors white 77, rgb(207,227,245) 46"
+ },
+ {
+  "observation": "Headings are all-caps Impact with tight tracking and weight 400. The nav, buttons, card links and footer headings are also uppercase, with letter-spacing in Trebuchet.",
+  "category": "typography",
+  "evidence": "h2 font_weight 400; heading outline text all uppercase; nav HOME/ATTRACTIONS; buttons uppercase"
+ },
+ {
+  "observation": "The display type has a large scale contrast. The 136px h1 and roughly 60-90px section words sit against 16px body copy and tiny 14px labels, with few intermediate sizes.",
+  "category": "typography",
+  "evidence": "h1 136px; h2 20.8px eyebrows; GIANTS/THRILLS/GETAWAY large in screenshots"
+ },
+ {
+  "observation": "The copy is promotional and park-specific. It has a Covid-19 closure notice for Dixie Landin', a weather delay notice for opening day, and a $5 Coke offer. The text is short, about 262 words in total, and has no exclamation marks, emoji or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats words 262, emoji 0, em_dashes 0, exclamations 0; banner and Thrills paragraph text"
+ },
+ {
+  "observation": "Page copy is dated to 2021 (opening day May 29, 2021; 'closed throughout the 2021 Season. We will see you in 2022'), so it reads as a snapshot of that season.",
+  "category": "copy",
+  "evidence": "h2 'OPENING DAY MAY 29, 2021'; Thrills paragraph"
+ },
+ {
+  "observation": "Decoration is restrained. There are no gradients, no backdrop blur and no keyframe animations. Effects are limited to 7 box-shadows, 19 transitions (likely hover states) and photo overlays. Cards and buttons use hard or soft drop shadows.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 0, backdrop_blur 0, animations 0, box_shadows 7, transitions 19"
+ },
+ {
+  "observation": "Border radii are bimodal. Most elements are square (139), while cards, images and pills are heavily rounded (4 at 16px or more, 15 pill). There is nothing in the mid-range.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 139, bucket_1_7 0, bucket_8_15 0, bucket_16_plus 4, bucket_pill 15"
+ },
+ {
+  "observation": "The CSS is hand-written. There are 69 class usages across 36 unique names, none of them Tailwind-like. Grid is used in 13 places and flex in 15. Inline style attributes are minimal, at 2.",
+  "category": "structure",
+  "evidence": "classes total 69, unique 36, tailwind_like_fraction 0; display_grid 13, display_flex 15; inline_style_attrs 2"
+ },
+ {
+  "observation": "Some ARIA is present (10 attributes), which is consistent with the dismiss button and the nav. There is one button on the page, and everything else that looks like a button is an anchor.",
+  "category": "semantic",
+  "evidence": "aria_attrs 10; buttons 1; anchors 44"
+ },
+ {
+  "observation": "Photography is people-centered and consumer-stock in style, with kids on a slide, riders laughing, and a family. Most images are the 1500x1000 shutterstock JPEGs and are cropped by object-fit to wide banners.",
+  "category": "imagery",
+  "evidence": "filenames shutterstock.jpg x3; 1500x1000 naturals displayed at 720x560 and 1440x612"
+ },
+ {
+  "observation": "A Coke can product shot with a drop shadow floats on the red band at a slight tilt, and a white-on-transparent logo is used on the colored background.",
+  "category": "imagery",
+  "evidence": "coke-can-full.png 385x716 natural shown 148x234; coke-white.png; transforms 1"
+ }
+]

@@ -1,0 +1,703 @@
+{
+ "key": "afb9b6f2ccdb",
+ "groups": [
+  {
+   "name": "Thin top utility bar",
+   "definition": "Is there a thin utility bar above the header holding secondary links, contact details or similar?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#7",
+    "cbdoilcreamnk_com#6",
+    "gravityvault_com#7",
+    "miamidda_com#6",
+    "nira_org_ng#6",
+    "ridetech_com#11"
+   ]
+  },
+  {
+   "name": "Full-width announcement bar",
+   "definition": "Is there a full-width announcement bar at the top of the page carrying a short message or link?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#6",
+    "bluebayou_com#12",
+    "fnsouzafoundation_com#9",
+    "neverskipbrunch_com#1",
+    "stgpartners_com#15"
+   ]
+  },
+  {
+   "name": "Full-width promo or CTA band",
+   "definition": "Is there a full-width colored or gray promotional band with a heading or text and a call to action?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#11",
+    "ridetech_com#13",
+    "miamidda_com#11"
+   ]
+  },
+  {
+   "name": "Fully rounded pill primary buttons",
+   "definition": "Are the primary call-to-action buttons fully rounded pills?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "primary_button_pill",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "allstate_jobs#12",
+    "merchantsavvy_co_uk#5",
+    "tellmebaby_com_au#6",
+    "thefrangipanicreative_com#7",
+    "thync_com#6",
+    "fnsouzafoundation_com#12",
+    "neverskipbrunch_com#15",
+    "bluebayou_com#16"
+   ]
+  },
+  {
+   "name": "Outlined ghost buttons",
+   "definition": "Are secondary or all buttons transparent or outlined with a thin border rather than filled?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#13",
+    "homedesignersoftware_com#14",
+    "stgpartners_com#12",
+    "bather_com#10",
+    "ridetech_com#25",
+    "naturalwellbeing_com#11",
+    "miamidda_com#18"
+   ]
+  },
+  {
+   "name": "Square or small-radius solid buttons",
+   "definition": "Are the primary buttons solid rectangles with square or small-radius corners?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "primary_button_radius_px",
+    "op": "<=",
+    "value": 6
+   },
+   "members": [
+    "ridetech_com#23",
+    "miamidda_com#8",
+    "nira_org_ng#25"
+   ]
+  },
+  {
+   "name": "Mostly square corners, no pills",
+   "definition": "Are corners predominantly square or slightly rounded, with no pill shapes?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "radius_pill_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "homedesignersoftware_com#15",
+    "kneeguru_co_uk#7",
+    "tellmebaby_com_au#18"
+   ]
+  },
+  {
+   "name": "White bordered rounded cards",
+   "definition": "Are cards white with thin borders and rounded corners, with no heavy shadow?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "nira_org_ng#13",
+    "naturalwellbeing_com#12",
+    "thync_com#7",
+    "cbdoilcreamnk_com#12",
+    "miamidda_com#17",
+    "flygrant_com#15",
+    "gravityvault_com#23",
+    "tellmebaby_com_au#11",
+    "kanienkeha_net#26",
+    "neverskipbrunch_com#17"
+   ]
+  },
+  {
+   "name": "Thick left accent border blocks",
+   "definition": "Do cards or callouts have a thick accent-colored left border?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#8",
+    "kanienkeha_net#11",
+    "kneeguru_co_uk#18",
+    "ridetech_com#24"
+   ]
+  },
+  {
+   "name": "Section heading with View All link",
+   "definition": "Do section headings have a right-aligned 'View all' style link?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#11",
+    "insightcentral_net#14",
+    "seoanalyzer_me#18"
+   ]
+  },
+  {
+   "name": "Arrow-terminated text links",
+   "definition": "Are secondary calls to action text links ending in an arrow glyph rather than buttons?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "gravityvault_com#27",
+    "ridetech_com#22",
+    "thync_com#15"
+   ]
+  },
+  {
+   "name": "Dark footer band",
+   "definition": "Is the footer a dark band with light text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#20",
+    "allstate_jobs#21",
+    "alpine8848_com#7",
+    "bluebayou_com#19",
+    "nira_org_ng#18"
+   ]
+  },
+  {
+   "name": "Minimal footer legal row",
+   "definition": "Is the footer or its bottom row minimal, with copyright, a few links or payment icons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "merchantsavvy_co_uk#16",
+    "fnsouzafoundation_com#22",
+    "bather_com#23",
+    "cbdoilcreamnk_com#18"
+   ]
+  },
+  {
+   "name": "Text-only social links",
+   "definition": "Are social links plain text labels without icons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#21",
+    "kneeguru_co_uk#8",
+    "naturalwellbeing_com#14"
+   ]
+  },
+  {
+   "name": "Icon social links",
+   "definition": "Are social links presented as icons or icon-plus-label items?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#29",
+    "newclimateeconomy_net#19"
+   ]
+  },
+  {
+   "name": "Text wordmark brand",
+   "definition": "Is the brand shown as a text wordmark instead of a logo image?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#8",
+    "homedesignersoftware_com#12",
+    "stgpartners_com#29"
+   ]
+  },
+  {
+   "name": "Logo-left nav-right header",
+   "definition": "Does the header place the logo at left and navigation links at right?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#9",
+    "gravityvault_com#8",
+    "tellmebaby_com_au#5",
+    "neverskipbrunch_com#2",
+    "bluebayou_com#11",
+    "newclimateeconomy_net#8",
+    "nira_org_ng#7",
+    "nira_org_ng#8"
+   ]
+  },
+  {
+   "name": "Sticky overlay header",
+   "definition": "Is the header sticky or fixed, overlaying content, possibly translucent?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#8",
+    "thync_com#4",
+    "fnsouzafoundation_com#10"
+   ]
+  },
+  {
+   "name": "Highlighted active nav item",
+   "definition": "Is the active navigation item visually highlighted as a tab or fill?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#9",
+    "kanienkeha_net#5"
+   ]
+  },
+  {
+   "name": "Email signup form",
+   "definition": "Is there a simple email signup form with an input and a button?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#26",
+    "naturalwellbeing_com#15",
+    "nira_org_ng#17",
+    "gravityvault_com#29",
+    "cbdoilcreamnk_com#17",
+    "neverskipbrunch_com#28"
+   ]
+  },
+  {
+   "name": "Search form with input and button",
+   "definition": "Is there a prominent search form pairing an input with a button?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#7",
+    "educationactivities_org#18",
+    "seoanalyzer_me#10",
+    "tellmebaby_com_au#7"
+   ]
+  },
+  {
+   "name": "Labeled form fields",
+   "definition": "Do forms use visible labels with native inputs and selects?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#13",
+    "ridetech_com#27",
+    "flygrant_com#11",
+    "homedesignersoftware_com#23"
+   ]
+  },
+  {
+   "name": "Dark inputs with placeholders",
+   "definition": "Are form inputs dark-filled boxes, possibly without visible labels?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "miamidda_com#19",
+    "fnsouzafoundation_com#20"
+   ]
+  },
+  {
+   "name": "Full-width sidebar or form button",
+   "definition": "Is there a button spanning the full width of its form or card?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#12",
+    "kanienkeha_net#16"
+   ]
+  },
+  {
+   "name": "Pill chips and filter tabs",
+   "definition": "Are there pill-shaped chips, filters or tags as a row?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#7",
+    "kanienkeha_net#10",
+    "gravityvault_com#15",
+    "educationactivities_org#17",
+    "seoanalyzer_me#11"
+   ]
+  },
+  {
+   "name": "Square-cornered label badges",
+   "definition": "Are badges or labels sharp-cornered rectangles?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#12",
+    "bathurst12hour_com_au#14"
+   ]
+  },
+  {
+   "name": "Pill category badges on cards",
+   "definition": "Do cards carry small pill-shaped badges or tags?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "gravityvault_com#18",
+    "neverskipbrunch_com#21"
+   ]
+  },
+  {
+   "name": "Image-top cards with title",
+   "definition": "Do cards stack an image on top followed by title and text in a consistent order?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#10",
+    "bathurst12hour_com_au#16",
+    "bathurst12hour_com_au#15",
+    "educationactivities_org#13",
+    "ridetech_com#15",
+    "merchantsavvy_co_uk#12",
+    "bather_com#17",
+    "aeptexas_com#23"
+   ]
+  },
+  {
+   "name": "Cards without images",
+   "definition": "Are cards or tiles text-only, with no thumbnails or photos?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#21",
+    "thefrangipanicreative_com#12"
+   ]
+  },
+  {
+   "name": "Carousel",
+   "definition": "Does the page have a carousel or slider?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#18",
+    "greatdayimprovements_com#15",
+    "greatdayimprovements_com#16"
+   ]
+  },
+  {
+   "name": "Circular avatars",
+   "definition": "Are circular avatars or author photos used?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#15",
+    "insightcentral_net#13"
+   ]
+  },
+  {
+   "name": "Ruled divider lists",
+   "definition": "Are lists separated by thin horizontal divider lines?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#16",
+    "nira_org_ng#16",
+    "newclimateeconomy_net#16",
+    "thefrangipanicreative_com#11"
+   ]
+  },
+  {
+   "name": "Styled inline text links",
+   "definition": "Are inline links colored or underlined in a consistent accent style?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#19",
+    "thync_com#11",
+    "nira_org_ng#15",
+    "homedesignersoftware_com#20",
+    "newclimateeconomy_net#17"
+   ]
+  },
+  {
+   "name": "Quick-link tile grid",
+   "definition": "Is there a grid of quick-link tiles or columns?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#13",
+    "tellmebaby_com_au#9",
+    "bluebayou_com#15",
+    "merchantsavvy_co_uk#8",
+    "aeptexas_com#9"
+   ]
+  },
+  {
+   "name": "Numbered pagination",
+   "definition": "Is there numbered pagination with a highlighted current page?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#13",
+    "neverskipbrunch_com#22"
+   ]
+  },
+  {
+   "name": "Dark feature cards",
+   "definition": "Are there dark-filled cards or tiles with white text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#17",
+    "tellmebaby_com_au#14"
+   ]
+  },
+  {
+   "name": "Person or community cards",
+   "definition": "Are there cards for people or communities showing name and a secondary line?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#16",
+    "insightcentral_net#15"
+   ]
+  },
+  {
+   "name": "Hidden dialog form",
+   "definition": "Is a hidden dialog or modal with a labeled form in the DOM?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#19"
+   ]
+  },
+  {
+   "name": "Logo on rounded tile",
+   "definition": "Does the logo sit on a rounded white tile with a shadow?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#10"
+   ]
+  },
+  {
+   "name": "Multi-column cream footer with newsletter",
+   "definition": "Is the footer a cream multi-column block with tracked uppercase headings and newsletter?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#22"
+   ]
+  },
+  {
+   "name": "Statistics tile grid",
+   "definition": "Are statistics shown as a grid of tiles with large numbers?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#17"
+   ]
+  },
+  {
+   "name": "Language selector buttons",
+   "definition": "Is there a language selector with flag buttons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#19"
+   ]
+  },
+  {
+   "name": "Centered icon cards",
+   "definition": "Do cards center an icon, uppercase title and description?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#15"
+   ]
+  },
+  {
+   "name": "Accessibility aids",
+   "definition": "Are accessibility aids such as text-size controls present?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#35"
+   ]
+  },
+  {
+   "name": "Circular check bullet list",
+   "definition": "Does the hero list benefits with circular check icons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "merchantsavvy_co_uk#4"
+   ]
+  },
+  {
+   "name": "Detached photo credit caption",
+   "definition": "Is photo credit a small dark caption box detached from its image?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "miamidda_com#5"
+   ]
+  },
+  {
+   "name": "Bold accent product prices",
+   "definition": "Are product names bold dark and prices bold accent pinned to card bottom?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#13"
+   ]
+  },
+  {
+   "name": "Italic serif pull quote",
+   "definition": "Are pull quotes italic serif blockquotes with a colored left border?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#16"
+   ]
+  },
+  {
+   "name": "Trending strip",
+   "definition": "Is there a trending strip with an accent label and truncated post titles?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#19"
+   ]
+  },
+  {
+   "name": "Empty card bodies",
+   "definition": "Do some cards have empty bodies leaving blank space?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "gravityvault_com#19"
+   ]
+  },
+  {
+   "name": "Struck-through old price",
+   "definition": "Does pricing show a struck-through old price beside a larger new price?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#17"
+   ]
+  },
+  {
+   "name": "Photo band with overlay text",
+   "definition": "Is there a full-width photo band with dark overlay and centered text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#23"
+   ]
+  },
+  {
+   "name": "Footer link sequence numbers",
+   "definition": "Do footer links carry small numbers after each label?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#27"
+   ]
+  },
+  {
+   "name": "Mobile-only menu toggle",
+   "definition": "Is there a menu toggle hidden on desktop?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#41"
+   ]
+  },
+  {
+   "name": "News rows with date block",
+   "definition": "Do news rows show a date block, headline and read-more link in a row?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#23"
+   ]
+  },
+  {
+   "name": "Numbered step cards",
+   "definition": "Is there a row of cards with numbered circle badges?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "tellmebaby_com_au#10"
+   ]
+  },
+  {
+   "name": "Testimonial cards with stars",
+   "definition": "Are testimonials equal-height cards with star ratings and no photos?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "thefrangipanicreative_com#9"
+   ]
+  },
+  {
+   "name": "Text-only auth buttons panel",
+   "definition": "Are auth options text-only buttons in a bordered panel?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "insightcentral_net#16"
+   ]
+  },
+  {
+   "name": "Back-to-top link",
+   "definition": "Does the page end with a centered back-to-top link with an arrow?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "greatdayimprovements_com#25"
+   ]
+  },
+  {
+   "name": "Minimal logo-only header",
+   "definition": "Is the header just a logo at far left with no nav?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#22"
+   ]
+  },
+  {
+   "name": "Gradient or color band logo statement",
+   "definition": "Is there a colored band with a logo above a centered white statement?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "gravityvault_com#14"
+   ]
+  },
+  {
+   "name": "Square-cornered accent search button",
+   "definition": "Is there a flat inverted promo button on a banner?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#14"
+   ]
+  },
+  {
+   "name": "A wide gray banner cross-promotes a related product line wit",
+   "definition": "A wide gray banner cross-promotes a related product line with a button.",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#18"
+   ]
+  },
+  {
+   "name": "Each section heading has a dark horizontal rule beneath it, ",
+   "definition": "Each section heading has a dark horizontal rule beneath it, with a right-aligned 'All … →' link on the label line.",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#14"
+   ]
+  }
+ ]
+}

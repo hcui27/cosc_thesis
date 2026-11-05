@@ -1,0 +1,242 @@
+[
+ {
+  "observation": "Page title and logo alt text are the same string, and the brand name is repeated across three logo instances",
+  "category": "DOM/semantic structure",
+  "evidence": "title 'The Gravity Vault Indoor Rock Gyms'; logo.png shows up 3 times (header y=60, mission band y=1079 with alt 'The Gravity Vault', footer y=4371)"
+ },
+ {
+  "observation": "The whole page uses one font stack, the system UI font, with no web fonts loaded",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: only system-ui (245 elements); h1 font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'; stylesheets: 0"
+ },
+ {
+  "observation": "The H1 is 48px, bold, white and centered, laid over a full-width photo hero",
+  "category": "typography",
+  "evidence": "h1 font_size 48px, weight 700, color rgb(255,255,255), text_align center; text 'New heights can always be reached.'"
+ },
+ {
+  "observation": "The single H2 is 32px bold and introduces the locations section",
+  "category": "typography",
+  "evidence": "h2 font_size 32px, weight 700; outline level 2 'Our Locations'"
+ },
+ {
+  "observation": "The heading outline goes from H1 straight to H4 for the four feature cards, skipping H2 and H3",
+  "category": "DOM/semantic structure",
+  "evidence": "heading_outline: level 1, then level 4 'Gift Cards', 'Waivers', 'Visiting Us During This Time', 'Franchising' before the first level 2"
+ },
+ {
+  "observation": "Location headings are nested H3 state > H4 city",
+  "category": "DOM/semantic structure",
+  "evidence": "4 h3 (California, New Jersey, New York, Pennsylvania) each followed by h4 city names; 19 h4 total"
+ },
+ {
+  "observation": "Body text is 16px with a line-height of about 1.55",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 24.8px"
+ },
+ {
+  "observation": "The page sits on a pale cool-gray background, with dark slate as the main text color",
+  "category": "color",
+  "evidence": "body_bg rgb(245,247,250); body_color rgb(31,41,55) used on 102 elements"
+ },
+ {
+  "observation": "Orange-red is the single accent color, used for buttons, links, underlines and badges",
+  "category": "color",
+  "evidence": "rgb(228,87,46) background on 6 elements; primary_button bg rgb(228,87,46); visible on Search, Find a Location, Sign up, 'View location →' links, state heading underlines, 'COMING SOON!' badges"
+ },
+ {
+  "observation": "Dark navy tones are used for the utility bar, mission band and footer",
+  "category": "color",
+  "evidence": "backgrounds rgb(18,35,59) ×3 and rgb(29,53,87) ×2; slices 0, 1 and 3 show navy bands"
+ },
+ {
+  "observation": "Navy rgb(29,53,87) is also the color for headings and nav links",
+  "category": "color",
+  "evidence": "top_text_colors rgb(29,53,87) on 48 elements; nav items and card titles render in dark blue"
+ },
+ {
+  "observation": "The footer uses light blue-gray text on navy",
+  "category": "color",
+  "evidence": "rgb(205,214,226) on 37 elements; footer links appear light gray-blue in slice 3"
+ },
+ {
+  "observation": "Secondary description text is a muted gray",
+  "category": "color",
+  "evidence": "rgb(91,102,118) on 14 elements; card descriptions appear lighter gray than titles"
+ },
+ {
+  "observation": "A thin dark utility bar above the main header holds Gift Cards and Contact Us links plus a state finder made of a select and an orange Search button",
+  "category": "layout",
+  "evidence": "slice 0 top bar; 1 select with 5 options; primary_button text 'Search', padding 5px 10px, radius 4px"
+ },
+ {
+  "observation": "The main header is white, with the logo on the left and eight right-aligned nav links; the active 'Home' link has an orange underline",
+  "category": "component choices",
+  "evidence": "slice 0: Home, Options to Climb, Locations, Covid-19 Updates, About, Franchising, Contact, Careers; orange bar under Home; nav count 2"
+ },
+ {
+  "observation": "The hero is a full-bleed photo of a climbing wall, darkened and blurred so the centered white text stands out",
+  "category": "imagery handling",
+  "evidence": "img rect x=0 w=1440 h=399 at y=125; slice 0 shows a blurred, dimmed photo behind the H1"
+ },
+ {
+  "observation": "The hero has a one-line subtitle and a single solid orange CTA button",
+  "category": "copy treatment",
+  "evidence": "'Indoor rock climbing for every age and ability, across four states.' and 'Find a Location' button in slice 0"
+ },
+ {
+  "observation": "The four feature cards overlap the bottom edge of the hero",
+  "category": "layout",
+  "evidence": "cards start at y=474, inside the hero range 125–524; image_overlaps reports four overlaps of 13450px² each"
+ },
+ {
+  "observation": "Feature cards sit in a 4-column row with photos on top and text bodies of different lengths, so their bottoms are unevenly filled",
+  "category": "layout",
+  "evidence": "4 images at x=150/441/731/1022, w=269, h=192; the Waivers card has much more text than Gift Cards in slice 0"
+ },
+ {
+  "observation": "Content is held in a container about 1140px wide with 150px side margins",
+  "category": "layout",
+  "evidence": "card x positions start at 150 and end near 1290 on a page_width of 1440; logo x=150"
+ },
+ {
+  "observation": "Every card image uses the same stock climbing-gym photo",
+  "category": "imagery handling",
+  "evidence": "all 'img' entries have natural size 326×233; slices show an identical blue/red wall photo on every card"
+ },
+ {
+  "observation": "Small source photos are scaled up to larger display sizes",
+  "category": "imagery handling",
+  "evidence": "natural 326×233 shown at 1440×399 in the hero and about 267×190 in cards"
+ },
+ {
+  "observation": "Images have no alt text on the photos, while the logos have descriptive alt",
+  "category": "DOM/semantic structure",
+  "evidence": "photo images alt ''; logos alt 'The Gravity Vault...'; alt_missing 0, meaning the attributes exist but are empty"
+ },
+ {
+  "observation": "A full-width navy mission band shows the logo above a centered, bold, multi-line white paragraph",
+  "category": "layout",
+  "evidence": "slice 0 bottom and slice 1 top: mission statement with large bold centered text"
+ },
+ {
+  "observation": "The mission copy is long and set in large bold type instead of body weight",
+  "category": "copy treatment",
+  "evidence": "text reads 'The Gravity Vault Indoor Rock Gyms' mission is to make everyone's rock climbing experience...'; it renders bold at roughly 20px"
+ },
+ {
+  "observation": "The locations section has a centered heading, a gray subtitle and a row of pill-shaped filter chips",
+  "category": "component choices",
+  "evidence": "'Pick a state or browse them all.'; chips All, California, New Jersey, New York, Pennsylvania; bucket_pill 13"
+ },
+ {
+  "observation": "The active filter chip is solid navy and the inactive chips are white with a thin border",
+  "category": "component choices",
+  "evidence": "slice 1: 'All' chip filled dark navy with white text; the other chips are outlined white"
+ },
+ {
+  "observation": "State group headings are left-aligned and have a short orange underline",
+  "category": "decoration/effects",
+  "evidence": "California, New Jersey, New York and Pennsylvania headings each with an orange rule beneath (slices 1–2)"
+ },
+ {
+  "observation": "Location cards use a 4-column grid that leaves empty columns when a state has fewer locations",
+  "category": "layout",
+  "evidence": "California has 1 card and empty space in slice 1; NY and PA have 3 cards each; display_grid 6"
+ },
+ {
+  "observation": "Location cards have a white body, thin border and rounded corners; the 'View location →' link sits at the bottom",
+  "category": "component choices",
+  "evidence": "slice 1–3 cards; border_radius bucket_8_15: 19; links bottom-aligned across a row (the Brick, NJ link aligns with Chatham's)"
+ },
+ {
+  "observation": "Some location cards have no description and no 'View location' link, which leaves blank card bodies",
+  "category": "copy treatment",
+  "evidence": "Montclair has a link but no text; Nassau County, Lehigh Valley and Philadelphia have neither (slices 2–3)"
+ },
+ {
+  "observation": "Orange pill 'COMING SOON!' badges are overlaid on the top-left of some card images",
+  "category": "decoration/effects",
+  "evidence": "badges on Nassau County, NY, Lehigh Valley, PA and Philadelphia, PA; span count 4"
+ },
+ {
+  "observation": "Location cards use the article element",
+  "category": "DOM/semantic structure",
+  "evidence": "article: 15, matching the 15 location cards"
+ },
+ {
+  "observation": "Card text uses short marketing copy with frequent exclamation marks",
+  "category": "copy treatment",
+  "evidence": "exclamations: 19; e.g., 'Give the gift of climbing!', 'Now open!', 'lots of FREE parking!'"
+ },
+ {
+  "observation": "Square-footage figures appear in several location descriptions",
+  "category": "copy treatment",
+  "evidence": "'14,000+ sq ft', '13,500 sq ft', '17,500 square feet', '25,000 square feet', '20,000 sq ft'"
+ },
+ {
+  "observation": "The footer is dark navy and has three columns: logo with newsletter signup and social pills, a 'Links' heading, and a second link column",
+  "category": "layout",
+  "evidence": "slice 3: logo, 'Signup for our Newsletter!', email input + orange 'Sign up', Links column with 8 links"
+ },
+ {
+  "observation": "Social links are text-only outlined pills, with no icons",
+  "category": "component choices",
+  "evidence": "Facebook, Instagram, Twitter, LinkedIn and Pinterest pill outlines in slice 3; svgs: 0"
+ },
+ {
+  "observation": "A thin divider line separates the footer's bottom bar, which holds the copyright and legal links on the left and the agency credit on the right",
+  "category": "layout",
+  "evidence": "'© 2021 Gravity Vault', Privacy Policy, Terms of Use, Site Map; 'Lform Design | NJ Web Design Company'"
+ },
+ {
+  "observation": "The newsletter uses a form with one email input; a second form handles the state finder",
+  "category": "DOM/semantic structure",
+  "evidence": "form: 2, input: 1, select: 1, label: 1"
+ },
+ {
+  "observation": "Visual effects are minimal: a few shadows and transitions, with no gradients, animations, blur or transforms",
+  "category": "decoration/effects",
+  "evidence": "box_shadows 4, transitions 4, gradient_backgrounds 0, animations 0, backdrop_blur 0, transforms 0"
+ },
+ {
+  "observation": "Most elements have square corners; rounding is used for cards (8–15px), buttons (small) and pills",
+  "category": "decoration/effects",
+  "evidence": "border_radius buckets: 0 → 208, 1–7 → 5, 8–15 → 19, pill → 13, 16+ → 0"
+ },
+ {
+  "observation": "Styling comes from one inline style block with a small set of custom class names, not utility classes",
+  "category": "DOM/semantic structure",
+  "evidence": "style: 1, stylesheets 0, classes total 98 / unique 26, tailwind_like_fraction 0.041, inline_style_attrs 1"
+ },
+ {
+  "observation": "Layout relies heavily on flexbox, with a few grid containers",
+  "category": "layout",
+  "evidence": "display_flex 42, display_grid 6"
+ },
+ {
+  "observation": "The page is long: about 4,700px at 1440px width, mostly taken up by the location listing",
+  "category": "layout",
+  "evidence": "page_height 4732, page_width 1440; locations run from about y=1300 to about 4300"
+ },
+ {
+  "observation": "The page uses the same number of anchors as divs",
+  "category": "DOM/semantic structure",
+  "evidence": "a: 58, div: 58; li 16 across 2 ul"
+ },
+ {
+  "observation": "ARIA attributes are used sparingly and there is no structured data",
+  "category": "DOM/semantic structure",
+  "evidence": "aria_attrs 10, jsonld_blocks 0; meta tags are only charset, viewport and description"
+ },
+ {
+  "observation": "The text contains no emoji or em dashes; the arrow in the location links is a text character",
+  "category": "copy treatment",
+  "evidence": "emoji 0, em_dashes 0; 'View location →' text in cards"
+ },
+ {
+  "observation": "A COVID-era item appears in both the navigation and a feature card",
+  "category": "copy treatment",
+  "evidence": "nav 'Covid-19 Updates'; card h4 'Visiting Us During This Time' with 'current policies here'"
+ }
+]

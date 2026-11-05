@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grant Aviation – Alaskan-owned and operated</title>
+<meta name="description" content="Grant Aviation offers scheduled flights and charters across Alaska. Alaskan-owned and operated.">
+<style>
+  :root{
+    --ink:#0b0a0c; --ink-2:#17151a; --cream:#f4efe2; --cream-2:#e9e1cc;
+    --red:#b5412c; --red-d:#8f3020; --muted:#8a8478; --text:#25221f;
+    --radius:10px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--cream)}
+  img{max-width:100%;display:block}
+  a{color:var(--red-d)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em}
+
+  /* header */
+  header{position:sticky;top:0;z-index:20;background:rgba(11,10,12,.92);backdrop-filter:blur(8px);border-bottom:1px solid #2a2629}
+  .bar{display:flex;align-items:center;gap:24px;min-height:68px}
+  .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.02em}
+  .brand img{height:44px;width:auto;border-radius:6px}
+  nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+  nav a{color:#d9d3c4;text-decoration:none;font-size:15px}
+  nav a:hover{color:#fff}
+  .phone{background:var(--red);color:#fff;padding:8px 16px;border-radius:999px;font-weight:600}
+  nav a.phone:hover{background:var(--red-d)}
+  @media(max-width:820px){nav a:not(.phone){display:none}.brand span{font-size:15px}}
+
+  /* hero */
+  .hero{position:relative;background:var(--ink) url(images/2.jpg) center/cover no-repeat;color:#fff;padding:96px 0 120px}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,10,12,.15),rgba(11,10,12,.7) 55%,rgba(11,10,12,.9))}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1fr minmax(320px,440px);gap:48px;align-items:center}
+  .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:13px;color:var(--cream-2);margin:0 0 12px}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:.25em}
+  .hero p.lead{font-size:1.25rem;color:var(--cream-2);max-width:30ch}
+  @media(max-width:900px){.hero{padding:56px 0 72px}.hero .wrap{grid-template-columns:1fr}.hero::before{background:rgba(11,10,12,.65)}}
+
+  /* search form */
+  .search{background:var(--cream);color:var(--text);border-radius:var(--radius);padding:24px;box-shadow:0 20px 50px rgba(0,0,0,.45)}
+  .search h2{font-size:1.4rem;margin-bottom:14px}
+  .trip{display:flex;gap:18px;margin-bottom:14px;font-size:15px}
+  .trip label{display:flex;gap:6px;align-items:center;cursor:pointer}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .grid .full{grid-column:1/-1}
+  .field{display:flex;flex-direction:column;font-size:13px;font-weight:600;color:#524c43;gap:4px}
+  .field input,.field select{font:inherit;font-weight:400;padding:10px;border:1px solid #cfc6b0;border-radius:6px;background:#fff;color:var(--text);width:100%}
+  .field input:focus,.field select:focus{outline:2px solid var(--red);outline-offset:1px}
+  .pax{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:700;background:var(--red);color:#fff;padding:13px 22px;border-radius:8px;text-decoration:none;text-align:center;transition:background .15s}
+  .btn:hover{background:var(--red-d)}
+  .search .btn{width:100%;margin-top:16px}
+  .agent{display:block;text-align:center;margin-top:12px;font-size:14px}
+
+  /* welcome */
+  section{padding:80px 0}
+  .welcome{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+  .welcome h2{font-size:clamp(2rem,4vw,3rem)}
+  .welcome h2 small{display:block;font-size:.45em;letter-spacing:.2em;color:var(--red);margin-bottom:8px;font-family:system-ui,sans-serif}
+  .notice{background:#fff;border-left:5px solid var(--red);border-radius:var(--radius);padding:20px 22px;font-size:15px;color:#3b362f;box-shadow:0 4px 18px rgba(0,0,0,.06)}
+  .notice strong{display:block;margin-bottom:6px;color:var(--red-d)}
+  @media(max-width:900px){.welcome{grid-template-columns:1fr;gap:32px}section{padding:56px 0}}
+
+  /* quick links */
+  .links{background:var(--ink);padding:36px 0}
+  .links ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .links a{display:block;text-align:center;padding:16px 10px;border:1px solid #3a353a;border-radius:var(--radius);color:var(--cream);text-decoration:none;font-weight:600;transition:.15s}
+  .links a:hover{background:var(--red);border-color:var(--red);color:#fff}
+
+  /* charter + destinations */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .card{background:#fff;border-radius:var(--radius);padding:36px;box-shadow:0 4px 18px rgba(0,0,0,.06)}
+  .card h3{font-size:1.7rem}
+  .cities{list-style:none;padding:0;margin:18px 0 22px;display:grid;grid-template-columns:1fr 1fr;gap:8px 16px}
+  .cities li{padding-left:22px;position:relative;font-weight:500}
+  .cities li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:50%;background:var(--red)}
+  @media(max-width:820px){.two{grid-template-columns:1fr}.card{padding:26px}}
+
+  /* CTA */
+  .cta{background:var(--red);color:#fff;text-align:center}
+  .cta h2{font-size:clamp(2rem,4vw,3rem)}
+  .cta p{font-size:1.5rem;margin:0 0 24px}
+  .cta p a{color:#fff;text-decoration:none;font-weight:700}
+  .cta .btn{background:var(--ink);padding:15px 34px;font-size:1.05rem}
+  .cta .btn:hover{background:#000}
+
+  /* news */
+  .news-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+  .news-head h2{margin:0;font-size:2rem}
+  .news{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .news article{border-top:3px solid var(--ink);padding-top:16px}
+  .news h3{font-size:1.35rem;margin-bottom:4px}
+  .news h3 a{color:var(--text);text-decoration:none}
+  .news h3 a:hover{color:var(--red-d)}
+  time{font-size:14px;color:var(--muted)}
+  .news p{margin:10px 0}
+  @media(max-width:820px){.news{grid-template-columns:1fr}}
+
+  /* footer */
+  footer{background:var(--ink);color:#c9c3b4;padding:60px 0 28px;font-size:15px}
+  footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:32px}
+  footer h4{color:#fff;font-size:13px;letter-spacing:.15em;text-transform:uppercase;margin:0 0 14px}
+  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  footer a{color:#c9c3b4;text-decoration:none}
+  footer a:hover{color:#fff;text-decoration:underline}
+  footer .small{margin-top:40px;padding-top:20px;border-top:1px solid #2a2629;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px;color:var(--muted)}
+  footer .small a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="https://www.flygrant.com/"><img src="images/Logo.gif" alt="Grant Aviation owl logo"><span>Grant Aviation</span></a>
+    <nav aria-label="Main">
+      <a href="#about">About Us</a>
+      <a href="#destinations">Flying with Us</a>
+      <a href="https://www.flygrant.com/Quyana-Rewards/">Quyana Rewards</a>
+      <a href="https://flygrant.tflite.com/Public/GRT/FlightInfo/FlightStatus">Flight Schedule</a>
+      <a href="https://www.flygrant.com/contact-us/">Contact Us</a>
+      <a class="phone" href="tel:888-359-4726">888-359-4726</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Fly Easy, Fly Grant</p>
+        <h1>Grant Aviation</h1>
+        <p class="lead">Alaskan-owned and operated</p>
+      </div>
+
+      <form class="search" action="https://flygrant.tflite.com/Public/GRT/Booking/Search" method="get" aria-labelledby="search-title">
+        <h2 id="search-title">Search for Flights</h2>
+        <div class="trip">
+          <label><input type="radio" name="trip" value="return" checked> Return Trip</label>
+          <label><input type="radio" name="trip" value="oneway"> One Way</label>
+        </div>
+        <div class="grid">
+          <label class="field">Departing from <input type="text" name="from" placeholder="City or airport"></label>
+          <label class="field">Traveling to <input type="text" name="to" placeholder="City or airport"></label>
+          <label class="field">Departing <input type="date" name="depart"></label>
+          <label class="field">Returning <input type="date" name="return"></label>
+          <div class="pax">
+            <label class="field">Adults <select name="adults"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select></label>
+            <label class="field">Children <select name="children"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label>
+            <label class="field">Infants <select name="infants"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+          </div>
+        </div>
+        <button class="btn" type="submit">Search for flights</button>
+        <a class="agent" href="https://flygrant.tflite.com/Public/GRT/Account/Login">Agent Login</a>
+      </form>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap welcome">
+      <div>
+        <h2><small>WELCOME TO</small>Grant Aviation</h2>
+        <p>The Grant workplace is both fun and challenging, and provides opportunities for staff to develop new skills and advance in their careers. If you have a can-do attitude and a commitment to professionalism, Grant is the place for you. Join Us!</p>
+      </div>
+      <aside class="notice" aria-label="COVID-19 travel updates">
+        <strong>COVID-19 Travel Updates</strong>
+        We continue our long standing "Fly Easy, Fly Grant" no change no cancellation fee policy. In response to CDC guidelines regarding the use of face coverings, we are requiring guests to wear facial coverings beginning May 20, 2020. Guests will be expected to bring their own coverings and will be required to wear them while in the airport and throughout their flight. Grant Aviation employees who are unable to maintain appropriate social distance while performing their duties will also be require to wear masks beginning May 20, 2020 including pilots and customer service agents. Please ensure you meet all travel requirements for the communities you are booking travel to, many communities require signed approval forms from the local authorities at this time.
+      </aside>
+    </div>
+  </section>
+
+  <div class="links">
+    <div class="wrap">
+      <ul>
+        <li><a href="https://flygrant.tflite.com/Public/GRT/FlightInfo/FlightStatus">Flight Schedule</a></li>
+        <li><a href="https://www.flygrant.com/flying-with-us/charters-groups/">Charters &amp; Groups</a></li>
+        <li><a href="https://www.flygrant.com/flying-with-us/destinations/">Destinations</a></li>
+        <li><a href="https://www.flygrant.com/flying-with-us/faqs/">FAQs</a></li>
+        <li><a href="https://www.flygrant.com/flying-with-us/freight-cargo/">Freight &amp; Cargo</a></li>
+        <li><a href="https://www.flygrant.com/Quyana-Rewards/">Quyana Rewards</a></li>
+        <li><a href="https://www.flygrant.com/about-us/news/">News</a></li>
+        <li><a href="https://www.flygrant.com/contact-us/">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="destinations">
+    <div class="wrap two">
+      <div class="card">
+        <h3>Alaska Charter Flights</h3>
+        <p>In addition to our scheduled flights, Grant Aviation offers charter flight services to meet your specific needs. A charter includes the entire aircraft and your pilot for the amount of time necessary to reach your desired destination. Charters can be an economical option if you are travelling with a large group (6-9 passengers).</p>
+        <a class="btn" href="https://www.flygrant.com/flying-with-us/charters-groups/">Keep reading...</a>
+      </div>
+      <div class="card">
+        <h3>Communities Served by Scheduled Flights</h3>
+        <ul class="cities">
+          <li>Anchorage</li><li>Dutch Harbor</li>
+          <li>Bethel</li><li>Emmonak</li>
+          <li>Cold Bay</li><li>Kenai</li>
+          <li>Dillingham</li><li>King Salmon</li>
+        </ul>
+        <a href="https://www.flygrant.com/flying-with-us/destinations/">Read more about Grant Aviation destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap">
+      <h2>Make a Reservation Today!</h2>
+      <p>888-Fly-Grant or <a href="tel:888-359-4726">888-359-4726</a></p>
+      <a class="btn" href="https://flygrant.tflite.com/Public/GRT/Booking/Search">Book online</a>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="wrap">
+      <div class="news-head">
+        <h2>Recent News</h2>
+        <a href="https://www.facebook.com/GrantAviation">Let's get social: Grant Aviation on Facebook</a>
+      </div>
+      <div class="news">
+        <article>
+          <h3><a href="https://www.flygrant.com/news/28/94/GRANT-AVIATION-SUMMER-NEWSLETTER-2018/">Grant Aviation Summer Newsletter 2018</a></h3>
+          <time datetime="2018-06-12">Jun 12, 2018</time>
+          <p><a href="https://www.flygrant.com/uploads/pdf/Intranet%20Docs/Grant%20Aviation%20Summer%20Newsletter%202018.pdf">Download the newsletter (PDF)</a></p>
+        </article>
+        <article>
+          <h3><a href="https://www.flygrant.com/news/26/94/Tell-Us-Your-Story/">Tell Us Your Story!</a></h3>
+          <time datetime="2016-03-25">Mar 25, 2016</time>
+          <p>Do you have a good story about a time Grant Aviation made a difference in your life? We're collecting stories for an upcoming project. If your story is selected, you could win plane tix!</p>
+          <a href="https://www.flygrant.com/news/26/94/Tell-Us-Your-Story/">Submit Your Story</a>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="https://www.flygrant.com/contact-us/">Email us</a></li>
+          <li><a href="tel:888-359-4726">+1 888-359-4726</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://flygrant.tflite.com/Public/GRT/Booking/Search">Book or search for flights</a></li>
+          <li><a href="https://flygrant.tflite.com/Public/GRT/FlightInfo/FlightStatus">Flight Schedule</a></li>
+          <li><a href="https://www.flygrant.com/contact-us/">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/GrantAviation">Facebook</a></li>
+          <li><a href="https://twitter.com/flygrant">Twitter</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Photos</h4>
+        <ul><li><a href="https://www.flygrant.com/about-us/news/gallery/">More photos</a></li></ul>
+      </div>
+      <div>
+        <h4>Newsletter Sign Up</h4>
+        <p style="margin:0"><a href="https://www.flygrant.com/sign-up-to-our-newsletter/" style="text-decoration:underline">Sign up here</a> to receive regular news and updates from Grant Aviation</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="https://www.flygrant.com/legal/online-bookings-terms-of-use/">Online Bookings - Terms Of Use</a></li>
+          <li><a href="https://www.flygrant.com/legal/privacy-policy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="small">
+      <span>2015-2021 <a href="https://www.flygrant.com/">Grant Aviation</a>. All Rights Reserved</span>
+      <a href="https://www.flygrant.com/login/">Staff Login</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

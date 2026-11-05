@@ -1,0 +1,618 @@
+{
+ "attributes": [
+  {
+   "name": "external_stylesheet_usage",
+   "definition": "Whether the page loads CSS from external stylesheet files or keeps styling self-contained (inline style block).",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "self_contained_inline_css",
+     "definition": "Page uses an inline style block (or inline styling) and explicitly no external stylesheets."
+    },
+    {
+     "value": "external_stylesheets",
+     "definition": "Page links to one or more external stylesheets."
+    },
+    {
+     "value": "not_stated",
+     "definition": "Not addressed."
+    }
+   ]
+  },
+  {
+   "name": "script_count",
+   "definition": "Amount of JavaScript included on the page.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "none",
+     "definition": "No scripts at all."
+    },
+    {
+     "value": "single_script",
+     "definition": "Exactly one script."
+    },
+    {
+     "value": "few_scripts",
+     "definition": "A small number of scripts, described as few or minimal."
+    },
+    {
+     "value": "many_scripts",
+     "definition": "Numerous scripts."
+    }
+   ]
+  },
+  {
+   "name": "dom_node_and_wrapper_density",
+   "definition": "How compact the DOM is in terms of div wrappers, nesting and overall node count.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "lean_few_divs",
+     "definition": "Few divs/nodes, shallow, flat structure."
+    },
+    {
+     "value": "heavy_nested",
+     "definition": "Many divs, deep nesting."
+    },
+    {
+     "value": "not_stated",
+     "definition": "Not addressed."
+    }
+   ]
+  },
+  {
+   "name": "class_vocabulary_size",
+   "definition": "Size and nature of the CSS class vocabulary used in markup.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "few_handwritten_classes",
+     "definition": "Few unique, semantic or hand-authored classes, no utility framework."
+    },
+    {
+     "value": "large_or_utility_classes",
+     "definition": "Many classes or utility-framework classes."
+    },
+    {
+     "value": "not_stated",
+     "definition": "Not addressed."
+    }
+   ]
+  },
+  {
+   "name": "inline_style_attribute_usage",
+   "definition": "Extent of inline style=\"\" attributes on elements.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "none_or_minimal",
+     "definition": "No or very few inline style attributes."
+    },
+    {
+     "value": "heavy_inline",
+     "definition": "Extensive inline style attributes."
+    },
+    {
+     "value": "not_stated",
+     "definition": "Not addressed."
+    }
+   ]
+  },
+  {
+   "name": "aria_and_metadata_footprint",
+   "definition": "Amount of ARIA attributes, meta tags and structured data in the document.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "minimal",
+     "definition": "Few ARIA attributes, meta tags, or structured-data blocks; relies on native semantics."
+    },
+    {
+     "value": "extensive",
+     "definition": "Rich ARIA, meta tags or structured data."
+    },
+    {
+     "value": "not_stated",
+     "definition": "Not addressed."
+    }
+   ]
+  },
+  {
+   "name": "semantic_landmark_structure",
+   "definition": "Use of semantic HTML elements (landmarks, sections, native controls).",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "minimal_native_semantics",
+     "definition": "Uses native semantic elements sparingly and simply (single main/header/nav/footer, real buttons, sections not articles)."
+    },
+    {
+     "value": "rich_semantics",
+     "definition": "Extensive use of article, aside and other wrappers."
+    },
+    {
+     "value": "not_stated",
+     "definition": "Not addressed."
+    }
+   ]
+  }
+ ],
+ "codes": [
+  {
+   "id": "s24",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s24",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s24",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s24",
+   "attribute": "aria_and_metadata_footprint",
+   "value": "minimal"
+  },
+  {
+   "id": "s25",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s25",
+   "attribute": "script_count",
+   "value": "single_script"
+  },
+  {
+   "id": "s55",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s55",
+   "attribute": "script_count",
+   "value": "few_scripts"
+  },
+  {
+   "id": "s55",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s55",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s60",
+   "attribute": "script_count",
+   "value": "few_scripts"
+  },
+  {
+   "id": "s60",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s105",
+   "attribute": "script_count",
+   "value": "few_scripts"
+  },
+  {
+   "id": "s105",
+   "attribute": "aria_and_metadata_footprint",
+   "value": "minimal"
+  },
+  {
+   "id": "s105",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s105",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s105",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s113",
+   "attribute": "semantic_landmark_structure",
+   "value": "minimal_native_semantics"
+  },
+  {
+   "id": "s113",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s114",
+   "attribute": "script_count",
+   "value": "single_script"
+  },
+  {
+   "id": "s114",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s114",
+   "attribute": "aria_and_metadata_footprint",
+   "value": "minimal"
+  },
+  {
+   "id": "s114",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s114",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s166",
+   "attribute": "script_count",
+   "value": "none"
+  },
+  {
+   "id": "s166",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s166",
+   "attribute": "aria_and_metadata_footprint",
+   "value": "minimal"
+  },
+  {
+   "id": "s166",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s166",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s190",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s190",
+   "attribute": "script_count",
+   "value": "none"
+  },
+  {
+   "id": "s190",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s214",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s214",
+   "attribute": "script_count",
+   "value": "none"
+  },
+  {
+   "id": "s216",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s216",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s272",
+   "attribute": "semantic_landmark_structure",
+   "value": "minimal_native_semantics"
+  },
+  {
+   "id": "s272",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s272",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s272",
+   "attribute": "script_count",
+   "value": "few_scripts"
+  },
+  {
+   "id": "s272",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s290",
+   "attribute": "script_count",
+   "value": "few_scripts"
+  },
+  {
+   "id": "s290",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s290",
+   "attribute": "aria_and_metadata_footprint",
+   "value": "minimal"
+  },
+  {
+   "id": "s290",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s290",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s335",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s335",
+   "attribute": "script_count",
+   "value": "none"
+  },
+  {
+   "id": "s335",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s335",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s360",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s360",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s419",
+   "attribute": "script_count",
+   "value": "single_script"
+  },
+  {
+   "id": "s419",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s419",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s419",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s442",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s442",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s442",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s442",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s447",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s447",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s447",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s516",
+   "attribute": "semantic_landmark_structure",
+   "value": "minimal_native_semantics"
+  },
+  {
+   "id": "s516",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s516",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s526",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s526",
+   "attribute": "script_count",
+   "value": "none"
+  },
+  {
+   "id": "s573",
+   "attribute": "script_count",
+   "value": "few_scripts"
+  },
+  {
+   "id": "s573",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s573",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s588",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s588",
+   "attribute": "script_count",
+   "value": "few_scripts"
+  },
+  {
+   "id": "s588",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s588",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s588",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s614",
+   "attribute": "script_count",
+   "value": "none"
+  },
+  {
+   "id": "s614",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s615",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s615",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s641",
+   "attribute": "script_count",
+   "value": "none"
+  },
+  {
+   "id": "s641",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s641",
+   "attribute": "aria_and_metadata_footprint",
+   "value": "minimal"
+  },
+  {
+   "id": "s674",
+   "attribute": "dom_node_and_wrapper_density",
+   "value": "lean_few_divs"
+  },
+  {
+   "id": "s674",
+   "attribute": "script_count",
+   "value": "single_script"
+  },
+  {
+   "id": "s674",
+   "attribute": "external_stylesheet_usage",
+   "value": "self_contained_inline_css"
+  },
+  {
+   "id": "s674",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s679",
+   "attribute": "aria_and_metadata_footprint",
+   "value": "minimal"
+  },
+  {
+   "id": "s679",
+   "attribute": "semantic_landmark_structure",
+   "value": "minimal_native_semantics"
+  },
+  {
+   "id": "s703",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s703",
+   "attribute": "inline_style_attribute_usage",
+   "value": "none_or_minimal"
+  },
+  {
+   "id": "s703",
+   "attribute": "semantic_landmark_structure",
+   "value": "minimal_native_semantics"
+  },
+  {
+   "id": "s729",
+   "attribute": "class_vocabulary_size",
+   "value": "few_handwritten_classes"
+  },
+  {
+   "id": "s729",
+   "attribute": "script_count",
+   "value": "few_scripts"
+  },
+  {
+   "id": "s729",
+   "attribute": "aria_and_metadata_footprint",
+   "value": "minimal"
+  }
+ ]
+}

@@ -1,0 +1,296 @@
+[
+ {
+  "observation": "The document titles differ: A uses the short title \"STG\", while B uses a descriptive title that includes the tagline.",
+  "category": "DOM/metadata",
+  "evidence": "A_facts title: \"STG\"; B_facts title: \"STG Partners — Partners for Business Transformation\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "B declares a document language and A does not.",
+  "category": "DOM/metadata",
+  "evidence": "A lang: \"\"; B lang: \"en\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has much more head metadata than B, including Open Graph, Twitter card, robots and msapplication tags, plus a JSON-LD block. B has only charset, viewport and description.",
+  "category": "DOM/metadata",
+  "evidence": "A meta count 14, jsonld_blocks 1; B meta count 3, jsonld_blocks 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many external scripts and stylesheets. B has no scripts or external stylesheets and uses one inline style block.",
+  "category": "DOM/structure",
+  "evidence": "A: scripts 27, stylesheets 8, link 18, style 2; B: scripts 0, stylesheets 0, style 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has three h1 elements: the logo 'STG' at the top, the tagline, and 'STG' again in the footer. B has one h1, the tagline.",
+  "category": "DOM/semantics",
+  "evidence": "A h1_count 3 (outline: STG, Partners for Business Transformation, STG); B h1_count 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses h2 for its section titles (How we build lasting value, Portfolio, Who We Are, News). A has no h2 and uses h3 for section titles and feature items alike.",
+  "category": "DOM/semantics",
+  "evidence": "A h2: null, 10 h3; B 4 h2 (40px/700), 6 h3",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's outline contains an empty h3 heading. B's outline has no empty headings.",
+  "category": "DOM/semantics",
+  "evidence": "A heading_outline includes {level:3, text:\"\"}",
+  "which_side": "A"
+ },
+ {
+  "observation": "B wraps its content in a main element. A has no main element.",
+  "category": "DOM/semantics",
+  "evidence": "semantic.main: A 0, B 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has 4 nav elements and 8 sections. B has 1 nav and 4 sections.",
+  "category": "DOM/semantics",
+  "evidence": "A nav 4, section 8; B nav 1, section 4",
+  "which_side": "A"
+ },
+ {
+  "observation": "B builds its menus as lists and A does not use lists.",
+  "category": "DOM/structure",
+  "evidence": "B ul 3, li 16; A has no ul/li in tag_counts",
+  "which_side": "B"
+ },
+ {
+  "observation": "B includes one button element, a ☰ hamburger toggle, and has 4 aria attributes. A has no buttons and no aria attributes.",
+  "category": "component choice",
+  "evidence": "B buttons 1, primary_button text \"☰\", aria_attrs 4; A buttons 0, aria_attrs 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's images all lack an alt attribute. All of B's images have one, and its hero photo has a descriptive alt while the icons use empty alts.",
+  "category": "DOM/images",
+  "evidence": "A alt_missing 6; B alt_missing 0, home_hero.png alt \"The STG Partners leadership team standing together in an office\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "B shows a full-width team photograph, home_hero.png, that A does not show. It is tinted blue in B.",
+  "category": "imagery",
+  "evidence": "B images: home_hero.png rect 1440x520 at y=510; screenshot B_slice_00 shows five men in an office with a blue overlay; A image list has no photo",
+  "which_side": "B"
+ },
+ {
+  "observation": "A renders in the browser default font, Times New Roman. B uses a system sans-serif stack.",
+  "category": "typography",
+  "evidence": "A fonts: Times New Roman 161, FontAwesome 8; B fonts: -apple-system 131 (stack -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The h1 styling differs: A's is 32px, blue (link colour) and underlined because it is the logo link. B's is a 60.8px white tagline that wraps over two lines.",
+  "category": "typography",
+  "evidence": "A h1: 32px, rgb(0,0,238), text 'STG'; B h1: 60.8px, 700, rgb(255,255,255)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B sets a line height of 25.6px (1.6) and A uses the browser's 'normal' line height.",
+  "category": "typography",
+  "evidence": "body_line_height: A normal; B 25.6px",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses FontAwesome glyphs for its social icons and the '+' after the featured link. B loads no icon font and uses text arrows (→).",
+  "category": "typography/iconography",
+  "evidence": "A FontAwesome 8 elements, i tags 10; B screenshots show '→' after the featured link and Read More links",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's palette is the browser default: black text, default blue links and a transparent body. B uses a navy, blue and white palette.",
+  "category": "color",
+  "evidence": "A top_text_colors rgb(0,0,0) 112, rgb(0,0,238) 57, body_bg transparent; B backgrounds rgb(11,31,58), rgb(18,48,90), rgb(7,21,42), accent rgb(61,139,253)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no section background colours. B alternates sections between dark navy, white and light grey.",
+  "category": "color/layout",
+  "evidence": "A top_backgrounds []; B navy hero/approach/who-we-are, white Portfolio, rgb(245,247,250) News, rgb(7,21,42) footer",
+  "which_side": "B"
+ },
+ {
+  "observation": "B places small uppercase, letter-spaced blue eyebrow labels above its section headings. A has none.",
+  "category": "copy treatment",
+  "evidence": "B_slice_00/01/02: 'OUR APPROACH', 'PORTFOLIO', 'WHO WE ARE', 'LATEST' in blue caps",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds a section heading, 'How we build lasting value', that does not appear in A.",
+  "category": "copy",
+  "evidence": "B heading_outline level-2 'How we build lasting value'; not in A outline",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has more words than A.",
+  "category": "copy",
+  "evidence": "words: A 213, B 242",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's content is one left-aligned column starting at x=8. B uses a centred container about 1072px wide (x 184–1256).",
+  "category": "layout",
+  "evidence": "A image rects all x=8; B icons start at x=213 inside cards starting at x=184; B nav/footer span x 184–1256",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid and flexbox and A uses neither.",
+  "category": "layout",
+  "evidence": "display_grid/flex: A 0/0; B 7/12",
+  "which_side": "B"
+ },
+ {
+  "observation": "In B the four approach items sit in a 4-column card grid. In A they are stacked vertically, one per row.",
+  "category": "layout",
+  "evidence": "B icons at y=1334 with x 213/487/761/1035; A icons at y 250, 415, 667, 819 all x=8",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A the Portfolio block sits between 'Committed to Growth' and 'Engaged Partners'. In B, Portfolio is a separate section after all four approach cards.",
+  "category": "layout/content order",
+  "evidence": "A heading_outline: Customer Centric, Committed to Growth, Portfolio, Engaged Partners, Accelerators; B: four approach h3s then h2 Portfolio",
+  "which_side": "A"
+ },
+ {
+  "observation": "B shows the Experts and Innovators items as two side-by-side cards. A stacks them as plain text.",
+  "category": "layout",
+  "evidence": "B icons icn_additional at x=213 and icn_entrepreneurs at x=605, same y=2506; A at y 1071 and 1230, x=8",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's cards have slightly rounded corners and a subtle border. Every element in A has a 0px radius.",
+  "category": "decoration",
+  "evidence": "border_radius buckets: A bucket_0 169 only; B bucket_1_7 4, bucket_8_15 6",
+  "which_side": "B"
+ },
+ {
+  "observation": "Neither page uses box shadows, gradients or animations.",
+  "category": "decoration/effects",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, animations 0 on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "B defines CSS transitions and a backdrop blur, which is visible on its sticky header. A has no transitions and no blur.",
+  "category": "effects",
+  "evidence": "B transitions 13, backdrop_blur 1, background rgba(11,31,58,0.97); A transitions 0, backdrop_blur 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's header is a dark bar with a spaced 'STG' wordmark on the left and the nav links on the right. A's header is an underlined 'STG' heading with the links run together on the line below.",
+  "category": "component choice/navigation",
+  "evidence": "A_slice_00: 'Our ApproachPortfolioWho We AreNewsContact' with no spacing; B_slice_00: header bar with spaced links",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows purple Facebook, Twitter and LinkedIn icons in its header, and adds an '@' icon in the footer. B shows no social icons.",
+  "category": "content/iconography",
+  "evidence": "A_slice_00 icons under the nav; A_slice_01 footer icons; none visible in B slices",
+  "which_side": "A"
+ },
+ {
+  "observation": "B renders the hero 'Our Approach' call to action as a solid blue button. In A it is a plain underlined text link.",
+  "category": "component choice",
+  "evidence": "B_slice_00 blue rgb(61,139,253) button 'Our Approach'; A_slice_00 underlined link",
+  "which_side": "B"
+ },
+ {
+  "observation": "B renders 'View Our Work' and 'Read More' as outlined rectangular buttons. In A they are underlined default links.",
+  "category": "component choice",
+  "evidence": "B_slice_01 bordered buttons; A_slice_00 underlined blue links",
+  "which_side": "B"
+ },
+ {
+  "observation": "B places the McAfee announcement in a full-width strip below the hero photo with a blue 'FEATURED' badge. A shows it as an underlined link with a '+' glyph under the CTA.",
+  "category": "component choice",
+  "evidence": "B_slice_00 strip at ~y1060 with FEATURED label; A_slice_00 link with ✚",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's approach icons are barely visible against the white background, and only a faint circle-arrow outline can be made out. B shows the same SVGs as white line icons on navy cards.",
+  "category": "imagery",
+  "evidence": "A_slice_00 empty space above headings except faint growth circle at y~415; B_slice_01 visible white icons",
+  "which_side": "A"
+ },
+ {
+  "observation": "B sizes the icons to a height of about 59px. A shows each icon at its natural size, which varies.",
+  "category": "imagery",
+  "evidence": "B rects: 69x59, 59x59, 60x59, 99x59, 61x59, 37x59; A natural sizes, e.g. 79x68, 55x54, 39x63",
+  "which_side": "B"
+ },
+ {
+  "observation": "B lays out the news list in rows separated by dividers, each with a large bold day, a small uppercase month, the headline, and a right-aligned blue 'Read More →'. A stacks the month, day, headline and link vertically in plain text.",
+  "category": "component choice/layout",
+  "evidence": "B_slice_02 news rows; A_slice_01 'Jun / 01 / headline / Read More' stacked",
+  "which_side": "both"
+ },
+ {
+  "observation": "News headlines are bold serif text in A and medium-weight sans-serif in B, and both pages use h4 for them.",
+  "category": "typography",
+  "evidence": "Both have 5 h4 news headings; A_slice_01 serif bold; B_slice_02 sans",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer is a dark band with the logo and nav links on one row and the copyright and Terms on a second row under a divider. A's footer repeats the h1 'STG' with run-together links, social icons and an inline copyright.",
+  "category": "layout/footer",
+  "evidence": "B_slice_02 footer at bg rgb(7,21,42); A_slice_01 footer 'HomeOur ApproachPortfolio...' and '© 2021 STG Partners, LLCTerms Of Use'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both footers include a 'Home' link that the header nav does not have.",
+  "category": "navigation",
+  "evidence": "A_slice_01 footer 'Home…'; B_slice_02 footer 'Home'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's page is much taller than A's at the same 1440px width.",
+  "category": "layout",
+  "evidence": "page_height: A 2237, B 3750",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has more DOM elements and CSS classes than B.",
+  "category": "DOM/class usage",
+  "evidence": "div: A 41, B 30; classes total/unique: A 149/57, B 59/25; neither uses Tailwind-style classes (fraction 0)",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses b tags and A uses a u tag.",
+  "category": "DOM/markup",
+  "evidence": "B tag_counts b 5; A tag_counts u 1, br 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses muted grey-blue text for secondary copy, while A's text is all black or link blue.",
+  "category": "color/typography",
+  "evidence": "B top_text_colors rgb(159,176,200) 19, rgb(195,207,224) 8; A only black and rgb(0,0,238)",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's text and link colours carry no visited-link purple. A shows visited purple on its footer logo and social icons.",
+  "category": "color",
+  "evidence": "A_slice_01 footer 'STG' and icons in purple; B links in white/blue/grey",
+  "which_side": "A"
+ },
+ {
+  "observation": "Each page contains one emoji character and no exclamation marks or em dashes in its body text.",
+  "category": "copy",
+  "evidence": "text_stats: A emoji 1, B emoji 1; exclamations 0 and em_dashes 0 on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's 'Accelerators' card keeps the inline underlined 'Learn more.' link, in white. A shows it in default blue at the end of the sentence.",
+  "category": "copy treatment",
+  "evidence": "B_slice_01 Accelerators card; A_slice_00 Accelerators paragraph",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero places the headline, subcopy and button in an indented column that starts at about x=364, narrower than the header's container.",
+  "category": "layout",
+  "evidence": "B_slice_00: hero text starts ~x=364 while the logo starts at x=184",
+  "which_side": "B"
+ }
+]

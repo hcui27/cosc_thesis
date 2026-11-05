@@ -1,0 +1,216 @@
+{
+ "key": "c06139daec82",
+ "groups": [
+  {
+   "name": "Hero image darkening overlay",
+   "definition": "Does the hero photo have a darkening overlay or gradient behind the heading text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#4",
+    "flygrant_com#11"
+   ]
+  },
+  {
+   "name": "Hero photos lack tint overlay",
+   "definition": "Do hero photos appear in near-natural color without a flat duotone or tint overlay?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#10"
+   ]
+  },
+  {
+   "name": "Images cropped to uniform small sizes",
+   "definition": "Are images or thumbnails cropped via object-fit to uniform small sizes, sometimes cutting off subjects?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#22",
+    "educationactivities_org#13"
+   ]
+  },
+  {
+   "name": "Placeholder image reused across cards",
+   "definition": "Is one placeholder image repeated across gallery, product or card items?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#18",
+    "gravityvault_com#25"
+   ]
+  },
+  {
+   "name": "Colored tiles replace photography",
+   "definition": "Are photos replaced by solid-color, pastel or gradient block tiles with text or icons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#8",
+    "educationactivities_org#12",
+    "merchantsavvy_co_uk#13"
+   ]
+  },
+  {
+   "name": "Icons are inline SVG",
+   "definition": "Are icons inline SVG elements rather than icon fonts?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "svg_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "bathurst12hour_com_au#2",
+    "merchantsavvy_co_uk#22"
+   ]
+  },
+  {
+   "name": "Icons absent, text labels used",
+   "definition": "Are utility actions shown as plain text labels with no SVG icons?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "svg_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "naturalwellbeing_com#4"
+   ]
+  },
+  {
+   "name": "Images with rounded corners and shadow",
+   "definition": "Do images have rounded corners and/or drop shadows, including arch or curved crops?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#13",
+    "homedesignersoftware_com#8",
+    "neverskipbrunch_com#8",
+    "tellmebaby_com_au#26"
+   ]
+  },
+  {
+   "name": "Slogan graphic in shadowed card",
+   "definition": "Is a standalone slogan graphic shown small inside a white shadowed card?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#31"
+   ]
+  },
+  {
+   "name": "Small circular avatar",
+   "definition": "Is there a small circular avatar next to a name and subtitle?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#14"
+   ]
+  },
+  {
+   "name": "All images load without breakage",
+   "definition": "Do all images load with valid sizes, with no broken images or icon-font glyph failures?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#22"
+   ]
+  },
+  {
+   "name": "Descriptive alt text, empty on decorative",
+   "definition": "Do meaningful images have descriptive alt text while decorative icons have empty alt?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "image_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "kanienkeha_net#19",
+    "kneeguru_co_uk#21",
+    "neverskipbrunch_com#25",
+    "thefrangipanicreative_com#15"
+   ]
+  },
+  {
+   "name": "Small left-aligned logo or sponsor strip",
+   "definition": "Are sponsor or partner logos small, uniformly sized and left-aligned in a strip?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#27",
+    "thync_com#13"
+   ]
+  },
+  {
+   "name": "Header logo legible size",
+   "definition": "Is the logo displayed at a clearly legible size in the header?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "merchantsavvy_co_uk#9"
+   ]
+  },
+  {
+   "name": "Text-only cards without imagery",
+   "definition": "Are cards or product items text-only with no images, or sparse imagery overall?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "image_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "naturalwellbeing_com#30",
+    "ridetech_com#13",
+    "tellmebaby_com_au#27"
+   ]
+  },
+  {
+   "name": "Distorted scaled-down images",
+   "definition": "Are small images scaled so their aspect ratio is distorted?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "nira_org_ng#24"
+   ]
+  },
+  {
+   "name": "Media embeds replaced by link cards",
+   "definition": "Are video or media embeds replaced with text-link cards?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "nira_org_ng#25"
+   ]
+  },
+  {
+   "name": "Grey no-preview placeholder",
+   "definition": "Do missing images show a grey 'No preview available' placeholder rather than a broken image?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "seoanalyzer_me#13"
+   ]
+  },
+  {
+   "name": "Full-bleed hero photograph",
+   "definition": "Is there a large full-bleed hero or team photograph as an img element?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#7"
+   ]
+  },
+  {
+   "name": "Icons uniform small squares in cards",
+   "definition": "Are icons normalized to a uniform small square size inside cards?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#8"
+   ]
+  }
+ ]
+}

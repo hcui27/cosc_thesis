@@ -1,0 +1,314 @@
+[
+ {
+  "observation": "Page title wording differs: A has a long, keyword-heavy SEO title; B has a short brand title with an em dash.",
+  "category": "metadata",
+  "evidence": "A title: 'Scheduled, Charter & Cargo Flights throughout Alaska - Grant Aviation, Alaska, Flights - Grant Aviation'; B title: 'Grant Aviation — Alaskan-owned and operated'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has more meta tags, including Open Graph tags; B has only the basic ones.",
+  "category": "metadata",
+  "evidence": "A meta_names include Keywords, og:site_name, og:title, og:description, og:url, og:image, author (10 meta tags); B has charset, viewport, description (3)",
+  "which_side": "A"
+ },
+ {
+  "observation": "Header bar color: A uses a solid red header; B uses a white header with a thin bottom border.",
+  "category": "color",
+  "evidence": "A_slice_00 header background is red (rgb(210,60,51) appears in top_backgrounds); B_slice_00 header is white/cream with a dark text nav",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's logo pairs the emblem with a two-tone 'GRANTAVIATION' wordmark; B places the emblem on a red square next to the bold dark text 'Grant Aviation'.",
+  "category": "imagery",
+  "evidence": "A_slice_00 logo at x=165 w=80; B logo at x=180 w=68 h=48 on a red tile, with the text 'Grant Aviation'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's nav items use FontAwesome icons and dropdown carets; B's nav is plain text with no icons.",
+  "category": "component",
+  "evidence": "A shows caret icons on 'About Us'/'Flying with Us' and icons on Contact Us, Flight Schedule and phone; FontAwesome is used on 32 elements in A; B fonts list has no icon font",
+  "which_side": "A"
+ },
+ {
+  "observation": "B shows the phone number as a filled rust-colored button with rounded corners in the nav; in A it is a plain icon-plus-text link.",
+  "category": "component",
+  "evidence": "B_slice_00: '888-359-4726' in a rust (rgb(168,64,44)) rounded pill-like box; A_slice_00: phone icon + white text",
+  "which_side": "B"
+ },
+ {
+  "observation": "The hero heading is styled differently: A uses an uppercase 48px weight-400 Raleway h1 with a red uppercase subtitle; B uses a 67.2px bold system-font h1 in title case, an accent rule, and an italic serif subtitle.",
+  "category": "typography",
+  "evidence": "A h1: 48px, 400, Raleway, text 'GRANT AVIATION\\nALASKAN-OWNED AND OPERATED'; B h1: 67.2px, 700, -apple-system, text 'Grant Aviation'; B_slice_00 shows italic 'Alaskan-owned and operated' below a short rust line",
+  "which_side": "both"
+ },
+ {
+  "observation": "A puts the tagline inside the h1; B keeps the tagline out of the h1 text.",
+  "category": "DOM/semantic",
+  "evidence": "A h1 text includes 'ALASKAN-OWNED AND OPERATED'; B h1 text is only 'Grant Aviation'",
+  "which_side": "A"
+ },
+ {
+  "observation": "The flight search box sits in different places: in A it is a wide white panel on the left-center, below the heading; in B it is a narrower card on the right, beside the heading.",
+  "category": "layout",
+  "evidence": "A_slice_00 form spans x≈170–978 below the h1; B_slice_00 form card at x≈840–1260 to the right of the h1",
+  "which_side": "both"
+ },
+ {
+  "observation": "The search card corners differ: A's panel has square corners; B's card has rounded corners.",
+  "category": "decoration",
+  "evidence": "A border radius bucket_0=632, with only 7 elements in the 1–7px range; B has 17 elements at 1–7px and 11 at 8–15px; visible rounded card in B_slice_00",
+  "which_side": "B"
+ },
+ {
+  "observation": "Trip-type control: A uses radio buttons with uppercase labels; B uses a two-part segmented toggle with a filled dark button for the active option.",
+  "category": "component",
+  "evidence": "A_slice_00 'RETURN TRIP' / 'ONE WAY' radios; B_slice_00 black 'Return Trip' button and white 'One Way' button",
+  "which_side": "both"
+ },
+ {
+  "observation": "Passenger count controls: A uses minus/plus steppers around number inputs; B uses select dropdowns.",
+  "category": "component",
+  "evidence": "A_slice_00 steppers for Adults/Children/Infants; B_slice_00 dropdowns showing 1, 0, 0; B has 3 selects vs A's 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "Form label style: A uses sentence-case labels; B uses small uppercase labels with letter spacing.",
+  "category": "typography",
+  "evidence": "A 'Departing from', 'Traveling to'; B 'DEPARTING FROM', 'TRAVELING TO', 'ADULTS'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Date fields: A uses text inputs with the placeholders 'Departure Date'/'Return Date'; B shows native date inputs with mm/dd/yyyy and a calendar icon.",
+  "category": "component",
+  "evidence": "A_slice_00 vs B_slice_00 date inputs",
+  "which_side": "both"
+ },
+ {
+  "observation": "B wraps the form fields in a fieldset; A has no fieldset.",
+  "category": "DOM/semantic",
+  "evidence": "B tag_counts fieldset:1, label:9; A has no fieldset and label:3",
+  "which_side": "B"
+ },
+ {
+  "observation": "The search button is placed differently: A has a half-width red button with 'Agent Login »' aligned right; B has a full-width rust button with an underlined, centered 'Agent Login' link below it.",
+  "category": "layout",
+  "evidence": "A_slice_00 vs B_slice_00 form footers",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both use the same carved owl/mask hero image. In B it is visibly darkened behind the heading; in A it is shown at fuller brightness.",
+  "category": "imagery",
+  "evidence": "A_slice_00 owl face fully visible and bright; B_slice_00 image dimmer, with the owl partly behind the form card; B has 1 gradient background",
+  "which_side": "B"
+ },
+ {
+  "observation": "Welcome section: A uses a dark charcoal panel with uppercase 'WELCOME TO GRANT AVIATION' next to a white 4×2 grid of icon tiles; B uses a cream section with a small rust uppercase eyebrow ('WELCOME TO') above a bold h2.",
+  "category": "layout",
+  "evidence": "A_slice_00 dark panel plus icon tile grid; B_slice_00 'WELCOME TO' eyebrow and 'Grant Aviation' h2; B heading outline h2 'Grant Aviation' vs A 'WELCOME TO\\nGRANT AVIATION'",
+  "which_side": "both"
+ },
+ {
+  "observation": "COVID notice: in A it is bold, justified white text on a black highlight behind each line inside the dark panel; in B it is bold serif text in a beige callout box with a rust left border.",
+  "category": "copy treatment",
+  "evidence": "A_slice_00/01 black-highlighted justified paragraph; B_slice_00 tinted box with a red left border",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows a stray black text-highlight fragment at the end of the welcome paragraph, on an empty line.",
+  "category": "decoration",
+  "evidence": "A_slice_01 small black mark below 'Join Us!' at y≈400",
+  "which_side": "A"
+ },
+ {
+  "observation": "The quick-link items differ: A shows icon tiles with large red FontAwesome icons above centered labels; B shows text buttons with a red arrow '→' in rounded bordered boxes.",
+  "category": "component",
+  "evidence": "A_slice_00/01 tiles (calendar, plane, map pin, chat icons); B_slice_01 'Flight Schedule →' etc. in 4×2 rounded cream boxes",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both have the same eight quick links (Flight Schedule, Charters & Groups, Destinations, FAQs, Contact us, News, Freight & Cargo, Quyana Rewards).",
+  "category": "copy treatment",
+  "evidence": "A_slice_00/01 tiles and B_slice_01 boxes list the same labels",
+  "which_side": "both"
+ },
+ {
+  "observation": "A wraps the main content in a centered boxed container with a shadow, on a white/dark background; B uses full-width bands that alternate in color.",
+  "category": "layout",
+  "evidence": "A_slice_01/02 content box spans x≈105–1335 with a visible shadow edge; A box_shadows 9 vs B 1; B_slice_01 bands go edge to edge in cream, white and black",
+  "which_side": "A"
+ },
+ {
+  "observation": "Communities list: A puts a red map-pin icon before each town; B uses plain text rows with thin divider lines.",
+  "category": "component",
+  "evidence": "A_slice_01 pin icons before Anchorage, Bethel...; B_slice_01 rows separated by tan rules",
+  "which_side": "both"
+ },
+ {
+  "observation": "A embeds a video player (black box with a play button) under the charter section; B has no video.",
+  "category": "imagery",
+  "evidence": "A_slice_01 black player at y≈720–1030; A iframe:2; B has no iframe in tag_counts",
+  "which_side": "A"
+ },
+ {
+  "observation": "Body text font differs: A uses Open Sans for body and Raleway for headings; B pairs a system sans-serif for headings/UI with Georgia serif for body paragraphs.",
+  "category": "typography",
+  "evidence": "A fonts: open sans 568, Raleway 38; B fonts: -apple-system 140, Georgia 50; B_slice_01 charter paragraph is set in serif",
+  "which_side": "both"
+ },
+ {
+  "observation": "Heading weights differ: A's h2s are light (weight 400, 30px); B's headings are bold (h2 computed 19.2px, weight 700, while visible section headings are large and bold).",
+  "category": "typography",
+  "evidence": "A h2 font_size 30px weight 400; B h2 19.2px weight 700; B_slice_01 'Recent News' is bold",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text color: A uses mid-gray body text on white; B uses near-black text on a warm cream background.",
+  "category": "color",
+  "evidence": "A body_color rgb(114,114,114), body_bg rgb(255,255,255); B body_color rgb(23,18,15), body_bg rgb(250,246,238)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Accent red differs: A uses a brighter red, rgb(210,60,51); B uses a darker rust/brick, rgb(168,64,44), with link color rgb(134,48,31).",
+  "category": "color",
+  "evidence": "A top_backgrounds include rgb(210,60,51); B top_backgrounds include rgb(168,64,44) and text color rgb(134,48,31)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Link styling: A's links are red and not underlined; B's links are underlined (rust on light backgrounds, white in the footer).",
+  "category": "typography",
+  "evidence": "A_slice_01 'Keep reading...' in red with no underline; B_slice_01 'Keep reading...' underlined; B_slice_02 footer links underlined",
+  "which_side": "both"
+ },
+ {
+  "observation": "Reservation call-to-action: A uses a light gray-blue band with '888-Fly-Grant' in very large red type, a faint plane watermark and a small 'Book online' button; B uses a solid black band with a large bold white headline, small phone text and a rust serif 'Book online' button.",
+  "category": "layout",
+  "evidence": "A_slice_01/02 light band with large red phone number; B_slice_01 black band (rgb(10,7,9))",
+  "which_side": "both"
+ },
+ {
+  "observation": "A puts the phone numbers inside the h2 text; B keeps them out of the heading.",
+  "category": "DOM/semantic",
+  "evidence": "A h2 'Make a Reservation Today!\\n888-Fly-Grant or 888-359-4726'; B h2 'Make a Reservation Today!'",
+  "which_side": "A"
+ },
+ {
+  "observation": "Recent News: A shows one bordered news card with an uppercase title, a clock icon with the date, and a raw PDF URL that overflows the card; B shows two rounded cards side by side (Newsletter 2018 and 'Tell Us Your Story!') with dates and descriptive link text.",
+  "category": "component",
+  "evidence": "A_slice_02 card with the URL 'https://www.flygrant.com/uploads/pdf/...' cut off at the edge; B_slice_01 two cards, 'Download the newsletter (PDF)', 'Submit Your Story'; B article:2, time:2",
+  "which_side": "both"
+ },
+ {
+  "observation": "Heading hierarchy differs for news items: A makes the news item titles h2 under an h3 'Recent News'; B makes 'Recent News' an h2 with h3 items.",
+  "category": "DOM/semantic",
+  "evidence": "A outline: h3 'Recent News', h2 'GRANT AVIATION SUMMER NEWSLETTER 2018', h2 'Tell Us Your Story!'; B outline: h2 'Recent News', h3 items",
+  "which_side": "both"
+ },
+ {
+  "observation": "'Lets get Social': in A it sits beside Recent News with an empty area below the heading; in B it is placed under the news cards with one text link, 'Grant Aviation on Facebook'.",
+  "category": "layout",
+  "evidence": "A_slice_02 empty left column under 'Lets get Social'; B_slice_02 heading plus link",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer photos: A shows six bordered thumbnails and a red 'More photos' button; B shows only a 'More photos' text link with no images.",
+  "category": "imagery",
+  "evidence": "A images: six 67×59 thumbnails at y=3762; B images count 1 (logo only); B_slice_02 'More photos' link",
+  "which_side": "A"
+ },
+ {
+  "observation": "Footer icons: A uses small square icon tiles (Facebook, Twitter, quick links) and envelope/headset icons for contact; B's footer is plain underlined text links.",
+  "category": "component",
+  "evidence": "A_slice_02 footer icon boxes; B_slice_02 text-only links",
+  "which_side": "A"
+ },
+ {
+  "observation": "Footer headings: A uses larger plain uppercase headings; B uses small, bold, widely letter-spaced uppercase headings.",
+  "category": "typography",
+  "evidence": "A_slice_02 'LEGAL', 'FOLLOW US' at ~18px; B_slice_02 'LEGAL', 'FOLLOW US' small with tracking",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer layout: A puts PHOTOS and NEWSLETTER SIGN UP side by side in a second row; B stacks them in the first column.",
+  "category": "layout",
+  "evidence": "A_slice_02 Photos left, Newsletter at x≈833; B_slice_02 both in the left column",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer colors: A uses a dark charcoal footer and a darker sub-footer strip; B uses a single near-black warm brown footer with a divider line before the copyright row.",
+  "category": "color",
+  "evidence": "A_slice_02/03 rgb(34,34,34)-family backgrounds with a separate copyright band; B_slice_02 rgb(23,18,15) footer with a thin rule",
+  "which_side": "both"
+ },
+ {
+  "observation": "Copyright row: in A, 'Grant Aviation' and 'Staff Login' are red; in B they are underlined white.",
+  "category": "color",
+  "evidence": "A_slice_03 red link text; B_slice_02 white underlined links",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a <main> element and 4 sections; A has no main and 1 section.",
+  "category": "DOM/semantic",
+  "evidence": "A semantic main:0, section:1, article:0; B main:1, section:4, article:2",
+  "which_side": "B"
+ },
+ {
+  "observation": "A loads many external resources; B is self-contained, with a single script and inline styles.",
+  "category": "DOM/semantic",
+  "evidence": "A scripts 34, stylesheets 18, link 23; B scripts 1, stylesheets 0, style 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "DOM size and class use differ greatly.",
+  "category": "DOM/semantic",
+  "evidence": "A div 128, span 144, anchors 116, classes total 598 / unique 153; B div 24, span 2, anchors 38, classes total 44 / unique 28",
+  "which_side": "A"
+ },
+ {
+  "observation": "Layout technique: B uses CSS grid and flexbox; A reports none.",
+  "category": "layout",
+  "evidence": "B display_grid 7, display_flex 5; A display_grid 0, display_flex 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has many more motion/effect properties than B.",
+  "category": "decoration",
+  "evidence": "A transitions 58, transforms 29, gradients 4, shadows 9; B transitions 8, transforms 0, gradients 1, shadows 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has many more ARIA attributes than B.",
+  "category": "DOM/semantic",
+  "evidence": "A aria_attrs 125; B aria_attrs 3",
+  "which_side": "A"
+ },
+ {
+  "observation": "Logo alt text: A gives the logo alt text; B uses an empty alt.",
+  "category": "DOM/semantic",
+  "evidence": "A Logo.gif alt 'Grant Aviation'; B Logo.gif alt ''",
+  "which_side": "A"
+ },
+ {
+  "observation": "Page heights differ: A is taller than B.",
+  "category": "layout",
+  "evidence": "A page_height 4013; B page_height 3316; both width 1440",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has a 'Menu' button (the measured primary button, 6px radius, 8px 12px padding) that is not visible on desktop; A's measured primary button is a location select.",
+  "category": "component",
+  "evidence": "B primary_button text 'Menu', radius 6px; A primary_button 'Select a location...', radius 0px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Word and exclamation counts are similar; B has slightly fewer words but more exclamation marks.",
+  "category": "copy treatment",
+  "evidence": "A words 481, exclamations 2; B words 459, exclamations 4",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body line height is looser in B.",
+  "category": "typography",
+  "evidence": "A body_line_height 24px; B 26.4px (both 16px font size)",
+  "which_side": "B"
+ }
+]

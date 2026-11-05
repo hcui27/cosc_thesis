@@ -1,0 +1,563 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "A's H1 element is empty, while B's H1 contains a full headline.",
+   "evidence": "A h1.text = \"\"; B h1.text = \"Payment Processing Made Simple (& Cheaper)\"",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|01",
+    "merchantsavvy_co_uk|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "The two sides use different document titles. A uses a descriptive phrase, and B uses a brand-pipe-slogan pattern.",
+   "evidence": "A title \"Payment Processing & Merchant Services\"; B title \"Merchant Savvy | Payment Processing Made Simple (& Cheaper)\"",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|02",
+    "merchantsavvy_co_uk|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B's H1 is much larger and heavier than A's (empty) H1, and it is white on a dark background.",
+   "evidence": "A h1 38px/600 rgb(0,37,58); B h1 54.4px/700 rgb(255,255,255)",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|03"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I3",
+   "text": "A uses web fonts (mainly Open Sans and Roboto, plus Calibri and icon fonts). B uses only the system-ui font stack.",
+   "evidence": "A fonts: Open Sans 534, roboto 438, Roboto 140, calibri 134, Font Awesome 5 Free 18, eicons 2; B fonts: system-ui 136",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|04",
+    "merchantsavvy_co_uk|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "H2 headings are about the same size, but B sets them bold where A uses medium weight.",
+   "evidence": "A h2 28px weight 500; B h2 28.8px weight 700; visually A 'Payment Processing' is regular grey-black and B is heavy navy",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|05",
+    "merchantsavvy_co_uk|opus|06",
+    "merchantsavvy_co_uk|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A's body text is a light grey. B's body text is a dark navy.",
+   "evidence": "A body_color rgb(146,146,146); B body_color rgb(28,29,58)",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|07",
+    "merchantsavvy_co_uk|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "B's hero has a large indigo background with a diagonal gradient that lightens toward the bottom right.",
+   "evidence": "B top_backgrounds rgb(30,34,140); gradient_backgrounds 4; B_slice_00 hero shading",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|09",
+    "merchantsavvy_co_uk|opus|10",
+    "merchantsavvy_co_uk|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "B places the payment-logo strip inside a white rounded card next to the hero CTA. In A, that same image sits mid-page (in the empty top area).",
+   "evidence": "B msuk-payment-logos rect x329 y557 300×50; A same file at x848 y1356",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|12",
+    "merchantsavvy_co_uk|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "B has a visible top nav with dropdown chevrons ('Merchant Accounts', 'Card Machines', 'Online') and a dark pill 'Quotes' button. No nav is visible in A's screenshots, even though A has 4 nav elements in the DOM.",
+   "evidence": "B_slice_00 header; A semantic nav 4 but nothing rendered in A_slice_00",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|13",
+    "merchantsavvy_co_uk|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "B's logo is shown at a usable size. A's logo is measured at only 48×11px.",
+   "evidence": "A merchant_savvy_purple.svg rect 48×11; B merchant-savvy-purple.svg rect 157×36",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|14",
+    "merchantsavvy_co_uk|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "A shows category links as plain text lists in two columns with chevron icons, beside each section's heading and description. B shows them as bordered card tiles in a grid, each with an arrow icon.",
+   "evidence": "A_slice_01 chevron lists; B_slice_00/01 bordered tiles with → arrows",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|15",
+    "merchantsavvy_co_uk|opus|16",
+    "merchantsavvy_co_uk|opus|17",
+    "merchantsavvy_co_uk|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "B uses CSS grid for layout. A uses only flexbox.",
+   "evidence": "A display_grid 0, display_flex 179; B display_grid 12, display_flex 17",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|18"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I12",
+   "text": "B gives the Finance & Banking section a pale lavender-grey band to separate it. In A, every section sits on white.",
+   "evidence": "B background rgb(244,245,251); B_slice_00 bottom and B_slice_01 top band",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|19",
+    "merchantsavvy_co_uk|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "B replaces the missing stats images with indigo gradient panels that each hold a white line icon (phone, shopping cart, monitor).",
+   "evidence": "B svgs 3 with rect/path/circle; B_slice_01 Mobile Payments, Mobile Ecommerce, Remote Working cards",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|22",
+    "merchantsavvy_co_uk|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "B shows Research & Stats as bordered cards in a 4-column grid: an image area on top, a bold caption below, and 5 cards in total that wrap onto a second row.",
+   "evidence": "B_slice_01: UK SMEs, Mobile Payments, Mobile Ecommerce, Remote Working, Payment Fraud",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|23",
+    "merchantsavvy_co_uk|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Real stats images display larger in B than in A.",
+   "evidence": "charts.jpg A 208×139 vs B 263×175; payment-fraud-stats.jpg A 208×139 vs B 263×175",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|25",
+    "merchantsavvy_co_uk|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "B gives the decorative stats images empty alt text. A uses filename-derived alt text prefixed 'Homepage (New Design)'.",
+   "evidence": "B charts.jpg alt \"\"; A charts.jpg alt \"Homepage (New Design) charts\"",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|26",
+    "merchantsavvy_co_uk|opus|27",
+    "merchantsavvy_co_uk|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "B uses the landmark elements header, main and footer. A has none of these, relying on nav and section.",
+   "evidence": "A header 0, main 0, footer 0, section 15, nav 4; B header 1, main 1, footer 1, section 3, nav 1",
+   "side": "generated",
+   "members": [
+    "merchantsavvy_co_uk|opus|31",
+    "merchantsavvy_co_uk|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "A uses 0px or small (1–7px) corner radii. B consistently uses 8–15px radii on its cards and buttons, plus pill shapes.",
+   "evidence": "A radius buckets 0:1179, 1–7:81, 8–15:6; B 0:103, 8–15:31, pill:2",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|37",
+    "merchantsavvy_co_uk|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A has some box shadows and transforms. B has no shadows or transforms and uses thin borders instead.",
+   "evidence": "A box_shadows 12, transforms 6; B box_shadows 0, transforms 0; B tiles show 1px light borders",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|38",
+    "merchantsavvy_co_uk|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "B's footer has a thin top divider and more spacing, and its links are indigo. A's footer copyright lines sit close together, with cyan links.",
+   "evidence": "B_slice_01 hairline at y≈882, footer lines spaced; A_slice_02 copyright lines at ~14px spacing, links rgb(19,175,240)",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|41",
+    "merchantsavvy_co_uk|opus|42",
+    "merchantsavvy_co_uk|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Both footers end with the same 528×23 payment-types logo strip, left-aligned.",
+   "evidence": "A payment-types-top.png 528×23 at x171; B payment-types.png 528×23 at x160",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|43",
+    "merchantsavvy_co_uk|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "A's page is wider and taller than B's.",
+   "evidence": "A page 1868×2877; B page 1440×2419",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|44",
+    "merchantsavvy_co_uk|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "Both pages use a left content edge of about 160px.",
+   "evidence": "A headings at x≈160 in A_slice_01; B logo x160 and headings x≈160",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|45"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I24",
+   "text": "B has more visible text than A, mostly from the hero and benefit bullets. A contains one emoji character.",
+   "evidence": "A words 131, emoji 1; B words 188, emoji 0",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|11",
+    "merchantsavvy_co_uk|opus|46",
+    "merchantsavvy_co_uk|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "B has a real button element (a 'Menu' toggle) and some ARIA. A has no button elements but many more ARIA attributes.",
+   "evidence": "A buttons 0, aria_attrs 96; B buttons 1 (primary_button 'Menu', radius 8px), aria_attrs 7",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|47",
+    "merchantsavvy_co_uk|sonnet|28",
+    "merchantsavvy_co_uk|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "B uses bold dark-navy text for link labels on its tiles. A's link labels are regular-weight cyan text.",
+   "evidence": "B_slice_00 'Merchant Account Providers' bold navy in tile; A_slice_01 same label regular cyan",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|08",
+    "merchantsavvy_co_uk|opus|48",
+    "merchantsavvy_co_uk|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "A's heading outline jumps from an empty H1 to H3s that read like internal labels. B's outline is just H1 → three H2s.",
+   "evidence": "A outline: h1 '', h3 'Desktop - Organic (+ types)', h3 'Mobile - IMS with Types', h2×3; B: h1 + h2×3",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|opus|30",
+    "merchantsavvy_co_uk|opus|49",
+    "merchantsavvy_co_uk|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "A's first screenshot slice is entirely blank white. No header, hero, logo or navigation is visible, and the first content starts below roughly 1300px. B opens with a header, a hero banner and a call to action in the first screen.",
+   "evidence": "A_slice_00.png is blank. B_slice_00.png shows a logo/nav bar at the top and a blue hero. A page_height is 2877 and B page_height is 2419.",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "The palettes differ. A is mostly white with accents of light blue-grey (218,228,232), green (69,187,92), violet (71,55,255) and orange (249,66,19), but most of these are not visible in the render. B uses a tight palette of navy/indigo (30,34,140), amber (244,180,60), pale lavender-grey (244,245,251) and white.",
+   "evidence": "A top_backgrounds list: 255 (62), 218,228,232 (18), 69,187,92 (16), 71,55,255 (3), 249,66,19 (2). B top_backgrounds: white 22, 30,34,140, 24",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A relies on a large external CSS framework with many classes and 304 inline style attributes. B uses 33 class uses (19 unique), a single style block and no inline styles. Neither uses utility classes, since tailwind-like fraction is about 0.",
+   "evidence": "A classes total 2572 / unique 416, inline_style_attrs 304, stylesheets 44. B classes total 33 / unique 19, inline_style_attrs 0, stylesheets",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "B uses a larger vertical rhythm with clearly spaced sections and consistent 16px gaps between cards. A has large unexplained vertical gaps: ~1300px of blank space at the top and ~500px between the research images and their captions.",
+   "evidence": "A_slice_00 blank, A_slice_01 gap between y≈770 and ≈1290. B slices have continuous content from the top.",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|sonnet|32"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "B uses small inline SVG icons: yellow circular check marks for the hero bullets, arrows in cards, chevrons in nav, and phone, cart and monitor tiles. A uses icon fonts (Font Awesome 5 Free on 18 elements, eicons on 2) for the chevron bullets, and has 1 SVG.",
+   "evidence": "B svg=3 (with rect, path, circle). A svg=1 and i=20.",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|sonnet|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "Link density and nav depth differ. A has 105 anchors and 4 navs, with 56 ul and 227 li. B has 35 anchors, 1 nav, 11 ul and 40 li. The visible nav in B has only three top-level items.",
+   "evidence": "A tag_counts: a 105, nav 4, ul 56, li 227. B: a 35, nav 1, ul 11, li 40.",
+   "side": "both",
+   "members": [
+    "merchantsavvy_co_uk|sonnet|37"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Hero headline is a large, bold, white H1 on a dark background, filled with a full benefit-style tagline.",
+   "family": "typography",
+   "items": [
+    "I0",
+    "I2"
+   ]
+  },
+  {
+   "statement": "Document title follows a brand-pipe-slogan pattern combining the brand name with a tagline.",
+   "family": "copy",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "Typography relies solely on the system-ui font stack rather than web fonts.",
+   "family": "typography",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Section headings are set in bold weight (700) rather than medium weight.",
+   "family": "typography",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Body text is dark navy rather than light grey, giving strong contrast.",
+   "family": "color",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Hero uses a deep indigo background with a diagonal gradient lightening toward one corner.",
+   "family": "decoration",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Palette is tight: navy/indigo, amber accent, pale lavender-grey and white.",
+   "family": "color",
+   "items": [
+    "I29"
+   ]
+  },
+  {
+   "statement": "A logo strip sits inside a white rounded card beside the hero call to action.",
+   "family": "component",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Header shows a visible top nav with few items, dropdown chevrons and a dark pill CTA button.",
+   "family": "component",
+   "items": [
+    "I8",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Logo is displayed at a clearly legible size in the header.",
+   "family": "imagery",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "Category links appear as bordered card tiles in a grid, each with an arrow icon and bold navy label.",
+   "family": "component",
+   "items": [
+    "I10",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Layout uses CSS grid for card and section arrangements.",
+   "family": "layout",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "A pale lavender-grey background band separates one section from white sections.",
+   "family": "color",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Missing imagery is replaced by indigo gradient panels holding white line icons.",
+   "family": "imagery",
+   "items": [
+    "I13"
+   ]
+  },
+  {
+   "statement": "Stats appear as bordered cards in a multi-column grid with image on top and bold caption below, wrapping to a second row.",
+   "family": "layout",
+   "items": [
+    "I14",
+    "I15"
+   ]
+  },
+  {
+   "statement": "Decorative images carry empty alt text.",
+   "family": "semantic_dom",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Page uses landmark elements header, main and footer with a clean heading outline of H1 then H2s.",
+   "family": "semantic_dom",
+   "items": [
+    "I17",
+    "I27"
+   ]
+  },
+  {
+   "statement": "Cards and buttons consistently use 8–15px corner radii, with some pill shapes.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Depth comes from thin 1px light borders with no shadows or transforms.",
+   "family": "decoration",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Footer has a thin top divider, generous spacing and indigo links.",
+   "family": "component",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "First screen opens with header, hero banner and a call to action, with continuous content and no blank gaps.",
+   "family": "layout",
+   "items": [
+    "I28",
+    "I31"
+   ]
+  },
+  {
+   "statement": "Hero includes benefit bullets with yellow circular check icons, adding more visible persuasive copy.",
+   "family": "copy",
+   "items": [
+    "I24",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Icons are small inline SVGs (checks, arrows, chevrons) rather than icon fonts.",
+   "family": "imagery",
+   "items": [
+    "I32"
+   ]
+  },
+  {
+   "statement": "Styling is lean, using few classes, one style block and no inline styles.",
+   "family": "semantic_dom",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Page includes a real button element for the menu toggle, with minimal ARIA.",
+   "family": "semantic_dom",
+   "items": [
+    "I25"
+   ]
+  }
+ ]
+}

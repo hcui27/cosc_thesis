@@ -1,0 +1,237 @@
+[
+ {
+  "observation": "The page uses three font families: Montserrat as the dominant sans-serif, Playfair Display as the display serif, and Homemade Apple as a handwritten script accent.",
+  "category": "typography",
+  "evidence": "facts.fonts_by_element_count: Montserrat 173, Playfair Display 14, Homemade Apple 5"
+ },
+ {
+  "observation": "The single H1 is set in Playfair Display at 76.8px and weight 400. It is left-aligned and its text is all lowercase.",
+  "category": "typography",
+  "evidence": "facts.h1: font_size 76.8px, weight 400, family Playfair Display, text 'welcome to never skip brunch.'"
+ },
+ {
+  "observation": "In the H1, the final word 'brunch.' is set in pink italic, while the rest of the heading is near-black upright.",
+  "category": "typography",
+  "evidence": "slice_00 hero heading; facts tag_counts em: 1; pink text color rgb(232,69,124) appears 5 times"
+ },
+ {
+  "observation": "Section H2s are 48px, weight 400 serif headlines. Most are lowercase and end with a period.",
+  "category": "copy treatment",
+  "evidence": "facts.h2 font_size 48px; outline: 'fresh off the workbench.', 'fun & fresh videos.', 'let's chat.', 'on instagram.', 'join the newsletter.'"
+ },
+ {
+  "observation": "Small uppercase, letter-spaced eyebrow labels sit above the section headings. Some are pink and some are dark or gray.",
+  "category": "typography",
+  "evidence": "slices: 'VISIT THE BLOG', 'MAKE SPACE PODCAST', 'NEW ON THE BLOG', 'YOUTUBE', '@NEVERSKIPBRUNCH'"
+ },
+ {
+  "observation": "Handwritten script accents appear as small kickers in several places: above the hero heading, on the cards, over the contact heading and over the newsletter heading.",
+  "category": "typography",
+  "evidence": "slice_00 '▹ by cara newhart', 'if you . . .' on cards; slice_02 'coffee + let's chat'; slice_03 'hello.'; Homemade Apple count 5"
+ },
+ {
+  "observation": "The body background is a warm off-white rather than pure white, and the body text is a warm near-black.",
+  "category": "color",
+  "evidence": "facts.colors body_bg rgb(255,250,245), body_color rgb(28,26,25)"
+ },
+ {
+  "observation": "The palette uses pastel section and card fills of peach, butter yellow and pink, with one saturated orange.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(253,230,211) x5, rgb(253,238,176) x3, rgb(251,211,222) x1, rgb(245,154,74) x1"
+ },
+ {
+  "observation": "Near-black rgb(28,26,25) is used as a background 7 times, covering the dark YouTube band, the footer and the filled buttons.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(28,26,25) x7; slices 01–03"
+ },
+ {
+  "observation": "A muted beige text color, rgb(217,207,200), is the second most frequent text color, at 58 elements.",
+  "category": "color",
+  "evidence": "facts top_text_colors rgb(217,207,200) 58"
+ },
+ {
+  "observation": "A thin butter-yellow announcement bar runs across the very top of the page. It reads 'fun & fresh home goodies' and has an underlined 'visit the shop →' link.",
+  "category": "layout",
+  "evidence": "slice_00 top strip; background rgb(253,238,176)"
+ },
+ {
+  "observation": "The header puts a small stamp logo on the left and seven uppercase, letter-spaced nav links on the right.",
+  "category": "component",
+  "evidence": "slice_00 nav: BLOG, DECOR & INTERIORS, DIY PROJECTS, PODCAST, PLANS + TEMPLATES, WORK WITH ME, ABOUT; logo img rect 112x56"
+ },
+ {
+  "observation": "The header appears to have a translucent background with a backdrop blur.",
+  "category": "decoration/effects",
+  "evidence": "facts backgrounds rgba(255,250,245,0.94) x1; effects.backdrop_blur 1"
+ },
+ {
+  "observation": "A 'Menu' button is in the DOM with a transparent background, 0px radius and 1px 6px padding. It is not visible in the desktop header.",
+  "category": "DOM structure",
+  "evidence": "facts.primary_button text 'Menu', bg rgba(0,0,0,0); not visible in slice_00"
+ },
+ {
+  "observation": "The hero is a two-column split: text and CTAs on the left, and on the right a tall portrait photo cropped into an arch shape with a rounded top.",
+  "category": "imagery handling",
+  "evidence": "slice_00; image 4Q5A3075.jpg rect x799 w461 h614, natural 1334x2048"
+ },
+ {
+  "observation": "The hero arch photo is the only element with a box shadow, a soft diffuse shadow beneath the image.",
+  "category": "decoration/effects",
+  "evidence": "effects.box_shadows 1; slice_00 shadow under arch"
+ },
+ {
+  "observation": "The hero background has a gradient from peach at the top to off-white.",
+  "category": "color",
+  "evidence": "effects.gradient_backgrounds 1; slice_00 hero background tone shift"
+ },
+ {
+  "observation": "The hero has a pair of pill-shaped CTAs: one filled near-black with an arrow and one outlined.",
+  "category": "component",
+  "evidence": "slice_00 'ABOUT + LEARN MORE →' filled, 'BROWSE DIY PROJECTS' outlined"
+ },
+ {
+  "observation": "Pill shapes are the most common non-zero border radius on the page, used for buttons, tags, pagination and inputs.",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets: pill 22, 16+ 6, 8–15 8, 0 156"
+ },
+ {
+  "observation": "All button and label text is uppercase Montserrat with wide letter-spacing.",
+  "category": "typography",
+  "evidence": "slices: 'LISTEN + SUBSCRIBE', 'WATCH ON YOUTUBE', 'WANNA GRAB A VIRTUAL COFFEE?', 'SUBSCRIBE', 'FOLLOW ON INSTAGRAM'"
+ },
+ {
+  "observation": "Plus signs and arrows are used as connectors in the copy, as in 'ABOUT + LEARN MORE →' and 'LISTEN + SUBSCRIBE'.",
+  "category": "copy treatment",
+  "evidence": "slice_00, slice_01 button labels; footer 'The NSB Shop →'"
+ },
+ {
+  "observation": "The copy is written in a first-person, conversational voice and addresses the reader directly.",
+  "category": "copy treatment",
+  "evidence": "'I'm Cara Newhart — a color & prints obsessed DIY queen…', 'Wanna grab a virtual coffee?'; text_stats exclamations 3"
+ },
+ {
+  "observation": "Em dashes are used repeatedly in body copy and post titles.",
+  "category": "copy treatment",
+  "evidence": "text_stats.em_dashes 6; 'part 02 — breakfast nook diy', 'feedback — just let me know'"
+ },
+ {
+  "observation": "The 'if you . . .' section uses two side-by-side white cards with thin borders and rounded corners. Each card has a script kicker, a serif H3 and gray body text.",
+  "category": "component",
+  "evidence": "slice_00 bottom; H3s 'are an avid DIY-er…' and 'are new or doubting…'; top_backgrounds white x12"
+ },
+ {
+  "observation": "Category filters appear as peach pill chips followed by a near-black 'BROWSE ALL POSTS →' pill.",
+  "category": "component",
+  "evidence": "slice_01 top: DIY, DECOR & INTERIORS, MAKE SPACE chips"
+ },
+ {
+  "observation": "The podcast section sits on a full-width butter-yellow band, with text on the left and a wide landscape image on the right. The image has square corners.",
+  "category": "layout",
+  "evidence": "slice_01; MAKE-SPACE-Podcast image rect x715 w545 h279"
+ },
+ {
+  "observation": "The blog post cards are a three-column grid of text-only tiles, each with its own pastel fill (peach, yellow, pink). They have no thumbnails.",
+  "category": "component",
+  "evidence": "slice_01 three cards with 'DIY' label, serif title, 'READ →'; images count only 4 total"
+ },
+ {
+  "observation": "Post titles inside the cards are in lowercase serif type and are vertically centered between the category label and the READ link.",
+  "category": "typography",
+  "evidence": "slice_01 cards"
+ },
+ {
+  "observation": "Below the posts is circular pagination numbered 1, 2, 3, …, 60, followed by a 'Next Page »' pill. The active page is filled black.",
+  "category": "component",
+  "evidence": "slice_01 pagination"
+ },
+ {
+  "observation": "The YouTube section is a dark band containing only a centered eyebrow, a white serif heading and an orange pill button. It has no embedded video.",
+  "category": "layout",
+  "evidence": "slice_02 top; orange bg rgb(245,154,74)"
+ },
+ {
+  "observation": "The 'let's chat' section uses a full-width photo background (an armchair) with a gray overlay, centered white text and a white pill button.",
+  "category": "imagery handling",
+  "evidence": "slice_02; image tim-wright…jpg rect w1440 h505, alt ''"
+ },
+ {
+  "observation": "The only image with empty alt text is the decorative full-width background photo. No image is missing its alt attribute.",
+  "category": "DOM structure",
+  "evidence": "facts.images[3].alt ''; counts.alt_missing 0"
+ },
+ {
+  "observation": "The Instagram section shows a 4×2 grid of white bordered cards that hold only truncated caption text ending in ellipses. No photos are shown.",
+  "category": "component",
+  "evidence": "slice_02 grid: 'Umm...did you see the fiasco…', 'GUESS WHAT?! season 2…'"
+ },
+ {
+  "observation": "Emoji appear inside the Instagram caption text.",
+  "category": "copy treatment",
+  "evidence": "text_stats.emoji 4; slice_02 'HOW I GOT STARTED 🙋' and 'the HYPE IS REAL 😲'"
+ },
+ {
+  "observation": "The newsletter section is a centered peach band with a script 'hello.' kicker, a serif heading, a pill email input and a black pill SUBSCRIBE button.",
+  "category": "component",
+  "evidence": "slice_03; form 1, input 1, label 1"
+ },
+ {
+  "observation": "The footer is near-black with four columns headed by uppercase letter-spaced H4s.",
+  "category": "layout",
+  "evidence": "facts heading_outline h4: NEVER SKIP BRUNCH, LET'S CONNECT, QUICK LINKS, EXPLORE, SERVICES; slice_03"
+ },
+ {
+  "observation": "The footer social icons are five circular outlined SVG icons: Facebook, Instagram, Pinterest, Twitter and YouTube.",
+  "category": "component",
+  "evidence": "tag_counts svg 5, path 5; slice_03 icon row"
+ },
+ {
+  "observation": "Below a thin divider, the footer has an affiliate disclosure starting 'p.s.' and a copyright line dated 2021, both in small muted text.",
+  "category": "copy treatment",
+  "evidence": "slice_03 'p.s. This site contains affiliate linking…', 'Copyright © 2021 · NEVER SKIP BRUNCH'"
+ },
+ {
+  "observation": "Content sits in a centered column about 1080px wide (x≈180 to 1260) on a 1440px page. The colored section bands bleed to full width.",
+  "category": "layout",
+  "evidence": "image rects end at x+w=1260; logo x180; layout.page_width 1440"
+ },
+ {
+  "observation": "Layout relies on CSS grid and flexbox in roughly equal measure.",
+  "category": "layout",
+  "evidence": "layout.display_grid 11, display_flex 10"
+ },
+ {
+  "observation": "The page is about 4777px tall and contains 514 words, with 56 anchor links.",
+  "category": "DOM structure",
+  "evidence": "layout.page_height 4777; text_stats.words 514; anchors 56"
+ },
+ {
+  "observation": "The markup uses semantic landmarks: one header, two navs, one main, eight sections, two articles and one footer. It has no aside, figcaption or blockquote.",
+  "category": "DOM structure",
+  "evidence": "facts.semantic"
+ },
+ {
+  "observation": "Class usage is minimal: 54 class attributes, 28 of them unique, with no Tailwind-style utility classes.",
+  "category": "DOM structure",
+  "evidence": "classes total 54, unique 28, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Effects are limited to CSS transitions. There are no keyframe animations or transforms.",
+  "category": "decoration/effects",
+  "evidence": "effects transitions 18, animations 0, transforms 0"
+ },
+ {
+  "observation": "The page loads one stylesheet, one style block and one script, and has no JSON-LD structured data.",
+  "category": "DOM structure",
+  "evidence": "counts stylesheets 1, scripts 1; tag_counts style 1; jsonld_blocks 0"
+ },
+ {
+  "observation": "The heading outline skips a level: footer column headings are H4 directly after H2s, with no H3 in between.",
+  "category": "DOM structure",
+  "evidence": "heading_outline: h2 'join the newsletter.' followed by h4 'NEVER SKIP BRUNCH'"
+ },
+ {
+  "observation": "The section rhythm alternates background tones: off-white, yellow band, off-white, dark band, photo band, off-white, peach band, dark footer.",
+  "category": "layout",
+  "evidence": "slices 00–03 sequence of section backgrounds"
+ }
+]

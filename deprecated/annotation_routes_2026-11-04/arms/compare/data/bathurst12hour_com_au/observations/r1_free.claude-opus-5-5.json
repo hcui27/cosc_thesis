@@ -1,0 +1,320 @@
+[
+ {
+  "observation": "A's document title includes a tagline after the event name; B's title is only the event name",
+  "category": "metadata",
+  "evidence": "A title: \"Liqui-Moly Bathurst 12 Hour - Australia's International Endurance Race\"; B title: \"Liqui-Moly Bathurst 12 Hour\"",
+  "which_side": "A"
+ },
+ {
+  "observation": "The two pages declare different language codes: A uses a regional Australian English tag and B uses generic English",
+  "category": "metadata",
+  "evidence": "A lang=\"en-AU\"; B lang=\"en\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a wide set of meta tags (robots, Open Graph, Twitter, msapplication) and a JSON-LD block; B has only charset, viewport and description",
+  "category": "metadata",
+  "evidence": "A has 14 meta names and jsonld_blocks: 1; B has 3 meta names and jsonld_blocks: 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's h1 has no text. B's h1 holds the visible event name",
+  "category": "semantic structure",
+  "evidence": "A h1.text \"\"; B h1.text \"LIQUI-MOLY BATHURST 12 HOUR\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a full heading hierarchy (h1, then an h2 'LATEST NEWS', then 7 h3 article titles, then h4s). A's outline contains only an empty h1 and one h4",
+  "category": "semantic structure",
+  "evidence": "B heading_outline lists 11 entries, including 7 h3; A heading_outline has only h1 \"\" and h4 \"FOLLOW US\" (plus 2 h5 in tag counts)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses many more header/footer elements and includes aside elements; B uses one header, one footer and no aside",
+  "category": "semantic structure",
+  "evidence": "A has header:8, footer:8, aside:5; B has header:1, footer:1, aside:0",
+  "which_side": "A"
+ },
+ {
+  "observation": "Both sides wrap news items in 7 article elements, each with a time element",
+  "category": "semantic structure",
+  "evidence": "article:7 and time:7 in both tag_counts",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM is much heavier, with more divs, scripts and stylesheets",
+  "category": "DOM structure",
+  "evidence": "A: div 122, script 48, stylesheets 13, link 25. B: div 21, script 1, stylesheets 0, style 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses far more class names than B",
+  "category": "DOM structure",
+  "evidence": "A classes total 480 / unique 174; B total 49 / unique 20",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses icon fonts for its icons. B uses inline SVG",
+  "category": "imagery handling",
+  "evidence": "A fonts include FontAwesome (6) and Material Icons (1), with svgs 0 and i tags 8; B has svg 4 and path 4 and lists no icon fonts",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses Open Sans for body text and Montserrat for the h1; B uses only a system-ui font stack",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Open Sans 354, Montserrat 3; B: system-ui 209, h1 font_family \"system-ui, -apple-system, Segoe UI, Roboto, sans-serif\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "B sets larger base text than A",
+  "category": "typography",
+  "evidence": "A body 14px/21px; B body 16px/24px",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's h1 is larger than A's",
+  "category": "typography",
+  "evidence": "A h1 50px Montserrat 700; B h1 67.2px system-ui 700",
+  "which_side": "B"
+ },
+ {
+  "observation": "A places the event title beside the logo inside the header band. B puts it in a large standalone hero block below the nav bar",
+  "category": "layout",
+  "evidence": "A_slice_00: title at the top, to the right of a 135x156 logo; B_slice_00: oversized title around y≈365, below the nav and above the subtitle",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's subtitle is uppercase; B's subtitle is in sentence/title case",
+  "category": "copy treatment",
+  "evidence": "A: \"AUSTRALIA'S INTERNATIONAL ENDURANCE RACE\"; B: \"Australia's International Endurance race\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows the event dates as plain bold white text. B puts them in a solid red label box",
+  "category": "component choices",
+  "evidence": "A_slice_00: \"31 JANUARY – 2 FEBRUARY 2020\" in bold text; B_slice_00: same dates in white letter-spaced caps on a red rectangle (rgb(228,0,43) background)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows a large header logo. B shows a small logo inside the nav bar",
+  "category": "imagery handling",
+  "evidence": "A headerlogo rect 135x156 at (160,72); B headerlogo rect 34x44 at (136,23)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's navigation sits in a separate dark bar below the header and has 6 items. B's navigation shares the top bar with the logo and has 10 items",
+  "category": "layout",
+  "evidence": "A_slice_00 nav: HOME, NEWS, VIDEO, THE EVENT, THE RACE, BUSHFIRES APPEAL. B_slice_00 nav adds COMPETITORS, SCHEDULE, RESULTS and PREVIOUS RACES",
+  "which_side": "B"
+ },
+ {
+  "observation": "Some of B's nav labels wrap onto two lines; A's nav labels stay on one line",
+  "category": "layout",
+  "evidence": "B_slice_00: \"THE / EVENT\", \"THE / RACE\", \"PREVIOUS / RACES\", \"BUSHFIRES / APPEAL\" are stacked; A_slice_00 labels sit on a single line",
+  "which_side": "B"
+ },
+ {
+  "observation": "A marks the active nav item with red text and a red underline, and shows the other links in light blue. B shows all nav links in white",
+  "category": "color",
+  "evidence": "A_slice_00: HOME in red with an underline, the others blue; B_slice_00: all items white uppercase",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has a separate top utility strip with a search button at the far right; B shows no search control",
+  "category": "component choices",
+  "evidence": "A_slice_00: dark bar with a magnifier icon in a square at the top right; A tag_counts form 1, input 1; B has no form or input",
+  "which_side": "A"
+ },
+ {
+  "observation": "Both pages use a red/blue diagonal carbon-texture graphic in the header, but A's band is shorter",
+  "category": "decoration",
+  "evidence": "A_slice_00: the diagonal sits behind the title band (~y 80–310). B_slice_00: the diagonal fills a taller hero (~y 90–360)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a two-column layout: a news column plus a right sidebar with Follow Us and social widgets. B uses a full-width single column with no sidebar",
+  "category": "layout",
+  "evidence": "A_slice_00: sidebar at x≈928–1285 with \"FOLLOW US\" and a \"Social Media\" box; A aside:5; B aside:0, and news spans x 136–1304",
+  "which_side": "A"
+ },
+ {
+  "observation": "A places the featured story's title over the photo. B splits the featured story into an image on the left and a text panel on the right",
+  "category": "component choices",
+  "evidence": "A_slice_00: \"Bathurst 12 Hour to return in 2022\" over the bottom of a 743x463 image. B_slice_00: 643x401 image on the left, with the headline, date, share links and READ MORE on the right",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'Featured News' badge is light blue in sentence case. B's is red, uppercase and letter-spaced",
+  "category": "color",
+  "evidence": "A_slice_00: blue \"Featured News\" pill-like tag on the image; B_slice_00: red \"FEATURED NEWS\" label",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a 'LATEST NEWS' section label in red letter-spaced caps; A has no section heading above its news",
+  "category": "copy treatment",
+  "evidence": "B h2 \"LATEST NEWS\" at 14px/700, shown in red in B_slice_00; A heading_outline has no news heading",
+  "which_side": "B"
+ },
+ {
+  "observation": "A mixes tile sizes: one large featured tile, two medium overlay tiles, then small horizontal cards with the thumbnail on the left. B uses a uniform 3-column card grid",
+  "category": "layout",
+  "evidence": "A images: 743x463, then 372x250 and 372x294, then four at 195x154. B: 643x401, then six at 374x234 in two rows of three",
+  "which_side": "both"
+ },
+ {
+  "observation": "B lays out its components with CSS grid; A uses no grid and little flex",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 4; B display_grid 33, display_flex 21",
+  "which_side": "B"
+ },
+ {
+  "observation": "Each of B's news cards has a 'READ MORE →' link in red caps; A's cards have no read-more links",
+  "category": "component choices",
+  "evidence": "B_slice_01: \"READ MORE →\" under every card; A_slices show only titles and dates",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shortens headlines with ellipses and hyphenation. B shows full headlines",
+  "category": "copy treatment",
+  "evidence": "A: \"More than $74,000 raised via #B12hr Bushfire...\", \"First major do-nation lodged for B12hr Bushfire...\", \"Gounon hails M-Sport perfor-mance after breakthrough 12...\". B: \"More than $74,000 raised via #B12hr Bushfire Relief efforts\" and the full Gounon headline",
+  "which_side": "A"
+ },
+ {
+  "observation": "In A, one truncated headline runs into its date line",
+  "category": "layout",
+  "evidence": "A_slice_01: \"12...\" overlaps \"Feb 03, 2020\" on the Gounon card",
+  "which_side": "A"
+ },
+ {
+  "observation": "A shows dates in light blue. B shows dates in muted grey",
+  "category": "color",
+  "evidence": "A_slice_00/01: \"Feb 04, 2020\" in blue (rgb(119,191,255) is a top text color with 90 uses); B dates are grey (rgb(154,160,173) with 31 uses)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Only B shows a date and share links (Share on Facebook, Tweet) on the featured story",
+  "category": "copy treatment",
+  "evidence": "B_slice_00: \"Oct 19, 2020\", then \"Share on Facebook  Tweet\"; A's featured tile shows only the title",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses blue as its main accent color, with red as a secondary accent. B uses red as its single accent color",
+  "category": "color",
+  "evidence": "A top_text_colors include rgb(119,191,255) ×90 and rgb(105,168,223) ×5, and primary_button color is rgb(237,28,36). B accent is rgb(228,0,43) for text ×8 and backgrounds ×2, with no blue in its text colors",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages have dark backgrounds, but in different tones: A uses a neutral near-black and B a slightly blue-tinted near-black",
+  "category": "color",
+  "evidence": "A body_bg rgb(20,20,20), with surfaces rgb(34,34,34) and rgb(52,52,52). B body_bg rgb(14,15,18), with surfaces rgb(24,26,31) and rgb(8,9,11)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body text is light grey; B's is near-white",
+  "category": "color",
+  "evidence": "A body_color rgb(204,204,204); B body_color rgb(236,238,242)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses square corners almost everywhere. B uses small corner radii on 26 elements",
+  "category": "decoration",
+  "evidence": "A radius buckets: 0 → 362, 1–7px → 0. B: 0 → 179, 1–7px → 26; B primary button radius 6px",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses a few box shadows, transforms and animations. B uses none of these but applies a backdrop blur",
+  "category": "decoration",
+  "evidence": "A box_shadows 3, animations 2, transforms 7, backdrop_blur 0. B box_shadows 0, animations 0, transforms 0, backdrop_blur 1 (with an rgba(14,15,18,0.95) background)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A sets transitions on many more elements",
+  "category": "decoration",
+  "evidence": "transitions: A 125 vs B 40",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's cards have thin borders around the image and text. A's tiles have no visible outline",
+  "category": "decoration",
+  "evidence": "B_slice_01: each card has a thin border and a dark panel; A_slice_00 tiles butt edge to edge",
+  "which_side": "B"
+ },
+ {
+  "observation": "A leaves a large empty dark gap between the news block and the footer",
+  "category": "layout",
+  "evidence": "A_slice_01: about 600px of empty background between the last news row (ends ~y140) and the footer (~y750)",
+  "which_side": "A"
+ },
+ {
+  "observation": "A puts a 'LINKS' column alone in the footer with divider lines under each link. B places 'FOLLOW US' and 'LINKS' side by side as a two-column footer",
+  "category": "layout",
+  "evidence": "A_slice_01: \"LINKS\" heading with a red bar and blue links separated by rules. B_slice_01: FOLLOW US on the left and LINKS on the right, with white links and no rules",
+  "which_side": "both"
+ },
+ {
+  "observation": "A marks its section headings with a vertical red bar. B uses small letter-spaced uppercase headings with no bar",
+  "category": "typography",
+  "evidence": "A_slice_00/01: \"| FOLLOW US\" and \"| LINKS\" with a red bar; B_slice_01: \"FOLLOW US\" and \"LINKS\" in spaced caps",
+  "which_side": "A"
+ },
+ {
+  "observation": "B shows its social icons as circular outlined buttons. A shows bare glyphs",
+  "category": "component choices",
+  "evidence": "B_slice_00/01: f and twitter icons inside thin circles (B pill bucket 4); A_slice_00: plain f and bird glyphs",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows sponsor logos as white marks on a dark band in a 6-column grid. B puts them on white tiles in a 9-column grid, where most of the white logos are invisible",
+  "category": "imagery handling",
+  "evidence": "A_slice_01/02: white logos on rgb(47–52) grey, 6 per row at x 160–1060. B_slice_01: 9 white tiles per row (rgb(255,255,255) bg ×26), mostly blank; only the Pirelli, AMG, Audi, Porsche and Fox outlines and the 'McLaren' text are faintly visible",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's sponsor grid has one fewer image, and the McLaren item shows as text",
+  "category": "imagery handling",
+  "evidence": "A has 35 imgs including mclaren-footer1.png; B has 34 imgs, no McLaren image file, and the tile reads \"McLaren\" in B_slice_01",
+  "which_side": "B"
+ },
+ {
+  "observation": "Sponsor alt text differs between the pages",
+  "category": "copy treatment",
+  "evidence": "A: \"Visit NSW\", \"Mercedes AMG\", \"BP Australia\", \"7 News\". B: \"Destination NSW\", \"Mercedes-AMG\", \"bp\", \"7NEWS\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer logo has descriptive alt text; B's footer logo has empty alt text",
+  "category": "semantic structure",
+  "evidence": "A footerlogo alt \"Liqui-moly Bathurst 12 Hour Logo\"; B footerlogo alt \"\"",
+  "which_side": "A"
+ },
+ {
+  "observation": "Both footers use the same copyright line next to a small logo, but B's logo is smaller",
+  "category": "layout",
+  "evidence": "Both show \"© 2021 LIQUI-MOLY Bathurst 12 Hour. All Rights Reserved\"; footer logo is 72x83 in A and 42x48 in B",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is taller than B's",
+  "category": "layout",
+  "evidence": "page_height: A 3080px, B 2511px",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has more visible words and more ARIA attributes; A contains one emoji",
+  "category": "copy treatment",
+  "evidence": "words: A 129, B 161. aria_attrs: A 3, B 7. emoji: A 1, B 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A includes iframes; B has none",
+  "category": "DOM structure",
+  "evidence": "A iframe 2; B has no iframe in tag_counts",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's primary button is a text 'Menu' toggle with padding and a radius. A's detected primary button is an empty, transparent, red-colored element with no radius",
+  "category": "component choices",
+  "evidence": "B primary_button text \"Menu\", padding 8px 12px, radius 6px. A primary_button text \"\", color rgb(237,28,36), radius 0px",
+  "which_side": "both"
+ }
+]

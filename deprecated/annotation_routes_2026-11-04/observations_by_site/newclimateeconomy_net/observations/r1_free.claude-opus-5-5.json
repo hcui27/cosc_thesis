@@ -1,0 +1,242 @@
+[
+ {
+  "observation": "The page title is 'New Climate Economy' with lang='en'. Only two meta tags are present (charset and viewport) and there is no JSON-LD.",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json title, lang, meta_names: [charset, viewport], jsonld_blocks: 0"
+ },
+ {
+  "observation": "The page has no h1. The top of the heading outline is an h2 holding the featured commentary title.",
+  "category": "DOM/semantic structure",
+  "evidence": "h1_count: 0; heading_outline[0] level 2 'Commentary: Defeating the Inequality Disease...'"
+ },
+ {
+  "observation": "The heading hierarchy is six h2 and six h3. Section labels are h2 elements, and individual item titles (news, video) are h3 elements.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts h2: 6, h3: 6; outline shows LATEST NEWS/VIDEO/UPCOMING EVENTS as h2, article titles as h3"
+ },
+ {
+  "observation": "The 'All news →', 'See Past Events →', 'All Tweets →' and 'All partners →' links sit inside the h2 section headings, so they appear in the heading text.",
+  "category": "DOM/semantic structure",
+  "evidence": "heading_outline text 'LATEST NEWS\\nAll news →', 'UPCOMING EVENTS\\nSee Past Events →', 'MANAGING PARTNER\\nAll partners →'"
+ },
+ {
+  "observation": "The page uses semantic landmarks: one header, nav, main, article and footer, plus four sections. It has no aside, figure or blockquote.",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 4, article 1, footer 1, aside 0, figure 0, blockquote 0"
+ },
+ {
+  "observation": "The markup is light: 16 divs, 34 class usages across 21 unique classes, and no Tailwind-style utility classes.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts div: 16; classes total 34, unique 21, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "The page loads no scripts, no external stylesheets and no SVGs. All styling comes from a single inline style block, plus one inline style attribute.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts scripts 0, stylesheets 0, svgs 0; tag_counts style 1; inline_style_attrs 1"
+ },
+ {
+  "observation": "Two font families split the type: the -apple-system sans stack (53 elements) and Georgia serif (52 elements). Arial appears on 2 elements.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: -apple-system 53, Georgia 52, sans-serif 4, Arial 2"
+ },
+ {
+  "observation": "Headlines, labels and navigation are set in a bold sans-serif. Tweet text and the empty-events message are set in a serif (Georgia).",
+  "category": "typography",
+  "evidence": "slice_01: tweet body and 'No upcoming events at the moment.' rendered in serif; headlines and nav in sans"
+ },
+ {
+  "observation": "Body text is 17px with a 26.35px line height, a ratio of 1.55.",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 26.35px"
+ },
+ {
+  "observation": "h2 is 30px at weight 700. This size shows on the featured headline, while the section-label h2s render visibly much smaller.",
+  "category": "typography",
+  "evidence": "h2 font_size 30px, weight 700; slice_00 featured headline large vs small 'LATEST NEWS' label"
+ },
+ {
+  "observation": "Section labels are set in small uppercase sans with wide letter-spacing, in dark green.",
+  "category": "typography",
+  "evidence": "slice_00/01: 'LATEST NEWS', 'VIDEO', 'UPCOMING EVENTS', 'RECENT TWEETS', 'MANAGING PARTNER' tracked caps"
+ },
+ {
+  "observation": "Dates are shown as small uppercase tracked grey sans text above each headline.",
+  "category": "typography",
+  "evidence": "slice_00: 'APRIL 14, 2021', 'APRIL 6, 2021', 'MARCH 10, 2021', 'NOVEMBER 30, 2020'; text color rgb(93,107,102) present 7 times"
+ },
+ {
+  "observation": "The empty events state is set in italic serif grey text.",
+  "category": "copy treatment",
+  "evidence": "slice_01 'No upcoming events at the moment.' italic; tag_counts em: 2"
+ },
+ {
+  "observation": "Body text is a near-black green-tinted dark color on a pure white background.",
+  "category": "color",
+  "evidence": "body_color rgb(27,42,38), body_bg rgb(255,255,255)"
+ },
+ {
+  "observation": "The palette is built on dark green: rgb(11,61,54) for the header and footer-area backgrounds and some text, plus a mid green rgb(31,157,122) for the Sign Up button.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(11,61,54) x2, rgb(31,157,122) x1; slice_00 dark green header, teal 'Sign Up' button"
+ },
+ {
+  "observation": "Inline links in the tweets use a green accent, rgb(15,122,94), and are underlined.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(15,122,94) x5; slice_01 '@ClimateHome', '#NetZero', t.co links underlined in green"
+ },
+ {
+  "observation": "Sections alternate between white and a very light grey-green background, rgb(242,245,243).",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(242,245,243) x4; slice_00 video band and featured text panel grey; slice_01 partner band grey"
+ },
+ {
+  "observation": "The header is a full-width dark green bar. It holds the logo on the left, a search input and Sign Up button next to it, and four white bold nav links on the right.",
+  "category": "layout",
+  "evidence": "slice_00 header: logo, Search field, 'Sign Up', About/News/Publications/Contact Us"
+ },
+ {
+  "observation": "Content is held to a centered column running from about x=190 to x=1250 on a 1440px-wide page.",
+  "category": "layout",
+  "evidence": "logo rect x:190; thumbnail x:190; section rules end ~1250 in slices; page_width 1440"
+ },
+ {
+  "observation": "The hero breaks out of that column: a 864×576 photo bleeds to the left edge, and a grey text panel with the date, headline and Read More link fills the right side.",
+  "category": "layout",
+  "evidence": "sb-op-ed-foto.jpg rect x:0, y:76, w:864, h:576; slice_00 right panel"
+ },
+ {
+  "observation": "Latest News is a three-column row of text-only cards (date and headline) with no thumbnails.",
+  "category": "layout",
+  "evidence": "slice_00 three columns under LATEST NEWS; no images listed for these items in facts images"
+ },
+ {
+  "observation": "The Video section pairs a large video thumbnail (688×386) on the left with a stacked list of two titled cards on the right.",
+  "category": "layout",
+  "evidence": "thumbnail.png rect x:190, w:688, h:386; slice_00 right cards 'Landscape restoration...', 'Seizing the Global Opportunity'"
+ },
+ {
+  "observation": "The video side cards have a thick green left border and a thin outline, on a white background.",
+  "category": "component choices",
+  "evidence": "slice_00 cards with green left bar against grey band"
+ },
+ {
+  "observation": "The video thumbnail is a static image of a paused player, with the title 'Unlocking the Inclusive Growth Story of the 21st Century' and player controls baked into the picture.",
+  "category": "imagery handling",
+  "evidence": "slice_01 shows player chrome '0:56 / 5:16'; images thumbnail.png; scripts 0"
+ },
+ {
+  "observation": "Upcoming Events and Recent Tweets sit side by side in a two-column layout.",
+  "category": "layout",
+  "evidence": "slice_01 UPCOMING EVENTS left, RECENT TWEETS right"
+ },
+ {
+  "observation": "Every section heading has a dark horizontal rule beneath it spanning the column width, with the 'All … →' link right-aligned on the same line as the label.",
+  "category": "decoration/effects",
+  "evidence": "slice_00/01 rules under LATEST NEWS, VIDEO, UPCOMING EVENTS, RECENT TWEETS, MANAGING PARTNER"
+ },
+ {
+  "observation": "The 'All news →' style links are small, bold, underlined and end in a right arrow character.",
+  "category": "copy treatment",
+  "evidence": "slice_00 'All news →'; slice_01 'See Past Events →', 'All Tweets →', 'All partners →'"
+ },
+ {
+  "observation": "Tweet items are separated by thin light grey horizontal dividers, and each shows a relative timestamp in small grey sans text.",
+  "category": "component choices",
+  "evidence": "slice_01 '2 days 21 hours ago', '2 days 23 hours ago' with hairlines below"
+ },
+ {
+  "observation": "Tweet text is cut off with an ellipsis and followed by the raw t.co URL as the link text.",
+  "category": "copy treatment",
+  "evidence": "slice_01 'move quickly to co… https://t.co/UwoYc6zL8B'"
+ },
+ {
+  "observation": "The 'Read More' link in the hero is bold dark green text with a green underline bar beneath it.",
+  "category": "component choices",
+  "evidence": "slice_00 'Read More' under featured headline"
+ },
+ {
+  "observation": "The Managing Partner area shows three partner logos in a row, each with alt text naming the organization.",
+  "category": "imagery handling",
+  "evidence": "images wri-logo-4c.png 'World Resources Institute', customlogo.png 'Coalition for Urban Transitions', folu.png 'Food and Land Use Coalition'"
+ },
+ {
+  "observation": "Partner logos are shown in their original full color rather than in a uniform monochrome treatment.",
+  "category": "imagery handling",
+  "evidence": "slice_01: yellow WRI mark, blue CUT block, green/yellow FOLU mark"
+ },
+ {
+  "observation": "The footer has a 'Careers' text link on the left and five social links on the right, each made of a small PNG icon and a text label.",
+  "category": "component choices",
+  "evidence": "slice_01 footer; images icons-youtube/linkedin/gplus/facebook/twitter.png at y:2129, 28×21"
+ },
+ {
+  "observation": "The social icons are rendered at 28×21 from 400×300 source PNGs, and the footer includes a Google+ link.",
+  "category": "imagery handling",
+  "evidence": "icons-* natural [400,300], rect w:28 h:21; icons-gplus.png"
+ },
+ {
+  "observation": "Decorative and icon images have empty alt text, while content logos have descriptive alt text. No alt attributes are missing.",
+  "category": "DOM/semantic structure",
+  "evidence": "icons-search, hero photo, thumbnail, social icons alt ''; logos alt populated; alt_missing 0"
+ },
+ {
+  "observation": "The logo image is displayed at half its natural size (524×68 shown at 262×34), the usual 2× retina pattern.",
+  "category": "imagery handling",
+  "evidence": "logo.png natural [524,68], rect w:262 h:34"
+ },
+ {
+  "observation": "The search field is a plain white rectangular input with a magnifier icon image placed inside it on the right.",
+  "category": "component choices",
+  "evidence": "icons-search.png rect x:636,y:27 22×22; slice_00 Search input"
+ },
+ {
+  "observation": "The only button element has no text and a white background with 0 radius, which fits the search icon button rather than Sign Up. Sign Up is rendered as a link.",
+  "category": "DOM/semantic structure",
+  "evidence": "primary_button text '', bg rgb(255,255,255), radius 0px; tag_counts button 1, form 1, input 1"
+ },
+ {
+  "observation": "Corners are almost entirely square: 109 elements have 0 radius and only 2 have a small 1–7px radius.",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets bucket_0 109, bucket_1_7 2, others 0"
+ },
+ {
+  "observation": "The page uses no box shadows, backdrop blur, transitions, animations or transforms. There is a single gradient background.",
+  "category": "decoration/effects",
+  "evidence": "effects box_shadows 0, backdrop_blur 0, transitions 0, animations 0, transforms 0, gradient_backgrounds 1"
+ },
+ {
+  "observation": "Layout relies mainly on flexbox (18 elements), with grid on 4 elements.",
+  "category": "layout",
+  "evidence": "layout display_flex 18, display_grid 4"
+ },
+ {
+  "observation": "The page is short, at 2188px tall and 1440px wide.",
+  "category": "layout",
+  "evidence": "layout page_height 2188, page_width 1440"
+ },
+ {
+  "observation": "The page carries little copy (168 words) with no emoji, exclamation marks or em dashes. The text is mostly headlines and labels.",
+  "category": "copy treatment",
+  "evidence": "text_stats words 168, emoji 0, exclamations 0, em_dashes 0; p count 3"
+ },
+ {
+  "observation": "Every news headline is prefixed with 'Commentary:', so the content type label is part of the title text.",
+  "category": "copy treatment",
+  "evidence": "heading_outline: four titles beginning 'Commentary:'"
+ },
+ {
+  "observation": "The hero photograph is a documentary protest image that is dominated by a saturated red placard. That red is the strongest color on a page otherwise in greens and greys.",
+  "category": "imagery handling",
+  "evidence": "slice_00 red 'Asijiki!' sign; palette colors otherwise greens/greys"
+ },
+ {
+  "observation": "The page has 31 anchors, and links make up most of the interactive elements.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts anchors 31, buttons 1"
+ },
+ {
+  "observation": "Only 4 ARIA attributes appear in the DOM.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts aria_attrs 4"
+ }
+]

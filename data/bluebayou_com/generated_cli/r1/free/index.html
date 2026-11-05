@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blue Bayou Water Park &amp; Dixie Landin' — Play Your Day Away</title>
+<meta name="description" content="Blue Bayou Water Park and Dixie Landin' Theme Park. Play your day away — tickets, season passes, birthday parties and trip planning.">
+<style>
+  :root {
+    --blue: #1076bd;
+    --navy: #292258;
+    --aqua: #25c1f1;
+    --sand: #f4f9fd;
+    --ink: #1c2340;
+    --muted: #5a6280;
+    --white: #fff;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+    color: var(--ink);
+    background: var(--white);
+    line-height: 1.6;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+
+  /* Buttons */
+  .btn {
+    display: inline-block; padding: .75em 1.5em; border-radius: 999px;
+    background: var(--aqua); color: var(--navy); font-weight: 700;
+    text-decoration: none; border: 2px solid var(--aqua);
+    transition: transform .15s, background .15s;
+  }
+  .btn:hover { transform: translateY(-2px); background: #5ad3f6; }
+  .btn.ghost { background: transparent; color: var(--white); border-color: var(--white); }
+  .btn.ghost:hover { background: rgba(255,255,255,.15); }
+  .btn.dark { background: var(--navy); border-color: var(--navy); color: var(--white); }
+  .btn.dark:hover { background: #3a3180; }
+  .btn.outline { background: transparent; color: var(--navy); border-color: var(--navy); }
+  .btn.outline:hover { background: var(--navy); color: var(--white); }
+
+  /* Header */
+  header.site {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--white); box-shadow: 0 2px 12px rgba(16,40,90,.12);
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 8px 0; }
+  .logos { display: flex; align-items: center; gap: 14px; }
+  .logos img { height: 52px; width: auto; }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; align-items: center; }
+  nav li { position: relative; }
+  nav a.top, nav summary {
+    display: block; padding: 10px 12px; font-weight: 700; color: var(--navy);
+    text-decoration: none; cursor: pointer; list-style: none; border-radius: 8px;
+  }
+  nav summary::-webkit-details-marker { display: none; }
+  nav a.top:hover, nav summary:hover { background: var(--sand); }
+  nav details > ul {
+    position: absolute; right: 0; top: 100%; min-width: 220px; flex-direction: column; align-items: stretch;
+    background: var(--white); padding: 8px; border-radius: 12px; box-shadow: 0 10px 30px rgba(16,40,90,.2);
+  }
+  nav details ul a { display: block; padding: 8px 12px; text-decoration: none; border-radius: 8px; }
+  nav details ul a:hover { background: var(--sand); }
+  .menu-toggle { display: none; background: none; border: 0; font: inherit; font-weight: 700; color: var(--navy); padding: 10px; cursor: pointer; }
+
+  /* Announcement */
+  .notice { background: var(--navy); color: var(--white); text-align: center; padding: 10px 16px; font-size: .95rem; }
+  .notice strong { color: var(--aqua); }
+
+  /* Hero */
+  .hero {
+    position: relative; color: var(--white); text-align: center;
+    background:
+      linear-gradient(180deg, rgba(16,60,130,.55), rgba(41,34,88,.7)),
+      url("images/5ac7aeee2c10d19f9542cd3e-shutterstock.jpg") center / cover;
+    padding: clamp(80px, 14vw, 170px) 0 clamp(120px, 17vw, 210px);
+  }
+  .hero h1 { font-size: clamp(2.4rem, 7vw, 5rem); margin: 0 0 .3em; line-height: 1.05; text-shadow: 0 3px 16px rgba(0,0,0,.35); }
+  .hero p { font-size: 1.2rem; max-width: 36em; margin: 0 auto 1.5em; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .brush { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: auto; pointer-events: none; }
+
+  /* Quick actions */
+  .quick { margin-top: -20px; padding-bottom: 20px; }
+  .quick .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .qa {
+    display: block; text-decoration: none; padding: 28px 24px; border-radius: var(--radius);
+    background: var(--sand); border: 2px solid #dbeaf6; transition: transform .15s, box-shadow .15s;
+  }
+  .qa:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(16,118,189,.2); }
+  .qa h2 { margin: 0 0 4px; color: var(--blue); font-size: 1.4rem; }
+  .qa span { color: var(--muted); font-weight: 600; }
+  .qa span::after { content: " →"; }
+
+  /* Parks */
+  section { padding: 56px 0; }
+  .parks { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+  .park { border-radius: var(--radius); overflow: hidden; background: var(--white); box-shadow: 0 8px 28px rgba(16,40,90,.15); display: flex; flex-direction: column; }
+  .park img.photo { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .park .body { padding: 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+  .park .body img.logo { height: 56px; width: auto; }
+  .park h2 { margin: 0; font-size: 1.7rem; color: var(--navy); }
+  .park p { margin: 0; color: var(--muted); }
+  .park .actions { margin-top: auto; padding-top: 8px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .park .status { display: inline-block; align-self: flex-start; background: #fff1d6; color: #7a4b00; font-weight: 700; padding: 4px 12px; border-radius: 999px; font-size: .85rem; }
+  .park .status.open { background: #d9f6e6; color: #0d5a31; }
+
+  /* Summer */
+  .summer {
+    position: relative; text-align: center; color: var(--white); padding: 0;
+    background: url("images/5ac7c110e4871d29e0642b45-shutterstock.jpg") center / cover;
+  }
+  .summer .shade { background: linear-gradient(rgba(16,118,189,.55), rgba(41,34,88,.65)); padding: clamp(60px, 10vw, 120px) 16px; }
+  .summer img { width: min(640px, 90%); margin: 0 auto; }
+
+  /* Connect */
+  .connect { background: var(--sand); text-align: center; }
+  .connect h2, .plan h2 { font-size: 2rem; color: var(--navy); margin: 0 0 .4em; }
+  .social { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 20px; }
+
+  /* Plan */
+  .plan .cols { display: grid; grid-template-columns: 1.1fr 1fr; gap: 36px; align-items: center; }
+  .plan img { border-radius: var(--radius); box-shadow: 0 8px 28px rgba(16,40,90,.18); width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+  .plan ul.links { list-style: none; padding: 0; margin: 16px 0 24px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .plan ul.links a { display: block; padding: 12px 16px; border-radius: 10px; background: var(--sand); text-decoration: none; font-weight: 700; color: var(--blue); }
+  .plan ul.links a:hover { background: #e1effa; }
+  .plan .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  /* Policy + Coke */
+  .perks { background: var(--navy); color: var(--white); }
+  .perks .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch; }
+  .perk { border-radius: var(--radius); padding: 32px; background: rgba(255,255,255,.08); }
+  .perk h2 { margin: 0 0 .5em; color: var(--aqua); }
+  .perk p { margin: 0; font-size: 1.1rem; }
+  .coke { display: flex; align-items: center; gap: 20px; background: #c8102e; }
+  .coke h2 { color: var(--white); }
+  .coke .cans { position: relative; flex: 0 0 150px; }
+  .coke .cans img.can { width: 150px; }
+  .coke .cans img.script { position: absolute; left: -10px; bottom: -10px; width: 120px; }
+
+  footer { background: #14102e; color: #c3c8e0; text-align: center; padding: 32px 16px; font-size: .95rem; }
+  footer .logos { justify-content: center; margin-bottom: 14px; }
+  footer nav ul { justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
+  footer nav a { padding: 4px 10px; text-decoration: none; }
+  footer nav a:hover { color: var(--white); text-decoration: underline; }
+
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--aqua); outline-offset: 2px; }
+
+  @media (max-width: 860px) {
+    .menu-toggle { display: block; }
+    header nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--white); box-shadow: 0 10px 20px rgba(16,40,90,.15); padding: 8px 16px 16px; }
+    header nav.open { display: block; }
+    header nav ul { flex-direction: column; align-items: stretch; }
+    nav details > ul { position: static; box-shadow: none; padding: 0 0 0 12px; }
+    .quick .grid, .parks, .plan .cols, .perks .grid { grid-template-columns: 1fr; }
+    .plan ul.links { grid-template-columns: 1fr; }
+    .logos img { height: 42px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <div class="logos">
+      <a href="/park/blue-bayou-waterpark" aria-label="Blue Bayou Waterpark"><img src="images/5ac7848a651905ef6f4faf47-Blue%2520Bayou%2520Logo.svg" alt="Blue Bayou Water Park"></a>
+      <a href="/park/dixie-landin" aria-label="Dixie Landin'"><img src="images/5ac7848eb01ca6b73a0416bd-Dixie%2520Landin%2520Logo.svg" alt="Dixie Landin' Theme Park"></a>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu ☰</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a class="top" href="/">Home</a></li>
+        <li><a class="top" href="/attractions">Attractions</a></li>
+        <li>
+          <details><summary>Tickets</summary>
+            <ul>
+              <li><a href="/pricing">Buy Tickets</a></li>
+              <li><a href="https://www.etix.com/ticket/v/12750/blue-bayou-waterpark-and-dixie-landin">Season Passes</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details><summary>Parks</summary>
+            <ul>
+              <li><a href="/plan#maps">Park Maps</a></li>
+              <li><a href="/park/dixie-landin">Dixie Landin'</a></li>
+              <li><a href="/park/blue-bayou-waterpark">Blue Bayou Waterpark</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details><summary>Plan</summary>
+            <ul>
+              <li><a href="https://goo.gl/maps/BeXNMkjSzdB2">Directions</a></li>
+              <li><a href="/plan#food">Food &amp; Concessions</a></li>
+              <li><a href="/plan#hotels">Hotels</a></li>
+              <li><a href="/plan#events">Corporate Events</a></li>
+              <li><a href="/plan#birthdays">Birthday parties</a></li>
+              <li><a href="/plan#groups">Groups</a></li>
+              <li><a href="/calendar">Calendar</a></li>
+              <li><a href="/jobs">Jobs</a></li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <details><summary>More</summary>
+            <ul>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/jobs">Jobs</a></li>
+              <li><a href="/faq">FAQs</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="notice" role="status">
+  <strong>Opening Day: May 29, 2021.</strong> Because of recent weather and the forecast for the following week, Blue Bayou Water Park is pushing back its opening to May 29, 2021 at 10:00 a.m. We hope to welcome you, your family and friends this summer.
+</div>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Play Your Day Away</h1>
+      <p>Two parks, one summer of fun. Blue Bayou Water Park and Dixie Landin' Theme Park.</p>
+      <div class="actions">
+        <a class="btn" href="/pricing">Buy Tickets</a>
+        <a class="btn ghost" href="https://www.etix.com/ticket/v/12750/blue-bayou-waterpark-and-dixie-landin">Season Passes</a>
+      </div>
+    </div>
+    <img class="brush" src="images/5ac7aaaee4871dbdac640078-brush.svg" alt="" aria-hidden="true">
+  </div>
+
+  <div class="quick">
+    <div class="wrap grid">
+      <a class="qa" href="/pricing"><h2>Buy Tickets</h2><span>Start the Excitement</span></a>
+      <a class="qa" href="https://www.etix.com/ticket/v/12750/blue-bayou-waterpark-and-dixie-landin"><h2>Season Passes</h2><span>More fun for Everyone</span></a>
+      <a class="qa" href="/plan#birthdays"><h2>Birthday parties</h2><span>Celebrate with us</span></a>
+    </div>
+  </div>
+
+  <section id="parks">
+    <div class="wrap parks">
+      <article class="park">
+        <img class="photo" src="images/5ae8775a41c7120f2ade82e5-landofthegiants.jpg" alt="Blue Bayou Waterpark" loading="lazy">
+        <div class="body">
+          <span class="status open">Opening May 29, 2021</span>
+          <img class="logo" src="images/5ac7848a651905ef6f4faf47-Blue%2520Bayou%2520Logo.svg" alt="Blue Bayou Waterpark">
+          <h2>Enter the Land of the Giants</h2>
+          <p>Bring your floaties, apply sunscreen and bring the whole family for a fun summer escape in the sun.</p>
+          <div class="actions">
+            <a class="btn dark" href="https://www.etix.com/ticket/v/12750/blue-bayou-waterpark-and-dixie-landin">Get a Season Pass</a>
+            <a class="btn outline" href="/pricing">Buy Tickets</a>
+          </div>
+        </div>
+      </article>
+      <article class="park">
+        <img class="photo" src="images/5ada2848fcceb9441ecf15ea-Thrills.jpg" alt="Dixie Landin' Theme Park" loading="lazy">
+        <div class="body">
+          <span class="status">Closed for 2021 · Returning 2022</span>
+          <img class="logo" src="images/5ac7848eb01ca6b73a0416bd-Dixie%2520Landin%2520Logo.svg" alt="Dixie Landin'">
+          <h2>Experience the Thrills</h2>
+          <p>Because of Covid-19, Dixie Landin' Theme Park stays closed for the whole 2021 season. It plans to return in 2022.</p>
+          <div class="actions">
+            <a class="btn dark" href="https://www.etix.com/ticket/v/12750/blue-bayou-waterpark-and-dixie-landin">Get a Season Pass</a>
+            <a class="btn outline" href="/pricing">Buy Tickets</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="summer" aria-label="Summer is waiting">
+    <div class="shade">
+      <img src="images/5ac7c16eb01ca614b50476f0-stencil-summeriswaiting.png" alt="Summer is waiting" loading="lazy">
+    </div>
+  </section>
+
+  <section class="connect">
+    <div class="wrap">
+      <h2>Stay Connected</h2>
+      <p>Follow along for park news, openings and summer updates.</p>
+      <div class="social">
+        <a class="btn dark" href="https://www.facebook.com/Blue-Bayou-Dixie-Landin-200868959959549/">Follow on Facebook</a>
+        <a class="btn outline" href="/subscribe">Subscribe to the newsletter</a>
+        <a class="btn outline" href="https://twitter.com/bluebayoudixie/">Twitter</a>
+        <a class="btn outline" href="https://www.youtube.com/user/BlueBayouBR?feature=mhee">YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan" id="plan">
+    <div class="wrap cols">
+      <div>
+        <h2>Plan Your Summer Getaway</h2>
+        <ul class="links">
+          <li><a href="/plan#maps">Park Maps</a></li>
+          <li><a href="https://goo.gl/maps/BeXNMkjSzdB2">Directions</a></li>
+          <li><a href="/plan#food">Food &amp; Concessions</a></li>
+          <li><a href="/plan#groups">Groups</a></li>
+          <li><a href="/plan#hotels">Hotels</a></li>
+          <li><a href="/plan#events">Corporate Events</a></li>
+        </ul>
+        <div class="actions">
+          <a class="btn dark" href="https://www.etix.com/ticket/v/12750/blue-bayou-waterpark-and-dixie-landin">Get a Season Pass</a>
+          <a class="btn outline" href="/pricing">Buy Tickets</a>
+        </div>
+      </div>
+      <img src="images/5ac7cee6e4871debb6643d2f-shutterstock.jpg" alt="" loading="lazy">
+    </div>
+  </section>
+
+  <section class="perks">
+    <div class="wrap grid">
+      <div class="perk">
+        <h2>Come back tomorrow, free</h2>
+        <p>Pay the full daily admission price and have your ticket validated before you leave, and you can return the following day for free — as long as that second day is not a Saturday.</p>
+      </div>
+      <div class="perk coke">
+        <div class="cans">
+          <img class="can" src="images/5ac7a77999758e48291d6171-coke-can-full.png" alt="Coca-Cola can" loading="lazy">
+        </div>
+        <div>
+          <img src="images/5ac79fd0af4ae8b8ce2f33d6-coke-white.png" alt="Coca-Cola" style="width:150px;margin-bottom:8px" loading="lazy">
+          <p><strong>Save $5</strong> when you present any Coca-Cola can.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="logos">
+    <img src="images/5ac7848a651905ef6f4faf47-Blue%2520Bayou%2520Logo.svg" alt="Blue Bayou Water Park" style="height:44px;background:#fff;border-radius:8px;padding:4px 8px">
+    <img src="images/5ac7848eb01ca6b73a0416bd-Dixie%2520Landin%2520Logo.svg" alt="Dixie Landin'" style="height:44px;background:#fff;border-radius:8px;padding:4px 8px">
+  </div>
+  <nav aria-label="Footer">
+    <ul>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/jobs">Jobs</a></li>
+      <li><a href="/faq">FAQs</a></li>
+      <li><a href="/calendar">Calendar</a></li>
+      <li><a href="/subscribe">Newsletter</a></li>
+    </ul>
+  </nav>
+  <p>© Blue Bayou / Dixie Landin'. All Rights Reserved.</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+</body>
+</html>

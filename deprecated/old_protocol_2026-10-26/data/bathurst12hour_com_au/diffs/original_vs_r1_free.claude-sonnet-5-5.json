@@ -1,0 +1,254 @@
+[
+ {
+  "observation": "A uses Open Sans as the dominant face, with Montserrat on 3 elements and FontAwesome and Material Icons for icons. B uses a single Helvetica Neue/Arial stack on all 187 measured elements.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Open Sans 354, FontAwesome 6, Montserrat 3, Material Icons 1. B: Helvetica Neue 187.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The H1 differs in content and size. A's H1 is 50px Montserrat bold with empty text, and the visible page title 'LIQUI-MOLY BATHURST 12 HOUR' is not an H1. B's H1 is the 64px bold tagline 'AUSTRALIA'S INTERNATIONAL ENDURANCE RACE'.",
+  "category": "typography",
+  "evidence": "A h1: text '', 50px, Montserrat. B h1: 64px, text 'AUSTRALIA'S INTERNATIONAL ENDURANCE RACE'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero header shows the event name as a large bold line, with the tagline in lighter uppercase below it and the date line in bold. B reverses the hierarchy: a small red uppercase eyebrow carries the event name, the tagline is a huge two-line headline, and a location line follows.",
+  "category": "typography",
+  "evidence": "A slice 0: 'LIQUI-MOLY BATHURST 12 HOUR' large, tagline smaller. B slice 0: red eyebrow, 64px H1 across two lines, 'Mount Panorama, Bathurst'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a location line, 'Mount Panorama, Bathurst', that does not appear in A's header.",
+  "category": "copy",
+  "evidence": "B hero text; A's header contains only the title, tagline and date.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B shows the event date '31 JANUARY – 2 FEBRUARY 2020' as a solid red filled badge. A shows it as plain bold white text.",
+  "category": "component",
+  "evidence": "B slice 0 red block (accent rgb(232,17,45) background count 1). A slice 0 plain text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The body background is rgb(20,20,20), a neutral gray-black, in A. In B it is rgb(14,15,18), a blue-tinted near-black, with panels at rgb(23,25,30).",
+  "category": "color",
+  "evidence": "A body_bg rgb(20,20,20). B body_bg rgb(14,15,18), 8 elements at rgb(23,25,30).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses several neutral gray panel backgrounds: #222 on 12 elements, #343434 on 6, plus #3a3a3a, #333 and #2f2f2f. B has a narrower dark set, mostly one panel color plus 26 white backgrounds.",
+  "category": "color",
+  "evidence": "A top_backgrounds: 34,34,34 ×12; 52,52,52 ×6; 58,58,58; 51,51,51; 47,47,47. B: white ×26; 23,25,30 ×8.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's accent colors are a light blue (119,191,255) on 90 elements for links, nav and dates, and red (237,28,36) for the active nav item and heading bars. B's accent is a single crimson (232,17,45), used for eyebrows, READ MORE links, the date badge, divider rules and button borders.",
+  "category": "color",
+  "evidence": "A top_text_colors: 119,191,255 ×90; button color 237,28,36. B: 232,17,45 ×9 text and 1 background.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's secondary text is a muted blue-gray (154,161,173) on 28 elements, for dates and the follow blurb. A's body text is #ccc (204,204,204) on 140 elements.",
+  "category": "color",
+  "evidence": "B top_text_colors 154,161,173 ×28. A 204,204,204 ×140.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's top bar is a thin dark strip with a square search icon button in the top-right corner. B has no search control. B has a single sticky-style header bar with a small logo and a 'Menu' button (4px radius), and its slice shows a semi-transparent dark bar, rgba(14,15,18,0.94), with backdrop blur.",
+  "category": "component",
+  "evidence": "A slice 0 search icon at the top right; A has 1 input and 1 form. B backdrop_blur 1; rgba(14,15,18,0.94) background; primary_button text 'Menu'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's main navigation has 5 items (Home, News, Video, The Event, The Race, Bushfires Appeal). The Home item is red with an underline, and the others are light blue. It sits in a dark boxed bar below the hero. B's nav has 9 items in white uppercase, including Competitors, Schedule, Results and Previous Races, placed in the top header bar with some labels wrapping onto two lines.",
+  "category": "navigation",
+  "evidence": "A slice 0 nav (HOME…BUSHFIRES APPEAL, 6 labels). B slice 0 nav includes COMPETITORS, SCHEDULE, RESULTS, PREVIOUS RACES; 'THE EVENT', 'THE RACE' and 'PREVIOUS RACES' wrap.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header has a large logo (135x156) at the left with the event title beside it. The logo is overlaid on a decorative blue and red diagonal graphic on the right. B renders the logo twice: a 41x48 copy in the top nav and a 150x173 copy in the hero, with a fainter diagonal red/blue wedge behind the headline.",
+  "category": "imagery",
+  "evidence": "A headerlogo rect w135 h156 at y72. B headerlogo rects 41x48 at y8 and 150x173 at y187, the second with alt=''.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A places social icons (Facebook, Twitter) in the header's top right and repeats them in a sidebar card. B has no header icons. It has a full-width Follow Us band with two outlined red text buttons, FACEBOOK and TWITTER.",
+  "category": "component",
+  "evidence": "A slice 0 icons at (1220,129) and (978,686); FontAwesome ×6. B slice 2 outlined red-bordered buttons labelled FACEBOOK / TWITTER.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a two-column layout: a 743px-wide news column on the left and a ~357px sidebar on the right with an empty box, a 'FOLLOW US' heading and a 'Social Media' card. B is a single full-width column of about 1148px with no sidebar.",
+  "category": "layout",
+  "evidence": "A featured image rect x155 w743; sidebar at x928. B featured image x147 w668 and cards spanning x147–1293.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a large empty dark sidebar area under the Social Media card. A also has a wide blank gap, roughly 600px tall, between the news list and the footer.",
+  "category": "layout",
+  "evidence": "A slice 0 right column blank below y756; slice 1 blank from y140 to y750. A page_height 3080.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's featured story is a full-bleed image with a 'Featured News' light-blue tag at the top-left and the title overlaid at the bottom. B's featured story is a horizontal split card: the image on the left and a dark text panel on the right with a red 'FEATURED NEWS' eyebrow, a title, a date and a 'READ MORE →' link.",
+  "category": "component",
+  "evidence": "A slice 0 featured tag and overlay title at y796. B slice 0 card with a 668px image plus a text panel.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's news layout is mixed. After the featured item come two overlay-title image tiles (each 372px wide). Those are followed by four small horizontal list items, with a 195x154 thumbnail left and text right. B uses a uniform 3-column grid of identical stacked cards, with image above and title, date and READ MORE below.",
+  "category": "layout",
+  "evidence": "A images at 372x250/294 and 195x154. B images all 365x289 at x147/538/928; grid display count 3.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's overlay tiles put white bold titles directly on photographs, and the titles are truncated with ellipses: 'More than $74,000 raised via #B12hr Bushfire…', 'First major do-nation lodged for B12hr Bushfire…', and 'Gounon hails M-Sport perfor-mance after breakthrough 12…'. B shows the full titles beneath the images with no truncation or hyphenation.",
+  "category": "copy",
+  "evidence": "A slice 0/1 text; B h3 headings, e.g. 'More than $74,000 raised via #B12hr Bushfire Relief efforts'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The date text differs. A shows the dates as light-blue 'Feb 04, 2020' on only the four list items and none on the featured or tile items. B shows a date on all 7 stories in gray, and the featured story reads 'Oct 19, 2020'.",
+  "category": "copy",
+  "evidence": "A slice 0/1 dates; time tag count 7 in both. B featured 'Oct 19, 2020' and a date under every card.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a red 'READ MORE →' call-to-action link to every news card. A has no per-story CTA text.",
+  "category": "component",
+  "evidence": "B slice 1: READ MORE → on 6 cards plus the featured card; none in A.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a section heading 'LATEST NEWS' with a horizontal rule running to its right. A has no news section heading.",
+  "category": "component",
+  "evidence": "B heading_outline H2 'LATEST NEWS'. A has no H2 and only a sidebar 'FOLLOW US' H4.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The heading structure differs. A has an H1 with empty text, an H4 'FOLLOW US' and 2 H5, and no H2 or H3. B has H1, 2 H2 (LATEST NEWS, FOLLOW US), 7 H3 (story titles) and an H4 'OUR PARTNERS'.",
+  "category": "semantic",
+  "evidence": "A tag_counts h1:1, h4:1, h5:2. B h2:2, h3:7, h4:1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A heading is styled with a small red vertical bar to its left ('FOLLOW US', 'LINKS'). B uses no such bar. Its section headings are plain uppercase, with a red horizontal line under the Follow Us band and under the hero.",
+  "category": "decoration",
+  "evidence": "A slice 0/1 red tick before 'FOLLOW US' and 'LINKS'. B slice 0 and 2 full-width red rules at y~483 and y~876.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM uses many semantic wrappers: 8 header, 8 footer, 7 article, 5 aside and 2 section elements, with 122 divs. B uses 1 header, 1 footer, 1 main, 1 nav and 1 section, with no article or aside, and only 21 divs.",
+  "category": "semantic",
+  "evidence": "A semantic header 8, footer 8, article 7, aside 5; div 122. B header 1, footer 1, article 0, aside 0; div 21.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A loads much more machinery. It has 48 scripts, 13 stylesheets, 25 link tags, 14 meta tags including Open Graph and Twitter, 1 JSON-LD block and 2 iframes. B has 1 script, 0 stylesheets, 1 style block and 3 meta tags, and no JSON-LD.",
+  "category": "structure",
+  "evidence": "A counts scripts 48, stylesheets 13, meta 14, jsonld_blocks 1, iframe 2. B scripts 1, stylesheets 0, meta 3, jsonld 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The CSS approach differs. A has 480 class uses over 174 unique classes (legacy theme/framework style), 10 inline style attributes and 125 transitions. B has 56 class uses over 23 unique classes, 1 inline style attribute and 34 transitions.",
+  "category": "structure",
+  "evidence": "A classes total 480 unique 174, inline_style_attrs 10. B total 56 unique 23, inline_style_attrs 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses almost no flexbox or grid (flex 4, grid 0) and relies on older float/block layout. B uses flex on 48 elements and grid on 3.",
+  "category": "layout",
+  "evidence": "A layout display_flex 4, display_grid 0. B display_flex 48, display_grid 3.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's elements are almost entirely square-cornered: 362 at radius 0 and 2 pill-shaped. B has 161 at 0 radius and 26 at 1–7px (4px on the Menu button).",
+  "category": "decoration",
+  "evidence": "A border_radius_buckets bucket_0 362, bucket_pill 2. B bucket_0 161, bucket_1_7 26.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 3 box shadows, 2 animations and 7 transforms. B has none of these (0 shadows, 0 animations, 0 transforms) and relies on flat 1px borders around cards.",
+  "category": "decoration",
+  "evidence": "A effects box_shadows 3, animations 2, transforms 7. B all 0; cards show thin outlines in slice 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The sponsor logo section differs. A shows the logos directly on a gray (#2f2f2f) band in a 6-column grid with 180px spacing. The logos are white-on-dark and fully legible. B puts each 100x60 logo in a white rounded tile within an 8-column grid, headed 'OUR PARTNERS'. Because the logos are white artwork, most tiles look blank and a few are faint.",
+  "category": "imagery",
+  "evidence": "A logo rects x160/340/…/1060 spanning 6 columns, y2397–2777. B logo rects x163/308/… in 8 columns; the 26 white backgrounds come from the tiles.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The same 28 sponsor logo images appear on both sides, but A also includes Sparesbox, Pirtek and the other brands in the same set. B reorders them (for example Audi and Aston Martin are on the first row) and omits the McLaren logo's file, though a 'McLaren' item is visible in its grid.",
+  "category": "imagery",
+  "evidence": "A has a mclaren-footer1.png file. B's image list has no mclaren file, and the slice shows a text-like 'McLaren' tile in its row 2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's partner logo tiles show a text fallback: the 'McLaren' tile is black text on white, unlike the image-based logos.",
+  "category": "imagery",
+  "evidence": "B slice 2 shows the 'McLaren' tile in bold black type; no mclaren image in B's images list.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The footer links are laid out differently. A has a 'LINKS' heading with a vertical list (Contacts, Media, Privacy Policy, Terms & Conditions) in light blue, separated by hairlines, on a #222 band. B puts the same four links in a horizontal row at the right of the footer in muted gray, with no heading.",
+  "category": "component",
+  "evidence": "A slice 1 LINKS list at x180, 240px wide. B slice 2 links at right y137.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer copyright line is the same text on both sides, '© 2021 LIQUI-MOLY Bathurst 12 Hour. All Rights Reserved'. In A it sits to the right of a 72x83 logo on one line. In B it is stacked below a 56x64 logo.",
+  "category": "component",
+  "evidence": "A footerlogo rect 72x83 at x175. B footerlogo 56x64 at x146, text below at y176.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The body copy size differs. A uses a 14px body with 21px line-height, and B uses a 16px body with 24px line-height.",
+  "category": "typography",
+  "evidence": "A body_font_size 14px / 21px. B 16px / 24px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The text styling is more uppercase and letterspaced in B. The nav, eyebrows, READ MORE links, date badge and 'OUR PARTNERS' use tracked uppercase small caps. A uses uppercase mainly for the nav and headings.",
+  "category": "typography",
+  "evidence": "B slices: 'OUR PARTNERS', 'FEATURED NEWS', 'READ MORE →' tracked caps. A slice 0 uppercase only for nav and headings.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's featured tag, 'Featured News', is a light-blue filled rectangle with a white label. B's is a red text-only label.",
+  "category": "component",
+  "evidence": "A slice 0 blue block at (185,405). B slice 0 red text at y730.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page height differs. A is 3080px tall, with its content cluster 1: the header, news and a long empty gap. B is 2834px tall with a continuous flow of sections.",
+  "category": "layout",
+  "evidence": "A page_height 3080, B 2834; both width 1440.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The document language and title differ. A has lang 'en-AU' and the title 'Liqui-Moly Bathurst 12 Hour - Australia's International Endurance Race'. B has lang 'en' and the title 'Liqui-moly Bathurst 12 Hour | Australia’s International Endurance Race', with a pipe separator and a curly apostrophe.",
+  "category": "copy",
+  "evidence": "A_facts/B_facts title and lang fields.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Image alt text is rewritten. B gives the featured image the story title as alt ('Bathurst 12 Hour to return in 2022') and uses curly apostrophes ('Meguiar’s'), with names such as 'Destination NSW', 'Mercedes-AMG' and '7NEWS'. A has empty alt on the news images and uses 'Visit NSW', 'Mercedes AMG' and '7 News'.",
+  "category": "copy",
+  "evidence": "A images alt '' for news photos; 'Visit NSW'. B featured alt text and 'Destination NSW'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The news photos are cropped differently. A crops tiles to different aspect ratios (372x250, 372x294, 195x154), so the Bushfire image is a wide crop. B shows every photo at one 365x289 size, and the featured image at 668x417.",
+  "category": "imagery",
+  "evidence": "A rects 372x250, 372x294, 195x154. B rects all 365x289.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A overlays dark gradient-like captions on the image tiles, and one title collides with the date text ('12…' overlapping 'Feb 03, 2020'). B keeps text and images in separate regions with no overlap.",
+  "category": "decoration",
+  "evidence": "A slice 1 at (742,106) overlapping text. B image_overlaps [] and separate caption areas in slice 1.",
+  "which_side": "both"
+ }
+]

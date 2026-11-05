@@ -1,0 +1,338 @@
+[
+ {
+  "observation": "A renders as an essentially unstyled document: browser-default serif text, blue underlined links and grey default buttons. B is a fully styled storefront.",
+  "category": "overall styling",
+  "evidence": "A fonts_by_element_count: Times New Roman 920, Arial 77. A top_text_colors include rgb(0,0,238) (390), the default link blue. B uses only Helvetica Neue (286) with themed colors.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Page height differs greatly. A is about 22,740px tall; B is about 3,857px.",
+  "category": "layout",
+  "evidence": "A layout.page_height 22740 (18 slices); B layout.page_height 3857 (3 slices)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's SVG icons (person, Facebook, Pinterest, Instagram, shopping bag, search circle) render at full page width because no CSS sizes them, so they fill whole screens.",
+  "category": "imagery handling",
+  "evidence": "A slices 00–12 are mostly huge dark-grey and black glyphs. A svg count is 41.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses no SVG icons. Social links, search, cart and login are plain text labels.",
+  "category": "component choice",
+  "evidence": "B svgs: 0. B slice 00 header shows the text 'Log in', 'Search', 'Cart'; the top bar shows 'Facebook Pinterest Instagram' as text.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a teal announcement bar at the top with centered white text. In A the same copy is a plain text line partway down the page.",
+  "category": "layout",
+  "evidence": "B slice 00: 'Free Shipping on all US orders over $50' on teal. B backgrounds include rgb(26,138,148). A slice 12 shows the same text as plain black text.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a light utility bar with the phone number and Contact Us on the left and social links on the right.",
+  "category": "layout",
+  "evidence": "B slice 00, second row on a pale background (rgb(241,247,246) is among B's backgrounds)",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's main header is a single horizontal row: logo on the left, centered navigation links, and account links on the right.",
+  "category": "layout",
+  "evidence": "B slice 00: logo at x=150, nav items 'Shop▾ Our Story The Natural Wellbeing Difference Health Journal', then 'Log in Search Cart'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows the full navigation tree, including every product submenu, as nested bulleted lists. The tree appears twice, once in the mobile drawer and once in the header.",
+  "category": "component choice",
+  "evidence": "A slice 01: nested ul/li with disc, circle and square bullets. A slice 08 repeats the list. A li count is 95, ul count 19.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's 'Shop' item shows only a caret, and no submenu is visible in the static render.",
+  "category": "component choice",
+  "evidence": "B slice 00 'Shop▾'. B ul count is 11, li 59.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The H1 differs. A's H1 is the brand name 'Natural Wellbeing' at 32px. B's H1 is the hero headline 'For Women Like You' at 67.2px.",
+  "category": "semantic structure",
+  "evidence": "A h1 text 'Natural Wellbeing', font_size 32px. B h1 text 'For Women\\nLike You', font_size 67.2px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A marks up 'For Women Like You' as an h2 at 80px, weight 700, in serif, aligned left.",
+  "category": "typography",
+  "evidence": "A h2 font_size 80px, weight 700. A slice 12 shows large bold Times text at the left edge.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's hero headline is centered, weight 300 and dark slate. The second line 'Like You' is bold and teal.",
+  "category": "typography",
+  "evidence": "B h1 font_weight 300, color rgb(43,58,61), text_align center. B slice 00 shows 'Like You' bold in teal.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's hero has a soft pale mint-to-white gradient background.",
+  "category": "decoration",
+  "evidence": "B gradient_backgrounds: 1; A gradient_backgrounds: 0. B slice 00 hero is pale green.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B places a small uppercase, letter-spaced teal eyebrow label, 'ALL-NATURAL SUPPLEMENTS', above the headline.",
+  "category": "typography",
+  "evidence": "B slice 00. In A slice 12, 'All-Natural Supplements' is a plain text line.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's call-to-action buttons are pill-shaped. They come in filled teal or teal-outlined versions.",
+  "category": "component choice",
+  "evidence": "B border_radius bucket_pill: 7. B slices show 'Shop All' and 'Shop Wellness Kits' filled, and 'View all', 'Get Rewarded', 'Say Hello' and 'Have a Question?' outlined.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses no rounded corners at all.",
+  "category": "decoration",
+  "evidence": "A border_radius_buckets: bucket_0 998, all other buckets 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses small and medium corner radii on cards and buttons.",
+  "category": "decoration",
+  "evidence": "B bucket_1_7: 16, bucket_8_15: 19. B's primary_button radius is 6px.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B presents Best Sellers as a 4-column grid of 12 bordered cards, each with the product name in bold and the price in teal.",
+  "category": "layout",
+  "evidence": "B slice 00 'Best Sellers' grid, 3 rows × 4. B display_grid: 4. Product names are h3 elements (12 product h3s in B's heading_outline).",
+  "which_side": "B"
+ },
+ {
+  "observation": "A lists the best-seller products as a single column of alternating blue-underlined name and price links, with no section heading.",
+  "category": "layout",
+  "evidence": "A slices 12–13: 'Adaptogenic Stress Relief / $39.95 / Hair Essentials / from $29.95…'. A's heading_outline has no 'Best Sellers'.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B adds an h2 'Best Sellers' that does not appear in A's heading outline.",
+  "category": "copy",
+  "evidence": "B heading_outline level 2 'Best Sellers'",
+  "which_side": "B"
+ },
+ {
+  "observation": "Neither page shows product images. A's product images have zero size, and B's product cards contain text only.",
+  "category": "imagery handling",
+  "evidence": "A product images (e.g. Hair_Essentials_90caps…png) have rect w:0 h:0. B slice 00 cards are text only. B .jpg images have rect 0×0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A references hero slider mockup images, desktop and mobile variants, all at zero size. B has no slider markup.",
+  "category": "imagery handling",
+  "evidence": "A images NWB_Slider_Mockup_01–05 and Mobile_01–05 with rect 0×0. B image list has no slider files.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B shows the four 'Life' category icons as a 4-column row of white cards on a pale tinted band, with icon and label centered.",
+  "category": "layout",
+  "evidence": "B slice 01. Icons at x=249, 539, 829, 1119, y=1543, sized 72×72.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A stacks the four category icons vertically at the left edge, each followed by a large blue underlined link.",
+  "category": "layout",
+  "evidence": "A icons at x=8, y=17237/17344/17451/17558, sized 70×70. A slice 13.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Both pages use the same four colored knot-motif category icons: orange, green, teal and magenta.",
+  "category": "imagery",
+  "evidence": "A nwb_icon-life_*.png and B nwb-icon-life-*.png, both natural size 100×100. Visible in A slice 13 and B slice 01.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B treats 'Inspired By Nature / Refined By Science' as a full-width dark-teal band with white text: a light first line, a bold second line, and a white pill 'Learn More' button.",
+  "category": "color",
+  "evidence": "B slice 01. B backgrounds include rgb(19,104,112). B heading_outline h2 'Inspired By Nature\\nRefined By Science'.",
+  "which_side": "B"
+ },
+ {
+  "observation": "In A, 'Inspired By Nature' and 'Refined By Science' are plain paragraphs, not headings, and come after a large empty gap.",
+  "category": "semantic structure",
+  "evidence": "A slice 14: large blank area, then plain text lines. A's heading_outline has no such heading.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B adds a 'Shop Wellness Kits' button under 'Renew Yourself, Naturally'. A's section has no button.",
+  "category": "copy",
+  "evidence": "B slice 01 shows the button. A slice 13 shows only the paragraph.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B sets body copy in centered, narrow columns with muted grey text and generous line height.",
+  "category": "typography",
+  "evidence": "B body_line_height 25.6px; A body_line_height normal. B text colors include rgb(93,109,112). B slices 01–02 show centered paragraphs.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's paragraphs run the full viewport width, left-aligned, starting at an 8px margin.",
+  "category": "layout",
+  "evidence": "A slice 13: the 'Natural Wellbeing empowers women…' paragraph spans about 1420px",
+  "which_side": "A"
+ },
+ {
+  "observation": "B shows the three engagement blocks (Wellbeing Rewards, Meet Our Team, Ask An Expert) as three bordered cards with teal h3 titles and outlined pill buttons.",
+  "category": "component choice",
+  "evidence": "B slice 02. The three h3 elements are in teal rgb(19,104,112).",
+  "which_side": "B"
+ },
+ {
+  "observation": "A stacks those three blocks vertically as bold black h3, paragraph and underlined link.",
+  "category": "layout",
+  "evidence": "A slice 15",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's footer has a dark charcoal-teal background with light text, laid out in four columns: Shop, Learn More, Contact Us, Sign Up and Save.",
+  "category": "color",
+  "evidence": "B backgrounds include rgb(31,47,49). B text colors include rgb(212,224,224). B slice 02.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's footer column titles are accordion-style toggle buttons with large chevron SVGs, followed by bulleted link lists.",
+  "category": "component choice",
+  "evidence": "A slice 15: 'Shop', 'Learn More', 'Contact Us' and 'SIGN UP AND SAVE' buttons with chevrons. A button count is 20.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Footer column headings differ in markup. B uses h4 elements. A has a single h4, 'WHAT'S YOUR EMAIL?', which is not visible in the screenshots.",
+  "category": "semantic structure",
+  "evidence": "B heading_outline h4: Shop, Learn More, Contact Us, Sign Up and Save. A heading_outline h4: \"WHAT'S YOUR EMAIL?\".",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's newsletter field is an email input joined to a teal 'Subscribe' button. A shows a default input next to a grey button with a large envelope icon.",
+  "category": "component choice",
+  "evidence": "B slice 02. A slice 16 shows the default input and a 'Subscribe' button with an envelope SVG.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages show the same nine payment-method icons. A lists them vertically with bullets; B shows them in a horizontal row.",
+  "category": "layout",
+  "evidence": "A slice 17: bulleted vertical list. B images from american-express.svg through visa.svg at y=3758, x from 150 to 573.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's Apple Pay icon renders as an empty white badge with a black curve. A's Apple Pay badge shows the 'Pay' mark.",
+  "category": "imagery handling",
+  "evidence": "B slice 02: the second payment badge has no visible logo. A slice 17 shows the Apple Pay logo.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B separates the FDA disclaimer and copyright from the footer columns with a thin divider line and sets them in small light text. A centers the disclaimer at the default text size.",
+  "category": "typography",
+  "evidence": "B slice 02, bottom. A slice 17: the disclaimer is centered in about a 720px block.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows two logo images side by side (140px and 110px) next to the text H1 'Natural Wellbeing'. B shows one 140×46 logo in the header.",
+  "category": "imagery handling",
+  "evidence": "A images nwb_logo_140x.png at (267,10830) and nwb_logo_110x.png at (415,10840). B nwb-logo.png at (150,87).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows open modal and drawer controls as visible default buttons: 'Close menu', 'Close (esc)' (twice), 'Site navigation', and a search form.",
+  "category": "component choice",
+  "evidence": "A slices 01, 11, 12 and 17. A primary_button text 'Close menu', bg rgb(239,239,239).",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has no visible search input. 'Search' is a text link in the header.",
+  "category": "component choice",
+  "evidence": "B input count 1 (email only). A input count 8, including 'Search our store'.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A starts with a visible 'Skip to content' link at the top-left. B shows none.",
+  "category": "copy",
+  "evidence": "A slice 00. Not visible in B slice 00.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses semantic sectioning elements: one nav and seven section elements. A has no nav or section elements.",
+  "category": "semantic structure",
+  "evidence": "B semantic: nav 1, section 7. A semantic: nav 0, section 0.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's heading outline has 29 entries and begins with five h3 category names before the h1. A's outline has 8 entries and starts with the h1.",
+  "category": "semantic structure",
+  "evidence": "B heading_outline starts with h3 'Life Boosters'… then h1. A outline starts with h1 'Natural Wellbeing'.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is much heavier: 96 scripts, 27 style tags, 385 divs, 4 iframes. B has 1 script, 1 stylesheet link and 32 divs.",
+  "category": "DOM structure",
+  "evidence": "A tag_counts script 96, style 27, div 385, iframe 4. B script 1, link 1, div 32.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Class usage differs. A has 1,190 class uses (316 unique, about 17% Tailwind-like). B has 77 class uses (30 unique) and no Tailwind-like classes.",
+  "category": "DOM structure",
+  "evidence": "A classes total 1190, unique 316, tailwind_like_fraction 0.168. B total 77, unique 30, fraction 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses 96 inline style attributes and 81 ARIA attributes. B uses 2 and 5.",
+  "category": "DOM structure",
+  "evidence": "A counts inline_style_attrs 96, aria_attrs 81. B 2 and 5.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Head metadata differs. A carries Open Graph, Twitter and Shopify meta tags (21 metas). B has only charset, viewport and description.",
+  "category": "DOM structure",
+  "evidence": "A meta_names include og:*, twitter:*, shopify-checkout-api-token. B meta_names: charset, viewport, description.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The page titles differ. A: 'Holistic Health Supplements – Natural Wellbeing'. B: 'Natural Wellbeing | All-Natural Supplements For Women Like You'.",
+  "category": "copy",
+  "evidence": "title fields in A_facts and B_facts",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses flexbox and grid (21 flex and 4 grid containers). A's computed layout has none.",
+  "category": "layout",
+  "evidence": "B display_flex 21, display_grid 4. A display_flex 0, display_grid 0.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B defines 23 transitions; A has 1. A has 2 transforms; B has none.",
+  "category": "effects",
+  "evidence": "effects.transitions: A 1, B 23. effects.transforms: A 2, B 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Neither page uses box shadows; B separates its cards with thin light borders.",
+  "category": "decoration",
+  "evidence": "box_shadows 0 on both. B slice 00 cards have 1px light-grey borders.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's palette is teal-centric (several shades of teal, slate text, pale mint). A is black text, default link blue and light-grey button fills.",
+  "category": "color",
+  "evidence": "B top_backgrounds: rgb(26,138,148), rgb(19,104,112), rgb(241,247,246). A top_backgrounds: rgb(239,239,239) (20), rgb(255,255,255).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's visible word count is higher (636 vs 428), mostly because its navigation is repeated. A also has 2 emoji; B has none.",
+  "category": "copy",
+  "evidence": "text_stats.words: A 636, B 428. Emoji: A 2, B 0. Both have 3 exclamations.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Every B image has alt text. A has 5 images without alt attributes.",
+  "category": "DOM structure",
+  "evidence": "counts.alt_missing: A 5, B 0. B's payment SVGs have alt values such as 'Visa' and 'Mastercard'.",
+  "which_side": "both"
+ }
+]

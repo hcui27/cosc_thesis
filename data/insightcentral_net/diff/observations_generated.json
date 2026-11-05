@@ -1,0 +1,383 @@
+[
+ {
+  "observation": "The page uses a two-tone palette: a dark navy (rgb(13,27,42)) hero header and footer around a pale grey-blue body (rgb(243,246,249)). Cyan (rgb(39,209,255)) is the single accent.",
+  "category": "color",
+  "evidence": "facts.json colors: body_bg rgb(243,246,249); top backgrounds include rgb(13,27,42) ×6 and rgb(39,209,255) ×3. The header spans 0–580px and the footer starts at y=1920.",
+  "element_ids": [
+   "e1",
+   "e75"
+  ]
+ },
+ {
+  "observation": "The cyan accent is used for the pill primary buttons, the hero stat numbers, the avatar initials and the NEW badge. Text on cyan is a very dark teal (rgb(4,32,43)).",
+  "category": "color",
+  "evidence": "primary_button bg rgb(39,209,255), color rgb(4,32,43), radius 999px. Cyan text appears 7 times. Stats 414K, 180.3K and 2003 are cyan on navy.",
+  "element_ids": [
+   "e8",
+   "e11",
+   "e12",
+   "e14",
+   "e16",
+   "e74"
+  ]
+ },
+ {
+  "observation": "The header is a dark hero. The logo and a three-link nav sit on the left and a 'Join Community' pill button on the right. Below them is a left-aligned H1, a paragraph, a CTA and a stats row.",
+  "category": "layout",
+  "evidence": "e1 header is 1440×580. Logo is at x=200, nav at x=378, button at x=1077–1240. H1 is at 200,130.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4",
+   "e8",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The hero content is left-aligned in a column about 664px wide. The right half of the dark hero is empty, with no hero image.",
+  "category": "layout",
+  "evidence": "e9 h1 is 604px wide and e10 paragraph is 664px wide, both starting at x=200. Nothing sits to the right of them in the 1440px viewport.",
+  "element_ids": [
+   "e9",
+   "e10"
+  ]
+ },
+ {
+  "observation": "The page content is held in a fixed 1040px column between x=200 and x=1240, centred in the 1440px canvas. All sections share the same left and right edges.",
+  "category": "layout",
+  "evidence": "Sections e18, e37, e54 and e69 are all 1040px wide starting at x=200. Header items align to x=200 and x=1240.",
+  "element_ids": [
+   "e18",
+   "e37",
+   "e54",
+   "e69"
+  ]
+ },
+ {
+  "observation": "The H1 is 51.2px bold white in a system font stack and wraps onto two lines. The H2s are 24px bold.",
+  "category": "typography",
+  "evidence": "facts h1 font_size 51.2px, weight 700, color rgb(255,255,255). h2 24px/700. The H1 box is 118px tall.",
+  "element_ids": [
+   "e9",
+   "e19",
+   "e38",
+   "e55"
+  ]
+ },
+ {
+  "observation": "Typography is a single system font stack with no web fonts loaded. Body text is 16px on a 25.6px line height (1.6).",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui ×119. h1 font_family is 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif'. body_font_size 16px, line_height 25.6px. stylesheets: 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "The hero stats row pairs a large bold cyan number with a small label beneath it. The three stats sit inline and are left-aligned.",
+  "category": "component",
+  "evidence": "Bold elements 414K, 180.3K and 2003 at y=455 are 35px tall. Their spans (Posts, Members, Since) are 17px tall at y=495.",
+  "element_ids": [
+   "e12",
+   "e13",
+   "e14",
+   "e15",
+   "e16",
+   "e17"
+  ]
+ },
+ {
+  "observation": "The hero has two cyan pill CTAs, 'Browse the Forums' in the body and 'Join Community' in the nav bar. They share the same fill and radius.",
+  "category": "component",
+  "evidence": "e11 is 186×46 and e8 is 163×46. The primary button has radius 999px and padding 10px 20px.",
+  "element_ids": [
+   "e8",
+   "e11"
+  ]
+ },
+ {
+  "observation": "The nav bar is a plain row of three text links (What's New, Forums, Login / Join) in white on navy with no underline or background. The nav is inside the header and has no dropdowns.",
+  "category": "component",
+  "evidence": "nav e4 has three anchors, each 38px tall, at x=378, 497 and 583.",
+  "element_ids": [
+   "e4",
+   "e5",
+   "e6",
+   "e7"
+  ]
+ },
+ {
+  "observation": "The logo is an SVG image shown at 158×34, a condensed italic cyan wordmark.",
+  "category": "imagery",
+  "evidence": "img insightcentral-net.svg has natural size 300×65, rendered at 158×34, alt 'Insight Central'.",
+  "element_ids": [
+   "e3"
+  ]
+ },
+ {
+  "observation": "The latest-thread section is a three-column card grid with equal widths and about 20px gutters. Each card has a 331×248 photo on top and a text block below.",
+  "category": "layout",
+  "evidence": "Articles e20, e26 and e32 are 333px wide, starting at x=200, 553 and 907, all 361px tall. Images are 331×248.",
+  "element_ids": [
+   "e20",
+   "e26",
+   "e32"
+  ]
+ },
+ {
+  "observation": "The thread cards are white with a thin light-grey border and rounded corners. They have no box-shadow, so they separate from the pale page only by the border.",
+  "category": "decoration",
+  "evidence": "box_shadows: 0. border_radius bucket_8_15 has 14 elements. Cards are white (rgb(255,255,255) ×9) on rgb(243,246,249).",
+  "element_ids": [
+   "e20",
+   "e26",
+   "e32"
+  ]
+ },
+ {
+  "observation": "Card photos are cropped to a uniform landscape frame from very different source ratios (700×700, 525×700 and 393×700 portrait or square). This is cover-style cropping that fills the card width edge to edge.",
+  "category": "imagery",
+  "evidence": "Three images with natural sizes 700×700, 525×700 and 393×700 are all rendered at 331×248 or 331×249.",
+  "element_ids": [
+   "e22",
+   "e28",
+   "e34"
+  ]
+ },
+ {
+  "observation": "Thread images carry descriptive alt text, and no image is missing alt. The avatar and community icons have empty alt.",
+  "category": "structure",
+  "evidence": "alt_missing: 0. Thread alts include 'Photo attached to the thread about Pick n Pull'. The four small images have alt ''.",
+  "element_ids": [
+   "e22",
+   "e28",
+   "e34",
+   "e47",
+   "e57"
+  ]
+ },
+ {
+  "observation": "Thread titles are bold H3s with the link inside the heading. Long titles are truncated in the copy itself with a literal '...', and the card heights stay equal.",
+  "category": "copy",
+  "evidence": "Titles read '50% off pick n pull this last weekend, new arm res...' and 'SOLD For sale- 2001 Red Generation 1 Insight in Mi...'. The headings outline shows the same text. Two of the titles wrap to 2 lines.",
+  "element_ids": [
+   "e29",
+   "e30",
+   "e35"
+  ]
+ },
+ {
+  "observation": "The third card's title is a bare link with no H3, which breaks the heading pattern of the other two cards.",
+  "category": "structure",
+  "evidence": "There are 3 article elements but the H3 count is 3, and e35 is an 'a' directly under the article e32 with no h3 parent, so the third H3 is somewhere else or missing. The outline lists three H3s, yet the elements list shows h3 only for e23 and e29.",
+  "element_ids": [
+   "e23",
+   "e29",
+   "e35"
+  ]
+ },
+ {
+  "observation": "Thread metadata is a muted grey one-liner, 'Posted by X · N replies', using a middle dot separator.",
+  "category": "copy",
+  "evidence": "e25 'Posted by Bobhpete · 9 replies'; e31 and e36 follow the same pattern. Muted grey rgb(86,100,117) appears 13 times.",
+  "element_ids": [
+   "e25",
+   "e31",
+   "e36"
+  ]
+ },
+ {
+  "observation": "The Top contributors section is a single bordered white card holding an ordered list with row dividers. Each row has a rank number, a 48px circular avatar, the username and a right-aligned reply count.",
+  "category": "component",
+  "evidence": "ol e40 is 1040×232 with 3 li rows of about 76px. Rank numbers are 1, 2, 3. Reply counts sit at x≈1142–1221.",
+  "element_ids": [
+   "e40",
+   "e41",
+   "e45",
+   "e50"
+  ]
+ },
+ {
+  "observation": "The avatars are mixed. Two users without photos get a navy circle with a cyan initial letter (H, J), and one uses a photo.",
+  "category": "imagery",
+  "evidence": "e42 'H' and e51 'J' are 48×48 spans. e47 is image-05.jpg at 48×48 inside span e46.",
+  "element_ids": [
+   "e42",
+   "e46",
+   "e47",
+   "e51"
+  ]
+ },
+ {
+  "observation": "The section headers use a 'title left, action link right' pattern: 'View all members' is an underlined text link aligned to the right edge, on the same row as the H2.",
+  "category": "component",
+  "evidence": "e39 is at x=1113, w=127, y=1105, next to h2 e38 at y=1095.",
+  "element_ids": [
+   "e38",
+   "e39"
+  ]
+ },
+ {
+  "observation": "Recommended communities are three horizontal tiles in the same three-column grid. Each has a 64px rounded-square logo, a bold name and a muted member count. Royal Enfield Forum has a cyan-tinted 'NEW' pill badge.",
+  "category": "component",
+  "evidence": "Anchors e56, e60 and e64 are 333×98. Icons are 64×64 and come from 360×360 sources. e67 NEW sits inside strong e66. The background rgb(224,247,255) is used once.",
+  "element_ids": [
+   "e56",
+   "e60",
+   "e64",
+   "e57",
+   "e67"
+  ]
+ },
+ {
+  "observation": "The whole recommended tile is a single link, with the image, name and count inside one anchor. The icons are left uncropped square logos with rounded corners.",
+  "category": "structure",
+  "evidence": "e56 a contains img e57, strong e58 and span e59.",
+  "element_ids": [
+   "e56",
+   "e57",
+   "e58",
+   "e59"
+  ]
+ },
+ {
+  "observation": "A dark navy rounded call-to-action panel closes the main content. It has a centred H2, a one-line subtitle and three pill buttons: two white (Facebook, Google) and one cyan (email). This is the only centred block on an otherwise left-aligned page.",
+  "category": "component",
+  "evidence": "Section e69 is 1040×210. H2 e70 spans 984px and is centred. Buttons e72–e74 are 46px tall at y=1774.",
+  "element_ids": [
+   "e69",
+   "e70",
+   "e72",
+   "e73",
+   "e74"
+  ]
+ },
+ {
+  "observation": "Corner radii fall into three tiers: 0 (96 elements), 8–15px (14 elements, the cards, tiles and panel) and pill (9 elements, the buttons and badge). There is nothing in between.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 96, bucket_8_15 14, bucket_pill 9, bucket_16_plus 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "The page has no gradients, shadows, blur, animations or transforms. It has 5 transitions, so depth comes only from flat colour blocks and 1px borders.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 0, gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, transitions 5.",
+  "element_ids": []
+ },
+ {
+  "observation": "Vertical rhythm comes from alternating full-width bands with about 50–60px spacing between sections.",
+  "category": "layout",
+  "evidence": "Hero ends at y=580. Sections start at 580, 1047, 1386 and 1646. The footer starts at 1920, and the page is 2195px tall.",
+  "element_ids": [
+   "e1",
+   "e18",
+   "e37",
+   "e54",
+   "e69",
+   "e75"
+  ]
+ },
+ {
+  "observation": "The document structure uses landmarks: one header, one nav, one main, four sections with an H2 each, three articles, and a footer. There are no aside, figure or blockquote elements.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 4, article 3, footer 1, aside 0, figure 0.",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e18",
+   "e37",
+   "e54",
+   "e69",
+   "e75"
+  ]
+ },
+ {
+  "observation": "The heading outline is clean: one H1, then four H2s (threads, contributors, communities, join). The H3s are the thread titles. The H1 is inside the header with the hero.",
+  "category": "structure",
+  "evidence": "h1_count 1. heading_outline lists H1 'The Honda Insight community' and H2s 'Latest discussion threads', 'Top contributors this month', 'Recommended communities' and 'Join now to ask and comment!'.",
+  "element_ids": [
+   "e9",
+   "e19",
+   "e38",
+   "e55",
+   "e70"
+  ]
+ },
+ {
+  "observation": "The page is built without scripts or external stylesheets. It has a single style block, 1 inline style attribute and few utility classes, so the styling is hand-written CSS using semantic class names.",
+  "category": "structure",
+  "evidence": "scripts 0, stylesheets 0, tag_counts style 1, inline_style_attrs 1, tailwind_like_fraction 0.04, classes unique 26 of 50.",
+  "element_ids": []
+ },
+ {
+  "observation": "The layout is built mostly with flexbox (17 elements) and a small number of grids (5 elements). The grids are likely the three-column card, tile and stat layouts.",
+  "category": "layout",
+  "evidence": "layout: display_flex 17, display_grid 5. The three-column groups at x=200/553/907 repeat in 2 sections.",
+  "element_ids": [
+   "e18",
+   "e54"
+  ]
+ },
+ {
+  "observation": "The copy is a short, factual forum description in plain sentences, with no emoji and no em dashes. It has a single exclamation mark, in the closing CTA.",
+  "category": "copy",
+  "evidence": "text_stats: words 227, emoji 0, em_dashes 0, exclamations 1. The hero says 'An independent online community for Honda Insight owners and fans. A forum operating since 2003...'.",
+  "element_ids": [
+   "e10",
+   "e70"
+  ]
+ },
+ {
+  "observation": "Text on navy uses a light blue-grey (rgb(184,201,217)) for secondary copy and white for headings. On the light background, dark navy-ink (rgb(20,32,48)) is the main text and grey the secondary text.",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(20,32,48) ×52, rgb(255,255,255) ×20, rgb(184,201,217) ×18, rgb(86,100,117) ×13.",
+  "element_ids": [
+   "e10",
+   "e71",
+   "e91",
+   "e25"
+  ]
+ },
+ {
+  "observation": "The footer is a navy band. It has a horizontal row of seven underlined white links, then three small paragraphs: an ownership disclaimer, a postal address and a platform credit. The text runs on the left only, with the right side empty.",
+  "category": "component",
+  "evidence": "ul e76 holds 7 li (Home to RSS feed) at y=1960. Paragraphs e91, e92 and e93 are 695px wide. The footer is 1440×275.",
+  "element_ids": [
+   "e75",
+   "e76",
+   "e91",
+   "e92",
+   "e93"
+  ]
+ },
+ {
+  "observation": "Links are underlined in the body and footer (View all members, footer links) but not in the nav, cards or buttons, so underline marks the plain text links.",
+  "category": "typography",
+  "evidence": "In the screenshot, 'View all members' and the footer links are underlined; nav items and card titles are not.",
+  "element_ids": [
+   "e39",
+   "e78",
+   "e80",
+   "e5"
+  ]
+ },
+ {
+  "observation": "The page is link-dense, with 26 anchors and 0 button elements. The CTAs are all styled anchors. There are 8 ARIA attributes.",
+  "category": "structure",
+  "evidence": "counts: anchors 26, buttons 0, aria_attrs 8.",
+  "element_ids": [
+   "e8",
+   "e11",
+   "e72",
+   "e73",
+   "e74"
+  ]
+ },
+ {
+  "observation": "The page mixes a forum-style content model with a landing-page layout: hero, stats, a card grid of threads and a sign-up band. It also names a parent network (VerticalScope, XenForo) only in the footer.",
+  "category": "copy",
+  "evidence": "The footer text reads 'owned and operated by VerticalScope Inc.' and 'forum software by XenForo'. The hero has stats like 414K Posts.",
+  "element_ids": [
+   "e91",
+   "e93",
+   "e12"
+  ]
+ }
+]

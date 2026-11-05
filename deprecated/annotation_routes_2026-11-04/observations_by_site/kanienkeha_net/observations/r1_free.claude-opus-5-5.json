@@ -1,0 +1,257 @@
+[
+ {
+  "observation": "The page has no h1 element; its heading outline starts at h2 and contains 8 h2s and one h3",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json h1_count: 0, h1: null; heading_outline starts with h2 'Most Recent'; tag_counts h2: 8, h3: 1"
+ },
+ {
+  "observation": "The heading outline does not follow visual order: 'Most Recent', 'Uploading your Notes' and 'She:kon / Greetings' in the main column come before the sidebar headings 'From the Blog', 'Choose your Language!' and the others",
+  "category": "DOM/semantic structure",
+  "evidence": "heading_outline order vs slice_00, where 'From the Blog' is visible at the top right next to the map"
+ },
+ {
+  "observation": "The page uses the semantic landmarks header, main, aside and footer once each, with two nav elements and nine sections",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic: header 1, nav 2, main 1, section 9, aside 1, footer 1; article/figure/blockquote all 0"
+ },
+ {
+  "observation": "A single font family, Segoe UI, accounts for every measured text element",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: [['Segoe UI', 382]]"
+ },
+ {
+  "observation": "Body text is 17px with a 27.2px line height (a 1.6 ratio); h2s are 22.4px at weight 700",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 27.2px; h2 font_size 22.4px, font_weight 700"
+ },
+ {
+  "observation": "The page is 1440px wide and 4706px tall, with content in a centered column running from about x=180 to x=1260 (about 1080px wide)",
+  "category": "layout",
+  "evidence": "layout page_width 1440, page_height 4706; logo rect x 180; owl.gif ends at 1041+219=1260; footer links end near x 1260 in slice_03"
+ },
+ {
+  "observation": "The body uses a two-column layout: a wide main column about 730px wide and a narrower sidebar about 320px wide on the right",
+  "category": "layout",
+  "evidence": "map-nap.png rect w 730 at x 181; sidebar cards start at x ~940 and end at 1260 in slice_00"
+ },
+ {
+  "observation": "The header is a white band holding a green wordmark logo at the left and a small black banner image with stylized lettering at the right",
+  "category": "imagery handling",
+  "evidence": "moh-logo.gif 380x83 at (180,14); owl.gif 219x30 at (1041,41) shows 'WA'TKWANONHWERÁ:TON' in white on black in slice_00"
+ },
+ {
+  "observation": "The logo wordmark 'KANIEN'KÉHA' is in bold green capitals with leaf glyphs over the letters and a small tagline underneath: 'AN OPEN SOURCE ENDANGERED LANGUAGE INITIATIVE'",
+  "category": "imagery handling",
+  "evidence": "slice_00 top-left; alt 'Kanienkeha – An open source endangered language initiative'"
+ },
+ {
+  "observation": "The primary navigation has 11 text items that wrap onto two lines; 'Register' and 'Donate' sit on the second row",
+  "category": "layout",
+  "evidence": "slice_00: Home…Log In on row one, Register and Donate on row two"
+ },
+ {
+  "observation": "The 'Donate' nav item is set apart as a solid green tab with white text and rounded top corners; the other nav items have no background",
+  "category": "component choices",
+  "evidence": "slice_00 Donate tab; green rgb(27,154,75) appears 4 times in top_backgrounds"
+ },
+ {
+  "observation": "A green horizontal rule separates the white header from the body, and a matching green rule opens the footer",
+  "category": "decoration/effects",
+  "evidence": "slice_00 green line under the nav; slice_03 green line above the white footer"
+ },
+ {
+  "observation": "In the screenshot the area between header and footer is a dark charcoal with a subtle texture, while the computed body background is a pale blue-gray",
+  "category": "color",
+  "evidence": "colors.body_bg rgb(238,246,248) vs the dark textured background visible in slices 00–03"
+ },
+ {
+  "observation": "The search form is a pill-shaped field with a green outline that joins a solid green 'Search' button on its right",
+  "category": "component choices",
+  "evidence": "slice_00 search bar; primary_button text 'Search', bg rgb(27,154,75), color white, padding 0px 24px; bucket_pill 8"
+ },
+ {
+  "observation": "The measured radius of the Search button is 0px, yet the combined control looks rounded, which suggests the rounding and clipping come from a wrapper",
+  "category": "component choices",
+  "evidence": "primary_button.radius '0px' vs the rounded right end visible in slice_00"
+ },
+ {
+  "observation": "Below the search field, a muted 'Try these:' label is followed by three pale green pill chips with suggested queries: apple, colors, numbers",
+  "category": "component choices",
+  "evidence": "slice_00 under the search bar"
+ },
+ {
+  "observation": "The welcome paragraph under the search bar is dark text on the dark background and is barely visible in the render",
+  "category": "color",
+  "evidence": "slice_00 'Welcome to Kanienkeha.net, an open source endangered language initiative…' in low-contrast gray; body_color rgb(42,47,58)"
+ },
+ {
+  "observation": "A pink-magenta pill button, 'Support us on Patreon!', sits centered below the welcome text",
+  "category": "color",
+  "evidence": "slice_00; top_backgrounds includes rgb(214,69,127) once"
+ },
+ {
+  "observation": "A second, coral-colored call to action, 'Become a patron on Patreon', fills the width of the 'Spread the word!' sidebar card",
+  "category": "color",
+  "evidence": "slice_01; top_backgrounds includes rgb(249,104,84) once"
+ },
+ {
+  "observation": "The main column opens with a large illustrated world map with green and pink circular location markers and the text '200+ Locations Kanienkeha Map' in a decorative font",
+  "category": "imagery handling",
+  "evidence": "map-nap.png at 730x382, alt 'World map: Kanienkeha Map, 200+ locations'; slice_00"
+ },
+ {
+  "observation": "The map image is shown at 730x382, larger than its natural 650x340 size",
+  "category": "imagery handling",
+  "evidence": "images: map-nap.png natural [650,340], rect w 730 h 382"
+ },
+ {
+  "observation": "Content blocks are white cards with rounded corners of about 8–15px and no drop shadows",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets bucket_8_15: 92; box_shadows: 0; white cards across all slices"
+ },
+ {
+  "observation": "The page has no gradients, backdrop blur, animations or transforms, but 50 elements declare CSS transitions",
+  "category": "decoration/effects",
+  "evidence": "effects: gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, transitions 50"
+ },
+ {
+  "observation": "Most elements have square corners, and none fall in the 1–7px or 16px+ radius ranges",
+  "category": "decoration/effects",
+  "evidence": "bucket_0: 282, bucket_1_7: 0, bucket_16_plus: 0"
+ },
+ {
+  "observation": "The 'Most Recent' card has a solid green square icon before its heading and three pill filter tabs: All (solid green, active), Phrases and Occupations (green outline)",
+  "category": "component choices",
+  "evidence": "slice_00 Most Recent card"
+ },
+ {
+  "observation": "Recent entries appear as a two-column grid of small cards. Each card shows a bold English term above its Kanien'kéha translation in green italics",
+  "category": "typography",
+  "evidence": "slices 00–02, e.g. 'Sit down and eat' / 'Sátien tánon tesatská:hon'; top_text_colors rgb(15,107,50) 73 occurrences"
+ },
+ {
+  "observation": "Each entry card has a thick left accent border. It is green on the phrase entries and blue on the occupation entries, so the color encodes category",
+  "category": "color",
+  "evidence": "slice_01: green left borders on 'Fix your hair', 'Brush your teeth'; blue on 'Photographer', 'Goalie', 'Astronaut'"
+ },
+ {
+  "observation": "The entry list is long and makes up most of the page's vertical length, running from the first slice into the third",
+  "category": "layout",
+  "evidence": "entry cards span slice_00 to slice_02, ending at 'Plumber'/'Councillors'"
+ },
+ {
+  "observation": "Occupation entries are listed in paired masculine and feminine forms, marked with (m) and (f) suffixes",
+  "category": "copy treatment",
+  "evidence": "slice_01/02: 'Steelworker (m)', 'Steelworker (f)', 'Writer (m)', 'Writer (f)', 'Baker (m)', 'Baker (f)'"
+ },
+ {
+  "observation": "Pagination uses square bordered buttons numbered 1–4 plus 'Next ›' and 'Last »'; the current page '1' is filled green",
+  "category": "component choices",
+  "evidence": "slice_02 below the entry grid"
+ },
+ {
+  "observation": "The sidebar 'From the Blog' card opens with an illustration of blue signboards labeled Resources, Blogging, Culture, Language and Talk, followed by five blue link titles separated by thin rules",
+  "category": "component choices",
+  "evidence": "protest.png 282x137, alt 'Culture, Blogging, Resources, Language, Talk'; slice_00"
+ },
+ {
+  "observation": "Blue is the link color, used for blog titles, 'Random Word' and the footer links",
+  "category": "color",
+  "evidence": "top_text_colors rgb(19,128,181) 30 occurrences; slice_00 blog links, slice_01 'Random Word', slice_03 footer links"
+ },
+ {
+  "observation": "The 'Choose your Language!' card holds two bordered buttons with 24px flag icons: English (pale green fill, selected) and Kanienkeha",
+  "category": "component choices",
+  "evidence": "England.png and Mohawk.png at 24x24; slice_00"
+ },
+ {
+  "observation": "Each sidebar card heading is paired with a small green line-art illustration on its left",
+  "category": "imagery handling",
+  "evidence": "wordoftheday1.jpg 40x43, social1.jpg 49x47, forum-stats1.png 101x43; slice_01"
+ },
+ {
+  "observation": "The '#WordOfTheDay' heading is written as a hashtag, and its card holds only an underlined 'Random Word' link",
+  "category": "copy treatment",
+  "evidence": "heading_outline '#WordOfTheDay'; slice_01"
+ },
+ {
+  "observation": "The 'Spread the word!' card offers Facebook, Twitter and Instagram as three equal pale-green buttons with green bold text",
+  "category": "component choices",
+  "evidence": "slice_01; top_backgrounds rgb(228,244,234) 11 occurrences"
+ },
+ {
+  "observation": "The 'Total Site Numbers' card is a 2x2 grid of stat tiles with large bold green numbers (2650 Words, 159 Categories, 260 Tags, 10 Blog); the Categories and Blog labels are underlined links",
+  "category": "component choices",
+  "evidence": "slice_01; display_grid 5"
+ },
+ {
+  "observation": "The sidebar ends at about the top of the second slice, leaving a long stretch of empty dark background to the right of the main column",
+  "category": "layout",
+  "evidence": "slices 01–03 show nothing to the right of the main column after the 'Total Site Numbers' card"
+ },
+ {
+  "observation": "The 'Uploading your Notes' card pairs a bold h3 subheading and a body paragraph with a grainy illustration of a notebook, an arrow and a phone uploading to a cloud with the site logo",
+  "category": "imagery handling",
+  "evidence": "notes.jpg 523x330, alt 'Upload your language notes'; slices 02–03"
+ },
+ {
+  "observation": "Several headings use bilingual slash phrasing that pairs a Kanien'kéha word with its English gloss",
+  "category": "copy treatment",
+  "evidence": "'She:kon / Greetings' h2; 'Nia:wen / Thank you' in slice_03"
+ },
+ {
+  "observation": "The 'She:kon / Greetings' card is a first-person mission message that ends with a bold sign-off naming 'Benjamin Doolittle'",
+  "category": "copy treatment",
+  "evidence": "slice_03; strong count 2, b count 4"
+ },
+ {
+  "observation": "The footer is white with two columns: 'MohDictionary' social handles with small service icons on the left, and an inline row of underlined links plus credits on the right",
+  "category": "layout",
+  "evidence": "slice_03; favicons, fBV3Wtxe.png, Gumroad-icon.png 16–18px images at y≈4459–4489"
+ },
+ {
+  "observation": "The handle 'mohdictionary' is repeated six times in the footer, each with a different 16px platform icon",
+  "category": "copy treatment",
+  "evidence": "slice_03 footer left column"
+ },
+ {
+  "observation": "Two green silhouette illustrations anchor the footer: a longhouse with trees, and figures with trees",
+  "category": "imagery handling",
+  "evidence": "longhouse1.jpg 293x91 alt 'Longhouse'; wearefriends.jpg 280x54 alt 'We are friends'"
+ },
+ {
+  "observation": "Green is the dominant accent, used for the logo, headings, active states, buttons and translations, against near-black body text",
+  "category": "color",
+  "evidence": "body_color rgb(42,47,58) 265; rgb(15,107,50) 73 text uses; rgb(27,154,75) button bg"
+ },
+ {
+  "observation": "The page relies heavily on raster images (21 img elements) and uses no inline SVG",
+  "category": "imagery handling",
+  "evidence": "counts images 21, svgs 0"
+ },
+ {
+  "observation": "Every image has an alt attribute, and decorative icons use empty alt text",
+  "category": "DOM/semantic structure",
+  "evidence": "alt_missing 0; many images with alt ''"
+ },
+ {
+  "observation": "Styling comes from one embedded style block, with no external stylesheets and 38 unique hand-named classes (none Tailwind-like)",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts style 1, stylesheets 0; classes unique 38, total 197, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "The page is link-dense, with 104 anchors and 105 spans against only 10 paragraphs and 459 words",
+  "category": "DOM/semantic structure",
+  "evidence": "counts anchors 104; span 105; p 10; text_stats words 459"
+ },
+ {
+  "observation": "The copy uses four exclamation marks and no emoji or em dashes",
+  "category": "copy treatment",
+  "evidence": "text_stats exclamations 4, emoji 0, em_dashes 0; e.g. 'Choose your Language!', 'Spread the word!', 'Support us on Patreon!'"
+ },
+ {
+  "observation": "The head has only charset, viewport and description meta tags and no JSON-LD; the page runs a single script",
+  "category": "DOM/semantic structure",
+  "evidence": "meta_names [charset, viewport, description]; jsonld_blocks 0; scripts 1"
+ }
+]

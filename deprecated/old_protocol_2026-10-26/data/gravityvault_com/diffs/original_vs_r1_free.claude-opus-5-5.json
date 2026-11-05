@@ -1,0 +1,302 @@
+[
+ {
+  "observation": "Page titles differ: A's title includes the state list and the word 'Climbing'; B's is a shorter brand-only title",
+  "category": "metadata",
+  "evidence": "A title 'The Gravity Vault | Indoor Rock Climbing Gyms | NJ, NY & PA'; B title 'The Gravity Vault Indoor Rock Gyms'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B declares a document language; A leaves it blank",
+  "category": "DOM/semantic structure",
+  "evidence": "lang: A '' vs B 'en'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has many more meta tags, including keywords, author, a duplicate viewport and google-site-verification",
+  "category": "metadata",
+  "evidence": "A meta count 18, meta_names include keywords/author/viewport x2; B meta count 3 (charset, viewport, description)",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has a single H1 hero headline; A has no H1 or H2 at all",
+  "category": "DOM/semantic structure",
+  "evidence": "h1_count A 0, B 1 ('Reach new heights, together.'); A h2 null, B h2 36.8px/700",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's heading outline begins at H4 (the feature cards) and then uses H3 for states; B uses an ordered H1→H2→H3→H4 hierarchy",
+  "category": "DOM/semantic structure",
+  "evidence": "A outline: h4 Gift Cards...h4 Franchising, then h3 California...; B: h1, h2 Start climbing, h3 cards, h2 Our locations, h3 states, h4 cities",
+  "which_side": "both"
+ },
+ {
+  "observation": "B marks each location city name as an H4 heading; in A the city names are not headings",
+  "category": "DOM/semantic structure",
+  "evidence": "B outline lists 15 h4 cities (Marin County, CA ... Radnor, PA); A outline has no city entries; A tag_counts list h5: 17",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a <main> landmark; A has none",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic.main A 0, B 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has a far larger DOM, with about 3× as many divs",
+  "category": "DOM/semantic structure",
+  "evidence": "div A 151 vs B 49; class total A 377 (140 unique) vs B 85 (26 unique)",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads 17 scripts and 3 external stylesheets; B has 1 script and no external stylesheets",
+  "category": "DOM/semantic structure",
+  "evidence": "counts.scripts A 17 / B 1; stylesheets A 3 / B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses many inline style attributes; B uses almost none",
+  "category": "DOM/semantic structure",
+  "evidence": "inline_style_attrs A 31 vs B 2",
+  "which_side": "A"
+ },
+ {
+  "observation": "B includes ARIA attributes; A has none",
+  "category": "DOM/semantic structure",
+  "evidence": "aria_attrs A 0 vs B 4",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses CSS grid and flexbox for layout; A uses neither",
+  "category": "layout",
+  "evidence": "display_grid A 0 / B 11; display_flex A 0 / B 29",
+  "which_side": "B"
+ },
+ {
+  "observation": "Typeface: A sets everything in Roboto plus the FontAwesome icon font; B uses the system-ui stack with some Arial",
+  "category": "typography",
+  "evidence": "fonts A Roboto 425, FontAwesome 10; B system-ui 222, Arial 9",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's body text is slightly larger, with more line height",
+  "category": "typography",
+  "evidence": "body font A 16px/24px vs B 17px/27.2px",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a large bold white hero headline at 54.4px; A has no headline text in the hero, only a photo slider",
+  "category": "typography",
+  "evidence": "B h1 54.4px weight 700 color white; A slice_00 hero is an image with carousel dots",
+  "which_side": "B"
+ },
+ {
+  "observation": "Body text color differs: A uses mid-gray, B uses near-black navy",
+  "category": "color",
+  "evidence": "body_color A rgb(99,99,99) vs B rgb(28,36,48)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page background differs: A is pure white, B is off-white gray",
+  "category": "color",
+  "evidence": "body_bg A rgb(255,255,255) vs B rgb(246,247,249)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's accent is a medium blue used on the nav bar, headings and links; B's accent is orange-red, used on CTAs, links and underlines",
+  "category": "color",
+  "evidence": "A top bg rgb(1,96,153) x19, text rgb(1,96,153) x66; B top bg rgb(232,83,43) x6; B slice_00 orange buttons and 'Buy a gift card →' links",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses bright red for its 'Coming Soon!' ribbons; B renders 'COMING SOON!' as orange pill badges",
+  "category": "component choices",
+  "evidence": "A bg rgb(237,31,36) x3, ribbon flags on image corners (A slice_01/02); B uppercase pill badges above city names (B slice_03), pill bucket 8",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses dark navy bands (top utility bar, hero, mission block, footer); A uses a blue nav strip and blue/darker-blue footer bars",
+  "category": "color",
+  "evidence": "B bgs rgb(29,53,87) x5, rgb(18,35,60) x2; A bgs rgb(1,96,153), rgb(1,64,102), rgb(51,51,51)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's corners are almost all square; B rounds cards, inputs and buttons",
+  "category": "decoration/effects",
+  "evidence": "border radius bucket_0 A 431 vs B 190; bucket_8_15 A 0 vs B 33; primary button radius A 0px vs B 8px",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has one gradient background (the hero area); A has none",
+  "category": "decoration/effects",
+  "evidence": "gradient_backgrounds A 0 / B 1; B slice_00 hero navy shading",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's hero photo is a floating rounded image with a drop shadow in the right column",
+  "category": "imagery handling",
+  "evidence": "B gym.png rect x797 w473 h233; slice_00 shows a shadowed rounded image beside the headline",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's hero is a full-width image carousel with pagination dots, and the same header image appears twice (overlapping)",
+  "category": "imagery handling",
+  "evidence": "A MAIN_WEBSITE_Header image 1310×442 at y172 appears twice, image_overlaps area 579020; slice_00 carousel dots",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses a distinct photo for each location and feature card; B reuses a single image (gym.png) for the hero and all 15 location cards",
+  "category": "imagery handling",
+  "evidence": "A images: 21 different filenames (GVUSRSP-31.jpg, Montclair_350x250.jpg, etc.); B: 16 instances of gym.png",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows 'coming soon' location images in grayscale and active ones in color",
+  "category": "imagery handling",
+  "evidence": "B slice_02/03: Nassau County, Lehigh Valley and Philadelphia images are desaturated, while Melville and Radnor are in color",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's four intro feature blocks open with photos; B's 'Start climbing' cards have no images and use numbered badges 1-4 instead",
+  "category": "component choices",
+  "evidence": "A slice_00 four 305×178 photos above the headings; B slice_00 navy squares numbered 1, 2, 3, 4 on white cards",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds an arrow link at the bottom of each feature card; A's feature blocks have no explicit link text",
+  "category": "copy treatment",
+  "evidence": "B 'Buy a gift card →', 'Choose your gym →', 'Read our policies →', 'Learn about ownership →'; A slice_00 shows only paragraphs",
+  "which_side": "B"
+ },
+ {
+  "observation": "A separates each feature heading from its body with a horizontal rule",
+  "category": "decoration/effects",
+  "evidence": "A slice_00: gray line under 'Gift Cards', 'Waivers', etc.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has hero copy and dual CTAs that A does not",
+  "category": "copy treatment",
+  "evidence": "B slice_00: subtitle 'Indoor rock climbing for everyone — young or old...' with 'Find a Location' (filled orange) and 'Options to Climb' (outlined) pill buttons; B em_dashes 1 vs A 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "A places the location selector and search box in the header; B moves 'Find a Location' to its own bar below the hero, with an orange Search button and no free-text search",
+  "category": "layout",
+  "evidence": "A slice_00 header has 'Select a State' dropdown and 'Search' input; B slice_00 strip with label, select and 'Search' button; input A 8 vs B 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's main nav is a full-width blue bar of white links separated by '|'; B's nav sits inline beside the logo on white, in navy text, with a highlighted 'Home' pill",
+  "category": "component choices",
+  "evidence": "A slice_00 blue strip 'Options to Climb | Locations | ...'; B slice_00 white header with 'Home' in a light-gray rounded background",
+  "which_side": "both"
+ },
+ {
+  "observation": "Utility links differ: A shows underlined 'Gift Cards'/'Contact Us' at top right of the white header; B puts them in a thin dark navy top bar",
+  "category": "layout",
+  "evidence": "A slice_00 underlined blue links; B slice_00 white links on navy strip",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's header region shows a blank off-white band between the top bar and the nav, and the sticky nav overlaps the hero headline in the screenshot",
+  "category": "layout",
+  "evidence": "B slice_00: empty gray band y≈40-115; 'Reach new heights,' clipped under the nav bar",
+  "which_side": "B"
+ },
+ {
+  "observation": "A presents the mission statement as bold gray text beside a 'Links' sidebar column with a very large logo; B centers it in white on a dark navy band with a smaller logo",
+  "category": "layout",
+  "evidence": "A logo rect 817×176 at y1141, Links list left (slice_00/01); B logo 298×64 centered at y1350, navy section (slice_01)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a 'Links' sidebar nav list (Options to Climb, Find a Location, FAQs, About Us...) mid-page; B moves those links into a multi-column footer",
+  "category": "component choices",
+  "evidence": "A slice_00/01 'Links' column; B slice_04 footer columns with FAQs, About Us, Careers, etc.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds an 'Our locations' H2 section title; A goes straight from the mission block to state headings",
+  "category": "copy treatment",
+  "evidence": "B outline h2 'Our locations'; A outline has no such heading",
+  "which_side": "B"
+ },
+ {
+  "observation": "A separates state groups with thin horizontal divider lines; B underlines each state heading with a short orange bar",
+  "category": "decoration/effects",
+  "evidence": "A slice_01/02 light rule above 'New Jersey', 'New York', 'Pennsylvania'; B slice_01-03 orange underline under the state names",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's location items are bare images with a thin border and text below on white; B's are white rounded cards that hold the image and text together",
+  "category": "component choices",
+  "evidence": "A slice_01 bordered photo + gray caption; B slice_02 rounded white cards with 1px borders on gray background",
+  "which_side": "both"
+ },
+ {
+  "observation": "City-name styling differs: A uses regular-weight gray captions; B uses bold navy names",
+  "category": "typography",
+  "evidence": "A slice_01 'Brick, NJ' gray regular; B slice_02 'Brick, NJ' bold navy",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both lay out locations in a 3-column grid with roughly 353px-wide images at the same x positions",
+  "category": "layout",
+  "evidence": "A image rects x 170/543/917 w353; B x 171/544/918 w351",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's page is about 1,080px taller",
+  "category": "layout",
+  "evidence": "page_height A 4323 vs B 5404",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's newsletter signup is a compact strip in the blue footer bar with an envelope icon, a bordered e-mail input and a check-icon submit; B gives it a white section with an H2, a rounded input and an orange 'Sign up' pill",
+  "category": "component choices",
+  "evidence": "A slice_03 blue bar 'Signup for our Newsletter!'; B slice_03 H2 'Signup for our Newsletter!' with 'Your email address' and 'Sign up'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows social media as FontAwesome icons; B shows them as text links",
+  "category": "component choices",
+  "evidence": "A slice_03 f/instagram/twitter/linkedin/pinterest glyphs, FontAwesome 10 elements, <i> 10; B slice_04 'Facebook Instagram Twitter LinkedIn Pinterest' text",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is two thin bars; B's is a tall dark navy footer with a logo, link columns, a divider and a bottom legal row",
+  "category": "layout",
+  "evidence": "A slice_03 two bars ~45px each; B slice_04 navy footer with logo, columns, rule, copyright row",
+  "which_side": "both"
+ },
+ {
+  "observation": "Every B image is present in the DOM with a size; A has hidden zero-size images, including a duplicate logo and an image with no src",
+  "category": "imagery handling",
+  "evidence": "A images with rect 0×0: logo.png, Header_for_Brick__1_, empty file; B has no zero-rect images",
+  "which_side": "A"
+ },
+ {
+  "observation": "Alt text: B gives the logo and hero image descriptive alt text and leaves the location thumbnails with empty alt; A's alts are all empty, and one image has no alt attribute",
+  "category": "imagery handling",
+  "evidence": "B alt 'Climbers' view of a Gravity Vault gym...', alt_missing 0; A alt '' throughout, alt_missing 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages have the same number of article elements and exclamation marks, and B has slightly more words",
+  "category": "copy treatment",
+  "evidence": "article 15 each; exclamations 19 each; words A 569 vs B 640",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has more transitions and box shadows than B",
+  "category": "decoration/effects",
+  "evidence": "transitions A 10 / B 4; box_shadows A 4 / B 2",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's main content is wider at the top (the hero and feature row span x65–1375), then narrows to 170–1270; B keeps a constant 170–1270 container",
+  "category": "layout",
+  "evidence": "A hero rect x65 w1310, feature images x65..1375; B all content rects begin at x≈170",
+  "which_side": "A"
+ }
+]

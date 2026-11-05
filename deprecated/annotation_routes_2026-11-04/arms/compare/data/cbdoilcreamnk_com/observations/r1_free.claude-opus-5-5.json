@@ -1,0 +1,302 @@
+[
+ {
+  "observation": "Page title differs: A uses a long keyword-stuffed title, B a short one",
+  "category": "metadata",
+  "evidence": "A title 'CBD Oil & Cream - CBD Products - CBD Store'; B title 'CBD Oil Cream'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no h1 and starts its outline with an h4; B has a single h1",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 0, first heading h4 'Cbd Oil For Pain Walmart'; B h1_count 1 'How To Make Cannabis Oil' (54.4px, 700, white)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B nests the product names under the dogs section as h3, while A uses h2 for every heading",
+  "category": "DOM/semantic structure",
+  "evidence": "A outline: 10 h2s including 'Cbd For Life', 'Pure Cbd'; B: 'Cbd For Life', 'Pure Cbd', 'Cbd Oil Amazon', 'Cbd' are h3 under the h2 'Cbd For Dogs & Favourites'",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds section headings that A does not have",
+  "category": "copy treatment",
+  "evidence": "B headings 'Shop by Category', 'The FSA's warning on CBD', 'Join The Club' (h2), and footer h3s 'Company/Support/Contact Us'; none of these are in A's heading outline",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses a modal popup ad as a heading element; B has no popup",
+  "category": "component choices",
+  "evidence": "A h2 'Hurry up! We are now offering discount for new customers!' in red inside a white modal with a 'Get My Discount!' blue button and an rgba(0,0,0,0.4) overlay; B has no equivalent",
+  "which_side": "A"
+ },
+ {
+  "observation": "A places the FSA article text at the very top of the page as a full-width dark navy banner of centered paragraphs; B moves it into a mid-page 'In the News' article",
+  "category": "layout",
+  "evidence": "A slice 0 shows centered serif paragraphs on rgb(21,42,81) above the header; B slice 2 shows a narrow left-aligned column with a gold 'IN THE NEWS' eyebrow above the h2",
+  "which_side": "both"
+ },
+ {
+  "observation": "B renders the Emily Miles quote as a blockquote with a gold left rule and italic text; in A the quote sits inline in the paragraph",
+  "category": "copy treatment",
+  "evidence": "B semantic blockquote 1, slice 3 italic quote with a gold vertical bar; A blockquote 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "Font families differ completely: A uses a Cooper Light display face with Alegreya, while B pairs Helvetica Neue with Georgia",
+  "category": "typography",
+  "evidence": "A fonts: Conv_CooperLtBT-Regular 601, Alegreya Sans 63, Alegreya 22, JudgemeStar 20, Conv_LucidaGrande 15, Font Awesome 5 Brands 5; B: Helvetica Neue 182, Georgia 153",
+  "which_side": "both"
+ },
+ {
+  "observation": "B sets its headings in bold sans-serif and its body copy in serif Georgia; A's headings use a lighter rounded face",
+  "category": "typography",
+  "evidence": "B h2 35.2px weight 700, slices show bold Helvetica headings with serif paragraphs; A h2 36px weight 600 in a rounded face",
+  "which_side": "both"
+ },
+ {
+  "observation": "The color palettes differ: A is navy-based and B is forest-green with gold",
+  "category": "color",
+  "evidence": "A top text rgb(21,42,81) ×454 and navy backgrounds ×9; B text rgb(38,48,42), backgrounds rgb(31,65,48) and rgb(47,93,70), accent rgb(201,162,75)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page background tints differ: cool off-white on A, warm cream on B",
+  "category": "color",
+  "evidence": "A body_bg rgb(249,249,252); B body_bg rgb(250,248,243)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text color: pure black on A, dark green-gray on B",
+  "category": "color",
+  "evidence": "A body_color rgb(0,0,0); B body_color rgb(38,48,42)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The primary buttons differ: A's is a white 'Menu' button with 2px radius, while B's is a gold pill reading 'Shop CBD'",
+  "category": "component choices",
+  "evidence": "A primary_button bg white, radius 2px; B bg rgb(201,162,75), radius 99px, padding 12px 24px",
+  "which_side": "both"
+ },
+ {
+  "observation": "The header structure differs: A has a large centered logo, contact info on the right, and two rows of nav links plus a search box; B has a slim dark green utility bar and a single white nav bar with a small logo, 5 links and a Cart pill",
+  "category": "layout",
+  "evidence": "A slice 0: logo 325×97, 'Search products…' field, nav rows 'How To Make Cannabis…', 'Cbd Dog Treats'; B slice 0: top bar 'Where To Buy Cbd Cream For Pain' / 'Contact Us · 208-969-1282', nav Shop/About CBD/News/Join/Contact, 'Cart (0)'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The logo is rendered at about a third of A's area in B",
+  "category": "imagery handling",
+  "evidence": "A logo rect 325×97; B logo rect 154×46",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero differs: A uses a full-width image slider with 3 stacked slides, while B uses a single darkened background image with an overlaid h1, a subtitle and a CTA",
+  "category": "component choices",
+  "evidence": "A has 3 slider images at 1440×617 overlapping 888480px² each; B slice 0 shows white h1, serif subtitle 'Explore full spectrum CBD drops…' and a 'Shop CBD' button over the image",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has images overlapping one another; B has none",
+  "category": "imagery handling",
+  "evidence": "A image_overlaps lists 7 pairs (slider slides, popup XNXYOGj.jpg over logo); B image_overlaps []",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's main nav bar appears to sit over the hero image, with the image visible above and below it",
+  "category": "layout",
+  "evidence": "B slice 0: hero image text 'QUALITY' shows above the white nav bar at y≈103–132 and continues below it",
+  "which_side": "B"
+ },
+ {
+  "observation": "The category tiles have square corners and a dark border in A, but rounded corners and no border in B",
+  "category": "decoration/effects",
+  "evidence": "A slice 0/1 tiles have a dark navy edge with sharp corners; B slice 0 tiles have rounded corners; B radius bucket_16_plus 99 vs A 9",
+  "which_side": "both"
+ },
+ {
+  "observation": "Border radius usage differs overall: A is mostly square-cornered with some pills; B uses many large radii and no pills",
+  "category": "decoration/effects",
+  "evidence": "A buckets: 0→677, 1–7→37, 16+→9, pill→7; B: 0→222, 8–15→13, 16+→99, pill 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "The category tiles are larger and differently spaced in B",
+  "category": "layout",
+  "evidence": "A category images 346×346 at x 140/547/954; B 349×349 at x 176/545/915 with a narrower gap",
+  "which_side": "both"
+ },
+ {
+  "observation": "The content container is narrower in B",
+  "category": "layout",
+  "evidence": "A content starts at x≈135–140 and ends around 1305; B starts at x=176 and ends around 1264",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Sale!' badges differ: A uses green ribbon flags over the image corner, B uses small gold pills next to the price",
+  "category": "component choices",
+  "evidence": "A slice 1 shows green 'SALE!' flags at the top-left of cards; B slice 1 shows a gold 'Sale!' pill before 'From: $79.00' and '$59.99 $49.99'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The product cards differ: A uses shadowed white cards without borders and a navy rounded-font title, while B uses bordered rounded cards with a bold green sans title and a gray price",
+  "category": "component choices",
+  "evidence": "A slice 1 'Cbd For Life' with 'From: $14.99' serif; B slice 1 cards with a thin border, bold 'Cbd For Life', and Helvetica price",
+  "which_side": "both"
+ },
+ {
+  "observation": "The strikethrough price uses different tags",
+  "category": "DOM/semantic structure",
+  "evidence": "A uses del 1 and ins 1; B uses s 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "The feature rows differ: A always puts the image on the left with a white text card on the right, while B alternates image left and right with no card behind the text",
+  "category": "layout",
+  "evidence": "A slices 1–2: image at x=140 for statue, woman and dog, with white panels on the right; B images at x 176, 744, 176 (statue left, AliNOMNOM right, dog left)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds descriptive paragraphs to each feature row; in A the rows hold only a heading and a button",
+  "category": "copy treatment",
+  "evidence": "B: 'Got questions about CBD? We have answers…', 'Learn how different CBD oils compare…', 'CBD isn't just for people…'; A panels show only the h2 and button over a large empty white area",
+  "which_side": "B"
+ },
+ {
+  "observation": "The feature buttons differ: filled navy pills in A, outlined green pills in B",
+  "category": "component choices",
+  "evidence": "A 'More CBD Questions?', 'Learn More' have a solid navy fill and white serif text; B has a white fill, green border and bold sans text",
+  "which_side": "both"
+ },
+ {
+  "observation": "The feature images are slightly smaller in B and have rounded corners with a shadow",
+  "category": "imagery handling",
+  "evidence": "A feature images 549×549; B 520×520 with rounded corners and a soft shadow (slices 1–2)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Cbd Clinic Products' band differs: A uses a cannabis-leaf background image with large serif links, while B uses a plain white section with a bold heading and small underlined links",
+  "category": "imagery handling",
+  "evidence": "A slice 3: leaf photo band, 'Hemp Oil Benefits | Plus Cbd Oil' in large underlined serif; B slice 3: white background, small bold green underlined links",
+  "which_side": "both"
+ },
+ {
+  "observation": "The newsletter signup differs: A puts a small field with a check icon inside the footer column, while B uses a dedicated full-width green band with a centered input and a gold 'Sign Up' button",
+  "category": "component choices",
+  "evidence": "A slice 3 'Join The Club' column with an 'email@example.com' input; B slice 3 green rgb(47,93,70) band, 'Your email address' input and gold button",
+  "which_side": "both"
+ },
+ {
+  "observation": "The social links differ: circular Font Awesome icon buttons in A, text-labelled outline pills in B",
+  "category": "component choices",
+  "evidence": "A slice 3: 5 circle icons (Font Awesome 5 Brands font); B slice 4: pills reading Twitter/Facebook/Pinterest/Instagram/YouTube",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer colors differ: navy in A, dark forest green in B",
+  "category": "color",
+  "evidence": "A footer is rgb(21,42,81)-style navy (slice 3); B footer is dark green rgb(31,65,48) (slice 4)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer column count differs: 4 columns in A including the newsletter, 3 in B",
+  "category": "layout",
+  "evidence": "A columns: Join The Club / Company / Support / Contact Us; B columns: Company / Support / Contact Us",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer contact content differs: A lists emails in all-bold text, while B bolds only the labels and omits the email lines",
+  "category": "copy treatment",
+  "evidence": "A 'Email: Info@cbdoil', 'Wholesale@cbdoil' in bold; B 'Phone:', 'Hours:', 'Wholesale:' labels bold with regular values, no email",
+  "which_side": "both"
+ },
+ {
+  "observation": "The copyright bar differs: A puts it on a light strip below the footer, while B keeps it inside the dark footer above a divider and puts the payment icons on a white rounded panel",
+  "category": "layout",
+  "evidence": "A slice 3: '© CBD Oil 2020' on a light background; B slice 4: inside the green footer with a hairline rule and a white box around the payment icons",
+  "which_side": "both"
+ },
+ {
+  "observation": "B includes a collapsible 'Browse popular topics' disclosure",
+  "category": "component choices",
+  "evidence": "B details 1 / summary 1; slice 3 shows '▶ Browse popular topics'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A includes a header product search field",
+  "category": "component choices",
+  "evidence": "A slice 0 'Search products…' input; A input count 14 vs B 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "B is taller",
+  "category": "layout",
+  "evidence": "page_height A 4987 vs B 5604",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid; A uses none",
+  "category": "layout",
+  "evidence": "display_grid A 0 vs B 7; display_flex A 12, B 11",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has far more scripts and styles; B has a single inline style block and one script",
+  "category": "DOM/semantic structure",
+  "evidence": "A script 54, stylesheets 31, style 23, link 41; B script 1, style 1, stylesheets 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "The class counts differ greatly",
+  "category": "DOM/semantic structure",
+  "evidence": "A classes total 1300, unique 368; B total 54, unique 27",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has many more anchors, list items and divs",
+  "category": "DOM/semantic structure",
+  "evidence": "A a 241, li 206, ul 34, div 116; B a 128, li 98, ul 4, div 35",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses figure elements; B uses none but adds a blockquote",
+  "category": "DOM/semantic structure",
+  "evidence": "A figure 9, blockquote 0; B figure 0, blockquote 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "The alt text differs: A uses keyword phrases unrelated to the images, while B uses descriptive alts",
+  "category": "imagery handling",
+  "evidence": "A alt 'Medterra Cbd' for CBD_Statue.png and 'Cbd Distributors' for CBD_Topicals; B alt 'CBD statue', 'CBD topicals'. A alt_missing 1, B 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has much more motion styling",
+  "category": "decoration/effects",
+  "evidence": "transitions A 206 vs B 7; animations A 1 vs B 0; transforms A 11 vs B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has much more ARIA and inline styles",
+  "category": "DOM/semantic structure",
+  "evidence": "aria_attrs A 72 vs B 2; inline_style_attrs A 52 vs B 4",
+  "which_side": "A"
+ },
+ {
+  "observation": "The metadata is reduced in B",
+  "category": "metadata",
+  "evidence": "A has 16 meta incl. og:* and twitter:*, robots, keywords; B has charset, viewport, description only; lang 'en-US' vs 'en'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The text volume and exclamation marks differ",
+  "category": "copy treatment",
+  "evidence": "words A 391 vs B 445; exclamations A 5 vs B 2; emoji A 1 vs B 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "The section separators differ: B uses hairline rules and alternating cream and white section backgrounds, while A uses a uniform light background",
+  "category": "decoration/effects",
+  "evidence": "B slices 1–3 show thin gray dividers and cream/white alternation around the feature and news sections; A body stays rgb(249,249,252) throughout",
+  "which_side": "B"
+ }
+]

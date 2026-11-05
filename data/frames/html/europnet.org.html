@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EuropNet - Réseau</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="ROBOTS" content="INDEX, FOLLOW" />
+<meta name="Keywords" content="EuropNet MagIRC IRC Chat Statistics Denora stats phpDenora" />
+<meta name="Description" content="EuropNet Network Statistics powered by MagIRC" />
+<meta property='og:title' content='EuropNet'/>
+<meta property='og:url' content='https://stats.europnet.org/'/>
+<meta property='og:image' content='https://stats.europnet.org/theme/default/img/logofb.png'/>
+<meta property='og:site_name' content='EuropNet'/>
+<meta property='og:description' content='EuropNet Network Statistics'/>
+<base href="https://stats.europnet.org/" />
+<link rel="icon" href="theme/default/img/favicon.ico" type="image/x-icon">
+<link href="node_modules/jquery-ui-themes/themes/smoothness/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="node_modules/datatables.net-jqui/css/dataTables.jqueryui.min.css" rel="stylesheet" type="text/css" />
+<link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" type="text/css" />
+<link href="theme/default/css/font.css" rel="stylesheet" type="text/css" />
+<link href="theme/default/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+    <a href="./"><img src="theme/default/img/logo-en-white.png" alt="MagIRC" title="" id="logo" /></a>
+    <div id="menu">
+        <ul>
+            <li><a href="network" class="active"><span>&nbsp;Réseau</span></a></li>
+            <li><a href="server"><span>&nbsp;Serveurs</span></a></li>
+            <li><a href="channel"><span>&nbsp;Canaux</span></a></li>
+            <li><a href="user"><span>&nbsp;Utilisateurs</span></a></li>
+        </ul>
+    </div>
+    <div id="loading"><img src="theme/default/img/loading.gif" alt="Chargement..." /></div>
+</div>
+<div id="main">
+    <div id="tabs">
+    <ul>
+                <li title="status"><a href="index.php/network/status">Statut</a></li>
+        <li title="countries"><a href="index.php/network/countries">Pays</a></li>
+        <li title="clients"><a href="index.php/network/clients">Clients</a></li>
+        <li title="operators"><a href="index.php/network/operators">Opérateurs</a></li>
+        <li title="history"><a href="index.php/network/history">Historique</a></li>
+            </ul>
+</div>
+            <script type="text/javascript">
+        google_ad_client = "ca-pub-7308685930931350";
+        google_ad_width = 728;
+        google_ad_height = 90;
+        google_ad_format = "728x90_as";
+        google_ad_type = "text_image";
+        google_ad_channel ="";
+        google_alternate_color = "f9f3df";
+        google_color_border = "CCCCCC";
+        google_color_bg = "FFFFFF";
+        google_color_link = "333333";
+        google_color_text = "666666";
+        google_color_url = "0066CC";
+        </script>
+        <div style="width:728px; margin:auto;"><script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script></div>
+    </div>
+<div id="footer">
+    <table>
+        <tr>
+            <td style="text-align:left;">
+                <div id="selectlocale">
+                    <form method="get" action="./">
+                    Langage: <select name="locale" id="locale" autocomplete="off">
+                                            <option value="de_DE">Deutsch</option>
+                                            <option value="en_US">English</option>
+                                            <option value="es_ES">Español</option>
+                                            <option value="fr_FR" selected="selected">Français</option>
+                                            <option value="it_IT">Italiano</option>
+                                            <option value="ms_MY">Melayu</option>
+                                            <option value="nl_NL">Nederlands</option>
+                                            <option value="pt_PT">Português</option>
+                                            <option value="tr_TR">Türkçe</option>
+                                        </select>
+                    </form>
+                </div>
+            </td>
+            <td style="text-align:center;">
+            <div>
+	        <strong>Partenaires</strong> : <a href="http://www.europnet.org/" target="_blank" title="Tchat">Tchat</a> - <a href="http://www.chat-fr.org" target="_blank" title="Chat gratuit en ligne">Chat gratuit en ligne</a> - <a href="http://www.fantasya.org" target="_blank" title="Le t'chat francophone">Fantasya</a> - <a href="https://www.xchat-fr.org" target="_blank" title="Chat sexe.">XChat FR</a> - <a href="https://greatchat.fr" target="_blank">GreatChat</a> - <a href="https://discute.net/" target="_blank" title="Chat thématique">Discute</a><br>
+	<br>
+	<br>
+</div>
+</td>
+            <td style="text-align:center;">
+                            </td>
+            <td style="text-align:right;">powered by <a href="http://www.magirc.org/">MagIRC</a></td>
+        </tr>
+    </table>
+</div>
+<ul id="chanmenu" style="display:none;">
+    <li data-action="irc"><a href="#"><img src="theme/default/img/icons/link.png" alt="" title="Connexion standard" style="vertical-align:middle;" /> Connexion IRC standard</a></li>    <li data-action="ircs"><a href="#"><img src="theme/default/img/icons/ssl.png" alt="" title="Connexion sécurisée" style="vertical-align:middle;" /> Connexion IRC sécurisée</a></li>    <li data-action="webchat"><a href="#"><img src="theme/default/img/icons/webchat.png" alt="" title="Webchat" style="vertical-align:middle;" /> Webchat</a></li>    </ul>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net-jqui/js/dataTables.jqueryui.min.js"></script>
+<script type="text/javascript" src="node_modules/highcharts/highstock.js"></script>
+<script type="text/javascript" src="node_modules/js-cookie/src/js.cookie.js"></script>
+<script type="text/javascript" src="node_modules/moment/min/moment-with-locales.min.js"></script>
+<script type="text/javascript">
+moment.locale('fr');
+var url_base = 'https://stats.europnet.org/';
+var theme = 'default';
+var net_roundrobin = 'irc.europnet.org';
+var net_port = '6667';
+var net_port_ssl = '6697';
+var service_webchat = 'https://chat.europnet.org/?channel=';
+var service_mibbit = '';
+var stats_server = 'anope';
+var format_datetime = 'DD/MM/YYYY hh:mm:ss';
+var format_datetime_charts = '%d/%m/%Y %H:%M:%S';
+var refresh_interval = 15 * 1000;
+var mLang = {
+    "Unknown": "Inconnu",
+    "AwayAs": "Absent(e) en tant que",
+    "OnlineAs": "En ligne en tant que",
+    "Online": "En ligne",
+    "Offline": "Hors ligne",
+    "Bot": "Robot",
+    "Service": "Service",
+    "Helper": "Disponible pour aide",
+    "Join": "Rejoindre",
+    "Days": "jours",
+    "Hours": "heures",
+    "Minutes": "minutes",
+    "zoom_All": "Tous",
+    "zoom_1d": "1j",
+    "zoom_1w": "1s",
+    "zoom_1m": "1m",
+    "zoom_3m": "3m",
+    "zoom_6m": "6m",
+    "zoom_1y": "1a",
+    "LoadError": "Impossible de charger le contenu",
+    "Message": "Message",
+    "ConnectedSince": "En ligne depuis",
+    "LastQuit": "Dernier quit",
+    "UsersOnline": "Utilisateurs en ligne",
+    "ServersOnline": "Serveurs en ligne",
+    "Servers": "Serveurs",
+    "Channels": "Canaux",
+    "Users": "Utilisateurs",
+    "Operators": "Opérateurs",
+    "Total": "Total",
+    "Today": "Aujourd'hui",
+    "ThisWeek": "Cette semaine",
+    "ThisMonth": "Ce mois-ci",
+    "Yes": "Oui",
+    "No": "Non",
+    "Never": "Jamais",
+    "On": "le",
+    "NoMotd": "MOTD indisponible pour ce serveur",
+    "Failed": "Echec",
+    "Close": "Fermer",
+    "Status": "Statut",
+    "CountryStatistics": "Statistiques pays",
+    "ClientStatistics": "Statistiques clients",
+    "None": "aucun",
+    "MibbitRelDay": "Aujourd'hui",
+    "MibbitRelWeek": "Semaine",
+    "MibbitRelMonth": "Mois",
+    "MibbitRelYear": "Année",
+    "DataTables": {
+        "processing": "Traitement en cours",
+        "loadingRecords": "Veuillez patienter - chargement ...",
+        "lengthMenu": "Afficher _MENU_ lignes",
+        "zeroRecords": "Aucun enregistrement trouvé",
+        "emptyTable": "Aucune donnée disponible dans le tableau",
+        "info": "Affiche les lignes _START_ à _END_ de _TOTAL_ lignes",
+        "infoEmpty": "Affiche les lignes 0 à 0 sur 0 lignes",
+        "infoFiltered": "(filtré de _MAX_ lignes totales)",
+        "infoPostFix": "",
+        "infoThousands": "'",
+        "search": "Recherche:",
+        "url": "",
+        "aria": {
+            "sortAscending": " - click/return pour trier de manière croissante",
+            "sortDescending": " - click/return pour trier de manière décroissante"
+        },
+        "paginate": {
+            "first": "Premier",
+            "previous": "Précédent",
+            "next": "Suivant",
+            "last": "Dernier"
+        }
+    }
+}
+</script>
+<script type="text/javascript" src="js/magirc.js"></script>
+<script type="text/javascript" src="theme/default/js/theme.js"></script>
+
+<script type="text/javascript">
+var mibbitid = '';
+$(document).ready(function() {
+    $("#tabs").tabs({
+        beforeActivate: function(event, ui) {
+            window.location.hash = ui.newTab.attr('title');
+        },
+        beforeLoad: function(event, ui) {
+            if (window.location.hash) {
+                var title = window.location.hash.substring(1, window.location.hash.length);
+                $("li[title='"+title+"'] a").trigger("click");
+            }
+            if (ui.tab.data("loaded")) {
+                event.preventDefault();
+                return;
+            }
+            ui.jqXHR.done(function() {
+                ui.tab.data("loaded", true);
+            });
+            ui.jqXHR.fail(function() {
+                ui.panel.text(mLang.LoadError);
+            });
+        }
+    });
+});
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36932919-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36932919-7');
+</script>
+
+</body>
+</html>

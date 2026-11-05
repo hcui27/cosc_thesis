@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AEP Texas | Knowledge is power.</title>
+<meta name="description" content="AEP Texas is an electric utility, part of American Electric Power. Manage your account, report outages, and find savings.">
+<style>
+:root{
+  --navy:#0b2a4a; --blue:#005b9f; --sky:#e8f1f9; --accent:#f2a900;
+  --ink:#1c2733; --muted:#5a6775; --line:#d9e1e8; --bg:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* header */
+.topbar{background:var(--navy);color:#fff;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+.topbar a{color:#fff;text-decoration:none;margin-left:16px}
+.topbar a:first-child{margin-left:0}
+.topbar a:hover{text-decoration:underline}
+header.main{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+header.main .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:12px;padding-bottom:12px}
+.logo img{height:48px;width:auto}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;flex-wrap:wrap}
+nav a{display:block;padding:8px 14px;border-radius:6px;color:var(--ink);text-decoration:none;font-weight:600}
+nav a:hover{background:var(--sky);color:var(--blue)}
+
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:56px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.1;margin:0 0 16px}
+.notice{background:rgba(255,255,255,.12);border-left:4px solid var(--accent);padding:12px 16px;border-radius:4px;margin:0 0 24px;font-size:15px}
+.notice a{color:#fff;font-weight:600}
+.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.quick a{background:#fff;color:var(--navy);text-decoration:none;font-weight:700;padding:14px 16px;border-radius:8px;transition:transform .15s,box-shadow .15s}
+.quick a:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.quick a::after{content:" →";color:var(--blue)}
+
+/* login */
+.login{background:#fff;color:var(--ink);border-radius:12px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.login h2{margin:0 0 4px;font-size:1.3rem}
+.login p{margin:0 0 16px;color:var(--muted);font-size:15px}
+label{display:block;font-weight:600;font-size:14px;margin:12px 0 4px}
+input[type=text],input[type=password]{width:100%;padding:11px 12px;border:1px solid #b8c4cf;border-radius:6px;font:inherit}
+input:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.remember{display:flex;align-items:center;gap:8px;font-weight:400;margin:12px 0}
+.btn{display:inline-block;background:var(--blue);color:#fff;border:0;padding:12px 22px;border-radius:6px;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+.btn:hover{background:var(--navy)}
+.login .btn{width:100%}
+.login .links{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:14px;font-size:14px}
+
+/* sections */
+section{padding:64px 0}
+section.alt{background:var(--sky)}
+h2.title{font-size:clamp(1.6rem,3vw,2.2rem);margin:0 0 12px;color:var(--navy);line-height:1.2}
+.lead{color:var(--muted);max-width:640px;margin:0 0 24px}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split.rev .media{order:2}
+.media img{border-radius:12px;width:100%;height:auto;box-shadow:0 8px 24px rgba(11,42,74,.15)}
+
+.tip{margin-top:24px;padding:16px 20px;background:#fff;border-radius:8px;border-left:4px solid var(--accent)}
+.tip p{margin:0 0 10px}
+.btn.alt{background:transparent;color:var(--blue);border:2px solid var(--blue);padding:10px 20px}
+.btn.alt:hover{background:var(--blue);color:#fff}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.card .body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{margin:0;color:var(--navy);font-size:1.15rem}
+.card p{margin:0;color:var(--muted);flex:1}
+.card .btn{align-self:flex-start}
+
+.alerts{background:var(--navy);color:#fff;text-align:center;padding:56px 0}
+.alerts h2{margin:0 0 8px;font-size:clamp(1.5rem,3vw,2rem)}
+.alerts p{margin:0 auto 20px;max-width:560px;opacity:.9}
+.alerts .btn{background:var(--accent);color:var(--navy)}
+.alerts .btn:hover{background:#fff}
+
+/* footer */
+footer{background:#07192c;color:#c8d3de;padding:48px 0 28px;font-size:15px}
+footer a{color:#fff}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px}
+footer h4{color:#fff;margin:0 0 10px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:6px 0}
+.phone{font-size:1.6rem;font-weight:800;color:#fff;text-decoration:none}
+.legal{border-top:1px solid rgba(255,255,255,.15);margin-top:32px;padding-top:20px;font-size:13px}
+.legal p{margin:4px 0}
+
+@media (max-width:820px){
+  .hero .wrap,.split{grid-template-columns:1fr}
+  .split.rev .media{order:0}
+  .split{gap:24px}
+  header.main .wrap{flex-direction:column;align-items:flex-start}
+  section{padding:44px 0}
+}
+@media (max-width:480px){.quick{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><a href="https://www.aep.com">Visit AEP.com</a><a href="https://aep.com/investors/">Investors</a><a href="https://aep.com/careers/">Careers</a></span>
+    <span><a href="https://espanol.aeptexas.com" lang="es">Español</a><a href="tel:8662238508">Need help? 866.223.8508</a></span>
+  </div>
+</div>
+
+<header class="main">
+  <div class="wrap">
+    <a class="logo" href="https://www.aeptexas.com" aria-label="AEP Texas home"><img src="images/TEXAS-Primary-RGB-RG.svg" alt="AEP Texas"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="https://www.aeptexas.com/account/">My Account</a></li>
+        <li><a href="https://www.aeptexas.com/outages/">Outages</a></li>
+        <li><a href="https://www.aeptexas.com/savings/">Savings</a></li>
+        <li><a href="https://www.aeptexas.com/community/">Community</a></li>
+        <li><a href="https://www.aeptexas.com/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Knowledge is power.</h1>
+      <p class="notice">Scams have increased during the pandemic. <a href="https://www.aeptexas.com/account/bills/fraud-scams">Find out what to do to protect your family.</a></p>
+      <div class="quick">
+        <a href="https://www.aeptexas.com/company/about/choice/">Electric Choice</a>
+        <a href="https://www.aeptexas.com/outages/report">Report an outage</a>
+        <a href="https://www.aeptexas.com/account/service">Start, Stop, Move service</a>
+        <a href="https://www.aeptexas.com/company/about/rates/">Rates &amp; Tariffs</a>
+      </div>
+    </div>
+
+    <form class="login" id="login" action="https://www.aeptexas.com/account/" method="post">
+      <h2>Welcome back!</h2>
+      <p>Please login to manage your account.</p>
+      <label for="uid">User ID</label>
+      <input type="text" id="uid" name="userId" autocomplete="username">
+      <label for="pw">Password</label>
+      <input type="password" id="pw" name="password" autocomplete="current-password">
+      <label class="remember"><input type="checkbox" name="remember"> Remember User ID</label>
+      <button class="btn" type="submit">Log in</button>
+      <div class="links">
+        <a href="https://www.aeptexas.com/account/forgot-user-id">Forgot User ID?</a>
+        <a href="https://www.aeptexas.com/account/forgot-password/">Forgot password?</a>
+        <a href="https://www.aeptexas.com/account/register">New user? Register</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<section id="savings">
+  <div class="wrap split">
+    <div class="media"><img src="images/phone.jpg" alt="Using a phone to manage home energy use" loading="lazy"></div>
+    <div>
+      <h2 class="title">Home energy savings and rebates</h2>
+      <p class="lead">Apply for rebates and save energy and money at home. AEP Texas offers rebates that offset the cost of energy-efficient upgrades, including ENERGY STAR® appliances and heating and cooling systems, which keep saving for years.</p>
+      <a class="btn" href="https://aeptexasefficiency.com/">Learn about incentives</a>
+      <div class="tip">
+        <p><strong>Tip:</strong> Switching to LED bulbs saves even more.</p>
+        <a class="btn alt" href="https://www.aeptexas.com/savings/business/energy/lighting">See how</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="ev">
+  <div class="wrap split rev">
+    <div class="media"><img src="images/electric-car-image-aep-texas.jpg" alt="An electric car charging" loading="lazy"></div>
+    <div>
+      <h2 class="title">Get Revved up for Electric Cars</h2>
+      <p class="lead">Information to know before purchasing an electric vehicle.</p>
+      <a class="btn" href="https://www.aeptexas.com/clean-energy/electric-cars">Explore electric cars</a>
+    </div>
+  </div>
+</section>
+
+<section id="more">
+  <div class="wrap">
+    <h2 class="title">Services for you</h2>
+    <p class="lead">Whether you're a new customer, a business, or a builder, start here.</p>
+    <div class="cards">
+      <article class="card">
+        <img src="images/woman-in-white-blouse-on-laptop.jpg" alt="Woman working on a laptop" loading="lazy">
+        <div class="body">
+          <h3>Solutions for your business</h3>
+          <p>Ways to save money, connect service and more.</p>
+          <a class="btn" href="https://www.aeptexas.com/business/industry-solutions/">Business solutions</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/new-service.jpg" alt="Welcome to new service" loading="lazy">
+        <div class="body">
+          <h3>Are you new to AEP Texas?</h3>
+          <p>Welcome to the AEP family! Register a new account to get started.</p>
+          <a class="btn" href="https://www.aeptexas.com/account/register">Register</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/meter-status.jpg" alt="Electric meter" loading="lazy">
+        <div class="body">
+          <h3>View Your Meter Order Status</h3>
+          <p>Follow your meter installation order from start to finish.</p>
+          <a class="btn" href="https://www.aeptexas.com/business/builders/meter-status">Track your order</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="alerts" id="alerts">
+  <div class="wrap">
+    <h2>Enroll in outage alerts</h2>
+    <p>Get an email or text message when your power goes out and when it comes back on.</p>
+    <a class="btn" href="https://www.aeptexas.com/account/settings/notifications/">Sign up today</a>
+  </div>
+</div>
+
+<section id="outages">
+  <div class="wrap">
+    <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
+      <article class="card">
+        <img src="images/outages-faq.jpg" alt="Utility crew working on power lines" loading="lazy">
+        <div class="body">
+          <h3>Confused About Outages?</h3>
+          <p>Answers to the most commonly asked questions.</p>
+          <a class="btn" href="https://www.aeptexas.com/outages/faq">Get answers</a>
+        </div>
+      </article>
+      <article class="card" id="community">
+        <img src="images/community.jpg" alt="Community members" loading="lazy">
+        <div class="body">
+          <h3>Caring for Our Community</h3>
+          <p>See how AEP Texas works with residents to bring a better future to local communities.</p>
+          <a class="btn" href="https://www.aeptexas.com/community/caring">How we're helping</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Need help?</h4>
+        <a class="phone" href="tel:8662238508">866.223.8508</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="https://www.aeptexas.com/safety/">Safety</a></li>
+          <li><a href="https://www.aeptexas.com/company/">Company</a></li>
+          <li><a href="https://www.aeptexas.com/clean-energy/">Clean Energy</a></li>
+          <li><a href="https://www.aeptexas.com/business/">Business</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>American Electric Power</h4>
+        <ul>
+          <li><a href="https://www.aep.com">Visit AEP.com</a></li>
+          <li><a href="https://aep.com/investors/">Investors</a></li>
+          <li><a href="https://aep.com/careers/">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="https://twitter.com/intent/user?screen_name=AEPTexas">Twitter</a></li>
+          <li><a href="https://www.facebook.com/AEPTexas">Facebook</a></li>
+          <li><a href="https://www.youtube.com/user/AEPTexas">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>Using this site means you accept the AEP <a href="https://www.aeptexas.com/privacy-policy">Terms and Conditions</a>. <a href="https://www.aeptexas.com/privacy-policy">Privacy Policy</a></p>
+      <p>Copyright © 1996-2021 American Electric Power. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

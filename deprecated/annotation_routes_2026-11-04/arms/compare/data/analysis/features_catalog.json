@@ -1,0 +1,4112 @@
+[
+ {
+  "name": "System font stack only, no web fonts",
+  "family": "typography",
+  "definition": "Is all text set in a generic system font stack (system-ui, Helvetica Neue/Arial) with no custom web fonts loaded?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "font_family_count",
+   "op": "<=",
+   "value": 1
+  },
+  "sites": [
+   "aeptexas_com",
+   "allstate_jobs",
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "homedesignersoftware_com",
+   "insightcentral_net",
+   "merchantsavvy_co_uk",
+   "miamidda_com",
+   "nira_org_ng",
+   "seoanalyzer_me",
+   "tellmebaby_com_au",
+   "thync_com"
+  ],
+  "n_sites": 14,
+  "n_statements": 14,
+  "n_observations": 27,
+  "members": [
+   "aeptexas_com#1",
+   "allstate_jobs#4",
+   "bathurst12hour_com_au#3",
+   "bluebayou_com#4",
+   "gravityvault_com#10",
+   "homedesignersoftware_com#0",
+   "insightcentral_net#3",
+   "merchantsavvy_co_uk#2",
+   "miamidda_com#2",
+   "nira_org_ng#4",
+   "seoanalyzer_me#20",
+   "tellmebaby_com_au#0",
+   "thync_com#0",
+   "fnsouzafoundation_com#3"
+  ],
+  "id": "F001"
+ },
+ {
+  "name": "Generous body line height",
+  "family": "typography",
+  "definition": "Is body text sized about 16-17px with a roomy line height (about 1.5-1.7)?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "body_size_px",
+   "op": ">=",
+   "value": 16
+  },
+  "sites": [
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "flygrant_com",
+   "greatdayimprovements_com",
+   "homedesignersoftware_com",
+   "insightcentral_net",
+   "kneeguru_co_uk",
+   "miamidda_com",
+   "neverskipbrunch_com",
+   "nira_org_ng",
+   "stgpartners_com",
+   "thync_com"
+  ],
+  "n_sites": 12,
+  "n_statements": 12,
+  "n_observations": 28,
+  "members": [
+   "bathurst12hour_com_au#4",
+   "bluebayou_com#7",
+   "flygrant_com#24",
+   "greatdayimprovements_com#5",
+   "homedesignersoftware_com#1",
+   "insightcentral_net#4",
+   "kneeguru_co_uk#20",
+   "nira_org_ng#5",
+   "stgpartners_com#19",
+   "neverskipbrunch_com#23",
+   "miamidda_com#3",
+   "thync_com#1"
+  ],
+  "id": "F002"
+ },
+ {
+  "name": "Small uppercase eyebrow above headings",
+  "family": "typography",
+  "definition": "Do small letter-spaced (uppercase or script) eyebrow labels sit above section headings?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com",
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "flygrant_com",
+   "fnsouzafoundation_com",
+   "miamidda_com",
+   "neverskipbrunch_com",
+   "stgpartners_com",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 9,
+  "n_statements": 9,
+  "n_observations": 30,
+  "members": [
+   "bather_com#2",
+   "bathurst12hour_com_au#10",
+   "bluebayou_com#6",
+   "flygrant_com#12",
+   "miamidda_com#6",
+   "stgpartners_com#11",
+   "thefrangipanicreative_com#2",
+   "fnsouzafoundation_com#6",
+   "neverskipbrunch_com#3"
+  ],
+  "id": "F003"
+ },
+ {
+  "name": "Bold-weight headings",
+  "family": "typography",
+  "definition": "Are section headings and titles set in bold weight (about 700)?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "h1_weight",
+   "op": ">=",
+   "value": 700
+  },
+  "sites": [
+   "allstate_jobs",
+   "educationactivities_org",
+   "greatdayimprovements_com",
+   "homedesignersoftware_com",
+   "merchantsavvy_co_uk",
+   "seoanalyzer_me",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 7,
+  "n_statements": 8,
+  "n_observations": 21,
+  "members": [
+   "allstate_jobs#5",
+   "homedesignersoftware_com#2",
+   "merchantsavvy_co_uk#3",
+   "tellmebaby_com_au#1",
+   "tellmebaby_com_au#2",
+   "seoanalyzer_me#5",
+   "educationactivities_org#20",
+   "greatdayimprovements_com#17"
+  ],
+  "id": "F004"
+ },
+ {
+  "name": "Sentence/title case, no uppercase transform",
+  "family": "typography",
+  "definition": "Do headings, nav and labels use sentence or title case instead of all caps?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "allstate_jobs",
+   "bathurst12hour_com_au",
+   "kanienkeha_net",
+   "neverskipbrunch_com",
+   "nira_org_ng",
+   "seoanalyzer_me"
+  ],
+  "n_sites": 7,
+  "n_statements": 7,
+  "n_observations": 18,
+  "members": [
+   "aeptexas_com#6",
+   "bathurst12hour_com_au#5",
+   "kanienkeha_net#2",
+   "nira_org_ng#6",
+   "seoanalyzer_me#21",
+   "allstate_jobs#6",
+   "neverskipbrunch_com#18"
+  ],
+  "id": "F005"
+ },
+ {
+  "name": "Very large hero headline",
+  "family": "typography",
+  "definition": "Is the hero h1 very large (e.g. about 60px or more, or filling much of the hero width)?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "h1_size_px",
+   "op": ">=",
+   "value": 56
+  },
+  "sites": [
+   "aeptexas_com",
+   "allstate_jobs",
+   "merchantsavvy_co_uk",
+   "miamidda_com",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "stgpartners_com"
+  ],
+  "n_sites": 7,
+  "n_statements": 7,
+  "n_observations": 22,
+  "members": [
+   "allstate_jobs#1",
+   "miamidda_com#4",
+   "naturalwellbeing_com#9",
+   "stgpartners_com#1",
+   "merchantsavvy_co_uk#0",
+   "aeptexas_com#2",
+   "neverskipbrunch_com#1"
+  ],
+  "id": "F006"
+ },
+ {
+  "name": "Small uppercase letter-spaced utility labels",
+  "family": "typography",
+  "definition": "Are minor labels (form labels, footer headings, dates, sidebar labels, CTAs) set in small uppercase with letter spacing?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "alpine8848_com",
+   "bather_com",
+   "educationactivities_org",
+   "flygrant_com",
+   "homedesignersoftware_com",
+   "newclimateeconomy_net"
+  ],
+  "n_sites": 6,
+  "n_statements": 7,
+  "n_observations": 20,
+  "members": [
+   "alpine8848_com#9",
+   "newclimateeconomy_net#3",
+   "flygrant_com#9",
+   "flygrant_com#21",
+   "homedesignersoftware_com#11",
+   "educationactivities_org#2",
+   "bather_com#3"
+  ],
+  "id": "F007"
+ },
+ {
+  "name": "Large lead paragraph styling",
+  "family": "typography",
+  "definition": "Is there a distinct larger lead/body paragraph styled differently from the rest of the copy?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "alpine8848_com",
+   "greatdayimprovements_com",
+   "naturalwellbeing_com",
+   "tellmebaby_com_au",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 10,
+  "members": [
+   "alpine8848_com#7",
+   "greatdayimprovements_com#4",
+   "thefrangipanicreative_com#3",
+   "tellmebaby_com_au#28",
+   "naturalwellbeing_com#12"
+  ],
+  "id": "F008"
+ },
+ {
+  "name": "Serif body with sans headings pairing",
+  "family": "typography",
+  "definition": "Does the page pair a sans-serif for headings/UI with a serif face for body paragraphs or excerpts?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com",
+   "educationactivities_org",
+   "flygrant_com",
+   "kneeguru_co_uk",
+   "newclimateeconomy_net"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 16,
+  "members": [
+   "cbdoilcreamnk_com#1",
+   "educationactivities_org#1",
+   "flygrant_com#16",
+   "kneeguru_co_uk#3",
+   "newclimateeconomy_net#4"
+  ],
+  "id": "F009"
+ },
+ {
+  "name": "Serif headings with sans body",
+  "family": "typography",
+  "definition": "Are headings set in a serif face while body text is sans-serif?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "alpine8848_com",
+   "fnsouzafoundation_com",
+   "greatdayimprovements_com",
+   "neverskipbrunch_com",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 5,
+  "n_statements": 6,
+  "n_observations": 19,
+  "members": [
+   "greatdayimprovements_com#3",
+   "thefrangipanicreative_com#4",
+   "fnsouzafoundation_com#4",
+   "fnsouzafoundation_com#5",
+   "neverskipbrunch_com#2",
+   "alpine8848_com#8"
+  ],
+  "id": "F010"
+ },
+ {
+  "name": "Single sans-serif family throughout",
+  "family": "typography",
+  "definition": "Is one single sans-serif family used consistently across the whole page?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "sans_primary",
+   "op": "==",
+   "value": 1
+  },
+  "sites": [
+   "bather_com",
+   "kanienkeha_net",
+   "naturalwellbeing_com",
+   "stgpartners_com"
+  ],
+  "n_sites": 4,
+  "n_statements": 4,
+  "n_observations": 10,
+  "members": [
+   "bather_com#1",
+   "kanienkeha_net#1",
+   "naturalwellbeing_com#11",
+   "stgpartners_com#0"
+  ],
+  "id": "F011"
+ },
+ {
+  "name": "Uppercase section headings",
+  "family": "typography",
+  "definition": "Are main headings or card titles set in uppercase?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com",
+   "kneeguru_co_uk",
+   "newclimateeconomy_net",
+   "ridetech_com"
+  ],
+  "n_sites": 4,
+  "n_statements": 4,
+  "n_observations": 13,
+  "members": [
+   "bather_com#0",
+   "ridetech_com#1",
+   "newclimateeconomy_net#2",
+   "kneeguru_co_uk#4"
+  ],
+  "id": "F012"
+ },
+ {
+  "name": "Large bold heading scale vs body",
+  "family": "typography",
+  "definition": "Are headings large and bold with a dramatic size jump over body text?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "h1_body_ratio",
+   "op": ">=",
+   "value": 3
+  },
+  "sites": [
+   "gravityvault_com",
+   "thefrangipanicreative_com",
+   "thync_com"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 12,
+  "members": [
+   "thefrangipanicreative_com#5",
+   "thync_com#2",
+   "gravityvault_com#11"
+  ],
+  "id": "F013"
+ },
+ {
+  "name": "Two-tone hero headline",
+  "family": "typography",
+  "definition": "Does the hero headline use two tones, with part of it in an accent color?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "insightcentral_net",
+   "miamidda_com",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 6,
+  "members": [
+   "insightcentral_net#5",
+   "miamidda_com#5",
+   "tellmebaby_com_au#3"
+  ],
+  "id": "F014"
+ },
+ {
+  "name": "Condensed heavy display headline font",
+  "family": "typography",
+  "definition": "Are headlines set in a heavy condensed display face such as Impact?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com",
+   "ridetech_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 9,
+  "members": [
+   "bluebayou_com#5",
+   "ridetech_com#2"
+  ],
+  "id": "F015"
+ },
+ {
+  "name": "Bold labels with regular values",
+  "family": "typography",
+  "definition": "Do contact lines bold only the labels while values stay regular weight?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "cbdoilcreamnk_com#16"
+  ],
+  "id": "F016"
+ },
+ {
+  "name": "Hero h1 with accent rule and italic subtitle",
+  "family": "typography",
+  "definition": "Is the hero h1 accompanied by an accent rule and an italic serif subtitle?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "flygrant_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "flygrant_com#4"
+  ],
+  "id": "F017"
+ },
+ {
+  "name": "Hero subtitle as plain paragraph",
+  "family": "typography",
+  "definition": "Is the hero subtitle a plain sentence-case sans paragraph rather than a heading?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "seoanalyzer_me"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "seoanalyzer_me#19"
+  ],
+  "id": "F018"
+ },
+ {
+  "name": "Light restrained heading scale",
+  "family": "typography",
+  "definition": "Are section headings moderate in size and light in weight?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "naturalwellbeing_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "naturalwellbeing_com#10"
+  ],
+  "id": "F019"
+ },
+ {
+  "name": "Single serif family throughout",
+  "family": "typography",
+  "definition": "Is all text set in one serif family such as Georgia?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "serif_primary",
+   "op": "==",
+   "value": 1
+  },
+  "sites": [
+   "alpine8848_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "alpine8848_com#6"
+  ],
+  "id": "F020"
+ },
+ {
+  "name": "Near-black or tinted dark body text",
+  "family": "color",
+  "definition": "Is the body text a dark tinted (navy, slate, green) or near-black color rather than neutral gray or pure black?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "text_color_lightness",
+   "op": "<=",
+   "value": 0.25
+  },
+  "sites": [
+   "aeptexas_com",
+   "bluebayou_com",
+   "cbdoilcreamnk_com",
+   "educationactivities_org",
+   "gravityvault_com",
+   "greatdayimprovements_com",
+   "homedesignersoftware_com",
+   "merchantsavvy_co_uk",
+   "miamidda_com",
+   "newclimateeconomy_net",
+   "nira_org_ng",
+   "seoanalyzer_me",
+   "stgpartners_com",
+   "tellmebaby_com_au",
+   "thync_com"
+  ],
+  "n_sites": 15,
+  "n_statements": 15,
+  "n_observations": 40,
+  "members": [
+   "aeptexas_com#18",
+   "cbdoilcreamnk_com#2",
+   "educationactivities_org#3",
+   "greatdayimprovements_com#7",
+   "gravityvault_com#12",
+   "homedesignersoftware_com#4",
+   "merchantsavvy_co_uk#4",
+   "newclimateeconomy_net#1",
+   "stgpartners_com#6",
+   "tellmebaby_com_au#19",
+   "thync_com#7",
+   "miamidda_com#7",
+   "nira_org_ng#18",
+   "bluebayou_com#8",
+   "seoanalyzer_me#18"
+  ],
+  "id": "F021"
+ },
+ {
+  "name": "Single accent color",
+  "family": "color",
+  "definition": "Is one single accent color used consistently across buttons, links and labels?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bathurst12hour_com_au",
+   "flygrant_com",
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "greatdayimprovements_com",
+   "homedesignersoftware_com",
+   "insightcentral_net",
+   "kneeguru_co_uk",
+   "neverskipbrunch_com",
+   "ridetech_com",
+   "stgpartners_com",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 12,
+  "n_statements": 12,
+  "n_observations": 45,
+  "members": [
+   "bathurst12hour_com_au#16",
+   "fnsouzafoundation_com#1",
+   "gravityvault_com#13",
+   "greatdayimprovements_com#6",
+   "insightcentral_net#1",
+   "kneeguru_co_uk#5",
+   "neverskipbrunch_com#4",
+   "ridetech_com#4",
+   "stgpartners_com#10",
+   "tellmebaby_com_au#17",
+   "flygrant_com#17",
+   "homedesignersoftware_com#3"
+  ],
+  "id": "F022"
+ },
+ {
+  "name": "Alternating full-width background bands",
+  "family": "color",
+  "definition": "Do sections alternate between differently colored full-width background bands (white, pale, dark)?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "bluebayou_com",
+   "cbdoilcreamnk_com",
+   "educationactivities_org",
+   "gravityvault_com",
+   "kneeguru_co_uk",
+   "merchantsavvy_co_uk",
+   "naturalwellbeing_com",
+   "ridetech_com",
+   "tellmebaby_com_au",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 11,
+  "n_statements": 11,
+  "n_observations": 37,
+  "members": [
+   "allstate_jobs#16",
+   "bluebayou_com#9",
+   "cbdoilcreamnk_com#3",
+   "gravityvault_com#14",
+   "kneeguru_co_uk#15",
+   "naturalwellbeing_com#14",
+   "ridetech_com#5",
+   "tellmebaby_com_au#18",
+   "thefrangipanicreative_com#6",
+   "merchantsavvy_co_uk#12",
+   "educationactivities_org#4"
+  ],
+  "id": "F023"
+ },
+ {
+  "name": "Restrained multi-hue palette",
+  "family": "color",
+  "definition": "Is the overall palette a small, specific set of named hues (e.g. green/gold, teal, navy/amber) rather than generic colors?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "alpine8848_com",
+   "bather_com",
+   "kanienkeha_net",
+   "merchantsavvy_co_uk",
+   "naturalwellbeing_com",
+   "newclimateeconomy_net"
+  ],
+  "n_sites": 7,
+  "n_statements": 7,
+  "n_observations": 19,
+  "members": [
+   "aeptexas_com#22",
+   "alpine8848_com#11",
+   "bather_com#4",
+   "kanienkeha_net#17",
+   "merchantsavvy_co_uk#6",
+   "naturalwellbeing_com#13",
+   "newclimateeconomy_net#0"
+  ],
+  "id": "F024"
+ },
+ {
+  "name": "Dark theme with light text",
+  "family": "color",
+  "definition": "Does the page use a dark near-black body background with light/near-white text?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "body_bg_dark",
+   "op": "==",
+   "value": 1
+  },
+  "sites": [
+   "bathurst12hour_com_au",
+   "fnsouzafoundation_com",
+   "insightcentral_net"
+  ],
+  "n_sites": 3,
+  "n_statements": 4,
+  "n_observations": 10,
+  "members": [
+   "bathurst12hour_com_au#17",
+   "fnsouzafoundation_com#0",
+   "insightcentral_net#0",
+   "insightcentral_net#2"
+  ],
+  "id": "F025"
+ },
+ {
+  "name": "Muted secondary text color",
+  "family": "color",
+  "definition": "Is secondary text (dates, subtitles, labels) shown in a muted gray or taupe tone?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bathurst12hour_com_au",
+   "fnsouzafoundation_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 2,
+  "members": [
+   "bathurst12hour_com_au#14",
+   "fnsouzafoundation_com#2"
+  ],
+  "id": "F026"
+ },
+ {
+  "name": "Green deep link text",
+  "family": "color",
+  "definition": "Are links deep green text without chevron markers?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "nira_org_ng"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "nira_org_ng#17"
+  ],
+  "id": "F027"
+ },
+ {
+  "name": "Hero diagonal gradient background",
+  "family": "color",
+  "definition": "Does the hero use a diagonal gradient background instead of flat color?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "gradient_count",
+   "op": ">=",
+   "value": 1
+  },
+  "sites": [
+   "seoanalyzer_me"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "seoanalyzer_me#2"
+  ],
+  "id": "F028"
+ },
+ {
+  "name": "Light header with thin border",
+  "family": "color",
+  "definition": "Is the header white or light with a thin bottom border and dark text navigation?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "flygrant_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "flygrant_com#1"
+  ],
+  "id": "F029"
+ },
+ {
+  "name": "Light uppercase links without underline",
+  "family": "color",
+  "definition": "Are links light or white uppercase text without underline, except inline card links?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "stgpartners_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "stgpartners_com#23"
+  ],
+  "id": "F030"
+ },
+ {
+  "name": "Score-coded metric colors",
+  "family": "color",
+  "definition": "Are metric values color-coded by score level at uniform size?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "seoanalyzer_me"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "seoanalyzer_me#11"
+  ],
+  "id": "F031"
+ },
+ {
+  "name": "Solid black announcement bar",
+  "family": "color",
+  "definition": "Is the announcement bar solid black with bold white text?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "bather_com#5"
+  ],
+  "id": "F032"
+ },
+ {
+  "name": "Warm cream or off-white page background",
+  "family": "color",
+  "definition": "Is the page background a warm cream or off-white tint rather than pure white?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "body_bg_lightness",
+   "op": ">=",
+   "value": 0.9
+  },
+  "sites": [
+   "seoanalyzer_me"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "seoanalyzer_me#17"
+  ],
+  "id": "F033"
+ },
+ {
+  "name": "Multi-column dark footer",
+  "family": "layout",
+  "definition": "Is the footer a dark band with multiple columns of links and a divider above small copyright text?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "alpine8848_com",
+   "bather_com",
+   "bathurst12hour_com_au",
+   "cbdoilcreamnk_com",
+   "educationactivities_org",
+   "flygrant_com",
+   "gravityvault_com",
+   "greatdayimprovements_com",
+   "kanienkeha_net",
+   "kneeguru_co_uk",
+   "miamidda_com",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "nira_org_ng",
+   "seoanalyzer_me",
+   "tellmebaby_com_au",
+   "thefrangipanicreative_com",
+   "thync_com"
+  ],
+  "n_sites": 19,
+  "n_statements": 20,
+  "n_observations": 80,
+  "members": [
+   "allstate_jobs#17",
+   "alpine8848_com#19",
+   "cbdoilcreamnk_com#15",
+   "educationactivities_org#24",
+   "flygrant_com#22",
+   "greatdayimprovements_com#11",
+   "kneeguru_co_uk#16",
+   "miamidda_com#19",
+   "naturalwellbeing_com#19",
+   "neverskipbrunch_com#17",
+   "nira_org_ng#19",
+   "thefrangipanicreative_com#14",
+   "bather_com#15",
+   "bathurst12hour_com_au#19",
+   "kanienkeha_net#16",
+   "seoanalyzer_me#15",
+   "tellmebaby_com_au#16",
+   "thync_com#14",
+   "gravityvault_com#24",
+   "naturalwellbeing_com#21"
+  ],
+  "id": "F034"
+ },
+ {
+  "name": "Centered narrow max-width container",
+  "family": "layout",
+  "definition": "Is the main content constrained to a centered, fixed or max-width container with generous side margins (narrower than full viewport)?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "allstate_jobs",
+   "alpine8848_com",
+   "bluebayou_com",
+   "cbdoilcreamnk_com",
+   "educationactivities_org",
+   "flygrant_com",
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "greatdayimprovements_com",
+   "homedesignersoftware_com",
+   "miamidda_com",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "newclimateeconomy_net",
+   "ridetech_com",
+   "stgpartners_com",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 18,
+  "n_statements": 19,
+  "n_observations": 42,
+  "members": [
+   "aeptexas_com#7",
+   "bluebayou_com#18",
+   "cbdoilcreamnk_com#9",
+   "flygrant_com#25",
+   "gravityvault_com#8",
+   "greatdayimprovements_com#14",
+   "naturalwellbeing_com#23",
+   "newclimateeconomy_net#8",
+   "ridetech_com#19",
+   "stgpartners_com#9",
+   "tellmebaby_com_au#20",
+   "alpine8848_com#20",
+   "educationactivities_org#0",
+   "allstate_jobs#8",
+   "homedesignersoftware_com#23",
+   "miamidda_com#21",
+   "fnsouzafoundation_com#20",
+   "neverskipbrunch_com#11",
+   "allstate_jobs#20"
+  ],
+  "id": "F035"
+ },
+ {
+  "name": "Simple logo-left nav-right header",
+  "family": "layout",
+  "definition": "Is the header a single compact bar with a logo on the left and navigation links on the right?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "alpine8848_com",
+   "bathurst12hour_com_au",
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "greatdayimprovements_com",
+   "insightcentral_net",
+   "kanienkeha_net",
+   "miamidda_com",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "newclimateeconomy_net",
+   "ridetech_com",
+   "seoanalyzer_me",
+   "stgpartners_com",
+   "thefrangipanicreative_com",
+   "thync_com"
+  ],
+  "n_sites": 17,
+  "n_statements": 18,
+  "n_observations": 65,
+  "members": [
+   "fnsouzafoundation_com#17",
+   "neverskipbrunch_com#6",
+   "thefrangipanicreative_com#0",
+   "stgpartners_com#15",
+   "insightcentral_net#8",
+   "newclimateeconomy_net#5",
+   "thync_com#5",
+   "ridetech_com#9",
+   "naturalwellbeing_com#7",
+   "allstate_jobs#23",
+   "greatdayimprovements_com#12",
+   "kanienkeha_net#4",
+   "seoanalyzer_me#3",
+   "alpine8848_com#12",
+   "bathurst12hour_com_au#7",
+   "miamidda_com#8",
+   "gravityvault_com#19",
+   "naturalwellbeing_com#6"
+  ],
+  "id": "F036"
+ },
+ {
+  "name": "Equal card grid",
+  "family": "layout",
+  "definition": "Are items shown as a grid or row of equal-size cards (bordered or panelled) in multiple columns?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "allstate_jobs",
+   "bathurst12hour_com_au",
+   "educationactivities_org",
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "homedesignersoftware_com",
+   "insightcentral_net",
+   "kanienkeha_net",
+   "kneeguru_co_uk",
+   "merchantsavvy_co_uk",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "nira_org_ng",
+   "stgpartners_com"
+  ],
+  "n_sites": 15,
+  "n_statements": 16,
+  "n_observations": 68,
+  "members": [
+   "aeptexas_com#11",
+   "bathurst12hour_com_au#11",
+   "educationactivities_org#6",
+   "gravityvault_com#9",
+   "homedesignersoftware_com#13",
+   "insightcentral_net#17",
+   "kanienkeha_net#9",
+   "merchantsavvy_co_uk#14",
+   "naturalwellbeing_com#16",
+   "neverskipbrunch_com#16",
+   "stgpartners_com#22",
+   "allstate_jobs#15",
+   "fnsouzafoundation_com#12",
+   "nira_org_ng#12",
+   "kanienkeha_net#8",
+   "kneeguru_co_uk#26"
+  ],
+  "id": "F037"
+ },
+ {
+  "name": "Uses CSS grid with flexbox",
+  "family": "layout",
+  "definition": "Is the page layout built with CSS grid and/or flexbox containers?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "grid_count",
+   "op": ">=",
+   "value": 1
+  },
+  "sites": [
+   "aeptexas_com",
+   "allstate_jobs",
+   "bather_com",
+   "bathurst12hour_com_au",
+   "gravityvault_com",
+   "greatdayimprovements_com",
+   "homedesignersoftware_com",
+   "kneeguru_co_uk",
+   "merchantsavvy_co_uk",
+   "naturalwellbeing_com",
+   "nira_org_ng",
+   "ridetech_com",
+   "seoanalyzer_me",
+   "tellmebaby_com_au",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 15,
+  "n_statements": 15,
+  "n_observations": 45,
+  "members": [
+   "aeptexas_com#17",
+   "allstate_jobs#19",
+   "bather_com#16",
+   "bathurst12hour_com_au#12",
+   "gravityvault_com#7",
+   "greatdayimprovements_com#13",
+   "homedesignersoftware_com#12",
+   "kneeguru_co_uk#2",
+   "merchantsavvy_co_uk#11",
+   "naturalwellbeing_com#24",
+   "nira_org_ng#14",
+   "ridetech_com#7",
+   "seoanalyzer_me#16",
+   "tellmebaby_com_au#22",
+   "thefrangipanicreative_com#18"
+  ],
+  "id": "F038"
+ },
+ {
+  "name": "Split hero or section with image and text",
+  "family": "layout",
+  "definition": "Does a hero or section use a two-column split pairing an image with a text panel or text column?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "cbdoilcreamnk_com",
+   "flygrant_com",
+   "fnsouzafoundation_com",
+   "kneeguru_co_uk",
+   "miamidda_com",
+   "neverskipbrunch_com",
+   "newclimateeconomy_net",
+   "stgpartners_com",
+   "tellmebaby_com_au",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 13,
+  "n_statements": 14,
+  "n_observations": 41,
+  "members": [
+   "bathurst12hour_com_au#9",
+   "newclimateeconomy_net#6",
+   "kneeguru_co_uk#8",
+   "neverskipbrunch_com#7",
+   "neverskipbrunch_com#13",
+   "thefrangipanicreative_com#11",
+   "fnsouzafoundation_com#11",
+   "bluebayou_com#21",
+   "stgpartners_com#24",
+   "flygrant_com#5",
+   "cbdoilcreamnk_com#8",
+   "aeptexas_com#14",
+   "miamidda_com#12",
+   "tellmebaby_com_au#21"
+  ],
+  "id": "F039"
+ },
+ {
+  "name": "Full-bleed hero image with overlaid text",
+  "family": "layout",
+  "definition": "Is the hero a full-width edge-to-edge image (often darkened) with headline text overlaid on it?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "cbdoilcreamnk_com",
+   "educationactivities_org",
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "nira_org_ng",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 7,
+  "n_statements": 7,
+  "n_observations": 22,
+  "members": [
+   "allstate_jobs#0",
+   "cbdoilcreamnk_com#4",
+   "gravityvault_com#20",
+   "thefrangipanicreative_com#1",
+   "fnsouzafoundation_com#8",
+   "educationactivities_org#7",
+   "nira_org_ng#10"
+  ],
+  "id": "F040"
+ },
+ {
+  "name": "Compact short page with tight spacing",
+  "family": "layout",
+  "definition": "Is the page compact and short with tight vertical rhythm and no large empty gaps?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "page_height",
+   "op": "<",
+   "value": 4000
+  },
+  "sites": [
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "merchantsavvy_co_uk",
+   "naturalwellbeing_com",
+   "stgpartners_com",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 6,
+  "n_statements": 6,
+  "n_observations": 14,
+  "members": [
+   "bluebayou_com#22",
+   "bathurst12hour_com_au#24",
+   "merchantsavvy_co_uk#20",
+   "naturalwellbeing_com#25",
+   "tellmebaby_com_au#23",
+   "stgpartners_com#20"
+  ],
+  "id": "F041"
+ },
+ {
+  "name": "Single-column stacked full-width sections",
+  "family": "layout",
+  "definition": "Is the page a single column of full-width stacked sections or alternating colored bands without a sidebar?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com",
+   "greatdayimprovements_com",
+   "insightcentral_net",
+   "newclimateeconomy_net",
+   "ridetech_com",
+   "thync_com"
+  ],
+  "n_sites": 6,
+  "n_statements": 7,
+  "n_observations": 18,
+  "members": [
+   "insightcentral_net#11",
+   "ridetech_com#20",
+   "newclimateeconomy_net#7",
+   "thync_com#17",
+   "bluebayou_com#20",
+   "thync_com#8",
+   "greatdayimprovements_com#15"
+  ],
+  "id": "F042"
+ },
+ {
+  "name": "Left-aligned editorial or section heading layout",
+  "family": "layout",
+  "definition": "Are section headings left-aligned on plain backgrounds, or editorial text in a narrow left-aligned column?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com",
+   "fnsouzafoundation_com",
+   "homedesignersoftware_com",
+   "miamidda_com",
+   "stgpartners_com"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 13,
+  "members": [
+   "miamidda_com#15",
+   "fnsouzafoundation_com#14",
+   "cbdoilcreamnk_com#24",
+   "homedesignersoftware_com#26",
+   "stgpartners_com#13"
+  ],
+  "id": "F043"
+ },
+ {
+  "name": "Feature sections use full-bleed background images with a dar",
+  "family": "layout",
+  "definition": "Feature sections use full-bleed background images with a dark overlay and text overlaid on the left.",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 4,
+  "members": [
+   "bluebayou_com#19"
+  ],
+  "id": "F044"
+ },
+ {
+  "name": "Hero shows several banners side by side as a cropped multi-p",
+  "family": "layout",
+  "definition": "Hero shows several banners side by side as a cropped multi-panel strip rather than a slider.",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "ridetech_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "ridetech_com#10"
+  ],
+  "id": "F045"
+ },
+ {
+  "name": "Hero with CTA at far right",
+  "family": "layout",
+  "definition": "Does the hero place its call-to-action or secondary element at the far right with empty space between?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "insightcentral_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "insightcentral_net#12"
+  ],
+  "id": "F046"
+ },
+ {
+  "name": "Main content with sidebar",
+  "family": "layout",
+  "definition": "Is there a wide main column with a narrow sidebar beside it?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "kanienkeha_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "kanienkeha_net#15"
+  ],
+  "id": "F047"
+ },
+ {
+  "name": "Search form band below hero",
+  "family": "layout",
+  "definition": "Is there a distinct search form band attached to the bottom of the hero?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "allstate_jobs#2"
+  ],
+  "id": "F048"
+ },
+ {
+  "name": "Bordered rounded content cards",
+  "family": "component",
+  "definition": "Are content items shown as bordered or rounded white cards in a grid?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "alpine8848_com",
+   "bluebayou_com",
+   "gravityvault_com",
+   "insightcentral_net",
+   "kneeguru_co_uk",
+   "merchantsavvy_co_uk",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "ridetech_com",
+   "seoanalyzer_me",
+   "tellmebaby_com_au",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 13,
+  "n_statements": 15,
+  "n_observations": 69,
+  "members": [
+   "alpine8848_com#17",
+   "kneeguru_co_uk#11",
+   "merchantsavvy_co_uk#10",
+   "naturalwellbeing_com#2",
+   "naturalwellbeing_com#17",
+   "seoanalyzer_me#9",
+   "tellmebaby_com_au#12",
+   "ridetech_com#12",
+   "gravityvault_com#17",
+   "bluebayou_com#15",
+   "neverskipbrunch_com#12",
+   "thefrangipanicreative_com#8",
+   "insightcentral_net#14",
+   "alpine8848_com#14",
+   "allstate_jobs#11"
+  ],
+  "id": "F049"
+ },
+ {
+  "name": "Fully rounded pill buttons",
+  "family": "component",
+  "definition": "Are the primary buttons or calls to action fully rounded pills?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "primary_button_pill",
+   "op": "==",
+   "value": 1
+  },
+  "sites": [
+   "allstate_jobs",
+   "bluebayou_com",
+   "fnsouzafoundation_com",
+   "greatdayimprovements_com",
+   "insightcentral_net",
+   "kanienkeha_net",
+   "merchantsavvy_co_uk",
+   "miamidda_com",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "tellmebaby_com_au",
+   "thefrangipanicreative_com",
+   "thync_com"
+  ],
+  "n_sites": 13,
+  "n_statements": 13,
+  "n_observations": 56,
+  "members": [
+   "allstate_jobs#9",
+   "bluebayou_com#13",
+   "fnsouzafoundation_com#10",
+   "insightcentral_net#9",
+   "naturalwellbeing_com#0",
+   "neverskipbrunch_com#10",
+   "thefrangipanicreative_com#7",
+   "thync_com#6",
+   "tellmebaby_com_au#9",
+   "miamidda_com#16",
+   "kanienkeha_net#7",
+   "greatdayimprovements_com#8",
+   "merchantsavvy_co_uk#8"
+  ],
+  "id": "F050"
+ },
+ {
+  "name": "Horizontal text navigation",
+  "family": "component",
+  "definition": "Is navigation a visible horizontal row of text links?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "alpine8848_com",
+   "bather_com",
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "educationactivities_org",
+   "kanienkeha_net",
+   "naturalwellbeing_com"
+  ],
+  "n_sites": 8,
+  "n_statements": 9,
+  "n_observations": 20,
+  "members": [
+   "aeptexas_com#19",
+   "bluebayou_com#11",
+   "bather_com#13",
+   "educationactivities_org#11",
+   "kanienkeha_net#3",
+   "alpine8848_com#13",
+   "bathurst12hour_com_au#8",
+   "naturalwellbeing_com#8",
+   "aeptexas_com#5"
+  ],
+  "id": "F051"
+ },
+ {
+  "name": "Inline newsletter signup",
+  "family": "component",
+  "definition": "Is the newsletter signup an email input inline with a submit button?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com",
+   "cbdoilcreamnk_com",
+   "gravityvault_com",
+   "kneeguru_co_uk",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "nira_org_ng",
+   "ridetech_com"
+  ],
+  "n_sites": 8,
+  "n_statements": 8,
+  "n_observations": 17,
+  "members": [
+   "bather_com#12",
+   "kneeguru_co_uk#17",
+   "naturalwellbeing_com#20",
+   "nira_org_ng#15",
+   "ridetech_com#16",
+   "cbdoilcreamnk_com#13",
+   "gravityvault_com#22",
+   "neverskipbrunch_com#19"
+  ],
+  "id": "F052"
+ },
+ {
+  "name": "Pill chips and tags",
+  "family": "component",
+  "definition": "Are tags, filters, or suggested links shown as small rounded pill chips?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com",
+   "educationactivities_org",
+   "gravityvault_com",
+   "kanienkeha_net",
+   "miamidda_com",
+   "neverskipbrunch_com",
+   "seoanalyzer_me",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 8,
+  "n_statements": 9,
+  "n_observations": 24,
+  "members": [
+   "bluebayou_com#14",
+   "educationactivities_org#16",
+   "kanienkeha_net#6",
+   "kanienkeha_net#14",
+   "seoanalyzer_me#8",
+   "miamidda_com#18",
+   "neverskipbrunch_com#14",
+   "tellmebaby_com_au#11",
+   "gravityvault_com#16"
+  ],
+  "id": "F053"
+ },
+ {
+  "name": "Social links as text labels",
+  "family": "component",
+  "definition": "Are social links plain text labels (possibly pills) rather than icon glyphs?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com",
+   "cbdoilcreamnk_com",
+   "gravityvault_com",
+   "homedesignersoftware_com",
+   "newclimateeconomy_net",
+   "nira_org_ng",
+   "ridetech_com",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 8,
+  "n_statements": 8,
+  "n_observations": 30,
+  "members": [
+   "bather_com#14",
+   "cbdoilcreamnk_com#14",
+   "gravityvault_com#23",
+   "homedesignersoftware_com#19",
+   "nira_org_ng#8",
+   "thefrangipanicreative_com#13",
+   "ridetech_com#17",
+   "newclimateeconomy_net#13"
+  ],
+  "id": "F054"
+ },
+ {
+  "name": "Full-width promo or CTA band",
+  "family": "component",
+  "definition": "Is there a full-width solid or dark promotional band with a headline and CTA?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "flygrant_com",
+   "miamidda_com",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "ridetech_com"
+  ],
+  "n_sites": 6,
+  "n_statements": 7,
+  "n_observations": 14,
+  "members": [
+   "aeptexas_com#13",
+   "ridetech_com#11",
+   "miamidda_com#10",
+   "naturalwellbeing_com#15",
+   "flygrant_com#19",
+   "neverskipbrunch_com#15",
+   "aeptexas_com#3"
+  ],
+  "id": "F055"
+ },
+ {
+  "name": "Plain text logo wordmark",
+  "family": "component",
+  "definition": "Is the logo a text wordmark with a small accent rather than an image?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "educationactivities_org",
+   "flygrant_com",
+   "kneeguru_co_uk",
+   "nira_org_ng",
+   "seoanalyzer_me",
+   "thync_com"
+  ],
+  "n_sites": 6,
+  "n_statements": 6,
+  "n_observations": 18,
+  "members": [
+   "seoanalyzer_me#4",
+   "thync_com#4",
+   "nira_org_ng#9",
+   "educationactivities_org#9",
+   "flygrant_com#2",
+   "kneeguru_co_uk#7"
+  ],
+  "id": "F056"
+ },
+ {
+  "name": "Secondary CTAs as text links",
+  "family": "component",
+  "definition": "Are secondary or read-more actions styled as text links rather than boxed buttons?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "bather_com",
+   "kneeguru_co_uk",
+   "newclimateeconomy_net",
+   "tellmebaby_com_au",
+   "thync_com"
+  ],
+  "n_sites": 6,
+  "n_statements": 6,
+  "n_observations": 26,
+  "members": [
+   "tellmebaby_com_au#10",
+   "newclimateeconomy_net#10",
+   "thync_com#12",
+   "kneeguru_co_uk#14",
+   "aeptexas_com#10",
+   "bather_com#9"
+  ],
+  "id": "F057"
+ },
+ {
+  "name": "Square or small-radius buttons",
+  "family": "component",
+  "definition": "Do buttons have square corners or only a small corner radius rather than pill shapes?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "primary_button_radius_px",
+   "op": "<=",
+   "value": 6
+  },
+  "sites": [
+   "aeptexas_com",
+   "alpine8848_com",
+   "bather_com",
+   "gravityvault_com",
+   "kneeguru_co_uk",
+   "ridetech_com"
+  ],
+  "n_sites": 6,
+  "n_statements": 6,
+  "n_observations": 21,
+  "members": [
+   "aeptexas_com#8",
+   "ridetech_com#6",
+   "kneeguru_co_uk#19",
+   "bather_com#10",
+   "alpine8848_com#15",
+   "gravityvault_com#15"
+  ],
+  "id": "F058"
+ },
+ {
+  "name": "Text-only cards with accent edge",
+  "family": "component",
+  "definition": "Are cards text-only with a colored left or top accent border?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com",
+   "flygrant_com",
+   "miamidda_com",
+   "ridetech_com",
+   "tellmebaby_com_au",
+   "thync_com"
+  ],
+  "n_sites": 6,
+  "n_statements": 8,
+  "n_observations": 35,
+  "members": [
+   "ridetech_com#15",
+   "tellmebaby_com_au#13",
+   "tellmebaby_com_au#14",
+   "thync_com#11",
+   "flygrant_com#13",
+   "miamidda_com#14",
+   "cbdoilcreamnk_com#12",
+   "miamidda_com#17"
+  ],
+  "id": "F059"
+ },
+ {
+  "name": "Dark footer",
+  "family": "component",
+  "definition": "Is the footer a dark band?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "fnsouzafoundation_com",
+   "insightcentral_net",
+   "ridetech_com",
+   "stgpartners_com"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 18,
+  "members": [
+   "aeptexas_com#15",
+   "fnsouzafoundation_com#18",
+   "insightcentral_net#19",
+   "ridetech_com#18",
+   "stgpartners_com#14"
+  ],
+  "id": "F060"
+ },
+ {
+  "name": "Light footer with simple links",
+  "family": "component",
+  "definition": "Is the footer light with plain link columns or rows?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com",
+   "kneeguru_co_uk",
+   "merchantsavvy_co_uk",
+   "newclimateeconomy_net",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 12,
+  "members": [
+   "bluebayou_com#17",
+   "merchantsavvy_co_uk#19",
+   "newclimateeconomy_net#14",
+   "kneeguru_co_uk#18",
+   "tellmebaby_com_au#15"
+  ],
+  "id": "F061"
+ },
+ {
+  "name": "Miscellaneous content blocks",
+  "family": "component",
+  "definition": "Does the page include a distinct content block such as a calendar, feed, share links, or sign-up block?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bathurst12hour_com_au",
+   "flygrant_com",
+   "insightcentral_net",
+   "nira_org_ng",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 15,
+  "members": [
+   "nira_org_ng#16",
+   "thefrangipanicreative_com#12",
+   "bathurst12hour_com_au#15",
+   "insightcentral_net#18",
+   "flygrant_com#14"
+  ],
+  "id": "F062"
+ },
+ {
+  "name": "Search field joined with button",
+  "family": "component",
+  "definition": "Is search an input joined to a labeled button, or absent from the header?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "educationactivities_org",
+   "kanienkeha_net",
+   "newclimateeconomy_net",
+   "seoanalyzer_me",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 16,
+  "members": [
+   "educationactivities_org#17",
+   "newclimateeconomy_net#11",
+   "seoanalyzer_me#6",
+   "tellmebaby_com_au#8",
+   "kanienkeha_net#5"
+  ],
+  "id": "F063"
+ },
+ {
+  "name": "Solid filled brand-color CTA buttons",
+  "family": "component",
+  "definition": "Are the main call-to-action buttons solid filled with a brand color and rounded or plain corners?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "flygrant_com",
+   "homedesignersoftware_com",
+   "kanienkeha_net",
+   "nira_org_ng"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 14,
+  "members": [
+   "aeptexas_com#9",
+   "homedesignersoftware_com#5",
+   "kanienkeha_net#0",
+   "nira_org_ng#7",
+   "flygrant_com#3"
+  ],
+  "id": "F064"
+ },
+ {
+  "name": "Top announcement strip",
+  "family": "component",
+  "definition": "Is there a thin announcement strip at the top of the page?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com",
+   "fnsouzafoundation_com",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "stgpartners_com"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 12,
+  "members": [
+   "bluebayou_com#12",
+   "fnsouzafoundation_com#7",
+   "naturalwellbeing_com#5",
+   "neverskipbrunch_com#5",
+   "stgpartners_com#12"
+  ],
+  "id": "F065"
+ },
+ {
+  "name": "Underlined inline links",
+  "family": "component",
+  "definition": "Are inline body links underlined?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com",
+   "flygrant_com",
+   "homedesignersoftware_com",
+   "kneeguru_co_uk",
+   "thync_com"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 11,
+  "members": [
+   "bluebayou_com#30",
+   "flygrant_com#18",
+   "homedesignersoftware_com#21",
+   "kneeguru_co_uk#13",
+   "thync_com#9"
+  ],
+  "id": "F066"
+ },
+ {
+  "name": "Dark utility bar above header",
+  "family": "component",
+  "definition": "Is there a slim dark utility bar above the main header?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com",
+   "homedesignersoftware_com",
+   "kneeguru_co_uk",
+   "ridetech_com"
+  ],
+  "n_sites": 4,
+  "n_statements": 4,
+  "n_observations": 19,
+  "members": [
+   "cbdoilcreamnk_com#5",
+   "homedesignersoftware_com#9",
+   "kneeguru_co_uk#6",
+   "ridetech_com#8"
+  ],
+  "id": "F067"
+ },
+ {
+  "name": "Small badges and labels",
+  "family": "component",
+  "definition": "Are categories, dates, or status shown as small badge or label boxes?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bathurst12hour_com_au",
+   "cbdoilcreamnk_com",
+   "educationactivities_org",
+   "gravityvault_com"
+  ],
+  "n_sites": 4,
+  "n_statements": 5,
+  "n_observations": 10,
+  "members": [
+   "educationactivities_org#5",
+   "cbdoilcreamnk_com#10",
+   "gravityvault_com#18",
+   "bathurst12hour_com_au#6",
+   "educationactivities_org#10"
+  ],
+  "id": "F068"
+ },
+ {
+  "name": "Circular pagination controls",
+  "family": "component",
+  "definition": "Does pagination or carousel navigation use circular dots or rounded boxes?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "greatdayimprovements_com",
+   "kanienkeha_net"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 7,
+  "members": [
+   "allstate_jobs#13",
+   "greatdayimprovements_com#9",
+   "kanienkeha_net#12"
+  ],
+  "id": "F069"
+ },
+ {
+  "name": "Circular social icons",
+  "family": "component",
+  "definition": "Are social links shown as small circular icon or letter badges?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "nira_org_ng"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 8,
+  "members": [
+   "bathurst12hour_com_au#20",
+   "bluebayou_com#16",
+   "nira_org_ng#20"
+  ],
+  "id": "F070"
+ },
+ {
+  "name": "Logo strips and sponsor grids",
+  "family": "component",
+  "definition": "Are logos displayed in white tiles, strips, or grids?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com",
+   "bathurst12hour_com_au",
+   "merchantsavvy_co_uk"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 9,
+  "members": [
+   "bathurst12hour_com_au#21",
+   "bather_com#11",
+   "merchantsavvy_co_uk#7"
+  ],
+  "id": "F071"
+ },
+ {
+  "name": "Plain link lists",
+  "family": "component",
+  "definition": "Are link lists plain single-column stacks of bold links?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com",
+   "kneeguru_co_uk",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 7,
+  "members": [
+   "kneeguru_co_uk#10",
+   "cbdoilcreamnk_com#17",
+   "thefrangipanicreative_com#10"
+  ],
+  "id": "F072"
+ },
+ {
+  "name": "Profile and avatar elements",
+  "family": "component",
+  "definition": "Are people shown as profile cards, avatars, or testimonial photos?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "educationactivities_org",
+   "insightcentral_net"
+  ],
+  "n_sites": 3,
+  "n_statements": 4,
+  "n_observations": 8,
+  "members": [
+   "insightcentral_net#16",
+   "allstate_jobs#14",
+   "allstate_jobs#12",
+   "educationactivities_org#15"
+  ],
+  "id": "F073"
+ },
+ {
+  "name": "Section header with view-all link",
+  "family": "component",
+  "definition": "Do section headers pair a heading with a right-aligned view-all link?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "educationactivities_org",
+   "newclimateeconomy_net",
+   "seoanalyzer_me"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 7,
+  "members": [
+   "educationactivities_org#18",
+   "newclimateeconomy_net#9",
+   "seoanalyzer_me#10"
+  ],
+  "id": "F074"
+ },
+ {
+  "name": "Simple form layout",
+  "family": "component",
+  "definition": "Do forms use simple narrow or full-width native controls?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "flygrant_com",
+   "fnsouzafoundation_com",
+   "miamidda_com"
+  ],
+  "n_sites": 3,
+  "n_statements": 4,
+  "n_observations": 12,
+  "members": [
+   "fnsouzafoundation_com#16",
+   "flygrant_com#10",
+   "flygrant_com#8",
+   "miamidda_com#9"
+  ],
+  "id": "F075"
+ },
+ {
+  "name": "Medium corner radius scale",
+  "family": "component",
+  "definition": "Do cards and buttons consistently use 8-15px radii?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "radius_round_share",
+   "op": ">=",
+   "value": 0.3
+  },
+  "sites": [
+   "insightcentral_net",
+   "merchantsavvy_co_uk"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 5,
+  "members": [
+   "merchantsavvy_co_uk#17",
+   "insightcentral_net#10"
+  ],
+  "id": "F076"
+ },
+ {
+  "name": "Menu toggle button",
+  "family": "component",
+  "definition": "Is there a rounded text menu toggle button?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bathurst12hour_com_au",
+   "stgpartners_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 6,
+  "members": [
+   "bathurst12hour_com_au#22",
+   "stgpartners_com#4"
+  ],
+  "id": "F077"
+ },
+ {
+  "name": "Primary plus outlined secondary buttons",
+  "family": "component",
+  "definition": "Does a primary solid button appear alongside an outlined secondary button?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "homedesignersoftware_com",
+   "nira_org_ng"
+  ],
+  "n_sites": 2,
+  "n_statements": 3,
+  "n_observations": 10,
+  "members": [
+   "homedesignersoftware_com#10",
+   "homedesignersoftware_com#14",
+   "nira_org_ng#11"
+  ],
+  "id": "F078"
+ },
+ {
+  "name": "Segmented toggle control",
+  "family": "component",
+  "definition": "Is there a segmented toggle for binary or purchase choices?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "flygrant_com",
+   "homedesignersoftware_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 4,
+  "members": [
+   "flygrant_com#7",
+   "homedesignersoftware_com#18"
+  ],
+  "id": "F079"
+ },
+ {
+  "name": "Statistics display",
+  "family": "component",
+  "definition": "Are statistics shown as numbers in tiles or inline?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "insightcentral_net",
+   "kanienkeha_net"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 3,
+  "members": [
+   "kanienkeha_net#13",
+   "insightcentral_net#13"
+  ],
+  "id": "F080"
+ },
+ {
+  "name": "Text overlaid on imagery",
+  "family": "component",
+  "definition": "Is text overlaid on images or thumbnails?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "newclimateeconomy_net",
+   "thync_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 9,
+  "members": [
+   "newclimateeconomy_net#12",
+   "thync_com#10"
+  ],
+  "id": "F081"
+ },
+ {
+  "name": "Bold links without underline",
+  "family": "component",
+  "definition": "Are links bold and not underlined?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "allstate_jobs#10"
+  ],
+  "id": "F082"
+ },
+ {
+  "name": "Heading with accent underline rule",
+  "family": "component",
+  "definition": "Do section headings have a short accent underline rule?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "kneeguru_co_uk"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 4,
+  "members": [
+   "kneeguru_co_uk#1"
+  ],
+  "id": "F083"
+ },
+ {
+  "name": "Flat look without shadows or gradients",
+  "family": "decoration",
+  "definition": "Does the page look flat, with no or almost no box shadows, gradients, or backdrop blur?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "shadow_count",
+   "op": "<=",
+   "value": 2
+  },
+  "sites": [
+   "allstate_jobs",
+   "bather_com",
+   "bathurst12hour_com_au",
+   "greatdayimprovements_com",
+   "insightcentral_net",
+   "kanienkeha_net",
+   "merchantsavvy_co_uk",
+   "naturalwellbeing_com",
+   "newclimateeconomy_net",
+   "nira_org_ng"
+  ],
+  "n_sites": 10,
+  "n_statements": 10,
+  "n_observations": 21,
+  "members": [
+   "allstate_jobs#24",
+   "greatdayimprovements_com#16",
+   "insightcentral_net#24",
+   "newclimateeconomy_net#15",
+   "kanienkeha_net#18",
+   "merchantsavvy_co_uk#18",
+   "naturalwellbeing_com#3",
+   "nira_org_ng#21",
+   "bather_com#7",
+   "bathurst12hour_com_au#18"
+  ],
+  "id": "F084"
+ },
+ {
+  "name": "Large or medium rounded corners widely used",
+  "family": "decoration",
+  "definition": "Are medium-to-large corner radii (about 8px or more) used widely across cards, buttons and images?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "radius_round_share",
+   "op": ">=",
+   "value": 0.3
+  },
+  "sites": [
+   "cbdoilcreamnk_com",
+   "flygrant_com",
+   "homedesignersoftware_com",
+   "seoanalyzer_me",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 27,
+  "members": [
+   "cbdoilcreamnk_com#6",
+   "flygrant_com#6",
+   "homedesignersoftware_com#6",
+   "seoanalyzer_me#12",
+   "tellmebaby_com_au#24"
+  ],
+  "id": "F085"
+ },
+ {
+  "name": "Gradient hero background",
+  "family": "decoration",
+  "definition": "Does the hero section use a CSS gradient background rather than a photo?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com",
+   "homedesignersoftware_com",
+   "merchantsavvy_co_uk",
+   "thync_com"
+  ],
+  "n_sites": 4,
+  "n_statements": 4,
+  "n_observations": 17,
+  "members": [
+   "bather_com#6",
+   "homedesignersoftware_com#7",
+   "merchantsavvy_co_uk#5",
+   "thync_com#3"
+  ],
+  "id": "F086"
+ },
+ {
+  "name": "Rounded cards with soft shadows",
+  "family": "decoration",
+  "definition": "Do cards or panels combine rounded corners with soft drop shadows for depth?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "kneeguru_co_uk",
+   "miamidda_com",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 4,
+  "n_statements": 4,
+  "n_observations": 13,
+  "members": [
+   "aeptexas_com#12",
+   "kneeguru_co_uk#9",
+   "thefrangipanicreative_com#16",
+   "miamidda_com#13"
+  ],
+  "id": "F087"
+ },
+ {
+  "name": "Hover transitions on interactive elements",
+  "family": "decoration",
+  "definition": "Do interactive elements define CSS transitions?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "transition_count",
+   "op": ">=",
+   "value": 5
+  },
+  "sites": [
+   "alpine8848_com",
+   "stgpartners_com",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 8,
+  "members": [
+   "alpine8848_com#21",
+   "stgpartners_com#18",
+   "tellmebaby_com_au#25"
+  ],
+  "id": "F088"
+ },
+ {
+  "name": "Small or square corner radii",
+  "family": "decoration",
+  "definition": "Are corners square or only slightly rounded, with no large radii?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "radius_round_share",
+   "op": "<",
+   "value": 0.1
+  },
+  "sites": [
+   "naturalwellbeing_com",
+   "ridetech_com",
+   "stgpartners_com"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 5,
+  "members": [
+   "ridetech_com#23",
+   "stgpartners_com#17",
+   "naturalwellbeing_com#1"
+  ],
+  "id": "F089"
+ },
+ {
+  "name": "Colored left-border accent on cards",
+  "family": "decoration",
+  "definition": "Do cards carry a thick accent-colored left border?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "kanienkeha_net",
+   "kneeguru_co_uk"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 5,
+  "members": [
+   "kanienkeha_net#10",
+   "kneeguru_co_uk#12"
+  ],
+  "id": "F090"
+ },
+ {
+  "name": "Restrained visual effects overall",
+  "family": "decoration",
+  "definition": "Are visual effects (shadows, transitions, transforms) minimal across the page?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "transform_count",
+   "op": "<=",
+   "value": 2
+  },
+  "sites": [
+   "flygrant_com",
+   "kneeguru_co_uk"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 2,
+  "members": [
+   "flygrant_com#27",
+   "kneeguru_co_uk#23"
+  ],
+  "id": "F091"
+ },
+ {
+  "name": "Short accent underline under headings",
+  "family": "decoration",
+  "definition": "Do section headings have a short colored accent underline bar?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "gravityvault_com",
+   "ridetech_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 9,
+  "members": [
+   "gravityvault_com#21",
+   "ridetech_com#3"
+  ],
+  "id": "F092"
+ },
+ {
+  "name": "White bordered cards on off-white background",
+  "family": "decoration",
+  "definition": "Do content cards and plates sit as white, bordered, rounded boxes on an off-white or tinted page background?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "greatdayimprovements_com",
+   "nira_org_ng"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 8,
+  "members": [
+   "greatdayimprovements_com#10",
+   "nira_org_ng#13"
+  ],
+  "id": "F093"
+ },
+ {
+  "name": "Decorative marker on card headings",
+  "family": "decoration",
+  "definition": "Are card headings marked with a small green square or decorative icon image?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "kanienkeha_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 5,
+  "members": [
+   "kanienkeha_net#11"
+  ],
+  "id": "F094"
+ },
+ {
+  "name": "Decorative star-glyph italic label strip",
+  "family": "decoration",
+  "definition": "Is there a strip of italic serif labels with decorative star bullets below the hero?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "fnsouzafoundation_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "fnsouzafoundation_com#9"
+  ],
+  "id": "F095"
+ },
+ {
+  "name": "Diagonal wedge section divider",
+  "family": "decoration",
+  "definition": "Does the hero end with a full-width diagonal wedge divider?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "miamidda_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "miamidda_com#11"
+  ],
+  "id": "F096"
+ },
+ {
+  "name": "Footer disclaimer below thin divider",
+  "family": "decoration",
+  "definition": "Do legal disclaimer and copyright sit below a thin divider in small light text?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "naturalwellbeing_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "naturalwellbeing_com#22"
+  ],
+  "id": "F097"
+ },
+ {
+  "name": "Hero background is a soft peach-to-cream gradient.",
+  "family": "decoration",
+  "definition": "Hero background is a soft peach-to-cream gradient.",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "neverskipbrunch_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "neverskipbrunch_com#9"
+  ],
+  "id": "F098"
+ },
+ {
+  "name": "No brush-stroke section dividers",
+  "family": "decoration",
+  "definition": "Are section edges free of brush-stroke or torn-paint dividers?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "bluebayou_com#26"
+  ],
+  "id": "F099"
+ },
+ {
+  "name": "Offset lip edges and tilted elements",
+  "family": "decoration",
+  "definition": "Do cards and photos use solid offset edges and tilted shadowed elements instead of soft effects?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "bluebayou_com#25"
+  ],
+  "id": "F100"
+ },
+ {
+  "name": "Plain text rows with divider rules",
+  "family": "decoration",
+  "definition": "Are lists plain text rows separated by thin divider rules without icons?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "flygrant_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "flygrant_com#15"
+  ],
+  "id": "F101"
+ },
+ {
+  "name": "Sections separated by tone and rules",
+  "family": "decoration",
+  "definition": "Are sections separated by alternating dark tones and thin horizontal rules?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "fnsouzafoundation_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "fnsouzafoundation_com#19"
+  ],
+  "id": "F102"
+ },
+ {
+  "name": "Soft large-blur image shadows",
+  "family": "decoration",
+  "definition": "Do feature images carry soft, large-blur drop shadows?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "cbdoilcreamnk_com#7"
+  ],
+  "id": "F103"
+ },
+ {
+  "name": "Sticky header with backdrop blur",
+  "family": "decoration",
+  "definition": "Does the header use a semi-transparent background with backdrop blur?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "backdrop_blur_count",
+   "op": ">=",
+   "value": 1
+  },
+  "sites": [
+   "stgpartners_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "stgpartners_com#16"
+  ],
+  "id": "F104"
+ },
+ {
+  "name": "Descriptive alt text, empty on decorative",
+  "family": "imagery",
+  "definition": "Do meaningful images have descriptive alt text while decorative icons have empty alt?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "image_count",
+   "op": ">=",
+   "value": 1
+  },
+  "sites": [
+   "kanienkeha_net",
+   "kneeguru_co_uk",
+   "neverskipbrunch_com",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 4,
+  "n_statements": 4,
+  "n_observations": 12,
+  "members": [
+   "kanienkeha_net#19",
+   "kneeguru_co_uk#21",
+   "neverskipbrunch_com#25",
+   "thefrangipanicreative_com#15"
+  ],
+  "id": "F105"
+ },
+ {
+  "name": "Images with rounded corners and shadow",
+  "family": "imagery",
+  "definition": "Do images have rounded corners and/or drop shadows, including arch or curved crops?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "fnsouzafoundation_com",
+   "homedesignersoftware_com",
+   "neverskipbrunch_com",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 4,
+  "n_statements": 4,
+  "n_observations": 12,
+  "members": [
+   "fnsouzafoundation_com#13",
+   "homedesignersoftware_com#8",
+   "neverskipbrunch_com#8",
+   "tellmebaby_com_au#26"
+  ],
+  "id": "F106"
+ },
+ {
+  "name": "Colored tiles replace photography",
+  "family": "imagery",
+  "definition": "Are photos replaced by solid-color, pastel or gradient block tiles with text or icons?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com",
+   "educationactivities_org",
+   "merchantsavvy_co_uk"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 8,
+  "members": [
+   "bather_com#8",
+   "educationactivities_org#12",
+   "merchantsavvy_co_uk#13"
+  ],
+  "id": "F107"
+ },
+ {
+  "name": "Text-only cards without imagery",
+  "family": "imagery",
+  "definition": "Are cards or product items text-only with no images, or sparse imagery overall?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "image_count",
+   "op": "<=",
+   "value": 2
+  },
+  "sites": [
+   "naturalwellbeing_com",
+   "ridetech_com",
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 10,
+  "members": [
+   "naturalwellbeing_com#30",
+   "ridetech_com#13",
+   "tellmebaby_com_au#27"
+  ],
+  "id": "F108"
+ },
+ {
+  "name": "Hero image darkening overlay",
+  "family": "imagery",
+  "definition": "Does the hero photo have a darkening overlay or gradient behind the heading text?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "flygrant_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 5,
+  "members": [
+   "aeptexas_com#4",
+   "flygrant_com#11"
+  ],
+  "id": "F109"
+ },
+ {
+  "name": "Icons are inline SVG",
+  "family": "imagery",
+  "definition": "Are icons inline SVG elements rather than icon fonts?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "svg_count",
+   "op": ">=",
+   "value": 1
+  },
+  "sites": [
+   "bathurst12hour_com_au",
+   "merchantsavvy_co_uk"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 3,
+  "members": [
+   "bathurst12hour_com_au#2",
+   "merchantsavvy_co_uk#22"
+  ],
+  "id": "F110"
+ },
+ {
+  "name": "Images cropped to uniform small sizes",
+  "family": "imagery",
+  "definition": "Are images or thumbnails cropped via object-fit to uniform small sizes, sometimes cutting off subjects?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "educationactivities_org"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 3,
+  "members": [
+   "allstate_jobs#22",
+   "educationactivities_org#13"
+  ],
+  "id": "F111"
+ },
+ {
+  "name": "Placeholder image reused across cards",
+  "family": "imagery",
+  "definition": "Is one placeholder image repeated across gallery, product or card items?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "alpine8848_com",
+   "gravityvault_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 6,
+  "members": [
+   "alpine8848_com#18",
+   "gravityvault_com#25"
+  ],
+  "id": "F112"
+ },
+ {
+  "name": "Small left-aligned logo or sponsor strip",
+  "family": "imagery",
+  "definition": "Are sponsor or partner logos small, uniformly sized and left-aligned in a strip?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "kneeguru_co_uk",
+   "thync_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 5,
+  "members": [
+   "kneeguru_co_uk#27",
+   "thync_com#13"
+  ],
+  "id": "F113"
+ },
+ {
+  "name": "All images load without breakage",
+  "family": "imagery",
+  "definition": "Do all images load with valid sizes, with no broken images or icon-font glyph failures?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "homedesignersoftware_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "homedesignersoftware_com#22"
+  ],
+  "id": "F114"
+ },
+ {
+  "name": "Distorted scaled-down images",
+  "family": "imagery",
+  "definition": "Are small images scaled so their aspect ratio is distorted?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "nira_org_ng"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "nira_org_ng#24"
+  ],
+  "id": "F115"
+ },
+ {
+  "name": "Full-bleed hero photograph",
+  "family": "imagery",
+  "definition": "Is there a large full-bleed hero or team photograph as an img element?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "stgpartners_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "stgpartners_com#7"
+  ],
+  "id": "F116"
+ },
+ {
+  "name": "Grey no-preview placeholder",
+  "family": "imagery",
+  "definition": "Do missing images show a grey 'No preview available' placeholder rather than a broken image?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "seoanalyzer_me"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "seoanalyzer_me#13"
+  ],
+  "id": "F117"
+ },
+ {
+  "name": "Header logo legible size",
+  "family": "imagery",
+  "definition": "Is the logo displayed at a clearly legible size in the header?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "merchantsavvy_co_uk"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "merchantsavvy_co_uk#9"
+  ],
+  "id": "F118"
+ },
+ {
+  "name": "Hero photos lack tint overlay",
+  "family": "imagery",
+  "definition": "Do hero photos appear in near-natural color without a flat duotone or tint overlay?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "bluebayou_com#10"
+  ],
+  "id": "F119"
+ },
+ {
+  "name": "Icons absent, text labels used",
+  "family": "imagery",
+  "definition": "Are utility actions shown as plain text labels with no SVG icons?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "svg_count",
+   "op": "==",
+   "value": 0
+  },
+  "sites": [
+   "naturalwellbeing_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "naturalwellbeing_com#4"
+  ],
+  "id": "F120"
+ },
+ {
+  "name": "Icons uniform small squares in cards",
+  "family": "imagery",
+  "definition": "Are icons normalized to a uniform small square size inside cards?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "stgpartners_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "stgpartners_com#8"
+  ],
+  "id": "F121"
+ },
+ {
+  "name": "Media embeds replaced by link cards",
+  "family": "imagery",
+  "definition": "Are video or media embeds replaced with text-link cards?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "nira_org_ng"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "nira_org_ng#25"
+  ],
+  "id": "F122"
+ },
+ {
+  "name": "Slogan graphic in shadowed card",
+  "family": "imagery",
+  "definition": "Is a standalone slogan graphic shown small inside a white shadowed card?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "bluebayou_com#31"
+  ],
+  "id": "F123"
+ },
+ {
+  "name": "Small circular avatar",
+  "family": "imagery",
+  "definition": "Is there a small circular avatar next to a name and subtitle?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "educationactivities_org"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "educationactivities_org#14"
+  ],
+  "id": "F124"
+ },
+ {
+  "name": "Title: brand plus tagline (dash)",
+  "family": "copy",
+  "definition": "Does the page title combine the brand name with a descriptive tagline joined by a dash (em or en)?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "aeptexas_com",
+   "bather_com",
+   "bluebayou_com",
+   "kanienkeha_net",
+   "kneeguru_co_uk",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "nira_org_ng",
+   "seoanalyzer_me",
+   "stgpartners_com",
+   "thync_com"
+  ],
+  "n_sites": 11,
+  "n_statements": 11,
+  "n_observations": 26,
+  "members": [
+   "aeptexas_com#0",
+   "bather_com#21",
+   "bluebayou_com#27",
+   "kanienkeha_net#22",
+   "kneeguru_co_uk#24",
+   "neverskipbrunch_com#0",
+   "nira_org_ng#0",
+   "seoanalyzer_me#0",
+   "stgpartners_com#5",
+   "naturalwellbeing_com#29",
+   "thync_com#18"
+  ],
+  "id": "F125"
+ },
+ {
+  "name": "Arrow-ended call-to-action links",
+  "family": "copy",
+  "definition": "Do links or calls-to-action end with an arrow glyph such as →?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "alpine8848_com",
+   "bathurst12hour_com_au",
+   "gravityvault_com",
+   "miamidda_com",
+   "neverskipbrunch_com",
+   "ridetech_com",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 7,
+  "n_statements": 7,
+  "n_observations": 23,
+  "members": [
+   "alpine8848_com#16",
+   "bathurst12hour_com_au#13",
+   "gravityvault_com#26",
+   "miamidda_com#20",
+   "ridetech_com#14",
+   "thefrangipanicreative_com#19",
+   "neverskipbrunch_com#24"
+  ],
+  "id": "F126"
+ },
+ {
+  "name": "Sentence/title case instead of all caps",
+  "family": "copy",
+  "definition": "Do buttons, headings, nav and link labels use sentence or title case rather than all-caps uppercase?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "flygrant_com",
+   "fnsouzafoundation_com",
+   "homedesignersoftware_com",
+   "kanienkeha_net",
+   "kneeguru_co_uk"
+  ],
+  "n_sites": 6,
+  "n_statements": 6,
+  "n_observations": 21,
+  "members": [
+   "allstate_jobs#3",
+   "homedesignersoftware_com#17",
+   "kneeguru_co_uk#25",
+   "flygrant_com#28",
+   "fnsouzafoundation_com#23",
+   "kanienkeha_net#23"
+  ],
+  "id": "F127"
+ },
+ {
+  "name": "Title: short brand-only name",
+  "family": "copy",
+  "definition": "Is the page title a short plain brand name without keyword lists or trailing separators?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com",
+   "flygrant_com",
+   "gravityvault_com",
+   "newclimateeconomy_net"
+  ],
+  "n_sites": 4,
+  "n_statements": 4,
+  "n_observations": 9,
+  "members": [
+   "cbdoilcreamnk_com#21",
+   "flygrant_com#0",
+   "gravityvault_com#6",
+   "newclimateeconomy_net#20"
+  ],
+  "id": "F128"
+ },
+ {
+  "name": "Calm copy without emoji or exclamations",
+  "family": "copy",
+  "definition": "Is the copy restrained, with few exclamation marks and no emoji?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "emoji_count",
+   "op": "==",
+   "value": 0
+  },
+  "sites": [
+   "cbdoilcreamnk_com",
+   "naturalwellbeing_com",
+   "nira_org_ng"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 7,
+  "members": [
+   "cbdoilcreamnk_com#22",
+   "naturalwellbeing_com#31",
+   "nira_org_ng#23"
+  ],
+  "id": "F129"
+ },
+ {
+  "name": "Title: brand plus tagline (pipe)",
+  "family": "copy",
+  "definition": "Does the page title combine the brand name with a tagline or slogan joined by a pipe separator?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "homedesignersoftware_com",
+   "merchantsavvy_co_uk",
+   "ridetech_com"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 6,
+  "members": [
+   "merchantsavvy_co_uk#1",
+   "ridetech_com#0",
+   "homedesignersoftware_com#25"
+  ],
+  "id": "F130"
+ },
+ {
+  "name": "Typographic glyphs and polished copy",
+  "family": "copy",
+  "definition": "Does the copy use typographic glyphs like ® or ↑ inline and read as polished and error-free?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "greatdayimprovements_com",
+   "stgpartners_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 9,
+  "members": [
+   "greatdayimprovements_com#19",
+   "stgpartners_com#21"
+  ],
+  "id": "F131"
+ },
+ {
+  "name": "Added section headings for unlabeled blocks",
+  "family": "copy",
+  "definition": "Are headings added to previously unlabeled blocks, such as a blog heading?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "kanienkeha_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 4,
+  "members": [
+   "kanienkeha_net#24"
+  ],
+  "id": "F132"
+ },
+ {
+  "name": "Centered-dot meta separator",
+  "family": "copy",
+  "definition": "Do meta lines separate author and date with a centered dot?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "educationactivities_org"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "educationactivities_org#19"
+  ],
+  "id": "F133"
+ },
+ {
+  "name": "Descriptive alt text",
+  "family": "copy",
+  "definition": "Do images have descriptive alt text matching their content, such as 'Screenshot of' prefixes?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "seoanalyzer_me"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "seoanalyzer_me#14"
+  ],
+  "id": "F134"
+ },
+ {
+  "name": "Excerpts only on lead cards",
+  "family": "copy",
+  "definition": "Do excerpts appear only on hero and lead-row cards while later cards show just title and meta?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "educationactivities_org"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "educationactivities_org#23"
+  ],
+  "id": "F135"
+ },
+ {
+  "name": "Header site name on dark band",
+  "family": "copy",
+  "definition": "Does the header show the site name in light text on a dark band with an italic tagline?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "alpine8848_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "alpine8848_com#10"
+  ],
+  "id": "F136"
+ },
+ {
+  "name": "Hero benefit bullets with check icons",
+  "family": "copy",
+  "definition": "Does the hero include benefit bullets with circular check icons?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "merchantsavvy_co_uk"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 4,
+  "members": [
+   "merchantsavvy_co_uk#21"
+  ],
+  "id": "F137"
+ },
+ {
+  "name": "Hero halves with logo and caption",
+  "family": "copy",
+  "definition": "Are hero halves labeled with a logo and a short uppercase caption?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "bluebayou_com#28"
+  ],
+  "id": "F138"
+ },
+ {
+  "name": "Instructive input placeholder example",
+  "family": "copy",
+  "definition": "Does an input placeholder give an instructive example format such as 'e.g. example.com'?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "seoanalyzer_me"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "seoanalyzer_me#7"
+  ],
+  "id": "F139"
+ },
+ {
+  "name": "Italic serif empty-state placeholder",
+  "family": "copy",
+  "definition": "Do empty states use an italic serif placeholder line?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "newclimateeconomy_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "newclimateeconomy_net#16"
+  ],
+  "id": "F140"
+ },
+ {
+  "name": "Minimal card metadata",
+  "family": "copy",
+  "definition": "Do cards show only minimal metadata with no timestamps or reply chips?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "insightcentral_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "insightcentral_net#25"
+  ],
+  "id": "F141"
+ },
+ {
+  "name": "Section-ending CTA buttons",
+  "family": "copy",
+  "definition": "Do sections end with explicit call-to-action buttons beneath short intro paragraphs?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "naturalwellbeing_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 4,
+  "members": [
+   "naturalwellbeing_com#18"
+  ],
+  "id": "F142"
+ },
+ {
+  "name": "Short concise nav labels",
+  "family": "copy",
+  "definition": "Are nav labels and titles short and concise?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 5,
+  "members": [
+   "thefrangipanicreative_com#20"
+  ],
+  "id": "F143"
+ },
+ {
+  "name": "Title: brand followed by services list",
+  "family": "copy",
+  "definition": "Does the page title lead with the brand name followed by a list of products or services?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "greatdayimprovements_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "greatdayimprovements_com#2"
+  ],
+  "id": "F144"
+ },
+ {
+  "name": "Title: descriptive sentence of offering",
+  "family": "copy",
+  "definition": "Is the page title a descriptive sentence stating what the site offers and for whom?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "tellmebaby_com_au#7"
+  ],
+  "id": "F145"
+ },
+ {
+  "name": "Truncated card titles with ellipsis",
+  "family": "copy",
+  "definition": "Are long card titles truncated with an ellipsis?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "insightcentral_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "insightcentral_net#15"
+  ],
+  "id": "F146"
+ },
+ {
+  "name": "Uppercase promo headline with offer label",
+  "family": "copy",
+  "definition": "Is the promo headline a full uppercase sentence in large display type with the offer as a small label above?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "bluebayou_com#29"
+  ],
+  "id": "F147"
+ },
+ {
+  "name": "Semantic landmark elements used",
+  "family": "semantic_dom",
+  "definition": "Does the page use HTML5 semantic landmark/sectioning elements (header, main, nav, section, article, footer, aside) rather than generic divs?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "semantic_tag_count",
+   "op": ">=",
+   "value": 4
+  },
+  "sites": [
+   "aeptexas_com",
+   "alpine8848_com",
+   "bluebayou_com",
+   "flygrant_com",
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "greatdayimprovements_com",
+   "homedesignersoftware_com",
+   "insightcentral_net",
+   "kanienkeha_net",
+   "kneeguru_co_uk",
+   "merchantsavvy_co_uk",
+   "miamidda_com",
+   "naturalwellbeing_com",
+   "neverskipbrunch_com",
+   "nira_org_ng",
+   "ridetech_com",
+   "seoanalyzer_me",
+   "tellmebaby_com_au",
+   "thync_com"
+  ],
+  "n_sites": 20,
+  "n_statements": 20,
+  "n_observations": 74,
+  "members": [
+   "aeptexas_com#16",
+   "alpine8848_com#0",
+   "bluebayou_com#1",
+   "flygrant_com#23",
+   "greatdayimprovements_com#1",
+   "insightcentral_net#7",
+   "kneeguru_co_uk#0",
+   "merchantsavvy_co_uk#16",
+   "miamidda_com#1",
+   "naturalwellbeing_com#26",
+   "nira_org_ng#2",
+   "ridetech_com#22",
+   "seoanalyzer_me#1",
+   "thync_com#15",
+   "gravityvault_com#1",
+   "tellmebaby_com_au#5",
+   "fnsouzafoundation_com#21",
+   "homedesignersoftware_com#20",
+   "neverskipbrunch_com#21",
+   "kanienkeha_net#20"
+  ],
+  "id": "F148"
+ },
+ {
+  "name": "Lean minimal DOM and styling",
+  "family": "semantic_dom",
+  "definition": "Is the markup lean, with few divs, classes, scripts, external stylesheets and inline styles?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "script_count",
+   "op": "<=",
+   "value": 2
+  },
+  "sites": [
+   "aeptexas_com",
+   "alpine8848_com",
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "cbdoilcreamnk_com",
+   "educationactivities_org",
+   "flygrant_com",
+   "gravityvault_com",
+   "homedesignersoftware_com",
+   "kneeguru_co_uk",
+   "merchantsavvy_co_uk",
+   "miamidda_com",
+   "naturalwellbeing_com",
+   "newclimateeconomy_net",
+   "ridetech_com",
+   "stgpartners_com",
+   "tellmebaby_com_au",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 18,
+  "n_statements": 19,
+  "n_observations": 45,
+  "members": [
+   "aeptexas_com#20",
+   "alpine8848_com#4",
+   "alpine8848_com#22",
+   "bathurst12hour_com_au#23",
+   "bluebayou_com#23",
+   "cbdoilcreamnk_com#19",
+   "educationactivities_org#21",
+   "flygrant_com#26",
+   "gravityvault_com#5",
+   "homedesignersoftware_com#24",
+   "kneeguru_co_uk#22",
+   "merchantsavvy_co_uk#23",
+   "miamidda_com#22",
+   "naturalwellbeing_com#28",
+   "newclimateeconomy_net#18",
+   "ridetech_com#21",
+   "stgpartners_com#25",
+   "tellmebaby_com_au#6",
+   "thefrangipanicreative_com#17"
+  ],
+  "id": "F149"
+ },
+ {
+  "name": "Clean hierarchical heading outline",
+  "family": "semantic_dom",
+  "definition": "Does the page have a clean, properly nested heading hierarchy (e.g. h1, then h2 sections, then h3 items) without skipped levels?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "h1_count",
+   "op": "==",
+   "value": 1
+  },
+  "sites": [
+   "aeptexas_com",
+   "allstate_jobs",
+   "alpine8848_com",
+   "bather_com",
+   "bathurst12hour_com_au",
+   "bluebayou_com",
+   "cbdoilcreamnk_com",
+   "flygrant_com",
+   "gravityvault_com",
+   "homedesignersoftware_com",
+   "insightcentral_net",
+   "neverskipbrunch_com",
+   "nira_org_ng",
+   "stgpartners_com"
+  ],
+  "n_sites": 14,
+  "n_statements": 15,
+  "n_observations": 53,
+  "members": [
+   "aeptexas_com#21",
+   "allstate_jobs#7",
+   "alpine8848_com#1",
+   "bather_com#17",
+   "bathurst12hour_com_au#1",
+   "bluebayou_com#2",
+   "cbdoilcreamnk_com#0",
+   "cbdoilcreamnk_com#11",
+   "flygrant_com#20",
+   "gravityvault_com#4",
+   "homedesignersoftware_com#16",
+   "insightcentral_net#6",
+   "neverskipbrunch_com#20",
+   "stgpartners_com#2",
+   "nira_org_ng#1"
+  ],
+  "id": "F150"
+ },
+ {
+  "name": "Descriptive alt text on images",
+  "family": "semantic_dom",
+  "definition": "Do all images carry descriptive, non-empty alt text?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "allstate_jobs",
+   "alpine8848_com",
+   "bather_com",
+   "bluebayou_com",
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "greatdayimprovements_com"
+  ],
+  "n_sites": 7,
+  "n_statements": 7,
+  "n_observations": 17,
+  "members": [
+   "allstate_jobs#21",
+   "alpine8848_com#5",
+   "bather_com#19",
+   "bluebayou_com#3",
+   "fnsouzafoundation_com#15",
+   "gravityvault_com#3",
+   "greatdayimprovements_com#18"
+  ],
+  "id": "F151"
+ },
+ {
+  "name": "ARIA attributes and real buttons",
+  "family": "semantic_dom",
+  "definition": "Does the page use ARIA attributes and real button elements for interactive controls?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "aria_attr_count",
+   "op": ">=",
+   "value": 3
+  },
+  "sites": [
+   "fnsouzafoundation_com",
+   "gravityvault_com",
+   "merchantsavvy_co_uk",
+   "newclimateeconomy_net",
+   "nira_org_ng"
+  ],
+  "n_sites": 5,
+  "n_statements": 5,
+  "n_observations": 19,
+  "members": [
+   "gravityvault_com#2",
+   "fnsouzafoundation_com#22",
+   "merchantsavvy_co_uk#24",
+   "nira_org_ng#3",
+   "newclimateeconomy_net#19"
+  ],
+  "id": "F152"
+ },
+ {
+  "name": "Decorative images with empty alt",
+  "family": "semantic_dom",
+  "definition": "Do most images use empty alt attributes for decorative purposes?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "educationactivities_org",
+   "insightcentral_net",
+   "merchantsavvy_co_uk"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 9,
+  "members": [
+   "educationactivities_org#22",
+   "insightcentral_net#21",
+   "merchantsavvy_co_uk#15"
+  ],
+  "id": "F153"
+ },
+ {
+  "name": "Irregular or missing h1 heading",
+  "family": "semantic_dom",
+  "definition": "Is the heading outline irregular, such as lacking an h1 or starting at h3 or skipping levels?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "h1_count",
+   "op": "==",
+   "value": 0
+  },
+  "sites": [
+   "kanienkeha_net",
+   "naturalwellbeing_com",
+   "newclimateeconomy_net"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 12,
+  "members": [
+   "kanienkeha_net#21",
+   "naturalwellbeing_com#27",
+   "newclimateeconomy_net#17"
+  ],
+  "id": "F154"
+ },
+ {
+  "name": "Language attribute declared",
+  "family": "semantic_dom",
+  "definition": "Does the html element declare a lang attribute?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com",
+   "gravityvault_com",
+   "greatdayimprovements_com"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 6,
+  "members": [
+   "bluebayou_com#0",
+   "gravityvault_com#0",
+   "greatdayimprovements_com#0"
+  ],
+  "id": "F155"
+ },
+ {
+  "name": "Cards wrapped in article elements",
+  "family": "semantic_dom",
+  "definition": "Are repeated posts or cards wrapped in article elements?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "semantic_tag_count",
+   "op": ">=",
+   "value": 6
+  },
+  "sites": [
+   "allstate_jobs",
+   "educationactivities_org"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 9,
+  "members": [
+   "educationactivities_org#8",
+   "allstate_jobs#18"
+  ],
+  "id": "F156"
+ },
+ {
+  "name": "Figure and blockquote for quotes",
+  "family": "semantic_dom",
+  "definition": "Are quotes marked up with figure, blockquote and figcaption elements?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bather_com",
+   "thefrangipanicreative_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 6,
+  "members": [
+   "bather_com#18",
+   "thefrangipanicreative_com#9"
+  ],
+  "id": "F157"
+ },
+ {
+  "name": "Minimal head meta tags",
+  "family": "semantic_dom",
+  "definition": "Does the head contain only a few basic meta tags (charset, viewport, description)?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "meta_tag_count",
+   "op": "<=",
+   "value": 3
+  },
+  "sites": [
+   "alpine8848_com",
+   "seoanalyzer_me"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 5,
+  "members": [
+   "alpine8848_com#2",
+   "seoanalyzer_me#22"
+  ],
+  "id": "F158"
+ },
+ {
+  "name": "Plain short document title",
+  "family": "semantic_dom",
+  "definition": "Is the document title short and plain, without keyword stuffing or decoration?",
+  "detector": "text",
+  "proxy": null,
+  "sites": [
+   "bathurst12hour_com_au",
+   "miamidda_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 4,
+  "members": [
+   "bathurst12hour_com_au#0",
+   "miamidda_com#0"
+  ],
+  "id": "F159"
+ },
+ {
+  "name": "Strikethrough prices use s tag",
+  "family": "semantic_dom",
+  "definition": "Are struck-through prices marked with the s element?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com",
+   "homedesignersoftware_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 3,
+  "members": [
+   "cbdoilcreamnk_com#20",
+   "homedesignersoftware_com#15"
+  ],
+  "id": "F160"
+ },
+ {
+  "name": "Address element for contact details",
+  "family": "semantic_dom",
+  "definition": "Are contact details wrapped in an address element?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "alpine8848_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "alpine8848_com#3"
+  ],
+  "id": "F161"
+ },
+ {
+  "name": "Class names are semantic rather than utility-style.",
+  "family": "semantic_dom",
+  "definition": "Class names are semantic rather than utility-style.",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "bluebayou_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "bluebayou_com#24"
+  ],
+  "id": "F162"
+ },
+ {
+  "name": "Details/summary disclosure widget",
+  "family": "semantic_dom",
+  "definition": "Does the page use a native details/summary disclosure?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "cbdoilcreamnk_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "cbdoilcreamnk_com#18"
+  ],
+  "id": "F163"
+ },
+ {
+  "name": "Item titles use h3 headings",
+  "family": "semantic_dom",
+  "definition": "Are card or item titles marked up as h3 headings under h2 sections?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "heading_count",
+   "op": ">=",
+   "value": 5
+  },
+  "sites": [
+   "tellmebaby_com_au"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "tellmebaby_com_au#4"
+  ],
+  "id": "F164"
+ },
+ {
+  "name": "Navigation marked up as lists",
+  "family": "semantic_dom",
+  "definition": "Are navigation and link groups marked up as ul/li lists?",
+  "detector": "vision",
+  "proxy": null,
+  "sites": [
+   "stgpartners_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 3,
+  "members": [
+   "stgpartners_com#3"
+  ],
+  "id": "F165"
+ },
+ {
+  "name": "Lean self-contained markup, no scripts",
+  "family": "other",
+  "definition": "Is the page markup lean and self-contained, with few elements, no or minimal scripts, and little or no inline styling?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "script_count",
+   "op": "<=",
+   "value": 1
+  },
+  "sites": [
+   "bather_com",
+   "insightcentral_net",
+   "nira_org_ng"
+  ],
+  "n_sites": 3,
+  "n_statements": 3,
+  "n_observations": 8,
+  "members": [
+   "bather_com#20",
+   "insightcentral_net#22",
+   "nira_org_ng#22"
+  ],
+  "id": "F166"
+ },
+ {
+  "name": "Few CSS transitions, no animations",
+  "family": "other",
+  "definition": "Does the page define few or no CSS transitions and no CSS animations (minimal interactivity)?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "animation_count",
+   "op": "==",
+   "value": 0
+  },
+  "sites": [
+   "aeptexas_com",
+   "cbdoilcreamnk_com"
+  ],
+  "n_sites": 2,
+  "n_statements": 2,
+  "n_observations": 2,
+  "members": [
+   "aeptexas_com#23",
+   "cbdoilcreamnk_com#23"
+  ],
+  "id": "F167"
+ },
+ {
+  "name": "Frequent CSS grid layout use",
+  "family": "other",
+  "definition": "Does the page use CSS grid for layout relatively often alongside flexbox?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "grid_count",
+   "op": ">=",
+   "value": 3
+  },
+  "sites": [
+   "insightcentral_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "insightcentral_net#20"
+  ],
+  "id": "F168"
+ },
+ {
+  "name": "Many hover transitions",
+  "family": "other",
+  "definition": "Do interactive elements use many CSS transitions for hover polish?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "transition_count",
+   "op": ">=",
+   "value": 10
+  },
+  "sites": [
+   "neverskipbrunch_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 2,
+  "members": [
+   "neverskipbrunch_com#22"
+  ],
+  "id": "F169"
+ },
+ {
+  "name": "Single embedded style, no effects",
+  "family": "other",
+  "definition": "Is styling a single embedded style block with no inline styles, shadows, animations or transforms?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "inline_style_attrs",
+   "op": "==",
+   "value": 0
+  },
+  "sites": [
+   "thync_com"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 7,
+  "members": [
+   "thync_com#16"
+  ],
+  "id": "F170"
+ },
+ {
+  "name": "Small hand-written class set",
+  "family": "other",
+  "definition": "Is styling done with a small hand-written set of classes rather than utility or framework classes?",
+  "detector": "programmatic",
+  "proxy": {
+   "key": "tailwind_like_fraction",
+   "op": "<=",
+   "value": 0.05
+  },
+  "sites": [
+   "insightcentral_net"
+  ],
+  "n_sites": 1,
+  "n_statements": 1,
+  "n_observations": 1,
+  "members": [
+   "insightcentral_net#23"
+  ],
+  "id": "F171"
+ }
+]

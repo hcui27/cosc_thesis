@@ -1,0 +1,220 @@
+{
+ "key": "1b8deda9771c",
+ "groups": [
+  {
+   "name": "Short brand-only page title",
+   "definition": "Is the document title just a short brand or organization name, with no tagline, keywords or subtitle?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "gravityvault_com#16",
+    "miamidda_com#4",
+    "newclimateeconomy_net#0",
+    "thync_com#25"
+   ]
+  },
+  {
+   "name": "Short concise title, not keyword-stuffed",
+   "definition": "Is the document title short and concise rather than a long keyword-stuffed or descriptive string (including brand–descriptor forms)?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#0",
+    "flygrant_com#0",
+    "nira_org_ng#0"
+   ]
+  },
+  {
+   "name": "Brand plus tagline title",
+   "definition": "Does the document title combine the brand name with a descriptive tagline or phrase separated by a pipe, dash or similar?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#0",
+    "homedesignersoftware_com#0",
+    "kanienkeha_net#24",
+    "seoanalyzer_me#0",
+    "kneeguru_co_uk#3",
+    "bluebayou_com#0",
+    "bather_com#2",
+    "alpine8848_com#23"
+   ]
+  },
+  {
+   "name": "Title repeats hero headline",
+   "definition": "Does the document title incorporate or repeat the hero headline text?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "merchantsavvy_co_uk#0",
+    "tellmebaby_com_au#0"
+   ]
+  },
+  {
+   "name": "Title with byline or product brand list",
+   "definition": "Does the document title list product brands or an author byline instead of a keyword phrase?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#19",
+    "greatdayimprovements_com#20"
+   ]
+  },
+  {
+   "name": "Title uses pipe and curly apostrophes",
+   "definition": "Does the document title use a pipe separator together with typographic curly apostrophes?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#32"
+   ]
+  },
+  {
+   "name": "Typographic curly quotes and dashes",
+   "definition": "Does the copy use typographic punctuation such as curly apostrophes, curly quotes, en dashes or em dashes?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#25",
+    "miamidda_com#25",
+    "thync_com#26"
+   ]
+  },
+  {
+   "name": "Arrow glyphs on links and labels",
+   "definition": "Do links, card titles or buttons end with a text arrow glyph such as →?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#18",
+    "merchantsavvy_co_uk#14",
+    "miamidda_com#19",
+    "newclimateeconomy_net#20",
+    "kanienkeha_net#15",
+    "stgpartners_com#27",
+    "homedesignersoftware_com#28"
+   ]
+  },
+  {
+   "name": "Subtitle microcopy beneath headings or banners",
+   "definition": "Does a heading, hero or banner have a short descriptive subtitle or tagline line beneath it?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#26",
+    "bathurst12hour_com_au#31",
+    "insightcentral_net#15",
+    "ridetech_com#16",
+    "kanienkeha_net#16",
+    "thefrangipanicreative_com#12",
+    "cbdoilcreamnk_com#6"
+   ]
+  },
+  {
+   "name": "Persuasive marketing microcopy",
+   "definition": "Does the copy use marketing-style taglines, badges, friendly CTAs and promotional phrasing?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#25",
+    "naturalwellbeing_com#27",
+    "thefrangipanicreative_com#11",
+    "insightcentral_net#16",
+    "newclimateeconomy_net#28",
+    "educationactivities_org#27"
+   ]
+  },
+  {
+   "name": "Condensed low word-count copy",
+   "definition": "Is the page copy condensed, with fewer words and dropped lists or teasers?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "word_count",
+    "op": "<=",
+    "value": 400
+   },
+   "members": [
+    "greatdayimprovements_com#19"
+   ]
+  },
+  {
+   "name": "Calm tone, few exclamation marks",
+   "definition": "Is the tone calm with no or few exclamation marks?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "exclamation_count",
+    "op": "<=",
+    "value": 0
+   },
+   "members": [
+    "kanienkeha_net#23",
+    "nira_org_ng#21"
+   ]
+  },
+  {
+   "name": "Casual lowercase friendly copy",
+   "definition": "Is secondary copy short, casual and lowercase with a personal tone?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#20"
+   ]
+  },
+  {
+   "name": "Sentence or title case labels",
+   "definition": "Do labels and microcopy use sentence or title case rather than all lowercase or uppercase?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#15",
+    "seoanalyzer_me#17"
+   ]
+  },
+  {
+   "name": "Short uppercase section headings",
+   "definition": "Are sections introduced with short uppercase headings or eyebrow labels?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#30"
+   ]
+  },
+  {
+   "name": "Full untruncated news headlines",
+   "definition": "Are news headlines shown in full without truncation?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#33"
+   ]
+  },
+  {
+   "name": "Contact details as short link text",
+   "definition": "Are contact details shown as short link text or plain text rather than raw addresses or forms?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "flygrant_com#16",
+    "thync_com#27"
+   ]
+  },
+  {
+   "name": "Descriptive category hero headline",
+   "definition": "Is the hero headline a short descriptive category phrase rather than an artwork title?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#25"
+   ]
+  },
+  {
+   "name": "Prices bold with 'from $' prefix",
+   "definition": "Are prices shown in bold accent color with a 'from $' prefix for variable pricing?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#24"
+   ]
+  }
+ ]
+}

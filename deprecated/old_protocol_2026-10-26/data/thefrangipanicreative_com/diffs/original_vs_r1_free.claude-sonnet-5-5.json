@@ -1,0 +1,242 @@
+[
+ {
+  "observation": "A has no h1 element; its heading outline starts with an h2 reading 'Main Content'. B has exactly one h1, 'The Frangipani Creative', set in Fraunces at 70.4px, weight 600, white.",
+  "category": "DOM/semantic structure",
+  "evidence": "A_facts h1_count 0, h1 null, first heading h2 'Main Content'; B_facts h1_count 1, h1 font_size 70.4px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's site title is a centered serif wordmark on a white strip, with a centered horizontal nav row below it. B puts the logo text at left and the nav links at right, overlaid on the hero photo.",
+  "category": "layout",
+  "evidence": "A_slice_00 centered 'The Frangipani Creative' above a nav line; B_slice_00 header with logo left and links right over the image",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's nav labels are bold black Open Sans, and the active 'Home' item is crimson. B's nav labels are regular-weight white Inter on the dark photo, with no visible active-state color.",
+  "category": "typography",
+  "evidence": "A_slice_00 bold nav, Home in red; B_slice_00 white light nav links",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no distinct hero. The intro is plain black body text laid over a dimmed flower photo inside a narrow 880px column, with the photo's flowers at the lower right. B has a full-width hero (about 790px tall) with an eyebrow label, a large headline, a subhead and two CTA buttons, over a darkened flower photo.",
+  "category": "layout",
+  "evidence": "A_slice_00 text box x 280–1160 with a paragraph over the photo; B_slice_00 full-bleed hero with 'SECUNDERABAD, INDIA' eyebrow, h1, subtitle and buttons",
+  "which_side": "both"
+ },
+ {
+  "observation": "A renders the intro paragraphs as black text on a dark brown photo background, with crimson underlined links at low contrast. B puts the hero text in white and sets the intro copy on a cream page background.",
+  "category": "color",
+  "evidence": "A_slice_00 dark text on a dark image; B_slice_00 white h1 rgb(255,255,255); B body_bg rgb(251,246,241)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body background is pure white with black text. B uses a warm cream page background, near-black brown text and a dark espresso footer.",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255), body_color rgb(0,0,0); B body_bg rgb(251,246,241), body_color rgb(43,34,32), footer bg rgb(27,21,19)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B introduces a raspberry/magenta primary accent, rgb(194,37,92), for buttons and highlighted words. A's accent is crimson rgb(178,3,50), used almost only on links, plus the brand-colored social blocks.",
+  "category": "color",
+  "evidence": "B top_backgrounds rgb(194,37,92) ×4; A top_text_colors rgb(178,3,50) ×106",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses an amber/orange eyebrow label style (small uppercase letter-spaced text such as 'SECUNDERABAD, INDIA' and 'COACHING') and a magenta 'ABOUT' label. A has no eyebrow labels. Its small uppercase tracked text appears only in the 'LOCATION' and 'RECENT POSTS' headings.",
+  "category": "typography",
+  "evidence": "B_slice_00 and B_slice_01 eyebrow labels; A_slice_02 uppercase headings",
+  "which_side": "B"
+ },
+ {
+  "observation": "The font stacks differ. A uses Open Sans (379 elements), Arbutus Slab for headings (23), FontAwesome (20) and the icon font sw-icon-font (5). B uses only Inter (119) for body and Fraunces (19) for display headings.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count; B fonts_by_element_count",
+  "which_side": "both"
+ },
+ {
+  "observation": "Heading scale differs. A's h2 is 30px at weight 400 (many section titles are small ~20px Arbutus Slab centered). B's h2 is 41.6px at weight 600, and the h1 is 70.4px.",
+  "category": "typography",
+  "evidence": "A h2 font_size 30px weight 400; B h2 41.6px weight 600, h1 70.4px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text is 18px/29.25px in A and 17px/28.05px in B.",
+  "category": "typography",
+  "evidence": "A body_font_size 18px, line-height 29.25px; B 17px, 28.05px",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's 'About' section is a two-column layout. The left has an eyebrow, an h2 with 'Corinne Rodrigues' in magenta, and an italic serif tagline. The right has an intro line and three bordered link cards with titles and descriptions. A shows the same material as one run of paragraphs with inline links.",
+  "category": "component choices",
+  "evidence": "B_slice_00 cards 'Everyday Gyaan', 'CorinneRodrigues.com', 'The Frangipani Creative'; A_slice_00 inline links in a paragraph",
+  "which_side": "both"
+ },
+ {
+  "observation": "B pulls the inline links out of the paragraph and rewrites them as short card descriptions ('Writing about life, wellness and relationships'). A keeps the original running prose ('I write about life, wellness, relationships at Everyday Gyaan…'). B also adds new copy such as the hero subtitle 'Training and coaching for writing, blogging and creativity' and the section subheads.",
+  "category": "copy treatment",
+  "evidence": "B_slice_00 card sublines; A_slice_00 paragraph copy",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero has a filled pill primary button ('Personalized Blog Coaching') and an outlined pill secondary button ('Why Frangipani?'). A's only styled button is a black rectangular 'Menu' button, and its 'Close and accept' cookie button is gray.",
+  "category": "component choices",
+  "evidence": "B primary_button radius 999px, bg rgb(194,37,92); A primary_button text 'Menu', bg black, radius 0px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows a fixed-position cookie consent banner across the viewport ('Privacy & Cookies… Close and accept'). B has no cookie banner.",
+  "category": "component choices",
+  "evidence": "A_slice_00 white bar at y≈830 with 'Close and accept'; B slices show none",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's coaching block is mostly empty space. It has a 300×300 image, 'blog coaching', that renders blank, and a small centered Arbutus Slab title with text and a 'Read more..' inline link. B's coaching block is a full-width dark band over a flower photo, with an eyebrow, a large white centered h2, a short blurb and a pill 'Read more' button.",
+  "category": "imagery handling",
+  "evidence": "A_slice_01 blank area above 'Personalized Blog Coaching'; B_slice_01 band with centered content",
+  "which_side": "both"
+ },
+ {
+  "observation": "The images in A are 1×1 lazy-load placeholder GIFs ('yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'). The four blog thumbnails (180×180) and the 680×680 and 300×300 images render as blank space. B contains no img elements and gets all its imagery from CSS backgrounds.",
+  "category": "imagery handling",
+  "evidence": "A images natural [1,1] for all but one; A counts.images 15; B counts.images 0, svgs 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's photography is used as darkened (overlaid) backgrounds in three places: the hero, the coaching band and the social band. A uses photo backgrounds inside narrow column blocks (intro, testimonials, footer social area) with lighter or dark tints.",
+  "category": "decoration/effects",
+  "evidence": "B gradient_backgrounds 3; B_slice_00, B_slice_01 and B_slice_02 image bands; A_slice_01 and A_slice_02 photo behind the testimonial and social blocks",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'Happy Clients' section is a single testimonial (Anil Kumar Margani) over a dark flower image. It shows a black heading, black text on a very dark photo, and leaked raw metadata lines (name, '5', a timestamp '2019-10-15T11:24:24+05:30', a URL, '3'). B shows three equal white rounded testimonial cards with orange star ratings and bold serif names.",
+  "category": "component choices",
+  "evidence": "A_slice_01 and A_slice_02 raw metadata under the quote; B_slice_01 and B_slice_02 three cards with Sunita Saldhana, Madhavi Mahadev and Anil Kumar Margani",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's heading outline includes Sunita Saldhana, Madhavi Mahadev and Anil Kumar Margani as h2s, and an empty h2, though they are not visible as separate cards. B includes the three testimonials' text in cards, and its names are not in the outline.",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline h2 'Sunita Saldhana', 'Madhavi Mahadev', 'Anil Kumar Margani' and an empty h2; B outline",
+  "which_side": "both"
+ },
+ {
+  "observation": "B marks testimonials as figure, blockquote and cite (3 each). A has no blockquote or cite and only one figure/figcaption.",
+  "category": "DOM/semantic structure",
+  "evidence": "B semantic blockquote 3, cite 3, figure 3; A blockquote 0, cite 0, figure 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "The blog posts are a row of four centered titles with 'By LUX' bylines in tracked uppercase, with blank thumbnails above them, in A. B shows them as a 2×2 grid of cream rounded cards with left-aligned serif titles and a plain 'By Lux' byline, with no images.",
+  "category": "layout",
+  "evidence": "A_slice_02 four columns at y≈640; B_slice_03 2×2 cards",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses 7 article elements and 7 header elements (the headers are inside articles, and one is in the page structure). B uses 0 articles and 1 header, and 6 sections.",
+  "category": "DOM/semantic structure",
+  "evidence": "A semantic article 7, header 7, section 13; B article 0, header 1, section 6",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds section-lead subtitles under the centered h2s ('Kind words from people who have trained…', 'Recent posts on writing, focus and creativity.') and a pill CTA after each block ('More happy clients', 'Visit the blog'). A has no subtitles or CTAs after the sections.",
+  "category": "copy treatment",
+  "evidence": "B_slice_01 and B_slice_03; A_slice_01",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's social links are full-width brand-colored blocks (Facebook blue, Instagram pink, LinkedIn blue, Pinterest red, Twitter light blue) with icon-font glyphs that render as stray letters (k, q, s, A, N) and white 'Like'/'Follow' mini-buttons. B uses five outlined pill buttons in one row ('Facebook · Like', 'Instagram · Follow'…) over a darkened photo with a centered h2.",
+  "category": "component choices",
+  "evidence": "A top_backgrounds rgb(24,119,242), rgb(234,36,84), rgb(39,103,177), rgb(230,0,35), rgb(29,161,242); A_slice_02; B_slice_03 pill outlines; B border_radius pill 10",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer social area uses the 'FOLLOW ME ON SOCIAL MEDIA' heading in uppercase tracked serif, with columns for location and recent posts over a blue sky and flower photo. B's equivalents sit on a solid dark footer in three columns (Location, Recent Posts, @thefrangipanicreative) with pink underlined links.",
+  "category": "layout",
+  "evidence": "A_slice_02 uppercase headings over image; B_slice_03 and B_slice_04 dark columns",
+  "which_side": "both"
+ },
+ {
+  "observation": "A contains an Instagram feed widget whose inline SVG logos are huge (about 740px wide), with truncated post captions as link text ('How often we get bogged down with the non-essentia'), a 'Load More…' link and 'Follow on Instagram'. This section occupies several thousand px of the 7381px page. B reduces Instagram to one 'Follow on Instagram' link in the footer.",
+  "category": "component choices",
+  "evidence": "A_slice_03, A_slice_04 and A_slice_05; A svgs 2; A images at y 5215–5859 with 1×1 size; B_slice_04",
+  "which_side": "A"
+ },
+ {
+  "observation": "The page lengths differ: A is 7381px high, B is 4225px. Both are 1440px wide.",
+  "category": "layout",
+  "evidence": "layout.page_height A 7381, B 4225",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid on 5 elements and flex on 8. A uses no grid and flex on only 6.",
+  "category": "layout",
+  "evidence": "B display_grid 5, display_flex 8; A display_grid 0, display_flex 6",
+  "which_side": "both"
+ },
+ {
+  "observation": "Corner rounding differs. B has 10 pill elements, 7 elements at 8–15px and 3 at 16px+, from cards, buttons and chips. A has no pills, 17 elements at 1–7px, 5 at 8–15px and 5 at 16px+, mostly the social blocks and the cookie button.",
+  "category": "decoration/effects",
+  "evidence": "B border_radius_buckets pill 10, 8_15 7; A pill 0, 1_7 17",
+  "which_side": "both"
+ },
+ {
+  "observation": "Neither page uses box shadows or backdrop blur. B uses gradients (3) as overlays on the photo bands. A uses none.",
+  "category": "decoration/effects",
+  "evidence": "box_shadows 0 on both; gradient_backgrounds A 0, B 3; backdrop_blur 0 on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has far more motion and behavior hooks than B: 58 transitions, 1 animation and 5 transforms, against B's 12 transitions, 0 animations and 0 transforms. A also loads 49 script elements, 11 style blocks, 15 stylesheets, 4 iframes and 3 ins elements. B has 0 scripts, 1 stylesheet and 1 style block.",
+  "category": "DOM/semantic structure",
+  "evidence": "effects and tag_counts for A and B",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's class usage is large and CMS-generated: 621 class tokens, 210 unique, and 53 inline style attributes. B's is small and hand-authored: 46 tokens, 24 unique, and 5 inline style attributes. Neither is tailwind-like (A 0.013, B 0).",
+  "category": "DOM/semantic structure",
+  "evidence": "classes and inline_style_attrs counts",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's head carries a rich metadata set: Open Graph, Twitter cards, Facebook app id, google-site-verification, Pinterest domain verify, a robots meta and a JSON-LD block, with lang 'en-US' and the title 'Home - The Frangipani Creative'. B has only charset, viewport and description meta, no JSON-LD, lang 'en' and the title 'The Frangipani Creative'.",
+  "category": "DOM/semantic structure",
+  "evidence": "A meta_names list, jsonld_blocks 1; B meta_names 3, jsonld_blocks 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's content column is an 880px box (x 280–1160) centered in the 1440 viewport, while the Instagram feed and the 'thefrangipanicreative' footer block are flush left at x≈97. B uses a consistent content width of about 1040px (x 200–1240), with the hero and nav at x 120.",
+  "category": "layout",
+  "evidence": "A images rect x 300/97; A_slice_00 box 280–1160; B_slice_00 and B_slice_02 content 200–1240",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer disclosure and copyright sit in small muted light-gray text on the dark footer, left-aligned under a thin divider. A's disclosure is body-size black text in a narrow left column, with the centered '© 2020 - The Frangipani Creative' below a hairline.",
+  "category": "copy treatment",
+  "evidence": "A_slice_05; B_slice_04",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's testimonial stars are black Font Awesome glyphs. B's are amber/orange star characters in each card.",
+  "category": "decoration/effects",
+  "evidence": "A_slice_01 black stars; B_slice_01 orange stars",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses italic Fraunces for the tagline and makes the key words of the h2 magenta ('Corinne Rodrigues'). A uses italic only for the small 'By' in the blog bylines.",
+  "category": "typography",
+  "evidence": "B_slice_00 magenta italic tagline; A_slice_02 italic 'By'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's linked text is red and underlined throughout, over images in the intro. B limits underlines to inline text links and the footer, and the card, button and nav links have no underline.",
+  "category": "component choices",
+  "evidence": "A_slice_00 underlined links; B_slice_00 link cards without underline",
+  "which_side": "both"
+ },
+ {
+  "observation": "B includes a 'strong' element (3) and 'small' (4) and an 'address' element in the footer. A has no address, strong or small tags, and uses 33 br tags and 25 'i' elements (mostly icon glyphs). B has 4 br.",
+  "category": "DOM/semantic structure",
+  "evidence": "B tag_counts address 1, strong 3, small 4, br 4; A tag_counts br 33, i 25, no address",
+  "which_side": "both"
+ }
+]

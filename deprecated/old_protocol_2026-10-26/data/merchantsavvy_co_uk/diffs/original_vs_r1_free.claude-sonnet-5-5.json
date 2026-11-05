@@ -1,0 +1,242 @@
+[
+ {
+  "observation": "A's first screenshot slice is entirely blank white. The hero, header and logo area render nothing visible. B opens with a visible header, a navy hero and a CTA.",
+  "category": "layout",
+  "evidence": "A_slice_00.png is blank white. B_slice_00.png shows the nav bar and the navy hero. A's h1 text in the facts is an empty string.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's h1 has no text content. B's h1 reads 'Payment Processing Made Simple (& Cheaper)'.",
+  "category": "copy",
+  "evidence": "A h1.text = \"\" (heading_outline level 1 is empty). B h1.text = \"Payment Processing Made Simple (& Cheaper)\".",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's heading outline contains stray internal-looking h3 labels, 'Desktop - Organic (+ types)' and 'Mobile - IMS with Types', which look like builder template names. B's outline is a clean h1 followed by three h2s.",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline: h1, h3, h3, h2, h2, h2. B heading_outline: h1, h2, h2, h2.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has no landmark elements besides nav and section. B adds header, main and footer.",
+  "category": "DOM/semantic structure",
+  "evidence": "A semantic: header 0, main 0, footer 0, nav 4, section 15. B semantic: header 1, main 1, footer 1, nav 1, section 3.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM is very large and nested. B's is small and flat.",
+  "category": "DOM/semantic structure",
+  "evidence": "A: 405 divs, 227 li, 188 spans, 105 anchors, 174 inputs, 3 forms, 3 iframes, 95 scripts. B: 18 divs, 25 li, 8 spans, 35 anchors, 1 script, no forms or inputs.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A carries the markup for several forms with many hidden inputs, selects and options. They are not visible in the screenshot. B has no form controls.",
+  "category": "component choices",
+  "evidence": "A: form 3, input 174, select 5, option 55, label 113. B tag_counts has none of these.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A relies on external stylesheets and heavy inline styling. B uses a single embedded style block with no inline styles.",
+  "category": "DOM/semantic structure",
+  "evidence": "A: stylesheets 44, style tags 9, inline_style_attrs 304, link 62. B: stylesheets 0, style 1, inline_style_attrs 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's class usage is verbose and builder-generated. B uses very few classes.",
+  "category": "DOM/semantic structure",
+  "evidence": "A classes: total 2572, unique 416. B classes: total 39, unique 21. Tailwind-like fraction is about 0 on both.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has rich head metadata: OG, Twitter, robots, generator and a JSON-LD block. B has only charset, viewport and description.",
+  "category": "DOM/semantic structure",
+  "evidence": "A meta_names has 25 entries and jsonld_blocks 1. B meta_names has 3 entries and jsonld_blocks 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The page titles differ. A is a descriptive category title. B adds the brand name and a tagline.",
+  "category": "copy",
+  "evidence": "A title: 'Payment Processing & Merchant Services'. B title: 'Merchant Savvy – Payment Processing Made Simple (& Cheaper)'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a mixed web-font stack, mostly Open Sans with Roboto and Calibri, plus icon fonts. B uses the system-ui stack alone.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Open Sans 534, roboto 438, Roboto 140, calibri 134, Font Awesome 5 Free 18, eicons 2. B: system-ui 112.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Type scale: B has a larger body size and much larger bold headings. A uses lighter, smaller text.",
+  "category": "typography",
+  "evidence": "A body 14px, h1 38px/600, h2 28px/500. B body 16px, h1 54.4px/700, h2 35.2px/700.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's section headings are thin, dark grey and left-aligned in a narrow left column. B's are bold navy and sit above full-width content.",
+  "category": "typography",
+  "evidence": "A_slice_01 shows 'Payment Processing' and 'Finance & Banking' as light-weight dark text beside the link columns. B_slice_00 shows them as bold navy headings (h2 700).",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's h1 is white, bold and centered over a dark-blue hero. A's h1 is dark navy with start alignment.",
+  "category": "typography",
+  "evidence": "B h1 color rgb(255,255,255), text_align center. A h1 color rgb(0,37,58), text_align start.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body text is light grey and its links are bright cyan-blue. B's body text is near-black with navy accents.",
+  "category": "color",
+  "evidence": "A body_color rgb(146,146,146); link color rgb(19,175,240) on 154 elements. B body_color rgb(33,28,29); navy rgb(30,34,140) on 11 elements.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is mostly white with pale blue-grey, green and violet backgrounds. B uses a navy and amber palette with a gradient hero.",
+  "category": "color",
+  "evidence": "A top_backgrounds: white, rgb(218,228,232), rgb(69,187,92), rgb(71,55,255), rgb(249,66,19). B: rgb(30,34,140), rgb(255,180,0), rgb(243,243,250), rgb(20,22,94), 4 gradient backgrounds.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B alternates section backgrounds: a white nav and body, a navy hero, a pale lavender Finance band and a dark navy footer. A's visible sections all sit on a plain white background.",
+  "category": "layout",
+  "evidence": "B_slice_00 and B_slice_01 show a lavender band, rgb(243,243,250), behind Finance & Banking, and a footer at rgb(20,22,94). A slices 01 and 02 are all white.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's hero has four translucent feature cards, each with an amber check icon. A shows no corresponding feature-card block in its screenshot.",
+  "category": "component choices",
+  "evidence": "B_slice_00 shows four cards with rgba(255,255,255,0.1) backgrounds, such as \"We'll get you preferential rates...\". A_slice_00 is blank.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a prominent amber pill 'Get a Quote' CTA in the hero and a navy pill 'Quotes' button in the nav. A's screenshot shows no CTA buttons, and its facts record no primary button.",
+  "category": "component choices",
+  "evidence": "B_slice_00 shows an amber 'Get a Quote' pill and a navy 'Quotes' pill. A primary_button is null and its buttons count is 0.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a header with a logo and a short 4-link nav (Merchant Accounts, Card Machines, Online, EPOS) plus a Menu button. A's nav is not visible in the screenshot, although its DOM has 4 navs.",
+  "category": "component choices",
+  "evidence": "B: header 1, nav 1, button 'Menu' radius 8px. B_slice_00 shows the nav links. A_slice_00 is blank.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The logo renders at very different sizes. In A it is measured at 48×11px, positioned in the header area, and not visible in the capture. In B it is 157×36 in the header and 149×34 in the footer.",
+  "category": "imagery",
+  "evidence": "A logo rect w48 h11 at (419,24). B logo rects 157×36 at (180,16) and 149×34 at (180,2443).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's link lists are plain, with cyan chevron bullets. They are arranged in two columns beside a description. B turns the links into bordered white cards with right arrows in a grid.",
+  "category": "component choices",
+  "evidence": "A_slice_01 shows chevron-prefixed cyan links in 2 columns for Merchant Account Providers etc. B_slice_00 shows 8 rounded cards in a 4×2 grid with → arrows.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's Finance & Banking links sit in a 3-column card grid. Its Payment Processing links sit in a 4-column grid, so the column count varies by section.",
+  "category": "layout",
+  "evidence": "B_slice_01 shows 3×2 cards. B_slice_00 shows 4×2 cards. B display_grid is 7.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A lays out each section as a left-column heading and blurb with the links to the right. B stacks the heading, blurb and card grid vertically inside a container of about 1080px, aligned at x=180.",
+  "category": "layout",
+  "evidence": "A_slice_01 has headings at x≈160 and links at x≈540. B logo and card rects start at x=180, with content spanning 180–1260.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's content is left-heavy and leaves the right third empty. B's content is centered in a max-width container.",
+  "category": "layout",
+  "evidence": "A page_width 1868, with links ending near x≈1200 and the images row ending at about x≈1450. B page_width 1440, with content spanning x=180–1260.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's Research & Stats images are broken or overlapping. Three imgs (proximity-payments, Mobile-Ecommerce, remote-working) are measured at 1024px wide at x=388, 616 and 844. Their alt text shows as overlapping text, and captions fall far below the row. B shows five regular cards.",
+  "category": "imagery",
+  "evidence": "A image_overlaps lists 6 overlapping pairs, e.g. 542076 px² between proximity-payments and Mobile-Ecommerce. A_slice_01 shows broken-image icons and overlapping alt text at y≈604. A_slice_02 shows the captions 'Mobile Payments', 'Remote Working' and 'Mobile Ecommerce' misplaced.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has about 66 img elements, many with natural size 0×0 and zero rects, such as the logos, retail/hotel icons and Terminal-5. They are not rendered. B has 6 images that all render.",
+  "category": "imagery",
+  "evidence": "A images counts 66, mostly natural [0,0] and rect 0×0. B images 6, all with natural sizes.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's alt text is auto-generated from filenames with a 'Homepage (New Design)' prefix, for example 'Homepage (New Design) retail'. B uses descriptive alt text or empty alt.",
+  "category": "copy",
+  "evidence": "A alts: 'Homepage (New Design) moto form 300x253 1', and so on. B alts: 'Merchant Savvy', 'Accepted payment card logos', 'Accepted payment types', and '' on the 2 stat images.",
+  "which_side": "both"
+ },
+ {
+  "observation": "In Research & Stats, B shows an emoji placeholder (📱 🛒 💻) on a navy gradient tile for three cards. Only UK SMEs and Payment Fraud use real photos. A shows broken-image placeholders for those slots.",
+  "category": "imagery",
+  "evidence": "B_slice_01 shows phone, cart and laptop emoji on blue gradient tiles for Mobile Payments, Mobile Ecommerce and Remote Working. B text_stats emoji: 4. A emoji: 1.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B renders Research & Stats as bordered, rounded cards. Each has an image on top and a bold navy caption with an arrow below, such as 'UK SMEs →'. A shows bare images with small grey captions.",
+  "category": "component choices",
+  "evidence": "B_slice_01 shows rounded cards with captions like 'Payment Fraud →'. A_slice_01 shows the 'UK SMEs' and 'Payment Fraud' images at 208×139 with plain grey text captions.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Image sizes differ in Research & Stats. A's thumbnails are 208×139. B's are 347×232 in a 3-column grid, with the last row holding 2 cards.",
+  "category": "imagery",
+  "evidence": "A rects for charts.jpg and payment-fraud-stats.jpg are 208×139. B rects are 347×232 (charts.jpg at y=1733 and payment-fraud-stats.jpg at y=2036).",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses rounded corners and pill shapes widely, and has no box shadows. A is almost entirely square-cornered and has 12 shadows.",
+  "category": "decoration/effects",
+  "evidence": "B border_radius_buckets: 0→76, 1–7→10, 8–15→24, pill→2, box_shadows 0. A: 0→1179, 1–7→81, 8–15→6, pill 0, box_shadows 12.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses gradients and translucency as decoration: a diagonal navy gradient hero, translucent cards with thin borders and gradient image placeholders. A has only 2 gradient backgrounds, with no visible hero.",
+  "category": "decoration/effects",
+  "evidence": "B gradient_backgrounds 4, with rgba(255,255,255,0.1) on 4 elements. A gradient_backgrounds 2.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has far more transitions and some transforms, which suggests a script-driven UI. B has few transitions and no transforms.",
+  "category": "decoration/effects",
+  "evidence": "A transitions 377, transforms 6. B transitions 19, transforms 0. Neither has animations (both 0).",
+  "which_side": "both"
+ },
+ {
+  "observation": "B places a payment-logo strip in the hero inside a white rounded panel. The logos look greyed out, and it uses the same msuk-payment-logos image as A. A has this image at 300×50 at y=1356, not visible in the capture.",
+  "category": "imagery",
+  "evidence": "B rect 300×50 at (570,604). A rect 300×50 at (848,1356). B_slice_00 shows a white panel with greyed Visa/Mastercard/Pay logos.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer differs. A has small grey text on white, with cyan 'Privacy Policy' and 'Terms Of Use' links and a payment-types strip beneath. B has a dark navy footer, a white logo, underlined white links on the right and the payment strip behind a thin divider.",
+  "category": "layout",
+  "evidence": "A_slice_02 shows footer text at x=150 on white. B_slice_01 and B_slice_02 show a footer at rgb(20,22,94) with a logo and a divider above payment-types-top.png.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A footer copy runs on tight line-height with the lines almost touching. B spaces its lines out and sets them in white.",
+  "category": "typography",
+  "evidence": "A_slice_02 shows 3 compact lines of 'Copyright © ALL RIGHTS RESERVED 2021 ...'. B_slice_01 shows 3 separated lines at about 27px pitch.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero and feature-card copy appears with no counterpart in A's visible output. B's word count is higher, while A's DOM is far larger.",
+  "category": "copy",
+  "evidence": "B text_stats words 192. A words 131. B copy includes 'Access 90% of the UK's leading acquiring banks'.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's screenshot is wider and taller than B's, and A's lower half has large empty vertical gaps. B's page is more compact.",
+  "category": "layout",
+  "evidence": "A page_width 1868, page_height 2877, with a blank area under the Research images in A_slice_01. B 1440×2688.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses Font Awesome and eicons icon fonts for chevrons and icons. B draws its icons (check, arrows) as text glyphs or inline CSS and has no SVG elements.",
+  "category": "component choices",
+  "evidence": "A fonts include Font Awesome 5 Free (18 elements) and eicons (2), and 20 <i> tags. B has no <i> tags and svgs 0. A has 1 svg.",
+  "which_side": "both"
+ }
+]

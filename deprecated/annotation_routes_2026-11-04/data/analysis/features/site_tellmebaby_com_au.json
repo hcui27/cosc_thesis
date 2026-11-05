@@ -1,0 +1,641 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Uses a single system font stack for everything, with no web fonts loaded.",
+   "evidence": "fonts_by_element_count: only system-ui (267); h1 font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'; stylesheets: 0",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|01",
+    "tellmebaby_com_au|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "Every H2 has a short, thick peach underline bar beneath it, left-aligned.",
+   "evidence": "slices 00–03: small peach bar under 'Baby product review categories', 'Recent reviews', 'Recent articles', etc.",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|06",
+    "tellmebaby_com_au|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "The palette is limited to white, peach rgb(255,170,145), a pale peach tint rgb(255,241,236), and a dark charcoal rgb(32,39,44).",
+   "evidence": "top_backgrounds: white 59, rgb(255,170,145) 13, rgb(255,241,236) 10, rgb(32,39,44) 2",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|07",
+    "tellmebaby_com_au|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "Body text is dark charcoal rather than black, and secondary text is a mid grey.",
+   "evidence": "body_color rgb(32,39,44) (185 elements); secondary rgb(93,103,110) (73 elements)",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|08",
+    "tellmebaby_com_au|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "Sections alternate between white and pale peach backgrounds to separate content bands.",
+   "evidence": "slice_00 'How Tell Me Baby works' on peach tint; slice_01 Awards on peach tint; Trending/Recent reviews on white",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|09",
+    "tellmebaby_com_au|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "The header is a white bar with the logo on the left, followed by four text nav links, with Login (text) and Signup (pill) on the right.",
+   "evidence": "slice_00: 'Browse reviews', 'Our community', 'Tools', 'Articles'; nav count 1",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|11",
+    "tellmebaby_com_au|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "The logo is an SVG wordmark 'tellmebaby' with 'me' set in peach and a small peach stripe mark above it.",
+   "evidence": "images: TellMeBaby-logo.svg 150x40 at x=160; slice_00 logo",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|12",
+    "tellmebaby_com_au|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "The hero uses a full-width photo of a parent and baby with a soft grey wash. It is not an <img> element, so it is likely a CSS background.",
+   "evidence": "slice_00 hero photo; the images list holds no hero file (only logo, ad, dots, picture-alt, logo); gradient_backgrounds: 0",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|02",
+    "tellmebaby_com_au|opus|03",
+    "tellmebaby_com_au|opus|13",
+    "tellmebaby_com_au|sonnet|02",
+    "tellmebaby_com_au|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "The hero search is a single white pill containing the input with an inset peach pill 'Search' button.",
+   "evidence": "slice_00 'Find baby product reviews' + 'Search'; form 1, input 1, button 1",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|14",
+    "tellmebaby_com_au|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "The page has only one <button> element. Other CTAs such as Signup, Join TMB Rewards and Join now are links styled as buttons.",
+   "evidence": "counts.buttons: 1; anchors: 82; multiple pill CTAs visible in slices 00 and 03",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|10",
+    "tellmebaby_com_au|opus|15",
+    "tellmebaby_com_au|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "Content is held in a centered container of roughly 1088px inside the 1440px viewport.",
+   "evidence": "page_width 1440; content runs x≈176 to 1264 in slices; ad at x=356, w=728",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|16",
+    "tellmebaby_com_au|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "Category links are a 5-column grid of pale peach tiles with rounded corners and bold labels; 8 tiles leave the second row partially filled.",
+   "evidence": "slice_00: Out & about … Just for mum; display_grid: 10",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|17",
+    "tellmebaby_com_au|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "'How Tell Me Baby works' is a 4-step row of white cards, each with a numbered peach circle badge and short sentence.",
+   "evidence": "slice_00: steps 1–4 in peach circles",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|19",
+    "tellmebaby_com_au|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A third-party leaderboard banner ad (728x90) sits between the 'How it works' section and the trending reviews.",
+   "evidence": "images: sunrice-ros-leaderboard.jpg 728x90 at y=1208, alt 'Sunrice advertisement'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|20",
+    "tellmebaby_com_au|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "Trending review cards are white with a thin border and rounded corners; a short peach bar tops each card, above a bold product name and grey review count.",
+   "evidence": "slice_01: 'Tommee Tippee… 119 reviews', 'Sudocrem… 618 reviews'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|21",
+    "tellmebaby_com_au|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Award cards pair a small uppercase, letter-spaced grey category label with a bold product name below it.",
+   "evidence": "slice_01: 'BABY BOTTLE' / 'Pigeon SofTouch Bottle (PPSU)'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|25",
+    "tellmebaby_com_au|opus|26",
+    "tellmebaby_com_au|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "The award grid is long, 38 cards, so it is the tallest section on the page; the last row is partially filled with 2 cards.",
+   "evidence": "slice_01 rows plus slice_02 rows ending with 'Baby Wash', 'Toddler Milk'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|27",
+    "tellmebaby_com_au|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "Award card heights vary with content length within each row, so text lengths differ visibly across cards.",
+   "evidence": "slice_02: long labels such as 'BABY VITAMINS AND SUPPLEMENTS (INCLUDING PROBIOTICS)' wrap to 3 lines",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|28",
+    "tellmebaby_com_au|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "Recent article cards reuse the trending card pattern: a peach top bar and bold title, with no thumbnails.",
+   "evidence": "slices 02–03: 'Win 1 of 10 Mamas & Papas silver rattles' etc.",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|30",
+    "tellmebaby_com_au|opus|31",
+    "tellmebaby_com_au|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "The rewards card has a dark rgb(32,39,44) background, centered white text, a peach brush-stroke speech graphic and a peach 'Join now' pill.",
+   "evidence": "top_backgrounds rgb(32,39,44) 2; images tmb-dots-peach.png 125x90 at y=4166; slice_03",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|33",
+    "tellmebaby_com_au|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "Near the bottom, a two-column block pairs an SEO-style intro text at left with a dark charcoal rewards card at right.",
+   "evidence": "slice_03: 'Baby product reviews by parents, for parents' and the 'Join TMB Rewards today!' card",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|32",
+    "tellmebaby_com_au|opus|34",
+    "tellmebaby_com_au|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "The only H3 is the rewards card title, and the H4s are used for footer column headings.",
+   "evidence": "heading_outline: h3 'Join TMB Rewards today!', h4 'Tell Me Baby', h4 'Community'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|04",
+    "tellmebaby_com_au|opus|05",
+    "tellmebaby_com_au|opus|35",
+    "tellmebaby_com_au|sonnet|29",
+    "tellmebaby_com_au|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "The footer has a photo with a curved crop and a halftone-dot peach decoration, followed by two link columns.",
+   "evidence": "images picture-alt.png 344x295 at y=4567, alt ''; slice_03",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|36",
+    "tellmebaby_com_au|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "Social links in the footer are text words (Facebook, Instagram, YouTube) with peach underlines, not icons.",
+   "evidence": "slice_03; svgs 0",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|18",
+    "tellmebaby_com_au|opus|37",
+    "tellmebaby_com_au|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "The footer bottom row repeats the logo at a smaller size next to a copyright line.",
+   "evidence": "images: second TellMeBaby-logo.svg rendered 113x30 at y=4915; '© Tell Me Media Pty Ltd 2021'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|38",
+    "tellmebaby_com_au|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "Decorative images use empty alt text, and no images lack an alt attribute.",
+   "evidence": "tmb-dots-peach.png and picture-alt.png alt ''; alt_missing 0",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|39",
+    "tellmebaby_com_au|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "Most elements have square corners; the rounded ones mostly fall in the 8–15px range (cards and tiles).",
+   "evidence": "border_radius_buckets: 0→185, 1–7→12, 8–15→64, 16+→1, pill→5",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|40",
+    "tellmebaby_com_au|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "The page is visually flat: one box-shadow, with no gradients, blur, animations or transforms.",
+   "evidence": "box_shadows 1, gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|41",
+    "tellmebaby_com_au|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "Many elements declare CSS transitions, likely for hover states on links and cards.",
+   "evidence": "transitions: 59",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|42",
+    "tellmebaby_com_au|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "Layout relies mostly on flexbox, with some CSS grid.",
+   "evidence": "display_flex 58, display_grid 10",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|43",
+    "tellmebaby_com_au|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "Styling comes from one inline style block with few classes, not a utility framework.",
+   "evidence": "style 1, stylesheets 0, classes unique 28 of 161, tailwind_like_fraction 0.019",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|44",
+    "tellmebaby_com_au|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "The page ships no JavaScript and no structured data.",
+   "evidence": "scripts 0, jsonld_blocks 0",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|45",
+    "tellmebaby_com_au|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "Recent review cards show the product name in bold, a quoted, truncated excerpt with an ellipsis, and the reviewer's name in grey at the bottom.",
+   "evidence": "slice_01: '\"As a new mum I needed … this is the…\"' / 'Mikala Peschek'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|22",
+    "tellmebaby_com_au|opus|23",
+    "tellmebaby_com_au|opus|24",
+    "tellmebaby_com_au|opus|46",
+    "tellmebaby_com_au|sonnet|14",
+    "tellmebaby_com_au|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "Bold text is used heavily: there are 51 strong elements against only 8 paragraphs.",
+   "evidence": "tag_counts strong 51, p 8",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|29",
+    "tellmebaby_com_au|opus|47",
+    "tellmebaby_com_au|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "Page is a homepage for an Australian baby product review site; the title follows a 'Brand – tagline' pattern.",
+   "evidence": "title: 'Tell Me Baby – Baby product reviews by Australian parents'; lang 'en-AU'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|00",
+    "tellmebaby_com_au|opus|48",
+    "tellmebaby_com_au|opus|49",
+    "tellmebaby_com_au|sonnet|00",
+    "tellmebaby_com_au|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "The page is long, about 4981px tall at a 1440px width.",
+   "evidence": "page_height 4981, page_width 1440",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|opus|50"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "The long product-name copy is shown verbatim, including brand, size and variant strings. This gives the award grid a catalogue-like, list-heavy feel.",
+   "evidence": "'Love To Dream Swaddle UP Transition Bag Warm 2.5 TOG', 'Oricom Secure870 3.5” Touchscreen Monitor w/ Starry Lightshow'",
+   "side": "generated",
+   "members": [
+    "tellmebaby_com_au|sonnet|39"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "All text uses a single system font stack with no web fonts loaded.",
+   "family": "typography",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Short, thick accent-colored underline bar sits left-aligned beneath each section heading.",
+   "family": "decoration",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "Palette is restricted to white, one warm peach accent, a pale peach tint, and dark charcoal.",
+   "family": "color",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Body text is dark charcoal rather than pure black, with mid-grey for secondary text.",
+   "family": "color",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Sections alternate between white and pale tinted backgrounds to separate content bands.",
+   "family": "layout",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Header is a white bar with left logo, a few text nav links, and a text login plus pill signup on the right.",
+   "family": "component",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Primary calls to action are fully rounded pill buttons in the accent color, often implemented as styled links.",
+   "family": "component",
+   "items": [
+    "I5",
+    "I9"
+   ]
+  },
+  {
+   "statement": "Hero features a full-width photo background with soft grey wash and a pill-shaped search bar with inset accent button.",
+   "family": "component",
+   "items": [
+    "I7",
+    "I8"
+   ]
+  },
+  {
+   "statement": "Content sits in a centered fixed-width container, narrower than the viewport.",
+   "family": "layout",
+   "items": [
+    "I10"
+   ]
+  },
+  {
+   "statement": "Category links are a multi-column grid of pale tinted rounded tiles with bold labels.",
+   "family": "component",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "How-it-works section shows a row of white cards with numbered accent-colored circle badges and short sentences.",
+   "family": "component",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Cards are white with thin border, rounded corners, and a short accent bar on top above a bold title.",
+   "family": "component",
+   "items": [
+    "I14",
+    "I18"
+   ]
+  },
+  {
+   "statement": "Cards pair a small uppercase letter-spaced grey category label with a bold item name below.",
+   "family": "typography",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Card grids are long with partially filled last rows and uneven card heights from varying text lengths.",
+   "family": "layout",
+   "items": [
+    "I16",
+    "I17"
+   ]
+  },
+  {
+   "statement": "A dark charcoal promotional card with centered white text, decorative accent graphic and accent pill button provides contrast.",
+   "family": "component",
+   "items": [
+    "I19",
+    "I20"
+   ]
+  },
+  {
+   "statement": "Footer uses a curved-crop photo with halftone-dot accent decoration, text-only social links with accent underlines, and a small repeated logo with copyright.",
+   "family": "decoration",
+   "items": [
+    "I22",
+    "I23",
+    "I24"
+   ]
+  },
+  {
+   "statement": "Heading hierarchy is shallow, with H4s used for footer column headings and one H3 for a promo card.",
+   "family": "semantic_dom",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "Decorative images have empty alt text and no images lack alt attributes.",
+   "family": "semantic_dom",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Corners are mostly square, with cards and tiles using moderate 8–15px radii and pills for buttons.",
+   "family": "component",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Visual style is flat, with almost no shadows, gradients, blur, animations or transforms.",
+   "family": "decoration",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Layout relies on flexbox and some CSS grid, with a single inline style block and no utility framework.",
+   "family": "other",
+   "items": [
+    "I29",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Bold text is used heavily for names and labels, with little paragraph prose.",
+   "family": "typography",
+   "items": [
+    "I33"
+   ]
+  },
+  {
+   "statement": "Review excerpts are quoted and truncated with an ellipsis, followed by the reviewer's name in grey.",
+   "family": "copy",
+   "items": [
+    "I32"
+   ]
+  },
+  {
+   "statement": "Long product names are shown verbatim including size and variant strings, giving a catalogue-like list-heavy feel.",
+   "family": "copy",
+   "items": [
+    "I36"
+   ]
+  },
+  {
+   "statement": "Page title follows a 'Brand – tagline' pattern with concise, plain-spoken community-oriented copy.",
+   "family": "copy",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "The page is long and vertically stacked with many sequential sections.",
+   "family": "layout",
+   "items": [
+    "I35"
+   ]
+  },
+  {
+   "statement": "Page ships with no JavaScript and no structured data.",
+   "family": "semantic_dom",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "A third-party banner advertisement is inserted between content sections.",
+   "family": "imagery",
+   "items": [
+    "I13"
+   ]
+  },
+  {
+   "statement": "Logo is an SVG wordmark with one syllable highlighted in the accent color.",
+   "family": "imagery",
+   "items": [
+    "I6"
+   ]
+  }
+ ]
+}

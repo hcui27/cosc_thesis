@@ -1,0 +1,307 @@
+{
+ "key": "fb34c3c416f3",
+ "groups": [
+  {
+   "name": "Semantic landmark elements used",
+   "definition": "Does the page structure content with HTML5 semantic landmarks (header, nav, main, section, article, aside, footer) rather than generic divs?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "semantic_tag_count",
+    "op": ">=",
+    "value": 5
+   },
+   "members": [
+    "aeptexas_com#2",
+    "allstate_jobs#0",
+    "alpine8848_com#0",
+    "bathurst12hour_com_au#5",
+    "bluebayou_com#1",
+    "greatdayimprovements_com#0",
+    "homedesignersoftware_com#1",
+    "insightcentral_net#6",
+    "kanienkeha_net#17",
+    "kneeguru_co_uk#2",
+    "merchantsavvy_co_uk#2",
+    "miamidda_com#0",
+    "naturalwellbeing_com#3",
+    "newclimateeconomy_net#3",
+    "nira_org_ng#2",
+    "ridetech_com#15",
+    "seoanalyzer_me#19",
+    "thync_com#22",
+    "flygrant_com#1",
+    "fnsouzafoundation_com#21",
+    "educationactivities_org#20",
+    "thefrangipanicreative_com#23"
+   ]
+  },
+  {
+   "name": "Main landmark present",
+   "definition": "Is the page content wrapped in a main element?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#2",
+    "tellmebaby_com_au#1",
+    "gravityvault_com#2"
+   ]
+  },
+  {
+   "name": "Clean sequential heading hierarchy",
+   "definition": "Does the page have a clean, properly nested heading outline (h1 then h2 sections then h3 items, without skipped levels)?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "heading_count",
+    "op": ">=",
+    "value": 4
+   },
+   "members": [
+    "aeptexas_com#3",
+    "allstate_jobs#2",
+    "alpine8848_com#1",
+    "bathurst12hour_com_au#4",
+    "cbdoilcreamnk_com#2",
+    "educationactivities_org#22",
+    "gravityvault_com#1",
+    "homedesignersoftware_com#2",
+    "insightcentral_net#5",
+    "kneeguru_co_uk#1",
+    "neverskipbrunch_com#15",
+    "newclimateeconomy_net#2",
+    "stgpartners_com#1",
+    "tellmebaby_com_au#2",
+    "thync_com#23",
+    "naturalwellbeing_com#2",
+    "homedesignersoftware_com#3"
+   ]
+  },
+  {
+   "name": "Single h1 hero headline",
+   "definition": "Does the page have exactly one h1 holding the main headline?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_count",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "cbdoilcreamnk_com#1",
+    "kneeguru_co_uk#0",
+    "miamidda_com#1",
+    "newclimateeconomy_net#1",
+    "nira_org_ng#1",
+    "thefrangipanicreative_com#0"
+   ]
+  },
+  {
+   "name": "Missing h1 in heading outline",
+   "definition": "Is the page lacking an h1, with the top-level heading being an h2 or lower?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "bather_com#0",
+    "greatdayimprovements_com#4"
+   ]
+  },
+  {
+   "name": "Descriptive image alt text",
+   "definition": "Do images carry meaningful descriptive alt text (with none missing)?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#4",
+    "bather_com#16",
+    "bathurst12hour_com_au#7",
+    "bluebayou_com#3",
+    "cbdoilcreamnk_com#3",
+    "educationactivities_org#18",
+    "gravityvault_com#15",
+    "greatdayimprovements_com#2",
+    "kneeguru_co_uk#12",
+    "miamidda_com#2",
+    "naturalwellbeing_com#25",
+    "newclimateeconomy_net#22",
+    "nira_org_ng#3",
+    "seoanalyzer_me#18",
+    "stgpartners_com#5",
+    "neverskipbrunch_com#16"
+   ]
+  },
+  {
+   "name": "Images mostly have empty alt",
+   "definition": "Do content images mostly have empty alt attributes?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "insightcentral_net#21"
+   ]
+  },
+  {
+   "name": "Lean minimal markup",
+   "definition": "Is the markup lean, with few scripts, classes, inline styles and no external stylesheets?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "stylesheet_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "aeptexas_com#24",
+    "aeptexas_com#25",
+    "bather_com#21",
+    "bathurst12hour_com_au#6",
+    "bluebayou_com#24",
+    "cbdoilcreamnk_com#23",
+    "educationactivities_org#23",
+    "greatdayimprovements_com#3",
+    "homedesignersoftware_com#27",
+    "kanienkeha_net#18",
+    "kneeguru_co_uk#29",
+    "merchantsavvy_co_uk#19",
+    "miamidda_com#3",
+    "nira_org_ng#22",
+    "ridetech_com#14",
+    "tellmebaby_com_au#29",
+    "thync_com#24",
+    "insightcentral_net#23",
+    "naturalwellbeing_com#28",
+    "naturalwellbeing_com#4"
+   ]
+  },
+  {
+   "name": "Minimal head meta tags",
+   "definition": "Does the head include only standard meta tags such as charset, viewport and description?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "meta_tag_count",
+    "op": "<=",
+    "value": 4
+   },
+   "members": [
+    "aeptexas_com#1",
+    "alpine8848_com#24",
+    "insightcentral_net#24",
+    "fnsouzafoundation_com#1"
+   ]
+  },
+  {
+   "name": "Real button and label elements",
+   "definition": "Does the page use native button elements (and labels) for actions and form inputs?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "button_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "alpine8848_com#5",
+    "stgpartners_com#4"
+   ]
+  },
+  {
+   "name": "Blockquote/cite quote markup",
+   "definition": "Are quotes marked up with semantic elements such as blockquote, cite, figure/figcaption or q?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#1",
+    "bather_com#1",
+    "thefrangipanicreative_com#1",
+    "tellmebaby_com_au#3"
+   ]
+  },
+  {
+   "name": "Address element for contact",
+   "definition": "Are contact details wrapped in an address element?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#6"
+   ]
+  },
+  {
+   "name": "Spans for small labels",
+   "definition": "Are spans or small/strong/b inline tags used for small labels and secondary text?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#26",
+    "insightcentral_net#25"
+   ]
+  },
+  {
+   "name": "Native dialog login",
+   "definition": "Is the login a single native dialog element containing a form?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#26"
+   ]
+  },
+  {
+   "name": "Lang attribute without region",
+   "definition": "Does the html lang attribute name only a language without a region?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#28"
+   ]
+  },
+  {
+   "name": "List markup for link groups",
+   "definition": "Are navigation menus and link groups built as ul/li lists?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#2",
+    "stgpartners_com#3"
+   ]
+  },
+  {
+   "name": "Descriptive page title",
+   "definition": "Does the page title use a full organization name or brand plus tagline rather than a generic label?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#0",
+    "stgpartners_com#0"
+   ]
+  },
+  {
+   "name": "Live text headings not images",
+   "definition": "Are headings live styled text rather than images of lettering?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "greatdayimprovements_com#1"
+   ]
+  },
+  {
+   "name": "ARIA attributes present",
+   "definition": "Does the page include ARIA attributes for accessibility?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "aria_attr_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "newclimateeconomy_net#4",
+    "tellmebaby_com_au#34"
+   ]
+  },
+  {
+   "name": "Struck-through original prices use semantic s elements.",
+   "definition": "Struck-through original prices use semantic s elements.",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#21"
+   ]
+  }
+ ]
+}

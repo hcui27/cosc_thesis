@@ -1,0 +1,421 @@
+[
+ {
+  "observation": "The page renders on a dark charcoal, textured background while the facts list body_bg as rgb(251,252,250) and dark text rgb(38,38,46). Dark green headings and paragraph text on the dark ground are very low contrast, so the hero paragraph, the h3 labels and the Map and Upload paragraphs are nearly invisible.",
+  "category": "color",
+  "evidence": "body_bg rgb(251,252,250) and body_color rgb(38,38,46) against a dark rendered background. The hero paragraph at 380,293 and the h3s 'Phrases' and 'Occupations' are barely visible in the screenshot.",
+  "element_ids": [
+   "e25",
+   "e67",
+   "e73",
+   "e115",
+   "e282",
+   "e311"
+  ]
+ },
+ {
+  "observation": "The palette is a monochrome green system. It uses a deep green rgb(12,107,56) for the h1, headings, nav bar and footer, and a brighter green rgb(18,151,79) for buttons and stat numbers. A pale mint rgb(230,244,236) fills the founder card. White cards carry most of the content.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 75, rgb(12,107,56) 3, rgb(18,151,79) 3, rgb(230,244,236) 2. Text colors: green 144, dark 143, grey 56.",
+  "element_ids": [
+   "e2",
+   "e9",
+   "e37",
+   "e26",
+   "e329"
+  ]
+ },
+ {
+  "observation": "Occupation cards carry a pink/magenta left border, while the Phrases and Commands cards carry a green left border. This gives a category-coded accent that is the only non-green hue in the UI.",
+  "category": "color",
+  "evidence": "Cards in the Occupations list (e117 and the rest) show a pink left edge. Cards in the Commands list (e75 and the rest) show a green left edge.",
+  "element_ids": [
+   "e69",
+   "e75",
+   "e117",
+   "e121"
+  ]
+ },
+ {
+  "observation": "Typography pairs Georgia serif for body text, card titles and blockquote with Helvetica Neue/Arial sans-serif for the h1, h2s, nav, buttons and stat numbers. Georgia is used on 291 elements and Helvetica Neue on 90.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Georgia 291, Helvetica Neue 90. h1 font_family is Helvetica Neue.",
+  "element_ids": [
+   "e24",
+   "e38",
+   "e43",
+   "e70"
+  ]
+ },
+ {
+  "observation": "The h1 is a centered bold sans at 44.8px in deep green, set over a dark hero. The h2s are 27.2px bold. The base size is 17px with a 28.05px line-height (about 1.65).",
+  "category": "typography",
+  "evidence": "h1 font_size 44.8px, weight 700, center. h2 27.2px. body_font_size 17px, line_height 28.05px.",
+  "element_ids": [
+   "e24",
+   "e38",
+   "e52"
+  ]
+ },
+ {
+  "observation": "The header is a white bar with a GIF wordmark logo on the left and two pill-shaped language switchers on the right (English with a UK flag, Kanienkeha with a red flag). Below it is a full-width deep-green nav bar with a thin lighter green bottom rule.",
+  "category": "layout",
+  "evidence": "e4 logo at 220,14,260x57. e5 and e7 are 20px flag icons in outlined pills. e9 nav at 0,81,1440x94 on green.",
+  "element_ids": [
+   "e3",
+   "e5",
+   "e7",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The nav list wraps onto a second line, so 'Register' sits alone on row two under 'Home'. The container is narrow for 11 links.",
+  "category": "layout",
+  "evidence": "e22 Register at 212,128 while the other items are at y=81. The nav is 94px tall.",
+  "element_ids": [
+   "e10",
+   "e22"
+  ]
+ },
+ {
+  "observation": "A skip-to-content link is positioned off-screen at x=-999. Two nav elements and one main, header and footer give landmark structure.",
+  "category": "semantic",
+  "evidence": "e1 at -999,0. Semantic counts: header 1, nav 2, main 1, footer 1, section 9.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The hero is centered. It has an h1, a short intro paragraph, a primary filled green button ('Support us on Patreon') and an outlined secondary button ('About the project'). A row of 'sample search' chips follows, then a small owl GIF caption.",
+  "category": "component",
+  "evidence": "Primary button bg rgb(18,151,79), radius 6px, padding 11px 22px. e27 is the outlined button. e29, e31 and e33 are chips with icons.",
+  "element_ids": [
+   "e24",
+   "e26",
+   "e27",
+   "e29",
+   "e31",
+   "e33"
+  ]
+ },
+ {
+  "observation": "The sample-search chips are white rounded rectangles with a 32px green square icon and a bold sans label (apple, colors, numbers), led by a grey serif label 'Try a sample search:'.",
+  "category": "component",
+  "evidence": "e30, e32 and e34 are 32x32 images (2green.png, 3green.png, 4green.png). e28 is the label.",
+  "element_ids": [
+   "e28",
+   "e29",
+   "e30",
+   "e31",
+   "e33"
+  ]
+ },
+ {
+  "observation": "A small white-text owl GIF with the Mohawk text '-Wa'tkwanonhwerá:ton'' is centered under the hero as a decorative sign-off, with empty alt text.",
+  "category": "imagery",
+  "evidence": "owl.gif 219x30 at 611,570, alt ''.",
+  "element_ids": [
+   "e35"
+  ]
+ },
+ {
+  "observation": "The founder welcome sits in a mint-green rounded card (about 16px radius) within a 1040px container. The left column holds a blockquote in serif with bold and italic Mohawk greetings and English glosses in small grey parentheses. The right column stacks three illustration images.",
+  "category": "layout",
+  "evidence": "e37 at 200,702,1040x516, bg rgb(230,244,236). e39 blockquote 468 wide. Images e48, e49 and e50 are on the right.",
+  "element_ids": [
+   "e37",
+   "e39",
+   "e41",
+   "e42",
+   "e48",
+   "e49"
+  ]
+ },
+ {
+  "observation": "The founder illustrations are flat-vector green pictures (a hugging pair, a longhouse among trees, a 'we are friends' strip) at different widths, left at their native size and not aligned to a common edge.",
+  "category": "imagery",
+  "evidence": "love1.png 49x47 at 948,864. longhouse1.jpg 293x91 at 826,945. wearefriends.jpg 280x54 at 832,1056.",
+  "element_ids": [
+   "e48",
+   "e49",
+   "e50"
+  ]
+ },
+ {
+  "observation": "The bilingual copy treatment shows each Mohawk term in bold with the English gloss in a small muted parenthetical span. This repeats in 'She:kon (hello)' and 'Nia:wen (thank you)'.",
+  "category": "copy",
+  "evidence": "e41 strong with e42 span '(hello)'. e46 strong with e47 span '(thank you)'.",
+  "element_ids": [
+   "e40",
+   "e41",
+   "e42",
+   "e45",
+   "e46",
+   "e47"
+  ]
+ },
+ {
+  "observation": "Site statistics appear as four equal white cards in one row, each with a large bold green number and a label. 'Words' and 'Tags' labels are plain serif text, while 'Categories' and 'Blog posts' are green sans links.",
+  "category": "component",
+  "evidence": "e53, e55, e58 and e60 are each 238x109 at y=1387. e57 and e62 are anchors.",
+  "element_ids": [
+   "e53",
+   "e55",
+   "e58",
+   "e60",
+   "e57",
+   "e62"
+  ]
+ },
+ {
+  "observation": "A small progress-style image (forum-stats1.png, 101x43) sits inline before a muted grey line 'Goal: roughly 10,000 words.' The image is flush left with no spacing, and the text is low contrast against the dark background.",
+  "category": "imagery",
+  "evidence": "e64 at 220,1511 inside p e63 (1000 wide).",
+  "element_ids": [
+   "e63",
+   "e64"
+  ]
+ },
+ {
+  "observation": "'Most recent entries' uses a 3-column grid of white link cards, grouped under three h3 labels (Phrases, Commands — daily routine, Occupations). Each card has a bold green serif Mohawk term over a grey English gloss, and each card is a single anchor holding two spans.",
+  "category": "component",
+  "evidence": "Cards are 327x75 at x=220, 557 and 893. The li contains an a with two spans (e71 and e72). The ul contains 1, 9 and 27 cards respectively.",
+  "element_ids": [
+   "e68",
+   "e69",
+   "e74",
+   "e75",
+   "e116",
+   "e117"
+  ]
+ },
+ {
+  "observation": "The occupation list is long (27 cards). Gendered pairs are listed as separate cards, each with '(male)' or '(female)' in the gloss. Long terms wrap to two lines and make some cards 104px tall instead of 75px.",
+  "category": "copy",
+  "evidence": "e165 is 327x104 for 'Ohén:ton Í:rate ne Ionterihwaienstahkhwaniónhkhwa'. e137 and e141 are Steelworker (male) and (female).",
+  "element_ids": [
+   "e137",
+   "e141",
+   "e165",
+   "e265"
+  ]
+ },
+ {
+  "observation": "The page text uses Mohawk orthography with diacritics, colons and glottal-stop apostrophes in the card titles. The UI chrome and section copy are in short English sentences with no exclamation marks and no emoji.",
+  "category": "copy",
+  "evidence": "text_stats: exclamations 0, emoji 0, em_dashes 2, words 492.",
+  "element_ids": [
+   "e70",
+   "e71",
+   "e76",
+   "e77"
+  ]
+ },
+ {
+  "observation": "The pagination nav renders as white rounded boxes on a green strip with no visible text. The labels 1, 2, 3, 4, Next and Last (53) are present in the DOM but look white on white. The green bar is stretched to the full 1000px container.",
+  "category": "component",
+  "evidence": "e273 nav at 220,3490,1000x39, with anchors e274 to e279. The screenshot shows empty white boxes.",
+  "element_ids": [
+   "e273",
+   "e274",
+   "e278",
+   "e279"
+  ]
+ },
+ {
+  "observation": "Sections are separated by thin light horizontal hairlines across the full viewport width, which makes a stack of full-width bands on the dark background. Sections have about 50px of vertical padding.",
+  "category": "layout",
+  "evidence": "Section boundaries at y=649, 1270, 1620, 3581, 3946, 4507, 4878 and 5287. Lines are visible between them in the screenshot.",
+  "element_ids": [
+   "e23",
+   "e36",
+   "e51",
+   "e65",
+   "e280",
+   "e286"
+  ]
+ },
+ {
+  "observation": "The Map and 'Upload your notes' sections use a two-column split. Heading, text and a green button sit on the left, and a 482px-wide illustration sits on the right. The 'Blog articles' section uses the same split but the illustration is smaller and sits higher.",
+  "category": "layout",
+  "evidence": "Map: h2 at x=220 w=482, image at 738,3634 w=482. Notes: image at 738,4931 w=482. Blog: image at 738,4131 w=392.",
+  "element_ids": [
+   "e281",
+   "e284",
+   "e285",
+   "e310",
+   "e313",
+   "e301"
+  ]
+ },
+ {
+  "observation": "The map image is a world map illustration with teal pin markers, a pink marker and a '200+ Locations Kanienkeha Map' caption baked into the image. It is wrapped in a link, and alt text describes it.",
+  "category": "imagery",
+  "evidence": "map-nap.png alt 'World map titled Kanienkeha Map, 200+ locations'. a e284 wraps img e285.",
+  "element_ids": [
+   "e284",
+   "e285"
+  ]
+ },
+ {
+  "observation": "The Map section's left text paragraph and the 'Upload your notes' paragraph have a dark color that is invisible against the dark background. This leaves a large visual gap between the h2 and the button.",
+  "category": "color",
+  "evidence": "e282 at 220,3729 and e311 at 220,5035 hold text, but the screenshot shows blank space above the buttons.",
+  "element_ids": [
+   "e282",
+   "e311",
+   "e283",
+   "e312"
+  ]
+ },
+ {
+  "observation": "Blog articles are a plain list of serif green bold links separated by thin white rules. There is no date, excerpt or thumbnail per item, and a small grey line 'There is also a separate blog.' follows with an underlined link.",
+  "category": "component",
+  "evidence": "e288 ul with 5 li at 220,4053 (482 wide). e299 paragraph and e300 link.",
+  "element_ids": [
+   "e288",
+   "e289",
+   "e290",
+   "e299",
+   "e300"
+  ]
+ },
+ {
+  "observation": "The 'protest' illustration of signs reading Culture, Blogging, Resources, Language and Talk has a white background and sharp corners. It floats in the blog section with no relation to the list height.",
+  "category": "imagery",
+  "evidence": "protest.png 392x191 at 738,4131. alt 'Signs reading Culture, Blogging, Resources, Language and Talk'.",
+  "element_ids": [
+   "e301"
+  ]
+ },
+ {
+  "observation": "Word of the day is a single centered white rounded card. A small turtle-like icon sits above a centered h2, a one-line description with a bold hashtag, and an outlined button 'Pull up a random word'.",
+  "category": "component",
+  "evidence": "e303 at 220,4560,1000x266. Icon e304 is 40x43. Button e308 is 231x54.",
+  "element_ids": [
+   "e303",
+   "e304",
+   "e305",
+   "e306",
+   "e307",
+   "e308"
+  ]
+ },
+ {
+  "observation": "The 'Spread the word' heading is led by a 40px inline icon image. The social links are white pill buttons in one row. Newsletter and Gumroad carry tiny 16–18px icons, but Facebook, Twitter, Instagram, Patreon and PayPal have text only.",
+  "category": "component",
+  "evidence": "e316 img inside h2 e315. e319 ul with 7 anchors at y=5448, each 36px tall. e324 and e326 are the only icons.",
+  "element_ids": [
+   "e315",
+   "e316",
+   "e319",
+   "e324",
+   "e326"
+  ]
+ },
+ {
+  "observation": "The footer is a deep-green band with white underlined links (About, Contact, Sitemap, Donate) and a credit line crediting 'Doolittle Productions'. It is left aligned in the same 1000px container.",
+  "category": "component",
+  "evidence": "e329 at 0,5536,1440x118. Links at y=5570. Credit at 5603.",
+  "element_ids": [
+   "e329",
+   "e330",
+   "e335",
+   "e336"
+  ]
+ },
+ {
+  "observation": "Content is held in a centered container about 1000–1040px wide (x=220 to 1220) on a 1440px viewport, with wide side margins. The total page is 5654px high.",
+  "category": "layout",
+  "evidence": "Most blocks start at x=220 with w=1000. page_width 1440, page_height 5654.",
+  "element_ids": [
+   "e37",
+   "e52",
+   "e66",
+   "e303"
+  ]
+ },
+ {
+  "observation": "The CSS is minimal and hand-written. It has 153 class uses across 27 unique classes, no Tailwind-like utility classes, one inline style block, no external stylesheets and 4 inline style attributes. The page has no scripts.",
+  "category": "dom",
+  "evidence": "classes total 153, unique 27, tailwind_like_fraction 0. counts: stylesheets 0, scripts 0, inline_style_attrs 4. tag_counts style 1.",
+  "element_ids": []
+ },
+ {
+  "observation": "The page has no box-shadows, gradients, backdrop blur, transitions, animations or transforms. Depth comes only from white cards on the dark ground and 1px borders. Corner rounding is mostly small, with 61 elements at 1–7px, 9 at 8–15px and 9 at 16px or more, and no pills by the measured buckets.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 0, gradient_backgrounds 0, transitions 0, animations 0, transforms 0. Buckets: 1_7 = 61, 8_15 = 9, 16_plus = 9, pill 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "The heading structure is one h1 followed by eight h2s, with three h3s under 'Most recent entries'. The h1 is the domain name, and the descriptive tagline is in a paragraph rather than the heading.",
+  "category": "semantic",
+  "evidence": "heading_outline: h1 'Kanienkeha.net', h2s Welcome from the founder, Site statistics, Most recent entries, Map, Blog articles, Word of the day, Upload your notes, Spread the word. h3s Phrases, Commands — daily routine, Occupations.",
+  "element_ids": [
+   "e24",
+   "e38",
+   "e67",
+   "e73",
+   "e115"
+  ]
+ },
+ {
+  "observation": "The page has 101 anchors and 78 list items against 11 paragraphs. This makes it link-heavy, with most links being card anchors and with 103 spans used for inline text inside them. There are 0 button elements, so every call-to-action is an anchor styled as a button.",
+  "category": "dom",
+  "evidence": "tag_counts a 101, li 78, span 103, p 11. counts buttons 0.",
+  "element_ids": [
+   "e26",
+   "e27",
+   "e283",
+   "e308",
+   "e312"
+  ]
+ },
+ {
+  "observation": "Of 18 images, none lack alt attributes. About half carry empty alt text because they are decorative: flags, chip icons, owl, love1, stats strip, word-of-day, social icons. Content images (logo, longhouse, map, protest, notes) have descriptive alt text.",
+  "category": "imagery",
+  "evidence": "alt_missing 0. Images with alt '' include England.png, Mohawk.png, 2green.png, owl.gif and social1.jpg. map-nap.png and notes.jpg have descriptive alt.",
+  "element_ids": [
+   "e4",
+   "e30",
+   "e35",
+   "e285",
+   "e313"
+  ]
+ },
+ {
+  "observation": "Images are a mix of GIF, PNG and JPG flat vector-style illustrations in the same green palette. Small raster assets are shown at or near native size (49x47, 40x43). The 32px chip icons are downscaled from 49px.",
+  "category": "imagery",
+  "evidence": "File types moh-logo.gif, owl.gif, longhouse1.jpg and the 2green/3green/4green PNGs. Natural 49x49 is rendered at 32x32.",
+  "element_ids": [
+   "e30",
+   "e32",
+   "e34",
+   "e48",
+   "e304"
+  ]
+ },
+ {
+  "observation": "Secondary text such as the 'Goal' line, 'Try a sample search:' and 'There is also a separate blog.' is muted grey rgb(91,91,104) serif. It is smaller than the body text and low in contrast on the dark ground.",
+  "category": "typography",
+  "evidence": "top_text_colors lists rgb(91,91,104) on 56 elements. e28, e63 and e299 are these muted lines.",
+  "element_ids": [
+   "e28",
+   "e63",
+   "e299"
+  ]
+ },
+ {
+  "observation": "Buttons share a small-radius rectangular style: filled green with white bold sans text for primary actions (Patreon, Open the map, Upload notes) and white fill with a green outline for secondary actions (About the project, Pull up a random word).",
+  "category": "component",
+  "evidence": "primary_button radius 6px, padding 11px 22px. e27 and e308 are outlined. e283 and e312 are filled.",
+  "element_ids": [
+   "e26",
+   "e27",
+   "e283",
+   "e308",
+   "e312"
+  ]
+ }
+]

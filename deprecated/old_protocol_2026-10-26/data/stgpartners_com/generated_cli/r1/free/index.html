@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STG Partners — Partners for Business Transformation</title>
+<meta name="description" content="A private equity firm focused on fueling innovative software, data, and analytics market leaders in the mid-market.">
+<style>
+  :root {
+    --navy: #0b1f3a;
+    --navy-2: #12305a;
+    --ink: #1a2433;
+    --muted: #5d6b7e;
+    --line: #e3e8ef;
+    --bg: #ffffff;
+    --bg-alt: #f5f7fa;
+    --accent: #3d8bfd;
+    --light: #f7f7f7;
+    --max: 1120px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(11,31,58,.97);
+    backdrop-filter: blur(6px);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { color: #fff; font-weight: 800; font-size: 1.6rem; letter-spacing: .12em; }
+  nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; }
+  nav a { color: #cfd8e6; font-size: .95rem; transition: color .15s; }
+  nav a:hover, nav a:focus-visible { color: #fff; }
+  .menu-btn { display: none; background: none; border: 0; color: #fff; font-size: 1.6rem; cursor: pointer; }
+
+  /* Hero */
+  .hero { background: var(--navy); color: #fff; padding: 88px 0 0; }
+  .hero-text { max-width: 760px; padding-bottom: 56px; }
+  h1 { font-size: clamp(2.2rem, 5.5vw, 3.8rem); line-height: 1.1; margin: 0 0 20px; letter-spacing: -.02em; }
+  .hero p { font-size: 1.2rem; color: #c3cfe0; margin: 0 0 32px; }
+  .btn {
+    display: inline-block; padding: 13px 28px; border-radius: 4px;
+    font-weight: 600; font-size: .95rem; transition: .15s;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #5a9dff; }
+  .btn-outline { border: 1.5px solid var(--navy); color: var(--navy); }
+  .btn-outline:hover { background: var(--navy); color: #fff; }
+  .hero-img { width: 100%; max-height: 520px; object-fit: cover; object-position: center top; }
+
+  /* Announcement */
+  .announce { background: var(--navy-2); color: #fff; }
+  .announce a { display: flex; gap: 12px; justify-content: center; align-items: center; padding: 18px 24px; text-align: center; font-size: .98rem; }
+  .announce a:hover span.t { text-decoration: underline; }
+  .tag { background: var(--accent); font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; flex: none; }
+
+  /* Sections */
+  section { padding: 88px 0; }
+  .eyebrow { color: var(--accent); font-weight: 700; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; margin: 0 0 10px; }
+  h2 { font-size: clamp(1.8rem, 3.5vw, 2.5rem); line-height: 1.2; margin: 0 0 16px; letter-spacing: -.01em; }
+  .lead { font-size: 1.15rem; color: var(--muted); max-width: 620px; margin: 0 0 32px; }
+
+  .dark { background: var(--navy); color: #fff; }
+  .dark .lead { color: #c3cfe0; }
+  .dark .btn-outline { border-color: #fff; color: #fff; }
+  .dark .btn-outline:hover { background: #fff; color: var(--navy); }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 48px; }
+  .card { padding: 28px; border-radius: 8px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); }
+  .card .icon { height: 59px; display: flex; align-items: center; margin-bottom: 20px; }
+  .card .icon img { height: 100%; width: auto; max-width: 100px; }
+  .card h3 { margin: 0 0 8px; font-size: 1.2rem; }
+  .card p { margin: 0; color: #c3cfe0; font-size: .98rem; }
+  .card p a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+  .alt { background: var(--bg-alt); }
+
+  /* News */
+  .news-list { list-style: none; margin: 40px 0 0; padding: 0; border-top: 1px solid var(--line); }
+  .news-list li { border-bottom: 1px solid var(--line); }
+  .news-list a { display: grid; grid-template-columns: 70px 1fr auto; gap: 24px; align-items: center; padding: 22px 0; }
+  .news-list a:hover h4 { color: var(--accent); }
+  .date { text-align: center; line-height: 1.1; color: var(--muted); font-size: .8rem; text-transform: uppercase; font-weight: 700; letter-spacing: .08em; }
+  .date b { display: block; font-size: 1.7rem; color: var(--navy); letter-spacing: 0; }
+  .news-list h4 { margin: 0; font-size: 1.05rem; font-weight: 600; transition: color .15s; }
+  .more { color: var(--accent); font-weight: 600; font-size: .9rem; white-space: nowrap; }
+
+  /* Footer */
+  footer { background: #07152a; color: #9fb0c8; padding: 56px 0 32px; font-size: .9rem; }
+  .foot-top { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,.1); }
+  footer ul { list-style: none; display: flex; flex-wrap: wrap; gap: 24px; margin: 0; padding: 0; }
+  footer a:hover { color: #fff; }
+  .foot-bot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 24px; }
+
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  @media (max-width: 760px) {
+    section { padding: 64px 0; }
+    .hero { padding-top: 56px; }
+    .menu-btn { display: block; }
+    nav { position: absolute; top: 68px; left: 0; right: 0; background: var(--navy); display: none; padding: 8px 24px 20px; }
+    nav.open { display: block; }
+    nav ul { flex-direction: column; gap: 0; }
+    nav a { display: block; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .news-list a { grid-template-columns: 52px 1fr; gap: 16px; }
+    .more { display: none; }
+    .announce a { flex-direction: column; gap: 8px; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="logo" aria-label="STG home">STG</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" onclick="var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    <nav id="nav" aria-label="Primary">
+      <ul>
+        <li><a href="https://stgpartners.com/our-approach/">Our Approach</a></li>
+        <li><a href="https://stgpartners.com/portfolio/">Portfolio</a></li>
+        <li><a href="https://stgpartners.com/who-we-are/">Who We Are</a></li>
+        <li><a href="https://stgpartners.com/news/">News</a></li>
+        <li><a href="https://stgpartners.com/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap hero-text">
+      <h1>Partners for Business Transformation</h1>
+      <p>A private equity firm focused on fueling innovative software, data, and analytics market leaders in the mid-market.</p>
+      <a class="btn btn-primary" href="/our-approach/">Our Approach</a>
+    </div>
+    <img class="hero-img" src="images/home_hero.png" alt="The STG Partners leadership team standing together in an office" width="1439" height="630">
+  </div>
+
+  <div class="announce">
+    <a href="https://stgpartners.com/2021/03/08/mcafee-announces-sale-of-enterprise-business-to-symphony-technology-group-for-4-0-billion/">
+      <span class="tag">Featured</span>
+      <span class="t">McAfee Announces Sale of Enterprise Business to Symphony Technology Group for $4.0 Billion →</span>
+    </a>
+  </div>
+
+  <section class="dark" id="approach">
+    <div class="wrap">
+      <p class="eyebrow">Our Approach</p>
+      <h2>How we build lasting value</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon"><img src="images/icn_customer_centric.svg" alt=""></div>
+          <h3>Customer Centric</h3>
+          <p>Building companies that put the customer first</p>
+        </div>
+        <div class="card">
+          <div class="icon"><img src="images/icn_growth.svg" alt=""></div>
+          <h3>Committed to Growth</h3>
+          <p>Investing in our businesses to drive sustainable, long-term top line results</p>
+        </div>
+        <div class="card">
+          <div class="icon"><img src="images/icn_engaged.svg" alt=""></div>
+          <h3>Engaged Partners</h3>
+          <p>Flexible and creative collaborators</p>
+        </div>
+        <div class="card">
+          <div class="icon"><img src="images/icn_noun_speed.svg" alt=""></div>
+          <h3>Accelerators</h3>
+          <p>Strategic and tactical support for attracting, acquiring and sustaining talent and creating productive offshore teams. <a href="/stg-labs/">Learn more.</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <p class="eyebrow">Portfolio</p>
+      <h2>Portfolio</h2>
+      <p class="lead">Building strategic value for market leading companies in software, data and analytics</p>
+      <a class="btn btn-outline" href="/portfolio/">View Our Work</a>
+    </div>
+  </section>
+
+  <section class="dark" id="who">
+    <div class="wrap">
+      <p class="eyebrow">Who We Are</p>
+      <h2>Who We Are</h2>
+      <p class="lead">Business builders with deep sector expertise</p>
+      <a class="btn btn-outline" href="/who-we-are/">Read More</a>
+      <div class="cards" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 760px;">
+        <div class="card">
+          <div class="icon"><img src="images/icn_additional.svg" alt=""></div>
+          <h3>Experts</h3>
+          <p>Deep software, data and analytics expertise</p>
+        </div>
+        <div class="card">
+          <div class="icon"><img src="images/icn_entrepreneurs.svg" alt=""></div>
+          <h3>Innovators</h3>
+          <p>The pedigree, experience, and vision to create market defining, winning companies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="news">
+    <div class="wrap">
+      <p class="eyebrow">Latest</p>
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><a href="https://stgpartners.com/2021/06/01/escalent-acquires-grail-insights/"><div class="date">Jun<b>01</b></div><h4>Escalent Acquires Grail Insights</h4><span class="more">Read More →</span></a></li>
+        <li><a href="https://stgpartners.com/2021/05/26/press-ganey-acquires-sph-analytics/"><div class="date">May<b>26</b></div><h4>Press Ganey Acquires SPH Analytics</h4><span class="more">Read More →</span></a></li>
+        <li><a href="https://stgpartners.com/2021/05/19/dodge-data-analytics-launches-accelerate-marketing-solutions/"><div class="date">May<b>19</b></div><h4>Dodge Data &amp; Analytics Launches ACCELERATE Marketing Solutions</h4><span class="more">Read More →</span></a></li>
+        <li><a href="https://stgpartners.com/2021/05/04/symphony-talent-announces-distinctive-research-partnership-with-aptitude-research-and-talent-board/"><div class="date">May<b>04</b></div><h4>Symphony Talent Announces Distinctive Research Partnership with Aptitude Research and Talent Board</h4><span class="more">Read More →</span></a></li>
+        <li><a href="https://stgpartners.com/2021/05/04/extenda-retail-signs-long-term-partnership-with-health-and-sports-nutrition-group-hsng-to-roll-out-wms-solution/"><div class="date">May<b>04</b></div><h4>Extenda Retail signs long-term partnership with Health and Sports Nutrition Group (HSNG) to roll out WMS solution</h4><span class="more">Read More →</span></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="/" class="logo">STG</a>
+      <ul>
+        <li><a href="https://stgpartners.com/">Home</a></li>
+        <li><a href="https://stgpartners.com/our-approach/">Our Approach</a></li>
+        <li><a href="https://stgpartners.com/portfolio/">Portfolio</a></li>
+        <li><a href="https://stgpartners.com/who-we-are/">Who We Are</a></li>
+        <li><a href="https://stgpartners.com/news/">News</a></li>
+        <li><a href="https://stgpartners.com/contact/">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot-bot">
+      <span>© 2021 STG Partners, LLC</span>
+      <a href="/terms-of-use/">Terms Of Use</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

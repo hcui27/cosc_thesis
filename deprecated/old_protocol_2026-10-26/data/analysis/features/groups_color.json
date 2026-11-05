@@ -1,0 +1,279 @@
+{
+ "key": "81820f36373b",
+ "groups": [
+  {
+   "name": "Warm cream/off-white page background",
+   "definition": "Is the page's main background a warm cream or off-white tone rather than pure white or black?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "body_bg_lightness",
+    "op": ">=",
+    "value": 0.9
+   },
+   "members": [
+    "alpine8848_com#10",
+    "cbdoilcreamnk_com#10",
+    "educationactivities_org#5",
+    "kanienkeha_net#2",
+    "newclimateeconomy_net#11",
+    "thefrangipanicreative_com#16"
+   ]
+  },
+  {
+   "name": "Warm beige band separating sections",
+   "definition": "Does a section use a warm off-white or beige background band to separate it from white areas?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#11"
+   ]
+  },
+  {
+   "name": "Alternating tinted section background bands",
+   "definition": "Do full-width sections alternate between two or more background colors (e.g., white, cream, pale tint, dark) to separate content bands?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#9",
+    "cbdoilcreamnk_com#11",
+    "kanienkeha_net#1",
+    "miamidda_com#11",
+    "naturalwellbeing_com#20",
+    "ridetech_com#3",
+    "seoanalyzer_me#6",
+    "stgpartners_com#10",
+    "tellmebaby_com_au#9",
+    "thync_com#7",
+    "fnsouzafoundation_com#9"
+   ]
+  },
+  {
+   "name": "Dark theme page background",
+   "definition": "Is the page background dark (near-black or dark navy) with light text?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "body_bg_dark",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "bathurst12hour_com_au#15",
+    "insightcentral_net#0",
+    "thync_com#4"
+   ]
+  },
+  {
+   "name": "Dark footer band",
+   "definition": "Is the footer a very dark (charcoal or navy) band with light text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#19",
+    "homedesignersoftware_com#22"
+   ]
+  },
+  {
+   "name": "Dark top announcement or utility bar",
+   "definition": "Is there a dark top announcement or utility bar above the header?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#6"
+   ]
+  },
+  {
+   "name": "Dark navy bands for secondary content",
+   "definition": "Are dark navy bands used to anchor sections like hero, top bar or content blocks alongside light panels?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#23",
+    "gravityvault_com#6"
+   ]
+  },
+  {
+   "name": "Light band interrupting dark page",
+   "definition": "Does a light-colored band interrupt a dark page to hold content such as a logo strip?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "thync_com#8"
+   ]
+  },
+  {
+   "name": "Clean white header band",
+   "definition": "Is the header band a clean white background?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "nira_org_ng#9"
+   ]
+  },
+  {
+   "name": "Near-black or charcoal body text",
+   "definition": "Is body text a near-black or dark charcoal color rather than pure black?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "text_color_lightness",
+    "op": "<=",
+    "value": 0.25
+   },
+   "members": [
+    "aeptexas_com#20",
+    "tellmebaby_com_au#7"
+   ]
+  },
+  {
+   "name": "Navy-tinted dark body text",
+   "definition": "Is body text a dark navy or blue-tinted slate rather than neutral gray or black?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#6",
+    "gravityvault_com#4",
+    "homedesignersoftware_com#7"
+   ]
+  },
+  {
+   "name": "Green-tinted dark body text",
+   "definition": "Is body text a dark green-tinted color rather than neutral gray?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#8",
+    "newclimateeconomy_net#13",
+    "nira_org_ng#8"
+   ]
+  },
+  {
+   "name": "Dark brown or rust or purple-slate text",
+   "definition": "Is body text a warm brown, rust or slate-purple tone?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "tellmebaby_com_au#8",
+    "kanienkeha_net#3"
+   ]
+  },
+  {
+   "name": "Two-tone text on dark (white headings, muted body)",
+   "definition": "On a dark background, are headings white and supporting copy a muted grey or blue-grey tone?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "thync_com#6",
+    "fnsouzafoundation_com#8"
+   ]
+  },
+  {
+   "name": "Single orange accent color",
+   "definition": "Is a single orange or burnt-orange accent used for buttons, links, labels and badges?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#7",
+    "fnsouzafoundation_com#7",
+    "gravityvault_com#5"
+   ]
+  },
+  {
+   "name": "Single red accent color",
+   "definition": "Is a single red, crimson or rust-red accent used for links, buttons and CTAs?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#16",
+    "flygrant_com#5",
+    "ridetech_com#4",
+    "homedesignersoftware_com#9",
+    "homedesignersoftware_com#8"
+   ]
+  },
+  {
+   "name": "Single cyan or teal accent color",
+   "definition": "Is a single bright cyan, teal or mint accent used for buttons, links and highlights?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "insightcentral_net#1",
+    "thync_com#5"
+   ]
+  },
+  {
+   "name": "Pink or magenta accent",
+   "definition": "Is a hot pink, crimson-magenta or vivid magenta used as an accent?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#2",
+    "thefrangipanicreative_com#17",
+    "miamidda_com#10"
+   ]
+  },
+  {
+   "name": "Blue-based palette with dark navy",
+   "definition": "Is the palette built on navy and blue tones with light blue tints and accents?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#8",
+    "kneeguru_co_uk#7",
+    "seoanalyzer_me#5",
+    "stgpartners_com#23",
+    "greatdayimprovements_com#9",
+    "bluebayou_com#9",
+    "merchantsavvy_co_uk#4"
+   ]
+  },
+  {
+   "name": "Green-based palette",
+   "definition": "Is the palette built on green tones with mint or sage tints?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#12"
+   ]
+  },
+  {
+   "name": "Earthy or warm multi-color palette",
+   "definition": "Does the palette mix earthy or warm accent colors (teal, sage, tan, orange, peach) with warm off-white panels?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#7",
+    "alpine8848_com#12"
+   ]
+  },
+  {
+   "name": "Warm beige-gray neutral borders and fills",
+   "definition": "Are borders and fills a muted warm beige-gray alongside white cards?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#8"
+   ]
+  },
+  {
+   "name": "Gray alert strip with white button",
+   "definition": "Is there a solid mid-gray band with white text and a white button with colored text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#16"
+   ]
+  },
+  {
+   "name": "Gradient hero background",
+   "definition": "Is the hero background a gradient rather than a flat color?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "gradient_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "seoanalyzer_me#4"
+   ]
+  }
+ ]
+}

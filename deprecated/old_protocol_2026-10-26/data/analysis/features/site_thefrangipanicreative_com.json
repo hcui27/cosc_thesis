@@ -1,0 +1,599 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "A has no h1 element; B has exactly one h1 containing the site name",
+   "evidence": "A h1_count 0, h1 null; B h1_count 1, h1 text 'The Frangipani Creative' at 70.4px Fraunces weight 600, white",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|00",
+    "thefrangipanicreative_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A marks up section titles as h4 and testimonial client names as h2; B uses h2 for section titles and h3 for post titles",
+   "evidence": "A: h4 'Personalized Blog Coaching', h4 'Happy Clients', h2 'Sunita Saldhana', and post titles as h4; B: h2 'Personalized Blog Coaching', h2 ",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|02",
+    "thefrangipanicreative_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B uses blockquote, cite and figure for testimonials and an address element for the footer; A has no blockquote or cite",
+   "evidence": "B blockquote 3, cite 3, figure 3, address 1; A blockquote 0, cite 0, figure 1",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|03",
+    "thefrangipanicreative_com|sonnet|20",
+    "thefrangipanicreative_com|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "The page titles and lang attributes differ",
+   "evidence": "A title 'Home - The Frangipani Creative', lang en-US; B title 'The Frangipani Creative', lang en",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|08",
+    "thefrangipanicreative_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "A has 15 img elements, all 1×1 lazy-load placeholder GIFs; B has no img elements and shows its photos as CSS backgrounds",
+   "evidence": "A images all named 'yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' with natural size 1×1; B images [] and count 0, but slices show frangipani photos in th",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|09",
+    "thefrangipanicreative_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A places its intro paragraphs directly over a flower photo inside a fixed 880px-wide box; B places the intro below the hero in a two-column 'About' layout",
+   "evidence": "A_slice_00: black text over a brown blurred photo, box from x=280 to x=1160; B_slice_00: left column with the heading 'The studio of Corinne",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|12",
+    "thefrangipanicreative_com|opus|13",
+    "thefrangipanicreative_com|sonnet|01",
+    "thefrangipanicreative_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "A's content stays in a narrow centered column and its Instagram section switches to a left offset of about x=97; B alternates contained sections with full-bleed bands",
+   "evidence": "A content blocks span x=280–1160, Instagram items at x=97; B coaching band and social band run the full 1440px width",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|14",
+    "thefrangipanicreative_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "B uses CSS grid and A uses none",
+   "evidence": "B display_grid 5, display_flex 8; A display_grid 0, display_flex 6",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|15",
+    "thefrangipanicreative_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "Testimonials: A shows one testimonial with stars over a dark photo and exposes raw schema data; B shows three testimonials side by side in white cards",
+   "evidence": "A_slice_01–02 show 'Anil Kumar Margani', then '5', '2019-10-15T11:24:24+05:30', a URL, '5', '3' as visible text; B_slice_01 shows three card",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|17",
+    "thefrangipanicreative_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "Blog posts: A shows four columns with centered serif titles and uppercase letter-spaced author bylines; B shows a 2×2 grid of rounded cards with left-aligned titles and sentence-case bylines",
+   "evidence": "A_slice_02: 'By LUX', 'By FABIDA ABDULLA' in spaced caps; B_slice_02: 'By Lux', 'By Fabida Abdulla' inside cream bordered cards",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|19",
+    "thefrangipanicreative_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "Social links: A uses colored brand-specific widget tiles with white Like/Follow buttons; B uses identical outlined pill buttons in white on a photo",
+   "evidence": "A top_backgrounds include rgb(24,119,242), rgb(234,36,84), rgb(39,103,177), rgb(230,0,35), rgb(29,161,242), and A_slice_02 shows the Faceboo",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|20",
+    "thefrangipanicreative_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "B has multiple pill-shaped call-to-action buttons; A's measured primary button is a square black 'Menu' button, and its content uses text links",
+   "evidence": "B primary_button 'Personalized Blog Coaching' bg rgb(194,37,92), radius 999px, bucket_pill 10; B buttons 'Read more', 'More happy clients', ",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|22",
+    "thefrangipanicreative_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "B adds small uppercase orange/crimson eyebrow labels above headings; A has none",
+   "evidence": "B_slice_00/01: 'SECUNDERABAD, INDIA', 'ABOUT', 'COACHING' in letter-spaced caps",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|24",
+    "thefrangipanicreative_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "B adds new sections and CTAs not present in A: a 'From the Blog' heading, 'More happy clients', 'Visit the blog' and 'Why Frangipani?'",
+   "evidence": "B heading_outline h2 'From the Blog'; B_slice_01/02 buttons; A outline has no such headings",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|23",
+    "thefrangipanicreative_com|opus|25",
+    "thefrangipanicreative_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "B rewrites the intro into a hero tagline and splits the bio across a heading, an italic serif pull line and link cards; A keeps the bio as continuous paragraphs with inline links",
+   "evidence": "B hero text 'Training and coaching for writing, blogging and creativity, from the studio of Corinne Rodrigues.' and italic 'A lover of words",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|26",
+    "thefrangipanicreative_com|opus|27",
+    "thefrangipanicreative_com|sonnet|11",
+    "thefrangipanicreative_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Font pairing: A uses Open Sans for body and Arbutus Slab for display text plus icon fonts; B uses Inter for body and Fraunces for display text",
+   "evidence": "A fonts: Open Sans 379, Helvetica 35, Arbutus Slab 23, FontAwesome 20, sw-icon-font 5; B fonts: Inter 119, Fraunces 19",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|28",
+    "thefrangipanicreative_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "Heading scale and weight: A's h2 is 30px at weight 400; B's h2 is 41.6px at weight 600 and its h1 is 70.4px",
+   "evidence": "A h2 font_size 30px, weight 400; B h2 41.6px, weight 600; B h1 70.4px",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|29",
+    "thefrangipanicreative_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "Body text is slightly smaller in B",
+   "evidence": "A body 18px / 29.25px line height; B 17px / 28.05px",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|30",
+    "thefrangipanicreative_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "Page background: A is pure white with black text; B is a warm cream with dark brown text",
+   "evidence": "A body_bg rgb(255,255,255), body_color rgb(0,0,0); B body_bg rgb(251,246,241), body_color rgb(43,34,32)",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|32",
+    "thefrangipanicreative_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "The accent crimson differs: A uses rgb(178,3,50) for links; B uses a pinker rgb(194,37,92) for buttons and rgb(156,26,71) for text accents",
+   "evidence": "A top_text_colors rgb(178,3,50) ×106; B backgrounds rgb(194,37,92) ×4, text rgb(156,26,71) ×7",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|33",
+    "thefrangipanicreative_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "B has a dark footer; A's footer is white with centered copyright",
+   "evidence": "B top_backgrounds rgb(27,21,19), and B_slice_02/03 show a near-black footer with light text rgb(216,204,198); A_slice_05 shows white with '©",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|34"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I21",
+   "text": "B uses a three-column dark footer for Location, Recent Posts and Instagram; in A these blocks sit in a three-column widget area over a sky photo inside the content column",
+   "evidence": "B_slice_02/03 footer columns; A_slice_02: Follow/Location/Recent Posts columns over a blue-sky flower photo",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|31",
+    "thefrangipanicreative_com|opus|35",
+    "thefrangipanicreative_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "Corner rounding: A is almost entirely square-cornered; B mixes pills with 8–16px+ rounded cards",
+   "evidence": "A radius buckets 0:435, 1–7:17, 8–15:5, 16+:5, pill 0; B 0:118, 8–15:7, 16+:3, pill 10",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|37",
+    "thefrangipanicreative_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "B places dark overlay tints on its photo backgrounds and uses gradient backgrounds; A uses no gradients",
+   "evidence": "B gradient_backgrounds 3, and the hero/coaching bands appear darkened; A gradient_backgrounds 0",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|36",
+    "thefrangipanicreative_com|opus|38",
+    "thefrangipanicreative_com|sonnet|17",
+    "thefrangipanicreative_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "B shortens the nav label 'The Frangipani Creative Podcast' to 'Podcast'",
+   "evidence": "A_slice_00 nav: 'The Frangipani Creative Podcast'; B_slice_00 nav: 'Podcast'",
+   "side": "generated",
+   "members": [
+    "thefrangipanicreative_com|opus|41"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I25",
+   "text": "A uses an hr divider within the testimonial and between footer areas; B uses thin borders on its cards and section edges",
+   "evidence": "A hr 4, with a white rule visible in A_slice_01; B has 0 hr, while a border line between sections and a footer divider are visible in B_slic",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|42"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I26",
+   "text": "The disclosure text appears in different places: A shows it as standalone body-size text with bold 'this page' above the copyright; B shows it as small muted text in the dark footer",
+   "evidence": "A_slice_05: disclosure paragraph in black with bold link; B_slice_03: small grey disclosure with underlined pink 'this page' followed by '© ",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|44",
+    "thefrangipanicreative_com|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "Word counts are similar, with B slightly lower",
+   "evidence": "A words 622; B 582; both have emoji 1 and exclamations 0",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|45"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I28",
+   "text": "B's star ratings are orange; A's are black",
+   "evidence": "B_slice_01: orange stars in the cards; A_slice_01: black stars above 'Anil Kumar Margani'",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|opus|46",
+    "thefrangipanicreative_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "A's nav labels are bold black Open Sans, and the active 'Home' item is crimson. B's nav labels are regular-weight white Inter on the dark photo, with no visible active-state color.",
+   "evidence": "A_slice_00 bold nav, Home in red; B_slice_00 white light nav links",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A renders the intro paragraphs as black text on a dark brown photo background, with crimson underlined links at low contrast. B puts the hero text in white and sets the intro copy on a cream page background.",
+   "evidence": "A_slice_00 dark text on a dark image; B_slice_00 white h1 rgb(255,255,255); B body_bg rgb(251,246,241)",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|sonnet|04"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I31",
+   "text": "A's coaching block is mostly empty space. It has a 300×300 image, 'blog coaching', that renders blank, and a small centered Arbutus Slab title with text and a 'Read more..' inline link. B's coaching block is a full-width dark band over a flower photo, with an eyebrow, a large white centered h2, a short blurb and a pill",
+   "evidence": "A_slice_01 blank area above 'Personalized Blog Coaching'; B_slice_01 band with centered content",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|sonnet|15"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "A uses 7 article elements and 7 header elements (the headers are inside articles, and one is in the page structure). B uses 0 articles and 1 header, and 6 sections.",
+   "evidence": "A semantic article 7, header 7, section 13; B article 0, header 1, section 6",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "The page lengths differ: A is 7381px high, B is 4225px. Both are 1440px wide.",
+   "evidence": "layout.page_height A 7381, B 4225",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "A's class usage is large and CMS-generated: 621 class tokens, 210 unique, and 53 inline style attributes. B's is small and hand-authored: 46 tokens, 24 unique, and 5 inline style attributes. Neither is tailwind-like (A 0.013, B 0).",
+   "evidence": "classes and inline_style_attrs counts",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "B uses italic Fraunces for the tagline and makes the key words of the h2 magenta ('Corinne Rodrigues'). A uses italic only for the small 'By' in the blog bylines.",
+   "evidence": "B_slice_00 magenta italic tagline; A_slice_02 italic 'By'",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|sonnet|37"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "A's linked text is red and underlined throughout, over images in the intro. B limits underlines to inline text links and the footer, and the card, button and nav links have no underline.",
+   "evidence": "A_slice_00 underlined links; B_slice_00 link cards without underline",
+   "side": "both",
+   "members": [
+    "thefrangipanicreative_com|sonnet|38"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page has exactly one h1 containing the site name, with a clear heading hierarchy of h2 section titles and h3 item titles.",
+   "family": "semantic_dom",
+   "items": [
+    "I0",
+    "I1"
+   ]
+  },
+  {
+   "statement": "Testimonials use blockquote, cite and figure elements, and the footer contact info uses an address element.",
+   "family": "semantic_dom",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Photos are shown as CSS background images rather than img elements.",
+   "family": "imagery",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Intro sits below the hero in a two-column about layout instead of over a photo.",
+   "family": "layout",
+   "items": [
+    "I5",
+    "I14"
+   ]
+  },
+  {
+   "statement": "Contained content sections alternate with full-bleed photo or colored bands spanning the full viewport width.",
+   "family": "layout",
+   "items": [
+    "I6",
+    "I31"
+   ]
+  },
+  {
+   "statement": "Layout relies on CSS grid for multi-column sections, alongside flexbox.",
+   "family": "layout",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Testimonials appear as several side-by-side white cards with orange star ratings, with no raw schema data exposed.",
+   "family": "component",
+   "items": [
+    "I8",
+    "I28"
+   ]
+  },
+  {
+   "statement": "Blog posts appear as a 2×2 grid of bordered cream rounded cards with left-aligned titles and sentence-case bylines.",
+   "family": "component",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "Social links are uniform outlined white pill buttons rather than brand-colored widget tiles.",
+   "family": "component",
+   "items": [
+    "I10"
+   ]
+  },
+  {
+   "statement": "Calls to action are fully rounded pill buttons in an accent color.",
+   "family": "component",
+   "items": [
+    "I11",
+    "I22"
+   ]
+  },
+  {
+   "statement": "Small uppercase letter-spaced accent-colored eyebrow labels sit above headings.",
+   "family": "typography",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Copy adds extra sections and CTAs with short, friendly microcopy such as 'More happy clients' and 'Visit the blog'.",
+   "family": "copy",
+   "items": [
+    "I13",
+    "I24"
+   ]
+  },
+  {
+   "statement": "Bio copy is broken into a heading, an italic serif pull line and link cards, with a punchy hero tagline.",
+   "family": "copy",
+   "items": [
+    "I14",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Typography pairs a clean sans body font with an expressive serif display font for headings.",
+   "family": "typography",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Headings are large and semibold, with a very large hero h1 and a bigger h2 scale.",
+   "family": "typography",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Body text is about 17px with generous line height.",
+   "family": "typography",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Page background is a warm cream with dark brown text rather than pure white and black.",
+   "family": "color",
+   "items": [
+    "I18",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Accent color is a pinkish crimson/magenta used for buttons, text accents and key heading words.",
+   "family": "color",
+   "items": [
+    "I19",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Footer is dark near-black with light text, arranged in three columns with small muted disclosure text.",
+   "family": "layout",
+   "items": [
+    "I20",
+    "I21",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Dark overlay tints and gradients are applied over photo backgrounds, with white text on top.",
+   "family": "decoration",
+   "items": [
+    "I23",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Separation uses thin borders on cards and section edges instead of hr dividers.",
+   "family": "decoration",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Nav links are light-weight white text over the hero photo, with no distinct active-state color.",
+   "family": "component",
+   "items": [
+    "I29"
+   ]
+  },
+  {
+   "statement": "Underlines are limited to inline text links and footer; cards, buttons and nav links are not underlined.",
+   "family": "typography",
+   "items": [
+    "I36"
+   ]
+  },
+  {
+   "statement": "Markup is lean and hand-authored, with few class tokens, few inline styles, and sections instead of articles.",
+   "family": "semantic_dom",
+   "items": [
+    "I32",
+    "I34"
+   ]
+  },
+  {
+   "statement": "Page is compact and short, with less content and lower word count.",
+   "family": "layout",
+   "items": [
+    "I33",
+    "I27"
+   ]
+  }
+ ]
+}

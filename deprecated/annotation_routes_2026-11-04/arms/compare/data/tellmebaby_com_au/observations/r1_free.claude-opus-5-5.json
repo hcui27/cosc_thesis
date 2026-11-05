@@ -1,0 +1,302 @@
+[
+ {
+  "observation": "Each side uses a different font family throughout",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Montserrat (889 elements). B: system-ui (267 elements), with the h1 stack 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The H1 weight differs: A uses a regular weight and B uses bold",
+  "category": "typography",
+  "evidence": "A h1 font_weight 400, 55px. B h1 font_weight 700, 54.4px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Section H2 headings are medium weight and centered in A, but bold and left-aligned in B",
+  "category": "typography",
+  "evidence": "A h2 weight 500/24px. Section titles like 'Baby product review categories' are visibly centered in A slice 00 and left-aligned in B slice 00. B h2 is 700/25.6px",
+  "which_side": "both"
+ },
+ {
+  "observation": "B places a short peach accent bar under every section heading",
+  "category": "decoration",
+  "evidence": "B slices 00–03 show a small peach rule under 'Baby product review categories', 'How Tell Me Baby works', 'Trending…', 'Recent reviews' and others. A's headings have no underline bar",
+  "which_side": "B"
+ },
+ {
+  "observation": "The two pages have different heading hierarchies",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline: 1 h1, 5 h3 (footer columns and newsletter) and 3 h2 (Login/Sign up/Forgot password modals), so its visible section titles are not h2. B: 1 h1, 7 h2 section titles, 1 h3 and 2 h4",
+  "which_side": "both"
+ },
+ {
+  "observation": "B wraps its content in a main element; A has none",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic.main: A 0, B 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has a much larger and more nested DOM",
+  "category": "DOM/semantic structure",
+  "evidence": "div count: A 528 vs B 25. Class total/unique: A 1407/383 vs B 161/28",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many scripts and stylesheets; B has neither",
+  "category": "DOM/semantic structure",
+  "evidence": "scripts: A 52, B 0. Stylesheets: A 4, B 0. B has a single style tag",
+  "which_side": "A"
+ },
+ {
+  "observation": "A carries extensive SEO and social meta tags plus structured data; B has minimal head metadata",
+  "category": "metadata",
+  "evidence": "A has 37 meta tags (og:*, twitter:*, fb:app_id, 11 origin-trial) and 2 JSON-LD blocks. B has 3 meta names (charset, viewport, description) and 0 JSON-LD",
+  "which_side": "A"
+ },
+ {
+  "observation": "The page titles are worded differently",
+  "category": "copy treatment",
+  "evidence": "A: 'Tell Me Baby | Australia's Biggest Baby Product Review Website'. B: 'Tell Me Baby – Baby product reviews by Australian parents'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is about 1.8 times taller than B's",
+  "category": "layout",
+  "evidence": "page_height: A 9077px, B 4981px. A has 7 slices, B has 4",
+  "which_side": "A"
+ },
+ {
+  "observation": "The hero headline sits in a different position on each side",
+  "category": "layout",
+  "evidence": "In A slice 00, the H1 is on the left and a separate 'Find baby product reviews' search block is on the right. In B slice 00, the H1 is centered-left above a search bar in one stacked group",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows the second line of the H1 in peach and smaller type",
+  "category": "typography",
+  "evidence": "In B slice 00, 'by Australian parents' is peach and smaller below the bold white 'Baby product reviews'. In A, both lines are white at the same size",
+  "which_side": "B"
+ },
+ {
+  "observation": "The hero search has an explicit Search button in B; A uses only a magnifier icon",
+  "category": "component choices",
+  "evidence": "B slice 00 shows a white pill input with a peach 'Search' pill button. A slice 00 shows a white rounded input with a grey search icon inside",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a second search field in the header; B's header has none",
+  "category": "component choices",
+  "evidence": "A slice 00 shows a 'Search for product revi…' outlined pill input beside the logo. B's header holds only the logo, nav links, Login and Signup",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's nav items carry dropdown carets; B's are plain links",
+  "category": "component choices",
+  "evidence": "A slice 00 shows 'Browse reviews ▾', 'Our community ▾', 'Tools ▾', 'Articles ▾'. B slice 00 shows the same labels without carets",
+  "which_side": "A"
+ },
+ {
+  "observation": "The Signup and Login buttons are styled differently",
+  "category": "color",
+  "evidence": "A slice 00: Signup is a teal pill and Login is an outlined pill. B primary_button: 'Signup' with bg rgb(255,170,145) peach, radius 999px, padding 10px 20px, and Login as plain text",
+  "which_side": "both"
+ },
+ {
+  "observation": "The header content spans different widths",
+  "category": "layout",
+  "evidence": "A logo rect x=25 (header edge to edge). B logo x=160 (aligned to a centered container)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's category tiles are photo cards with white icons; B's are text-only peach chips",
+  "category": "imagery handling",
+  "evidence": "A slice 00 shows darkened photos with icons such as a pram and a bottle, plus a label. B slice 00 shows light-peach rounded rectangles holding only text",
+  "which_side": "both"
+ },
+ {
+  "observation": "The category grid has a different column count",
+  "category": "layout",
+  "evidence": "A shows 4+4 tiles, with the second row offset. B shows a 5+3 grid. B display_grid 10 vs A 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "The secondary calls to action are filled teal pills in A and underlined text links in B",
+  "category": "component choices",
+  "evidence": "A: 'View all categories', 'Read more reviews' and 'Read more' are teal pill buttons. B: the same labels are bold text with a peach underline",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's accent color is teal; B's is peach with no teal",
+  "category": "color",
+  "evidence": "A top_text_colors include rgb(125,196,204) on 307 elements, and that color is also a background on 10. B has no teal in its color lists, and peach rgb(255,170,145) is used for buttons and accents",
+  "which_side": "both"
+ },
+ {
+  "observation": "B alternates peach-tinted section backgrounds",
+  "category": "color",
+  "evidence": "B top_backgrounds include rgb(255,241,236) ×10. The 'How Tell Me Baby works' and Award Winners bands are peach-tinted in slices 00–02. A's sections are all white",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's body text is a dark slate color; A's is pure black",
+  "category": "color",
+  "evidence": "body_color: A rgb(0,0,0), B rgb(32,39,44). B also uses rgb(93,103,110) for secondary text",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'How it works' steps are loosely placed text in A and numbered cards in B",
+  "category": "layout",
+  "evidence": "A slice 01 shows four short lines scattered left and right with no numbers. B slice 00 shows four bordered cards with peach numbered circles 1–4 and an ordered list (B has ol: 1)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Join TMB Rewards' button sits centered in A and left-aligned in B",
+  "category": "layout",
+  "evidence": "A slice 01: a centered teal pill. B slice 00: a peach pill at the left under the step cards",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages show the same SunRice leaderboard ad at the same size and x position",
+  "category": "imagery handling",
+  "evidence": "Both have sunrice-ros-leaderboard.jpg at 728×90, x=356 (A y=1754, B y=1208)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's trending cards show product photos and star ratings; B's show neither",
+  "category": "imagery handling",
+  "evidence": "A slice 01 shows Sudocrem and Bugaboo images with peach stars. B slice 01 shows text cards with a small peach top bar, the title and the review count",
+  "which_side": "both"
+ },
+ {
+  "observation": "The trending section shows 3 cards in A and 4 in B",
+  "category": "copy treatment",
+  "evidence": "A slice 01: Tommee Tippee, Sudocrem, Bugaboo. B slice 01 adds 'Milton Antibacterial Surface Wipes – 73 reviews'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's card grids are offset to the left, cutting off the first column at the viewport edge",
+  "category": "layout",
+  "evidence": "A slice 01: the first trending card starts at x≈0. A slices 03–05: the award labels read 'ighest rated…', clipped at the left edge",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's recent review cards have star ratings and avatars; B's are text only",
+  "category": "component choices",
+  "evidence": "A slice 02: star rows and round user-avatar.jpg images (53×53). B slice 01: title, quote and name, with no stars or avatar",
+  "which_side": "both"
+ },
+ {
+  "observation": "The recent reviews section shows 3 cards in A and 4 in B",
+  "category": "copy treatment",
+  "evidence": "B slice 01 adds 'CUB Organic Beef & Veggies Pouch 6m+' by Chloe Hogan. In A, the 4th avatar has a 0×0 rect",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's review and product cards are tall with large blank image areas",
+  "category": "layout",
+  "evidence": "A slice 02: the review cards are about 720px tall, with empty white space above the stars. B's review cards are about 265px tall",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's award cards use ribbon badges, photos and stars; B uses a peach left border with an uppercase category label",
+  "category": "decoration",
+  "evidence": "A slices 02–05: navy rosette badges, product images, stars and teal 'Highest rated baby bottle' text. B slices 01–02: cards with a thick peach left border, a small letter-spaced uppercase 'BABY BOTTLE' label and a bold title",
+  "which_side": "both"
+ },
+ {
+  "observation": "The award category labels are worded differently",
+  "category": "copy treatment",
+  "evidence": "A: 'Highest rated baby bottle', 'Highest rated best hospital grade breast pump'. B: 'BABY BOTTLE', 'BEST HOSPITAL GRADE BREAST PUMP'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Recent articles are a plain list of teal links in A and title cards in B",
+  "category": "component choices",
+  "evidence": "A slices 05–06: teal text lines, left-aligned. B slices 02–03: 5 bordered cards with a peach top bar and a bold title",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'about' text and rewards promo are stacked full-width in A and side by side in B, with B's promo in a dark card",
+  "category": "layout",
+  "evidence": "A slice 06: a centered heading, a full-width paragraph, then 'Join TMB Rewards today!' as small plain text with a 'Join now' text link. B slice 03: two columns with a dark rgb(32,39,44) rounded panel holding the peach dots image, a white heading and a peach 'Join now' pill",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer link groups are accordion rows in A and open link lists with a photo in B",
+  "category": "component choices",
+  "evidence": "A slice 06: TELL ME BABY / BRANDS / COMMUNITY / HERE TO HELP rows with + icons (h3). B slice 03: 'Tell Me Baby' and 'Community' h4 columns of links, plus picture-alt.png (344×295)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social links are icons in A and text links in B",
+  "category": "component choices",
+  "evidence": "A slice 06: bulleted Facebook, Instagram and YouTube SVG icons (svgs: 8). B slice 03: 'Facebook Instagram YouTube' text with a peach underline (svgs: 0)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer logo sits next to centered copyright text in A and is left-aligned at a smaller size in B",
+  "category": "layout",
+  "evidence": "A footer logo 150×40 at x=451 with centered copyright. B logo 113×30 at x=176 with left-aligned copyright",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses square corners almost everywhere; B rounds many elements at 8–15px",
+  "category": "decoration",
+  "evidence": "Border-radius buckets: A bucket_0 856, bucket_8_15 0. B bucket_8_15 64, bucket_0 185",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses many box shadows; B uses borders instead",
+  "category": "decoration",
+  "evidence": "box_shadows: A 50, B 1. A's cards show soft shadows (slices 01–05) and B's cards show thin light borders",
+  "which_side": "A"
+ },
+ {
+  "observation": "B declares CSS transitions; A uses transforms and a gradient",
+  "category": "decoration/effects",
+  "evidence": "transitions: A 0, B 59. Transforms: A 20, B 0. Gradient_backgrounds: A 1, B 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A embeds hidden login, signup and newsletter forms that B lacks",
+  "category": "DOM/semantic structure",
+  "evidence": "A has forms 6, inputs 25, buttons 21, labels 12 and fieldset 1, with h2 'Login', 'Sign up', 'Forgot password'. B has form 1, input 1, button 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses many strong elements; A uses none",
+  "category": "DOM/semantic structure",
+  "evidence": "B tag_counts strong 51 (bold card titles). A has no strong tag",
+  "which_side": "B"
+ },
+ {
+  "observation": "A embeds iframes and object elements; B embeds neither",
+  "category": "DOM/semantic structure",
+  "evidence": "A iframe 2, object 12, picture 1, source 6. B has none of these",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses far more inline style attributes and ARIA attributes",
+  "category": "DOM/semantic structure",
+  "evidence": "inline_style_attrs: A 140 vs B 3. aria_attrs: A 38 vs B 12",
+  "which_side": "A"
+ },
+ {
+  "observation": "The hero is shorter in B",
+  "category": "layout",
+  "evidence": "A hero image rect is 1440×540 at y=75. In B slice 00, the hero spans roughly y=68–450 (about 380px)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body line height differs slightly",
+  "category": "typography",
+  "evidence": "body_line_height: A 24px, B 24.8px. Both have a 16px body size",
+  "which_side": "both"
+ },
+ {
+  "observation": "Word counts are similar, and only A contains an emoji",
+  "category": "copy treatment",
+  "evidence": "words: A 798, B 764. Emoji: A 1, B 0. Both have 3 exclamations",
+  "which_side": "both"
+ }
+]

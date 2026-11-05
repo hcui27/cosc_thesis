@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F N Souza International Fine Arts Foundation</title>
+<meta name="description" content="F N Souza International Fine Arts Foundation & Family Trust Inc. — history and works of Francis Newton Souza, India's mystical expressionist.">
+<style>
+  :root {
+    --bg: #0f0e0d;
+    --surface: #191716;
+    --text: #ece6dd;
+    --muted: #a39a8e;
+    --accent: #e8663a;
+    --line: rgba(236, 230, 221, .14);
+    --serif: Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font: 17px/1.65 var(--sans); }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  .wrap { width: min(1120px, 100% - 32px); margin-inline: auto; }
+
+  /* Notice bar */
+  .notice { background: var(--accent); color: #1a0c06; font-size: 14px; text-align: center; padding: 8px 16px; }
+  .notice a { font-weight: 600; }
+
+  /* Header + hero */
+  .hero { position: relative; background: #000 url(images/header_bg.jpg) center / cover; isolation: isolate; }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(to bottom, rgba(15,14,13,.55), rgba(15,14,13,.35) 40%, var(--bg)); }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px 0; flex-wrap: wrap; }
+  .brand { font-family: var(--serif); font-size: 15px; line-height: 1.3; text-decoration: none; max-width: 300px; }
+  .menu { display: flex; gap: 4px 22px; list-style: none; padding: 0; flex-wrap: wrap; font-size: 14px; letter-spacing: .04em; }
+  .menu > li { position: relative; }
+  .menu a, .menu summary { text-decoration: none; cursor: pointer; list-style: none; padding: 6px 0; display: inline-block; }
+  .menu a:hover, .menu summary:hover { color: var(--accent); }
+  .menu summary::-webkit-details-marker { display: none; }
+  .menu summary::after { content: " ▾"; font-size: 11px; }
+  .sub { position: absolute; top: 100%; left: -12px; min-width: 210px; background: var(--surface); border: 1px solid var(--line);
+    list-style: none; padding: 8px 0; z-index: 10; }
+  .sub a { display: block; padding: 6px 16px; white-space: nowrap; }
+  .hero-body { padding: clamp(72px, 14vw, 170px) 0 clamp(56px, 9vw, 110px); }
+  .eyebrow { font-size: 13px; letter-spacing: .22em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(40px, 7vw, 84px); line-height: 1.05; margin: 14px 0 20px; max-width: 14ch; }
+  .hero p { max-width: 46ch; color: var(--text); opacity: .85; }
+  .btns { display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 26px; border: 1px solid var(--text); text-decoration: none; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #1a0c06; font-weight: 600; }
+  .btn:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+
+  /* Featured works strip */
+  .works { border-block: 1px solid var(--line); overflow-x: auto; }
+  .works ul { display: flex; gap: 36px; list-style: none; padding: 18px 0; white-space: nowrap; font-family: var(--serif); font-style: italic; color: var(--muted); }
+  .works li::before { content: "◆"; color: var(--accent); font-style: normal; font-size: 9px; margin-right: 12px; vertical-align: middle; }
+
+  section { padding: clamp(56px, 9vw, 112px) 0; }
+  h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 4vw, 46px); line-height: 1.15; }
+
+  /* About */
+  .about { display: grid; grid-template-columns: 5fr 6fr; gap: clamp(28px, 6vw, 80px); align-items: center; }
+  .about img { width: 100%; border: 1px solid var(--line); }
+  .about p { color: var(--muted); margin: 20px 0 28px; }
+  .more { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+
+  /* Gallery */
+  .gallery-wrap { background: var(--surface); }
+  .gallery-head { margin-bottom: 36px; }
+  .gallery-head p { color: var(--muted); margin-top: 8px; }
+  .gallery { display: flex; flex-wrap: wrap; gap: 12px; }
+  .gallery a { flex: var(--r) 1 calc(var(--r) * 240px); aspect-ratio: var(--r); overflow: hidden; background: #000; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s, opacity .3s; }
+  .gallery a:hover img { transform: scale(1.05); opacity: .85; }
+
+  /* Lightbox */
+  dialog { border: 0; background: transparent; padding: 0; max-width: 94vw; max-height: 94vh; margin: auto; }
+  dialog::backdrop { background: rgba(0,0,0,.88); }
+  dialog img { max-height: 90vh; width: auto; margin: auto; }
+  dialog button { position: absolute; top: 8px; right: 8px; background: var(--bg); color: var(--text); border: 1px solid var(--line); width: 36px; height: 36px; font-size: 20px; cursor: pointer; }
+
+  /* Contact */
+  .contact { max-width: 640px; }
+  form { display: grid; gap: 16px; margin-top: 32px; }
+  label { display: grid; gap: 6px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  input, textarea { font: inherit; font-size: 16px; color: var(--text); background: var(--surface); border: 1px solid var(--line); padding: 12px 14px; width: 100%; }
+  input:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  textarea { min-height: 150px; resize: vertical; }
+  form .btn { justify-self: start; cursor: pointer; font-family: inherit; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0; font-size: 14px; color: var(--muted); }
+  footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+  a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  @media (max-width: 760px) { .about { grid-template-columns: 1fr; } .gallery a { flex-basis: calc(50% - 6px); } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+
+<div class="notice">
+  <a href="http://www.fnsouzafoundation.com/index.php/f-n-souza-exonerates-son-sole-heir-francis-patrick-souza-of-all-accusations-any-involvement-with-forgeries">F. N. Souza Exonerates Son and Sole Heir Francis Patrick Souza Of All Accusations and Any Involvement With Forgeries</a>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="http://www.fnsouzafoundation.com/">F N Souza International Fine Arts Foundation &amp; Family Trust Inc.</a>
+      <ul class="menu">
+        <li><a href="http://www.fnsouzafoundation.com/">Home</a></li>
+        <li><a href="http://www.fnsouzafoundation.com/index.php/about-f-n-souza">About F N Souza</a></li>
+        <li>
+          <details>
+            <summary>Family History</summary>
+            <ul class="sub">
+              <li><a href="http://www.fnsouzafoundation.com/index.php/family-history/family-history-english">Family History - English</a></li>
+              <li><a href="http://www.fnsouzafoundation.com/index.php/family-history/family-history-portuguese">Family History - Portuguese</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li>
+          <details>
+            <summary>Available For Sale</summary>
+            <ul class="sub">
+              <li><a href="http://www.fnsouzafoundation.com/index.php/available-for-sale/acrylic-on-board">Acrylic On Board</a></li>
+              <li><a href="http://www.fnsouzafoundation.com/index.php/available-for-sale/acrylic-on-canvas">Acrylic On Canvas</a></li>
+              <li><a href="http://www.fnsouzafoundation.com/index.php/available-for-sale/oil-on-canvas">Oil On Canvas</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a href="http://www.fnsouzafoundation.com/index.php/news">News</a></li>
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-body">
+      <p class="eyebrow">History &amp; Works</p>
+      <h1>Modern &amp; Contemporary Art</h1>
+      <p>Francis Newton Souza — India’s mystical expressionist.</p>
+      <div class="btns">
+        <a class="btn primary" href="#gallery">View the gallery</a>
+        <a class="btn" href="#about">About the artist</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="works">
+  <div class="wrap">
+    <ul aria-label="Featured works">
+      <li>Ciudad En Esapana</li>
+      <li>Multicoloured Villagescape</li>
+      <li>Vatican Cityscape</li>
+      <li>God, Sex &amp; The City</li>
+      <li>Landscape</li>
+      <li>City Landscape</li>
+      <li>Faces</li>
+      <li>Last Supper</li>
+    </ul>
+  </div>
+</div>
+
+<main>
+  <section id="about">
+    <div class="wrap about">
+      <img src="images/fnsouza.jpg" width="370" height="275" alt="Francis Newton Souza">
+      <div>
+        <h2>Francis Newton Souza</h2>
+        <p>A pioneer of his time, Francis Newton Souza was the first Indian artist to be recognized globally. Hailed in the west as ‘India’s mystical expressionist,’ his fluid graphic style and thought provoking distortions of the human body evoke an emotional experience, which transforms conventional views.</p>
+        <a class="more" href="http://www.fnsouzafoundation.com/index.php/about-f-n-souza">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-wrap">
+    <div class="wrap">
+      <div class="gallery-head">
+        <h2>Photo gallery</h2>
+        <p>Explore a significant collection of the latest works.</p>
+      </div>
+      <div class="gallery">
+        <a href="images/landscape_tb.jpg" style="--r:1.29"><img src="images/landscape_tb.jpg" width="570" height="442" alt="Landscape" loading="lazy"></a>
+        <a href="images/last_supper_tb.jpg" style="--r:.61"><img src="images/last_supper_tb.jpg" width="270" height="442" alt="Last Supper" loading="lazy"></a>
+        <a href="images/villagescape_tb.jpg" style="--r:.61"><img src="images/villagescape_tb.jpg" width="270" height="442" alt="Multicoloured Villagescape" loading="lazy"></a>
+        <a href="images/abstract_hed_tb.jpg" style="--r:.84"><img src="images/abstract_hed_tb.jpg" width="370" height="442" alt="Abstract head" loading="lazy"></a>
+        <a href="images/chess_tb.jpg" style="--r:1.07"><img src="images/chess_tb.jpg" width="471" height="442" alt="Chess" loading="lazy"></a>
+        <a href="images/mother_child_tb.jpg" style="--r:.61"><img src="images/mother_child_tb.jpg" width="270" height="442" alt="Mother and child" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label>Name <input name="name" autocomplete="name" required></label>
+        <label>Email <input type="email" name="email" autocomplete="email" required></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <button class="btn primary" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2021 F N Souza International Fine Arts Foundation &amp; Family Trust Inc.</span>
+    <a href="http://www.fnsouzafoundation.com/index.php">Privacy Policy</a>
+  </div>
+</footer>
+
+<dialog id="lightbox"><img alt=""><button type="button" aria-label="Close">×</button></dialog>
+<script>
+  const box = document.getElementById('lightbox'), big = box.querySelector('img');
+  document.querySelectorAll('.gallery a').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault();
+    big.src = a.href; big.alt = a.querySelector('img').alt;
+    box.showModal();
+  }));
+  box.addEventListener('click', () => box.close());
+  // close other open nav dropdowns
+  document.querySelectorAll('.menu details').forEach(d => d.addEventListener('toggle', () => {
+    if (d.open) document.querySelectorAll('.menu details').forEach(o => { if (o !== d) o.open = false; });
+  }));
+</script>
+</body>
+</html>

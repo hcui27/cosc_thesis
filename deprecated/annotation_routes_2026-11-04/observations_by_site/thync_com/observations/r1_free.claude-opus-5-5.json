@@ -1,0 +1,267 @@
+[
+ {
+  "observation": "The page is a single long scroll, 1440px wide and 3869px tall",
+  "category": "layout",
+  "evidence": "facts.layout page_width 1440, page_height 3869; 3 slices"
+ },
+ {
+  "observation": "The title uses an en dash to join the brand name and the H1 tagline",
+  "category": "copy",
+  "evidence": "title 'Thync – Neurostimulation For Everyone'; h1 'Neurostimulation For Everyone'"
+ },
+ {
+  "observation": "There is exactly one H1. It is white, centered, 64px and weight 700, set on a dark hero",
+  "category": "typography",
+  "evidence": "h1 font_size 64px, weight 700, color rgb(255,255,255), text_align center"
+ },
+ {
+  "observation": "Every element uses one system font stack; no web fonts are loaded",
+  "category": "typography",
+  "evidence": "fonts_by_element_count system-ui 130; h1 font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'; stylesheets 0"
+ },
+ {
+  "observation": "Body text is 17px with a line height of about 1.65",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 28.05px"
+ },
+ {
+  "observation": "H2s are 36.8px bold and centered over their sections",
+  "category": "typography",
+  "evidence": "h2 font_size 36.8px weight 700; 'Highlighted Scientific Papers' and 'Featured In' centered in slice 2"
+ },
+ {
+  "observation": "The heading text has tight negative letter-spacing, most visible on the H1",
+  "category": "typography",
+  "evidence": "slice 0: the letters of 'Neurostimulation For Everyone' sit very close together"
+ },
+ {
+  "observation": "Headings use Title Case throughout",
+  "category": "copy",
+  "evidence": "'5 Questions, 5 Answers About Thync', 'Our Approach To Science', 'Highlighted Scientific Papers'"
+ },
+ {
+  "observation": "The header is white with a left-aligned wordmark and four right-aligned text nav links",
+  "category": "layout",
+  "evidence": "slice 0: 'thync.' at left; Neurostimulation, Company, Blog, FeelZing at right"
+ },
+ {
+  "observation": "The wordmark is lowercase 'thync' followed by a purple period",
+  "category": "imagery",
+  "evidence": "slice 0 logo 'thync.' with a violet dot; text color rgb(91,61,245) is in top_text_colors"
+ },
+ {
+  "observation": "The header background is semi-transparent with a backdrop blur, which suggests a sticky or overlay header",
+  "category": "effects",
+  "evidence": "top_backgrounds rgba(255,255,255,0.92); backdrop_blur 1"
+ },
+ {
+  "observation": "The hero is a full-width band with a dark navy-to-indigo gradient and a lighter blue radial glow in the upper right",
+  "category": "color",
+  "evidence": "slice 0 hero spans y≈70–508; gradient_backgrounds 2"
+ },
+ {
+  "observation": "The hero contains only a headline, a subline and one pill CTA. It has no image or illustration",
+  "category": "layout",
+  "evidence": "slice 0 hero contents; images list contains only logos and the TRUSTe badge"
+ },
+ {
+  "observation": "The primary CTA is a cyan pill with dark teal text",
+  "category": "component",
+  "evidence": "primary_button bg rgb(25,195,214), color rgb(4,34,42), radius 999px, padding 14px 28px"
+ },
+ {
+  "observation": "The CTA is built as a link, not a button element",
+  "category": "dom",
+  "evidence": "counts.buttons 0; anchors 24"
+ },
+ {
+  "observation": "The CTA label 'Discover Feelzing' is capitalized differently from 'FeelZing' in the nav and subline",
+  "category": "copy",
+  "evidence": "primary_button text 'Discover Feelzing' vs nav 'FeelZing' and subline 'FeelZing Energy Patch'"
+ },
+ {
+  "observation": "The hero subline uses an en dash",
+  "category": "copy",
+  "evidence": "'Discover our latest innovation – FeelZing Energy Patch'"
+ },
+ {
+  "observation": "The FAQ section has five stacked cards in a narrow centered column about 680px wide",
+  "category": "layout",
+  "evidence": "slice 0–1: cards span x≈380–1060"
+ },
+ {
+  "observation": "The FAQ cards have rounded corners and thin light borders, with no shadows",
+  "category": "component",
+  "evidence": "box_shadows 0; border_radius bucket_16_plus 9; slice 0 cards outlined"
+ },
+ {
+  "observation": "Each FAQ question starts with a large violet numeral, coded inside the H3 itself",
+  "category": "typography",
+  "evidence": "heading_outline h3 text '1\\nWhat does Thync do?'; violet numerals 1–5 in slices 0–1"
+ },
+ {
+  "observation": "The FAQ items are marked up as article elements",
+  "category": "dom",
+  "evidence": "semantic.article 5, which matches the 5 h3 questions"
+ },
+ {
+  "observation": "All FAQ answers are fully expanded; there is no accordion behavior",
+  "category": "component",
+  "evidence": "slices 0–1 show every answer's paragraphs; animations 0"
+ },
+ {
+  "observation": "Answer text is muted slate gray, while headings are near-black navy",
+  "category": "color",
+  "evidence": "body_color rgb(14,19,48); text color rgb(82,90,120) count 9"
+ },
+ {
+  "observation": "Most FAQ answers have two paragraphs",
+  "category": "copy",
+  "evidence": "slice 0 Q1 and Q2 each have two paragraphs; p count 14"
+ },
+ {
+  "observation": "The only inline link in the body copy is violet and underlined",
+  "category": "typography",
+  "evidence": "slice 1 'feelzing.com' underlined in violet"
+ },
+ {
+  "observation": "The copy contains one em dash, in the fifth answer",
+  "category": "copy",
+  "evidence": "text_stats em_dashes 1; '— think 5-hour energy, neurostimulation style'"
+ },
+ {
+  "observation": "The copy is short: 368 words, with no emoji and no exclamation marks",
+  "category": "copy",
+  "evidence": "text_stats words 368, emoji 0, exclamations 0"
+ },
+ {
+  "observation": "Sections alternate between white and pale gray-blue backgrounds",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(255,255,255) ×7 and rgb(243,245,250) ×5; slices 1–2 show bands alternating"
+ },
+ {
+  "observation": "'Our Approach To Science' is an H4, even though it heads its own section at the same level as the H2 sections",
+  "category": "dom",
+  "evidence": "heading_outline level 4 'Our Approach To Science' between h2 groups"
+ },
+ {
+  "observation": "The science section uses a large rounded video placeholder with a dark indigo gradient and a centered circular play icon",
+  "category": "imagery",
+  "evidence": "slices 1–2: placeholder at x≈360–1080 with a translucent ring play button; rgba(255,255,255,0.18) background; svgs 0"
+ },
+ {
+  "observation": "The video placeholder shows no thumbnail image, and the page has no video or iframe element",
+  "category": "dom",
+  "evidence": "tag_counts has no video or iframe; images list has no thumbnail"
+ },
+ {
+  "observation": "The science intro names a lead scientist and is set as centered gray text",
+  "category": "copy",
+  "evidence": "slice 1 'Hear from our Thync's lead scientist, Dr. Jonathan Charlesworth...'"
+ },
+ {
+  "observation": "The papers section uses a three-column grid of pale cards, each with a violet top border",
+  "category": "component",
+  "evidence": "slice 2: three cards at x≈220–1220 with violet top edges; display_grid 8"
+ },
+ {
+  "observation": "The paper cards show a one-sentence finding instead of a paper title, followed by a link",
+  "category": "copy",
+  "evidence": "e.g. 'Safety of Thync stimulation was demonstrated in over two thousand sessions over six weeks.'"
+ },
+ {
+  "observation": "The 'READ MORE →' links are small, uppercase, letter-spaced and violet, with an arrow glyph",
+  "category": "typography",
+  "evidence": "slice 2 'READ MORE →' under each card"
+ },
+ {
+  "observation": "The 'Featured In' row shows seven grayscale press logos at 100×54px, evenly spaced 136px apart",
+  "category": "imagery",
+  "evidence": "images rects x 262–1078 step 136, w 100, h 54; alts Mashable, PBS, TechCrunch, Digital Trends, Inc., CNN, WSJ"
+ },
+ {
+  "observation": "The press logos are raster PNGs displayed smaller than their natural size",
+  "category": "imagery",
+  "evidence": "natural 150×81 rendered at 100×54; filenames '...160x160@2x.png'"
+ },
+ {
+  "observation": "Every image has alt text",
+  "category": "dom",
+  "evidence": "counts alt_missing 0"
+ },
+ {
+  "observation": "The footer is solid dark navy with four columns: Follow us, Explore, More, and Stay Informed About Thync",
+  "category": "layout",
+  "evidence": "top_backgrounds rgb(14,19,48); slice 2 footer columns"
+ },
+ {
+  "observation": "Footer links are plain white text with no icons, including the social links",
+  "category": "component",
+  "evidence": "slice 2 Facebook/Instagram/YouTube are text only; svgs 0"
+ },
+ {
+  "observation": "The 'Stay Informed' footer column shows only an email address, with no signup form",
+  "category": "component",
+  "evidence": "slice 2 'hello@thync.com'; no input tags in tag_counts"
+ },
+ {
+  "observation": "The footer repeats the header nav items under 'Explore'",
+  "category": "layout",
+  "evidence": "Explore: Neurostimulation, Company, Blog, FeelZing"
+ },
+ {
+  "observation": "Below a thin divider, the footer bar has a 2021 copyright line and a TRUSTe badge image",
+  "category": "layout",
+  "evidence": "slice 2 '© 2021 Thync Global, Inc.'; TRUSTe image at x 1123, y 3812, 97×27"
+ },
+ {
+  "observation": "The footer includes a 'Do not sell my personal information' link",
+  "category": "copy",
+  "evidence": "slice 2 More column"
+ },
+ {
+  "observation": "Light lavender-gray is the most frequent light text color, used on the dark backgrounds",
+  "category": "color",
+  "evidence": "top_text_colors rgb(196,200,228) ×26"
+ },
+ {
+  "observation": "The palette is navy and indigo, with violet accents and one cyan CTA",
+  "category": "color",
+  "evidence": "colors rgb(14,19,48), rgb(91,61,245), rgb(25,195,214)"
+ },
+ {
+  "observation": "Most elements have square corners. Rounding appears only on cards and the video box, plus two pill shapes",
+  "category": "effects",
+  "evidence": "border_radius bucket_0 118, bucket_16_plus 9, bucket_pill 2, bucket_1_7 1"
+ },
+ {
+  "observation": "Motion is limited to CSS transitions. There are no animations, transforms or scripts",
+  "category": "effects",
+  "evidence": "transitions 8, animations 0, transforms 0, scripts 0"
+ },
+ {
+  "observation": "All styling is in one inline style block, with a small set of semantic, non-utility class names",
+  "category": "dom",
+  "evidence": "style 1, stylesheets 0, inline_style_attrs 0; classes total 30, unique 17, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "The page uses semantic landmarks: header, nav, main, 4 sections and footer, with no aside or figure",
+  "category": "dom",
+  "evidence": "semantic header 1, nav 1, main 1, section 4, footer 1, aside 0, figure 0"
+ },
+ {
+  "observation": "The footer column headings are H5 elements",
+  "category": "dom",
+  "evidence": "tag_counts h5 4, which matches the 4 footer column titles"
+ },
+ {
+  "observation": "There is almost no ARIA markup and no structured data",
+  "category": "dom",
+  "evidence": "aria_attrs 2; jsonld_blocks 0; meta tags are only charset, viewport and description"
+ },
+ {
+  "observation": "Lists are used heavily for the navigation and footer links",
+  "category": "dom",
+  "evidence": "ul 5, li 23"
+ }
+]

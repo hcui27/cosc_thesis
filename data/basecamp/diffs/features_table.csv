@@ -1,0 +1,68 @@
+id,family,name,detector,S1,S2,F1,F2,n_runs,single_both,confound,definition
+F015,color,Warm cream page background,css,1,1,1,1,4,1,,"Check whether the body or hero background is a warm off-white/cream (e.g. around rgb(251,248,241)) instead of pure white."
+F023,component,Pill-shaped (fully rounded) CTA buttons,css,1,1,1,1,4,1,,Check whether CTA buttons use a fully rounded pill shape (border-radius around 999px).
+F024,component,Plain-text Sign in beside filled pill nav CTA,dom,1,1,1,1,4,1,,Check whether the header shows an unbordered text 'Sign in' link next to a filled pill CTA.
+F026,component,Logo as circular badge icon plus wordmark,vision,1,1,1,1,4,1,unclear,Check whether the logo is a round badge icon next to a wordmark.
+F030,component,Testimonials as white rounded card grid,vision,1,1,1,1,4,1,,Check whether testimonials are rendered as white cards with rounded corners in a multi-column grid.
+F008,copy,Em-dash attribution prefix,text,1,1,1,1,4,1,,"Check whether attribution lines begin with an em dash followed by a space ('— Name, Title') rather than a hyphen."
+F064,copy,Round-number social-proof statistic,text,1,1,1,1,4,1,,"Check whether social-proof stats use round numbers (e.g. '4,000') instead of precise figures."
+F038,decoration/effects,Book/product cover with drop shadow or tilt,css,1,1,1,1,4,1,,"Check whether a product image has a drop shadow, card frame, or slight tilt."
+F046,decoration/effects,Soft drop shadows on cards and buttons,css,1,1,1,1,4,1,,Check whether cards and buttons use subtle box-shadow for depth.
+F049,imagery,Handwritten annotation overlays colliding with UI,vision,1,1,1,1,4,1,prompt-artifact,Check whether hand-lettered annotations on the hero image overlap UI or other text.
+F031,layout,Masonry columns with uneven heights,vision,1,1,1,1,4,1,,Check whether card columns have staggered start positions or uneven heights (masonry).
+F041,layout,"Two-column image-left, text-right sections",css,1,1,1,1,4,1,,Check whether content sections use a two-column split with image on the left and copy on the right.
+F027,semantic/DOM,"Logo as external img file, not inline SVG",dom,1,1,1,1,4,1,prompt-artifact,Check whether the header logo is an img element referencing an .svg file instead of inline SVG.
+F003,typography,Moderate H1 size (about 60-64px),css,1,1,1,1,4,1,original-brand-specific,"Check whether the desktop H1 font-size is roughly 60-64px, smaller than an oversized display headline."
+F007,typography,Bold em-dash testimonial attribution,text,1,1,1,1,4,1,,Check whether testimonial attributions use bold (or accent-colored) name text with a leading em-dash.
+F016,color,Alternating full-width section background bands,vision,1,0,1,1,3,1,,"Check whether consecutive sections alternate full-width background colors (cream, white, sage, dark) to separate content."
+F017,color,Green accent palette,css,1,1,0,1,3,1,unclear,"Check whether the primary accent used for CTAs, links and highlights is a green hue."
+F019,color,Dark solid footer with light text,css,1,0,1,1,3,1,,Check whether the footer has a dark (green or navy) solid background with light text.
+F022,color,Dark filled primary CTA,css,1,0,1,1,3,1,,Check whether the primary CTA is a dark filled (green or navy) button with white text.
+F039,component,Hero screenshot framed in a shadowed card,css,1,0,1,1,3,1,,Check whether the product screenshot sits in a bordered or shadowed card container.
+F045,decoration/effects,Uniformly rounded corners across components,css,0,1,1,1,3,1,,"Check whether most buttons, cards and containers share rounded corners."
+F048,decoration/effects,Flat straight-edged bands without organic shapes,vision,1,0,1,1,3,1,original-brand-specific,Check whether section transitions use flat straight-edged bands rather than organic or torn-paper shapes.
+F050,imagery,Extra duplicate hero illustration asset,dom,1,1,0,1,3,1,prompt-artifact,Check whether the page loads additional illustration images beyond the original's set.
+F025,layout,Roomier constrained-width header,css,1,0,1,1,3,1,,Check whether the header sits inside a max-width container with generous padding and spacing.
+F029,layout,Enlarged star ratings with extra spacing,vision,0,1,1,1,3,1,,Check whether rating stars are large (yellow) and spaced out in a row above the headline.
+F032,layout,Column-wise reading order from masonry,dom,1,1,1,0,3,1,,"Check whether card content order flows down the left column then the right, breaking row-wise reading."
+F042,layout,Left-aligned headings and body copy,css,1,1,1,0,3,1,,Check whether section headings and paragraphs are left-aligned rather than centered.
+F044,layout,Compact page height with tighter vertical rhythm,vision,1,1,0,1,3,1,original-brand-specific,Check whether total page height and section spacing are compact relative to a spacious layout.
+F055,semantic/DOM,Local relative image paths,dom,1,1,1,0,3,1,prompt-artifact,Check whether images are loaded from local relative file paths instead of a CDN.
+F056,semantic/DOM,Lean self-contained document with minimal scripts and meta,dom,1,1,1,0,3,1,prompt-artifact,"Check whether the document has zero or few script/link tags and a minimal head (about 2 meta tags, 1 title)."
+F002,typography,Inter / system-ui sans font stack,css,1,0,1,1,3,1,,Check whether the font-family stack is Inter and/or system-ui/sans-serif with no custom brand or webfont.
+F004,typography,Conventional 16-17px base body size,css,1,0,1,1,3,1,original-brand-specific,Check whether the body base font-size is 16-17px rather than an oversized value.
+F006,typography,Small regular-weight testimonial quote text,css,1,1,1,0,3,1,,Check whether testimonial quotes are set at body size (about 15-17px) in regular weight rather than as large bold pull-quotes.
+F010,typography,Uniform solid underlined accent-colored links,css,1,1,0,1,3,1,,Check whether inline links are uniformly solid-underlined in the accent color.
+F012,typography,Reduced-size closing CTA headline,css,1,1,1,0,3,1,,"Check whether the closing call-to-action text is small, single-line body-like text rather than a large display heading."
+F018,color,Green-tinted near-black text color,css,1,0,0,1,2,1,unclear,Check whether body text color is a tinted dark (green or slate) rather than neutral black.
+F028,component,Review quotes in white rounded chips/cards,vision,1,0,1,0,2,1,,Check whether review-star snippets are wrapped in white rounded cards or chips.
+F033,component,Featured first card with highlight treatment,vision,0,0,1,1,2,0,,"Check whether the first testimonial card is visually emphasized (colored outline, fill or larger size)."
+F036,component,Secondary action rendered as plain text link,dom,1,1,0,0,2,0,,Check whether a secondary action (e.g. 'learn more') is a plain underlined text link rather than a bordered button.
+F063,copy,Added italic emphasis on key word,dom,1,0,0,1,2,1,,"Check whether copy adds italic emphasis on a single word, such as 'quick'."
+F040,imagery,Hero image abruptly cropped instead of faded,vision,1,0,0,1,2,1,,Check whether the hero image ends with a hard crop rather than a fade or blend into the background.
+F053,imagery,Footer illustration omitted,vision,1,0,1,0,2,1,original-brand-specific,"Check whether the footer has no illustration or chart, only text links."
+F057,semantic/DOM,Testimonials marked up as figure/blockquote/figcaption,dom,0,0,1,1,2,0,,"Check whether testimonials use figure, blockquote and figcaption elements rather than blockquote plus cite."
+F059,semantic/DOM,Simplified responsive picture/source sets,dom,0,1,0,1,2,1,,Check whether picture elements have fewer source elements.
+F060,semantic/DOM,Fewer anchors and simplified link set,dom,0,1,0,1,2,1,,Check whether the link count is reduced and content is mostly paragraphs.
+F001,typography,Serif body/heading font stack,css,1,1,0,0,2,0,,"Check whether headings and body text use a generic serif stack (e.g. Georgia, Times New Roman, serif) instead of a sans-serif."
+F009,typography,Small light-grey social-proof caption,css,0,0,1,1,2,0,,Check whether microcopy under the hero CTA is small and light grey with reduced contrast.
+F013,typography,Muted italic footer copyright,css,0,0,1,1,2,0,,Check whether the footer copyright/closing line is italic in a muted color.
+F020,color,Saturated full-width yellow feature band,vision,0,0,1,0,1,0,,Check whether a section sits on a full-width saturated yellow background band.
+F021,color,Sage-green section band behind white cards,vision,0,0,0,1,1,0,,Check whether a muted sage/grey-green section background hosts white cards.
+F054,color,Pale green tinted footer background,css,0,1,0,0,1,0,,Check whether the footer sits on a pale tinted green background.
+F035,component,Before/After comparison as two side-by-side colored-label cards,vision,0,0,1,0,1,0,,Check whether a before/after comparison is split into two side-by-side cards with colored (red/green) labels.
+F037,component,Dark filled secondary button,css,0,0,1,0,1,0,,Check whether a secondary action is a dark filled button.
+F065,copy,Rewritten generic benefit-style document title,text,0,0,0,1,1,0,,Check whether the page title is rewritten into a generic benefit-style phrase (e.g. 'The All-In-One Toolkit for ...').
+F066,copy,Generic footer sign-off replacing date-specific copy,text,0,0,1,0,1,0,,Check whether footer sign-off text is generic ('Enjoy the rest of your day!') rather than dynamic or date-based.
+F011,decoration/effects,Highlighter-style yellow underline on links,css,0,0,1,0,1,0,,Check whether inline links use a thick yellow highlighter-like underline or background strip.
+F034,decoration/effects,Colored left accent border on cards,css,1,0,0,0,1,0,,Check whether cards have a thick colored left border accent.
+F047,decoration/effects,Thin straight grey section dividers,vision,0,1,0,0,1,0,original-brand-specific,Check whether sections are separated by thin straight grey rules instead of decorative dividers.
+F051,imagery,Footer chart image cropped with truncated labels,vision,0,1,0,0,1,0,,Check whether a footer illustration is cropped or oversized so its labels are cut off.
+F052,imagery,Decorative image as faint low-contrast background,vision,0,0,0,1,1,0,,Check whether a large illustration is used as a faint low-contrast background texture on a dark section.
+F014,layout,Generous vertical spacing between footer link rows,css,0,0,0,1,1,0,,Check whether footer link rows are stacked with large vertical gaps.
+F043,layout,Max-width constrained content with wide margins,css,0,0,0,1,1,0,,Check whether content is held in a max-width container with wide side margins.
+F067,layout,Hero star-quote snippets inline in a single row,vision,0,1,0,0,1,0,,Check whether review snippets sit inline in one horizontal row with stars at left of each.
+F058,semantic/DOM,Single H1 element,dom,0,1,0,0,1,0,,Check whether the page has exactly one h1.
+F061,semantic/DOM,Footer links as paragraphs/spans instead of lists,dom,0,0,0,1,1,0,unclear,Check whether footer links are marked up with p/span instead of ul/li.
+F062,semantic/DOM,Fewer form inputs and labels,dom,0,0,1,0,1,0,original-brand-specific,Check whether the page omits search or form input/label elements.
+F005,typography,Light/regular heading weight,css,0,1,0,0,1,0,,Check whether section headings use regular or light weight rather than heavy bold display weight.

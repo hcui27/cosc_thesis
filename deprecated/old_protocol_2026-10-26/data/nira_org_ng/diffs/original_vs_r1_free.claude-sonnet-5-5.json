@@ -1,0 +1,224 @@
+[
+ {
+  "observation": "A has a dark top utility bar with the organisation name, social icon glyphs, phone and email. B has a dark-green top bar with the phone and email on the left and text links (Facebook, Twitter, YouTube, LinkedIn) on the right.",
+  "category": "layout",
+  "evidence": "A top_backgrounds includes rgb(29,29,29); A screenshot shows icon glyphs from FontAwesome (9 elements). B top bar bg rgb(7,90,42), social items are plain text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's main navigation has 9 uppercase items, each with dropdown chevrons and vertical divider borders, on a grey header band. B's navigation is sentence-case text with no chevrons on a white header, and 'Switchto.ng' is a filled green rounded button.",
+  "category": "component",
+  "evidence": "A screenshot: HOME, WHO ARE WE ⌄, EVENTS ⌄ … SWITCHTO.NG ⌄. B screenshot: Home, Who Are We … plus a green button; B has 2 nav tags and a 'Menu' button (radius 6px).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's top section is an image carousel of full-width JPG banners (sch.jpg, gov.jpg, 8.jpg, name_zone.jpg, mobi.jpg, edu.jpg, i_ng.jpg, zones.jpg) with side arrows. B replaces it with a solid green gradient hero holding text and no banner photos.",
+  "category": "imagery",
+  "evidence": "A images list: 8 banner JPGs about 1500x450, rendered 1440x432. B images list has no JPG banners; B has gradient_backgrounds 1 and hero bg rgb(11,122,59) / rgb(7,90,42).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A overlays a modal promo popup (Promo_ads.jpg, 463x463) with a close button and a dimmed page background. B has no modal.",
+  "category": "component",
+  "evidence": "A image Promo_ads.jpg rect 488,213 463x463; A screenshot shows greyed overlay and a circular close icon. B images list has no promo image.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's h1 is empty and sits in a carousel or banner area. B's h1 carries the visible text 'Welcome to the .ng Domain Registry website.' in white at 51.2px, weight 700.",
+  "category": "typography",
+  "evidence": "A h1 text '' at 36px/800 colour rgb(43,182,115). B h1 text 'Welcome to the .ng Domain Registry website.', 51.2px, rgb(255,255,255).",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A the welcome sentence is an h2 in the content column at 24px/600. B promotes it to the h1, so the hero headline is about twice the size of A's h2 text.",
+  "category": "typography",
+  "evidence": "A heading_outline: h2 'Welcome to the .ng Domain Registry website.'; B outline h1 with the same text. B h2 font size 28.8px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses two web fonts, Open Sans (412 elements) and ABeeZee (233), plus icon fonts FontAwesome and iCicons. B uses only the system-ui stack on all 199 elements.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Open Sans 412, ABeeZee 233, FontAwesome 9, iCicons 4. B: system-ui 199.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's base text is 14px with 24px line-height. B's is 16px with 26.4px line-height.",
+  "category": "typography",
+  "evidence": "A body_font_size 14px, line_height 24px; B 16px, 26.4px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is mostly white and grey with dark text rgb(51,51,51) and a bright mint-green accent rgb(43,182,115) on links. B uses an off-white body rgb(250,252,250), dark green-black text rgb(28,42,34) and a deeper green rgb(11,122,59).",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255), top text colours 51,51,51 and 43,182,115. B body_bg rgb(250,252,250), body_color rgb(28,42,34), accent rgb(11,122,59).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is near-black (rgb(15,10,10)) with large light-weight column headings and mint links, and ends in a separate dark-green copyright strip (rgb(0,102,0)). B's footer is a single dark green-black block (rgb(28,42,34)) with the organisation name, an inline nav list, a divider rule and the copyright.",
+  "category": "layout",
+  "evidence": "A top_backgrounds rgb(15,10,10) and rgb(0,102,0); A slice 2 shows the green strip. B top_backgrounds rgb(28,42,34); B screenshot shows the footer nav and divider line.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer repeats the Registrars, Policy Compliance and Support link columns plus 'Follow us on :' and social icons as four columns. B moves the three link groups into white bordered cards above the footer. The footer holds only the brand name, social icons, a nav list and the copyright.",
+  "category": "layout",
+  "evidence": "A h3 'Registrars', 'Policy Compliance', 'Support', 'Follow us on :' in the footer area. B shows three white cards at y≈430–616 on an off-white background.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B groups content into rounded white cards with thin borders for 'Register a .ng Domain', 'NiRA Policies', the calendar and the three link groups. A shows the same content as flat, unbordered columns on the page background.",
+  "category": "component",
+  "evidence": "B border_radius_buckets: bucket_8_15 10 and bucket_16_plus 1. A: bucket_8_15 1, and 619 elements with radius 0. A screenshot has no card outlines.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's Newsletter block is a large green rounded panel with a white-on-green h2, an email input, a white Subscribe button and a 'Follow NiRA on Facebook →' link. A has only a small 'SUBSCRIBE TO OUR NEWSLETTER' h3 with a 'Subscribe' text link, and no form.",
+  "category": "component",
+  "evidence": "B tag_counts form 1, input 1, button 2. A tag_counts has no form or input, and buttons 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a 'NEWS UPDATE' ticker with prev/next arrows and green bold uppercase headlines ('PANTAMI INAUGURATES NCC EMERGENCY COMMUNICATION CENTRES IN ENUGU, OGUN'). B has no news ticker or news headlines.",
+  "category": "copy",
+  "evidence": "A h4 'NEWS UPDATE'; screenshot shows the headline text. B heading outline and text have no news item.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A embeds a 3:04 promotional video player (video tag and iframe) in the right column. B has no video.",
+  "category": "imagery",
+  "evidence": "A tag_counts video 1, source 1, iframe 1. B has none of these tags.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's calendar is a bordered widget with grey arrow buttons, 'May 2021' and tiny 11px-style numbers, with the 25th highlighted in a box. B's calendar is a white rounded card with larger numbers, no day highlighted, and text navigation links '« Year', '‹ Month', 'Month ›', 'Year »'.",
+  "category": "component",
+  "evidence": "A screenshot: boxed date 25, double-arrow icon buttons, table tags 2. B screenshot: text links below the grid. A primary_button 'Previous Year' radius 3px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero is a two-column split: text and two CTA buttons on the left, and the circular 'Accredited .ng Registrar' badge on the right with a soft shadow. A has no hero text block and no hero CTA buttons.",
+  "category": "layout",
+  "evidence": "B ngReg.png rect 957,338 160x166 with alt 'Accredited .ng Registrar'. B's CTAs are 'Register a .ng Domain' (white fill) and 'Whois Search' (outlined). A has no such buttons (buttons count 0).",
+  "which_side": "B"
+ },
+ {
+  "observation": "B merges the two intro paragraphs into the hero, in white on green. A shows them in the middle column under the carousel. The first paragraph is partly hidden by the modal, and the second is dark grey on white.",
+  "category": "copy",
+  "evidence": "A screenshot: text 'NiRA is a Not-for-Profit…' at y≈728. B shows the same sentence in the hero at y≈470.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is a three-column layout (Quick Menu and calendar on the left, content in the middle, newsletter, news and video on the right). B stacks full-width bands with a 12-column-like container of about 1060px and uses CSS grid and flex.",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 0, page_height 1388. B display_grid 6, display_flex 14, page_height 2199.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's quick menu is a left-column vertical list with chevron bullets and divider lines under an uppercase 'QUICK MENU' h3. B's is a horizontal strip under the hero with a small uppercase letter-spaced label and four green text links.",
+  "category": "component",
+  "evidence": "A h3 'QUICK MENU', screenshot shows a vertical list. B screenshot: 'QUICK MENU  Whois Search  Registrars  Search  Contact Us' on one row.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A relies on inline styles, many classes and a legacy CMS stack. B is a lean, hand-written page with minimal markup.",
+  "category": "dom",
+  "evidence": "A: 242 divs, 43 scripts, 12 stylesheets, 120 inline style attributes, 607 class uses (155 unique), a 'generator' meta and a base tag. B: 28 divs, 1 script, 1 style, 0 stylesheets, 3 inline style attributes, 38 class uses (28 unique).",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses semantic landmarks (header, 2 nav, main, aside, 3 sections, 2 articles, footer) and has 13 aria attributes. A has no header, nav, main or aside, and 0 aria attributes.",
+  "category": "dom",
+  "evidence": "A semantic: header 0, nav 0, main 0, aside 0, section 5, article 3, footer 1; aria_attrs 0. B semantic: header 1, nav 2, main 1, aside 1; aria_attrs 13.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 8 images with missing alt text and the Instagram icon's alt reads 'instragram'. B has no missing alt attributes and gives the images descriptive alt text. The social icons use empty alt, with text labels beside them in the top bar.",
+  "category": "imagery",
+  "evidence": "A alt_missing 8; B alt_missing 0, logo alt '.ng – Your Nigerian identity online', ngReg alt 'Accredited .ng Registrar badge'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B reuses the ngReg.png badge twice, large in the hero (160px) and small in the card (45px). A uses it once at 55px beside the Register text.",
+  "category": "imagery",
+  "evidence": "B images list has two ngReg.png entries (160x166 and 45x46). A has one ngReg.png at 55x57.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'Read More' links are inline mint text at the end of the paragraph. B's 'Read More →' links are bold green on their own line, with an arrow glyph.",
+  "category": "copy",
+  "evidence": "A screenshot: 'registrants. Read More.' B screenshot: 'Read More →' under each card paragraph.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's card text wraps into narrow, ragged lines because the icon floats left. B places the icon beside a heading and a text block in a card.",
+  "category": "layout",
+  "evidence": "A screenshot: text wraps around the ngReg icon at x 443–498. B screenshot: icon at x 219, heading at x 288, and paragraph left-aligned under it.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A sets many decorative effects: 25 box shadows, 189 transitions, 1 animation and 2 transforms. B has 1 box shadow (the hero badge), no transitions, animations or transforms, and 1 gradient.",
+  "category": "decoration",
+  "evidence": "A effects: box_shadows 25, transitions 189, animations 1, transforms 2, gradient_backgrounds 0. B: box_shadows 1, transitions 0, animations 0, gradient_backgrounds 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has noticeably more rounded shapes: 54 elements at 1–7px, 10 at 8–15px and 1 at 16px+. A mostly has square corners, with 619 elements at 0 radius and 6 pill-shaped elements for the social icons or buttons.",
+  "category": "decoration",
+  "evidence": "A border_radius_buckets: bucket_0 619, bucket_1_7 36, bucket_pill 6. B: bucket_0 133, bucket_1_7 54, bucket_8_15 10, bucket_16_plus 1, bucket_pill 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's headings are mostly uppercase in the sidebars ('QUICK MENU', 'NIRA CALENDAR', 'NEWS UPDATE', 'SUBSCRIBE TO OUR NEWSLETTER'). B uses title case ('NiRA Calendar', 'Subscribe to our Newsletter') and keeps uppercase only in the small 'QUICK MENU' label.",
+  "category": "typography",
+  "evidence": "A heading_outline texts are uppercase. B heading_outline texts are title or sentence case.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's heading levels skip around: the h1 is followed by h3 cards, then an h2 for the newsletter, then h3s again. A's outline runs h1, h3, h3, h2, h2, h2, h3, h4, h3…",
+  "category": "dom",
+  "evidence": "B outline: 1,3,3,2,3,3,3,3. A outline: 1,3,3,2,2,2,3,4,3,3,3,3,3.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer copyright text is the same '© 2019 Nigeria Internet Registration Association (NiRA). All Rights Reserved.' with a 'Webmail' link. A centres it in a green strip with the link in black. B left-aligns it with the Webmail link underlined in white.",
+  "category": "copy",
+  "evidence": "A slice 2 shows centred text on rgb(0,102,0) with black 'Webmail'. B slice 2 shows left-aligned text and an underlined white 'Webmail'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's logo sits at the left edge of a 1140px container at x=150. B's content container is narrower and indented, with the logo at x=190 and content running to x≈1250. A's right column ends near x=1328.",
+  "category": "layout",
+  "evidence": "A logo rect x 150, y 70; video rect x 1028 w 1200. B logo rect x 190, y 47; content max x 1250.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page height is 1388px, so it is compact and dense, with a carousel taking about 433px. B's page height is 2199px, with generous vertical padding between bands.",
+  "category": "layout",
+  "evidence": "A layout page_height 1388. B page_height 2199.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social links: A shows glyph icons in the top bar and 5 colour PNG icons in the footer. B drops the top-bar glyphs for text links and keeps the same 5 PNG icons (32px) in the footer, sitting on the right of the footer row.",
+  "category": "imagery",
+  "evidence": "Both list facebook_32, twitter_32, youtube_32, google_32 and instragram.png at 32x32. A at y=1215; B at y=2021.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses semantic h/strong/b/small inline tags and 37 spans, which suggests custom-styled pieces. A uses 'i' tags for icon fonts (9) and 13 spans.",
+  "category": "dom",
+  "evidence": "B tag_counts strong 2, b 7, span 37, small 1. A tag_counts i 9, span 13.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page titles differ: A is 'Welcome to the .ng Domain Registry website - Nigeria internet Registration Association (NiRA)' with lang 'en-gb'. B is 'NiRA – .ng Domain Registry' with lang 'en' and a meta description.",
+  "category": "copy",
+  "evidence": "A title and lang; A meta_names X-UA-Compatible, viewport, content-type, generator. B meta_names charset, viewport, description.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero has two CTA buttons: a solid white one and a transparent one with a white outline. A has no equivalent hero buttons, and its first colour accents are text links.",
+  "category": "component",
+  "evidence": "B screenshot: 'Register a .ng Domain' and 'Whois Search' at y≈597–651. A buttons count 0.",
+  "which_side": "B"
+ }
+]

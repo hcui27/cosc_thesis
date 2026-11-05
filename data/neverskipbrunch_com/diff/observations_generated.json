@@ -1,0 +1,359 @@
+[
+ {
+  "observation": "Three-font system. Playfair Display serif is used for the h1, h2s, h3s and the pull-quote. Inter handles body, nav, buttons and lists. Caveat, a handwritten script, is used for small eyebrow labels.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Inter 213, Playfair Display 24, Caveat 8; h1 font_family \"Playfair Display\", Georgia, serif",
+  "element_ids": [
+   "e18",
+   "e19",
+   "e26",
+   "e27"
+  ]
+ },
+ {
+  "observation": "The hero h1 is very large, at 67.2px bold Playfair. The word 'lived-in' is set in italic in an orange-brown accent color, which breaks the line into three. The rest is near-black.",
+  "category": "typography",
+  "evidence": "h1 font_size 67.2px, weight 700; em 'lived-in' at 180,250; text color rgb(184,90,18) appears 22 times",
+  "element_ids": [
+   "e19",
+   "e20"
+  ]
+ },
+ {
+  "observation": "Handwritten Caveat eyebrow labels in lowercase sit above most section headings, such as 'empowering women to DIY big', 'what's on the menu', 'meet Cara', 'the blog', 'the podcast', 'on the 'gram', 'say hi' and 'don't miss a thing'. They are orange-brown on light sections and mustard on the dark section.",
+  "category": "typography",
+  "evidence": "span elements 42px tall above each h2; Caveat used on 8 elements",
+  "element_ids": [
+   "e18",
+   "e26",
+   "e59",
+   "e64",
+   "e86",
+   "e98",
+   "e120",
+   "e135"
+  ]
+ },
+ {
+  "observation": "The type scale is large and clear. h1 is 67.2px, h2 is 41.6px bold, and body is 17px with a 28.05px line-height. The h3 card titles are much smaller serif at about 24px.",
+  "category": "typography",
+  "evidence": "facts: h2 font_size 41.6px, body_font_size 17px, body_line_height 28.05px; h3 box height 24",
+  "element_ids": [
+   "e19",
+   "e27",
+   "e30"
+  ]
+ },
+ {
+  "observation": "The palette is warm and cream-based. The body background is a cream (255,250,245) and the text is a warm near-black (27,22,19). Accents are peach, blush, mustard yellow (232,181,32), orange (242,153,74) and burnt-orange text.",
+  "category": "color",
+  "evidence": "colors.body_bg rgb(255,250,245); top_backgrounds include rgb(253,230,211), rgb(248,205,187), rgb(232,181,32), rgb(242,153,74)",
+  "element_ids": []
+ },
+ {
+  "observation": "The page alternates section background bands: cream, a peach-gradient hero, a dark near-black 'meet Cara' band, light peach for the podcast, and blush pink for the newsletter. A dark footer closes the page. This sets the rhythm of the vertical flow.",
+  "category": "color",
+  "evidence": "section rects e57 (0,1433,1440,502) dark; e84 podcast peach; e134 newsletter blush; footer 0,4727 dark; 17 elements with background rgb(27,22,19)",
+  "element_ids": [
+   "e17",
+   "e57",
+   "e84",
+   "e134",
+   "e142"
+  ]
+ },
+ {
+  "observation": "The hero uses a peach-to-pink gradient background in a two-column layout. Text is on the left (572px wide) and a tall portrait photo is on the right. The photo is cropped into an arch shape with a rounded top and has a soft shadow.",
+  "category": "imagery",
+  "evidence": "section e17 0,73,1440,645; img 4Q5A3075.jpg at 792,158,468,560; gradient_backgrounds: 2; box_shadows: 2; screenshot shows arch top",
+  "element_ids": [
+   "e17",
+   "e24"
+  ]
+ },
+ {
+  "observation": "The hero has two CTAs side by side. One is a solid near-black pill ('Browse DIY projects') and the other is an outlined pill ('About & learn more'). Both are about 53px tall.",
+  "category": "component",
+  "evidence": "e22 180,595,194,53; e23 386,595,191,53; border_radius pill bucket 19",
+  "element_ids": [
+   "e22",
+   "e23"
+  ]
+ },
+ {
+  "observation": "The header is a sticky-looking translucent bar with the logo at the left and a plain text nav list at the right. The nav has six links and no visible dropdowns. A semi-transparent cream background with backdrop blur is used. A 'Menu' button exists in the DOM but is not visible on desktop.",
+  "category": "navigation",
+  "evidence": "rgba(255,250,245,0.94) background; backdrop_blur 1; nav ul at 874,142 with 6 li; primary_button text 'Menu' with transparent bg",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4"
+  ]
+ },
+ {
+  "observation": "The logo is a small stamp-style raster image (112x56) in the header. It has descriptive alt text.",
+  "category": "imagery",
+  "evidence": "cropped-NSB-logo-stamp-cara-newhart.png natural 700x350 rendered 112x56; alt 'Never Skip Brunch by Cara Newhart'",
+  "element_ids": [
+   "e3"
+  ]
+ },
+ {
+  "observation": "The 'Pick your project' section is a four-column grid of equal white cards. Each card has a short colored bar at the top (orange, mustard, pink, black), a serif h3, a list of links separated by dotted dividers, and a pill CTA at the bottom. The cards have large rounded corners and a thin border.",
+  "category": "layout",
+  "evidence": "articles at x=180,456,731,1007 each 254x339; display_grid count 15; border-radius 16+ bucket 21",
+  "element_ids": [
+   "e29",
+   "e36",
+   "e43",
+   "e50"
+  ]
+ },
+ {
+  "observation": "The card CTA buttons are black pills, except the last card, 'Visit the shop', which is mustard yellow. The last card also differs from the others in having an intro paragraph before its two links.",
+  "category": "component",
+  "evidence": "e35,e42,e49 black pills; e56 yellow; e52 p 'Fun and fresh home goodies.'",
+  "element_ids": [
+   "e35",
+   "e42",
+   "e49",
+   "e56"
+  ]
+ },
+ {
+  "observation": "The dark 'meet Cara' band is a two-column split. On the left is an italic serif pull-quote with a mustard left border. On the right are an eyebrow, a white h2, light body text and a mustard pill button. The quote is a plain p, not a blockquote.",
+  "category": "layout",
+  "evidence": "section e57 0,1433,1440,502 bg rgb(27,22,19); p e58 515x137 at x=180; semantic blockquote count 0",
+  "element_ids": [
+   "e57",
+   "e58",
+   "e60",
+   "e62"
+  ]
+ },
+ {
+  "observation": "The blog section pairs two peach audience callouts, 'Experienced DIYers' and 'Newcomers', in the left column with a right column titled 'Latest in DIY'. That column holds three full-width bordered link cards with small uppercase orange kicker labels, serif titles and arrow icons.",
+  "category": "component",
+  "evidence": "e66,e68 divs with strong headings; e72,e75,e78 anchors 515 wide; small tags 'DIY · PART 02'",
+  "element_ids": [
+   "e66",
+   "e68",
+   "e72",
+   "e75",
+   "e78"
+  ]
+ },
+ {
+  "observation": "The blog post list is made of whole-card anchors that wrap a small kicker, an h3 and an arrow svg, so the entire card is the link. There are no thumbnails for the posts.",
+  "category": "component",
+  "evidence": "a elements e72/e75/e78 contain small + h3; images only 4 on page; svg count 5",
+  "element_ids": [
+   "e72",
+   "e75",
+   "e78"
+  ]
+ },
+ {
+  "observation": "The archive line is plain text with underlined bold numeric links ('2, 3 … 60') and an underlined 'More DIY posts →'. The copy is pagination-like and is set in a muted brown-gray.",
+  "category": "copy",
+  "evidence": "p e81 'The archive spans 60 pages: 2, 3 … 60. More DIY posts →'; text color rgb(93,82,75)",
+  "element_ids": [
+   "e81",
+   "e82",
+   "e83"
+  ]
+ },
+ {
+  "observation": "The podcast section is a two-column layout with a wide landscape cover image on the left (539x276) and text on the right. The image has rounded corners and a soft drop shadow. The text has three underlined inline links followed by a black pill CTA.",
+  "category": "imagery",
+  "evidence": "img MAKE-SPACE-Podcast-Image.png 180,2672,539,276; links e89-e91 underlined; e92 pill 181x49",
+  "element_ids": [
+   "e85",
+   "e87",
+   "e89",
+   "e92"
+  ]
+ },
+ {
+  "observation": "The YouTube promo is a full-width rounded banner with a diagonal yellow-to-orange gradient. It has a serif heading and one-line subcopy at the left and a black pill button at the right. No video thumbnails are shown, even though the heading says 'videos'.",
+  "category": "decoration",
+  "evidence": "div e94 180,3130,1080,170; background mustard (232,181,32) to orange (242,153,74); button e97 'Watch on YouTube'",
+  "element_ids": [
+   "e94",
+   "e95",
+   "e97"
+  ]
+ },
+ {
+  "observation": "The Instagram section is a 4x2 grid of text-only tiles. The tiles are white and bordered, with rounded corners. Each holds a caption and an uppercase orange 'VIEW POST' label. There are no photos, so the 'feed' is shown as text cards.",
+  "category": "component",
+  "evidence": "ul e100 1080x314 with 8 anchors 260x150; b elements 'VIEW POST'; images count 4 total, none in this grid",
+  "element_ids": [
+   "e100",
+   "e101",
+   "e103",
+   "e109"
+  ]
+ },
+ {
+  "observation": "'Follow @neverskipbrunch' is an outlined pill button below the Instagram grid, in the same style as the secondary hero CTA.",
+  "category": "component",
+  "evidence": "e117 180,3852,241,53 with outline in screenshot",
+  "element_ids": [
+   "e117"
+  ]
+ },
+ {
+  "observation": "The contact section pairs a rounded-corner armchair photo on the left (412x309) with a text block on the right. A black pill CTA 'Get in touch' sits above a row of five circular black social icon buttons (Facebook, Instagram, Pinterest, Twitter, YouTube). The icons are inline SVGs in 44px circles.",
+  "category": "component",
+  "evidence": "img tim-wright-unsplash 180,3986,412,309; anchors e124-e132 44x44 with 20x20 svgs",
+  "element_ids": [
+   "e119",
+   "e123",
+   "e124",
+   "e126",
+   "e128",
+   "e132"
+  ]
+ },
+ {
+  "observation": "The social icon links contain only SVGs and have no visible text. The count of aria attributes is low but present (12).",
+  "category": "semantics",
+  "evidence": "e124 etc. have empty text with svg children; counts.aria_attrs 12",
+  "element_ids": [
+   "e124",
+   "e126",
+   "e128",
+   "e130",
+   "e132"
+  ]
+ },
+ {
+  "observation": "The newsletter section is centered on a blush background. It has a centered eyebrow, an h2 and a line of copy, followed by an inline form with a pill-shaped email input with a dark border and a black 'Subscribe' pill button. The label is visually hidden off-screen at x=-9999.",
+  "category": "component",
+  "evidence": "form e138 180,4603,1080,61; input 320x61; label at -9999; section e134 background blush",
+  "element_ids": [
+   "e134",
+   "e136",
+   "e138",
+   "e139",
+   "e140",
+   "e141"
+  ]
+ },
+ {
+  "observation": "The footer has a dark background, three equal link columns with serif h4 headings (Explore, Work together, More) and a hairline divider. Below it are an affiliate disclosure paragraph in muted small text and a copyright line.",
+  "category": "layout",
+  "evidence": "footer 0,4727,1440,390; h4 count 3 at x=180,550,920; e173 div disclosure; e176 '© 2021 Never Skip Brunch'",
+  "element_ids": [
+   "e142",
+   "e143",
+   "e153",
+   "e163",
+   "e173",
+   "e176"
+  ]
+ },
+ {
+  "observation": "The content is constrained to a 1080px column (x=180 to 1260) inside the 1440px viewport. Section backgrounds run full width, so margins are generous and consistent across sections.",
+  "category": "layout",
+  "evidence": "Nearly all content rects start at x=180 and end at 1260; page_width 1440",
+  "element_ids": []
+ },
+ {
+  "observation": "Semantic structure is solid. There is one header, one nav, one main, eight sections, four articles and one footer, with a single h1. The heading outline runs h1, then h2 sections with h3 children, then h4 in the footer. There is no blockquote, figure or aside.",
+  "category": "semantics",
+  "evidence": "semantic counts: header 1, nav 1, main 1, section 8, article 4, footer 1; h1_count 1; figure 0, blockquote 0, aside 0",
+  "element_ids": [
+   "e1",
+   "e17",
+   "e29",
+   "e142"
+  ]
+ },
+ {
+  "observation": "The class footprint is small and custom: 73 class uses, 32 unique, and only 1.4% Tailwind-like. One style block and a single stylesheet are used, with 5 inline style attributes.",
+  "category": "code",
+  "evidence": "classes total 73, unique 32, tailwind_like_fraction 0.014; counts.inline_style_attrs 5; stylesheets 1",
+  "element_ids": []
+ },
+ {
+  "observation": "Pill-shaped (fully rounded) shapes dominate buttons, the input and the social circles. Cards and images use large radii of 16px or more. Square corners are used mostly for non-box elements.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: pill 19, 16_plus 21, 8_15 0, 1_7 4, 0 201",
+  "element_ids": [
+   "e22",
+   "e29",
+   "e24",
+   "e140",
+   "e141"
+  ]
+ },
+ {
+  "observation": "Effects are used sparingly. There are only two box shadows, on the hero arch image and the podcast cover. There are two gradients, in the hero and the YouTube banner. 33 transitions are defined, with no animations or transforms.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 2, gradient_backgrounds 2, transitions 33, animations 0, transforms 0",
+  "element_ids": [
+   "e24",
+   "e85",
+   "e94"
+  ]
+ },
+ {
+  "observation": "Copy is warm and first-person, using phrases like 'DIY queen', 'good vibes', 'Grab a virtual coffee' and 'Pick your project'. Food and brunch metaphors appear in the labels ('what's on the menu'). There are no emojis, exclamation marks or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats emoji 0, exclamations 0, em_dashes 0; words 560; e21 'Hi, I'm Cara, a DIY queen…'",
+  "element_ids": [
+   "e21",
+   "e26",
+   "e121"
+  ]
+ },
+ {
+  "observation": "Images are few, at only four, all with descriptive alt text and none missing. They get a different crop for each context: an arch, a rounded rectangle with a shadow, and a rounded rectangle with no shadow. The remaining sections use typography and color blocks instead of photography.",
+  "category": "imagery",
+  "evidence": "counts.images 4, alt_missing 0; image rects at e24, e85, e119; image_overlaps []",
+  "element_ids": [
+   "e24",
+   "e85",
+   "e119",
+   "e3"
+  ]
+ },
+ {
+  "observation": "Each major heading block is left-aligned in a text column that is only about half the page width (515 to 640px), which leaves much empty space on the right. The newsletter section is the one exception and is centered.",
+  "category": "layout",
+  "evidence": "e27 h2 180,845,640; e65 515 wide; e60 515 wide; e136 centered across 1080",
+  "element_ids": [
+   "e27",
+   "e60",
+   "e65",
+   "e136"
+  ]
+ },
+ {
+  "observation": "The CTA labels vary in tone and are all short action phrases ('Explore decor', 'Start making', 'Dive in', 'Visit the shop', 'About Cara', 'Listen & subscribe', 'Get in touch'). They are mostly bold sans text in black pills with white text.",
+  "category": "copy",
+  "evidence": "anchors e35, e42, e49, e56, e62, e92, e123 with heights 49",
+  "element_ids": [
+   "e35",
+   "e42",
+   "e49",
+   "e56",
+   "e62",
+   "e92",
+   "e123"
+  ]
+ },
+ {
+  "observation": "Link styling varies by context. Nav links are plain text. Card list links have dotted underlines or separators. Podcast links have solid underlines with a peach underline accent. Footer links are light gray on dark. The link count is high (66 anchors for 560 words).",
+  "category": "component",
+  "evidence": "tag_counts a: 66; list items e32-e34 each 40px tall; e89-e91 underlined; footer anchors e146-e172",
+  "element_ids": [
+   "e32",
+   "e89",
+   "e146",
+   "e6"
+  ]
+ }
+]

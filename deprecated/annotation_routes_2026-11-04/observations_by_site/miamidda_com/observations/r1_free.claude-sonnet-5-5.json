@@ -1,0 +1,167 @@
+[
+ {
+  "observation": "The page title is 'Miami Downtown Development Authority', and the html lang is 'en'. The head has only charset, viewport and description metas, with no JSON-LD blocks.",
+  "category": "semantics",
+  "evidence": "facts.json title, lang 'en', meta_names [charset, viewport, description], jsonld_blocks 0"
+ },
+ {
+  "observation": "The page has three h1 elements. They are the hero's stacked rotating-style phrases 'Living / Downtown Mia', 'Doing Business / Downtown Mia' and 'Exploring / Downtown Mia'. The heading outline then jumps to an h3 for the contest banner before the h2s.",
+  "category": "semantics",
+  "evidence": "h1_count 3; heading_outline lists three level-1 entries followed by an h3 'School Agenda Cover Contest for Kids'"
+ },
+ {
+  "observation": "The hero h1s are very large, heavy white sans-serif text (78px, weight 800). The 'Downtown Mia' lines are colored orange, which gives a white/orange alternating stack. The word 'Miami' is visibly clipped to 'Mia'.",
+  "category": "typography",
+  "evidence": "h1 font_size 78px, font_weight 800, color white; slice 0 shows orange 'Downtown Mia' lines; heading text 'Downtown Mia'"
+ },
+ {
+  "observation": "The hero is a full-width night skyline photo under a dark navy overlay. The text is left-aligned in a column that starts near x≈440 and does not follow the 150px content gutter. The hero's bottom edge is cut diagonally, leaving a white wedge.",
+  "category": "imagery",
+  "evidence": "slice 0; triangle.svg is 1440x171 at y=859 with empty alt, serving as the diagonal divider"
+ },
+ {
+  "observation": "Below the h1s are a wide-tracked uppercase light tagline, 'EPICENTER OF THE AMERICAS', and a pill-shaped orange CTA, 'Discover the Possibilities'.",
+  "category": "components",
+  "evidence": "slice 0; orange rgb(242,163,58) is among the top backgrounds; 19 elements have pill radii"
+ },
+ {
+  "observation": "A thin dark navy utility bar sits at the very top. It holds text links on the left (Media and Press Center, Public Meetings), a Translate select, and social text links on the right (Instagram, Twitter, YouTube, Facebook, LinkedIn, Email). The social links have no icons.",
+  "category": "layout",
+  "evidence": "slice 0; 1 select with 16 options; svgs count 0; bg rgb(11,42,66)"
+ },
+ {
+  "observation": "The main header is a white band with the small animated GIF logo at the left. The primary nav has three items on the right, each with a caret: Focus Areas, Explore Downtown, About Us. The header has generous empty vertical space above the logo.",
+  "category": "layout",
+  "evidence": "logo-animated.gif rendered 44x64 at x=150,y=52 (natural 215x315); slice 0 nav; nav count 1"
+ },
+ {
+  "observation": "A 'Menu' button is styled as a navy rounded rectangle with a 6px radius and 10px 14px padding. It is the measured primary button, but the screenshot shows the full desktop nav, not the button.",
+  "category": "components",
+  "evidence": "primary_button text 'Menu', bg rgb(11,42,66), radius 6px, padding 10px 14px"
+ },
+ {
+  "observation": "The palette is navy, orange and teal on white and pale blue-gray. Navy (11,42,66) is the dark surface and heading color, orange (242,163,58) is for CTAs and banners, and teal (14,143,160) is for eyebrow labels, dates and 'Read More' links. Pale blue-gray (242,246,248) alternates with white for section backgrounds.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 11, rgb(242,246,248) 11, orange 5, navy 4; top_text_colors include rgb(14,143,160) 18, rgb(11,42,66) 26"
+ },
+ {
+  "observation": "The whole page is set in one Helvetica Neue stack, with Arial as the only other font. Headings are heavy bold, and body text is 17px on a 27.2px line height.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Helvetica Neue 253, Arial 17; body_font_size 17px; line-height 27.2px"
+ },
+ {
+  "observation": "H2 headings are 42px at weight 700 in dark navy. Each is paired with a small, tracked, uppercase teal eyebrow label above it (RESIDENTS, ABOUT, PRESS, CALENDAR). The pairing repeats across sections.",
+  "category": "typography",
+  "evidence": "h2 font_size 42px weight 700; slices 0-2 show eyebrows RESIDENTS, ABOUT, PRESS, CALENDAR"
+ },
+ {
+  "observation": "An orange full-width announcement strip sits right under the hero. It has a small uppercase 'MORE INFORMATION' label, the contest title at left, and a dark navy pill button, 'Click here to enter contest', at right.",
+  "category": "components",
+  "evidence": "slice 0 y≈1028-1128; h3 'School Agenda Cover Contest for Kids'; navy bg rgb(11,42,66)"
+ },
+ {
+  "observation": "The Living section is a two-column split. The left column has an eyebrow, an h2, a larger gray lead paragraph and a smaller dark body paragraph. The right column has a 'QUICK LINKS' h3 over a wrapped cluster of light gray pill chips with bold navy text. Examples are Dine, Incentives and Education.",
+  "category": "layout",
+  "evidence": "slices 0-1; chips bg near rgb(242,246,248) with pill radius; display_grid 11"
+ },
+ {
+  "observation": "The body copy mixes two paragraph styles. The first is a larger, muted gray-blue lead (rgb(159,179,194) is the most common text color). The second is smaller dark text.",
+  "category": "typography",
+  "evidence": "slice 1 top paragraphs; top_text_colors rgb(159,179,194) 67, rgb(16,34,47) 66"
+ },
+ {
+  "observation": "The 'Follow the Sun' promo band has a diagonal peach-to-light-orange gradient background. It holds a logo card with a soft shadow and rounded corners, an eyebrow, an h2 and an orange pill button, 'Click Here'.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 1; FollowtheSun-logo.png 280x158 (natural 1267x717) at x=150,y=1836; box_shadows 4"
+ },
+ {
+  "observation": "The About section sits on a pale blue-gray background. Prose is at left, and three stat cards are stacked at right. The cards are white with an orange left border accent and a soft shadow. They show big numerals (1967, 15, 2) over small uppercase gray captions.",
+  "category": "components",
+  "evidence": "slice 1: '1967 WE WERE ESTABLISHED', '15 MEMBER BOARD', '2 SQUARE MILES'"
+ },
+ {
+  "observation": "A large empty white region follows the About section, roughly 400px tall. Its only content is a small dark credit chip at the bottom right: '@joiseyshowaa · Twilight Miami Skyline · CC BY-SA 2.0'. This suggests a background image that did not render, leaving the attribution overlay visible.",
+  "category": "imagery",
+  "evidence": "slice 2 y≈170-640 blank; attribution chip bg rgba(0,0,0,0.6); only 3 img elements in DOM"
+ },
+ {
+  "observation": "Latest News is a three-column row of outlined cards. Each card has a teal date (e.g. 5.17.21), a bold navy headline and a teal 'Read More →' link. The cards have thin borders and rounded corners, and no images. A centered outlined pill button, 'View All News', follows.",
+  "category": "components",
+  "evidence": "slice 2; 6 article elements and 6 time elements; h3 headlines 'WSVN 7 News | ...'"
+ },
+ {
+  "observation": "Upcoming Events repeats the news card pattern on a pale gray section. Each card adds a muted excerpt that ends with an ellipsis and a 'See Details →' link. A 'View All Events' outlined pill button sits below.",
+  "category": "components",
+  "evidence": "slice 3; dates 6.3.21, 6.14.21, 6.17.21; excerpts end in '...'"
+ },
+ {
+  "observation": "The content is dated 2021 (news and events 5.17.21 to 6.17.21), and the footer reads '© 2019'. Headline text is truncated or contains typos, such as 'Miamis' and 'reviltalizar'.",
+  "category": "copy",
+  "evidence": "slice 2-4; heading_outline 'downtown Miamis DuPont Buildin' (truncated in the outline); footer '© 2019 Miami Downtown Development Authority'"
+ },
+ {
+  "observation": "The headline copy is in the voice of a public agency. It mixes a promotional tone ('Truly electrifying and uniquely refreshing') with institutional description (tax levy, 15-member board, mission statement). One news item is in Spanish.",
+  "category": "copy",
+  "evidence": "slice 1 paragraphs; Telemundo 51 headline in Spanish"
+ },
+ {
+  "observation": "A dark navy contact band has a large white h2 on the left, 'Proudly Serving Downtown Miami: ...', with outlined pill tags for the three districts below it. On the right is a form with translucent-navy inputs (Name, Email, Message), a full-width orange pill 'Send' button and small legal text about Florida public records.",
+  "category": "components",
+  "evidence": "slice 3; h2 text; 2 forms and 4 inputs; h4 'Contact us today to learn more...'"
+ },
+ {
+  "observation": "The footer is the darkest surface, near-black navy (7,27,43). It has five link columns under small, tracked, uppercase white headings (@DOWNTOWNMIA, MIAMI DDA, COMMUNITY GRANTS, EXPLORE DOWNTOWN, MEDIA CENTER). Links are muted gray-blue. Sub-headings such as CALENDARS and DATA + RESEARCH stack inside columns.",
+  "category": "layout",
+  "evidence": "slices 3-4; rgb(7,27,43) in backgrounds; 8 h5 elements; 9 ul and 28 li"
+ },
+ {
+  "observation": "The footer's lower band has a thin divider and a 'Get Downtown Updates' heading on the left. On the right are an inline email input with an orange 'Subscribe' pill and a repeated public-records disclaimer. The bottom line reads 'Made with ♥ by Pacific54', with ADA Compliance and Annual Report links on the right.",
+  "category": "components",
+  "evidence": "slice 4; emoji count 1; footer count 1"
+ },
+ {
+  "observation": "Rounded corners are mostly absent from the DOM but concentrated in components. 235 elements have no radius, 14 have a radius of 8-15px (cards, inputs) and 19 are pills (buttons and chips). Nothing falls in the 16px+ non-pill range.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 235, bucket_8_15 14, bucket_pill 19, bucket_16_plus 0"
+ },
+ {
+  "observation": "Effects are restrained. There are 4 box-shadows (the logo card and stat cards), 1 gradient, 22 transitions, and no animations, transforms or backdrop blur.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 4, gradient_backgrounds 1, transitions 22, animations 0, transforms 0, backdrop_blur 0"
+ },
+ {
+  "observation": "Content is held in a centered column with about 150px side gutters on the 1440px canvas, which gives a roughly 1140px max width. Full-bleed color bands alternate behind it: white, pale gray, peach gradient, orange, navy.",
+  "category": "layout",
+  "evidence": "content x from 150 to 1290 in all slices; page_width 1440, page_height 5684"
+ },
+ {
+  "observation": "The structure uses many semantic elements: header, nav, main, 5 sections, 6 articles with time elements, a figure with figcaption and a footer. There is no aside and no blockquote. Styling is minimal and CSS is embedded in one inline style block, with no external stylesheets.",
+  "category": "semantics",
+  "evidence": "semantic counts; stylesheets 0; style tag 1; scripts 1; inline_style_attrs 10"
+ },
+ {
+  "observation": "Class use is sparse and semantic rather than utility-based. There are 68 class usages across 34 unique classes, and the Tailwind-like fraction is 0.029. The page relies on 77 anchors and layout via 11 grid and 15 flex containers.",
+  "category": "semantics",
+  "evidence": "classes total 68, unique 34, tailwind_like_fraction 0.029; anchors 77; display_grid 11; display_flex 15"
+ },
+ {
+  "observation": "There are only three img elements: the logo GIF, the decorative triangle SVG with empty alt and the Follow the Sun PNG. All imagery besides the hero is absent, and no icons are used (0 SVG elements). Alt text is present on non-decorative images.",
+  "category": "imagery",
+  "evidence": "images array; counts images 3, svgs 0, alt_missing 0"
+ },
+ {
+  "observation": "Pills are the dominant interactive shape. The hero CTA, banner button, 'Click Here', 'Send' and 'Subscribe' are filled. 'View All' buttons are outlined with navy borders. The quick-link chips and district tags are tinted or outlined. Arrows (→) are used as text glyphs in card links.",
+  "category": "components",
+  "evidence": "slices 0-4; bucket_pill 19; 6 button elements; 'Read More →', 'See Details →'"
+ },
+ {
+  "observation": "Small uppercase, letter-spaced labels recur as a typographic device in several places: eyebrows, stat captions, footer column headers and the 'QUICK LINKS' h3. These are in teal, gray or white depending on the surface.",
+  "category": "typography",
+  "evidence": "slices 0-4: 'MORE INFORMATION', 'WE WERE ESTABLISHED', 'COMMUNITY GRANTS', 'QUICK LINKS'"
+ },
+ {
+  "observation": "Form inputs on the dark surfaces are a slightly lighter navy than the background, with muted placeholder text and rounded rectangles. They carry no visible labels, only placeholders (Name, Email, Message, Email address). The Translate control is a native select with a visible border.",
+  "category": "components",
+  "evidence": "slice 3-4; navy rgb(18,56,79) appears 4 times as a background; 1 label, 4 inputs, 1 select"
+ }
+]

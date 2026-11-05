@@ -1,0 +1,252 @@
+[
+ {
+  "observation": "The page uses a dark theme: a near-black body background with warm off-white body text.",
+  "category": "color",
+  "evidence": "facts.colors.body_bg rgb(15,14,14); body_color rgb(242,236,228); every slice shows dark backgrounds"
+ },
+ {
+  "observation": "A burnt-orange accent color is used for the announcement bar, the filled CTA buttons, the eyebrow label and the list bullets.",
+  "category": "color",
+  "evidence": "rgb(226,104,43) appears 5 times as a background and 2 times as a text color; visible on the top bar, 'Explore the gallery', 'Read More', 'Send message', 'HISTORY & WORKS' and the ✦ bullets"
+ },
+ {
+  "observation": "Text on the orange buttons and the orange bar is dark brown-black, not white.",
+  "category": "color",
+  "evidence": "text color rgb(22,16,12) is used 6 times; the button labels and the announcement link appear dark on orange"
+ },
+ {
+  "observation": "Secondary text uses a muted warm gray.",
+  "category": "color",
+  "evidence": "rgb(167,158,148) is used 37 times; visible on the nav links, the gallery subtitle and the form labels"
+ },
+ {
+  "observation": "The page has no gradient backgrounds and only one box-shadow.",
+  "category": "decoration",
+  "evidence": "effects.gradient_backgrounds 0, box_shadows 1; a soft shadow appears around the Souza portrait"
+ },
+ {
+  "observation": "The page does not use CSS animations or transforms, but it does use 12 transitions.",
+  "category": "decoration",
+  "evidence": "effects.animations 0, transforms 0, transitions 12"
+ },
+ {
+  "observation": "One element uses backdrop blur. It is likely the semi-transparent sticky header.",
+  "category": "decoration",
+  "evidence": "effects.backdrop_blur 1; a background of rgba(15,14,14,0.92) is present once"
+ },
+ {
+  "observation": "The page pairs a Georgia serif for display text with system-ui for UI and body text.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 88, Georgia 15, Arial 2; the h1 font_family is Georgia"
+ },
+ {
+  "observation": "The H1 is set large at regular weight in serif.",
+  "category": "typography",
+  "evidence": "h1 font_size 76px, font_weight 400, Georgia; 'Modern & Contemporary Art' wraps onto two lines"
+ },
+ {
+  "observation": "H2s are also set in regular-weight serif, at 44px.",
+  "category": "typography",
+  "evidence": "h2 font_size 44px, weight 400; 'Francis Newton Souza', 'Photo gallery' and 'Contact form' are visibly serif"
+ },
+ {
+  "observation": "Body text is 17px with a line height of about 1.65.",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 28.05px"
+ },
+ {
+  "observation": "A small, letter-spaced, uppercase orange eyebrow sits above the hero H1.",
+  "category": "typography",
+  "evidence": "'HISTORY & WORKS' in widely tracked orange caps (slice 0)"
+ },
+ {
+  "observation": "Form labels are small, uppercase and letter-spaced.",
+  "category": "typography",
+  "evidence": "'NAME', 'EMAIL' and 'MESSAGE' labels (slice 1)"
+ },
+ {
+  "observation": "The strip of artwork titles is set in italic serif.",
+  "category": "typography",
+  "evidence": "'Ciudad En Esapana', 'Multicoloured Villagescape' and others are in italic Georgia-like type (slice 0)"
+ },
+ {
+  "observation": "The organization name in the header is a two-line serif wordmark, not a logo image.",
+  "category": "typography",
+  "evidence": "'F N Souza International Fine Arts / Foundation & Family Trust Inc.' in white serif at top left"
+ },
+ {
+  "observation": "A full-width orange announcement bar sits at the very top and carries a single underlined link.",
+  "category": "component",
+  "evidence": "'F. N. Souza Exonerates Son and Sole Heir Francis Patrick Souza Of All Accusations and Any Involvement With Forgeries' is centered and underlined"
+ },
+ {
+  "observation": "The header has the wordmark on the left and a horizontal nav of seven items on the right.",
+  "category": "layout",
+  "evidence": "Home, About F N Souza, Family History ▾, Gallery, Available For Sale ▾, News, Contacts"
+ },
+ {
+  "observation": "Two nav items carry small caret glyphs marking dropdown submenus.",
+  "category": "component",
+  "evidence": "'Family History ▾' and 'Available For Sale ▾'; tag_counts.ul 2, li 15"
+ },
+ {
+  "observation": "The page measures a 'Menu' button with a transparent background and a 6px radius. It is not visible in the desktop render, so it is likely a mobile nav toggle.",
+  "category": "component",
+  "evidence": "primary_button text 'Menu', bg rgba(0,0,0,0), radius 6px; no Menu button appears in the slices"
+ },
+ {
+  "observation": "The hero uses a full-bleed, dark, painterly abstract image of brushstrokes in teal, brown and orange behind left-aligned text.",
+  "category": "imagery",
+  "evidence": "slice 0 hero spans y≈107–748; the H1 text_align is start"
+ },
+ {
+  "observation": "The hero image fades to darker tones toward the bottom and left, which keeps the text legible.",
+  "category": "imagery",
+  "evidence": "visible darkening at the bottom edge of the hero in slice 0; facts report no gradient backgrounds, so the fade is likely baked into the image or comes from an overlay"
+ },
+ {
+  "observation": "The hero has a pair of pill-shaped CTAs: one filled orange (primary) and one outlined in off-white (secondary).",
+  "category": "component",
+  "evidence": "'Explore the gallery' (filled) and 'About the artist' (outlined); border_radius_buckets.bucket_pill 5"
+ },
+ {
+  "observation": "Every action button on the page is pill-shaped.",
+  "category": "component",
+  "evidence": "'Explore the gallery', 'About the artist', 'Read More' and 'Send message' are all fully rounded; pill bucket 5"
+ },
+ {
+  "observation": "Below the hero, a band on a slightly lighter dark background lists artwork titles separated by orange four-point star glyphs, centered and wrapped onto two lines.",
+  "category": "component",
+  "evidence": "band at y≈748–835 with background rgb(24,22,22) (2 occurrences); eight titles prefixed with ✦"
+ },
+ {
+  "observation": "The artist intro section is a two-column split, with a photo on the left and a heading, a paragraph and a CTA on the right.",
+  "category": "layout",
+  "evidence": "img fnsouza.jpg at x 160, w 484; the text column starts at x≈700"
+ },
+ {
+  "observation": "The portrait is displayed wider than its natural size, which scales it horizontally.",
+  "category": "imagery",
+  "evidence": "fnsouza.jpg natural 370×275, rendered 484×275"
+ },
+ {
+  "observation": "The photo gallery is a single row of six equal-width, tall, narrow thumbnails.",
+  "category": "layout",
+  "evidence": "six imgs, each w 177, h 340, at y 1370, from x 160 to 1280"
+ },
+ {
+  "observation": "The gallery thumbnails are cropped into a uniform portrait frame whatever their source aspect ratio, which suggests object-fit cover.",
+  "category": "imagery",
+  "evidence": "natural sizes vary (570×442, 270×442, 471×442) but all render at 177×340; the landscape images appear cropped"
+ },
+ {
+  "observation": "The gallery thumbnails have slightly rounded corners.",
+  "category": "decoration",
+  "evidence": "small radius visible on the thumbnails; border_radius_buckets bucket_1_7 25"
+ },
+ {
+  "observation": "Most elements have square corners, and the page has no medium or large radii.",
+  "category": "decoration",
+  "evidence": "bucket_0 75; bucket_8_15 0; bucket_16_plus 0"
+ },
+ {
+  "observation": "The gallery header puts the H2 on the left and a muted one-line subtitle right-aligned on the same baseline row.",
+  "category": "layout",
+  "evidence": "'Photo gallery' on the left, 'Explore a significant collection of the latest works.' on the right (slice 1)"
+ },
+ {
+  "observation": "All content aligns to a consistent container running from x=160 to x=1280, which is about 1120px on a 1440px viewport.",
+  "category": "layout",
+  "evidence": "image rects start at x 160 and the last thumbnail ends at 1280; the footer text spans 160 to 1280"
+ },
+ {
+  "observation": "The page height is about 2567px, which makes it a short, single-scroll page.",
+  "category": "layout",
+  "evidence": "layout.page_height 2567, page_width 1440"
+ },
+ {
+  "observation": "The contact form has a single column, takes up roughly the left half of the container, and leaves the right side empty.",
+  "category": "layout",
+  "evidence": "inputs span x≈160–780 (slice 1)"
+ },
+ {
+  "observation": "Form fields are dark, recessed boxes that are darker than the section background, with subtle borders and small radii.",
+  "category": "component",
+  "evidence": "input backgrounds look near-black against the rgb(24,22,22) contact section"
+ },
+ {
+  "observation": "The contact form has name, email and message fields, with a textarea for the message.",
+  "category": "component",
+  "evidence": "tag_counts.textarea 1; three labelled fields are visible"
+ },
+ {
+  "observation": "Sections are separated by thin horizontal rule lines and by alternating background tones, not by decorative dividers.",
+  "category": "decoration",
+  "evidence": "hairlines visible at the header bottom, around the title band, above the contact section and above the footer"
+ },
+ {
+  "observation": "The footer is minimal, with a copyright and privacy link on the left and a login link on the right.",
+  "category": "component",
+  "evidence": "'© 2021 Privacy Policy' and 'Login or register', both underlined"
+ },
+ {
+  "observation": "The page has two dialog elements, including a hidden 'Login or register' modal with its own form.",
+  "category": "dom",
+  "evidence": "tag_counts.dialog 2, form 2, input 5, label 6; heading_outline includes an h3 'Login or register'"
+ },
+ {
+  "observation": "The page uses semantic landmarks: one header, nav, main and footer, plus three sections. It has no article, aside or figure elements.",
+  "category": "dom",
+  "evidence": "semantic counts: header 1, nav 1, main 1, section 3, footer 1, article 0, figure 0"
+ },
+ {
+  "observation": "The heading outline is linear: one H1, three H2s and one H3.",
+  "category": "dom",
+  "evidence": "h1_count 1; outline: Modern & Contemporary Art > Francis Newton Souza, Photo gallery, Contact form > Login or register"
+ },
+ {
+  "observation": "All images have alt text.",
+  "category": "dom",
+  "evidence": "counts.alt_missing 0; alts such as 'Last Supper' and 'Mother and child'"
+ },
+ {
+  "observation": "Styling is self-contained, with one inline style block and no external stylesheets. Class usage is small and non-utility.",
+  "category": "dom",
+  "evidence": "style 1, stylesheets 0, classes total 34 / unique 21, tailwind_like_fraction 0.029"
+ },
+ {
+  "observation": "Layout relies mainly on CSS grid, with some flexbox.",
+  "category": "dom",
+  "evidence": "display_grid 10, display_flex 8"
+ },
+ {
+  "observation": "The page uses no SVG icons. Decorative marks such as carets and stars are text glyphs.",
+  "category": "dom",
+  "evidence": "counts.svgs 0; ▾ and ✦ are rendered as characters"
+ },
+ {
+  "observation": "The page includes 8 ARIA attributes and 9 inline style attributes.",
+  "category": "dom",
+  "evidence": "counts.aria_attrs 8, inline_style_attrs 9"
+ },
+ {
+  "observation": "The copy is sparse at about 160 words, with no emoji, exclamation marks or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats: words 160, emoji 0, exclamations 0, em_dashes 0"
+ },
+ {
+  "observation": "The copy uses curatorial, descriptive phrasing and repeats the epithet 'India's mystical expressionist' in both the hero and the bio.",
+  "category": "copy",
+  "evidence": "hero subtitle and bio paragraph both contain 'mystical expressionist'"
+ },
+ {
+  "observation": "The page has no JSON-LD structured data and only three meta tags, including a description.",
+  "category": "dom",
+  "evidence": "jsonld_blocks 0; meta_names charset, viewport, description"
+ },
+ {
+  "observation": "The page has a single script tag.",
+  "category": "dom",
+  "evidence": "tag_counts.script 1"
+ }
+]

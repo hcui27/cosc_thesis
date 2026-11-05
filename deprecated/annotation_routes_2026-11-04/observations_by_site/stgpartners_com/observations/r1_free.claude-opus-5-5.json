@@ -1,0 +1,252 @@
+[
+ {
+  "observation": "Document title uses a brand-name-plus-tagline pattern separated by an em dash, and the tagline repeats the H1 word for word.",
+  "category": "copy",
+  "evidence": "title 'STG Partners — Partners for Business Transformation'; h1 'Partners for Business Transformation'"
+ },
+ {
+  "observation": "The page has exactly one H1, followed by four H2 section headings and eleven H3s.",
+  "category": "semantic structure",
+  "evidence": "h1_count 1; tag_counts h2: 4, h3: 11"
+ },
+ {
+  "observation": "Helvetica Neue is the only font family in use, with no web-font stylesheet loaded.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['Helvetica Neue',128]]; stylesheets 0; h1 font_family '\"Helvetica Neue\", Helvetica, Arial, sans-serif'"
+ },
+ {
+  "observation": "Large headings are set in a light weight (300), so they look thin and airy.",
+  "category": "typography",
+  "evidence": "h1 64px weight 300; h2 42px weight 300; slices show thin strokes on 'Built around people and long-term growth'"
+ },
+ {
+  "observation": "Card titles and news headlines use a heavier weight than the light H2s, which creates weight contrast between levels.",
+  "category": "typography",
+  "evidence": "Slice 1: 'Customer Centric' and 'Accelerators' in bold white; slice 2: news titles in medium-weight dark text"
+ },
+ {
+  "observation": "Body text is 16px with a 1.6 line-height ratio.",
+  "category": "typography",
+  "evidence": "body_font_size 16px; body_line_height 25.6px"
+ },
+ {
+  "observation": "Each section starts with a small, uppercase, widely letter-spaced eyebrow label in blue above its H2.",
+  "category": "typography",
+  "evidence": "Labels 'OUR APPROACH', 'PORTFOLIO', 'WHO WE ARE' and 'NEWS' in blue (rgb(63,167,214) is among top_text_colors)"
+ },
+ {
+  "observation": "Navigation links and button labels are uppercase with letter-spacing.",
+  "category": "typography",
+  "evidence": "Header nav 'OUR APPROACH PORTFOLIO WHO WE ARE NEWS CONTACT'; buttons 'OUR APPROACH', 'VIEW OUR WORK', 'READ MORE'"
+ },
+ {
+  "observation": "The palette rests on a dark navy, rgb(14,27,46), which is the most frequent background colour.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(14,27,46) ×8; used in the hero, the feature cards and the footer"
+ },
+ {
+  "observation": "Light sections alternate between white and a very pale blue-grey band.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(245,247,250) ×2 (Portfolio and News sections) and rgb(255,255,255); body_bg white"
+ },
+ {
+  "observation": "A single bright cyan-blue serves as the accent colour, used for eyebrows, 'READ MORE' links, the 'Learn more.' link and the arrow in the announcement bar.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(63,167,214) ×11; visible in slices 1–2 and in the bar arrow in slice 0"
+ },
+ {
+  "observation": "Body text is a dark navy-slate, not pure black.",
+  "category": "color",
+  "evidence": "body_color rgb(26,36,51)"
+ },
+ {
+  "observation": "Secondary text on dark backgrounds uses muted blue-greys.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(199,209,222) ×21 and rgb(185,197,212) ×6; card descriptions and hero subtext appear greyish"
+ },
+ {
+  "observation": "No gradients, box shadows, animations or transforms are used; the page depends on flat colour fields.",
+  "category": "decoration/effects",
+  "evidence": "gradient_backgrounds 0; box_shadows 0; animations 0; transforms 0"
+ },
+ {
+  "observation": "Corners are almost all square, with a few small radii of 1–7px.",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets bucket_0 119, bucket_1_7 9, others 0; cards show slightly rounded corners"
+ },
+ {
+  "observation": "One element uses backdrop blur, which matches the translucent navy header.",
+  "category": "decoration/effects",
+  "evidence": "backdrop_blur 1; background rgba(14,27,46,0.96) in top_backgrounds; header in slice 0 is slightly lighter than the hero"
+ },
+ {
+  "observation": "Eight elements have CSS transitions, presumably for hover states on links and buttons.",
+  "category": "decoration/effects",
+  "evidence": "transitions 8"
+ },
+ {
+  "observation": "The header has a text-only wordmark 'STG' on the left and five uppercase nav links on the right.",
+  "category": "layout",
+  "evidence": "Slice 0 header; 'STG' in bold, letter-spaced type, with no logo image (images list has none)"
+ },
+ {
+  "observation": "A 'Menu' button exists in the DOM but does not show at desktop width; it has a transparent background, a 3px radius and 8px 14px padding.",
+  "category": "component",
+  "evidence": "primary_button text 'Menu', bg rgba(0,0,0,0), radius 3px, padding 8px 14px; not visible in slice 0"
+ },
+ {
+  "observation": "The hero is a text-only navy block with a left-aligned H1 that wraps to two lines, a subheading and one outlined button.",
+  "category": "layout",
+  "evidence": "Slice 0: 'Partners for Business Transformation', subtext 'A private equity firm focused on…', white-outlined 'OUR APPROACH' button"
+ },
+ {
+  "observation": "All buttons are ghost/outline buttons: a thin border with no fill. They are white-bordered on dark backgrounds and dark-bordered on light ones.",
+  "category": "component",
+  "evidence": "'OUR APPROACH' (slice 0), 'VIEW OUR WORK' and 'READ MORE' (slices 1–2) are all outlined rectangles"
+ },
+ {
+  "observation": "A full-bleed team photo sits below the hero, spanning the whole 1440px viewport width at 630px tall.",
+  "category": "imagery",
+  "evidence": "image-01.png rect x0 w1440 h630, natural 1439×630; y 562"
+ },
+ {
+  "observation": "The team photo carries a dark blue tint or overlay, so it blends with the navy palette.",
+  "category": "imagery",
+  "evidence": "Slice 0: the photo of five men in an office looks desaturated and blue-shaded"
+ },
+ {
+  "observation": "The photo has a descriptive alt text.",
+  "category": "imagery",
+  "evidence": "alt 'The STG Partners leadership team standing together in a bright office'; alt_missing 0"
+ },
+ {
+  "observation": "A thin navy announcement bar under the photo holds a centred news headline and a cyan arrow.",
+  "category": "component",
+  "evidence": "Slice 0: 'McAfee Announces Sale of Enterprise Business to Symphony Technology Group for $4.0 Billion →' on rgb(21,38,61)-like band"
+ },
+ {
+  "observation": "The 'Our Approach' and 'Who We Are' sections use a split layout: the heading sits in the left column and a 2×2 or 1×2 card grid fills the right.",
+  "category": "layout",
+  "evidence": "Slice 1: heading on the left, four cards at x≈683–1244; slice 2: Experts/Innovators cards on the right"
+ },
+ {
+  "observation": "Feature cards are dark navy tiles with a white line icon, a bold white title and grey description text.",
+  "category": "component",
+  "evidence": "Cards 'Customer Centric', 'Committed to Growth', 'Engaged Partners', 'Accelerators', 'Experts', 'Innovators'"
+ },
+ {
+  "observation": "Card icons are SVG files loaded through <img> tags, all rendered at 52×52 even though their natural sizes differ.",
+  "category": "imagery",
+  "evidence": "6 icon images (icn-*.svg) with rect w52 h52; natural sizes vary, e.g. 100×59 and 39×63; svgs count 0 (none inline)"
+ },
+ {
+  "observation": "Decorative icons have empty alt attributes.",
+  "category": "semantic structure",
+  "evidence": "All icn-*.svg entries have alt ''"
+ },
+ {
+  "observation": "Icons are thin-stroke outline illustrations: a hand holding a person, an up arrow in a circle, a dot pyramid, lines with nodes, a network graph and a lightbulb.",
+  "category": "imagery",
+  "evidence": "Slices 1–2 card icons"
+ },
+ {
+  "observation": "Card heights in a row follow the tallest card, leaving empty space in cards with shorter copy.",
+  "category": "layout",
+  "evidence": "Slice 1: 'Engaged Partners' card has empty space below short text, matching the height of the 'Accelerators' card"
+ },
+ {
+  "observation": "Only the 'Accelerators' card has an inline link, styled as underlined cyan text.",
+  "category": "component",
+  "evidence": "Slice 1: 'Learn more.' underlined in blue"
+ },
+ {
+  "observation": "The Portfolio section is text only: an eyebrow, a one-line H2, a short subline and an outlined button, with no logos or images.",
+  "category": "layout",
+  "evidence": "Slice 1: 'Building strategic value for market leading companies', 'Software, data and analytics.', 'VIEW OUR WORK'"
+ },
+ {
+  "observation": "Content is held in a centred container about 1048px wide, from x≈196 to x≈1244 on a 1440px page.",
+  "category": "layout",
+  "evidence": "Left edges at x 196 and right edges at x 1244 recur across header, cards, news and footer in the slices; page_width 1440"
+ },
+ {
+  "observation": "Sections have large vertical padding of roughly 100px or more.",
+  "category": "layout",
+  "evidence": "Slices 1–2: wide spacing between the Portfolio band edges and its content, and between sections"
+ },
+ {
+  "observation": "The news list is a stacked set of rows separated by thin horizontal rules, with no cards.",
+  "category": "component",
+  "evidence": "Slice 2: five rows, each divided by a hairline border"
+ },
+ {
+  "observation": "Each news row has a date block on the left (a small uppercase month above a large light-weight day number), a headline in the middle and a cyan 'READ MORE' on the right.",
+  "category": "component",
+  "evidence": "Slice 2: 'JUN 01', 'MAY 26', 'MAY 19', 'MAY 04', 'MAY 04'"
+ },
+ {
+  "observation": "Long news headlines wrap to two lines while the date and link stay vertically centred.",
+  "category": "layout",
+  "evidence": "Slice 2: Symphony Talent and Extenda Retail rows wrap onto a second line"
+ },
+ {
+  "observation": "News headlines are marked up as H3s.",
+  "category": "semantic structure",
+  "evidence": "heading_outline lists 5 H3s under 'Latest from STG and our companies'"
+ },
+ {
+  "observation": "News copy is about acquisitions and partnerships of portfolio companies.",
+  "category": "copy",
+  "evidence": "'Escalent Acquires Grail Insights', 'Press Ganey Acquires SPH Analytics', etc."
+ },
+ {
+  "observation": "The footer is navy, with the STG wordmark on the left and six uppercase links on the right; a horizontal rule separates it from the copyright row and the 'Terms Of Use' link.",
+  "category": "layout",
+  "evidence": "Slice 2: HOME, OUR APPROACH, PORTFOLIO, WHO WE ARE, NEWS, CONTACT; '© 2021 STG Partners, LLC'"
+ },
+ {
+  "observation": "The footer nav repeats the header links and adds 'HOME', which accounts for the two <nav> elements.",
+  "category": "semantic structure",
+  "evidence": "semantic nav 2; header and footer link lists in slices"
+ },
+ {
+  "observation": "Semantic landmarks are used: header, main, four sections and footer. There are no article, aside or figure elements.",
+  "category": "semantic structure",
+  "evidence": "semantic header 1, main 1, section 4, footer 1, article 0, aside 0, figure 0"
+ },
+ {
+  "observation": "Lists are built with ul/li: 3 lists containing 16 items in total.",
+  "category": "semantic structure",
+  "evidence": "tag_counts ul 3, li 16"
+ },
+ {
+  "observation": "There are six ARIA attributes and no inline style attributes.",
+  "category": "semantic structure",
+  "evidence": "aria_attrs 6; inline_style_attrs 0"
+ },
+ {
+  "observation": "Styles come from a single embedded <style> block, with no utility-class framework.",
+  "category": "DOM",
+  "evidence": "tag_counts style 1; stylesheets 0; tailwind_like_fraction 0; 21 unique classes across 50 uses"
+ },
+ {
+  "observation": "Layout uses both CSS grid and flexbox, with grid slightly more common.",
+  "category": "layout",
+  "evidence": "display_grid 9; display_flex 6"
+ },
+ {
+  "observation": "Copy is short: 237 words, with no emoji, no exclamation marks and no em dashes in the body text.",
+  "category": "copy",
+  "evidence": "text_stats words 237, emoji 0, exclamations 0, em_dashes 0"
+ },
+ {
+  "observation": "The page is about 3931px tall, and the footer extends into the final short slice.",
+  "category": "layout",
+  "evidence": "page_height 3931; slice 3 is a solid navy strip"
+ },
+ {
+  "observation": "Bold text appears through five <b> elements, and there are no strong tags.",
+  "category": "semantic structure",
+  "evidence": "tag_counts b 5"
+ }
+]

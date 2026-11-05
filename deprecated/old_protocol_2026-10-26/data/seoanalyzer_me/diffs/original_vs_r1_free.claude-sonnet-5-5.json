@@ -1,0 +1,242 @@
+[
+ {
+  "observation": "Hero background is a flat mid-blue with a decorative network/constellation line graphic. Side B uses a diagonal blue gradient from deep navy to cyan with no pattern.",
+  "category": "decoration",
+  "evidence": "A: top background rgb(52,152,219), gradient_backgrounds 0, slice shows polyline-and-node artwork. B: gradient_backgrounds 2, rgb(37,99,235) and rgb(15,23,42) in top backgrounds.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero in A has an inline search form with a text input ('Type Your Website Address') and a green 'REVIEW' submit button. B replaces it with a single white pill CTA, 'Analyze Your Site', and has no input.",
+  "category": "component",
+  "evidence": "A: form 3, input 11, primary_button 'REVIEW' bg rgb(105,203,149) radius 0px. B: buttons 0, input absent from tag_counts, primary_button 'Analyze Your Site' bg white, radius 999px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The H1 is uppercase in A and sentence/title case in B, and B's is much larger and bolder.",
+  "category": "typography",
+  "evidence": "A h1 'INSTANTLY ANALYZE YOUR SEO ISSUES', 32px, weight 600, Montserrat. B h1 'Instantly Analyze Your SEO Issues', 54.4px, weight 700, system-ui.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a serif italic subtitle in the hero, set as an H2 (Lora). B uses a plain sans-serif paragraph for the subtitle, and its heading outline has no H2 there.",
+  "category": "typography",
+  "evidence": "A heading_outline H2 'Helps To Identify…', 22px weight 500, fonts include 'lora' (1 element). B heading_outline goes H1 then H3, with the subtitle in a p.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A mixes several font families: Helvetica Neue, Open Sans, Montserrat, Lora, plus FontAwesome and Glyphicons icon fonts. B uses only system-ui.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count lists 6 families (Helvetica Neue 146, Open Sans 66, Montserrat 63, FontAwesome 16, lora 1, Glyphicons 1). B: system-ui 153 only.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text is 14px/24px in A and 16px/25.6px in B.",
+  "category": "typography",
+  "evidence": "body_font_size and body_line_height in the facts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Header treatment differs. A's nav sits transparently over the hero with a white leaf logo, and 'EN' has a globe icon on the far right. B has a separate white header bar with a gradient rounded-square logo mark, nav links on the right, and 'EN' in a bordered box.",
+  "category": "layout",
+  "evidence": "A: no header tag, nav 2, nav text over the blue hero. B: header 1, nav 1, white bar above the hero.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Below the hero search, A shows faint dark-blue text links (H-supertools, Booksandmore, L-ink) with low contrast against the blue. B shows the same names as translucent-white pill chips with a letter-spaced 'REVIEW' label.",
+  "category": "component",
+  "evidence": "A slice: dim blue text at y≈449. B slice: pills at y≈444. B has rgba(255,255,255,0.16) backgrounds, 3 of them, and 4 pill-radius elements.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The three feature blocks are open, centered columns on a light-gray band in A, each with a circular white icon badge holding a blue line icon. In B they are left-aligned bordered cards with a rounded blue square icon.",
+  "category": "component",
+  "evidence": "A: icon circles with chart, server and thumbs-up icons, centered text, fonts FontAwesome. B: cards on rgb(244,247,251) with rounded corners, border_radius bucket_8_15 = 12, icons ∞, magnifier and scales.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Feature icons come from an icon font in A (12 `i` tags, FontAwesome). B uses emoji/unicode glyphs in colored squares, and no icon font.",
+  "category": "imagery",
+  "evidence": "A tag i: 12, FontAwesome 16 elements. B i: 1, emoji count 3, no FontAwesome in fonts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Feature titles are H4 in A and H3 in B, and B's are bold and left-aligned. A's are light and centered in a thin font.",
+  "category": "semantic",
+  "evidence": "A heading_outline level 4 for 'Unlimited Analysis' etc. B level 3.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Recently Listed' heading is a blue label tab with a leaf icon, next to a light-gray bar and a small cyan 'View More →' button in A. In B it is a large bold H2 on a tinted band, with a plain blue text link 'View More →'.",
+  "category": "component",
+  "evidence": "A: rgb(0,174,239) button backgrounds and rgb(51,122,183) tab. B: H2 33.6px weight 700, link in blue rgb(37,99,235).",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A, 'Recently Listed' is an H4 inside the page. In B it is an H2 section title, and each site name is an H3.",
+  "category": "semantic",
+  "evidence": "A outline: H4 'Recently Listed' and no headings for the site cards. B outline: H2 'Recently Listed' followed by six H3 site names.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Site cards in A are thin-bordered boxes with the thumbnail inset and a centered link-colored title. B cards have rounded corners, a flush full-bleed thumbnail, a left-aligned bold title, and a soft shadow.",
+  "category": "component",
+  "evidence": "A images 325x246 at x=164, 558, 951. B images 335x251 at x=191, 552, 914, card radius 12px, box_shadows 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Card stats use different formatting. A uses a bordered 3-cell table with small uppercase captions (SCORE / GLOBAL RANK / PAGE SPEED) and a '/100' suffix in a smaller size, all in dark text. B uses colored numbers (green, orange, red) with title-case captions, in a borderless row.",
+  "category": "color",
+  "evidence": "B slice: 72/100 green, 63/100 orange, 45/100 red, 0% red, 99% green. B markup uses b 18 and small 18. A uses strong 18.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The sixth card has a broken image in A, showing alt text as a small link at 215x32 with natural size 0x0. B has no img for it and shows a gray 'No preview available' placeholder tile.",
+  "category": "imagery",
+  "evidence": "A images[5] natural [0,0], rect h 32, 6 imgs. B has 5 imgs and the placeholder text is visible.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's card heights vary with title wrapping. 'Homework-solutions.blogspot.com' wraps to two lines, which pushes that card's stats down. B's rows are uniform, with titles on one line.",
+  "category": "layout",
+  "evidence": "A slice 2: the middle card's stat row sits lower than its neighbors. B: stat rows aligned at y≈143.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's alt text is rewritten as 'Bulktrkr.com screenshot', and site names are capitalized ('Bulktrkr.com'). A's alt is the bare domain, lowercase.",
+  "category": "copy",
+  "evidence": "A alt 'bulktrkr.com'. B alt 'Bulktrkr.com screenshot'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The A footer is a slate-blue block (rgb(60,71,100)) with three columns: About Us, Contact Info and Navigation, with underlined short rules under the uppercase headings and vertical dividers. B moves 'About Us' into its own centered white section and uses a near-black navy footer (rgb(15,23,42)) with two columns.",
+  "category": "layout",
+  "evidence": "A: footer h2 'ABOUT US', 'CONTACT INFO', 'NAVIGATION'. B: H2 'About Us' outside the footer, H4 'Contact Info' and 'Navigation' in the footer.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A footer has icon-decorated contact lines (map pin, phone, envelope) and four diamond-shaped social icons (Facebook, Twitter, Google+, LinkedIn) in green. B shows only plain address and email text, with no icons or social links.",
+  "category": "decoration",
+  "evidence": "A slice 2 shows diamond outlines at y≈977. B has i: 1 and a: 17.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's navigation footer lists only 'HOME' in uppercase. B lists 'Home' and 'Site vs Site' in title case.",
+  "category": "copy",
+  "evidence": "Footer text in the slices.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B leaves out A's 'Sign In' and 'Sign Up' elements and the empty H4, which appear in A's heading outline. This suggests A has hidden modal forms.",
+  "category": "component",
+  "evidence": "A heading_outline H4 'Sign In', 'Sign Up' and an empty H4. forms 3, buttons 8, labels 6. B has none of these.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many external resources: 15 scripts, 8 stylesheets and 14 link tags. B is self-contained, with 0 scripts, 0 stylesheets and a single inline style tag.",
+  "category": "dom",
+  "evidence": "A counts scripts 15, stylesheets 8. B scripts 0, stylesheets 0, style 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A relies on 24 inline style attributes and 250 class uses (111 unique), in a Bootstrap-like style. B has no inline styles and only 60 class uses (22 unique).",
+  "category": "dom",
+  "evidence": "A inline_style_attrs 24, classes total 250, unique 111. B inline_style_attrs 0, total 60, unique 22.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses no flex or grid (a float/table-style layout). B uses grid on 18 elements and flex on 11.",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 0. B display_grid 18, display_flex 11.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has fuller semantic markup, with header, main and 3 sections. A has no header or main and only 1 section, with nav 2.",
+  "category": "semantic",
+  "evidence": "A semantic: header 0, main 0, section 1, nav 2. B: header 1, main 1, section 3, nav 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A is div-heavy (92 divs) against B's 56. A has 38 spans against B's 1. B uses b and small tags (18 each) for stats.",
+  "category": "dom",
+  "evidence": "tag_counts for div and span in each file.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The head metadata differs. A has a bare 'Seo Analyzer' title, an empty lang attribute, and 13 meta tags including keywords, author and Open Graph. B has the title 'SEO Analyzer – Instantly Analyze Your SEO Issues', lang 'en', and only charset, viewport and description.",
+  "category": "dom",
+  "evidence": "A title 'Seo Analyzer', lang '', meta_names with og:*. B lang 'en', meta 3.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a canvas element and 1 CSS animation, which fits the animated particle hero. B has neither.",
+  "category": "decoration",
+  "evidence": "A canvas 1, animations 1, transforms 8. B animations 0, transforms 0, no canvas.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A defines 66 transitions and B defines 7, so A is much more interactive in its styling.",
+  "category": "effects",
+  "evidence": "effects.transitions A 66, B 7.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Corner radii are almost all square in A. B has more rounded elements.",
+  "category": "decoration",
+  "evidence": "A bucket_0 274, bucket_1_7 16, bucket_8_15 0, pill 3. B bucket_0 135, bucket_8_15 12, pill 4.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is cyan/sky blue (rgb(0,174,239), rgb(52,152,219)) with a mint-green CTA (rgb(105,203,149)) and bright green accents (rgb(58,195,65)). B uses royal blue (rgb(37,99,235)), slate neutrals (rgb(27,36,51), rgb(91,102,120)), and a white CTA with dark-blue text rgb(29,78,216).",
+  "category": "color",
+  "evidence": "top_backgrounds and top_text_colors in each file.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's text colors are default Bootstrap gray (rgb(51,51,51)) and link blue (rgb(51,122,183), 32 elements). B uses navy-tinted text (rgb(27,36,51)), muted slate (rgb(91,102,120), 34 elements) and a light slate footer text (rgb(203,213,225)).",
+  "category": "color",
+  "evidence": "top_text_colors.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A section backgrounds alternate white and a very light gray (rgb(248,248,248), rgb(246,248,249)) with a hairline divider under the features. B uses white and pale blue-gray (rgb(244,247,251)), plus rgb(227,232,240) borders and placeholders.",
+  "category": "color",
+  "evidence": "top_backgrounds. B rgb(227,232,240) count 6.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero is taller in A (about 680px) than in B (about 485px below the 65px header). The overall page is shorter in A, at 2399px against B's 2560px.",
+  "category": "layout",
+  "evidence": "page_height A 2399, B 2560. In the slices the A hero ends at y≈680 and B at y≈550.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The content container is about 1140px wide in A (x from 150 to 1290). B's is about 1060px (x from 190 to 1250). B's cards are slightly larger (335px against 325px) with tighter gutters.",
+  "category": "layout",
+  "evidence": "Image rects: A x=164, 558, 951, w 325. B x=191, 552, 914, w 335.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The word count is 204 in A and 219 in B. B has 3 emoji against A's 1, and neither has em dashes or exclamation marks. B's title uses an en dash.",
+  "category": "copy",
+  "evidence": "text_stats words and emoji.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The brand logo is a white leaf glyph with 'Seo Analyzer' in bold Montserrat in A. B uses a blue gradient rounded square with no glyph and dark text on white.",
+  "category": "imagery",
+  "evidence": "Header area of both slices.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages keep the same H1 count (1) and the same six screenshot sites with identical stats (72/100, 430,476, 99% and so on). The copy for the features and the About text is nearly verbatim.",
+  "category": "copy",
+  "evidence": "h1_count 1 in both. Feature descriptions and the about paragraph read the same in the slices.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'About Us' paragraph is left-aligned in light text on the dark footer. B's is centered in a narrow column on a white background with a large bold H2.",
+  "category": "typography",
+  "evidence": "A slice 2 y≈850-922 on the slate background. B slice 2 y≈784-922, H2 33.6px.",
+  "which_side": "both"
+ }
+]

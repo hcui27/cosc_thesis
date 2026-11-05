@@ -1,0 +1,690 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "A's lang attribute names a region, while B's names only the language.",
+   "evidence": "A: lang 'en-US'. B: lang 'en'.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|02"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I1",
+   "text": "B has a footer element and uses article elements for cards. A has neither.",
+   "evidence": "B semantic counts: footer 1, article 13. A: footer 0, article 0.",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|06",
+    "allstate_jobs|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B marks up quotes with cite elements but no figcaptions. A pairs its figures with figcaptions and has no cite elements.",
+   "evidence": "B: blockquote 3, cite 3, figure 3, figcaption 0. A: figure 14, figcaption 14, blockquote 6, cite 0.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|07",
+    "allstate_jobs|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B uses real button elements. A has none, so its CTAs are styled links.",
+   "evidence": "buttons: B 6, A 0.",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|08"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I4",
+   "text": "B introduces small and label elements, which A does not use.",
+   "evidence": "B tag_counts include small 11 and label 1. Neither appears in A's tag_counts.",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|09"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I5",
+   "text": "B's heading hierarchy demotes the card titles to h3 under a parent h2. A uses h2 for each Discover card title.",
+   "evidence": "A outline: 'Explore Inclusive Diversity' at level 2. B outline: 'Explore Inclusive Diversity' at level 3 under h2 'Discover Allstate'. B als",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|00",
+    "allstate_jobs|opus|10",
+    "allstate_jobs|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "Several of A's h3s are empty, while B's h3s carry employee names and job titles.",
+   "evidence": "A heading_outline has multiple h3 entries with text ''. B has h3s 'Maureen D.', 'Eric G.' and so on, plus 'Operations Claims Service Leader ",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|11"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I7",
+   "text": "A uses the proprietary Allstate Sans family in several weights. B uses a system font stack, with Arial in some places.",
+   "evidence": "A fonts: allstatesansw-regul (1198), -bold (78), -light (70), -medium (2). B fonts: -apple-system (242), Arial (29).",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|12",
+    "allstate_jobs|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "A's h2s are near-black and left-aligned. B's are navy and centered.",
+   "evidence": "In the A slices, 'Discover Allstate' and 'Career Areas at Allstate' are left-aligned in dark gray. In the B slices, the same headings are ce",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|14",
+    "allstate_jobs|opus|15",
+    "allstate_jobs|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "A centers the text inside its cards. B left-aligns card text.",
+   "evidence": "In A_slice_00/01, card titles and descriptions are centered. In B_slice_00/01, card titles and body copy start at the card's left padding.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|18",
+    "allstate_jobs|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "Body text color differs: A uses gray #444 and near-black, while B uses a navy-tinted dark plus a muted slate secondary.",
+   "evidence": "Body color is rgb(68,68,68) in A and rgb(28,34,51) in B. The most common text colors are rgb(25,25,25) (742) in A, and rgb(28,34,51) (144) a",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|19",
+    "allstate_jobs|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A relies heavily on Allstate blue (#0033A0) as a fill. B uses it sparingly and adds a dark navy and a light cyan.",
+   "evidence": "Backgrounds: rgb(0,51,160) appears 82 times in A against 3 in B. B adds rgb(14,26,75) (4), rgb(242,245,250) (4) and rgb(60,180,230) (1).",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|20",
+    "allstate_jobs|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "B alternates white and pale blue-gray section backgrounds. A keeps an all-white body and separates sections with thin light-blue rules.",
+   "evidence": "B's backgrounds include rgb(242,245,250). The B slices show tinted bands behind Discover, Meet the People, Testimonials and See What We're U",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|21",
+    "allstate_jobs|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "The primary buttons differ: A's is a white button with blue text and a 3px radius. B's is a cyan pill with navy text.",
+   "evidence": "A primary_button: 'COVID-19 Hiring Practices', bg white, color rgb(0,51,160), radius 3px, padding 15px 20px. B primary_button: 'Search Jobs'",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|22",
+    "allstate_jobs|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "A's Discover CTAs are full-width solid blue bars along the bottom of each card. B's are outlined pill buttons inside the card padding.",
+   "evidence": "A_slice_01 shows solid blue 'VISIT PAGE' bars spanning each card's width. B_slice_01 shows small white pills with a blue outline reading 'Vi",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|24",
+    "allstate_jobs|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "A's Future Events CTA is a full-content-width rectangular bar. B's is a centered pill, preceded by an added subtitle.",
+   "evidence": "A_slice_03 shows a blue bar spanning about 952px. B_slice_04 shows a centered navy pill, with 'Meet our recruiters and teams at upcoming eve",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|25",
+    "allstate_jobs|sonnet|42",
+    "allstate_jobs|sonnet|43"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "B uses CSS grid. A lays out only with flex and other methods.",
+   "evidence": "display_grid: A 0, B 7. display_flex: A 31, B 21.",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|27",
+    "allstate_jobs|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "A's content sits in a narrower centered column (about 952px from x=244). B's content column is wider (about 1120px from x=160).",
+   "evidence": "A's hero banner and cards start at x 244, with the banner 952 wide. B's cards start at x 160, and its card rows end at x 1280 (355px-wide im",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|28",
+    "allstate_jobs|opus|29",
+    "allstate_jobs|sonnet|08",
+    "allstate_jobs|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "A places a large logo above a text nav row. B shows a smaller logo in a slim white bar, which in the screenshot is pinned over the hero.",
+   "evidence": "The logo renders at 193×70 in A and 105×38 in B. In B_slice_00 the white header bar crosses the hero headline 'is here, define your future',",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|30",
+    "allstate_jobs|opus|31",
+    "allstate_jobs|sonnet|09",
+    "allstate_jobs|sonnet|10",
+    "allstate_jobs|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A's job search bar has a keyword input, a departments select and a search button below the hero. B drops the keyword input and places a rounded select plus pill button inside a navy band below the hero image.",
+   "evidence": "A_slice_00 shows an 'Enter a Job or Keyword' input, an 'All Departments' select and 'SEARCH JOBS' on white. A has 6 inputs and B lists none.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|32",
+    "allstate_jobs|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "B centers the intro paragraph in a narrower measure. A left-aligns it across the full column.",
+   "evidence": "In A_slice_00 the 'At Allstate, everyone is essential…' paragraph is left-aligned over about 940px. In B_slice_00 it is centered in navy ove",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|33",
+    "allstate_jobs|sonnet|44"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "A shows the Career Areas as underlined blue text links in three columns. B shows them as bordered tiles in a four-column grid, each with a cyan arrow.",
+   "evidence": "A_slice_01 shows underlined links ('Claims', 'Finance', …) in three columns. B_slice_01/02 show rectangular outlined boxes, e.g. 'Claims →' ",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|34",
+    "allstate_jobs|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "In A's screenshot, the 'Meet the People' employee images have zero size. B renders them as a visible card grid with name, title and location.",
+   "evidence": "A facts give maureen.jpg, eric.jpg and the rest a rect of 0×0, and A_slice_02 is mostly blank white below the heading. B facts give each a 2",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|35",
+    "allstate_jobs|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "In A, the 'Grow Your Career' carousel content does not appear in the screenshot, leaving blank space above dot indicators. B shows an expanded profile card with a timeline.",
+   "evidence": "A_slice_02/03 show the heading and paragraph, then empty white space and dot pagination. The facts list Xiomara, Shelby and Bridget stacked ",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|36",
+    "allstate_jobs|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "A's carousel pagination uses small circular dots. B's uses larger numbered circles (1, 2, 3).",
+   "evidence": "A_slice_03 shows a filled blue dot and two hollow dots. B_slice_03 shows outlined circles numbered 1, 2 and 3, with 1 filled navy.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|37",
+    "allstate_jobs|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "A's Testimonials section is blank in the screenshot. B shows a split layout with the photo on the left and the quote on navy on the right.",
+   "evidence": "A_slice_03 shows the 'Testimonials' heading over empty space, though facts list the Lisa/Xiomara/Kelly images at 476×377, stacked and overla",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|38",
+    "allstate_jobs|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "A's Instagram thumbnails keep a non-square ratio and are widely spaced. B crops them to squares in a tighter, centered row with rounded corners.",
+   "evidence": "Social1–4.png render at 185×175 in A (x 244–1196), and at 213×213 in B (x 270–1170) with rounded corners visible in B_slice_04.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|40",
+    "allstate_jobs|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "Alt text differs: A describes the social thumbnails and icons, while B leaves them empty but gives the hero and employee photos descriptive alts.",
+   "evidence": "A Social1.png alt is 'Instagram - Allstate proudly supports veterans' and the icons have alts such as 'Facebook'. In B those alts are ''. B'",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|41",
+    "allstate_jobs|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "The 'Follow Us' label differs: title case in A, uppercase with letter-spacing in B (as an h3).",
+   "evidence": "A_slice_04 shows 'Follow Us' in bold. B_slice_04 shows the tracked 'FOLLOW US', which B's heading outline lists as an h3. The social icons a",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|42",
+    "allstate_jobs|sonnet|40"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "A's footer is a large blue block of dense legal and EEO text with policy links, with the copyright repeated. B's footer is a slim navy bar with one 'allstate.jobs' link.",
+   "evidence": "A_slice_04 shows HEA 1242, Fair Chance, EEO, FMLA and EPPA paragraphs, the links WEB ACCESSIBILITY | PRIVACY & SECURITY | …, and '© 2021 All",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|43",
+    "allstate_jobs|sonnet|41"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "The heading text uses different apostrophes: straight in A, typographic in B.",
+   "evidence": "A heading: \"See What We're Up To\". B heading: \"See What We’re Up To\".",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|opus|46",
+    "allstate_jobs|sonnet|45"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "The page heights are similar, but B is slightly taller, even though A has more content in the DOM.",
+   "evidence": "page_height: A 6206, B 6274. page_width is 1440 for both.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|47"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "B's cards have soft shadows and generous internal padding. A's cards have thin gray borders with a slight shadow.",
+   "evidence": "B_slice_00–02 show white rounded cards with diffuse shadows on tinted bands. A_slice_00/01 show square-cornered cards with a light gray outl",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|48",
+    "allstate_jobs|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "Both pages reuse the same hero banner image with the same two-tone headline baked in.",
+   "evidence": "Both use Allstate.jobs-Banner_2104x654.jpg. The 'your next career is here, define your future with Allstate' text, in white and cyan on navy",
+   "side": "both",
+   "members": [
+    "allstate_jobs|opus|49"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "The two pages set body text at different sizes. A uses 18px with a 29.7px line-height. B uses 16px with a 25.6px line-height.",
+   "evidence": "body_font_size 18px vs 16px; body_line_height 29.7px vs 25.6px.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "A's card titles ('GOOD WORK', 'GOOD LIFE', 'GOOD HANDS') are uppercase and centered. B's equivalents are sentence-case, left-aligned, navy, and semibold.",
+   "evidence": "A_slice_00 card captions are all caps. B_slice_00 shows 'Good Work' at left in navy.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "A has a flat white page background, a transparent body background, and a blue footer. B's footer is dark navy and nearly empty.",
+   "evidence": "A body_bg rgba(0,0,0,0). B body_bg rgb(255,255,255). A_slice_04 shows a cobalt footer, B_slice_04 a navy footer.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|sonnet|07"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I37",
+   "text": "Corner radius differs: A is mostly square, with 1284 elements at 0 radius, 52 at 1–7px and none pill. B has 12 pill-radius elements, 36 at 8–15px and 2 at 16px or more.",
+   "evidence": "border_radius_buckets in both facts.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I38",
+   "text": "B's CTAs, step pagers and 'Follow us' items are pills and circles. A's CTAs are rectangular blocks.",
+   "evidence": "B pill bucket 12; B_slice_02 'Visit Page' outlined pills, numbered circles. A_slice_01 full-width rectangular 'VISIT PAGE' bars.",
+   "side": "generated",
+   "members": [
+    "allstate_jobs|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I39",
+   "text": "A's 'Discover Allstate' images are cropped shorter, 297×175. B's are 355×246, taller relative to width.",
+   "evidence": "A rects h175 vs B rects h246.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|sonnet|20"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I40",
+   "text": "B's markup is far smaller. It has 45 divs, 33 anchors, 30 images and 1 script. A has 620 divs, 162 anchors, 75 images and 155 scripts.",
+   "evidence": "tag_counts. B stylesheets 0, A stylesheets 42.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I41",
+   "text": "Styling is delivered differently. A uses 8 style blocks, 42 stylesheets, 366 unique classes and 87 inline style attributes. B uses 1 style block, 31 unique classes and 10 inline styles.",
+   "evidence": "counts.stylesheets 42 vs 0; classes.unique 366 vs 31; inline_style_attrs 87 vs 10.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I42",
+   "text": "The People photos have names in alt in B (Paul D., Dana T., Brooke T., Mythili P.). In A, paul, dana, brooke and mylthili have empty alt, and only 3 of the seven carry one.",
+   "evidence": "images lists.",
+   "side": "both",
+   "members": [
+    "allstate_jobs|sonnet|38"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page uses semantic HTML: footer element, article elements for cards, real button elements for CTAs, and small/label elements.",
+   "family": "semantic_dom",
+   "items": [
+    "I1",
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "statement": "Quotes are marked up with blockquote and cite elements rather than figure/figcaption pairs.",
+   "family": "semantic_dom",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Card titles sit at h3 beneath a parent h2 section heading, giving a nested heading hierarchy with meaningful text.",
+   "family": "semantic_dom",
+   "items": [
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "statement": "Typography uses a system font stack (-apple-system, Arial) rather than a proprietary brand typeface.",
+   "family": "typography",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Section h2 headings are centered and navy-colored.",
+   "family": "typography",
+   "items": [
+    "I8"
+   ]
+  },
+  {
+   "statement": "Body text is 16px with a 1.6 line-height, in navy-tinted dark with muted slate secondary text.",
+   "family": "typography",
+   "items": [
+    "I34",
+    "I10"
+   ]
+  },
+  {
+   "statement": "Card text and titles are left-aligned; card titles are sentence-case, semibold, navy rather than uppercase centered.",
+   "family": "typography",
+   "items": [
+    "I9",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Intro paragraphs are centered in a narrow measure.",
+   "family": "layout",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Palette uses brand blue sparingly, with dark navy and light cyan accents, and cyan highlights on arrows and CTAs.",
+   "family": "color",
+   "items": [
+    "I11",
+    "I13"
+   ]
+  },
+  {
+   "statement": "Sections alternate white and pale blue-gray background bands, with a dark navy footer.",
+   "family": "color",
+   "items": [
+    "I12",
+    "I36"
+   ]
+  },
+  {
+   "statement": "Primary CTAs are fully rounded pill buttons, with outlined pill secondary buttons inside cards rather than full-width bars.",
+   "family": "component",
+   "items": [
+    "I13",
+    "I14",
+    "I15",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Corners are generously rounded, with many pill and 8–16px radii instead of square corners.",
+   "family": "decoration",
+   "items": [
+    "I37",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Cards are white, rounded, with soft diffuse shadows and generous internal padding.",
+   "family": "decoration",
+   "items": [
+    "I32"
+   ]
+  },
+  {
+   "statement": "Layout uses CSS grid and a wide content column of about 1120px.",
+   "family": "layout",
+   "items": [
+    "I16",
+    "I17"
+   ]
+  },
+  {
+   "statement": "Header is a slim white bar with a small logo, overlapping the hero.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Search area is a compact select plus pill button inside a navy band beneath the hero.",
+   "family": "component",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Category links are presented as bordered tiles in a multi-column grid, each with an arrow icon.",
+   "family": "component",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "People are shown as visible card grids with photo, name, title and location, and expanded profile cards with timelines.",
+   "family": "component",
+   "items": [
+    "I22",
+    "I23"
+   ]
+  },
+  {
+   "statement": "Carousel pagination uses larger numbered circles with the active one filled.",
+   "family": "component",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Testimonials use a split layout with photo on one side and quote on navy on the other.",
+   "family": "layout",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Social thumbnails are cropped to squares with rounded corners in a tight centered row.",
+   "family": "imagery",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Card images are cropped taller relative to width.",
+   "family": "imagery",
+   "items": [
+    "I39"
+   ]
+  },
+  {
+   "statement": "Alt text is empty for decorative images but descriptive for hero and people photos.",
+   "family": "imagery",
+   "items": [
+    "I27",
+    "I42"
+   ]
+  },
+  {
+   "statement": "Small labels like 'Follow us' are uppercase with letter-spacing.",
+   "family": "typography",
+   "items": [
+    "I28"
+   ]
+  },
+  {
+   "statement": "Footer is slim and minimal, with a single link and no dense legal text.",
+   "family": "component",
+   "items": [
+    "I29"
+   ]
+  },
+  {
+   "statement": "Copy uses typographic curly apostrophes.",
+   "family": "copy",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Added subtitle microcopy precedes CTAs, such as an invitation line above an events button.",
+   "family": "copy",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Markup is lean: few divs, scripts and classes, with one style block and minimal inline styles.",
+   "family": "other",
+   "items": [
+    "I40",
+    "I41"
+   ]
+  },
+  {
+   "statement": "The html lang attribute names only the language without a region.",
+   "family": "semantic_dom",
+   "items": [
+    "I0"
+   ]
+  }
+ ]
+}

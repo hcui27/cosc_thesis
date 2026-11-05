@@ -1,0 +1,589 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page titles differ: A uses the bare brand name, B adds a descriptive tagline after an en dash",
+   "evidence": "A title 'Seo Analyzer'; B title 'SEO Analyzer – Instantly Analyze Your SEO Issues'",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|00",
+    "seoanalyzer_me|opus|01",
+    "seoanalyzer_me|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A has 2 nav elements and B has 1; B has 3 sections and A has 1",
+   "evidence": "semantic.nav A 2 vs B 1; semantic.section A 1 vs B 3",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|04",
+    "seoanalyzer_me|opus|05",
+    "seoanalyzer_me|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "A sets its H1 in all caps at 32px, weight 600, in Montserrat; B sets it in title case at 54.4px, weight 700, in system-ui",
+   "evidence": "A h1 'INSTANTLY ANALYZE YOUR SEO ISSUES' 32px/600 Montserrat; B h1 'Instantly Analyze Your SEO Issues' 54.4px/700 system-ui",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|14",
+    "seoanalyzer_me|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B's body text and line height are larger",
+   "evidence": "body font A 14px/24px vs B 16px/25.6px",
+   "side": "generated",
+   "members": [
+    "seoanalyzer_me|opus|16",
+    "seoanalyzer_me|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "B's h2 is larger and bolder",
+   "evidence": "h2 A 22px/500 vs B 33.6px/700",
+   "side": "generated",
+   "members": [
+    "seoanalyzer_me|opus|17"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I5",
+   "text": "A's hero is a flat medium blue; B's hero uses a diagonal gradient from dark blue to cyan",
+   "evidence": "A_slice_00 solid blue (rgb(52,152,219) in backgrounds); B gradient_backgrounds 2, B_slice_00 runs dark blue at left to light cyan at bottom ",
+   "side": "generated",
+   "members": [
+    "seoanalyzer_me|opus|19",
+    "seoanalyzer_me|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "The navigation is placed differently: A puts the nav links next to the logo and EN at the far right; B groups the links and the EN toggle together on the right",
+   "evidence": "A_slice_00 Home/Site vs Site at x≈387–530 beside logo; B_slice_00 Home/Site vs Site/EN at right",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|20",
+    "seoanalyzer_me|opus|21",
+    "seoanalyzer_me|opus|22",
+    "seoanalyzer_me|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "The logos differ: A has a white leaf icon; B has a blue gradient rounded square",
+   "evidence": "A_slice_00 leaf glyph; B_slice_00 blue rounded square next to 'Seo Analyzer'",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|23",
+    "seoanalyzer_me|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "A's hero has a wide URL input with a green square 'REVIEW' button; B has a single white pill button labeled 'Analyze Your Site' and no input",
+   "evidence": "A primary_button 'REVIEW' bg rgb(105,203,149) radius 0px; B primary_button 'Analyze Your Site' bg white, color rgb(29,78,216), radius 999px,",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|24",
+    "seoanalyzer_me|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "Below the CTA, A shows the suggested sites as faint plain text links; B shows them as translucent pill chips after a letter-spaced 'REVIEW' label",
+   "evidence": "A_slice_00 low-contrast 'H-supertools Booksandmore L-ink'; B_slice_00 'REVIEW' plus 3 pills (rgba(255,255,255,0.16) bg x3)",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|25",
+    "seoanalyzer_me|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "A's features are centered columns without cards, with round white icon circles on a light gray band; B's features are left-aligned bordered cards with rounded corners and blue square icon tiles",
+   "evidence": "A_slice_00 centered text, circular icons, bg rgb(248,248,248); B_slice_00 three bordered cards, blue tiles, radius 8–15 bucket 12",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|27",
+    "seoanalyzer_me|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A's feature icons are line-style FontAwesome glyphs; B's are emoji (∞, 🔍, ⚖) on blue tiles",
+   "evidence": "A FontAwesome 16 elements; B emoji count 3 and i tag 1, B_slice_00 shows emoji icons",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|28",
+    "seoanalyzer_me|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "The heading hierarchies differ: A uses h2 for the hero subtitle and footer headings and h4 for features; B uses h3 for features and card titles, h2 for section titles and h4 in the footer",
+   "evidence": "A outline: h1, h2 subtitle, h4 x4 incl. 'Recently Listed', h2 ABOUT US/CONTACT INFO/NAVIGATION, h4 Sign In/Sign Up/empty; B outline: h1, h3 ",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|10",
+    "seoanalyzer_me|opus|12",
+    "seoanalyzer_me|opus|15",
+    "seoanalyzer_me|opus|29",
+    "seoanalyzer_me|sonnet|03",
+    "seoanalyzer_me|sonnet|10",
+    "seoanalyzer_me|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A's 'Recently Listed' header is a gray strip with a blue icon block and a small blue 'View More' button; B uses a large bold h2 with a plain text 'View More →' link",
+   "evidence": "A_slice_00 band with leaf icon block and button bg rgb(0,174,239); B_slice_00 'Recently Listed' h2 with blue link at right",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|30",
+    "seoanalyzer_me|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "B's listing section sits on a pale blue-gray background; A's sits on white",
+   "evidence": "B background rgb(244,247,251) x4, visible behind the cards in B_slice_00/01; A_slice_00/01 white",
+   "side": "generated",
+   "members": [
+    "seoanalyzer_me|opus|31",
+    "seoanalyzer_me|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "A separates card stats into bordered cells with uppercase labels; B uses unbordered stat columns with title-case labels",
+   "evidence": "A_slice_01 'SCORE | GLOBAL RANK | PAGE SPEED' in divided cells; B_slice_01 'Score Global Rank Page Speed' with no dividers",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|33",
+    "seoanalyzer_me|opus|34",
+    "seoanalyzer_me|opus|35",
+    "seoanalyzer_me|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "A's site cards have thin square borders, the image inset with padding, and wide gutters; B's cards have rounded corners, edge-to-edge images and tighter gutters",
+   "evidence": "A image width 325 inset in a framed card, columns at x 164/558/951; B image width 335 flush, columns at x 191/552/914, B_slice_01 shows roun",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|32",
+    "seoanalyzer_me|opus|36",
+    "seoanalyzer_me|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "For the sixth site, A shows a broken image with alt text; B shows a gray 'No preview available' placeholder and has no img element",
+   "evidence": "A images[5] portal.oouagoiwoye.edu.ng natural 0x0, rect 215x32; B lists 5 images, B_slice_01 placeholder text",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|37",
+    "seoanalyzer_me|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "The image alt texts are worded differently",
+   "evidence": "A alt 'bulktrkr.com'; B alt 'Bulktrkr.com screenshot'",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|38",
+    "seoanalyzer_me|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A's footer is slate blue-gray with vertical dividers; B's footer is near-black navy with 2 columns and a horizontal rule above the copyright",
+   "evidence": "A bg rgb(60,71,100); B bg rgb(15,23,42), B_slice_01",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|40",
+    "seoanalyzer_me|opus|41",
+    "seoanalyzer_me|sonnet|18",
+    "seoanalyzer_me|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "A's footer navigation lists only 'HOME' in uppercase; B lists 'Home' and 'Site vs Site'",
+   "evidence": "A_slice_01 'HOME'; B_slice_01 'Home', 'Site vs Site'",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|43",
+    "seoanalyzer_me|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "The copyright punctuation differs",
+   "evidence": "A 'Copyright © 2020. H-educate All rights reserved.' vs B identical text, but B has no period after the year missing? both have it; B is lig",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|45"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I22",
+   "text": "B lays out with CSS grid and flex; A has no computed grid or flex",
+   "evidence": "display_grid/flex A 0/0 vs B 18/11",
+   "side": "generated",
+   "members": [
+    "seoanalyzer_me|opus|46",
+    "seoanalyzer_me|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "The corner radii differ: A is mostly square with small radii; B uses medium 8–15px radii for its cards",
+   "evidence": "A buckets 0:274, 1–7:16, 8–15:0, pill:3; B 0:135, 1–7:2, 8–15:12, pill:4",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|48",
+    "seoanalyzer_me|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "The body text colors differ: A uses neutral gray #333; B uses a dark blue-slate and a muted slate for secondary text",
+   "evidence": "body_color A rgb(51,51,51) vs B rgb(27,36,51); B secondary rgb(91,102,120) x34",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|49",
+    "seoanalyzer_me|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "A's link blue is Bootstrap-style; B's accent blue is a more saturated royal blue",
+   "evidence": "A text rgb(51,122,183) x32; B rgb(37,99,235) bg x3 and text x7",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|50",
+    "seoanalyzer_me|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "A uses <strong> for stat numbers; B uses <b> and <small>",
+   "evidence": "A strong 18; B b 18 and small 18",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|opus|51",
+    "seoanalyzer_me|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "B's page is taller",
+   "evidence": "page_height A 2399 vs B 2560",
+   "side": "generated",
+   "members": [
+    "seoanalyzer_me|opus|52",
+    "seoanalyzer_me|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "A mixes several font families: Helvetica Neue, Open Sans, Montserrat, Lora, plus FontAwesome and Glyphicons icon fonts. B uses only system-ui.",
+   "evidence": "A fonts_by_element_count lists 6 families (Helvetica Neue 146, Open Sans 66, Montserrat 63, FontAwesome 16, lora 1, Glyphicons 1). B: system",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "A's card heights vary with title wrapping. 'Homework-solutions.blogspot.com' wraps to two lines, which pushes that card's stats down. B's rows are uniform, with titles on one line.",
+   "evidence": "A slice 2: the middle card's stat row sits lower than its neighbors. B: stat rows aligned at y≈143.",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A footer has icon-decorated contact lines (map pin, phone, envelope) and four diamond-shaped social icons (Facebook, Twitter, Google+, LinkedIn) in green. B shows only plain address and email text, with no icons or social links.",
+   "evidence": "A slice 2 shows diamond outlines at y≈977. B has i: 1 and a: 17.",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "A loads many external resources: 15 scripts, 8 stylesheets and 14 link tags. B is self-contained, with 0 scripts, 0 stylesheets and a single inline style tag.",
+   "evidence": "A counts scripts 15, stylesheets 8. B scripts 0, stylesheets 0, style 1.",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "A relies on 24 inline style attributes and 250 class uses (111 unique), in a Bootstrap-like style. B has no inline styles and only 60 class uses (22 unique).",
+   "evidence": "A inline_style_attrs 24, classes total 250, unique 111. B inline_style_attrs 0, total 60, unique 22.",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "A defines 66 transitions and B defines 7, so A is much more interactive in its styling.",
+   "evidence": "effects.transitions A 66, B 7.",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "The content container is about 1140px wide in A (x from 150 to 1290). B's is about 1060px (x from 190 to 1250). B's cards are slightly larger (335px against 325px) with tighter gutters.",
+   "evidence": "Image rects: A x=164, 558, 951, w 325. B x=191, 552, 914, w 335.",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "The word count is 204 in A and 219 in B. B has 3 emoji against A's 1, and neither has em dashes or exclamation marks. B's title uses an en dash.",
+   "evidence": "text_stats words and emoji.",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "Both pages keep the same H1 count (1) and the same six screenshot sites with identical stats (72/100, 430,476, 99% and so on). The copy for the features and the About text is nearly verbatim.",
+   "evidence": "h1_count 1 in both. Feature descriptions and the about paragraph read the same in the slices.",
+   "side": "both",
+   "members": [
+    "seoanalyzer_me|sonnet|38"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page title appends a descriptive tagline after the brand or product name, separated by an en dash.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Hero H1 is very large (~54px), bold, in title case rather than all caps.",
+   "family": "typography",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Body text is 16px with roomy line height; h2 headings are large (~34px) and bold.",
+   "family": "typography",
+   "items": [
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "statement": "Typography relies on a single system-ui font stack, with no web fonts or icon fonts.",
+   "family": "typography",
+   "items": [
+    "I2",
+    "I28"
+   ]
+  },
+  {
+   "statement": "Hero background is a diagonal gradient from dark blue to cyan instead of a flat color.",
+   "family": "color",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Palette uses dark blue-slate text with muted slate secondary text and a saturated royal-blue accent.",
+   "family": "color",
+   "items": [
+    "I24",
+    "I25"
+   ]
+  },
+  {
+   "statement": "Alternating sections sit on a pale blue-gray background, with a near-black navy footer.",
+   "family": "color",
+   "items": [
+    "I14",
+    "I19"
+   ]
+  },
+  {
+   "statement": "Primary call-to-action is a single fully rounded white pill button with no input field.",
+   "family": "component",
+   "items": [
+    "I8"
+   ]
+  },
+  {
+   "statement": "Suggested links appear as translucent pill chips after a small letter-spaced label.",
+   "family": "component",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "Features are left-aligned bordered cards with rounded corners and colored square icon tiles.",
+   "family": "component",
+   "items": [
+    "I10",
+    "I23"
+   ]
+  },
+  {
+   "statement": "Feature icons are emoji glyphs placed on colored tiles instead of icon-font glyphs.",
+   "family": "imagery",
+   "items": [
+    "I11",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Content cards have rounded corners, edge-to-edge images and tighter gutters, with uniform row alignment.",
+   "family": "component",
+   "items": [
+    "I16",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Card stats are unbordered columns with title-case labels and no dividers.",
+   "family": "component",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Missing images show a neutral gray 'No preview available' placeholder rather than a broken image.",
+   "family": "imagery",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Section headers use a large bold heading paired with a plain text link carrying an arrow.",
+   "family": "component",
+   "items": [
+    "I13"
+   ]
+  },
+  {
+   "statement": "Header logo is a blue gradient rounded-square mark, with links and language toggle grouped at right.",
+   "family": "component",
+   "items": [
+    "I6",
+    "I7"
+   ]
+  },
+  {
+   "statement": "Footer is minimal: two columns of plain text, a horizontal rule above the copyright, and no social icons.",
+   "family": "component",
+   "items": [
+    "I19",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Footer navigation and labels use title case rather than uppercase.",
+   "family": "copy",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Image alt text is descriptive, using a 'name screenshot' pattern.",
+   "family": "semantic_dom",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Page is built with a few semantic sections, a single nav, and a clear h1–h2–h3 hierarchy.",
+   "family": "semantic_dom",
+   "items": [
+    "I1",
+    "I12"
+   ]
+  },
+  {
+   "statement": "Layout uses modern CSS grid and flexbox with a narrower centered container.",
+   "family": "layout",
+   "items": [
+    "I22",
+    "I34"
+   ]
+  },
+  {
+   "statement": "Page is self-contained, with no scripts or external stylesheets and one inline style block.",
+   "family": "other",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "Styling uses few classes and no inline style attributes, with minimal transitions.",
+   "family": "other",
+   "items": [
+    "I32",
+    "I33"
+   ]
+  }
+ ]
+}

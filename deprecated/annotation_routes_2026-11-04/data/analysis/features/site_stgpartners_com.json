@@ -1,0 +1,686 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Document title uses a brand-name-plus-tagline pattern separated by an em dash, and the tagline repeats the H1 word for word.",
+   "evidence": "title 'STG Partners — Partners for Business Transformation'; h1 'Partners for Business Transformation'",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|00",
+    "stgpartners_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "The page has exactly one H1, followed by four H2 section headings and eleven H3s.",
+   "evidence": "h1_count 1; tag_counts h2: 4, h3: 11",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|01"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I2",
+   "text": "Helvetica Neue is the only font family in use, with no web-font stylesheet loaded.",
+   "evidence": "fonts_by_element_count [['Helvetica Neue',128]]; stylesheets 0; h1 font_family '\"Helvetica Neue\", Helvetica, Arial, sans-serif'",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|02",
+    "stgpartners_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "Card titles and news headlines use a heavier weight than the light H2s, which creates weight contrast between levels.",
+   "evidence": "Slice 1: 'Customer Centric' and 'Accelerators' in bold white; slice 2: news titles in medium-weight dark text",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|03",
+    "stgpartners_com|opus|04",
+    "stgpartners_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "Each section starts with a small, uppercase, widely letter-spaced eyebrow label in blue above its H2.",
+   "evidence": "Labels 'OUR APPROACH', 'PORTFOLIO', 'WHO WE ARE' and 'NEWS' in blue (rgb(63,167,214) is among top_text_colors)",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|06",
+    "stgpartners_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "Navigation links and button labels are uppercase with letter-spacing.",
+   "evidence": "Header nav 'OUR APPROACH PORTFOLIO WHO WE ARE NEWS CONTACT'; buttons 'OUR APPROACH', 'VIEW OUR WORK', 'READ MORE'",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|07",
+    "stgpartners_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "Light sections alternate between white and a very pale blue-grey band.",
+   "evidence": "top_backgrounds rgb(245,247,250) ×2 (Portfolio and News sections) and rgb(255,255,255); body_bg white",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|09",
+    "stgpartners_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "A single bright cyan-blue serves as the accent colour, used for eyebrows, 'READ MORE' links, the 'Learn more.' link and the arrow in the announcement bar.",
+   "evidence": "top_text_colors rgb(63,167,214) ×11; visible in slices 1–2 and in the bar arrow in slice 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|08",
+    "stgpartners_com|opus|10",
+    "stgpartners_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "Body text is a dark navy-slate, not pure black.",
+   "evidence": "body_color rgb(26,36,51)",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|11"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I9",
+   "text": "Secondary text on dark backgrounds uses muted blue-greys.",
+   "evidence": "top_text_colors rgb(199,209,222) ×21 and rgb(185,197,212) ×6; card descriptions and hero subtext appear greyish",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|05",
+    "stgpartners_com|opus|12",
+    "stgpartners_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "Corners are almost all square, with a few small radii of 1–7px.",
+   "evidence": "border_radius_buckets bucket_0 119, bucket_1_7 9, others 0; cards show slightly rounded corners",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|14",
+    "stgpartners_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "One element uses backdrop blur, which matches the translucent navy header.",
+   "evidence": "backdrop_blur 1; background rgba(14,27,46,0.96) in top_backgrounds; header in slice 0 is slightly lighter than the hero",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|15",
+    "stgpartners_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "No gradients, box shadows, animations or transforms are used; the page depends on flat colour fields.",
+   "evidence": "gradient_backgrounds 0; box_shadows 0; animations 0; transforms 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|13",
+    "stgpartners_com|opus|16",
+    "stgpartners_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A 'Menu' button exists in the DOM but does not show at desktop width; it has a transparent background, a 3px radius and 8px 14px padding.",
+   "evidence": "primary_button text 'Menu', bg rgba(0,0,0,0), radius 3px, padding 8px 14px; not visible in slice 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|18",
+    "stgpartners_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "The hero is a text-only navy block with a left-aligned H1 that wraps to two lines, a subheading and one outlined button.",
+   "evidence": "Slice 0: 'Partners for Business Transformation', subtext 'A private equity firm focused on…', white-outlined 'OUR APPROACH' button",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|19",
+    "stgpartners_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "All buttons are ghost/outline buttons: a thin border with no fill. They are white-bordered on dark backgrounds and dark-bordered on light ones.",
+   "evidence": "'OUR APPROACH' (slice 0), 'VIEW OUR WORK' and 'READ MORE' (slices 1–2) are all outlined rectangles",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "A full-bleed team photo sits below the hero, spanning the whole 1440px viewport width at 630px tall.",
+   "evidence": "image-01.png rect x0 w1440 h630, natural 1439×630; y 562",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|21",
+    "stgpartners_com|opus|22",
+    "stgpartners_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "The photo has a descriptive alt text.",
+   "evidence": "alt 'The STG Partners leadership team standing together in a bright office'; alt_missing 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|23"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I18",
+   "text": "A thin navy announcement bar under the photo holds a centred news headline and a cyan arrow.",
+   "evidence": "Slice 0: 'McAfee Announces Sale of Enterprise Business to Symphony Technology Group for $4.0 Billion →' on rgb(21,38,61)-like band",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|24",
+    "stgpartners_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "The 'Our Approach' and 'Who We Are' sections use a split layout: the heading sits in the left column and a 2×2 or 1×2 card grid fills the right.",
+   "evidence": "Slice 1: heading on the left, four cards at x≈683–1244; slice 2: Experts/Innovators cards on the right",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|25",
+    "stgpartners_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "Feature cards are dark navy tiles with a white line icon, a bold white title and grey description text.",
+   "evidence": "Cards 'Customer Centric', 'Committed to Growth', 'Engaged Partners', 'Accelerators', 'Experts', 'Innovators'",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|26",
+    "stgpartners_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Card icons are SVG files loaded through <img> tags, all rendered at 52×52 even though their natural sizes differ.",
+   "evidence": "6 icon images (icn-*.svg) with rect w52 h52; natural sizes vary, e.g. 100×59 and 39×63; svgs count 0 (none inline)",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|27",
+    "stgpartners_com|opus|28",
+    "stgpartners_com|sonnet|13",
+    "stgpartners_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "Icons are thin-stroke outline illustrations: a hand holding a person, an up arrow in a circle, a dot pyramid, lines with nodes, a network graph and a lightbulb.",
+   "evidence": "Slices 1–2 card icons",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|29"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I23",
+   "text": "Card heights in a row follow the tallest card, leaving empty space in cards with shorter copy.",
+   "evidence": "Slice 1: 'Engaged Partners' card has empty space below short text, matching the height of the 'Accelerators' card",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|30",
+    "stgpartners_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "Only the 'Accelerators' card has an inline link, styled as underlined cyan text.",
+   "evidence": "Slice 1: 'Learn more.' underlined in blue",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|31",
+    "stgpartners_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "The Portfolio section is text only: an eyebrow, a one-line H2, a short subline and an outlined button, with no logos or images.",
+   "evidence": "Slice 1: 'Building strategic value for market leading companies', 'Software, data and analytics.', 'VIEW OUR WORK'",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|32",
+    "stgpartners_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "Content is held in a centred container about 1048px wide, from x≈196 to x≈1244 on a 1440px page.",
+   "evidence": "Left edges at x 196 and right edges at x 1244 recur across header, cards, news and footer in the slices; page_width 1440",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|33",
+    "stgpartners_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "Sections have large vertical padding of roughly 100px or more.",
+   "evidence": "Slices 1–2: wide spacing between the Portfolio band edges and its content, and between sections",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|34"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I28",
+   "text": "Each news row has a date block on the left (a small uppercase month above a large light-weight day number), a headline in the middle and a cyan 'READ MORE' on the right.",
+   "evidence": "Slice 2: 'JUN 01', 'MAY 26', 'MAY 19', 'MAY 04', 'MAY 04'",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|35",
+    "stgpartners_com|opus|36",
+    "stgpartners_com|sonnet|20",
+    "stgpartners_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "Long news headlines wrap to two lines while the date and link stay vertically centred.",
+   "evidence": "Slice 2: Symphony Talent and Extenda Retail rows wrap onto a second line",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|37",
+    "stgpartners_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "News copy is about acquisitions and partnerships of portfolio companies.",
+   "evidence": "'Escalent Acquires Grail Insights', 'Press Ganey Acquires SPH Analytics', etc.",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|39"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I31",
+   "text": "The footer is navy, with the STG wordmark on the left and six uppercase links on the right; a horizontal rule separates it from the copyright row and the 'Terms Of Use' link.",
+   "evidence": "Slice 2: HOME, OUR APPROACH, PORTFOLIO, WHO WE ARE, NEWS, CONTACT; '© 2021 STG Partners, LLC'",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|40",
+    "stgpartners_com|opus|41",
+    "stgpartners_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "Semantic landmarks are used: header, main, four sections and footer. There are no article, aside or figure elements.",
+   "evidence": "semantic header 1, main 1, section 4, footer 1, article 0, aside 0, figure 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|42",
+    "stgpartners_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "Lists are built with ul/li: 3 lists containing 16 items in total.",
+   "evidence": "tag_counts ul 3, li 16",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|43"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "There are six ARIA attributes and no inline style attributes.",
+   "evidence": "aria_attrs 6; inline_style_attrs 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|44",
+    "stgpartners_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "Styles come from a single embedded <style> block, with no utility-class framework.",
+   "evidence": "tag_counts style 1; stylesheets 0; tailwind_like_fraction 0; 21 unique classes across 50 uses",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|45",
+    "stgpartners_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "Copy is short: 237 words, with no emoji, no exclamation marks and no em dashes in the body text.",
+   "evidence": "text_stats words 237, emoji 0, exclamations 0, em_dashes 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|47",
+    "stgpartners_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "The page is about 3931px tall, and the footer extends into the final short slice.",
+   "evidence": "page_height 3931; slice 3 is a solid navy strip",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|48"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I38",
+   "text": "Bold text appears through five <b> elements, and there are no strong tags.",
+   "evidence": "tag_counts b 5",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|49"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I39",
+   "text": "The brand mark is a bold, wide-tracked text wordmark 'STG', not an image or SVG. It appears in both header and footer.",
+   "evidence": "svgs 0; 'STG' in header at top-left and footer",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I40",
+   "text": "The section headings are sentence-case value statements. Section labels are separate one-word eyebrows.",
+   "evidence": "'Built around people and long-term growth', 'Business builders with deep sector expertise', 'Latest from STG and our companies'",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|sonnet|31"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I41",
+   "text": "The page is mostly text and flat colour, with one photograph. Section variety comes from background banding and card clusters, not from imagery.",
+   "evidence": "images 7 total: 1 photo and 6 icons; page_height 3931",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|sonnet|32"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Document title combines brand name and tagline with an em dash, and the tagline repeats the H1 text.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Heading hierarchy is clean: a single H1, few H2 section headings, and more numerous H3 card or item titles.",
+   "family": "semantic_dom",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "A single sans-serif font family (Helvetica Neue stack) is used throughout, with no web-font loading.",
+   "family": "typography",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Light-weight large headings contrast with bolder or medium-weight card titles and headlines, creating weight hierarchy between levels.",
+   "family": "typography",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Each section opens with a small uppercase, widely letter-spaced accent-coloured eyebrow label above the heading.",
+   "family": "typography",
+   "items": [
+    "I4",
+    "I40"
+   ]
+  },
+  {
+   "statement": "Navigation links and button labels are set in uppercase with letter-spacing.",
+   "family": "typography",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Light sections alternate between white and a very pale blue-grey background band.",
+   "family": "color",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "One bright cyan-blue accent colour is reused for eyebrows, text links, read-more links and arrows against a navy palette.",
+   "family": "color",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Body text is dark navy-slate rather than pure black, and secondary text on dark backgrounds uses muted blue-greys.",
+   "family": "color",
+   "items": [
+    "I8",
+    "I9"
+   ]
+  },
+  {
+   "statement": "Corners are mostly square, with only small radii of a few pixels on a handful of elements.",
+   "family": "decoration",
+   "items": [
+    "I10"
+   ]
+  },
+  {
+   "statement": "Design is flat: no gradients, box shadows, animations or transforms, relying on solid colour fields.",
+   "family": "decoration",
+   "items": [
+    "I12",
+    "I41"
+   ]
+  },
+  {
+   "statement": "A translucent dark header uses backdrop blur.",
+   "family": "decoration",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "All buttons are ghost/outline rectangles with thin borders and no fill, white on dark and dark on light.",
+   "family": "component",
+   "items": [
+    "I15",
+    "I13"
+   ]
+  },
+  {
+   "statement": "Hero is a text-only dark block with left-aligned H1, a subheading and a single outlined button.",
+   "family": "layout",
+   "items": [
+    "I14"
+   ]
+  },
+  {
+   "statement": "A full-bleed photograph spans the viewport width beneath the hero, with descriptive alt text.",
+   "family": "imagery",
+   "items": [
+    "I16",
+    "I17"
+   ]
+  },
+  {
+   "statement": "A thin dark announcement bar holds a centred headline and an accent-coloured arrow.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Sections use a split layout with the heading in the left column and a card grid on the right.",
+   "family": "layout",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Feature cards are dark navy tiles with a white line icon, bold white title and grey description.",
+   "family": "component",
+   "items": [
+    "I20",
+    "I23"
+   ]
+  },
+  {
+   "statement": "Icons are thin-stroke outline illustrations, loaded as external SVG images displayed at a uniform size.",
+   "family": "imagery",
+   "items": [
+    "I21",
+    "I22"
+   ]
+  },
+  {
+   "statement": "Inline text links are underlined in the accent colour.",
+   "family": "component",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Some sections are text-only, with an eyebrow, short heading, subline and button, no imagery.",
+   "family": "layout",
+   "items": [
+    "I25",
+    "I41"
+   ]
+  },
+  {
+   "statement": "Content sits in a centred container about 1050px wide on a wide viewport.",
+   "family": "layout",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Sections have generous vertical padding of about 100px or more.",
+   "family": "layout",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "News rows show a date block on the left, headline in the middle, and accent read-more link on the right, vertically centred.",
+   "family": "component",
+   "items": [
+    "I28",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Footer is dark with a wordmark, uppercase links, and a horizontal rule above the copyright row.",
+   "family": "layout",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "Semantic landmarks (header, main, sections, footer) and ul/li lists are used, without article, aside or figure.",
+   "family": "semantic_dom",
+   "items": [
+    "I32",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Styling lives in a single embedded style block with no inline styles or utility-class framework.",
+   "family": "semantic_dom",
+   "items": [
+    "I34",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Copy is concise and plain, with no emoji, exclamation marks or em dashes in the body text.",
+   "family": "copy",
+   "items": [
+    "I36"
+   ]
+  },
+  {
+   "statement": "Section headings are sentence-case value statements, with separate one-word eyebrow labels.",
+   "family": "copy",
+   "items": [
+    "I40"
+   ]
+  },
+  {
+   "statement": "The brand mark is a bold, wide-tracked text wordmark in header and footer rather than an image.",
+   "family": "component",
+   "items": [
+    "I39"
+   ]
+  }
+ ]
+}

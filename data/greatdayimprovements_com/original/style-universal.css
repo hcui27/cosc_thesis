@@ -1,0 +1,92 @@
+/* COOKIE */
+
+.btn-container {
+	padding: 15px 0 20px;
+}
+
+.btn {
+	padding: 7px 20px 9px;
+	font: bold 23px/23px Arial, Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	outline: 0;
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+.btn-blue {
+	background-color: #165d9f;
+	color: #fff;
+	transition: background-color 0.2s;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+	background-color: #478ccd;
+}
+
+.cookie-container {
+	display: none;
+	position: relative;
+	top: 0;
+	padding: 15px 0;
+	color: #555;
+	background-color: #f2f7fb;
+	border-bottom: 1px solid #d0cece;
+	transition: all 0.4s;
+}
+
+.cookie-container.cookie-slide {
+	z-index: 99;
+	position: absolute;
+	width: 100%;
+	top: -100px;
+}
+
+.cookie-container.cookie-none {
+	display: none;
+	z-index: 99;
+	position: absolute;
+	width: 100%;
+	top: -100px;
+}
+
+	.cookie-content {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		width: 92.5%;
+		max-width: 975px;
+		margin: 0 auto;
+	}
+	
+		.cookie-content p {
+			margin: 0;
+			font-size: 16px;
+			line-height: 18px;
+			text-transform: none;
+		}
+		
+			.cookie-content p a {
+				color: #555;
+				text-decoration: underline;
+			}
+			
+			.cookie-content p a:hover {
+				color: #555;
+				text-decoration: none;
+			}
+		
+		.cookie-content .btn-container {
+			padding: 0;
+		}
+		
+			.cookie-content .btn {
+				padding: 9px 12px 11px;
+				font: 14px/14px Arial, Helvetica, sans-serif !important;
+				border: 0;
+				-webkit-appearance: none;
+				-webkit-border-radius: 5px;
+			}

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Frangipani Creative</title>
+<meta name="description" content="Training and coaching in writing, blogging and creativity, with Corinne Rodrigues in Secunderabad, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#fdf8f3; --paper:#fff; --ink:#2b2226; --muted:#6b5c62;
+  --pink:#c2255c; --pink-soft:#f9dfe6; --gold:#e8a33d; --night:#171214;
+  --line:#ecdfd8;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Nunito Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--cream:#1a1417; --paper:#241c20; --ink:#f4ebe6; --muted:#b9a8ae; --pink:#ff7aa2; --pink-soft:#3a2530; --line:#3a2d33; --night:#0e0a0c}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.65 var(--sans)}
+img{max-width:100%;display:block}
+a{color:var(--pink)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0 0 .5em}
+h2{font-size:clamp(2rem,4vw,2.9rem)}
+h3{font-size:1.5rem}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--pink);margin-bottom:.8rem}
+section{padding:80px 0}
+.btn{display:inline-block;background:var(--pink);color:#fff;padding:.75em 1.5em;border-radius:99px;text-decoration:none;font-weight:700;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(194,37,92,.3)}
+.btn.ghost{background:transparent;color:inherit;border:2px solid currentColor}
+
+header.nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--cream) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{font-family:var(--serif);font-size:1.5rem;font-weight:600;text-decoration:none;color:var(--ink)}
+.nav nav{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end}
+.nav nav a{color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:600}
+.nav nav a:hover{color:var(--pink)}
+@media(max-width:760px){.nav nav a:nth-child(n+4){display:none}}
+
+.hero{position:relative;min-height:84vh;display:flex;align-items:center;color:#fff;background:#2a211f url(images/the-frangipani-creative.png) center/cover}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,12,14,.85),rgba(20,12,14,.35) 70%,rgba(20,12,14,.1))}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(3rem,8vw,6rem);max-width:10ch}
+.hero p{font-size:1.25rem;max-width:34ch;margin:0 0 1.8rem}
+.hero .eyebrow{color:var(--gold)}
+.hero .btn.ghost{margin-left:10px}
+
+.about{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
+.about ul{padding:0;margin:0;list-style:none}
+.about li{padding:14px 0 14px 28px;border-bottom:1px solid var(--line);position:relative}
+.about li::before{content:"✿";position:absolute;left:0;color:var(--pink)}
+.about li:first-child{padding-top:0}
+.soon{margin-top:24px;padding:16px 20px;background:var(--pink-soft);border-radius:14px;font-size:.95rem}
+@media(max-width:800px){.about{grid-template-columns:1fr;gap:28px}}
+
+.coaching{background:var(--night) url(images/the-frangipani-creative_2.png) right center/cover;color:#fff;position:relative}
+.coaching::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,10,12,.95) 35%,rgba(14,10,12,.2))}
+.coaching .wrap{position:relative}
+.coaching .box{max-width:480px}
+.coaching .eyebrow{color:var(--gold)}
+.coaching p{font-size:1.1rem}
+@media(max-width:700px){.coaching::before{background:rgba(14,10,12,.8)}}
+
+.head{max-width:620px;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;flex-direction:column}
+.stars{color:var(--gold);letter-spacing:3px;font-size:1.1rem}
+.card .date{font-size:.8rem;color:var(--muted)}
+.card p{margin:.8rem 0 1.2rem;flex:1}
+.card .who{font-family:var(--serif);font-size:1.4rem;font-weight:600;margin:0}
+.card .links{font-size:.9rem;display:flex;gap:16px;flex-wrap:wrap;margin-top:4px}
+.more{margin-top:32px}
+
+.blog{background:var(--paper);border-block:1px solid var(--line)}
+.posts{list-style:none;margin:0;padding:0}
+.posts li{border-bottom:1px solid var(--line)}
+.posts a{display:flex;justify-content:space-between;gap:20px;align-items:baseline;padding:20px 4px;text-decoration:none;color:var(--ink);transition:padding .2s,color .2s}
+.posts a:hover{padding-left:14px;color:var(--pink)}
+.posts .t{font-family:var(--serif);font-size:1.6rem;font-weight:600;line-height:1.2}
+.posts .by{font-size:.88rem;color:var(--muted);white-space:nowrap}
+@media(max-width:600px){.posts a{flex-direction:column;gap:4px}}
+.authors{margin-top:24px;font-size:.95rem}
+
+.insta-banner{height:260px;background:url(images/arvee-marie-unsplash.jpg) center 40%/cover;border-radius:24px;margin-bottom:36px}
+.ig{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.ig div{aspect-ratio:1;border-radius:16px;padding:22px;display:flex;align-items:flex-end;font-family:var(--serif);font-size:1.4rem;font-weight:600;line-height:1.2;background:var(--pink-soft);color:var(--ink)}
+.ig div:nth-child(3n+2){background:var(--night);color:#fff}
+.ig div:nth-child(3n){background:var(--gold);color:#2b2226}
+.ig-cta{margin-top:30px}
+
+.social{display:flex;flex-wrap:wrap;gap:12px}
+.social a{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:.6em 1.3em;text-decoration:none;color:var(--ink);font-weight:600}
+.social a:hover{border-color:var(--pink);color:var(--pink)}
+.social small{color:var(--muted);font-weight:400}
+
+.contact{background:var(--night);color:#f4ebe6}
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact .eyebrow{color:var(--gold)}
+.contact address{font-style:normal}
+.contact a{color:#ffb3c9}
+.contact dl{margin:0}.contact dt{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#b9a8ae;margin-top:14px}.contact dd{margin:0;font-size:1.15rem}
+@media(max-width:700px){.contact .grid{grid-template-columns:1fr}}
+
+footer{background:var(--night);color:#b9a8ae;font-size:.88rem;padding:0 0 36px}
+footer .wrap{border-top:1px solid #3a2d33;padding-top:28px;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 20px}
+footer a{color:#e7d6dc}
+footer p{margin:0 0 .4rem}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">The Frangipani Creative</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#clients">Happy Clients</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Secunderabad, India</div>
+      <h1>The Frangipani Creative</h1>
+      <p>Training and coaching in writing, blogging and creativity.</p>
+      <a class="btn" href="#coaching">Personalized blog coaching</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <div class="eyebrow">About</div>
+        <h2>Meet Corinne Rodrigues</h2>
+        <p>The Frangipani Creative is the studio run by <a href="https://corinnerodrigues.com">Corinne Rodrigues</a>, based in Secunderabad, India. It offers training and coaching in writing, blogging and creativity.</p>
+        <p>Corinne is a woman enjoying midlife, who has moved from self-improvement toward self-acceptance and being happy as herself.</p>
+        <div class="soon">Details of programs, courses, training and other offline events are coming soon.</div>
+      </div>
+      <ul>
+        <li>A lover of words, a blogger on self-acceptance, and a book reviewer.</li>
+        <li>Writes about life, wellness and relationships at <a href="http://everydaygyaan.com">Everyday Gyaan</a>.</li>
+        <li>An avid reader who reviews books at <a href="http://corinnerodrigues.com">CorinneRodrigues.com</a>.</li>
+        <li>Offers coaching at <a href="https://thefrangipanicreative.com">The Frangipani Creative</a> for anyone wanting to explore their creativity.</li>
+        <li>Curious about the name? Read <a href="https://thefrangipanicreative.com/my-love-for-frangipani/">why she chose it</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="coaching" id="coaching">
+    <div class="wrap">
+      <div class="box">
+        <div class="eyebrow">Service</div>
+        <h2>Personalized Blog Coaching</h2>
+        <p>Coaching for people who want to start a blog or improve their existing blogging.</p>
+        <a class="btn" href="https://thefrangipanicreative.com/personalized-blog-coaching/">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Happy Clients</div>
+        <h2>Kind words from people she’s coached</h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="stars" aria-label="5 out of 5">★★★★★</div>
+          <div class="date">15 October 2019</div>
+          <p>She had long struggled with SEO and getting her blog noticed. The training taught her both what to do and the reasons behind it. Writing a real blog post during the session and applying the lessons on the spot helped her understand fully. She calls Corinne a wonderful teacher who made it all easy.</p>
+          <h3 class="who">Sunita Saldhana</h3>
+          <div class="links"><a href="https://sunitasaldhana.com/">Her blog</a><a href="https://thefrangipanicreative.com/testimonials/sunita-saldhana/">Testimonial</a></div>
+        </article>
+        <article class="card">
+          <div class="stars" aria-label="5 out of 5">★★★★★</div>
+          <div class="date">15 October 2019</div>
+          <p>She attended “Introduction to Blogging/Start A Blog in 2019” and found it a memorable experience, mainly thanks to its fun and interesting activities. It gave her all the blogging information she wanted plus knowledge of related topics. The programme went beyond her expectations in content, method and focus, and she hopes for more courses.</p>
+          <h3 class="who">Madhavi Mahadev</h3>
+          <div class="links"><a href="https://thefrangipanicreative.com/testimonials/madhavi-mahadev/">Testimonial</a></div>
+        </article>
+        <article class="card">
+          <div class="stars" aria-label="5 out of 5">★★★★★</div>
+          <div class="date">15 October 2019</div>
+          <p>He felt like a lone fish in a vast ocean of blogging and spent months looking for someone to learn from. His search ended at The Frangipani Creative, which gave him the support and information to start blogging. He found Corinne and the others cooperative and friendly, and recommends it to anyone seeking guidance in writing or blogging.</p>
+          <h3 class="who">Anil Kumar Margani</h3>
+          <div class="links"><a href="https://thefrangipanicreative.com/testimonials/anil-kumar-margani/">Testimonial</a></div>
+        </article>
+      </div>
+      <p class="more"><a class="btn ghost" style="color:var(--pink)" href="https://thefrangipanicreative.com/happy-clients/">All happy clients</a></p>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <div class="wrap">
+      <div class="head">
+        <div class="eyebrow">Blog</div>
+        <h2>Latest articles</h2>
+      </div>
+      <ul class="posts">
+        <li><a href="https://thefrangipanicreative.com/writers-healthy-diet-and-lifestyle/"><span class="t">Writer’s Healthy Diet and Lifestyle</span><span class="by">by Lux</span></a></li>
+        <li><a href="https://thefrangipanicreative.com/productivity-hacks-for-writing/"><span class="t">12 Productivity Hacks for Writing</span><span class="by">by Fabida Abdulla</span></a></li>
+        <li><a href="https://thefrangipanicreative.com/focus-on-writing/"><span class="t">4 Steps On How to Focus On Writing</span><span class="by">by Lux</span></a></li>
+        <li><a href="https://thefrangipanicreative.com/the-treasures-of-journaling/"><span class="t">Have You Found The Treasures of Journaling?</span><span class="by">by Fabida Abdulla</span></a></li>
+        <li><a href="https://thefrangipanicreative.com/quotes-to-encourage-you-to-be-a-fearless-writer/"><span class="t">20 Quotes To Encourage You To Be A Fearless Writer</span><span class="by">Recent post</span></a></li>
+      </ul>
+      <p class="authors">
+        Authors: <a href="https://thefrangipanicreative.com/author/lux/">Lux</a> · <a href="https://thefrangipanicreative.com/author/fabida-abdulla/">Fabida Abdulla</a> ·
+        <a href="https://thefrangipanicreative.com/blog/">Blog</a> · <a href="https://thefrangipanicreative.com/archives/">Archives</a> ·
+        <a href="https://thefrangipanicreative.com/the-frangipani-creative-podcast/">Podcast</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="instagram">
+    <div class="wrap">
+      <div class="insta-banner" role="img" aria-label="Pink frangipani blossoms against a blue sky"></div>
+      <div class="head">
+        <div class="eyebrow">Instagram</div>
+        <h2>@thefrangipanicreative</h2>
+        <p>Training and coaching for writing, blogging and creativity. Recent posts touch on:</p>
+      </div>
+      <div class="ig">
+        <div>Diary writing in the past</div>
+        <div>Getting bogged down by non-essentials</div>
+        <div>Looking back to take stock</div>
+        <div>Excitement over a recent purchase</div>
+        <div>Handling your inner critic</div>
+        <div>A quote on infinite creativity</div>
+        <div>Getting stuck on a current project</div>
+        <div>An offer from @artist_pragya</div>
+      </div>
+      <p class="ig-cta"><a class="btn" href="https://www.instagram.com/thefrangipanicreative/">Follow on Instagram</a></p>
+    </div>
+  </section>
+
+  <section id="social" style="padding-top:0">
+    <div class="wrap">
+      <div class="eyebrow">Social media</div>
+      <h2>Find her elsewhere</h2>
+      <div class="social">
+        <a href="https://facebook.com/822416371294356">Facebook <small>Like</small></a>
+        <a href="https://instagram.com/thefrangipanicreative">Instagram <small>Follow</small></a>
+        <a href="https://www.linkedin.com/in/corinnecr">LinkedIn <small>Follow</small></a>
+        <a href="https://pinterest.com/thefrangipanicreative">Pinterest <small>Follow</small></a>
+        <a href="https://twitter.com/CorinneBlogs">Twitter <small>Follow</small></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap grid">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2>Visit or call</h2>
+        <address>Shop #4, AWHO Colony Sector ‘A’,<br>Gautam Enclave,<br>Secunderabad – 500 009, India</address>
+      </div>
+      <dl>
+        <dt>Mobile</dt><dd><a href="tel:+918886034647">91-8886034647</a></dd>
+        <dt>Landline</dt><dd><a href="tel:+914029560398">91-40-29560398</a></dd>
+        <dt>Online</dt><dd><a href="https://thefrangipanicreative.com/contact/">Contact page</a></dd>
+        <dt>Reading list</dt><dd><a href="https://www.amazon.in/shop/corinneblogs?listId=258F67AEOVR3U&amp;ref=idea_share_inf">Books I Recommend</a></dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p>© 2020 – The Frangipani Creative</p>
+      <p>All posts and pages may contain affiliate links. <a href="https://thefrangipanicreative.com/disclosures-and-pr-information/">Disclosures, commenting policies and PR information</a>.</p>
+    </div>
+    <nav>
+      <a href="https://thefrangipanicreative.com/">Home</a>
+      <a href="https://thefrangipanicreative.com/blog/">Blog</a>
+      <a href="https://thefrangipanicreative.com/the-frangipani-creative-podcast/">Podcast</a>
+      <a href="https://thefrangipanicreative.com/happy-clients/">Happy Clients</a>
+      <a href="https://thefrangipanicreative.com/contact/">Contact</a>
+      <a href="https://thefrangipanicreative.com/archives/">Archives</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

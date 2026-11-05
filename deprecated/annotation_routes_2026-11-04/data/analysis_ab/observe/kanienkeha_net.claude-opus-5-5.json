@@ -1,0 +1,277 @@
+[
+ {
+  "observation": "The page is a single long scrolling document 1440px wide and 4883px tall.",
+  "category": "layout",
+  "evidence": "facts.layout page_width 1440, page_height 4883"
+ },
+ {
+  "observation": "Content sits in a centered container about 1040px wide, starting at x=200 and ending around x=1240.",
+  "category": "layout",
+  "evidence": "The logo rect is at x=200 and the map image at x=200; the card grid and nav end near x=1240 in slice 0"
+ },
+ {
+  "observation": "The body background is a warm off-white rather than pure white.",
+  "category": "color",
+  "evidence": "body_bg rgb(251,250,246)"
+ },
+ {
+  "observation": "Full-width bands alternate between the off-white base and a pale mint tint.",
+  "category": "color",
+  "evidence": "rgb(230,244,236) appears 3 times in top_backgrounds; mint bands are visible behind the map, Total Site Numbers and She:kon sections"
+ },
+ {
+  "observation": "A single saturated green is the accent color for buttons, the active filter chip and the green part of the H1.",
+  "category": "color",
+  "evidence": "rgb(27,154,85) is the background on 7 elements; primary_button bg rgb(27,154,85)"
+ },
+ {
+  "observation": "A darker green is used for link and word text, and it is the second most common text color.",
+  "category": "color",
+  "evidence": "rgb(15,110,59) is used 78 times; the Mohawk words on the cards are dark green"
+ },
+ {
+  "observation": "Body and heading text use a dark desaturated indigo-gray instead of black.",
+  "category": "color",
+  "evidence": "body_color and the h1 color are both rgb(59,58,79)"
+ },
+ {
+  "observation": "A muted gray-violet is used for secondary text such as the card glosses and subtitles.",
+  "category": "color",
+  "evidence": "rgb(108,107,125) is used 71 times"
+ },
+ {
+  "observation": "The page pairs two typefaces: Georgia, a serif, and system-ui, a sans-serif.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Georgia 163, system-ui 140"
+ },
+ {
+  "observation": "Headings, buttons and navigation are set in the system sans, while paragraphs, Mohawk words and blog titles are set in the Georgia serif.",
+  "category": "typography",
+  "evidence": "h1 font_family system-ui; the serif glyphs are visible in the lede, card words and blog list in slices 0 and 2"
+ },
+ {
+  "observation": "The H1 is 56px, bold and centered, and its last words are colored in the green accent.",
+  "category": "typography",
+  "evidence": "h1 font_size 56px, weight 700, text_align center; 'Kanienkeha.net' is green in slice 0"
+ },
+ {
+  "observation": "H2 section headings are 36px bold and set in a tight, slightly condensed sans.",
+  "category": "typography",
+  "evidence": "h2 font_size 36px, weight 700; 'Most Recent' and 'From the blog' in the slices"
+ },
+ {
+  "observation": "Body text is 17px with a line-height of 27.2px, a ratio of 1.6.",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 27.2px"
+ },
+ {
+  "observation": "The header is a single row with the logo image on the left and text nav links on the right, ending in a filled green Donate button.",
+  "category": "component",
+  "evidence": "Slice 0 top; nav links Words, Map, Blog, About, Resources, Contact, Log In and a green Donate button"
+ },
+ {
+  "observation": "The header is separated from the content by a thin bottom hairline, and one element uses a 90%-opacity background with backdrop blur, which suggests a translucent sticky header.",
+  "category": "decoration",
+  "evidence": "backdrop_blur 1; background color(srgb 0.984 0.98 0.965 / 0.9); a line under the header in slice 0"
+ },
+ {
+  "observation": "The logo is a raster GIF scaled down to about 30% of its natural size.",
+  "category": "imagery",
+  "evidence": "moh-logo-1.gif natural 660x145 rendered at 200x44"
+ },
+ {
+  "observation": "The hero is centered and stacked: H1, a serif lede paragraph, a search form, suggestion chips, then two CTA buttons.",
+  "category": "layout",
+  "evidence": "Slice 0, from 'Welcome to' down to the 'Support us on Patreon' and 'Add Words' buttons"
+ },
+ {
+  "observation": "The search field and its Search button are joined into one pill-shaped control with a green outline.",
+  "category": "component",
+  "evidence": "Slice 0 search bar; facts report a Search button with 0px radius and 0px 24px padding, so the rounding comes from the wrapper"
+ },
+ {
+  "observation": "'Try these:' is followed by small outlined pill chips with sample queries: apple, colors and numbers.",
+  "category": "component",
+  "evidence": "Slice 0 below the search bar; 24 elements have pill radius"
+ },
+ {
+  "observation": "Buttons come in pairs of one filled green pill and one outlined green pill.",
+  "category": "component",
+  "evidence": "'Support us on Patreon'/'Add Words', 'See more words'/'Random Word' and 'Become a patron'/'Donate' pairs in the slices"
+ },
+ {
+  "observation": "The hero lede asks for donations directly and ends with an exclamation, the only one on the page.",
+  "category": "copy",
+  "evidence": "'please consider a small donation. You'll be happy you did!'; exclamations 1"
+ },
+ {
+  "observation": "The 'Most Recent' section has segmented filter pills (All, Phrases, Occupations), with the active one filled green.",
+  "category": "component",
+  "evidence": "Slice 0, 'All' is green-filled and the others are outlined"
+ },
+ {
+  "observation": "Dictionary entries are laid out in a 4-column grid of white cards.",
+  "category": "layout",
+  "evidence": "Slices 0 and 1 show four cards per row; display_grid 7"
+ },
+ {
+  "observation": "Each word card has a thick green left border, a thin light border elsewhere and rounded corners.",
+  "category": "decoration",
+  "evidence": "Green left bars on the cards in slices 0 and 1; 77 elements have radius 8-15px"
+ },
+ {
+  "observation": "Each card shows a small sans English gloss above a large bold dark-green serif Mohawk term.",
+  "category": "typography",
+  "evidence": "e.g. 'Wash your hands' / 'Sahtsóhare' in slice 0"
+ },
+ {
+  "observation": "Mohawk words keep diacritics, colons and apostrophes, and long terms wrap or break mid-word inside cards.",
+  "category": "copy",
+  "evidence": "'Kanonhkwa'tsherón:ni s' breaks across lines; 'Ionterihwaienstahkhw aniónhkhwa' in slice 1"
+ },
+ {
+  "observation": "Card heights vary within each row because rows stretch to fit the longest term.",
+  "category": "layout",
+  "evidence": "The first row in slice 0 has two-line cards next to one-line cards of the same height"
+ },
+ {
+  "observation": "The last row of the word grid is incomplete, with 2 of 4 columns filled (Plumber, Councillors).",
+  "category": "layout",
+  "evidence": "Slice 1"
+ },
+ {
+  "observation": "Occupation entries are often listed in gendered pairs marked (m) and (f).",
+  "category": "copy",
+  "evidence": "'Steelworker (m)' / 'Steelworker (f)', 'Baker (m)' / 'Baker (f)' in slices 0 and 1"
+ },
+ {
+  "observation": "The map section is a two-column split: an illustration on the left, and heading, text and a CTA on the right, on a mint band.",
+  "category": "layout",
+  "evidence": "Slice 1, 'Kanienkeha, around the world'"
+ },
+ {
+  "observation": "The map illustration is a stylized world map with pin markers and its own embedded hand-lettered title text.",
+  "category": "imagery",
+  "evidence": "map-nap.png rendered 500x262, with '200+ Locations Kanienkeha Map' text inside the image"
+ },
+ {
+  "observation": "The notes section mirrors the map layout, with text on the left and the image on the right.",
+  "category": "layout",
+  "evidence": "Slice 2, 'Uploading your Notes' text with notes-4.jpg at x=740"
+ },
+ {
+  "observation": "The 'Uploading your Notes' section has an H3 subheading in green bold sans under its H2.",
+  "category": "typography",
+  "evidence": "h3 'Help our language curators, we'll archive your notes.' is green in slice 2"
+ },
+ {
+  "observation": "Site statistics appear as four equal white rounded tiles, each with a large green bold number and a small label.",
+  "category": "component",
+  "evidence": "2650 Words, 159 Categories, 260 Tags and 10 Blog posts in slice 2"
+ },
+ {
+  "observation": "Two of the stat labels are underlined links and two are plain text.",
+  "category": "component",
+  "evidence": "'Categories' and 'Blog posts' are underlined in slice 2; 'Words' and 'Tags' are not"
+ },
+ {
+  "observation": "The blog section pairs a small illustration on the left with a stacked list of bordered link cards on the right.",
+  "category": "layout",
+  "evidence": "Slice 2, 'From the blog' and 5 post cards"
+ },
+ {
+  "observation": "Blog post titles are bold serif text followed by a green arrow glyph.",
+  "category": "typography",
+  "evidence": "e.g. '5 Common Misconceptions Surrounding Endangered Languages →'"
+ },
+ {
+  "observation": "Illustrations share a flat green and teal style with small human figures, trees and signs.",
+  "category": "imagery",
+  "evidence": "protest-3.png, wearefriends.jpg and longhouse1.jpg in slices 2 and 3"
+ },
+ {
+  "observation": "The greeting section's heading uses a bilingual 'Mohawk / English' slash format, and the sign-off does the same.",
+  "category": "copy",
+  "evidence": "'She:kon / Greetings' and 'Nia:wen / Thank you'"
+ },
+ {
+  "observation": "The greeting section is a narrower, offset text column of serif prose ending in an italic signature.",
+  "category": "layout",
+  "evidence": "Slice 3 text starts at x≈380; '— Benjamin Doolittle, MohDictionary' is in italics; em 1"
+ },
+ {
+  "observation": "Social and platform links are outlined pill chips, each with a 16px favicon-style icon.",
+  "category": "component",
+  "evidence": "Facebook, Twitter, Instagram, Newsletter, Gumroad, Patreon and PayPal chips; favicon images rendered 16x16"
+ },
+ {
+  "observation": "Some icons do not match their labels: Facebook shows a Twitter bird, Patreon shows a PayPal-like P, and Instagram has no icon.",
+  "category": "imagery",
+  "evidence": "Slice 3 chip icons"
+ },
+ {
+  "observation": "The closing CTA section is centered, with an H2, a serif subline and a paired filled/outlined button set.",
+  "category": "layout",
+  "evidence": "'Help keep the language strong' and its buttons in slice 3"
+ },
+ {
+  "observation": "The language switcher is a pair of pills with 20px flag images for English and Kanienkeha (Mohawk).",
+  "category": "component",
+  "evidence": "England-32.png and Mohawk-32.png rendered 20x20"
+ },
+ {
+  "observation": "The footer is centered, with two illustration banners, a row of text links, and credit lines with underlined green links.",
+  "category": "layout",
+  "evidence": "Slice 3, 'Developed by Doolittle Productions' and 'Follow us on Twitter & Facebook'"
+ },
+ {
+  "observation": "No box shadows, gradients, transitions, animations or transforms are used; depth comes only from borders and tinted bands.",
+  "category": "decoration",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, transitions 0, animations 0, transforms 0"
+ },
+ {
+  "observation": "Radii fall into three groups: square (200 elements), 8-15px rounded (77) and pills (24), with none at 16px or more apart from pills.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets"
+ },
+ {
+  "observation": "The DOM uses semantic landmarks: one header, two navs, one main, seven sections and one footer, with no article, aside or figure.",
+  "category": "dom",
+  "evidence": "semantic counts"
+ },
+ {
+  "observation": "The heading outline is one H1, seven H2s and a single H3.",
+  "category": "dom",
+  "evidence": "heading_outline"
+ },
+ {
+  "observation": "The markup uses few, mostly custom class names, with almost no Tailwind-style utilities.",
+  "category": "dom",
+  "evidence": "classes total 207, unique 30, tailwind_like_fraction 0.005"
+ },
+ {
+  "observation": "All CSS is in one inline style block with no external stylesheets, plus one script.",
+  "category": "dom",
+  "evidence": "style 1, stylesheets 0, script 1, link 1"
+ },
+ {
+  "observation": "The markup is link- and span-heavy: 94 anchors and 106 spans against 509 words.",
+  "category": "dom",
+  "evidence": "tag_counts a 94, span 106; text_stats words 509"
+ },
+ {
+  "observation": "Flexbox is used far more than grid.",
+  "category": "dom",
+  "evidence": "display_flex 69 vs display_grid 7"
+ },
+ {
+  "observation": "No images are missing an alt attribute, but the decorative icons and the blog illustration have empty alt text.",
+  "category": "dom",
+  "evidence": "alt_missing 0; protest-3.png and favicons have alt ''"
+ },
+ {
+  "observation": "There is no structured data and only basic meta tags.",
+  "category": "dom",
+  "evidence": "jsonld_blocks 0; meta_names charset, viewport, description"
+ }
+]

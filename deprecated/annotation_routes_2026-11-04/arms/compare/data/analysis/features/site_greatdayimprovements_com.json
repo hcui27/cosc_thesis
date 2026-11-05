@@ -1,0 +1,544 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page titles differ: A leads with a contractor/category keyword phrase, B leads with the brand name followed by a product list",
+   "evidence": "A title: 'Home Improvement & Additions Contractors | Great Day Improvements'; B title: 'Great Day Improvements | Sunrooms, Windows, Doors & ",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|00",
+    "greatdayimprovements_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "B declares a document language and A does not",
+   "evidence": "A lang: '' ; B lang: 'en'",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|01",
+    "greatdayimprovements_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B uses HTML5 landmark elements and A uses none",
+   "evidence": "B semantic: header 1, main 1, section 4, footer 1; A: all semantic counts 0",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|03",
+    "greatdayimprovements_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B wraps the corporate address in an <address> element",
+   "evidence": "B tag_counts address: 1; absent in A",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|04"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I4",
+   "text": "Neither page has an h1; their h2 outlines differ",
+   "evidence": "h1_count 0 on both; A has two h2s ('What's new…', 'HOME IMPROVEMENT RESOURCE CENTER'); B has one h2 ('What's new…') and one h3 ('Call Us Tod",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|05",
+    "greatdayimprovements_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "B has more ARIA attributes and no images missing alt text; A has 3 images with missing alt",
+   "evidence": "aria_attrs A 7 vs B 11; alt_missing A 3 vs B 0",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|11"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I6",
+   "text": "Font stacks differ: A uses Arial plus Helvetica Neue webfont cuts; B pairs Georgia serif with Helvetica Neue",
+   "evidence": "A fonts: Arial 345, HelveticaNeueW01-55Roma 104, HelveticaNeueW01-75Bold 6; B fonts: Georgia 41, Helvetica Neue 25",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|12",
+    "greatdayimprovements_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "B sets the intro paragraph in a large centered serif; A sets it in a small left-aligned grey sans",
+   "evidence": "B slice 0: centered Georgia paragraph about 18px with wide leading; A slice 0: small grey Arial paragraph to the right of the sidebar",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|13",
+    "greatdayimprovements_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "Body line height is explicit in B and 'normal' in A",
+   "evidence": "body_line_height A 'normal', B '25.6px' (1.6 × 16px)",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|14",
+    "greatdayimprovements_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "The emphasized 'What's new' part of the heading is blue in A and orange in B",
+   "evidence": "A slice 0: 'What's new' bold blue; B slice 0: 'What's new' bold orange, rest of heading blue",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|15",
+    "greatdayimprovements_com|opus|16",
+    "greatdayimprovements_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "Body background: A is transparent over a light gradient/white; B uses an off-white cream",
+   "evidence": "body_bg A rgba(0,0,0,0); B rgb(246,244,239)",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|18",
+    "greatdayimprovements_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A's palette centers on bright medium blue and light blue panels; B centers on dark navy blocks with an orange accent",
+   "evidence": "A top backgrounds rgb(74,144,231)×11, rgb(209,228,242)×6; B top backgrounds rgb(15,47,85)×2, rgb(23,72,127), rgb(243,154,30)",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|19",
+    "greatdayimprovements_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "Body text color: A is pure black, B is dark slate",
+   "evidence": "body_color A rgb(0,0,0); B rgb(43,52,64)",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|20"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I13",
+   "text": "B uses pill/circular radii; A only uses small radii",
+   "evidence": "border_radius_buckets: A bucket_pill 0, bucket_1_7 12; B bucket_pill 5 (the carousel dots), primary_button radius 50%",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|24",
+    "greatdayimprovements_com|opus|25",
+    "greatdayimprovements_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "A's main 'primary' button is a cookie-consent 'Accept and Close'; B's is an unlabeled orange circular carousel dot",
+   "evidence": "A primary_button text 'Accept and Close', bg rgb(22,93,159), radius 5px; B primary_button text '', bg rgb(243,154,30), radius 50%",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|26",
+    "greatdayimprovements_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Header phone numbers differ: A's top CTA shows 800-230-8301, B's header shows 888-468-0700",
+   "evidence": "A slice 0 yellow panel vs B slice 0 header text",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|29",
+    "greatdayimprovements_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "The sub-brand logos are rendered larger in B, and A puts a divider between them",
+   "evidence": "logo-pe-small: A 70×36, B 93×48; logo-gdi-small: A 72×44, B 79×48",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|31",
+    "greatdayimprovements_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "Hero carousel: A lays slides side by side in a horizontal track that runs offscreen; B stacks all slides at the same position",
+   "evidence": "A rotator images x = -137, 539, 1215, 1891, 2567; B five rotator images all at x382 y128, image_overlaps 203476px² for each pair",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|33",
+    "greatdayimprovements_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "B shows five visible carousel indicator dots under the hero caption; A shows one small dot",
+   "evidence": "B slice 0: five circle dots, first filled orange; A slice 0: single small blue dot near the caption",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|34",
+    "greatdayimprovements_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "B frames the two 'What's new' promo images in white bordered cards; A shows them directly on the page between dotted dividers",
+   "evidence": "B slice 0: white card padding around the financing/save-big images; A slice 0: dotted horizontal rules above and below",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|36",
+    "greatdayimprovements_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "Promo image alt text is reworded in B",
+   "evidence": "A 'Save Big on your next sunroom, window or door project' vs B 'Save big on products and services'; A 'New Financing Options' vs B 'New fina",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|37",
+    "greatdayimprovements_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "B fixes the intro copy wording and uses a ® glyph in place of A's superscript",
+   "evidence": "A: 'Whether you're looking expand' with <sup>®; B: 'Whether you're looking to expand', 'Enclosures®', no sup tag",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|38",
+    "greatdayimprovements_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "A's footer is light, with license text in a column beside the logos and a separate dark 'Back to top' band; B's footer is a centered navy block with license text, logos on a white plate and an orange '↑ Back to top' text link",
+   "evidence": "A slice 1: three-column legal row and a navy radial band with a script 'Back to top' house graphic; B slice 1: centered navy footer",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|40",
+    "greatdayimprovements_com|opus|42",
+    "greatdayimprovements_com|sonnet|21",
+    "greatdayimprovements_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "B uses CSS grid and more flexbox; A uses one flex container and no grid",
+   "evidence": "display_grid A 0, B 1; display_flex A 1, B 4",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|45",
+    "greatdayimprovements_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "B separates the header from the hero with a thin orange rule; A uses a blue gradient nav bar plus a yellow line under the hero band",
+   "evidence": "B slice 0: orange line at about y100; A slice 0: nav bar at about y160–200 and a yellow stripe at about y505",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|46"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I25",
+   "text": "File names of reused images differ, and B uses different hero images with no '-1'/'-2' suffixes",
+   "evidence": "A 'hp-rotator-intro-slide-2.jpg', 'gdi_whatsnew_new-finance_0515.jpg', 'gdi-footer-logos.png'; B 'hp-rotator-intro.jpg', 'gdi-whatsnew-new-f",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|opus|47",
+    "greatdayimprovements_com|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "B's accreditation logo alt text lists each certification; A's uses a generic label",
+   "evidence": "A alt 'Accreditations'; B alt 'Energy Star, Lead-Safe Certified, NFRC, ICC, Qualified Remodeler Top 500, Exterior 200'",
+   "side": "generated",
+   "members": [
+    "greatdayimprovements_com|opus|48"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I27",
+   "text": "A's page is 2228px tall with about 258 words and 104 anchors; B's is 1531px with about 132 words and 14 anchors. B is a condensed version of the page.",
+   "evidence": "A_facts page_height 2228, words 258, anchors 104; B_facts page_height 1531, words 132, anchors 14",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "A places a yellow/orange call-to-action box in the top right. It holds a script-font 'Improve your home today!' headline, a phone number, a blue 'Schedule Your FREE In-Home Design Consultation Today' button and a zip-code finder input. B's header has only a plain text phone number with a small 'Call us today' caption.",
+   "evidence": "A_slice_00 top-right orange panel with zip input; B_slice_00 header right '888-468-0700 / Call us today'",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "A's logo is displayed at its natural 215x130 size. B shrinks the same logo file to 126x76 and sets it left in a thin white header with an orange bottom border.",
+   "evidence": "A_facts logo rect w215 h130; B_facts logo rect w126 h76 at x216",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A uses handwritten script fonts rendered as images for section titles ('Have questions?', 'Corporate Office', 'Site Map', 'Back to top', 'Our Products & Services'). B keeps only the 'Corporate Office' script image, shown on a white label, and uses live bold text for 'Call Us Today' as an h3.",
+   "evidence": "A_facts images Have-questions.png, Corporate-Office.png, Site-Map.png; B_facts h3 'Call Us Today at 888-468-0700', only Corporate-Office.png",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "The accreditation logos are a single strip image in both. B sets it on a white rounded plate, while A shows it on the light-blue background with no plate.",
+   "evidence": "A_slice_01 y630-690; B_slice_01 white box y104-160",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|23"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "A's DOM has many more class uses (371 total, 107 unique), whereas B has 23 total and 15 unique. A loads 7 stylesheets, 13 link tags and 28 scripts. B has a single inline style block, 0 stylesheets and 1 script.",
+   "evidence": "A_facts classes total 371, stylesheets 7, scripts 28; B_facts classes total 23, stylesheets 0, scripts 1",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "A uses far more transitions (111) and 2 gradient backgrounds. B has 10 transitions and no CSS gradients, relying on flat fills.",
+   "evidence": "A_facts transitions 111, gradient_backgrounds 2; B_facts transitions 10, gradient_backgrounds 0",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "A's content width is about 980px (x230-1210), with a narrow main column at x564-1200. B centers a narrower flow of about 720px, with wide empty margins on both sides.",
+   "evidence": "A_slice_00 content x234-1215; B_slice_00 text x360-1080 and hero x382-1058",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|33"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "In A, the hero tagline ('Sunrooms | Windows | Doors | And More') is baked into the hero image at the bottom, over the photo strip. B has the same baked-in text in its slide, with the pagination dots overlapping the bottom of the image.",
+   "evidence": "A_slice_00 y462; B_slice_00 y388 with dots at y415",
+   "side": "both",
+   "members": [
+    "greatdayimprovements_com|sonnet|38"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Document declares a language attribute on the html element.",
+   "family": "semantic_dom",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "Uses HTML5 landmark elements (header, main, section, footer) and an address element for contact details.",
+   "family": "semantic_dom",
+   "items": [
+    "I2",
+    "I3"
+   ]
+  },
+  {
+   "statement": "Page title leads with the brand name followed by a list of products or services.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Pairs a serif display face (Georgia) with a sans-serif for body text.",
+   "family": "typography",
+   "items": [
+    "I6",
+    "I7"
+   ]
+  },
+  {
+   "statement": "Intro paragraph is set in large, centered serif text with generous leading.",
+   "family": "typography",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Body text has an explicit generous line height (about 1.6).",
+   "family": "typography",
+   "items": [
+    "I8"
+   ]
+  },
+  {
+   "statement": "Palette is dark navy blocks with a single orange accent, including orange emphasis words in headings.",
+   "family": "color",
+   "items": [
+    "I9",
+    "I11"
+   ]
+  },
+  {
+   "statement": "Page background is warm off-white cream and body text is dark slate rather than pure black.",
+   "family": "color",
+   "items": [
+    "I10",
+    "I12"
+   ]
+  },
+  {
+   "statement": "Uses pill and circular radii on controls such as carousel dots and buttons.",
+   "family": "component",
+   "items": [
+    "I13",
+    "I14"
+   ]
+  },
+  {
+   "statement": "Carousel shows multiple round pagination dots overlapping the bottom of the hero image, with the active one filled in the accent color.",
+   "family": "component",
+   "items": [
+    "I18",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Promo images sit in white bordered cards, and logo strips sit on white rounded plates.",
+   "family": "decoration",
+   "items": [
+    "I19",
+    "I31"
+   ]
+  },
+  {
+   "statement": "Footer is a centered navy block with an accent-colored text link for back to top.",
+   "family": "layout",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Header is a thin white bar with a small left-aligned logo, a plain text phone number and an accent-colored bottom rule.",
+   "family": "layout",
+   "items": [
+    "I24",
+    "I28",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Uses CSS grid and flexbox for layout, with a single inline style block and few classes.",
+   "family": "layout",
+   "items": [
+    "I23",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Content is a narrow centered column of about 720px with wide empty side margins.",
+   "family": "layout",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "Page is a condensed, sparse version with minimal copy and very few links.",
+   "family": "layout",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Uses flat color fills with no CSS gradients and fewer transitions.",
+   "family": "decoration",
+   "items": [
+    "I33"
+   ]
+  },
+  {
+   "statement": "Section titles use live bold text headings instead of script-font images, keeping at most one script image label.",
+   "family": "typography",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Image alt text is descriptive, listing each certification, and no images lack alt text.",
+   "family": "semantic_dom",
+   "items": [
+    "I5",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Uses typographic glyphs such as ® and ↑ inline instead of superscript markup, with polished, error-free copy.",
+   "family": "copy",
+   "items": [
+    "I21",
+    "I22"
+   ]
+  }
+ ]
+}

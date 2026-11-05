@@ -1,0 +1,660 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "The document titles differ: A uses the short title \"STG\", while B uses a descriptive title that includes the tagline.",
+   "evidence": "A_facts title: \"STG\"; B_facts title: \"STG Partners — Partners for Business Transformation\"",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|00",
+    "stgpartners_com|opus|01",
+    "stgpartners_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "B uses h2 for its section titles (How we build lasting value, Portfolio, Who We Are, News). A has no h2 and uses h3 for section titles and feature items alike.",
+   "evidence": "A h2: null, 10 h3; B 4 h2 (40px/700), 6 h3",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|05",
+    "stgpartners_com|sonnet|04",
+    "stgpartners_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B wraps its content in a main element. A has no main element.",
+   "evidence": "semantic.main: A 0, B 1",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|07",
+    "stgpartners_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B builds its menus as lists and A does not use lists.",
+   "evidence": "B ul 3, li 16; A has no ul/li in tag_counts",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|09",
+    "stgpartners_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "B includes one button element, a ☰ hamburger toggle, and has 4 aria attributes. A has no buttons and no aria attributes.",
+   "evidence": "B buttons 1, primary_button text \"☰\", aria_attrs 4; A buttons 0, aria_attrs 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|10",
+    "stgpartners_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A's images all lack an alt attribute. All of B's images have one, and its hero photo has a descriptive alt while the icons use empty alts.",
+   "evidence": "A alt_missing 6; B alt_missing 0, home_hero.png alt \"The STG Partners leadership team standing together in an office\"",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|11",
+    "stgpartners_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "B shows a full-width team photograph, home_hero.png, that A does not show. It is tinted blue in B.",
+   "evidence": "B images: home_hero.png rect 1440x520 at y=510; screenshot B_slice_00 shows five men in an office with a blue overlay; A image list has no p",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|12",
+    "stgpartners_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "A renders in the browser default font, Times New Roman. B uses a system sans-serif stack.",
+   "evidence": "A fonts: Times New Roman 161, FontAwesome 8; B fonts: -apple-system 131 (stack -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial,",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|13",
+    "stgpartners_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "The h1 styling differs: A's is 32px, blue (link colour) and underlined because it is the logo link. B's is a 60.8px white tagline that wraps over two lines.",
+   "evidence": "A h1: 32px, rgb(0,0,238), text 'STG'; B h1: 60.8px, 700, rgb(255,255,255)",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|14",
+    "stgpartners_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "B sets a line height of 25.6px (1.6) and A uses the browser's 'normal' line height.",
+   "evidence": "body_line_height: A normal; B 25.6px",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|15",
+    "stgpartners_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "A has no section background colours. B alternates sections between dark navy, white and light grey.",
+   "evidence": "A top_backgrounds []; B navy hero/approach/who-we-are, white Portfolio, rgb(245,247,250) News, rgb(7,21,42) footer",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|18",
+    "stgpartners_com|sonnet|07",
+    "stgpartners_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "B places small uppercase, letter-spaced blue eyebrow labels above its section headings. A has none.",
+   "evidence": "B_slice_00/01/02: 'OUR APPROACH', 'PORTFOLIO', 'WHO WE ARE', 'LATEST' in blue caps",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|19",
+    "stgpartners_com|opus|20",
+    "stgpartners_com|sonnet|06",
+    "stgpartners_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "B has more words than A.",
+   "evidence": "words: A 213, B 242",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|21"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I13",
+   "text": "A's content is one left-aligned column starting at x=8. B uses a centred container about 1072px wide (x 184–1256).",
+   "evidence": "A image rects all x=8; B icons start at x=213 inside cards starting at x=184; B nav/footer span x 184–1256",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|22",
+    "stgpartners_com|opus|23",
+    "stgpartners_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "In B the four approach items sit in a 4-column card grid. In A they are stacked vertically, one per row.",
+   "evidence": "B icons at y=1334 with x 213/487/761/1035; A icons at y 250, 415, 667, 819 all x=8",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|24",
+    "stgpartners_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "B shows the Experts and Innovators items as two side-by-side cards. A stacks them as plain text.",
+   "evidence": "B icons icn_additional at x=213 and icn_entrepreneurs at x=605, same y=2506; A at y 1071 and 1230, x=8",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|26",
+    "stgpartners_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "B's cards have slightly rounded corners and a subtle border. Every element in A has a 0px radius.",
+   "evidence": "border_radius buckets: A bucket_0 169 only; B bucket_1_7 4, bucket_8_15 6",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|27",
+    "stgpartners_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "Neither page uses box shadows, gradients or animations.",
+   "evidence": "box_shadows 0, gradient_backgrounds 0, animations 0 on both",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|28"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I18",
+   "text": "B defines CSS transitions and a backdrop blur, which is visible on its sticky header. A has no transitions and no blur.",
+   "evidence": "B transitions 13, backdrop_blur 1, background rgba(11,31,58,0.97); A transitions 0, backdrop_blur 0",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|29",
+    "stgpartners_com|sonnet|11",
+    "stgpartners_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "B's header is a dark bar with a spaced 'STG' wordmark on the left and the nav links on the right. A's header is an underlined 'STG' heading with the links run together on the line below.",
+   "evidence": "A_slice_00: 'Our ApproachPortfolioWho We AreNewsContact' with no spacing; B_slice_00: header bar with spaced links",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|30",
+    "stgpartners_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "B renders the hero 'Our Approach' call to action as a solid blue button. In A it is a plain underlined text link.",
+   "evidence": "B_slice_00 blue rgb(61,139,253) button 'Our Approach'; A_slice_00 underlined link",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|32",
+    "stgpartners_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "B renders 'View Our Work' and 'Read More' as outlined rectangular buttons. In A they are underlined default links.",
+   "evidence": "B_slice_01 bordered buttons; A_slice_00 underlined blue links",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|33",
+    "stgpartners_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "B places the McAfee announcement in a full-width strip below the hero photo with a blue 'FEATURED' badge. A shows it as an underlined link with a '+' glyph under the CTA.",
+   "evidence": "B_slice_00 strip at ~y1060 with FEATURED label; A_slice_00 link with ✚",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|34",
+    "stgpartners_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "B sizes the icons to a height of about 59px. A shows each icon at its natural size, which varies.",
+   "evidence": "B rects: 69x59, 59x59, 60x59, 99x59, 61x59, 37x59; A natural sizes, e.g. 79x68, 55x54, 39x63",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I24",
+   "text": "B lays out the news list in rows separated by dividers, each with a large bold day, a small uppercase month, the headline, and a right-aligned blue 'Read More →'. A stacks the month, day, headline and link vertically in plain text.",
+   "evidence": "B_slice_02 news rows; A_slice_01 'Jun / 01 / headline / Read More' stacked",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|37",
+    "stgpartners_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "News headlines are bold serif text in A and medium-weight sans-serif in B, and both pages use h4 for them.",
+   "evidence": "Both have 5 h4 news headings; A_slice_01 serif bold; B_slice_02 sans",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|38"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I26",
+   "text": "B's footer is a dark band with the logo and nav links on one row and the copyright and Terms on a second row under a divider. A's footer repeats the h1 'STG' with run-together links, social icons and an inline copyright.",
+   "evidence": "B_slice_02 footer at bg rgb(7,21,42); A_slice_01 footer 'HomeOur ApproachPortfolio...' and '© 2021 STG Partners, LLCTerms Of Use'",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|39",
+    "stgpartners_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "Both footers include a 'Home' link that the header nav does not have.",
+   "evidence": "A_slice_01 footer 'Home…'; B_slice_02 footer 'Home'",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|40"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I28",
+   "text": "B's page is much taller than A's at the same 1440px width.",
+   "evidence": "page_height: A 2237, B 3750",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|41",
+    "stgpartners_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "B uses b tags and A uses a u tag.",
+   "evidence": "B tag_counts b 5; A tag_counts u 1, br 5",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|43"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I30",
+   "text": "A's palette is the browser default: black text, default blue links and a transparent body. B uses a navy, blue and white palette.",
+   "evidence": "A top_text_colors rgb(0,0,0) 112, rgb(0,0,238) 57, body_bg transparent; B backgrounds rgb(11,31,58), rgb(18,48,90), rgb(7,21,42), accent rgb",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|17",
+    "stgpartners_com|opus|44",
+    "stgpartners_com|sonnet|08",
+    "stgpartners_com|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "Each page contains one emoji character and no exclamation marks or em dashes in its body text.",
+   "evidence": "text_stats: A emoji 1, B emoji 1; exclamations 0 and em_dashes 0 on both",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|46"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "B's 'Accelerators' card keeps the inline underlined 'Learn more.' link, in white. A shows it in default blue at the end of the sentence.",
+   "evidence": "B_slice_01 Accelerators card; A_slice_00 Accelerators paragraph",
+   "side": "both",
+   "members": [
+    "stgpartners_com|opus|47"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "B's hero places the headline, subcopy and button in an indented column that starts at about x=364, narrower than the header's container.",
+   "evidence": "B_slice_00: hero text starts ~x=364 while the logo starts at x=184",
+   "side": "generated",
+   "members": [
+    "stgpartners_com|opus|48",
+    "stgpartners_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "A's links are default underlined blue or visited purple. B's nav and news links have no underline and are colored per context. Only the 'Learn more.' link is underlined.",
+   "evidence": "A slices show underlined links, a purple STG logo and purple social icons. B nav links are plain light gray text.",
+   "side": "both",
+   "members": [
+    "stgpartners_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "The same 6 icons appear in both, but B shows them at white-on-dark at about 60px inside cards. In A they sit unstyled on white, so the white-line icons are nearly invisible (only a faint circle is visible for growth).",
+   "evidence": "A_slice_00 shows a faint circle at y≈445. B icons render at 69x59, 59x59 etc.",
+   "side": "both",
+   "members": [
+    "stgpartners_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "A relies on external resources and tracking markup: 27 script tags, 18 link tags and 8 stylesheets. Its head carries many meta tags (og:*, twitter:card, robots, msapplication) and a JSON-LD block. B has no scripts or external stylesheets (one inline style) and only 3 meta tags.",
+   "evidence": "A scripts 27, stylesheets 8, meta 14, jsonld_blocks 1. B scripts 0, stylesheets 0, style 1, meta 3, jsonld 0.",
+   "side": "both",
+   "members": [
+    "stgpartners_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "A uses FontAwesome icon glyphs for social links (Facebook, Twitter, LinkedIn, plus an email '@' in the footer) and for the plus mark. It has 10 i elements. B has no social icons and 0 i elements.",
+   "evidence": "A tag_counts i 10, FontAwesome on 8 elements. B has no i tags and no FontAwesome font. B_slice_00 header has only text links.",
+   "side": "both",
+   "members": [
+    "stgpartners_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I38",
+   "text": "B's logo is a letter-spaced, bold, white 'STG' wordmark. A's logo is an h1 link in default blue underlined Times (purple when visited in the footer).",
+   "evidence": "B_slice_00 spaced 'STG'. A_slice_00 underlined blue 'STG'.",
+   "side": "both",
+   "members": [
+    "stgpartners_com|sonnet|33"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I39",
+   "text": "B uses a typographic scale: h1 60.8px, h2 40px, all bold. Body text is 16px in both. A relies on browser default heading sizes (h1 32px).",
+   "evidence": "B h1 60.8px, h2 40px. Body 16px in both.",
+   "side": "both",
+   "members": [
+    "stgpartners_com|sonnet|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I40",
+   "text": "The text content is the same in both: headings, taglines, 5 news items with dates, the McAfee announcement and the © 2021 footer. B uses CSS uppercase for dates and eyebrows. B also adds arrows (→) to 'Read More' and the featured banner.",
+   "evidence": "Both heading outlines list the same h3/h4 text. B_slice_02 shows 'JUN', 'MAY' and 'Read More →'. A_slice_01 shows 'Jun', 'May' and plain 'Re",
+   "side": "both",
+   "members": [
+    "stgpartners_com|sonnet|38"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page title is descriptive, combining brand name with a tagline rather than a short brand abbreviation.",
+   "family": "semantic_dom",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Section titles use h2 headings with a clear heading hierarchy, with h3 reserved for sub-items.",
+   "family": "semantic_dom",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "Page content is wrapped in a main landmark element.",
+   "family": "semantic_dom",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Navigation menus are built as semantic ul/li lists.",
+   "family": "semantic_dom",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Includes an accessible hamburger button toggle and ARIA attributes for navigation.",
+   "family": "semantic_dom",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "All images carry alt attributes: descriptive for the hero photo, empty for decorative icons.",
+   "family": "semantic_dom",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "A full-width hero photograph with a blue color overlay sits below the header.",
+   "family": "imagery",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Uses a system sans-serif font stack instead of the browser default serif.",
+   "family": "typography",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Hero h1 is a large (about 61px), bold, white tagline wrapping over two lines.",
+   "family": "typography",
+   "items": [
+    "I8",
+    "I39"
+   ]
+  },
+  {
+   "statement": "Body text uses generous line height of about 1.6.",
+   "family": "typography",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "Sections alternate background colors between dark navy, white and light grey.",
+   "family": "color",
+   "items": [
+    "I10"
+   ]
+  },
+  {
+   "statement": "Small uppercase, letter-spaced blue eyebrow labels sit above section headings.",
+   "family": "typography",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "Content is held in a centered container of about 1070px width, not a left-aligned full-width column.",
+   "family": "layout",
+   "items": [
+    "I13"
+   ]
+  },
+  {
+   "statement": "Feature items are arranged in multi-column card grids, such as four across or two side by side.",
+   "family": "layout",
+   "items": [
+    "I14",
+    "I15"
+   ]
+  },
+  {
+   "statement": "Cards have slightly rounded corners and subtle borders.",
+   "family": "decoration",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Flat styling with no box shadows, gradients or animations.",
+   "family": "decoration",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Sticky header uses a translucent dark background with backdrop blur and CSS hover transitions.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Header is a dark bar with a letter-spaced bold white wordmark at left and spaced nav links at right.",
+   "family": "component",
+   "items": [
+    "I19",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Primary calls to action are solid blue rectangular buttons; secondary actions are outlined rectangular buttons.",
+   "family": "component",
+   "items": [
+    "I20",
+    "I21"
+   ]
+  },
+  {
+   "statement": "A featured announcement appears as a full-width strip with a blue uppercase badge.",
+   "family": "component",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Icons are sized uniformly to about 60px height, white on dark within cards.",
+   "family": "imagery",
+   "items": [
+    "I23",
+    "I35"
+   ]
+  },
+  {
+   "statement": "News list rows are divided by rules, with large bold day, small uppercase month, headline and right-aligned blue link.",
+   "family": "component",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Footer is a dark band with logo and links on one row and copyright below a divider.",
+   "family": "layout",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Palette is a deliberate navy, bright blue and white scheme with light-grey accents.",
+   "family": "color",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Nav and list links are not underlined and are colored by context; only inline links stay underlined.",
+   "family": "component",
+   "items": [
+    "I34",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Page ships without external scripts or stylesheets, with minimal head metadata.",
+   "family": "other",
+   "items": [
+    "I36"
+   ]
+  },
+  {
+   "statement": "No social icon glyphs or icon fonts; header and footer use text-only links.",
+   "family": "decoration",
+   "items": [
+    "I37"
+   ]
+  },
+  {
+   "statement": "Dates and eyebrow labels are CSS-uppercased, and Read More links and banners get trailing arrows.",
+   "family": "copy",
+   "items": [
+    "I40"
+   ]
+  },
+  {
+   "statement": "News headlines are medium-weight sans-serif h4 headings.",
+   "family": "typography",
+   "items": [
+    "I25"
+   ]
+  }
+ ]
+}

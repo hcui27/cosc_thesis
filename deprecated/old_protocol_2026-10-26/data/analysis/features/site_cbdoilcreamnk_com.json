@@ -1,0 +1,683 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Side A's title is long and full of keywords. Side B's title is short.",
+   "evidence": "A title: 'CBD Oil & Cream - CBD Products - CBD Store'; B title: 'CBD Oil'",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|00",
+    "cbdoilcreamnk_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "Side A sets a regional language code. Side B sets a generic one.",
+   "evidence": "A lang='en-US'; B lang='en'",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|01",
+    "cbdoilcreamnk_com|sonnet|41"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "Side A has no h1. Its first heading is an h4. Side B has one h1, used as the hero headline.",
+   "evidence": "A h1_count 0, first heading h4 'Cbd Oil For Pain Walmart'; B h1_count 1 'Where To Buy CBD Cream For Pain'",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|03",
+    "cbdoilcreamnk_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "Side B has a nested heading outline: the product names are h3s under the 'Cbd For Dogs' h2, and the footer columns are h3s. In Side A, every heading after the h4 is an h2.",
+   "evidence": "B outline: h2 'Cbd For Dogs' > h3 'Cbd For Life', 'Pure Cbd', etc.; footer h3 Company/Support/Contact Us. A: 10 h2s including product names ",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|04"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I4",
+   "text": "Side A's image alt texts are unrelated SEO keyword phrases. Side B's alt texts describe the image or match the product name.",
+   "evidence": "A CBD_Drops-2.jpg alt 'What Does Cbd Oil Do', CBD_Statue.png alt 'Medterra Cbd'; B CBD_Drops-2.jpg alt 'Full spectrum CBD oil drops', CBD_St",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|12",
+    "cbdoilcreamnk_com|opus|13",
+    "cbdoilcreamnk_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "Side A's page opens with a full-width dark navy band of long news text, centred and in a serif font, above the header. Side B moves this text lower down, into a white card titled 'CBD in the news'.",
+   "evidence": "A_slice_00 top band bg rgb(21,42,81) with FSA article text; B_slice_02 card with h2 'CBD in the news' on a light green section",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|15",
+    "cbdoilcreamnk_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "Side A's header shows a large logo with phone and email contact links. It also has a two-row menu bar and a pill-shaped search field. Side B has a slim single-row header with a small logo, five text links and a green phone number.",
+   "evidence": "A logo rect 325x97 at y=333, 'Search products…' field visible; B logo 134x40 at y=14, nav 'Shop Featured News Guides Contact Us 208-969-1282",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|16",
+    "cbdoilcreamnk_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "Side A's hero is a full-width image carousel. It stacks three 700x300 slides in the same 1440x617 box. Side B's hero has two columns: a headline, text and buttons on the left, and one rounded image on the right.",
+   "evidence": "A image_overlaps: three slider images overlap 888480px² at 1440x617; B slider-1 rect 566x242 at x=714, no overlaps",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|17",
+    "cbdoilcreamnk_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "Side B has a large serif h1 and two pill-shaped call-to-action buttons: a filled 'Shop CBD' and an outlined 'Join The Club'. Side A's hero has no visible headline text, only the banner image's own wording.",
+   "evidence": "B h1 52.8px Georgia weight 700; primary_button 'Shop CBD' bg rgb(47,107,69), radius 999px, padding 12px 24px",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|18",
+    "cbdoilcreamnk_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "The button detected as primary is different on each side. In Side A it is a white 'Menu' toggle with a 2px radius. In Side B it is a green pill.",
+   "evidence": "A primary_button text 'Menu', bg white, radius 2px; B 'Shop CBD', radius 999px",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|19"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I10",
+   "text": "Side A's main font is a converted Cooper Light BT font, with Alegreya and Alegreya Sans alongside it. Side B uses system-ui for body text and Georgia for headings.",
+   "evidence": "A fonts: Conv_CooperLtBT-Regular 601, Alegreya Sans 63, Alegreya 22; B fonts: system-ui 135, Georgia 12, Arial 2",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|20",
+    "cbdoilcreamnk_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "Side A's h2s are sans-serif at 36px and weight 600. Side B's h2s are Georgia serif at 35.2px and weight 700.",
+   "evidence": "A h2 36px/600 (sans visible in 'Cbd For Dogs'); B h2 35.2px/700, serif visible in B_slice_00",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|22",
+    "cbdoilcreamnk_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "Body text is slightly larger in Side B, with a slightly taller line height.",
+   "evidence": "A body 16px / 25.888px; B body 17px / 27.2px",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|23",
+    "cbdoilcreamnk_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "Side A's palette is navy-led with a green accent, set on a cool off-white page. Side B's palette is dark green with forest-green accents, set on a warm cream page.",
+   "evidence": "A body_bg rgb(249,249,252), top text rgb(21,42,81) x454, accent rgb(47,126,60); B body_bg rgb(251,250,246), text rgb(31,42,36), accent bg rg",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|24",
+    "cbdoilcreamnk_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "Side B alternates section backgrounds between cream and a pale sage green. Side A keeps one off-white background between its navy bands.",
+   "evidence": "B top_backgrounds include rgb(233,239,227) x3; visible sage bands behind 'Cbd For Dogs', 'CBD in the news' and 'Join The Club'",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|25",
+    "cbdoilcreamnk_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Side A's footer is navy. Side B's footer is near-black green.",
+   "evidence": "A footer bg rgb(21,42,81) in A_slice_03; B bg rgb(24,34,28) in B_slice_03",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|26",
+    "cbdoilcreamnk_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "Side A's in-content buttons are navy pills ('More CBD Questions?', 'Learn More'). Side B shows the same buttons as green pills.",
+   "evidence": "A_slice_01/02 navy buttons; B_slice_01/02 green rgb(47,107,69) buttons",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|27",
+    "cbdoilcreamnk_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "Side A shows 'SALE!' badges as green ribbon flags in the top-left corner of the product image. Side B shows 'Sale!' as a small green pill next to the price.",
+   "evidence": "A_slice_01 ribbon 'SALE!' on Cbd Oil Amazon and Cbd cards; B_slice_01 pill 'Sale!' beside 'From: $79.00'",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|28",
+    "cbdoilcreamnk_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "Side A shows product prices in small black text. Side B shows them in bold green, with the struck-through original price kept in grey.",
+   "evidence": "A_slice_01 'From: $14.99' small black; B_slice_01 '$29.99' bold green, '$59.99' in an s element",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|29",
+    "cbdoilcreamnk_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "Side A uses del and ins elements for the sale price. Side B uses an s element.",
+   "evidence": "A del 1, ins 1; B s 1",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|30",
+    "cbdoilcreamnk_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "Side A places each feature image in a left column, next to a tall white card holding the heading and button. The image is always on the left. Side B alternates the image left and right in a zig-zag, with no card around the text.",
+   "evidence": "A_slice_01/02: images at x=140 for all three (CBD_Statue, AliNOMNOM, dog); B images at x=208, x=772, x=208",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|31",
+    "cbdoilcreamnk_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Side B rounds the corners of its images and category tiles. Side A's tiles and images have square or nearly square corners.",
+   "evidence": "B border-radius bucket_8_15: 15 vs A 1; visible rounded corners in B_slice_00 hero and category tiles",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|33",
+    "cbdoilcreamnk_com|sonnet|17",
+    "cbdoilcreamnk_com|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "Side B lays out with CSS grid. Side A uses flex only, with no grid.",
+   "evidence": "A display_grid 0, display_flex 12; B display_grid 10, display_flex 10",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|35",
+    "cbdoilcreamnk_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "Side A's 'Cbd Clinic Products' section is a band with a hemp-leaf background. Its heading is centred, with two large underlined serif links separated by a pipe. Side B left-aligns the heading on a plain background and shows the two links as small outlined pills.",
+   "evidence": "A_slice_03 leaf image band, underlined 'Hemp Oil Benefits | Plus Cbd Oil'; B_slice_03 outlined pill links",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|36",
+    "cbdoilcreamnk_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "Side A puts its newsletter signup in the footer's first column, with a small email field and social icons. Side B gives 'Join The Club' its own centred section, with a large email input and a green 'Sign Up' button.",
+   "evidence": "A_slice_03 footer 'Join The Club' column with email field and checkmark; B_slice_03 standalone section with 'Sign Up' button",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|37",
+    "cbdoilcreamnk_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "Side B's footer shows the logo a second time, in white, with a tagline. Side A's footer has no logo.",
+   "evidence": "B second cropped-Z-Logo-CBD.png at y=4862; A has one logo image",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|39",
+    "cbdoilcreamnk_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "Side A's footer contact lines are all in bold, and include two email addresses. Side B bolds only the labels, and drops the email lines.",
+   "evidence": "A_slice_03 'Email: Info@cbdoil', 'Wholesale@cbdoil' in bold; B_slice_03 'Phone:', 'Hours:', 'Wholesale:' bold labels only",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|40",
+    "cbdoilcreamnk_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "Side A shows payment icons at full size on a light strip below the footer. Side B shrinks them and places them inside a white rounded box within the dark footer.",
+   "evidence": "A payment_icons 307x49 at y=4928; B 166x32 at y=5124",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|41",
+    "cbdoilcreamnk_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "Side B adds a hero subheading paragraph that reuses the newsletter signup wording. Side A has no hero copy.",
+   "evidence": "B_slice_00 'CBD oil, edibles, topicals and more. Sign up for exclusive deals, new products and nutritional education.'",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|42",
+    "cbdoilcreamnk_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "The two pages are similar in length, and Side B is slightly taller.",
+   "evidence": "A page_height 4987; B 5184; word counts A 391, B 381",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|44",
+    "cbdoilcreamnk_com|sonnet|43"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "Side B loads one high-resolution logo file at 4054x1213 and shows it at 134x40. Side A shows a 1439-pixel-wide logo at 325x97.",
+   "evidence": "A cropped-Z-Logo-CBD-1536x460.png natural 1439x431 rect 325x97; B cropped-Z-Logo-CBD.png natural 4054x1213 rect 134x40",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|opus|45"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I31",
+   "text": "Side B includes a 16x16 image that is not shown, rendering at 0x0 size.",
+   "evidence": "B correct.png rect w 0 h 0",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|46"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "Side B's content column is slightly narrower than Side A's.",
+   "evidence": "A content starts at x≈135-140 and ends at ~1305; B content starts at x≈180 and ends at ~1260",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|48",
+    "cbdoilcreamnk_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "In Side B, the sticky header overlaps the top of the h1 in the screenshot, so the first line of the headline is clipped.",
+   "evidence": "B_slice_00 'Where To Buy' is partly hidden under the header border at y≈145",
+   "side": "generated",
+   "members": [
+    "cbdoilcreamnk_com|opus|49"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "A is a heavy WordPress-style DOM with many scripts, stylesheets and inline styles. B is a lean, self-contained page with one style block and no scripts.",
+   "evidence": "A: 54 scripts, 31 stylesheets, 23 style tags, 116 divs, 241 anchors, 52 inline style attrs. B: 0 scripts, 0 stylesheets, 1 style tag, 36 div",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "A's class usage is large and framework-generated. B uses a small handwritten class vocabulary.",
+   "evidence": "A: 1300 class tokens, 368 unique. B: 60 total, 27 unique",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "A's hero image is a 700px-wide slider asset stretched to full width. B shows the same asset at its natural proportions with a soft shadow and rounded corners.",
+   "evidence": "A slider-1-cbd-700x300.jpg rendered 1440x617 from 700x300. B same file rendered 566x242 (about 0.81x), with box-shadow",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|09"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I37",
+   "text": "B pairs a serif heading face with a sans body face. A's body and headings share the Cooper-style serif look.",
+   "evidence": "B h1 font-family Georgia serif; body in system-ui. A body_font_size 16px in Cooper-style serif across 601 elements",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|12"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I38",
+   "text": "The category images are the same bitmaps in both: the title text and 'SHOP NOW' pill are baked into the image, not live text.",
+   "evidence": "CBD_Drops-2.jpg, CBD_edibles-2.jpg, CBD_Topicals-2.jpg, 800x800 in both; the lettering sits inside the images",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|18"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I39",
+   "text": "The editorial lifestyle images are shown at different sizes and corners: A 549px square with square corners, B 460px square with rounded corners, indented and alternating.",
+   "evidence": "A images CBD_Statue.png etc. 549x549 at x=140. B 460x460 at x=208 and x=772",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I40",
+   "text": "A's three info cards below the banner have navy borders and square corners. B's have rounded corners and no outline.",
+   "evidence": "A tiles at x=140/547/954 with 346px squares and navy edge. B tiles at x=181/548/914 at 345px with rounded corners",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|26"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I41",
+   "text": "Form and control counts are far higher on A.",
+   "evidence": "A: 3 forms, 14 inputs, 16 buttons, 1 select, 1 textarea, 4 labels. B: 1 form, 1 input, 1 button",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I42",
+   "text": "The first paragraph rendered in A is centered with unusual wide width and text wraps edge to edge. B constrains the same text to a narrow centered card with left-aligned lines.",
+   "evidence": "A slice 0: text spans x≈10–1430. B slice 2: card x≈310–1130, left-aligned text",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I43",
+   "text": "Effects: A has many more transitions, shadows and rounded elements, and one animation. B has few.",
+   "evidence": "A: box_shadows 10, transitions 206, animations 1, transforms 11. B: box_shadows 1, transitions 10, animations 0, transforms 0",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I44",
+   "text": "The tab/nav links in B are lowercase-weight sans text in grey with a bold green phone number. A's nav items are small serif text such as 'How To Make Cannabis…' and 'Cbd Dog Treats' set in two stacked rows.",
+   "evidence": "B slice 0 nav: Shop, Featured, News, Guides, Contact Us, 208-969-1282 (green bold). A slice 0: nav rows 'How To Make Cannabis…' and 'Cbd Dog",
+   "side": "both",
+   "members": [
+    "cbdoilcreamnk_com|sonnet|42"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page title is short and concise rather than a long keyword-stuffed string.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Page has exactly one h1 serving as the hero headline, with a coherent heading hierarchy.",
+   "family": "semantic_dom",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Headings are properly nested, with product names and footer columns as h3 under h2 sections.",
+   "family": "semantic_dom",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Image alt texts descriptively match the image content or product name rather than SEO keywords.",
+   "family": "semantic_dom",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Header is slim and single-row, with a small logo, few text links and a highlighted phone number.",
+   "family": "component",
+   "items": [
+    "I6",
+    "I44"
+   ]
+  },
+  {
+   "statement": "Hero is two-column: headline, subtext and buttons on the left, one rounded image on the right.",
+   "family": "layout",
+   "items": [
+    "I7",
+    "I36"
+   ]
+  },
+  {
+   "statement": "Hero has a large bold serif headline, a supporting subheading paragraph, and two pill call-to-action buttons.",
+   "family": "copy",
+   "items": [
+    "I8",
+    "I28"
+   ]
+  },
+  {
+   "statement": "Buttons are fully rounded pills in a solid green fill, with outlined pill variants as secondary.",
+   "family": "component",
+   "items": [
+    "I9",
+    "I16"
+   ]
+  },
+  {
+   "statement": "Headings use a serif face (Georgia) at bold weight, paired with system sans-serif body text.",
+   "family": "typography",
+   "items": [
+    "I10",
+    "I11",
+    "I37"
+   ]
+  },
+  {
+   "statement": "Body text is slightly larger, about 17px, with generous line height.",
+   "family": "typography",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Palette is dark forest green with green accents on a warm cream page background.",
+   "family": "color",
+   "items": [
+    "I13",
+    "I15"
+   ]
+  },
+  {
+   "statement": "Section backgrounds alternate between cream and pale sage green to separate content bands.",
+   "family": "color",
+   "items": [
+    "I14"
+   ]
+  },
+  {
+   "statement": "Sale badges are small green pills placed beside the price, not corner ribbons.",
+   "family": "component",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Prices are bold and green, with the original struck-through price in muted grey.",
+   "family": "typography",
+   "items": [
+    "I18",
+    "I19"
+   ]
+  },
+  {
+   "statement": "Feature sections alternate image left and right in a zig-zag, with text directly on the background.",
+   "family": "layout",
+   "items": [
+    "I20",
+    "I39"
+   ]
+  },
+  {
+   "statement": "Images, tiles and cards have softly rounded corners and no hard outlines.",
+   "family": "decoration",
+   "items": [
+    "I21",
+    "I40"
+   ]
+  },
+  {
+   "statement": "Layout uses CSS grid for sections alongside flexbox.",
+   "family": "layout",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Link groups are left-aligned under the heading on a plain background and styled as small outlined pills.",
+   "family": "component",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "Newsletter signup is a standalone centred section with a large email input and a green button.",
+   "family": "component",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Dark footer repeats the white logo with a tagline and bolds only the contact labels.",
+   "family": "component",
+   "items": [
+    "I25",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Payment icons are small and sit inside a white rounded box within the dark footer.",
+   "family": "component",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Text-heavy content sits in a narrow centred white card with left-aligned lines.",
+   "family": "layout",
+   "items": [
+    "I5",
+    "I42"
+   ]
+  },
+  {
+   "statement": "Content column is relatively narrow, with generous side margins.",
+   "family": "layout",
+   "items": [
+    "I32"
+   ]
+  },
+  {
+   "statement": "Markup is lean and self-contained: one style block, no scripts and a small handwritten class vocabulary.",
+   "family": "semantic_dom",
+   "items": [
+    "I34",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Effects are restrained, with few shadows, transitions and animations and only a soft shadow on the hero image.",
+   "family": "decoration",
+   "items": [
+    "I43",
+    "I36"
+   ]
+  },
+  {
+   "statement": "Page has minimal forms and controls, with a single signup form and one input.",
+   "family": "component",
+   "items": [
+    "I41"
+   ]
+  }
+ ]
+}

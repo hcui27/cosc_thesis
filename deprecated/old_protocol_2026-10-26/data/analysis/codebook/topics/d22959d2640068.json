@@ -1,0 +1,88 @@
+{
+ "attributes": [
+  {
+   "name": "h1 presence and top-level heading level",
+   "definition": "Whether the page has an h1 element and, if not, what the highest heading level used is.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "h1 present",
+     "definition": "Page includes an h1 as the top-level heading."
+    },
+    {
+     "value": "no h1, h2 is top-level",
+     "definition": "Page lacks an h1; the highest heading level used is h2."
+    },
+    {
+     "value": "no h1, other top-level",
+     "definition": "Page lacks an h1 and the top-level heading is something other than h2, or is unspecified."
+    }
+   ]
+  },
+  {
+   "name": "heading hierarchy depth",
+   "definition": "How many levels the heading outline spans and whether levels nest in sequence.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "shallow outline",
+     "definition": "Few heading levels, minimal nesting."
+    },
+    {
+     "value": "nested multi-level outline",
+     "definition": "Headings nest across three or more levels (e.g. h2 sections with h3 items)."
+    },
+    {
+     "value": "no headings",
+     "definition": "Page uses no heading elements."
+    }
+   ]
+  },
+  {
+   "name": "heading markup for non-title text",
+   "definition": "Whether non-heading text such as calls to action is marked up as a heading element.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "call-to-action marked as heading",
+     "definition": "A CTA phrase uses a heading tag."
+    },
+    {
+     "value": "headings only for titles",
+     "definition": "Headings are used only for section or item titles."
+    },
+    {
+     "value": "not stated",
+     "definition": "No evidence either way."
+    }
+   ]
+  }
+ ],
+ "codes": [
+  {
+   "id": "s84",
+   "attribute": "h1 presence and top-level heading level",
+   "value": "no h1, h2 is top-level"
+  },
+  {
+   "id": "s84",
+   "attribute": "heading hierarchy depth",
+   "value": "nested multi-level outline"
+  },
+  {
+   "id": "s291",
+   "attribute": "h1 presence and top-level heading level",
+   "value": "no h1, other top-level"
+  },
+  {
+   "id": "s291",
+   "attribute": "heading hierarchy depth",
+   "value": "shallow outline"
+  },
+  {
+   "id": "s291",
+   "attribute": "heading markup for non-title text",
+   "value": "call-to-action marked as heading"
+  }
+ ]
+}

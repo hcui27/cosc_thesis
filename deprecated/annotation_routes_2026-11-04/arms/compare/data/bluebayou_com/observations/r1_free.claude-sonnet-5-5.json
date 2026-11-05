@@ -1,0 +1,236 @@
+[
+ {
+  "observation": "Page title differs: A uses a pipe-separated title with location; B uses an en-dash title with the tagline.",
+  "category": "copy",
+  "evidence": "A title 'Blue Bayou Waterpark & Dixie Landin' | Baton Rouge, LA'; B title 'Blue Bayou Water Park & Dixie Landin' – Play Your Day Away'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has four h1 elements (hero, Land of the Giants, Thrills, Getaway). B has a single h1 and demotes the section titles to h2.",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 4; B h1_count 1 with 'LAND OF THE GIANTS', 'THRILLS', 'GETAWAY' as h2",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses HTML5 landmark elements (header, 7 sections, footer, ul/li lists). A has none of these and builds the page from divs and navs.",
+  "category": "DOM/semantic structure",
+  "evidence": "B semantic header 1, section 7, footer 1, li 15, ul 4; A header/section/footer 0, div 99, nav 4",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM is much heavier in divs, anchors, classes and scripts. B is leaner and has no external scripts or stylesheets, only one inline style block.",
+  "category": "DOM/semantic structure",
+  "evidence": "A div 99, script 15, stylesheets 3, classes total 254; B div 33, scripts 0, stylesheets 0, style 1, classes total 69",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's class names are partly utility-like (tailwind_like_fraction 0.398, a Webflow-style export). B's class names are semantic, with a fraction of 0.",
+  "category": "DOM/semantic structure",
+  "evidence": "A tailwind_like_fraction 0.398; B 0; A has webflow-icons font",
+  "which_side": "both"
+ },
+ {
+  "observation": "A sets the document language to empty and has social/Open Graph/Twitter meta tags. B sets lang='en' and has only charset, viewport and description.",
+  "category": "DOM/semantic structure",
+  "evidence": "A lang '' and meta_names include og:title, twitter:card; B lang 'en', meta_names charset/viewport/description",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a custom hand-painted brush display font for the h1 and section titles, with Brandon Grotesque for body and labels. B uses system fonts: Impact for headings and Trebuchet MS for body.",
+  "category": "typography",
+  "evidence": "A fonts Brandongrotesque 167, Handyhandy 14; h1 Handyhandy 120px. B fonts Trebuchet MS 138, Impact 19; h1 Impact 136px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero headline is white, brush-lettered and tilted over the images. B's is a straight, heavy condensed Impact headline in two colors (white 'PLAY YOUR', yellow 'DAY AWAY') with a blue offset shadow.",
+  "category": "typography",
+  "evidence": "A h1 120px Handyhandy white; B h1 136px Impact, with the yellow second line visible in the slice",
+  "which_side": "both"
+ },
+ {
+  "observation": "A sets small-caps-style letter-spaced uppercase labels in Brandon Grotesque (BUY, SEASON, ENTER THE, nav links). B uses Impact uppercase for eyebrow labels (yellow ENTER THE, EXPERIENCE THE, PLAN YOUR SUMMER).",
+  "category": "typography",
+  "evidence": "A 'ENTER THE' and 'EXPERIENCE THE' small tracked white or grey text; B eyebrows in yellow rgb(255,197,49) Impact",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text is larger in A than in B. A h2 is bold at 22px, while B h2 is weight 400 at 20.8px.",
+  "category": "typography",
+  "evidence": "A body 18px/28px, h2 22px 700; B body 16px/24.8px, h2 20.8px 400",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no persistent top navigation bar. It shows only the two logos on a white strip, with an overlay alert. B has a dark navy sticky-style header with a link nav (Home, Attractions, Tickets, Plan, Calendar, Jobs) and the logos.",
+  "category": "layout",
+  "evidence": "A slice 0 top has only logos at x=10 and x=1162. B header with nav and logos at x=160 and x=1148",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's alert is a red centered box that overlaps the hero and has an 'X' close. B's is a full-width yellow banner under the header with a bold title inline and a '×' button.",
+  "category": "component",
+  "evidence": "A red rgb(244,0,9) box with centered text at x≈360–1080; B yellow rgb(255,197,49) strip with button '×' (the only button, count 1)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero images are tinted with flat overlays, turquoise on the left and mustard on the right, which gives a monochrome duotone look. B's hero shows the photos in near-natural color, a blue slide and a purple-blue ferris wheel.",
+  "category": "imagery",
+  "evidence": "A top_backgrounds rgba(0,226,200,0.8) and rgba(242,181,14,0.8); B hero photos with no teal or yellow wash",
+  "which_side": "both"
+ },
+ {
+  "observation": "B puts 'WATER PARK' and 'THEME PARK' captions with logos at the bottom of each hero half. A has no captions in the hero.",
+  "category": "copy",
+  "evidence": "B text 'WATER PARK' and 'THEME PARK' beside logos at y≈646; A hero has no such text",
+  "which_side": "B"
+ },
+ {
+  "observation": "The three promo cards differ. A has solid orange-red rectangles with square corners, hard drop shadows and a white inner button bar, overlapping the hero edge. B has white rounded cards with a blue eyebrow, a navy Impact title and a red text link with an arrow, on a flat cyan band below the hero.",
+  "category": "component",
+  "evidence": "A bg rgb(219,77,35), radius 0, primary button white bg radius 0 padding 10px 20px; B cards on rgb(18,181,214) band, 16px+ radius buckets (4)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a repeated brush-stroke SVG as a torn-paint divider at section edges (5 uses at 1440x175). In B the brush image is present but has a 0x0 rect, so no brush dividers are visible.",
+  "category": "decoration",
+  "evidence": "A brush-2.svg rects at y=-35, 780, 1541, 2352, 3073, 4280; B brush.svg rect w 0 h 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's Land of the Giants section is a two-column layout on white, with a framed photo on the left and the logo, heading, text and buttons on the right. B uses a full-bleed 1440x665 photo with a dark navy overlay and left-aligned white text on top.",
+  "category": "layout",
+  "evidence": "A landofthegiants image rect x82 y1037 734x490; B landofthegiants.jpg rect x0 y994 1440x665",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Thrills section overlay colors differ. A uses an orange-to-red horizontal gradient that fades the photo, with a brush edge. B uses a flat deep-red tint over the whole photo.",
+  "category": "color",
+  "evidence": "A gradient_backgrounds 1; B gradient_backgrounds 0, red-tinted Thrills image",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's CTA buttons are square-cornered blocks (teal on white, yellow on orange) with a plain text link beside them. B's are rounded pill buttons: a filled yellow one and an outlined white one.",
+  "category": "component",
+  "evidence": "A button radius 0px, teal rgb(0,226,200) and yellow rgb(242,181,14); B border_radius_buckets pill 15, yellow rgb(255,197,49) pill + outline pill",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'Summer is waiting for you' stencil graphic is large and centered on white, with a water-textured blue lettering. B shrinks it into a white card with a navy-tinted version, set beside a pool photo in a two-column block.",
+  "category": "imagery",
+  "evidence": "A is full-width and about 650px wide on white. B stencil 540x304 at x160 with a shadow, next to a shutterstock photo 540x360 at x740",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A, 'Stay up to date' is a full-width solid blue band with centered text. In B it is a heading inside a navy section, in the right column of a two-column layout, with underlined yellow links.",
+  "category": "layout",
+  "evidence": "A blue rgb(0,152,255) band; B navy rgb(8,42,77) section with yellow 'Facebook' and 'newsletter' links",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Getaway section in A is a split block: an ice-cream cone photo on the left (about 715px wide) and a blue panel on the right with a two-column text link grid. B makes the section centered over a navy-tinted full-width photo, with outlined pill links.",
+  "category": "layout",
+  "evidence": "A has the ice cream image as a left half. B has a 1440x612 photo with a blue overlay and 6 pill links, including 'GROUPS' which is not in A's Getaway links",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's Getaway links are plain uppercase text in a two-column list. B's are outlined pill chips that wrap onto two rows.",
+  "category": "component",
+  "evidence": "A 'PARK MAPS', 'HOTELS', 'DIRECTIONS', 'CORPORATE EVENTS' as plain text; B pill-bordered chips",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Coca-Cola band differs. In A the logo sits on the left, the can is upright in the center overlapping the brush edge, and 'SAVE $5' sits to the right of the can in brush type. In B the logo is at the top left, the title is stacked below it, and a tilted can sits at the far right.",
+  "category": "layout",
+  "evidence": "A can rect x421 y4071 150x279; B can rect x1147 y3503 148x234 and a logo at x160",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's alt text is populated on the content photos. A's images all have empty alt attributes, although alt_missing is 0 for both.",
+  "category": "DOM/semantic structure",
+  "evidence": "A all 13 images alt ''; B alts like 'Kids splashing at the water park', 'Coca-Cola can'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A footer is on a white background with brush-script orange headings (Parks, Plan, Tickets, More) and blue tracked uppercase links. B footer is dark navy, with small yellow uppercase headings (h4) and light-blue sentence-case links.",
+  "category": "component",
+  "evidence": "A heading colors rgb(219,77,35) with link color rgb(0,152,255); B top text rgb(207,227,245) and h4 PARKS/PLAN/TICKETS/MORE",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer social icons differ. A uses real icon-font glyphs for Facebook, Twitter and YouTube in blue squares. B uses letter placeholders (F, T, Y) in translucent circles.",
+  "category": "component",
+  "evidence": "A fonts 'Social icons' 6 elements; B has translucent circles with letters, rgba(255,255,255,0.12) backgrounds",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer link set differs. B adds Groups and Birthday Parties. A's Plan column is split in two (Directions, Food, Hotels and Corporate Events, Calendar), with no Groups or Birthday Parties.",
+  "category": "copy",
+  "evidence": "B footer lists 'Groups', 'Birthday Parties'; A footer lacks both",
+  "which_side": "both"
+ },
+ {
+  "observation": "The overall palette differs. A is bright and saturated on a white body, with turquoise, mustard, orange-red (219,77,35) and cyan blue (0,152,255). B has a cream body (255,248,234) and a dominant navy (8,42,77) with yellow (255,197,49) and cyan (18,181,214) accents.",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255); B body_bg rgb(255,248,234), body text rgb(16,36,58)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has more dark navy sections stacked in a row (Giants overlay, Stay up to date, Getaway, footer). A alternates white, orange, blue and red sections.",
+  "category": "color",
+  "evidence": "B navy rgb(8,42,77) backgrounds ×4; A top backgrounds white ×5, blue ×5",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page is shorter in B and the rhythm is tighter. A has more vertical whitespace around sections.",
+  "category": "layout",
+  "evidence": "A page_height 4793; B 4181 (both 1440 wide)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid (13 elements), with a 1120px content column centered between x=160 and x=1280. A uses no grid at all, only flex (14), and its content widths vary, with the Giants block at x=82 and cards at x=29.",
+  "category": "layout",
+  "evidence": "B display_grid 13, flex 15; A display_grid 0, flex 14",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has more corner rounding, in cards, pills, the pool photo and its bottom border. A is almost entirely square-cornered.",
+  "category": "decoration",
+  "evidence": "B radius buckets 16_plus 4, pill 15; A bucket_0 190, pill 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has more shadows and transitions. The shadows are in the promo cards and buttons. B has fewer, plus a solid offset 'bottom lip' under the cards and the pool photo.",
+  "category": "decoration",
+  "evidence": "A box_shadows 9, transitions 61, transforms 10; B box_shadows 7, transitions 19, transforms 1; B pool image has a blue bottom edge",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses different photo assets in some places. The Getaway ice-cream image, the pool-with-ring photo and a family photo appear in B but not in A, and A's Giants image is a resized -p-1080 variant. A's own photos (ice cream cone, smaller images) are not in the same slots.",
+  "category": "imagery",
+  "evidence": "B images include 'Kids splashing', 'Family enjoying a day at the water park' (shutterstock 1500x1000); A has landofthegiants-p-1080.jpeg and coke-white-p-500.png",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer copyright is small light-grey text on white. B's is light text centered under a thin divider rule on navy.",
+  "category": "component",
+  "evidence": "A top_text_colors rgb(189,189,189) ×1; B hr line above © line in slice 3",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero headline is placed over the dividing line, with the heading roughly centered at x≈650 and slightly off-center. B's is centered on the seam at x=720 with both lines equal in weight.",
+  "category": "layout",
+  "evidence": "A h1 text_align center at 120px; B h1 136px with the 'YOUR' and 'DAY AWAY' lines straddling x=720",
+  "which_side": "both"
+ },
+ {
+  "observation": "A contains an emoji. B contains none. Word counts are similar.",
+  "category": "copy",
+  "evidence": "A text_stats emoji 1, words 251; B emoji 0, words 262",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's logos are not alt-labeled and are sized large in the top strip (194x70 and 232x70). B's header logos are smaller (144x52 and 132x40) inside the nav bar.",
+  "category": "imagery",
+  "evidence": "A rects 194x70 and 232x70 at y=10; B rects 144x52 and 132x40",
+  "which_side": "both"
+ }
+]

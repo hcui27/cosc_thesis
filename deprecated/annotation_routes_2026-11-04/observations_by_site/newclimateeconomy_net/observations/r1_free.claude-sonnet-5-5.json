@@ -1,0 +1,157 @@
+[
+ {
+  "observation": "The header is a dark-green band (rgb(11,61,54)) holding a logo image, a search form, a green 'Sign Up' button and a right-aligned nav with four links. The logo, search and nav are inset to a content column that starts at about x=190.",
+  "category": "layout",
+  "evidence": "logo.png at x=190, y=21, 262x34; nav links About/News/Publications/Contact Us; header=1, nav=1, form=1; the dark green rgb(11,61,54) is a top background (2 elements)."
+ },
+ {
+  "observation": "The hero is a split layout. A 864x576 photo is flush to the left viewport edge and bleeds past the content column. The right side is a pale gray panel with a date, a headline and a 'Read More' link, vertically centered.",
+  "category": "layout",
+  "evidence": "sb-op-ed-foto.jpg rect x=0, y=76, w=864, h=576; the panel background rgb(242,245,243) is used by 4 elements; screenshot shows the text block at about x=904."
+ },
+ {
+  "observation": "The hero image is a documentary-style photo of a protester holding a bright red 'Asijiki!' sign. It is the only saturated, warm color on a page that is otherwise green and neutral.",
+  "category": "imagery",
+  "evidence": "sb-op-ed-foto.jpg (natural 835x557, displayed 864x576, so slightly upscaled); empty alt text; visible red sign in slice 1."
+ },
+ {
+  "observation": "The hero headline is the page's main title but is marked up as an h2. The page has no h1.",
+  "category": "semantics",
+  "evidence": "h1_count=0; the first heading_outline entry is an h2, 'Commentary: Defeating the Inequality Disease Must Become a Global Rallying Call'."
+ },
+ {
+  "observation": "Headings are bold sans-serif in dark green-black. The h2 is 30px at weight 700. The hero headline is large, about 30px, set tight over three lines.",
+  "category": "typography",
+  "evidence": "h2 font_size 30px, font_weight 700; body_color rgb(27,42,38); fonts_by_element_count has -apple-system at 53."
+ },
+ {
+  "observation": "Two font families are paired. A system sans (-apple-system) is used for headings, nav and UI. Georgia serif is used for the tweet text and the italic empty-state message. Arial appears on a couple of elements.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: -apple-system 53, Georgia 52, sans-serif 4, Arial 2; the tweets and 'No upcoming events' are visibly serif."
+ },
+ {
+  "observation": "Section labels (LATEST NEWS, VIDEO, UPCOMING EVENTS, RECENT TWEETS, MANAGING PARTNER) are small uppercase, bold and letter-spaced. Each sits above a dark 2px rule, with an underlined 'All … →' link right-aligned on the same line.",
+  "category": "typography",
+  "evidence": "h2 text 'LATEST NEWS\\nAll news →', 'UPCOMING EVENTS\\nSee Past Events →', etc.; visible rules under each label in the screenshots."
+ },
+ {
+  "observation": "Dates above news items are small, uppercase, letter-spaced and muted gray-green. They work as eyebrow metadata above each headline.",
+  "category": "typography",
+  "evidence": "'APRIL 14, 2021', 'APRIL 6, 2021', 'MARCH 10, 2021', 'NOVEMBER 30, 2020'; muted text color rgb(93,107,102) is used 7 times."
+ },
+ {
+  "observation": "The Latest News section is a three-column text-only grid with no thumbnails. Each item has a date and a bold h3 headline. Row heights are uneven because the headlines wrap differently.",
+  "category": "layout",
+  "evidence": "three h3 'Commentary:' titles at x=190, 553 and 915; display_grid count 4; images list has no news thumbnails."
+ },
+ {
+  "observation": "Section backgrounds alternate between white and a pale gray-green. The effect is horizontal banding, with no cards, shadows or borders between sections.",
+  "category": "color",
+  "evidence": "top_backgrounds: rgb(255,255,255)×6, rgb(242,245,243)×4; box_shadows=0; the Video and Managing Partner bands are gray, News and Events/Tweets are white."
+ },
+ {
+  "observation": "The palette is restrained and monochrome-green: a deep forest green for the header and rules, a mid teal-green (rgb(31,157,122)) for the Sign Up button, a darker green (rgb(15,122,94)) for links, and near-black green text. Neutrals are white and off-white.",
+  "category": "color",
+  "evidence": "top_backgrounds include rgb(11,61,54) and rgb(31,157,122); top_text_colors include rgb(15,122,94)×5 and rgb(11,61,54)×10."
+ },
+ {
+  "observation": "The video section is a two-column block. A large dark video player thumbnail sits on the left (688x386). On the right, two playlist-style cards each have a green left border accent, white background and bold title.",
+  "category": "components",
+  "evidence": "thumbnail.png rect x=190, y=1000, 688x386; h3 'Landscape restoration is critical…' and 'Seizing the Global Opportunity'; visible green left border on the cards."
+ },
+ {
+  "observation": "The video is shown as a static captured frame of a YouTube player, with a title overlay, progress bar, time readout (0:56 / 5:16) and control icons baked into the image. The overlaid title text is large white bold type over a dark photo, and it overlaps the face/text in the frame.",
+  "category": "imagery",
+  "evidence": "thumbnail.png (638x358 natural, upscaled to 688x386); slice 2 shows 'Unlocking the Inclusive Growth Story of the 21st Century' with the controls bar."
+ },
+ {
+  "observation": "The video image has empty alt text, and the player title is not text in the DOM. Its h3 'Unlocking the Inclusive Growth Story of the 21st Century' is in the outline but is rendered as part of the embedded frame.",
+  "category": "semantics",
+  "evidence": "thumbnail.png alt=''; heading_outline lists that h3; scripts=0 and no iframe in tag_counts."
+ },
+ {
+  "observation": "Upcoming Events and Recent Tweets sit side by side in two equal columns. The events column holds only an italic serif empty-state line, so the left column is mostly blank beneath it.",
+  "category": "layout",
+  "evidence": "'No upcoming events at the moment.' in italic Georgia; em count 2; the tweets column spans x=744–1250."
+ },
+ {
+  "observation": "Tweets are rendered as plain static text, not an embed. Each has serif body copy, teal underlined hashtag/handle/URL links, a small sans timestamp, and a thin divider rule. Text is truncated with '…' before the t.co link.",
+  "category": "components",
+  "evidence": "'Opinion @ClimateHome: As more countries move to agree on #NetZero…', 'https://t.co/UwoYc6zL8B', '2 days 21 hours ago'; p count 3."
+ },
+ {
+  "observation": "The Managing Partner strip shows three logos in a row, left-aligned with uneven sizes and no captions. The logos are a gold-and-gray wordmark, a blue rectangular banner and a teal/green wordmark, and they bring in their own brand colors.",
+  "category": "imagery",
+  "evidence": "wri-logo-4c.png 184x64, customlogo.png 255x56, folu.png 220x56 at x=190, 406, 693; alts 'World Resources Institute', 'Coalition for Urban Transitions', 'Food and Land Use Coalition'."
+ },
+ {
+  "observation": "The footer is a single slim row. A 'Careers' underlined link is on the left. Five social links on the right pair a small icon image with a text label (YouTube, LinkedIn, Google+, Facebook, Twitter).",
+  "category": "components",
+  "evidence": "footer=1; icons-*.png 28x21 at y=2129; the social icons have empty alt and sit next to text labels; Google+ is included."
+ },
+ {
+  "observation": "The social icons are 400x300 PNGs shrunk to 28x21. They are raster images, not SVG, and the page has no SVGs.",
+  "category": "imagery",
+  "evidence": "icons-youtube/linkedin/gplus/facebook/twitter.png natural 400x300, rect 28x21; svgs=0."
+ },
+ {
+  "observation": "Content is held to a fixed centered column of about 1060px (x=190 to 1250) inside a 1440px viewport. Only the header band, hero image and section backgrounds run full width.",
+  "category": "layout",
+  "evidence": "page_width 1440; section rules and logos span x=190–1250; the hero image starts at x=0."
+ },
+ {
+  "observation": "The page is short and sparse: about 168 words across a 2188px page. Copy is mostly headlines and labels, with little body text.",
+  "category": "copy",
+  "evidence": "text_stats words=168; page_height=2188; p count 3."
+ },
+ {
+  "observation": "Copy follows an editorial think-tank voice. Headlines repeat a 'Commentary:' prefix, and links use short arrow-suffixed labels such as 'All news →', 'See Past Events →' and 'All partners →'. There are no exclamation marks, emoji or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats exclamations=0, emoji=0, em_dashes=0; the h2 texts contain '→'."
+ },
+ {
+  "observation": "Visual effects are almost entirely absent: no shadows, blur, transitions, animations or transforms, and one gradient. Corners are square almost everywhere.",
+  "category": "decoration",
+  "evidence": "box_shadows=0, backdrop_blur=0, transitions=0, animations=0, transforms=0, gradient_backgrounds=1; border_radius bucket_0=109, bucket_1_7=2, no larger radii."
+ },
+ {
+  "observation": "The search field is a bare input with a placeholder and a magnifier icon image placed inside it. It is paired with a separate square-cornered green 'Sign Up' button. The one form button in the DOM has empty text and a default white, 0-radius style.",
+  "category": "components",
+  "evidence": "form=1, input=1, button=1; primary_button text '' bg rgb(255,255,255) radius 0px padding 0px 10px; icons-search.png 22x22 at x=636,y=27; the Sign Up element is an anchor-style button with bg rgb(31,157,122)."
+ },
+ {
+  "observation": "The markup uses semantic landmarks: one header, nav, main, article and footer, plus four sections. Headings run h2→h3 with no skipped levels below h2, though there is no h1. There are no aside, figure or blockquote elements.",
+  "category": "semantics",
+  "evidence": "semantic: header 1, nav 1, main 1, section 4, article 1, footer 1, aside 0, figure 0, blockquote 0; h2=6, h3=6."
+ },
+ {
+  "observation": "The stylesheet is a single inline <style> block with no external CSS or JS. The class vocabulary is small, non-utility and hand-written. Layout uses flex (18 elements) and grid (4), and there is one inline style attribute.",
+  "category": "structure",
+  "evidence": "style=1, stylesheets=0, scripts=0; classes total 34, unique 21, tailwind_like_fraction 0; display_flex 18, display_grid 4; inline_style_attrs 1."
+ },
+ {
+  "observation": "Accessibility hooks are minimal. There are four aria attributes. Meaningful images such as the logo and partner logos have alt text, while the hero, video and icon images use empty alt. No images lack an alt attribute.",
+  "category": "semantics",
+  "evidence": "aria_attrs=4, alt_missing=0; the images list shows alt='' for the hero, thumbnail and icons; alt text on logo.png, wri-logo, customlogo and folu."
+ },
+ {
+  "observation": "Text links are consistently underlined in the content area: 'Read More' with a green underline accent, the 'All … →' links, and tweet links. Primary nav links in the header are bold white with no underline.",
+  "category": "components",
+  "evidence": "31 anchors; 'Read More' has a visible green underline; header nav links are white (white text on 20 elements)."
+ },
+ {
+  "observation": "The body text is 17px with a roughly 1.55 line-height. Headline-sized text is tightly leaded, while the tweet text is set slightly larger and looser in the serif.",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 26.35px; tweet lines about 26px apart in slice 2."
+ },
+ {
+  "observation": "Hierarchy is shown through weight, case and size alone, using bold headlines, uppercase labels and gray metadata. No icons, badges or buttons mark content types other than the footer social icons and the search glyph.",
+  "category": "decoration",
+  "evidence": "svgs=0; only 12 images, of which 5 are social icons and 1 is the search icon; box_shadows=0."
+ },
+ {
+  "observation": "The video playlist cards use a 3–4px green left border on a white card against the gray-green section background. This is the only boxed-card treatment on the page.",
+  "category": "components",
+  "evidence": "cards at x=906–1250, y=1000–1108 and 1124–1186 with a visible teal-green left edge; white (255,255,255) background on a rgb(242,245,243) section."
+ }
+]

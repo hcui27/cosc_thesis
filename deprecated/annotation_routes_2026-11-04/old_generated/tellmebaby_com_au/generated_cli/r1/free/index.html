@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tell Me Baby – Baby product reviews by Australian parents</title>
+<meta name="description" content="Read baby product reviews from real Australian parents. Search by product, brand or category, and earn rewards for sharing your own reviews.">
+<style>
+:root{--ink:#20272C;--muted:#5d676e;--peach:#FFAA91;--peach-soft:#FFF1EC;--line:#ece4e0;--bg:#fff;--card:#fff;--accent-ink:#20272C}
+@media(prefers-color-scheme:dark){:root{--ink:#f3eeeb;--muted:#a9b0b5;--peach-soft:#2a2321;--line:#363b3f;--bg:#171b1e;--card:#1f2428}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+:focus-visible{outline:3px solid var(--peach);outline-offset:2px}
+header{border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:24px;min-height:68px;flex-wrap:wrap;padding:8px 0}
+.logo{background:#fff;border-radius:6px;line-height:0}
+.logo img{height:40px;width:auto}
+nav{display:flex;gap:4px 22px;flex-wrap:wrap;flex:1;font-weight:500}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--peach);text-underline-offset:6px;text-decoration-thickness:3px}
+.auth{display:flex;gap:10px;align-items:center}
+.btn{display:inline-block;background:var(--peach);color:#20272C;font-weight:600;padding:10px 20px;border-radius:999px;border:0;cursor:pointer;font:inherit;font-weight:600}
+.btn:hover{filter:brightness(.95)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--peach)}
+.hero{position:relative;color:#fff;background:#20272C url(images/image-02.jpg) center/cover;min-height:380px;display:flex;align-items:center}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,24,27,.72),rgba(20,24,27,.15))}
+.hero .wrap{position:relative;padding-top:48px;padding-bottom:48px}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:0 0 24px;letter-spacing:-.02em}
+h1 span{display:block;font-weight:400;font-size:.5em;margin-top:8px;color:var(--peach)}
+.search{display:flex;max-width:520px;background:#fff;border-radius:999px;padding:5px;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.search input{flex:1;min-width:0;border:0;background:none;padding:0 18px;font:inherit;color:#20272C}
+.search input:focus{outline:none}
+.search:focus-within{outline:3px solid var(--peach)}
+section{padding:48px 0}
+h2{font-size:1.6rem;margin:0 0 24px;letter-spacing:-.01em}
+h2::after{content:"";display:block;width:44px;height:4px;border-radius:2px;background:var(--peach);margin-top:8px}
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.cat{background:var(--peach-soft);border:1px solid var(--line);border-radius:14px;padding:18px;font-weight:600;transition:.15s}
+.cat:hover{background:var(--peach);color:#20272C}
+.more{margin-top:20px;display:inline-block;font-weight:600;border-bottom:3px solid var(--peach)}
+.how{background:var(--peach-soft)}
+.steps{counter-reset:s;list-style:none;margin:0 0 28px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.steps li{counter-increment:s;background:var(--card);border-radius:14px;padding:20px;border:1px solid var(--line)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--peach);color:#20272C;font-weight:700;margin-bottom:10px}
+.ad{padding:20px 0 0}
+.ad img{margin:0 auto;border-radius:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.card{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;transition:.15s}
+.card:hover,.award:hover{border-color:var(--peach);box-shadow:0 4px 16px rgba(255,170,145,.3);transform:translateY(-2px)}
+.thumb{height:6px;width:44px;border-radius:3px;background:var(--peach);margin-bottom:6px}
+.meta{color:var(--muted);font-size:.9rem;margin-top:auto}
+.review p{margin:0;color:var(--muted);font-size:.95rem}
+.awards{background:var(--peach-soft)}
+.agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.award{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 16px 18px;border-left:6px solid var(--peach);display:flex;flex-direction:column;gap:2px;transition:.15s}
+.label{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.about{display:grid;gap:32px;grid-template-columns:1.2fr 1fr;align-items:start}
+.about p{color:var(--muted);margin:0 0 14px}
+.about h2+p{color:var(--ink);font-size:1.1rem}
+.rewards{background:#20272C;color:#fff;border-radius:20px;padding:32px;text-align:center}
+.rewards img{margin:0 auto 12px;height:90px;width:auto}
+.rewards h3{margin:0 0 8px;font-size:1.4rem}
+.rewards p{color:#cfd4d7!important;margin:0 0 20px}
+footer{border-top:1px solid var(--line);padding:36px 0}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:28px;align-items:start}
+.fgrid h4{margin:0 0 10px}
+.fgrid ul{list-style:none;padding:0;margin:0;display:grid;gap:6px;color:var(--muted)}
+.fgrid a:hover{color:var(--ink);text-decoration:underline}
+.fgrid>img{border-radius:10px}
+.social{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+.social a{color:var(--muted);font-weight:500;border-bottom:2px solid var(--peach)}
+.legal{margin-top:32px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:16px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.legal .logo img{height:30px}
+@media(max-width:760px){.about{grid-template-columns:1fr}.hero{min-height:320px}.bar{gap:12px}.auth{margin-left:auto}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+<a class="logo" href="https://tellmebaby.com.au" aria-label="Tell Me Baby home"><img src="images/TellMeBaby-logo.svg" alt="Tell Me Baby" width="150" height="40"></a>
+<nav aria-label="Main">
+<a href="#categories">Browse reviews</a>
+<a href="#about">Our community</a>
+<a href="#how">Tools</a>
+<a href="#articles">Articles</a>
+</nav>
+<div class="auth">
+<a href="https://tellmebaby.com.au/profile/login">Login</a>
+<a class="btn" href="https://tellmebaby.com.au/profile/register">Signup</a>
+</div>
+</div>
+</header>
+<main>
+<div class="hero">
+<div class="wrap">
+<h1>Baby product reviews <span>by Australian parents</span></h1>
+<form class="search" role="search" onsubmit="return false">
+<input type="search" placeholder="Find baby product reviews" aria-label="Find baby product reviews">
+<button class="btn" type="submit">Search</button>
+</form>
+</div>
+</div>
+
+<section id="categories"><div class="wrap">
+<h2>Baby product review categories</h2>
+<div class="cats"><a class="cat" href="https://tellmebaby.com.au/product-category/baby-out-and-about/">Out &amp; about</a><a class="cat" href="https://tellmebaby.com.au/product-category/car-travel-with-baby/">Car travel</a><a class="cat" href="https://tellmebaby.com.au/product-category/baby-bath-time/">Bath time</a><a class="cat" href="https://tellmebaby.com.au/product-category/feeding/">Feeding</a><a class="cat" href="https://tellmebaby.com.au/product-category/baby-changing-time/">Change time</a><a class="cat" href="https://tellmebaby.com.au/product-category/baby-sleep-and-nap-time/">Sleep &amp; nap time</a><a class="cat" href="https://tellmebaby.com.au/product-category/health-safety/">Health &amp; safety</a><a class="cat" href="https://tellmebaby.com.au/product-category/just-for-mum/">Just for mum</a></div>
+<a class="more" href="https://tellmebaby.com.au/product-category">View all categories</a>
+</div></section>
+
+<section class="how" id="how"><div class="wrap">
+<h2>How Tell Me Baby works</h2>
+<ol class="steps">
+<li>Search for a product, brand or category</li>
+<li>Read reviews from real parents like you</li>
+<li>Buy the product that's right for your family</li>
+<li>Join the community &amp; leave a review</li>
+</ol>
+<a class="btn" href="https://tellmebaby.com.au/become-member">Join TMB Rewards</a>
+</div></section>
+
+<div class="wrap ad"><a href="https://tellmebaby.com.au/linkout/80618"><img src="images/sunrice-ros-leaderboard.jpg" alt="Sunrice advertisement" width="728" height="90"></a></div>
+
+<section><div class="wrap">
+<h2>Trending baby product reviews</h2>
+<div class="grid"><a class="card" href="https://tellmebaby.com.au/product/tommee-tippee-super-steam-advanced-electric-steriliser/"><span class="thumb" aria-hidden="true"></span><strong>Tommee Tippee Super-Steam Advanced Electric Steriliser</strong><span class="meta">119 reviews</span></a><a class="card" href="https://tellmebaby.com.au/product/sudocrem-healing-cream/"><span class="thumb" aria-hidden="true"></span><strong>Sudocrem Healing Cream</strong><span class="meta">618 reviews</span></a><a class="card" href="https://tellmebaby.com.au/product/bugaboo-cameleon3-plus/"><span class="thumb" aria-hidden="true"></span><strong>Bugaboo Cameleon 3 plus</strong><span class="meta">94 reviews</span></a><a class="card" href="https://tellmebaby.com.au/product/milton-antibacterial-surface-wipes/"><span class="thumb" aria-hidden="true"></span><strong>Milton Antibacterial Surface Wipes</strong><span class="meta">73 reviews</span></a></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>Recent reviews</h2>
+<div class="grid"><a class="card review" href="https://tellmebaby.com.au/product/medela-swing-single-electric-breast-pump/"><strong>Medela Swing Single Electric Breast Pump</strong><p>“As a new mum I needed something simple and easy to control and the Medela swing is exactly that. Full breastfeeding mum this is the…”</p><span class="meta">Mikala Peschek</span></a><a class="card review" href="https://tellmebaby.com.au/product/bio-oil-skincare/"><strong>Bio-Oil Skincare</strong><p>“Bio-oil has long been touted as a bit of a miracle-worker for scars, acne, stretch-marks, etc. etc. I wouldn’t say that I’ve noticed any drastic…”</p><span class="meta">Kaitlin Littlewood</span></a><a class="card review" href="https://tellmebaby.com.au/product/cherub-baby-dissolvable-food-pouch-breast-milk-bag-labels/"><strong>Cherub Baby Dissolvable Food Pouch &amp; Breast Milk Bag Labels</strong><p>“Labelling is cool and cute but not sure why I was not able to use this when preparing food for my baby. Maybe because mother’s…”</p><span class="meta">Sheila Kimpo</span></a><a class="card review" href="https://tellmebaby.com.au/product/cub-organic-beef-veggies-pouch-6m/"><strong>CUB Organic Beef &amp; Veggies Pouch 6m+</strong><p>“I find it very hard to get my baby to eat puréed meat loves the homemade puréed veggies I make but not puréed meat doesn’t…”</p><span class="meta">Chloe Hogan</span></a></div>
+<a class="more" href="/product-category/">Read more reviews</a>
+</div></section>
+
+<section class="awards"><div class="wrap">
+<h2>2021 Tell Me Baby Award Winners</h2>
+<div class="agrid"><a class="award" href="https://tellmebaby.com.au/product/pigeon-softouch-bottle-ppsu/"><span class="label">baby bottle</span><strong>Pigeon SofTouch Bottle (PPSU)</strong></a><a class="award" href="https://tellmebaby.com.au/product/britax-safe-n-sound-unity-neos-baby-capsule/"><span class="label">baby capsule</span><strong>Britax Safe-n-Sound Unity NEOS Baby Capsule</strong></a><a class="award" href="https://tellmebaby.com.au/product/britax-safe-n-sound-milleniaplus-convertible-car-seat/"><span class="label">baby car seat</span><strong>Britax Safe-n-Sound Millenia+ Convertible Car Seat</strong></a><a class="award" href="https://tellmebaby.com.au/product/nestle-cerelac-multigrain-with-pear/"><span class="label">baby cereal</span><strong>Nestlé CERELAC Multigrain with Pear</strong></a><a class="award" href="https://tellmebaby.com.au/product/raffertys-garden-strawberry-no-added-sugar-yoghurt-6m/"><span class="label">baby pouch</span><strong>Rafferty’s Garden Strawberry No Added Sugar Yoghurt 6m+</strong></a><a class="award" href="https://tellmebaby.com.au/product/baby-mum-mum-organic-rice-rusks/"><span class="label">baby snack</span><strong>Baby Mum-Mum Organic Rice Rusks</strong></a><a class="award" href="https://tellmebaby.com.au/product/flo-baby-saline-nasal-spray/"><span class="label">baby healthcare</span><strong>Flo Baby Saline Nasal Spray</strong></a><a class="award" href="https://tellmebaby.com.au/product/moogoo-soothing-msm-moisturiser/"><span class="label">baby moisturiser</span><strong>MooGoo Soothing MSM Moisturiser</strong></a><a class="award" href="https://tellmebaby.com.au/product/oricom-secure870-3-5-touchscreen-monitor-w-starry-lightshow/"><span class="label">baby monitor</span><strong>Oricom Secure870 3.5″ Touchscreen Monitor w/ Starry Lightshow</strong></a><a class="award" href="https://tellmebaby.com.au/product/mustela-foam-shampoo-newborns/"><span class="label">baby haircare</span><strong>Mustela Foam Shampoo for Newborns</strong></a><a class="award" href="https://tellmebaby.com.au/product/cancer-council-kids-sunscreen-spf50/"><span class="label">baby sunscreen</span><strong>Cancer Council Kids Sunscreen SPF50+</strong></a><a class="award" href="https://tellmebaby.com.au/product/braun-thermoscan-5-irt-6030-ear-thermometer/"><span class="label">baby thermometer</span><strong>Braun ThermoScan 5 IRT 6030 Ear Thermometer</strong></a><a class="award" href="https://tellmebaby.com.au/product/biostime-infant-probiotics-vitamin-d/"><span class="label">baby vitamins and supplements (including probiotics)</span><strong>Biostime Infant Probiotics with Vitamin D</strong></a><a class="award" href="https://tellmebaby.com.au/product/joonya-eco-wipes/"><span class="label">baby wipes</span><strong>Joonya Eco Wipes</strong></a><a class="award" href="https://tellmebaby.com.au/product/spectra-s2-hospital-grade-double-electric-breast-pump/"><span class="label">best hospital grade breast pump</span><strong>Spectra S2 Hospital Grade Double Electric Breast Pump</strong></a><a class="award" href="https://tellmebaby.com.au/product/medela-freestyle-flex-breast-pump/"><span class="label">best portable breast pump</span><strong>Medela Freestyle Flex Breast Pump</strong></a><a class="award" href="https://tellmebaby.com.au/product/tommee-tippee-super-soft-comforter/"><span class="label">dummy</span><strong>Tommee Tippee Super Soft Comforter</strong></a><a class="award" href="https://tellmebaby.com.au/product/stokke-tripp-trapp-chair/"><span class="label">highchair (excluding portable high chairs)</span><strong>Stokke Tripp Trapp Chair</strong></a><a class="award" href="https://tellmebaby.com.au/product/moogoo-skin-milk-udder-cream/"><span class="label">mum skincare product</span><strong>MooGoo Skin Milk Udder Cream</strong></a><a class="award" href="https://tellmebaby.com.au/product/qiara-pregnancy-breastfeeding/"><span class="label">mum vitamins and supplements (pregnancy and postnatal)</span><strong>Qiara Pregnancy &amp; Breastfeeding</strong></a><a class="award" href="https://tellmebaby.com.au/product/huggies-ultimate-nappies/"><span class="label">nappy</span><strong>Huggies Ultimate Nappies</strong></a><a class="award" href="https://tellmebaby.com.au/product/babylove-premmie-nappies/"><span class="label">premmie nappy</span><strong>BabyLove Premmie Nappies</strong></a><a class="award" href="https://tellmebaby.com.au/product/huggies-little-swimmers-disposable-swimpants/"><span class="label">swimmer nappy</span><strong>Huggies Little Swimmers Disposable Swimpants</strong></a><a class="award" href="https://tellmebaby.com.au/product/oioi-faux-leather-nappy-backpack/"><span class="label">nappy bag</span><strong>OiOi Faux Leather Nappy Backpack</strong></a><a class="award" href="https://tellmebaby.com.au/product/weleda-baby-child-calendula-nappy-change-cream/"><span class="label">nappy rash product</span><strong>Weleda Baby &amp; Child Calendula Nappy Change Cream</strong></a><a class="award" href="https://tellmebaby.com.au/product/boori-classic-cot-bed/"><span class="label">nursery furniture</span><strong>Boori Classic Cot Bed</strong></a><a class="award" href="https://tellmebaby.com.au/product/fisher-price-little-people-caring-for-animals-farm/"><span class="label">play and development</span><strong>Fisher-Price Little People Caring for Animals Farm</strong></a><a class="award" href="https://tellmebaby.com.au/product/first-response-early-result-in-stream-pregnancy-test/"><span class="label">pregnancy test</span><strong>First Response Early Result In-Stream Pregnancy Test</strong></a><a class="award" href="https://tellmebaby.com.au/product/love-to-dream-swaddle-up-transition-bag-warm-2-5-tog/"><span class="label">sleeping bags and swaddles</span><strong>Love To Dream Swaddle UP Transition Bag Warm 2.5 TOG</strong></a><a class="award" href="https://tellmebaby.com.au/product/tommee-tippee-closer-nature-essentials-starter-kit/"><span class="label">steriliser</span><strong>Tommee Tippee Closer to Nature Essentials Starter Kit</strong></a><a class="award" href="https://tellmebaby.com.au/product/pigeon-training-teether-step-1/"><span class="label">teething product</span><strong>Pigeon Training Teether Step 1</strong></a><a class="award" href="https://tellmebaby.com.au/product/b-box-drink-bottle/"><span class="label">water bottle/sippy cup</span><strong>b.box Drink Bottle</strong></a><a class="award" href="https://tellmebaby.com.au/product/bugaboo-fox-2/"><span class="label">pram &gt; $1000</span><strong>Bugaboo Fox 2</strong></a><a class="award" href="https://tellmebaby.com.au/product/babybee-rover-2019-2-in-1-bassinet-stroller-set/"><span class="label">pram &lt; $1000</span><strong>Babybee ROVER 2019 2-in-1 Bassinet + Stroller Set</strong></a><a class="award" href="https://tellmebaby.com.au/product/babybee-duo-2-in-1-single-to-double-stroller/"><span class="label">double pram</span><strong>Babybee DUO 2-in-1 Single to Double Stroller</strong></a><a class="award" href="https://tellmebaby.com.au/product/baby-tula-free-to-grow-carrier/"><span class="label">baby carrier</span><strong>Baby Tula Free-to-Grow Carrier</strong></a><a class="award" href="https://tellmebaby.com.au/product/moogoo-natural-mini-moo-bubbly-wash/"><span class="label">baby wash</span><strong>MooGoo Natural Mini Moo Bubbly Wash</strong></a><a class="award" href="https://tellmebaby.com.au/product/bellamys-organic-step-3-toddler-milk-drink/"><span class="label">toddler milk</span><strong>Bellamy’s Organic Step 3 Toddler Milk Drink</strong></a></div>
+</div></section>
+
+<section id="articles"><div class="wrap">
+<h2>Recent articles</h2>
+<div class="grid"><a class="card article" href="https://tellmebaby.com.au/baby/life-with-baby/win-silver-rattles/"><span class="thumb" aria-hidden="true"></span><strong>Win 1 of 10 Mamas &amp; Papas silver rattles</strong></a><a class="card article" href="https://tellmebaby.com.au/toddler/life-with-toddler/6-must-have-toddler-items/"><span class="thumb" aria-hidden="true"></span><strong>6 must-have toddler items (and you could win them all)</strong></a><a class="card article" href="https://tellmebaby.com.au/baby/feeding-baby/how-to-express-and-store-colostrum-antenatally/"><span class="thumb" aria-hidden="true"></span><strong>How to express and store colostrum antenatally</strong></a><a class="card article" href="https://tellmebaby.com.au/pregnancy/most-searched-baby-names-in-australia/"><span class="thumb" aria-hidden="true"></span><strong>Here are the most-searched baby names in Australia right now</strong></a><a class="card article" href="https://tellmebaby.com.au/baby/dream-feeding-baby-sleep/"><span class="thumb" aria-hidden="true"></span><strong>Yes! It’s really possible to align baby’s night sleep with yours</strong></a></div>
+<a class="more" href="https://tellmebaby.com.au/blog">Read more</a>
+</div></section>
+
+<section id="about" style="padding-top:0"><div class="wrap about">
+<div>
+<h2>Baby product reviews by parents, for parents</h2>
+<p>Tell Me Baby helps you learn what parents really think of a wide range of baby products. Search for products by name, brand or category to get the latest information and reviews on the baby products you're thinking about buying.</p>
+<p>Once you've bought a product, leave a review to help other parents - and to earn yourself real rewards.</p>
+<p>From dummies to prams, baby formula to toys, Tell Me Baby has a huge selection of reviews across every category of baby product.</p>
+</div>
+<div class="rewards">
+<img src="images/tmb-dots-peach.png" alt="" width="184" height="132">
+<h3>Join TMB Rewards today!</h3>
+<p>As a reward member, you’ll earn Kmart, Coles &amp; Target vouchers just for sharing your opinion on baby products you've tried. It's free to join - and so easy to earn!</p>
+<a class="btn" href="/profile/register/">Join now</a>
+</div>
+</div></section>
+</main>
+<footer>
+<div class="wrap">
+<div class="fgrid">
+<img src="images/picture-alt.png" alt="" width="454" height="295">
+<div><h4>Tell Me Baby</h4><ul><li><a href="#categories">Browse reviews</a></li><li><a href="#articles">Articles</a></li><li><a href="https://tellmebaby.com.au/blog">Blog</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a href="https://tellmebaby.com.au/become-member">TMB Rewards</a></li><li><a href="https://tellmebaby.com.au/profile/login">Login</a></li><li><a href="https://tellmebaby.com.au/profile/register">Signup</a></li></ul>
+<div class="social"><a href="https://www.facebook.com/TellMeBabyau/">Facebook</a><a href="https://www.instagram.com/tellmebabyau/?hl=en">Instagram</a><a href="https://www.youtube.com/channel/UCdewUxe5sbABUfSnVB5ofug">YouTube</a></div></div>
+</div>
+<div class="legal"><a class="logo" href="https://tellmebaby.com.au"><img src="images/TellMeBaby-logo.svg" alt="Tell Me Baby"></a><span>© Tell Me Media Pty Ltd 2021. All Rights Reserved</span></div>
+</div>
+</footer>
+</body>
+</html>

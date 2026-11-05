@@ -1,0 +1,1159 @@
+<script src="/static/js/jquery-1.10.2.js"></script>
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-language" content="fr" />
+        <meta http-equiv="content-script-type" content="text/javascript" />
+        <title>Energies Renouvelables</title>
+        <meta name="description" content="Energies renouvelables.org, l'information sur les energies renouvelables: l'energie renouvelable d'origine solaire, hydraulique, eolienne, geothermie ... tout sur l'energie renouvelable" />
+        <meta name="keywords" content="information, renouvelable, energie, energies renouvelables, Ã©nergies renouvelables, energies, energie eolienne, Ã©nergie renouvelable, energie renouvelable, energie solaire, Ã©nergies propres, solaire thermique, photovoltaÃ¯que, energies douces, eolien, energie eolienne, biomasse, hydroelectricite, bois energie, energies solaires" />
+        <meta name="Language" content="FR" />
+        <meta name="author" content="Brieuc MARTIN" />
+        <meta name="Robots" content="index, follow" />
+        <meta name="revisit-after" content="15 days" />
+        <meta name="Classification" content="energies renouvelables" />
+        <link rel="SHORTCUT ICON" href="http://www.systemes-solaires.com/favicon.ico" />
+        <meta name="verify-v1" content="u+VQvilkgB3QAp+R45tJuReF1UrCllg9AvaiXmi8eb0=" />
+        <meta name="DC.Publisher" content="Observ'ER" />
+        <meta name="DC.Creator" content="Observ'ER" />
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+            {
+                lang: 'fr'
+            }
+        </script>
+
+        <!--[if !IE]> <-->
+
+        <!-- <![endif]-->
+        <!--[if gte IE 6]>
+    <link rel="stylesheet" type="text/css" href="/static/css/default/home.css" media="screen, projection" title="Default" />
+    <![if lte IE 7]><link rel="stylesheet" type="text/css" href="/static/css/default/ie/home.css" media="screen, projection" title="Default" /><![endif]>
+    <![endif]-->
+        <link rel="stylesheet" href="/static/css/print/base.css" type="text/css" media="print" />
+        <script type="text/javascript">
+            function utmx_section() {}
+
+            function utmx() {}
+            (function () {
+                var k = '2967311113',
+                    d = document,
+                    l = d.location,
+                    c = d.cookie;
+
+                function f(n) {
+                    if (c) {
+                        var i = c.indexOf(n + '=');
+                        if (i > -1) {
+                            var j = c.indexOf(';', i);
+                            return c.substring(i + n.length + 1, j < 0 ? c.length : j)
+                        }
+                    }
+                }
+                var x = f('__utmx'),
+                    xx = f('__utmxx'),
+                    h = l.hash;
+                d.write('<sc' + 'ript src="' +
+                    'http' + (l.protocol == 'https:' ? 's://ssl' : '://www') + '.google-analytics.com' + '/siteopt.js?v=1&utmxkey=' + k + '&utmx=' + (x ? x : '') + '&utmxx=' + (xx ? xx : '') + '&utmxtime=' + new Date().valueOf() + (h ? '&utmxhash=' + escape(h.substr(1)) : '') +
+                    '" type="text/javascript" charset="utf-8"></sc' + 'ript>')
+            })();
+        </script>
+        <script src="/static/js/base.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                function animate() {
+                    $('#picOne').fadeIn(1000).delay(3000).fadeOut(1000);
+                    $('#picTwo').delay(5000).fadeIn(1000).delay(3000).fadeOut(1000);
+                }
+                animate();
+                setInterval(animate, 10000);
+            });
+        </script>
+        <link rel="icon" href="/static/icons/favicon.png" type="image/png" />
+        <style type="text/css" title="Default" media="screen, projection">
+        /* <![CDATA[ \*/
+
+            @import "/static/css/default/home.css";
+            /* ]]> */
+
+            .Prix {
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 900;
+                color: #FF0000;
+            }
+
+            .abonnezVous {
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 800;
+                color: #776351;
+            }
+
+            #nouveau {
+                position: absolute;
+                z-index: 99999;
+                top: 2px;
+                left: 217px;
+                width: 53px;
+                height: 10px;
+                padding: 2px;
+                line-height: 9px;
+                text-align: center;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                /*font-style: italic;
+    font-weight: 800;*/
+                color: #ffffff;
+                background-color: #FF0000;
+            }
+            /* Nav
+---------------------- */
+
+            #navigation {
+                margin-bottom: 1em;
+            }
+
+            #navigation li {
+                position: relative;
+            }
+
+            #navigation li ul {
+                position: relative;
+                z-index: 2000;
+            }
+
+            #navigation a {
+                display: block;
+                background-position: 12px 0.45em;
+                background-repeat: no-repeat;
+                padding: 1px 10px 1px 10px;
+                color: #5c4c3d;
+            }
+
+            #navigation li:hover a,
+            #navigation li.hover a {
+                background-position: -299px 0.25em;
+            }
+
+            #navigation ul ul {
+                position: absolute;
+                left: -9999px;
+                top: -9999px;
+                width: 200px;
+                background: #e7e6dd;
+                border: solid 1px #ccc9ba;
+            }
+
+            #navigation ul ul a {
+                color: #000;
+                padding: 1px 10px 1px 29px;
+                background-position: 19px 0.65em;
+                background-repeat: no-repeat;
+            }
+
+            #navigation ul li:hover ul a,
+            #navigation ul li.hover ul a {
+                background-position: 12px 0.45em;
+                text-decoration: none;
+            }
+
+            #navigation ul ul ul a {
+                background-position: 12px 0.45em;
+                background-repeat: no-repeat;
+            }
+
+            #navigation ul li:hover ul ul a,
+            #navigation ul li.hover ul ul a {
+                background-position: 12px 0.45em;
+            }
+
+            #navigation ul ul ul a:hover,
+            #navigation ul ul li:hover ul a:hover,
+            #navigation ul ul li.hover ul a:hover {
+                background-position: 12px 0.45em;
+            }
+
+            #navigation ul ul li:hover a,
+            #navigation ul ul li.hover a {
+                background-color: #f1f0ea;
+                background-position: 12px 0.45em;
+            }
+
+            #navigation ul ul li:hover ul a,
+            #navigation ul ul li.hover ul a {
+                color: #000;
+                background-color: #e7e6dd;
+                background-position: 12px 0.45em;
+            }
+
+            #navigation ul ul li:hover ul a:hover,
+            #navigation ul ul li.hover ul a:hover {
+                color: #e10b00;
+                background-color: #f1f0ea;
+            }
+
+            #navigation ul ul li {
+                border-top: dotted 1px #96917a;
+            }
+
+            #navigation ul ul li:first-child {
+                border-top: none;
+            }
+
+            #navigation ul li:hover ul,
+            #navigation ul li.hover ul {
+                left: 200px;
+                top: 0;
+            }
+
+            #navigation ul li:hover ul ul,
+            #navigation ul li.hover ul ul {
+                left: -9999px;
+                top: -9999px;
+            }
+
+            #navigation ul li ul li:hover ul,
+            #navigation ul li ul li.hover ul {
+                left: 110px;
+                top: -1px;
+            }
+
+            #navigation a:hover {
+                color: #8ab801;
+            }
+        }
+        /*#navigation .col1 .tutu a {background-image: url('systemes-solaires/img/jder/nouveau.gif');}
+
+.overlay1 .nav .tutu a{background-image: none;}
+#navigation .col1 .tutu ul li:hover a,
+#navigation .col1 .tutu ul li.hover a {background-position: left;}*/
+        </style>
+
+        <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+    </head>
+
+    <body class="i18n-fr">
+        <script type="text/javascript" src="wz_tooltip.js"></script>
+        <ul class="jumpers">
+            <li><a href="#content">Aller au contenu</a></li>
+            <li><a href="#navigation">Aller au menu de navigation</a></li>
+        </ul>
+        <div id="page"><span class="pageStart"></span>
+            <div id="loginForm">
+                <form action="connexion.asp" method="post" accept-charset="utf-8" class="loginForm">
+                    <fieldset>
+                        <strong>DÃ©jÃ  membre :</strong>
+                        <label for="ccc" class="login fancy"> <span>Identifiant</span>
+                            <input type="text" name="user" id="user" />
+                        </label>
+                        <label for="xxx" class="login fancy"> <span>Mot de passe</span>
+                            <input type="password" name="password" id="password" />
+                        </label>
+                        <input name="url" type="hidden" value="_default.asp" />
+                        <input name="ref" type="hidden" value="accueil_observ-er.asp" />
+                        <button id="bnj" name="bnj" type="submit" value="OK">OK</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="header">
+                <!--<h1 class="energies"><span>Energies renouvelables</span></h1>-->
+                <h1 class="energies"><span></span></h1>
+            </div>
+            <div id="container">
+                <div id="sections">
+                    <ul>
+                        <li class="observatory"><a href="/accueil-observ-er.asp">Observ'ER, Observatoire des Ã©nergies renouvelables</a></li>
+                        <li class="newspaper"><a href="/accueil-systemes-solaires.asp">SystÃ¨mes Solaires, le journal des Ã©nergies renouvelables</a></li>
+                        <li class="foundation"><a href="http://www.fondem.ong/">La Fondation Energies pour le monde</a></li>
+                    </ul>
+                </div>
+                <div id="wrapper" class="content">
+                    <div class="section" id="navigation">
+                        <div class="col1">
+                            <h2>Observ'ER : l'observatoire des Ã©nergies renouvelables</h2>
+                            <ul>
+                                <li><a href="/energies_renouvelables.asp">Les Ã©nergies renouvelables</a></li>
+                                <li><a href="/electricite_renouvelable.asp">Lâinventaire de la production d'Ã©lectricitÃ© d'origine renouvelable dans le monde  </a> </li>
+                                <li><a href="/barometre.asp">Le baromÃ¨tre EurObservâER</a></li>
+                                <li><a href="/energie-renouvelable-france.asp">BaromÃ¨tre 2020 des Ã©nergies renouvelables Ã©lectriques en France <img src="/systemes-solaires/img/jder/nouveau.gif" alt="New !" width="25" height="14"  align="top" style="text-decoration:none;"/> </a>
+                                    <!--<div id="nouveau">Nouveau</div></li>-->
+                                    <!--<li><a href="/electricite_verte.asp">LâÃ©lectricitÃ© verte</a></li>-->
+                                    <li><a href="/observ-er/html/etudes.asp">Les Ã©tudes d'Observ'ER</a></li>
+                                    <li><a href="/EKOenergie.asp">Label EKOÃ©nergie</a></li>
+                                    <li><a href="/architecture_bioclimatique.asp">Lâarchitecture bioclimatique</a></li>
+                                    <!--<li><a href="/annuaire_energies_renouvelables.asp">Annuaire des Ã©nergies renouvelables</a></li>-->
+                                    <!--<li><a href="/credit_impot.asp">Le crÃ©dit dâimpÃ´t </a></li>-->
+                                    <!--<li><a href="/tarifs_achat.asp">Tarifs d'achat</a></li>-->
+                                    <!--<li><a href="/centre_ressources.asp">Le centre de ressources</a></li>-->
+                                    <li><a href="/membres.asp">Le collÃ¨ge des fondateurs d'Observ'ER : les liens</a> </li>
+                                    <li><a href="/partenaires.asp">Les partenaires d'Observ'ER : les liens</a></li>
+                                    <li><a href="/qui-sommes-nous.asp">Qui sommes-nous&nbsp;?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col2">
+                            <h2>SystÃ¨mes solaires : Soleil, Vent, Eau, Biomasse, GÃ©othermie</h2>
+
+
+                            <ul>
+
+                                <li><a target="_blank" href="https://www.journal-enr.org/actu/">ActualitÃ©</a></li>
+                                <li><a href="/sommaire.asp">Le sommaire du num&eacute;ro en cours</a></li>
+                                <!--<li><a href="/dossier-du-mois.asp">Le dossier du mois</a></li>-->
+                                <li><a href="/formations.asp">Les formations</a></li>
+                                <li><a href="/manifestations.asp">Les manifestations</a></li>
+                                <li><a href="/offres-d-emploi.asp">Les offres d'emploi</a></li>
+                                <!--<li><a href="/demandes-d-emploi.asp">Les demandes d'emploi</a></li>-->
+                                <li><a href="/notes-de-lecture.asp">Notes de lecture</a></li>
+                                <!--<li><a href="/systemes-solaires/tarifs-publicitaires-2015.asp">Les tarifs publicitaires 2015</a></li>-->
+                                <li><a href="/sommaire-journal-de-l-eolien.asp">Le Journal de l'Ãolien</a></li>
+                                <li><a href="/sommaire-journal-du-photovoltaique.asp">Le Journal du PhotovoltaÃ¯que</a></li>
+                                <li><a href="/guide-formations.asp">Guide des formations 2019-2020 <img src="/systemes-solaires/img/jder/nouveau.gif" alt="New !" width="25" height="14"  align="top" style="text-decoration:none;"/></a></li>
+                                <li><a href="/suivi/decouverte.asp">DÃ©couvrir la revue</a></li>
+                                <li><a href="/newsletters.asp">Newsletters</a></li>
+
+                            </ul>
+
+                            <!-- <script type="text/javascript"> -->
+                            <!--
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','287','height','37','src','/abonnez-vous_III','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','/abonnez-vous_III' ); //end AC code
+</script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="287" height="37">
+                      <param name="movie" value="/abonnez-vous_III.swf" />
+                      <param name="quality" value="high" />
+                      <embed src="/abonnez-vous_III.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="287" height="37"></embed>
+                    </object>
+                    </noscript><br />-->
+                            <a target="_blank" href="/b2b/abonnement.asp">
+                                <img src="static/css/default/i/abonnez-vous.gif?rand=<?=rand(1,1000);?" align="middle" /></a>
+
+                            <!--
+<div class="illustration rightIllus bordered" id="pics" style="width:128px; height:156px; left: 0px;">
+                    <img src="/systemes-solaires/img/accueil/CreditCoopMadagascar2.jpg" border="0" width="128" height="156"  class="pic" id="picOne" style="display:none; border: solid 1px #776351;"/>
+                 <img src="/systemes-solaires/img/accueil/CreditCoopMadagascar3.jpg" border="0" width="128" height="156"  class="pic" id="picTwo" style="display:none; border: solid 1px #776351;"/>
+                 </div> -->
+
+
+                        </div>
+
+
+
+                        <div class="col3" id="navigation">
+                            <h2>Fondation Energies pour le monde : Ãnergie, Environnement, DÃ©veloppement</h2>
+                            <ul>
+                                <li> <a href="http://www.fondem.ong/fondation-energies-pour-le-monde/">La fondation</a> </li>
+                                <li> <a href="http://www.fondem.ong/faire-un-don/">Faites un don</a> </li>
+                                <li> <a href="http://www.fondem.ong/projets/">Les actions de la Fondation</a>
+                                    <ul>
+                                        <li> <a href="http://www.fondem.ong/publications/">Fiches action</a> </li>
+                                        <li> <a href="http://www.fondem.ong/publications/">Fondation Infos</a></li>
+                                    </ul>
+                                </li>
+                                <!--<li> <a href="#"> Les programmes de la fondation</a>
+                <ul>
+                    <li> <a href="/pompage_photovoltaique.asp">Maghreb - Le pompage photovolta&iuml;que</a> </li>
+                    <li> <a href="/pepse_madagascar.asp">Madagascar &ndash; PEPSE</a> </li>
+                            <!--<li> <a href="/delta_prores.asp">Pays du M&eacute;kong - Delta PRO RES</a> </li>
+                    <li> <a href="/proven.asp">Afrique Sub-saharienne - PROVEN</a> </li>
+                    <!--<li> <a href="/resirea.asp">Pays du M&eacute;kong - RESIREA</a> </li>
+                </ul>
+            </li>-->
+                                <li> <a href="http://www.fondem.ong/projets/logiciel-noria.php" target="_blank">Le syst&egrave;me expert NORIA</a> </li>
+
+                                <li> <a href="http://www.fondem.ong/projets/"> De l'&eacute;lectricit&eacute; verte pour le d&eacute;veloppement </a>
+                                    <ul>
+                                        <li> <a href="http://www.fondem.ong/projets/projet.php?projet=1" target="_blank">Madagascar</a> </li>
+                                        <li> <a href="http://www.fondem.ong/projets/projet.php?projet=2" target="_blank">Burkina faso</a> </li>
+                                        <li> <a href="#">Laos</a>
+                                            <ul>
+                                                <li> <a href="http://www.fondem.ong/projets/" target="_blank">Laos 1</a> </li>
+                                                <li> <a href="http://www.fondem.ong/projets/projet.php?projet=4" target="_blank">Laos 2</a> </li>
+                                            </ul>
+                                        </li>
+                                        <li> <a href="http://www.fondem.ong/projets/" target="_blank">Cambodge</a> </li>
+                                        <li> <a href="http://www.fondem.ong/projets/projet.php?projet=3" target="_blank">S&eacute;n&eacute;gal</a> </li>
+                                    </ul>
+                                </li>
+
+                                <li> <a href="http://www.fondem.ong/publications/">Publications</a>
+
+                                </li>
+                                <li> <a href="http://www.fondem.ong/projets/partenaires-fondem.php">Les partenaires de la Fondation</a></li>
+                                <li><a href="http://www.energies-renouvelables.org/boreale/" target="_blank">Site internet du projet BOREALE</a></li>
+                                <li><a href="http://www.fondem.ong/carte-actions-fondation/" style="color:#FF0000;" target="_blank">Carte des actions de la Fondation
+                        <img src="/systemes-solaires/img/jder/nouveau.gif" alt="New !" width="25" height="14" align="top" style="text-decoration:none;"/></a></li>
+                            </ul>
+
+
+
+                            <!--<div style="witdh: 240px; color:#ffffff; text-align:center; font-size:14px; background-color:#eb690b; border-radius:10px; border--radius:10px; 	padding:2px;"> -->
+
+                           <p align="center">
+                                <a href="http://www.fondem.ong/" target="_blank" style="background-image:none; color:#ffffff; text-decoration:none;">
+                                    <img width="287" border="0" alt="Fondation Ã©nergies pour le monde" src="http://www.fondem.ong/image/actualites/Fondem-Actualite-2015-11-04-Informatique-Nouveau-site-internet.jpg" /></a>
+                            </p>
+
+
+                            <!--<div style="witdh: 240px; color:#ffffff; text-align:center; font-size:14px; background-color:#eb690b; border-radius:10px; border-radius:10px; 	padding:2px;">
+                                         <div align="center">
+          <a href="fondem/html/faire-un-don.asp" target="_blank" style="background-image:none; color:#ffffff; text-decoration:none;">
+                                    <img width="240"   border="0" alt="Fondation Ã©nergies pour le monde" src="/systemes-solaires/img/accueil/AppelDonsFEM-6.gif" /></a></div>-->
+
+                            <!--// ENSEMBLE MADAGASCAR
+            <div style="witdh: 240px; height: 190px; padding:5px; text-align:center; background-color:#ffa000; border-bottom-left-radius:10px;border-bottom-right-radius:10px;">
+
+                <div class="illustration rightIllus bordered" id="pics" style="width:128px; height:156px; left: 0px;">
+                    <img src="/systemes-solaires/img/accueil/CreditCoopMadagascar2.jpg" border="0" width="128" height="156"  class="pic" id="picOne" style="display:none; border: solid 1px #776351;"/>
+                 <img src="/systemes-solaires/img/accueil/CreditCoopMadagascar3.jpg" border="0" width="128" height="156"  class="pic" id="picTwo" style="display:none; border: solid 1px #776351;"/>
+                 </div>-->
+
+                            <!--<span style="font-style:italic; font-size:11px;color:#ffffff;">Du 8 au 12 avril 2013</span><br />
+                             <span style="left:0px; font-weight:bold;color:#ffffff;">La Fondation Ãnergies pour le Monde Ã©tait en mission de terrain avec le CrÃ©dit CoopÃ©ratif</span>
+                                    <div style="background-color:#ff6600; width: 120px; height: 38px; font-size:11px; border-radius:8px; margin: 20px 0px 0px 10px; padding: 2px;">
+                                    <a href="https://www.credit-cooperatif.coop/particuliers/ensemble-nos-actualites/mission-fondation-energies-pour-le-monde-madagascar" target="_blank" style="background-image:none; color:#ffffff; text-decoration:none;">Pour suivre le carnet de route >>></a>
+
+                                    <a href="https://www.credit-cooperatif.coop/particuliers/ensemble-nos-actualites/mission-fondation-energies-pour-le-monde-madagascar" onClick="_gaq.push(['_trackEvent', 'Liens sortants', 'sortie', 'nom']);" target="_blank" style="background-image:none; color:#ffffff; text-decoration:none;">Consulter le carnet de route >>></a>
+                               </div>
+            </div>
+         </div>// FIN  ENSEMBLE MADAGASCAR -->
+
+
+
+                        </div>
+                    </div>
+                    
+                    
+                    
+
+                    <div class="section">
+                        <div class="col1"> <span class="separator"></span>
+                            <div class="illustration" style="width: 287px;"><img src="/systemes-solaires/img/accueil/observer_portail.jpg" alt="" width="287" height="100" />
+                            </div>
+                            <div class="cap">
+                                <p>CrÃ©Ã© en 1979, ObservâER est devenu une rÃ©fÃ©rence dans le domaine des Ã©nergies renouvelables et du dÃ©veloppement durable en France, en Europe et dans le Monde.</p>
+                            </div>
+                            <span class="separator"></span>
+                            <p><strong>ObservâER</strong> informe et promeut le dÃ©veloppement des Ã©nergies propres et favorise des initiatives destinÃ©es Ã  accroÃ®tre le rÃ´le des <a href="#" onMouseOver="TagToTip('nrj',TITLE,'')">Ã©nergies renouvelables</a> dans lâÃ©conomie et la sociÃ©tÃ©. Les Ã©nergies renouvelables incluent : lâ<a href="http://www.energies-renouvelables.org/energie_solaire.asp" onMouseOver="TagToTip('photovoltaique',TITLE,'')">Ã©nergie solaire  </a><a href="http://www.energies-renouvelables.org/solaire_photovoltaique.asp">photovoltaÃ¯que</a>, le <a href="http://www.energies-renouvelables.org/solaire_thermique.asp" onMouseOver="TagToTip('solaire_thermique',TITLE,'')">solaire thermique</a> basse tempÃ©rature, lâÃ©nergie solaire thermique haute tempÃ©rature, lâ<a href="http://www.energies-renouvelables.org/energie_eolienne.asp" onMouseOver="TagToTip('eolien',TITLE,'')">Ã©nergie Ã©olienne</a>, lâ<a href="http://www.energies-renouvelables.org/energie_hydraulique.asp" onMouseOver="TagToTip('hydraulique',TITLE,'')">Ã©nergie hydraulique</a> ou hydroÃ©lectricitÃ©, la <a href="http://www.energies-renouvelables.org/energie_geothermie.asp" onMouseOver="TagToTip('geothermie',TITLE,'')">gÃ©othermie</a>, la <a href="http://www.energies-renouvelables.org/energie_biomasse.asp" onMouseOver="TagToTip('biomasse',TITLE,'')">biomasse</a> elle-mÃªme composÃ©e par le <a href="http://www.energies-renouvelables.org/bois_energie.asp" onMouseOver="TagToTip('bois',TITLE,'')">bois-Ã©nergie</a>, le <a href="http://www.energies-renouvelables.org/biogaz.asp" onMouseOver="TagToTip('biogaz',TITLE,'')">biogaz</a> et les <a href="http://www.energies-renouvelables.org/biocarburants.asp" onMouseOver="TagToTip('biocarburants',TITLE,'')">biocarburants</a>.</p>
+                            <p><strong>ObservâER</strong> veille, informe, propose des solutions liÃ©es au dÃ©veloppement et Ã  la diffusion des Ã©nergies renouvelables.</p>
+                            <p><strong>ObservâER</strong> quantifie et qualifie les progrÃ¨s des sciences, des techniques et de lâindustrie, Ã©value les potentialitÃ©s de chacune des disciplines liÃ©es aux diffÃ©rentes sources dâÃ©nergies renouvelables.</p>
+                            <p><strong>ObservâER</strong> participe activement Ã  la protection des ressources naturelles et favorise la mise en place de technologies sobres et propres pour la dÃ©fense de lâenvironnement et la lutte contre le rÃ©chauffement global du climat.</p>
+                        </div>
+                        <div class="col2">
+                        
+                        
+                        <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 120px; margin-bottom:0;margin-right: 10px;">
+                                <span class="illustration leftIllus bordered" style="width: 120px;">
+                                    <a href="https://www.journal-enr.org/journal/journal-des-energies-renouvelables-n-248/" target="_blank">
+                                    <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jder/2019/Journal-des-Energies-Renouvelables-n248-Couverture-360px.jpg" alt="SystÃ¨mes Solaires, le journal des Ã©nergies renouvelables" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                          <h3>Le Journal <br/>des Ãnergies Renouvelables<br />
+                            Juillet 2019</h3>
+                            <p>
+                                <strong>
+                                    . Dossier&nbsp;: Solaire thermique collectif<br />
+                                    . En dÃ©bat : Taxe carbone aux frontiÃ¨res : entre ambition et rÃ©alitÃ©<br />
+                                    . Chaleur Renouvelable â France/Allemagne : deux pays, deux mÃ©thanisations<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="https://www.journal-enr.org/journal/journal-des-energies-renouvelables-n-248/" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="https://librairie-energies-renouvelables.org/journal-des-energies-renouvelables/536-le-journal-des-energies-renouvelables-n248.html" target="_blank">Commander</a>
+                                    </span>
+                              </p>
+                          </div>
+                            <br><br>
+                        
+                        
+                        <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="https://www.journal-eolien.org/journal/journal-de-l-eolien-hors-serie-rumeurs-de-l-eolien/" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jde/hors-serie-07-2019/Journal-Eolien-HS-2019-Couverture-360px.jpg" alt="Le journal de l'Ã©olien" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal de l'Ãolien<br />Juillet 2019</h3>
+                            <p>
+			                   <strong>
+                                    . Dossier&nbsp;: rumeurs de lâÃ©olien<br />
+                                    . Qui veut la peau de lâÃ©olien ?<br />
+                                    . Beaucoup de bruit pour pas grand-chose ?<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="https://www.journal-eolien.org/journal/journal-de-l-eolien-hors-serie-rumeurs-de-l-eolien/" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="https://librairie-energies-renouvelables.org/journal-de-l-eolien/535-le-journal-de-l-eolien-hors-serie-special-rumeurs-de-l-eolien.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                        
+                        <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 122px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="https://www.journal-photovoltaique.org/journal/journal-du-photovoltaique-hors-serie-autoconsommation/" target="_blank" title="Lire le sommaire dÃ©taillÃ© de ce numÃ©ro sur le site journal-photovoltaique.org">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jdp/hors-serie-07-2019/Journal-du-Photovoltaique-hs-2019-Couverture-360px.jpg" alt="Le Journal du photovoltaÃ¯que" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>du PhotovoltaÃ¯que<br />Juin 2019</h3>
+                            <p>
+                                <strong>
+                                    . Dossier&nbsp;: autoconsommation<br />
+                                    . 2019, annÃ©e de la libÃ©ration<br />
+                                    . OÃ¹ en est lâautoconsommation collective en France ?<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="https://www.journal-photovoltaique.org/journal/journal-du-photovoltaique-hors-serie-autoconsommation/" target="_blank" title="Lire le sommaire dÃ©taillÃ© de ce numÃ©ro sur le site journal-photovoltaique.org">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="https://librairie-energies-renouvelables.org/journal-du-photovoltaique/534-le-journal-des-energies-renouvelables-hors-serie-autoconsommation.html" title="Commander ce numÃ©ro sur la librairie des Ã©nergies renouvelables" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+
+
+                        <!--<span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=53" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jder/239/Journal-des-Energies-Renouvelables-n239-Couverture-360px.jpg" alt="SystÃ¨mes Solaires, le journal des Ã©nergies renouvelables" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>des Ãnergies Renouvelables<br />AoÃ»t/Sept/Octobre 2017</h3>
+                            <p>
+                                <strong>
+                                    . Dossier&nbsp;:<br />La dynamique hydrogÃ¨ne est lancÃ©e<br />
+                                    . Innovation&nbsp;: Small sera bientÃ´t beautiful<br />
+                                    . Entreprise&nbsp;: Greenflex : "La performance environementale est une performance Ã©conomique"<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=53" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-des-energies-renouvelables/370-le-journal-des-energies-renouvelables-n239.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br> -->
+
+
+
+<!--                        <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="https://www.journal-eolien.org/journal/sommaire-du-journal.php?id=52" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jde/25/Journal-Eolien-n25-Couverture-360px.jpg" alt="Le journal de l'Ã©olien" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>de l'Ãolien<br />Juillet/AoÃ»t 2017</h3>
+                            <p>
+                                <strong>
+                                    . Dossier : atlas 2017 des parcs Ã©oliens en France<br />
+                                    . EnquÃªte&nbsp;: Vers une silver Ã©conomie Ã©olienne Ã  la franÃ§aise<br />
+                                    . Ãconomie&nbsp;: Dong Energy, l'adieu aux fossiles<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="https://www.journal-eolien.org/journal/sommaire-du-journal.php?id=52" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-de-l-eolien/351-le-journal-de-l-eolien-n25.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br> -->
+
+                       <!--  <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=47" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jder/237/Journal-des-Energies-Renouvelables-237-Avril-Mai-2017-Couverture.jpg" alt="SystÃ¨mes Solaires, le journal des Ã©nergies renouvelables" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>des Ãnergies Renouvelables<br />Avril/Mai 2017</h3>
+                            <p>
+                                <strong>
+                                    . Dossier&nbsp;:<br />la digitalisation, nouvelle alliÃ©e des Ã©nergies renouvelables<br />
+                                    . Entreprise&nbsp;: Hydroquest, on the RhÃ´ne again<br />
+                                    . EnquÃªte&nbsp;: VariabilitÃ©, le rÃ©seau sait gÃ©rer<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=47" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-des-energies-renouvelables/323-le-journal-des-energies-renouvelables-n237.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+                        <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="https://www.journal-eolien.org/journal/sommaire-du-journal.php?id=46" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jde/23/Journal-Eolien-n23-Couverture.jpg" alt="Le journal de l'Ã©olien" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>de l'Ãolien<br />Jan./FÃ©v./Mars 2017</h3>
+                            <p>
+                                <strong>
+                                    . Dossier Mesure de vent&nbsp;: quand la filiÃ¨re fait bonne mesure<br />
+                                    . Entreprise&nbsp;: Windsourcing, quincaillier de lâÃ©olien<br />
+                                    . EnquÃªte&nbsp;: les promesses dâAdwen entre les mains de Siemens<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="https://www.journal-eolien.org/journal/sommaire-du-journal.php?id=46" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-de-l-eolien/321-le-journal-de-l-eolien-n23.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+                       <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="http://www.journal-photovoltaique.org/journal/sommaire-du-journal.php?id=45" target="_blank" title="Lire le sommaire dÃ©taillÃ© de ce numÃ©ro sur le site journal-photovoltaique.org">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jdp/20/journal-du-photovoltaique-20-couverture.jpg" alt="Le Journal du photovoltaÃ¯que" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>du PhotovoltaÃ¯que<br />Jan./FÃ©v./Mars 2017</h3>
+                            <p>
+                                <strong>
+                                    . Dossier&nbsp;: Grandes toitures photovoltaÃ¯ques, le dÃ©but dâun Ã¢ge dâor<br />
+                                    . ÃvÃ©nement&nbsp;: BePositive, un salon sous le signe du photovoltaÃ¯que<br />
+                                    . BDPV&nbsp;: Une base de donnÃ©es unique en France<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="http://www.journal-photovoltaique.org/journal/sommaire-du-journal.php?id=45" target="_blank" title="Lire le sommaire dÃ©taillÃ© de ce numÃ©ro sur le site journal-photovoltaique.org">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-du-photovoltaique/298-le-journal-du-photovoltaique-n20.html" title="Commander ce numÃ©ro sur la librairie des Ã©nergies renouvelables" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+
+                        <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=44" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jder/236/Journal-des-Energies-Renouvelables-236-Janvier-Fevrier-Mars-2017-Couverture.jpg" alt="SystÃ¨mes Solaires, le journal des Ã©nergies renouvelables" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>des Ãnergies Renouvelables<br />Jan./FÃ©v./Mars 2017</h3>
+                            <p>
+                                <strong>
+                                    . Dossier&nbsp;:<br />la mobilitÃ© Ã©lectrique au service des renouvelables<br />
+                                    . Entreprise : BPIfrance, levier public de lâindustrie franÃ§aise des Ã©nergies renouvelables<br />
+                                    . EnquÃªte : Le Winter Package jette un coup de froid sur les Ã©nergies renouvelables<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=44" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-des-energies-renouvelables/297-le-journal-des-energies-renouvelables-n236.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+                            <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=41" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jder/235/Journal-des-Energies-Renouvelables-235-Aout-Novembre-Decembre-2016-Couverture.jpg" alt="SystÃ¨mes Solaires, le journal des Ã©nergies renouvelables" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>des Ãnergies Renouvelables<br />Nov./DÃ©c. 2016</h3>
+                            <p>
+                                <strong>
+                                    . Dossier COP22&nbsp;:<br />les renouvelables<br />en Afrique<br />
+                                    . Interview de Jean-Louis Borloo<br />
+                                    . Mobilisation en faveur de lâÃ©nergie africaine de demain<br />
+                                    . LâÃgypte mise sur la transition Ã©nergÃ©tique<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=41" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-des-energies-renouvelables/276-le-journal-des-energies-renouvelables-n235.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+                            <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="https://www.journal-eolien.org/journal/sommaire-du-journal.php?id=40" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jde/21/Journal-Eolien-n21-Couverture.jpg" alt="Le journal de l'Ã©olien" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>de l'Ãolien<br />Sept./Oct. 2016</h3>
+                            <p>
+                                <strong>
+                                    . Dossier barriÃ¨res administratives&nbsp;: entre professionnels et services de l'Ã©tat, sujet sensible<br />
+                                    . Start-up&nbsp;: Epsiline, anÃ©momÃ¨tre laser<br />
+                                    . Entreprise&nbsp;: Envinergy, vent(e)s favorables dans lâÃ©olien<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="https://www.journal-eolien.org/journal/sommaire-du-journal.php?id=40" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-de-l-eolien/265-le-journal-de-l-eolien-n21.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+                            <!--<span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="http://www.journal-photovoltaique.org/journal/sommaire-du-journal.php?id=39" target="_blank" title="Lire le sommaire dÃ©taillÃ© de ce numÃ©ro sur le site journal-photovoltaique.org">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jdp/18/journal-du-photovoltaique-18-couverture.jpg" alt="Le Journal du photovoltaÃ¯que" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>du PhotovoltaÃ¯que<br />Sept./Oct. 2016</h3>
+                            <p>
+                                <strong>
+                                    . Dossier risque incendie&nbsp;: la filiÃ¨re s'organise<br />
+                                    . Ãconomie&nbsp;: Blockchain, la prochaine rÃ©volution Ã©nergÃ©tique&nbsp;?<br />
+                                    . Reportage&nbsp;: EWZ, la rÃ©gie investit le solaire<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="http://www.journal-photovoltaique.org/journal/sommaire-du-journal.php?id=39" target="_blank" title="Lire le sommaire dÃ©taillÃ© de ce numÃ©ro sur le site journal-photovoltaique.org">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-du-photovoltaique/264-le-journal-du-photovoltaique-n18.html" title="Commander ce numÃ©ro sur la librairie des Ã©nergies renouvelables" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+
+                            <!--<span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=38" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jder/234/Journal-des-Energies-Renouvelables-234-Aout-Septembre-Octobre-2016-Couverture.jpg" alt="SystÃ¨mes Solaires, le journal des Ã©nergies renouvelables" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>des Ãnergies Renouvelables<br />AoÃ»t/Sept./Oct. 2016</h3>
+                            <p>
+                                <strong>
+                                    . Dossier GÃ©othermie&nbsp;: La France aux avant-postes de la gÃ©othermie<br />
+                                    . Reportage &nbsp;: Un four solaire pour l'histoire<br />
+                                    . Portrait&nbsp;: Solistart, irrÃ©ductible solariste<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="http://www.journal-enr.org/journal/sommaire-du-journal.php?id=38" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-des-energies-renouvelables/251-le-journal-des-energies-renouvelables-n234.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>
+
+
+
+
+                            <span class="separator"></span>
+                            <div class="illustration leftIllus bordered" style="width: 125px; margin-bottom:0;">
+                                <span class="illustration leftIllus bordered" style="width: 125px;">
+                                    <a href="https://www.journal-photovoltaique.org/journal/sommaire-du-journal.php?id=31" target="_blank">
+                                        <img src="http://www.energies-renouvelables.org/systemes-solaires/img/jdp/journal-du-photovoltaique-17-couverture.jpg" alt="SystÃ¨mes Solaires, le journal des Ã©nergies renouvelables" style="border: solid 1px #cccccc;" width="120" />
+                                    </a>
+                                </span>
+                            </div>
+                            <h3>Le Journal <br/>du PhotovoltaÃ¯que<br />Juin/Juillet/AoÃ»t 2016</h3>
+                            <p>
+                                <strong>
+                                    . Dossier Smart Grid&nbsp;: Quand la recherche se fait en bonne intelligence<br />
+                                    . Entreprise&nbsp;: APsystems se lance Ã  l'assault du marchÃ© europÃ©en<br />
+                                    . Reportage&nbsp;: First Solar, l'AmÃ©ricain qui voit grand<br />
+                                </strong>
+                            </p>
+                            <div style="float:left;">
+                                <p class="plus">
+                                    <a href="https://www.journal-photovoltaique.org/journal/sommaire-du-journal.php?id=31" target="_blank">Sommaire complet</a>
+                                    <span style="margin-left:35px;">
+                                        <a href="http://librairie-energies-renouvelables.org/journal-du-photovoltaique/231-le-journal-du-photovoltaique-n17.html" target="_blank">Commander</a>
+                                    </span>
+                                </p>
+                            </div>
+                            <br><br>-->
+
+
+
+                            <span class="separator"></span>
+
+                            <!--<div class="illustration leftIllus bordered" style="width: 120px;">
+                                <a href="http://www.journal-eolien.org/journal/sommaire-du-journal.php?id=19" target="_blank"><img src="http://www.energies-renouvelables.org/systemes-solaires/img/jde/18/journal-des-energies-renouvelables-18-couverture.jpg" alt="SystÃ¨mes Solaires, le journal de l'Eolien" width="120" /></a>
+                            </div>
+                            <h3>Le Journal <br/>de l'&Eacute;olien <br/>
+                            Jan./FÃ©v./Mars 2016</h3>
+                            <strong>
+
+                    . Dossier fusions-acquisitions&nbsp;: La naissance des gÃ©ants<br />
+                    . Reportage&nbsp;: Fruges, un territoire revitalisÃ©<br />
+                    . &Eacute;conomie&nbsp;: Le plan Juncker relance les investissements<br />
+
+                  </strong>
+                            <div style="float:left;">
+                                <p class="plus"><a href="http://www.journal-eolien.org/journal/sommaire-du-journal.php?id=19" target="_blank">Sommaire complet</a><span style="margin-left:35px;"><a href="http://librairie-energies-renouvelables.org/journal-de-l-eolien/196-le-journal-de-l-eolien-n18.html" target="_blank">Commander</a></span></p>
+                            </div>
+                            <br />
+                            <br />
+
+                            <span class="separator"></span>
+
+                            <!--<p><a href="/suivi/meteo.asp"><img src="/Intro-EolienneTourne2.gif" alt="" border="0" /></a></p>
+                    <p><a href="/suivi/meteo.asp"><img src="/Intro-EolienneTourne2.gif" alt="" border="0" /></a></p>-->
+
+
+
+
+                            <p>Depuis 1985, ce bimestriel francophone prÃ©sente toute lâactualitÃ© des Ã©nergies renouvelables : reportages, dossiers, indicateurs de production, utilisations en France et Ã  lâÃ©tranger. Cette revue de 50 pages sâadresse au plus large public autant quâaux spÃ©cialistes et aux professionnels des Ã©nergies renouvelables.</p>
+                            <p>Chaque  prÃ©sente une filiÃ¨re en dÃ©tail (Ã©olien, solaire, bois-Ã©nergie, etc.) et devient ainsi un ouvrage de rÃ©fÃ©rence sur une technologie au moment de sa publication, tout en relatant lâactualitÃ© des autres filiÃ¨res : la mise en perspective des chiffres-clÃ©s, lâÃ©tat du marchÃ©, le dÃ©tail des programmes et des aides publiques, les indicateurs sur lâemploi et lâenvironnement.</p>
+                        </div>
+                        <div class="col3">
+                            <div align="center">
+                                <span class="separator"></span>
+                            </div>
+                            <div class="illustration" style="width: 287px;"> <span class="decorated"><img src="/systemes-solaires/img/accueil/fondation_portail.jpg" alt="Fondation Ã©nergies pour le monde" width="287" height="100" border="0" /><span class="corner1"></span><span class="corner2"></span></span>
+                                <div class="legend">
+                                    <p>CrÃ©dit photo : Fondation Energies pour le Monde</p>
+                                </div>
+                            </div>
+                            <div class="cap">
+                                <p>Aujourdâhui, plus de 2 milliards dâÃªtres humains nâont pas accÃ¨s Ã  lâÃ©lectricitÃ© pour cause dâÃ©conomie fragile, dâinfrastructures lourdes et coÃ»teuses, de zones difficiles dâaccÃ¨s, dâhabitat dispersÃ©. LâaccÃ¨s Ã  lâÃ©lectricitÃ©, câest la garantie de meilleures conditions de vie (hygiÃ¨ne, santÃ©, Ã©ducation) et lâespoir dâun dÃ©veloppement Ã©conomique.</p>
+                            </div>
+                            <span class="separator"></span>
+                            <p>Depuis 1990, la Fondation Ãnergies pour le Monde, ses partenaires et ses donateurs mettent en Åuvre des projets dâÃ©lectricitÃ© rurale dÃ©centralisÃ©e en Afrique, Madagascar, Asie du sud-est, Inde, Chine, pays caraÃ¯bes, zone Pacifique.</p>
+                            <p>La Fondation Ãnergies pour le Monde dont le savoir faire est reconnu, initie et sÃ©lectionne les projets respectueux de lâenvironnement, trouve des financements, assure le suivi de programmes pÃ©rennes et sÃ»rs, tisse des rÃ©seaux de compÃ©tences en proposant des formations efficaces avec les gouvernements et les partenaires locaux.</p>
+                            <br />
+                            <br />
+                            <br />
+                            <p align="center">
+                                <a href=" http://www.wattimpact.com/sceau2.aspx?urlreferrer=http://www.energies-renouvelables.org" target="_blank"><img src=" http://stats.wattimpact.com/images/0169ef2728f64aa8a6bb7eeafbd2fbde_22_65v2010.imgw" border="0" alt="Vignette wattimpact.com" /></a>
+                            </p>
+                            <p align="center">
+                                <g:plusone></g:plusone>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div align="center"><a href="/presse/default.asp"><font color="#990000">Espace presse</font></a></div>
+                <ul>
+                    <li><a href="/accueil-observ-er.asp">Observ'ER</a></li>
+                    <li><a href="http://www.journal-enr.org/" target="_blank">Journal des &Eacute;nergies Renouvelables</a></li>
+                    <li><a href="http://www.journal-photovoltaique.org/" target="_blank">Journal du PhotovoltaÃ¯que</a></li>
+                    <li><a href="http://www.journal-eolien.org/" target="_blank">Journal de l'Ãolien</a></li>
+                    <li><a href="http://www.fondem.ong/" target="_blank">Fondation &eacute;nergies pour le monde</a></li>
+                    <li><a href="http://www.librairie-energies-renouvelables.org/" target="_blank">La librairie</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/default.asp">&copy;energies-renouvelables.org 2020</a></li>
+                    <li><a href="/plan.asp">Plan du site</a></li>
+                    <!-- <li><a href="https://fr.linkedin.com/in/brieucmartin" target="_blank">Cr&eacute;dits</a></li>-->
+                    <li><a href="/contact_observ-er.asp">Contacts</a></li>
+                </ul>
+            </div>
+            <span class="pageEnd"></span> </div>
+        <span id="nrj">
+<span class="separator"></span>
+<div class="inner">
+	<h1>Energie Renouvelable</h1>
+<span class="separator"></span>
+  <h2>Les 5 familles des &eacute;nergies renouvelables</h2>
+  <p>Fournies par le soleil, le vent, la chaleur de la terre, les chutes d&rsquo;eau, les mar&eacute;es ou encore la croissance des v&eacute;g&eacute;taux, les &eacute;nergies renouvelables n&rsquo;engendrent pas ou peu de d&eacute;chets ou d&rsquo;&eacute;missions polluantes. Elles participent &agrave; la lutte contre l&rsquo;effet de serre et les rejets de CO2 dans l&rsquo;atmosph&egrave;re, facilitent la gestion raisonn&eacute;e des ressources locales, g&eacute;n&egrave;rent des emplois. L' energie solaire (energie solaire photovolta&iuml;que, energie solaire thermique), l&rsquo;hydro&eacute;lectricit&eacute;, l&rsquo;&eacute;olien, la biomasse, la g&eacute;othermie sont des &eacute;nergies flux&nbsp; in&eacute;puisables par rapport aux &laquo;&nbsp;&eacute;nergies stock&nbsp;&raquo; tir&eacute;es des gisements de combustibles fossiles en voie de rar&eacute;faction : p&eacute;trole, charbon, lignite, gaz naturel.</p>
+  <p>Entrez dans l&rsquo;univers des &eacute;nergies renouvelables&nbsp;: Quelles sources d&rsquo;&eacute;nergies ? Pour quels besoins ? Comment les capter, les transformer ? Sous quelle forme les utiliser ?</p>
+  <span class="separator"></span>
+  <h3>Voir aussi :</h3>
+  <div class="nav">
+    <ul>
+      <li><a href="http://www.energies-renouvelables.org/energie_solaire.asp">L&rsquo;&eacute;nergie solaire</a></li>
+      <ul>
+        <li><a href="http://www.energies-renouvelables.org/solaire_photovoltaique.asp">L&rsquo;&eacute;nergie solaire photovolta&iuml;que</a></li>
+        <li><a href="http://www.energies-renouvelables.org/solaire_thermique.asp">Le Solaire thermique basse temp&eacute;raure</a></li>
+        <li><a href="http://www.energies-renouvelables.org/solaire_thermique_ht.asp">Le solaire thermique haute temp&eacute;rature</a></li>
+      </ul>
+      <li><a href="http://www.energies-renouvelables.org/energie_eolienne.asp">L&rsquo;&eacute;nergie &eacute;olienne</a></li>
+      <li><a href="http://www.energies-renouvelables.org/energie_hydraulique.asp">L&rsquo;&eacute;nergie hydraulique - Hydro&eacute;lectricit&eacute;</a></li>
+      <ul>
+        <li><a href="http://www.energies-renouvelables.org/energie_hydraulique.asp">La grande hydraulique</a></li>
+        <li><a href="http://www.energies-renouvelables.org/petite_hydraulique.asp">La petite hydraulique</a></li>
+        <li><a href="http://www.energies-renouvelables.org/energie_hydraulique.asp">Les &eacute;nergies marines</a></li>
+      </ul>
+      <li><a href="http://www.energies-renouvelables.org/energie_biomasse.asp">La biomasse</a></li>
+      <ul>
+        <li><a href="http://www.energies-renouvelables.org/bois_energie.asp">Bois &eacute;nergie</a></li>
+        <li><a href="http://www.energies-renouvelables.org/biogaz.asp">Le biogaz</a></li>
+        <li><a href="http://www.energies-renouvelables.org/biocarburants.asp">Les biocarburants</a></li>
+      </ul>
+      <li><a href="http://www.energies-renouvelables.org/energie_geothermie.asp">La G&eacute;othermie</a></li>
+      <li><a href="http://www.energies-renouvelables.org/architecture_bioclimatique.asp">Architecture bioclimatique</a></li>
+      <ul>
+        <li><a href="http://www.energies-renouvelables.org/hqe.asp">La haute qualit&eacute; environnementale (HQE)</a> </li>
+        
+      </ul>
+   <li><a href="http://www.energies-renouvelables.org/energies_renouvelables.asp">Energie Renouvelable</a></li>
+    </ul>
+  </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+<span id="photovoltaique">
+<span class="separator"></span>
+<div class="inner">
+  <h1>Energie solaire</h1>
+  <h2>L&rsquo;&eacute;nergie solaire photovolta&iuml;que</h2>
+<p>L&rsquo;energie solaire photovolta&iuml;que est une energie renouvelable qui provient de la conversion de la lumi&egrave;re du soleil en &eacute;lectricit&eacute; au sein de mat&eacute;riaux semi-conducteurs comme le silicium ou recouverts d&rsquo;une mince couche m&eacute;tallique. Ces mat&eacute;riaux photosensibles ont la propri&eacute;t&eacute; de lib&eacute;rer leurs &eacute;lectrons sous l&rsquo;influence d&rsquo;une &eacute;nergie ext&eacute;rieure. C&rsquo;est l&rsquo;effet photovolta&iuml;que. L&rsquo;&eacute;nergie est apport&eacute;e par les photons, (composants de la lumi&egrave;re) qui heurtent les &eacute;lectrons et les lib&egrave;rent, induisant un courant &eacute;lectrique. Ce courant continu de micropuissance calcul&eacute; en watt cr&ecirc;te (Wc) peut &ecirc;tre transform&eacute; en courant alternatif gr&acirc;ce &agrave; un onduleur.
+  L&rsquo;&eacute;lectricit&eacute; produite est disponible sous forme d&rsquo;&eacute;lectricit&eacute; directe ou stock&eacute;e en batteries (&eacute;nergie &eacute;lectrique d&eacute;centralis&eacute;e) ou en &eacute;lectricit&eacute; inject&eacute;e dans le r&eacute;seau.
+  
+  Un g&eacute;n&eacute;rateur solaire photovolta&iuml;que est compos&eacute; de modules photovolta&iuml;ques eux m&ecirc;me compos&eacute;s de cellules photovolta&iuml;ques connect&eacute;es entre elles. 
+  
+  Les performances d&rsquo;une installation photovolta&iuml;que d&eacute;pendent de l&rsquo;orientation des panneaux solaires et des zones d&rsquo;ensoleillement dans lesquelles vous vous trouvez.
+  
+  En France il existe un prix du kilowattheure solaire et vous pouvez consommer et vendre  du courant photovolta&iuml;que.
+  
+  L&rsquo;avenir du photovolta&iuml;que dans les pays industrialis&eacute;s passe par son int&eacute;gration sur les toits et les fa&ccedil;ades des maisons solaires.</p>
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+
+<span id="solaire_thermique">
+<span class="separator"></span>
+<div class="inner">
+  <h2>Le solaire thermique basse temp&eacute;rature</h2>
+<p>Les rayons du soleil, pi&eacute;g&eacute;s par des capteurs thermiques vitr&eacute;s, transmettent leur energie renouvelable (energie solaire) &agrave; des absorbeurs m&eacute;talliques - lesquels r&eacute;chauffent un r&eacute;seau de tuyaux de cuivre o&ugrave; circule un fluide caloporteur. Cet &eacute;changeur chauffe  &agrave; son tour l&rsquo;eau stock&eacute;e dans un cumulus. Un chauffe-eau solaire produit de l&rsquo;eau chaude sanitaire ou du chauffage g&eacute;n&eacute;ralement diffus&eacute; par un  &quot;plancher solaire direct&quot;.
+  
+  Tous les dispositifs qui agissent comme capteurs solaires thermiques sont de plus en plus int&eacute;gr&eacute;s dans les projets d&rsquo;architecture bioclimatique (maisons solaires, serres, murs capteurs, murs Trombe&hellip;).
+  
+  Les capteurs solaires thermiques et les chauffe-eau solaires connaissent une croissance spectaculaire en France. Cr&eacute;dit d&rsquo;imp&ocirc;t et aides des collectivit&eacute;s locales sont particuli&egrave;rement incitatives.</p>
+<span class="separator"></span>
+<h2>Le solaire thermique haute temp&eacute;rature</h2>
+<p>La concentration du rayonnement solaire sur une surface de captage permet d&rsquo;obtenir de tr&egrave;s hautes temp&eacute;ratures g&eacute;n&eacute;ralement comprises entre 400  C et 1 000  C.
+  
+  La chaleur solaire (energie solaire) produit de la vapeur qui alimente une turbine qui alimente elle-m&ecirc;me un g&eacute;n&eacute;rateur qui produit de l&rsquo;&eacute;lectricit&eacute;, c&rsquo;est l&rsquo;h&eacute;liothermodynamie. 
+  
+  Trois technologies distinctes sont utilis&eacute;es dans les centrales solaires &agrave; concentration pour produire cette energie solaire.
+  
+  Dans les concentrateurs paraboliques, les rayons du soleil convergent vers un seul point, le foyer d&rsquo;une parabole. Dans les centrales &agrave; tour, des centaines voire des milliers de miroirs (h&eacute;liostats) suivent la course du soleil et concentrent son rayonnement sur un r&eacute;cepteur central plac&eacute; au sommet d&rsquo;une tour. Troisi&egrave;me technologie : des capteurs cylindro-paraboliques concentrent les rayons du soleil vers un tube caloporteur situ&eacute; au foyer du capteur solaire.
+  
+  Apr&egrave;s plusieurs ann&eacute;es de sommeil l'energie solaire haute temp&eacute;rature repart de plus belle notamment dans les pays de la &laquo; sun belt &raquo;.
+  
+  D&eacute;couvrez les installations exp&eacute;rimentales solaires thermodynamiques : fours solaires &agrave; concentration, chemin&eacute;es solaires et les grandes centrales thermodynamiques  en service et en projet de cette importante fili&egrave;re energie renouvelable qu'est l'energie solaire. </p>
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+
+
+<span id="eolien">
+<span class="separator"></span>
+<div class="inner">
+  <h1>Energie eolienne</h1>
+  <h2>L&rsquo;&eacute;nergie &eacute;olienne</h2>
+<p>Comme les moulins &agrave; vent du pass&eacute;, les &eacute;oliennes g&eacute;n&egrave;rent une energie renouvelable (energie eolienne) alimentant des outils  m&eacute;caniques ou &eacute;lectriques.
+  
+  Les pales du rotor des grandes &eacute;oliennes ou a&eacute;rog&eacute;n&eacute;rateurs captent l&rsquo;&eacute;nergie cin&eacute;tique du vent et entra&icirc;nent un g&eacute;n&eacute;rateur &eacute;lectrique pour produire des kilowattheures propres et renouvelables qu'est l'energie eolienne. Une &eacute;olienne de nouvelle g&eacute;n&eacute;ration d&eacute;veloppe en g&eacute;n&eacute;ral une puissance d&rsquo;environ 2 MW (2 millions de watts). Chaque machine de 2MW est capable d&rsquo;alimenter environ 2 000 foyers (hors chauffage). 
+  
+  Aujourd&rsquo;hui,  la France compte plus de 2 500 MW install&eacute;s et les a&eacute;rog&eacute;n&eacute;rateurs font d&eacute;sormais partie du paysage.</p>
+
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+
+<span id="hydraulique">
+<span class="separator"></span>
+<div class="inner">
+  <h1>Energie hydraulique</h1>
+  <h2>L&rsquo;&eacute;nergie hydraulique &ndash; l&rsquo;hydro&eacute;lectricit&eacute;.</h2>
+<p>&Agrave; L&rsquo;image des moulins &agrave; eau de jadis, l&rsquo;hydro&eacute;lectricit&eacute; ou production d&rsquo;&eacute;lectricit&eacute; par captage de l&rsquo;eau est apparue au milieu du XIXe si&egrave;cle. L'eau fait tourner une turbine qui entra&icirc;ne un g&eacute;n&eacute;rateur &eacute;lectrique qui injecte les Kilowattheures sur le r&eacute;seau. 
+  
+  L'&eacute;nergie hydraulique repr&eacute;sente 19% de la production totale d'&eacute;lectricit&eacute; dans le monde et 13% en France. C&rsquo;est la source d'&eacute;nergie renouvelable la plus utilis&eacute;e. Cependant, tout le potentiel d'energie renouvelable hydro&eacute;lectrique mondial n&rsquo;est pas encore exploit&eacute;.</p>
+<span class="separator"></span>
+<h2>La petite hydraulique</h2>
+<p>Si toutes les installations de petite puissance sont regroup&eacute;es sous le terme de petite centrale hydraulique (PCM), on distingue la pico-centrale : inf&eacute;rieure &agrave; 20 kW, la microcentrale : de 20 kW &agrave; 500 kW, la mini-centrale : de 500 kW &agrave; 2 MW, et la petite centrale : de 2 &agrave; 10 MW.
+  
+  Construite au fil de l&rsquo;eau, la petite hydro&eacute;lectricit&eacute; ne demande ni retenue ni vidanges ponctuelles susceptibles de perturber l&rsquo;hydrologie, la biologie ou la qualit&eacute; de l&rsquo;eau.
+  
+  Les microcentrales hydro&eacute;lectriques fonctionnent comme les grandes centrales des barrages qui exploitent l'&eacute;nergie des fleuves. 
+  
+  Le potentiel fran&ccedil;ais de cr&eacute;ation de PCH est estim&eacute; &agrave; au moins 1 000 MW
+  &Eacute;nergie d&eacute;centralis&eacute;e, la petite hydro&eacute;lectricit&eacute; maintient ou cr&eacute;e une activit&eacute; &eacute;conomique dans les zones rurales. </p>
+<span class="separator"></span>
+<h1>Energies marines</h1>
+<h2>Les &eacute;nergies marines</h2>
+<p>La fili&egrave;re des &eacute;nergies marines est une energie renouvelable qui va beaucoup se developper dans un avenir proche. Appel&eacute;es aussi &eacute;nergie des oc&eacute;ans ou thalasso-&eacute;nergies, elle utilise les flux d&rsquo;energies naturelles fournies par les mers et les oc&eacute;ans. On recense : la houle, l&rsquo;&eacute;nergie des vagues, l&rsquo;&eacute;nergie des courants, l&rsquo;&eacute;nergie des mar&eacute;es et l&rsquo;&eacute;nergie thermique des mers (ETM) qui travaille sur le  gradient thermique  entre les couches d&rsquo;eau de surface et celle des profondeurs.
+  
+  L&rsquo;hydro&eacute;lectricit&eacute; marine fait appel &agrave; des techniques connues : usine mar&eacute;motrice de la Rance (barrage mar&eacute;moteur) ou en pleine exp&eacute;rimentation : houlog&eacute;n&eacute;rateurs (syst&egrave;mes &agrave; colonne d&rsquo;eau oscillante, syst&egrave;mes &agrave; d&eacute;ferlement), hydroliennes (h&eacute;lices sous-marines ou &eacute;oliennes sous-marines), ailes planes battantes ou oscillantes, roues &agrave; aubes flottantes&hellip; </p>
+
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+
+<span id="biomasse">
+<span class="separator"></span>
+<div class="inner">
+  <h1>Energie biomasse</h1>
+  <h2>Biomasse</h2>
+<p>Ce sont tous des mat&eacute;riaux d&rsquo;origine biologique employ&eacute;s comme combustibles pour la production de chaleur, d&rsquo;&eacute;lectricit&eacute; ou de carburants. </p>
+
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+<span id="geothermie">
+<span class="separator"></span>
+<div class="inner">
+  <h1>Energie geothermie</h1>
+  <h2>La g&eacute;othermie</h2>
+<p>La g&eacute;othermie est l&rsquo;exploitation de la chaleur stock&eacute;e dans le sous-sol. L&rsquo;utilisation des ressources g&eacute;othermales se d&eacute;compose en deux grandes familles : la production d&rsquo;&eacute;lectricit&eacute; et la production de chaleur. En fonction de la ressource, de la technique utilis&eacute;e et des besoins, les applications sont multiples. Le crit&egrave;re qui sert de guide pour bien cerner la fili&egrave;re est la temp&eacute;rature. Ainsi, la g&eacute;othermie est qualifi&eacute;e de &laquo; haute &eacute;nergie &raquo; (plus de 150&deg;C), &laquo; moyenne &eacute;nergie &raquo; (90 &agrave; 150&deg;C), &laquo; basse &eacute;nergie &raquo; (30 &agrave; 90&deg;C) et &laquo; tr&egrave;s basse &eacute;nergie &raquo; (moins de 30&deg;C). </p>
+</p>
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+<span id="biocarburants">
+<span class="separator"></span>
+<div class="inner">
+<h1>Les biocarburants</h1>
+<p>Les biocarburants, parfois appel&eacute;s agrocarburants, sont issus de la biomasse. Il existe principalement deux fili&egrave;res industrielles : l'&eacute;thanol et le biodiesel. Ils peuvent &ecirc;tre utilis&eacute;s purs comme au Br&eacute;sil (&eacute;thanol) ou en Allemagne (biodiesel), ou comme additifs aux carburants classiques.
+  
+  L'&eacute;thanol est produit en France &agrave; 70 % &agrave; partir de la betterave, et &agrave; 30 % &agrave; partir de c&eacute;r&eacute;ales.
+  
+  Le biodiesel est issu des graines ol&eacute;agineuses (colza, tournesol).</p>
+</p>  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+
+<span id="biogaz">
+<span class="separator"></span>
+<div class="inner">
+<h1>Le biogaz</h1>
+<p>Ce sont les mati&egrave;res organiques qui lib&egrave;rent le biogaz lors de leur d&eacute;composition selon un processus de fermentation (m&eacute;thanisation). On l&rsquo;appelle aussi &laquo; gaz naturel renouvelable &raquo; ou encore &ldquo;gaz de marais&rdquo;, par opposition au gaz d&rsquo;origine fossile.
+  
+  M&eacute;lange de m&eacute;thane et de gaz carbonique additionn&eacute; de quelques autres composants, le biogaz est un gaz combustible. Il sert &agrave; la production de chaleur, d&rsquo;&eacute;lectricit&eacute; ou de biocarburant.
+  
+  Le biogaz peut &ecirc;tre directement capt&eacute; dans les centres d&rsquo;enfouissement des d&eacute;chets ou produit dans des unit&eacute;s de m&eacute;thanisation.
+  
+  Sous-produits de l&rsquo;industrie agro-alimentaire, boues des stations d&rsquo;&eacute;purations,  lisiers, animaux ou  d&eacute;chets agricoles peuvent &ecirc;tre m&eacute;thanis&eacute;s dans des unit&eacute;s industrielles.</p>
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+<span id="bois">
+<span class="separator"></span>
+<div class="inner">
+<h1>Bois-&eacute;nergie ou biomasse solide</h1>
+<p>Le bois est une &eacute;nergie renouvelable. C&rsquo;est la principale ressource ligneuse, mais il faut &eacute;galement prendre en compte d&rsquo;autres mati&egrave;res organiques telles que la paille, les r&eacute;sidus solides des r&eacute;coltes, les grappes de ma&iuml;s, la bagasse de la canne &agrave; sucre, les grignons d&rsquo;olives &hellip;  
+  
+  En France, comme dans la plupart des pays europ&eacute;ens, le pr&eacute;l&egrave;vement forestier reste inf&eacute;rieur &agrave; l&rsquo;accroissement naturel de la for&ecirc;t le bilan carbone est donc positif. 
+  
+  Il existe aujourd&rsquo;hui des appareils &agrave; combustible bois innovants et efficaces &agrave; disposition des particuliers comme des collectivit&eacute;s ou des industries. Les chaudi&egrave;res &agrave; biomasse br&ucirc;lent diff&eacute;rents  biocombustibles : granul&eacute;s de bois, b&ucirc;ches, plaquettes foresti&egrave;res, sciures  ou coupeaux. </p>
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>
+
+
+<!--<span id="architecture">
+<span class="separator"></span>
+<div class="inner">
+<h1>Architecture bioclimatique</h1>
+<p>Architecture passive, maison solaire, b&acirc;timent &agrave; &eacute;nergie positive, haute qualit&eacute; environnementale, haute performance &eacute;nerg&eacute;tique ... sont autant de noms pour parler de l'architecture bioclimatique.
+  
+  Ce mode de conception architectural consiste &agrave; trouver le meilleur &eacute;quilibre entre le b&acirc;timent, le climat environnant et le confort de l&rsquo;habitant. L&rsquo;architecture bioclimatique tire le meilleur parti du rayonnement solaire et de la circulation naturelle de l&rsquo;air pour r&eacute;duire les besoins &eacute;nerg&eacute;tiques, maintenir des temp&eacute;ratures agr&eacute;ables, contr&ocirc;ler l&rsquo;humidit&eacute; et favoriser l&rsquo;&eacute;clairage naturel. </p>
+</p>
+  <div class="nav"> </div>
+</div>
+<span class="overlayT"></span><span class="overlayB"></span>
+</span>-->
+        <!--<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2779914-1";
+urchinTracker();
+</script>
+<script>
+if(typeof(urchinTracker)!='function')document.write('<sc'+'ript src="'+
+'http'+(document.location.protocol=='https:'?'s://ssl':'://www')+
+'.google-analytics.com/urchin.js'+'"></sc'+'ript>')
+</script>
+<script>
+_uacct = 'UA-2779914-3';
+urchinTracker("/2967311113/test");
+</script>-->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-2779914-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+</body>
+
+</html>
+ 

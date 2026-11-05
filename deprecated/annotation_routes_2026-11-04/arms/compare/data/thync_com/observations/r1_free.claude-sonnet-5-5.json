@@ -1,0 +1,248 @@
+[
+ {
+  "observation": "Hero background: A uses a full-width photograph of an athlete wearing an ear-mounted device, with a dark overlay. B uses a CSS dark navy-to-indigo gradient with a cyan glow and no photo.",
+  "category": "imagery",
+  "evidence": "A slice 0 shows the photo (2_new_1_1512x.jpg, 1440x810 natural). B facts: gradient_backgrounds 2 and only 8 imgs, none of them a hero image.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Hero height differs. A's hero runs from about y=80 to y=730 (about 650px). B's runs from about y=70 to y=509 (about 440px).",
+  "category": "layout",
+  "evidence": "Slice 0 of each side; A page_height 4675, B page_height 3869.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Typeface: A uses the Poppins web font throughout. B uses the system-ui stack (-apple-system, Segoe UI, Roboto).",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Poppins 346. B: system-ui 130. B h1 font_family is the system-ui stack.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero h1 is large and bold with tight tracking in B. In A it is a light/regular-weight Poppins in white over the photo. A's DOM h1 is empty and a separate visual headline is used.",
+  "category": "typography",
+  "evidence": "B h1: 64px, weight 700, white, centered. A h1: text empty, 18px, weight 400, rgb(58,58,58).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's section headings are letter-spaced, bold, charcoal Poppins in a small size. B's are large (36.8px), bold, tight-tracked, dark navy.",
+  "category": "typography",
+  "evidence": "A slices show 'Highlighted Scientific Papers' and 'Featured In' with wide tracking; A h2 is 13px/400 in facts. B h2 is 36.8px/700.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text size: A has 15px body text with 22.5px line height. B has 17px with 28.05px line height, which is airier and larger.",
+  "category": "typography",
+  "evidence": "body_font_size and body_line_height in the facts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Accent color: A uses orange (rgb 241,126,74) for the nav FeelZing tag, hero CTA, play button and Read More outlines. B uses cyan (25,195,214) for the CTA and violet/indigo (91,61,245) for numbers, links and Read More.",
+  "category": "color",
+  "evidence": "A top_backgrounds include rgb(241,126,74) x5. B primary_button bg is rgb(25,195,214), and 91,61,245 appears 10 times in text colors.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Palette: A is neutral white, light grey and charcoal (58,58,58). B uses deep navy text (14,19,48), a pale blue-grey section background (243,245,250) and a navy footer.",
+  "category": "color",
+  "evidence": "A body_color is rgb(58,58,58) and footer bg is 247,247,247. B body_color is rgb(14,19,48) and top backgrounds include 243,245,250 x5 and 14,19,48.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Primary CTA: A is a rectangular, uppercase, small letter-spaced orange button with white text. B is a pill-shaped cyan button in title case with dark text.",
+  "category": "components",
+  "evidence": "B primary_button radius 999px, padding 14px 28px, 'Discover Feelzing'. A slice 0 shows a square-cornered orange 'DISCOVER FEELZING'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Navigation: A centers the nav links and styles FeelZing as a filled orange tag; the logo is on the left. B left-aligns the logo and right-aligns the links, with FeelZing as plain text.",
+  "category": "layout",
+  "evidence": "A slice 0: links at x≈534-916 with an orange FeelZing box. B slice 0: links at x≈872-1220.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Logo: A uses a raster PNG with a light thin 'Thync' wordmark and a gradient swoosh. B uses a plain text wordmark 'thync.' in bold with a purple dot.",
+  "category": "imagery",
+  "evidence": "A images[0] is Thync-Logo-Colour_1_180x.png at 100x43. B has no logo image; its first img is Mashable.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The FAQ is laid out as a zig-zag two-column pattern in A, with text alternating left and right against image slots. B stacks five rounded bordered cards in a single narrow centered column.",
+  "category": "layout",
+  "evidence": "A slices 0-1 show answers at x=144 and x=755 alternately. B slices 0-1 show cards from x≈380 to 1060.",
+  "which_side": "both"
+ },
+ {
+  "observation": "FAQ illustrations (neuron, brain, graph, device) are in A's DOM but render as blank space, a broken-image alt text or a grey placeholder. B has no FAQ images at all.",
+  "category": "imagery",
+  "evidence": "A images brain_720x.png has h 23 with the visible alt text 'thync-improves-brain-function-with-electricity'; the grey block at slice 1 y≈710-1030. B has only 8 imgs, all logos.",
+  "which_side": "both"
+ },
+ {
+  "observation": "FAQ numbering: A writes the number inline in the heading text ('1. What does Thync do?'). B puts the number in a separate violet large span before the h3 text.",
+  "category": "components",
+  "evidence": "A heading outline '1. What does Thync do?' at h2. B outline '1\\nWhat does Thync do?' at h3, and the number is violet in the slices.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Heading hierarchy: A puts the FAQ questions at h2, with 10 h2 elements, an empty h3 and an empty h1, plus a cart-drawer h2. B uses h1, then h2 sections, with FAQ questions at h3 and 4 h5 elements in the footer.",
+  "category": "semantic",
+  "evidence": "A tag_counts h2:10, h3:1; heading_outline begins with 'Just added to your cart'. B h2:3, h3:5, h5:4.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Semantic sectioning: B uses 4 section and 5 article elements. A uses none of either, with only header, nav x2, main and footer.",
+  "category": "semantic",
+  "evidence": "A semantic section 0, article 0. B section 4, article 5.",
+  "which_side": "both"
+ },
+ {
+  "observation": "DOM weight: A has 150 divs, 54 scripts, 15 inline SVGs, 15 style tags, 10 buttons and 12 noscript elements, which is typical of a Shopify theme. B has 21 divs, 0 scripts, 0 SVGs, 1 style tag and 0 buttons.",
+  "category": "structure",
+  "evidence": "A tag_counts and B tag_counts; B counts scripts:0, svgs:0, buttons:0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Class usage: A has 494 class usages across 210 unique classes, with a 7.3% Tailwind-like fraction. B has 30 usages across 17 unique classes and 0% Tailwind-like.",
+  "category": "structure",
+  "evidence": "classes in the facts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Styling approach: A has 20 inline style attributes and 4 external stylesheets. B has none and a single embedded style block.",
+  "category": "structure",
+  "evidence": "A inline_style_attrs 20, stylesheets 4. B inline_style_attrs 0, stylesheets 0, style:1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Metadata: A has rich head metadata with og/twitter tags, theme-color, Shopify tags and 2 JSON-LD blocks. B has only charset, viewport and description.",
+  "category": "structure",
+  "evidence": "A meta_names has 17 entries and jsonld_blocks 2. B meta_names: charset, viewport, description; jsonld 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page title: A is 'Thync | Neurostimulation For Everyone – Thync Global, Inc.'. B is the shorter 'Thync – Neurostimulation For Everyone'.",
+  "category": "copy",
+  "evidence": "title fields.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The video section is an embedded iframe in A, shown as a flat grey (about 120,120,120) block with an orange circular play icon. B shows a rounded, gradient-filled 720px-wide panel with a white-outlined translucent play circle, and no iframe.",
+  "category": "components",
+  "evidence": "A tag_counts iframe:1 and slice 1 grey block at y≈310-960. B has no iframe or svg, and its slice 1 shows a navy-indigo rounded panel.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The video block in A is the full content width (144-1296) on a white background. In B it is narrower (360-1080), sits on a pale blue-grey band, and has rounded corners.",
+  "category": "layout",
+  "evidence": "A slice 1 video x 144-1296. B slice 1 video x 360-1080, with section bg rgb(243,245,250).",
+  "which_side": "both"
+ },
+ {
+  "observation": "Papers cards: A shows paper thumbnails (nature, biorxiv, peerj) as broken or blank images above the text, with outlined orange 'READ MORE' buttons. B shows text-only cards with a violet top border, a pale-tinted fill, rounded corners and a violet 'READ MORE →' text link with an arrow.",
+  "category": "components",
+  "evidence": "A images nature_540x.png and BioRxiv_540x.png have h 23 and show alt text in slice 1; the peerj file is empty. B slice 2 shows three cards with 'READ MORE →'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Read More controls: A uses an outlined rectangular 1px orange button with small caps. B uses a bold violet uppercase text link with a trailing arrow glyph.",
+  "category": "components",
+  "evidence": "A slice 2 and B slice 2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The press logo row in A shows 6 logos visible (PBS, TC, Digital Trends, Inc, CNN, WSJ), with Mashable collapsed to 0x0 and not visible. B shows 7 logos, including Mashable, at a uniform 100x54.",
+  "category": "imagery",
+  "evidence": "A Mashable rect w 0 h 0 and the others at 150x81. B rects are all 100x54 at y=3332.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Logo alt text: A uses slug-style alts such as 'thync-press-validation-pbs', with some empty (digitaltrends). B uses readable brand names ('PBS', 'The Wall Street Journal'), with none missing.",
+  "category": "copy",
+  "evidence": "A alt_missing 2. B alt_missing 0 and alts like 'TechCrunch'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer: A has a light grey (247) background with centered 'Follow us' and Facebook/Instagram/YouTube SVG icons, then a four-column row of links. B has a dark navy footer with four labeled columns (Follow us, Explore, More, Stay Informed) and text links, with no icons.",
+  "category": "components",
+  "evidence": "A has 15 svgs, and slice 3 shows icons. B has svgs 0, h5 x4, and the footer bg is rgb(14,19,48).",
+  "which_side": "both"
+ },
+ {
+  "observation": "Newsletter: A has a 'Stay Informed About Thync' heading with an empty area where a form would be (1 form, 2 inputs in the DOM). B puts the same heading in a column with the hello@thync.com address and no form.",
+  "category": "components",
+  "evidence": "A tag_counts form:1, input:2. B has no form or input elements.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The TRUSTe badge sits bottom-left in A with the copyright bottom-right. In B it is bottom-right with the copyright on the left, under a divider line.",
+  "category": "layout",
+  "evidence": "A slice 3 at y≈707 and B slice 2 at y≈1225. A has hr:1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM contains hidden e-commerce structure: a 'Just added to your cart' h2, a cart drawer, Shopify digital-wallet metas, and 10 buttons. B has none of this.",
+  "category": "structure",
+  "evidence": "A heading_outline first item and meta_names shopify-digital-wallet. B buttons 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Layout engine: B uses CSS grid on 8 elements and flex on 12. A uses no grid and 27 flex elements.",
+  "category": "layout",
+  "evidence": "layout.display_grid A 0, B 8; display_flex A 27, B 12.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Border radius and shadows: B has 9 elements with radius of 16px or more and 2 pill elements, with no box-shadows. A has 7 elements at 1-7px, 2 at 16px or more, no pills, and 2 box-shadows.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets and box_shadows in effects.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Effects: B uses 2 gradient backgrounds and 1 backdrop blur (a translucent white header at rgba(255,255,255,0.92)). A has no gradients or blur but has 2 animations and 1 transform.",
+  "category": "decoration",
+  "evidence": "effects: B gradient_backgrounds 2, backdrop_blur 1. A animations 2, transforms 1, gradients 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The header in A has a thin bottom edge or shadow over a white bar, and the hero image abuts it. B's header is a translucent white bar with its content constrained to about 220-1220px, a narrower container than A's logo inset of x=55.",
+  "category": "layout",
+  "evidence": "A logo rect x=55. B logo at x≈220 in slice 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The container width in A is about 144-1296 (1152px) for most content. B uses a 1000px container (220-1220) and narrower 680px FAQ cards (380-1060).",
+  "category": "layout",
+  "evidence": "A image rects x=144 and w=576, and the video 144-1296. B cards 380-1060 and papers 220-1220.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Vertical rhythm: A has large empty gaps between FAQ rows (blank image slots) and a total page height of 4675px. B is compact at 3869px, with alternating white and pale blue-grey bands.",
+  "category": "layout",
+  "evidence": "page_height A 4675, B 3869; B top_backgrounds 243,245,250 x5.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Copy is essentially identical in both: the same FAQ answers, the same 'Dr. Jonathan Charlesworth' blurb and the same paper summaries. The word counts are close.",
+  "category": "copy",
+  "evidence": "text_stats words A 386, B 368. Both have 1 em dash.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero subtitle uses a hyphen in A ('innovation - FeelZing Energy Patch') and an en/em dash in B ('innovation – FeelZing Energy Patch'). A's hero text carries a text shadow over the photo. B's text is on the flat gradient.",
+  "category": "copy",
+  "evidence": "Slice 0 of A and B. A subtitle reads 'innovation - FeelZing'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The inline link 'feelzing.com' is charcoal with an underline in A and violet with an underline in B. B's 'hello@thync.com' is white in the dark footer, and A's is underlined charcoal.",
+  "category": "color",
+  "evidence": "A slice 1 and B slice 1 link rendering; B violet 91,61,245.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social links: A uses icon-only SVG glyphs for Facebook, Instagram and YouTube. B lists them as text labels in a column.",
+  "category": "components",
+  "evidence": "A svgs 15 and slice 3 icons at y≈487. B svgs 0, with text 'Facebook/Instagram/YouTube'.",
+  "which_side": "both"
+ }
+]

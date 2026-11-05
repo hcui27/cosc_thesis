@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liqui-Moly Bathurst 12 Hour | #B12HR</title>
+<meta name="description" content="Liqui-Moly Bathurst 12 Hour (#B12HR) is Australia's international endurance car race.">
+<style>
+:root{
+  --bg:#111112; --surface:#1b1b1d; --line:#2e2e31; --text:#f2f2f2; --muted:#a6a6ab;
+  --red:#e4202e; --blue:#0b4f96; --blue-hi:#3b8be0;
+  --w:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--blue-hi);outline-offset:2px}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+
+/* header */
+header.site{position:sticky;top:0;z-index:20;background:rgba(17,17,18,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:20px;height:72px}
+.bar .logo img{height:56px;width:auto}
+nav.main{margin-left:auto}
+nav.main>ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+nav.main li{position:relative}
+nav.main li>a{display:block;padding:24px 12px;font-size:.9rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+nav.main li:hover>a,nav.main li:focus-within>a{color:var(--blue-hi)}
+.sub{display:none;position:absolute;top:100%;left:0;min-width:270px;background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--red);padding:8px 0;list-style:none;margin:0}
+li:hover>.sub,li:focus-within>.sub{display:block}
+.sub a{display:block;padding:7px 18px;font-size:.9rem;color:var(--muted)}
+.sub a:hover{color:#fff;background:#252528}
+.sub .nest a{padding-left:34px;font-size:.85rem}
+.search{display:flex}
+.search input{width:130px;background:var(--surface);border:1px solid var(--line);border-right:0;color:var(--text);padding:7px 10px;border-radius:4px 0 0 4px;font:inherit;font-size:.85rem}
+.search button{background:var(--red);border:0;color:#fff;padding:0 12px;border-radius:0 4px 4px 0;cursor:pointer;font-weight:600;font-size:.85rem}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--text);padding:8px 12px;border-radius:4px;font:inherit;cursor:pointer}
+
+/* hero */
+.hero{background:#141414 url(images/image-01.jpg) center top/cover no-repeat;border-bottom:4px solid var(--red);position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px;padding-top:80px;padding-bottom:90px}
+.eyebrow{color:var(--blue-hi);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
+.hero h1{font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.02;margin:.3em 0 .35em;text-transform:uppercase;font-weight:900;letter-spacing:-.01em}
+.hero h1 span{color:var(--red)}
+.hero p{max-width:34em;color:#d6d6d9;font-size:1.1rem;margin:0 0 1.6em}
+.dates{display:inline-block;border-left:4px solid var(--red);padding:2px 0 2px 14px;margin-bottom:28px;font-weight:700;font-size:1.15rem}
+.dates small{display:block;color:var(--muted);font-weight:500;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:4px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.88rem;border:2px solid var(--red);background:var(--red);color:#fff}
+.btn:hover{background:#c41722;border-color:#c41722}
+.btn.ghost{background:transparent;border-color:#fff}
+.btn.ghost:hover{background:#fff;color:#111}
+.hero .badge{width:260px;filter:drop-shadow(0 10px 30px rgba(0,0,0,.6))}
+
+/* sections */
+section{padding:72px 0}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+h2{margin:0;font-size:1.8rem;text-transform:uppercase;letter-spacing:.02em;position:relative;padding-bottom:12px}
+h2::after{content:"";position:absolute;left:0;bottom:0;width:56px;height:4px;background:linear-gradient(90deg,var(--red) 50%,var(--blue) 50%)}
+.more{color:var(--blue-hi);font-weight:600;font-size:.9rem}
+.more:hover{text-decoration:underline}
+
+/* news */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:#4a4a50}
+.card .img{aspect-ratio:16/10;overflow:hidden;background:#222}
+.card .img img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.meta{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.tag{display:inline-block;background:var(--red);color:#fff;padding:1px 8px;border-radius:3px;margin-left:8px;font-weight:700;letter-spacing:.06em}
+.card h3{margin:0 0 14px;font-size:1.1rem;line-height:1.35}
+.card h3 a:hover{color:var(--blue-hi)}
+.card .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:.85rem}
+.card .foot a{font-weight:700;color:var(--blue-hi)}
+.share{display:flex;gap:12px}
+.share a{color:var(--muted)}
+.share a:hover{color:#fff}
+.card.feature{grid-column:span 3;flex-direction:row}
+.card.feature .img{flex:1.2;aspect-ratio:auto;min-height:300px}
+.card.feature .body{flex:1;justify-content:center;padding:32px}
+.card.feature h3{font-size:1.8rem;line-height:1.2}
+
+/* info tiles */
+.band{background:var(--surface);border-block:1px solid var(--line)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tile{padding:22px;border:1px solid var(--line);border-radius:6px;background:var(--bg);border-top:3px solid var(--blue)}
+.tile:nth-child(odd){border-top-color:var(--red)}
+.tile:hover{background:#18181a}
+.tile strong{display:block;font-size:1.05rem;text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px}
+.tile span{color:var(--muted);font-size:.9rem}
+
+/* bushfire */
+.appeal{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.appeal img{width:100%;height:100%;object-fit:cover;min-height:260px}
+.appeal .txt{padding:40px;background:var(--surface);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px}
+.appeal h3{margin:0;font-size:1.6rem;line-height:1.2}
+.appeal p{margin:0;color:var(--muted)}
+
+/* sponsors */
+.sponsors{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sp{background:#fff;border-radius:6px;height:92px;display:flex;align-items:center;justify-content:center;padding:14px;transition:transform .15s,box-shadow .15s}
+.sp:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.sp img{max-height:100%;max-width:100%;object-fit:contain}
+.sp.txt{color:#111;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+
+/* footer */
+footer{background:#0b0b0c;border-top:4px solid var(--blue);padding:48px 0 28px;color:var(--muted);font-size:.9rem}
+.fgrid{display:grid;grid-template-columns:auto 1fr auto;gap:40px;align-items:start}
+footer img.fl{height:80px}
+footer h4{margin:0 0 10px;color:#fff;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:4px 0}
+footer a:hover{color:#fff}
+.flinks{display:flex;gap:56px;flex-wrap:wrap}
+.copy{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.82rem}
+
+@media(max-width:960px){
+  .burger{display:block}
+  .search{display:none}
+  nav.main{display:none;position:absolute;top:72px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);max-height:calc(100vh - 72px);overflow:auto;margin:0}
+  nav.main.open{display:block}
+  nav.main>ul{flex-direction:column;padding:8px 20px 16px}
+  nav.main li>a{padding:12px 0}
+  .sub{display:block;position:static;border:0;padding:0 0 6px 14px;background:none;min-width:0}
+  .news,.tiles{grid-template-columns:1fr 1fr}
+  .card.feature{grid-column:span 2}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero .badge{display:none}
+  .fgrid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  section{padding:48px 0}
+  .news,.tiles{grid-template-columns:1fr}
+  .card.feature{grid-column:auto;flex-direction:column}
+  .card.feature .img{min-height:0;aspect-ratio:16/10}
+  .card.feature .body{padding:20px}
+  .card.feature h3{font-size:1.4rem}
+  .appeal{grid-template-columns:1fr}
+  .appeal .txt{padding:24px}
+  .hero .wrap{padding-top:48px;padding-bottom:56px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="Liqui-Moly Bathurst 12 Hour home"><img src="images/headerlogo.png" alt="Liqui-Moly Bathurst 12 Hour"></a>
+    <button class="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="main" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="http://www.bathurst12hour.com.au/videos/">Video</a></li>
+        <li><a href="https://www.bathurst12hour.com.au/the-event/">The Event</a>
+          <ul class="sub">
+            <li><a href="https://www.bathurst12hour.com.au/the-event/map/">Map</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/the-event/getting-to-the-event/">Getting to the event</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/the-event/whats-on/">What's on</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/the-event/accommodation/">Accommodation</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/camping/">Camping</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/the-event/event-race-officials/">Event &amp; Race Officials</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/the-event/faqs/">FAQs</a></li>
+          </ul></li>
+        <li><a href="https://www.bathurst12hour.com.au/race-information/">The Race</a>
+          <ul class="sub">
+            <li><a href="https://www.bathurst12hour.com.au/race-information/">Race Information</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/race-information/entry/">Entry List</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/competitors/">Competitors</a></li>
+            <li class="nest"><a href="https://www.bathurst12hour.com.au/competitor-entry/">Entry Registration</a></li>
+            <li class="nest"><a href="https://www.bathurst12hour.com.au/competitors/supplementary-regulations-and-sporting-technical-regulations/">Supplementary &amp; Sporting/Technical Regulations</a></li>
+            <li class="nest"><a href="https://www.bathurst12hour.com.au/competitors/cams-foreign-participation-visa/">CAMS Foreign Participation VISA</a></li>
+            <li class="nest"><a href="https://www.bathurst12hour.com.au/competitors/driver-ride-board/">Driver &amp; Ride Board</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/schedule/">Schedule</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/results/">Results</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/race-information/previous-races/">Previous Races</a></li>
+            <li><a href="https://www.bathurst12hour.com.au/bushfires/">Bushfires Appeal</a></li>
+          </ul></li>
+      </ul>
+    </nav>
+    <form class="search" role="search" action="https://www.bathurst12hour.com.au/" method="get">
+      <input type="search" name="s" placeholder="Search" aria-label="Search the site">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">#B12HR</div>
+      <h1>Liqui-Moly<br>Bathurst <span>12 Hour</span></h1>
+      <div class="dates"><small>Event dates shown</small>31 January – 2 February 2020</div>
+      <p>Australia's international endurance car race.</p>
+      <div class="btns">
+        <a class="btn" href="#news">Latest news</a>
+        <a class="btn ghost" href="https://www.bathurst12hour.com.au/race-information/">Race information</a>
+      </div>
+    </div>
+    <img class="badge" src="images/footerlogo.png" alt="">
+  </div>
+</div>
+
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>News</h2>
+      <a class="more" href="/category/feature/">Featured News →</a>
+    </div>
+    <div class="news">
+      <article class="card feature">
+        <a class="img" href="https://www.bathurst12hour.com.au/news/bathurst-12-hour-to-return-in-2022/"><img src="images/Bath12Hr-MH3.jpg" alt="" loading="lazy"></a>
+        <div class="body">
+          <div class="meta">19 Oct 2020<span class="tag">Featured</span></div>
+          <h3><a href="https://www.bathurst12hour.com.au/news/bathurst-12-hour-to-return-in-2022/">Bathurst 12 Hour to return in 2022</a></h3>
+          <p style="color:var(--muted);margin:0 0 18px">Announces the race's comeback in 2022.</p>
+          <div class="foot"><a href="https://www.bathurst12hour.com.au/news/bathurst-12-hour-to-return-in-2022/">Read more →</a>
+            <div class="share"><a href="https://www.facebook.com/Bathurst12Hour">Facebook</a><a href="https://twitter.com/Bathurst12hour">Twitter</a></div></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="img" href="https://www.bathurst12hour.com.au/news/more-than-74000-raised-via-b12hr-bushfire-relief-efforts/"><img src="images/Bushfireappeal.jpg" alt="" loading="lazy"></a>
+        <div class="body"><div class="meta">13 Feb 2020</div>
+          <h3><a href="https://www.bathurst12hour.com.au/news/more-than-74000-raised-via-b12hr-bushfire-relief-efforts/">More than $74,000 raised via #B12hr Bushfire Relief efforts</a></h3>
+          <div class="foot"><a href="https://www.bathurst12hour.com.au/news/more-than-74000-raised-via-b12hr-bushfire-relief-efforts/">Read more →</a>
+            <div class="share"><a href="https://www.facebook.com/Bathurst12Hour">Facebook</a><a href="https://twitter.com/Bathurst12hour">Twitter</a></div></div></div>
+      </article>
+
+      <article class="card">
+        <a class="img" href="https://www.bathurst12hour.com.au/news/motoractive-matches-massive-donation-to-bushfire-relief/"><img src="images/M20-fine.jpg" alt="" loading="lazy"></a>
+        <div class="body"><div class="meta">5 Feb 2020</div>
+          <h3><a href="https://www.bathurst12hour.com.au/news/motoractive-matches-massive-donation-to-bushfire-relief/">MotorActive matches massive donation to Bushfire relief</a></h3>
+          <div class="foot"><a href="https://www.bathurst12hour.com.au/news/motoractive-matches-massive-donation-to-bushfire-relief/">Read more →</a>
+            <div class="share"><a href="https://www.facebook.com/Bathurst12Hour">Facebook</a><a href="https://twitter.com/Bathurst12hour">Twitter</a></div></div></div>
+      </article>
+
+      <article class="card">
+        <a class="img" href="https://www.bathurst12hour.com.au/news/first-major-donation-lodged-for-b12hr-bushfire-relief/"><img src="images/Bath12Hr-MH3_2.jpg" alt="" loading="lazy"></a>
+        <div class="body"><div class="meta">4 Feb 2020</div>
+          <h3><a href="https://www.bathurst12hour.com.au/news/first-major-donation-lodged-for-b12hr-bushfire-relief/">First major donation lodged for B12hr Bushfire Relief</a></h3>
+          <div class="foot"><a href="https://www.bathurst12hour.com.au/news/first-major-donation-lodged-for-b12hr-bushfire-relief/">Read more →</a>
+            <div class="share"><a href="https://www.facebook.com/Bathurst12Hour">Facebook</a><a href="https://twitter.com/Bathurst12hour">Twitter</a></div></div></div>
+      </article>
+
+      <article class="card">
+        <a class="img" href="https://www.bathurst12hour.com.au/news/59racing-grabs-podium-despite-late-call-up/"><img src="images/Bath12Hr-MH2.jpg" alt="" loading="lazy"></a>
+        <div class="body"><div class="meta">4 Feb 2020</div>
+          <h3><a href="https://www.bathurst12hour.com.au/news/59racing-grabs-podium-despite-late-call-up/">59Racing grabs podium despite late call-up</a></h3>
+          <div class="foot"><a href="https://www.bathurst12hour.com.au/news/59racing-grabs-podium-despite-late-call-up/">Read more →</a>
+            <div class="share"><a href="https://www.facebook.com/Bathurst12Hour">Facebook</a><a href="https://twitter.com/Bathurst12hour">Twitter</a></div></div></div>
+      </article>
+
+      <article class="card">
+        <a class="img" href="https://www.bathurst12hour.com.au/news/pepper-beats-housemate-to-bathurst-honour/"><img src="images/MH1.jpg" alt="" loading="lazy"></a>
+        <div class="body"><div class="meta">3 Feb 2020</div>
+          <h3><a href="https://www.bathurst12hour.com.au/news/pepper-beats-housemate-to-bathurst-honour/">Pepper beats housemate to Bathurst honour</a></h3>
+          <div class="foot"><a href="https://www.bathurst12hour.com.au/news/pepper-beats-housemate-to-bathurst-honour/">Read more →</a>
+            <div class="share"><a href="https://www.facebook.com/Bathurst12Hour">Facebook</a><a href="https://twitter.com/Bathurst12hour">Twitter</a></div></div></div>
+      </article>
+
+      <article class="card">
+        <a class="img" href="https://www.bathurst12hour.com.au/news/gounon-hails-m-sport-performance-after-breakthrough-12-hour-win/"><img src="images/MH1_2.jpg" alt="" loading="lazy"></a>
+        <div class="body"><div class="meta">3 Feb 2020</div>
+          <h3><a href="https://www.bathurst12hour.com.au/news/gounon-hails-m-sport-performance-after-breakthrough-12-hour-win/">Gounon hails M-Sport performance after breakthrough 12 Hour win</a></h3>
+          <div class="foot"><a href="https://www.bathurst12hour.com.au/news/gounon-hails-m-sport-performance-after-breakthrough-12-hour-win/">Read more →</a>
+            <div class="share"><a href="https://www.facebook.com/Bathurst12Hour">Facebook</a><a href="https://twitter.com/Bathurst12hour">Twitter</a></div></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head"><h2>Plan your visit</h2></div>
+    <div class="tiles">
+      <a class="tile" href="https://www.bathurst12hour.com.au/the-event/map/"><strong>Map</strong><span>Find your way around the circuit</span></a>
+      <a class="tile" href="https://www.bathurst12hour.com.au/the-event/getting-to-the-event/"><strong>Getting there</strong><span>Getting to the event</span></a>
+      <a class="tile" href="https://www.bathurst12hour.com.au/the-event/accommodation/"><strong>Accommodation</strong><span>Where to stay</span></a>
+      <a class="tile" href="https://www.bathurst12hour.com.au/camping/"><strong>Camping</strong><span>Camp at the event</span></a>
+      <a class="tile" href="https://www.bathurst12hour.com.au/schedule/"><strong>Schedule</strong><span>Race weekend timetable</span></a>
+      <a class="tile" href="https://www.bathurst12hour.com.au/race-information/entry/"><strong>Entry list</strong><span>Who's racing</span></a>
+      <a class="tile" href="https://www.bathurst12hour.com.au/results/"><strong>Results</strong><span>Race results</span></a>
+      <a class="tile" href="https://www.bathurst12hour.com.au/the-event/faqs/"><strong>FAQs</strong><span>Your questions answered</span></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="appeal">
+      <img src="images/Bushfireappeal.jpg" alt="" loading="lazy">
+      <div class="txt">
+        <div class="eyebrow">Bushfires Appeal</div>
+        <h3>More than $74,000 raised via #B12hr Bushfire Relief efforts</h3>
+        <p>Read how the Bathurst 12 Hour community came together for bushfire relief.</p>
+        <a class="btn" href="https://www.bathurst12hour.com.au/bushfires/">Bushfires Appeal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="sponsors">
+  <div class="wrap">
+    <div class="sec-head"><h2>Sponsors &amp; Partners</h2></div>
+    <div class="sponsors">
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/liqui-moly/"><img src="images/LiquiMoly.png" alt="Liqui-Moly" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/destination-nsw/"><img src="images/B12HRFooter-NSWGVT.png" alt="NSW Government / Destination NSW" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/visit-nsw/"><img src="images/B12HRFooter-DNSW.png" alt="Visit NSW" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/meguiars/"><img src="images/Meguiars.png" alt="Meguiar's" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/pirelli/"><img src="images/Pirelli.png" alt="Pirelli" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/mercedes-amg/"><img src="images/mercedesagm.png" alt="Mercedes-AMG" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/audi/"><img src="images/audi.png" alt="Audi" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/aston-martin/"><img src="images/aston-martin.png" alt="Aston Martin" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/sparesbox/"><img src="images/Sparesbox.png" alt="Sparesbox" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/bp-australia/"><img src="images/bp1.png" alt="bp Australia" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/shannons/"><img src="images/shannons.png" alt="Shannons" loading="lazy"></a>
+      <a class="sp txt" href="https://www.bathurst12hour.com.au/sponsors/mclaren/">McLaren</a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/pirtek/"><img src="images/pirtek.png" alt="Pirtek" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/porsche/"><img src="images/porsche.png" alt="Porsche" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/lotus/"><img src="images/lotus.png" alt="Lotus" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/volkswagen-amarok/"><img src="images/amarok.png" alt="Volkswagen Amarok" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/race-fuels/"><img src="images/RaceFuels-Logo.png" alt="Race Fuels" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/autologic/"><img src="images/autologic-footerV2.png" alt="Autologic" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/scandia/"><img src="images/scandia.png" alt="Scandia" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/scuderia-autoart/"><img src="images/scuderia-autoart.png" alt="Scuderia Autoart" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/mta/"><img src="images/mta.png" alt="MTA" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/kw/"><img src="images/KW.png" alt="KW" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/coca-cola-amatil/"><img src="images/cca.png" alt="Coca-Cola Amatil" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/fox-sports/"><img src="images/fox-sports.png" alt="Fox Sports" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/7-news/"><img src="images/B12HR-Sponsor-News.png" alt="7NEWS" loading="lazy"></a>
+      <a class="sp" href="https://www.bathurst12hour.com.au/sponsors/7-mate/"><img src="images/B12HR-Sponsor-Mate.png" alt="7mate" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <img class="fl" src="images/footerlogo.png" alt="Liqui-Moly Bathurst 12 Hour">
+      <div class="flinks">
+        <div><h4>Info</h4><ul>
+          <li><a href="https://www.bathurst12hour.com.au/contact/">Contacts</a></li>
+          <li><a href="https://www.bathurst12hour.com.au/the-event/media/">Media</a></li>
+          <li><a href="https://www.bathurst12hour.com.au/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="https://www.bathurst12hour.com.au/terms-conditions/">Terms &amp; Conditions</a></li>
+        </ul></div>
+        <div><h4>Follow #B12HR</h4><ul>
+          <li><a href="https://www.facebook.com/Bathurst12Hour">Facebook</a></li>
+          <li><a href="https://twitter.com/Bathurst12hour">Twitter</a></li>
+        </ul>
+        <p style="margin:10px 0 0;max-width:22em">Follow us on Facebook and Twitter for the latest #B12HR news.</p></div>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2021 LIQUI-MOLY Bathurst 12 Hour. All Rights Reserved.</span>
+      <a href="https://www.bathurst12hour.com.au/">bathurst12hour.com.au</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var b=document.querySelector('.burger'),n=document.getElementById('nav');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

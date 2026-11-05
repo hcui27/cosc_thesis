@@ -1,0 +1,1 @@
+/Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/data/stgpartners_com/copy.md

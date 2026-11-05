@@ -1,0 +1,319 @@
+{
+ "key": "de7dd268c890",
+ "groups": [
+  {
+   "name": "System font stack, no web fonts",
+   "definition": "Does the page rely only on a system or system-ui font stack (Helvetica/Arial/system sans) with no custom web or icon fonts?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "font_family_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "aeptexas_com#4",
+    "allstate_jobs#3",
+    "bluebayou_com#4",
+    "fnsouzafoundation_com#5",
+    "gravityvault_com#3",
+    "homedesignersoftware_com#4",
+    "insightcentral_net#7",
+    "kneeguru_co_uk#4",
+    "merchantsavvy_co_uk#3",
+    "nira_org_ng#5",
+    "ridetech_com#5",
+    "seoanalyzer_me#3",
+    "stgpartners_com#7",
+    "tellmebaby_com_au#4",
+    "thync_com#0",
+    "naturalwellbeing_com#22"
+   ]
+  },
+  {
+   "name": "Single sans family throughout",
+   "definition": "Is one single sans-serif family used for all text including headings?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "font_family_count",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "bather_com#3",
+    "bathurst12hour_com_au#0",
+    "miamidda_com#5"
+   ]
+  },
+  {
+   "name": "Serif headings paired with sans body",
+   "definition": "Are headings or display text set in a serif face while body and UI text use a sans-serif?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#7",
+    "cbdoilcreamnk_com#8",
+    "educationactivities_org#1",
+    "flygrant_com#2",
+    "kanienkeha_net#5",
+    "thefrangipanicreative_com#13",
+    "neverskipbrunch_com#1",
+    "neverskipbrunch_com#0",
+    "fnsouzafoundation_com#2"
+   ]
+  },
+  {
+   "name": "Serif body with sans headings",
+   "definition": "Is body text set in a serif while headings and UI use a sans-serif?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#6"
+   ]
+  },
+  {
+   "name": "Generous body size and line height",
+   "definition": "Is body text about 16-17px with generous line height (around 1.55-1.65)?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "body_size_px",
+    "op": ">=",
+    "value": 16
+   },
+   "members": [
+    "bathurst12hour_com_au#1",
+    "cbdoilcreamnk_com#9",
+    "educationactivities_org#2",
+    "fnsouzafoundation_com#4",
+    "homedesignersoftware_com#6",
+    "kanienkeha_net#6",
+    "kneeguru_co_uk#6",
+    "miamidda_com#6",
+    "naturalwellbeing_com#17",
+    "neverskipbrunch_com#18",
+    "newclimateeconomy_net#8",
+    "nira_org_ng#6",
+    "seoanalyzer_me#2",
+    "stgpartners_com#9",
+    "thefrangipanicreative_com#15",
+    "thync_com#1",
+    "allstate_jobs#5"
+   ]
+  },
+  {
+   "name": "Compact body line height, small h2",
+   "definition": "Does the page use standard 16px body text with compact line height and small h2 sizes?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#8"
+   ]
+  },
+  {
+   "name": "Uppercase letter-spaced eyebrow labels",
+   "definition": "Are there small uppercase, letter-spaced labels (eyebrows, kickers, category or footer labels) above headings or titles?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#9",
+    "allstate_jobs#23",
+    "bather_com#4",
+    "bathurst12hour_com_au#3",
+    "bluebayou_com#7",
+    "educationactivities_org#3",
+    "miamidda_com#8",
+    "naturalwellbeing_com#6",
+    "neverskipbrunch_com#13",
+    "newclimateeconomy_net#10",
+    "stgpartners_com#11",
+    "tellmebaby_com_au#20",
+    "thefrangipanicreative_com#10",
+    "thync_com#3"
+   ]
+  },
+  {
+   "name": "Large bold headings with strong hierarchy",
+   "definition": "Are headings (h1/h2) large and bold, creating a clear size hierarchy over body text?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_body_ratio",
+    "op": ">=",
+    "value": 3
+   },
+   "members": [
+    "aeptexas_com#5",
+    "fnsouzafoundation_com#3",
+    "kanienkeha_net#4",
+    "miamidda_com#7",
+    "newclimateeconomy_net#9",
+    "tellmebaby_com_au#6",
+    "thefrangipanicreative_com#14",
+    "thync_com#2",
+    "homedesignersoftware_com#5",
+    "kneeguru_co_uk#5",
+    "seoanalyzer_me#1"
+   ]
+  },
+  {
+   "name": "Modest heading scale",
+   "definition": "Are h2 headings small (about 22px) rather than large?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "flygrant_com#4"
+   ]
+  },
+  {
+   "name": "Light or regular weight headings",
+   "definition": "Are section headings set at regular or light weight rather than bold?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_weight",
+    "op": "<=",
+    "value": 400
+   },
+   "members": [
+    "naturalwellbeing_com#23"
+   ]
+  },
+  {
+   "name": "Hero headline partly accent-colored",
+   "definition": "Is part of the hero headline highlighted in an accent color or weight different from the rest?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#6",
+    "kneeguru_co_uk#13",
+    "naturalwellbeing_com#1"
+   ]
+  },
+  {
+   "name": "White hero headline on dark background",
+   "definition": "Is the hero h1 large white text over a dark, image or gradient background?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#8",
+    "merchantsavvy_co_uk#1",
+    "stgpartners_com#8"
+   ]
+  },
+  {
+   "name": "Centered headings and intro text",
+   "definition": "Are section headings or intro text centered?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#4",
+    "greatdayimprovements_com#10",
+    "greatdayimprovements_com#11",
+    "insightcentral_net#4"
+   ]
+  },
+  {
+   "name": "All-caps headings",
+   "definition": "Are headlines or section headings set in all uppercase?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#2",
+    "bluebayou_com#5",
+    "ridetech_com#6"
+   ]
+  },
+  {
+   "name": "Headings in title or sentence case",
+   "definition": "Are the main headings in title or sentence case rather than all caps?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#7",
+    "flygrant_com#3"
+   ]
+  },
+  {
+   "name": "Card titles bold, not uppercase or link-styled",
+   "definition": "Are card or article titles bold, left-aligned, in sentence/title case rather than uppercase, centered or default blue links?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#6",
+    "ridetech_com#7",
+    "kneeguru_co_uk#19",
+    "educationactivities_org#4"
+   ]
+  },
+  {
+   "name": "Hero h1 split into two sizes",
+   "definition": "Is the hero h1 split into a large bold line and a smaller secondary line?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "tellmebaby_com_au#5"
+   ]
+  },
+  {
+   "name": "Link underline treatment",
+   "definition": "Are links styled without underline or with underlines limited to inline text links?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#30",
+    "thefrangipanicreative_com#22"
+   ]
+  },
+  {
+   "name": "Section titles with thick underline rule",
+   "definition": "Do section titles have a thick rule beneath each?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#7"
+   ]
+  },
+  {
+   "name": "Navigation labels small title case near logo",
+   "definition": "Are top navigation labels small, title case and grouped beside the logo?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#6"
+   ]
+  },
+  {
+   "name": "Copyright line small grey with hairline",
+   "definition": "Is the copyright line small, sentence case, grey with a hairline rule above?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#5"
+   ]
+  },
+  {
+   "name": "Prices bold green with struck-through original",
+   "definition": "Are prices bold and green with the original price struck through in grey?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#13"
+   ]
+  },
+  {
+   "name": "Excerpt and byline gray text under titles",
+   "definition": "Do excerpts and bylines appear in gray sans text under article titles?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#26"
+   ]
+  },
+  {
+   "name": "News headlines medium-weight h4",
+   "definition": "Are news headlines medium-weight sans-serif h4 headings?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#28"
+   ]
+  }
+ ]
+}

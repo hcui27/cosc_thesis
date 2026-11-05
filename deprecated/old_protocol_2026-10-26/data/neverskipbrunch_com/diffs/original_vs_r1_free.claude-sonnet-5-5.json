@@ -1,0 +1,224 @@
+[
+ {
+  "observation": "Page length differs sharply: A is a very long scroll, B is a compact page about one-sixth the height.",
+  "category": "layout",
+  "evidence": "A page_height 29448 (23 slices) vs B page_height 4777 (4 slices); both width 1440.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's H1 is the brand name in all caps at a modest size. B's H1 is a lowercase welcome sentence at a much larger size, left-aligned, with the last word in italic pink.",
+  "category": "typography",
+  "evidence": "A h1 'NEVER SKIP BRUNCH' 50px, centered, playfair; B h1 'welcome to never skip brunch.' 76.8px, text_align start, Playfair Display, with an <em> (em count 1) for 'brunch.'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero is a two-column split: text and two CTAs on the left, an arch-topped photo with a soft shadow on the right. A's top is a centered logo over a full-width banner photo, with a white signup card overlapping the banner.",
+  "category": "layout",
+  "evidence": "B image 4Q5A3075.jpg at x799,w461,h614 beside the text. A header1.jpg at x0,w1440,h572, with a white card from about x170 to x1270 containing First Name/Last Name/E-Mail fields and a 'GO' button.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header has a centered large script logo flanked by two nav groups, with small orange script labels ('the', 'decor &', 'diy', 'make space') above tracked caps. B has a left logo at 112x56 and a single row of seven tracked uppercase links.",
+  "category": "component",
+  "evidence": "A_slice_00 header nav with dropdown glyph boxes; B logo rect x180,y43,w112,h56 and nav 'BLOG / DECOR & INTERIORS / DIY PROJECTS / PODCAST / PLANS + TEMPLATES / WORK WITH ME / ABOUT'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages have a top promo bar linking to the shop. A's is a two-tone strip (yellow plus peach) with a condensed all-caps headline and a script 'visit the shop'. B's is a single pale yellow strip with small lowercase text and an underlined link with an arrow.",
+  "category": "component",
+  "evidence": "A_slice_00 'FUN & FRESH HOME GOODIES' / 'visit the shop'; B_slice_00 'fun & fresh home goodies  visit the shop →'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's font stack is fragmented across many families and local font names. B uses three families: Montserrat for body, Playfair Display for headings, and Homemade Apple for script accents.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: poppins 403, montserrat 55, trirong 25, Montserrat 25, moontime 14, playfair 9. B: Montserrat 173, Playfair Display 14, Homemade Apple 5.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text is set looser in A (32px line-height on 16px) than in B (26.4px on 16px). A's text is mostly Poppins, B's mostly Montserrat.",
+  "category": "typography",
+  "evidence": "body_line_height A 32px vs B 26.4px; body_font_size 16px in both.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is white and near-white, with orange/gold text accents (243,179,79) and peach/yellow blocks. B's body background is a warm cream, with a near-black ink (28,26,25), pink accents (232,69,124), and peach, butter-yellow, pink and orange fills.",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255); top_text_colors include rgb(243,179,79) x136. B body_bg rgb(255,250,245); top_text_colors include rgb(232,69,124) x5; backgrounds rgb(253,230,211), rgb(253,238,176), rgb(251,211,222), rgb(245,154,74).",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a vertical peach-to-cream gradient behind the hero and a translucent blurred sticky-style header. A has no gradients and no backdrop blur.",
+  "category": "decoration",
+  "evidence": "B gradient_backgrounds 1, backdrop_blur 1, background rgba(255,250,245,0.94). A gradient_backgrounds 0, backdrop_blur 0.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B is heavily rounded: pill-shaped buttons, tags, pagination and inputs, plus rounded cards and an arch image. A has almost no rounding.",
+  "category": "decoration",
+  "evidence": "B border_radius_buckets pill 22, 16_plus 6, 8_15 8. A pill 1, 8_15 1, 0px radius on 539 elements.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's CTAs are solid black pill buttons and outlined pills with tracked uppercase labels and arrows. A's primary CTA is a plain text link in orange with no background or padding, and A also uses an image as a button.",
+  "category": "component",
+  "evidence": "A primary_button 'about + learn more' bg transparent, color rgb(243,179,79), padding 0px; A image signupbutton.png (250x63). B 'ABOUT + LEARN MORE →' black pill and 'BROWSE DIY PROJECTS' outlined pill.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses images in place of text for several UI parts: a banner reading 'projects & tips' / 'SIGN UP NOW', the 'as seen in' logo collage, and the YouTube subscribe banner. B has no such text-in-image elements and builds its sections from live text.",
+  "category": "imagery",
+  "evidence": "A images signupbutton.png, as-seen-in-03-15-2021.png (2000x667), YT-SUBSCRIBE-e1589308148268.png. B has only 4 imgs, all photographic or logo, with alt text.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has an 'as seen in…' press-logo collage (House Beautiful, NBC News, Apple Podcasts, Insider, Home Depot and others) on a brush-stroke peach background. B has no press-logo strip.",
+  "category": "component",
+  "evidence": "A_slice_01 collage; img as-seen-in-03-15-2021.png at y1320, 1028x343.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A shows a large square portrait of the host (1081x1081) left-aligned and not filling the viewport width, leaving empty space to its right. B has no portrait photo.",
+  "category": "imagery",
+  "evidence": "A img Cara-Newhart-...podcast-host-1.jpg rect x0,y1723,w1081,h1081 on a 1440-wide page. B has no host portrait.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's blog post images are 1000x1556 tall images set left-aligned at full size, and one has natural size [0,0], rendering as a broken image. B shows blog posts as three text-only colored cards with no images.",
+  "category": "imagery",
+  "evidence": "A images BREAKFAST-NOOK-DIY-space-makeover.jpg natural [0,0] rect 1000x1556; A_slice_05 shows a broken-image icon. B articles 2 sections with colored cards (peach, yellow, pink) holding 'DIY' labels, titles and 'READ →'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's Instagram feed is nine or more 1000x560 'placeholder.png' images whose alt text is the entire caption, including hashtags and emoji. B shows eight small white cards with the caption truncated by an ellipsis and no images.",
+  "category": "imagery",
+  "evidence": "A placeholder.png x9, alt strings of hundreds of characters; B_slice_02 eight rounded cards, e.g. 'Umm...did you see the fiasco in stores where I lug…'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's lower part shows unstyled, overflowing markup: a left-aligned list of orange links with numbering fused to the text ('PRESS04.', 'Terms of Use06.'), a full-width search field, and social icons stretched to hundreds of pixels tall in a stack.",
+  "category": "layout",
+  "evidence": "A_slice_22: 'WORK WITH ME05.', 'Portfolio09.', a 'looking for something?' search bar spanning the full width, huge black Facebook/Instagram/Pinterest/Twitter/YouTube glyphs. The 'ul' count of 11 and 'svg' count of 11 are mostly in this region.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's footer is a dark four-column grid (brand blurb, Quick Links, Explore, Services) with small circular outlined social icons, an affiliate disclosure and a copyright line. A's footer area is a single-column stack on a peach background.",
+  "category": "layout",
+  "evidence": "B footer 1, h4 headings 'NEVER SKIP BRUNCH', 'QUICK LINKS', 'EXPLORE', 'SERVICES', 5 svg icons. A footer 4, h4 'pick one:', 'looking for something?', 'let's connect'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a dark YouTube section with a large white serif heading and an orange pill button 'WATCH ON YOUTUBE'. A shows a YouTube subscribe banner image and a 'Downloads / YouTube channel' menu structure.",
+  "category": "component",
+  "evidence": "B_slice_02 top dark background rgb(28,26,25) with button rgb(245,154,74)-like orange. A img YT-SUBSCRIBE-e1589308148268.png 1440x173.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a 'let's chat' section over a darkened chair photo, with a centered script kicker, a white heading and a white pill button. A has no equivalent contact-banner section in its slices.",
+  "category": "component",
+  "evidence": "B image tim-wright-272031-unsplash-e1551215652231.jpg at 1440x505, y2834, with overlay text 'coffee + let's chat' and 'WANNA GRAB A VIRTUAL COFFEE?'.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B repeats a pattern of small tracked pink/black uppercase eyebrow labels above large lowercase serif section headings ('VISIT THE BLOG' above 'if you . . .', 'NEW ON THE BLOG' above 'fresh off the workbench.'). A's headings are mostly uppercase h3s.",
+  "category": "typography",
+  "evidence": "B h2s: 'make space', 'fresh off the workbench.', 'fun & fresh videos.', 'let's chat.', 'on instagram.', 'join the newsletter.'. A has 29 h3 and 3 h2, with all-caps h3 text like 'BROWSE HOME PROJECTS.' and 'STARTER TOOLS.'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's heading hierarchy is flat and noisy: 29 h3s, including empty ones and menu items marked as headings, with only 3 h2s. B has a sequential h1 > h2 > h3 outline, with footer column titles as h4.",
+  "category": "semantics",
+  "evidence": "A heading_outline has h3 entries like '. . . . . . .', 'WITH ME', and empty strings; A tag_counts h3 29, h2 3. B tag_counts h2 7, h3 6, h4 5, h1 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's DOM is small and carries its own class names. A's is heavy with scripts, styles and noscript wrappers.",
+  "category": "structure",
+  "evidence": "B script 1, style 1, link 3, div 26, classes total 54 (28 unique). A script 74, style 19, noscript 21, div 130, classes total 699 (231 unique).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses far more semantic wrappers (4 headers, 4 footers, 22 sections, 4 articles), duplicated from a page-builder. B has one header, one footer, 8 sections, 2 article elements and a figure, and uses CSS grid and flex for layout. A uses neither grid nor flex.",
+  "category": "structure",
+  "evidence": "A semantic header 4, footer 4, section 22, figure 0; layout display_grid 0, display_flex 0. B header 1, footer 1, section 8, figure 1; display_grid 11, display_flex 10.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B includes a category tag row and numbered pagination as pills (1, 2, 3 … 60, 'Next Page »'). A's slices show no such pill row.",
+  "category": "component",
+  "evidence": "B_slice_01 pills 'DIY', 'DECOR & INTERIORS', 'MAKE SPACE', 'BROWSE ALL POSTS →', and pagination with the active '1' in black.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's podcast promo is a full-width butter-yellow band with a two-column layout: kicker, serif title, bold subtitle, copy and black pill button on the left, a rectangular podcast photo on the right. A's podcast content is split across menu items (PODCAST, SUBSCRIBE, EPISODES, FEEDBACK) and has no such banner in the header area.",
+  "category": "component",
+  "evidence": "B 'MAKE SPACE PODCAST' / 'make space' / 'A HOME DESIGN SHOW' / 'LISTEN + SUBSCRIBE', image MAKE-SPACE-Podcast-HOMEPAGE-Image.png 545x279. A h3 entries 'PODCAST', 'SUBSCRIBE.', 'EPISODES.', 'FEEDBACK.'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's two intro cards ('if you . . .') are bordered white rounded cards with a script label, a serif heading and gray body text. A's version of this content is two h4 'if you . . .' blocks in its page-builder layout.",
+  "category": "component",
+  "evidence": "B h3 'are an avid DIY-er…' and 'are new or doubting your creative capacity'. A h4 'if you . . .' x2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's newsletter is a centered peach band with a pill-shaped email field and a black 'SUBSCRIBE' pill, under a pink script 'hello.'. A's signup is a three-field form (first name, last name, email) with a small square 'GO' button inside the banner card, plus a second newsletter heading near the end.",
+  "category": "component",
+  "evidence": "B form 1, input 1, label 1. A form 4, input 16; 'GO' button visible in A_slice_00; h3 'join the newsletter.'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a script (handwriting) font only for small accents: 'by cara newhart', 'if you…', 'coffee + let's chat', 'hello.'. A uses script for 'visit the shop', 'as seen in…' and the nav sublabels, and a condensed display face for the banner and 'SIGN UP NOW'.",
+  "category": "typography",
+  "evidence": "B Homemade Apple on 5 elements. A moontime on 14 elements and condensed all-caps text in A_slice_00.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A relies on 29 inline style attributes, and one image has no alt attribute. B's four images all have non-empty alt text except the decorative background image, which has alt=\"\".",
+  "category": "structure",
+  "evidence": "A counts inline_style_attrs 29, alt_missing 1, aria_attrs 32. B inline_style_attrs 6, alt_missing 0, aria_attrs 12.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a transparent spacer image and a 'projects' headline in a large light-yellow Poppins face stacked over '& tips' in black, with big empty gaps. B has no spacer images and uses regular padding.",
+  "category": "decoration",
+  "evidence": "A images spacer-blank-500x23.png (500x23); A_slice_00 'projects' in pale yellow and '& tips' in black.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A carries rich head metadata (Open Graph, Twitter card, JSON-LD, site verification, several generator tags) and a longer SEO-style title. B has only charset, viewport and description, and no JSON-LD.",
+  "category": "structure",
+  "evidence": "A title 'Top US Interior Design and DIY Projects Blogger | Never Skip Brunch', jsonld_blocks 1, 22 meta tags, lang 'en-US'. B title 'Never Skip Brunch — DIY & Home Design by Cara Newhart', jsonld_blocks 0, 3 meta names, lang 'en'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses many hover and interaction transitions on its components. A uses almost none.",
+  "category": "decoration",
+  "evidence": "B transitions 18, box_shadows 1 (the hero image's soft shadow). A transitions 1, box_shadows 3, transforms 1.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Word counts are close, but A's content is spread over a much longer layout of menu and heading text, while B condenses the copy into sections. Both have 4 emoji, 6 em dashes and 3 exclamations.",
+  "category": "copy",
+  "evidence": "words A 540 vs B 514; emoji 4/4; em_dashes 6/6; exclamations 3/3.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's section backgrounds alternate in colored bands (cream, yellow, dark, photo, cream, peach, dark). Most of A's page background is white, with peach only in the press collage and the footer.",
+  "category": "color",
+  "evidence": "B top_backgrounds: rgb(253,238,176) x3, rgb(28,26,25) x7, rgb(253,230,211) x5. A top_backgrounds: white x16, rgb(250,249,247) x5, rgb(34,34,34) x4.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's blog cards are tinted with three different pastels (peach, yellow, pink). Their titles are lowercase serif, bottom-anchored text with a 'READ →' link.",
+  "category": "color",
+  "evidence": "B_slice_01 cards at bg rgb(253,230,211), rgb(253,238,176), rgb(251,211,222). Titles 'part 02 — breakfast nook diy…', 'part 01 — …', 'diy gold range hood — …'. One title is truncated at 'on a budg' in the heading outline, as in A.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The blog title 'part 02 — breakfast nook diy: space makeover + small dining room ideas on a budg' is truncated in the heading outline on both pages, which suggests the same copy source. The three post titles are the same on both sides.",
+  "category": "copy",
+  "evidence": "A h2 and B h3 contain the identical truncated text; 'part 01 — breakfast nook diy: furniture flip table and chairs' and 'diy gold range hood — simple + renter-friendly appliance makeover' appear on both.",
+  "which_side": "both"
+ }
+]

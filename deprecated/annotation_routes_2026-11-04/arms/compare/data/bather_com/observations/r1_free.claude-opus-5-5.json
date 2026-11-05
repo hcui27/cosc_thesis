@@ -1,0 +1,308 @@
+[
+ {
+  "observation": "Document titles differ: A uses a pipe-separated SEO-style title, while B uses an em-dash title with a different brand name.",
+  "category": "copy/metadata",
+  "evidence": "A title: \"Bather | Quality Men's Surf and Swimwear | Made in Canada\"; B title: \"Bather Trunk Co. — Surf & Swim, Made in Canada\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has much more head metadata, including Open Graph, Twitter card, Shopify and site-verification tags. B has only three meta tags.",
+  "category": "DOM/metadata",
+  "evidence": "A meta count 25 (og:*, twitter:*, shopify-checkout-api-token, p:domain_verify); B meta_names: charset, viewport, description",
+  "which_side": "A"
+ },
+ {
+  "observation": "A includes JSON-LD structured data; B has none.",
+  "category": "DOM/metadata",
+  "evidence": "A jsonld_blocks 3; B jsonld_blocks 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has one h1, and it is empty. B has no h1 and uses h2 as its top heading level.",
+  "category": "semantic structure",
+  "evidence": "A h1_count 1 with text \"\" (15px, white); B h1_count 0, h1 null",
+  "which_side": "both"
+ },
+ {
+  "observation": "A loads heavy scripting; B has no scripts and no external stylesheets.",
+  "category": "DOM structure",
+  "evidence": "A scripts 90, stylesheets 9, noscript 16; B scripts 0, stylesheets 0, one style tag",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's DOM is much larger, with far more divs and classes.",
+  "category": "DOM structure",
+  "evidence": "A div 203, classes total 958 / unique 265; B div 30, classes total 91 / unique 45",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses figure, blockquote and figcaption elements for its press quotes; A uses none of them.",
+  "category": "semantic structure",
+  "evidence": "B figure 6, blockquote 6, figcaption 6; A figure 0, blockquote 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses 15 header elements, an aside and 4 navs. B has one header, one nav and no aside.",
+  "category": "semantic structure",
+  "evidence": "A semantic header 15, nav 4, aside 1; B header 1, nav 1, aside 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses inline SVG icons (26 SVGs); B has no inline SVGs and uses img elements for its payment icons.",
+  "category": "imagery handling",
+  "evidence": "A svgs 26; B svgs 0, with 8 payment .svg files loaded as img (american-express.svg … visa.svg)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The primary typeface differs: A uses Calibre and B uses Helvetica Neue.",
+  "category": "typography",
+  "evidence": "A fonts: Calibre 621 elements; B fonts: Helvetica Neue 202 elements",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's h2 headings are small, regular weight and widely letter-spaced. B's h2 headings are very large, extra-bold and tightly spaced.",
+  "category": "typography",
+  "evidence": "A h2 23px weight 400 (e.g., spaced 'BROWSE THE LATEST'); B h2 68px weight 800 (e.g., 'BROWSE THE LATEST', 'JOURNAL')",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text is 15px in A and 16px in B, with nearly identical line heights.",
+  "category": "typography",
+  "evidence": "A body 15px / 24.75px; B body 16px / 24.8px",
+  "which_side": "both"
+ },
+ {
+  "observation": "The announcement bar is light grey with dark text in A, and black with white text in B.",
+  "category": "color",
+  "evidence": "A slice 00 top bar grey (239,239,239) 'FREE SHIPPING ON ORDERS OVER $150 USD'; B slice 00 black bar with white bold text",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero shows a broken or unloaded image: a white area with a broken-image icon and a lone 'SHOP NOW' link. B's hero is an orange-to-teal gradient with a large headline and an outlined button.",
+  "category": "imagery handling",
+  "evidence": "A slice 00: blank 856px hero with broken img icon (header_1600x.jpg natural 0x0); B slice 00: gradient hero 'SPRING/SUMMER '21 AVAILABLE NOW'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a CSS gradient background; A has none.",
+  "category": "decoration/effects",
+  "evidence": "A gradient_backgrounds 0; B gradient_backgrounds 1 (hero)",
+  "which_side": "B"
+ },
+ {
+  "observation": "B shows a visible horizontal nav bar with text links (SHOP, ABOUT, JOURNAL, STOCKISTS, SEARCH, CART) and a script-style logo. A's header shows only a broken logo image and a cart icon.",
+  "category": "layout/navigation",
+  "evidence": "B slice 00 nav row; A slice 00 shows broken logo at center and cart icon at right",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's nav bar sits partway down the hero, below an orange gradient band, rather than at the top of the page.",
+  "category": "layout",
+  "evidence": "B slice 00: gradient strip from y≈104–293, then white nav at y≈293–356",
+  "which_side": "B"
+ },
+ {
+  "observation": "A renders its logo at 115x41; B renders a smaller 95x34 version.",
+  "category": "imagery handling",
+  "evidence": "A Bather_Logo_115x.png rect 115x41; B Bather-Logo.png rect 95x34",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's product feature area has three 'VIEW' links spaced across blank white space with no visible images. B uses solid-colored tiles with headline overlays.",
+  "category": "layout/imagery",
+  "evidence": "A slice 01: 'VIEW' ×3 on white; B slice 01: orange, black and green tiles with 'ORANGE HAWAIIAN TROPICS SWIM TRUNK' etc.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's sustainability section pairs a photo of green recycled garments arranged as a recycling symbol with text on the right. B's equivalent is a pale color block with an overlay gradient and no photo.",
+  "category": "imagery handling",
+  "evidence": "A slice 00–01 green garment image (recycling_homepage_1000x.jpg); B slice 00 pale block 'MADE WITH 100% RECYCLED MATERIALS'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B places content in a two-column split (sustainability next to Beige Hula Girl Camp Shirt) followed by a three-column tile row. A stacks those features with large whitespace gaps.",
+  "category": "layout",
+  "evidence": "B slice 00–01 tile grid; A slice 01 large empty regions",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses CSS grid much more than A.",
+  "category": "layout",
+  "evidence": "A display_grid 1, display_flex 20; B display_grid 10, display_flex 15",
+  "which_side": "B"
+ },
+ {
+  "observation": "The CTA styles differ. A mostly uses plain letter-spaced text links or underlined links, plus white filled boxes on the cards. B mostly uses outlined rectangular buttons with bold text.",
+  "category": "component choice",
+  "evidence": "A: 'SHOP NOW', 'VIEW' plain text, 'LEARN MORE' underlined, white boxes 'LEARN MORE/BUY NOW/READ'; B: bordered 'SHOP NOW', 'VIEW', 'SHOP THE FULL COLLECTION'; primary_button padding 11.232px 22.464px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 9 pill-shaped elements; B has no pill radii. Both are otherwise square-cornered.",
+  "category": "decoration/effects",
+  "evidence": "A border_radius bucket_pill 9, bucket_0 622; B bucket_pill 0, bucket_0 201",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses box shadows, animations and transforms. B uses none of these and has few transitions.",
+  "category": "decoration/effects",
+  "evidence": "A box_shadows 5, animations 7, transforms 25, transitions 184; B 0, 0, 0, transitions 10",
+  "which_side": "A"
+ },
+ {
+  "observation": "B introduces a warm, saturated palette: cream, burnt orange, deep teal and forest green. A's backgrounds are mostly white and greys.",
+  "category": "color",
+  "evidence": "B top_backgrounds include rgb(244,239,230), rgb(232,100,58), rgb(31,78,95), rgb(47,107,87); A top_backgrounds white, rgb(28,27,27), rgb(239,239,239), rgb(221,221,221)",
+  "which_side": "B"
+ },
+ {
+  "observation": "B shows a 'NEW / BANDANA TOWELS' section on a cream background with two large colored cards (orange 'BANDANA TOWELS', teal 'CAMP SHIRTS'). In A, this area is mostly blank with only 'SHOP ACCESSORIES' and 'VIEW ALL' text links visible.",
+  "category": "layout/imagery",
+  "evidence": "B slice 01–02; A slice 02 top",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a heading 'THE FULL COLLECTION' that A does not have. A's corresponding heading is 'SS21 AVAILABLE NOW', a centered h2 with an underlined link.",
+  "category": "copy treatment",
+  "evidence": "B heading_outline 'THE FULL COLLECTION'; A heading_outline 'SS21 AVAILABLE NOW', slice 01",
+  "which_side": "B"
+ },
+ {
+  "observation": "Both pages use the same three colors for the 'Browse the latest' cards (grey, taupe, tan). A centers the text on the card with a white filled button. B left-aligns the text at the bottom over a dark gradient scrim and uses underlined link CTAs.",
+  "category": "component choice",
+  "evidence": "A slice 02 centered 'SUSTAINABILITY' with white 'LEARN MORE' box; B slice 02 bottom-left 'SUSTAINABILITY' with underlined 'LEARN MORE'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The cards differ in shape: A's are wider and nearly square (440x500), while B's are taller portrait cards with wider gutters.",
+  "category": "layout",
+  "evidence": "A slice 02 cards ~440px wide x 500px high; B slice 02 cards ~416px wide x 554px high",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows one centered press quote in body text, followed by a row of greyscale logos on white. B has an 'IN THE PRESS' section on black with six quotes in a 3x2 grid and colored logos in a white rounded panel.",
+  "category": "component choice",
+  "evidence": "A slice 02–03 '\"These are the best swim trunks for summer.\" — Business Insider'; B slice 03 six quotes with sources",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds an 'IN THE PRESS' heading; A has no heading for its press block.",
+  "category": "semantic structure",
+  "evidence": "B heading_outline includes 'IN THE PRESS'; A outline does not",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's press logos are mostly grey, with Business Insider in black. In B, all press logos are black on a white card.",
+  "category": "color/imagery",
+  "evidence": "A slice 03 grey Highsnobiety/GQ/NYT/Well Spent/Globe logos; B slice 03 black logos",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's press logos have empty alt text. B gives every image descriptive alt text.",
+  "category": "DOM/imagery",
+  "evidence": "A Highsnobiety_300x.png alt \"\" etc.; B alt 'Highsnobiety', 'GQ', 'New York Times', … alt_missing 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "A presents 'OUR ETHOS' as a full-width slate-grey band with centered white text, which appears to have a text shadow. B splits it into a left slate-grey block and a right cream panel with left-aligned black text and a large bold heading.",
+  "category": "layout/color",
+  "evidence": "A slice 03 centered ethos; B slice 03–04 two-column ethos",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's journal headings are letter-spaced uppercase titles (h2) with no visible thumbnails. B's journal has a large 'JOURNAL' h2 and pastel placeholder thumbnail blocks above mixed-case bold h3 titles.",
+  "category": "typography/imagery",
+  "evidence": "A slice 03 'THE SPRING 2021 STYLE GUIDE' with blank space above; B slice 04 cream, mint and peach blocks with 'The Spring 2021 Style Guide'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A demotes the 'JOURNAL' label to an h3 eyebrow above 'EXCELLENT ADVENTURES'. B makes 'JOURNAL' an h2 section heading and its article titles h3s.",
+  "category": "semantic structure",
+  "evidence": "A outline: h3 'JOURNAL', h2 article titles; B outline: h2 'JOURNAL', h3 article titles",
+  "which_side": "both"
+ },
+ {
+  "observation": "Read-more links differ: A uses mixed-case underlined 'Read more', while B uses bold uppercase letter-spaced 'READ MORE' with an underline.",
+  "category": "typography",
+  "evidence": "A slice 04 'Read more'; B slice 04 'READ MORE'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'ALL POSTS' button is filled black with white text in A, and an outlined black-bordered box in B.",
+  "category": "component choice",
+  "evidence": "A slice 04 black filled 'ALL POSTS'; B slice 04 outlined 'ALL POSTS'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer background is light grey in A and warm cream in B.",
+  "category": "color",
+  "evidence": "A slice 04 footer grey (~239); B slice 04–05 footer cream rgb(244,239,230)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer has four columns with the 1% for the Planet logo in its own column. B has three columns and places a smaller version of the logo below the About text.",
+  "category": "layout",
+  "evidence": "A Member_VerticalLogo 120x150 at x 578; B 72x90 at x 70",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social links are grey icon glyphs in A and bold uppercase text labels in B.",
+  "category": "component choice",
+  "evidence": "A slice 04 Facebook/Instagram/Pinterest/Tumblr icons; B slice 05 'FACEBOOK INSTAGRAM PINTEREST LIFESTYLE'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The newsletter form differs: A stacks a full-width input above a separate black SUBSCRIBE button, while B joins the input and button inline in one row.",
+  "category": "component choice",
+  "evidence": "A slice 04 stacked; B slice 04 inline 'Email address' + 'SUBSCRIBE'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The copyright line is uppercase and letter-spaced in A, and small, underlined and mixed-case in B. B also places a divider line above it.",
+  "category": "typography",
+  "evidence": "A '© 2021 BATHER TRUNK COMPANY'; B '© 2021 Bather Trunk Company' with border above",
+  "which_side": "both"
+ },
+ {
+  "observation": "One of B's payment icons (Apple Pay) renders as an empty outlined shape. All payment icons render in A.",
+  "category": "imagery handling",
+  "evidence": "B slice 05 second payment icon blank with black border; A slice 04 shows Apple Pay icon",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's footer text is mid-grey; B's footer text is near-black.",
+  "category": "color",
+  "evidence": "A text color rgb(106,106,106) used 141×; B footer text dark rgb(17,17,17)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's page is taller than A's.",
+  "category": "layout",
+  "evidence": "A page_height 6069; B page_height 6772",
+  "which_side": "B"
+ },
+ {
+  "observation": "A embeds iframes and has more forms, inputs and buttons. B has a single form with one input and one button.",
+  "category": "DOM structure",
+  "evidence": "A iframe 2, form 3, input 7, button 6; B form 1, input 1, button 1, iframe 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "B includes a label element for its email input; A has no label tags.",
+  "category": "DOM structure",
+  "evidence": "B tag_counts label 1; A has none",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses many responsive picture/source elements; B uses only plain img tags.",
+  "category": "imagery handling",
+  "evidence": "A picture 9, source 10, img 32; B img 16, no picture",
+  "which_side": "A"
+ },
+ {
+  "observation": "A contains an emoji in its text; B contains none. Word counts are similar.",
+  "category": "copy",
+  "evidence": "A emoji 1, words 508; B emoji 0, words 519",
+  "which_side": "A"
+ }
+]

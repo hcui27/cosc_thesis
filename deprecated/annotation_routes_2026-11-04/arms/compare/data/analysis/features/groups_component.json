@@ -1,0 +1,474 @@
+{
+ "key": "77be7db65ce3",
+ "groups": [
+  {
+   "name": "Fully rounded pill buttons",
+   "definition": "Are the primary buttons or calls to action fully rounded pills?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "primary_button_pill",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "allstate_jobs#9",
+    "bluebayou_com#13",
+    "fnsouzafoundation_com#10",
+    "insightcentral_net#9",
+    "naturalwellbeing_com#0",
+    "neverskipbrunch_com#10",
+    "thefrangipanicreative_com#7",
+    "thync_com#6",
+    "tellmebaby_com_au#9",
+    "miamidda_com#16",
+    "kanienkeha_net#7",
+    "greatdayimprovements_com#8",
+    "merchantsavvy_co_uk#8"
+   ]
+  },
+  {
+   "name": "Square or small-radius buttons",
+   "definition": "Do buttons have square corners or only a small corner radius rather than pill shapes?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "primary_button_radius_px",
+    "op": "<=",
+    "value": 6
+   },
+   "members": [
+    "aeptexas_com#8",
+    "ridetech_com#6",
+    "kneeguru_co_uk#19",
+    "bather_com#10",
+    "alpine8848_com#15",
+    "gravityvault_com#15"
+   ]
+  },
+  {
+   "name": "Solid filled brand-color CTA buttons",
+   "definition": "Are the main call-to-action buttons solid filled with a brand color and rounded or plain corners?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#9",
+    "homedesignersoftware_com#5",
+    "kanienkeha_net#0",
+    "nira_org_ng#7",
+    "flygrant_com#3"
+   ]
+  },
+  {
+   "name": "Primary plus outlined secondary buttons",
+   "definition": "Does a primary solid button appear alongside an outlined secondary button?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#10",
+    "homedesignersoftware_com#14",
+    "nira_org_ng#11"
+   ]
+  },
+  {
+   "name": "Secondary CTAs as text links",
+   "definition": "Are secondary or read-more actions styled as text links rather than boxed buttons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "tellmebaby_com_au#10",
+    "newclimateeconomy_net#10",
+    "thync_com#12",
+    "kneeguru_co_uk#14",
+    "aeptexas_com#10",
+    "bather_com#9"
+   ]
+  },
+  {
+   "name": "Social links as text labels",
+   "definition": "Are social links plain text labels (possibly pills) rather than icon glyphs?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#14",
+    "cbdoilcreamnk_com#14",
+    "gravityvault_com#23",
+    "homedesignersoftware_com#19",
+    "nira_org_ng#8",
+    "thefrangipanicreative_com#13",
+    "ridetech_com#17",
+    "newclimateeconomy_net#13"
+   ]
+  },
+  {
+   "name": "Circular social icons",
+   "definition": "Are social links shown as small circular icon or letter badges?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#20",
+    "bluebayou_com#16",
+    "nira_org_ng#20"
+   ]
+  },
+  {
+   "name": "Pill chips and tags",
+   "definition": "Are tags, filters, or suggested links shown as small rounded pill chips?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#14",
+    "educationactivities_org#16",
+    "kanienkeha_net#6",
+    "kanienkeha_net#14",
+    "seoanalyzer_me#8",
+    "miamidda_com#18",
+    "neverskipbrunch_com#14",
+    "tellmebaby_com_au#11",
+    "gravityvault_com#16"
+   ]
+  },
+  {
+   "name": "Small badges and labels",
+   "definition": "Are categories, dates, or status shown as small badge or label boxes?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#5",
+    "cbdoilcreamnk_com#10",
+    "gravityvault_com#18",
+    "bathurst12hour_com_au#6",
+    "educationactivities_org#10"
+   ]
+  },
+  {
+   "name": "Circular pagination controls",
+   "definition": "Does pagination or carousel navigation use circular dots or rounded boxes?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#13",
+    "greatdayimprovements_com#9",
+    "kanienkeha_net#12"
+   ]
+  },
+  {
+   "name": "Search field joined with button",
+   "definition": "Is search an input joined to a labeled button, or absent from the header?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#17",
+    "newclimateeconomy_net#11",
+    "seoanalyzer_me#6",
+    "tellmebaby_com_au#8",
+    "kanienkeha_net#5"
+   ]
+  },
+  {
+   "name": "Inline newsletter signup",
+   "definition": "Is the newsletter signup an email input inline with a submit button?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#12",
+    "kneeguru_co_uk#17",
+    "naturalwellbeing_com#20",
+    "nira_org_ng#15",
+    "ridetech_com#16",
+    "cbdoilcreamnk_com#13",
+    "gravityvault_com#22",
+    "neverskipbrunch_com#19"
+   ]
+  },
+  {
+   "name": "Simple form layout",
+   "definition": "Do forms use simple narrow or full-width native controls?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#16",
+    "flygrant_com#10",
+    "flygrant_com#8",
+    "miamidda_com#9"
+   ]
+  },
+  {
+   "name": "Segmented toggle control",
+   "definition": "Is there a segmented toggle for binary or purchase choices?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#7",
+    "homedesignersoftware_com#18"
+   ]
+  },
+  {
+   "name": "Top announcement strip",
+   "definition": "Is there a thin announcement strip at the top of the page?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#12",
+    "fnsouzafoundation_com#7",
+    "naturalwellbeing_com#5",
+    "neverskipbrunch_com#5",
+    "stgpartners_com#12"
+   ]
+  },
+  {
+   "name": "Full-width promo or CTA band",
+   "definition": "Is there a full-width solid or dark promotional band with a headline and CTA?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#13",
+    "ridetech_com#11",
+    "miamidda_com#10",
+    "naturalwellbeing_com#15",
+    "flygrant_com#19",
+    "neverskipbrunch_com#15",
+    "aeptexas_com#3"
+   ]
+  },
+  {
+   "name": "Dark utility bar above header",
+   "definition": "Is there a slim dark utility bar above the main header?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#5",
+    "homedesignersoftware_com#9",
+    "kneeguru_co_uk#6",
+    "ridetech_com#8"
+   ]
+  },
+  {
+   "name": "Horizontal text navigation",
+   "definition": "Is navigation a visible horizontal row of text links?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#19",
+    "bluebayou_com#11",
+    "bather_com#13",
+    "educationactivities_org#11",
+    "kanienkeha_net#3",
+    "alpine8848_com#13",
+    "bathurst12hour_com_au#8",
+    "naturalwellbeing_com#8",
+    "aeptexas_com#5"
+   ]
+  },
+  {
+   "name": "Menu toggle button",
+   "definition": "Is there a rounded text menu toggle button?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#22",
+    "stgpartners_com#4"
+   ]
+  },
+  {
+   "name": "Plain text logo wordmark",
+   "definition": "Is the logo a text wordmark with a small accent rather than an image?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "seoanalyzer_me#4",
+    "thync_com#4",
+    "nira_org_ng#9",
+    "educationactivities_org#9",
+    "flygrant_com#2",
+    "kneeguru_co_uk#7"
+   ]
+  },
+  {
+   "name": "Dark footer",
+   "definition": "Is the footer a dark band?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#15",
+    "fnsouzafoundation_com#18",
+    "insightcentral_net#19",
+    "ridetech_com#18",
+    "stgpartners_com#14"
+   ]
+  },
+  {
+   "name": "Light footer with simple links",
+   "definition": "Is the footer light with plain link columns or rows?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#17",
+    "merchantsavvy_co_uk#19",
+    "newclimateeconomy_net#14",
+    "kneeguru_co_uk#18",
+    "tellmebaby_com_au#15"
+   ]
+  },
+  {
+   "name": "Plain link lists",
+   "definition": "Are link lists plain single-column stacks of bold links?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#10",
+    "cbdoilcreamnk_com#17",
+    "thefrangipanicreative_com#10"
+   ]
+  },
+  {
+   "name": "Underlined inline links",
+   "definition": "Are inline body links underlined?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#30",
+    "flygrant_com#18",
+    "homedesignersoftware_com#21",
+    "kneeguru_co_uk#13",
+    "thync_com#9"
+   ]
+  },
+  {
+   "name": "Bold links without underline",
+   "definition": "Are links bold and not underlined?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#10"
+   ]
+  },
+  {
+   "name": "Bordered rounded content cards",
+   "definition": "Are content items shown as bordered or rounded white cards in a grid?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#17",
+    "kneeguru_co_uk#11",
+    "merchantsavvy_co_uk#10",
+    "naturalwellbeing_com#2",
+    "naturalwellbeing_com#17",
+    "seoanalyzer_me#9",
+    "tellmebaby_com_au#12",
+    "ridetech_com#12",
+    "gravityvault_com#17",
+    "bluebayou_com#15",
+    "neverskipbrunch_com#12",
+    "thefrangipanicreative_com#8",
+    "insightcentral_net#14",
+    "alpine8848_com#14",
+    "allstate_jobs#11"
+   ]
+  },
+  {
+   "name": "Text-only cards with accent edge",
+   "definition": "Are cards text-only with a colored left or top accent border?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "ridetech_com#15",
+    "tellmebaby_com_au#13",
+    "tellmebaby_com_au#14",
+    "thync_com#11",
+    "flygrant_com#13",
+    "miamidda_com#14",
+    "cbdoilcreamnk_com#12",
+    "miamidda_com#17"
+   ]
+  },
+  {
+   "name": "Text overlaid on imagery",
+   "definition": "Is text overlaid on images or thumbnails?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#12",
+    "thync_com#10"
+   ]
+  },
+  {
+   "name": "Statistics display",
+   "definition": "Are statistics shown as numbers in tiles or inline?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#13",
+    "insightcentral_net#13"
+   ]
+  },
+  {
+   "name": "Section header with view-all link",
+   "definition": "Do section headers pair a heading with a right-aligned view-all link?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#18",
+    "newclimateeconomy_net#9",
+    "seoanalyzer_me#10"
+   ]
+  },
+  {
+   "name": "Heading with accent underline rule",
+   "definition": "Do section headings have a short accent underline rule?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#1"
+   ]
+  },
+  {
+   "name": "Logo strips and sponsor grids",
+   "definition": "Are logos displayed in white tiles, strips, or grids?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#21",
+    "bather_com#11",
+    "merchantsavvy_co_uk#7"
+   ]
+  },
+  {
+   "name": "Medium corner radius scale",
+   "definition": "Do cards and buttons consistently use 8-15px radii?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "radius_round_share",
+    "op": ">=",
+    "value": 0.3
+   },
+   "members": [
+    "merchantsavvy_co_uk#17",
+    "insightcentral_net#10"
+   ]
+  },
+  {
+   "name": "Profile and avatar elements",
+   "definition": "Are people shown as profile cards, avatars, or testimonial photos?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "insightcentral_net#16",
+    "allstate_jobs#14",
+    "allstate_jobs#12",
+    "educationactivities_org#15"
+   ]
+  },
+  {
+   "name": "Miscellaneous content blocks",
+   "definition": "Does the page include a distinct content block such as a calendar, feed, share links, or sign-up block?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "nira_org_ng#16",
+    "thefrangipanicreative_com#12",
+    "bathurst12hour_com_au#15",
+    "insightcentral_net#18",
+    "flygrant_com#14"
+   ]
+  }
+ ]
+}

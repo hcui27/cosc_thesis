@@ -1,0 +1,609 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Different document titles: A uses an SEO-style title listing product category and origin; B uses a shorter brand-plus-season title with an em dash",
+   "evidence": "A title: \"Bather | Quality Men's Surf and Swimwear | Made in Canada\"; B title: \"Bather Trunk Co. — Spring/Summer '21\"",
+   "side": "both",
+   "members": [
+    "bather_com|opus|00",
+    "bather_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A has one empty h1. B has no h1; its top heading is h2",
+   "evidence": "A h1_count 1 with text \"\" (15px, white); B h1_count 0, h1 null",
+   "side": "both",
+   "members": [
+    "bather_com|opus|05",
+    "bather_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "A pairs each h2 with a small h3 eyebrow placed before it. B keeps the eyebrows out of the heading tags and uses h3 for card titles under section h2s",
+   "evidence": "A outline: h3 NEW ARRIVALS → h2 SPRING/SUMMER...; B outline: h2 AVAILABLE NOW → h3 BANDANA TOWELS, h3 CAMP SHIRTS; h2 BROWSE THE LATEST → h3",
+   "side": "both",
+   "members": [
+    "bather_com|opus|06",
+    "bather_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B marks up press quotes as figure/blockquote/figcaption. A uses none of these elements",
+   "evidence": "B figure 6, blockquote 6, figcaption 6; A all 0",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|08",
+    "bather_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "Different typefaces: A uses Calibre with a long system fallback stack; B uses Helvetica Neue",
+   "evidence": "fonts_by_element_count: A Calibre 621; B Helvetica Neue 192",
+   "side": "both",
+   "members": [
+    "bather_com|opus|11",
+    "bather_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "B's journal post titles use sentence/title case in bold. A's are uppercase and letter-spaced",
+   "evidence": "B outline: 'The Spring 2021 Style Guide', 'SS21 Lookbook'; A: 'THE SPRING 2021 STYLE GUIDE' rendered spaced out in slice 03",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|15"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I6",
+   "text": "Announcement bar colour is inverted: light grey with dark text in A, near-black with white text in B",
+   "evidence": "A slice 00: #efefef bar 'FREE SHIPPING ON ORDERS OVER $150 USD' (rgb(239,239,239) in backgrounds); B slice 00: black bar (rgb(17,17,17) top ",
+   "side": "both",
+   "members": [
+    "bather_com|opus|16",
+    "bather_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "A's hero image area is blank white with only a 'SHOP NOW' link. B's hero is a grey-green gradient panel with a huge white headline and an outlined button",
+   "evidence": "A slice 00: empty bordered box with 'SHOP NOW' at left; B slice 00: gradient from light sage to dark grey, white 96px headline, bordered SHO",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|18",
+    "bather_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "B uses colour placeholders where images would go: its image files are 1×1 placeholders shown as flat or gradient colour blocks",
+   "evidence": "B images e.g. recycling_homepage_1x1.jpg natural [1,1] rendered 1440×738 and 720×720; slices show beige, orange, black, sage, slate solid pa",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|19",
+    "bather_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "A's sustainability section shows a real cut-out photo (green shorts arranged as a recycling symbol) on the left with text on the right. B reverses the sides and puts the text on a warm off-white panel next to a pale green colour block",
+   "evidence": "A slices 00-01: photo left, text at x≈780; B slice 00-01: text left on rgb(243,240,234)-like panel, empty pale panel right",
+   "side": "both",
+   "members": [
+    "bather_com|opus|22",
+    "bather_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "Product feature row: A shows three widely spaced 'VIEW' links on white with no visible product titles. B shows three edge-to-edge coloured tiles (beige, orange, black) with eyebrow, bold product name and underlined VIEW",
+   "evidence": "A slice 01: 'VIEW' ×3 on blank white; B slice 01: tiles 'BEIGE HULA GIRL CAMP SHIRT', 'ORANGE HAWAIIAN TROPICS SWIM TRUNK', 'BLACK BANDANA S",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|23",
+    "bather_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "CTA styling: A mostly uses underlined text links (LEARN MORE, SHOP THE FULL COLLECTION). B uses solid black rectangular buttons for these",
+   "evidence": "A slice 01: underlined 'LEARN MORE', 'SHOP THE FULL COLLECTION'; B slice 01: black filled 'LEARN MORE' and 'SHOP THE FULL COLLECTION' button",
+   "side": "both",
+   "members": [
+    "bather_com|opus|25",
+    "bather_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "Accessory/category tiles: A shows only 'SHOP ACCESSORIES' and 'VIEW ALL' links on white. B shows two coloured cards (tan 'BANDANA TOWELS', sage 'CAMP SHIRTS') with headings",
+   "evidence": "A slice 02 top; B slice 02 top cards",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|26",
+    "bather_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "'Browse the latest' cards: both use three muted-colour cards (grey, taupe, tan). A centres text and puts a white boxed button on flat colour; B left-aligns text over a darkening bottom overlay with underlined text links",
+   "evidence": "A slice 02: centred 'SUSTAINABILITY' + white 'LEARN MORE' box; B slice 02: left-aligned 'SUSTAINABILITY' + underlined 'LEARN MORE' on gradie",
+   "side": "both",
+   "members": [
+    "bather_com|opus|27",
+    "bather_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "Card widths differ: A's browse cards span nearly the full width with 30px margins. B's sit inside a 128px-inset container",
+   "evidence": "A slice 02 cards x≈30–1410; B slice 02 cards x≈128–1312; B images also start at x=128",
+   "side": "both",
+   "members": [
+    "bather_com|opus|28",
+    "bather_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Press section: A shows one centred quote ('These are the best swim trunks for summer.' — Business Insider) and a row of greyscale logos. B shows six quotes in a 3×2 grid, each with a top rule and an uppercase source, followed by dark logos",
+   "evidence": "A slices 02-03; B slice 02 quote grid (Highsnobiety, GQ, New York Times, Well Spent, Business Insider, The Globe and Mail) and slice 03 logo",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|29",
+    "bather_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "Press logos: greyscale/light grey on white in A (Business Insider in black). Uniformly dark charcoal on a cream band in B",
+   "evidence": "A slice 03 logos grey; B slice 03 logos dark on rgb(243,240,234)",
+   "side": "both",
+   "members": [
+    "bather_com|opus|30",
+    "bather_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "B gives press logos descriptive alt text; A leaves their alt empty",
+   "evidence": "B images alt 'Highsnobiety', 'GQ', 'The New York Times'...; A logo images alt \"\"",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|31",
+    "bather_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "'Our Ethos': A uses a full-width slate band with centred white text that has a text shadow. B uses a split layout with a slate colour block on the left and left-aligned dark text with a bold 'OUR ETHOS' on white on the right",
+   "evidence": "A slice 03 slate band with centred text; B slice 03 left slate panel, right text column",
+   "side": "both",
+   "members": [
+    "bather_com|opus|12",
+    "bather_com|opus|13",
+    "bather_com|opus|32",
+    "bather_com|sonnet|09",
+    "bather_com|sonnet|11",
+    "bather_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "Journal section: A puts image areas above uppercase titles, with underlined 'Read more' links and a centred black 'ALL POSTS' button below. B has a 'FROM THE JOURNAL' heading with an outlined 'ALL POSTS' button aligned right, cards with top rules, and bold uppercase 'READ MORE'",
+   "evidence": "A slices 03-04; B slices 03-04; B outline adds h2 'FROM THE JOURNAL' not present in A",
+   "side": "both",
+   "members": [
+    "bather_com|opus|24",
+    "bather_com|opus|33",
+    "bather_com|sonnet|28",
+    "bather_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "'About Bather': A puts it in a light grey footer column. B gives it its own full-width black band with a large bold white heading and the 1% for the Planet logo in a white box on the right",
+   "evidence": "A slice 04 grey footer with 'ABOUT BATHER' column; B slice 04 black section, rgb(17,17,17) background",
+   "side": "both",
+   "members": [
+    "bather_com|opus|35",
+    "bather_com|opus|36",
+    "bather_com|opus|37",
+    "bather_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Newsletter form: A stacks a light-bordered input above a separate black SUBSCRIBE button. B joins a dark-bordered input and black SUBSCRIBE button into one inline row",
+   "evidence": "A slice 04 'Enter your email address' then button below; B slice 04 'Email address' input with attached SUBSCRIBE",
+   "side": "both",
+   "members": [
+    "bather_com|opus|38"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I22",
+   "text": "Copyright line: A is uppercase and letter-spaced; B is sentence case in grey, with a hairline rule above",
+   "evidence": "A '© 2021 BATHER TRUNK COMPANY'; B '© 2021 Bather Trunk Company' with divider in slice 04",
+   "side": "both",
+   "members": [
+    "bather_com|opus|39",
+    "bather_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "B's palette uses more saturated and earthy accent backgrounds (teal, sage, tan, orange). A's top backgrounds are almost all white or neutral grey",
+   "evidence": "B top_backgrounds include rgb(47,93,98), rgb(124,154,126), rgb(201,183,156), rgb(243,240,234); A: white ×14, rgb(28,27,27), rgb(239,239,239)",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|40",
+    "bather_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "Text colour: A uses rgb(28,27,27) with grey rgb(106,106,106). B uses rgb(17,17,17) with grey rgb(107,107,107)",
+   "evidence": "top_text_colors: A rgb(28,27,27) 273, rgb(106,106,106) 141; B rgb(17,17,17) 111, rgb(107,107,107) 28",
+   "side": "both",
+   "members": [
+    "bather_com|opus|14",
+    "bather_com|opus|41",
+    "bather_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "B shows a visible text nav (SHOP, ABOUT, JOURNAL, STOCKISTS left; SEARCH, CART right) around a centred script logo. A's captured header shows only a broken logo placeholder and a faint cart icon",
+   "evidence": "B slice 00 nav row; A slice 00 shows broken-image icons at top-left and centre plus a cart glyph at right",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|17",
+    "bather_com|opus|44",
+    "bather_com|opus|45",
+    "bather_com|sonnet|14",
+    "bather_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "B relies much more on CSS grid layouts",
+   "evidence": "display_grid: A 1, B 12; display_flex 20 on both",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|46",
+    "bather_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "B's page is taller",
+   "evidence": "page_height: A 6069px, B 6311px; both 1440px wide",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|47",
+    "bather_com|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "B lists payment methods as 38×24 SVG image files with alt text. A's payment icons appear in the screenshot, and its facts list SVG markup but no payment image files",
+   "evidence": "B images american-express.svg … visa.svg, alt 'Visa' etc.; A slice 04 shows the icons, and A's images list contains no payment files",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|52"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I29",
+   "text": "The primary button differs: A's detected primary button has no text and zero padding. B's is 'SHOP NOW' in white with 10.2px×21.6px padding on a transparent background (outlined)",
+   "evidence": "primary_button: A text '' padding 0px; B text 'SHOP NOW', color white, padding 10.2px 21.6px",
+   "side": "generated",
+   "members": [
+    "bather_com|opus|53",
+    "bather_com|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A's head carries a full e-commerce platform footprint, with 90 script tags, 16 style tags, 16 noscript, 25 meta tags and 3 JSON-LD blocks. B is nearly bare, with 3 meta tags, 1 style tag, no scripts, no external stylesheets and no JSON-LD.",
+   "evidence": "A tag_counts: script 90, style 16, noscript 16, meta 25, jsonld_blocks 3. B: script absent, style 1, meta 3, jsonld_blocks 0, stylesheets 0.",
+   "side": "both",
+   "members": [
+    "bather_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "A's DOM is large and generic. It has 203 divs, 958 class tokens (265 unique) and 74 inline style attributes. B's is compact, with 25 divs, 79 class tokens (41 unique) and 2 inline style attributes.",
+   "evidence": "A tag_counts div 203, classes total 958, inline_style_attrs 74. B div 25, classes total 79, inline_style_attrs 2.",
+   "side": "both",
+   "members": [
+    "bather_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "B's header is rendered mid-hero. White and pale-green bands sit above the nav bar, and the 'NEW ARRIVALS' eyebrow is clipped beneath it.",
+   "evidence": "B_slice_00 shows the nav at y≈207-275 with bands at y 40-207. The 'NEW ARRIVALS' text is partly hidden under the bar.",
+   "side": "generated",
+   "members": [
+    "bather_com|sonnet|15"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "B's imagery is a set of lazy-loaded 1x1 placeholder images, with 6 of them sized to full blocks. A lists 750x960 crop_center product and editorial images, but these load as 0x0. A also uses picture elements (9) with source elements (10). B uses plain img only, with no picture or source.",
+   "evidence": "A tag_counts picture 9, source 10, img 32. B has no picture or source, img 22.",
+   "side": "both",
+   "members": [
+    "bather_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "Both pages show a row of eight payment-method badges in the footer. In B one badge, Apple Pay, renders as an empty rounded black outline, and the Discover badge looks clipped.",
+   "evidence": "B images apple-pay.svg and discover.svg at 38x24, y=6255. B_slice_04 shows a blank black-outlined box in the Apple Pay position.",
+   "side": "generated",
+   "members": [
+    "bather_com|sonnet|32"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "A uses pill-radius shapes on 9 elements and one small-radius element, and has 5 box shadows. B has every measured element at 0px radius and no shadows. Both use rectangular buttons.",
+   "evidence": "A border_radius_buckets bucket_pill 9, bucket_1_7 1, box_shadows 5. B bucket_0 192 of 192, box_shadows 0. Primary button radius is 0px in bo",
+   "side": "both",
+   "members": [
+    "bather_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "A has more links and form elements. It has 84 anchors, 6 buttons, 3 forms, 7 inputs and 2 iframes, plus 37 ARIA attributes. B has 38 anchors, 1 button, 1 form, 1 input and 6 ARIA attributes, and no iframes.",
+   "evidence": "A counts anchors 84, buttons 6, aria_attrs 37, form 3, input 7, iframe 2. B anchors 38, buttons 1, aria_attrs 6, form 1, input 1.",
+   "side": "both",
+   "members": [
+    "bather_com|sonnet|40"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "The em-dash count in copy differs, with 10 in A and 4 in B. The press attribution style also differs. A's single quote uses a straight-quote glyph and a leading '— Business Insider'. B's quotes use curly quotes and small tracked uppercase citations.",
+   "evidence": "A text_stats em_dashes 10. B em_dashes 4. A_slice_02 shows '\"These are the best swim trunks for summer.\"'. B_slice_02 shows curly-quoted tex",
+   "side": "both",
+   "members": [
+    "bather_com|sonnet|41"
+   ],
+   "tier": "A"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page has no h1; top-level heading is an h2, with card titles as h3 under section h2s.",
+   "family": "semantic_dom",
+   "items": [
+    "I1",
+    "I2"
+   ]
+  },
+  {
+   "statement": "Quotes are marked up semantically with figure, blockquote and figcaption elements.",
+   "family": "semantic_dom",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Document title is short, brand-plus-season, joined with an em dash rather than SEO keyword listing.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Single neo-grotesque sans-serif typeface (Helvetica Neue) used throughout.",
+   "family": "typography",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Card and post titles are bold in sentence or title case, while eyebrows, labels and sources are uppercase and tracked.",
+   "family": "typography",
+   "items": [
+    "I5",
+    "I37"
+   ]
+  },
+  {
+   "statement": "Small copyright line is sentence case in grey, with a hairline rule above.",
+   "family": "typography",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Announcement bar is near-black with white text.",
+   "family": "color",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Palette mixes near-black text with saturated earthy accent blocks (teal, sage, tan, orange) and warm off-white panels.",
+   "family": "color",
+   "items": [
+    "I23",
+    "I24",
+    "I16"
+   ]
+  },
+  {
+   "statement": "Hero is a muted gradient panel with a very large white headline and an outlined button.",
+   "family": "component",
+   "items": [
+    "I7",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Images are replaced by flat or gradient colour blocks, such as 1x1 placeholders stretched to full size.",
+   "family": "imagery",
+   "items": [
+    "I8",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Feature tiles are edge-to-edge coloured blocks with eyebrow, bold name and underlined link.",
+   "family": "component",
+   "items": [
+    "I10",
+    "I12"
+   ]
+  },
+  {
+   "statement": "Primary calls to action are solid black rectangular buttons, with secondary actions as underlined text links or outlined buttons.",
+   "family": "component",
+   "items": [
+    "I11",
+    "I13",
+    "I19"
+   ]
+  },
+  {
+   "statement": "Cards use left-aligned text over a darkening gradient overlay, with top rules on journal cards.",
+   "family": "component",
+   "items": [
+    "I13",
+    "I19"
+   ]
+  },
+  {
+   "statement": "Split sections pair a coloured block with a text column, alternating sides.",
+   "family": "layout",
+   "items": [
+    "I9",
+    "I18"
+   ]
+  },
+  {
+   "statement": "Content sits in an inset centred container with generous side margins.",
+   "family": "layout",
+   "items": [
+    "I14"
+   ]
+  },
+  {
+   "statement": "Press quotes appear in a multi-column grid, each with a top rule and uppercase source, followed by dark logo row.",
+   "family": "component",
+   "items": [
+    "I15",
+    "I16"
+   ]
+  },
+  {
+   "statement": "Logo and payment images carry descriptive alt text.",
+   "family": "semantic_dom",
+   "items": [
+    "I17",
+    "I28"
+   ]
+  },
+  {
+   "statement": "Brand statement gets its own full-width black band with large bold white heading.",
+   "family": "layout",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Newsletter form joins a dark-bordered input and black submit button in one inline row.",
+   "family": "component",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "Header has visible uppercase text navigation left and utilities right, around a centred script logo.",
+   "family": "component",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Layout relies heavily on CSS grid.",
+   "family": "layout",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Markup is minimal: few scripts, meta tags, divs, classes, inline styles, forms and ARIA attributes.",
+   "family": "semantic_dom",
+   "items": [
+    "I30",
+    "I31",
+    "I36"
+   ]
+  },
+  {
+   "statement": "All elements have square corners and no shadows; flat design.",
+   "family": "decoration",
+   "items": [
+    "I35"
+   ]
+  },
+  {
+   "statement": "Footer shows a row of payment-method badges as small SVG images.",
+   "family": "component",
+   "items": [
+    "I28",
+    "I34"
+   ]
+  }
+ ]
+}

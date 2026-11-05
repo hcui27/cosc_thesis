@@ -1,0 +1,217 @@
+{
+ "key": "7db8afca104c",
+ "groups": [
+  {
+   "name": "Square corners dominate, small radii only",
+   "definition": "Are most corners square, with only small radii (a few px) and no large or pill rounding?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "radius_zero_share",
+    "op": ">=",
+    "value": 0.6
+   },
+   "members": [
+    "aeptexas_com#16",
+    "alpine8848_com#19",
+    "bather_com#11",
+    "bathurst12hour_com_au#19",
+    "greatdayimprovements_com#14",
+    "nira_org_ng#22",
+    "stgpartners_com#9",
+    "thefrangipanicreative_com#8",
+    "ridetech_com#19",
+    "thync_com#19"
+   ]
+  },
+  {
+   "name": "Pill buttons with otherwise square corners",
+   "definition": "Are buttons fully rounded pills while most other elements stay square or modestly rounded?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "primary_button_pill",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "allstate_jobs#8",
+    "bluebayou_com#17",
+    "merchantsavvy_co_uk#23",
+    "seoanalyzer_me#12"
+   ]
+  },
+  {
+   "name": "Bimodal radii avoiding small rounding",
+   "definition": "Are border radii either square or large (16px+), with few subtle small radii in between?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "radius_round_share",
+    "op": ">=",
+    "value": 0.2
+   },
+   "members": [
+    "cbdoilcreamnk_com#19",
+    "neverskipbrunch_com#16"
+   ]
+  },
+  {
+   "name": "Minimal decoration, no gradients or animation",
+   "definition": "Is decoration minimal, with no gradients, blur, animations or transforms and few shadows or transitions?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "gradient_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "aeptexas_com#17",
+    "alpine8848_com#20",
+    "bluebayou_com#18",
+    "educationactivities_org#25",
+    "flygrant_com#23",
+    "gravityvault_com#24",
+    "insightcentral_net#18",
+    "kanienkeha_net#9",
+    "naturalwellbeing_com#18",
+    "stgpartners_com#10",
+    "tellmebaby_com_au#19",
+    "newclimateeconomy_net#21",
+    "nira_org_ng#20",
+    "ridetech_com#20"
+   ]
+  },
+  {
+   "name": "Motion limited to simple transitions",
+   "definition": "Is motion limited to simple CSS transitions, with no keyframe animations, transforms or backdrop blur?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "animation_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "merchantsavvy_co_uk#22",
+    "miamidda_com#27",
+    "neverskipbrunch_com#36",
+    "seoanalyzer_me#27"
+   ]
+  },
+  {
+   "name": "Translucent header with backdrop blur",
+   "definition": "Does the header have a translucent background with backdrop blur?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "backdrop_blur_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "bathurst12hour_com_au#12",
+    "stgpartners_com#11"
+   ]
+  },
+  {
+   "name": "Single hero gradient",
+   "definition": "Is the hero background a gradient, typically the page's only gradient?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "gradient_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "homedesignersoftware_com#8",
+    "merchantsavvy_co_uk#3",
+    "nira_org_ng#9",
+    "seoanalyzer_me#9",
+    "thync_com#5",
+    "neverskipbrunch_com#14",
+    "miamidda_com#14"
+   ]
+  },
+  {
+   "name": "Short accent underline bar under headings",
+   "definition": "Do section headings have a short accent-colored rule or underline bar beneath them?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#22",
+    "gravityvault_com#16",
+    "kneeguru_co_uk#3",
+    "ridetech_com#5",
+    "tellmebaby_com_au#1"
+   ]
+  },
+  {
+   "name": "Full-width hairline rules between sections",
+   "definition": "Are sections or headings separated by thin horizontal rules or alternating background tones?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#16",
+    "cbdoilcreamnk_com#13",
+    "fnsouzafoundation_com#21",
+    "ridetech_com#16"
+   ]
+  },
+  {
+   "name": "Soft shadows on cards or images",
+   "definition": "Are cards or featured images lifted with rounded corners and soft drop shadows?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#9",
+    "homedesignersoftware_com#22",
+    "neverskipbrunch_com#13"
+   ]
+  },
+  {
+   "name": "Flat bordered cards without shadows",
+   "definition": "Do cards use thin light borders instead of shadows to separate them?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#10",
+    "merchantsavvy_co_uk#9",
+    "seoanalyzer_me#13"
+   ]
+  },
+  {
+   "name": "Decorative glyphs instead of icons",
+   "definition": "Are decorative marks such as stars and carets rendered as text glyphs rather than SVG icons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#13",
+    "fnsouzafoundation_com#26"
+   ]
+  },
+  {
+   "name": "Effects baked into raster images",
+   "definition": "Are embossed, metallic or textured effects delivered via images or decorative CSS shapes rather than CSS gradients?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "greatdayimprovements_com#17",
+    "bathurst12hour_com_au#13"
+   ]
+  },
+  {
+   "name": "Hierarchy without badges or icons",
+   "definition": "Is hierarchy carried only by weight, case and size, with no badges or decorative icons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#4"
+   ]
+  },
+  {
+   "name": "Decorative footer photo with halftone accents",
+   "definition": "Does the footer use a curved-crop photo with halftone-dot decoration?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "tellmebaby_com_au#15"
+   ]
+  }
+ ]
+}

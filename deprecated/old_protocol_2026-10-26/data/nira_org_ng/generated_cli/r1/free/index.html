@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NiRA – .ng Domain Registry</title>
+<meta name="description" content="NiRA is the not-for-profit registry for .ng Internet domain names, managing the .ng ccTLD in the public interest of Nigeria and the global internet community.">
+<style>
+:root{
+  --green:#0b7a3b; --green-dark:#075a2a; --green-tint:#e8f4ec;
+  --ink:#1c2a22; --muted:#55645b; --line:#d9e3dc; --bg:#fafcfa; --card:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--green)}
+img{max-width:100%}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+
+.topbar{background:var(--green-dark);color:#fff;font-size:14px}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;padding-top:8px;padding-bottom:8px}
+.topbar a{color:#fff;text-decoration:none}
+.topbar a:hover{text-decoration:underline}
+.topbar .contact,.topbar .social{display:flex;gap:18px;flex-wrap:wrap}
+
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}
+header.site img{display:block;height:57px;width:auto}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;flex-wrap:wrap}
+nav a{display:block;padding:8px 12px;border-radius:6px;color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+nav a:hover{background:var(--green-tint);color:var(--green-dark)}
+nav a.cta{background:var(--green);color:#fff}
+nav a.cta:hover{background:var(--green-dark);color:#fff}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:6px;padding:8px 12px;font:inherit;cursor:pointer}
+
+.hero{background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff;padding:80px 0}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2rem,4.5vw,3.2rem);line-height:1.15;margin:0 0 16px}
+.hero p{font-size:1.1rem;margin:0 0 14px;max-width:60ch;opacity:.95}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none}
+.btn.primary{background:#fff;color:var(--green-dark)}
+.btn.primary:hover{background:var(--green-tint)}
+.btn.ghost{border:2px solid #fff;color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.15)}
+.badge{justify-self:center;background:#fff;border-radius:50%;width:240px;height:240px;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.badge img{width:160px;height:auto}
+
+.quick{background:#fff;border-bottom:1px solid var(--line)}
+.quick .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;padding-top:16px;padding-bottom:16px}
+.quick strong{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.quick a{text-decoration:none;font-weight:500}
+.quick a:hover{text-decoration:underline}
+
+section{padding:64px 0}
+h2{font-size:1.8rem;margin:0 0 16px;line-height:1.25}
+.lead{max-width:70ch;color:var(--muted);font-size:1.05rem}
+
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px;display:flex;gap:24px;align-items:flex-start}
+.card img{flex:none;width:100px;height:auto}
+.card h3{margin:0 0 8px;font-size:1.3rem}
+.card p{margin:0 0 12px;color:var(--muted)}
+.more{font-weight:600;text-decoration:none}
+.more:hover{text-decoration:underline}
+
+.info{background:var(--green-tint)}
+.info .grid{display:grid;grid-template-columns:2fr 1fr;gap:32px}
+.calendar{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px}
+.calendar h3{margin:0 0 12px;font-size:1.1rem}
+.calendar .month{font-weight:600;text-align:center;margin-bottom:8px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center;font-size:14px}
+.cal b{color:var(--muted);font-size:12px;padding:4px 0}
+.cal span{padding:6px 0;border-radius:6px}
+.cal span:hover{background:var(--green-tint)}
+.cal-nav{display:flex;justify-content:space-between;font-size:13px;margin-top:12px}
+.cal-nav a{text-decoration:none}
+
+.news{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.newsletter{background:var(--green);color:#fff;border-radius:16px;padding:36px}
+.newsletter h2{margin-bottom:8px}
+.newsletter p{margin:0 0 20px;opacity:.95}
+.newsletter form{display:flex;gap:10px;flex-wrap:wrap}
+.newsletter input{flex:1 1 220px;padding:12px 14px;border-radius:8px;border:0;font:inherit}
+.newsletter button{padding:12px 22px;border-radius:8px;border:0;background:#fff;color:var(--green-dark);font:inherit;font-weight:600;cursor:pointer}
+.newsletter button:hover{background:var(--green-tint)}
+.fb{display:inline-block;margin-top:12px}
+
+.links{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.links div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px}
+.links h3{margin:0 0 12px;font-size:1.15rem}
+.links ul{list-style:none;margin:0;padding:0}
+.links li+li{margin-top:8px}
+
+footer{background:var(--ink);color:#cfd9d2;padding:40px 0 24px}
+footer a{color:#fff}
+footer .row{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer .icons{display:flex;gap:12px;align-items:center}
+footer .icons a{display:block;opacity:.9}
+footer .icons a:hover{opacity:1}
+footer .icons img{display:block;width:32px;height:32px}
+footer small{display:block;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15)}
+footer nav ul{margin-top:24px}
+footer nav a{color:#cfd9d2;padding:4px 10px;font-size:14px}
+footer nav a:hover{background:none;color:#fff;text-decoration:underline}
+
+:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+
+@media (max-width:860px){
+  .menu-btn{display:block}
+  nav#main{display:none;width:100%}
+  nav#main.open{display:block}
+  header.site .wrap{flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+  nav ul{flex-direction:column}
+  .hero{padding:56px 0}
+  .hero .wrap,.cards,.info .grid,.news,.links{grid-template-columns:1fr}
+  .badge{width:180px;height:180px;order:-1;justify-self:start}
+  .badge img{width:120px}
+  .card{flex-direction:column}
+  section{padding:44px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="contact">
+      <a href="tel:0700CALLNIRA">0700CALLNIRA</a>
+      <a href="mailto:admin@nira.org.ng">admin@nira.org.ng</a>
+    </div>
+    <div class="social">
+      <a href="https://facebook.com/niraworks">Facebook</a>
+      <a href="https://twitter.com/niraworks">Twitter</a>
+      <a href="https://www.youtube.com/channel/UCmgkodKZzKKBZS8CZg_LaRQ">YouTube</a>
+      <a href="https://www.linkedin.com/company/nigeria-internet-registration-association-nira-?trk=co-feed-likes-one">LinkedIn</a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a href="/" aria-label="NiRA home"><img src="images/logo.png" alt=".ng – Your Nigerian identity online" width="80" height="57"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="main">Menu</button>
+    <nav id="main" aria-label="Main">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/who-are-we">Who Are We</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/nira-media">Media</a></li>
+        <li><a href="/legal">Legal</a></li>
+        <li><a href="/join-us">Join Us</a></li>
+        <li><a href="/registrars">Registrars</a></li>
+        <li><a href="/supports">Support</a></li>
+        <li><a class="cta" href="http://www.switchto.ng">Switchto.ng</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Welcome to the .ng Domain Registry website.</h1>
+        <p>NiRA is the registry for .ng Internet Domain Names and maintains the database of names registered in the .ng country code Top Level Domain.</p>
+        <p>NiRA is a Not-for-Profit, Non-Governmental Self-Regulating body and manager of the .ng national resource, the country code Top Level Domain (ccTLD) name space, in the public interest of Nigeria and global internet communities.</p>
+        <div class="btns">
+          <a class="btn primary" href="/index.php/join-us/register-ng-domains">Register a .ng Domain</a>
+          <a class="btn ghost" href="http://whois.nic.net.ng/">Whois Search</a>
+        </div>
+      </div>
+      <div class="badge"><img src="images/ngReg.png" alt="Accredited .ng Registrar" width="149" height="155"></div>
+    </div>
+  </div>
+
+  <div class="quick">
+    <div class="wrap">
+      <strong>Quick menu</strong>
+      <a href="http://whois.nic.net.ng/">Whois Search</a>
+      <a href="/ng-registrars">Registrars</a>
+      <a href="/search">Search</a>
+      <a href="/contact-us">Contact Us</a>
+    </div>
+  </div>
+
+  <section id="register">
+    <div class="wrap">
+      <div class="cards">
+        <article class="card">
+          <a href="/index.php/join-us/register-ng-domains"><img src="images/ngReg.png" alt="Accredited .ng Registrar badge" width="149" height="155"></a>
+          <div>
+            <h3>Register a .ng Domain</h3>
+            <p>NiRA operates a 3R model of operation, Registry/Registrar/Registrant, it does not register domains directly for registrants.</p>
+            <a class="more" href="/index.php/join-us/register-ng-domains">Read More &rarr;</a>
+          </div>
+        </article>
+        <article class="card">
+          <a href="/images/Policies/NIRA_POLICY_DEVELOPMENT.pdf"><img src="images/policy.png" alt="NiRA policy documents" width="100" height="100"></a>
+          <div>
+            <h3>NiRA Policies</h3>
+            <p>Our Policy Development Process gives room to Stakeholder Associations and members of the Internet community to contribute to its formulation.</p>
+            <a class="more" href="/images/Policies/NIRA_POLICY_DEVELOPMENT.pdf">Read More &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="wrap grid">
+      <div class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Stay up to date with news and announcements from the .ng registry.</p>
+        <form action="#" onsubmit="return false">
+          <input type="email" placeholder="Your email address" aria-label="Email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <a class="fb" href="https://www.facebook.com/niraworks" style="color:#fff">Follow NiRA on Facebook &rarr;</a>
+      </div>
+
+      <aside class="calendar" aria-label="NiRA Calendar">
+        <h3>NiRA Calendar</h3>
+        <div class="month">May 2021</div>
+        <div class="cal" id="cal"></div>
+        <div class="cal-nav">
+          <a href="https://www.nira.org.ng/?iccaldate=2020-05-1">&laquo; Year</a>
+          <a href="https://www.nira.org.ng/?iccaldate=2021-4-1">&lsaquo; Month</a>
+          <a href="https://www.nira.org.ng/?iccaldate=2021-6-1">Month &rsaquo;</a>
+          <a href="https://www.nira.org.ng/?iccaldate=2022-05-1">Year &raquo;</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap links">
+      <div>
+        <h3>Registrars</h3>
+        <ul>
+          <li><a href="/become-a-registrar">How to become a Registrar</a></li>
+          <li><a href="/images/Policies/NiRA-Registrars-Accreditation-Policy.pdf">Accreditation Policy</a></li>
+          <li><a href="/accredited-registrars">Accredited Registrars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Policy Compliance</h3>
+        <ul>
+          <li><a href="/images/Policies/NIRA_Domain_Names_Policy.pdf">NIRA Domain Names Policy</a></li>
+          <li><a href="/images/Policies/NIRA_COMPLAINTS_POLICY.pdf">NIRA Complaints Policy</a></li>
+          <li><a href="/images/Policies/NIRA-GENERAL-REGISTRATION-POLICY.pdf">General Registration Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="/supports">Support Services</a></li>
+          <li><a href="/supports">Submit Ticket</a></li>
+          <li><a href="/registrar-faqs">NiRA FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <strong style="color:#fff">Nigeria Internet Registration Association (NiRA)</strong>
+      <div class="icons" aria-label="Follow us">
+        <span>Follow us on:</span>
+        <a href="https://facebook.com/niraworks" aria-label="Facebook"><img src="images/facebook_32.png" alt=""></a>
+        <a href="https://twitter.com/niraworks" aria-label="Twitter"><img src="images/twitter_32.png" alt=""></a>
+        <a href="https://www.youtube.com/channel/UCmgkodKZzKKBZS8CZg_LaRQ" aria-label="YouTube"><img src="images/youtube_32.png" alt=""></a>
+        <a href="https://plus.google.com/102317337581609707348" aria-label="Google Plus"><img src="images/google_32.png" alt=""></a>
+        <a href="https://www.instagram.com/niraworks/" aria-label="Instagram"><img src="images/instragram.png" alt=""></a>
+      </div>
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/who-are-we">Who Are We</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="/nira-media">Media</a></li>
+        <li><a href="/legal">Legal</a></li>
+        <li><a href="/join-us">Join Us</a></li>
+        <li><a href="/registrars">Registrars</a></li>
+        <li><a href="/supports">Support</a></li>
+        <li><a href="http://www.switchto.ng">Switchto.ng</a></li>
+      </ul>
+    </nav>
+    <small>&copy; 2019 Nigeria Internet Registration Association (NiRA). All Rights Reserved. <a href="https://cp.nira.org.ng:2096/">Webmail</a></small>
+  </div>
+</footer>
+
+<script>
+// May 2021 calendar grid (May 1 falls on a Saturday)
+(function(){
+  var el=document.getElementById('cal'),h='';
+  ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'].forEach(function(d){h+='<b>'+d+'</b>'});
+  for(var i=0;i<5;i++)h+='<span></span>';
+  for(var d=1;d<=31;d++)h+='<span>'+d+'</span>';
+  el.innerHTML=h;
+  var btn=document.querySelector('.menu-btn'),nav=document.getElementById('main');
+  btn.addEventListener('click',function(){
+    var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o);
+  });
+})();
+</script>
+</body>
+</html>

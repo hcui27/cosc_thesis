@@ -1,0 +1,212 @@
+[
+ {
+  "observation": "The page is a fixed-width white content column (about 1080px, x≈180–1260) centered on a near-black body background in a 1440px viewport. Dark side gutters frame it.",
+  "category": "layout",
+  "evidence": "facts page_width 1440; body_bg rgb(17,17,17); the screenshot shows the white column with dark margins on both sides"
+ },
+ {
+  "observation": "The body background has a subtle dark texture or noise at the top. It switches to flat #111 partway down, at about y=900.",
+  "category": "decoration",
+  "evidence": "Slice 1 shows a textured grey band that ends abruptly at about y=900, followed by flat near-black"
+ },
+ {
+  "observation": "A small top strip above the white column carries a cartoon icon and the Mohawk text '-Wa'tkwanonhwerá:ton'' in a condensed small-caps style on dark.",
+  "category": "component",
+  "evidence": "Slice 1 top-left, x≈180–400, y≈10–35"
+ },
+ {
+  "observation": "A large GIF logo is centered in the header. It shows a green all-caps wordmark 'KANIEN'KÉHA' with leaf accents and the tagline 'AN OPEN SOURCE ENDANGERED LANGUAGE INITIATIVE'.",
+  "category": "imagery",
+  "evidence": "moh-logo-1.gif, natural 660x145, rendered at x390 y60 w660 h145; the alt text is the site title"
+ },
+ {
+  "observation": "The h1 is present once but has empty text, and the logo image appears to stand in for it. Its styling is 36px, weight 900, Open Sans, centered.",
+  "category": "semantic",
+  "evidence": "h1_count 1; h1.text ''; the heading outline's first entry is level 1 with empty text"
+ },
+ {
+  "observation": "The primary nav is a horizontal green bar with a textured pattern. It holds 10 uppercase bold white items separated by thin dark dividers, and 'CONTACT' wraps to a second row, right-aligned.",
+  "category": "component",
+  "evidence": "Slice 1 y≈200–303: HOME, CATEGORIES, ADD WORDS, LANGUAGE INFORMATION, BLOG, MAP, RESOURCES, DONATE, LOG IN, REGISTER, then CONTACT on a second line; nav count 2"
+ },
+ {
+  "observation": "The active HOME item is filled with orange-red (#e74c3c-like) and carries a small dropdown chevron. The other items sit on green.",
+  "category": "color",
+  "evidence": "Slice 1, HOME at x≈200–281; top_text_colors includes rgb(231,76,60) ×82"
+ },
+ {
+  "observation": "A wide search bar with the placeholder 'Search Dictionary' sits under the nav. It has a green frame and a square green arrow-icon submit button at the right, and no radius.",
+  "category": "component",
+  "evidence": "Slice 1 y≈305–350; form count 2; buttons count 0, so the submit is probably an anchor or input"
+ },
+ {
+  "observation": "A 'Try these:' line offers suggested searches 'apple, colors, numbers' as comma-separated orange links with no spacing after the commas.",
+  "category": "copy",
+  "evidence": "Slice 1 y≈370"
+ },
+ {
+  "observation": "A centered grey welcome paragraph ends with a bold red-orange call to action, 'Support us on Patreon!'.",
+  "category": "copy",
+  "evidence": "Slice 1 y≈411–435; the body text color is rgb(112,123,119)"
+ },
+ {
+  "observation": "The main body is a two-column layout built from flex and floats rather than grid. The left column (~583px) holds the map image and the word list. The right sidebar (~417px) holds widgets.",
+  "category": "layout",
+  "evidence": "display_grid 0, display_flex 10; the map image rect x200 w583; the notes image at x823 w417"
+ },
+ {
+  "observation": "A flat illustrated world-map banner for the 'Kanienkeha Map' ('200+ Locations') sits at the top of the left column. A green 'MOST RECENT' title bar with a chevron box overlays its bottom edge.",
+  "category": "imagery",
+  "evidence": "map-nap.png natural 650x340 displayed at 583x330, y462; the h2 'MOST RECENT'"
+ },
+ {
+  "observation": "The dictionary list is a long run of 50 rows. Each has an English term as a green link on the left and the Mohawk translation in grey on the right, separated by hairline rules.",
+  "category": "component",
+  "evidence": "Heading outline lists about 50 h2s ('Sit down and eat', 'Get dressed', …); article count 51; row spacing about 48px"
+ },
+ {
+  "observation": "Each list entry is an article with an h2 at 16px, bold 700, and the 16px size is the same as body text. The entries are visually distinct only by color and alignment.",
+  "category": "typography",
+  "evidence": "h2 font_size 16px, font_weight 700; article 51; 58 h2 in total"
+ },
+ {
+  "observation": "The Mohawk words use diacritics and special punctuation (á, ò, ó, glottal ’ and colon-style length marks). They are rendered in the Verdana/system sans stack.",
+  "category": "typography",
+  "evidence": "Examples 'Oh nahò:ten tesahsenná:sere?' and 'Satsheronniániøn'; Verdana is on 668 elements"
+ },
+ {
+  "observation": "One row, 'Education Director', has its long Mohawk phrase overlapping the English link text. The cells have no wrapping or truncation.",
+  "category": "layout",
+  "evidence": "Slice 2 y≈640: 'Education DirectorOhén:ton Í:rate ne Ionterihwaienstahkhwaniónhkhwa' collide"
+ },
+ {
+  "observation": "The list is paginated with square numbered boxes and 'Next ›' and 'Last »' boxes. The current page is red-orange and the others are pale mint with white text.",
+  "category": "component",
+  "evidence": "Slice 3 y≈644–688; colors rgb(183,226,207) ×5 background, rgb(231,76,60)"
+ },
+ {
+  "observation": "The palette is a limited set of greens (#12a465, #0ca25f, #48bd8a, pale mint #b7e2cf) with a red-orange accent (#e74c3c) and neutral greys. It sits on black and white.",
+  "category": "color",
+  "evidence": "top_backgrounds: rgb(12,162,95), rgb(72,189,138), rgb(183,226,207); text colors rgb(18,164,101) ×50, rgb(231,76,60) ×82"
+ },
+ {
+  "observation": "Body text is mostly grey (#707b77) with some #666 text. Link colors are split by role: green for dictionary entries, red-orange for sidebar and footer links, and orange for the 'Try these' suggestions.",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(112,123,119) ×300, rgb(102,102,102) ×251, red ×82, green ×50"
+ },
+ {
+  "observation": "Typography is set mainly in Verdana for body and list text. Open Sans is used for headings and the h1, with FontAwesome for icons and small counts of -apple-system and lucida grande.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Verdana 668, Open Sans 93, -apple-system 22, FontAwesome 8, lucida grande 3"
+ },
+ {
+  "observation": "Body text is 16px on a 24px line height (1.5), and the sidebar paragraphs are set slightly smaller, about 13–14px.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 24px; the 'We appreciate…' paragraph appears smaller in slice 2"
+ },
+ {
+  "observation": "Sidebar section headings (#WORDOFTHEDAY, SPREAD THE WORD!, UPLOADING YOUR NOTES, TOTAL SITE NUMBERS, SHE:KON/GREETINGS:) are bold grey uppercase. Each has a small green line-art illustration at the left and a green underline rule.",
+  "category": "decoration",
+  "evidence": "Slice 1 y≈1072; slice 2 y≈254, 542, 1038, 1263"
+ },
+ {
+  "observation": "A decorative illustrated sign banner reads RESOURCES, BLOGGING, TALK, CULTURE and LANGUAGE. Blue signs are held by small green figures. It heads a list of blog links.",
+  "category": "imagery",
+  "evidence": "Slice 1 right column y≈462–655; an image-like banner that is not in the images list, probably a CSS background"
+ },
+ {
+  "observation": "The blog links in the sidebar are red-orange text in a stacked list with hairline separators. The titles wrap to two lines.",
+  "category": "component",
+  "evidence": "Slice 1 y≈670–935: 'Mission Statement of the People of Grand River Country' and others"
+ },
+ {
+  "observation": "A 'Choose your Language!' h3 has two options with small flag icons, a UK flag for English and a red flag for Kanienkeha (Mohawk).",
+  "category": "component",
+  "evidence": "England-32.png and Mohawk-32.png at about 37x32 (natural 32x32); h3 'Choose your Language!'"
+ },
+ {
+  "observation": "The #WORDOFTHEDAY area is mostly empty, with a loading spinner circle floating in a blank space. The widget appears not to have loaded, and an iframe may be involved.",
+  "category": "component",
+  "evidence": "Slice 1 y≈1090–1300 and slice 2 y≈0–230 show whitespace and a spinner at x≈1030; iframe count 2"
+ },
+ {
+  "observation": "A three-button social strip shows Facebook (green), Twitter (pale mint) and Instagram (blue) as square icon tiles with no gaps.",
+  "category": "component",
+  "evidence": "Slice 2 y≈294–344, x≈823–1021; FontAwesome on 8 elements"
+ },
+ {
+  "observation": "Full-width flat rectangular buttons stack in the sidebar. 'Random Word' is green and 'Become a patron on Patreon.' is salmon-red, with white text and 'Patreon.' in bold.",
+  "category": "component",
+  "evidence": "Slice 2 y≈360–482; buttons count 0, so they are probably styled anchors"
+ },
+ {
+  "observation": "An 'UPLOADING YOUR NOTES' promo has an h3 in bold grey, a small paragraph, and an illustration of a 'STUDY NOTES' notebook, phone and cloud logo in grey and green line style.",
+  "category": "imagery",
+  "evidence": "notes-4.jpg natural 523x330 displayed at 417x263; alt is empty"
+ },
+ {
+  "observation": "A 'TOTAL SITE NUMBERS' stats list pairs bold grey labels with green square-cornered number badges (2650, 159, 260, 10). The labels 'Categories:' and 'Blog:' are red because they are links.",
+  "category": "component",
+  "evidence": "Slice 2 y≈1084–1190; the badges are white text on rgb(72,189,138)"
+ },
+ {
+  "observation": "A greeting section, 'SHE:KON/GREETINGS:', has a long paragraph from the founder in small grey text. It is signed 'Nia:wen/Thank you Benjamin Doolittle' and followed by a 'MohDictionary' list of six social links.",
+  "category": "copy",
+  "evidence": "Slice 3 y≈10–442; the links use favicon images at 16x16 with the alt text 'https://www.facebook.com/mohdictionary'"
+ },
+ {
+  "observation": "The social link icons come from mixed third-party favicons at 16px. Several carry the wrong alt text (a Facebook URL on non-Facebook icons), and every link label is the same, 'mohdictionary'.",
+  "category": "imagery",
+  "evidence": "images list: Gumroad_icon.png and favicon.ico alt 'https://www.facebook.com/mohdictionary'; alt_missing 2"
+ },
+ {
+  "observation": "The footer has a green illustrated skyline of trees, small figures and a longhouse-like building, above a flat green bar. The bar holds 'kanienkeha.net' at left and 'Developed by: Doolittle Productions' at right.",
+  "category": "decoration",
+  "evidence": "Slice 3 y≈700–842"
+ },
+ {
+  "observation": "Below the green footer, on the black background, sits a centered text link row (Home, About, Donate, Resources, Sitemap, Register, Contact) in red-orange. A 'Follow us on Twitter, Facebook & Facebook' line sits under it with icon glyphs. The final item is labeled 'Facebook' but seems to be an Instagram icon.",
+  "category": "component",
+  "evidence": "Slice 3 y≈885–930"
+ },
+ {
+  "observation": "Corners are almost all square. Of the elements, 764 have no radius, 16 have 1–7px, and 11 are pill-shaped, probably the spinner and a few badges. This gives a flat, rectangular look.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:764, 1_7:16, 8_15:2, 16+:1, pill:11"
+ },
+ {
+  "observation": "Effects are used moderately. There are 18 box-shadows, 7 gradient backgrounds and 166 transitions, with 8 animations and no backdrop blur. The visible look is flat.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 18, gradient_backgrounds 7, transitions 166, animations 8, backdrop_blur 0"
+ },
+ {
+  "observation": "The DOM is heavy and div-based: 317 divs, 154 anchors and 60 scripts, with 112 inline style attributes and 416 unique classes across 1581 class uses. No utility-framework classes are used.",
+  "category": "semantic",
+  "evidence": "tag_counts div 317, a 154, script 60; counts inline_style_attrs 112; classes total 1581, unique 416, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Semantic landmarks are partly present: one main, one aside, one footer, two headers and two navs. Each dictionary entry is an article (51), and there are no section, figure or blockquote elements.",
+  "category": "semantic",
+  "evidence": "semantic: header 2, nav 2, main 1, aside 1, footer 1, article 51, section 0, figure 0"
+ },
+ {
+  "observation": "The heading hierarchy is flat. There is an empty h1, then 58 h2s that mix list entries with sidebar widgets, and only two h3s.",
+  "category": "semantic",
+  "evidence": "heading_outline; h2 58, h3 2"
+ },
+ {
+  "observation": "The page is metadata-rich. It carries Open Graph, Twitter card and Apple web-app meta tags and 3 JSON-LD blocks. It declares lang en-GB, and its title contains the site name in caps.",
+  "category": "semantic",
+  "evidence": "meta_names include og:*, twitter:*, apple-mobile-web-app-*; jsonld_blocks 3; lang 'en-GB'"
+ },
+ {
+  "observation": "The tone is community-oriented, with short exclamatory CTAs (e.g. 'SPREAD THE WORD!') and a bilingual English/Mohawk label set. Only 4 exclamation marks appear, and there are no emoji or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats exclamations 4, emoji 0, em_dashes 0, words 440"
+ },
+ {
+  "observation": "The page is long and vertically scrolling at 3590px. The left column's list runs the full length while the sidebar widgets end earlier and leave empty white space beside the list's end. Pagination, rather than infinite scroll, closes the list.",
+  "category": "layout",
+  "evidence": "page_height 3590; slice 3 shows the sidebar ending at y≈450 while the list continues to y≈610"
+ }
+]

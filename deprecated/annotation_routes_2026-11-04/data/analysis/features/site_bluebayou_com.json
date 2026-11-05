@@ -1,0 +1,588 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "The document title names both parks and a tagline, separated by an en dash",
+   "evidence": "title: \"Blue Bayou Water Park & Dixie Landin' – Play Your Day Away\"",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|00"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I1",
+   "text": "The page is 1440px wide and 4181px tall",
+   "evidence": "layout.page_width 1440, page_height 4181",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|01"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I2",
+   "text": "There is exactly one h1, the hero tagline, split over two lines with a <br>",
+   "evidence": "h1_count 1; h1 text 'PLAY YOUR\\nDAY AWAY'; tag_counts br: 1",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|02"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I3",
+   "text": "There is no <main> element, but there are 7 <section> elements, plus one header, nav and footer",
+   "evidence": "semantic: main 0, section 7, header 1, nav 1, footer 1",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|03",
+    "bluebayou_com|opus|05",
+    "bluebayou_com|opus|06",
+    "bluebayou_com|sonnet|10",
+    "bluebayou_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "Two typefaces are used. Trebuchet MS covers body and UI text, and Impact is used for display headings",
+   "evidence": "fonts_by_element_count: Trebuchet MS 138, Impact 19, Arial 1",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|07",
+    "bluebayou_com|opus|09",
+    "bluebayou_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "The hero h1 is two-colored: 'PLAY YOUR' is white and 'DAY AWAY' is yellow, both with a blue offset drop shadow",
+   "evidence": "slice_00 hero text; yellow rgb(255,197,49) appears among top_text_colors",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|10",
+    "bluebayou_com|opus|11",
+    "bluebayou_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "Headings are inverted: a small h2 eyebrow ('BUY', 'SEASON', 'BIRTHDAY') sits above a larger h3 word ('TICKETS', 'PASSES', 'PARTIES')",
+   "evidence": "heading_outline h2 BUY → h3 TICKETS, etc.; slice_00 cards show small blue 'BUY' above large 'TICKETS'",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|04",
+    "bluebayou_com|opus|13",
+    "bluebayou_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "Navigation and headings are set almost entirely in uppercase",
+   "evidence": "slice_00 nav HOME/ATTRACTIONS/TICKETS/PLAN/CALENDAR/JOBS; all heading_outline texts are uppercase",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|14",
+    "bluebayou_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "Section headings repeat one pattern: a small yellow Impact eyebrow phrase, then a very large white Impact word",
+   "evidence": "'ENTER THE / LAND OF THE GIANTS', 'EXPERIENCE THE / THRILLS', 'PLAN YOUR SUMMER / GETAWAY' in slices 00–02",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|15"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I9",
+   "text": "Most text is white on dark or photo backgrounds, and a pale blue is the second most common text color",
+   "evidence": "top_text_colors white 77, rgb(207,227,245) 46",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|12",
+    "bluebayou_com|opus|16",
+    "bluebayou_com|opus|17",
+    "bluebayou_com|opus|18",
+    "bluebayou_com|sonnet|06",
+    "bluebayou_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "The header is a dark navy bar, with the Blue Bayou logo on the left and the nav links plus the Dixie Landin' logo on the right",
+   "evidence": "slice_00 header; Blue Bayou logo rect x160; Dixie Landin' logo rect x1148 w132",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|19",
+    "bluebayou_com|opus|20",
+    "bluebayou_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A full-width yellow alert banner below the header holds an Impact heading, a paragraph and a dismiss '×' button",
+   "evidence": "slice_00 yellow bar; primary_button text '×', bg transparent, color rgb(8,42,77), radius 0px",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|21",
+    "bluebayou_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "The hero is split 50/50 into two 720×560 photos, a water slide and a ferris wheel, each representing one park",
+   "evidence": "images: shutterstock.jpg rect x0 w720 h560; DL.jpg rect x720 w720 h560",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|23",
+    "bluebayou_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "Each hero half has a park logo and a label ('WATER PARK' / 'THEME PARK') laid over its lower-left corner",
+   "evidence": "image_overlaps logo SVG over hero photos; slice_00 labels; logo rects y646",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|24",
+    "bluebayou_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "The hero photos are tinted with a blue/indigo overlay",
+   "evidence": "slice_00 hero both halves have blue cast",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|25"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I15",
+   "text": "Three white quick-link cards sit in a row on a cyan band. They have rounded corners and a solid colored bottom-edge shadow",
+   "evidence": "slice_00 cards on rgb(18,181,214) band; border_radius bucket_16_plus 4; box_shadows 7",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|26",
+    "bluebayou_com|opus|27",
+    "bluebayou_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "Two park-feature sections use full-bleed background photos with color washes: blue for Land of the Giants and red for Thrills",
+   "evidence": "landofthegiants.jpg rect w1440 h665; Thrills.jpg w1440 h583; slice_01 blue and red tints",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|28",
+    "bluebayou_com|opus|29",
+    "bluebayou_com|sonnet|12",
+    "bluebayou_com|sonnet|13",
+    "bluebayou_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "A CTA pair repeats three times: a filled yellow pill 'GET A SEASON PASS' and an outlined white pill 'OR BUY TICKETS'",
+   "evidence": "slices 01 and 02 show the same button pair; bucket_pill 15",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|30",
+    "bluebayou_com|sonnet|15",
+    "bluebayou_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "Pill-shaped radii are common, while most elements have square corners and none use small radii",
+   "evidence": "border_radius_buckets: 0 → 139, pill 15, 1–7 → 0, 8–15 → 0, 16+ → 4",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|31",
+    "bluebayou_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "The page has no gradients, backdrop blur, or CSS animations, but uses 19 transitions and 1 transform",
+   "evidence": "effects gradient_backgrounds 0, backdrop_blur 0, animations 0, transitions 19, transforms 1",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|32",
+    "bluebayou_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "The 'Stay up to date' section pairs a white card holding a hand-lettered 'Summer is waiting for you' stencil image with a rounded pool photo",
+   "evidence": "stencil-summeriswaiting.png rect x160 w540; shutterstock.jpg x740 w540 h360; slice_01/02",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|34",
+    "bluebayou_com|opus|35",
+    "bluebayou_com|opus|36",
+    "bluebayou_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "The Getaway section is centered over a blue-tinted photo and holds a row of six outlined pill links that wraps to a second line",
+   "evidence": "slice_02 PARK MAPS, DIRECTIONS, FOOD & CONCESSIONS, GROUPS, HOTELS, CORPORATE EVENTS",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|37",
+    "bluebayou_com|opus|38",
+    "bluebayou_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "A solid red sponsor band shows the white Coca-Cola wordmark, a 'SAVE $5' promo headline and a tilted can image on the right",
+   "evidence": "background rgb(228,38,44); coke-white.png x160 w320; coke-can-full.png x1147 w148 h234; slice_02",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|39",
+    "bluebayou_com|opus|40",
+    "bluebayou_com|sonnet|20",
+    "bluebayou_com|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "The footer is navy with four columns, each topped by a yellow uppercase h4 (PARKS, PLAN, TICKETS, MORE) over pale-blue link lists",
+   "evidence": "h4 x4, ul 4, li 15; slices 02–03",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|41",
+    "bluebayou_com|opus|42",
+    "bluebayou_com|opus|43",
+    "bluebayou_com|sonnet|21",
+    "bluebayou_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "The content column runs from about x=160 to x=1280, a 1120px container inside the 1440px viewport",
+   "evidence": "logo rect x160; card/footer edges at 160 and 1280; Dixie Landin' header logo ends at 1280",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|44",
+    "bluebayou_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "Every image has an alt attribute. Decorative repeats and background photos use empty alt",
+   "evidence": "alt_missing 0; several images alt ''",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|45",
+    "bluebayou_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "A brush.svg image is in the DOM but renders at 0×0",
+   "evidence": "brush.svg rect w0 h0",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|47",
+    "bluebayou_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "Class naming does not follow a utility pattern: there are 69 class uses across 36 unique classes",
+   "evidence": "classes total 69, unique 36, tailwind_like_fraction 0",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|08",
+    "bluebayou_com|opus|48",
+    "bluebayou_com|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "The page states closures and postponements in plain sentences: an opening-day delay and a Covid-19 season closure",
+   "evidence": "slice_00 banner postponing to May 29, 2021; slice_01 'Due to Covid-19 Dixie Landin' Theme Park will remain closed throughout the 2021 Season",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|33",
+    "bluebayou_com|opus|49",
+    "bluebayou_com|sonnet|31",
+    "bluebayou_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "The page's only <button> is the alert-close ×. All CTAs are anchors",
+   "evidence": "counts.buttons 1 (primary_button '×'); anchors 44",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|22",
+    "bluebayou_com|opus|50",
+    "bluebayou_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "Yellow is the single accent for primary CTAs, eyebrow headings and footer column titles. Red is used only for the card link text and the Coke band.",
+   "evidence": "yellow text on 12 elements; yellow pill buttons 'GET A SEASON PASS'; red card links like 'START THE EXCITEMENT →'",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|sonnet|07"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I31",
+   "text": "The two images in the 'stay up to date' pair are different heights and are not top-aligned. The stencil card starts about 24px higher, and the right column's heading sits above its image.",
+   "evidence": "rects y2394 h304 vs y2418 h360",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|sonnet|18"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "The section backgrounds alternate: yellow banner, split photos, cyan, tinted blue photo, tinted red photo, flat navy, tinted blue photo, red, navy footer. The result is strongly banded vertical rhythm.",
+   "evidence": "page_height 4181; sections visible across 4 slices",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|sonnet|27"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "The display type has a large scale contrast. The 136px h1 and roughly 60-90px section words sit against 16px body copy and tiny 14px labels, with few intermediate sizes.",
+   "evidence": "h1 136px; h2 20.8px eyebrows; GIANTS/THRILLS/GETAWAY large in screenshots",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|sonnet|30"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Document title combines site names with a tagline separated by an en dash.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Page uses a single h1 hero headline split across two lines with a line break.",
+   "family": "semantic_dom",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Layout uses several section elements plus header, nav and footer but no main landmark.",
+   "family": "semantic_dom",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Two typefaces: a humanist sans for body/UI text and a heavy condensed display face for headings.",
+   "family": "typography",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Hero headline is two-colored, white and yellow, with a colored offset drop shadow.",
+   "family": "typography",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Headings pair a small eyebrow phrase above a much larger display word, repeated across sections.",
+   "family": "typography",
+   "items": [
+    "I6",
+    "I8"
+   ]
+  },
+  {
+   "statement": "Navigation and headings are set almost entirely in uppercase.",
+   "family": "typography",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Extreme type scale contrast: huge display headings against small body copy and labels, few intermediate sizes.",
+   "family": "typography",
+   "items": [
+    "I33"
+   ]
+  },
+  {
+   "statement": "Text is mostly white on dark or photo backgrounds, with pale blue as secondary text color.",
+   "family": "color",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "A single yellow accent is used for primary CTAs, eyebrow headings and footer column titles.",
+   "family": "color",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Section backgrounds alternate in bold bands of yellow, navy, cyan, red and tinted photos, giving strong vertical rhythm.",
+   "family": "layout",
+   "items": [
+    "I32",
+    "I22"
+   ]
+  },
+  {
+   "statement": "Dark navy header bar with logo left and nav links plus second logo right.",
+   "family": "component",
+   "items": [
+    "I10"
+   ]
+  },
+  {
+   "statement": "Full-width yellow alert banner at top with heading, text and a dismiss × button.",
+   "family": "component",
+   "items": [
+    "I11",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Hero is split 50/50 into two equal full-height photos, each with logo and label overlaid at lower left.",
+   "family": "layout",
+   "items": [
+    "I12",
+    "I13"
+   ]
+  },
+  {
+   "statement": "Photos are tinted with colored overlays, such as blue or red washes, over full-bleed backgrounds.",
+   "family": "imagery",
+   "items": [
+    "I14",
+    "I16"
+   ]
+  },
+  {
+   "statement": "Row of three white rounded quick-link cards with solid colored bottom-edge shadow on a colored band.",
+   "family": "component",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "CTA pairs combine a filled yellow pill with an outlined white pill button.",
+   "family": "component",
+   "items": [
+    "I17",
+    "I21"
+   ]
+  },
+  {
+   "statement": "Pill radii used for buttons while most other elements have square corners and no small radii.",
+   "family": "decoration",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Flat styling without gradients, backdrop blur or animations; only simple transitions.",
+   "family": "decoration",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Footer is dark with four columns, each headed by a yellow uppercase title over pale link lists.",
+   "family": "component",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "Content sits in a centered fixed-width container narrower than the viewport.",
+   "family": "layout",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Image pair with hand-lettered stencil graphic card beside a rounded photo, unevenly aligned.",
+   "family": "imagery",
+   "items": [
+    "I20",
+    "I31"
+   ]
+  },
+  {
+   "statement": "All images carry alt attributes, with empty alt for decorative images.",
+   "family": "semantic_dom",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Calls to action are implemented as anchors rather than buttons.",
+   "family": "semantic_dom",
+   "items": [
+    "I29"
+   ]
+  },
+  {
+   "statement": "Class names are semantic and custom rather than utility-style.",
+   "family": "semantic_dom",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Notices such as closures and delays are stated in plain, direct sentences.",
+   "family": "copy",
+   "items": [
+    "I28"
+   ]
+  }
+ ]
+}

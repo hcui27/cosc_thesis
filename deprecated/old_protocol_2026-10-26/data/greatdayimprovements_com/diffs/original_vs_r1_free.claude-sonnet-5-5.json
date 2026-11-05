@@ -1,0 +1,236 @@
+[
+ {
+  "observation": "A's header is a light blue-white gradient with a large 215x130 logo on the left, a small three-logo brand strip in the middle, and a yellow-orange call-to-action tab with phone number, schedule button and zip-code field on the right. B's header is a plain white bar with the logo shrunk to 108x65, three small brand logos, and a short 'Call us today 888-468-0700' text at the right.",
+  "category": "layout",
+  "evidence": "A logo rect w215/h130; B logo rect w108/h65; A has form:1 and input:30, B has no form; slices show A's yellow tab at top-right",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a dark blue horizontal nav bar with six text links (Products & Services, Photo Gallery, Home Improvement Tips, About Us, Specials, Customer Service). B has no navigation bar. Its only header links are the logos and phone text.",
+  "category": "component choices",
+  "evidence": "A slice 0 shows the nav bar at y≈180; B semantic nav:0, anchors 15 vs A 104",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's hero is a 5-slide rotator laid out horizontally. Slides are 676x301 with x-offsets from -137 to 2567, so most sit off-screen. B's slides are all stacked at the same position (x290,y133, 860x383), which creates overlap pairs in the facts. B shows dots and arrow buttons to switch between them.",
+  "category": "component choices",
+  "evidence": "A image rects x:-137,539,1215...; B image_overlaps 10 pairs with area 329380; B has 7 buttons and dot indicators in the screenshot",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero image is upscaled from 676x301 natural size to 860x383 and has rounded corners and a soft drop shadow. A shows the images at natural size, with a square-edged strip next to the product panel.",
+  "category": "imagery handling",
+  "evidence": "B rect w860/h383 vs natural 676x301; A rect w676/h301; B box_shadows 3, border-radius bucket_16_plus 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has a left sidebar ribbon, 'Our Products & Services', with an illustrated house, product bullet lists and a yellow 'Book Your FREE No Obligation In-Home Consultation / Schedule Now' box. B has no sidebar and no product lists, and its content is one centered column.",
+  "category": "layout",
+  "evidence": "A images HP-PE.jpg and HP-Stanek.jpg at x256; li count 65 in A vs none in B; B has 3 sections and 1 main",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's page background is white fading to pale blue, with a decorative blue swirl-patterned band behind the hero. B uses flat full-width color bands: a navy hero, a cream (245,243,238) 'What's new' section, a mid-blue call-out band, and a dark navy footer.",
+  "category": "color",
+  "evidence": "B body_bg rgb(245,243,238); B top backgrounds include rgb(23,50,77), rgb(31,111,178); A top backgrounds rgb(74,144,231) x11 and rgb(209,228,242) x6",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is saturated cornflower/royal blue (74,144,231) with a yellow-gold accent and dark blue (22,93,159) buttons. B's palette is navy (23,50,77), a medium blue (31,111,178) and a mustard accent (232,163,23) on cream.",
+  "category": "color",
+  "evidence": "A primary_button bg rgb(22,93,159); B backgrounds rgb(232,163,23), rgb(23,50,77)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body text is set in Arial and Helvetica Neue web fonts (HelveticaNeueW01-55Roma, 75Bold) in grey (77,79,81). B's intro paragraph is in Georgia serif, white on navy, centered, with bold run-in brand names.",
+  "category": "typography",
+  "evidence": "A fonts: Arial 345, HelveticaNeueW01-55Roma 104; B fonts: Georgia 43, Helvetica Neue 23, Arial 7",
+  "which_side": "both"
+ },
+ {
+  "observation": "A body line-height is 'normal' and the intro paragraph is small and left-aligned at the content column. B sets line-height at 25.6px (1.6) and the intro paragraph is large, centered, and wraps in four lines.",
+  "category": "typography",
+  "evidence": "A body_line_height normal; B 25.6px; slices show B's centered paragraph at y≈590-680",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'What's new' h2 is 21px in A, left-aligned in blue. In B it is 32px, centered, dark navy, with a short gold underline bar under it. Both keep the bold 'What's new' / regular 'at Great Day Improvements' split.",
+  "category": "typography",
+  "evidence": "h2 font_size A 21px vs B 32px; both weight 400 on h2 with a bold span",
+  "which_side": "both"
+ },
+ {
+  "observation": "A separates sections with dotted horizontal rules. B separates them with color-block changes and white-background cards.",
+  "category": "decoration",
+  "evidence": "A slice 0 shows dotted lines at y≈638 and y≈919; B slices show full-width band transitions at y≈741 and y≈1186",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's two promo graphics sit side by side (284x194 each) at full image size with no frame. B keeps the same graphics at 284x194 but puts each in a white rounded card with a faint border and shadow, centered with space between.",
+  "category": "component choices",
+  "evidence": "Both images natural 284x194 and rendered 284x194; B shows a white-card wrapper (B white backgrounds ×5)",
+  "which_side": "B"
+ },
+ {
+  "observation": "The 'Home Improvement Resource Center' block is in A only. It has a wooden-banner header with a hammer, an h2 for it, and a beige panel holding six article tiles (191x136 photos with blue caption bars and chevrons). B has no article grid or blog teasers.",
+  "category": "component choices",
+  "evidence": "A images insulation-in-attic.jpg, blue-front-door.jpg, etc.; A h2 'HOME IMPROVEMENT RESOURCE CENTER'; none in B image list",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has a 'Get Inspired!' script graphic and two blue glossy button images ('Ideas & Tips Blog', 'View Photo Gallery'). B has neither the inspiration block nor those buttons.",
+  "category": "component choices",
+  "evidence": "A Get-Inspired.jpg 196x54; B image list lacks it",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's contact area ('Have questions?') uses a speech-bubble icon and script image title, with the phone line and hours in dark text on a pale blue background. B turns the contact into a full-width solid blue band with a white bold h3 'Call Us Today at 888-468-0700' and hours underneath.",
+  "category": "component choices",
+  "evidence": "A images Conversation-Bubbles.png and Have-questions.png; B heading_outline h3 'Call Us Today at 888-468-0700'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses images for many headings ('Have questions?', 'Site Map', 'Get Inspired', 'Our Products & Services' in script lettering). B uses live text for headings and only keeps the 'Corporate Office' graphic, placed inside a white box.",
+  "category": "imagery handling",
+  "evidence": "A has Site-Map.png, Have-questions.png; B images list has Corporate-Office.png (alt '') and no Site-Map.png",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer has a three-column site map of 9 underlined links, a corporate office address, license text and the accreditation logos in a row on a pale gradient. B's footer is centered on dark navy, with no site-map links, just an address, copyright, small license text and the logos on a white strip.",
+  "category": "component choices",
+  "evidence": "A anchors 104 vs B 15; B has footer:1 and address:1; A has footer:0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A ends with a dark-blue 'Back to top' graphic: a house-roof icon, script text, glow gradient, and a 'Sign In' link. B ends with a small outlined pill button 'Back to top ↑'.",
+  "category": "component choices",
+  "evidence": "A slice 1 bottom; B slice 1 bottom pill with border; B bucket_pill 7",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is 2228px tall with 1440 width. B is 1807px tall, mostly because it drops the sidebar, article grid and sitemap.",
+  "category": "layout",
+  "evidence": "layout.page_height A 2228, B 1807",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no semantic landmarks (header/nav/main/section/footer all 0), with 148 divs and 101 spans. B has header, main, 3 sections, footer and address, with 16 divs and no spans.",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic counts A all 0; B header1 main1 section3 footer1; tag_counts div 148 vs 16",
+  "which_side": "both"
+ },
+ {
+  "observation": "A loads 28 scripts, 7 stylesheets, 13 link tags and 13 meta tags, with many tracking and verification metas. B has 1 script, 0 external stylesheets, one inline style block and 3 metas.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts scripts A 28 vs B 1; stylesheets 7 vs 0; meta_names list A 10 vs B 3",
+  "which_side": "both"
+ },
+ {
+  "observation": "A sets 82 inline style attributes and uses 107 unique classes across 371 class uses. B has 0 inline style attributes and 23 unique classes across 34 uses.",
+  "category": "DOM/semantic structure",
+  "evidence": "inline_style_attrs A 82, B 0; classes total A 371/unique 107, B 34/23",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no h1 and no lang attribute. B also has no h1 but sets lang='en'. Both pages' heading outline starts at an h2 'What's new…'.",
+  "category": "DOM/semantic structure",
+  "evidence": "h1_count 0 both; lang A '' vs B 'en'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's second heading is an h2 for the Resource Center. B has an h3 for the phone call-out, which is below h2 in the outline.",
+  "category": "DOM/semantic structure",
+  "evidence": "heading_outline A h2,h2; B h2,h3",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page titles differ. A: 'Home Improvement & Additions Contractors | Great Day Improvements'. B: 'Great Day Improvements | Patio Enclosures® Sunrooms & Stanek Windows'.",
+  "category": "copy treatment",
+  "evidence": "title fields",
+  "which_side": "both"
+ },
+ {
+  "observation": "B changes the alt texts: 'Our story', 'Patio Enclosures sunrooms and home additions', 'Save big on current specials', 'Great Day Improvements brand logos'. A uses terse alts like 'Intro Slide', 'Save Big on your next sunroom, window or door project'. A has 3 images with missing alt and B has 0.",
+  "category": "copy treatment",
+  "evidence": "alt_missing A 3 vs B 0; image alt strings",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has 258→133 words, so copy is roughly halved. A includes the product bullet lists, article titles and two promo sentences that are absent from B.",
+  "category": "copy treatment",
+  "evidence": "text_stats words A 258, B 133",
+  "which_side": "both"
+ },
+ {
+  "observation": "A hero text is baked into slide images ('Sunrooms | Windows | Doors | And More'), and B keeps this same baked-in overlay graphic in the first slide. Neither adds live-text over the hero.",
+  "category": "imagery handling",
+  "evidence": "Both slices show the same overlay at the bottom of the hero image",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 25 images, most decorative or text baked into graphics (script titles, buttons, ribbon). B has 13 images, reusing only logos, slider images, the two promo graphics and footer badges.",
+  "category": "imagery handling",
+  "evidence": "counts images A 25 vs B 13",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 443 elements with 0 border-radius and only 12 with 1–7px radii. B adds 7 pill-shaped, 1 large (16+) and a 50% circular control, such as the carousel arrows and dots.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets A bucket_0 443, bucket_1_7 12; B bucket_pill 7, bucket_16_plus 1; B primary_button radius 50%",
+  "which_side": "both"
+ },
+ {
+  "observation": "A depends on image-based depth: glossy buttons, ribbon shadow, wood banner, with only 1 CSS box-shadow and 2 gradients. B uses CSS depth: 3 box-shadows, 1 gradient and 2 transforms, on the hero image and cards.",
+  "category": "decoration",
+  "evidence": "effects box_shadows A 1/B 3; gradients A 2/B 1; transforms A 0/B 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 111 elements with CSS transitions, B has 11. Neither uses CSS animations.",
+  "category": "decoration",
+  "evidence": "effects.transitions A 111, B 11; animations 0 both",
+  "which_side": "both"
+ },
+ {
+  "observation": "The only button in A is 'Accept and Close' (cookie notice), 5px radius, blue (22,93,159), and the CTAs are anchor links styled as graphics. B has 7 buttons that are all carousel controls (arrows '‹' '›' and dots) with semi-transparent black round backgrounds. No text CTA buttons exist.",
+  "category": "component choices",
+  "evidence": "A buttons 1, primary_button text 'Accept and Close'; B buttons 7, primary_button '‹' bg rgba(0,0,0,0.5) radius 50%",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's carousel dots use an active gold dot (232,163,23) with four hollow white-outlined dots. A's rotator shows a single small blue indicator dot over the hero.",
+  "category": "component choices",
+  "evidence": "B slice 0 dots at y≈538; A slice 0 blue dot at x≈1118,y≈460",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has more ARIA usage (20 aria attributes) than A (7).",
+  "category": "DOM/semantic structure",
+  "evidence": "counts.aria_attrs A 7 vs B 20",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a phone number 800-230-8301 in the header and the Save Big promo, with 888-468-0700 in the contact block. B repeats 888-468-0700 in the header and contact band, and keeps 800-230-8301 only inside the Save Big image.",
+  "category": "copy treatment",
+  "evidence": "A slice 0 header text; B slice 0 header 'Call us today 888-468-0700'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's content column is left-offset at about x=565–1210 beside the sidebar, leaving empty white space left of the lower sections. B centers everything on the 1440 canvas, with the hero at x290–1150 and cards centered.",
+  "category": "layout",
+  "evidence": "A article images x586–1187; B hero x290 w860; B cards x411–1029",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer legal and accreditation logos sit directly on the pale background. B places the 366x47 logos on a white rounded strip, rendered at 366x59, and the Corporate Office graphic on a white box at 46px height, stretched from its 38px natural height.",
+  "category": "imagery handling",
+  "evidence": "B gdi-footer-logos rect h59 vs natural 47; Corporate-Office rect h46 vs natural 38; A rect h47 and h38",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's header logos are rendered at slightly different sizes than natural ones (79x48 for a 144x88 image, 93x48 for 120x62), with the brand logos made larger than A's 72x44 and 70x36 versions and the logo images scaled non-uniformly.",
+  "category": "imagery handling",
+  "evidence": "A logo-pe-small 70x36; B 93x48 (natural 120x62); A logo-gdi-small 72x44; B 79x48",
+  "which_side": "B"
+ }
+]

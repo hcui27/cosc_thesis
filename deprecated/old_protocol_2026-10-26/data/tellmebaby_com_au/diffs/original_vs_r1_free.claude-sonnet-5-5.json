@@ -1,0 +1,260 @@
+[
+ {
+  "observation": "Page length differs a lot: A is about 9077px tall, B about 4380px, so B is roughly half the height.",
+  "category": "layout",
+  "evidence": "A_facts layout.page_height 9077; B_facts layout.page_height 4380",
+  "which_side": "both"
+ },
+ {
+  "observation": "A sets all text in Montserrat. B uses a Helvetica Neue / Helvetica / Arial sans stack.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Montserrat 889. B: Helvetica Neue 226, Arial 3",
+  "which_side": "both"
+ },
+ {
+  "observation": "The A h1 is large, light-weight (400) white text over the hero photo. The B h1 is bold (700), dark slate, with 'by Australian parents' as a lighter grey second line.",
+  "category": "typography",
+  "evidence": "A h1: 55px, weight 400, rgb(255,255,255). B h1: 60.8px, weight 700, rgb(32,39,44); B slice_00 shows the grey subline",
+  "which_side": "both"
+ },
+ {
+  "observation": "A section headings (h2) are centred, regular-to-medium weight, 24px. B section headings are left-aligned, bold, 32px.",
+  "category": "typography",
+  "evidence": "A h2: 24px/500 (A slices show centred 'Baby product review categories', 'Recent reviews'). B h2: 32px/700, left-aligned in B slices",
+  "which_side": "both"
+ },
+ {
+  "observation": "A hero is a full-bleed, dark-toned baby photo with the h1 on the left and a separate large 'Find baby product reviews' search box on the right. B's hero photo is washed out with a pale overlay, and the h1, subline and a compact search bar sit stacked on the left.",
+  "category": "imagery",
+  "evidence": "A images: background-1440x540.jpg.webp at 1440x540. A slice_00 shows a white label and a pill search at right. B slice_00 shows a faded photo, dark text and a 'Search' button; B has no hero img entry",
+  "which_side": "both"
+ },
+ {
+  "observation": "A also puts a search field in the header bar, so the page has two search inputs above the fold. B has one search in the hero and none in the header.",
+  "category": "component",
+  "evidence": "A slice_00 shows 'Search for product rev…' in the nav; B_facts form 1, input 1; A form 6, input 25",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's nav items carry dropdown carets (Browse reviews, Our community, Tools, Articles). Login is an outlined pill and Signup a teal pill. B's nav is plain text links, with Login as text and Signup as a peach pill.",
+  "category": "component",
+  "evidence": "A slice_00 nav carets; A teal rgb(125,196,204) backgrounds; B slice_00 'Signup' peach pill, rgb(255,170,145)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The accent colour differs. A uses teal (125,196,204) as its main accent for buttons, links and rating labels, with peach for stars and the logo. B uses peach (255,170,145) as the accent for buttons, numerals and borders, with a deep rust (168,74,48) for text accents.",
+  "category": "color",
+  "evidence": "A top_text_colors: rgb(125,196,204) ×307; A backgrounds: peach 46, teal 10. B top_text_colors: rgb(168,74,48) ×42; B backgrounds: peach rgb(255,170,145) ×4",
+  "which_side": "both"
+ },
+ {
+  "observation": "B alternates section backgrounds between white and pale peach tints, and ends with a navy panel and a dark footer. A is almost entirely white with a few grey/peach elements.",
+  "category": "color",
+  "evidence": "B backgrounds: rgb(255,241,236) ×12, rgb(255,250,247) ×3, rgb(28,37,64), rgb(32,39,44). A backgrounds: white 64, peach 46, rgba(0,0,0,.5) 8",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's category tiles are photographic square cards with a dark overlay, a white line icon and a white label. B's are flat pale-peach rounded rectangles with text only.",
+  "category": "imagery",
+  "evidence": "A slice_00 eight photo tiles with icons (stroller, car, bottle, nappy). B slice_00 tiles rgb(255,241,236), no images; B img count 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "A lays the eight category tiles out as 4 + 4 with a staggered second row, and the tiles abut or overlap. B uses a regular grid of two rows of four.",
+  "category": "layout",
+  "evidence": "A slice_00 second row offset (x≈171 to 1269) with the 'Sleep & nap time' and 'Health & safety' tiles touching. B_facts display_grid 8; A display_grid 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'View all categories' call to action is a large teal filled pill button in A, and an underlined text link with a peach underline in B.",
+  "category": "component",
+  "evidence": "A slice_00 teal pill 'View all categories'. B slice_00 text link underlined in peach",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a 'How Tell Me Baby works' section with four numbered cards (peach circle numerals) and a 'Join TMB Rewards' button. A has no such section in its heading outline.",
+  "category": "component",
+  "evidence": "B heading_outline h2 'How Tell Me Baby works'; B slice_00 numbered cards 1–4. A outline has no such heading",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a 'Trending baby product reviews' section with four ranked cards (large peach numerals, product name, review-count pill). The screenshots show no matching trending cards in A's first slices.",
+  "category": "component",
+  "evidence": "B heading_outline h2 'Trending baby product reviews' with h3s Tommee Tippee… 119 reviews, 618, 94, 73 (B slice_01). A heading_outline has no h2 for this",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's SunRice leaderboard ad is 728x90 at y≈1754, with alt 'SunRice Advertisement'. B's is the same 728x90 at y≈1344, with the generic alt 'Advertisement'. A also contains a Sudocrem mobile banner image that is not rendered (natural size 0x0).",
+  "category": "imagery",
+  "evidence": "A images sunrice-ros-leaderboard.jpg alt 'SunRice Advertisement'; sudocrem-ros-mobile-banner.jpg rect 0x0. B images alt 'Advertisement'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's recent reviews are tall white cards with soft shadows. Each has an empty top area where a product image would sit, then peach star ratings, a centred product name, a quote and an avatar with the reviewer name. Three cards are shown.",
+  "category": "component",
+  "evidence": "A slice_02 three cards with stars; user-avatar.jpg ×3 at 53x53; A box_shadows 50",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's recent reviews are four outlined cards with a bold left-aligned title, a grey quote and a bold reviewer name. They have no stars, no avatars and no product images.",
+  "category": "component",
+  "evidence": "B slice_01 four cards; B images list has no avatars; B box_shadows 1; B border_radius 8–15px bucket 31",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's award winners are a wide grid of product-image cards, with navy ribbon badges, peach star ratings and teal 'Highest rated…' labels in a carousel-like layout. Many card images are blank, and the cards are cut off at the left edge. B renders winners as text-only cards with a peach left border, an uppercase rust 'HIGHEST RATED…' kicker and the product name.",
+  "category": "component",
+  "evidence": "A slice_02/04 cards with ribbon badges (Pigeon bottle, Cerelac) and blank image areas. B slice_01/02 cards with a left accent border and uppercase labels",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows star ratings as peach filled and outlined stars, including half stars, on cards. B has no star graphics.",
+  "category": "imagery",
+  "evidence": "A slice_02/04 stars; B_facts svgs 0 and no star imagery in B slices",
+  "which_side": "A"
+ },
+ {
+  "observation": "B ends the winners block with a dark slate pill button 'Show all winners'. A uses teal pills for 'Read more reviews' and 'Read more'.",
+  "category": "component",
+  "evidence": "B slice_02 dark pill rgb(32,39,44); A slice_02/06 teal pills",
+  "which_side": "both"
+ },
+ {
+  "observation": "Recent articles appear as plain teal link text, one per line, in A. B shows them as a ruled list on a pale peach band with bold titles and a peach arrow at the right end of each row.",
+  "category": "component",
+  "evidence": "A slice_06 teal links above 'Read more'. B slice_02 rows separated by hairlines with '→'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The intro copy block 'Baby product reviews by parents, for parents' is a centred heading above three full-width paragraphs in A. B puts the heading on the left and the grey paragraphs in a right-hand column.",
+  "category": "layout",
+  "evidence": "A slice_06 centred h2 and paragraphs. B slice_02 two-column split with grey body text",
+  "which_side": "both"
+ },
+ {
+  "observation": "The rewards promo differs. A shows 'Join TMB Rewards today!' as small centred plain text (not a heading in A's outline), with 'Join now' as a bold text line and no visible imagery. B turns it into an h2 inside a navy rounded panel with a white heading, a peach 'Join now' button and a photo of parents and children with decorative dots.",
+  "category": "component",
+  "evidence": "A heading_outline lacks 'Join TMB Rewards'; A slice_06 plain centred text. B heading_outline h2 'Join TMB Rewards today!'; B slice_03 navy rgb(28,37,64) card; footer_right_bottom_picture_alt.png 454x295 with alt 'Parents and children laughing together'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer has four accordion-style columns (TELL ME BABY, BRANDS, COMMUNITY, HERE TO HELP) with '+' icons. Their content is not visible, and the social icons are bulleted and misaligned. B's footer is a dark slate bar with a logo on a white chip, the copyright line and three underlined text links (Facebook, Instagram, YouTube).",
+  "category": "component",
+  "evidence": "A heading_outline h3 TELL ME BABY / BRANDS / COMMUNITY / HERE TO HELP; A slice_06 shows '+' and bulleted icons. B slice_03 dark footer, rgb(32,39,44)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a newsletter sign-up h3, and login, sign-up and forgot-password modal headings (h2). B has none of these forms or modals.",
+  "category": "component",
+  "evidence": "A heading_outline: h3 'Sign up to the TMB Newsletter', h2 Login / Sign up / Forgot password. B outline lacks these; B forms 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's heading hierarchy is irregular: the h1 is followed by h3s with no intermediate h2s, and the h2s are modal titles. B has a clear h1 → h2 → h3 outline, with 8 h2s and 8 h3s for the products.",
+  "category": "semantic-structure",
+  "evidence": "A tag_counts h2 3, h3 5; A outline. B tag_counts h2 8, h3 8",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a landmark structure of one header, a main, 8 sections and one footer. A has 7 header elements, no main, 12 sections and one footer.",
+  "category": "semantic-structure",
+  "evidence": "A semantic: header 7, main 0, section 12, footer 1. B semantic: header 1, main 1, section 8, footer 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "B marks up review quotes with <q> elements and ranking/numbers with an ordered list. It also uses <strong> and <small> (38 and 39). A has none of these.",
+  "category": "semantic-structure",
+  "evidence": "B tag_counts: q 4, ol 1, strong 38, small 39. A has small 2 and no q, ol or strong",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is much heavier: 528 divs, 138 anchors, 52 scripts, 4 stylesheets and 140 inline style attributes. B has 22 divs, 76 anchors, 1 script, 0 stylesheets and 1 style block, with 3 inline style attributes.",
+  "category": "dom",
+  "evidence": "A tag_counts div 528, script 52, a 138; counts inline_style_attrs 140. B div 22, script 1, a 76; inline_style_attrs 3",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 1407 class usages (383 unique), mostly framework-style names. B has 136 class usages (35 unique), likely hand-written. Both have low tailwind-like fractions.",
+  "category": "dom",
+  "evidence": "A classes total 1407, unique 383, tailwind_like_fraction 0.109. B total 136, unique 35, 0.022",
+  "which_side": "both"
+ },
+ {
+  "observation": "A carries rich head metadata: Open Graph, Twitter cards, 2 JSON-LD blocks, verification tags, origin-trial tags and a generator tag. B has only charset, viewport and description meta, and no JSON-LD.",
+  "category": "dom",
+  "evidence": "A meta_names include og:*, twitter:*, google-site-verification, origin-trial ×11; jsonld_blocks 2. B meta_names: charset, viewport, description; jsonld_blocks 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "The titles differ. A's is a long branded title ending with 'Australia's Biggest Baby Product Review Website'. B's reads 'Tell Me Baby – Baby product reviews by Australian parents', echoing the h1.",
+  "category": "copy",
+  "evidence": "A title \"Tell Me Baby | Australia's Biggest Baby Product Review Website\"; B title \"Tell Me Baby – Baby product reviews by Australian parents\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "A relies on box shadows (50) for card elevation and has 20 transforms and one gradient background. B uses just 1 box shadow and no gradients or transforms, and separates cards with 1px borders.",
+  "category": "decoration",
+  "evidence": "A effects: box_shadows 50, transforms 20, gradient_backgrounds 1. B: box_shadows 1, transforms 0, gradient_backgrounds 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "B defines 29 CSS transitions, while A defines none. B's corners are mostly 8–15px rounded; A's are mostly square (0px) with some pills.",
+  "category": "decoration",
+  "evidence": "B transitions 29; A transitions 0. B radius bucket_8_15: 31. A bucket_0 856, bucket_1_7 12, bucket_16_plus 17",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses flex only (display_flex 40, grid 0). B uses 8 CSS grids plus 27 flex containers.",
+  "category": "layout",
+  "evidence": "A layout display_grid 0, display_flex 40; B display_grid 8, display_flex 27",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses 8 inline SVGs for icons (stars, nav, search) and 11 images. B has no SVGs and 5 images, and its decoration is CSS-based, with numbered circles and arrows.",
+  "category": "imagery",
+  "evidence": "A counts svgs 8, images 11. B svgs 0, images 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's header logo sits at x=150 and is 135x36, aligned to the 1140px content column. A's logo is 150x40 at x=25, flush with the viewport edge, and the A header spans the full width.",
+  "category": "layout",
+  "evidence": "A images TellMeBaby_logo.svg rect x 25, w 150, h 40. B rect x 150, w 135, h 36",
+  "which_side": "both"
+ },
+ {
+  "observation": "B constrains content to a consistent left edge at x≈150 across all sections. A mixes centred headings, a wide card grid (x 0 to 1370) and a text column at x≈165.",
+  "category": "layout",
+  "evidence": "B slices: content at x=150 to 1290. A slice_04/06: cards start at x≈0 and text at x≈165",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body text is black (rgb(0,0,0)) and 16px/24px. B's body text is dark slate (32,39,44) at 16px/24.8px, with grey (93,103,110) for secondary copy.",
+  "category": "color",
+  "evidence": "A body_color rgb(0,0,0), line_height 24px. B body_color rgb(32,39,44), line_height 24.8px; top_text_colors rgb(93,103,110) ×8",
+  "which_side": "both"
+ },
+ {
+  "observation": "A footer includes a peach dotted-pattern graphic (tmb_dots_peach.png) at 92x66, at y≈8352 with empty alt. B uses the same asset at 92x66 inside the navy rewards panel, with a natural size of 184x132.",
+  "category": "imagery",
+  "evidence": "A images tmb_dots_peach.png rect 92x66 at y 8352, natural 0x0. B images tmb_dots_peach.png natural 184x132, rect 92x66 at y 3826",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero search is a single pill-shaped field with an embedded peach 'Search' text button. A's hero search is a large white rounded pill with a magnifier icon at the right and no text button.",
+  "category": "component",
+  "evidence": "B slice_00 'Search' button inside the field. A slice_00 pale magnifier icon in the pill",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows review counts as small peach pill badges, such as '118 reviews'. A has no equivalent badge text in its visible slices.",
+  "category": "component",
+  "evidence": "B slice_01 rust text on rgb(255,241,236) pills: '119 reviews', '618 reviews'. A slice_02 cards show stars only",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's rating labels are lowercase-sentence teal text ('Highest rated dummy') above the product name. B puts the equivalent label in small bold uppercase rust text ('HIGHEST RATED BABY BOTTLE').",
+  "category": "typography",
+  "evidence": "A slice_04 teal 'Highest rated nappy bag'. B slice_01 uppercase rust labels",
+  "which_side": "both"
+ }
+]

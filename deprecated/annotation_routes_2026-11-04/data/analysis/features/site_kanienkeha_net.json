@@ -1,0 +1,634 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "The page has no h1 element; its heading outline starts at h2 and contains 8 h2s and one h3",
+   "evidence": "facts.json h1_count: 0, h1: null; heading_outline starts with h2 'Most Recent'; tag_counts h2: 8, h3: 1",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|00",
+    "kanienkeha_net|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "The heading outline does not follow visual order: 'Most Recent', 'Uploading your Notes' and 'She:kon / Greetings' in the main column come before the sidebar headings 'From the Blog', 'Choose your Language!' and the others",
+   "evidence": "heading_outline order vs slice_00, where 'From the Blog' is visible at the top right next to the map",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|01"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I2",
+   "text": "The page uses the semantic landmarks header, main, aside and footer once each, with two nav elements and nine sections",
+   "evidence": "semantic: header 1, nav 2, main 1, section 9, aside 1, footer 1; article/figure/blockquote all 0",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|02",
+    "kanienkeha_net|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "Body text is 17px with a 27.2px line height (a 1.6 ratio); h2s are 22.4px at weight 700",
+   "evidence": "body_font_size 17px, body_line_height 27.2px; h2 font_size 22.4px, font_weight 700",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|03",
+    "kanienkeha_net|opus|04",
+    "kanienkeha_net|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "The page is 1440px wide and 4706px tall, with content in a centered column running from about x=180 to x=1260 (about 1080px wide)",
+   "evidence": "layout page_width 1440, page_height 4706; logo rect x 180; owl.gif ends at 1041+219=1260; footer links end near x 1260 in slice_03",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|05",
+    "kanienkeha_net|opus|06",
+    "kanienkeha_net|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "The header is a white band holding a green wordmark logo at the left and a small black banner image with stylized lettering at the right",
+   "evidence": "moh-logo.gif 380x83 at (180,14); owl.gif 219x30 at (1041,41) shows 'WA'TKWANONHWERÁ:TON' in white on black in slice_00",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "The logo wordmark 'KANIEN'KÉHA' is in bold green capitals with leaf glyphs over the letters and a small tagline underneath: 'AN OPEN SOURCE ENDANGERED LANGUAGE INITIATIVE'",
+   "evidence": "slice_00 top-left; alt 'Kanienkeha – An open source endangered language initiative'",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|08"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I7",
+   "text": "The 'Donate' nav item is set apart as a solid green tab with white text and rounded top corners; the other nav items have no background",
+   "evidence": "slice_00 Donate tab; green rgb(27,154,75) appears 4 times in top_backgrounds",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "In the screenshot the area between header and footer is a dark charcoal with a subtle texture, while the computed body background is a pale blue-gray",
+   "evidence": "colors.body_bg rgb(238,246,248) vs the dark textured background visible in slices 00–03",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|11",
+    "kanienkeha_net|opus|12",
+    "kanienkeha_net|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "Below the search field, a muted 'Try these:' label is followed by three pale green pill chips with suggested queries: apple, colors, numbers",
+   "evidence": "slice_00 under the search bar",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|13",
+    "kanienkeha_net|opus|15",
+    "kanienkeha_net|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "The welcome paragraph under the search bar is dark text on the dark background and is barely visible in the render",
+   "evidence": "slice_00 'Welcome to Kanienkeha.net, an open source endangered language initiative…' in low-contrast gray; body_color rgb(42,47,58)",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|16",
+    "kanienkeha_net|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "The main column opens with a large illustrated world map with green and pink circular location markers and the text '200+ Locations Kanienkeha Map' in a decorative font",
+   "evidence": "map-nap.png at 730x382, alt 'World map: Kanienkeha Map, 200+ locations'; slice_00",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|19",
+    "kanienkeha_net|opus|20",
+    "kanienkeha_net|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "The page has no gradients, backdrop blur, animations or transforms, but 50 elements declare CSS transitions",
+   "evidence": "effects: gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, transitions 50",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|21",
+    "kanienkeha_net|opus|22",
+    "kanienkeha_net|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "The measured radius of the Search button is 0px, yet the combined control looks rounded, which suggests the rounding and clipping come from a wrapper",
+   "evidence": "primary_button.radius '0px' vs the rounded right end visible in slice_00",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|14",
+    "kanienkeha_net|opus|23",
+    "kanienkeha_net|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "The 'Most Recent' card has a solid green square icon before its heading and three pill filter tabs: All (solid green, active), Phrases and Occupations (green outline)",
+   "evidence": "slice_00 Most Recent card",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|24",
+    "kanienkeha_net|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Each entry card has a thick left accent border. It is green on the phrase entries and blue on the occupation entries, so the color encodes category",
+   "evidence": "slice_01: green left borders on 'Fix your hair', 'Brush your teeth'; blue on 'Photographer', 'Goalie', 'Astronaut'",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|25",
+    "kanienkeha_net|opus|26",
+    "kanienkeha_net|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "The entry list is long and makes up most of the page's vertical length, running from the first slice into the third",
+   "evidence": "entry cards span slice_00 to slice_02, ending at 'Plumber'/'Councillors'",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|27"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I17",
+   "text": "Occupation entries are listed in paired masculine and feminine forms, marked with (m) and (f) suffixes",
+   "evidence": "slice_01/02: 'Steelworker (m)', 'Steelworker (f)', 'Writer (m)', 'Writer (f)', 'Baker (m)', 'Baker (f)'",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|28"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I18",
+   "text": "Pagination uses square bordered buttons numbered 1–4 plus 'Next ›' and 'Last »'; the current page '1' is filled green",
+   "evidence": "slice_02 below the entry grid",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|29",
+    "kanienkeha_net|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "The sidebar 'From the Blog' card opens with an illustration of blue signboards labeled Resources, Blogging, Culture, Language and Talk, followed by five blue link titles separated by thin rules",
+   "evidence": "protest.png 282x137, alt 'Culture, Blogging, Resources, Language, Talk'; slice_00",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|30",
+    "kanienkeha_net|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "Blue is the link color, used for blog titles, 'Random Word' and the footer links",
+   "evidence": "top_text_colors rgb(19,128,181) 30 occurrences; slice_00 blog links, slice_01 'Random Word', slice_03 footer links",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|31",
+    "kanienkeha_net|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Each sidebar card heading is paired with a small green line-art illustration on its left",
+   "evidence": "wordoftheday1.jpg 40x43, social1.jpg 49x47, forum-stats1.png 101x43; slice_01",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|33",
+    "kanienkeha_net|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "A second, coral-colored call to action, 'Become a patron on Patreon', fills the width of the 'Spread the word!' sidebar card",
+   "evidence": "slice_01; top_backgrounds includes rgb(249,104,84) once",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|17",
+    "kanienkeha_net|opus|18",
+    "kanienkeha_net|opus|34",
+    "kanienkeha_net|opus|35",
+    "kanienkeha_net|sonnet|09",
+    "kanienkeha_net|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "The 'Total Site Numbers' card is a 2x2 grid of stat tiles with large bold green numbers (2650 Words, 159 Categories, 260 Tags, 10 Blog); the Categories and Blog labels are underlined links",
+   "evidence": "slice_01; display_grid 5",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|36",
+    "kanienkeha_net|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "The sidebar ends at about the top of the second slice, leaving a long stretch of empty dark background to the right of the main column",
+   "evidence": "slices 01–03 show nothing to the right of the main column after the 'Total Site Numbers' card",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|37",
+    "kanienkeha_net|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "The 'Uploading your Notes' card pairs a bold h3 subheading and a body paragraph with a grainy illustration of a notebook, an arrow and a phone uploading to a cloud with the site logo",
+   "evidence": "notes.jpg 523x330, alt 'Upload your language notes'; slices 02–03",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|38",
+    "kanienkeha_net|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "The 'Choose your Language!' card holds two bordered buttons with 24px flag icons: English (pale green fill, selected) and Kanienkeha",
+   "evidence": "England.png and Mohawk.png at 24x24; slice_00",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|32",
+    "kanienkeha_net|opus|39",
+    "kanienkeha_net|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "The 'She:kon / Greetings' card is a first-person mission message that ends with a bold sign-off naming 'Benjamin Doolittle'",
+   "evidence": "slice_03; strong count 2, b count 4",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|40",
+    "kanienkeha_net|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "The footer is white with two columns: 'MohDictionary' social handles with small service icons on the left, and an inline row of underlined links plus credits on the right",
+   "evidence": "slice_03; favicons, fBV3Wtxe.png, Gumroad-icon.png 16–18px images at y≈4459–4489",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|41",
+    "kanienkeha_net|opus|42",
+    "kanienkeha_net|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "Two green silhouette illustrations anchor the footer: a longhouse with trees, and figures with trees",
+   "evidence": "longhouse1.jpg 293x91 alt 'Longhouse'; wearefriends.jpg 280x54 alt 'We are friends'",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|43",
+    "kanienkeha_net|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "Green is the dominant accent, used for the logo, headings, active states, buttons and translations, against near-black body text",
+   "evidence": "body_color rgb(42,47,58) 265; rgb(15,107,50) 73 text uses; rgb(27,154,75) button bg",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|44",
+    "kanienkeha_net|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "The page relies heavily on raster images (21 img elements) and uses no inline SVG",
+   "evidence": "counts images 21, svgs 0",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|45",
+    "kanienkeha_net|opus|46",
+    "kanienkeha_net|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "Styling comes from one embedded style block, with no external stylesheets and 38 unique hand-named classes (none Tailwind-like)",
+   "evidence": "tag_counts style 1, stylesheets 0; classes unique 38, total 197, tailwind_like_fraction 0",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|47",
+    "kanienkeha_net|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "The page is link-dense, with 104 anchors and 105 spans against only 10 paragraphs and 459 words",
+   "evidence": "counts anchors 104; span 105; p 10; text_stats words 459",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|48",
+    "kanienkeha_net|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "The copy uses four exclamation marks and no emoji or em dashes",
+   "evidence": "text_stats exclamations 4, emoji 0, em_dashes 0; e.g. 'Choose your Language!', 'Spread the word!', 'Support us on Patreon!'",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|49"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "The head has only charset, viewport and description meta tags and no JSON-LD; the page runs a single script",
+   "evidence": "meta_names [charset, viewport, description]; jsonld_blocks 0; scripts 1",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|opus|50",
+    "kanienkeha_net|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "The title reads 'Kanienkeha.net – An Open Source Endangered Language Initiative'. It uses an en dash, and the brand name is repeated in the logo alt text, the footer and the intro copy.",
+   "evidence": "title in facts.json; em_dashes 0",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|sonnet|29"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I37",
+   "text": "Cards use generous padding of about 22px and a consistent vertical gap of about 24px between them. The main-column cards (map, recent list, notes, greetings) and the sidebar cards all use the same white fill with rounded corners.",
+   "evidence": "White rgb(255,255,255) appears in 18 background fills and the near-white rgb(252,254,253) in 50. The cards are spaced about 24px apart in sl",
+   "side": "generated",
+   "members": [
+    "kanienkeha_net|sonnet|30"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "The page has no h1; the heading outline starts at h2 and is not ordered to match visual order.",
+   "family": "semantic_dom",
+   "items": [
+    "I0",
+    "I1"
+   ]
+  },
+  {
+   "statement": "Layout uses semantic landmarks (header, main, aside, footer, nav, sections) once each, without article, figure or blockquote elements.",
+   "family": "semantic_dom",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Body text is about 17px with a 1.6 line-height ratio; h2 headings are bold at roughly 22px.",
+   "family": "typography",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Content sits in a centered fixed-width column of roughly 1080px within a wider 1440px page, with a main column plus sidebar.",
+   "family": "layout",
+   "items": [
+    "I4",
+    "I24"
+   ]
+  },
+  {
+   "statement": "Header is a white band with a green logo wordmark at left and a small dark banner image at right.",
+   "family": "layout",
+   "items": [
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "statement": "One nav item is highlighted as a solid green tab with white text and rounded top corners; other items are unstyled.",
+   "family": "component",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Dark textured page background contrasts with white cards, and some body text on it has low contrast and is barely legible.",
+   "family": "color",
+   "items": [
+    "I8",
+    "I10"
+   ]
+  },
+  {
+   "statement": "Suggested-search chips appear as pale green pills after a muted label under the search field.",
+   "family": "component",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "Content opens with a large illustrated map featuring colored circular markers and decorative display lettering.",
+   "family": "imagery",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "No gradients, blur, animations or transforms are used; only CSS transitions are declared.",
+   "family": "decoration",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Filter tabs are pill-shaped, with a solid green active state and green-outlined inactive ones.",
+   "family": "component",
+   "items": [
+    "I14"
+   ]
+  },
+  {
+   "statement": "List entry cards have a thick left accent border whose color encodes the category (green or blue).",
+   "family": "component",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "A long, dense list of entry cards makes up most of the page's vertical length.",
+   "family": "layout",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Pagination uses square bordered numbered buttons with next/last controls and a green-filled current page.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Blue is used for links, while green is the dominant accent for logo, headings, active states and buttons against near-black text.",
+   "family": "color",
+   "items": [
+    "I20",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Sidebar card headings are paired with small green line-art illustrations at their left.",
+   "family": "imagery",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "A contrasting coral call-to-action button spans the full width of its sidebar card.",
+   "family": "component",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Statistics appear as a 2x2 grid of tiles with large bold green numbers and small labels.",
+   "family": "component",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "Cards pair headings and text with grainy, hand-made illustrations of illustrated scenes, signboards and silhouettes, including in the footer.",
+   "family": "imagery",
+   "items": [
+    "I19",
+    "I25",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Language selector is two bordered buttons with small flag icons, with the selected one in pale green fill.",
+   "family": "component",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "A first-person mission message ends with a bold personal sign-off.",
+   "family": "copy",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Footer is white with two columns: social handles with small icons on the left, inline underlined links and credits on the right.",
+   "family": "layout",
+   "items": [
+    "I28"
+   ]
+  },
+  {
+   "statement": "The page relies on raster images with no inline SVG.",
+   "family": "imagery",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "Styling is a single embedded style block with hand-named classes, with no external stylesheets or utility frameworks.",
+   "family": "other",
+   "items": [
+    "I32"
+   ]
+  },
+  {
+   "statement": "The page is link-dense, with many anchors and spans and few paragraphs of prose.",
+   "family": "semantic_dom",
+   "items": [
+    "I33"
+   ]
+  },
+  {
+   "statement": "Copy uses occasional exclamation marks in headings and calls to action, with no emoji or em dashes.",
+   "family": "copy",
+   "items": [
+    "I34",
+    "I36"
+   ]
+  },
+  {
+   "statement": "Cards share white fill, rounded corners, about 22px padding and a consistent ~24px vertical gap.",
+   "family": "component",
+   "items": [
+    "I37"
+   ]
+  },
+  {
+   "statement": "Entries are labeled with short parenthetical markers distinguishing paired variants, such as (m) and (f).",
+   "family": "copy",
+   "items": [
+    "I17"
+   ]
+  }
+ ]
+}

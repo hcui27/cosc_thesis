@@ -1,0 +1,236 @@
+[
+ {
+  "observation": "Page width and gutters differ. A confines content to a centered column from x=244 to x=1196 (952px wide). B uses a wider column from x=180 to x=1260 (1080px), with its logo at x=20.",
+  "category": "layout",
+  "evidence": "A image rects start at x=244 and the banner is 952px wide. B card images start at x=180, with 341px-wide cards across x=180–1260.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The header differs. A has a tall white header with the logo (193x70) at x=244 and a right-aligned text nav: Career Areas ▾, Life @ Allstate ▾, Application Status, Job Search. B has a slim bar with only a small logo (111x40) at the far left and no visible nav links.",
+  "category": "component",
+  "evidence": "A facts: nav=2, logo rect 193x70 at y=56, and two Down-Arrow images next to the nav. B facts: nav=0, header=1, logo 111x40 at (20,14).",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero banner is handled differently. A shows it as a 952x296 contained image inset below the header. B stretches it full-bleed to 1440x448 directly under the header. The same navy/photo split composition appears in both.",
+  "category": "imagery",
+  "evidence": "A banner rect 952x296 at y=236. B banner rect 1440x448 at y=77, with the alt text 'Your next career is here, define your future with Allstate'. A's banner alt is empty.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The job search form sits in different places and looks different. A places it on white below the hero, with grey-bordered inputs and a flat rectangular dark-blue 'SEARCH JOBS' button in uppercase. B puts it in a navy band attached to the bottom of the hero, with white inputs and a sky-blue pill 'Search' button with dark navy text.",
+  "category": "component",
+  "evidence": "B primary_button: bg rgb(65,182,230), radius 999px, text 'Search', padding 0px 34px. A primary_button is the white 'COVID-19 Hiring Practices' with 3px radius.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The form markup differs. A's select shows a custom blue triangle arrow, while B's select shows a native chevron. B has explicit label elements and a placeholder 'Search jobs by keyword' versus A's 'Enter a Job or Keyword'.",
+  "category": "copy",
+  "evidence": "B tag_counts: label 2, button 7. A tag_counts: form 2, input 6, select 2, option 44, button 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Typography uses different typefaces. A uses the custom brand family AllstateSansW (regular on 1198 elements, bold on 78, light on 70, medium on 2). B uses a single stack, Helvetica Neue, on all 263 text-bearing elements.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: A allstatesansw-regul/bold/light/medium. B Helvetica Neue 263.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Base text size and heading weight differ. A has an 18px body with a 29.7px line-height and 36px h2s at weight 600. B has a 16px body with a 25.6px line-height and 35.2px h2s at weight 700.",
+  "category": "typography",
+  "evidence": "A: body_font_size 18px, h2 36px/600. B: body_font_size 16px, h2 35.2px/700.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Text colors differ. A uses near-black rgb(25,25,25) for most text, with brand blue rgb(0,51,160) for links and headings on blue. B uses a navy-tinted rgb(29,34,51) body, rgb(15,26,74) headings and a muted grey-blue rgb(90,96,117) for secondary text.",
+  "category": "color",
+  "evidence": "A top_text_colors: rgb(25,25,25) x742. B top_text_colors: rgb(29,34,51) x161, rgb(15,26,74) x38, rgb(90,96,117) x30.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The section background rhythm differs. A is almost entirely white, with section separation made by thin light-blue horizontal rules and a solid royal-blue footer. B alternates white with pale blue-grey rgb(238,243,250) bands (Discover, People, Testimonials, Social) and uses a dark navy footer.",
+  "category": "color",
+  "evidence": "B top_backgrounds: rgb(238,243,250) x4, rgb(15,26,74) x2. A top_backgrounds: white x73, rgb(0,51,160) x82, and a visible light-blue hr under each section.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Section dividers differ. A draws a 1px light-blue rule across the content column between every section. B has no rules and separates sections with background color changes and spacing.",
+  "category": "decoration",
+  "evidence": "A slices show light-blue lines above Discover, Career Areas, People, Grow, Testimonials and Future Events. B slices show none.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The three feature cards (Good Work / Good Life / Good Hands) are styled differently. A has centered text, uppercase bold headings and thin grey-edged cards with a faint shadow. B has left-aligned text, title-case navy headings, grey-blue body text and softly rounded cards with a diffuse shadow.",
+  "category": "component",
+  "evidence": "A cards 297x208 images with small radius. B cards 341x239 images. B border_radius bucket_8_15 = 28 vs A 12.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a heading-hierarchy oddity. The three feature cards use h3 headings before any h2, so the first heading in document order is an h3, and there is no h1 on either side. A uses h2 for the section headings and has no card headings above the first h2.",
+  "category": "semantic",
+  "evidence": "B heading_outline starts with h3 'Good Work', h3 'Good Life', h3 'Good Hands' and then h2 'Discover Allstate'. A's first heading is h2 'Discover Allstate'. Both have h1_count 0.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The 'Discover Allstate' cards differ. A's are centered, with the title in bold wide-tracked type and a full-width flat blue 'VISIT PAGE' bar attached to the card bottom. B's are left-aligned, with a smaller pill-shaped 'Visit Page' button inset in the card, all on a pale blue band.",
+  "category": "component",
+  "evidence": "A uses card images 297x175 and a full-width uppercase CTA at y≈530–590 of the slice. B images are 341x239 with a rounded-pill CTA.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Career Areas section is laid out differently. A stacks full-width paragraphs above a 3-column list of underlined blue text links. B uses a two-column split, with intro copy on the left and a single column of 10 bold navy rows separated by hairlines, each ending in a light-blue right arrow.",
+  "category": "layout",
+  "evidence": "A: links such as Claims, Data Science & Analytics and Marketing & Corporate Relations are underlined and arranged in 3 columns. B: grid-based two-column layout (display_grid 7) with → glyphs at the right edge.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Meet the People' section differs in what is visible. A's slice shows only the heading, with a large blank region where the carousel images (listed with 0x0 rects) are not rendered. B shows a 4+3 grid of 7 square-cropped photo cards with a name, job title and city/state for each.",
+  "category": "layout",
+  "evidence": "A images maureen.jpg etc. have rect 0,0,0,0. B rects are 252x252 at y=2732 and y=3144, with 7 h3 names (Maureen D., Eric G., Paul D., Joe W., Dana T., Brooke T., Mythili P.).",
+  "which_side": "both"
+ },
+ {
+  "observation": "The people photos are cropped in B. The wide 1400x552 source images are shown as 252x252 squares with object-fit cropping, so some subjects are partly cut off (Maureen's face is cut at the right edge).",
+  "category": "imagery",
+  "evidence": "maureen.jpg natural 1400x552 displayed at 252x252 in B.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Names and roles on the people cards come from separate text elements in B. A's h3 elements for the people carousel have empty text, with 7 empty h3s in the outline.",
+  "category": "copy",
+  "evidence": "A heading_outline has seven h3 entries with text ''. B h3 entries hold 'Maureen D.', 'Eric G.' and so on.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Grow Your Career' profiles differ. B lays out a profile with a 340x409 portrait on the left and a name and tenure ('Xiomara R. · 7 years with Allstate') beside it. It shows a vertical timeline of roles with light-blue dot bullets, dates and locations, and numbered circular pager buttons 1/2/3. A shows only the heading and intro, with a blank area and three small dot pagers.",
+  "category": "component",
+  "evidence": "A has Xiomara/Shelby/Bridget images stacked at the same rect (248,3706) as a carousel. B shows only the first at 340x409 and the others at 0x0. B h3 'Xiomara R.\\n7 years with Allstate'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The pagination controls differ. A uses tiny dot indicators (filled blue plus two outlined grey circles). B uses larger numbered circular buttons (1, 2, 3) with the active one filled blue and the others outlined in blue.",
+  "category": "component",
+  "evidence": "A slice 3 shows dots at y≈310 and y≈885. B slice 3 shows 36px numbered circles. B has 7 button elements and A has 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Testimonials differ. B shows a 340x269 photo of Lisa next to a large navy pull-quote in a pale blue band, with an attribution line '– Lisa, Senior Lead Internal Auditor' and 1/2/3 pager buttons. A's section is empty in the capture, with only the heading and dot pagination, although its images are 476x377.",
+  "category": "component",
+  "evidence": "B image Testimonials-Generic-Lisa.jpg rect 340x269 at (180,4564). A image rect 476x377 at (244,4459) but is not visible in the slice.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Future Events section differs. A has a left-aligned heading with a full-width flat blue 'VIEW ALL FUTURE EVENTS' bar in uppercase. B centers the heading and shows a compact pill button 'View all future events' in sentence case.",
+  "category": "component",
+  "evidence": "A button spans x=244–1196. B button is about 215px wide, centered.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The social photo grid differs. A shows 4 images at 185x175 with wide gaps and a thin shadow border. B shows the images enlarged to 258x258 squares with small rounded corners on a pale blue band, and each has the alt 'Allstate Careers on Instagram'. A's alts are descriptive per image.",
+  "category": "imagery",
+  "evidence": "A Social1.png rect 185x175, alt 'Instagram - Allstate proudly supports veterans'. B Social1.png rect 258x258, with the same generic alt on all four.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Follow Us' block is placed differently. In A it is a centered small bold label above 52x50 social icons rendered with flat rounded blue tiles on white. In B it sits inside the navy footer, with 44x44 icons with a thin white outline.",
+  "category": "layout",
+  "evidence": "A icons 52x50 at y=5613. B icons 44x44 at y=5689 inside the footer. B has a dedicated h2 'Follow Us'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer content differs. A has a royal-blue footer packed with small centered white legal text: Indiana HEA 1242, San Francisco and Los Angeles ordinances, EEO and FMLA/EPPA poster links, a policy paragraph and a link row. The copyright appears twice, and underlined placeholder lines appear. B has a compact navy footer containing only 'Follow Us' and the icons.",
+  "category": "copy",
+  "evidence": "A text_stats words=1629 vs B words=561. A footer slice shows '© 2021 Allstate Insurance Company. All rights reserved.' twice.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The DOM weight differs greatly. A is a heavy CMS-generated page with 620 divs, 155 scripts, 78 links, 42 stylesheets, 2635 class uses (366 unique) and 87 inline style attributes. B is a lean hand-written page with 20 divs, 1 script, 1 stylesheet, 89 class uses (39 unique) and 1 inline style.",
+  "category": "structure",
+  "evidence": "A tag_counts div=620, script=155. B div=20, script=1; classes total 89 and unique 39.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A duplicates its markup. The title appears twice, meta and head items repeat, and the headings Discover through See What We're Up To are listed twice in the outline. This is likely a hidden duplicate or mobile copy of the page. B has a single copy.",
+  "category": "structure",
+  "evidence": "A tag_counts title=2, header=2, nav=2, main=2, form=2; meta_names repeated. B title=1, header=1, main=1.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses article elements for cards (16) and has a footer element, while A uses none. A relies on div and section (38) and has no article or footer elements.",
+  "category": "semantic",
+  "evidence": "B semantic article 16, footer 1. A semantic article 0, footer 0, section 38. B has 10 sections.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The corner radii and shape language differ. A is mostly square with 3px-radius buttons (52 elements in the 1–7px bucket) and none in the pill bucket. B uses 8–15px rounded cards (28 elements), and 11 pill-shaped elements (buttons, pager circles).",
+  "category": "decoration",
+  "evidence": "A border_radius_buckets: 1_7=52, 8_15=12, pill=0. B: 1_7=2, 8_15=28, pill=11.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The shadow and motion counts differ. A has 24 box-shadow elements, 106 transitions and 16 transforms, consistent with carousel and menu machinery. B has 13 shadows, 14 transitions and 0 transforms.",
+  "category": "decoration",
+  "evidence": "A effects: box_shadows 24, transitions 106, transforms 16. B: 13, 14, 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Layout technology differs. A uses no CSS grid (display_grid 0) and 31 flex containers. B uses 7 grid and 7 flex containers.",
+  "category": "layout",
+  "evidence": "layout.display_grid: A 0, B 7; display_flex: A 31, B 7.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A fixed-height spacing rhythm differs. A's total page height is 6206px against B's 5773px, and A has large empty vertical gaps (for example slice 2 is almost blank) where carousel content is not visible.",
+  "category": "layout",
+  "evidence": "layout.page_height A 6206, B 5773. A slice_02 shows only a rule and the 'Grow Your Career' heading in white space.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Accent colors differ. A relies on one royal blue (rgb(0,51,160)) for buttons, links and the footer, plus a light-blue rule. B adds a sky-blue accent rgb(65,182,230) to the Search button, timeline dots, arrows and hero highlight text, with navy rgb(15,26,74) as a second dark.",
+  "category": "color",
+  "evidence": "B top_backgrounds include rgb(65,182,230) and rgb(15,26,74). A has rgb(0,51,160) x82 and rgb(37,71,168) x14.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Image alt handling differs. In B, the people and logo images carry descriptive alts (Maureen D., Paul D., Dana T., and so on) and the 7 portraits are all labeled. In A, several people images (paul, dana, brooke, mylthili) have empty alt text, and the logo alt is 'Allstate Careers' versus B's 'Allstate'.",
+  "category": "semantic",
+  "evidence": "A images paul.jpg, dana.jpg, brooke.jpg and mylthili.jpg have alt ''. B has alts 'Paul D.', 'Dana T.', 'Brooke T.' and 'Mythili P.'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero heading text is baked into the banner image in both pages (no h1, h1_count 0 on both). It appears as white and cyan lowercase type on a navy field. B displays it much larger because the image is full width.",
+  "category": "typography",
+  "evidence": "Both facts show h1_count 0. The banner alt text in B is 'Your next career is here, define your future with Allstate'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has extra hidden elements: 'Vector-Smart-Object' icon (40x40) sits over the banner, a second mobile banner (2104x1310) and mobile testimonial image variants (all 0x0). B drops the mobile variants and uses one banner file, and its testimonials have no mobile counterparts.",
+  "category": "imagery",
+  "evidence": "A images list Allstate.jobs-Banner_2104x1310.jpg and Testimonials-Generic-mobile-0N images with 0x0 rects. B images list only Allstate-jobs.jpg and Testimonials-Generic-Lisa/Xiomara/Kelly.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Intro copy line length differs. A's intro paragraph spans the full 952px column in about 18px type. B limits its intro and Grow paragraphs to a narrower measure (about 770px of the 1080px column), leaving the right side empty.",
+  "category": "typography",
+  "evidence": "B slice 0 shows intro text wrapping near x=950 inside a content column ending at x=1260.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Copy is shared but rewrapped and re-cased. Headings like 'GOOD WORK' are uppercase in A and title-case 'Good Work' in B. A's 'VISIT PAGE' and 'SEARCH JOBS' are uppercase and B's are sentence case. Body wording is otherwise the same, such as the 'At Allstate, everyone is essential...' paragraph.",
+  "category": "copy",
+  "evidence": "A slices show all-caps card headings and buttons. B shows 'Good Work', 'Visit Page' and 'Search'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B includes extra copy not visible in A. These are the job titles and locations under each person ('Agent Advocate, Woodridge, IL') and the 'Xiomara R.' career timeline with dates (2013–2020, Charlotte, NC). The A snapshot only reveals the 'Talent Share Division Manager' h3 and the 'Grow Your Career' intro, with empty h3s elsewhere.",
+  "category": "copy",
+  "evidence": "B outline: 'Xiomara R.\\n7 years with Allstate'. A outline: h3 'Talent Share Division Manager,\\nPersonal Property Liability Service' plus empty h3s.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The footer disclaimers on A repeat the copyright line and show orphaned underlined placeholder links with no text, which suggests the footer duplicates desktop and mobile versions of the legal blocks.",
+  "category": "structure",
+  "evidence": "The A footer slice shows 4 short underlined blank link fragments near y≈912 and a second © line at y≈930.",
+  "which_side": "A"
+ }
+]

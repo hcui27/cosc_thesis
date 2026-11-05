@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Education Activities</title>
+<meta name="description" content="The aim of education is the knowledge not of facts but of values. Articles on education, careers, science, certification and more.">
+<style>
+  :root {
+    --bg: #faf8f4;
+    --surface: #ffffff;
+    --ink: #1b1f2a;
+    --muted: #5d6475;
+    --line: #e4e0d8;
+    --accent: #c2410c;
+    --accent-ink: #ffffff;
+    --dark: #14213d;
+    --dark-ink: #f3f1ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1420;
+      --surface: #171e2e;
+      --ink: #eceae4;
+      --muted: #a2a9b9;
+      --line: #28324a;
+      --accent: #fb923c;
+      --accent-ink: #14213d;
+      --dark: #0a0e18;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.55 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  a { color: inherit; text-decoration: none; }
+  a:hover h3, a:hover h2 { color: var(--accent); }
+  img { display: block; max-width: 100%; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 16px; }
+  .serif { font-family: Georgia, "Times New Roman", serif; }
+
+  /* top bar */
+  .topbar { background: var(--dark); color: var(--dark-ink); font-size: 13px; }
+  .topbar .wrap { display: flex; gap: 20px; align-items: center; justify-content: space-between; padding-top: 8px; padding-bottom: 8px; flex-wrap: wrap; }
+  .topbar ul { list-style: none; display: flex; gap: 16px; margin: 0; padding: 0; flex-wrap: wrap; }
+  .topbar a:hover { color: var(--accent); }
+  .trending { display: flex; gap: 10px; align-items: center; min-width: 0; }
+  .trending b { background: var(--accent); color: var(--accent-ink); padding: 1px 8px; border-radius: 3px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+  .trending a { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 40ch; }
+
+  /* masthead */
+  .masthead { text-align: center; padding: 32px 0 20px; }
+  .masthead img { height: 64px; width: auto; margin: 0 auto 10px; }
+  .masthead h1 { font-family: Georgia, serif; font-size: clamp(32px, 6vw, 52px); margin: 0; letter-spacing: -.01em; }
+  .masthead p { color: var(--muted); font-style: italic; margin: 6px 0 0; font-family: Georgia, serif; }
+
+  nav.main { border-top: 2px solid var(--ink); border-bottom: 1px solid var(--line); background: var(--surface); position: sticky; top: 0; z-index: 10; }
+  nav.main ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+  nav.main a { display: block; padding: 13px 14px; font-weight: 600; font-size: 14px; white-space: nowrap; }
+  nav.main a:hover { color: var(--accent); }
+
+  /* sections */
+  section { padding: 40px 0 8px; }
+  .sec-head { display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--ink); margin-bottom: 22px; }
+  .sec-head h2 { font-family: Georgia, serif; font-size: 26px; margin: 0 0 -2px; padding-bottom: 8px; border-bottom: 4px solid var(--accent); }
+  .sec-head a { font-size: 13px; color: var(--muted); font-weight: 600; }
+  .sec-head a:hover { color: var(--accent); }
+
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  .meta { font-size: 12.5px; color: var(--muted); margin-top: 8px; }
+  .card h3 { font-family: Georgia, serif; font-size: 19px; line-height: 1.25; margin: 0; }
+  .card p { color: var(--muted); font-size: 14.5px; margin: 8px 0 0; }
+  .card .thumb { aspect-ratio: 3/2; width: 100%; object-fit: cover; border-radius: 4px; margin-bottom: 12px; background: var(--line); }
+
+  .grid { display: grid; gap: 28px 24px; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
+  .noimg { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); padding: 18px; border-radius: 4px; }
+
+  /* hero */
+  .hero { display: grid; gap: 28px; grid-template-columns: 1.6fr 1fr; }
+  .hero .lead img { aspect-ratio: 720/380; width: 100%; object-fit: cover; border-radius: 4px; }
+  .hero .lead h3 { font-size: clamp(26px, 3.4vw, 38px); margin-top: 6px; }
+  .hero .lead p { font-size: 16px; }
+  .hero .side { display: grid; gap: 22px; align-content: start; }
+  .hero .side .card { display: grid; grid-template-columns: 120px 1fr; gap: 14px; }
+  .hero .side .card img { margin: 0; aspect-ratio: 3/2; width: 120px; height: 80px; object-fit: cover; border-radius: 4px; }
+  .hero .side h3 { font-size: 16px; }
+
+  .science-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .science-grid img { aspect-ratio: 720/380; width: 100%; object-fit: cover; border-radius: 4px; margin-bottom: 12px; }
+
+  /* split */
+  .split { display: grid; gap: 40px; grid-template-columns: 1fr 300px; align-items: start; }
+  aside .box { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 20px; margin-bottom: 24px; }
+  aside h4 { font-family: Georgia, serif; font-size: 18px; margin: 0 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+  aside ul { list-style: none; margin: 0; padding: 0; }
+  aside li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
+  aside li:last-child { border: 0; }
+  aside li a:hover { color: var(--accent); }
+  .author { text-align: center; }
+  .author img { width: 110px; height: 110px; object-fit: cover; border-radius: 50%; margin: 0 auto 12px; }
+  .author b { display: block; font-family: Georgia, serif; font-size: 18px; }
+  .author span { color: var(--muted); font-size: 14px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chips a { border: 1px solid var(--line); padding: 4px 11px; border-radius: 999px; font-size: 13px; }
+  .chips a:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  form.search { display: flex; }
+  form.search input { flex: 1; min-width: 0; padding: 9px 12px; border: 1px solid var(--line); border-radius: 4px 0 0 4px; background: var(--bg); color: var(--ink); font: inherit; }
+  form.search button { padding: 0 14px; border: 0; background: var(--accent); color: var(--accent-ink); font-weight: 700; border-radius: 0 4px 4px 0; cursor: pointer; font: inherit; font-weight: 700; }
+
+  /* footer */
+  footer { background: var(--dark); color: var(--dark-ink); margin-top: 56px; padding: 44px 0 20px; }
+  .foot-grid { display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  footer h5 { font-family: Georgia, serif; font-size: 18px; margin: 0 0 12px; }
+  footer ul { list-style: none; padding: 0; margin: 0; }
+  footer li { padding: 4px 0; font-size: 14.5px; }
+  footer a { opacity: .85; }
+  footer a:hover { opacity: 1; color: var(--accent); }
+  .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 32px; padding-top: 16px; font-size: 13px; opacity: .75; }
+
+  a:focus-visible, input:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  @media (max-width: 860px) {
+    .hero, .split { grid-template-columns: 1fr; }
+    .trending { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <ul>
+      <li><a href="http://www.educationactivities.org/category/education">Education</a></li>
+      <li><a href="http://www.educationactivities.org/category/financial-aid">Financial Aid</a></li>
+      <li><a href="http://www.educationactivities.org/category/certification">Certification</a></li>
+      <li><a href="http://www.educationactivities.org/category/science">Science</a></li>
+      <li><a href="http://www.educationactivities.org/category/languages">Languages</a></li>
+    </ul>
+    <div class="trending">
+      <b>Trending</b>
+      <a href="http://www.educationactivities.org/online-education/5-big-benefits-of-digital-marketing-career.html">5 Big Benefits of Digital Marketing Career</a>
+    </div>
+  </div>
+</div>
+
+<header class="masthead wrap">
+  <a href="http://www.educationactivities.org/"><img src="images/Education-activity.png" alt="Education Activities logo"></a>
+  <h1><a href="http://www.educationactivities.org/">Education Activities</a></h1>
+  <p>The aim of education is the knowledge not of facts but of values.</p>
+</header>
+
+<nav class="main" aria-label="Primary">
+  <div class="wrap">
+    <ul>
+      <li><a href="http://www.educationactivities.org/">Home</a></li>
+      <li><a href="http://www.educationactivities.org/category/certification">Certification</a></li>
+      <li><a href="http://www.educationactivities.org/category/skills-development">Skills Development</a></li>
+      <li><a href="http://www.educationactivities.org/category/languages">Languages</a></li>
+      <li><a href="http://www.educationactivities.org/category/college-and-university">College and University</a></li>
+      <li><a href="http://www.educationactivities.org/category/financial-aid">Financial Aid</a></li>
+      <li><a href="http://www.educationactivities.org/category/science">Science</a></li>
+      <li><a href="http://www.educationactivities.org/category/general">General</a></li>
+      <li><a href="http://www.educationactivities.org/category/education">Education</a></li>
+      <li><a href="http://www.educationactivities.org/category/online-education">Online Education</a></li>
+      <li><a href="http://www.educationactivities.org/category/home-schooling">Home Schooling</a></li>
+      <li><a href="http://www.educationactivities.org/blog">Blog</a></li>
+      <li><a href="http://www.educationactivities.org/contact-us">Contact us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <!-- Featured -->
+  <section id="featured">
+    <div class="hero">
+      <article class="card lead">
+        <a href="http://www.educationactivities.org/science/trump-declares-decide-to-lead-epa-chemical-security-workplace.html">
+          <img src="images/Trump-Announces-Pick-to-Lead-EPA-Chemical-Safety-Office-720x380.png" alt="">
+          <div style="margin-top:14px"><span class="tag">Science</span></div>
+          <h3>Trump Declares Decide to Lead EPA Chemical Security Workplace</h3>
+          <p>US President Donald Trump made an announcement relating to nomination of Michael Dourson as the pinnacle of chemical and the...</p>
+          <div class="meta">By WebEditor / 2018-10-02</div>
+        </a>
+      </article>
+      <div class="side">
+        <article class="card">
+          <a href="http://www.educationactivities.org/online-education/5-big-benefits-of-digital-marketing-career.html" style="display:contents">
+            <img src="images/Benefits-of-Digital-Marketing-Banner-300x200.png" alt="">
+            <div><span class="tag">Online Education</span><h3>5 Big Benefits of Digital Marketing Career</h3><div class="meta">2021-05-24</div></div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="http://www.educationactivities.org/education/the-importance-of-learning-business-english-for-your-career.html" style="display:contents">
+            <img src="images/What-is-Business-English-300x200.jpg" alt="">
+            <div><span class="tag">Education</span><h3>The Importance of Learning Business English for Your Career</h3><div class="meta">2021-02-18</div></div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="http://www.educationactivities.org/education/is-it-worth-doing-masters-in-the-netherlands-what-are-the-top-specialities.html" style="display:contents">
+            <img src="images/9-300x200.jpg" alt="">
+            <div><span class="tag">Education</span><h3>Is it worth doing masters in the Netherlands? What are the top specialities?</h3><div class="meta">2020-10-02</div></div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="split">
+    <div>
+
+      <!-- Education -->
+      <section id="education">
+        <div class="sec-head"><h2>Educations</h2><a href="http://www.educationactivities.org/category/education">View all →</a></div>
+        <div class="grid">
+          <article class="card"><a href="http://www.educationactivities.org/education/the-importance-of-learning-business-english-for-your-career.html">
+            <img class="thumb" src="images/What-is-Business-English-300x200.jpg" alt="">
+            <span class="tag">Education</span><h3>The Importance of Learning Business English for Your Career</h3><div class="meta">By WebEditor / 2021-02-18</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/education/is-it-worth-doing-masters-in-the-netherlands-what-are-the-top-specialities.html">
+            <img class="thumb" src="images/9-300x200.jpg" alt="">
+            <span class="tag">Education</span><h3>Is it worth doing masters in the Netherlands? What are the top specialities?</h3><div class="meta">By WebEditor / 2020-10-02</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/education/easy-ways-of-adapting-cbd-in-your-daily-morning-routine.html">
+            <img class="thumb" src="images/cannabis-oil-explained-1068x580-1-300x200.jpg" alt="">
+            <span class="tag">Education</span><h3>Easy Ways of Adapting CBD In Your Daily Morning Routine</h3><div class="meta">By WebEditor / 2020-09-04</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/education/learn-about-organic-chemistry.html">
+            <img class="thumb" src="images/7-1-300x200.jpg" alt="">
+            <span class="tag">Education</span><h3>Learn About Organic Chemistry</h3><div class="meta">By WebEditor / 2020-08-02</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/education/the-importance-of-primary-school-mathematics.html">
+            <img class="thumb" src="images/7-300x200.jpg" alt="">
+            <span class="tag">Education</span><h3>The Importance Of Primary School Mathematics</h3><div class="meta">By WebEditor / 2020-08-02</div></a></article>
+        </div>
+      </section>
+
+      <!-- College -->
+      <section id="college">
+        <div class="sec-head"><h2>College and University</h2><a href="http://www.educationactivities.org/category/college-and-university">View all →</a></div>
+        <div class="grid">
+          <article class="card"><a href="http://www.educationactivities.org/college-and-university/writing-subreddits-on-reddit.html">
+            <img class="thumb" src="images/reddit-300x200.jpg" alt="">
+            <span class="tag">College and University</span><h3>Writing Subreddits on Reddit</h3>
+            <p>Reddit provides a platform that ensures the writers get honest feedback and community support.</p>
+            <div class="meta">By WebEditor / 2020-08-07</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/college-and-university/how-to-prepare-for-jee-advanced-2020.html">
+            <img class="thumb" src="images/images-78-300x200.jpg" alt="">
+            <span class="tag">College and University</span><h3>How to prepare for JEE Advanced 2020?</h3><div class="meta">By WebEditor / 2020-02-01</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/college-and-university/a-discussion-regarding-why-physical-education-in-early-school-is-so-important.html">
+            <img class="thumb" src="images/pexels-photo-2202685-300x200.jpeg" alt="">
+            <span class="tag">College and University</span><h3>A Discussion Regarding Why Physical Education in Early School is So Important</h3><div class="meta">By WebEditor / 2020-01-08</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/college-and-university/getting-your-child-to-love-school.html">
+            <img class="thumb" src="images/VSEO_19_01_551-300x200.jpg" alt="">
+            <span class="tag">College and University</span><h3>Getting Your Child to Love School</h3><div class="meta">By WebEditor / 2019-01-18</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/college-and-university/bba-faculties-in-delhi-ncr-construct-a-strong-company-basis.html">
+            <img class="thumb" src="images/BBA-Colleges-In-Delhi-NCR-Build-A-Solid-Corporate-Foundation-300x200.jpg" alt="">
+            <span class="tag">College and University</span><h3>BBA Faculties In Delhi NCR – Construct A Strong Company Basis</h3><div class="meta">By WebEditor / 2018-09-18</div></a></article>
+        </div>
+      </section>
+
+      <!-- Online -->
+      <section id="online">
+        <div class="sec-head"><h2>Online Education</h2><a href="http://www.educationactivities.org/category/online-education">View all →</a></div>
+        <div class="grid">
+          <article class="card"><a href="http://www.educationactivities.org/online-education/5-big-benefits-of-digital-marketing-career.html">
+            <img class="thumb" src="images/Benefits-of-Digital-Marketing-Banner-300x200.png" alt="">
+            <span class="tag">Online Education</span><h3>5 Big Benefits of Digital Marketing Career</h3><div class="meta">By WebEditor / 2021-05-24</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/online-education/why-do-i-need-to-do-an-mba.html">
+            <img class="thumb" src="images/1-1-300x200.jpg" alt="">
+            <span class="tag">Online Education</span><h3>Why do I need to do an MBA?</h3><div class="meta">By WebEditor / 2019-07-14</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/online-education/buy-college-essays-online-on-onlinecollegeessay-com.html">
+            <img class="thumb" src="images/Have-to-Buy-Dell-2330-Toner-Primarily-Based-Printers-300x200.jpeg" alt="">
+            <span class="tag">Online Education</span><h3>Buy college essays online on OnlineCollegeEssay.com</h3><div class="meta">By WebEditor / 2019-01-16</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/online-education/the-on-line-aed-coaching-that-makes-you-ready-to-deal-with-emergencies.html">
+            <img class="thumb" src="images/The-Online-AED-Training-That-Makes-You-Prepared-to-Tackle-Emergencies-300x200.jpg" alt="">
+            <span class="tag">Online Education</span><h3>The On-line AED Coaching That Makes You Ready to Deal with Emergencies</h3><div class="meta">By WebEditor / 2018-09-26</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/online-education/newest-5-girls-training-information-price-studying.html">
+            <img class="thumb" src="images/Latest-5-Women-Education-News-Worth-Reading-300x200.png" alt="">
+            <span class="tag">Online Education</span><h3>Newest 5 Girls Training Information Price Studying</h3><div class="meta">By WebEditor / 2018-09-25</div></a></article>
+        </div>
+      </section>
+
+      <!-- General -->
+      <section id="general">
+        <div class="sec-head"><h2>Education Activities</h2><a href="http://www.educationactivities.org/category/general">View all →</a></div>
+        <div class="grid">
+          <article class="card noimg"><a href="http://www.educationactivities.org/general/treadmill-critiques-no-improved-way-to-pick-out-your-physical-fitness-tools.html">
+            <span class="tag">General</span><h3>Treadmill Critiques – No Improved Way to pick out Your Physical fitness Tools</h3><div class="meta">By WebEditor / 2020-06-12</div></a></article>
+          <article class="card noimg"><a href="http://www.educationactivities.org/general/what-you-ought-to-know-about-educating-particular-training.html">
+            <span class="tag">General</span><h3>What You Ought to Know About Educating Particular Training</h3><div class="meta">By WebEditor / 2018-09-23</div></a></article>
+          <article class="card noimg"><a href="http://www.educationactivities.org/general/easy-methods-to-manage-your-dwelling-for-instructional-success.html">
+            <span class="tag">General</span><h3>Easy methods to Manage Your Dwelling for Instructional Success</h3><div class="meta">By WebEditor / 2018-09-22</div></a></article>
+          <article class="card noimg"><a href="http://www.educationactivities.org/general/overview-of-the-ministry-of-schooling.html">
+            <span class="tag">General</span><h3>Overview of the Ministry of Schooling</h3><div class="meta">By WebEditor / 2018-09-21</div></a></article>
+          <article class="card noimg"><a href="http://www.educationactivities.org/general/which-instructional-platform-is-greatest-for-your-baby-differentiating-on-line-vs-conventional-training.html">
+            <span class="tag">General</span><h3>Which Instructional Platform Is Greatest for Your Baby? Differentiating On-line Vs Conventional Training</h3><div class="meta">By WebEditor / 2018-09-20</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/general/break-free-from-dead-end-jobs-electrician-training-opens-the-door-to-many-career-options.html">
+            <img class="thumb" src="images/Boost_18_1101_75-300x200.jpg" alt="">
+            <span class="tag">General</span><h3>Break Free from Dead End Jobs: Electrician Training Opens the Door to Many Career Options</h3><div class="meta">By WebEditor / 2017-11-09</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/general/overcoming-particular-schooling-apathy-and-efficiently-navigating-the-particular-schooling-maze.html">
+            <img class="thumb" src="images/Overcoming-Special-Education-Apathy-and-Successfully-Navigating-the-Special-Education-Maze-300x200.jpg" alt="">
+            <span class="tag">General</span><h3>Overcoming Particular Schooling Apathy and Efficiently Navigating the Particular Schooling Maze!</h3><div class="meta">By WebEditor / 2018-09-01</div></a></article>
+        </div>
+      </section>
+
+      <!-- Skills + Certification -->
+      <section id="skills">
+        <div class="sec-head"><h2>Skills &amp; Certification</h2><a href="http://www.educationactivities.org/category/skills-development">View all →</a></div>
+        <div class="grid">
+          <article class="card noimg"><a href="http://www.educationactivities.org/skills-development/building-a-healthy-thriving-business-through-training-and-inspiration.html">
+            <span class="tag">Skills Development</span><h3>Building a Healthy Thriving Business through Training and Inspiration</h3><div class="meta">By WebEditor / 2019-02-11</div></a></article>
+          <article class="card noimg"><a href="http://www.educationactivities.org/skills-development/check-your-writing-at-all-times.html">
+            <span class="tag">Skills Development</span><h3>Check Your Writing at All Times</h3><div class="meta">By WebEditor / 2019-01-17</div></a></article>
+          <article class="card"><a href="http://www.educationactivities.org/certification/three-advantages-of-enrolling-in-hairstyling-diploma-programs-at-brampton-pores-and-skin-care-academy.html">
+            <img class="thumb" src="images/3-Benefits-of-Enrolling-in-Hairstyling-Diploma-Courses-at-Brampton-Skin-Care-Academy-300x200.jpg" alt="">
+            <span class="tag">Certification</span><h3>three Advantages of Enrolling in Hairstyling Diploma Programs at Brampton Pores and skin Care Academy</h3><div class="meta">By WebEditor / 2018-09-01</div></a></article>
+        </div>
+      </section>
+    </div>
+
+    <aside>
+      <div class="box">
+        <h4>Search</h4>
+        <form class="search" role="search" onsubmit="return false">
+          <input type="search" placeholder="Search articles…" aria-label="Search articles">
+          <button type="submit">Go</button>
+        </form>
+      </div>
+      <div class="box author">
+        <h4 style="text-align:left">Author Info</h4>
+        <img src="images/1140-01-21-sexiest-men-over-50-george-clooney.imgcache.rev2954711158ccf2c86ae6587a973e7fd6.web_.945.544-300x173.jpg" alt="Portrait of James E. Turner">
+        <b>James E. Turner</b>
+        <span>A Business Expert</span>
+      </div>
+      <div class="box">
+        <h4>Latest Posts</h4>
+        <ul>
+          <li><a href="http://www.educationactivities.org/online-education/5-big-benefits-of-digital-marketing-career.html">5 Big Benefits of Digital Marketing Career</a></li>
+          <li><a href="http://www.educationactivities.org/education/the-importance-of-learning-business-english-for-your-career.html">The Importance of Learning Business English for Your Career</a></li>
+          <li><a href="http://www.educationactivities.org/education/is-it-worth-doing-masters-in-the-netherlands-what-are-the-top-specialities.html">Is it worth doing masters in the Netherlands? What are the top specialities?</a></li>
+          <li><a href="http://www.educationactivities.org/education/easy-ways-of-adapting-cbd-in-your-daily-morning-routine.html">Easy Ways of Adapting CBD In Your Daily Morning Routine</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <h4>Category</h4>
+        <ul>
+          <li><a href="http://www.educationactivities.org/category/certification">Certification</a></li>
+          <li><a href="http://www.educationactivities.org/category/college-and-university">College and University</a></li>
+          <li><a href="http://www.educationactivities.org/category/education">Education</a></li>
+          <li><a href="http://www.educationactivities.org/category/financial-aid">Financial Aid</a></li>
+          <li><a href="http://www.educationactivities.org/category/general">General</a></li>
+          <li><a href="http://www.educationactivities.org/category/home-schooling">Home Schooling</a></li>
+          <li><a href="http://www.educationactivities.org/category/languages">Languages</a></li>
+          <li><a href="http://www.educationactivities.org/category/online-education">Online Education</a></li>
+          <li><a href="http://www.educationactivities.org/category/science">Science</a></li>
+          <li><a href="http://www.educationactivities.org/category/skills-development">Skills Development</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Science (full-width) -->
+  <section id="science">
+    <div class="sec-head"><h2>Science</h2><a href="http://www.educationactivities.org/category/science">View all →</a></div>
+    <div class="science-grid">
+      <article class="card"><a href="http://www.educationactivities.org/science/how-will-non-public-spaceflight-corporations-change-the-improvement-of-area-sources.html">
+        <img src="images/How-Will-Private-Spaceflight-Companies-Change-The-Development-of-Space-Resources-720x380.png" alt="">
+        <span class="tag">Science</span><h3>How Will Non-public Spaceflight Corporations Change The Improvement of Area Sources?</h3>
+        <p>Area flight is a site whereby each, the Authorities, and personal area companies and firms play sorry equally main roles...</p>
+        <div class="meta">By WebEditor / 2018-10-01</div></a></article>
+      <article class="card"><a href="http://www.educationactivities.org/science/every-part-you-should-know-about-the-deionized-water-and-ion-change-filter.html">
+        <img src="images/Everything-You-Must-Know-About-The-Deionized-Water-And-Ion-Exchange-Filter-720x380.jpg" alt="">
+        <span class="tag">Science</span><h3>Every part You Should Know About The Deionized Water And Ion Change Filter</h3>
+        <p>Deionization, which is also referred to as demineralization, is the removing of ions from water. The ions are easy electrically...</p>
+        <div class="meta">By WebEditor / 2018-09-30</div></a></article>
+      <article class="card"><a href="http://www.educationactivities.org/science/the-in-and-out-of-precision-dairy-farming.html">
+        <img src="images/The-In-And-Out-Of-Precision-Dairy-Farming-720x380.jpg" alt="">
+        <span class="tag">Science</span><h3>The In And Out Of Precision Dairy Farming</h3>
+        <p>With an array of numerous applied sciences pitching in repeatedly, its utilization within the dairy business is not any completely...</p>
+        <div class="meta">By WebEditor / 2018-09-29</div></a></article>
+      <article class="card"><a href="http://www.educationactivities.org/science/significance-of-information-scientist-in-your-enterprise.html">
+        <img src="images/Importance-Of-Data-Scientist-In-Your-Business-720x380.jpeg" alt="">
+        <span class="tag">Science</span><h3>Significance Of Information Scientist In Your Enterprise</h3>
+        <p>Within the 21st century, Information Scientist is likely one of the necessary job profiles. However the query is why this...</p>
+        <div class="meta">By WebEditor / 2018-09-06</div></a></article>
+      <article class="card"><a href="http://www.educationactivities.org/science/biography-of-mathematician-pythagoras.html">
+        <img src="images/Biography-Of-Mathematician-Pythagoras-300x200.jpg" alt="" style="aspect-ratio:720/380;width:100%;object-fit:cover;border-radius:4px;margin-bottom:12px">
+        <span class="tag">Science</span><h3>Biography Of Mathematician Pythagoras</h3><div class="meta">By WebEditor / 2018-09-01</div></a></article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h5>Education Activities</h5>
+        <p style="margin:0;opacity:.85;font-size:14.5px">The aim of education is the knowledge not of facts but of values.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="http://www.educationactivities.org/">Home</a></li>
+          <li><a href="http://www.educationactivities.org/about-us">About Us</a></li>
+          <li><a href="http://www.educationactivities.org/blog">Blog</a></li>
+          <li><a href="http://www.educationactivities.org/privacy-policy">Privacy Policy</a></li>
+          <li><a href="http://www.educationactivities.org/contact-us">Contact us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Top Category</h5>
+        <ul>
+          <li><a href="http://www.educationactivities.org/category/education">Education</a></li>
+          <li><a href="http://www.educationactivities.org/category/financial-aid">Financial Aid</a></li>
+          <li><a href="http://www.educationactivities.org/category/certification">Certification</a></li>
+          <li><a href="http://www.educationactivities.org/category/science">Science</a></li>
+          <li><a href="http://www.educationactivities.org/category/languages">Languages</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">Copyright © All rights reserved. | Theme: <a href="https://afthemes.com/products/daily-magazine">Daily Magazine</a> by <a href="https://afthemes.com/">AF themes</a>.</div>
+  </div>
+</footer>
+
+</body>
+</html>

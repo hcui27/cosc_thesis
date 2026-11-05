@@ -1,0 +1,242 @@
+[
+ {
+  "observation": "The page uses a dark theme: a near-black blue-gray body background with light text",
+  "category": "color",
+  "evidence": "body_bg rgb(14,20,25); body_color rgb(232,238,243)"
+ },
+ {
+  "observation": "There is a single cyan accent color, used for CTAs, the second line of the H1, links and badges",
+  "category": "color",
+  "evidence": "rgb(39,209,255) appears in 4 backgrounds and 5 text colors; seen on 'Since 2003', 'Login / Join', 'Join Community', 'View All', 'Sign up with email' and the 'NEW!' badge"
+ },
+ {
+  "observation": "Text on cyan buttons is a very dark teal rather than black or white",
+  "category": "color",
+  "evidence": "primary_button color rgb(4,34,44) on bg rgb(39,209,255)"
+ },
+ {
+  "observation": "Surfaces are layered with two slightly lighter dark tones for the header, cards and footer",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(23,31,39) ×12 and rgb(31,41,51) ×10; the header and footer bands are visibly lighter than the body"
+ },
+ {
+  "observation": "Secondary text uses a muted gray-blue",
+  "category": "color",
+  "evidence": "rgb(147,161,174) is used on 40 elements: stat labels, reply counts, footer links"
+ },
+ {
+  "observation": "Only one font family is used across the whole page: the system UI stack",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 119; h1 font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'"
+ },
+ {
+  "observation": "The H1 is large and bold, splits across two lines, and colors the second line cyan",
+  "category": "typography",
+  "evidence": "h1 52px weight 700; 'Honda Insight Forum' in light text, 'Since 2003' in cyan"
+ },
+ {
+  "observation": "H2 section headings are small compared with the H1",
+  "category": "typography",
+  "evidence": "h2 20px weight 700 vs h1 52px"
+ },
+ {
+  "observation": "Body text is 16px with 24px line-height",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 24px"
+ },
+ {
+  "observation": "The heading outline is H1, then H2 'Latest threads' with three H3 thread titles, then three more H2s",
+  "category": "dom-structure",
+  "evidence": "heading_outline lists 1 h1, 4 h2, 3 h3"
+ },
+ {
+  "observation": "Thread-title H3s are truncated with ellipses in the DOM text itself",
+  "category": "copy",
+  "evidence": "'50% off pick n pull this last weekend, new arm res...' and 'SOLD For sale- 2001 Red Generation 1 Insight in Mi...'"
+ },
+ {
+  "observation": "The header is a slim top bar: logo on the left, two text links and a pill button on the right",
+  "category": "layout",
+  "evidence": "Logo at x=196, w=139, h=30; 'What's new', 'Forums', 'Login / Join' right-aligned at about x=1243"
+ },
+ {
+  "observation": "The logo is an SVG image file with an italic, condensed cyan wordmark",
+  "category": "imagery",
+  "evidence": "img insightcentral-net.svg, alt 'Insight Central', natural 300×65 rendered 139×30"
+ },
+ {
+  "observation": "Content sits in a centered container about 1048px wide on a 1440px viewport",
+  "category": "layout",
+  "evidence": "Image rects span x=197 to 1243; logo x=196; page_width 1440"
+ },
+ {
+  "observation": "Below the H1, the hero shows a two-line description in muted gray, then a row of statistics",
+  "category": "layout",
+  "evidence": "'We're the ultimate Honda Insight forum...'; '414K posts' and '180.3K members'"
+ },
+ {
+  "observation": "Stats are shown as a bold number above a small lowercase label",
+  "category": "component",
+  "evidence": "'414K' over 'posts', '180.3K' over 'members'; small tag count 2, strong count 2"
+ },
+ {
+  "observation": "A 'Join Community' pill CTA sits at the far right, level with the stats row, leaving a large empty area on the right of the hero",
+  "category": "layout",
+  "evidence": "slice_00: the button at about x=1085–1243, y=358; the hero's right half is otherwise empty"
+ },
+ {
+  "observation": "Latest threads are shown in a three-column card grid with very tall images",
+  "category": "layout",
+  "evidence": "3 images, each rendered 337×700 at x=197/552/906, y=497"
+ },
+ {
+  "observation": "Thread images are cropped to a fixed 337×700 box whatever their source aspect ratio",
+  "category": "imagery",
+  "evidence": "natural sizes 700×700, 525×700 and 393×700 all render at 337×700"
+ },
+ {
+  "observation": "Thread images are user-submitted photos: car parts on gravel and a red first-generation Insight",
+  "category": "imagery",
+  "evidence": "slice_00 shows splash shields on gravel, a Honda armrest console and a red Insight in a parking lot"
+ },
+ {
+  "observation": "Thread images have empty alt attributes",
+  "category": "dom-structure",
+  "evidence": "images jpg.90819, pxl-jpg.90821 and 5c9e97d3...jpeg.90700 have alt ''; alt_missing 0"
+ },
+ {
+  "observation": "Each thread card footer shows a letter-avatar circle, a username, and a count aligned right",
+  "category": "component",
+  "evidence": "'B Bobhpete 9', 'N NewOwner 2', 'K kickstop.5 3'"
+ },
+ {
+  "observation": "Letter avatars are circular, with the initial in cyan on a dark circle",
+  "category": "component",
+  "evidence": "The B/N/K circles in slice_00; 12 elements in the pill/999px bucket"
+ },
+ {
+  "observation": "The 'Top Contributors this Month' section has a 'View All' text link in cyan, right-aligned on the heading row",
+  "category": "layout",
+  "evidence": "slice_01: 'View All' at the right edge, level with the H2"
+ },
+ {
+  "observation": "Contributor cards are three horizontal cards, each with an avatar, a bold username and a reply count",
+  "category": "component",
+  "evidence": "'hondarider90 183 Replies', 'mudder 102 Replies', 'Joule 82 Replies'"
+ },
+ {
+  "observation": "Contributor avatars mix letter placeholders with one photo avatar",
+  "category": "imagery",
+  "evidence": "'H' and 'J' letter circles; mudder uses image-05.jpg rendered 44×44"
+ },
+ {
+  "observation": "Recommended Communities cards show a square, rounded-corner logo tile, a bold name and a member count",
+  "category": "component",
+  "evidence": "Profile PNGs 360×360 rendered 64×64; 'DIY Electric Car Forums 85K+ members', 'Snowmobile World 213K+ members', 'Royal Enfield Forum 20+ members'"
+ },
+ {
+  "observation": "A small cyan pill badge reading 'NEW!' appears inline before the member count",
+  "category": "component",
+  "evidence": "Royal Enfield Forum card: 'NEW!' badge before '20+ members'"
+ },
+ {
+  "observation": "Recommended communities cover unrelated hobbies, not only cars",
+  "category": "copy",
+  "evidence": "Snowmobile World, Royal Enfield Forum (motorcycles), DIY Electric Car Forums"
+ },
+ {
+  "observation": "A sign-up panel is a large rounded, bordered box with a centered heading and three horizontal auth buttons",
+  "category": "component",
+  "evidence": "H2 'Join now to ask and comment!'; 'Continue with Facebook', 'Continue with Google', 'or', 'Sign up with email'"
+ },
+ {
+  "observation": "Social auth buttons are dark pills with a subtle outline, while the email option is the filled cyan pill",
+  "category": "component",
+  "evidence": "slice_01: Facebook and Google buttons are dark; 'Sign up with email' has a cyan fill"
+ },
+ {
+  "observation": "Auth options are text-only, with no provider icons",
+  "category": "imagery",
+  "evidence": "svgs 0; the Facebook/Google buttons show only text"
+ },
+ {
+  "observation": "All clickable controls are anchors; the page has no button elements",
+  "category": "dom-structure",
+  "evidence": "counts.buttons 0; anchors 25"
+ },
+ {
+  "observation": "Cards use a medium border radius with a thin border and no shadows",
+  "category": "decoration",
+  "evidence": "border_radius_buckets 8–15px: 14; box_shadows 0; card outlines are visible in the slices"
+ },
+ {
+  "observation": "CTAs use full pill radii",
+  "category": "decoration",
+  "evidence": "primary_button radius 999px; pill bucket 12"
+ },
+ {
+  "observation": "Decorative effects are minimal: no gradients, blur, animations or transforms, and only a few transitions",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, transitions 6"
+ },
+ {
+  "observation": "The footer is a lighter full-width band separated by a top border line",
+  "category": "layout",
+  "evidence": "slice_01: the footer starts at about y=663 with a lighter background"
+ },
+ {
+  "observation": "Footer links are in a single horizontal row of muted-gray text",
+  "category": "component",
+  "evidence": "'Home About Us Terms of Use Privacy Policy Help Contact us RSS'"
+ },
+ {
+  "observation": "The footer includes a corporate address, a platform credit, and a disclaimer of non-affiliation with Honda",
+  "category": "copy",
+  "evidence": "'VerticalScope Inc., 111 Peter Street...'; 'The Fora platform includes forum software by XenForo'; '...not in any way affiliated with Honda Motor Company'"
+ },
+ {
+  "observation": "Semantic landmarks are used: header, nav, main, three sections and footer, but no article or aside",
+  "category": "dom-structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 3, footer 1, article 0, aside 0"
+ },
+ {
+  "observation": "Layout is built mostly with flexbox, with some CSS grid",
+  "category": "dom-structure",
+  "evidence": "display_flex 23, display_grid 8"
+ },
+ {
+  "observation": "Styling comes from one embedded style block with a small set of non-utility class names",
+  "category": "dom-structure",
+  "evidence": "style 1, stylesheets 0, inline_style_attrs 0; classes total 39, unique 20, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "The page has no scripts and no structured data",
+  "category": "dom-structure",
+  "evidence": "scripts 0; jsonld_blocks 0"
+ },
+ {
+  "observation": "Only three meta tags are present (charset, viewport, description)",
+  "category": "dom-structure",
+  "evidence": "meta_names: charset, viewport, description"
+ },
+ {
+  "observation": "Copy is short, with exclamations in promotional lines and no emoji",
+  "category": "copy",
+  "evidence": "words 186, exclamations 3, emoji 0; 'and its fuel economy and specs!', 'Join now to ask and comment!'"
+ },
+ {
+  "observation": "The page title repeats the H1 with the site name, joined by an en dash",
+  "category": "copy",
+  "evidence": "title 'Insight Central – Honda Insight Forum Since 2003'"
+ },
+ {
+  "observation": "Some ARIA attributes are present",
+  "category": "dom-structure",
+  "evidence": "aria_attrs 5"
+ },
+ {
+  "observation": "The page is relatively short for a 1440px-wide desktop page, and the thread image row takes up a large share of it",
+  "category": "layout",
+  "evidence": "page_height 2190; thread images occupy y=497–1197 (700px)"
+ }
+]

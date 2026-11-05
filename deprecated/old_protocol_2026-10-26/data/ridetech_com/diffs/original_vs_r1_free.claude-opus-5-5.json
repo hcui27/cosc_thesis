@@ -1,0 +1,338 @@
+[
+ {
+  "observation": "The two pages use different document titles",
+  "category": "metadata",
+  "evidence": "A title: 'Ridetech Home - Ridetech'; B title: 'Ridetech | Performance Suspension Specialist'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A declares a regional language code and B declares a generic one",
+  "category": "metadata",
+  "evidence": "A lang='en-US'; B lang='en'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a large set of social/SEO meta tags and JSON-LD. B has only three meta tags, including a description",
+  "category": "metadata",
+  "evidence": "A meta_names include og:*, twitter:*, article:*, robots, generator (16 meta) plus jsonld_blocks=1; B meta: charset, viewport, description; jsonld_blocks=0",
+  "which_side": "A"
+ },
+ {
+  "observation": "Neither page has an h1",
+  "category": "semantic structure",
+  "evidence": "h1_count=0 on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses nav elements and more section elements, while A has no nav",
+  "category": "semantic structure",
+  "evidence": "A semantic nav=0, section=2; B nav=2, section=5",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is much heavier, with far more divs, scripts and noscript tags",
+  "category": "DOM structure",
+  "evidence": "A div=462, script=32, noscript=45, style=29, link=19; B div=32, script=1, style=1, link=1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A contains tables in its markup and B has none",
+  "category": "DOM structure",
+  "evidence": "A table=5, tr=37, td=96, th=15; B has no table tags",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has more headings, including many h5s, and some headings with empty text",
+  "category": "heading outline",
+  "evidence": "A h5=29, h2=8; outline includes empty h2 and h4 entries plus 'Sign up' and 'Cart' headings; B h2=6, h3=5, h4=5, no empty headings",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's heading text is mostly uppercase, while A's headings use title case",
+  "category": "copy treatment",
+  "evidence": "B outline: 'SHOP BY VEHICLE', 'SHOP BY PRODUCT', 'LATEST NEWS', 'GET CONNECTED'; A: 'Shop by Vehicle', 'Shop by Product', 'Latest News', 'Get Connected'",
+  "which_side": "B"
+ },
+ {
+  "observation": "B turns the news post titles into h3 headings",
+  "category": "heading outline",
+  "evidence": "B outline includes h3 'Salt Lake City GoodGuys Car show Info & Photo Gallery.' and h3 'Great Times at the C-10 Nationals…'; A outline has no news-title headings",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses the Open Sans webfont, while B uses a system-ui font stack",
+  "category": "typography",
+  "evidence": "A fonts: Open Sans 1048, Lucida Grande 163, fl-icons 20; B fonts: system-ui 274, Arial 7",
+  "which_side": "both"
+ },
+ {
+  "observation": "A loads an icon font and B uses none",
+  "category": "typography",
+  "evidence": "A 'fl-icons' on 20 elements, A i tags=21; B has no icon font and uses an emoji 🛒 and 📞 in the header (emoji=3)",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's h2 headings are larger",
+  "category": "typography",
+  "evidence": "h2 font_size: A 25.6px, B 35.2px; both weight 700",
+  "which_side": "B"
+ },
+ {
+  "observation": "Both pages share the same body text size and line height",
+  "category": "typography",
+  "evidence": "body_font_size 16px and line_height 25.6px on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body text is mid-grey, while B's is near-black",
+  "category": "color",
+  "evidence": "body_color A rgb(119,119,119); B rgb(21,23,26)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The red accents differ slightly between the pages",
+  "category": "color",
+  "evidence": "A red bg rgb(220,31,38) ×11; B red bg rgb(227,29,60) ×6",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette relies on slate-blue text and light grey-blue backgrounds",
+  "category": "color",
+  "evidence": "A top text rgb(83,104,130) ×234; top bg rgb(243,245,247) ×37 and rgb(58,72,86) ×15",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses near-black rgb(21,23,26) as both its main text color and a recurring background",
+  "category": "color",
+  "evidence": "B top_backgrounds rgb(21,23,26) ×7; vehicle tiles and top utility bar are near-black in B_slice_00",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses box shadows and B uses none",
+  "category": "decoration",
+  "evidence": "box_shadows A 16, B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has one gradient background and A has none",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds A 0, B 1; B's catalog band and footer fade from dark grey to black (B_slice_02, B_slice_03)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has far more transitions and transforms",
+  "category": "effects",
+  "evidence": "transitions A 372 vs B 35; transforms A 21 vs B 3",
+  "which_side": "A"
+ },
+ {
+  "observation": "Most of A's elements have no rounding, while B uses more 8–15px rounding",
+  "category": "shape",
+  "evidence": "radius buckets A: 0→1186, 8–15→1, pill→17; B: 0→233, 8–15→29, pill→6",
+  "which_side": "both"
+ },
+ {
+  "observation": "B lays some content out with CSS grid, while A uses only flex",
+  "category": "layout",
+  "evidence": "display_grid A 0, B 6; display_flex A 128, B 37",
+  "which_side": "B"
+ },
+ {
+  "observation": "B is the taller page",
+  "category": "layout",
+  "evidence": "page_height A 4129px, B 4713px (both 1440 wide)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's content runs nearly full width, while B's sits in a centered container with about 140px side margins",
+  "category": "layout",
+  "evidence": "A logo x=15, product images start x=15; B logo x=140, product images start x=141 and end at ~1299",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a two-column main area with a right sidebar, and B is single-column",
+  "category": "layout",
+  "evidence": "A_slice_00/01: product grid left (~x15–945), sidebar right with Free Shipping ad, Get Connected form, warranty ad, catalog, Latest News (images x≈975–1425); B stacks every section full width",
+  "which_side": "A"
+ },
+ {
+  "observation": "A shows a cookie consent banner over the top of the page",
+  "category": "component choice",
+  "evidence": "A_slice_00: 'We use cookies…' bar with 'Cookie settings' and black ACCEPT button covering the logo and search; cookieyes logo in A images; nothing similar in B",
+  "which_side": "A"
+ },
+ {
+  "observation": "B adds a dark utility bar above the header",
+  "category": "component choice",
+  "evidence": "B_slice_00: black bar with '📞 812.481.4787', 'Sign Up for News!', 'Get a FREE Catalog', 'Login / Register'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's header has a search field, while B's header has no visible search",
+  "category": "component choice",
+  "evidence": "A_slice_00: search input with magnifier button beside the logo; B_slice_00 header shows logo, nav links and cart only",
+  "which_side": "A"
+ },
+ {
+  "observation": "A puts its navigation in a separate dark bar under the logo row. B puts it inline on the same white row as the logo",
+  "category": "navigation",
+  "evidence": "A_slice_00: dark grey bar with PRODUCTS…CAREERS centered; B_slice_00: nav links on the white header row between logo and cart",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's nav has dropdown carets and a VIDEOS item, which B's nav lacks",
+  "category": "navigation",
+  "evidence": "A nav: PRODUCTS˅ APPLICATIONS˅ NEWS˅ TECH˅ VIDEOS DEALERS…; B nav: PRODUCTS APPLICATIONS NEWS TECH DEALERS FORUM PROJECTS INDUSTRIAL CAREERS, no carets",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's main button is a red pill, while B's detected 'primary button' is a transparent Menu toggle with a 6px radius",
+  "category": "buttons",
+  "evidence": "A primary_button 'GET A FREE CATALOG' bg rgb(220,31,38), radius 99px; B primary_button '☰ Menu' bg transparent, radius 6px",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero sliders differ in height, in which slide is visible first, and in their controls",
+  "category": "imagery",
+  "evidence": "A slides 1440×338 at y=181 showing the RidePRO e5 control-panel slide; B slides 1440×540 at y=111 showing the Silverado 'NEW 2007-2013' slide, with ‹ › arrows and 4 dot indicators",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's slider includes a fourth banner image that A lacks, but it reports zero natural size",
+  "category": "imagery",
+  "evidence": "B image camaro-subframe-connector-home-page-banner.jpg natural [0,0]; A's slider has 21-silverado, 21-ridepro-e5, falcon plus an svg placeholder",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's free-shipping strip has a subline, while A's is a single heading",
+  "category": "copy treatment",
+  "evidence": "B_slice_00: 'FREE SHIPPING' + 'Free Ground Shipping To The Continental U.S. For Orders Of $100 Or More'; A_slice_00: 'FREE SHIPPING' only. A instead uses a separate free-shipping-500x188.jpg ad in the sidebar",
+  "which_side": "B"
+ },
+ {
+  "observation": "The vehicle categories are bare silhouettes with uppercase labels on A and dark rounded tiles on B",
+  "category": "component choice",
+  "evidence": "A_slice_00: red silhouettes on white with 'MUSCLE CARS AND CLASSICS' etc. in letter-spaced caps; B_slice_00: five near-black rounded cards with silhouettes and sentence-case labels like 'Muscle Cars and Classics'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B puts a short red underline under each section heading",
+  "category": "decoration",
+  "evidence": "B_slice_00/02: red bar under 'SHOP BY VEHICLE', 'SHOP BY PRODUCT', 'LATEST NEWS'; A uses a thin grey rule under 'Shop by Product'",
+  "which_side": "B"
+ },
+ {
+  "observation": "The product grids use different column counts and card treatments",
+  "category": "layout",
+  "evidence": "A: 4 columns of 188px images with no card borders and uppercase centered labels; B: 5 columns of 214px images inside bordered white rounded cards on a light grey section, with left-aligned bold labels",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows images for only 11 product categories. The rest are text-only cards with a red left border",
+  "category": "imagery",
+  "evidence": "B images list 11 product thumbnails; B_slice_01: LevelTow Kits, Tru Turn, TigerCage, CoolRide, Components, AIRoverLeaf, Steering, Tools, Brakes, Apparel, Bushings appear as text cards with red left edge; A shows images for all categories including Apparel and Bushings",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's product images have descriptive alt text, while B's are empty",
+  "category": "imagery",
+  "evidence": "A alts e.g. 'Shock Absorbers', 'R-Joint Rod Ends', 'Tubular Control Arms'; B product thumbnails alt=''. B hero images have descriptive alts ('RidePRO-E5 air suspension control'), while A hero alts are ''",
+  "which_side": "both"
+ },
+ {
+  "observation": "A reports images missing alt attributes and B reports none",
+  "category": "imagery",
+  "evidence": "alt_missing A 2, B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses more images overall, including raster ad banners",
+  "category": "imagery",
+  "evidence": "images A 43, B 22; A includes hp-ad-1.jpg (warranty ad), free-shipping-500x188.jpg, free-catalog-copy-500x188.png; B has none of these",
+  "which_side": "A"
+ },
+ {
+  "observation": "A presents the warranty as an image ad, while B makes it a text link",
+  "category": "copy treatment",
+  "evidence": "A_slice_01: '1,000,001 MILE WARRANTY / WE GO THE EXTRA MILE' banner image; B_slice_02: underlined pink link 'See our 1,000,001 Mile Warranty →'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The free catalog block is a sidebar card in A and a full-width dark band in B",
+  "category": "component choice",
+  "evidence": "A_slice_01: catalog photo with white overlay card 'FREE Product Catalog' and small red 'REQUEST A CATALOG' pill; B_slice_02: dark gradient band with catalog image left and large red 'FREE' + 'PRODUCT CATALOG' + 'REQUEST A CATALOG' button right",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's news items have photos, while B's news cards are text-only",
+  "category": "imagery",
+  "evidence": "A has photo34-1-500x375.jpg and IMG_2627-500x333.jpg in the sidebar news; B_slice_02 shows two bordered text cards with a red left edge and no images",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'VIEW ALL NEWS' button is a full-width bar, while B's is a compact centered button",
+  "category": "buttons",
+  "evidence": "A_slice_02: red bar spanning ~975–1425px; B_slice_02: small rounded red button centered under the news cards",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's brand-statement section sits on a photo with a notch divider. B uses a flat grey band with a letter-spaced red tagline",
+  "category": "imagery",
+  "evidence": "A_slice_02: orange Camaro photo background with a white downward triangle notch, text in white; B_slice_02: solid grey band, 'ridetech.com' large, 'PERFORMANCE SUSPENSION SPECIALIST' in spaced red caps",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Let us know' call to action is a red band with social icons on A, and on B it is centered text with an EMAIL SALES button",
+  "category": "component choice",
+  "evidence": "A_slice_02: red strip with 'Don't see what you're looking for? Let us know!' left and circular icon buttons ('Connect With Us:') right; B_slice_02/03: centered heading, red 'EMAIL SALES' button, then text pill buttons Facebook/Instagram/YouTube/Email/Call",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows social links as text pills, while A uses icon circles",
+  "category": "component choice",
+  "evidence": "A svgs=10 and icon circles for fb/ig/mail/phone/youtube; B svgs=0 with outlined pill buttons labeled 'Facebook', 'Instagram', etc.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The newsletter form is a stacked sidebar form in A and a horizontal inline row in B",
+  "category": "forms",
+  "evidence": "A_slice_00/01: 'Get Connected' with labeled First Name, Last Name, Email fields stacked and a 'SIGN UP' button; B_slice_03: centered 'GET CONNECTED' with three placeholder inputs and a SIGN UP button in one row",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has many more forms and inputs",
+  "category": "forms",
+  "evidence": "A form=4, input=27, label=15; B form=1, input=3, no label tags",
+  "which_side": "A"
+ },
+ {
+  "observation": "The footer differs between the pages: A shows payment icons and a FREE CATALOG image, while B adds 'Back to top' and lists Free Catalog as a link",
+  "category": "footer",
+  "evidence": "A_slice_03: VISA/MasterCard/Discover/AmEx/PayPal icons and red FREE CATALOG graphic, list items separated by rules; B_slice_03: uppercase letter-spaced column headings, 'Free Catalog' text link, 'Back to top ↑', no payment icons",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer column headings are uppercase throughout, while A mixes title-case and uppercase headings",
+  "category": "typography",
+  "evidence": "A: 'Contact Info', 'Your Account' bold title case alongside 'INFORMATION', 'APPLICATIONS'; B: 'CONTACT INFO', 'INFORMATION', 'APPLICATIONS', 'YOUR ACCOUNT' all letter-spaced caps",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses far fewer CSS classes and inline style attributes",
+  "category": "DOM structure",
+  "evidence": "classes total/unique A 2072/504 vs B 90/35; inline_style_attrs A 97 vs B 4",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has more ARIA attributes and links",
+  "category": "DOM structure",
+  "evidence": "aria_attrs A 60 vs B 19; anchors A 189 vs B 118",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has more visible words",
+  "category": "copy treatment",
+  "evidence": "text_stats words A 486 vs B 345; exclamations 3 on both",
+  "which_side": "A"
+ }
+]

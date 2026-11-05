@@ -1,0 +1,257 @@
+[
+ {
+  "observation": "The page has no h1; the heading outline has only one h2 ('What's new at Great Day Improvements') and one h3 ('Call Us Today at 888-468-0700').",
+  "category": "DOM/semantic structure",
+  "evidence": "facts.json h1_count: 0; heading_outline lists one level-2 and one level-3 heading"
+ },
+ {
+  "observation": "The document is short at 1531px tall on a 1440px-wide viewport, so it fits in roughly two screenshot slices.",
+  "category": "layout",
+  "evidence": "layout.page_height 1531, page_width 1440; 2 slices"
+ },
+ {
+  "observation": "The semantic landmarks are one header, one main, four sections and one footer. There is no nav, article, aside or figure element.",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic: header 1, main 1, section 4, footer 1, nav 0, article 0, aside 0, figure 0"
+ },
+ {
+  "observation": "The footer marks up the corporate office details with an address element.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts.address: 1; the footer shows '700 East Highland Road, Macedonia, OH 44056'"
+ },
+ {
+  "observation": "Two font families are in use: Georgia (serif) on 41 elements and Helvetica Neue (sans-serif) on 25.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Georgia 41, Helvetica Neue 25"
+ },
+ {
+  "observation": "The centered intro paragraph is set in a serif face, which matches Georgia. The headline, phone numbers and footer text are sans-serif.",
+  "category": "typography",
+  "evidence": "Slice 0: the intro paragraph has serif letterforms; 'What's new' and the footer text are sans"
+ },
+ {
+  "observation": "The h2 is large and light-weight, at 30.4px and font-weight 300.",
+  "category": "typography",
+  "evidence": "facts h2: font_size 30.4px, font_weight 300"
+ },
+ {
+  "observation": "The h2 is split into two colors and weights: 'What's new' is in bold orange and 'at Great Day Improvements' is in light blue.",
+  "category": "typography",
+  "evidence": "Slice 0 heading at y≈697; the orange matches rgb(243,154,30) and the blue matches rgb(23,72,127)"
+ },
+ {
+  "observation": "Body text is 16px with a line-height of 25.6px, a 1.6 ratio.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px"
+ },
+ {
+  "observation": "The body background is a warm off-white, rgb(246,244,239), and the body text is dark slate, rgb(43,52,64).",
+  "category": "color",
+  "evidence": "colors.body_bg and colors.body_color"
+ },
+ {
+  "observation": "Navy blue rgb(15,47,85) appears as a background twice, behind the hero band and the bottom footer band.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(15,47,85) x2; slice 0 hero band and slice 1 footer"
+ },
+ {
+  "observation": "A mid blue, rgb(23,72,127), is the most frequent text color and also the background of the contact band in the upper footer.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(23,72,127) 24; top_backgrounds rgb(23,72,127) 1; slice 0 band at y≈1020–1240"
+ },
+ {
+  "observation": "Orange rgb(243,154,30) is the accent color. It is used for the header bottom rule, the active carousel dot, the phone number in the footer heading, the 'What's new' text and the 'Back to top' link.",
+  "category": "color",
+  "evidence": "primary_button bg rgb(243,154,30); orange line under the header in slice 0; orange 'Back to top' in slice 1"
+ },
+ {
+  "observation": "A pale blue-gray, rgb(197,208,223), is used for six text elements, which fits the muted footer text.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(197,208,223) 6"
+ },
+ {
+  "observation": "No gradient backgrounds are applied through CSS. The metallic and blue gradients on the promo cards are baked into the raster images.",
+  "category": "decoration/effects",
+  "evidence": "effects.gradient_backgrounds 0; the promo cards are gdi-whatsnew-new-finance.jpg and whats-new-save-big.jpg"
+ },
+ {
+  "observation": "The header is white. On the left is the main logo (126×76), in the center is a row of three small brand logos, and on the right is the phone number with 'Call us today' under it.",
+  "category": "layout",
+  "evidence": "Image rects: logo x216; small logos at x577, 676 and 789; phone text at the right in slice 0"
+ },
+ {
+  "observation": "The three center logos are for the family of brands: Great Day Improvements, Patio Enclosures and Stanek Windows.",
+  "category": "imagery handling",
+  "evidence": "logo-gdi-small.png, logo-pe-small.png and logo-st-small.png with their matching alt text"
+ },
+ {
+  "observation": "The header contains no navigation menu or link list.",
+  "category": "component choices",
+  "evidence": "semantic.nav 0; slice 0 header shows only logos and a phone number"
+ },
+ {
+  "observation": "A thin orange horizontal rule separates the header from the navy hero band.",
+  "category": "decoration/effects",
+  "evidence": "Slice 0, y≈100, orange line across the full width"
+ },
+ {
+  "observation": "The hero is a 676×301 image carousel, centered on the full-width navy band.",
+  "category": "component choices",
+  "evidence": "Five hp-rotator-*.jpg images at x382, y128, 676×301"
+ },
+ {
+  "observation": "All five carousel images are stacked at the same position, and each pair overlaps by the full 203476px² area.",
+  "category": "imagery handling",
+  "evidence": "image_overlaps lists 10 pairs, each 203476 px² (676×301)"
+ },
+ {
+  "observation": "Five circular indicator dots sit at the bottom of the carousel, with the first filled orange and the rest outlined white.",
+  "category": "component choices",
+  "evidence": "Slice 0, dots at y≈414; the buttons count is 5; the primary_button has radius 50% and the orange bg"
+ },
+ {
+  "observation": "The carousel dot buttons have no text content and zero padding.",
+  "category": "component choices",
+  "evidence": "primary_button text '', padding 0px"
+ },
+ {
+  "observation": "The visible hero slide is a four-panel photo collage of a sunroom, a window, a door and an awning. The caption 'Sunrooms | Windows | Doors | And More' is part of the image.",
+  "category": "imagery handling",
+  "evidence": "hp-rotator-intro.jpg with alt 'Sunrooms, windows, doors and more'; slice 0"
+ },
+ {
+  "observation": "The hero image has a drop shadow against the navy background.",
+  "category": "decoration/effects",
+  "evidence": "effects.box_shadows 3; a soft shadow is visible around the carousel in slice 0"
+ },
+ {
+  "observation": "The content is laid out in a narrow centered column, about 720px wide for the intro text, with wide empty margins at 1440px.",
+  "category": "layout",
+  "evidence": "Slice 0: the intro paragraph spans roughly x360–1080; the promo cards span x403–1037"
+ },
+ {
+  "observation": "The intro copy is a single four-line paragraph, center-aligned, that describes the company as the exclusive manufacturer and installer of Patio Enclosures® sunrooms and Stanek Windows.",
+  "category": "copy treatment",
+  "evidence": "Slice 0 paragraph at y≈516–608"
+ },
+ {
+  "observation": "The 'What's new' section is two side-by-side promo cards. Each card is a 284×194 image inside a white frame with a light border.",
+  "category": "component choices",
+  "evidence": "Images at x413 and x743, y760, 284×194; white boxes are visible in slice 0"
+ },
+ {
+  "observation": "The promo card artwork uses condensed uppercase type with embossed and drop-shadow effects, dotted rule lines and a ribbon star badge. All of it is rendered inside the images.",
+  "category": "imagery handling",
+  "evidence": "Slice 0: 'NEW FINANCING OPTIONS', '0 INTEREST PAYMENT' and 'SAVE BIG' with a star ribbon badge"
+ },
+ {
+  "observation": "Three different phone numbers appear on the page: 888-468-0700 in the header and footer heading, and 800-230-8301 inside the 'Save Big' promo image.",
+  "category": "copy treatment",
+  "evidence": "Slice 0 header, footer h3 and promo card text"
+ },
+ {
+  "observation": "The footer contact area has two columns: on the left, the 'Call Us Today' h3 and the representatives' hours; on the right, a 'Corporate Office' script-lettered image and the address.",
+  "category": "layout",
+  "evidence": "Slice 0, y≈1060–1200; Corporate-Office.png at x736"
+ },
+ {
+  "observation": "The 'Corporate Office' label is a raster image of script lettering on a white box, not live text.",
+  "category": "imagery handling",
+  "evidence": "Corporate-Office.png 184×46; the script font is visible in slice 0"
+ },
+ {
+  "observation": "The hours are written in a compact pipe-separated format: 'Mon–Thurs: 9am–8pm | Fri: 9am–7pm | Sat & Sun: 9am–1pm EST'.",
+  "category": "copy treatment",
+  "evidence": "Slice 0 footer text"
+ },
+ {
+  "observation": "Pipe characters are used as separators in both the hero caption and the hours line.",
+  "category": "copy treatment",
+  "evidence": "'Sunrooms | Windows | Doors | And More' and the hours line in slice 0"
+ },
+ {
+  "observation": "The bottom footer band is darker navy and holds a centered copyright, an 'An Evolve Creative Group Web Solution' credit with an underlined link, and a long run of state contractor license numbers.",
+  "category": "copy treatment",
+  "evidence": "Slice 0 bottom and slice 1: 'CT HIC.0631661; DC #420214000016; ...'"
+ },
+ {
+  "observation": "The license numbers are set as one run-on paragraph separated by semicolons, in small light text.",
+  "category": "typography",
+  "evidence": "Slice 1, three centered lines ending 'WV051266'"
+ },
+ {
+  "observation": "The certification badges (Energy Star, Lead-Safe EPA, NFRC, ICC, Qualified Remodeler Top 500, Exterior 200) are combined into one image on a white rounded panel.",
+  "category": "imagery handling",
+  "evidence": "gdi-logos.png 366×56, with alt listing all six; slice 1"
+ },
+ {
+  "observation": "The page ends with a centered orange '↑ Back to top' link that uses an arrow character.",
+  "category": "component choices",
+  "evidence": "Slice 1, y≈183"
+ },
+ {
+  "observation": "Most corners are square: 56 elements have a 0 radius, 5 have a small radius (1–7px) and 5 are fully round (the carousel dots).",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets: 0: 56, 1–7: 5, pill: 5"
+ },
+ {
+  "observation": "The page has 10 transitions but no CSS animations or transforms.",
+  "category": "decoration/effects",
+  "evidence": "effects transitions 10, animations 0, transforms 0"
+ },
+ {
+  "observation": "Layout uses very little grid or flex: one grid container and four flex containers.",
+  "category": "layout",
+  "evidence": "layout.display_grid 1, display_flex 4"
+ },
+ {
+  "observation": "The class footprint is small: 23 class usages with 15 unique names, and no Tailwind-style utility classes.",
+  "category": "DOM/semantic structure",
+  "evidence": "classes total 23, unique 15, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Styles are in one inline style block with no external stylesheets, and the page has a single script.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts.style 1; counts.stylesheets 0; scripts 1; inline_style_attrs 1"
+ },
+ {
+  "observation": "All 13 images have alt text, and there are 11 ARIA attributes.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts.alt_missing 0, images 13, aria_attrs 11"
+ },
+ {
+  "observation": "There is very little live text: 132 words, with no emoji, em dashes or exclamation marks.",
+  "category": "copy treatment",
+  "evidence": "text_stats words 132, emoji 0, em_dashes 0, exclamations 0"
+ },
+ {
+  "observation": "Much of the marketing copy (the hero caption, the financing and savings offers, the 'Corporate Office' label and the badge names) is carried by raster images, not HTML text.",
+  "category": "imagery handling",
+  "evidence": "Only 3 p elements and 2 headings in tag_counts, while slice 0 shows extensive text inside the images"
+ },
+ {
+  "observation": "No SVG elements are used. Icons and logos are all PNG or JPG.",
+  "category": "imagery handling",
+  "evidence": "counts.svgs 0; image files are .png/.jpg"
+ },
+ {
+  "observation": "The page uses line breaks (br) in three places, which fits the multi-line address and hours.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts.br 3"
+ },
+ {
+  "observation": "Meta tags are minimal: charset, viewport and description only, with no JSON-LD structured data.",
+  "category": "DOM/semantic structure",
+  "evidence": "meta_names [charset, viewport, description]; jsonld_blocks 0"
+ },
+ {
+  "observation": "The title tag lists the product categories after the brand name, separated by a pipe: 'Great Day Improvements | Sunrooms, Windows, Doors & More'.",
+  "category": "copy treatment",
+  "evidence": "facts.title"
+ },
+ {
+  "observation": "The page stacks full-width color bands from top to bottom: a white header, a navy hero, an off-white content area, a mid-blue contact band and a dark navy legal footer.",
+  "category": "layout",
+  "evidence": "Slice 0/1 band sequence; top_backgrounds white, rgb(15,47,85), rgb(246,244,239), rgb(23,72,127)"
+ }
+]

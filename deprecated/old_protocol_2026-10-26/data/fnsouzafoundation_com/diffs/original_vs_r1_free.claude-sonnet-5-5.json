@@ -1,0 +1,236 @@
+[
+ {
+  "observation": "Page title is the generic 'Home' on A; B uses the organisation's full name as its title.",
+  "category": "copy",
+  "evidence": "A_facts title 'Home'; B_facts title 'F N Souza International Fine Arts Foundation'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 27 h1 elements: the 9 slide titles are repeated three times, apparently from slider clones. B has a single h1.",
+  "category": "semantics",
+  "evidence": "A h1_count 27 (heading_outline repeats CIUDAD EN ESAPANA… MODERN & CONTEMPORARY ART x3); B h1_count 1 'Modern & Contemporary Art'",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's heading hierarchy is h1 followed by three h2 (Francis Newton Souza, Photo gallery, Contact). A's h2s are only the three circular/boxed section labels, uppercase with line breaks.",
+  "category": "semantics",
+  "evidence": "B outline h1 + 3 h2; A h2 text 'FRANCIS\\nNEWTON SOUZA', 'PHOTO\\nGALLERY', 'CONTACT\\nFORM'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A is built from a deep nest of generic div and span elements. B has far fewer elements.",
+  "category": "dom-structure",
+  "evidence": "A div 196, span 187, classes total 1104; B div 13, span 1, classes total 28",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses a wider range of semantic landmarks: footer, 3 sections, details/summary dropdowns and a dialog. A has no footer element, one section, and 6 article + 6 figure wrappers for gallery items.",
+  "category": "semantics",
+  "evidence": "A semantic footer 0, section 1, article 6, figure 6; B footer 1, section 3, details 2, summary 2, dialog 1, article 0, figure 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "A loads 21 stylesheets, 29 scripts and a <base> tag, and has 60 inline style attributes. B has one inline <style>, one script and 9 inline style attributes.",
+  "category": "dom-structure",
+  "evidence": "A counts stylesheets 21, scripts 29, inline_style_attrs 60, base 1; B stylesheets 0, scripts 1, style 1, inline_style_attrs 9",
+  "which_side": "A"
+ },
+ {
+  "observation": "A mixes several web fonts: Open Sans (302 elements), Cabin (155), Krona One (66), Arizonia script and FontAwesome. B uses a system sans stack and Georgia serif only.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count Open Sans 302, Cabin 155, Krona One 66, Arizonia 1; B -apple-system 82, Georgia 14, Arial 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's site title is wide, extended, all-caps Krona One, centred over the hero, with an 'History & Works' script tagline in Arizonia flanked by thin rules. B's title is small Georgia serif on two lines at the top left, and 'HISTORY & WORKS' becomes a small letterspaced uppercase eyebrow above the headline.",
+  "category": "typography",
+  "evidence": "A_slice_00 header centred; B_slice_00 logo text at x=160, eyebrow at y≈298",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero h1 is 60px bold white Cabin, uppercase and left-aligned over a busy painting. B's h1 is 84px, weight 400, Georgia serif in warm off-white, mixed case and split over two lines.",
+  "category": "typography",
+  "evidence": "A h1 60px/700 Cabin rgb(255,255,255); B h1 84px/400 Georgia rgb(236,230,221)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's section headings are 20px bold uppercase Cabin inside shapes. B's h2s are 46px weight 400 serif, set directly on the background.",
+  "category": "typography",
+  "evidence": "A h2 20px/700; B h2 46px/400",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is light: white body background, grey text rgb(88,88,88), black accents and a red accent (232,43,24). B's page is dark: near-black body rgb(15,14,13), cream text and an orange accent (232,102,58).",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255), body_color rgb(88,88,88); B body_bg rgb(15,14,13), body_color rgb(236,230,221)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a full-bleed colourful painting slideshow with nine circular pagination dots. B's hero is a dark, moody abstract backdrop with a bottom fade and no slider controls.",
+  "category": "imagery",
+  "evidence": "A_slice_00 painted city scene with 9 dots at y≈720; B_slice_00 dark brown/orange texture",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has no slider. Instead, the artwork titles are shown as an italic serif strip of orange-bulleted names that runs off the right edge, between thin rules.",
+  "category": "component",
+  "evidence": "B_slice_00 strip at y≈772: Ciudad En Esapana, Multicoloured Villagescape… Faces, cut off at the edge",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's header sits on a translucent dark overlay band over the hero. It contains a centred nav with a red active 'HOME' and a long uppercase notice line below. B puts the notice in a full-width orange bar at the very top with underlined text, then a separate nav.",
+  "category": "component",
+  "evidence": "A_slice_00 notice at y≈250–280 inside the overlay; B_slice_00 orange bar y 0–38 with underlined text",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's nav is centred, uppercase and plain, with 7 items. B's nav is right-aligned, mixed case, with small ▾ markers on 'Family History' and 'Available For Sale' (matching the 2 details/summary elements).",
+  "category": "navigation",
+  "evidence": "A_slice_00 nav y≈221; B_slice_00 nav at x 600–1280 with ▾; B details 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a floating red square user icon fixed at the top right (FontAwesome). B has no equivalent.",
+  "category": "component",
+  "evidence": "A_slice_00 red square at (1400–1440, 0–40); A FontAwesome 5 elements",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's section titles sit in geometric badge shapes: a black square containing a white square, a solid black circle and a black ring with a white centre. B's titles are plain text blocks.",
+  "category": "decoration",
+  "evidence": "A_slice_00 'FRANCIS NEWTON SOUZA' in a black frame; A_slice_01 black circle 'PHOTO GALLERY'; A_slice_02 ring 'CONTACT FORM'; A border_radius bucket_pill 11",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses square corners, with 97 elements at 0 radius and no pills. A also has 520 elements at 0 radius, plus 11 pill-radius elements and 2 at 16px+ for the circles and dots.",
+  "category": "decoration",
+  "evidence": "A border_radius_buckets 0:520, 16+:2, pill:11; B 0:97, others 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A artist intro is a small 176x131 portrait with a thin black border at the left, and a centred serif (book antiqua) paragraph beside it. B shows a larger 473x275 portrait in a two-column layout, with a heading, sans paragraph and an orange underlined 'Read More' link.",
+  "category": "layout",
+  "evidence": "A images fnsouza.jpg rect w176 h131, book antiqua 4 elements; B fnsouza.jpg rect w473 h275",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A the portrait is shrunk and has an empty alt attribute. In B it is stretched to 473px wide from a 370px natural width (aspect ratio changed) and has descriptive alt text.",
+  "category": "imagery",
+  "evidence": "A alt '' w176/h131; B alt 'Francis Newton Souza' natural 370x275 rendered 473x275",
+  "which_side": "both"
+ },
+ {
+  "observation": "A gallery is an irregular 3-column grid of large thumbnails over two rows (570/270/270 and 370/471/270 wide), all 442px high, cropped by the container. B puts five thumbnails in one row at 243px high, with widths from 148 to 313px.",
+  "category": "layout",
+  "evidence": "A image rects y2090 h442 and y2562 h442; B rects y1541 h243 widths 313,148,148,204,260",
+  "which_side": "both"
+ },
+ {
+  "observation": "In B the sixth gallery image (mother and child) is rendered 740x1214 px, much larger than its 270x442 natural size. It spans one column and leaves a blank area to its right, while the other five images are in a single row.",
+  "category": "imagery",
+  "evidence": "B images mother_child_tb.jpg rect w740 h1214, natural 270x442; B_slice_01 large empty area right of the image",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's gallery images are edge-to-edge with 30px gaps and have no captions or alt text; every image has alt=''. B's images have alt text such as 'Landscape', 'Chess' and 'Mother and child'.",
+  "category": "imagery",
+  "evidence": "A images alt '' for all 7; B alts present for 7 (8 img tags, one with empty src/0 size)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B contains an extra img with no src and 0x0 size (probably the dialog/lightbox image) plus a dialog element. A has 7 images and no dialog.",
+  "category": "dom-structure",
+  "evidence": "B images last entry file '' natural [0,0] rect 0; tag_counts dialog 1, img 8",
+  "which_side": "B"
+ },
+ {
+  "observation": "The gallery intro 'Explore a significant collection of the latest works.' is centred below the circle in A and left-aligned under the heading in B.",
+  "category": "copy",
+  "evidence": "A_slice_01 y≈710 centred; B_slice_01 y≈190 at x=160",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's contact form is two columns with placeholder-only fields (Name, Email Address, Phone, Message) on light grey (246,246,246) fills with no borders. B's is a single narrow column with visible uppercase labels (Name, Email, Message), dark fields with thin borders and no Phone field.",
+  "category": "form",
+  "evidence": "A input 11, label 2, fieldset 1, textarea 1; B label 3, input 2, textarea 1; A bg rgb(246,246,246) x7",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's submit button is white with black text and a thin outline, centred, 17.5px 30px padding, labelled 'SEND MESSAGE'. B's submit is solid orange with dark text, left-aligned, 12px 26px padding. B's hero also has a solid orange 'VIEW THE GALLERY' primary button next to an outlined 'ABOUT THE ARTIST' button.",
+  "category": "component",
+  "evidence": "A primary_button bg rgb(255,255,255) padding 17.5px 30px; B primary_button bg rgb(232,102,58) padding 12px 26px",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds hero copy and CTAs that A lacks: a subtitle 'Francis Newton Souza — India's mystical expressionist.' (with an em dash) and two buttons. A's hero has only the slide title and dots.",
+  "category": "copy",
+  "evidence": "B text_stats em_dashes 1; B_slice_00 buttons at y≈605; A em_dashes 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "The footer in A is a black band with a centred '© 2021 | PRIVACY POLICY' and a dim 'More Art Gallery Templates at TemplateMonster.com' credit at the left. B's footer is a thin-ruled dark bar with the full copyright text on the left and an underlined 'Privacy Policy' at the right.",
+  "category": "footer",
+  "evidence": "A_slice_03 black footer centred; B_slice_02/03 footer text at x=160 and x≈1190",
+  "which_side": "both"
+ },
+ {
+  "observation": "A is heavily animated: 75 transitions, 1 animation and 11 transforms. B has 6 transitions and no animations or transforms.",
+  "category": "effects",
+  "evidence": "A effects transitions 75, animations 1, transforms 11; B transitions 6, animations 0, transforms 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has no shadows, gradients or blur in the DOM, but uses a translucent rgba(1,1,0,0.53) overlay for the header. B uses a gradient-like dark fade at the bottom of the hero, yet its facts report 0 gradient backgrounds and 0 shadows.",
+  "category": "decoration",
+  "evidence": "A top_backgrounds rgba(1,1,0,0.53); both box_shadows 0, gradient_backgrounds 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "B alternates section backgrounds between close dark tones: rgb(15,14,13), rgb(25,23,22) and rgb(0,0,0). A alternates white and light grey (246,246,246) bands, then black for the footer.",
+  "category": "color",
+  "evidence": "B top_backgrounds black x7, (25,23,22) x6; A (246,246,246) x7, white x4",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid (5 elements) and flex (6). A reports 0 grid and only 1 flex, so its layout comes from float/inline-block classes in an older framework.",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 1; B display_grid 5, display_flex 6",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's body text is 17px with 28px line height. A's is 16px with 30px line height.",
+  "category": "typography",
+  "evidence": "A body_font_size 16px line-height 30px; B 17px / 28.05px",
+  "which_side": "both"
+ },
+ {
+  "observation": "The lang attribute is en-gb on A and en on B. B declares charset and viewport meta tags. A has content-type and generator meta tags and no viewport tag.",
+  "category": "dom-structure",
+  "evidence": "A lang 'en-gb', meta_names content-type, description, generator; B lang 'en', meta_names charset, viewport, description",
+  "which_side": "both"
+ },
+ {
+  "observation": "The artwork title 'CIUDAD EN ESAPANA' (a typo for Espana) is kept in both; A shows it as the hero h1 and B as the first item in the ticker strip in title case.",
+  "category": "copy",
+  "evidence": "A h1 text 'CIUDAD EN ESAPANA'; B_slice_00 strip 'Ciudad En Esapana'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Casing differs between the two pages. A sets most labels in uppercase (nav, headings, footer). B uses title/sentence case for nav and headings and reserves uppercase letterspaced text for the eyebrow, form labels and buttons.",
+  "category": "typography",
+  "evidence": "A nav 'ABOUT F N SOUZA'; B nav 'About F N Souza', h2 'Photo gallery', labels 'NAME','EMAIL','MESSAGE'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's content is left-aligned on a consistent 160px left margin (hero text, logo, intro, gallery, footer). A mostly centres its content: title, nav, circle badges, intro text and form button.",
+  "category": "layout",
+  "evidence": "B image rects x=160 repeatedly; A_slice_00–02 centred header, badges and button",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's page is shorter and has less copy. A's DOM contains 227 words and a Phone field.",
+  "category": "content",
+  "evidence": "A page_height 4120, words 227; B page_height 3938, words 162",
+  "which_side": "both"
+ }
+]

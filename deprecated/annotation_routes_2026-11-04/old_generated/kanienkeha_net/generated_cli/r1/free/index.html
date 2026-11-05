@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanienkeha.net – An Open Source Endangered Language Initiative</title>
+<meta name="description" content="Kanienkeha.net is an open source endangered language initiative: a community-built Mohawk dictionary of words, phrases and occupations.">
+<link rel="icon" href="images/favicon.ico">
+<style>
+:root{
+  --green:#1b9a4b; --green-dk:#0f6b32; --green-lt:#e4f4ea;
+  --blue:#1380b5; --pink:#d6457f;
+  --ink:#2a2f3a; --muted:#5d6472; --bg:#eef6f8; --card:#fff; --line:#d5e3e8;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 "Segoe UI",system-ui,-apple-system,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg) url(images/active-noise.png)}
+img{max-width:100%;height:auto}
+a{color:var(--blue)}
+a:hover{color:var(--green-dk)}
+:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:#fff;padding:8px;z-index:99}
+
+/* header */
+header{background:#fff;border-bottom:4px solid var(--green)}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0 6px;flex-wrap:wrap}
+.brand .logo img{width:min(380px,70vw);display:block}
+.owl{max-width:219px;opacity:.9}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px}
+nav a{display:block;padding:10px 14px;text-decoration:none;color:var(--ink);font-weight:600;border-radius:8px 8px 0 0}
+nav a:hover,nav a.cta{background:var(--green);color:#fff}
+nav a.cta{margin-left:6px}
+
+/* hero */
+.hero{padding:36px 0 20px;text-align:center}
+.search{display:flex;max-width:560px;margin:0 auto 10px;border:2px solid var(--green);border-radius:999px;background:#fff;overflow:hidden}
+.search input{flex:1;border:0;padding:14px 20px;font:inherit;min-width:0;background:transparent}
+.search input:focus{outline:none}
+.search:focus-within{box-shadow:0 0 0 3px rgba(27,154,75,.3)}
+.search button{border:0;background:var(--green);color:#fff;font:inherit;font-weight:700;padding:0 24px;cursor:pointer}
+.search button:hover{background:var(--green-dk)}
+.try{color:var(--muted);font-size:.95rem;margin:0 0 26px}
+.try a{display:inline-block;margin-left:6px;padding:2px 12px;background:var(--green-lt);color:var(--green-dk);border-radius:999px;text-decoration:none;font-weight:600}
+.welcome{max-width:720px;margin:0 auto;font-size:1.1rem}
+.btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;font-weight:700;padding:10px 22px;border-radius:999px}
+.btn:hover{background:#b3306a;color:#fff}
+
+/* layout */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:start;padding-bottom:40px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.panel+.panel{margin-top:24px}
+h2{font-size:1.4rem;line-height:1.25;margin:0 0 14px;color:var(--green-dk)}
+h2 img{vertical-align:middle;margin-right:8px;width:34px}
+.mapbanner{display:block;margin-bottom:24px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.mapbanner img{display:block;width:100%}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}
+.tabs button{border:2px solid var(--green);background:#fff;color:var(--green-dk);font:inherit;font-weight:600;padding:4px 16px;border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--green);color:#fff}
+.cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{display:block;height:100%;padding:12px 14px;border:1px solid var(--line);border-left:5px solid var(--green);border-radius:8px;text-decoration:none;color:var(--ink);background:#fcfefd;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.1)}
+.card .en{display:block;font-weight:700;line-height:1.3}
+.card .moh{display:block;color:var(--green-dk);font-style:italic;margin-top:2px;overflow-wrap:anywhere}
+li[data-kind=occupation] .card{border-left-color:var(--blue)}
+.pager{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+.pager a,.pager span{padding:6px 14px;border:1px solid var(--line);border-radius:8px;text-decoration:none;background:#fff;font-weight:600}
+.pager .cur{background:var(--green);color:#fff;border-color:var(--green)}
+
+/* sidebar */
+aside .panel{padding:18px}
+.protest{display:block;margin:0 auto 6px}
+.blogs{list-style:none;margin:0;padding:0}
+.blogs li{border-top:1px solid var(--line)}
+.blogs a{display:block;padding:10px 0;text-decoration:none;font-weight:600;line-height:1.35}
+.lang{display:flex;gap:10px;flex-wrap:wrap}
+.lang span{display:flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;font-weight:600;font-size:.95rem}
+.lang .on{border-color:var(--green);background:var(--green-lt)}
+.iconrow{display:flex;gap:14px;align-items:center}
+.iconrow img{border-radius:8px}
+.social{display:flex;gap:10px;margin:12px 0 0}
+.social a{flex:1;text-align:center;padding:6px;border-radius:8px;background:var(--green-lt);color:var(--green-dk);font-weight:600;text-decoration:none;font-size:.9rem}
+.social a:hover{background:var(--green);color:#fff}
+.side-links{display:grid;gap:10px}
+.side-links a{display:block;text-align:center;padding:10px;border-radius:8px;background:var(--green);color:#fff;font-weight:700;text-decoration:none}
+.side-links a.pat{background:#f96854}
+.side-links a:hover{filter:brightness(.9)}
+.notes img{border-radius:8px;display:block;margin-top:12px}
+.stats{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stats li{position:relative;background:url(images/2green.png) no-repeat center/contain;text-align:center;padding:6px;background-color:var(--green-lt);background-blend-mode:multiply;border-radius:8px}
+.stats li{background-image:none}
+.stats b{display:block;font-size:1.7rem;color:var(--green-dk);line-height:1.2}
+.stats a,.stats span{font-size:.9rem;color:var(--muted)}
+.greet p{margin:0 0 12px}
+.sig{font-weight:600}
+
+/* footer */
+footer{background:#fff;border-top:4px solid var(--green);padding:28px 0;font-size:.95rem}
+.foot{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start}
+.contact{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 22px}
+.contact li{display:flex;align-items:center;gap:6px}
+footer ul.links{list-style:none;margin:0 0 12px;padding:0;display:flex;flex-wrap:wrap;gap:4px 18px}
+.longhouse{display:block;margin-top:14px}
+.dev{color:var(--muted);margin:8px 0 0}
+
+@media (max-width:900px){
+  .layout{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a class="logo" href="https://kanienkeha.net/"><img src="images/moh-logo.gif" alt="Kanienkeha – An open source endangered language initiative" width="660" height="145"></a>
+      <img class="owl" src="images/owl.gif" alt="" width="219" height="30">
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="https://kanienkeha.net">Home</a></li>
+        <li><a href="https://kanienkeha.net/sitemap/">Categories</a></li>
+        <li><a href="https://kanienkeha.net/add-words/">Add Words</a></li>
+        <li><a href="https://kanienkeha.net/language/">Language Information</a></li>
+        <li><a href="https://kanienkeha.net/blogs/">Blog</a></li>
+        <li><a href="https://kanienkeha.net/map/">Map</a></li>
+        <li><a href="https://kanienkeha.net/resources/">Resources</a></li>
+        <li><a href="https://kanienkeha.net/about/">About</a></li>
+        <li><a href="https://kanienkeha.net/contact/">Contact</a></li>
+        <li><a href="https://kanienkeha.net/login/">Log In</a></li>
+        <li><a href="https://kanienkeha.net/register/">Register</a></li>
+        <li><a class="cta" href="https://kanienkeha.net/donate/">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <form class="search" role="search" onsubmit="return false">
+      <input id="q" type="search" placeholder="Search words and phrases…" aria-label="Search words and phrases" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
+    <p class="try">Try these:
+      <a href="#" data-q="apple">apple</a><a href="#" data-q="colors">colors</a><a href="#" data-q="numbers">numbers</a>
+    </p>
+    <p class="welcome">Welcome to <strong>Kanienkeha.net</strong>, an open source endangered language initiative. If you want to help keep us going strong and putting out new content every week, please consider a small donation. You’ll be happy you did!</p>
+    <p><a class="btn" href="http://patreon.com/mohdictionary">Support us on Patreon!</a></p>
+  </div>
+</section>
+
+<main id="main" class="wrap layout">
+  <div>
+    <a class="mapbanner" href="https://kanienkeha.net/map/"><img src="images/map-nap.png" alt="World map: Kanienkeha Map, 200+ locations" width="650" height="340"></a>
+
+    <section class="panel" aria-labelledby="recent">
+      <h2 id="recent"><img src="images/4green.png" alt="">Most Recent</h2>
+      <div class="tabs" role="group" aria-label="Filter">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="phrase" aria-pressed="false">Phrases</button>
+        <button type="button" data-f="occupation" aria-pressed="false">Occupations</button>
+      </div>
+      <ul class="cards" id="cards">
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/oh-nahoten-tesahsennasere/"><span class="en">Last name?, What is your</span><span class="moh" lang="moh">Oh nahò:ten tesahsenná:sere?</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/satien-tanon-tesatskahon/"><span class="en">Sit down and eat</span><span class="moh" lang="moh">Sátien tánon tesatská:hon</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/get-dressed/"><span class="en">Get dressed</span><span class="moh" lang="moh">Satsheronniánion</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/sahtsohare/"><span class="en">Wash your hands</span><span class="moh" lang="moh">Sahtsóhare</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/satkonhsohare/"><span class="en">Wash your face</span><span class="moh" lang="moh">Satkonhsóhare</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/satkerothiwh/"><span class="en">Brush your hair</span><span class="moh" lang="moh">Satkeróthiwh</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/satkotsonni/"><span class="en">Fix your hair</span><span class="moh" lang="moh">Satko’tsón:ni</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/satawen/"><span class="en">Take a bath</span><span class="moh" lang="moh">Satá:wen</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/satenaktahseronni/"><span class="en">Make your bed</span><span class="moh" lang="moh">Satenaktahserón:ni</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/satketsko/"><span class="en">Wake up</span><span class="moh" lang="moh">Satkétsko</span></a></li>
+<li data-kind="phrase"><a class="card" href="https://kanienkeha.net/phrases/command/satenawirohare/"><span class="en">Brush your teeth</span><span class="moh" lang="moh">Satenawiróhare</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/shakoiatarha/"><span class="en">Photographer</span><span class="moh" lang="moh">Shakoia’tárha’</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/tehateniataranonnha/"><span class="en">Goalie</span><span class="moh" lang="moh">Tehatenia’taranónnha’</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/tsi-nikaiotenhserotens/"><span class="en">Occupations</span><span class="moh" lang="moh">Tsi Nikaio’tenhserò:ten’s</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/isinakaroniati-iehretha/"><span class="en">Astronaut</span><span class="moh" lang="moh">Ísi’na’karon’iati Iehretha</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/kanonhkwatsheronnis/"><span class="en">Pharmacist</span><span class="moh" lang="moh">Kanonhkwa’tsherón:nis</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/karistatsi-roiotens/"><span class="en">Steelworker (m)</span><span class="moh" lang="moh">Karistatsi Roio’tens</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/karistatsi-iakiotens/"><span class="en">Steelworker (f)</span><span class="moh" lang="moh">Karistatsi Iakio’tens</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/kaserehkowa-ratories/"><span class="en">Truck Driver (m)</span><span class="moh" lang="moh">Ka’serehkówa Ratórie’s</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/kaserehkowa-iotories/"><span class="en">Truck Driver (f)</span><span class="moh" lang="moh">Ka’serehkowa Iotórie’s</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/katshenen-tehshakohsnie/"><span class="en">Veterinarian</span><span class="moh" lang="moh">Katshé:nen Tehshakóhsnie</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/kawennarahstha-iakoiote/"><span class="en">Computer Worker (f)</span><span class="moh" lang="moh">Kawennaráhstha Iakoió’te</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/kawennarahstha-roiote/"><span class="en">Computer Worker (m)</span><span class="moh" lang="moh">Kawennaráhstha roió’te</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ohenton-irate-ne-ionterihwaienstahkhwanionhkhwa/"><span class="en">Education Director</span><span class="moh" lang="moh">Ohén:ton Í:rate ne Ionterihwaienstahkhwaniónhkhwa</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/okara-shakotkense/"><span class="en">Optometrist (m)</span><span class="moh" lang="moh">Okà:ra Shakotkèn:se</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/okara-iakotkense/"><span class="en">Optometrist (f)</span><span class="moh" lang="moh">Okà:ra iakotkèn:se</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/rahiatons/"><span class="en">Writer (m)</span><span class="moh" lang="moh">Rahiá:tons</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/iehiatons/"><span class="en">Writer (f)</span><span class="moh" lang="moh">Iehiá:tons</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/rahsonkaraketas/"><span class="en">Carpenter (m)</span><span class="moh" lang="moh">Rahson’karaké:tas</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/iehsonkaraketas/"><span class="en">Carpenter (f)</span><span class="moh" lang="moh">Iehson’karaké:tas</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/rahwistonni/"><span class="en">Blacksmith</span><span class="moh" lang="moh">Rahwiston:ni</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/rakhwahehrha/"><span class="en">Waiter</span><span class="moh" lang="moh">Rakhwahéhrha</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/rakontsherahrhos/"><span class="en">Painter (m)</span><span class="moh" lang="moh">Rakontsheráhrhos</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/iekontsherahrhos/"><span class="en">Painter (f)</span><span class="moh" lang="moh">Iekontsheráhrhos</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ranataronnis/"><span class="en">Baker (m)</span><span class="moh" lang="moh">Rana’tarón:nis</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ienataronnis/"><span class="en">Baker (f)</span><span class="moh" lang="moh">Iena’tarón:nis</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ierahstha/"><span class="en">Artist (f)</span><span class="moh" lang="moh">Ieráhstha</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/rarihokwats/"><span class="en">Reporter (m)</span><span class="moh" lang="moh">Rarihó’kwats</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ierihokwats/"><span class="en">Reporter (f)</span><span class="moh" lang="moh">Ierihó’kwats</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/raristiseres/"><span class="en">Engineer, Surveyor (m)</span><span class="moh" lang="moh">Raristí:seres</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ieristiseres/"><span class="en">Engineer, Surveyor (f)</span><span class="moh" lang="moh">Ieristí:seres</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/raristonnis/"><span class="en">Steel fabricator</span><span class="moh" lang="moh">Raristón:nis</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ieristoseras/"><span class="en">Welder (f)</span><span class="moh" lang="moh">Ieristóseras</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/raronwarahehrha/"><span class="en">Electrician (m)</span><span class="moh" lang="moh">Raronwarahéhrha</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ieronwarahehrha/"><span class="en">Electrician (f)</span><span class="moh" lang="moh">Ieronwarahéhrha</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/raswahseratas/"><span class="en">Taxidermist</span><span class="moh" lang="moh">Ra’swahseráta’s</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ionswahtha/"><span class="en">Fireman (f)</span><span class="moh" lang="moh">Ion’swáhtha</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/iontenhinons/"><span class="en">Salesperson (f)</span><span class="moh" lang="moh">Iontenhí:nons</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ratihonrotahehrha-ohnekanos-aowen/"><span class="en">Plumber</span><span class="moh" lang="moh">Ratihonro’tahéhrha Ohné:kanos Aó:wen</span></a></li>
+<li data-kind="occupation"><a class="card" href="https://kanienkeha.net/occupation/ratitsenhaiens/"><span class="en">Councillors</span><span class="moh" lang="moh">Ratitsénhaiens</span></a></li>
+      </ul>
+      <p id="none" hidden>No matches on this page. <a href="https://kanienkeha.net/sitemap/">Browse all categories</a>.</p>
+      <nav class="pager" aria-label="Pages">
+        <span class="cur" aria-current="page">1</span>
+        <a href="https://kanienkeha.net/page/2/">2</a>
+        <a href="https://kanienkeha.net/page/3/">3</a>
+        <a href="https://kanienkeha.net/page/4/">4</a>
+        <a href="https://kanienkeha.net/page/2/">Next ›</a>
+        <a href="https://kanienkeha.net/page/53/">Last »</a>
+      </nav>
+    </section>
+
+    <section class="panel notes">
+      <h2><img src="images/love1.png" alt="">Uploading your Notes</h2>
+      <h3 style="margin:0 0 8px;font-size:1.1rem">Help our language curators, we’ll archive your notes.</h3>
+      <p>We appreciate that you’re taking great language Notes. As part of our Open Source project, our research grows when we grow together.</p>
+      <a href="/notes"><img src="images/notes.jpg" alt="Upload your language notes" width="523" height="330"></a>
+    </section>
+
+    <section class="panel greet">
+      <h2><img src="images/love1.png" alt="">She:kon / Greetings</h2>
+      <p>This website was created for community development of the Kanienkeha online language resources. With help from you and our elders we can create a digital inventory of the language and discuss the cultural significance behind each word. If we can build the dictionary to about 10,000 words this program will expand to a next phase and development will start on a google style translator with audio to help with pronunciation.</p>
+      <p class="sig">Nia:wen / Thank you<br>Benjamin Doolittle</p>
+    </section>
+  </div>
+
+  <aside>
+    <section class="panel">
+      <img class="protest" src="images/protest.png" alt="Culture, Blogging, Resources, Language, Talk" width="392" height="191">
+      <h2>From the Blog</h2>
+      <ul class="blogs">
+        <li><a href="https://kanienkeha.net/blogs/mission-statement-of-the-people-of-grand-river-country/">Mission Statement of the People of Grand River Country</a></li>
+        <li><a href="https://kanienkeha.net/blogs/5-common-misconceptions-surrounding-endangered-languages/">5 Common Misconceptions Surrounding Endangered Languages</a></li>
+        <li><a href="https://kanienkeha.net/blogs/bonding-with-your-child-through-your-native-language/">Bonding with your child through your native language</a></li>
+        <li><a href="https://kanienkeha.net/blogs/ohenton-karihwatehkwen/">Thanksgiving Address: Giving Greetings to the Natural World</a></li>
+        <li><a href="https://kanienkeha.net/blogs/how-to-use-the-single-post-index/">How to use the single post index</a></li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Choose your Language!</h2>
+      <div class="lang">
+        <span class="on"><img src="images/England.png" alt="" width="24" height="24">English</span>
+        <span><img src="images/Mohawk.png" alt="" width="24" height="24">Kanienkeha</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="iconrow"><img src="images/wordoftheday1.jpg" alt="" width="40" height="43"><h2 style="margin:0">#WordOfTheDay</h2></div>
+      <p style="margin:12px 0 0"><a href="https://kanienkeha.net/grammer/nouns/kahionha/">Random Word</a></p>
+    </section>
+
+    <section class="panel">
+      <div class="iconrow"><img src="images/social1.jpg" alt="" width="49" height="47"><h2 style="margin:0">Spread the word!</h2></div>
+      <div class="social">
+        <a href="https://www.facebook.com/mohdictionary">Facebook</a>
+        <a href="http://twitter.com/mohdictionary">Twitter</a>
+        <a href="http://instagram.com/mohdictionary">Instagram</a>
+      </div>
+      <div class="side-links" style="margin-top:14px">
+        <a class="pat" href="https://www.patreon.com/mohdictionary">Become a patron on Patreon</a>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="iconrow"><img src="images/forum-stats1.png" alt="" width="101" height="43"><h2 style="margin:0">Total Site Numbers</h2></div>
+      <ul class="stats" style="margin-top:14px">
+        <li><b>2650</b><span>Words</span></li>
+        <li><b>159</b><a href="https://kanienkeha.net/sitemap/">Categories</a></li>
+        <li><b>260</b><span>Tags</span></li>
+        <li><b>10</b><a href="http://blog.kanienkeha.net/">Blog</a></li>
+      </ul>
+    </section>
+  </aside>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong>MohDictionary</strong>
+      <ul class="contact">
+        <li><img src="images/favicons" alt="" width="16" height="16"><a href="https://www.facebook.com/mohdictionary">mohdictionary</a></li>
+        <li><img src="images/favicons" alt="" width="16" height="16"><a href="http://twitter.com/mohdictionary">mohdictionary</a></li>
+        <li><img src="images/fBV3Wtxe.png" alt="" width="16" height="16"><a href="http://tinyletter.com/MohDictionary/">mohdictionary</a></li>
+        <li><img src="images/Gumroad-icon.png" alt="" width="18" height="18"><a href="https://gumroad.com/l/gOKI">mohdictionary</a></li>
+        <li><img src="images/favicon.ico" alt="" width="16" height="16"><a href="https://www.patreon.com/mohdictionary">mohdictionary</a></li>
+        <li><img src="images/favicon.ico" alt="" width="16" height="16"><a href="https://www.paypal.me/MohDictionary">mohdictionary</a></li>
+      </ul>
+      <img class="longhouse" src="images/longhouse1.jpg" alt="Longhouse" width="293" height="91">
+      <img src="images/wearefriends.jpg" alt="We are friends" width="280" height="54" style="display:block;margin-top:10px">
+    </div>
+    <div>
+      <ul class="links">
+        <li><a href="https://kanienkeha.net">Home</a></li>
+        <li><a href="/about-us/">About</a></li>
+        <li><a href="/donate/">Donate</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/sitemap/">Sitemap</a></li>
+        <li><a href="/register/">Register</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <p>Follow us on <a href="https://twitter.com/mohdictionary">Twitter</a> &amp; <a href="https://www.facebook.com/mohdictionary">Facebook</a></p>
+      <p class="dev">kanienkeha.net<br>Developed by <a href="http://doolittleproductions.com/">Doolittle Productions</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var items=[].slice.call(document.querySelectorAll('#cards li')),
+      q=document.getElementById('q'),none=document.getElementById('none'),
+      tabs=[].slice.call(document.querySelectorAll('.tabs button')),f='all';
+  function apply(){
+    var s=q.value.trim().toLowerCase(),n=0;
+    items.forEach(function(li){
+      var ok=(f==='all'||li.dataset.kind===f)&&(!s||li.textContent.toLowerCase().indexOf(s)>-1);
+      li.hidden=!ok;if(ok)n++;
+    });
+    none.hidden=n>0;
+  }
+  tabs.forEach(function(b){b.onclick=function(){
+    f=b.dataset.f;tabs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});apply();
+  }});
+  q.addEventListener('input',apply);
+  [].forEach.call(document.querySelectorAll('.try a'),function(a){a.onclick=function(e){
+    e.preventDefault();q.value=a.dataset.q;apply();document.getElementById('recent').scrollIntoView();
+  }});
+})();
+</script>
+</body>
+</html>

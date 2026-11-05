@@ -1,0 +1,187 @@
+[
+ {
+  "observation": "The page has no h1. The headline 'SPRING/SUMMER '21 AVAILABLE NOW' is an h2, and the outline has 14 h2s and 8 h3s. Some h2s are card titles such as 'BEIGE HULA GIRL CAMP SHIRT'.",
+  "category": "semantic structure",
+  "evidence": "facts.json h1_count 0; heading_outline starts with an h2 'SPRING/SUMMER '21 AVAILABLE NOW'"
+ },
+ {
+  "observation": "The heading outline repeats text. 'BANDANA TOWELS' appears as an h2 and again as an h3 card title. 'SUSTAINABILITY' appears as an h3 card title in 'Browse the latest' after a similar h2 hero block.",
+  "category": "semantic structure",
+  "evidence": "heading_outline: h2 'BANDANA TOWELS' followed by h3 'BANDANA TOWELS' and h3 'CAMP SHIRTS'"
+ },
+ {
+  "observation": "Display headings are very large, heavy, uppercase sans-serif, set tight. The h2 is 68px at weight 800, and the hero headline wraps over four lines.",
+  "category": "typography",
+  "evidence": "facts h2 font_size 68px, font_weight 800; slice 0 shows 'SPRING/SUMMER / '21 / AVAILABLE / NOW'"
+ },
+ {
+  "observation": "One typeface carries the whole page: Helvetica Neue on all 202 counted elements. Hierarchy comes from size, weight, case and letter-spacing, not from font pairing.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['Helvetica Neue', 202]]; body 16px / 24.8px line-height"
+ },
+ {
+  "observation": "Small eyebrow labels sit above headings. They are tiny, bold, uppercase and widely letter-spaced, for example 'NEW ARRIVALS', 'SUSTAINABILITY', 'MADE IN CANADA', '100% RECYCLED POLYESTER' and 'NEW'.",
+  "category": "typography",
+  "evidence": "Visible in slices 0–2 above each card title"
+ },
+ {
+  "observation": "Nav links, buttons, footer headings and social links use spaced uppercase micro-type: SHOP, ABOUT, JOURNAL, STOCKISTS, SEARCH, CART.",
+  "category": "typography",
+  "evidence": "Slice 0 nav; footer 'FACEBOOK INSTAGRAM PINTEREST LIFESTYLE' in slice 5"
+ },
+ {
+  "observation": "A thin black announcement bar at the very top carries centered white spaced caps: 'FREE SHIPPING ON ORDERS OVER $150 USD'.",
+  "category": "component",
+  "evidence": "Slice 0 top 40px; body bg #111 appears in top_backgrounds"
+ },
+ {
+  "observation": "A tall orange-to-tan gradient band sits above the nav. The nav row then overlays the same gradient. The header area is about 360px tall before the hero text starts, and a plain white strip sits between the announcement bar and the gradient.",
+  "category": "layout",
+  "evidence": "Slice 0: white strip y≈40–104, gradient from y≈104, nav bar at y≈293–356; gradient_backgrounds count 1"
+ },
+ {
+  "observation": "The header is a three-part nav. Text links are on the left, a script wordmark logo image (95×34) is centered, and SEARCH and CART are on the right. All are text links with no icons or SVGs.",
+  "category": "component",
+  "evidence": "Bather-Logo.png rect x672 y55 w95 h34; svgs count 0; nav count 1"
+ },
+ {
+  "observation": "The hero uses a CSS gradient in place of a photo. It runs from orange through amber to dark teal at the lower right. White left-aligned text and an outlined 'SHOP NOW' button sit on it. The right half is empty.",
+  "category": "imagery",
+  "evidence": "Slice 0 y≈356–806; gradient_backgrounds 1; the img list has only logos, press and payment images"
+ },
+ {
+  "observation": "Product and promo tiles contain no product photography. They are flat color fields (beige, orange, near-black, olive green, teal) with a darkening gradient overlay toward the bottom, and text sits at the bottom left. The 16 images are all logos, badges or payment icons.",
+  "category": "imagery",
+  "evidence": "Slices 0–2 show empty colored tiles; images list holds Bather-Logo, 6 press logos, the 1% badge and 8 payment SVGs"
+ },
+ {
+  "observation": "The tile grid changes column count down the page: 2 columns (50/50) for Sustainability and the Hula shirt, then 3 equal columns for the swim trunk tiles and full collection, then 2 inset cards for towels and shirts, then 3 cards for 'Browse the latest'.",
+  "category": "layout",
+  "evidence": "display_grid 10; slices 0–2 show 720px, 480px and 416px column widths"
+ },
+ {
+  "observation": "The calls to action are ghost buttons: transparent fill, 1–2px outline, uppercase spaced text, and square corners. They read 'LEARN MORE', 'VIEW', 'SHOP THE FULL COLLECTION', 'SHOP ACCESSORIES' and 'VIEW ALL'. Outlines are white on dark tiles and black on light.",
+  "category": "component",
+  "evidence": "primary_button bg rgba(0,0,0,0) radius 0px padding 11.232px 22.464px; border_radius_buckets bucket_0 201 of 202"
+ },
+ {
+  "observation": "Corners are almost all square. Only one element has a 1–7px radius, which is the white logo strip in the press section. There are no box-shadows, backdrop blurs, animations or transforms.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_1_7 1; box_shadows 0; backdrop_blur 0; animations 0; transforms 0"
+ },
+ {
+  "observation": "The palette is warm and earthy. Cream #F4EFE6 and white are the base. Orange #E8643A, teal #1F4E5F, green #2F6B57, tan #C9B79C and near-black #111 serve as accents and tile fills.",
+  "category": "color",
+  "evidence": "top_backgrounds list rgb(244,239,230), rgb(232,100,58), rgb(31,78,95), rgb(47,107,87), rgb(201,183,156), rgb(17,17,17)"
+ },
+ {
+  "observation": "Section backgrounds alternate white, cream, black and slate. The towel section is cream, 'Browse the latest' is white, the press block is black, the ethos section splits slate and cream, the journal is white and the footer is cream.",
+  "category": "color",
+  "evidence": "Slices 1–5 background bands; body_bg white"
+ },
+ {
+  "observation": "The 'Bandana Towels' section opens with a centered eyebrow, heading and button. Below it are two cards inset about 170px from each side with a 48px gutter, one orange and one teal. Each has a bottom-left title and an outlined button.",
+  "category": "layout",
+  "evidence": "Slice 1 centered 'NEW / BANDANA TOWELS / SHOP ACCESSORIES'; cards at x170–696 and x744–1270"
+ },
+ {
+  "observation": "The 'Browse the latest' cards are tall portrait rectangles of muted grey, taupe and tan with a dark gradient at the bottom. Each has an eyebrow, a title and an underlined text link ('LEARN MORE', 'BUY NOW', 'READ').",
+  "category": "component",
+  "evidence": "Slice 2 cards x48–464, 512–928, 976–1392, about 554px tall"
+ },
+ {
+  "observation": "The tiles use two kinds of link treatment: boxed ghost buttons in the hero and promo tiles, and small underlined caps links in the 'Browse the latest' cards and journal posts.",
+  "category": "component",
+  "evidence": "'READ MORE' underlined in slice 4; 'LEARN MORE' underlined in slice 2"
+ },
+ {
+  "observation": "The 'IN THE PRESS' section is full-bleed black. Six quotes sit in a 3×2 grid, each under a thin top rule. Attributions are an em dash plus grey spaced caps, such as '— HIGHSNOBIETY'. A rounded white strip of six greyscale publication logos follows.",
+  "category": "component",
+  "evidence": "Slice 3; blockquote 6, figure 6, figcaption 6; logos 181×136 at y4568; text color rgb(187,187,187) used 6 times"
+ },
+ {
+  "observation": "The press quotes use curly quotation marks and are set at regular weight in white at a moderate size. The attributions are in a figcaption below the blockquote. There are no cite elements.",
+  "category": "copy",
+  "evidence": "semantic cite 0, blockquote 6, figcaption 6; slice 3 text"
+ },
+ {
+  "observation": "The ethos section is a 50/50 split. The left half is an empty slate-grey block, apparently a missing image. The right half is cream, with a left-aligned 'OUR ETHOS' heading and two paragraphs of body text.",
+  "category": "layout",
+  "evidence": "Slice 3 bottom to slice 4 top: slate rgb(~105,120,128) left, cream right; text at x768"
+ },
+ {
+  "observation": "The journal section has a left-aligned oversized 'JOURNAL' heading above three post cards. Each has a pastel placeholder block (cream, pale blue, peach), a bold h3 title, grey truncated excerpt text ending in '...', and an underlined 'READ MORE'. A centered outlined 'ALL POSTS' button follows.",
+  "category": "component",
+  "evidence": "Slice 4 y≈250–870; 3 article elements; h3s 'The Spring 2021 Style Guide', 'SS21 Lookbook', 'Bather's Gift Guide Giveaway'"
+ },
+ {
+  "observation": "Journal headings are in sentence/title case, while all other headings are uppercase. Excerpt text is grey (#6B6B6B) and cut off mid-sentence.",
+  "category": "typography",
+  "evidence": "h3s 'The Spring 2021 Style Guide' vs h2s all caps; text color rgb(107,107,107) used 22 times; excerpts end 'As a par...'"
+ },
+ {
+  "observation": "The footer is a cream block with three columns: 'ABOUT BATHER' paragraph copy with an inline underlined link, 'MORE INFO' as a plain link list, and 'LET'S BE FRIENDS' with a newsletter form. Social links in spaced caps run along the bottom of the first column.",
+  "category": "component",
+  "evidence": "Slices 4–5; footer 1, form 1, label 1, input 1, button 1; headings 'ABOUT BATHER','MORE INFO',\"LET'S BE FRIENDS\""
+ },
+ {
+  "observation": "The newsletter form is a single square-cornered email input with a 1px black border. It is joined to a solid black 'SUBSCRIBE' button. This is the only filled button on the page. The copy offers 10% off a first order.",
+  "category": "component",
+  "evidence": "Slice 4 input x926–1211, button x1211–1346 filled #111; 1 button element"
+ },
+ {
+  "observation": "The footer includes a '1% for the Planet' vertical logo (72×90) and a bottom strip with an underlined '© 2021 Bather Trunk Company' link on the left and eight 38×24 payment SVG icons on the right (Amex, Apple Pay, Diners, Discover, Mastercard, PayPal, Shop Pay, Visa).",
+  "category": "imagery",
+  "evidence": "Member-VerticalLogo-Black.png at y6546; payment svgs at y6709, x1010–1370"
+ },
+ {
+  "observation": "The Apple Pay icon renders as a mostly blank rounded outline in the screenshot. The other payment icons render as colored badges.",
+  "category": "imagery",
+  "evidence": "Slice 5: second icon in the payment row appears as an empty black rounded frame"
+ },
+ {
+  "observation": "The layout rests on a few horizontal margins. The nav and hero use 48px left padding, press and journal content sit in a 1200px container (x120–1320), the towel cards are narrower at x170–1270, and the footer starts at x70. Alignment edges therefore shift between sections.",
+  "category": "layout",
+  "evidence": "Slices 0, 3, 4, 5 measurements: nav x48; press logos x136–1304; journal heading x118; footer x70"
+ },
+ {
+  "observation": "The page is long and sparse. It is 1440×6772px with only 519 words, and large empty tile areas and generous vertical padding (about 100px above big headings) set the pace.",
+  "category": "layout",
+  "evidence": "page_height 6772, words 519; empty color tiles in slices 0–2"
+ },
+ {
+  "observation": "Styling is mostly handwritten CSS. There is a single inline style block, no external stylesheets and no scripts, 45 unique class names, and no Tailwind-like utility classes. Ten inline style attributes are present.",
+  "category": "DOM",
+  "evidence": "stylesheets 0, scripts 0, style 1, tailwind_like_fraction 0, classes unique 45, inline_style_attrs 10"
+ },
+ {
+  "observation": "The semantic structure is broad: one header, nav, main and footer, eight sections and three articles. Layout is flex (15 uses) and grid (10 uses) on 30 divs. There are no asides and no JSON-LD.",
+  "category": "DOM",
+  "evidence": "semantic header 1, nav 1, main 1, section 8, article 3, aside 0; jsonld_blocks 0; display_flex 15, display_grid 10"
+ },
+ {
+  "observation": "Every image has alt text, including logos ('New York Times', '1% for the Planet member'). Nine aria attributes are used. The page has 45 anchors, so link-heavy navigation drives it.",
+  "category": "DOM",
+  "evidence": "alt_missing 0, aria_attrs 9, anchors 45"
+ },
+ {
+  "observation": "The meta head is minimal: charset, viewport and description only. The title is 'Bather Trunk Co. — Surf & Swim, Made in Canada' and lang is 'en'. The copy uses an em dash in the title and 10 times in total, in the footer, the press attributions and the journal dateline. It uses no exclamation marks or emoji.",
+  "category": "copy",
+  "evidence": "meta_names charset, viewport, description; em_dashes 10, exclamations 0, emoji 0"
+ },
+ {
+  "observation": "Copy is brand-voiced and short: headline fragments in caps ('MADE WITH 100% RECYCLED MATERIALS'), product names as titles, and a sustainability theme repeated in the tiles, ethos and footer through '1% for the Planet'.",
+  "category": "copy",
+  "evidence": "Headings 'MADE WITH 100% RECYCLED MATERIALS', 'OUR ETHOS'; footer mention of 1% for the Planet"
+ },
+ {
+  "observation": "Interactivity is light. There are 10 CSS transitions, presumably on links and buttons, and no keyframe animations or transforms.",
+  "category": "decoration",
+  "evidence": "transitions 10, animations 0, transforms 0"
+ },
+ {
+  "observation": "Text over the gradient tiles is white. On the light first tile (pale sage/grey) the white body copy and the small 'SUSTAINABILITY' eyebrow are faint against the pale background. Contrast depends on a bottom dark gradient overlay.",
+  "category": "color",
+  "evidence": "Slice 0 y≈1090–1300: 'SUSTAINABILITY' eyebrow and paragraph appear light on a pale grey-green fill; white text used 76 times"
+ }
+]

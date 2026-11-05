@@ -1,0 +1,1148 @@
+{
+ "site": "insightcentral_net",
+ "n_observations": 43,
+ "observations": [
+  {
+   "id": "c01",
+   "observation": "Heading structure differs. The original has no h1, and its only heading tags are two h3s ('Our Top Forums', 'Top Contributors this Month'). Card titles such as 'Recommended for you' and 'Recommended Communities' look like headings but are not heading tags. The AI-built page has one h1 ('The Honda Insight community'), four h2s (threads, contributors, communities, join) and three h3 thread titles.",
+   "category": "structure",
+   "status": "changed",
+   "original_ids": [
+    "O1",
+    "O21"
+   ],
+   "generated_ids": [
+    "G29",
+    "G16",
+    "G17"
+   ],
+   "element_ids": [
+    "e9",
+    "e19",
+    "e38",
+    "e55",
+    "e70",
+    "e29",
+    "e30",
+    "e35"
+   ],
+   "tags": [
+    {
+     "attribute": "heading hierarchy",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: flat h3-only outline becomes structured h1 h2 h3",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c02",
+   "observation": "Page title differs. The original is titled 'Honda Insight Forum'. The AI-built page is titled 'Insight Central – Honda Insight Forum'.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O1"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "page metadata",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: plain page title becomes branded title",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c03",
+   "observation": "Semantic landmarks differ. The original has only 1 header, 1 section and 1 footer, with no nav, main or article, and is built mostly from generic divs and spans (445 divs). The AI-built page has a header, nav, main, 4 sections, 3 articles and a footer. Neither page has an aside or a figure.",
+   "category": "structure",
+   "status": "changed",
+   "original_ids": [
+    "O2"
+   ],
+   "generated_ids": [
+    "G28"
+   ],
+   "element_ids": [
+    "e1",
+    "e4",
+    "e18",
+    "e37",
+    "e54",
+    "e69",
+    "e75"
+   ],
+   "tags": [
+    {
+     "attribute": "landmark elements",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: generic divs become header nav main sections articles",
+     "page_wide": true
+    },
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: heavy div markup becomes minimal markup",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c04",
+   "observation": "Document weight and metadata differ. The original has 260 anchors, 2 buttons, 55 scripts, 23 stylesheets, 27 meta tags (OG/Twitter, fb:app_id, theme-color, origin-trial) and a JSON-LD block. The AI-built page has 26 anchors, 0 buttons (its CTAs are styled anchors), 0 scripts, 0 external stylesheets, a single style block, 3 meta tags and no JSON-LD.",
+   "category": "structure",
+   "status": "changed",
+   "original_ids": [
+    "O3"
+   ],
+   "generated_ids": [
+    "G30",
+    "G36"
+   ],
+   "element_ids": [
+    "e8",
+    "e11",
+    "e72",
+    "e73",
+    "e74"
+   ],
+   "tags": [
+    {
+     "attribute": "page metadata",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: rich social and json-ld meta becomes minimal meta",
+     "page_wide": true
+    },
+    {
+     "attribute": "call-to-action button",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: styled anchors rather than button elements",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c05",
+   "observation": "The top of the page differs. The original opens with a 1440×180 banner photo of three Insight generations, with the logo, search and account icons overlaid on it. The AI-built page opens with a 580px-tall dark navy hero that has no image. It holds a left-aligned H1, a paragraph, a CTA and a stats row, and the right half of the hero is empty.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O4"
+   ],
+   "generated_ids": [
+    "G3",
+    "G4"
+   ],
+   "element_ids": [
+    "e1",
+    "e2",
+    "e4",
+    "e8",
+    "e9",
+    "e10"
+   ],
+   "tags": [
+    {
+     "attribute": "hero area",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: photo banner becomes dark navy text hero with stats",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c06",
+   "observation": "The logo is an SVG wordmark on both pages, rendered differently. The original's is a blue italic condensed 'InsightCentral.net' at 209×45. The AI-built page's is a cyan condensed italic wordmark at 158×34.",
+   "category": "branding",
+   "status": "changed",
+   "original_ids": [
+    "O5"
+   ],
+   "generated_ids": [
+    "G11"
+   ],
+   "element_ids": [
+    "e3"
+   ],
+   "tags": [
+    {
+     "attribute": "logo",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: blue italic wordmark becomes smaller cyan wordmark",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c07",
+   "observation": "Header controls differ. The original's header has a translucent dark search field, a 'NEW' badge, a list icon, a 'Login / Join' link with a user icon and a kebab menu, all as Font Awesome icons. The AI-built page's header has a plain nav of three white text links (What's New, Forums, Login / Join) and a cyan 'Join Community' pill, with no search and no icons.",
+   "category": "navigation",
+   "status": "changed",
+   "original_ids": [
+    "O5"
+   ],
+   "generated_ids": [
+    "G10",
+    "G3"
+   ],
+   "element_ids": [
+    "e4",
+    "e5",
+    "e6",
+    "e7",
+    "e1",
+    "e2",
+    "e8",
+    "e9"
+   ],
+   "tags": [
+    {
+     "attribute": "primary navigation",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: search and icon header becomes plain text links with pill",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c08",
+   "observation": "Page grid differs. The original is a two-column layout spanning x≈140–1300: a feed about 842px wide and a sidebar about 300px wide. The AI-built page is a single 1040px column from x=200 to x=1240, and every section shares the same edges.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O6"
+   ],
+   "generated_ids": [
+    "G5"
+   ],
+   "element_ids": [
+    "e18",
+    "e37",
+    "e54",
+    "e69"
+   ],
+   "tags": [
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: two-column feed with sidebar becomes single centered column",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c09",
+   "observation": "The overall content model differs. The original is a forum feed with a sidebar of widgets. The AI-built page is laid out like a landing page: a hero with stats, a grid of thread cards, a contributors list, community tiles and a sign-up band.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O6",
+    "O9"
+   ],
+   "generated_ids": [
+    "G37"
+   ],
+   "element_ids": [
+    "e91",
+    "e93",
+    "e12"
+   ],
+   "tags": [
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: forum feed with widgets becomes landing page sections",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "observation": "Both pages show three featured threads in a row, with different card designs. On the original, each card is a photo about 269px wide with a dark gradient overlay, and the white title, avatar chip, username and comment count sit on top of the image. On the AI-built page, each card is about 333px wide with a 331×248 photo on top and a text block below it.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O7"
+   ],
+   "generated_ids": [
+    "G12"
+   ],
+   "element_ids": [
+    "e20",
+    "e26",
+    "e32"
+   ],
+   "tags": [
+    {
+     "attribute": "blog post feed",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: photo overlay cards become image-top text-below cards",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "observation": "On both pages, the three featured photos (natural sizes 700×700, 525×700 and 393×700) are cropped to fill uniform frames. The frames differ: equal-height tiles on the original, 331×248 landscape frames on the AI-built page.",
+   "category": "imagery",
+   "status": "general",
+   "original_ids": [
+    "O8"
+   ],
+   "generated_ids": [
+    "G14"
+   ],
+   "element_ids": [
+    "e22",
+    "e28",
+    "e34"
+   ],
+   "tags": [
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "kept",
+     "value": "kept: photos cropped to uniform frames",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "observation": "Long thread titles are truncated with an ellipsis on both pages, for example '50% off pick n pull this last weekend, new arm res…'.",
+   "category": "content",
+   "status": "general",
+   "original_ids": [
+    "O7"
+   ],
+   "generated_ids": [
+    "G16"
+   ],
+   "element_ids": [
+    "e29",
+    "e30",
+    "e35"
+   ],
+   "tags": [
+    {
+     "attribute": "post titles",
+     "family": "typography",
+     "action": "kept",
+     "value": "kept: long titles truncated with ellipsis",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "observation": "Card surfaces differ. The original's cards are white with small radii and soft box-shadows (37 shadows on the page). The AI-built page's cards are white with a thin light-grey border, 8–15px radii and no shadows.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O9"
+   ],
+   "generated_ids": [
+    "G13"
+   ],
+   "element_ids": [
+    "e20",
+    "e26",
+    "e32"
+   ],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: soft shadows become thin borders",
+     "page_wide": true
+    },
+    {
+     "attribute": "corner radius",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: small radii become larger radii",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "observation": "Both pages use a muted grey thread meta line with a middle-dot separator, but the content differs. The original's reads 'user · a moment ago · X replied a moment ago'. The AI-built page's reads 'Posted by X · N replies'.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O9"
+   ],
+   "generated_ids": [
+    "G18"
+   ],
+   "element_ids": [
+    "e25",
+    "e31",
+    "e36"
+   ],
+   "tags": [
+    {
+     "attribute": "post meta line",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: timestamp reply line becomes posted by and reply count",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "observation": "The original has a long 'Recommended for you' feed of stacked thread cards about 101px apart, each with a bold blue title and a pill comment-count badge. The AI-built page has no such list and shows only three cards.",
+   "category": "components",
+   "status": "original_only",
+   "original_ids": [
+    "O9",
+    "O34"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "blog post feed",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: long recommended thread list",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "observation": "The original's timestamps are relative ('a moment ago') and wrapped in 25 time elements. The AI-built page shows no timestamps.",
+   "category": "content",
+   "status": "original_only",
+   "original_ids": [
+    "O10"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "timestamps",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: relative time stamps",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "observation": "The original prints a category label (for example 'Problems and Troubleshooting' or 'Buy/Sell Insight-Related Items') above each thread title. The AI-built page has no such labels.",
+   "category": "content",
+   "status": "original_only",
+   "original_ids": [
+    "O31"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "post category labels",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: category label above thread title",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "observation": "Both pages mix letter-initial avatars with photo avatars, styled differently. The original uses rounded-square tiles in varied flat colours, some with a small blue verified badge. The AI-built page uses 48px navy circles with a cyan initial (H, J) next to one photo avatar.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O11"
+   ],
+   "generated_ids": [
+    "G20"
+   ],
+   "element_ids": [
+    "e42",
+    "e46",
+    "e47",
+    "e51"
+   ],
+   "tags": [
+    {
+     "attribute": "avatars",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: colored square tiles become navy circles",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "observation": "Several of the original's thread thumbnails render as broken images, with blue alt text showing and in one case overflowing the card. The AI-built page has no broken images.",
+   "category": "imagery",
+   "status": "original_only",
+   "original_ids": [
+    "O12"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "dropped",
+     "value": "dropped: broken thumbnail images with alt text",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "observation": "Alt coverage differs. The original has 5 images with no alt attribute and some 0×0 tracking or placeholder images. The AI-built page has 0 missing alts: thread photos have descriptive alt text, and avatar and community icons have empty alt.",
+   "category": "accessibility",
+   "status": "changed",
+   "original_ids": [
+    "O13"
+   ],
+   "generated_ids": [
+    "G15"
+   ],
+   "element_ids": [
+    "e22",
+    "e28",
+    "e34",
+    "e47",
+    "e57"
+   ],
+   "tags": [
+    {
+     "attribute": "image alt text",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: missing alts become descriptive alts",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "observation": "Fonts differ. The original uses Helvetica Neue (983 elements) and Arial (81), with Font Awesome 5 Pro and Brands for icons, and 15px body text on a 22.5px line height. The AI-built page uses only the system-ui stack (119 elements), with no icon font and 16px body text on a 25.6px line height.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O14"
+   ],
+   "generated_ids": [
+    "G7"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "body typeface",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: helvetica neue becomes system-ui stack",
+     "page_wide": true
+    },
+    {
+     "attribute": "body text size and line height",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: 15px 1.5 becomes 16px 1.6",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "observation": "Type hierarchy differs. The original builds it mainly from weight and colour (bold blue ~18px titles, ~13px grey meta) and has no h1. The AI-built page uses size contrast: a 51.2px bold white h1 that wraps to two lines, and 24px bold h2s.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O15"
+   ],
+   "generated_ids": [
+    "G6"
+   ],
+   "element_ids": [
+    "e9",
+    "e19",
+    "e38",
+    "e55"
+   ],
+   "tags": [
+    {
+     "attribute": "h1 heading",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: absent h1 becomes large bold white h1",
+     "page_wide": false
+    },
+    {
+     "attribute": "section headings",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: weight and color hierarchy becomes size contrast",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "observation": "Palette differs. The original is neutral grey: text rgb(56,58,59), secondary text rgb(104,108,110), a single blue accent rgb(0,95,217) and a near-black footer rgb(35,35,36) on a pale page background rgb(240,243,245). The AI-built page pairs dark navy rgb(13,27,42) bands with a pale body rgb(243,246,249). Its single accent is cyan rgb(39,209,255), its ink is rgb(20,32,48), and secondary text is rgb(86,100,117) on the light background and rgb(184,201,217) on navy.",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O16"
+   ],
+   "generated_ids": [
+    "G1",
+    "G33",
+    "G2"
+   ],
+   "element_ids": [
+    "e1",
+    "e75",
+    "e10",
+    "e71",
+    "e91",
+    "e25",
+    "e8",
+    "e11"
+   ],
+   "tags": [
+    {
+     "attribute": "color palette",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: neutral grey with blue becomes navy with cyan accent",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "observation": "The 'Join Community' button differs. The original's is a full-width blue button in the sidebar with a user icon, white text and a 3px radius. The AI-built page's is a cyan pill (999px radius, 10px 20px padding) with dark teal text rgb(4,32,43), and a second cyan pill, 'Browse the Forums', sits in the hero.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O17"
+   ],
+   "generated_ids": [
+    "G2",
+    "G9"
+   ],
+   "element_ids": [
+    "e8",
+    "e11",
+    "e12",
+    "e14",
+    "e16",
+    "e74"
+   ],
+   "tags": [
+    {
+     "attribute": "call-to-action button",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: full-width blue button becomes cyan pill buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "observation": "Both pages show the forum stats, presented differently. The original puts two large numbers (414K posts, 180.3K members) in a sidebar intro card, split by a vertical divider, with 'Since 2003' in the text. The AI-built page shows three bold cyan numbers (414K, 180.3K, 2003) inline in the hero, each with a small label beneath.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O17",
+    "O15"
+   ],
+   "generated_ids": [
+    "G8"
+   ],
+   "element_ids": [
+    "e12",
+    "e13",
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ],
+   "tags": [
+    {
+     "attribute": "site statistics",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: sidebar card numbers become inline hero stats",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "observation": "The original has an 'Our Top Forums' sidebar card listing five forums with reply and view counts. The AI-built page has no comparable list.",
+   "category": "components",
+   "status": "original_only",
+   "original_ids": [
+    "O18"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "top forums list",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: sidebar top forums card",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "observation": "Section action links are placed differently. The original puts 'View All →' under the card heading. The AI-built page puts an underlined 'View all members' at the right end of the h2 row.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O18"
+   ],
+   "generated_ids": [
+    "G21"
+   ],
+   "element_ids": [
+    "e38",
+    "e39"
+   ],
+   "tags": [
+    {
+     "attribute": "section action links",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: view all under heading becomes right-aligned underlined link",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "observation": "Both pages list the month's top contributors with an avatar, username and reply count, in different formats. The original uses a compact sidebar card. The AI-built page uses a full-width bordered card holding an ordered list, with rank numbers, row dividers, 48px avatars and right-aligned reply counts.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O19"
+   ],
+   "generated_ids": [
+    "G19"
+   ],
+   "element_ids": [
+    "e40",
+    "e41",
+    "e45",
+    "e50"
+   ],
+   "tags": [
+    {
+     "attribute": "top contributors list",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: compact sidebar card becomes full-width ranked list",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "observation": "Both pages show three recommended communities (DIY Electric Car, Snowmobile World, Royal Enfield) with member counts and a NEW tag on Royal Enfield, in different formats. The original lists them in a sidebar card with 36px logos and a blue 'NEW!' tag. The AI-built page shows three 333×98 tiles in a grid, each a single link with a 64px rounded logo, and a cyan-tinted 'NEW' pill.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O20"
+   ],
+   "generated_ids": [
+    "G22",
+    "G23"
+   ],
+   "element_ids": [
+    "e56",
+    "e60",
+    "e64",
+    "e57",
+    "e67",
+    "e58",
+    "e59"
+   ],
+   "tags": [
+    {
+     "attribute": "recommended communities",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: sidebar list becomes three-tile grid",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "observation": "Corner radii differ. The original has 891 elements at 0px, 115 at 1–7px, 25 at 8–15px and 39 pills. The AI-built page has 96 at 0px, none at 1–7px, 14 at 8–15px and 9 pills. Neither page has radii of 16px or more apart from pills.",
+   "category": "shape",
+   "status": "changed",
+   "original_ids": [
+    "O22"
+   ],
+   "generated_ids": [
+    "G25"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "corner radius",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: mixed small radii become medium radii and pills",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c31",
+   "observation": "Effects differ. The original has 37 box-shadows, 8 gradients, 11 transitions and 1 animation. The AI-built page has 0 shadows, 0 gradients, 0 animations and 5 transitions. Neither page uses backdrop blur or transforms.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O23"
+   ],
+   "generated_ids": [
+    "G26"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: shadows and gradients become flat with few transitions",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c32",
+   "observation": "Both pages are laid out mainly with flexbox, at different scales. The original has 175 flex elements and 1 grid. The AI-built page has 17 flex elements and 5 grids, used for its three-column groups.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O24"
+   ],
+   "generated_ids": [
+    "G31"
+   ],
+   "element_ids": [
+    "e18",
+    "e54"
+   ],
+   "tags": [
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: flexbox-only becomes flex plus grid columns",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c33",
+   "observation": "Both pages are styled with semantic class names, not utility classes (Tailwind-like fraction about 0.04 on both). The scale differs: the original has 1199 class uses (254 unique) and 73 inline style attributes, while the AI-built page has 50 (26 unique) and 1 inline style attribute.",
+   "category": "code",
+   "status": "general",
+   "original_ids": [
+    "O25"
+   ],
+   "generated_ids": [
+    "G30"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "kept",
+     "value": "kept: semantic class names with smaller scale",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c34",
+   "observation": "The original's feed ends with a full-width white 'Load More' button. The AI-built page has no load-more control or pagination.",
+   "category": "navigation",
+   "status": "original_only",
+   "original_ids": [
+    "O26"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "load more button",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: full-width load more button",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c35",
+   "observation": "The AI-built page closes its main content with a dark navy rounded CTA panel: a centred h2 ('Join now to ask and comment!'), a subtitle, and three pill buttons (white Facebook and Google, cyan email). It is the only centred block on the page.",
+   "category": "components",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G24"
+   ],
+   "element_ids": [
+    "e69",
+    "e70",
+    "e72",
+    "e73",
+    "e74"
+   ],
+   "tags": [
+    {
+     "attribute": "sign-up band",
+     "family": "component",
+     "action": "added",
+     "value": "added: dark centered cta panel with pill buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c36",
+   "observation": "Both pages end with a dark full-width footer: a row of white links followed by small address and disclaimer paragraphs. The original's footer is near-black, has an RSS icon, and shows a 'fora' logo and a BBB badge at the right. The AI-built page's footer is navy, has seven underlined links including 'RSS feed', and keeps its text on the left with no logos or badges.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O27"
+   ],
+   "generated_ids": [
+    "G34"
+   ],
+   "element_ids": [
+    "e75",
+    "e76",
+    "e91",
+    "e92",
+    "e93"
+   ],
+   "tags": [
+    {
+     "attribute": "footer",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: near-black footer with logos becomes navy text-only footer",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c37",
+   "observation": "Both footers state ownership by VerticalScope Inc. and credit the XenForo forum software.",
+   "category": "content",
+   "status": "general",
+   "original_ids": [
+    "O28"
+   ],
+   "generated_ids": [
+    "G37"
+   ],
+   "element_ids": [
+    "e91",
+    "e93",
+    "e12"
+   ],
+   "tags": [
+    {
+     "attribute": "footer",
+     "family": "component",
+     "action": "kept",
+     "value": "kept: ownership and software credit text",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c38",
+   "observation": "Copy differs. The original is mostly user-generated thread titles and metadata (643 words, 6 exclamation marks). The AI-built page is a short, factual community description in plain sentences (227 words, 1 exclamation mark).",
+   "category": "copy",
+   "status": "changed",
+   "original_ids": [
+    "O29"
+   ],
+   "generated_ids": [
+    "G32"
+   ],
+   "element_ids": [
+    "e10",
+    "e70"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: user-generated titles become short factual sentences",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c39",
+   "observation": "Neither page uses emoji or em dashes.",
+   "category": "copy",
+   "status": "general",
+   "original_ids": [
+    "O30"
+   ],
+   "generated_ids": [
+    "G32"
+   ],
+   "element_ids": [
+    "e10",
+    "e70"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "kept",
+     "value": "kept: no emoji or em dashes",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c40",
+   "observation": "The original includes 2 forms, 14 inputs, a Google sign-in image button, 2 iframes and 2 noscript blocks. The AI-built page has no forms or inputs.",
+   "category": "structure",
+   "status": "original_only",
+   "original_ids": [
+    "O32"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "forms and inputs",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: search forms and sign-in inputs",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c41",
+   "observation": "The original serves responsive images through 14 picture and 18 source elements. The AI-built page uses plain img elements only.",
+   "category": "imagery",
+   "status": "original_only",
+   "original_ids": [
+    "O33"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "dropped",
+     "value": "dropped: responsive picture and source elements",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c42",
+   "observation": "Page length and vertical rhythm differ. The original is 3333px tall; its sidebar ends around y≈1470, which leaves the right side empty for the lower two thirds of the page. The AI-built page is 2195px tall and made of stacked full-width sections, starting at y=580, 1047, 1386 and 1646, with the footer at 1920.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O35",
+    "O34"
+   ],
+   "generated_ids": [
+    "G27"
+   ],
+   "element_ids": [
+    "e1",
+    "e18",
+    "e37",
+    "e54",
+    "e69",
+    "e75"
+   ],
+   "tags": [
+    {
+     "attribute": "page length",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: very tall page becomes much shorter page",
+     "page_wide": true
+    },
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: sidebar column becomes stacked full-width sections",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c43",
+   "observation": "On the AI-built page, plain text links in the body and footer are underlined, while nav, card and button links are not.",
+   "category": "typography",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G35"
+   ],
+   "element_ids": [
+    "e39",
+    "e78",
+    "e80",
+    "e5"
+   ],
+   "tags": [
+    {
+     "attribute": "text and link colors",
+     "family": "color",
+     "action": "added",
+     "value": "added: underlined body and footer text links",
+     "page_wide": false
+    }
+   ]
+  }
+ ]
+}

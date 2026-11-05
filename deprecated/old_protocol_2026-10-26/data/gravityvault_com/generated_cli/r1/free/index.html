@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gravity Vault Indoor Rock Gyms</title>
+<meta name="description" content="Indoor rock climbing gyms in California, New Jersey, New York and Pennsylvania. Welcoming to everyone, young or old, novice or expert.">
+<style>
+:root{--navy:#1d3557;--navy-dk:#12233c;--accent:#e8532b;--bg:#f6f7f9;--card:#fff;--text:#1c2430;--muted:#5b6676;--line:#e1e5eb;--r:14px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;color:var(--navy);margin:0}
+.btn{display:inline-block;padding:.75em 1.5em;border-radius:999px;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:#cf431e}
+.btn.ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 2px var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* header */
+.top{background:var(--navy-dk);color:#fff;font-size:.9rem}
+.top .wrap{display:flex;justify-content:flex-end;gap:20px;padding-top:8px;padding-bottom:8px}
+.top a{text-decoration:none;opacity:.9}.top a:hover{opacity:1;text-decoration:underline}
+header.main{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+header.main .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.logo img{height:46px;width:auto}
+nav ul{list-style:none;display:flex;gap:6px;margin:0;padding:0;flex-wrap:wrap}
+nav a{display:block;padding:.45em .8em;text-decoration:none;font-weight:600;font-size:.95rem;color:var(--navy);border-radius:8px}
+nav a:hover{background:var(--bg)}
+nav a[aria-current]{background:var(--bg)}
+.menu-btn{display:none;background:none;border:2px solid var(--navy);color:var(--navy);border-radius:8px;padding:.4em .8em;font-weight:700;font-size:.95rem}
+@media(max-width:900px){
+ .menu-btn{display:block}
+ nav{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);display:none;padding:10px 20px}
+ nav.open{display:block}
+ nav ul{flex-direction:column}
+}
+
+/* hero */
+.hero{background:linear-gradient(135deg,var(--navy-dk),var(--navy));color:#fff;padding:72px 0}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.4rem);margin-bottom:20px}
+.hero p{font-size:1.1rem;color:#dbe4f0;margin:0 0 28px;max-width:34em}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.ghost{color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.7)}
+.hero .btn.ghost:hover{background:#fff;color:var(--navy)}
+.hero img{border-radius:var(--r);box-shadow:0 20px 50px rgba(0,0,0,.4);width:100%;aspect-ratio:326/233;object-fit:cover}
+@media(max-width:800px){.hero{padding:48px 0}.hero .wrap{grid-template-columns:1fr;gap:32px}}
+
+/* finder */
+.finder{background:#fff;border-bottom:1px solid var(--line)}
+.finder form{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:18px 0}
+.finder label{font-weight:700;color:var(--navy)}
+.finder select{padding:.65em 1em;border:1px solid var(--line);border-radius:10px;font-size:1rem;background:#fff;min-width:200px}
+
+section{padding:72px 0}
+.sec-head{max-width:640px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(1.7rem,3.5vw,2.3rem)}
+
+/* feature cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(18,35,60,.12)}
+.card .num{width:40px;height:40px;border-radius:10px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:16px}
+.card h3{font-size:1.25rem;margin-bottom:10px}
+.card p{margin:0 0 18px;color:var(--muted);font-size:.97rem;flex:1}
+.card .more{color:var(--accent);font-weight:700;font-size:.95rem}
+
+/* mission */
+.mission{background:var(--navy);color:#fff}
+.mission .wrap{max-width:860px;text-align:center}
+.mission img{height:64px;width:auto;margin:0 auto 28px;filter:brightness(0) invert(1)}
+.mission p{font-size:1.2rem;line-height:1.7;margin:0;color:#e6edf6}
+
+/* locations */
+.state{margin-bottom:44px}
+.state[hidden]{display:none}
+.state h3{font-size:1.5rem;padding-bottom:10px;border-bottom:3px solid var(--accent);display:inline-block;margin-bottom:20px}
+.locs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.loc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.loc img{width:100%;aspect-ratio:326/233;object-fit:cover}
+.loc .body{padding:18px 20px 22px;flex:1}
+.loc h4{margin:0 0 8px;font-size:1.15rem;color:var(--navy)}
+.loc h4 a{text-decoration:none}.loc h4 a:hover{text-decoration:underline}
+.loc p{margin:0;color:var(--muted);font-size:.95rem}
+.loc.soon{opacity:.92}
+.loc.soon img{filter:grayscale(1) brightness(.85)}
+.badge{display:inline-block;background:var(--accent);color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:.2em .7em;border-radius:999px;margin-bottom:8px}
+
+/* newsletter + footer */
+.news{background:#fff;border-top:1px solid var(--line);padding:56px 0}
+.news .wrap{display:flex;gap:32px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.news h2{font-size:1.6rem}
+.news form{display:flex;gap:10px;flex-wrap:wrap}
+.news input{padding:.75em 1em;border:1px solid var(--line);border-radius:999px;font-size:1rem;min-width:260px}
+footer{background:var(--navy-dk);color:#c9d4e3;padding:48px 0 28px;font-size:.93rem}
+footer .cols{display:flex;gap:40px;justify-content:space-between;flex-wrap:wrap;margin-bottom:32px}
+footer img{height:44px;width:auto;filter:brightness(0) invert(1)}
+footer ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,auto);gap:6px 36px}
+footer a{text-decoration:none}footer a:hover{text-decoration:underline;color:#fff}
+.social{display:flex;gap:16px;flex-wrap:wrap;margin-top:16px}
+.legal{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
+.legal span a{margin-left:14px}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+ <a href="https://gravityvaultclimbing.com/app/w/v2/?s=1">Gift Cards</a>
+ <a href="contact">Contact Us</a>
+</div></div>
+
+<header class="main"><div class="wrap">
+ <a class="logo" href="https://www.gravityvault.com/"><img src="images/logo.png" alt="The Gravity Vault Indoor Rock Gyms"></a>
+ <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+ <nav id="nav" aria-label="Main">
+  <ul>
+   <li><a href="home" aria-current="page">Home</a></li>
+   <li><a href="options-to-climb">Options to Climb</a></li>
+   <li><a href="locations">Locations</a></li>
+   <li><a href="covid-19">Covid-19 Updates</a></li>
+   <li><a href="about-us">About</a></li>
+   <li><a href="franchising">Franchising</a></li>
+   <li><a href="contact">Contact</a></li>
+   <li><a href="careers">Careers</a></li>
+  </ul>
+ </nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Reach new heights, together.</h1>
+  <p>Indoor rock climbing for everyone — young or old, big or small, novice or expert. Find your home away from home at a Gravity Vault near you.</p>
+  <div class="actions">
+   <a class="btn" href="#locations">Find a Location</a>
+   <a class="btn ghost" href="options-to-climb">Options to Climb</a>
+  </div>
+ </div>
+ <img src="images/gym.png" alt="Climbers' view of a Gravity Vault gym with tall blue, white and red climbing walls" width="326" height="233">
+</div></div>
+
+<div class="finder"><div class="wrap">
+ <form id="finder">
+  <label for="state">Find a Location</label>
+  <select id="state">
+   <option value="">Select a State</option>
+   <option>California</option><option>New Jersey</option><option>New York</option><option>Pennsylvania</option>
+  </select>
+  <button class="btn" type="submit">Search</button>
+ </form>
+</div></div>
+
+<section id="info"><div class="wrap">
+ <div class="sec-head"><h2>Start climbing</h2></div>
+ <div class="cards">
+  <a class="card" href="https://gravityvaultclimbing.com/">
+   <div class="num">1</div><h3>Gift Cards</h3>
+   <p>Give the gift of climbing! You can purchase online and they can enjoy in the gyms!</p><span class="more">Buy a gift card →</span></a>
+  <a class="card" href="locations">
+   <div class="num">2</div><h3>Waivers</h3>
+   <p>Climbers who have never been to a Gravity Vault before can start the check-in process by filling out their waiver online. Check out the gym's location page for more info. Not sure if you already have an account set up? Don't hesitate to give us a call!</p><span class="more">Choose your gym →</span></a>
+  <a class="card" href="covid-19">
+   <div class="num">3</div><h3>Visiting Us During This Time</h3>
+   <p>Thank you to everyone for helping us create the safest environment possible for our climbing community! Learn our current policies here.</p><span class="more">Read our policies →</span></a>
+  <a class="card" href="franchising">
+   <div class="num">4</div><h3>Franchising</h3>
+   <p>We are proud to be the first Indoor Rock Climbing Franchise. Our team can guide you through the ins and outs of building and operating your very own Gravity Vault Indoor Rock Gym. Learn more about ownership with us and what our brand is all about.</p><span class="more">Learn about ownership →</span></a>
+ </div>
+</div></section>
+
+<section class="mission"><div class="wrap">
+ <img src="images/logo.png" alt="The Gravity Vault Indoor Rock Gyms">
+ <p>The Gravity Vault Indoor Rock Gyms’ mission is to make everyone’s rock climbing experience with us a positive and memorable one! We strive to provide a welcoming, diverse, equitable and inclusive environment for not only our customers but our staff alike. Whether you’re young or old, big or small, novice or expert we want The Gravity Vault to be your home away from home. We believe that new heights can always be reached, not only on our walls but in all aspects of life. The best way to achieve these heights is together.</p>
+</div></section>
+
+<section id="locations"><div class="wrap">
+ <div class="sec-head"><h2>Our locations</h2></div>
+
+ <div class="state" data-state="California"><h3>California</h3><div class="locs">
+  <article class="loc"><a href="locations/marin-county-ca"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/marin-county-ca">Marin County, CA</a></h4></div></article>
+ </div></div>
+
+ <div class="state" data-state="New Jersey"><h3>New Jersey</h3><div class="locs">
+  <article class="loc"><a href="locations/brick-nj"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/brick-nj">Brick, NJ</a></h4></div></article>
+  <article class="loc"><a href="locations/chatham-nj"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/chatham-nj">Chatham, NJ</a></h4><p>The second Gravity Vault location to open, Chatham hosts a variety of options for the new to experienced climber. The facility boasts over 13,500 sq ft of rock climbing.</p></div></article>
+  <article class="loc"><a href="locations/flemington-nj"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/flemington-nj">Flemington, NJ</a></h4><p>Hunterdon County's home for climbing! Featuring 17,500 square feet of climbing, a 360 degree boulder and more!</p></div></article>
+  <article class="loc"><a href="locations/hoboken-nj"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/hoboken-nj">Hoboken, NJ</a></h4><p>25,000 square feet of climbing has come to the Mile Square!</p></div></article>
+  <article class="loc"><a href="locations/middletown-nj"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/middletown-nj">Middletown, NJ</a></h4><p>Middletown features over 14,000+ sq ft of rock climbing including arêtes, chimneys, overhangs, arches, extensive bouldering, and more! Open 7 days a week!</p></div></article>
+  <article class="loc"><a href="locations/montclair-nj"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/montclair-nj">Montclair, NJ</a></h4></div></article>
+  <article class="loc"><a href="locations/upper-saddle-river-nj"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/upper-saddle-river-nj">Upper Saddle River, NJ</a></h4><p>Since 2005 we've been bringing indoor rock climbing to northern New Jersey with over 13,500 sq ft inclusive of private rooms (great for birthday parties), lounge seating and a cardio area.</p></div></article>
+  <article class="loc"><a href="locations/voorhees-nj"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/voorhees-nj">Voorhees, NJ</a></h4><p>Now open! Please visit our location page for more details!</p></div></article>
+ </div></div>
+
+ <div class="state" data-state="New York"><h3>New York</h3><div class="locs">
+  <article class="loc soon"><img src="images/gym.png" alt="" loading="lazy"><div class="body"><span class="badge">Coming Soon!</span><h4>Nassau County, NY</h4></div></article>
+  <article class="loc"><a href="locations/melville-ny"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/melville-ny">Melville, NY</a></h4><p>Featuring over 20,000 sq ft of state of the art rock climbing terrain. The facility has more than 100 rope stations and extensive bouldering providing everything from super technical lines to beginner walls great for parties or corporate events. Come experience a metro quality gym on The Island that's easily accessible from the expressway with lots of FREE parking!</p></div></article>
+  <article class="loc"><a href="locations/poughkeepsie-ny"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/poughkeepsie-ny">Poughkeepsie, NY</a></h4><p>The best indoor rock climbing in the Hudson Valley from party walls to steep boulder problems and difficult lead routes. There's something fun and challenging for everyone, open 7 days a week!</p></div></article>
+ </div></div>
+
+ <div class="state" data-state="Pennsylvania"><h3>Pennsylvania</h3><div class="locs">
+  <article class="loc soon"><img src="images/gym.png" alt="" loading="lazy"><div class="body"><span class="badge">Coming Soon!</span><h4>Lehigh Valley, PA</h4></div></article>
+  <article class="loc soon"><img src="images/gym.png" alt="" loading="lazy"><div class="body"><span class="badge">Coming Soon!</span><h4>Philadelphia, PA</h4></div></article>
+  <article class="loc"><a href="locations/radnor-pa"><img src="images/gym.png" alt="" loading="lazy"></a><div class="body"><h4><a href="locations/radnor-pa">Radnor, PA</a></h4><p>The Gravity Vault Radnor is a state-of-the-art climbing facility that has come to the Philadelphia/Mainline area!</p></div></article>
+ </div></div>
+</div></section>
+
+<div class="news"><div class="wrap">
+ <h2>Signup for our Newsletter!</h2>
+ <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks!'">
+  <label for="email" style="position:absolute;left:-9999px">Email address</label>
+  <input id="email" type="email" placeholder="Your email address" required>
+  <button class="btn" type="submit">Sign up</button>
+ </form>
+</div></div>
+</main>
+
+<footer><div class="wrap">
+ <div class="cols">
+  <div>
+   <img src="images/logo.png" alt="The Gravity Vault Indoor Rock Gyms">
+   <div class="social">
+    <a href="https://www.facebook.com/thegravityvault">Facebook</a>
+    <a href="https://www.instagram.com/explore/tags/gravityvault/">Instagram</a>
+    <a href="https://twitter.com/GravityVault">Twitter</a>
+    <a href="https://www.linkedin.com/company/gravity-vault">LinkedIn</a>
+    <a href="https://www.pinterest.com/GravityVault/">Pinterest</a>
+   </div>
+  </div>
+  <ul>
+   <li><a href="options-to-climb">Options to Climb</a></li>
+   <li><a href="locations">Find a Location</a></li>
+   <li><a href="faqs">FAQs</a></li>
+   <li><a href="about-us">About Us</a></li>
+   <li><a href="franchising">Franchising</a></li>
+   <li><a href="careers">Careers</a></li>
+   <li><a href="https://gravityvaultclimbing.com/app/w/v2/?s=1">Gift Cards</a></li>
+   <li><a href="https://www.gravityvault.com/contact">Contact Us</a></li>
+  </ul>
+ </div>
+ <div class="legal">
+  <span>© 2021 Gravity Vault</span>
+  <span><a href="privacy-policy">Privacy Policy</a><a href="privacy-policy">Terms of Use</a><a href="sitemap">Site Map</a><a href="http://www.lform.com">Lform Design | NJ Web Design Company</a></span>
+ </div>
+</div></footer>
+
+<script>
+const btn=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+const sel=document.getElementById('state');
+function filter(){document.querySelectorAll('.state').forEach(s=>s.hidden=sel.value&&s.dataset.state!==sel.value)}
+sel.addEventListener('change',filter);
+document.getElementById('finder').addEventListener('submit',e=>{e.preventDefault();filter();document.getElementById('locations').scrollIntoView()});
+</script>
+</body>
+</html>

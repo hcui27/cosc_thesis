@@ -1,0 +1,267 @@
+[
+ {
+  "observation": "Page title pairs the brand name with a positioning phrase, separated by a pipe",
+  "category": "metadata",
+  "evidence": "title: \"Ridetech | Performance Suspension Specialist\""
+ },
+ {
+  "observation": "The page has no h1. The heading outline starts with an h3 ('FREE SHIPPING') before the first h2",
+  "category": "semantic structure",
+  "evidence": "h1_count: 0; heading_outline[0] = level 3 'FREE SHIPPING'"
+ },
+ {
+  "observation": "Heading levels are not in order: h4s like 'PERFORMANCE SUSPENSION SPECIALIST' sit directly under an h2, and h3s appear after h4s",
+  "category": "semantic structure",
+  "evidence": "heading_outline: h2 RIDETECH.COM → h4 PERFORMANCE SUSPENSION SPECIALIST → h3 DON'T SEE WHAT YOU'RE LOOKING FOR?"
+ },
+ {
+  "observation": "Landmark elements are used: one header, nav, main and footer, plus 6 sections. There are no article, aside or figure elements",
+  "category": "semantic structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 6, footer 1, article 0, figure 0"
+ },
+ {
+  "observation": "Footer contact details are marked up with an address element",
+  "category": "semantic structure",
+  "evidence": "tag_counts.address: 1; footer shows '350 S. St. Charles St, Jasper, Indiana, 47546'"
+ },
+ {
+  "observation": "The page has many links but little text: 115 anchors and 92 list items against 342 words",
+  "category": "content density",
+  "evidence": "anchors: 115; li: 92; text_stats.words: 342"
+ },
+ {
+  "observation": "Two font families are used: Helvetica Neue for nearly all text, and Impact for a few display headings",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Helvetica Neue 333, Impact 9"
+ },
+ {
+  "observation": "Section headings use condensed, heavy, all-caps type (Impact-style) at 32px bold",
+  "category": "typography",
+  "evidence": "h2 font_size 32px, weight 700; 'SHOP BY VEHICLE', 'LATEST NEWS', 'GET CONNECTED' appear condensed in the screenshots"
+ },
+ {
+  "observation": "Each section heading has a short red underline bar beneath it, aligned to the left",
+  "category": "decoration",
+  "evidence": "Red rule under 'SHOP BY VEHICLE', 'SHOP BY PRODUCT', 'LATEST NEWS', 'GET CONNECTED'; centred under 'RIDETECH.COM'"
+ },
+ {
+  "observation": "Body text is set at 16px with a 1.6 line height",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px"
+ },
+ {
+  "observation": "Navigation, card labels, buttons and footer column titles use uppercase bold sans-serif",
+  "category": "typography",
+  "evidence": "'PRODUCTS APPLICATIONS NEWS TECH', 'MUSCLE CARS AND CLASSICS', 'REQUEST A CATALOG', 'CONTACT INFO'"
+ },
+ {
+  "observation": "The palette is limited to white, light grey, near-black and one red accent (rgb 215,25,32)",
+  "category": "color",
+  "evidence": "top_backgrounds: white 38, rgb(244,244,244) 13, rgb(20,20,20) 3, rgb(215,25,32) 3, black 1"
+ },
+ {
+  "observation": "Body text is near-black rgb(20,20,20) rather than pure black",
+  "category": "color",
+  "evidence": "body_color rgb(20,20,20); top text color with 245 elements"
+ },
+ {
+  "observation": "Light grey rgb(204,204,204) is the second most common text colour, used for links on the dark footer",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(204,204,204) 59; footer links appear grey on rgb(20,20,20)"
+ },
+ {
+  "observation": "Section backgrounds alternate between white and light grey (#f4f4f4), separating content bands without borders",
+  "category": "layout",
+  "evidence": "Shop by Vehicle on white, Shop by Product on grey, catalog on white, Latest News on grey"
+ },
+ {
+  "observation": "A thin near-black utility bar at the very top holds a phone number on the left and account/newsletter/catalog links on the right",
+  "category": "layout",
+  "evidence": "slice 0 top: '☎ 812.481.4787' left; 'Sign Up for News! Get a FREE Catalog Login / Register' right"
+ },
+ {
+  "observation": "The phone number uses a telephone glyph, which accounts for the page's only emoji",
+  "category": "copy",
+  "evidence": "text_stats.emoji: 1; '☎ 812.481.4787' in the top bar"
+ },
+ {
+  "observation": "The main header puts the logo, four text nav links, a search input and a cart total on one row, all left of centre, leaving empty space on the right",
+  "category": "layout",
+  "evidence": "slice 0: logo at x=136, then PRODUCTS…TECH, Search box, 'Cart $0.00' ending around x=1003"
+ },
+ {
+  "observation": "The logo is a red-and-black wordmark with a stacked icon, rendered as a PNG at about half its natural size",
+  "category": "imagery",
+  "evidence": "ridetech-logo-red-black-icon.png natural 389×87, rendered 197×44"
+ },
+ {
+  "observation": "The hero is a full-width strip of four equal tiles, each 360×240, cropped from much wider 1920×450 banner images, so the banner text is cut off at the edges",
+  "category": "imagery",
+  "evidence": "images silverado-copy.jpg, ridepro-e5.jpg, falcon.jpg, camaro-subframe…jpg each rect w 360 h 240 at x 0/360/720/1080; visible clipped text like 'NSION', 'TROL', 'ectors'"
+ },
+ {
+  "observation": "Below the hero, a solid red full-width band announces free shipping, with an Impact heading and an uppercase subline",
+  "category": "component",
+  "evidence": "'FREE SHIPPING' / 'FREE GROUND SHIPPING TO THE CONTINENTAL U.S. FOR ORDERS OF $100 OR MORE' on rgb(215,25,32)"
+ },
+ {
+  "observation": "'Shop by Vehicle' uses five equal bordered cards, each with a red car-silhouette image over a label",
+  "category": "component",
+  "evidence": "images muscle-car.png, modern-muscle.png, truck.png, hot-rod.png, corvette.png each 216×121 in a row at y=591"
+ },
+ {
+  "observation": "Vehicle silhouette images have empty alt text, so the adjacent label carries the meaning",
+  "category": "imagery",
+  "evidence": "alt: '' for muscle-car.png, truck.png, etc.; alt_missing: 0"
+ },
+ {
+  "observation": "Product and vehicle cards have a red horizontal rule between the image and the label",
+  "category": "decoration",
+  "evidence": "A red line at the image/label boundary on every image card in slices 0–1"
+ },
+ {
+  "observation": "'Shop by Product' is a 4-column card grid. The first 11 cards have square-source product photos, and the rest are text-only grey tiles",
+  "category": "layout",
+  "evidence": "11 category images at 275×206 (natural 300×300) in rows at y 962/1261/1559; then text tiles 'LEVELTOW KITS', 'TRU TURN', 'TIGERCAGE', … 'BUSHINGS'"
+ },
+ {
+  "observation": "Square 300×300 product images are shown in a 4:3 frame (275×206), so they are cropped or scaled to fit",
+  "category": "imagery",
+  "evidence": "natural [300,300] vs rect 275×206"
+ },
+ {
+  "observation": "Product photos are cut-out parts on white backgrounds with no lifestyle context",
+  "category": "imagery",
+  "evidence": "Coilovers, shock absorbers, control arms and sway bars on white in slices 0–1"
+ },
+ {
+  "observation": "The text-only category tiles vary in height: some match the image cards, others are shorter fixed-height boxes",
+  "category": "layout",
+  "evidence": "'LEVELTOW KITS' tile matches the image-card row height; 'TRU TURN' row tiles are about 95px tall"
+ },
+ {
+  "observation": "The last product row is incomplete: only 2 of 4 columns are filled ('APPAREL', 'BUSHINGS')",
+  "category": "layout",
+  "evidence": "slice 1 bottom grid row"
+ },
+ {
+  "observation": "Cards use square or barely rounded corners with no shadows",
+  "category": "decoration",
+  "evidence": "border_radius buckets: 0px 304, 1–7px 38, 8px+ 0; box_shadows 0"
+ },
+ {
+  "observation": "There are no gradients, backdrop blur, CSS animations or transforms. Only transitions are present",
+  "category": "effects",
+  "evidence": "gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, transitions 31"
+ },
+ {
+  "observation": "The catalog promo is a two-column split: a 3D catalog cover image on the left, and a stacked heading with a red CTA button and a text link on the right",
+  "category": "component",
+  "evidence": "catalog-cover-for-flipbook.png 360×288 at x=236; 'Free' / 'PRODUCT CATALOG', 'REQUEST A CATALOG' button, '1,000,001 Mile Warranty →'"
+ },
+ {
+  "observation": "The catalog heading mixes a large red Impact word 'Free' with a smaller black uppercase 'PRODUCT CATALOG' below it",
+  "category": "typography",
+  "evidence": "slice 1 catalog block"
+ },
+ {
+  "observation": "Secondary links end in a right arrow character and are set in red bold text",
+  "category": "copy",
+  "evidence": "'1,000,001 Mile Warranty →', 'View all news →'"
+ },
+ {
+  "observation": "Primary buttons are solid red rectangles with white uppercase bold text and square corners",
+  "category": "component",
+  "evidence": "'REQUEST A CATALOG', 'SIGN UP' buttons; colour matches rgb(215,25,32)"
+ },
+ {
+  "observation": "The button the extractor flagged as primary is a transparent 'Menu' toggle with black text, 0 radius and 8px 12px padding, which is not visible in the desktop render",
+  "category": "component",
+  "evidence": "primary_button: text 'Menu', bg rgba(0,0,0,0), radius 0px, padding 8px 12px"
+ },
+ {
+  "observation": "News items are text-only cards (no thumbnails) in two columns, each with a thick red left border",
+  "category": "component",
+  "evidence": "slice 2: 'Salt Lake City GoodGuys…' and 'Great Times at the C-10 Nationals…' cards with a red left edge"
+ },
+ {
+  "observation": "News excerpts are cut off with a bracketed ellipsis '[...]'",
+  "category": "copy",
+  "evidence": "'RaceDeck GoodGuys [...]', 'event. Held [...]'"
+ },
+ {
+  "observation": "Dated content is visible: the news refers to May 2021 events and the footer copyright reads 2021",
+  "category": "copy",
+  "evidence": "'When: May 21 – 23, 2021'; 'Copyright 2021 © Ridetech'"
+ },
+ {
+  "observation": "An 'about' band places centred white text over a darkened full-width photo of an orange muscle car on a track",
+  "category": "imagery",
+  "evidence": "slice 2: 'RIDETECH.COM' section over a dim photo of an orange Camaro; it is not in the img list, so it is likely a CSS background"
+ },
+ {
+  "observation": "The about band has a centred Impact heading, a pink-red letter-spaced uppercase subheading, and a centred paragraph of SEO-style product keywords",
+  "category": "typography",
+  "evidence": "'PERFORMANCE SUSPENSION SPECIALIST' letter-spaced; paragraph lists 'air suspension systems (air ride), coil-overs, shock absorbers…'"
+ },
+ {
+  "observation": "Social and contact links are shown as ghost buttons: white 1px outline boxes with white bold text on the dark photo",
+  "category": "component",
+  "evidence": "'Facebook', 'Instagram', 'Email', 'Call', 'YouTube' outlined boxes in slice 2"
+ },
+ {
+  "observation": "The copy uses exclamation marks for an enthusiastic tone",
+  "category": "copy",
+  "evidence": "text_stats.exclamations 3; 'Sign Up for News!', 'LET US KNOW!', 'truck event!'"
+ },
+ {
+  "observation": "The newsletter form puts labelled First Name, Last Name and Email fields and a red SIGN UP button on one row",
+  "category": "component",
+  "evidence": "slice 2 'GET CONNECTED'; tag_counts form 2, input 4, label 3"
+ },
+ {
+  "observation": "Form labels sit above the inputs in small bold text. The inputs are plain rectangles with thin grey borders",
+  "category": "component",
+  "evidence": "'First Name', 'Last Name', 'Email address:' above the boxed inputs"
+ },
+ {
+  "observation": "The footer is near-black with four link columns: Contact Info, Information, Applications, Your Account",
+  "category": "layout",
+  "evidence": "h4s 'CONTACT INFO', 'INFORMATION', 'APPLICATIONS', 'YOUR ACCOUNT'; background rgb(20,20,20)"
+ },
+ {
+  "observation": "A thin divider separates the footer columns from a bottom row with the copyright on the left and 'Back to top ↑' on the right",
+  "category": "layout",
+  "evidence": "slice 3"
+ },
+ {
+  "observation": "Content is held in a centred container about 1168px wide (x 136 to 1304) on a 1440px viewport. The hero is the only full-bleed element",
+  "category": "layout",
+  "evidence": "logo x=136; cards end around x=1303; hero images span x 0–1440; page_width 1440"
+ },
+ {
+  "observation": "Layout mixes CSS grid and flexbox",
+  "category": "layout",
+  "evidence": "display_grid 7, display_flex 18"
+ },
+ {
+  "observation": "The markup is lean, with semantic class names: 83 class uses across 29 unique classes, and no utility-class framework",
+  "category": "DOM",
+  "evidence": "classes total 83, unique 29, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "The page loads few resources: one stylesheet and one script. There are no inline SVGs, and only 4 inline style attributes",
+  "category": "DOM",
+  "evidence": "stylesheets 1, scripts 1, svgs 0, inline_style_attrs 4"
+ },
+ {
+  "observation": "ARIA use is minimal",
+  "category": "DOM",
+  "evidence": "aria_attrs: 3"
+ },
+ {
+  "observation": "The full page is 4222px tall at 1440px wide",
+  "category": "layout",
+  "evidence": "layout.page_height 4222, page_width 1440"
+ }
+]

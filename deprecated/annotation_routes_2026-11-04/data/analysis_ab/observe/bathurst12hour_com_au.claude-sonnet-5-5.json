@@ -1,0 +1,162 @@
+[
+ {
+  "observation": "The page uses a dark theme. The body background is near-black rgb(14,15,18) and the body text is off-white rgb(236,238,242). Cards and the follow band use a slightly lighter charcoal, rgb(23,25,30).",
+  "category": "color",
+  "evidence": "facts.colors body_bg rgb(14,15,18), body_color rgb(236,238,242); top_backgrounds rgb(23,25,30) x8"
+ },
+ {
+  "observation": "A single saturated red, rgb(232,17,45), is the only accent colour. It appears on the eyebrow text, the date badge, 'READ MORE' links, the 'FEATURED NEWS' label, the horizontal rules, and the Follow-us button borders.",
+  "category": "color",
+  "evidence": "colors top_backgrounds rgb(232,17,45) x1; top_text_colors rgb(232,17,45) x9; red rules under the hero and above the partners in the screenshot"
+ },
+ {
+  "observation": "The type is a single family, 'Helvetica Neue' with Arial and sans-serif fallbacks, on all 187 counted elements. Hierarchy comes from size, weight and case, not from different fonts.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['Helvetica Neue',187]]; h1 font_family \"Helvetica Neue\", Arial, sans-serif"
+ },
+ {
+  "observation": "The H1 is a very large 64px bold uppercase headline. It wraps to two lines in a tight line-height and sits to the right of the logo in the hero.",
+  "category": "typography",
+  "evidence": "h1 font_size 64px, weight 700, text 'AUSTRALIA'S INTERNATIONAL ENDURANCE RACE'; hero slice"
+ },
+ {
+  "observation": "Small uppercase labels with wide letter-spacing are used for the eyebrow ('LIQUI-MOLY BATHURST 12 HOUR'), 'FEATURED NEWS', 'READ MORE →', 'OUR PARTNERS', and the nav items. This gives a consistent label style in bold red or white.",
+  "category": "typography",
+  "evidence": "Visible tracked uppercase text in the hero, the featured card and the partners heading; h4 'OUR PARTNERS'"
+ },
+ {
+  "observation": "The top nav is a horizontal bar of seven uppercase bold links. Two-word items ('THE EVENT', 'THE RACE', 'PREVIOUS RACES', 'BUSHFIRES APPEAL') wrap onto two lines, so the spacing between items is uneven. The bar has a thin bottom border and a small logo at the left.",
+  "category": "layout",
+  "evidence": "nav count 1; header 1; screenshot header slice shows wrapped 'THE / EVENT'; header logo 41x48 at x146,y8"
+ },
+ {
+  "observation": "The page has a 'Menu' button with a transparent background, a 4px radius and 8px 12px padding. It is not visible at desktop width, so it is probably a mobile toggle that is hidden here. It is the only button on the page.",
+  "category": "component",
+  "evidence": "primary_button text 'Menu', bg rgba(0,0,0,0), radius 4px, padding 8px 12px; buttons: 1"
+ },
+ {
+  "observation": "The hero is a left-aligned two-column composition. A large logo (150x173) sits on the left. On the right are an eyebrow, the H1, the location 'Mount Panorama, Bathurst', and a solid red date badge ('31 JANUARY – 2 FEBRUARY 2020'). The background is a dark diagonal red and blue light-streak graphic. A red rule closes the hero.",
+  "category": "layout",
+  "evidence": "Image rect headerlogo.png at x146,y187 w150 h173; hero slice; gradient_backgrounds 0, so the streak is probably an image or pseudo-element"
+ },
+ {
+  "observation": "The logo image (headerlogo.png) is used twice, once small in the header and once large in the hero. The footer uses a different file, footerlogo.png, at 56x64.",
+  "category": "imagery",
+  "evidence": "images[0] and [1] both headerlogo.png (270x312 natural); footerlogo.png 147x169 natural, rendered 56x64"
+ },
+ {
+  "observation": "The page is contained in a centred column about 1148px wide, with left and right edges at x≈146 and x≈1294 on a 1440px viewport. The header, news, follow and partners sections all share these edges.",
+  "category": "layout",
+  "evidence": "image rects start at x146/147; page_width 1440; card right edge ≈1293"
+ },
+ {
+  "observation": "'LATEST NEWS' is an uppercase H2 with a thin horizontal rule extending to the right of the title, so the rule fills the rest of the row. It is used as the section heading.",
+  "category": "component",
+  "evidence": "h2 'LATEST NEWS' at 25.6px bold; screenshot shows a hairline line after the heading"
+ },
+ {
+  "observation": "The news area has a featured card and a grid of six cards. The featured card is a horizontal split: a 668x417 image on the left and a text panel on the right with a label, a title, a date and a link. Below it, the six cards sit in a 3-column grid, each 365x289 for the image, in two rows.",
+  "category": "layout",
+  "evidence": "Images at x147 w668 h417; grid images at x147/538/928 w365 h289; display_grid count 3"
+ },
+ {
+  "observation": "Each news card has the same structure. A photo comes first, then a bold white H3 headline, a muted grey date, and a red uppercase 'READ MORE →' link. Cards are flat panels with a thin border, a charcoal fill, square corners and no shadows.",
+  "category": "component",
+  "evidence": "h3 count 7; time count 7; box_shadows 0; border_radius_buckets mostly 0 (161), 26 in the 1-7px range"
+ },
+ {
+  "observation": "The news images are all cropped to a uniform 365x289 box. A 2500x1683 source (Bushfireappeal.jpg) is displayed in the same box as the 385x305 thumbnails. The photos are motorsport action and podium or celebration shots.",
+  "category": "imagery",
+  "evidence": "images list: Bushfireappeal.jpg natural 2500x1683 rect 365x289; others 385x305 natural rect 365x289"
+ },
+ {
+  "observation": "Card images have empty alt text, and so do the hero logo and five of the six grid thumbnails. Only the featured image has descriptive alt text. The facts report alt_missing 0, so these are explicit empty alts and not missing attributes.",
+  "category": "imagery",
+  "evidence": "images alt '' for grid thumbnails; alt_missing 0"
+ },
+ {
+  "observation": "Dates are marked up as 7 semantic <time> elements, shown as 'Feb 13, 2020' and the like in small muted grey, rgb(154,161,173). The featured date is 'Oct 19, 2020'.",
+  "category": "semantic",
+  "evidence": "tag_counts time 7; top_text_colors rgb(154,161,173) x28"
+ },
+ {
+  "observation": "The news cards are not marked up as <article>. The page has 0 article, aside, figure, blockquote and cite elements. It does have one header, nav, main, section and footer.",
+  "category": "semantic",
+  "evidence": "semantic article 0, figure 0, aside 0; header 1, nav 1, main 1, section 1, footer 1"
+ },
+ {
+  "observation": "The heading outline is clean and sequential. It has one H1, H2 'LATEST NEWS' with seven H3 article titles, H2 'FOLLOW US', and an H4 'OUR PARTNERS'. The H4 skips the H3 level.",
+  "category": "semantic",
+  "evidence": "heading_outline; h1_count 1, h2 2, h3 7, h4 1"
+ },
+ {
+  "observation": "The 'Follow us' band is a full-width charcoal strip with a short grey line of copy on the left. Two outlined buttons with red borders, 'FACEBOOK' and 'TWITTER', are on the right. The red outline style is the only button treatment on the page apart from the filled date badge. A red rule closes the band at the bottom.",
+  "category": "component",
+  "evidence": "Follow-us slice; h2 'FOLLOW US'; 64 anchors, buttons 1, so the social buttons are anchors"
+ },
+ {
+  "observation": "The partners section is an 8-column grid of white tiles, each 100x60 logo image on a white box. The grid has 4 rows and 26 tiles in total. The tiles are on a dark page, so they are bright white rectangles in contrast.",
+  "category": "component",
+  "evidence": "26 elements with bg rgb(255,255,255); images at x163..1177 step 145, y2266/2360/2454/2548; 26 partner logos"
+ },
+ {
+  "observation": "Many partner logos are white or very pale artwork on white tiles. They are nearly invisible, and only McLaren, Pirelli, AMG, Audi Sport and Fox Sports show faintly. Because of this the partner section reads mostly as blank white boxes.",
+  "category": "imagery",
+  "evidence": "Partners slice shows empty-looking white tiles; logos are alt-labelled e.g. 'Liqui Moly', 'Meguiar's', 'Porsche'"
+ },
+ {
+  "observation": "All partner logos use descriptive alt text (e.g. 'NSW Government', 'Destination NSW', 'Volkswagen Amarok') and share one fixed 100x60 size. They are probably also wrapped in links.",
+  "category": "imagery",
+  "evidence": "images 10-35 each 100x60 natural and rendered; 64 anchors in total"
+ },
+ {
+  "observation": "The footer is minimal. A hairline divider is followed by the small logo and a copyright line, '© 2021 LIQUI-MOLY Bathurst 12 Hour. All Rights Reserved', on the left. On the right are four small grey text links: Contacts, Media, Privacy Policy and Terms & Conditions.",
+  "category": "component",
+  "evidence": "Footer slice; footer count 1; footerlogo.png 56x64"
+ },
+ {
+  "observation": "The page dates are inconsistent. The hero announces 31 January – 2 February 2020, the latest news item is dated Oct 19, 2020, and the footer says © 2021. The copy is event-focused, with a charity element (bushfire relief headlines).",
+  "category": "copy",
+  "evidence": "hero date badge text; time 'Oct 19, 2020'; footer '© 2021'"
+ },
+ {
+  "observation": "The copy is short. The page has only 156 words, 4 paragraphs, no exclamation marks and no em dashes. It consists mostly of headlines, labels and nav items, so text is secondary to imagery.",
+  "category": "copy",
+  "evidence": "text_stats words 156, em_dashes 0, exclamations 0; p count 4"
+ },
+ {
+  "observation": "Decoration is restrained. There are no box shadows, no CSS gradients, no animations and no transforms. There is one backdrop blur, which probably belongs to the translucent sticky header, rgba(14,15,18,0.94). Corners are mostly square, with 26 elements at a 1-7px radius.",
+  "category": "decoration",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, animations 0, transforms 0, backdrop_blur 1; top_backgrounds rgba(14,15,18,0.94) x1"
+ },
+ {
+  "observation": "Interaction is expressed through CSS transitions, with 34 elements carrying them, probably hover states on links and cards. No keyframe animations are used.",
+  "category": "decoration",
+  "evidence": "transitions 34, animations 0"
+ },
+ {
+  "observation": "The CSS is written by hand in one inline <style> block, with no external stylesheets. There are 56 class usages across 23 unique classes, and only about 1.8% look Tailwind-like. Layout relies mostly on flexbox (48 elements), with a few grids (3).",
+  "category": "structure",
+  "evidence": "tag_counts style 1; counts stylesheets 0; classes total 56, unique 23, tailwind_like_fraction 0.018; display_flex 48, display_grid 3"
+ },
+ {
+  "observation": "The DOM is small and link-heavy. There are 64 anchors, 35 images, 28 list items in 5 lists, 21 divs, and 1 script. There are no inline SVGs, so the icons and logos are raster images and the arrows are text characters ('→').",
+  "category": "structure",
+  "evidence": "tag_counts a 64, img 35, li 28, ul 5, div 21; svgs 0; script 1"
+ },
+ {
+  "observation": "The page is a single scrolling desktop page, 1440x2834px. Vertical rhythm comes from alternating bands of black and charcoal, separated by thin or red rules, with generous padding between the hero, news, follow and partners sections.",
+  "category": "layout",
+  "evidence": "layout page_height 2834, page_width 1440; slices show band alternation and red rules at y≈483 and y≈876 in slices 1-2"
+ },
+ {
+  "observation": "ARIA use is minimal, with 3 aria attributes in total. The title is a descriptive string ('Liqui-moly Bathurst 12 Hour | Australia's International Endurance Race'), and the html lang is 'en'. The meta tags are charset, viewport and description only, and there is no JSON-LD.",
+  "category": "semantic",
+  "evidence": "counts aria_attrs 3; lang 'en'; meta_names charset, viewport, description; jsonld_blocks 0"
+ },
+ {
+  "observation": "Headline and body text sizes step down across the page. The H1 is 64px, the H2 is 25.6px, and body text is 16px on a 24px line-height. News card titles are bold white at roughly 16-17px. The dates, footer links and the Follow us copy are smaller and in grey.",
+  "category": "typography",
+  "evidence": "h1 64px; h2 25.6px; body_font_size 16px, body_line_height 24px; screenshots of the card titles"
+ }
+]

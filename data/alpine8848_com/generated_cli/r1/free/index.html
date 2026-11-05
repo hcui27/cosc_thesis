@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpine Everest Expedition and Treks</title>
+<style>
+:root{
+  --ink:#24323a; --muted:#5b6b73; --accent:#2f6f7e; --accent-dark:#1f4c58;
+  --gold:#f1d98a; --paper:#fff; --line:#dde6e9; --grass:#0d0f0e;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font:16px/1.65 Georgia,"Times New Roman",serif; color:var(--ink);
+  background:var(--grass) url(images/main.jpg) repeat-x top center;
+  background-attachment:scroll;
+}
+a{color:var(--accent-dark)}
+a:hover{color:#a2541b}
+.wrap{max-width:1100px; margin:0 auto; padding:0 16px}
+
+/* header */
+header.top{padding:20px 0 0}
+.top .wrap{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.brand{display:flex; align-items:center; gap:16px; color:#fff; text-decoration:none}
+.brand img{width:130px; height:auto; border-radius:6px; background:#fff}
+.brand span{font-size:1.5rem; line-height:1.2; text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.brand small{display:block; font-size:.85rem; opacity:.85; letter-spacing:.08em; text-transform:uppercase}
+nav.main ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:4px}
+nav.main a{
+  display:block; padding:10px 18px; background:rgba(255,255,255,.92); color:var(--accent-dark);
+  text-decoration:none; font-family:system-ui,sans-serif; font-size:.92rem; font-weight:600;
+  border-radius:8px 8px 0 0;
+}
+nav.main a:hover,nav.main a:focus-visible{background:var(--gold); color:var(--ink)}
+
+/* layout */
+.layout{display:grid; grid-template-columns:260px 1fr; gap:24px; background:var(--paper);
+  padding:24px; border-radius:0 8px 8px 8px; box-shadow:0 8px 30px rgba(0,0,0,.25)}
+aside{display:flex; flex-direction:column; gap:22px}
+.panel{background:#f5fafb url(images/image-04.jpg) center top/cover; border:1px solid var(--line); border-radius:8px; padding:16px}
+.panel h2{margin:0 0 10px; font-size:1rem}
+.panel h2 img{display:block; max-width:100%; height:auto}
+.panel .label{font:700 .8rem/1 system-ui,sans-serif; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin:0 0 10px}
+.links{list-style:none; margin:0; padding:0}
+.links li{background:url(images/list.png) bottom left/100% 1px no-repeat; padding:8px 0 9px}
+.links a{text-decoration:none; font-family:system-ui,sans-serif; font-size:.93rem}
+.links a::before{content:"▲"; font-size:.6rem; margin-right:8px; color:var(--accent); vertical-align:2px}
+form.refer{display:grid; gap:8px; font-family:system-ui,sans-serif; font-size:.85rem}
+form.refer input{width:100%; padding:8px 10px; border:1px solid #bccbd0; border-radius:5px; font:inherit}
+form.refer button{padding:9px; border:0; border-radius:5px; background:var(--accent); color:#fff; font:600 .9rem system-ui,sans-serif; cursor:pointer}
+form.refer button:hover{background:var(--accent-dark)}
+address{font-style:normal; font-family:system-ui,sans-serif; font-size:.85rem; line-height:1.6}
+address dt{font-weight:700; color:var(--accent-dark); margin-top:6px}
+address dd{margin:0; overflow-wrap:anywhere}
+
+/* main */
+main h1{font-size:2rem; margin:0 0 4px; color:var(--accent-dark)}
+.welcome{display:grid; grid-template-columns:176px 1fr; gap:24px; align-items:start}
+.welcome img{width:176px; height:auto}
+.welcome .lede{font-size:1.15rem; color:var(--muted); font-style:italic; margin:0 0 12px}
+.welcome p{margin:0 0 12px}
+section.block{margin-top:34px; padding-top:20px; border-top:1px solid var(--line)}
+section.block h2{margin:0 0 14px; font-size:1.4rem; color:var(--accent-dark)}
+.thumbs{display:grid; grid-template-columns:repeat(auto-fill,minmax(110px,1fr)); gap:12px; list-style:none; margin:0; padding:0}
+.thumbs a{display:block; border:3px solid #fff; box-shadow:0 1px 5px rgba(0,0,0,.3); border-radius:3px; overflow:hidden; transition:transform .2s}
+.thumbs a:hover,.thumbs a:focus-visible{transform:translateY(-3px) rotate(-1deg)}
+.thumbs img{display:block; width:100%; height:auto; aspect-ratio:113/150; object-fit:cover}
+.more{display:inline-block; margin-top:14px; font-family:system-ui,sans-serif; font-weight:600; font-size:.9rem}
+
+footer{color:#d9e3e6; text-align:center; font:.85rem/1.6 system-ui,sans-serif; padding:22px 16px 30px}
+
+@media (max-width:820px){
+  .layout{grid-template-columns:1fr; border-radius:8px}
+  aside{order:2}
+  .brand img{width:96px}
+  nav.main a{border-radius:8px}
+}
+@media (max-width:520px){
+  .welcome{grid-template-columns:1fr}
+  .welcome img{margin:0 auto}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.php">
+      <img src="images/businessname.jpg" alt="Alpine Everest Group logo">
+      <span>Alpine Everest<small>Expedition &amp; Treks · Kathmandu, Nepal</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php?linkId=6">About Us</a></li>
+        <li><a href="index.php?linkId=37">Testimonials</a></li>
+        <li><a href="index.php?linkId=30">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="layout">
+    <aside>
+      <nav class="panel" aria-label="Tours">
+        <h2><img src="images/featured-tours.png" alt="Featured Tours" width="248" height="94"></h2>
+        <ul class="links">
+          <li><a href="index.php?linkId=1">Adventure Activities</a></li>
+          <li><a href="index.php?linkId=2">Destination</a></li>
+          <li><a href="index.php?linkId=3">Special Packages</a></li>
+          <li><a href="index.php?linkId=4">Services</a></li>
+          <li><a href="index.php?linkId=31">Gallery</a></li>
+          <li><a href="index.php?action=planatrip">Plan a trip</a></li>
+        </ul>
+      </nav>
+
+      <nav class="panel" aria-label="Products">
+        <p class="label">Products</p>
+        <ul class="links">
+          <li><a href="index.php?linkId=33">Pashmina</a></li>
+          <li><a href="index.php?linkId=34">Garments</a></li>
+          <li><a href="index.php?linkId=44">Handicrafts</a></li>
+        </ul>
+      </nav>
+
+      <div class="panel">
+        <p class="label">Refer a friend</p>
+        <form class="refer" action="#" onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').textContent='Thank you!';">
+          <input name="yourname" placeholder="Your name" aria-label="Your name" required>
+          <input name="friendname" placeholder="Friend's name" aria-label="Friend's name" required>
+          <input name="friendemail" type="email" placeholder="Friend's email" aria-label="Friend's email" required>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2><img src="images/contact-information.png" alt="Contact Information" width="248" height="94"></h2>
+        <address>
+          <strong>Alpine Everest Group</strong>
+          <dl style="margin:0">
+            <dt>P.O. Box</dt><dd>24601</dd>
+            <dt>Address</dt><dd>Lazimpat-2, Kathmandu, Nepal</dd>
+            <dt>Tel/Fax</dt><dd>+977-1-4441377, 400-50-00, 400-50-57</dd>
+            <dt>Cell</dt><dd>+977-9841330184, 9741178888</dd>
+            <dt>Skype</dt><dd>alpine8848</dd>
+            <dt>MSN</dt><dd>alpine8848@live.com</dd>
+            <dt>Email</dt><dd><a href="mailto:alpine8848@asia.com">alpine8848@asia.com</a></dd>
+          </dl>
+        </address>
+      </div>
+    </aside>
+
+    <main>
+      <div class="welcome">
+        <img src="images/welcome-img.jpg" alt="Trekkers silhouetted against Himalayan peaks" width="176" height="260">
+        <div>
+          <h1>“Namaste”</h1>
+          <p class="lede">Welcome to Alpine Everest.</p>
+          <p>Alpine Everest Expedition and Treks was founded to give its guests the best possible service. Our business motto is guest satisfaction on every tour and trek, delivered under our close supervision. We believe strongly in quality service, and our main aim is to make each customer’s trip smooth and enjoyable.</p>
+          <p>Because we value personal service, we build custom-tailored itineraries so travellers are not forced onto fixed programmes. In the coming years we plan to offer many holiday package tours, including high-adventure and soft-adventure trips, school trips and family holidays. Remember us for reliability, quality service and stylish tours — we are always at your service.</p>
+        </div>
+      </div>
+
+      <section class="block" aria-labelledby="gallery">
+        <h2 id="gallery">Gallery</h2>
+        <ul class="thumbs">
+          <li><a href="index.php?galleryId=20"><img src="images/thumb.png" alt="Gallery photo 20" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=14"><img src="images/thumb.png" alt="Gallery photo 14" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=15"><img src="images/thumb.png" alt="Gallery photo 15" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=12"><img src="images/thumb.png" alt="Gallery photo 12" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=16"><img src="images/thumb.png" alt="Gallery photo 16" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=21"><img src="images/thumb.png" alt="Gallery photo 21" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=11"><img src="images/thumb.png" alt="Gallery photo 11" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=17"><img src="images/thumb.png" alt="Gallery photo 17" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=22"><img src="images/thumb.png" alt="Gallery photo 22" loading="lazy"></a></li>
+          <li><a href="index.php?galleryId=18"><img src="images/thumb.png" alt="Gallery photo 18" loading="lazy"></a></li>
+        </ul>
+        <a class="more" href="index.php?linkId=32">More photos →</a>
+      </section>
+
+      <section class="block" aria-labelledby="products">
+        <h2 id="products">Products</h2>
+        <ul class="thumbs">
+          <li><a href="index.php?listId=23"><img src="images/thumb.png" alt="Product 23" loading="lazy"></a></li>
+          <li><a href="index.php?listId=22"><img src="images/thumb.png" alt="Product 22" loading="lazy"></a></li>
+          <li><a href="index.php?listId=21"><img src="images/thumb.png" alt="Product 21" loading="lazy"></a></li>
+          <li><a href="index.php?listId=20"><img src="images/thumb.png" alt="Product 20" loading="lazy"></a></li>
+          <li><a href="index.php?listId=19"><img src="images/thumb.png" alt="Product 19" loading="lazy"></a></li>
+          <li><a href="index.php?listId=18"><img src="images/thumb.png" alt="Product 18" loading="lazy"></a></li>
+          <li><a href="index.php?listId=17"><img src="images/thumb.png" alt="Product 17" loading="lazy"></a></li>
+          <li><a href="index.php?listId=16"><img src="images/thumb.png" alt="Product 16" loading="lazy"></a></li>
+        </ul>
+        <a class="more" href="index.php?linkId=36">More products →</a>
+      </section>
+    </main>
+  </div>
+</div>
+
+<footer>© Alpine Everest Expedition &amp; Trek 2010, all rights reserved.</footer>
+</body>
+</html>

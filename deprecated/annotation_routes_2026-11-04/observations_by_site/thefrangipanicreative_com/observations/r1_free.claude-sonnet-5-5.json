@@ -1,0 +1,172 @@
+[
+ {
+  "observation": "Document title and H1 both read 'The Frangipani Creative'. There is exactly one H1, set at 96px Cormorant Garamond weight 600 in white over a darkened photo, wrapped onto three lines.",
+  "category": "typography",
+  "evidence": "facts.json: title 'The Frangipani Creative', h1_count 1, h1 font_size 96px, weight 600, color rgb(255,255,255); slice 0 shows 'The / Frangipani / Creative'."
+ },
+ {
+  "observation": "Two typefaces are used. Cormorant Garamond (serif) is for display, headings, post titles and testimonial names. Inter (sans) is for body, nav, links and labels. Inter is on far more elements.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Inter 113, Cormorant Garamond 32; h1 font_family '\"Cormorant Garamond\", Georgia, serif'."
+ },
+ {
+  "observation": "The hero is a full-bleed frangipani photo, 1440×702, with a dark left-weighted overlay. The text sits in the left half and the flowers are visible on the right. Left-aligned eyebrow, H1 and subline are stacked over the image.",
+  "category": "imagery",
+  "evidence": "images[0] rect x0,y62,w1440,h702, alt 'Pink and white frangipani blossoms...'; slice 0 hero with 'SECUNDERABAD, INDIA' eyebrow."
+ },
+ {
+  "observation": "The sticky/translucent header is a pale band over the top of the hero. It has a serif wordmark on the left and a right-aligned row of seven plain text links. The nav has no buttons or CTA.",
+  "category": "component",
+  "evidence": "colors: rgba(253,248,243,0.92) background; backdrop_blur 1; slice 0 nav links Home, Blog, Podcast, Happy Clients, Contact, Archives, Books I Recommend; buttons count 0."
+ },
+ {
+  "observation": "The page uses a warm cream base with plum-black text, and magenta-pink as the single accent. Pink appears on links, eyebrows and buttons. A pale blush section and a deep aubergine section provide contrast bands.",
+  "category": "color",
+  "evidence": "body_bg rgb(253,248,243), body_color rgb(44,31,39); backgrounds rgb(214,69,122), rgb(248,230,227), rgb(44,31,39); link text rgb(168,42,92)."
+ },
+ {
+  "observation": "The color palette echoes the frangipani photography. Pinks, creamy whites and yellow-orange accents (gold eyebrow 'COACHING', gold stars) pick up the petal colors.",
+  "category": "color",
+  "evidence": "Slice 1 'COACHING' eyebrow in amber and stars in orange; images alt text describing pink and white blossoms."
+ },
+ {
+  "observation": "Small uppercase, letter-spaced eyebrow labels sit above each section heading. They are pink on light sections, amber on the dark band, and the hero's is pale pink.",
+  "category": "typography",
+  "evidence": "Slices show 'SECUNDERABAD, INDIA', 'COACHING', 'KIND WORDS', 'FROM THE BLOG', 'INSTAGRAM'; text color rgb(255,196,216) appears 13 times."
+ },
+ {
+  "observation": "The intro statement is a large serif paragraph (about 36px) in a narrow left column, followed by a two-column Inter body text block with underlined pink inline links. The second column holds only one short sentence, so the columns are unbalanced.",
+  "category": "layout",
+  "evidence": "Slice 0: 'A lover of words...' text block, then two columns, 'Stay tuned for details...' alone on the right; body_font_size 17px, line height 28.9px."
+ },
+ {
+  "observation": "The page ends the intro with a standalone bold pink underlined text link with an arrow glyph, not a button.",
+  "category": "component",
+  "evidence": "Slice 0: 'Read this to find out why the name The Frangipani Creative made sense to me →'."
+ },
+ {
+  "observation": "The coaching feature is a 50/50 split band. A dark-background flower photo fills the left half, edge to edge. The right half is an aubergine panel with eyebrow, H2, short blurb and a pill button.",
+  "category": "layout",
+  "evidence": "images[1] rect x0,w754,h503 of 1440 width; slice 1; background rgb(44,31,39); primary_button 'Read more' bg rgb(214,69,122), radius 999px, padding 12px 26px."
+ },
+ {
+  "observation": "The pill-shaped pink buttons share one style: white bold text, fully rounded. Two instances ('Read more', 'Follow on Instagram') match the pill radius bucket.",
+  "category": "component",
+  "evidence": "border_radius_buckets bucket_pill 2; primary_button radius 999px; slice 3 'Follow on Instagram'."
+ },
+ {
+  "observation": "H2 headings are 48px Cormorant Garamond at weight 600, with the same size across Personalized Blog Coaching, Happy Clients, Recent posts and the Instagram handle. The Instagram heading is lowercase, the handle 'thefrangipanicreative'.",
+  "category": "typography",
+  "evidence": "h2 font_size 48px weight 600; heading_outline h2s; slice 2 handle heading."
+ },
+ {
+  "observation": "The testimonials are three equal white cards on a blush background. Each has a row of five gold star glyphs, a quote in Inter, and a serif name at the bottom. The cards have rounded corners and a soft shadow.",
+  "category": "component",
+  "evidence": "Slice 1: cards at x180–1260; bg rgb(248,230,227); box_shadows 3; border_radius bucket_8_15 11; 3 figure, 3 blockquote, 3 figcaption in tag_counts."
+ },
+ {
+  "observation": "Testimonials use semantic figure/blockquote/figcaption markup, but no cite elements. Star ratings are text glyphs and there are no SVGs on the page.",
+  "category": "structure",
+  "evidence": "semantic: figure 3, blockquote 3, figcaption 3, cite 0; counts svgs 0; emoji count 15 (stars)."
+ },
+ {
+  "observation": "Testimonial card text lengths differ, but the cards keep equal height with the author names pinned to the bottom, leaving blank space in the first card.",
+  "category": "layout",
+  "evidence": "Slice 1: card 1 text ends around y1100 while name sits at y1218, same as the others."
+ },
+ {
+  "observation": "'Recent posts' is a plain list of five titles in serif, separated by thin hairline rules, with 'By Author' bylines right-aligned in small Inter with pink underlined names. The last item has no byline. There are no thumbnails or dates.",
+  "category": "component",
+  "evidence": "Slice 2: posts 'Writer's Healthy Diet and Lifestyle', '12 Productivity Hacks for Writing', etc.; bylines Lux, Fabida Abdulla; ul count 3 with 15 li."
+ },
+ {
+  "observation": "The Instagram section is a 4-column grid of eight tiles with pink-white diagonal gradient backgrounds, thin borders and rounded corners. Each tile has only a truncated caption in serif at the bottom, with an ellipsis. The upper part of each tile is empty.",
+  "category": "imagery",
+  "evidence": "Slice 2/3: tiles with text like 'There was a time when writing in a diary was seen…'; gradient_backgrounds 8; only 2 img elements on the page."
+ },
+ {
+  "observation": "Instagram content is represented with text-and-gradient placeholders, not photos. There are only two images in the whole page, both flower photographs with descriptive alt text.",
+  "category": "imagery",
+  "evidence": "counts images 2, alt_missing 0; images alt texts."
+ },
+ {
+  "observation": "A full-width decorative photo band of pink flowers against blue sky sits between the main content and the footer. It has no text overlay.",
+  "category": "imagery",
+  "evidence": "Slice 3 y228–488 shows the flower and sky strip, 1440 wide. It is not in the img list, so it is probably a CSS background."
+ },
+ {
+  "observation": "The footer is dark aubergine with three columns. Column one is social links, each with a small muted follow/like suffix. Column two is an address with phone links, column three repeats the recent posts as pink underlined links. Below is a divider, a small affiliate disclosure and a copyright line.",
+  "category": "layout",
+  "evidence": "Slice 3: 'Follow me on social media', 'Location', 'Recent posts'; address count 1; footer 1; text color rgb(230,217,222) 24 times."
+ },
+ {
+  "observation": "Footer headings are H3s in serif, while the page's other sections use H2s. The footer's 'Recent posts' repeats the earlier H2 text.",
+  "category": "structure",
+  "evidence": "heading_outline: h3 'Follow me on social media', 'Location', 'Recent posts'; h2 'Recent posts'."
+ },
+ {
+  "observation": "A consistent content column is held at about 1080px (x180–1260) for most sections. The hero and the split band run full width, and the hero heading aligns with the same left edge.",
+  "category": "layout",
+  "evidence": "Slices: text and cards start at x=180 and end at x=1260; page_width 1440."
+ },
+ {
+  "observation": "The page alternates band backgrounds: cream, a dark split band, blush, cream, a photo strip, then the dark footer. This produces clear horizontal sections with different color fields.",
+  "category": "layout",
+  "evidence": "top_backgrounds list white 3, aubergine 2, pink 2, cream 1, blush 1; six section elements."
+ },
+ {
+  "observation": "The layout is built with grid (6 elements) and flex (18 elements), with no float or Tailwind-like utility classes. Class names are bespoke (46 class uses, 32 unique).",
+  "category": "structure",
+  "evidence": "layout display_grid 6, display_flex 18; classes tailwind_like_fraction 0, total 46, unique 32."
+ },
+ {
+  "observation": "The page uses few scripts and little styling code: no scripts, two stylesheets, a single inline style attribute. Hover/transition styling exists (10 transitions) but there are no animations or transforms.",
+  "category": "structure",
+  "evidence": "counts scripts 0, stylesheets 2, inline_style_attrs 1; effects transitions 10, animations 0, transforms 0."
+ },
+ {
+  "observation": "Semantic landmarks are present: one header, nav, main, footer and six sections, plus an address element. There are no articles or asides. Six ARIA attributes are present and there is one input with a label.",
+  "category": "structure",
+  "evidence": "semantic header 1, nav 1, main 1, section 6, article 0, aside 0; counts aria_attrs 6; tag_counts input 1, label 1, address 1."
+ },
+ {
+  "observation": "Links are plentiful (52 anchors) and are mostly styled as underlined text in pink on light backgrounds and pale pink on dark ones. Almost no element is a real button.",
+  "category": "component",
+  "evidence": "anchors 52, buttons 0; footer links in rgb(255,196,216)."
+ },
+ {
+  "observation": "Corners are mostly square. Cards and tiles use modest radii (8–15px, 11 elements) and only the buttons are pill-shaped. There are no large-radius elements.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 132, bucket_8_15 11, bucket_16_plus 0, bucket_pill 2."
+ },
+ {
+  "observation": "Decoration is restrained. There are three shadows (soft ones on the testimonial cards) and eight gradients (Instagram tiles and the hero overlay), with no heavy effects. One element uses backdrop blur, the translucent header.",
+  "category": "decoration",
+  "evidence": "box_shadows 3, gradient_backgrounds 8, backdrop_blur 1."
+ },
+ {
+  "observation": "The copy is in the first person and personal in tone. It describes a self-acceptance blogger and coach in midlife, in Secunderabad, India. The copy has no exclamation marks or em dashes, and CTA labels are plain ('Read more', 'Follow on Instagram').",
+  "category": "copy",
+  "evidence": "text_stats exclamations 0, em_dashes 0, words 637; slice 0 intro copy."
+ },
+ {
+  "observation": "The testimonials are attributed by full names but with no photos, titles or companies. The long quote bodies are set in 17px Inter with generous line height.",
+  "category": "copy",
+  "evidence": "Slice 1: Sunita Saldhana, Madhavi Mahadev, Anil Kumar Margani; no avatar images; img count 2."
+ },
+ {
+  "observation": "The footer has contact details: a street address, mobile and landline, rendered as pink underlined links. It also has an affiliate-disclosure sentence and '© 2020' in a small muted tone.",
+  "category": "copy",
+  "evidence": "Slice 3: 'Mobile: 91-8886034647', 'Landline: 91-40-29560398', 'Disclosure: ...affiliate links', '© 2020 – The Frangipani Creative'."
+ },
+ {
+  "observation": "The hero text is placed with generous whitespace. The eyebrow sits about 300px from the top and large padding surrounds the intro and sections, so vertical rhythm is open. The page totals 4822px at 1440 wide, about four screens.",
+  "category": "layout",
+  "evidence": "page_height 4822, page_width 1440; slice 0 spacing; slices 4."
+ },
+ {
+  "observation": "Social links in the footer pair a brand name link with a smaller dimmer action word ('Like', 'Follow') as a two-tier link label. There are no icons.",
+  "category": "component",
+  "evidence": "Slice 3: 'Facebook Like', 'Instagram Follow', 'LinkedIn Follow', 'Pinterest Follow', 'Twitter Follow'; svgs 0."
+ }
+]

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpine Everest Expedition &amp; Trek</title>
+<meta name="description" content="Alpine Everest Expedition and Treks — personalized tours, treks and expeditions in Nepal.">
+<style>
+  :root {
+    --ink: #1f2d3a;
+    --muted: #4d5d6a;
+    --sky-top: #3a4f5c;
+    --sky-mid: #a2d3d6;
+    --sky-low: #ecd8b0;
+    --gold: #e9d57f;
+    --gold-deep: #b9a23a;
+    --accent: #c0262d;
+    --card: #ffffff;
+    --line: #dfe7ea;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    line-height: 1.65;
+    background: linear-gradient(to bottom, var(--sky-top) 0, #4b6370 160px, var(--sky-mid) 520px, var(--sky-mid) 900px, var(--sky-low) 100%) fixed;
+    background-color: var(--sky-mid);
+  }
+  a { color: inherit; }
+  img { max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+  header .wrap { display: flex; align-items: center; gap: 24px; padding-top: 20px; }
+  .logo { background: #fff; border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.25); width: 150px; flex: none; }
+  .tagline { color: #fff; }
+  .tagline h1 { margin: 0; font-size: clamp(1.4rem, 4vw, 2.2rem); font-weight: normal; letter-spacing: .02em; }
+  .tagline p { margin: .2em 0 0; color: #d6e6ea; font-style: italic; }
+
+  nav { margin-top: 18px; background: rgba(255,255,255,.92); border-bottom: 3px solid var(--gold); }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+  nav a { display: block; padding: 12px 22px; text-decoration: none; font-weight: bold; }
+  nav a:hover, nav a:focus-visible, nav a[aria-current] { background: var(--gold); outline: none; }
+
+  .layout { display: grid; grid-template-columns: 250px 1fr; gap: 24px; margin: 24px auto 40px; align-items: start; }
+  aside { display: grid; gap: 20px; }
+  .panel { background: var(--card); border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.15); padding: 0 0 16px; overflow: hidden; }
+  .panel > img { margin: 0 auto; }
+  .panel ul { list-style: none; margin: 0; padding: 0 16px; }
+  .panel li { border-bottom: 1px solid var(--line); }
+  .panel li a { display: block; padding: 9px 4px; text-decoration: none; }
+  .panel li a:hover { color: var(--accent); }
+  .panel .group { padding: 10px 20px 0; font-weight: bold; color: var(--muted); font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; }
+
+  form { padding: 0 16px; display: grid; gap: 10px; }
+  .panel h2.t { margin: 14px 16px 8px; font-size: 1rem; }
+  label { font-size: .85rem; color: var(--muted); display: grid; gap: 3px; }
+  input { font: inherit; padding: 8px; border: 1px solid #b9c6cc; border-radius: 4px; width: 100%; }
+  input:focus-visible { outline: 2px solid var(--sky-top); }
+  button { font: inherit; font-weight: bold; padding: 9px; border: 0; border-radius: 4px; background: var(--gold); cursor: pointer; }
+  button:hover { background: var(--gold-deep); color: #fff; }
+
+  address { font-style: normal; padding: 0 20px; font-size: .9rem; overflow-wrap: anywhere; }
+  address b { display: block; margin-bottom: 4px; }
+
+  main { background: var(--card); border-radius: 6px; box-shadow: 0 2px 10px rgba(0,0,0,.15); padding: 32px clamp(18px, 4vw, 40px); }
+  .welcome { display: grid; grid-template-columns: 176px 1fr; gap: 28px; align-items: start; }
+  main h2 { font-weight: normal; font-size: 1.8rem; margin: 0 0 .6em; color: var(--sky-top); border-bottom: 2px solid var(--gold); padding-bottom: .25em; }
+  .welcome p { margin: 0 0 1em; }
+  section + section { margin-top: 40px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(113px, 1fr)); gap: 14px; }
+  .grid a { display: block; border: 1px solid var(--line); border-radius: 4px; padding: 6px; background: #fafcfc; transition: transform .15s, box-shadow .15s; }
+  .grid a:hover, .grid a:focus-visible { transform: translateY(-3px); box-shadow: 0 6px 14px rgba(0,0,0,.18); outline: none; }
+  .grid img { width: 100%; aspect-ratio: 113 / 150; object-fit: cover; }
+  .more { display: inline-block; margin-top: 16px; font-weight: bold; color: var(--accent); }
+
+  footer { background: #0e1114; color: #b9c2c8; text-align: center; padding: 22px 16px; font-size: .85rem; }
+
+  @media (max-width: 820px) {
+    .layout { grid-template-columns: 1fr; }
+    aside { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  }
+  @media (max-width: 560px) {
+    header .wrap { flex-direction: column; text-align: center; }
+    .welcome { grid-template-columns: 1fr; }
+    .welcome img { margin: 0 auto; }
+    nav a { padding: 10px 14px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="images/businessname.jpg" alt="Alpine Everest Group — Expedition &amp; Trek, Import &amp; Export" width="268" height="277">
+    <div class="tagline">
+      <h1>Alpine Everest Expedition &amp; Trek</h1>
+      <p>Personalized tours and treks, Kathmandu, Nepal</p>
+    </div>
+  </div>
+  <nav aria-label="Main">
+    <div class="wrap">
+      <ul>
+        <li><a href="#top" aria-current="page">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="wrap layout" id="top">
+  <aside>
+    <div class="panel">
+      <img src="images/featured-tours.png" alt="Featured Tours" width="248" height="94">
+      <ul>
+        <li><a href="#adventure">Adventure Activities</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#packages">Special Packages</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#plan">Plan a trip</a></li>
+      </ul>
+      <div class="group">Products</div>
+      <ul>
+        <li><a href="#products">Pashmina</a></li>
+        <li><a href="#products">Garments</a></li>
+        <li><a href="#products">Handicrafts</a></li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2 class="t">Recommend this site to a Friend</h2>
+      <form onsubmit="event.preventDefault(); this.reset();">
+        <label>Your Name <input name="you" autocomplete="name"></label>
+        <label>Friend's Name <input name="friend"></label>
+        <label>Friend's Email <input name="email" type="email"></label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="panel" id="contact">
+      <img src="images/contact-information.png" alt="Contact Information" width="248" height="94">
+      <address>
+        <b>Alpine Everest Group</b>
+        P.O.Box: 24601<br>
+        Str: Lazimpat-2, Kathmandu, Nepal.<br>
+        Tel/Fax: +977-1-4441377, 400-50-00, 400-50-57<br>
+        Cell: +977-9841330184, 9741178888<br>
+        Skype: alpine8848<br>
+        MSN: alpine8848@live.com<br>
+        Email: <a href="mailto:alpine8848@asia.com">alpine8848@asia.com</a>
+      </address>
+    </div>
+  </aside>
+
+  <main>
+    <section id="about">
+      <div class="welcome">
+        <img src="images/welcome-img.jpg" alt="Trekkers in the Himalayas" width="176" height="260">
+        <div>
+          <h2>Namaste, Welcome to Alpine Everest</h2>
+          <p>Alpine Everest Expedition and Treks established with a view to provide best services to its beloved guest. Guest satisfaction during tour and trek under our best supervision is our business moto. We strongly believe in quality service and our prime objective is to make every trip of our valued customers smooth and enjoyable.</p>
+          <p>As we firmly believe in personalized service, we always design the custom tailored itineraries where people are not bound to take set programs. We are planning to sale a lots of holiday package tours including high and soft adventure trips, school trips, family holiday trip etc. in the coming years. For reliability, quality service and tours of great style, please remember us we are always at your service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <a href="#gallery-20"><img src="images/imager.png" alt="Gallery photo 1" loading="lazy"></a>
+        <a href="#gallery-14"><img src="images/imager.png" alt="Gallery photo 2" loading="lazy"></a>
+        <a href="#gallery-15"><img src="images/imager.png" alt="Gallery photo 3" loading="lazy"></a>
+        <a href="#gallery-12"><img src="images/imager.png" alt="Gallery photo 4" loading="lazy"></a>
+        <a href="#gallery-16"><img src="images/imager.png" alt="Gallery photo 5" loading="lazy"></a>
+        <a href="#gallery-21"><img src="images/imager.png" alt="Gallery photo 6" loading="lazy"></a>
+        <a href="#gallery-11"><img src="images/imager.png" alt="Gallery photo 7" loading="lazy"></a>
+        <a href="#gallery-17"><img src="images/imager.png" alt="Gallery photo 8" loading="lazy"></a>
+        <a href="#gallery-22"><img src="images/imager.png" alt="Gallery photo 9" loading="lazy"></a>
+        <a href="#gallery-18"><img src="images/imager.png" alt="Gallery photo 10" loading="lazy"></a>
+      </div>
+      <a class="more" href="#gallery">more &rarr;</a>
+    </section>
+
+    <section id="products">
+      <h2>Products</h2>
+      <div class="grid">
+        <a href="#product-23"><img src="images/imager.png" alt="Pashmina shawl 1" loading="lazy"></a>
+        <a href="#product-22"><img src="images/imager.png" alt="Pashmina shawl 2" loading="lazy"></a>
+        <a href="#product-21"><img src="images/imager.png" alt="Pashmina shawl 3" loading="lazy"></a>
+        <a href="#product-20"><img src="images/imager.png" alt="Pashmina shawl 4" loading="lazy"></a>
+        <a href="#product-19"><img src="images/imager.png" alt="Pashmina shawl 5" loading="lazy"></a>
+        <a href="#product-18"><img src="images/imager.png" alt="Pashmina shawl 6" loading="lazy"></a>
+        <a href="#product-17"><img src="images/imager.png" alt="Pashmina shawl 7" loading="lazy"></a>
+        <a href="#product-16"><img src="images/imager.png" alt="Pashmina shawl 8" loading="lazy"></a>
+      </div>
+      <a class="more" href="#products">more &rarr;</a>
+    </section>
+  </main>
+</div>
+
+<footer>Copyright &copy; Alpine Everest Expedition &amp; Trek 2010. All rights reserved.</footer>
+
+</body>
+</html>

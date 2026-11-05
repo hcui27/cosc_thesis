@@ -1,0 +1,197 @@
+[
+ {
+  "observation": "The page looks like a WordPress blog home that renders with its stylesheet only partly applied. Content is left-aligned and unstyled in many sections, and the layout appears broken.",
+  "category": "layout",
+  "evidence": "facts.json shows display_flex 0 and display_grid 0. Slice 3 shows heading and body text jammed against x=0 over a photo. Slice 12 is mostly blank white space."
+ },
+ {
+  "observation": "A pale yellow announcement bar sits at the very top. It pairs a condensed uppercase label, 'FUN & FRESH HOME GOODIES', with a peach block holding a script 'visit the shop' link.",
+  "category": "component",
+  "evidence": "Slice 0 top strip: yellow rgb(255,223,149) background, peach rgb(255,208,186) block, white script text."
+ },
+ {
+  "observation": "The header places the script-and-serif wordmark 'never skip brunch by cara newhart' in the centre. Three nav items sit on the left and three on the right. Each item has a tiny orange script kicker above a letterspaced uppercase label.",
+  "category": "component",
+  "evidence": "Slice 0: kickers 'the', 'decor &', 'diy', 'make space', 'diy & design', '?' over BLOG, INTERIORS, PROJECTS, PODCAST, PLANS + TEMPLATES, MORE. Facts list nav 2."
+ },
+ {
+  "observation": "Dropdown caret icons render as empty tofu squares, so the icon font failed to load.",
+  "category": "imagery",
+  "evidence": "Slice 0 shows small hollow squares next to INTERIORS, PROJECTS, PODCAST and MORE, and one at the far right."
+ },
+ {
+  "observation": "A full-bleed 1440x572 interior photo of floral wallpaper, floating shelves and lemon trees works as the hero. A white card overlaps its lower part and has a faint shadow.",
+  "category": "imagery",
+  "evidence": "images[0] header1.jpg at y=233, 1440x572 with empty alt. Slice 0 shows the card from x≈170 to 1270. facts lists 3 box shadows."
+ },
+ {
+  "observation": "The hero card holds a three-field signup form (First Name, Last Name, E-Mail Address) with hairline-bordered inputs and a small dark square 'GO' button. The form is pushed to the right half.",
+  "category": "component",
+  "evidence": "Slice 0: inputs at x≈823–1233, black button 'GO' at about 997–1059. facts counts 16 inputs and 4 forms."
+ },
+ {
+  "observation": "Display headings mix a pale yellow 'projects' with a dark '& tips' in a very large geometric sans, at different sizes and horizontal offsets. They sit far apart vertically.",
+  "category": "typography",
+  "evidence": "Slice 0: 'projects' in pale yellow at about 100px, '& tips' dark at a similar size. Poppins is the top font, on 403 elements."
+ },
+ {
+  "observation": "The main signup call to action is a PNG image with a hand-drawn arrow, not live text or a button. The 'As seen in' press logos are one image too.",
+  "category": "imagery",
+  "evidence": "signupbutton.png (250x63, empty alt) and as-seen-in-03-15-2021.png (1028x343, empty alt). Slice 1 shows the logo grid on a torn-paper peach strip."
+ },
+ {
+  "observation": "The press logo collage covers HouseBeautiful, NBC News, Apple Podcasts, Apartment Therapy, Insider, Real Homes, StyleWatch, House One, Studio 5, Sleep.com and Home Depot. It reads as a social-proof band, with the logos baked into one raster.",
+  "category": "imagery",
+  "evidence": "Slice 1 shows two rows of logos. The image is 2000x667 and its alt is empty."
+ },
+ {
+  "observation": "The headshot of the host holding a green nail gun is placed flush left at 1081x1081, with large empty space to its right. Its alt text is empty.",
+  "category": "imagery",
+  "evidence": "images[3] Cara-Newhart… jpg, rect x=0 y=1723 w=1081 h=1081. Slice 1 shows white space to the right of the photo."
+ },
+ {
+  "observation": "The 'visit the blog' section lays copy straight over a photo with no overlay or container. The 'if you . . .' text is hard to read where it crosses the busy image.",
+  "category": "layout",
+  "evidence": "Slice 3: body text at x=0 crosses the floral and paint-bar photo, and 'Browse all Posts' in orange sits on the same line. Headings 'if you . . .' are h4."
+ },
+ {
+  "observation": "Script handwriting labels such as 'the blog' sit above the large sans headings as a small accent layer. This pairs a script font with a heavy geometric sans.",
+  "category": "typography",
+  "evidence": "Slice 3 shows 'the blog' in script. fonts_by_element_count includes moontime (14), a script face. h3 'the blog' appears in the outline."
+ },
+ {
+  "observation": "Several heading sizes are used at once, from huge sans 'MAKE SPACE podcast' down to wide-tracked body copy. The uppercase orange 'MAKE SPACE' is stacked over a dark lowercase 'podcast' in the same face.",
+  "category": "typography",
+  "evidence": "Slice 3 shows 'MAKE SPACE' orange caps over black 'podcast' at about 120px. Colour rgb(243,179,79) is on 136 elements."
+ },
+ {
+  "observation": "The podcast section uses a pale yellow damask-pattern background with a phone-on-books photo cropped at the right edge.",
+  "category": "decoration",
+  "evidence": "Slice 3 shows white damask motifs on yellow, and the iPhone podcast player 'BLOGCAST: Front Porch Refresh' at the right."
+ },
+ {
+  "observation": "The orange and peach palette is warm, with near-black text, a cream surface and a dark footer. Orange is the link and heading accent colour.",
+  "category": "color",
+  "evidence": "Top text colours: rgb(34,34,34) x358, rgb(243,179,79) x136, rgb(178,133,48) x20. Backgrounds: white x16, rgb(250,249,247) x5, rgb(255,187,152) x2, rgb(51,51,51) x1."
+ },
+ {
+  "observation": "Border radii are almost all 0. Of the measured elements, 539 are square, 1 is in the 8–15px bucket and 1 is a pill. Buttons and inputs have sharp corners.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 539, bucket_8_15 1, bucket_pill 1. primary_button radius 0px."
+ },
+ {
+  "observation": "Decoration is minimal. There are no gradients, no backdrop blur and no animations. The only effects are 1 transition, 1 transform and 3 box-shadows.",
+  "category": "decoration",
+  "evidence": "effects: gradient_backgrounds 0, backdrop_blur 0, animations 0, transitions 1, transforms 1, box_shadows 3."
+ },
+ {
+  "observation": "The blog post cards in the feed have a peach category bar with tiny orange 'DIY' text on it, which is very low contrast. A letterspaced serif orange title follows the bar.",
+  "category": "component",
+  "evidence": "Slice 6: peach band rgb(255,187,152) at y≈350 with 'DIY' in small orange. The h2 'part 02 — breakfast nook diy…' is in a serif (Playfair), orange, with wide letter-spacing."
+ },
+ {
+  "observation": "Post titles are lowercase h2s, weight 400, with em dashes in the text. They are cut off mid-word in one case ('on a budg…').",
+  "category": "copy",
+  "evidence": "heading_outline h2s: 'part 02 — breakfast nook diy: space makeover + small dining room ideas on a budg', 'part 01 — …', 'diy gold range hood — …'. text_stats em_dashes 6."
+ },
+ {
+  "observation": "The three blog post images are portrait 1000x1556 photos. They are placed flush left at their natural size and leave the right 440px of the 1440 viewport empty. They carry a circular brand watermark. One reports a natural size of 0x0, which suggests lazy loading.",
+  "category": "imagery",
+  "evidence": "images[5–7] rect x=0, w=1000, h=1556. BREAKFAST-NOOK-DIY-space-makeover.jpg has natural [0,0]. Watermark is visible at the top right of the slice 6 photo."
+ },
+ {
+  "observation": "The feed is three article cards stacked vertically. Each has a category, title and large image, with no visible excerpt or date. The article count is 4.",
+  "category": "structure",
+  "evidence": "semantic.article 4, three h2 post titles, images at y≈6594, 8305 and 9987."
+ },
+ {
+  "observation": "A wide YouTube subscribe banner image runs across the full page width.",
+  "category": "imagery",
+  "evidence": "YT-SUBSCRIBE-e1589308148268.png, 2176x262 natural, rendered 1440x173 at y=5850."
+ },
+ {
+  "observation": "The Instagram feed section is built from 'placeholder.png' images. Each one carries a very long alt text containing the whole caption, with hashtags, emoji and promo codes. Only a short orange caption line shows on the page.",
+  "category": "imagery",
+  "evidence": "Nine images named placeholder.png (1000x560) with alt strings up to about 1000 characters, such as '#ad #purplespringup…'. Slice 12 shows only 'I can never catch a break around here…the second' in orange."
+ },
+ {
+  "observation": "The Instagram feed leaves very large blank white stretches, about 1300px tall in the slice shown, between captions. Its images do not render.",
+  "category": "layout",
+  "evidence": "Slice 12 is almost entirely white apart from one caption line. Placeholder images are spaced about 2000px apart (y=15256, 17511, 18114, 20164…)."
+ },
+ {
+  "observation": "A giant Instagram glyph near the bottom of the page is scaled to roughly the full viewport width. It is orange on white and unconstrained by any container.",
+  "category": "imagery",
+  "evidence": "Slice 22 shows an orange Instagram icon spanning x=0–1440, cut off by the slice. facts lists 11 inline svg and 5 use elements."
+ },
+ {
+  "observation": "The footer is a thin dark band (rgb(51,51,51)) with low-contrast dark-grey copyright text and an orange 'by Cara Newhart' credit. A peach strip with 'Follow on Instagram' sits just above it.",
+  "category": "component",
+  "evidence": "Slice 22: 'Copyright © 2021 · NEVER SKIP BRUNCH ·' on a dark background, peach bar at y≈724–747, 'Follow on Instagram' highlighted in peach."
+ },
+ {
+  "observation": "The page is very tall at 1440x29448px. Only 540 words are spread across it, so the text density is low and large images and empty areas dominate.",
+  "category": "layout",
+  "evidence": "layout page_height 29448; text_stats words 540; images 17."
+ },
+ {
+  "observation": "The heading outline is flat and irregular. There is one h1 ('NEVER SKIP BRUNCH'), and 29 h3 elements are used mostly for nav, menu and section labels. Several h3s are empty, and some are only '. . . . . . .' decorative dots.",
+  "category": "structure",
+  "evidence": "h1_count 1; tag_counts h3 29, h2 3, h4 6, h5 10, h6 6. Outline includes h3 '. . . . . . .' twice and h3 '' twice."
+ },
+ {
+  "observation": "The h1 is the wordmark text 'NEVER SKIP BRUNCH' in Playfair at 50px, weight 400, centred. The heading is probably hidden or replaced by the logo image.",
+  "category": "typography",
+  "evidence": "h1: font_size 50px, font_weight 400, font_family playfair, text_align center, colour rgb(34,34,34). Slice 0 shows no h1 text, only the logo."
+ },
+ {
+  "observation": "Several type families are in use. Poppins is the main one, followed by Montserrat, Trirong, the script face Moontime and Playfair. The body is 16px on a 32px line-height (2.0).",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: poppins 403, montserrat 55, trirong 25, Montserrat 25, moontime 14, playfair 9. body_font_size 16px, body_line_height 32px."
+ },
+ {
+  "observation": "Body and menu text is letterspaced, wide-tracked sans. The nav labels are uppercase with wide tracking and the paragraphs are loosely spaced.",
+  "category": "typography",
+  "evidence": "Slice 0 nav 'P R O J E C T S' tracking. Slice 3 paragraph 'are an avid DIY-er or have solid home design experience…' with visible wide letter-spacing."
+ },
+ {
+  "observation": "The markup is WordPress/Genesis-style. It has 130 divs, 22 sections, 4 headers and 4 footers, and 74 script tags and 19 style tags. 21 noscript tags and 6 generator metas show a heavy plugin stack. Only 0.3% of classes look like Tailwind.",
+  "category": "structure",
+  "evidence": "tag_counts script 74, style 19, noscript 21, section 22; meta_names has 4 generator entries; tailwind_like_fraction 0.003; 699 classes, 231 unique."
+ },
+ {
+  "observation": "Layout and sizing rely partly on inline styles. Many empty-alt images and one missing alt are present, and 32 aria attributes. Semantic landmarks exist (1 main, 2 nav) but they are mixed with 4 header and 4 footer elements.",
+  "category": "structure",
+  "evidence": "counts: inline_style_attrs 29, alt_missing 1, aria_attrs 32; semantic main 1, nav 2, header 4, footer 4."
+ },
+ {
+  "observation": "The SEO metadata is complete: a descriptive title, lang en-US, Open Graph and Twitter card tags, and one JSON-LD block. The title is keyword-led: 'Top US Interior Design and DIY Projects Blogger | Never Skip Brunch'.",
+  "category": "structure",
+  "evidence": "title; meta_names og:title, og:description, twitter:card; jsonld_blocks 1; lang en-US."
+ },
+ {
+  "observation": "The copy is first-person, casual and emoji-heavy in captions. The section headings are lowercase with trailing periods or ellipses, such as 'if you . . .' and 'pick one:'. The tone is chatty and brunch-themed.",
+  "category": "copy",
+  "evidence": "heading_outline: 'if you . . .', 'pick one:', 'looking for something?', 'let’s connect'; text_stats emoji 4, exclamations 3. Alt captions are full of emoji."
+ },
+ {
+  "observation": "The uppercase section h3 labels (BLOG, INTERIORS, BROWSE HOME PROJECTS., STARTER TOOLS., YOUTUBE CHANNEL., DOWNLOADS) look like the menu and mega-menu content. They include 'BROWSE HOME PROJECTS.' and 'DIY PROJECT COACHING' and are marked up as headings. Their trailing periods follow a house style.",
+  "category": "structure",
+  "evidence": "heading_outline lists h3 items such as 'BROWSE HOME PROJECTS.', 'INTERIOR DESIGN CALCULATORS.', 'SUBSCRIBE.', 'EPISODES.', 'FEEDBACK.', all with trailing periods and uppercase."
+ },
+ {
+  "observation": "The primary link style is plain orange text with no button chrome. The 'about + learn more' CTA has a transparent background, orange text, 0 radius and 0 padding.",
+  "category": "component",
+  "evidence": "primary_button: bg rgba(0,0,0,0), color rgb(243,179,79), radius 0px, padding 0px. buttons count 0."
+ },
+ {
+  "observation": "A 500x23 transparent spacer image is used to hold layout space.",
+  "category": "structure",
+  "evidence": "images[8] spacer-blank-500x23.png at y=14940, 500x23."
+ },
+ {
+  "observation": "The page includes closing newsletter and connect blocks ('join the newsletter.', 'let’s connect', 'looking for something?') as h3 and h4 headings. These are the search, subscribe and social areas of a footer.",
+  "category": "component",
+  "evidence": "heading_outline ends with h4 'pick one:', 'looking for something?', 'let’s connect' and h3 'join the newsletter.'. facts counts 4 forms."
+ }
+]

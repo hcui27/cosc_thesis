@@ -1,0 +1,290 @@
+[
+ {
+  "observation": "Overall color scheme differs: A is light with a pale gray-blue canvas and white cards; B is a dark theme with a near-black body background",
+  "category": "color",
+  "evidence": "A top backgrounds rgb(255,255,255)×36 and rgb(240,243,245)×28, body_bg transparent; B body_bg rgb(14,20,25), cards rgb(23,31,39)/rgb(31,41,51)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Accent color: A uses a saturated mid blue for links and buttons; B uses a bright cyan",
+  "category": "color",
+  "evidence": "A text color rgb(0,95,217)×129; B rgb(39,209,255) as background×4 and text×5",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text color inverts: A uses dark gray text, B uses near-white text with a muted gray-blue secondary",
+  "category": "color",
+  "evidence": "A body_color rgb(56,58,59), secondary rgb(104,108,110)×401; B body_color rgb(232,238,243), secondary rgb(147,161,174)×40",
+  "which_side": "both"
+ },
+ {
+  "observation": "Font family: A uses Helvetica Neue (plus Arial and Font Awesome icon fonts); B uses only the system-ui stack",
+  "category": "typography",
+  "evidence": "A fonts: helvetica neue 983, arial 81, font awesome 5 pro 5, brands 1; B fonts: system-ui 119",
+  "which_side": "both"
+ },
+ {
+  "observation": "Base text size and line height are larger in B",
+  "category": "typography",
+  "evidence": "A body 15px/22.5px; B body 16px/24px",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a single large H1 with two tones: 'Since 2003' sits on its own line in cyan; A has no H1 at all",
+  "category": "typography",
+  "evidence": "A h1_count 0; B h1 'Honda Insight Forum Since 2003' at 52px, weight 700, color rgb(232,238,243); screenshot shows 'Since 2003' in cyan",
+  "which_side": "B"
+ },
+ {
+  "observation": "The heading outlines differ: A has only two H3s; B has a full H1 > H2 > H3 hierarchy",
+  "category": "DOM/semantic",
+  "evidence": "A outline: H3 'Our Top Forums', H3 'Top Contributors this Month'; B: H1, 4×H2 (Latest threads, Top Contributors, Recommended Communities, Join now…), 3×H3 thread titles",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses the nav and main landmarks; A has neither",
+  "category": "DOM/semantic",
+  "evidence": "A semantic nav 0, main 0, section 1; B nav 1, main 1, section 3",
+  "which_side": "B"
+ },
+ {
+  "observation": "The page title differs: B adds the brand name and a tagline",
+  "category": "copy",
+  "evidence": "A title 'Honda Insight Forum'; B title 'Insight Central – Honda Insight Forum Since 2003'",
+  "which_side": "B"
+ },
+ {
+  "observation": "Header treatment: A places the logo, search bar and icons over a full-width photographic banner of three Insight cars; B uses a slim, solid dark top bar with no banner image",
+  "category": "layout",
+  "evidence": "A banner image insightcentral_net_banner_2880w.jpg at 1440×180 with the logo overlapping it (overlap 9405px²); B logo 139×30 at y=17 inside a ~64px bar",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a 'Search Community' search field in its header; B has no search input",
+  "category": "component",
+  "evidence": "A has 14 inputs and 2 forms, and the screenshot shows the search bar with a magnifier icon; B tag_counts show no input or form",
+  "which_side": "A"
+ },
+ {
+  "observation": "Header nav items differ: A shows icon buttons (a 'NEW' badge, a list icon, Login/Join with a user icon, and a kebab menu); B shows text links 'What's new' and 'Forums' plus a cyan pill 'Login / Join'",
+  "category": "component",
+  "evidence": "A_slice_00 header icons; B_slice_00 header; B primary_button 'Login / Join' with bg rgb(39,209,255) and radius 999px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Primary button shape: A's button is rectangular with a small radius; B's buttons are pills",
+  "category": "decoration",
+  "evidence": "A primary_button radius 3px, and 'Join Community' is a blue rectangle; B radius 999px, and 'Join Community' is a cyan pill",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a two-column layout with a main feed and a right sidebar; B is a single centered column of full-width sections",
+  "category": "layout",
+  "evidence": "A sidebar cards start at x≈1000 (Honda Insight Forum, Our Top Forums, Top Contributors, Recommended Communities); B sections span x 196–1243",
+  "which_side": "both"
+ },
+ {
+  "observation": "The forum intro, stats and 'Join Community' button sit in a sidebar card in A but in a full-width hero in B",
+  "category": "layout",
+  "evidence": "A_slice_00 right card shows 'Honda Insight Forum / Since 2003', 414K posts, 180.3K members; B_slice_00 hero shows the same copy, with the button aligned right",
+  "which_side": "both"
+ },
+ {
+  "observation": "Stats styling: A shows large numbers split by a vertical divider; B shows smaller numbers inline with no divider",
+  "category": "typography",
+  "evidence": "A_slice_00 '414K | 180.3K' with a vertical rule; B_slice_00 '414K 180.3K' at a smaller size with tiny labels",
+  "which_side": "both"
+ },
+ {
+  "observation": "Featured thread cards: A uses short landscape tiles with the title and author overlaid on the photo; B uses tall portrait image cards with the title and meta below the image",
+  "category": "imagery",
+  "evidence": "A featured images are 269px wide with heights of 269/358/479 and the tiles crop to ~180px in the screenshot; B images are 337×700 each and the captions sit below",
+  "which_side": "both"
+ },
+ {
+  "observation": "B labels the featured-thread row with a 'Latest threads' heading; A shows the tiles with no heading",
+  "category": "copy",
+  "evidence": "B h2 'Latest threads'; A has no heading above the tiles",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has a long 'Recommended for you' feed of about 25 thread rows plus a 'Load More' button; B has no thread list",
+  "category": "component",
+  "evidence": "A_slice_00 to A_slice_02 show the list from 'FoMoCo 3.3kWh…' to 'WTB Windshield pillar arm clips' and 'Load More'; B screenshots show no list",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's thread rows show forum category, blue bold title, author, relative time, last replier and a comment-count chip",
+  "category": "component",
+  "evidence": "A_slice_00 row: 'Modifications and Technical Issues / FoMoCo 3.3kWh Battery Module Testing / Mario · a moment ago · retepsnikrep replied a moment ago / 2'; A has 25 time elements",
+  "which_side": "A"
+ },
+ {
+  "observation": "A shows colored letter-initial avatar tiles in many hues (orange, purple, teal, green and more); B's initial avatars are small dark circles with cyan letters",
+  "category": "color",
+  "evidence": "A_slice_00/01 tiles 't' orange, 'S' salmon, 'J' blue, 'B' green, 'I' lime; B_slice_00 'B','N','K' circles; B_slice_01 'H','J' dark circles",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows thumbnails that failed to load as alt text in blue link text on the right of thread rows",
+  "category": "imagery",
+  "evidence": "A images with natural 0×0 and alt text visible, e.g. 'FoMoCo 3.3kWh Battery Module Testing', 'Unknown part', 'Lean Burn Indicator', in A_slice_00/01",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's 'Our Top Forums' list with post and view counts per forum is absent from B",
+  "category": "component",
+  "evidence": "A_slice_00 lists 'Honda Insight Forum 1st-Gen Discussion 131.7K / 24.8M' and four more forums; B has no equivalent heading or list",
+  "which_side": "A"
+ },
+ {
+  "observation": "Top Contributors: in A it is a vertical sidebar list; in B it is a row of three horizontal bordered cards with a cyan 'View All' link at the top right",
+  "category": "layout",
+  "evidence": "A_slice_00 sidebar shows hondarider90, mudder and Joule stacked; B_slice_01 shows three cards side by side",
+  "which_side": "both"
+ },
+ {
+  "observation": "Recommended Communities: A uses a sidebar list with 36px icons; B uses a three-card row with 64px icons",
+  "category": "imagery",
+  "evidence": "A community avatars are 36×36 at x=1018; B's are 64×64 at x=211, 566 and 920",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages show a 'NEW!' badge on Royal Enfield Forum, in A's blue and in B's cyan pill",
+  "category": "decoration",
+  "evidence": "A_slice_01 shows a blue 'NEW!' tag; B_slice_01 shows a cyan rounded 'NEW!' tag",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a sign-up block 'Join now to ask and comment!' with Continue with Facebook, Continue with Google and Sign up with email; A has no such visible block, though its DOM includes a 'Continue with Google button' image",
+  "category": "component",
+  "evidence": "B h2 'Join now to ask and comment!' and B_slice_01 buttons; A has a 16×17 image with alt 'Continue with Google button' and no visible sign-up block in its slices",
+  "which_side": "B"
+ },
+ {
+  "observation": "Footer: A's is a dark charcoal band with the fora logo and a BBB accredited badge on the right; B's footer has the same links and legal copy on a dark slate background, with no logos",
+  "category": "imagery",
+  "evidence": "A_slice_02 shows the fora logo and BBB badge on rgb(35,35,36)-like bg; B_slice_01 footer is text only, and B has 8 images in total, none of them footer badges",
+  "which_side": "A"
+ },
+ {
+  "observation": "The RSS footer link is an icon in A and the word 'RSS' in B",
+  "category": "copy",
+  "evidence": "A_slice_02 shows an RSS glyph after 'Contact us'; B_slice_01 shows the text 'RSS'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Shadows and gradients: A uses box shadows and gradient backgrounds; B uses neither and relies on borders",
+  "category": "decoration",
+  "evidence": "A box_shadows 37, gradient_backgrounds 8; B box_shadows 0, gradient_backgrounds 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "Border radius usage: A uses mostly small radii (1–7px); B uses 8–15px radii and pills, with nothing in the 1–7px range",
+  "category": "decoration",
+  "evidence": "A buckets 1_7:115, 8_15:25, pill:39; B 1_7:0, 8_15:14, 16_plus:1, pill:12",
+  "which_side": "both"
+ },
+ {
+  "observation": "Layout technique: A is mostly flexbox; B uses CSS grid more often relative to its size",
+  "category": "layout",
+  "evidence": "A display_flex 175, display_grid 1; B display_flex 23, display_grid 8",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is much larger than B's",
+  "category": "DOM/semantic",
+  "evidence": "A has 445 divs, 219 spans and 260 anchors; B has 23 divs, 17 spans and 25 anchors",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many scripts and external stylesheets; B has no scripts and no external stylesheets, only one inline style block",
+  "category": "DOM/semantic",
+  "evidence": "A scripts 55, stylesheets 23, iframes 2; B scripts 0, stylesheets 0, style 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "Head metadata: A carries Open Graph, Twitter card, fb:app_id, theme-color, origin-trial metas and JSON-LD; B has only charset, viewport and description",
+  "category": "DOM/semantic",
+  "evidence": "A has 27 meta names and 1 jsonld_block; B has 3 meta names and 0 jsonld_blocks",
+  "which_side": "A"
+ },
+ {
+  "observation": "Lang attribute: A uses a regional code; B uses a generic one",
+  "category": "DOM/semantic",
+  "evidence": "A lang 'en-US'; B lang 'en'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Class naming: A has many classes; B has very few, and neither uses utility-style classes",
+  "category": "DOM/semantic",
+  "evidence": "A classes total 1199 / unique 254, tailwind_like 0.042; B total 39 / unique 20, tailwind_like 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "Inline styles: A uses inline style attributes; B uses none",
+  "category": "DOM/semantic",
+  "evidence": "A inline_style_attrs 73; B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "Alt attributes: some of A's images lack alt; every image in B has an alt attribute, but most are empty",
+  "category": "DOM/semantic",
+  "evidence": "A alt_missing 5; B alt_missing 0, and 7 of B's 8 images have alt ''",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses responsive picture/source elements; B uses plain img only",
+  "category": "imagery",
+  "evidence": "A picture 14, source 18; B has no picture or source tags",
+  "which_side": "A"
+ },
+ {
+  "observation": "Page length and text volume: A is longer and has much more copy",
+  "category": "layout",
+  "evidence": "A page_height 3333, words 643; B page_height 2190, words 186",
+  "which_side": "A"
+ },
+ {
+  "observation": "Effects: A has one animation and more transitions; B has no animations",
+  "category": "decoration",
+  "evidence": "A transitions 11, animations 1; B transitions 6, animations 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses icon fonts (Font Awesome) for UI glyphs such as the comment bubbles, eye icons, search and user icons; B uses no icon font or SVGs, and its comment counts appear as bare numbers",
+  "category": "imagery",
+  "evidence": "A fonts include font awesome 5 pro/brands, and i tags = 7; B svgs 0 and no icon font, and B_slice_00 shows the counts '9', '2', '3' without icons",
+  "which_side": "A"
+ },
+ {
+  "observation": "Logo size: A shows the logo larger over the banner; B shows it smaller in the top bar",
+  "category": "imagery",
+  "evidence": "A logo rect 209×45 at (140,122); B logo rect 139×30 at (196,17)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Content width: A's content spans x 140–1300; B's spans x 196–1243",
+  "category": "layout",
+  "evidence": "A logo and featured tiles start at x=140, sidebar ends at ~1300; B logo starts at x=196, cards end at 1243",
+  "which_side": "both"
+ },
+ {
+  "observation": "Exclamation marks in copy: A has more",
+  "category": "copy",
+  "evidence": "A exclamations 6; B exclamations 3",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses hr dividers and a sup element; B uses strong, small and b for emphasis",
+  "category": "DOM/semantic",
+  "evidence": "A hr 3, sup 1; B strong 2, small 2, b 6",
+  "which_side": "both"
+ },
+ {
+  "observation": "Featured thread titles in B are truncated with an ellipsis, the same text as A's overlaid captions",
+  "category": "copy",
+  "evidence": "B h3 '50% off pick n pull this last weekend, new arm res...' and 'SOLD For sale- 2001 Red Generation 1 Insight in Mi...'; A overlay shows the same truncations",
+  "which_side": "both"
+ }
+]

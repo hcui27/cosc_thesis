@@ -1,0 +1,242 @@
+[
+ {
+  "observation": "A uses Roboto as its only text font, with FontAwesome for icons. B uses a system-ui stack with no web fonts and no icon font.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Roboto 425, FontAwesome 10. B: system-ui 245.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no h1 and no h2. Its headings start at h4 (feature blocks) and h3 (states). B has one h1 and one h2 ('Our Locations'), plus h3 state headings and h4 location names.",
+  "category": "semantic structure",
+  "evidence": "A h1_count 0 and h1/h2 null. B h1_count 1 ('New heights can always be reached.'), h2 'Our Locations'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's location names are not headings. They appear as grey captions, and A has 17 h5 elements. In B each location name is an h4 in the outline, and B has only 2 h5.",
+  "category": "semantic structure",
+  "evidence": "A tag_counts h5 17 and its heading_outline lacks city names. B outline lists 'Marin County, CA', 'Brick, NJ' and others as level 4.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no <main> landmark. B wraps its content in one <main>.",
+  "category": "semantic structure",
+  "evidence": "A semantic.main 0. B semantic.main 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A sets no html lang, and its head has 18 meta tags, 17 scripts and 3 stylesheets. B sets lang='en', with 3 meta tags, 1 script, 1 style block and 0 stylesheets.",
+  "category": "DOM/semantic structure",
+  "evidence": "A lang '' and counts scripts 17, stylesheets 3. B lang 'en', scripts 1, stylesheets 0, style 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A relies on many inline styles and has no ARIA attributes. B has almost no inline styles and 10 ARIA attributes.",
+  "category": "DOM/semantic structure",
+  "evidence": "A inline_style_attrs 31 and aria_attrs 0. B inline_style_attrs 1 and aria_attrs 10.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM is large and nested, with 151 divs, 377 class tokens and 140 unique classes. B is leaner, with 58 divs, 98 class tokens and 26 unique classes.",
+  "category": "DOM/semantic structure",
+  "evidence": "A tag_counts div 151 and classes total 377 / unique 140. B div 58 and classes total 98 / unique 26.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's layout uses neither flex nor grid, so it is float/table based. B's layout uses flex on 42 elements and grid on 6.",
+  "category": "layout",
+  "evidence": "A display_grid 0 and display_flex 0. B display_grid 6 and display_flex 42.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is a saturated mid-blue (rgb(1,96,153)) with red (237,31,36) and cyan (76,198,219) accents on a white page. B uses navy (18,35,59 and 29,53,87) with an orange-red accent (228,87,46) on an off-white page (245,247,250).",
+  "category": "color",
+  "evidence": "A top_backgrounds: 1,96,153 ×19, 237,31,36 ×3. B top_backgrounds: 228,87,46 ×6, 18,35,59 ×3, body_bg 245,247,250.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body text is mid-grey (99,99,99) and its link and heading text is blue (1,96,153). B's body text is dark slate (31,41,55), with headings in navy (29,53,87).",
+  "category": "color",
+  "evidence": "A body_color rgb(99,99,99). B body_color rgb(31,41,55), top_text_colors include 29,53,87 ×48.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header is a white band with a large logo, a 'Find a Location' select and a Search input with an icon, and a top-right 'Gift Cards / Contact Us' pair of underlined links. A solid blue full-width nav bar below it carries the main links, which are separated by '|' dividers.",
+  "category": "component",
+  "evidence": "A_slice_00 shows white header and blue nav bar (1,96,153) with pipe separators. Navigation items are Options to Climb, Locations, Covid-19 Updates, About, Franchising, Contact and Careers.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's header has a dark navy utility strip with Gift Cards and Contact Us on the left and a 'Find a Location' select with an orange Search button on the right. Below it is a white bar with the logo and nav, where the active 'Home' item has an orange underline.",
+  "category": "component",
+  "evidence": "B_slice_00: navy top strip, orange 'Search' button (bg 228,87,46, radius 4px), and 'Home' underlined in orange. A's nav has no Home item.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's hero is a framed carousel image of climbing holds, inset from the page edges, with two dot indicators. It has no overlay text and no CTA.",
+  "category": "imagery",
+  "evidence": "A images: Header_for_Brick png at x65, w1310, h442 (duplicated); two dots visible in the slice. A has no h1.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's hero is a full-bleed 1440px-wide blurred and darkened photo with a centered white 48px bold h1, a subheading and an orange 'Find a Location' button. These are invented copy and a CTA that A's hero lacks.",
+  "category": "layout",
+  "evidence": "B h1 font_size 48px, weight 700, white, centered. The hero image rect is 1440x399 at y125. The text 'Indoor rock climbing for every age and ability, across four states.' is visible.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses the same placeholder image for every card, hero and card thumbnail. A uses distinct photos for each location and feature, as well as a hero image.",
+  "category": "imagery",
+  "evidence": "B images all 'img' with natural size 326x233 (the data-URI-like placeholder). A has distinct files such as GVUSRSP-31.jpg, Montclair_350x250.jpg and Pic_For_Phila.jpg.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's images are sharp-cornered with thin dark borders and no shadows. B's images sit inside rounded-corner white cards, with the image clipped at the card's top corners.",
+  "category": "decoration",
+  "evidence": "A radius buckets: 431 at 0 radius, only 2 at 1–7px. B has 19 elements at 8–15px radius, 13 pill-shaped and 5 at 1–7px. The B slices show rounded cards.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's four feature blocks are flat columns, each with an image, a blue h4 title, a thin grey rule and a paragraph. No card container is used. B's four feature blocks are white rounded cards with a soft shadow, navy titles and an equal-height layout, and the cards overlap the bottom edge of the hero.",
+  "category": "component",
+  "evidence": "A_slice_00 shows a title with a rule beneath it. B_slice_00 shows cards with shadow overlapping the hero at y≈474. B has box_shadows 4 and A has 4.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The feature-card images in A are 305x178 and sit under the carousel. In B they are 269x192 and begin inside the hero area, overlapping it by roughly 50px.",
+  "category": "layout",
+  "evidence": "A image rects y642 w305 h178. B image rects y474 w269 h192, hero bottom at 524.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a very large logo (817x176) inside the mission section, shown in navy on white. Beside it sits a 'Links' list on the left, and the mission paragraph is bold grey. B puts the mission in a full-width navy band with a white logo and white bold centered text.",
+  "category": "layout",
+  "evidence": "A logo rect w817 h176 at y1141. B logo rect w298 h64 at y1079, on a navy section (18,35,59 or 29,53,87).",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A the 'Links' list (Options to Climb, Find a Location, FAQs, About Us and so on) sits in the body, beside the large logo, with blue links in a single column. B moves this link list into the footer, in two columns.",
+  "category": "layout",
+  "evidence": "A_slice_00/01 show 'Links' beside the big logo. B_slice_03 shows 'Links' in the navy footer with two columns (Options to Climb... / Franchising...).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's location section has no section title, only state headings. B adds an 'Our Locations' h2, the line 'Pick a state or browse them all.' and pill filter buttons (All, California, New Jersey, New York, Pennsylvania), with 'All' filled navy.",
+  "category": "component",
+  "evidence": "B_slice_01 shows the 'Our Locations' heading, the subtext and the pills. A heading_outline has no such heading and A has no filter controls.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A lays out locations in a 3-column grid, with images 353x253 at x170, 543 and 917. B uses a 4-column grid, with cards 267x190 at x151, 442, 732 and 1023.",
+  "category": "layout",
+  "evidence": "A image rects for locations. B image rects for locations (4 per row in the NJ section, 3 in NY/PA).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's content width for locations is about 1100px (x170–1270), while its header and hero reach 1310px (x65–1375). B uses one consistent container, about 1140px (x150–1290), for header, cards and footer.",
+  "category": "layout",
+  "evidence": "A image rect x65 w1310 for the hero, location images from x170 to 1270. B logo x150 and last card right edge ~1290.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's state headings are bold navy and left-aligned, with a thin light-blue horizontal rule between state sections. B's state headings have a short orange underline accent matching the heading's width, with no section dividers.",
+  "category": "decoration",
+  "evidence": "A_slice_01/02 show rules at y≈616 and 598. B_slice_01 shows an orange underline beneath 'California' and 'New Jersey'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A the location name is plain grey text beneath the image, with a lighter, smaller description. In B the name is a bold navy heading inside the card body, with the description, and an orange 'View location →' link at the card bottom.",
+  "category": "component",
+  "evidence": "A_slice_01 'Brick, NJ' as a plain caption. B_slice_01 'View location →' links on every card.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a 'View location →' link, with an arrow, to every location card. A has no per-card link text.",
+  "category": "copy",
+  "evidence": "B_slice_01–03 show orange 'View location →' text. A slices have no such text.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A marks 'Coming Soon!' with a red (237,31,36) ribbon at the top-left corner of the image, with a notched right edge and sentence-case text. B uses an orange, rounded pill badge with uppercase 'COMING SOON!' text, inset from the corner.",
+  "category": "component",
+  "evidence": "A_slice_01/02 red ribbon on Marin, Nassau and the PA images. B_slice_02 orange pills on Nassau and the PA cards.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's cards are equal in height within a row, with the 'View location →' link pinned to the bottom, so cards without descriptions (Brick, Montclair, Nassau) show blank space. A's items have varying heights and simply end after the caption.",
+  "category": "layout",
+  "evidence": "B_slice_01/02 Brick, Montclair and Nassau cards have empty areas above the link or the bottom. A_slice_01 Brick, NJ caption stands alone.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is a two-tier blue strip. The first row has a newsletter email field with a check icon and five FontAwesome social icons. The second, darker blue row (1,64,102) holds the copyright and links. B's footer is a dark navy block with a white logo, a 'Signup for our Newsletter!' label, an email input and orange 'Sign up' button, text-labelled pill social links, a two-column link list and a divider.",
+  "category": "component",
+  "evidence": "A_slice_03 shows icon glyphs for Facebook, Instagram, Twitter, LinkedIn and Pinterest, with a check-circle submit. B_slice_03 shows the pill buttons 'Facebook', 'Instagram', 'Twitter', 'LinkedIn' and 'Pinterest'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses icon glyphs (FontAwesome: envelope, social logos, search magnifier, select chevron). B has no icons from an icon font and uses text arrows (→) and text labels instead. Neither side uses inline SVGs.",
+  "category": "imagery",
+  "evidence": "A fonts include FontAwesome 10 and svgs 0. B svgs 0 and fonts system-ui only.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a single type scale in which feature titles are bold blue about 20px, mission text is bold grey, and location copy is Roboto Light, small and grey. B uses a larger scale, with a 48px h1 and a 32px h2 and body text with 24.8px line height (1.55).",
+  "category": "typography",
+  "evidence": "A body_line_height 24px and no h1/h2. B h1 48px/700, h2 32px/700, body_line_height 24.8px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's CTA and search buttons are solid orange with 4px radius and bold white text. A's primary button ('Go To My Gym') is blue (1,96,153) with 0 radius and white text. A's visible form controls are outlined, thin-bordered inputs.",
+  "category": "component",
+  "evidence": "B primary_button bg 228,87,46 radius 4px. A primary_button 'Go To My Gym' radius 0px, padding 3px 15px 4px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header places 'Find a Location' as a small grey label beside a select, and a separate Search text field. B merges these into one utility row with a bold white 'Find a Location' label, a select and an orange 'Search' button. B has 1 select and 1 input, and A has 2 selects and 8 inputs.",
+  "category": "component",
+  "evidence": "A tag_counts select 2, input 8, form 6. B select 1, input 1, form 2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has more buttons (7) than A (2). A relies on anchors (84) for most interactions, while B has 58 anchors.",
+  "category": "DOM/semantic structure",
+  "evidence": "A buttons 2 and anchors 84. B buttons 7 and anchors 58.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page text is largely the same in both: the feature copy, the mission statement, the location descriptions and the footer credits ('Lform Design | NJ Web Design Company') carry over. B adds new copy: the hero heading and subline, 'Our Locations', 'Pick a state or browse them all.' and 'View location'.",
+  "category": "copy",
+  "evidence": "A words 569 and B words 650. Both show 19 exclamation marks. A has 1 emoji and B has 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows the 'Coming Soon!' state on cards with an image-overlaid pill and no description. B also keeps the same flat navy, white and off-white banding of sections, alternating light page, navy mission band, light locations and navy footer. A keeps a white page throughout, with only the blue footer and nav as color blocks.",
+  "category": "decoration",
+  "evidence": "B_slice_00–03 section backgrounds. A body_bg rgb(255,255,255) with 19 white elements and blue only in nav/footer.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The pages differ in total height. A is 4323px tall and B is 4732px, with B's 4-column cards stacking with more vertical padding.",
+  "category": "layout",
+  "evidence": "A page_height 4323 and B page_height 4732, both at page_width 1440.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's images are alt-less. 25 of its 26 images have empty alt text and 1 is missing alt altogether. In B, the 3 logo images have descriptive alt text, and the 20 other images carry empty alt text.",
+  "category": "imagery",
+  "evidence": "A images alt '' throughout, alt_missing 1. B logo alt 'The Gravity Vault Indoor Rock Gyms' and alt_missing 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a carousel (two dot indicators), duplicated hero image elements and hidden zero-size images. B's hero is a static image.",
+  "category": "component",
+  "evidence": "A images with rect 0x0 (logo, Header_for_Brick__1_) and a duplicated Brick__3_ at the same position. B has no hidden images.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has 10 CSS transitions and B has 4. Neither side has animations, transforms, gradients or backdrop blur.",
+  "category": "decoration",
+  "evidence": "A transitions 10 and B transitions 4, with animations 0, transforms 0, gradient_backgrounds 0 and backdrop_blur 0 on both.",
+  "which_side": "both"
+ }
+]

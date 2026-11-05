@@ -1,0 +1,254 @@
+[
+ {
+  "observation": "Heading and body typeface differ completely. A uses the custom sans 'Graphik' on all 196 measured elements. B uses Georgia serif (71 elements) for headings and body, with system-ui (60 elements) for nav, buttons and attributions.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Graphik 196. B: Georgia 71, system-ui 60. B h1 font-family is Georgia, 'Times New Roman', serif.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The h1 is much larger and heavier-looking in A. It has very tight tracking and a bold geometric sans look. B's h1 is a smaller serif.",
+  "category": "typography",
+  "evidence": "A h1 76.56px, weight 700, Graphik. B h1 64px, weight 700, Georgia.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The h2 size is much smaller in B than in A, which flattens the heading hierarchy.",
+  "category": "typography",
+  "evidence": "A h2 58px vs B h2 41.6px.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Body text is larger in A (23.2px with line-height equal to the font size, i.e. 1.0). B uses 18px with a 28.8px line-height (1.6), so its paragraphs read looser and more conventional.",
+  "category": "typography",
+  "evidence": "A body_font_size 23.2px, body_line_height 23.2px. B 18px / 28.8px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page background differs. A is stark white with a beige wavy hand-drawn band behind the project mockup. B uses a warm cream background across the page.",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255), with rgb(251,247,240) only in sub-areas. B body_bg rgb(251,248,241).",
+  "which_side": "both"
+ },
+ {
+  "observation": "The primary CTA changes from a flat, square, bright yellow rectangle in A to a pill-shaped, muted golden-amber button with a shadow in B.",
+  "category": "component",
+  "evidence": "A bg rgb(255,224,0) with 0 border-radius. B primary_button bg rgb(233,183,43), radius 999px, padding 16px 34px, text colour rgb(34,34,34).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header has two outlined/filled boxed buttons: a bordered 'Sign in' and a dark-navy filled 'Try it FREE'. B shows 'Sign in' as a plain text link and 'Try it FREE' as a small yellow pill.",
+  "category": "component",
+  "evidence": "A screenshot: boxed 'Sign in' (transparent bg, radius 0) and dark 'Try it FREE'. B screenshot: plain 'Sign in', pill 'Try it FREE'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The logo is rendered differently. A inlines it as one SVG with a dark navy outline mark and wordmark. B uses an external basecamp-logo.svg image with a yellow-filled mark, at 137x38.",
+  "category": "imagery",
+  "evidence": "A svgs: 1, img count 5. B images list basecamp-logo.svg at 137x38 and has 0 inline svgs.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's navigation sits flush at the far edges of a full-width bar, with the logo at x≈24. B constrains the header to a centred container, with the logo at x=140.",
+  "category": "layout",
+  "evidence": "A screenshot: logo at left edge. B facts: logo rect x=140.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has two h1 elements, the second one empty, which is a heading-structure flaw. B has a single clean h1.",
+  "category": "semantic",
+  "evidence": "A h1_count 2 and heading_outline ends with a level-1 entry with empty text. B h1_count 1.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has two nav elements, 41 anchors, 22 divs and 13 script tags. B is much leaner: 1 nav, 31 anchors, 11 divs and 0 scripts.",
+  "category": "semantic",
+  "evidence": "A tag_counts: nav 2, a 41, div 22, script 13. B: nav 1, a 31, div 11, no script.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A carries extensive head metadata: OG/Twitter tags, theme-color, robots, 2 JSON-LD blocks, and 13 meta tags with 3 stylesheets. B has only charset and viewport, no JSON-LD, and zero external stylesheets (one inline style).",
+  "category": "dom",
+  "evidence": "A meta_names include og:*, twitter:*, robots, theme-color; jsonld_blocks 2; stylesheets 3. B meta_names: charset, viewport; jsonld_blocks 0; stylesheets 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The page title is different. A is a descriptive SEO title and B is a short brand-plus-tagline title.",
+  "category": "copy",
+  "evidence": "A: 'Basecamp: Project Management & Team Communication Software'. B: 'Basecamp – The All-In-One Toolkit for Working Remotely'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no ARIA attributes in B's sense of the word: A has 3 aria attributes and B has none. B has fewer accessibility hooks.",
+  "category": "semantic",
+  "evidence": "A counts.aria_attrs 3 vs B 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The review-star row is laid out differently. A stacks the stars above the quote text, so each testimonial snippet is centred under its stars. B places the stars inline to the left of each quote, in one horizontal row.",
+  "category": "layout",
+  "evidence": "A star rects at y=145 with quotes below. B star rects at x=266/573/958 inline with quote text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The review quote snippets are set in muted tan-grey text in A and in italic dark grey in B.",
+  "category": "color",
+  "evidence": "A top_text_colors include rgb(170,156,132) ×7. B uses rgb(91,103,112) ×19.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero mockup screenshot is broken in B. The handwritten SVG/PNG annotations ('Create a place in Basecamp for each project or team', 'Involve everyone who's working on the project') collide with the app UI text ('Honcho Co', 'Message Board') because a second captions image is stacked on the first. In A the annotations sit cleanly outside the card.",
+  "category": "imagery",
+  "evidence": "B image_overlaps: project-remote-large.png vs project-hero-captions.png, 1,015,200 px² overlap, both at 270,624 900x1128. A has image_overlaps [] and a single project image.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows the project mockup as one image with the handwritten captions baked in. B splits it into a base image and an overlaid captions image (an extra image with empty alt).",
+  "category": "imagery",
+  "evidence": "A images: project-remote-large (909x1139). B images: project-remote-large.png plus project-hero-captions.png (2333x2284, alt='').",
+  "which_side": "B"
+ },
+ {
+  "observation": "A places the mockup over a wavy beige 'hill' background shape that bleeds out behind it. B places the mockup in a flat white box on a cream background with a thin horizontal rule above it.",
+  "category": "decoration",
+  "evidence": "A slice 0: wavy beige edge behind mockup. B slice 0: hairline divider at y≈567 and a rectangular white panel.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The hero mockup is slightly larger and lower in A (909x1139 at y=718) than in B (900x1128 at y=624). B's hero is more compact because its text block is smaller.",
+  "category": "layout",
+  "evidence": "A rect y=718, w=909. B rect y=624, w=900.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Overall page length is much shorter in B (4567px against 6474px in A), driven by the smaller type and the two-column testimonials.",
+  "category": "layout",
+  "evidence": "page_height A 6474 vs B 4567.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Testimonials are a single centred column of large bold pull-quotes in A. B puts them in a two-column masonry of white rounded cards.",
+  "category": "component",
+  "evidence": "A slice 2 shows bold centred quotes. B slice 2 shows two columns of white cards; B has 10 cards with radius 8–15px (bucket_8_15: 10).",
+  "which_side": "both"
+ },
+ {
+  "observation": "Quote text is bold, large Graphik sans in A. In B it is regular-weight Georgia at body scale, with a bold sans em-dash attribution line.",
+  "category": "typography",
+  "evidence": "A slice 2 heavy quote type. B slice 2: '— Tobi Lütke, CEO, Shopify' in small bold system-ui. B text_stats em_dashes 10 vs A 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Quote attribution is italic and prefixed with a hyphen in A ('-Tobi Lütke, CEO, Shopify'). B uses an em dash with non-italic bold sans.",
+  "category": "copy",
+  "evidence": "A slice 2 '-Tobi Lütke…' italic. B '— Tobi Lütke…'. B em_dashes 10, A 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses card shadows and rounded corners (13 box-shadows, 10 radius 8–15px, 3 pills). A is almost entirely square-cornered (195 of 196 elements radius 0) with only 2 shadows.",
+  "category": "decoration",
+  "evidence": "A box_shadows 2, border_radius_buckets bucket_0 195, bucket_1_7 1. B box_shadows 13, bucket_8_15 10, bucket_pill 3.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has hover/transition effects (44 transitions, 2 transforms). B has no transitions, animations or transforms, so it is static.",
+  "category": "decoration",
+  "evidence": "A transitions 44, transforms 2. B transitions 0, transforms 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses CSS grid in 6 places and flex in 11. B uses no grid at all and flex in only 7 places.",
+  "category": "layout",
+  "evidence": "A display_grid 6, display_flex 11. B display_grid 0, display_flex 7.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A is built from a utility-style class system with 175 class uses and 69 unique, 24.6% tailwind-like. B is hand-written with only 25 class uses and 14 unique, no tailwind-like.",
+  "category": "dom",
+  "evidence": "A classes total 175, unique 69, tailwind_like_fraction 0.246. B total 25, unique 14, 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Links in B are green and underlined (rgb(27,110,63), 24 elements). A uses navy text with underlines for links, with no accent link colour.",
+  "category": "color",
+  "evidence": "B top_text_colors rgb(27,110,63) ×24. A has no green; text is rgb(29,45,53) ×185. B 'learn more about REMOTE' link and 'Hear from hundreds…' link are green.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The 'learn more about REMOTE' control is a bordered outline button in A. In B it is just an underlined green text link.",
+  "category": "component",
+  "evidence": "A slice 2: boxed 'learn more about REMOTE'. B slice 2: underlined green text link at the top.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The REMOTE book cover is larger in A (279x380 at x=265) than in B (220x300 at x=240). B adds a soft drop shadow to the cover.",
+  "category": "imagery",
+  "evidence": "A rect w=279 h=380. B rect w=220 h=300. B slice 2 shows a shadow on the cover.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A separates sections with a hand-drawn wavy line divider. B uses thin straight hairline rules and background changes.",
+  "category": "decoration",
+  "evidence": "A slice 2: wavy line above 'Companies change for the better'. B slice 2: straight 1px rule at y≈143.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The closing CTA block is stronger in A, with a two-line bold 'Have questions? Holler. Ready to get going? Engage:' as a large heading. B shrinks it into a single line of small bold serif text, with no heading element.",
+  "category": "typography",
+  "evidence": "A slice 4 has large heavy-weight text. B slice 3 shows a one-line, small bold Georgia paragraph. B has 3 h2 and A has 3 h2, so neither makes it a heading.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Social-proof copy differs: A says '3,455 companies signed up in the last week alone!' and B says '4,000 companies signed up in the last week alone!'. The A hero line has no exclamation, while B's has one. B also ends the footer with 'Enjoy the rest of your day!' where A says 'Enjoy the rest of your Tuesday!'.",
+  "category": "copy",
+  "evidence": "A slice 0 '3,455 companies signed up in the last week alone!' and slice 4 'Enjoy the rest of your Tuesday!'. B slice 3 '4,000 companies…' and 'Enjoy the rest of your day!'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer in B sits in a pale sage-green band (rgb(233,239,233)) with generous spacing between link lines. A's footer has no background band and the lines are tightly spaced.",
+  "category": "color",
+  "evidence": "B top_backgrounds rgb(233,239,233) ×1. B slice 3 shows a green-tinted footer with a green-link list. A slice 4 shows a white background.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The growth-graph footer image is rendered full-bleed in A, with the curve spanning the entire viewport width and the labels in a large, dark handwritten style. B shows the same graph as a smaller (720x253), grey-toned image on the right half, so it is more subdued.",
+  "category": "imagery",
+  "evidence": "B images footer-graph.png rect x=720 y=4315 w=720 h=253. B slice 3 shows it pale grey at half-width. A slice 4 shows the dark curve across the full 1440px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A footer uses the growth graph as a background-style image behind the links (links overlap the curve area). The B footer text is separated from the image, which sits beside it.",
+  "category": "layout",
+  "evidence": "A slice 4: link list at x≈208 above the rising curve. B slice 3: links at x=240, graph at x=720.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has a darker palette with 4 dark navy (rgb(29,45,53)) backgrounds. B has none and instead uses 10 pure-white surfaces for cards.",
+  "category": "color",
+  "evidence": "A top_backgrounds rgb(29,45,53) ×4, white ×3. B white ×10.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 5 images, B has 8 images. B's extra images are the logo and the footer graph as external files, plus the captions overlay. A inlines or CSS-embeds those.",
+  "category": "imagery",
+  "evidence": "A counts images 5 (3 stars, project, book). B images 8 with basecamp-logo.svg, footer-graph.png, project-hero-captions.png.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Image assets in A have fingerprinted filenames (e.g. stars-9403af61….svg, remote-cover-cf480c6f….png), which indicates a production asset pipeline. B uses plain names (stars.svg, remote-cover.png).",
+  "category": "dom",
+  "evidence": "A images file names contain sha256 hashes. B images have plain names.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The hero 'Before Basecamp / After Basecamp' paragraph is large sans-serif in A, with bold labels in Graphik. In B it is a serif paragraph with bold serif labels, at a narrower measure and a smaller size.",
+  "category": "typography",
+  "evidence": "A slice 0 vs B slice 0. A body 23.2px, B 18px. Both contain the same 'Before Basecamp:' / 'After Basecamp:' copy.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Heading and body copy text is the same in both versions: identical h2 text and the same 10 blockquotes with 10 cites, so the difference is purely visual treatment.",
+  "category": "copy",
+  "evidence": "Identical heading_outline h2 texts; blockquote 10 and cite 10 in both semantic counts; words 598 vs 605.",
+  "which_side": "both"
+ }
+]

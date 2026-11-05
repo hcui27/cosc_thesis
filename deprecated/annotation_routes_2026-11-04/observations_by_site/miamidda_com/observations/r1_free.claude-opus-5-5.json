@@ -1,0 +1,267 @@
+[
+ {
+  "observation": "Page title names the organization directly, with no tagline appended",
+  "category": "metadata",
+  "evidence": "facts.title = \"Miami Downtown Development Authority\"; lang = \"en\"; meta names are only charset, viewport and description; jsonld_blocks = 0"
+ },
+ {
+  "observation": "The hero uses three h1 elements, one for each stacked headline phrase",
+  "category": "semantic structure",
+  "evidence": "h1_count = 3; heading_outline lists 'Living / Downtown Mia', 'Doing Business / Downtown Mia', 'Exploring / Downtown Mia', all at level 1"
+ },
+ {
+  "observation": "All three hero headlines are visible at once, stacked into six lines, so they don't read as a rotating slider",
+  "category": "layout",
+  "evidence": "slice_00 shows Living / Downtown Mia / Doing Business / Downtown Mia / Exploring / Downtown Mia stacked vertically; animations = 0"
+ },
+ {
+  "observation": "Hero headline lines alternate between white and orange: the verb is white and 'Downtown Mia' is orange",
+  "category": "typography/color",
+  "evidence": "h1 color rgb(255,255,255); 'Downtown Mia' lines are rendered orange in slice_00, matching the rgb(242,163,58) background token"
+ },
+ {
+  "observation": "The h1 is set very large and heavy in Helvetica Neue",
+  "category": "typography",
+  "evidence": "h1 font_size 78px, font_weight 800, font_family \"Helvetica Neue\", Helvetica, Arial, sans-serif"
+ },
+ {
+  "observation": "The page uses essentially a single font family, Helvetica Neue, with Arial as a minor fallback",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Helvetica Neue 253, Arial 17; stylesheets = 0, so no web font files are loaded"
+ },
+ {
+  "observation": "Body text is 17px with a 1.6 line-height ratio",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 27.2px"
+ },
+ {
+  "observation": "h2 headings are 42px bold and dark navy",
+  "category": "typography",
+  "evidence": "h2 font_size 42px, weight 700; 'Living in Downtown Miami', 'Latest News' etc. appear dark navy in slices"
+ },
+ {
+  "observation": "Below the headline, the hero tagline is set in widely letter-spaced uppercase light-weight text",
+  "category": "typography",
+  "evidence": "'EPICENTER OF THE AMERICAS' in slice_00 under the headlines, thin weight with wide tracking"
+ },
+ {
+  "observation": "The hero background is a night photo of the city skyline with a dark navy overlay, darkest toward the left",
+  "category": "imagery",
+  "evidence": "slice_00 shows a Miami waterfront skyline at dusk behind a blue tint; top_backgrounds includes rgba(0,0,0,0.6) and gradient_backgrounds = 1"
+ },
+ {
+  "observation": "The bottom edge of the hero is cut on a diagonal by an SVG triangle image",
+  "category": "decoration",
+  "evidence": "images: triangle.svg, alt '', rect x 0 y 859 w 1440 h 171; slice_00 shows a white wedge rising from left to right at the hero bottom"
+ },
+ {
+  "observation": "A photo credit for the skyline image appears as a small dark caption box at the right edge, but it sits far below the hero, after a large empty white area",
+  "category": "imagery/attribution",
+  "evidence": "slice_02 shows '@joiseyshowaa · Twilight Miami Skyline · CC BY-SA 2.0' in a grey box at right above roughly 400px of blank space; figure = 1, figcaption = 1"
+ },
+ {
+  "observation": "A large empty white gap sits between the About section and the Latest News section",
+  "category": "layout",
+  "evidence": "slice_02: white area from y≈170 to ≈650 with only the credit caption at its bottom"
+ },
+ {
+  "observation": "The logo is a small animated GIF of teal building bars at the top left of the main header",
+  "category": "imagery",
+  "evidence": "images: logo-animated.gif, natural 215x315, displayed 44x64 at x 150 y 52; slice_00 shows teal vertical bars"
+ },
+ {
+  "observation": "A thin dark-navy utility bar at the very top carries secondary links, a Translate dropdown and text-only social links",
+  "category": "navigation",
+  "evidence": "slice_00 top strip: 'Media and Press Center', 'Public Meetings', a Translate select, then Instagram, Twitter, YouTube, Facebook, LinkedIn, Email as text; select = 1, option = 16; svgs = 0"
+ },
+ {
+  "observation": "Social links are text labels, not icons",
+  "category": "component choice",
+  "evidence": "svgs = 0, img count only 3 (logo, triangle, Follow the Sun logo); slice_00 and the footer list social networks as words"
+ },
+ {
+  "observation": "The primary navigation has three dropdown items with downward caret triangles, right-aligned in a tall white header",
+  "category": "navigation",
+  "evidence": "slice_00: 'Focus Areas ▾', 'Explore Downtown ▾', 'About Us ▾' aligned right across from the logo; nav = 1, header = 1"
+ },
+ {
+  "observation": "A 'Menu' button is measured as the primary button: navy background, white text, 6px radius; it isn't visible in the desktop render",
+  "category": "component choice",
+  "evidence": "primary_button text 'Menu', bg rgb(11,42,66), color white, radius 6px, padding 10px 14px; not seen in slice_00"
+ },
+ {
+  "observation": "Content is held in a fixed-width container inset 150px from each side of the 1440px viewport",
+  "category": "layout",
+  "evidence": "logo x = 150, Follow the Sun logo x = 150; text and cards in all slices start at x≈150 and end at ≈1290; page_width 1440"
+ },
+ {
+  "observation": "The page is long and divided into full-width bands that alternate white, pale grey-blue, orange and navy backgrounds",
+  "category": "layout/color",
+  "evidence": "page_height 5684; top_backgrounds: white 11, rgb(242,246,248) 11, orange rgb(242,163,58) 5, navy rgb(11,42,66) 4, rgb(18,56,79) 4, rgb(7,27,43) 1"
+ },
+ {
+  "observation": "The palette is built around dark navy, a warm orange accent and a teal secondary accent",
+  "category": "color",
+  "evidence": "body_color rgb(16,34,47); text colors include rgb(11,42,66) and teal rgb(14,143,160) 18; orange rgb(242,163,58) backgrounds"
+ },
+ {
+  "observation": "A muted grey-blue is the most frequent text color, used mostly for secondary text and footer links",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(159,179,194) at 67, the most common; footer links in slice_03 and slice_04 are light grey-blue"
+ },
+ {
+  "observation": "A full-width orange announcement strip follows the hero, with a small uppercase label, a bold title and a navy pill button",
+  "category": "component choice",
+  "evidence": "slice_00: orange band with 'MORE INFORMATION', 'School Agenda Cover Contest for Kids' (h3) and a 'Click here to enter contest' navy pill button at right"
+ },
+ {
+  "observation": "Each section heading is preceded by a small, letter-spaced, uppercase teal eyebrow label",
+  "category": "typography",
+  "evidence": "'RESIDENTS', 'ABOUT', 'PRESS', 'CALENDAR' in teal small caps above the h2s in slices 00–02"
+ },
+ {
+  "observation": "The Residents section is a two-column split: intro copy on the left, a cloud of pill-shaped quick-link chips on the right",
+  "category": "layout",
+  "evidence": "slice_00/01: 'Living in Downtown Miami' with paragraphs left; 'QUICK LINKS' (h3) and chips such as 'Dine', 'Incentives' and 'Places to Stay' right; display_grid 11, display_flex 15"
+ },
+ {
+  "observation": "Pill shapes are the dominant rounded style, used for chips and buttons",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_pill 19, bucket_8_15 14, bucket_1_7 2, bucket_0 235; quick-link chips, CTAs, district tags and the Send/Subscribe buttons are all pills"
+ },
+ {
+  "observation": "The first Residents paragraph is set larger and in grey as a lead, and the second is smaller and darker",
+  "category": "typography",
+  "evidence": "slice_01: 'Truly electrifying and uniquely refreshing…' in larger grey text; 'Whether you are a current resident…' in smaller dark text"
+ },
+ {
+  "observation": "The copy includes promotional phrasing and a nonstandard brand term",
+  "category": "copy",
+  "evidence": "'Truly electrifying and uniquely refreshing', 'help you En Vogue with everything', 'Message to Our DWNTWNRs' chip; text_stats exclamations 0, em_dashes 0"
+ },
+ {
+  "observation": "The 'Follow the Sun' promo band has a warm peach gradient background and a raised logo card on the left",
+  "category": "decoration",
+  "evidence": "slice_01: peach-to-light-orange band; Follow the Sun logo image (280x158 at x 150, y 1836) in a rounded card with a soft shadow; gradient_backgrounds 1, box_shadows 4"
+ },
+ {
+  "observation": "The Follow the Sun section uses a generic 'Click Here' CTA label",
+  "category": "copy",
+  "evidence": "slice_01: orange pill button reading 'Click Here' under the h2 'Making Miami Your Forever Home – ‘Follow The Sun’'"
+ },
+ {
+  "observation": "The About section pairs body copy with three stacked stat cards that have orange left borders",
+  "category": "component choice",
+  "evidence": "slice_01: white cards reading '1967 WE WERE ESTABLISHED', '15 MEMBER BOARD', '2 SQUARE MILES', each with an orange left edge and rounded corners on a pale grey band"
+ },
+ {
+  "observation": "Stat cards put a large bold numeral above a small uppercase tracked label",
+  "category": "typography",
+  "evidence": "slice_01: the numerals 1967, 15 and 2 in large heavy navy type with small grey uppercase captions"
+ },
+ {
+  "observation": "The About copy ends with a bolded commitment statement",
+  "category": "typography",
+  "evidence": "slice_02 top: 'We commit to fulfill our mission collaboratively, ethically, and professionally…' in bold; strong = 1, b = 3"
+ },
+ {
+  "observation": "News and events appear as three-column grids of thinly bordered, rounded white cards",
+  "category": "layout",
+  "evidence": "slice_02/03: 3 news cards and 3 event cards across, each with a light border and about a 12px radius; article = 6"
+ },
+ {
+  "observation": "Card dates are short numeric strings in teal, marked up with time elements",
+  "category": "semantic/typography",
+  "evidence": "time = 6; dates such as '5.17.21', '5.19.21', '6.3.21' and '6.14.21' in bold teal above the card titles"
+ },
+ {
+  "observation": "News card titles put the outlet name before the headline, separated by a pipe, and include one Spanish-language headline",
+  "category": "copy",
+  "evidence": "'WSVN 7 News | Pop-up vaccination…', 'Telemundo 51 | Comienza proyecto millionario…'"
+ },
+ {
+  "observation": "Card links are teal text links followed by a right-arrow character",
+  "category": "component choice",
+  "evidence": "'Read More →' on news cards and 'See Details →' on event cards in teal (rgb(14,143,160))"
+ },
+ {
+  "observation": "Event cards add a truncated grey excerpt that ends in an ellipsis",
+  "category": "copy",
+  "evidence": "slice_03: 'The June 3, 2021 Miami DDA Nominating Committee Meeting…held at the Miami DDA Conference...'"
+ },
+ {
+  "observation": "'View all' buttons are centered navy outline pills below each card grid",
+  "category": "component choice",
+  "evidence": "'View All News' (slice_02) and 'View All Events' (slice_03): centered, navy border, transparent fill, pill radius"
+ },
+ {
+  "observation": "The News and Events sections alternate white and pale grey backgrounds",
+  "category": "layout/color",
+  "evidence": "Latest News on white (slice_02); Upcoming Events on rgb(242,246,248) (slices 02–03)"
+ },
+ {
+  "observation": "A dark navy contact band pairs a large white districts headline with outlined district pills and a contact form",
+  "category": "layout",
+  "evidence": "slice_03: h2 'Proudly Serving Downtown Miami: The Arts & Entertainment District, Miami CBD, and Brickell.', pills 'Arts & Entertainment', 'Central Business District', 'Brickell'; the form on the right has an h4 intro"
+ },
+ {
+  "observation": "Form fields are dark-filled inputs with placeholder text and no visible labels, followed by a full-width orange pill Send button",
+  "category": "component choice",
+  "evidence": "slice_03: Name, Email and Message fields in a dark blue-grey rgb(18,56,79)-like fill; form = 2, input = 4, label = 1; a 'Send' orange pill spans the form width"
+ },
+ {
+  "observation": "A small-print Florida public-records disclaimer appears under both the contact form and the newsletter form",
+  "category": "copy",
+  "evidence": "'Under Florida law, e-mail addresses and contact information are public records…' in slices 03 and 04"
+ },
+ {
+  "observation": "The footer uses a darker near-black navy than the contact band, with a five-column link directory",
+  "category": "layout/color",
+  "evidence": "rgb(7,27,43) background; columns headed '@DOWNTOWNMIA', 'MIAMI DDA', 'COMMUNITY GRANTS', 'EXPLORE DOWNTOWN', 'MEDIA CENTER', plus the subheads 'CALENDARS' and 'DATA + RESEARCH'; h5 = 8"
+ },
+ {
+  "observation": "Footer column headings are white, bold, uppercase and letter-spaced, and the links below them are grey-blue",
+  "category": "typography",
+  "evidence": "slices 03/04 footer: white tracked caps headings above rgb(159,179,194)-like links"
+ },
+ {
+  "observation": "Below a divider line, the footer has a newsletter row: 'Get Downtown Updates' on the left, an email input and an orange 'Subscribe' pill on the right",
+  "category": "component choice",
+  "evidence": "slice_04: thin horizontal rule, then the heading on the left and the input with the Subscribe button on the right"
+ },
+ {
+  "observation": "The bottom line carries a designer credit with a heart symbol, a 2019 copyright, and ADA Compliance and Annual Report links",
+  "category": "copy",
+  "evidence": "'Made with ♥ by Pacific54 · © 2019 Miami Downtown Development Authority'; text_stats emoji = 1; 'ADA Compliance', 'Annual Report' at right"
+ },
+ {
+  "observation": "The page is link-heavy relative to its amount of text",
+  "category": "DOM structure",
+  "evidence": "anchors 77 against 749 words; ul 9, li 28"
+ },
+ {
+  "observation": "The markup uses few classes, none of them Tailwind-style",
+  "category": "DOM structure",
+  "evidence": "classes total 68, unique 34, tailwind_like_fraction 0.029; div 47; one inline style block, 10 inline style attributes"
+ },
+ {
+  "observation": "The page uses semantic landmarks plus section and article elements",
+  "category": "semantic structure",
+  "evidence": "header 1, nav 1, main 1, section 5, article 6, footer 1, aside 0; aria_attrs 9; alt_missing 0"
+ },
+ {
+  "observation": "The heading hierarchy skips levels: an h3 comes before the first h2, and the footer uses h5 with no h4 under it",
+  "category": "semantic structure",
+  "evidence": "heading_outline: h1 ×3 then h3 'School Agenda Cover Contest for Kids' before h2 'Living in Downtown Miami'; h5 = 8 for footer headings, while the only h4 is in the contact form"
+ },
+ {
+  "observation": "Hover transitions are defined but there are no animations or transforms; the only motion is the animated GIF logo",
+  "category": "effects",
+  "evidence": "transitions 22, animations 0, transforms 0, backdrop_blur 0; logo-animated.gif"
+ },
+ {
+  "observation": "Shadows are used sparingly, on the stat cards and the Follow the Sun logo card",
+  "category": "decoration",
+  "evidence": "box_shadows = 4; soft shadows visible in slice_01 on the stat cards and logo card; news/event cards use borders instead"
+ }
+]

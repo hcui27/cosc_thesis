@@ -1,0 +1,167 @@
+[
+ {
+  "observation": "The page has no h1. Eight h2 elements and one h3 carry the whole heading outline, and the logo image stands in for a top-level title.",
+  "category": "semantics",
+  "evidence": "h1_count 0; heading_outline has 8 h2 and 1 h3; the logo is moh-logo.gif with alt 'Kanienkeha – An open source endangered language initiative'"
+ },
+ {
+  "observation": "The page uses native HTML5 landmarks: one header, two navs, one main, one aside and one footer. It has 9 section elements and no article, figure or blockquote.",
+  "category": "semantics",
+  "evidence": "semantic: header 1, nav 2, main 1, section 9, aside 1, footer 1, article 0, figure 0"
+ },
+ {
+  "observation": "The page is a dark charcoal canvas with a white header strip on top and a white footer strip at the bottom. A green rule sits under the header and above the footer. The dark area carries a faint noise or grain texture.",
+  "category": "color",
+  "evidence": "Slices 1 and 4 show a dark #222-like backdrop between white bands with 3-4px green borders. The body_bg in facts is a light blue-grey rgb(238,246,248), so the dark backdrop is probably a wrapper or image layer over it."
+ },
+ {
+  "observation": "The palette is mostly green. Primary green rgb(27,154,75) fills buttons and active pills. Dark green rgb(15,107,50) colours headings. Pale mint rgb(228,244,234) fills chips and stat tiles. Blue rgb(19,128,181) colours links. Pink rgb(214,69,127) and coral rgb(249,104,84) are used only for the two Patreon calls to action.",
+  "category": "color",
+  "evidence": "top_backgrounds: 27,154,75 (4), 228,244,234 (11), 214,69,127 (1), 249,104,84 (1). top_text_colors: 15,107,50 (73), 19,128,181 (30)."
+ },
+ {
+  "observation": "The type is a single sans-serif stack, Segoe UI, on all 382 counted elements. It renders as a Helvetica or Inter-like face on this machine. Body text is 17px on a 27.2px line height. h2 headings are 22.4px at weight 700.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: [['Segoe UI', 382]]; body_font_size 17px; body_line_height 27.2px; h2 22.4px/700"
+ },
+ {
+  "observation": "Headings are bold dark green. Sidebar and card h2s sit beside small green line-art icons, such as the family icon next to 'Spread the word!' and the other icons beside 'Total Site Numbers' and '#WordOfTheDay'.",
+  "category": "typography",
+  "evidence": "Slice 2 shows icons next to the headings; images 4green.png, love1.png, wordoftheday1.jpg, social1.jpg and forum-stats1.png are alt-empty decorative icons about 34-100px wide."
+ },
+ {
+  "observation": "The header places a large green wordmark logo at the left and a small black owl.gif banner at the right. The primary nav is a wrapping row of 10 text links below them. 'Donate' is a solid green filled tab, and 'Register' wraps onto a second line.",
+  "category": "layout",
+  "evidence": "Logo rect x180 y14 380x83; owl.gif rect x1041 y41 219x30; nav items Home..Log In, then Register and Donate on a second row (slice 1)"
+ },
+ {
+  "observation": "A search form is centred at the top of the dark hero area. It is a pill-shaped input with a green outline, a flush green 'Search' button, and a row of suggestion chips ('apple', 'colors', 'numbers') labelled 'Try these:'.",
+  "category": "components",
+  "evidence": "primary_button text 'Search', bg rgb(27,154,75), padding 0px 24px; 1 form, 1 input; the pale-green chips are visible under the field in slice 1"
+ },
+ {
+  "observation": "A welcome paragraph below the search is rendered in dark blue-grey text on the near-black background. It is almost invisible, and the text can barely be read.",
+  "category": "color",
+  "evidence": "Slice 1 shows 'Welcome to Kanienkeha.net, an open source endangered language initiative...' in a faint tone at about y380-440 against the dark backdrop. body_color is rgb(42,47,58)."
+ },
+ {
+  "observation": "A pink pill-shaped 'Support us on Patreon!' button is centred under the intro text. A coral full-width 'Become a patron on Patreon' button repeats the call to action in the sidebar. The two buttons use different colours.",
+  "category": "components",
+  "evidence": "Backgrounds rgb(214,69,127) and rgb(249,104,84) each appear once; border_radius pill bucket has 8 elements"
+ },
+ {
+  "observation": "The body is a two-column layout inside a roughly 1080px container, from x=180 to x=1260. A wide main column of about 730px sits beside a 320px sidebar of stacked white cards. The page has 5 grid and 20 flex containers.",
+  "category": "layout",
+  "evidence": "map image rect x181 w730; sidebar cards at x≈940-1260; layout display_grid 5, display_flex 20; page_width 1440"
+ },
+ {
+  "observation": "A raster world-map banner opens the main column and links to the map. It is a grey and black map with green and pink location pins, and 'Kanienkeha Map' and '200+ Locations' are set in a playful hand-drawn display font baked into the image. It has rounded corners and a thin green bottom border.",
+  "category": "imagery",
+  "evidence": "map-nap.png natural 650x340 displayed at 730x382, so it is upscaled; alt 'World map: Kanienkeha Map, 200+ locations'"
+ },
+ {
+  "observation": "The 'Most Recent' card holds a two-column grid of dictionary entries. Each entry is a bordered white tile with a bold English phrase over an italic green Kanien'kéha translation. A left accent stripe changes colour between green and blue by category.",
+  "category": "components",
+  "evidence": "Slices 1-3 show tiles such as 'Sit down and eat / Sátien tánon tesatská:hon'. Accent bars are green for the first group and blue for the occupations. The border-radius bucket 8-15 has 92 elements."
+ },
+ {
+  "observation": "The heading 'Most Recent' sits beside a solid green square whose icon appears empty. Filter pills ('All', 'Phrases', 'Occupations') sit under the heading, and the active 'All' is filled green while the others are outlined.",
+  "category": "components",
+  "evidence": "Slice 1 shows a green block at x203-237 next to 'Most Recent'; 4green.png at 34x34 is the icon image; pill bucket 8"
+ },
+ {
+  "observation": "The entry list ends with numbered pagination: a green current page '1', pages 2-4, and 'Next ›' and 'Last »' buttons in small rounded outlined boxes.",
+  "category": "components",
+  "evidence": "Slice 3 at y≈770 shows '1 2 3 4 Next › Last »'"
+ },
+ {
+  "observation": "Copy is bilingual. English labels are paired with Kanien'kéha text throughout, with special characters such as ’ : á ò ń. Section titles include 'She:kon / Greetings' and 'Nia:wen / Thank you'. The 'Choose your Language!' card holds English and Kanienkeha flag buttons.",
+  "category": "copy",
+  "evidence": "heading_outline 'She:kon / Greetings'; England.png and Mohawk.png flag icons at 24x24; entries like 'Satsheronniánion'"
+ },
+ {
+  "observation": "The sidebar is a stack of white rounded cards. The 'From the Blog' card opens with a colourful illustrated sign-board graphic labelled Resources, Blogging, Talk, Culture and Language. Below it is a list of five blue blog links separated by thin dividers.",
+  "category": "components",
+  "evidence": "protest.png 282x137 at x959 y570; the five blog titles are in blue rgb(19,128,181); the h2 'From the Blog' sits below the graphic"
+ },
+ {
+  "observation": "The 'Total Site Numbers' card holds a 2x2 grid of mint tiles. Each tile has a large bold green number (2650 Words, 159 Categories, 260 Tags, 10 Blog) and a small caption. Two of the captions are underlined links.",
+  "category": "components",
+  "evidence": "Slice 2 shows the numbers 2650, 159, 260 and 10 on pale green tiles; the stat tiles use the background rgb(228,244,234)"
+ },
+ {
+  "observation": "The 'Spread the word!' card has three small mint pill links (Facebook, Twitter, Instagram), a full-width coral Patreon button and a '#WordOfTheDay' card with an underlined 'Random Word' link. Social links are plain text with no brand icons.",
+  "category": "components",
+  "evidence": "Slice 2 shows the pale pills with bold dark green text. Counts are 4 buttons and 104 anchors."
+ },
+ {
+  "observation": "The 'Uploading your Notes' section is a white card with an icon, an h2, a bold h3 subtitle, a short paragraph and a 523x330 illustration. The illustration shows a grey STUDY NOTES notebook with a green arrow pointing to a phone and a cloud holding the Kanien'kéha logo. It is left-aligned and does not fill the card width.",
+  "category": "imagery",
+  "evidence": "notes.jpg natural 523x330 at x203 y3667; alt 'Upload your language notes'; h3 'Help our language curators, we'll archive your notes.'"
+ },
+ {
+  "observation": "The 'She:kon / Greetings' card is a long paragraph of mission text, followed by a bold sign-off to 'Benjamin Doolittle'. It sits at the bottom of the main column and has no CTA of its own.",
+  "category": "copy",
+  "evidence": "Slice 4 shows the paragraph about growing the dictionary to about 10,000 words, then 'Nia:wen / Thank you' and 'Benjamin Doolittle'. 459 words total and 4 exclamation marks."
+ },
+ {
+  "observation": "The page has no box shadows, gradients, backdrop blur, animations or transforms. Depth comes only from white cards on the dark background, thin borders and corner radii. 50 elements have transitions, probably hover states on links and buttons.",
+  "category": "decoration",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, transitions 50"
+ },
+ {
+  "observation": "Corners are mostly square or lightly rounded. 282 elements have a 0 radius, 92 have a radius of 8-15px (cards, tiles and the map), and 8 are fully pill-shaped (search field, chips, filters, Patreon button). The Search button has a 0px radius even though it sits inside the pill-shaped field.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 282, bucket_8_15 92, bucket_pill 8; primary_button radius 0px"
+ },
+ {
+  "observation": "The footer is a white band with a green top border. The left column is headed 'MohDictionary' and holds a grid of icon-and-handle links, all labelled 'mohdictionary', for Twitter, other services and PayPal. The right column holds a text link row (Home, About, Donate, Resources, Sitemap, Register, Contact), follow links and credits to Doolittle Productions.",
+  "category": "layout",
+  "evidence": "Slice 4 y≈535-640; favicon images are 16x16 (Gumroad-icon.png is 18x18); the second nav element holds the footer links"
+ },
+ {
+  "observation": "The footer ends with two green illustrated strips of a longhouse, trees and dancing figures, left-aligned. Their white backgrounds blend into the footer.",
+  "category": "imagery",
+  "evidence": "longhouse1.jpg 293x91 at y4523 and wearefriends.jpg 280x54 at y4624, alts 'Longhouse' and 'We are friends'"
+ },
+ {
+  "observation": "The page has many raster images (21 img elements and no SVG): small PNG and JPG icons, favicons fetched from external services, and GIFs for the logo and owl. Only 5 images have meaningful alt text. The rest are decorative with alt=\"\", and none are missing the attribute.",
+  "category": "imagery",
+  "evidence": "counts: images 21, svgs 0, alt_missing 0; images such as moh-logo.gif, owl.gif, notes.jpg and wordoftheday1.jpg"
+ },
+ {
+  "observation": "The DOM is link-heavy and built from lists and spans. It has 104 anchors, 84 li elements and 105 spans, with only 10 p elements. Dictionary entries and blog items are marked up as list items.",
+  "category": "semantics",
+  "evidence": "tag_counts: a 104, li 84, span 105, ul 6, p 10"
+ },
+ {
+  "observation": "Styling is handwritten CSS with no framework. There is one inline style block and no external stylesheet, 197 class usages across only 38 unique names, and no Tailwind-style utilities. There are 9 inline style attributes and one script.",
+  "category": "structure",
+  "evidence": "classes total 197, unique 38, tailwind_like_fraction 0; stylesheets 0; tag style 1; inline_style_attrs 9; script 1"
+ },
+ {
+  "observation": "Accessibility hooks are sparse. There are 9 ARIA attributes, mostly on the two navs and the form, and the page has a lang='en' attribute and a meta description. There is no JSON-LD structured data.",
+  "category": "semantics",
+  "evidence": "aria_attrs 9; lang 'en'; meta_names charset, viewport, description; jsonld_blocks 0"
+ },
+ {
+  "observation": "The title reads 'Kanienkeha.net – An Open Source Endangered Language Initiative'. It uses an en dash, and the brand name is repeated in the logo alt text, the footer and the intro copy.",
+  "category": "copy",
+  "evidence": "title in facts.json; em_dashes 0"
+ },
+ {
+  "observation": "Cards use generous padding of about 22px and a consistent vertical gap of about 24px between them. The main-column cards (map, recent list, notes, greetings) and the sidebar cards all use the same white fill with rounded corners.",
+  "category": "layout",
+  "evidence": "White rgb(255,255,255) appears in 18 background fills and the near-white rgb(252,254,253) in 50. The cards are spaced about 24px apart in slices 1-4."
+ },
+ {
+  "observation": "The sidebar ends after 'Total Site Numbers', around y≈600 in slice 2. The main column continues for thousands of pixels, leaving a large empty dark area to the right of the long list and the lower sections.",
+  "category": "layout",
+  "evidence": "The sidebar cards end near y≈1900 of the page. The page height is 4706 and the main column runs to about y≈4150."
+ },
+ {
+  "observation": "Link colour changes by context. Nav links are dark charcoal and bold. Blog links are bold blue. Footer links are blue and underlined. 'Random Word' and the stat captions are underlined, and translations are green italics. Several colours act as separate content cues.",
+  "category": "typography",
+  "evidence": "Text colours rgb(42,47,58), rgb(19,128,181) and rgb(15,107,50) are used as described. Underlined links appear in slices 2 and 4."
+ }
+]

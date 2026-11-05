@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AEP Texas | Knowledge Is Power</title>
+<meta name="description" content="Manage your account, report an outage, find energy-saving rebates and more with AEP Texas.">
+<style>
+:root{
+  --red:#DA291C; --red-dark:#b51f14; --gray:#707372; --ink:#222426; --muted:#5b5e5f;
+  --bg:#fff; --soft:#f4f2ee; --line:#e3e1dc; --max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+
+/* buttons */
+.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;
+  padding:12px 24px;border-radius:4px;border:2px solid var(--red);cursor:pointer;font-size:1rem;transition:background .15s}
+.btn:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.btn.ghost{background:transparent;color:var(--red)}
+.btn.ghost:hover{background:var(--red);color:#fff}
+
+/* header */
+.topbar{background:var(--soft);font-size:.85rem}
+.topbar .wrap{display:flex;justify-content:flex-end;padding-top:6px;padding-bottom:6px}
+.topbar a{text-decoration:none;color:var(--muted)}
+.topbar a:hover{text-decoration:underline}
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header.site .wrap{display:flex;align-items:center;gap:32px;height:76px}
+.logo img{height:52px;width:auto}
+nav{flex:1}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:28px}
+nav a{text-decoration:none;font-weight:700;color:var(--gray);padding:8px 0;border-bottom:3px solid transparent}
+nav a:hover{color:var(--red);border-color:var(--red)}
+.menu-btn{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--gray)}
+
+/* hero */
+.hero{background:#efe8d8 url("images/homepage-right-phone.jpg") right center/cover no-repeat;min-height:440px;display:flex;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.5rem);line-height:1;margin:0 0 20px;color:var(--red);letter-spacing:-.01em}
+.hero .copy{max-width:520px;padding:56px 0}
+.alert{display:block;background:rgba(255,255,255,.85);border-left:4px solid var(--red);padding:12px 16px;
+  text-decoration:none;font-size:.95rem;border-radius:0 4px 4px 0}
+.alert:hover{background:#fff}
+
+/* quick links */
+.quick{background:var(--red);color:#fff}
+.quick ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.quick a{display:block;padding:20px 16px;text-align:center;text-decoration:none;font-weight:700;border-left:1px solid rgba(255,255,255,.3)}
+.quick li:first-child a{border-left:0}
+.quick a:hover{background:var(--red-dark)}
+
+/* sections */
+section{padding:72px 0}
+h2{font-size:clamp(1.7rem,3.4vw,2.3rem);line-height:1.15;margin:0 0 16px}
+h3{font-size:1.4rem;line-height:1.2;margin:0 0 10px}
+.savings{background:var(--soft)}
+.savings .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+.savings p{color:var(--muted);font-size:1.05rem;max-width:60ch}
+.tip{background:#fff;border-top:4px solid var(--red);padding:28px;border-radius:4px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.tip p{margin:0 0 12px;font-weight:700;font-size:1.15rem;color:var(--ink)}
+.tip a.link{color:var(--red);font-weight:700}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 8px 24px rgba(0,0,0,.12);transform:translateY(-3px)}
+.card img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.card div{padding:22px}
+.card h3{color:var(--red);text-transform:uppercase;font-size:1.15rem;letter-spacing:.02em}
+.card p{margin:0;color:var(--muted)}
+
+/* alerts band */
+.band{background:var(--gray);color:#fff;padding:44px 0}
+.band .wrap{display:flex;gap:32px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.band h2{margin-bottom:6px;font-size:1.6rem}
+.band p{margin:0;max-width:62ch}
+.band .btn{background:#fff;color:var(--red);border-color:#fff}
+.band .btn:hover{background:var(--soft)}
+
+/* features */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:64px}
+.feature:last-child{margin-bottom:0}
+.feature:nth-child(even) img{order:2}
+.feature img{border-radius:6px;width:100%;aspect-ratio:515/364;object-fit:cover}
+.feature p{color:var(--muted);font-size:1.05rem;margin:0 0 22px}
+
+/* footer */
+footer{background:#2a2c2d;color:#d6d6d4;padding:48px 0 28px;font-size:.92rem}
+footer a{text-decoration:none}
+footer a:hover{text-decoration:underline}
+.foot-top{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-between;padding-bottom:28px;border-bottom:1px solid #46494b}
+.foot-top ul{list-style:none;margin:0;padding:0;display:flex;gap:24px;flex-wrap:wrap;font-weight:700}
+.help{font-size:1rem}
+.help a{color:#fff;font-size:1.5rem;font-weight:700;display:block}
+.foot-mid{display:flex;flex-wrap:wrap;gap:12px 24px;padding:24px 0;justify-content:space-between}
+.foot-mid span a+a::before{content:"|";margin:0 10px;color:#777}
+.legal{color:#9a9c9d;font-size:.85rem;margin:0}
+.social{display:flex;gap:16px}
+
+/* modal */
+dialog{border:0;border-radius:8px;padding:32px;max-width:400px;width:calc(100% - 32px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+dialog h2{font-size:1.6rem;color:var(--red)}
+dialog label{display:block;font-weight:700;font-size:.9rem;margin:14px 0 4px}
+dialog input[type=text],dialog input[type=password]{width:100%;padding:10px 12px;border:1px solid #b9b9b6;border-radius:4px;font-size:1rem}
+dialog .check{display:flex;gap:8px;align-items:center;font-weight:400;margin:14px 0}
+dialog .row{display:flex;gap:12px;align-items:center;margin-top:18px;flex-wrap:wrap}
+dialog .small{font-size:.88rem;margin-top:16px}
+dialog .small a{color:var(--red)}
+.close{position:absolute;top:10px;right:14px;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--gray)}
+
+@media (max-width:860px){
+  .menu-btn{display:block;margin-left:auto}
+  header.site .wrap{gap:12px}
+  nav{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0;padding:8px 20px}
+  nav a{display:block;padding:14px 0}
+  .header-login{display:none}
+  .hero{background-position:70% center;min-height:0}
+  .hero .copy{padding:40px 0;background:linear-gradient(90deg,rgba(255,255,255,.7),rgba(255,255,255,0));max-width:none}
+  .quick ul{grid-template-columns:1fr 1fr}
+  .quick li:nth-child(3) a{border-left:0}
+  .quick li:nth-child(n+3) a{border-top:1px solid rgba(255,255,255,.3)}
+  .savings .wrap,.feature{grid-template-columns:1fr;gap:28px}
+  .feature:nth-child(even) img{order:0}
+  .cards{grid-template-columns:1fr}
+  section{padding:52px 0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap"><a href="https://espanol.aeptexas.com" lang="es">Español</a></div></div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="https://www.aeptexas.com" aria-label="AEP Texas home"><img src="images/TEXAS_Primary_RGB_RG.svg" alt="AEP Texas"></a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Outages</a></li>
+        <li><a href="#savings">Savings</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="btn header-login" data-login>Log in</button>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div class="copy">
+        <h1>Knowledge is power.</h1>
+        <a class="alert" href="/account/bills/fraud-scams">Due to the pandemic, scams have been on the rise. Learn what you need to do to keep your family safe.</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick">
+    <div class="wrap">
+      <ul>
+        <li><a href="/company/about/choice/">Electric Choice</a></li>
+        <li><a href="/outages/report">Report an outage</a></li>
+        <li><a href="/account/service">Start, Stop, Move service</a></li>
+        <li><a href="/company/about/rates/">Rates &amp; Tariffs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="savings" id="savings">
+    <div class="wrap">
+      <div>
+        <h2>Bring Home Energy Savings</h2>
+        <p>Apply for rebates and start saving energy and money at home. AEP Texas offers rebates to help bridge the gap when you make energy efficient upgrades in your home. By upgrading now, ENERGY STAR® appliances, heating and cooling systems, and other efficient upgrades can save you energy and money for years to come.</p>
+        <a class="btn" href="https://aeptexasefficiency.com/">Learn about incentives</a>
+      </div>
+      <aside class="tip">
+        <p>Choosing LED bulbs can help save you more money.</p>
+        <a class="link" href="/savings/business/energy/lighting">See how →</a>
+      </aside>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap cards">
+      <a class="card" href="/clean-energy/electric-cars">
+        <img src="images/electric-car-image-aep-texas.jpg" alt="Electric car charging" loading="lazy">
+        <div><h3>Get Revved up for Electric Cars</h3><p>What you should know before you buy electric</p></div>
+      </a>
+      <a class="card" href="/business/industry-solutions/">
+        <img src="images/woman-in-white-blouse-on-laptop.jpg" alt="Business owner working on a laptop" loading="lazy">
+        <div><h3>Solutions for your business</h3><p>Find out how to save money, connect service, and more.</p></div>
+      </a>
+      <a class="card" href="/account/register">
+        <img src="images/new-service.jpg" alt="Welcome to AEP Texas" loading="lazy">
+        <div><h3>Are you new to AEP Texas</h3><p>Welcome to the AEP Family! Register for your new account here.</p></div>
+      </a>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap">
+      <div>
+        <h2>Enroll in outage alerts</h2>
+        <p>Stay in the loop—get email or text alerts to let you know when your power goes out and when it’s restored.</p>
+      </div>
+      <a class="btn" href="/account/settings/notifications/">Sign up today</a>
+    </div>
+  </div>
+
+  <section id="community">
+    <div class="wrap">
+      <div class="feature">
+        <img src="images/meter-status.jpg" alt="Electric meter installation" loading="lazy">
+        <div>
+          <h2>View Your Meter Order Status</h2>
+          <p>Want to know the status of your meter installation? Let’s show you how to follow your order process from start to finish.</p>
+          <a class="btn" href="/business/builders/meter-status">Track your order</a>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="images/outages-faq.jpg" alt="Power lines during an outage" loading="lazy">
+        <div>
+          <h2>Confused About Outages?</h2>
+          <p>We’ve compiled answers to our most frequently asked questions.</p>
+          <a class="btn" href="/outages/faq">Get answers</a>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="images/community.jpg" alt="Community members" loading="lazy">
+        <div>
+          <h2>Caring for Our Community</h2>
+          <p>See how we’re working with you to deliver brighter futures for our communities.</p>
+          <a class="btn ghost" href="/community/caring">How we're helping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-top">
+      <ul>
+        <li><a href="/safety/">Safety</a></li>
+        <li><a href="/company/">Company</a></li>
+        <li><a href="/clean-energy/">Clean Energy</a></li>
+        <li><a href="/business/">Business</a></li>
+      </ul>
+      <div class="help">Need help? Call us.<a href="tel:8662238508">866.223.8508</a></div>
+    </div>
+    <div class="foot-mid">
+      <a href="https://espanol.aeptexas.com" lang="es">Español</a>
+      <span><a href="https://www.aep.com">Visit AEP.com</a><a href="https://aep.com/investors/">Investors</a><a href="https://aep.com/careers/">Careers</a></span>
+      <div class="social">
+        <a href="https://twitter.com/intent/user?screen_name=AEPTexas">Twitter</a>
+        <a href="https://www.facebook.com/AEPTexas">Facebook</a>
+        <a href="https://www.youtube.com/user/AEPTexas">YouTube</a>
+      </div>
+    </div>
+    <p class="legal">Use of this site constitutes acceptance of the AEP Terms and Conditions | <a href="/privacy-policy">View our Privacy Policy</a>. © 1996-2021 American Electric Power. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<dialog id="login">
+  <button class="close" aria-label="Close" data-close>×</button>
+  <h2>Welcome back!</h2>
+  <p>Please login to manage your account.</p>
+  <form method="dialog">
+    <label for="uid">User ID</label>
+    <input id="uid" type="text" autocomplete="username">
+    <label for="pw">Password</label>
+    <input id="pw" type="password" autocomplete="current-password">
+    <label class="check"><input type="checkbox"> Remember User ID</label>
+    <div class="row">
+      <button class="btn" type="submit">Log in</button>
+      <a href="/account/register">Register</a>
+    </div>
+    <p class="small">Forgot <a href="/account/forgot-user-id">User ID</a> or <a href="/account/forgot-password/">Password</a>?</p>
+  </form>
+</dialog>
+
+<script>
+const dlg=document.getElementById('login');
+document.querySelectorAll('[data-login]').forEach(b=>b.addEventListener('click',()=>dlg.showModal()));
+dlg.querySelector('[data-close]').addEventListener('click',()=>dlg.close());
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+const mb=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+mb.addEventListener('click',()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

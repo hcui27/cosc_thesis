@@ -1,0 +1,257 @@
+[
+ {
+  "observation": "Page has no h1 element; the hero headline is part of a raster image instead of HTML text",
+  "category": "DOM/semantic structure",
+  "evidence": "h1_count: 0; the hero image Allstate-jobs.jpg has alt 'Your next career is here, define your future with Allstate', which matches the visible headline"
+ },
+ {
+  "observation": "The heading outline starts with h3 elements ('Good Work', 'Good Life', 'Good Hands'). These come before the first h2",
+  "category": "DOM/semantic structure",
+  "evidence": "heading_outline begins with three level-3 entries, then 'Discover Allstate' at level 2"
+ },
+ {
+  "observation": "The hero is a single full-width image (1440x448) with the text baked in. It pairs a dark navy panel on the left with a photo of two smiling women on the right",
+  "category": "imagery handling",
+  "evidence": "Allstate-jobs.jpg rect w 1440, h 448 at y 77; slice 0 shows the text on navy and the photo on the right half"
+ },
+ {
+  "observation": "The hero headline is set in lowercase and uses two colors: 'your next career is here,' in white and 'define your future with Allstate' in light blue",
+  "category": "copy treatment",
+  "evidence": "slice 0 hero text"
+ },
+ {
+  "observation": "There is one font family, Helvetica Neue, used on all 263 counted elements",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: [['Helvetica Neue', 263]]"
+ },
+ {
+  "observation": "Body text is 16px with a 1.6 line height",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px"
+ },
+ {
+  "observation": "h2 headings are 35.2px (2.2rem) at weight 700 and are colored dark navy",
+  "category": "typography",
+  "evidence": "h2 font_size 35.2px, font_weight 700; slices show navy headings such as 'Discover Allstate'"
+ },
+ {
+  "observation": "Body text is a near-black navy rather than pure black",
+  "category": "color",
+  "evidence": "body_color rgb(29, 34, 51), the top text color with 161 elements"
+ },
+ {
+  "observation": "The palette is built on blues: deep navy rgb(15,26,74), brand blue rgb(0,51,160), sky blue rgb(65,182,230) and a pale blue tint rgb(238,243,250)",
+  "category": "color",
+  "evidence": "colors.top_backgrounds and top_text_colors"
+ },
+ {
+  "observation": "Section backgrounds alternate between white and a pale blue tint",
+  "category": "layout",
+  "evidence": "rgb(238,243,250) is used 4 times as a background; pale blue sections: Discover Allstate, Meet the People, Testimonials, See What We're Up To; white sections in between"
+ },
+ {
+  "observation": "The search bar sits on a navy strip directly below the hero. It holds a keyword text input, an 'All Departments' select and a pill-shaped Search button",
+  "category": "component choices",
+  "evidence": "tag_counts: form 1, input 1, select 1 with 22 options; slice 0"
+ },
+ {
+  "observation": "The primary Search button is pill-shaped, sky blue, with dark navy text",
+  "category": "component choices",
+  "evidence": "primary_button bg rgb(65,182,230), color rgb(15,26,74), radius 999px, padding 0px 34px"
+ },
+ {
+  "observation": "The secondary 'Visit Page' and 'View all future events' buttons are filled pills in brand blue with white text",
+  "category": "component choices",
+  "evidence": "rgb(0,51,160) is used 6 times as a background; slices 1 and 3 show the pill buttons"
+ },
+ {
+  "observation": "Corners are square by default. Rounded corners appear mainly in the 8–15px range on cards and images, plus pill shapes",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets: 0→222, 8_15→28, pill→11, 16_plus→0"
+ },
+ {
+  "observation": "Cards have soft drop shadows. There are no gradients, blur effects, animations or transforms",
+  "category": "decoration/effects",
+  "evidence": "box_shadows 13, gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0"
+ },
+ {
+  "observation": "14 elements have CSS transitions, which suggests hover state changes",
+  "category": "decoration/effects",
+  "evidence": "effects.transitions: 14"
+ },
+ {
+  "observation": "Content sits in a centered container about 1080px wide, inset 180px on each side of the 1440px page",
+  "category": "layout",
+  "evidence": "image rects begin at x=180 and end at 1260 (e.g. 919+341) at page_width 1440"
+ },
+ {
+  "observation": "The 'Good Work/Life/Hands' row is a 3-column card grid. Each card has a top photo (341x239), a bold navy title and gray body text",
+  "category": "layout",
+  "evidence": "three images at x 180/549/919, w 341, h 239, y 795; slice 0"
+ },
+ {
+  "observation": "The 'Good Work / Good Life / Good Hands' card titles play on the Allstate 'Good Hands' slogan",
+  "category": "copy treatment",
+  "evidence": "heading_outline level-3 texts; slice 0"
+ },
+ {
+  "observation": "Images that sit next to a visible heading in the card grids have empty alt text",
+  "category": "DOM/semantic structure",
+  "evidence": "the GoodWork/GoodLife/GoodHands and Content-Isolated-Image-* images have alt ''; alt_missing 0"
+ },
+ {
+  "observation": "'Discover Allstate' repeats the 3-card pattern and adds a brand-blue 'Visit Page' pill button to each card",
+  "category": "component choices",
+  "evidence": "slice 1; Content-Isolated-Image-Diversity/Veterans/Benefits at y 1424"
+ },
+ {
+  "observation": "'Career Areas at Allstate' is a two-column split: intro paragraphs on the left and a list of 11 departments on the right",
+  "category": "layout",
+  "evidence": "slice 1 shows Claims through Technology with dividing rules"
+ },
+ {
+  "observation": "Each career-area row is bold navy text with a thin sky-blue right arrow '→' at the far end, separated by hairline rules",
+  "category": "component choices",
+  "evidence": "slice 1"
+ },
+ {
+  "observation": "The page contains a single em dash, in the Career Areas copy ('corner—no matter')",
+  "category": "copy treatment",
+  "evidence": "text_stats.em_dashes 1; slice 1"
+ },
+ {
+  "observation": "The copy has no exclamation marks and no emoji",
+  "category": "copy treatment",
+  "evidence": "text_stats exclamations 0, emoji 0"
+ },
+ {
+  "observation": "'Meet the People Behind Allstate' is a 4-column grid of employee cards with square 252x252 photos. Seven cards fill a 4+3 layout, leaving the last cell of row 2 empty",
+  "category": "layout",
+  "evidence": "images at x 180/456/732/1008, w/h 252, rows at y 2732 and 3144; slice 2"
+ },
+ {
+  "observation": "Employee cards stack a bold first name and last initial, a job title, and a smaller gray location line",
+  "category": "copy treatment",
+  "evidence": "slice 2: 'Maureen D. / Agent Advocate / Woodridge, IL'"
+ },
+ {
+  "observation": "Employee photos are cropped to squares even though some source files are wide",
+  "category": "imagery handling",
+  "evidence": "maureen.jpg natural 1400x552 is rendered at 252x252"
+ },
+ {
+  "observation": "Employee photos are candid workplace shots, some with the Allstate hands logo visible in the background",
+  "category": "imagery handling",
+  "evidence": "slice 2 Maureen and Eric photos"
+ },
+ {
+  "observation": "'Grow Your Career' is a carousel of career-path profiles. Each slide has a portrait on the left and a vertical timeline of past roles on the right",
+  "category": "component choices",
+  "evidence": "slices 2–3; only Xiomara-Rivera.jpg is rendered, while ShelbyCabala1.jpg and BRIDGET-v3.jpg have 0x0 rects"
+ },
+ {
+  "observation": "The timeline uses a thin vertical line with sky-blue dot markers. Each entry pairs a role title with a smaller gray 'years | city' line",
+  "category": "decoration/effects",
+  "evidence": "slice 3: '2018 – 2020 | Charlotte, NC' entries with blue dots"
+ },
+ {
+  "observation": "The current role is set apart from the past roles by a horizontal sky-blue rule",
+  "category": "decoration/effects",
+  "evidence": "slice 3: blue line under '2020 | Charlotte, NC'"
+ },
+ {
+  "observation": "The carousels are controlled by numbered circular buttons (1, 2, 3). The active one is filled brand blue and the others are outlined",
+  "category": "component choices",
+  "evidence": "slice 3 shows two sets of 1/2/3 controls; button count 7"
+ },
+ {
+  "observation": "Testimonials is a carousel. The visible slide shows a photo next to a large quotation in typographic quotes, attributed '– Lisa, Senior Lead Internal Auditor'",
+  "category": "component choices",
+  "evidence": "slice 3; Testimonials-Generic-Xiomara and -Kelly have 0x0 rects (hidden slides)"
+ },
+ {
+  "observation": "The testimonial markup uses figure, blockquote and figcaption, with no cite elements",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic: figure 3, blockquote 3, figcaption 3, cite 0"
+ },
+ {
+  "observation": "The quote text is larger than body copy and colored navy. In the attribution, the name is bold and the role is gray",
+  "category": "typography",
+  "evidence": "slice 3 testimonial"
+ },
+ {
+  "observation": "'Future Events' is a short centered section with only a heading and one pill button",
+  "category": "layout",
+  "evidence": "slice 3 'View all future events'"
+ },
+ {
+  "observation": "'See What We're Up To' shows a row of four rounded-corner square Instagram images",
+  "category": "imagery handling",
+  "evidence": "Social1–4.png at 258x258, alt 'Allstate Careers on Instagram'; slice 4"
+ },
+ {
+  "observation": "The Instagram images are upscaled beyond their natural size and look soft",
+  "category": "imagery handling",
+  "evidence": "Social1.png natural 214x202 rendered at 258x258"
+ },
+ {
+  "observation": "The footer is a full-width dark navy band holding only a centered white 'Follow Us' heading and five social icons",
+  "category": "layout",
+  "evidence": "rgb(15,26,74) background used 2 times; slice 4"
+ },
+ {
+  "observation": "Social icons are 44x44 raster JPG images in rounded squares, not SVG icons",
+  "category": "imagery handling",
+  "evidence": "Social-Icons-*.jpg at 44x44; svgs: 0"
+ },
+ {
+  "observation": "The header holds only the Allstate logo at the top left. There is no nav menu or nav element",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic.nav 0; logo rect x 20, y 14, 111x40; slice 0"
+ },
+ {
+  "observation": "The logo is placed near the viewport edge (x=20), not aligned to the 180px content container",
+  "category": "layout",
+  "evidence": "logo rect x 20 vs content x 180"
+ },
+ {
+  "observation": "Layout uses both CSS grid and flexbox, with 7 elements each",
+  "category": "layout",
+  "evidence": "layout display_grid 7, display_flex 7"
+ },
+ {
+  "observation": "Class naming is sparse and not utility-based: 89 class usages, 39 unique, no Tailwind-like classes",
+  "category": "DOM/semantic structure",
+  "evidence": "classes total 89, unique 39, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Content is grouped semantically: 10 section elements and 16 article elements serving as cards",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic.section 10, article 16, h3 16"
+ },
+ {
+  "observation": "The page loads one stylesheet and one script, and has one inline style attribute",
+  "category": "DOM/semantic structure",
+  "evidence": "counts: stylesheets 1, scripts 1, inline_style_attrs 1"
+ },
+ {
+  "observation": "15 br elements are used, which suggests manual line breaks in headings or copy",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts.br 15; Xiomara heading text contains '\\n'"
+ },
+ {
+  "observation": "The page is long, at 5773px tall on a 1440px viewport, with about 561 words",
+  "category": "layout",
+  "evidence": "page_height 5773, text_stats.words 561"
+ },
+ {
+  "observation": "Some intro paragraphs are limited to about 780px wide, narrower than the full container",
+  "category": "typography",
+  "evidence": "slice 0 intro paragraph and slice 2 'Grow Your Career' paragraph end around x 950"
+ },
+ {
+  "observation": "There is no JSON-LD structured data, and the page has only charset, viewport and description meta tags",
+  "category": "DOM/semantic structure",
+  "evidence": "jsonld_blocks 0; meta_names [charset, viewport, description]"
+ }
+]

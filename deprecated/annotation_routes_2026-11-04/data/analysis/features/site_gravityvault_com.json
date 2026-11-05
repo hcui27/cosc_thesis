@@ -1,0 +1,638 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page title and logo alt text are the same string, and the brand name is repeated across three logo instances",
+   "evidence": "title 'The Gravity Vault Indoor Rock Gyms'; logo.png shows up 3 times (header y=60, mission band y=1079 with alt 'The Gravity Vault', footer",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|00"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I1",
+   "text": "The whole page uses one font stack, the system UI font, with no web fonts loaded",
+   "evidence": "fonts_by_element_count: only system-ui (245 elements); h1 font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'; stylesheet",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|01",
+    "gravityvault_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "The single H2 is 32px bold and introduces the locations section",
+   "evidence": "h2 font_size 32px, weight 700; outline level 2 'Our Locations'",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|03"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I3",
+   "text": "The heading outline goes from H1 straight to H4 for the four feature cards, skipping H2 and H3",
+   "evidence": "heading_outline: level 1, then level 4 'Gift Cards', 'Waivers', 'Visiting Us During This Time', 'Franchising' before the first level 2",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|04",
+    "gravityvault_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "Location headings are nested H3 state > H4 city",
+   "evidence": "4 h3 (California, New Jersey, New York, Pennsylvania) each followed by h4 city names; 19 h4 total",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|05"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I5",
+   "text": "Orange-red is the single accent color, used for buttons, links, underlines and badges",
+   "evidence": "rgb(228,87,46) background on 6 elements; primary_button bg rgb(228,87,46); visible on Search, Find a Location, Sign up, 'View location →' li",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|08",
+    "gravityvault_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "Navy rgb(29,53,87) is also the color for headings and nav links",
+   "evidence": "top_text_colors rgb(29,53,87) on 48 elements; nav items and card titles render in dark blue",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|10"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I7",
+   "text": "The footer uses light blue-gray text on navy",
+   "evidence": "rgb(205,214,226) on 37 elements; footer links appear light gray-blue in slice 3",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|11"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I8",
+   "text": "The page sits on a pale cool-gray background, with dark slate as the main text color",
+   "evidence": "body_bg rgb(245,247,250); body_color rgb(31,41,55) used on 102 elements",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|06",
+    "gravityvault_com|opus|07",
+    "gravityvault_com|opus|12",
+    "gravityvault_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "A thin dark utility bar above the main header holds Gift Cards and Contact Us links plus a state finder made of a select and an orange Search button",
+   "evidence": "slice 0 top bar; 1 select with 5 options; primary_button text 'Search', padding 5px 10px, radius 4px",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|09",
+    "gravityvault_com|opus|13",
+    "gravityvault_com|sonnet|03",
+    "gravityvault_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "The main header is white, with the logo on the left and eight right-aligned nav links; the active 'Home' link has an orange underline",
+   "evidence": "slice 0: Home, Options to Climb, Locations, Covid-19 Updates, About, Franchising, Contact, Careers; orange bar under Home; nav count 2",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "The hero is a full-bleed photo of a climbing wall, darkened and blurred so the centered white text stands out",
+   "evidence": "img rect x=0 w=1440 h=399 at y=125; slice 0 shows a blurred, dimmed photo behind the H1",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|02",
+    "gravityvault_com|opus|15",
+    "gravityvault_com|opus|16",
+    "gravityvault_com|opus|17",
+    "gravityvault_com|sonnet|00",
+    "gravityvault_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "Feature cards sit in a 4-column row with photos on top and text bodies of different lengths, so their bottoms are unevenly filled",
+   "evidence": "4 images at x=150/441/731/1022, w=269, h=192; the Waivers card has much more text than Gift Cards in slice 0",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|18",
+    "gravityvault_com|sonnet|07",
+    "gravityvault_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "Content is held in a container about 1140px wide with 150px side margins",
+   "evidence": "card x positions start at 150 and end near 1290 on a page_width of 1440; logo x=150",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|19",
+    "gravityvault_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "Every card image uses the same stock climbing-gym photo",
+   "evidence": "all 'img' entries have natural size 326×233; slices show an identical blue/red wall photo on every card",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Small source photos are scaled up to larger display sizes",
+   "evidence": "natural 326×233 shown at 1440×399 in the hero and about 267×190 in cards",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "Images have no alt text on the photos, while the logos have descriptive alt",
+   "evidence": "photo images alt ''; logos alt 'The Gravity Vault...'; alt_missing 0, meaning the attributes exist but are empty",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|22",
+    "gravityvault_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "A full-width navy mission band shows the logo above a centered, bold, multi-line white paragraph",
+   "evidence": "slice 0 bottom and slice 1 top: mission statement with large bold centered text",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|23",
+    "gravityvault_com|opus|24",
+    "gravityvault_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "The locations section has a centered heading, a gray subtitle and a row of pill-shaped filter chips",
+   "evidence": "'Pick a state or browse them all.'; chips All, California, New Jersey, New York, Pennsylvania; bucket_pill 13",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|25",
+    "gravityvault_com|opus|26",
+    "gravityvault_com|sonnet|13",
+    "gravityvault_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "State group headings are left-aligned and have a short orange underline",
+   "evidence": "California, New Jersey, New York and Pennsylvania headings each with an orange rule beneath (slices 1–2)",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|27",
+    "gravityvault_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "Location cards use a 4-column grid that leaves empty columns when a state has fewer locations",
+   "evidence": "California has 1 card and empty space in slice 1; NY and PA have 3 cards each; display_grid 6",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|28",
+    "gravityvault_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Orange pill 'COMING SOON!' badges are overlaid on the top-left of some card images",
+   "evidence": "badges on Nassau County, NY, Lehigh Valley, PA and Philadelphia, PA; span count 4",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|31",
+    "gravityvault_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "Some location cards have no description and no 'View location' link, which leaves blank card bodies",
+   "evidence": "Montclair has a link but no text; Nassau County, Lehigh Valley and Philadelphia have neither (slices 2–3)",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|30",
+    "gravityvault_com|opus|32",
+    "gravityvault_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "Card text uses short marketing copy with frequent exclamation marks",
+   "evidence": "exclamations: 19; e.g., 'Give the gift of climbing!', 'Now open!', 'lots of FREE parking!'",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|33",
+    "gravityvault_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "Square-footage figures appear in several location descriptions",
+   "evidence": "'14,000+ sq ft', '13,500 sq ft', '17,500 square feet', '25,000 square feet', '20,000 sq ft'",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|34"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I25",
+   "text": "A thin divider line separates the footer's bottom bar, which holds the copyright and legal links on the left and the agency credit on the right",
+   "evidence": "'© 2021 Gravity Vault', Privacy Policy, Terms of Use, Site Map; 'Lform Design | NJ Web Design Company'",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|35",
+    "gravityvault_com|opus|37",
+    "gravityvault_com|sonnet|23",
+    "gravityvault_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "The newsletter uses a form with one email input; a second form handles the state finder",
+   "evidence": "form: 2, input: 1, select: 1, label: 1",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|36",
+    "gravityvault_com|opus|38",
+    "gravityvault_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "Visual effects are minimal: a few shadows and transitions, with no gradients, animations, blur or transforms",
+   "evidence": "box_shadows 4, transitions 4, gradient_backgrounds 0, animations 0, backdrop_blur 0, transforms 0",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|39",
+    "gravityvault_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "Location cards have a white body, thin border and rounded corners; the 'View location →' link sits at the bottom",
+   "evidence": "slice 1–3 cards; border_radius bucket_8_15: 19; links bottom-aligned across a row (the Brick, NJ link aligns with Chatham's)",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|29",
+    "gravityvault_com|opus|40",
+    "gravityvault_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "Styling comes from one inline style block with a small set of custom class names, not utility classes",
+   "evidence": "style: 1, stylesheets 0, classes total 98 / unique 26, tailwind_like_fraction 0.041, inline_style_attrs 1",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|41",
+    "gravityvault_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "Layout relies heavily on flexbox, with a few grid containers",
+   "evidence": "display_flex 42, display_grid 6",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|42"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I31",
+   "text": "The page is long: about 4,700px at 1440px width, mostly taken up by the location listing",
+   "evidence": "page_height 4732, page_width 1440; locations run from about y=1300 to about 4300",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|43",
+    "gravityvault_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "The page uses the same number of anchors as divs",
+   "evidence": "a: 58, div: 58; li 16 across 2 ul",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|44"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "ARIA attributes are used sparingly and there is no structured data",
+   "evidence": "aria_attrs 10, jsonld_blocks 0; meta tags are only charset, viewport and description",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|45",
+    "gravityvault_com|sonnet|27",
+    "gravityvault_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "The text contains no emoji or em dashes; the arrow in the location links is a text character",
+   "evidence": "emoji 0, em_dashes 0; 'View location →' text in cards",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|46"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "A COVID-era item appears in both the navigation and a feature card",
+   "evidence": "nav 'Covid-19 Updates'; card h4 'Visiting Us During This Time' with 'current policies here'",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|47"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "Text-link CTAs use orange bold text with an arrow glyph ('View location →'). They are not buttons.",
+   "evidence": "Repeated in cards; color matches rgb(228,87,46)",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|sonnet|20"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "A single system UI font stack is used throughout, with no web fonts loaded.",
+   "family": "typography",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "Heading outline skips levels, jumping from H1 straight to H4 for card titles before any H2.",
+   "family": "semantic_dom",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Grouped listings use nested heading hierarchy, with group headings as H3 and individual item headings as H4.",
+   "family": "semantic_dom",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "A single saturated orange-red accent color is used for buttons, links, underlines and badges.",
+   "family": "color",
+   "items": [
+    "I5",
+    "I36"
+   ]
+  },
+  {
+   "statement": "Deep navy is used for headings and navigation link text, matching a navy section band.",
+   "family": "color",
+   "items": [
+    "I6",
+    "I17"
+   ]
+  },
+  {
+   "statement": "Footer uses light blue-gray text on a navy background.",
+   "family": "color",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Page background is a pale cool gray with dark slate body text.",
+   "family": "color",
+   "items": [
+    "I8"
+   ]
+  },
+  {
+   "statement": "A thin dark utility bar above the main header holds secondary links and a compact select-plus-button finder.",
+   "family": "component",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "White header has logo left, right-aligned nav links, and the active link marked by an orange underline.",
+   "family": "component",
+   "items": [
+    "I10"
+   ]
+  },
+  {
+   "statement": "Hero is a full-bleed darkened, blurred photo with centered white heading text on top.",
+   "family": "imagery",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "Feature cards sit in a four-column row with top photos and uneven text lengths leaving unequal bottoms.",
+   "family": "layout",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Content is constrained to a centered container about 1140px wide with wide side margins.",
+   "family": "layout",
+   "items": [
+    "I13"
+   ]
+  },
+  {
+   "statement": "Every card uses the same repeated stock photo, and small source images are upscaled to larger display sizes.",
+   "family": "imagery",
+   "items": [
+    "I14",
+    "I15"
+   ]
+  },
+  {
+   "statement": "Photos have empty alt attributes while logos carry descriptive alt text.",
+   "family": "semantic_dom",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "A full-width colored band presents a logo above a centered, bold, multi-line white statement.",
+   "family": "component",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Section intro has centered heading, muted subtitle and a row of pill-shaped filter chips.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Group headings are left-aligned with a short accent-colored underline rule.",
+   "family": "decoration",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Card grid has four columns, leaving empty columns when a group has fewer items.",
+   "family": "layout",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Pill-shaped accent badges such as 'COMING SOON!' overlay the top-left corner of card images.",
+   "family": "component",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "Some cards have empty bodies, lacking description text or link, leaving blank space.",
+   "family": "component",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Copy is short, upbeat marketing text with frequent exclamation marks.",
+   "family": "copy",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "Descriptions include concrete numeric facts such as square footage figures.",
+   "family": "copy",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Footer bottom bar is split by a thin divider, with copyright and legal links left and credit right.",
+   "family": "layout",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Cards have white bodies, thin borders and rounded corners, with the link pinned to the card bottom.",
+   "family": "component",
+   "items": [
+    "I28"
+   ]
+  },
+  {
+   "statement": "Visual effects are minimal: few shadows and transitions, with no gradients, animations, blur or transforms.",
+   "family": "decoration",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Styling comes from one inline style block with a few custom class names, not utility classes.",
+   "family": "other",
+   "items": [
+    "I29"
+   ]
+  },
+  {
+   "statement": "Layout relies mainly on flexbox with a few grid containers.",
+   "family": "layout",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Text-link calls to action are bold accent-colored text ending in an arrow glyph, not buttons.",
+   "family": "component",
+   "items": [
+    "I36",
+    "I34"
+   ]
+  },
+  {
+   "statement": "No emoji or em dashes appear in the text.",
+   "family": "copy",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "Newsletter and finder use simple forms with a single input or select each.",
+   "family": "component",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Brand logo appears repeatedly in header, mid-page band and footer.",
+   "family": "imagery",
+   "items": [
+    "I0"
+   ]
+  }
+ ]
+}

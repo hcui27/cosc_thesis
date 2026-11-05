@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thync — Neurostimulation For Everyone</title>
+<meta name="description" content="Thync builds wearable devices that improve brain function via electricity. Discover the FeelZing Energy Patch.">
+<style>
+:root{
+  --bg:#0b1020; --bg2:#121a33; --ink:#f3f5fb; --muted:#aab3cc;
+  --accent:#4de1c1; --accent2:#6c8cff; --light:#f6f8fc; --lightink:#14182b;
+  --radius:16px; --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;letter-spacing:.04em;font-size:1.3rem;text-decoration:none}
+.brand span{color:var(--accent)}
+.nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;font-size:.95rem}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:#06241d;font-weight:700;padding:14px 28px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(77,225,193,.35)}
+.hero{position:relative;text-align:center;padding:120px 0 110px;overflow:hidden;
+  background:radial-gradient(800px 400px at 50% 0,rgba(108,140,255,.28),transparent 70%),radial-gradient(600px 300px at 80% 100%,rgba(77,225,193,.18),transparent 70%)}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.08;margin:0 0 20px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:1.25rem;max-width:560px;margin:0 auto 36px}
+section{padding:88px 0}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);line-height:1.2;margin:0 0 40px;letter-spacing:-.01em}
+.center{text-align:center}
+.faq{display:grid;gap:20px}
+.q{background:var(--bg2);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);padding:28px 30px;display:grid;grid-template-columns:56px 1fr;gap:20px}
+.q .n{font-size:2rem;font-weight:800;color:var(--accent);line-height:1}
+.q h3{margin:0 0 10px;font-size:1.2rem}
+.q p{margin:0 0 10px;color:var(--muted)}
+.q p:last-child{margin:0}
+.q a{color:var(--accent)}
+.science{background:var(--bg2);border-block:1px solid rgba(255,255,255,.07)}
+.science .wrap{max-width:760px;text-align:center}
+.science p{color:var(--muted);font-size:1.15rem}
+.video{margin-top:32px;aspect-ratio:16/9;border-radius:var(--radius);background:linear-gradient(135deg,#1b2650,#0d1330);display:grid;place-items:center;border:1px solid rgba(255,255,255,.1)}
+.play{width:84px;height:84px;border-radius:50%;background:var(--accent);display:grid;place-items:center;border:0;cursor:pointer;transition:transform .15s}
+.play:hover{transform:scale(1.07)}
+.play:focus-visible,.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+.play svg{margin-left:5px}
+.papers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.paper{background:var(--bg2);border:1px solid rgba(255,255,255,.07);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:20px;justify-content:space-between}
+.paper p{margin:0;font-size:1.1rem}
+.paper a{color:var(--accent);font-weight:700;text-decoration:none;text-transform:uppercase;font-size:.85rem;letter-spacing:.08em}
+.paper a:hover{text-decoration:underline}
+.featured{background:var(--light);color:var(--lightink);padding:56px 0}
+.featured h2{font-size:1rem;text-transform:uppercase;letter-spacing:.14em;color:#59617c;margin-bottom:28px}
+.logos{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 28px}
+.logos img{display:block;width:120px;height:auto;filter:grayscale(1);opacity:.8}
+footer{padding:64px 0 40px;font-size:.95rem;color:var(--muted)}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;margin-bottom:40px}
+footer h4{margin:0 0 12px;color:var(--ink);font-size:.8rem;text-transform:uppercase;letter-spacing:.12em}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--accent)}
+.legal{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,.08);padding-top:24px}
+.legal img{display:block;background:#fff;border-radius:4px;padding:2px}
+@media (max-width:720px){
+  .nav ul{display:none}
+  .hero{padding:80px 0}
+  section{padding:64px 0}
+  .q{grid-template-columns:1fr;gap:8px;padding:24px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/">THYNC<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="/pages/neurostimulation">Neurostimulation</a></li>
+        <li><a href="/pages/company">Company</a></li>
+        <li><a href="https://feelzing.com/blogs/news">Blog</a></li>
+        <li><a href="https://www.feelzing.com/">FeelZing</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Neurostimulation <em>For Everyone</em></h1>
+      <p>Discover our latest innovation — FeelZing Energy Patch</p>
+      <a class="btn" href="https://www.feelzing.com/">Discover Feelzing</a>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="center">5 Questions, 5 Answers About Thync</h2>
+      <div class="faq">
+        <article class="q">
+          <div class="n">1</div>
+          <div>
+            <h3>What does Thync do?</h3>
+            <p>We build devices usable by everyone that improve brain function via electricity, the natural language of the brain.</p>
+            <p>We were founded in 2010, and have since researched and developed how to democratize access to the benefits of neurostimulation for everyone.</p>
+          </div>
+        </article>
+        <article class="q">
+          <div class="n">2</div>
+          <div>
+            <h3>How does Thync improve brain function with electricity?</h3>
+            <p>For 10+ years, we've developed and tested various non-invasive neurostimulation devices, including headsets and patches.</p>
+            <p>These wearable devices send electric stimulation programs we've designed to specific areas of the brain and peripheral nervous system we've selected to instigate the desired positive effect.</p>
+          </div>
+        </article>
+        <article class="q">
+          <div class="n">3</div>
+          <div>
+            <h3>Why do you believe that non-invasive brain stimulation works?</h3>
+            <p>Two reasons: 1) we cross-referenced our work with the broader literature from the greater scientific community, and 2) we've tested various iterations of our products for over ten years, not just in research labs, but with reputable partner institutions, influential minds, and, of course, on ourselves.</p>
+          </div>
+        </article>
+        <article class="q">
+          <div class="n">4</div>
+          <div>
+            <h3>How are you validating your technology?</h3>
+            <p>Our product research team constantly runs trials to test the different effects of electric stimulation on health, behavior, and physiology.</p>
+            <p>Thync has also partnered with academic labs and organizations around the world to test our products with unique populations, including athletes, gamers, military, and surgeons.</p>
+          </div>
+        </article>
+        <article class="q">
+          <div class="n">5</div>
+          <div>
+            <h3>How can I try Thync's technology?</h3>
+            <p>Please visit our website <a href="http://feelzing.com">feelzing.com</a> to learn about a wearable patch that increases energy, clarity, and alertness for a few hours — think 5-hour energy, neurostimulation style.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="science">
+    <div class="wrap">
+      <h2>Our Approach To Science</h2>
+      <p>Hear from our Thync's lead scientist, Dr. Jonathan Charlesworth, how we developed our technology to be effective and safe.</p>
+      <div class="video">
+        <button class="play" type="button" aria-label="Play Our Approach To Science video">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="#06241d" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="papers">
+    <div class="wrap">
+      <h2 class="center">Highlighted Scientific Papers</h2>
+      <div class="papers">
+        <article class="paper">
+          <p>Thync neurostimulation significantly reduces behavioral and physiological tension, anxiety, and stress.</p>
+          <a href="https://thync.com/pages/neurostimulation#nature">Read more →</a>
+        </article>
+        <article class="paper">
+          <p>Thync neurostimulation prior to sleep produces significant improvements in sleep quality and mood.</p>
+          <a href="https://thync.com/pages/neurostimulation#biorxiv">Read more →</a>
+        </article>
+        <article class="paper">
+          <p>Safety of Thync stimulation was demonstrated in over two thousand sessions over six weeks.</p>
+          <a href="https://thync.com/pages/neurostimulation#peerj">Read more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured" aria-labelledby="featured-h">
+    <div class="wrap center">
+      <h2 id="featured-h">Featured In</h2>
+      <ul class="logos">
+        <li><img src="images/mashable_368518b4-e5cb-4cd7-84d9-5fd9431a47db_160x160@2x.png" alt="Mashable"></li>
+        <li><img src="images/pbs_1_0075061a-88c7-42c7-a225-845db052f162_160x160@2x.png" alt="PBS"></li>
+        <li><img src="images/tc_1_5faef21a-fe14-4e5c-9da5-6478a2bf6606_160x160@2x.png" alt="TechCrunch"></li>
+        <li><img src="images/logo_digitaltrends_160x160@2x.png" alt="Digital Trends"></li>
+        <li><img src="images/inc_2_160x160@2x.png" alt="Inc."></li>
+        <li><img src="images/cnn_1_0adbb041-f6cf-4d0e-8467-decc6ccefbc6_160x160@2x.png" alt="CNN"></li>
+        <li><img src="images/wsj_1_fe7c1b77-3f69-4a1c-8f42-f09e85476d7d_160x160@2x.png" alt="The Wall Street Journal"></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>Follow us</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/Feelzing">Facebook</a></li>
+          <li><a href="https://www.instagram.com/zingenergy/">Instagram</a></li>
+          <li><a href="https://www.youtube.com/channel/UCzDadjx7FN8xo3pPOaorwvQ">YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/pages/neurostimulation">Neurostimulation</a></li>
+          <li><a href="/pages/company">Company</a></li>
+          <li><a href="https://feelzing.com/blogs/news">Blog</a></li>
+          <li><a href="https://www.feelzing.com/">FeelZing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="https://thync.com/pages/company#contact-form">Careers</a></li>
+          <li><a href="/pages/patents">Patents</a></li>
+          <li><a href="/policies/privacy-policy">Privacy</a></li>
+          <li><a href="/policies/terms-of-service">Terms</a></li>
+          <li><a href="/pages/california-form">Do not sell my personal information</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay Informed About Thync</h4>
+        <p style="margin:0"><a href="mailto:hello@thync.com">hello@thync.com</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2021 <a href="/">Thync Global, Inc.</a></span>
+      <img src="images/e-trust_5e6f55e4-b0bb-49cf-9457-667c27787657.png" alt="TRUSTe privacy certification" width="100" height="27">
+    </div>
+  </div>
+</footer>
+</body>
+</html>

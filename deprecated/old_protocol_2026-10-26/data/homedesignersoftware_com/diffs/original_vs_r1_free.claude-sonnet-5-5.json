@@ -1,0 +1,237 @@
+[
+ {
+  "observation": "Page-level palette differs: A is built on light-blue (rgb(96,195,231)) bands, light-gray (rgb(241,241,241)/(221,221,221)) panels and one lime-green (rgb(159,196,62)) panel. B uses navy (rgb(23,50,77)/(15,33,51)), brick red (rgb(181,40,31)) accents, and white/off-white (rgb(244,246,248)).",
+  "category": "color",
+  "evidence": "A top_backgrounds: 241/241/241 ×64, 96/195/231 ×10, 159/196/62 ×1. B top_backgrounds: white ×17, 181/40/31 ×6, 244/246/248 ×2, navy ×2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Link color: A uses a cyan-blue (rgb(3,151,214), 43 elements) for links. B uses red (rgb(181,40,31), 37 text elements) for links and underlined inline links.",
+  "category": "color",
+  "evidence": "A top_text_colors includes rgb(3,151,214) ×43; B includes rgb(181,40,31) ×37; B slices show underlined red inline links.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Typeface: A uses the web font Open Sans (591 elements) in light weights plus an icon font 'caicon' (18 elements). B uses only the system-ui stack (236 elements) and no icon font.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Open Sans 591, caicon 18; B: system-ui 236.",
+  "which_side": "both"
+ },
+ {
+  "observation": "H1 treatment: A's h1 is small and light (27px, weight 300), white on a light-blue band. B's h1 is large and bold (51.2px, weight 700), white on a navy gradient hero.",
+  "category": "typography",
+  "evidence": "A h1 font_size 27px weight 300; B h1 51.2px weight 700.",
+  "which_side": "both"
+ },
+ {
+  "observation": "H2 treatment: A's h2s are 37px light (300), left-aligned and thin. B's h2s are 35.2px bold (700), mostly centered, in navy.",
+  "category": "typography",
+  "evidence": "A h2 37px/300; B h2 35.2px/700; B slices show centered 'Home Designer Products' and 'Explore by Project'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text sizing: A body is 16px/24px. B body is 17px/28.05px, giving looser line spacing.",
+  "category": "typography",
+  "evidence": "A_facts body_font_size 16px, line_height 24px; B 17px, 28.05px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a large full-width-in-container hero photograph (1000x563 watercolor 3D home rendering) with a giant circular play icon and a 'Watch Time Lapse Design Video' caption overlay. B has no large photo and shows only a product box shot in the hero.",
+  "category": "imagery",
+  "evidence": "A images: 1-water-color-1000x563.jpg at rect 1000x563; B images list has only 130x184 and 348x492 product boxes.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Several A images render as broken, showing alt text as blue links (night rendering, glass-house wire-frame, framing view) overlapping the 'Download' heading. The comparison matrix image also shows as broken alt text.",
+  "category": "imagery",
+  "evidence": "A images with file '' and natural [0,0]: 3 thumbnails at y≈905-980 and comparison matrix at 406x369; visible alt text in A slices 0 and 1.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has no broken images. All 6 images are product box shots with natural sizes, and none rely on a hero photo.",
+  "category": "imagery",
+  "evidence": "B images: 6 entries, all with filenames and natural dimensions; no alt text is visible in slices.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Header structure: A has a large light-weight text logo 'Home Designer® Software by Chief Architect' with a search form (category select plus search input), a My Account/Contact Us/Cart utility row, and a separate row of 4 nav links. B uses a compact bold wordmark with a single row of 6 nav links and a red 'Free Trial' button, and has no search.",
+  "category": "layout",
+  "evidence": "A tag_counts form 3, select 8, input 2; B has no form/select/input; B nav shows Products, Features, Project Types, Videos, Support, My Account plus a button.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Hero composition: A has a light-blue strip with the h1 and paragraph left, and the Pro box image with an outlined 'Rent $59/mo.' button hanging at the right edge, straddling the nav and hero. B has a two-column navy gradient hero with h1, paragraph, two CTA buttons and a text link row on the left, and a white elevated product card on the right.",
+  "category": "layout",
+  "evidence": "A box img rect x1079,y106, 119x168; B card at x≈811-1260, y≈254-466 with box-shadow; gradient_backgrounds A 0, B 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Hero CTAs: B offers a solid white 'Download Free Trial' button and an outlined 'Purchase Software' button, plus a 'Learn:' text link row. In A these destinations are not hero buttons; Trial Version and Purchase Software sit as small links under a 'Download' heading in a gray strip.",
+  "category": "component",
+  "evidence": "B slice 0 hero buttons; A slice 0 gray strip with Download/Explore/Learn columns.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a three-column gray link strip (Download / Explore / Learn) with small centered cyan links. B has no equivalent strip; the same destinations are spread across a hero link row, 'Explore by Project' cards and a 'Learn More' list.",
+  "category": "component",
+  "evidence": "A h3 outline: Download, Explore, Learn; B h2 'Explore by Project' with four cards.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Primary button styling: A's primary button is a transparent button with white 1-2px outline and 0px radius (padding 2px 10px). Buy/Rent buttons are flat light-blue rectangles with square corners. B's primary button is a solid red fill with 6px radius and 7.6px 15.2px padding.",
+  "category": "component",
+  "evidence": "A primary_button bg rgba(0,0,0,0) radius 0px; B bg rgb(181,40,31) radius 6px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Corner rounding: A is almost entirely square (608 elements with 0 radius, 1 in the 1-7px bucket). B uses rounded cards and buttons (12 in 1-7px, 13 in 8-15px, 1 at 16px+).",
+  "category": "decoration",
+  "evidence": "effects.border_radius_buckets A: 608/1/0/0; B: 210/12/13/1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Pricing presentation: A shows prices inside small light-blue flat buttons ('BUY $129 struck $99') with 'Upgrades from' links under them, on a gray panel with no card borders. B shows each product as a bordered white card with large red price figures, struck-through old prices, full-width Buy buttons, and a 'MOST COMPLETE' pill badge on the Pro card.",
+  "category": "component",
+  "evidence": "A slice 1 product row; B slice 1 three cards, Pro card outlined in red with a 'MOST COMPLETE' badge.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds copy not in A's headings: 'Choose the right product for your project. Runs on Mac or PC.', 'Our most complete DIY software.', 'MOST COMPLETE' badge, 'or $595 $495 to buy' and 'Rent $59/mo.' as an h-level sub-line. A's product captions are just the product names.",
+  "category": "copy",
+  "evidence": "B heading outline adds h3 product names and subtitle text visible in the slices; A text lacks these strings.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Pro product offers both Rent and Buy options. A shows these as two adjacent flat blue buttons (RENT $59/mo., BUY $595 $495). B shows a solid red 'Rent $59/mo.' button above an outlined 'Buy $495' button.",
+  "category": "component",
+  "evidence": "A slice 1 'RENT $59/mo.' and 'BUY' buttons side by side; B slice 1 stacked buttons.",
+  "which_side": "both"
+ },
+ {
+  "offset": 0,
+  "observation": "Chief Architect Professional promo: A presents it as a lime-green side panel (rgb(159,196,62)) next to the DIY gray panel, holding the Premier box and a white 'LEARN MORE' button. B presents it as a full-width white bordered horizontal banner with a small 70x99 Premier image, a bold lead-in sentence and an outlined 'Learn More' button.",
+  "category": "component",
+  "evidence": "A Premier img 130x184 at x1033; B Premier img 70x99 at x205,y2086; A has a single rgb(159,196,62) background.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body copy columns: A sets prose as single wide paragraphs spanning about 970px, left-aligned. B splits the 'Products' and 'Interior Design' copy into two columns using CSS grid.",
+  "category": "layout",
+  "evidence": "A display_grid 0; B display_grid 9; B slices 0 and 2 show two-column text blocks.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B inserts a row of four feature cards ('Draw walls, get 3D', 'Smart doors & windows', 'Roofs & foundations follow', 'Materials list & budget') that condense the paragraph's claims. A has no equivalent.",
+  "category": "copy",
+  "evidence": "B slice 0 four bordered cards with bold titles and short descriptions; B has 3 article elements and h3 count 4.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds an 'Explore by Project' section with four cards, each with a title and an 'Explore →' red link. A shows the same destinations only as plain links in the gray strip.",
+  "category": "component",
+  "evidence": "B heading 'Explore by Project'; B slice 2 cards; A slice 0 'Home Design & Remodeling, Interior Design, Kitchens & Baths, Decks & Landscaping' links.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a light-blue feature banner 'Home Designer® / Top-rated DIY home design software' with a gray 'Compare Features' button and a (broken) comparison matrix image on the right. B has no such banner and has no comparison image.",
+  "category": "component",
+  "evidence": "A h2 'Home Designer', h4 'Top‑rated DIY home design software'; image 'Home Designer comparison matrix' 406x369 with natural size 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's 'Learn More' block places a large Pro box image (323x456) beside a vertical list of large black links, next to a white 'Purchase Options' form panel with New/Upgrade tabs and dropdowns (Product, Media, Backup Media), on a light-blue band. B's equivalent has a text column with a 2-column link list in red and a 300x424 box image with a soft shadow, and no purchase form.",
+  "category": "component",
+  "evidence": "A select count 8, option 34, label 18, form 3; B has zero forms/selects.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Closing CTA: B ends the content with a navy band 'Get started on your design project today' containing a short subline and two buttons (Download Free Trial, Rent or Buy). A has no distinct closing CTA band and goes from the purchase form straight into the footer.",
+  "category": "component",
+  "evidence": "B h2 'Get started on your design project today'; A h2 list has no equivalent.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Footer: A uses a light-gray (rgb(229,229,229)) footer with 5 light-weight column headings, small dark links, external-link icons and a row of 7 icon-font social glyphs (rendered as empty boxes). B uses a dark navy footer with bold white headings, light-gray links, no icons and a thin divider above the copyright line.",
+  "category": "component",
+  "evidence": "A slices 2-3: 7 empty-box glyphs, caicon font; B slice 3 dark footer, svgs count 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer link count: A's footer contains more links (including Careers, Marketing Graphics, Newsletter, Academic, Add-on Products, Catalog & Content Downloads, Webinars, Resource Center, 3D Viewer App, Contact Us - Social). B's footer is trimmed to 4-6 links per column.",
+  "category": "copy",
+  "evidence": "A anchors 144 vs B 75; A slice 3 list vs B slice 3 columns.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Heading hierarchy: A's outline skips levels (h1 then h3 Download/Explore/Learn, h4 under h2, and h3 'LEARN MORE'). B's outline runs h1, h2, then h3 under the matching h2 sections, with h4 in the footer only.",
+  "category": "structure",
+  "evidence": "A heading_outline begins 1,3,3,3,2...; B begins 1,2,2,3,3,3,2,...",
+  "which_side": "both"
+ },
+ {
+  "observation": "Semantic tags: B uses a main element (1) and 3 article elements, with 7 sections. A has no main or article and uses 10 sections.",
+  "category": "structure",
+  "evidence": "semantic A main 0, article 0, section 10; B main 1, article 3, section 7.",
+  "which_side": "both"
+ },
+ {
+  "observation": "DOM weight and scripts: A has 118 divs, 144 anchors, 25 scripts, 6 stylesheets, 9 style blocks, 6 noscript tags, a base tag and an iframe. B has 31 divs, 75 anchors, 0 scripts, 0 external stylesheets and a single style block.",
+  "category": "structure",
+  "evidence": "tag_counts A div 118, script 25, noscript 6, iframe 1; B div 31, script 0, style 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Meta/head: A includes charset, viewport, X-UA-Compatible, description, google-site-verification and theme-color metas. B only has charset, viewport and description. The titles also differ: A 'Home Designer | Home Design Software for DIY' versus B 'Home Designer Software by Chief Architect — Home Design Software for DIY'.",
+  "category": "structure",
+  "evidence": "meta_names lists in each facts file; title fields.",
+  "which_side": "both"
+ },
+ {
+  "observation": "CSS class usage: A has 432 class usages (148 unique, 8.1% Tailwind-like). B has 75 (33 unique, 1.3% Tailwind-like) plus 6 inline style attributes.",
+  "category": "structure",
+  "evidence": "classes.total/unique/tailwind_like_fraction for each side.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Shadows and gradients: B uses a diagonal navy gradient on the hero (gradient_backgrounds 1) and soft drop shadows on the hero card and the large product box. A has no gradients and 2 box shadows.",
+  "category": "decoration",
+  "evidence": "effects: A gradient_backgrounds 0, box_shadows 2; B gradient 1, box_shadows 1; B slices show shadowed card and box.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Layout engines: A is built mainly with block/float-type layout (display_grid 0, display_flex 8). B uses grid (9) and flex (10) for card rows and two-column text.",
+  "category": "layout",
+  "evidence": "layout.display_grid and display_flex counts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page width and rhythm: A's content mostly sits in a ~970-1000px container with some full-bleed color bands and a left offset around x=235. B uses a content width of 1080px (x 180-1260) with alternating white and off-white full-bleed sections and consistent center-aligned section headings. Page heights are 4284px (A) and 4556px (B).",
+  "category": "layout",
+  "evidence": "layout.page_height A 4284, B 4556; A hero image x220-1220; B nav and card edges at x180/1260.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages keep the same h1 text 'Home Design Software for DIY', 1 h1, white h1 color, and the same product box images (suite, architectural, pro, premier) with the same text sections, such as 'Powerful, Fun and Easy Software' and the 2003–2021 copyright line.",
+  "category": "copy",
+  "evidence": "Both h1_count 1, h1 color rgb(255,255,255); matching h2 texts in both outlines; both image lists include suite/architectural/professional/premier png files.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Button/link labels: A uses uppercase small-label styles like 'BUY', 'RENT', 'LEARN MORE', 'Compare Features' with an icon-font glyph that renders as an empty box. B uses sentence-case labels ('Buy', 'Rent $59/mo.', 'Learn More'), with the arrow glyph '→' in 'Explore →' as plain text.",
+  "category": "copy",
+  "evidence": "A slice 1 buttons with empty square glyphs; B slice 1/2 button labels and arrows.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's purchase form has disabled/greyed fields (Media, Backup Media with 'Backup USB') beneath a 'Please choose' select and 'New / Upgrade' tab toggles. B has no form fields.",
+  "category": "component",
+  "evidence": "A slice 2 Purchase Options panel; B inputs 0, selects 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The video element: A includes an iframe (1) and the play-overlay hero for the time-lapse video. B has no iframe and links to 'Overview Video' only as text.",
+  "category": "component",
+  "evidence": "A tag_counts iframe 1; B has none.",
+  "which_side": "A"
+ }
+]

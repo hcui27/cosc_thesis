@@ -1,0 +1,152 @@
+[
+ {
+  "observation": "The page uses a single dark theme. Body background is rgb(11,17,24) and body text is near-white rgb(232,238,245). Card and surface fills are slightly lighter navy: rgb(19,28,39) on 11 elements and rgb(26,38,52) on 8.",
+  "category": "color",
+  "evidence": "facts.colors.body_bg, top_backgrounds"
+ },
+ {
+  "observation": "A single cyan accent, rgb(39,209,255), carries all emphasis. It appears on the primary buttons, the two highlighted words in the H1, the eyebrow pill text, avatar initials, the NEW! badge and the inline link. Dark teal rgb(4,34,44) is the text colour on the cyan fills.",
+  "category": "color",
+  "evidence": "top_backgrounds has rgb(39,209,255) on 5 elements; primary_button color rgb(4,34,44); screenshot shows 'Honda Insight' in cyan"
+ },
+ {
+  "observation": "Secondary text is slate gray rgb(148,163,184), used on 46 elements. This covers section subtitles, reply counts, stat labels and footer text. It gives a two-tone text hierarchy of white and gray.",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(232,238,245) 72, rgb(148,163,184) 46"
+ },
+ {
+  "observation": "The typeface is the system font stack only. 131 elements use system-ui, and the H1 declares system-ui, -apple-system, Segoe UI, Roboto, sans-serif. There are no webfonts and no linked stylesheets.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count system-ui 131; stylesheets 0; style tag 1"
+ },
+ {
+  "observation": "The H1 is oversized: 64px, weight 700, centered, in the near-white text colour. It wraps to two lines, and the words 'Honda Insight' are set in cyan against the white 'The ultimate' and 'forum'. It is the only H1 on the page.",
+  "category": "typography",
+  "evidence": "h1 font_size 64px, weight 700, text_align center; h1_count 1; hero screenshot"
+ },
+ {
+  "observation": "Section headings are H2 at 25.6px bold, each followed by a gray one-line subtitle paragraph. The same heading and subtitle pattern repeats for 'Latest conversations', 'Top Contributors this Month' and 'Recommended Communities'.",
+  "category": "typography",
+  "evidence": "h2 font_size 25.6px weight 700; heading_outline; slice 2 subtitles"
+ },
+ {
+  "observation": "The hero starts with a small uppercase, letter-spaced eyebrow in a pill outline: 'HONDA INSIGHT FORUM · SINCE 2003'. A faint teal radial glow sits behind the hero at the top. The two gradient backgrounds and one backdrop blur likely account for this glow and the translucent header.",
+  "category": "decoration",
+  "evidence": "effects.gradient_backgrounds 2, backdrop_blur 1; rgba(11,17,24,0.85) header background; screenshot"
+ },
+ {
+  "observation": "The hero is centered and stacked in this order: eyebrow, H1, gray two-line lede, two pill CTAs, then a three-figure stats row. The stats are '414K posts', '180.3K members' and '2003 and still going'. The numbers are large bold white and the labels are small gray.",
+  "category": "layout",
+  "evidence": "screenshot slice 0; text_stats words 225"
+ },
+ {
+  "observation": "The CTAs pair a solid cyan pill, 'Join Community', with a dark outlined pill, 'Browse Forums'. The header 'Login / Join' button repeats the cyan pill. Its radius is 999px and its padding is 7.2px 16px. The page has zero button elements, so every button-like control is an anchor.",
+  "category": "components",
+  "evidence": "primary_button radius 999px; counts.buttons 0; anchors 26"
+ },
+ {
+  "observation": "The sticky-style header holds the logo SVG on the left. On the right are two plain text links, 'What's New' and 'Forums', followed by the cyan Login / Join pill. A 1px divider runs under the header. The header is a semantic header element with a single nav element.",
+  "category": "navigation",
+  "evidence": "tag_counts header 1, nav 1; images[0] insightcentral_net.svg at x186 y18 130x28"
+ },
+ {
+  "observation": "The content column is about 1068px wide, from x=186 to x=1254, centered in a 1440px viewport. Both header and sections align to these edges, while the footer text is left-aligned to the same x.",
+  "category": "layout",
+  "evidence": "page_width 1440; image rects start at x186 and cards end near 1254"
+ },
+ {
+  "observation": "The 'Latest conversations' section is a three-column grid of equal cards. Each has a square image about 341x341 on top and a title below. The footer row of each card shows a small initial avatar, a username and a reply count.",
+  "category": "components",
+  "evidence": "images[1..3] rects 341x341 at x187/550/912; display_grid 8; screenshot"
+ },
+ {
+  "observation": "The thread images are cropped to squares. Their natural sizes are 700x700, 525x700 and 393x700, but all render at 341x341. The photos are user-posted: car parts on gravel, a console armrest and a red Insight in a parking lot. Their alt text is empty.",
+  "category": "imagery",
+  "evidence": "images natural vs rect; alt '' for images 1-3"
+ },
+ {
+  "observation": "Thread titles are truncated with a literal '...' in the text itself, not by CSS ellipsis. Examples are '50% off pick n pull this last weekend, new arm res...' and 'SOLD For sale- 2001 Red Generation 1 Insight in Mi...'. The truncation shows in the H3 text.",
+  "category": "copy",
+  "evidence": "heading_outline h3 texts end in '...'"
+ },
+ {
+  "observation": "Contributor and thread avatars are 48px circles. Most are a letter placeholder: bold italic cyan initial on a dark circle (H, J, B, N, K). One contributor, 'mudder', has a real photo avatar of a landscape.",
+  "category": "imagery",
+  "evidence": "images[4] 189418.jpg 48x48 at x568 y1568; screenshot slice 1; pill bucket 13"
+ },
+ {
+  "observation": "The 'Top Contributors this Month' section is a three-up row of short bordered cards. Each shows an avatar, a bold username and a gray 'N Replies' count: 183, 102 and 82. A 'View All' outlined pill sits at the right of the section heading row.",
+  "category": "components",
+  "evidence": "screenshot slice 1; heading_outline H2"
+ },
+ {
+  "observation": "'Recommended Communities' uses three cards with 64px rounded-square logos (DIY Electric Car, Snowmobile World, Royal Enfield). Each has a bold name and a gray member count such as '85K+ members'. One card carries a small cyan 'NEW!' badge before its name.",
+  "category": "components",
+  "evidence": "images[5..7] 64x64 at y1886; bucket_8_15 12 elements; screenshot"
+ },
+ {
+  "observation": "The page ends in a large rounded call-to-action panel on a slightly lighter, gradient-like navy fill. It has a centered H2, 'Join now to ask and comment!', and two cyan pill buttons, 'Continue with Facebook' and 'Continue with Google'. Below them is a gray 'or' followed by a cyan underlined 'sign up with email' link, the only underlined link seen.",
+  "category": "components",
+  "evidence": "screenshot slice 1; bucket_16_plus 1; exclamations 2"
+ },
+ {
+  "observation": "Corner radii are used heavily. Cards sit in the 8–15px bucket (12 elements). Pills and circles are 999px (13 elements). One panel has a radius of 16px or more. 104 elements have no radius. Cards have 1px subtle borders and no box shadows.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets; box_shadows 0"
+ },
+ {
+  "observation": "The page has no shadows, animations or transforms. Interactivity is hinted only by 15 CSS transitions, probably hover states on links and cards. There are no scripts at all.",
+  "category": "effects",
+  "evidence": "box_shadows 0, animations 0, transforms 0, transitions 15, scripts 0"
+ },
+ {
+  "observation": "Vertical rhythm is generous. About 100px or more of empty space separates the stats from 'Latest conversations' and each later section. The section headings are left-aligned, while the hero and the final CTA are centered.",
+  "category": "layout",
+  "evidence": "screenshot slices 0-1; page_height 2737"
+ },
+ {
+  "observation": "The DOM is semantic but compact: one header, nav, main and footer, plus 4 sections. There are no article, aside or figure elements, so the thread cards are not marked as articles. Heading levels run H1, H2, H3 in order, with 3 H3s for thread titles.",
+  "category": "structure",
+  "evidence": "semantic counts; tag_counts section 4, h2 4, h3 3"
+ },
+ {
+  "observation": "The styling is one inline style element with 21 unique classes across 50 class uses. None are Tailwind-like and there are no inline style attributes. 23 divs, 16 spans and 9 small tags carry the layout, with flex on 34 elements and grid on 8.",
+  "category": "structure",
+  "evidence": "classes total 50, unique 21, tailwind_like_fraction 0; inline_style_attrs 0; display_flex 34"
+ },
+ {
+  "observation": "The footer is a left-aligned row of seven small links: Home, About Us, Terms of Use, Privacy Policy, Help, Contact us and RSS. A gray legal block follows with the VerticalScope Inc. address, 'The Fora platform includes forum software by XenForo' and a non-affiliation disclaimer about Honda Motor Company. The footer is separated by a top border.",
+  "category": "copy",
+  "evidence": "tag_counts ul 1, li 7, footer 1; screenshot slices 1-2"
+ },
+ {
+  "observation": "Copy is conversational and community-oriented: 'See what members are talking about right now.', 'The members keeping the conversation going.' and 'More places to geek out with fellow enthusiasts.' The hero lede sells longevity ('since 2003'), and '2003' also appears as a stat.",
+  "category": "copy",
+  "evidence": "screenshot text; heading_outline"
+ },
+ {
+  "observation": "The logo is an SVG image, insightcentral_net.svg, with alt text 'InsightCentral'. Its natural size is 300x65 and it renders at 130x28. It is a condensed italic cyan wordmark and the only decorative brand graphic. The page has no inline SVG icons and no emoji.",
+  "category": "imagery",
+  "evidence": "images[0]; counts.svgs 0; text_stats.emoji 0"
+ },
+ {
+  "observation": "Alt text is present on the logo only. All 7 other images have empty alt attributes, and the facts report 0 images missing the alt attribute. ARIA use is minimal, with 2 aria attributes in total.",
+  "category": "structure",
+  "evidence": "counts.alt_missing 0, aria_attrs 2; images alt values"
+ },
+ {
+  "observation": "The page metadata is minimal: lang='en', a title 'Honda Insight Forum Since 2003 | InsightCentral', and meta charset, viewport and description. It has no JSON-LD blocks.",
+  "category": "structure",
+  "evidence": "title, lang, meta_names, jsonld_blocks 0"
+ },
+ {
+  "observation": "The page is short, about 2737px tall at 1440px wide, and it has three screen-height slices. Body text is 16px with a 25.6px line height (1.6). Small text for meta and labels uses the small element, 9 times, and b and strong tags for emphasis.",
+  "category": "typography",
+  "evidence": "page_height 2737; body_font_size 16px, line_height 25.6px; small 9, strong 6, b 3"
+ },
+ {
+  "observation": "Card text is tiered inside each card. The thread title is white at about 16px and medium weight. The meta row, with username and 'N replies', is smaller and gray. In the contributor cards the username is bold and the count is smaller and gray. That makes a consistent title-over-meta pattern across card types.",
+  "category": "typography",
+  "evidence": "screenshot slices 0-1; top_text_colors gray 46 elements"
+ }
+]

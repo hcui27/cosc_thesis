@@ -1,0 +1,272 @@
+[
+ {
+  "observation": "A renders as an unstyled default-browser page. B renders as a fully styled, designed landing page with a branded teal palette.",
+  "category": "overall styling",
+  "evidence": "A: 920 of ~1000 elements use Times New Roman, text is rgb(0,0,238) default link blue (390 elements), and 0 flex or grid. B: 6 grid and 24 flex containers, one inline style block, and a teal/green palette.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's typography is the browser default serif. B uses a Helvetica Neue / Arial sans-serif stack.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Times New Roman 920, Arial 77, FontAwesome 1. B: Helvetica Neue 279, Arial 2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's h1 is the small brand name, in default bold black serif and left-aligned. B's h1 is the hero tagline, large, light-weight and centered.",
+  "category": "typography",
+  "evidence": "A h1 'Natural Wellbeing', 32px, weight 700, rgb(0,0,0), text-align start. B h1 'For Women\\nLike You', 73.6px, weight 300, rgb(38,51,47), center.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's h1 mixes weights and colors inside one headline: 'For' is light dark-gray and 'Women Like You' is bold teal. A has no such mixed treatment.",
+  "category": "typography",
+  "evidence": "B slice 00 shows 'For' in light weight and 'Women Like You' in bold dark teal; B has 2 strong tags.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's h2 elements render at 80px, but visibly the page is mostly black default text. B's h2 is 38.4px at weight 400.",
+  "category": "typography",
+  "evidence": "A h2 font_size 80px, weight 700. B h2 38.4px, weight 400.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a defined body color and line-height. A has a transparent body background, black text and 'normal' line-height.",
+  "category": "typography",
+  "evidence": "B body_bg rgb(255,255,255), body_color rgb(38,51,47), line-height 25.6px. A body_bg rgba(0,0,0,0), body_color rgb(0,0,0), line-height normal.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a restrained teal/green palette with a dark near-black footer. A shows only default grays, black and blue.",
+  "category": "color",
+  "evidence": "B backgrounds: rgb(42,157,154), rgb(29,111,109), rgb(241,247,245), rgb(27,38,35). A backgrounds: rgb(239,239,239) on 20 elements and white on 3.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's buttons and links use unstyled default controls. B's primary button is a filled teal pill with white text.",
+  "category": "components",
+  "evidence": "A primary_button 'Close menu': bg rgb(239,239,239), radius 0px, padding 1px 6px. B primary_button 'Shop All': bg rgb(42,157,154), white text, radius 999px, padding 13px 28px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses several button styles: filled teal pills, a white pill on the teal band, and an outlined pill ('View all'). A has only default gray buttons and underlined blue text links.",
+  "category": "components",
+  "evidence": "B slices 01-02 show 'View all' outlined, 'Learn More' white-filled, and 'Get Rewarded', 'Say Hello' and 'Have a Question?' teal-filled. B has 8 pill-radius elements.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has no rounded corners anywhere. B uses small and medium radii on cards plus pill shapes.",
+  "category": "decoration",
+  "evidence": "A border_radius_buckets: bucket_0 998, all others 0. B: bucket_1_7 9, bucket_8_15 24, pill 8.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero has a pale mint gradient background with decorative large ring/circle shapes in the corners. A has none of this.",
+  "category": "decoration",
+  "evidence": "B gradient_backgrounds 2; B slice 00 shows translucent circular outlines at top-left and bottom-right. A gradient_backgrounds 0.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a teal gradient band for the 'Inspired By Nature / Refined By Science' statement, with a vertical divider line beside the copy and a white button. In A the same copy appears as plain stacked default paragraphs.",
+  "category": "layout",
+  "evidence": "B slice 01 shows a two-column teal gradient section with a left border on the text column. A slice 10 shows 'Inspired By Nature' and 'Refined By Science' as plain <p>-style text with a blue 'Learn More' link.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a translucent sticky-looking header and a backdrop blur effect. A has none.",
+  "category": "decoration",
+  "evidence": "B backdrop_blur 1 and a background of rgba(255,255,255,0.96) on one element. A backdrop_blur 0.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has an announcement bar and a secondary utility bar above the main navigation. In A, the equivalent items (phone, contact, social) appear as plain bulleted link lists.",
+  "category": "layout",
+  "evidence": "B slice 00: dark teal strip 'Free Shipping on all US orders over $50', then a light bar with 'Call Us', 'Contact Us' and social links. A slices 03-14: 'Call Us: 1 (800) 536-9353' and 'Contact Us' as default bullets.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's main navigation is a horizontal row: logo on the left, four centered links, and Log in / Search / Cart on the right. A's navigation is a vertical default bulleted list with nested submenus fully expanded.",
+  "category": "navigation",
+  "evidence": "B slice 00 shows a single-row header with a <nav> tag (1). A slice 03 shows nested ul/li with disc, circle and square markers, and 'Close menu' and expander buttons visible. A semantic nav count is 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A exposes hidden UI state: a 'Close menu' button, empty small expander buttons, a '\"Close (esc)\"' lightbox button, and a 'Skip to content' link all render visibly. B shows none of these.",
+  "category": "components",
+  "evidence": "A slices 02, 03 and 17 show 'Skip to content', 'Close menu' and '\"Close (esc)\"' buttons. A has 20 buttons, B has 1.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's inline SVG icons (user, Facebook, Instagram, and others) render at oversized scale, filling the viewport width. B has no inline SVGs and uses text links for the same functions.",
+  "category": "imagery",
+  "evidence": "A svgs 41; slices 02, 04 and 05 show giant black person silhouette, Facebook 'f' and black circle. B svgs 0; the header shows text 'Log in', 'Search', 'Cart' and the social names.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's slider banner images are in the DOM but render with 0x0 size and show as blank white gaps. B has no slider and shows no large banner imagery.",
+  "category": "imagery",
+  "evidence": "A images NWB_Slider_Mockup_01–05 (2000x400) and Mobile (600x400) all have rect w 0 h 0. A slices 10 and 11 show large blank spans between text blocks.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's product packshot images (Adaptogenic Stress Relief, Hair Essentials, etc.) are in the DOM but are not rendered, with natural size 0x0. B lists the same products as text cards with name and price only, with no product photos.",
+  "category": "imagery",
+  "evidence": "A images Adaptogenic_Stress_Relief…900x.png and others show natural [0,0] and rect 0. B slice 01 shows 12 white cards containing only a bold name and a teal price.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B introduces a 'Our Supplements' section with a 4-column grid of 12 product cards showing prices. A has no corresponding visible product grid or prices.",
+  "category": "layout",
+  "evidence": "B headings: h2 'Our Supplements' and 12 h3 product names, with prices such as $39.95, from $29.95 and $24.95. A heading outline has no product headings or prices.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds a sale/price copy treatment, using teal bold prices and a 'from $' prefix for variable-priced items. A has no price copy in its outline.",
+  "category": "copy",
+  "evidence": "B slice 01: 'from $29.95' for Hair Essentials and 'from $39.95' for Bladder Control Plus with Urox®.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B shows four collection tiles under the hero, each a bordered rounded card with a colored swirl icon (orange, green, teal, magenta) at 64px and a bold label. A renders the same icons small at 70x70 within the footer-adjacent area.",
+  "category": "imagery",
+  "evidence": "B images nwb_icon-life_* at y≈797, 64x64 each. A same icons at x 8, y 17237–17558, 70x70, stacked vertically.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a five-card collection grid with lifestyle photos (woman with kettlebell, portrait, parent and child, older woman with water bottle, supplements on wooden spoons) plus link lists beneath each. A does not render these photos.",
+  "category": "imagery",
+  "evidence": "B images d422347d…jpg, 6de10366…jpg, etc. at 209x139 with descriptive alt text; B slice 02 shows them. A has no equivalent lifestyle images with rects.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's images have descriptive alt text, while A's content images have empty alt and 5 images lack an alt attribute.",
+  "category": "imagery",
+  "evidence": "B alt_missing 0, with alts like 'Woman exercising with a kettlebell' and 'Life Glow collection'. A alt_missing 5; most A images have alt ''.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's logo is rendered at the top-left of a header at 140x46. A's logo appears twice, at 140x46 and 110x36, around y≈10830, mid-document.",
+  "category": "imagery",
+  "evidence": "A images nwb_logo_140x.png at y 10830 and nwb_logo_110x.png at y 10840. B logo at x160, y88.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is far taller than B's, mostly from oversized SVGs and blank spaces. B is compact.",
+  "category": "layout",
+  "evidence": "A page_height 22740 and 18 slices. B page_height 4648 and 4 slices.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses a centered content container of about 1120px (160–1280) with a CSS grid and flex layout. A is a single left-aligned column flush against the left edge with an 8px default margin.",
+  "category": "layout",
+  "evidence": "B content x range 160–1280 within 1440 width. A elements at x=8 and x=48; A display_grid 0, display_flex 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows three engagement cards ('Wellbeing Rewards', 'Meet Our Team', 'Ask An Expert') in a bordered 3-column row with centered text and a teal pill CTA each. A presents the same h3 headings as unstyled headings.",
+  "category": "components",
+  "evidence": "Both have h3 'Wellbeing Rewards', 'Meet Our Team', 'Ask An Expert'. B slice 02 shows white rounded cards on a pale mint background with buttons 'Get Rewarded', 'Say Hello' and 'Have a Question?'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B alternates section backgrounds (white, pale mint, teal gradient, deep teal, near-black) to separate content bands. A has no section backgrounds.",
+  "category": "decoration",
+  "evidence": "B top_backgrounds include rgb(241,247,245) on 3 elements, rgb(29,111,109) on 2 and rgb(27,38,35) on 1. A has only rgb(239,239,239) button grays and white.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's newsletter is a centered 'Sign Up and Save' band on deep teal with a pill-shaped email field and 'Subscribe' button side by side. A shows an h4 \"WHAT'S YOUR EMAIL?\" and has 3 forms and 8 inputs.",
+  "category": "components",
+  "evidence": "B h2 'Sign Up and Save', 1 form, 1 input, 1 button. A h4 \"WHAT'S YOUR EMAIL?\", forms 3, inputs 8.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer is a dark multi-column layout with three headed columns (Shop, Learn More, Contact Us), contact hours and social text links. A's footer is a plain vertical list.",
+  "category": "layout",
+  "evidence": "B h4s 'Shop', 'Learn More', 'Contact Us'; slice 03 shows a near-black background rgb(27,38,35) and 3 columns. A slice 17 shows a bulleted list ending with Instagram.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Payment icons are shown in both. In B they sit in a centered horizontal row at 39x26; in A they are stacked vertically with bullet markers.",
+  "category": "imagery",
+  "evidence": "B images american-express.svg … visa.svg at y 4532, x 513–888. A slice 17 shows a bulleted vertical list of AMEX, Apple Pay, Diners, Discover, JCB, Mastercard, PayPal, Venmo and Visa icons.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's Apple Pay icon renders as a white box with a black curved outline. In A the same icon renders as an 'Apple Pay' wordmark.",
+  "category": "imagery",
+  "evidence": "B slice 03 shows the second payment icon with no visible mark; A slice 17 shows 'Pay' with the Apple logo.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has far more semantic sectioning markup (nav, 8 sections, 5 articles) and a clean heading hierarchy. A has 0 nav, section or article elements and relies on 385 divs.",
+  "category": "DOM structure",
+  "evidence": "B semantic: nav 1, section 8, article 5. A semantic: nav 0, section 0, article 0; div 385.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B is a minimal, script-free DOM. A is a captured Shopify page with many scripts, styles and tracking elements.",
+  "category": "DOM structure",
+  "evidence": "B: 0 scripts, 1 style, 19 images, 86 anchors, ~290 total tags. A: 96 scripts, 27 style tags, 11 noscript, 4 iframes, 20 meta tags, pixel.png tracking image.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's meta is minimal (charset, viewport, description). A carries rich metadata (OG, Twitter, theme-color, shopify-checkout, etc.).",
+  "category": "DOM structure",
+  "evidence": "B meta_names: 3. A meta_names include og:title, og:image, twitter:card, theme-color, shopify-digital-wallet.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page titles differ. A is 'Holistic Health Supplements – Natural Wellbeing' and B is 'Natural Wellbeing | All-Natural Supplements For Women'. A has 10 title tags, probably from SVG titles.",
+  "category": "copy",
+  "evidence": "A title text and tag_counts title 10; B title 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds copy absent from A's outline: the eyebrow 'ALL-NATURAL SUPPLEMENTS', the subhead 'Mindfully Participate in Your Everyday Wellness', 'Our Supplements', 'Sign Up and Save' and a free-shipping announcement. B's h2 'Inspired By Nature / Refined By Science' appears as an h2, while A renders that text as non-heading paragraphs.",
+  "category": "copy",
+  "evidence": "B heading_outline contains these headings. A outline has only 8 headings and 'Inspired By Nature' appears as plain text in slice 10.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A heading hierarchy is shallow: 1 h1, 3 h2, 3 h3, 1 h4. B has 1 h1, 6 h2, 20 h3, 3 h4, with product and collection names as h3.",
+  "category": "DOM structure",
+  "evidence": "A tag_counts h2 3, h3 3, h4 1. B h2 6, h3 20, h4 3.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses transitions on many elements (27) for hover states and no animations or transforms. A has 1 transition and 2 transforms.",
+  "category": "decoration",
+  "evidence": "B effects: transitions 27, animations 0, transforms 0. A: transitions 1, animations 0, transforms 2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Neither page uses box-shadows. B separates cards with thin pale borders.",
+  "category": "decoration",
+  "evidence": "box_shadows 0 on both; B slices show 1px light borders around cards.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses far more utility-style classes, with 1190 class tokens (316 unique). B has 82 class tokens (32 unique) in a hand-written naming style.",
+  "category": "DOM structure",
+  "evidence": "A classes total 1190, unique 316, tailwind_like 0.168. B total 82, unique 32, tailwind_like 0.037.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has far more inline style attributes and ARIA attributes than B. B has 4 inline styles and 2 aria attributes.",
+  "category": "DOM structure",
+  "evidence": "A inline_style_attrs 96, aria_attrs 81. B inline_style_attrs 4, aria_attrs 2.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's 'Discover Another Way' collection cards list product links inside each card as small gray text. A shows the same product lists only inside the expanded vertical navigation.",
+  "category": "navigation",
+  "evidence": "B slice 02 lists links such as 'Adaptogenic Stress Relief' and 'Golden Milk Bliss' under Life Boosters. A slice 03 shows the same names in nested bullets under Shop > Life Boosters.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages have the same footer legal text and copyright, but they render differently. A has a centered FDA disclaimer in a narrow block and unstyled '© 2021…' text. B has a small light-gray centered disclaimer above a thin divider.",
+  "category": "copy",
+  "evidence": "Both contain '*These statements have not been evaluated by the FDA…' and '© 2021 Natural Wellbeing Distribution, Inc.'. A slice 17 shows black serif text; B slice 03 shows light-gray sans text.",
+  "which_side": "both"
+ }
+]

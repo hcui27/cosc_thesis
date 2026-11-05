@@ -1,0 +1,101 @@
+{
+ "attributes": [
+  {
+   "name": "video_presentation_method",
+   "definition": "How a video is represented on the page when shown as a poster/preview rather than an embedded playing video.",
+   "family": "component",
+   "values": [
+    {
+     "value": "static_screenshot_image",
+     "definition": "A flat image of a video frame, with player UI/title baked into the picture."
+    },
+    {
+     "value": "css_placeholder_with_play_overlay",
+     "definition": "A styled placeholder block (gradient/solid) with a separate play icon overlay, no real video frame."
+    },
+    {
+     "value": "live_embedded_player",
+     "definition": "A real working video player or iframe embed."
+    },
+    {
+     "value": "not_present_or_other",
+     "definition": "No video, or another treatment."
+    }
+   ]
+  },
+  {
+   "name": "video_alt_text",
+   "definition": "Accessibility text treatment of the video thumbnail or placeholder image.",
+   "family": "semantic_dom",
+   "values": [
+    {
+     "value": "empty_alt",
+     "definition": "Alt attribute is present but empty."
+    },
+    {
+     "value": "descriptive_alt",
+     "definition": "Alt text describes the video or its title."
+    },
+    {
+     "value": "not_specified",
+     "definition": "Alt text treatment is not stated or not applicable."
+    }
+   ]
+  },
+  {
+   "name": "play_control_rendering",
+   "definition": "How the play button/controls are rendered.",
+   "family": "decoration",
+   "values": [
+    {
+     "value": "baked_into_image",
+     "definition": "Player controls are part of the raster image."
+    },
+    {
+     "value": "separate_overlay_icon",
+     "definition": "A distinct circular/translucent play icon layered over the thumbnail via markup/CSS."
+    },
+    {
+     "value": "native_controls",
+     "definition": "Browser or player-provided functional controls."
+    },
+    {
+     "value": "none_or_other",
+     "definition": "No play control or other."
+    }
+   ]
+  }
+ ],
+ "codes": [
+  {
+   "id": "s607",
+   "attribute": "video_presentation_method",
+   "value": "static_screenshot_image"
+  },
+  {
+   "id": "s607",
+   "attribute": "video_alt_text",
+   "value": "empty_alt"
+  },
+  {
+   "id": "s607",
+   "attribute": "play_control_rendering",
+   "value": "baked_into_image"
+  },
+  {
+   "id": "s806",
+   "attribute": "video_presentation_method",
+   "value": "css_placeholder_with_play_overlay"
+  },
+  {
+   "id": "s806",
+   "attribute": "play_control_rendering",
+   "value": "separate_overlay_icon"
+  },
+  {
+   "id": "s806",
+   "attribute": "video_alt_text",
+   "value": "not_specified"
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+[
+ {
+  "observation": "Page title is a brand name plus tagline: 'Natural Wellbeing | All-Natural Supplements For Women Like You'. The page has lang=en, three meta tags (charset, viewport, description) and no JSON-LD.",
+  "category": "semantic structure",
+  "evidence": "facts.json title, lang 'en', meta_names, jsonld_blocks 0"
+ },
+ {
+  "observation": "The type system uses one family throughout: Helvetica Neue with Helvetica/Arial fallbacks. It appears on all 286 counted elements, and there is no separate display or serif face.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['Helvetica Neue',286]]; h1 font_family"
+ },
+ {
+  "observation": "The hero h1 is 67.2px at weight 300, centered, in dark slate. 'For Women' is light and 'Like You' is bold teal, so one heading mixes two weights and colors across a line break.",
+  "category": "typography",
+  "evidence": "h1 font_size 67.2px, font_weight 300, color rgb(43,58,61), text 'For Women\\nLike You'; slice 0 shows 'Like You' bold teal"
+ },
+ {
+  "observation": "A small uppercase, letter-spaced teal eyebrow, 'ALL-NATURAL SUPPLEMENTS', sits above the hero h1. A gray subtitle, 'Mindfully Participate in Your Everyday Wellness', sits below it.",
+  "category": "typography",
+  "evidence": "slice 0 hero region"
+ },
+ {
+  "observation": "The hero has no photo. It is a centered text block on a very pale mint-to-off-white diagonal gradient, with a single pill-shaped teal 'Shop All' button.",
+  "category": "imagery",
+  "evidence": "gradient_backgrounds 1; slice 0 hero; image list has no hero image with a size"
+ },
+ {
+  "observation": "The palette is teal-based. Body text is rgb(43,58,61), buttons and bars are teal rgb(26,138,148), the deep teal band is rgb(19,104,112), the pale section tint is rgb(241,247,246), and the footer is near-black teal rgb(31,47,49). White fills 29 elements.",
+  "category": "color",
+  "evidence": "colors.top_backgrounds and top_text_colors"
+ },
+ {
+  "observation": "A teal announcement bar at the very top reads 'Free Shipping on all US orders over $50' in white centered text. A thin pale utility bar below it holds the phone number and Contact Us on the left and Facebook, Pinterest and Instagram on the right.",
+  "category": "layout",
+  "evidence": "slice 0 top 75px"
+ },
+ {
+  "observation": "The main header has the logo on the left, four bold nav links in the center (Shop with a caret, Our Story, The Natural Wellbeing Difference, Health Journal), and Log in, Search and Cart on the right. Content is held to a 1140px column from x=150 to x=1290.",
+  "category": "layout",
+  "evidence": "logo rect x150,y87,w140,h46; nav 1; header 1; slice 0"
+ },
+ {
+  "observation": "The Best Sellers section is a 4-column by 3-row grid of 12 bordered, rounded cards. Each card holds only a bold product name at top and a bold teal price at bottom. There are no product images in the cards.",
+  "category": "components",
+  "evidence": "12 h3 product names; images list shows no product images with a rect; slice 0 cards y≈798–1283"
+ },
+ {
+  "observation": "Price text is bold teal, and some prices carry a 'from' prefix ('from $29.95', 'from $39.95'). Product names wrap to two lines where long ('Bladder Control Plus with Urox®'). Price positions stay aligned at the card bottom.",
+  "category": "copy",
+  "evidence": "slice 0 cards Hair Essentials and Bladder Control"
+ },
+ {
+  "observation": "Product cards have thin light-gray borders, a radius of roughly 8–12px, and no shadows, so depth comes from outlines.",
+  "category": "decoration",
+  "evidence": "box_shadows 0; border_radius_buckets bucket_8_15 19; slice 0"
+ },
+ {
+  "observation": "The page uses no box-shadows, backdrop blur, animations or transforms. It has 23 transitions, which presumably cover hover states.",
+  "category": "decoration",
+  "evidence": "box_shadows 0, backdrop_blur 0, animations 0, transforms 0, transitions 23"
+ },
+ {
+  "observation": "Buttons are mostly fully rounded pills in three variants. Solid teal with white text is used for Shop All, Shop Wellness Kits and Subscribe. Outlined teal with teal text is used for View all, Get Rewarded, Say Hello and Have a Question?. A white pill with teal text sits on the dark teal band for Learn More.",
+  "category": "components",
+  "evidence": "border_radius_buckets bucket_pill 7; slices 0–2"
+ },
+ {
+  "observation": "A centered 'View all' outlined pill button closes the Best Sellers grid.",
+  "category": "components",
+  "evidence": "slice 1 top"
+ },
+ {
+  "observation": "A pale mint band holds four equal category cards, Life Boosters, Life Glow, Life Essentials and Life Transitions. Each has a 72px square swirl-knot icon in a different color (orange, green, teal, magenta) and a bold centered label.",
+  "category": "imagery",
+  "evidence": "icon rects 72x72 at y1543; slice 1 y150–445"
+ },
+ {
+  "observation": "The category icons are one repeated interlocking-circle motif, the same as the logo mark, recolored per category. They are PNGs with empty alt text and a natural size of 100x100.",
+  "category": "imagery",
+  "evidence": "nwb-icon-life-*.png natural [100,100], alt ''; nwb-logo.png"
+ },
+ {
+  "observation": "The 'Wellness Bundles' h3 and a sale-collection image (NWB-Collection-On-Sale.png) are in the DOM, but the screenshot shows them as neither visible nor sized. Four product JPGs also have a 0x0 rect and are not rendered. Hidden content, probably a mega-menu, accounts for these.",
+  "category": "imagery",
+  "evidence": "images with natural [0,0] and rect 0; heading_outline 'Wellness Bundles' h3; no matching visible element in slices"
+ },
+ {
+  "observation": "A centered 'Renew Yourself, Naturally' h2 is followed by a narrow paragraph of about 4 lines in gray, then a 'Shop Wellness Kits' solid pill. The text column is about 750px wide and centered.",
+  "category": "layout",
+  "evidence": "slice 1 y≈520–790; h2 font_size 35.2px weight 400"
+ },
+ {
+  "observation": "A full-width deep-teal band carries a two-weight heading, 'Inspired By Nature' in light weight over 'Refined By Science' in bold, followed by white body copy and a white 'Learn More' pill. It echoes the hero's light/bold heading pattern.",
+  "category": "typography",
+  "evidence": "colors rgb(19,104,112); heading 'Inspired By Nature\\nRefined By Science'; slice 1 y850–1255"
+ },
+ {
+  "observation": "The section order alternates backgrounds: white, pale mint, white, deep teal, white, then a near-black footer. Each section has generous vertical padding of about 60–100px.",
+  "category": "layout",
+  "evidence": "slices 0–2; 7 section elements"
+ },
+ {
+  "observation": "Copy is brand-voice wellness language: 'Mindfully Participate', 'Renew Yourself, Naturally', 'Discover Another Way', 'Life is best traveled with a vibrant mind and healthy body.'. There are 428 words in total and 3 exclamation marks, with no emoji or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats words 428, exclamations 3, emoji 0, em_dashes 0"
+ },
+ {
+  "observation": "A large h2 sentence, 'Life is best traveled with a vibrant mind and healthy body.', introduces a three-column row of outlined cards: Wellbeing Rewards, Meet Our Team, Ask An Expert. Each card has a teal bold h3, short gray text and an outlined pill CTA.",
+  "category": "components",
+  "evidence": "slice 2 y290–615; h3s in heading_outline"
+ },
+ {
+  "observation": "The three info cards align their text and CTAs at slightly different heights, because the Rewards card has a three-line description and the other two have two lines. The cards share the same outer height.",
+  "category": "layout",
+  "evidence": "slice 2: 'Get Rewarded' y≈555 versus 'Say Hello' y≈530"
+ },
+ {
+  "observation": "The footer is a dark teal-black block in four columns (Shop, Learn More, Contact Us, Sign Up and Save), with h4 column headers in bold white and link lists in light gray-white. Learn More has 10 links, and Contact Us holds phone, email and opening hours as plain text.",
+  "category": "layout",
+  "evidence": "h4 x4; footer 1; ul 11; li 59; slice 2 y678–1257"
+ },
+ {
+  "observation": "The footer has a newsletter form with a single email input and a teal 'Subscribe' button, followed by three social text links. The form has one label and one input.",
+  "category": "components",
+  "evidence": "form 1, label 1, input 1; slice 2"
+ },
+ {
+  "observation": "The footer legal strip has a thin divider, an FDA disclaimer in small muted text, a row of 9 payment-method SVG badges (each 43x26px) and a '© 2021 Natural Wellbeing Distribution, Inc.' line. The badges are the only SVG files used, and they are loaded as img elements.",
+  "category": "imagery",
+  "evidence": "images american-express.svg … visa.svg at y3758; counts.svgs 0"
+ },
+ {
+  "observation": "Social links appear twice, in the top utility bar and in the footer. They are plain text links without icons.",
+  "category": "copy",
+  "evidence": "slice 0 top-right; slice 2 footer"
+ },
+ {
+  "observation": "The page has 87 anchors for only 3 buttons. Most interaction is link-based, including the product cards, nav and footer.",
+  "category": "semantic structure",
+  "evidence": "counts anchors 87, buttons 3"
+ },
+ {
+  "observation": "Landmark structure is clean: one header, one nav, one main, seven sections and one footer. There is exactly one h1. There are no article, aside or figure elements.",
+  "category": "semantic structure",
+  "evidence": "semantic block; h1_count 1"
+ },
+ {
+  "observation": "The heading hierarchy is irregular. The first headings in DOM order are five h3s (the menu categories) before the h1. 20 h3 elements outnumber the 5 h2s, and product names are h3s directly under the Best Sellers h2.",
+  "category": "semantic structure",
+  "evidence": "heading_outline starts with h3 Life Boosters…Wellness Bundles; h3 20, h2 5"
+ },
+ {
+  "observation": "The markup is lightly classed and not utility-based: 77 class attributes with 30 unique values, and 0 tailwind-like fraction. Only 2 inline style attributes are used. Layout uses 21 flex and 4 grid containers.",
+  "category": "semantic structure",
+  "evidence": "classes total 77, unique 30, tailwind_like_fraction 0; inline_style_attrs 2; display_flex 21, display_grid 4"
+ },
+ {
+  "observation": "Border radii are mostly 0 (244 elements), with a smaller set at 1–7px (16), 8–15px (19) and pill (7). Sharp edges are the default and rounding is reserved for cards, inputs and buttons. The Menu toggle button has a 6px radius and 6px 12px padding with a transparent background.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets; primary_button radius 6px padding 6px 12px"
+ },
+ {
+  "observation": "Body text is 16px with a 25.6px line height (1.6). The section h2s are 35.2px at normal weight 400, and the 'Life is best traveled…' heading looks similar in size. Large headings use light-to-regular weights while card titles and buttons use bold.",
+  "category": "typography",
+  "evidence": "body_font_size 16px; body_line_height 25.6px; h2 35.2px weight 400"
+ },
+ {
+  "observation": "The text colors form a tonal gray-teal scale: dark slate for headings, a mid gray-teal for paragraphs, a pale gray for footer text, and deep teal for prices and links. Each is a tint of the same hue.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(43,58,61), rgb(93,109,112), rgb(166,184,184), rgb(212,224,224), rgb(19,104,112)"
+ },
+ {
+  "observation": "Aria usage is minimal, with 5 attributes on the page. Images all have an alt attribute (alt_missing 0), but the decorative icons use empty alt. The 3 buttons include the Menu toggle, which suggests a collapsible nav for narrower widths.",
+  "category": "semantic structure",
+  "evidence": "aria_attrs 5; alt_missing 0; button 3"
+ },
+ {
+  "observation": "The page is 1440px wide and 3857px tall, laid out as a single centered scroll with symmetric alignment. Headings, paragraphs and CTAs are center-aligned, and only the nav, footer columns and product-card text are left-aligned.",
+  "category": "layout",
+  "evidence": "page_width 1440, page_height 3857; slices 0–2"
+ },
+ {
+  "observation": "The page is image-light and text-heavy. Besides the logo, the category icons and the payment badges, no photography appears in the rendered screenshot. A supplements store shows no product packshots.",
+  "category": "imagery",
+  "evidence": "images with rects are logo, 4 icons and 9 payment SVGs; slices 0–2"
+ }
+]

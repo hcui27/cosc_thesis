@@ -1,0 +1,308 @@
+[
+ {
+  "observation": "Overall color scheme differs: A uses a white page body with dark grey text, while B uses a near-black page body with warm off-white text.",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255), body_color rgb(88,88,88); B body_bg rgb(15,14,14), body_color rgb(242,236,228)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Each side uses a different accent hue: A uses a saturated red, B uses a burnt orange.",
+  "category": "color",
+  "evidence": "A top_backgrounds include rgb(232,43,24) (7 elements) and red 'HOME' nav item; B top_backgrounds include rgb(226,104,43) (5 elements) on announcement bar and buttons",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's typography mixes several webfonts: Open Sans, Cabin, Krona One, a script face (Arizonia) and book antiqua. B uses only system-ui, Georgia and Arial.",
+  "category": "typography",
+  "evidence": "A fonts: Open Sans 302, Cabin 155, Krona One 66, FontAwesome 5, book antiqua 4, Arizonia 1; B fonts: system-ui 88, Georgia 15, Arial 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's h1 is set in a bold uppercase sans-serif. B's h1 is a larger serif at normal weight in sentence case.",
+  "category": "typography",
+  "evidence": "A h1: 60px, weight 700, Cabin, 'CIUDAD EN ESAPANA'; B h1: 76px, weight 400, Georgia, 'Modern & Contemporary Art'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 27 h1 elements: the slider titles are repeated three times. B has a single h1.",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 27, with the outline repeating 9 slide titles 3×; B h1_count 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "Section headings in A are small and uppercase. B's are large serif headings in sentence case.",
+  "category": "typography",
+  "evidence": "A h2 20px/700 'PHOTO\\nGALLERY'; B h2 44px/400 'Photo gallery'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds an h3 'Login or register' heading, which A does not have.",
+  "category": "DOM/semantic structure",
+  "evidence": "B heading_outline includes level 3 'Login or register'; B tag_counts h3: 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "Page titles differ: A is titled 'Home', while B uses the full foundation name.",
+  "category": "copy treatment",
+  "evidence": "A title 'Home'; B title 'F N Souza International Fine Arts Foundation & Family Trust Inc.'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The language attributes differ in regional specificity.",
+  "category": "DOM/semantic structure",
+  "evidence": "A lang 'en-gb'; B lang 'en'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header is a full-width painting slider with a centered, uppercase wide-display logotype and a script 'History & Works' tagline. B's header is a compact dark bar with a small serif wordmark on the left and the nav on the right.",
+  "category": "layout",
+  "evidence": "A_slice_00 top: centered Krona One-style title over the painting; B_slice_00: left-aligned two-line serif name and right-aligned nav in a dark bar",
+  "which_side": "both"
+ },
+ {
+  "observation": "The forgery-exoneration notice is handled differently. A places it as an uppercase nav item that wraps to a second line. B shows it as an underlined link in a separate orange announcement bar at the top.",
+  "category": "copy treatment",
+  "evidence": "A_slice_00 nav row 2: 'F. N. SOUZA EXONERATES SON...'; B_slice_00 orange bar with title-case underlined text",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's nav labels are uppercase, with the active item in red. B's nav labels are title case in muted grey, with dropdown caret indicators.",
+  "category": "typography",
+  "evidence": "A 'HOME' in red, 'ABOUT F N SOUZA'; B 'Family History ▾', 'Available For Sale ▾'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a painting slideshow with an overlay title and 9 circular pagination dots. B's hero is a static dark, abstract painterly background with an eyebrow, headline, subtitle and two CTA buttons.",
+  "category": "component choices",
+  "evidence": "A_slice_00: 'CIUDAD EN ESAPANA' with 9 dots; B_slice_00: 'HISTORY & WORKS' eyebrow, 'Explore the gallery' / 'About the artist' buttons",
+  "which_side": "both"
+ },
+ {
+  "observation": "B turns the nine slide titles into a horizontal strip of italic serif labels, each with an orange star bullet, placed below the hero.",
+  "category": "component choices",
+  "evidence": "B_slice_00 strip: '✦ Ciudad En Esapana ✦ Multicoloured Villagescape ... ✦ Last Supper'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's hero includes a semi-transparent dark band behind the header and nav.",
+  "category": "decoration/effects",
+  "evidence": "A top_backgrounds rgba(1,1,0,0.53); A_slice_00 translucent overlay at the top",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's sticky header uses a translucent background with a backdrop blur.",
+  "category": "decoration/effects",
+  "evidence": "B backdrop_blur 1, background rgba(15,14,14,0.92)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A marks section titles with large black graphic badges: a black rectangle with a white inner box, a solid black circle, and a black ring. B uses plain left-aligned serif headings.",
+  "category": "decoration/effects",
+  "evidence": "A_slice_00/01/02: 'FRANCIS NEWTON SOUZA' framed box, 'PHOTO GALLERY' black circle, 'CONTACT FORM' ring; A bucket_16_plus 2, bucket_pill 11",
+  "which_side": "A"
+ },
+ {
+  "observation": "In A's bio section, a small thumbnail with a thin border sits next to centered serif paragraph text with an inline 'Read More' link. In B, a large photo sits beside a left-aligned heading, body text and an orange pill 'Read More' button.",
+  "category": "layout",
+  "evidence": "A fnsouza.jpg rect 176×131; B fnsouza.jpg rect 484×275; A_slice_01 centered text; B_slice_00 two-column layout",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's bio paragraph is in a serif face (book antiqua). B's bio text is in system-ui sans.",
+  "category": "typography",
+  "evidence": "A fonts include 'book antiqua' (4); A_slice_01 serif paragraph; B fonts dominated by system-ui",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows the gallery as a 3+3 masonry-style grid of large images at their natural size. B shows all six as a single row of equal narrow tall tiles that crop the artwork.",
+  "category": "imagery handling",
+  "evidence": "A images e.g. landscape_tb 570×442 at rect 570×442, rows at y=2090 and y=2562; B all six rect 177×340 at y=1370",
+  "which_side": "both"
+ },
+ {
+  "observation": "B crops the wide landscape image heavily into a portrait tile.",
+  "category": "imagery handling",
+  "evidence": "B landscape-tb.jpg natural 570×442 rendered 177×340",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's gallery tiles and bio photo have slightly rounded corners. A's images are square-cornered.",
+  "category": "decoration/effects",
+  "evidence": "B bucket_1_7: 25; A bucket_1_7: 0, bucket_0: 520",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's gallery subtitle is centered under the circular heading. B places its subtitle right-aligned on the same row as the heading.",
+  "category": "layout",
+  "evidence": "A_slice_01 centered 'Explore a significant collection...'; B_slice_01 subtitle at the right of 'Photo gallery'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Image alt text differs: A's images have empty alt attributes, while B's images have descriptive alts.",
+  "category": "DOM/semantic structure",
+  "evidence": "A images alt ''; B alt 'Landscape', 'Last Supper', 'Mother and child', etc.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Image filenames use different separators: underscores in A, hyphens in B.",
+  "category": "imagery handling",
+  "evidence": "A 'landscape_tb.jpg'; B 'landscape-tb.jpg'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's contact form is two columns (Name/Email/Phone on the left, Message on the right) with placeholder text in light-grey fills. B's is a single narrow column with uppercase labels above dark inputs.",
+  "category": "layout",
+  "evidence": "A_slice_02 gray rgb(246,246,246) fields with placeholders; B_slice_01 labels 'NAME', 'EMAIL', 'MESSAGE', dark fields",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's form has a Phone field. B's form has no phone field.",
+  "category": "component choices",
+  "evidence": "A_slice_02 'Phone' input; B_slice_01 only Name, Email, Message; A input 11 vs B input 5",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses explicit label elements for its form fields. A relies mostly on placeholders.",
+  "category": "DOM/semantic structure",
+  "evidence": "B label 6; A label 2",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's submit button is an outlined, square-cornered, uppercase 'SEND MESSAGE' centered below the form. B's is a filled orange pill 'Send message' aligned left.",
+  "category": "component choices",
+  "evidence": "A primary_button radius 0px, bg white, padding 17.5px 30px; A_slice_02 vs B_slice_01 orange rounded button",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses pill-shaped buttons throughout: hero CTAs, Read More and Send message. A's only pill shapes are its slider dots and circles.",
+  "category": "decoration/effects",
+  "evidence": "B bucket_pill 5 with orange/outlined rounded buttons; B_slice_00",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's measured primary button is a 'Menu' toggle with a 6px radius, which suggests a menu control for small screens.",
+  "category": "component choices",
+  "evidence": "B primary_button text 'Menu', radius 6px, padding 8px 12px",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's footer is solid black with centered '© 2021 | PRIVACY POLICY' in bold uppercase, plus a 'More Art Gallery Templates at TemplateMonster.com' credit. B's footer is a dark bar with '© 2021 Privacy Policy' on the left and 'Login or register' on the right.",
+  "category": "layout",
+  "evidence": "A_slice_03; B_slice_01 bottom",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a red user-icon login button fixed at the top-right corner. B moves login to a footer link and dialogs.",
+  "category": "component choices",
+  "evidence": "A_slice_00 red square icon top-right; B 'Login or register' footer link, dialog: 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses native dialog elements, which A does not.",
+  "category": "DOM/semantic structure",
+  "evidence": "B tag_counts dialog 2; A none",
+  "which_side": "B"
+ },
+ {
+  "observation": "A wraps slides and gallery items in article and figure elements. B has none of these and uses section elements and a footer instead.",
+  "category": "DOM/semantic structure",
+  "evidence": "A article 6, figure 6, footer 0; B article 0, figure 0, section 3, footer 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM is much heavier, with many more divs, spans and classes.",
+  "category": "DOM/semantic structure",
+  "evidence": "A div 196, span 187, classes total 1104/unique 221; B div 17, span 1, classes total 34/unique 21",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many external scripts and stylesheets. B is self-contained, with one script and one style block.",
+  "category": "DOM/semantic structure",
+  "evidence": "A scripts 29, stylesheets 21, link 24; B scripts 1, stylesheets 0, style 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses more inline style attributes.",
+  "category": "DOM/semantic structure",
+  "evidence": "A inline_style_attrs 60; B 9",
+  "which_side": "A"
+ },
+ {
+  "observation": "Layout mechanisms differ: B uses CSS grid and flex. A uses almost no flex and no grid.",
+  "category": "layout",
+  "evidence": "B display_grid 10, display_flex 8; A display_grid 0, display_flex 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has more motion: transitions, transforms and an animation (the slider). B uses only a few transitions.",
+  "category": "decoration/effects",
+  "evidence": "A transitions 75, animations 1, transforms 11; B transitions 12, animations 0, transforms 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has one box shadow, which is visible under the bio photo. A has no shadows.",
+  "category": "decoration/effects",
+  "evidence": "B box_shadows 1; A box_shadows 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "A is a much taller page.",
+  "category": "layout",
+  "evidence": "A page_height 4120; B page_height 2567 (both 1440 wide)",
+  "which_side": "A"
+ },
+ {
+  "observation": "Body text metrics differ slightly.",
+  "category": "typography",
+  "evidence": "A body 16px/30px line-height; B 17px/28.05px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses an icon font. B uses no icon font and relies on text glyphs (✦, ▾).",
+  "category": "typography",
+  "evidence": "A FontAwesome 5 elements, i tags 3; B no icon font, star glyphs in the strip",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's meta tags include charset and viewport. A's include content-type and generator.",
+  "category": "DOM/semantic structure",
+  "evidence": "A meta_names content-type, description, generator; B charset, viewport, description",
+  "which_side": "both"
+ },
+ {
+  "observation": "Word counts differ. B adds copy A lacks, such as the hero subtitle 'The works and legacy of Francis Newton Souza, India's mystical expressionist.'",
+  "category": "copy treatment",
+  "evidence": "A words 227, emoji 1; B words 160, emoji 0; B_slice_00 subtitle",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a Facebook-blue and a Google-red background element, which suggests social login buttons. B has none.",
+  "category": "color",
+  "evidence": "A top_backgrounds rgb(59,89,152) and rgb(223,74,50); absent in B",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses a secondary muted taupe text color for subtitles and labels.",
+  "category": "color",
+  "evidence": "B top_text_colors rgb(167,158,148) on 37 elements",
+  "which_side": "B"
+ },
+ {
+  "observation": "B separates sections with alternating dark tones and thin horizontal rules. A separates sections with white space on a white background.",
+  "category": "layout",
+  "evidence": "B backgrounds rgb(15,14,14) and rgb(24,22,22); B_slice_01 divider lines; A_slice_01/02 white gaps",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero eyebrow 'HISTORY & WORKS' is small, letter-spaced and orange. A renders the same tagline in a script font (Arizonia) flanked by thin rules.",
+  "category": "typography",
+  "evidence": "B_slice_00 orange spaced caps; A_slice_00 'History & Works' script; A Arizonia 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses more ARIA attributes and more button elements.",
+  "category": "DOM/semantic structure",
+  "evidence": "B aria_attrs 8, buttons 8; A aria_attrs 3, buttons 2",
+  "which_side": "B"
+ }
+]

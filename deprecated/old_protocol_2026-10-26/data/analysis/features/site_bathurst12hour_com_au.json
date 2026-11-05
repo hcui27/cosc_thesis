@@ -1,0 +1,708 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "The document titles use different separators and punctuation. A uses a hyphen and a straight apostrophe; B uses a pipe and a curly apostrophe.",
+   "evidence": "A title: \"Liqui-Moly Bathurst 12 Hour - Australia's International Endurance Race\"; B title: \"Liqui-moly Bathurst 12 Hour | Australia’s Inter",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|00",
+    "bathurst12hour_com_au|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "B has a full heading hierarchy: an h2 for each section, an h3 for each news story and an h4 for partners. A's outline has only the empty h1 and one h4 (\"FOLLOW US\").",
+   "evidence": "B: h2 ×2 (LATEST NEWS, FOLLOW US), h3 ×7 (article titles), h4 OUR PARTNERS; A: h1 (empty), h4 FOLLOW US, h5 ×2",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|07",
+    "bathurst12hour_com_au|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "A uses Open Sans for body text and Montserrat for the h1. B uses Helvetica Neue for every element.",
+   "evidence": "A fonts: Open Sans 354, Montserrat 3; B fonts: Helvetica Neue 187 only",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|10",
+    "bathurst12hour_com_au|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B's body text is larger, with a taller line height.",
+   "evidence": "body font-size/line-height: A 14px/21px, B 16px/24px",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|12",
+    "bathurst12hour_com_au|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "B's h1 is larger (64px vs 50px) and renders as a two-line uppercase tagline. In A, the visible header title is 'LIQUI-MOLY BATHURST 12 HOUR' set beside the logo.",
+   "evidence": "h1 font_size: A 50px Montserrat, B 64px Helvetica Neue; B slice 0 shows the large two-line headline",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|06",
+    "bathurst12hour_com_au|opus|13",
+    "bathurst12hour_com_au|opus|14",
+    "bathurst12hour_com_au|sonnet|01",
+    "bathurst12hour_com_au|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "B adds a location line, 'Mount Panorama, Bathurst', that does not appear in A's header.",
+   "evidence": "B slice 0, below the h1; A slice 0 header shows the title, tagline and dates only",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|15",
+    "bathurst12hour_com_au|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "The event dates appear as plain bold text in A and inside a solid red box in B.",
+   "evidence": "A slice 0: '31 JANUARY – 2 FEBRUARY 2020' in white bold; B slice 0: the same text on a red rgb(232,17,45) block",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|16",
+    "bathurst12hour_com_au|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "B shows a small logo in the top nav bar and a larger copy in the hero, so the same header image appears twice.",
+   "evidence": "B images: headerlogo.png at 41×48 (y 8) and at 150×173 (y 187); A has a single headerlogo at 135×156",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|18",
+    "bathurst12hour_com_au|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "B serves the header logo at 2× natural resolution (270×312). A uses 135×156.",
+   "evidence": "headerlogo natural size: A [135,156], B [270,312]",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|19"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I9",
+   "text": "B's nav bar uses a semi-transparent background with a backdrop blur. A has no blur effects.",
+   "evidence": "B backgrounds include rgba(14,15,18,0.94), backdrop_blur 1; A backdrop_blur 0",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|22",
+    "bathurst12hour_com_au|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "B uses a full-width red rule to separate the hero from the content and the follow section from the partners.",
+   "evidence": "B slices 0 and 1: red horizontal lines below the hero and above OUR PARTNERS",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|23",
+    "bathurst12hour_com_au|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "B introduces the news area with a 'LATEST NEWS' h2 followed by a horizontal hairline. A has no visible section heading above its news.",
+   "evidence": "B slice 0: 'LATEST NEWS' with a line extending right; A slice 0: the news starts directly with the featured image",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|25",
+    "bathurst12hour_com_au|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "A overlays the featured story's title on its image and adds a light-blue 'Featured News' badge. B places the featured image on the left and the text panel on the right (eyebrow, title, date, READ MORE).",
+   "evidence": "A slice 0: title 'Bathurst 12 Hour to return in 2022' over the image, badge at top left; B slice 0: split card with the image at 668×417 and",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|26",
+    "bathurst12hour_com_au|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A lays out the secondary news as a mixed mosaic: two medium overlay tiles, then small horizontal cards with the thumbnail on the left. B uses a uniform three-column grid of equal vertical cards.",
+   "evidence": "A images: 372×250 / 372×294, then 195×154 thumbnails; B: six images all 365×289 in 3 columns",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|27",
+    "bathurst12hour_com_au|sonnet|16",
+    "bathurst12hour_com_au|sonnet|40"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "B gives every news card a red 'READ MORE →' link. A has no read-more links.",
+   "evidence": "B slices 0–1: 'READ MORE →' in rgb(232,17,45) on each card; absent in A",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|30",
+    "bathurst12hour_com_au|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "B shows a date on every news item, including the featured story ('Oct 19, 2020'). A shows dates only on the small cards, in light blue.",
+   "evidence": "B slice 0 'Oct 19, 2020'; A dates such as 'Feb 04, 2020' in rgb(119,191,255)-like blue; time elements: 7 on both",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|31",
+    "bathurst12hour_com_au|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "The page backgrounds are different near-blacks. A is neutral grey; B is cool blue-black.",
+   "evidence": "body_bg: A rgb(20,20,20), B rgb(14,15,18); B cards rgb(23,25,30)",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|34",
+    "bathurst12hour_com_au|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "A uses blue as the link and accent color. B uses red for accents and grey for secondary text.",
+   "evidence": "A text colors: rgb(119,191,255) ×90, rgb(105,168,223); B: rgb(232,17,45) ×9, rgb(154,161,173) ×28",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|33",
+    "bathurst12hour_com_au|opus|35",
+    "bathurst12hour_com_au|sonnet|07",
+    "bathurst12hour_com_au|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "B turns 'FOLLOW US' into a full-width band with copy on the left and two outlined red rectangular buttons (FACEBOOK, TWITTER). A shows it as a sidebar card with icon glyphs.",
+   "evidence": "B slice 1: buttons with red borders; A slice 0: Social Media box with f and Twitter icons",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|37",
+    "bathurst12hour_com_au|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A's footer has a 'LINKS' block with a red bar marker and a vertical list separated by rules. B puts the same links inline at the bottom right of the footer.",
+   "evidence": "A slice 1: LINKS with Contacts/Media/Privacy Policy/Terms in blue; B slice 2: inline grey links at right",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|38",
+    "bathurst12hour_com_au|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "A shows partner logos as white marks directly on a dark grey band in a 6-column grid. B puts each logo on a white tile in an 8-column grid, which makes most of the white logos nearly invisible.",
+   "evidence": "A slices 1–2: logos clearly visible on rgb(47,47,47)-type grey; B slice 1: white tiles mostly blank, with faint Pirelli/AMG/Porsche/Fox. B w",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|40",
+    "bathurst12hour_com_au|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "B labels the partner area with a small 'OUR PARTNERS' heading. A's partner band has no heading.",
+   "evidence": "B h4 'OUR PARTNERS'; A slice 1: no label above the logos",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|41"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I22",
+   "text": "B has meaningful alt text on the featured news image. A's news images all have empty alt.",
+   "evidence": "B Bath12Hr...770x480 alt 'Bathurst 12 Hour to return in 2022'; A same file alt \"\"",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|32",
+    "bathurst12hour_com_au|opus|43",
+    "bathurst12hour_com_au|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "Partner tiles in B have small rounded corners. A uses square corners throughout, apart from 2 pill shapes.",
+   "evidence": "border_radius buckets: A bucket_1_7 0, pill 2; B bucket_1_7 26, pill 0",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|44",
+    "bathurst12hour_com_au|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "B is built with flexbox and CSS grid. A uses almost no flex and no grid.",
+   "evidence": "display_flex: A 4, B 48; display_grid: A 0, B 3",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|opus|47",
+    "bathurst12hour_com_au|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "B's primary button is a labelled 'Menu' toggle with 4px radius and padding. A's detected primary button is an unlabelled transparent control in red with 0 radius.",
+   "evidence": "primary_button: A text '', color rgb(237,28,36), radius 0px; B text 'Menu', radius 4px, padding 8px 12px",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|48"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I26",
+   "text": "B's footer logo is smaller and sits above the copyright line. In A, the logo sits to the left of the copyright on the same line.",
+   "evidence": "footerlogo rect: A 72×83 with text at its right; B 56×64 with copyright below",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|49",
+    "bathurst12hour_com_au|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "B is shorter overall, despite more words of copy.",
+   "evidence": "page_height A 3080, B 2834; words A 129, B 156",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|50",
+    "bathurst12hour_com_au|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "Both keep the diagonal red and blue stripe graphic in the header background. In A, it is a brighter band at the right of the header; in B, a darker, faded version sits behind the hero.",
+   "evidence": "A slice 0: vivid red/blue diagonal at top right; B slice 0: dim red/blue diagonal behind the headline",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|opus|52"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I29",
+   "text": "A uses several neutral gray panel backgrounds: #222 on 12 elements, #343434 on 6, plus #3a3a3a, #333 and #2f2f2f. B has a narrower dark set, mostly one panel color plus 26 white backgrounds.",
+   "evidence": "A top_backgrounds: 34,34,34 ×12; 52,52,52 ×6; 58,58,58; 51,51,51; 47,47,47. B: white ×26; 23,25,30 ×8.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|06"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I30",
+   "text": "A's main navigation has 5 items (Home, News, Video, The Event, The Race, Bushfires Appeal). The Home item is red with an underline, and the others are light blue. It sits in a dark boxed bar below the hero. B's nav has 9 items in white uppercase, including Competitors, Schedule, Results and Previous Races, placed in th",
+   "evidence": "A slice 0 nav (HOME…BUSHFIRES APPEAL, 6 labels). B slice 0 nav includes COMPETITORS, SCHEDULE, RESULTS, PREVIOUS RACES; 'THE EVENT', 'THE RA",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "A uses a two-column layout: a 743px-wide news column on the left and a ~357px sidebar on the right with an empty box, a 'FOLLOW US' heading and a 'Social Media' card. B is a single full-width column of about 1148px with no sidebar.",
+   "evidence": "A featured image rect x155 w743; sidebar at x928. B featured image x147 w668 and cards spanning x147–1293.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "A's overlay tiles put white bold titles directly on photographs, and the titles are truncated with ellipses: 'More than $74,000 raised via #B12hr Bushfire…', 'First major do-nation lodged for B12hr Bushfire…', and 'Gounon hails M-Sport perfor-mance after breakthrough 12…'. B shows the full titles beneath the images wit",
+   "evidence": "A slice 0/1 text; B h3 headings, e.g. 'More than $74,000 raised via #B12hr Bushfire Relief efforts'.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "A's DOM uses many semantic wrappers: 8 header, 8 footer, 7 article, 5 aside and 2 section elements, with 122 divs. B uses 1 header, 1 footer, 1 main, 1 nav and 1 section, with no article or aside, and only 21 divs.",
+   "evidence": "A semantic header 8, footer 8, article 7, aside 5; div 122. B header 1, footer 1, article 0, aside 0; div 21.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "A loads much more machinery. It has 48 scripts, 13 stylesheets, 25 link tags, 14 meta tags including Open Graph and Twitter, 1 JSON-LD block and 2 iframes. B has 1 script, 0 stylesheets, 1 style block and 3 meta tags, and no JSON-LD.",
+   "evidence": "A counts scripts 48, stylesheets 13, meta 14, jsonld_blocks 1, iframe 2. B scripts 1, stylesheets 0, meta 3, jsonld 0.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "The CSS approach differs. A has 480 class uses over 174 unique classes (legacy theme/framework style), 10 inline style attributes and 125 transitions. B has 56 class uses over 23 unique classes, 1 inline style attribute and 34 transitions.",
+   "evidence": "A classes total 480 unique 174, inline_style_attrs 10. B total 56 unique 23, inline_style_attrs 1.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "A has 3 box shadows, 2 animations and 7 transforms. B has none of these (0 shadows, 0 animations, 0 transforms) and relies on flat 1px borders around cards.",
+   "evidence": "A effects box_shadows 3, animations 2, transforms 7. B all 0; cards show thin outlines in slice 1.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "The same 28 sponsor logo images appear on both sides, but A also includes Sparesbox, Pirtek and the other brands in the same set. B reorders them (for example Audi and Aston Martin are on the first row) and omits the McLaren logo's file, though a 'McLaren' item is visible in its grid.",
+   "evidence": "A has a mclaren-footer1.png file. B's image list has no mclaren file, and the slice shows a text-like 'McLaren' tile in its row 2.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I38",
+   "text": "B's partner logo tiles show a text fallback: the 'McLaren' tile is black text on white, unlike the image-based logos.",
+   "evidence": "B slice 2 shows the 'McLaren' tile in bold black type; no mclaren image in B's images list.",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I39",
+   "text": "The text styling is more uppercase and letterspaced in B. The nav, eyebrows, READ MORE links, date badge and 'OUR PARTNERS' use tracked uppercase small caps. A uses uppercase mainly for the nav and headings.",
+   "evidence": "B slices: 'OUR PARTNERS', 'FEATURED NEWS', 'READ MORE →' tracked caps. A slice 0 uppercase only for nav and headings.",
+   "side": "generated",
+   "members": [
+    "bathurst12hour_com_au|sonnet|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I40",
+   "text": "A's featured tag, 'Featured News', is a light-blue filled rectangle with a white label. B's is a red text-only label.",
+   "evidence": "A slice 0 blue block at (185,405). B slice 0 red text at y730.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I41",
+   "text": "A overlays dark gradient-like captions on the image tiles, and one title collides with the date text ('12…' overlapping 'Feb 03, 2020'). B keeps text and images in separate regions with no overlap.",
+   "evidence": "A slice 1 at (742,106) overlapping text. B image_overlaps [] and separate caption areas in slice 1.",
+   "side": "both",
+   "members": [
+    "bathurst12hour_com_au|sonnet|41"
+   ],
+   "tier": "A"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page uses a single sans-serif family (Helvetica Neue-style) for all text, including headings.",
+   "family": "typography",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Body text is set at a comfortable 16px size with roomy 24px line height.",
+   "family": "typography",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Hero h1 is very large (about 64px) and set as a multi-line uppercase tagline.",
+   "family": "typography",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Small labels, eyebrows, nav items, links and section headings use tracked, letterspaced uppercase text.",
+   "family": "typography",
+   "items": [
+    "I39"
+   ]
+  },
+  {
+   "statement": "Proper heading hierarchy: h2 for sections, h3 for card titles, h4 for sub-groups.",
+   "family": "semantic_dom",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "Minimal semantic DOM with single header, main, nav, footer and few divs, and no article or aside wrappers.",
+   "family": "semantic_dom",
+   "items": [
+    "I33"
+   ]
+  },
+  {
+   "statement": "Page is lean: one script, no external stylesheets, few meta tags, few unique classes, almost no inline styles.",
+   "family": "semantic_dom",
+   "items": [
+    "I34",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Meaningful descriptive alt text is provided on featured content images.",
+   "family": "semantic_dom",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Layout built with flexbox and CSS grid throughout.",
+   "family": "layout",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Single full-width content column with no sidebar.",
+   "family": "layout",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "Secondary items are shown in a uniform multi-column grid of equal-sized vertical cards.",
+   "family": "layout",
+   "items": [
+    "I13"
+   ]
+  },
+  {
+   "statement": "Featured item is a split card: image on one side, text panel with eyebrow, title, date and link on the other.",
+   "family": "layout",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Text and images occupy separate regions; titles sit beneath images without overlays, truncation or overlap.",
+   "family": "layout",
+   "items": [
+    "I32",
+    "I41"
+   ]
+  },
+  {
+   "statement": "Partner logos are arranged in a dense multi-column grid, each on its own tile.",
+   "family": "layout",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Footer is compact, with links inline at the side and a small logo above the copyright line.",
+   "family": "layout",
+   "items": [
+    "I19",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Dark cool blue-black page background with a single dark card color and white tiles.",
+   "family": "color",
+   "items": [
+    "I16",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Single saturated red accent color for links, labels and highlights, with grey secondary text.",
+   "family": "color",
+   "items": [
+    "I17",
+    "I40"
+   ]
+  },
+  {
+   "statement": "Key info such as event dates is highlighted in a solid accent-colored block.",
+   "family": "component",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Every card has a red uppercase 'READ MORE →' text link with an arrow.",
+   "family": "component",
+   "items": [
+    "I14"
+   ]
+  },
+  {
+   "statement": "Every news item displays a date, including the featured story.",
+   "family": "component",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Social buttons are rectangular outlined buttons with accent-colored borders and uppercase labels in a full-width band.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Navigation bar is semi-transparent with backdrop blur, with a compact logo and labelled 'Menu' toggle button.",
+   "family": "component",
+   "items": [
+    "I9",
+    "I7",
+    "I25"
+   ]
+  },
+  {
+   "statement": "Navigation lists many uppercase white items in the top bar.",
+   "family": "component",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Logo or partner tiles have small rounded corners; buttons have modest 4px radius.",
+   "family": "component",
+   "items": [
+    "I23",
+    "I25"
+   ]
+  },
+  {
+   "statement": "Featured tag is a plain accent-colored text label rather than a filled badge.",
+   "family": "component",
+   "items": [
+    "I40"
+   ]
+  },
+  {
+   "statement": "Full-width accent-colored horizontal rules separate major sections, and hairlines follow section headings.",
+   "family": "decoration",
+   "items": [
+    "I10",
+    "I11"
+   ]
+  },
+  {
+   "statement": "Flat styling: no shadows, animations or transforms; cards are defined by thin 1px borders.",
+   "family": "decoration",
+   "items": [
+    "I36"
+   ]
+  },
+  {
+   "statement": "Hero has a faded, dim diagonal stripe graphic behind the headline.",
+   "family": "decoration",
+   "items": [
+    "I28"
+   ]
+  },
+  {
+   "statement": "Logos are served at 2x resolution and repeated in nav and hero.",
+   "family": "imagery",
+   "items": [
+    "I7",
+    "I8"
+   ]
+  },
+  {
+   "statement": "Light logos placed on white tiles become nearly invisible; some tiles fall back to plain text.",
+   "family": "imagery",
+   "items": [
+    "I20",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Sections are introduced with short uppercase headings such as 'LATEST NEWS' and 'OUR PARTNERS'.",
+   "family": "copy",
+   "items": [
+    "I11",
+    "I21"
+   ]
+  },
+  {
+   "statement": "Hero adds a location line beneath the headline, alongside a short tagline.",
+   "family": "copy",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Document title uses a pipe separator and typographic curly apostrophes.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "News headlines are shown in full, untruncated.",
+   "family": "copy",
+   "items": [
+    "I32"
+   ]
+  }
+ ]
+}

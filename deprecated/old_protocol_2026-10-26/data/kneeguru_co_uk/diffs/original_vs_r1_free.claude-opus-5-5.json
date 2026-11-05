@@ -1,0 +1,332 @@
+[
+ {
+  "observation": "Different document titles: A uses an uppercase brand-and-tagline title with a pipe separator; B uses title-case 'Knee Guru' with an en dash and a sentence-case tagline",
+  "category": "copy treatment",
+  "evidence": "A title: 'KNEEguru | YOUR SOURCE OF KNEE INFORMATION'; B title: 'Knee Guru – Your source of knee information'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no h1; B has a single h1 holding the hero headline",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 0, h1 null; B h1_count 1, text 'Learn about knees…' at 57.6px, weight 700",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's heading outline begins with hidden or utility h2/h3 headings ('Knee Guru', 'Content Group', 'Bullet Points'); B's outline begins with the hero h1, followed by a new h2 'Pick the format that suits how you learn'",
+  "category": "DOM/semantic structure",
+  "evidence": "heading_outline in A_facts and B_facts",
+  "which_side": "both"
+ },
+ {
+  "observation": "Learning-format and article titles are h4 in A and h3 in B",
+  "category": "DOM/semantic structure",
+  "evidence": "A tag_counts h4: 16, h3: 2; B h3: 16, no h4",
+  "which_side": "both"
+ },
+ {
+  "observation": "A also uses h5 and h6 elements; B uses only h1 to h3",
+  "category": "DOM/semantic structure",
+  "evidence": "A tag_counts h5: 6, h6: 1; B has no h4, h5 or h6",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses main, section and article landmarks; A uses only header, nav and footer",
+  "category": "DOM/semantic structure",
+  "evidence": "A semantic: main 0, section 0, article 0; B: main 1, section 5, article 10",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has a much larger DOM, with heavier div nesting and more class usage",
+  "category": "DOM/semantic structure",
+  "evidence": "A div 217, total classes 556 (187 unique); B div 26, total classes 53 (29 unique)",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many scripts and external stylesheets; B has one script, one style block and no external stylesheets",
+  "category": "DOM/semantic structure",
+  "evidence": "A scripts 37, stylesheets 10, style 4, link 15; B scripts 1, stylesheets 0, style 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has more meta tags, including generator, keywords, rights, google-site-verification and eight origin-trial entries; B has only charset, viewport and description",
+  "category": "DOM/semantic structure",
+  "evidence": "meta_names lists in both facts files",
+  "which_side": "A"
+ },
+ {
+  "observation": "The language attribute differs: A uses generic English and B uses British English",
+  "category": "DOM/semantic structure",
+  "evidence": "A lang 'en'; B lang 'en-GB'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A places more inline style attributes in its markup",
+  "category": "DOM/semantic structure",
+  "evidence": "A inline_style_attrs 31; B 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "Font families differ: A uses the Open Sans web font plus FontAwesome icons and a handwritten 'Shadows Into Light' face; B uses only a system-ui stack",
+  "category": "typography",
+  "evidence": "A fonts: Open Sans 410, FontAwesome 29, Shadows Into Light 2; B fonts: system-ui 209",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's h2 headings are large and light weight; B's h2 headings are bold",
+  "category": "typography",
+  "evidence": "A h2: 35.2px, weight 300; B h2: 38.4px, weight 700",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text color differs: A uses mid grey and B uses dark navy-slate",
+  "category": "color",
+  "evidence": "A body_color rgb(119,119,119); B body_color rgb(29,42,54)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body line height is slightly taller in B",
+  "category": "typography",
+  "evidence": "A 24px; B 25.6px, both with a 16px body font",
+  "which_side": "B"
+ },
+ {
+  "observation": "The accent blue differs: A uses a bright cyan-blue and B uses a deeper blue",
+  "category": "color",
+  "evidence": "A accent text and background rgb(0,136,204); B accent text rgb(31,111,178), top bar rgb(21,78,128)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A opens with a large empty grey ad banner strip that has a 'Hide this banner' link; B opens with a dark-blue utility bar holding text social links and -A / A / +A text-size buttons",
+  "category": "layout",
+  "evidence": "A_slice_00 top: grey area about 130px tall labelled 'Banner - Hide this banner'; B_slice_00: blue bar with Twitter, Facebook, YouTube, Pinterest and -A, A, +A",
+  "which_side": "both"
+ },
+ {
+  "observation": "The logo differs: A shows an image wordmark 'KNEEguru' with a circled K and the tagline beneath; B shows a text wordmark 'Knee Guru' with 'Guru' in blue",
+  "category": "imagery handling",
+  "evidence": "A_slice_00 header logo; B_slice_00 header text 'Knee Guru'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header has a search box with a blue search button and circular social icons; B's header has no visible search field",
+  "category": "component choices",
+  "evidence": "A_slice_00 search input and round icon buttons at top right; B tag_counts input 1, used in the footer form",
+  "which_side": "A"
+ },
+ {
+  "observation": "Navigation styling differs: A uses small bold uppercase blue links with dropdown carets; B uses title-case dark links with no carets, set on the same row as the logo",
+  "category": "typography",
+  "evidence": "A nav 'LEARNING PORTFOLIO ▾', 'COMMUNITY ▾'; B nav 'Learning Portfolio', 'Community'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero layout differs: A overlays a translucent olive-grey text box on the hero photo; B uses a two-column split, with text on the left and the photo on the right",
+  "category": "layout",
+  "evidence": "A_slice_00: dark olive box over the image; B_slice_00: text column on the left and image at x 796",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero image is rendered at different sizes and positions",
+  "category": "imagery handling",
+  "evidence": "hero_06a.jpg: A rect 570×570 at x 150, y 309; B rect 464×464 at x 796, y 171",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero image has rounded corners and a soft drop shadow; A's hero image is square-cornered with no shadow",
+  "category": "decoration/effects",
+  "evidence": "B_slice_00 shows a rounded, shadowed photo card; A_slice_00 shows a rectangular photo",
+  "which_side": "B"
+ },
+ {
+  "observation": "The hero image's alt text differs: A's is empty and B's is descriptive",
+  "category": "imagery handling",
+  "evidence": "A alt ''; B alt 'A presenter sketching a knee diagram on a whiteboard and labelling the patella'",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds an eyebrow line above the hero headline and a descriptive subheading below it; A shows only the headline and the bullet list",
+  "category": "copy treatment",
+  "evidence": "B_slice_00: 'YOUR SOURCE OF KNEE INFORMATION' eyebrow and 'Trusted explanations, expert views and rehabilitation guidance...'",
+  "which_side": "B"
+ },
+ {
+  "observation": "B colors part of the hero headline: 'knees…' is blue and the rest is dark",
+  "category": "typography",
+  "evidence": "B_slice_00 headline 'Learn about knees…' with 'knees' in blue; A headline is all white in a light weight",
+  "which_side": "B"
+ },
+ {
+  "observation": "The six hero actions are a dotted-arrow bullet list in A and bordered rounded cards with right-arrow glyphs in B",
+  "category": "component choices",
+  "evidence": "A_slice_00: dotted arrow icons before lowercase items; B_slice_00: six bordered tiles, each with →",
+  "which_side": "both"
+ },
+ {
+  "observation": "Hero action copy is lowercase in A and sentence case in B",
+  "category": "copy treatment",
+  "evidence": "A 'look up a specific knee topic'; B 'Look up a specific knee topic'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's markup still contains six dottedArrow.png images in the hero action cards, rendered at 32×28 with empty alt text",
+  "category": "imagery handling",
+  "evidence": "B images list: dottedArrow.png ×6 at x 195 and x 484",
+  "which_side": "B"
+ },
+ {
+  "observation": "The hero image overlaps the first category icons in A; B has no image overlaps",
+  "category": "layout",
+  "evidence": "A image_overlaps: hero_06a overlaps primers_icon (5488px²) and courses_icon (3360px²); B image_overlaps []",
+  "which_side": "A"
+ },
+ {
+  "observation": "The learning-format grid has 3 columns in A and 4 columns in B (4 + 2)",
+  "category": "layout",
+  "evidence": "A_slice_00: 3×2 grid; B_slice_00: four cards in row 1, two in row 2, leaving empty space to the right",
+  "which_side": "both"
+ },
+ {
+  "observation": "Category icons are large and centered in A, and small and left-aligned in B",
+  "category": "imagery handling",
+  "evidence": "A icons about 120px wide (for example courses_icon 120×109); B icons 44×52",
+  "which_side": "both"
+ },
+ {
+  "observation": "Category labels are large grey uppercase centered text in A and small bold letter-spaced blue uppercase text in B",
+  "category": "typography",
+  "evidence": "A_slice_00 'PRIMERS' in grey; B_slice_00 'PRIMERS' in blue with tracking",
+  "which_side": "both"
+ },
+ {
+  "observation": "Category icon alt text is 'Primers' for all six icons in A and empty in B",
+  "category": "imagery handling",
+  "evidence": "A alt 'Primers' on courses_icon, eBooks_icon and others; B alt '' on all category icons",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's category section sits on one flat grey panel with white label boxes; B uses separate pale-blue rounded cards with borders",
+  "category": "component choices",
+  "evidence": "A background rgb(235,235,235) panel; B card background rgb(242,246,250) with rounded corners",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds letter-spaced uppercase eyebrow labels above section headings",
+  "category": "copy treatment",
+  "evidence": "B: 'LEARNING PORTFOLIO', 'WHAT'S NEW'; A has no eyebrows",
+  "which_side": "B"
+ },
+ {
+  "observation": "Latest Content is a single-column list separated by horizontal rules in A and a 3-column grid of bordered rounded cards on a tinted section background in B",
+  "category": "layout",
+  "evidence": "A_slice_01: stacked list with dividers; B_slice_01: 3-column card grid on rgb(242,246,250)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Article titles are blue regular-weight links in A and dark bold headings in B",
+  "category": "typography",
+  "evidence": "A_slice_01 titles in rgb(0,136,204); B_slice_01 titles in dark navy, bold",
+  "which_side": "both"
+ },
+ {
+  "observation": "Inline glossary links are green with dotted underlines in A and plain blue with no underline in B",
+  "category": "color",
+  "evidence": "A_slice_01: 'meniscus', 'MRI', 'knee surgeon' in green with dotted underline; B_slice_01: the same terms in blue",
+  "which_side": "A"
+ },
+ {
+  "observation": "Article titles are truncated in A's DOM but shown in full on both rendered pages",
+  "category": "copy treatment",
+  "evidence": "A_slice_01 'What does metal allergy mean ... surgery?'; B_slice_01 shows the full title in the card",
+  "which_side": "both"
+ },
+ {
+  "observation": "Sponsor logos are centered and bare in A, and left-aligned inside bordered rounded tiles in B, with an extra text-only sponsor tile",
+  "category": "component choices",
+  "evidence": "A joint-operations at x 582, 84×119; B at x 203, 42×60; B_slice_02 tile 'The Regenerative Clinic'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Össur sponsor logo's alt text is long in A and short in B",
+  "category": "imagery handling",
+  "evidence": "A 'Orthotics for Hard and Soft Tissue Injuries. Ossur.'; B 'Össur'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a thick grey rounded horizontal bar separator and a slanted blue tab with handwritten-font text 'More about us...'; B uses a plain italic blue link",
+  "category": "decoration/effects",
+  "evidence": "A_slice_02 tab in 'Shadows Into Light' font; B_slice_02 italic 'More about us...' link",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is a near-black 4-column block containing all footer sections; B splits the footer into a light-grey 3-column band and a dark navy bottom band for 'Your safety' and the policy links",
+  "category": "layout",
+  "evidence": "A bg rgb(14,14,14); B bg rgb(242,246,250), then rgb(15,28,40)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer policy links are a stacked bold uppercase list in A and a single horizontal title-case row in B",
+  "category": "typography",
+  "evidence": "A 'MISSION STATEMENT', 'PRIVACY POLICY' stacked; B 'Mission Statement   Privacy Policy ...' on one row",
+  "which_side": "both"
+ },
+ {
+  "observation": "The newsletter form differs: A has First Name and Email fields stacked on grey inputs with a full-width 'Subscribe' button; B has one email input inline with a rounded 'Sign up' button",
+  "category": "component choices",
+  "evidence": "A input 13, form 3; B input 1, form 1; button labels in the slices",
+  "which_side": "both"
+ },
+ {
+  "observation": "The RSS link is a large circular icon in A and a small icon with the text label 'Subscribe via RSS' in B",
+  "category": "imagery handling",
+  "evidence": "feed.svg: A 60×54 with alt 'RSS'; B 28×28 with alt '' and a text label",
+  "which_side": "both"
+ },
+ {
+  "observation": "Text-size controls are image-like 'A' buttons at the bottom right of the footer in A and text buttons in the top bar in B",
+  "category": "component choices",
+  "evidence": "A_slice_02 bottom right; B primary_button text '-A', bg rgba(255,255,255,0.15)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses square corners and some pill shapes; B relies on 8–15px rounded corners and has no pills",
+  "category": "decoration/effects",
+  "evidence": "A radius buckets: 0px 417, 8–15px 0, pill 8; B: 0px 154, 8–15px 35, pill 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A applies more box shadows, transitions and transforms",
+  "category": "decoration/effects",
+  "evidence": "A box_shadows 9, transitions 26, transforms 16; B box_shadows 1, transitions 12, transforms 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses no CSS grid or flexbox; B uses both",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 0; B display_grid 5, display_flex 24",
+  "which_side": "B"
+ },
+ {
+  "observation": "The primary button is square-cornered solid blue in A and a translucent white 6px-radius button in B",
+  "category": "component choices",
+  "evidence": "A bg rgb(0,136,204), radius 0px, padding 7px 12px; B bg rgba(255,255,255,0.15), radius 6px, padding 2px 9px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social links are FontAwesome circular icon buttons in A and plain text links in B",
+  "category": "component choices",
+  "evidence": "A FontAwesome 29 elements, i tags 11; B has no icon font and shows text links in the top bar",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page lengths and word counts are similar",
+  "category": "layout",
+  "evidence": "Page height: A 3493px, B 3585px. Words: A 570, B 576",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has slightly more ARIA attributes and buttons; A has more anchors",
+  "category": "DOM/semantic structure",
+  "evidence": "aria_attrs: A 7, B 10. buttons: A 4, B 5. anchors: A 84, B 71",
+  "which_side": "both"
+ }
+]

@@ -1,0 +1,257 @@
+[
+ {
+  "observation": "The page title and the single H1 use the same text: 'The Frangipani Creative'",
+  "category": "DOM/semantics",
+  "evidence": "facts.title = 'The Frangipani Creative'; h1_count = 1; h1.text = 'The Frangipani Creative'"
+ },
+ {
+  "observation": "The page uses two type families: Inter for UI and body text, and Cormorant Garamond for display text",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Inter 113, Cormorant Garamond 32; h1 font_family '\"Cormorant Garamond\", Georgia, serif'"
+ },
+ {
+  "observation": "The H1 is set very large in white serif, weight 600, and wraps onto three lines ('The / Frangipani / Creative') over the hero photo",
+  "category": "typography",
+  "evidence": "h1 font_size 96px, font_weight 600, color rgb(255,255,255); slice_00 shows three-line wrap"
+ },
+ {
+  "observation": "H2 headings are set at half the H1 size, with the same weight",
+  "category": "typography",
+  "evidence": "h2 font_size 48px, font_weight 600 vs h1 96px/600"
+ },
+ {
+  "observation": "Body text is 17px with a line-height of about 1.7",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 28.9px"
+ },
+ {
+  "observation": "The page background is a warm off-white cream rather than pure white",
+  "category": "color",
+  "evidence": "colors.body_bg rgb(253,248,243); visible cream areas in slices 00 and 02"
+ },
+ {
+  "observation": "The main text color is a dark plum-brown rather than black",
+  "category": "color",
+  "evidence": "body_color rgb(44,31,39); most frequent text color, used 58 times"
+ },
+ {
+  "observation": "The accent color is a magenta pink, used on the pill buttons; a deeper berry shade is used for links and eyebrow labels",
+  "category": "color",
+  "evidence": "primary_button bg rgb(214,69,122); text color rgb(168,42,92) used 12 times; underlined pink links in slice_00 and the 'KIND WORDS' label in slice_01"
+ },
+ {
+  "observation": "The same dark plum used for body text also serves as the background of the coaching panel and the footer",
+  "category": "color",
+  "evidence": "top_backgrounds includes rgb(44,31,39) x2; dark panel in slice_01 and footer in slice_03"
+ },
+ {
+  "observation": "The testimonials section sits on a pale blush-pink band",
+  "category": "color",
+  "evidence": "background rgb(248,230,227) present once; pink section behind 'Happy Clients' in slice_01"
+ },
+ {
+  "observation": "Footer text uses a muted light pink-grey, and footer links use a lighter pink",
+  "category": "color",
+  "evidence": "text colors rgb(230,217,222) x24 and rgb(255,196,216) x13; footer links in slice_03"
+ },
+ {
+  "observation": "The header nav bar is semi-transparent cream with a backdrop blur, laid over the top of the hero image",
+  "category": "decoration/effects",
+  "evidence": "background rgba(253,248,243,0.92); backdrop_blur 1; the hero image (y=62) shows faintly behind the bar in slice_00"
+ },
+ {
+  "observation": "A blank cream strip of about 62px sits above the header and hero",
+  "category": "layout",
+  "evidence": "hero image rect y=62; slice_00 top area is empty cream"
+ },
+ {
+  "observation": "The header has a serif wordmark on the left and seven Inter text links on the right: Home, Blog, Podcast, Happy Clients, Contact, Archives, Books I Recommend",
+  "category": "component",
+  "evidence": "slice_00 header; facts nav count 1"
+ },
+ {
+  "observation": "The hero is a full-bleed photo of pink frangipani blossoms, darkened on the left so the white text stays readable",
+  "category": "imagery",
+  "evidence": "image the-frangipani-creative.png rect w=1440 h=702; alt 'Pink and white frangipani blossoms...'; darker left side in slice_00"
+ },
+ {
+  "observation": "The hero text is left-aligned and stacks a small uppercase tracked eyebrow ('SECUNDERABAD, INDIA'), the H1, and a one-line tagline with an underlined link",
+  "category": "layout",
+  "evidence": "slice_00: eyebrow, H1, 'The studio of Corinne Rodrigues.'; h1 text_align start"
+ },
+ {
+  "observation": "Each section heading is introduced by a small uppercase, letter-spaced eyebrow label: SECUNDERABAD, INDIA; COACHING; KIND WORDS; FROM THE BLOG; INSTAGRAM",
+  "category": "copy treatment",
+  "evidence": "slices 00–02"
+ },
+ {
+  "observation": "An intro statement after the hero is set in large serif text, as a lede of four sentence fragments",
+  "category": "typography",
+  "evidence": "slice_00: 'A lover of words. A self-acceptance blogger. A book reviewer. A woman happily journeying...'"
+ },
+ {
+  "observation": "Below the lede, two columns of smaller grey sans-serif body copy contain inline underlined links",
+  "category": "layout",
+  "evidence": "slice_00: left paragraph linking Everyday Gyaan, CorinneRodrigues.com and The Frangipani Creative; right paragraph 'Stay tuned for details...'"
+ },
+ {
+  "observation": "A standalone underlined link in bold berry text ends with a right-arrow glyph",
+  "category": "component",
+  "evidence": "slice_00: 'Read this to find out why the name The Frangipani Creative made sense to me →'"
+ },
+ {
+  "observation": "The coaching section is a 50/50 split: a photo on the left and a dark plum text panel on the right",
+  "category": "layout",
+  "evidence": "second image rect x=0 w=754 h=503; slice_01 dark panel to the right"
+ },
+ {
+  "observation": "The second photo shows white and pink frangipani on a near-black background, and its dark tones blend with the adjoining plum panel",
+  "category": "imagery",
+  "evidence": "alt 'A cluster of white and pink frangipani flowers on a dark background'; slice_01"
+ },
+ {
+  "observation": "The 'COACHING' eyebrow on the dark panel is golden-orange rather than the pink accent",
+  "category": "color",
+  "evidence": "slice_01 'COACHING' label in an orange/gold tone"
+ },
+ {
+  "observation": "The coaching teaser text ends with an ellipsis and is followed by a pill-shaped 'Read more' button",
+  "category": "copy treatment",
+  "evidence": "slice_01 'You're in the right place for ...'; primary_button text 'Read more', radius 999px, padding 12px 26px"
+ },
+ {
+  "observation": "Only two elements use a pill radius; these match the 'Read more' and 'Follow on Instagram' buttons",
+  "category": "component",
+  "evidence": "border_radius_buckets.bucket_pill 2; slices 01 and 03"
+ },
+ {
+  "observation": "Despite the button-like styling, the page has no <button> elements; the buttons are styled anchors",
+  "category": "DOM/semantics",
+  "evidence": "counts.buttons 0; anchors 52"
+ },
+ {
+  "observation": "The testimonials appear as three equal-width white cards with rounded corners, each with a row of five orange stars, a quote, and the client's name in serif at the bottom",
+  "category": "component",
+  "evidence": "slice_01; figure 3, blockquote 3, figcaption 3; white background x3"
+ },
+ {
+  "observation": "Each testimonial is marked up as a figure, with a blockquote for the quote and a figcaption for the name; no cite elements are used",
+  "category": "DOM/semantics",
+  "evidence": "semantic figure 3, blockquote 3, figcaption 3, cite 0"
+ },
+ {
+  "observation": "The star ratings are likely emoji or text glyphs rather than SVG icons",
+  "category": "imagery",
+  "evidence": "svgs 0; text_stats.emoji 15 (= 3 cards × 5 stars)"
+ },
+ {
+  "observation": "Card corners use a small-to-medium radius (8–15px); most elements have no radius",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets bucket_8_15 11, bucket_0 132, none in 16+"
+ },
+ {
+  "observation": "Shadows are used sparingly: only three elements have a box-shadow, which matches the three testimonial cards",
+  "category": "decoration/effects",
+  "evidence": "box_shadows 3; soft shadow under the cards in slice_01"
+ },
+ {
+  "observation": "Recent posts appear as a ruled list rather than cards: serif titles on the left, small 'By [author]' links aligned right, and thin dividers between rows",
+  "category": "component",
+  "evidence": "slice_02: 5 rows divided by hairlines; 'By Lux', 'By Fabida Abdulla'"
+ },
+ {
+  "observation": "The fifth post row has no author byline, unlike the other four",
+  "category": "copy treatment",
+  "evidence": "slice_02: '20 Quotes To Encourage You To Be A Fearless Writer' has no 'By' text"
+ },
+ {
+  "observation": "The Instagram section uses the handle 'thefrangipanicreative' as its H2, followed by a grey subtitle",
+  "category": "copy treatment",
+  "evidence": "heading_outline h2 'thefrangipanicreative'; slice_02 'Training/Coaching for writing, blogging and creativity'"
+ },
+ {
+  "observation": "The Instagram feed is a 4-column grid of eight tiles with no images; each has a faint white-to-pink gradient and a truncated serif caption at the bottom",
+  "category": "component",
+  "evidence": "slices 02–03: 2 rows × 4 tiles; img count only 2; gradient_backgrounds 8"
+ },
+ {
+  "observation": "Instagram captions are cut off mid-word with an ellipsis",
+  "category": "copy treatment",
+  "evidence": "'with the non-essentia...', 'taking stoc...', 'so excited to buy th...' in slice_02"
+ },
+ {
+  "observation": "A full-width decorative band shows pink frangipani against a blue sky above the footer; it is not one of the two <img> elements, so it is likely a CSS background",
+  "category": "imagery",
+  "evidence": "slice_03 photo band; facts.images lists only 2 files, both placed elsewhere"
+ },
+ {
+  "observation": "The footer has three columns with serif H3 headings: 'Follow me on social media', 'Location', 'Recent posts'",
+  "category": "layout",
+  "evidence": "heading_outline h3 entries; slice_03"
+ },
+ {
+  "observation": "Each social link in the footer is paired with a smaller, muted action word (Like/Follow)",
+  "category": "component",
+  "evidence": "slice_03: 'Facebook Like', 'Instagram Follow', 'LinkedIn Follow', 'Pinterest Follow', 'Twitter Follow'"
+ },
+ {
+  "observation": "The footer location is marked up with an <address> element and lists a street address plus linked mobile and landline numbers",
+  "category": "DOM/semantics",
+  "evidence": "tag_counts.address 1; br 4; slice_03 'Mobile: 91-8886034647', 'Landline: 91-40-29560398'"
+ },
+ {
+  "observation": "The footer repeats the same five recent-post titles shown in the main content as underlined pink links",
+  "category": "copy treatment",
+  "evidence": "slice_03 vs slice_02 list; heading 'Recent posts' appears as both h2 and h3"
+ },
+ {
+  "observation": "Below a divider line, the footer ends with a small-print affiliate disclosure and a copyright line",
+  "category": "copy treatment",
+  "evidence": "slice_03: 'Disclosure: Please note that all posts and pages may contain affiliate links...'; '© 2020 – The Frangipani Creative'"
+ },
+ {
+  "observation": "Main-body links are shown with underlines throughout, rather than by color alone",
+  "category": "typography",
+  "evidence": "underlined links in slices 00, 01, 02, 03"
+ },
+ {
+  "observation": "The content sits in a centered column about 1080px wide (x≈180–1260) on a 1440px page; only the hero, the coaching split, and the photo band run full-bleed",
+  "category": "layout",
+  "evidence": "layout.page_width 1440; content edges at x≈180 and 1260 in slices; image rects at x=0"
+ },
+ {
+  "observation": "The document has a header, nav, main and footer, and the main content is divided into six sections, with no article or aside",
+  "category": "DOM/semantics",
+  "evidence": "semantic header 1, nav 1, main 1, section 6, footer 1, article 0, aside 0"
+ },
+ {
+  "observation": "Layout uses both flex and grid",
+  "category": "DOM/semantics",
+  "evidence": "display_flex 18, display_grid 6"
+ },
+ {
+  "observation": "The page loads no scripts and uses a small set of hand-named classes, none Tailwind-style",
+  "category": "DOM/semantics",
+  "evidence": "scripts 0; classes total 46, unique 32, tailwind_like_fraction 0; stylesheets 2"
+ },
+ {
+  "observation": "Motion is limited to transitions, with no animations or transforms",
+  "category": "decoration/effects",
+  "evidence": "transitions 10, animations 0, transforms 0"
+ },
+ {
+  "observation": "The page is long, about 4822px tall, with roughly 637 words of copy and no exclamation marks or em dashes",
+  "category": "copy treatment",
+  "evidence": "page_height 4822; words 637; exclamations 0; em_dashes 0"
+ },
+ {
+  "observation": "Both images have alt text describing the frangipani flowers; one inline style attribute and six ARIA attributes are present",
+  "category": "DOM/semantics",
+  "evidence": "alt_missing 0; inline_style_attrs 1; aria_attrs 6"
+ },
+ {
+  "observation": "The page includes one input with a label but has no visible form, which is likely a hidden checkbox toggle for the nav",
+  "category": "DOM/semantics",
+  "evidence": "tag_counts input 1, label 1; no form field visible in any slice"
+ }
+]

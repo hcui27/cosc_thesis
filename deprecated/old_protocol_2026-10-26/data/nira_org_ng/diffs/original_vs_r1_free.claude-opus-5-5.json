@@ -1,0 +1,320 @@
+[
+ {
+  "observation": "Document title differs: A uses a long descriptive sentence and B uses a short 'brand – descriptor' title",
+  "category": "metadata",
+  "evidence": "A title: 'Welcome to the .ng Domain Registry website - Nigeria internet Registration Association (NiRA)'; B title: 'NiRA – .ng Domain Registry'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Language attribute differs: A sets a regional British English code and B sets generic English",
+  "category": "metadata",
+  "evidence": "A lang 'en-gb'; B lang 'en'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a meta description tag and A does not; A has a generator meta and an X-UA-Compatible meta instead",
+  "category": "metadata",
+  "evidence": "A meta_names: X-UA-Compatible, viewport, content-type, generator; B meta_names: charset, viewport, description",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's single h1 has no text, while B's h1 holds the welcome headline",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1.text ''; B h1.text 'Welcome to the .ng Domain Registry website.'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A puts 'Welcome to the .ng Domain Registry website.' in an h2, whereas B moves it into the h1",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline: level 2 'Welcome to the .ng Domain Registry website.'; B: level 1 with the same text",
+  "which_side": "both"
+ },
+ {
+  "observation": "Sidebar labels are uppercase headings in A; in B, the quick menu is not a heading and the calendar heading uses title case",
+  "category": "copy treatment",
+  "evidence": "A outline has h3 'QUICK MENU', h3 'NIRA CALENDAR', h3 'SUBSCRIBE TO OUR NEWSLETTER'; B outline has h3 'NiRA Calendar' and h2 'Subscribe to our Newsletter', with no Quick Menu heading",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has headings for 'NEWS UPDATE', 'Follow us on :' and 'MAIN MENU' that are missing from B's outline",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline has h4 'NEWS UPDATE', h3 'Follow us on :' and h3 'MAIN MENU'; B's outline has 8 entries and none of these",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses semantic landmark elements (header, nav, main, aside); A has none of them",
+  "category": "DOM/semantic structure",
+  "evidence": "A semantic: header 0, nav 0, main 0, aside 0; B: header 1, nav 2, main 1, aside 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is much larger and more deeply wrapped in divs",
+  "category": "DOM/semantic structure",
+  "evidence": "div count: A 242 vs B 28; li: A 121 vs B 27; ul: A 29 vs B 5",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has far more links than B",
+  "category": "DOM/semantic structure",
+  "evidence": "anchors: A 167 vs B 55",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many scripts and external stylesheets; B uses one script and one inline style block",
+  "category": "DOM/semantic structure",
+  "evidence": "A scripts 43, stylesheets 12, style tags 6; B scripts 1, stylesheets 0, style tags 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses many inline style attributes; B uses almost none",
+  "category": "DOM/semantic structure",
+  "evidence": "inline_style_attrs: A 120 vs B 3",
+  "which_side": "A"
+ },
+ {
+  "observation": "B includes ARIA attributes and real button elements; A has neither",
+  "category": "DOM/semantic structure",
+  "evidence": "A aria_attrs 0, buttons 0; B aria_attrs 13, buttons 2",
+  "which_side": "B"
+ },
+ {
+  "observation": "Alt text coverage differs: A has 8 images without alt; B has none missing and gives content images descriptive alt text",
+  "category": "imagery handling",
+  "evidence": "alt_missing: A 8, B 0; B ngReg.png alt 'Accredited .ng Registrar', policy.png alt 'NiRA policy documents'",
+  "which_side": "B"
+ },
+ {
+  "observation": "The logo alt text differs: A names the organization and B uses the tagline",
+  "category": "copy treatment",
+  "evidence": "A logo alt 'Nigeria internet Registration Association (NiRA)'; B logo alt '.ng – Your Nigerian identity online'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a full-width photo image carousel with left and right arrows, showing an apple-on-books .sch.ng slide",
+  "category": "imagery handling",
+  "evidence": "A images: sch.jpg, gov.jpg, 8.jpg, name_zone.jpg, mobi.jpg, edu.jpg, i_ng.jpg, zones.jpg, all 1440 wide and overlapping at x 1440 (image_overlaps); arrows are visible at the slice edges",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's hero is a solid green panel with headline text, two paragraphs and two CTA buttons, with an enlarged accredited-registrar badge in a white circle on the right",
+  "category": "layout",
+  "evidence": "B slice 0 hero; ngReg.png rect is 160x166 at x 957; one gradient background is recorded",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows a promotional modal popup over the page on load, with a close (x) button",
+  "category": "component choices",
+  "evidence": "A slice 0 has a centered 'Choose a .ng domain' ad with a gray overlay; Promo_ads.jpg is 463x463 at y 213 and overlaps sch.jpg",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has explicit hero CTA buttons; A's hero has none",
+  "category": "component choices",
+  "evidence": "B slice 0: 'Register a .ng Domain' (solid white) and 'Whois Search' (outlined) buttons; A slice 0 shows only the image slider",
+  "which_side": "B"
+ },
+ {
+  "observation": "Font families differ: A uses the web fonts Open Sans and ABeeZee plus icon fonts, while B uses only the system font stack",
+  "category": "typography",
+  "evidence": "A fonts: Open Sans 412, ABeeZee 233, FontAwesome 9, iCicons 4; B fonts: system-ui 199",
+  "which_side": "both"
+ },
+ {
+  "observation": "The h1 is larger in B and heavier in A",
+  "category": "typography",
+  "evidence": "A h1 36px / weight 800 / Open Sans; B h1 51.2px / weight 700 / system-ui",
+  "which_side": "both"
+ },
+ {
+  "observation": "The h1 color differs: A is green and B is white on a green background",
+  "category": "color",
+  "evidence": "A h1 color rgb(43,182,115); B h1 color rgb(255,255,255)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has larger body text and line height",
+  "category": "typography",
+  "evidence": "body font: A 14px/24px; B 16px/26.4px",
+  "which_side": "B"
+ },
+ {
+  "observation": "The h2 is larger and bolder in B",
+  "category": "typography",
+  "evidence": "A h2 24px / weight 600; B h2 28.8px / weight 700",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's main navigation uses uppercase, letter-spaced labels with dropdown chevrons and vertical dividers",
+  "category": "typography",
+  "evidence": "A slice 0 nav: 'HOME', 'WHO ARE WE ⌄', 'EVENTS ⌄', ... 'SWITCHTO.NG ⌄', separated by vertical rules",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's navigation uses title-case labels with no chevrons, and the last item is a solid green button",
+  "category": "component choices",
+  "evidence": "B slice 0 nav: 'Home', 'Who Are We', ... with 'Switchto.ng' as a filled green rounded button",
+  "which_side": "B"
+ },
+ {
+  "observation": "The top utility bar differs: A is near-black with the organization name, social icon glyphs and green contact text; B is dark green with contact info on the left and social links as text on the right",
+  "category": "layout",
+  "evidence": "A bar bg rgb(29,29,29) with icon glyphs; B bar shows 'Facebook Twitter YouTube LinkedIn' text, and rgb(7,90,42) is among B's backgrounds",
+  "which_side": "both"
+ },
+ {
+  "observation": "The header background differs: A's logo/nav band is light gray and B's is white",
+  "category": "color",
+  "evidence": "A slice 0 header is gray, with rgb(242,242,242) in A's backgrounds; B slice 0 header is white",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's page background is a faint green-tinted off-white, while A's is pure white",
+  "category": "color",
+  "evidence": "body_bg: A rgb(255,255,255); B rgb(250,252,250)",
+  "which_side": "B"
+ },
+ {
+  "observation": "The primary text colors differ: A uses neutral dark gray and B uses a dark green-tinted charcoal",
+  "category": "color",
+  "evidence": "body_color: A rgb(51,51,51); B rgb(28,42,34)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The green accent shade differs: A uses a bright mint green and B uses a deeper forest green",
+  "category": "color",
+  "evidence": "A text accent rgb(43,182,115) (57 elements); B accent rgb(11,122,59) as text (25) and background (2)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a three-column body: left sidebar (quick menu and calendar), center content and right sidebar (newsletter, news, video)",
+  "category": "layout",
+  "evidence": "A slice 0: QUICK MENU and calendar at x 150, welcome text and cards at x 443, newsletter, news and video at x 1028",
+  "which_side": "A"
+ },
+ {
+  "observation": "B stacks full-width horizontal bands: hero, quick-menu strip, two cards, newsletter plus calendar, three footer-link cards, then the footer",
+  "category": "layout",
+  "evidence": "B slices 0-1, page_height 2199 vs A 1388",
+  "which_side": "B"
+ },
+ {
+  "observation": "The quick menu is a vertical list with chevrons and dividers in A, and a single horizontal link row in B",
+  "category": "component choices",
+  "evidence": "A: '› Whois Search', '› Registrars'... stacked; B: 'QUICK MENU  Whois Search  Registrars  Search  Contact Us' in one row",
+  "which_side": "both"
+ },
+ {
+  "observation": "B lays out with CSS grid and flexbox; A uses neither",
+  "category": "layout",
+  "evidence": "layout: A display_grid 0, display_flex 0; B display_grid 6, display_flex 14",
+  "which_side": "B"
+ },
+ {
+  "observation": "The 'Register a .ng Domain' and 'NiRA Policies' blocks are unbordered text columns in A and bordered rounded cards with 'Read More →' links in B",
+  "category": "component choices",
+  "evidence": "A slice 0: plain columns with inline 'Read More.'; B slice 0: two white bordered rounded cards; B radius bucket_8_15 is 10 vs A's 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "The icon sizes in the two feature blocks differ",
+  "category": "imagery handling",
+  "evidence": "A ngReg.png 55x57, policy.png 55x55; B ngReg.png 45x46, policy.png 38x38",
+  "which_side": "both"
+ },
+ {
+  "observation": "B reuses the registrar badge image twice (hero and card), while A uses it once",
+  "category": "imagery handling",
+  "evidence": "B images list ngReg.png at 160x166 and 45x46; A lists ngReg.png once",
+  "which_side": "B"
+ },
+ {
+  "observation": "The newsletter is a single 'Subscribe' text link in A, and a large green rounded panel with an email input, Subscribe button and Facebook link in B",
+  "category": "component choices",
+  "evidence": "A slice 0: 'SUBSCRIBE TO OUR NEWSLETTER' / 'Subscribe' link; B: form plus input (tag counts form 1, input 1) in a green panel",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a news-ticker block with a green uppercase headline and prev/next arrows; B has no news section",
+  "category": "component choices",
+  "evidence": "A slice 0: 'NEWS UPDATE', 'PANTAMI INAUGURATES NCC EMERGENCY COMMUNICATION CENTRES IN ENUGU, OGUN'; nothing comparable appears in B's outline or slices",
+  "which_side": "A"
+ },
+ {
+  "observation": "A embeds a video player and an iframe; B has neither",
+  "category": "component choices",
+  "evidence": "A tag_counts video 1, source 1, iframe 1; the A slice shows a 0:00 / 3:04 player; B has no video or iframe tags",
+  "which_side": "A"
+ },
+ {
+  "observation": "The calendar is a compact table widget with arrow buttons and a highlighted '25' in A, and a larger rounded card with text links '« Year ‹ Month Month › Year »' in B",
+  "category": "component choices",
+  "evidence": "A has table tags (2 tables, 38 td) and arrow buttons in slice 0; B has no table tag and a calendar card in slice 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer link groups (Registrars, Policy Compliance, Support) sit as green links on a near-black footer in A, and as underlined green links inside white bordered cards on a light background in B",
+  "category": "layout",
+  "evidence": "A slice 0 footer is black with green links; B slice 1 shows three white cards above a separate dark footer",
+  "which_side": "both"
+ },
+ {
+  "observation": "The bottom copyright bar is bright green with centered text in A; in B the copyright sits left-aligned in a dark green-charcoal footer that also repeats the main nav",
+  "category": "layout",
+  "evidence": "A slice 1: rgb(0,102,0) band with centered © text and a black 'Webmail' link; B slice 1: footer with org name, nav row, divider and © line with an underlined white Webmail link",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Follow us' social icon sets are the same images, placed in different spots and spaced differently",
+  "category": "imagery handling",
+  "evidence": "A icons at y 1215, x 1029-1170 (about 35px step); B icons at y 2021, x 1042-1218 (44px step); A's instagram has alt 'instragram' and B's has an empty alt",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has many shadows and transitions; B has one shadow and no transitions, animations or transforms",
+  "category": "decoration/effects",
+  "evidence": "A box_shadows 25, transitions 189, animations 1, transforms 2; B box_shadows 1, transitions 0, animations 0, transforms 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses a gradient background (the hero) and A uses none",
+  "category": "decoration/effects",
+  "evidence": "gradient_backgrounds: A 0, B 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "Corner radii differ: most of A's elements are square-cornered, while B has proportionally more rounded elements, including larger radii",
+  "category": "decoration/effects",
+  "evidence": "A buckets: 0px 619, 1-7px 36, 8-15px 1, pill 6; B: 0px 133, 1-7px 54, 8-15px 10, 16px+ 1, pill 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "The detected primary button differs: A's is a borderless calendar 'Previous Year' control, B's is a 'Menu' toggle with larger padding",
+  "category": "component choices",
+  "evidence": "A primary_button 'Previous Year', radius 3px, padding 2px 0px; B 'Menu', radius 6px, padding 8px 12px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Class usage is much heavier in A",
+  "category": "DOM/semantic structure",
+  "evidence": "classes total/unique: A 607/155; B 38/28",
+  "which_side": "A"
+ },
+ {
+  "observation": "Word counts are similar; A contains one exclamation mark and B contains none",
+  "category": "copy treatment",
+  "evidence": "words: A 324, B 276; exclamations: A 1, B 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "The intro copy is reworded slightly in B ('manager of' vs 'managers of', with a comma added) and appears as white hero text instead of gray body text",
+  "category": "copy treatment",
+  "evidence": "A slice 0: 'NiRA is a  Not-for-Profit ... managers of the .ng national resource'; B slice 0: '...body and manager of the .ng national resource, ... (ccTLD) name space, in the public interest'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's page is taller than A's at the same 1440px width",
+  "category": "layout",
+  "evidence": "page_height: A 1388; B 2199",
+  "which_side": "B"
+ }
+]

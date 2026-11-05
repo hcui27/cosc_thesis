@@ -1,0 +1,302 @@
+[
+ {
+  "observation": "Page titles differ: A uses an SEO-style title naming the product category, and B reuses the hero headline as its title.",
+  "category": "metadata",
+  "evidence": "A title: 'Basecamp: Project Management & Team Communication Software'; B title: 'Basecamp – The All-In-One Toolkit for Working Remotely'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has much richer head metadata (description, Open Graph, Twitter card, robots, theme-color). B has only charset and viewport.",
+  "category": "metadata",
+  "evidence": "A meta_names has 13 entries, including og:image, twitter:card and theme-color; B meta_names = ['charset','viewport']",
+  "which_side": "A"
+ },
+ {
+  "observation": "A embeds structured data and B has none.",
+  "category": "metadata",
+  "evidence": "jsonld_blocks: A=2, B=0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads JavaScript and external stylesheets. B is fully static with no scripts or linked stylesheets.",
+  "category": "DOM/structure",
+  "evidence": "scripts: A=13, B=0; stylesheets: A=3, B=0; link tags: A=9, B=none",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has two h1 elements, one of them empty. B has exactly one h1.",
+  "category": "DOM/semantics",
+  "evidence": "h1_count: A=2 (the outline ends with an empty level-1 heading), B=1",
+  "which_side": "A"
+ },
+ {
+  "observation": "The heading copy for the hero and the three h2 sections is identical on both pages.",
+  "category": "copy",
+  "evidence": "Both heading_outlines contain 'The All-In-One Toolkit for Working Remotely.', 'One place, not all over the place.', 'We literally wrote the book on working remotely.' and 'Companies change for the better when they work in Basecamp.'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The typeface systems differ: A uses Graphik everywhere, and B pairs the serif Georgia with system-ui.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: A [['Graphik',196]]; B [['Georgia',71],['system-ui',60]]",
+  "which_side": "both"
+ },
+ {
+  "observation": "The H1 is a bold sans in A and a serif in B, and B's H1 is smaller.",
+  "category": "typography",
+  "evidence": "A h1: 76.56px, Graphik; B h1: 64px, Georgia, 'Times New Roman', serif; both weight 700, centered, rgb(29,45,53)",
+  "which_side": "both"
+ },
+ {
+  "observation": "H2s are much larger in A.",
+  "category": "typography",
+  "evidence": "h2 font_size: A=58px, B=41.6px; visible in A_slice_01 ('One place, not all over the place.') vs B_slice_01",
+  "which_side": "A"
+ },
+ {
+  "observation": "Body text is larger in A with a tight line height. B uses a smaller size with roomier leading.",
+  "category": "typography",
+  "evidence": "body_font_size/line_height: A 23.2px/23.2px; B 18px/28.8px",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page background differs: A is white and B is a warm cream.",
+  "category": "color",
+  "evidence": "body_bg: A rgb(255,255,255); B rgb(251,248,241)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The CTA yellow differs: A uses a bright pure yellow and B a muted golden mustard.",
+  "category": "color",
+  "evidence": "A top_backgrounds include rgb(255,224,0) ×2; B primary_button bg rgb(233,183,43)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B introduces a green accent for links that A does not use.",
+  "category": "color",
+  "evidence": "B top_text_colors include rgb(27,110,63) ×24; A's links are dark navy and underlined (A_slice_01 'Basecamp is different…'); B_slice_01 shows the green link",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses a tan/khaki text color for the hero review quotes. B uses grey-blue secondary text instead.",
+  "category": "color",
+  "evidence": "A top_text_colors rgb(170,156,132) ×7; B top_text_colors rgb(91,103,112) ×19",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses dark navy as a background (for the Try it FREE button and similar elements). B has no dark background fills.",
+  "category": "color",
+  "evidence": "A top_backgrounds rgb(29,45,53) ×4; B top_backgrounds list has no rgb(29,45,53); A_slice_00 shows a dark 'Try it FREE' button",
+  "which_side": "A"
+ },
+ {
+  "observation": "The primary CTA shape differs: A uses a square, flat yellow rectangle and B a pill-shaped button.",
+  "category": "components",
+  "evidence": "B primary_button radius 999px, padding 16px 34px; B bucket_pill=3; A border_radius bucket_0=195, bucket_pill=0; A_slice_00 'Give Basecamp a Try' has square corners",
+  "which_side": "both"
+ },
+ {
+  "observation": "Header 'Sign in' is an outlined box in A and a plain text link in B.",
+  "category": "components",
+  "evidence": "A primary_button 'Sign in', radius 0px, padding 8.7px 17.4px, bordered in A_slice_00; B_slice_00 shows unboxed 'Sign in' text",
+  "which_side": "A"
+ },
+ {
+  "observation": "The 'Try it FREE' header button is a dark navy rectangle in A and a yellow pill in B.",
+  "category": "components",
+  "evidence": "A_slice_00 top-right dark square button; B_slice_00 top-right yellow rounded button",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's logo is an inline SVG. B's logo is an <img> (basecamp-logo.svg) with a yellow mark.",
+  "category": "imagery",
+  "evidence": "svgs: A=1, B=0; B images[0] basecamp-logo.svg alt 'Basecamp logo' at 140,16; B_slice_00 shows a yellow-badged logo",
+  "which_side": "both"
+ },
+ {
+  "observation": "The logo and nav sit near the viewport edges in A. B constrains the header to a centered content width.",
+  "category": "layout",
+  "evidence": "A_slice_00 logo at about x=25 and 'Try it FREE' ending near x=1416; B logo rect x=140 and the nav ends around x=1300",
+  "which_side": "both"
+ },
+ {
+  "observation": "Nav text is bold Graphik in A and regular-weight system font in B.",
+  "category": "typography",
+  "evidence": "A_slice_00 heavy nav labels 'How it works…Support'; B_slice_00 lighter nav labels",
+  "which_side": "A"
+ },
+ {
+  "observation": "Star ratings sit above each review quote in A, stacked. In B they sit inline to the left of each quote.",
+  "category": "layout",
+  "evidence": "A star img rects y=145 with quotes below (A_slice_00); B star rects y=120 beside the quote text (B_slice_00)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The social-proof count differs between the two pages.",
+  "category": "copy",
+  "evidence": "A_slice_00: '3,455 companies signed up in the last week alone!'; B_slice_00: '4,000 companies signed up…'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B separates sections with thin horizontal rules. A uses an organic torn-paper edge and a wavy line divider.",
+  "category": "decoration",
+  "evidence": "A_slice_01 wavy cream-to-white edge; A_slice_02 hand-drawn wavy line above 'Companies change…'; B_slice_00/01/02 straight thin divider lines",
+  "which_side": "A"
+ },
+ {
+  "observation": "A switches between white and cream bands with irregular edges. B keeps one cream background throughout, with a pale green footer.",
+  "category": "color",
+  "evidence": "A_slice_00/01 cream band with a torn edge, then white; B body_bg rgb(251,248,241); B top_backgrounds rgb(233,239,233) shows in the B_slice_03 footer",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a tinted footer band and A's footer sits on plain white.",
+  "category": "layout",
+  "evidence": "B_slice_03 light green footer, rgb(233,239,233); A_slice_04 footer links on white",
+  "which_side": "B"
+ },
+ {
+  "observation": "The handwritten annotations around the product screenshot are positioned correctly in A. In B they overlap the screenshot's own text.",
+  "category": "imagery",
+  "evidence": "B_slice_00: 'Create a place in Basecamp…' collides with 'Honcho Co', and 'Involve everyone who's working on the project' overlaps 'Message Board'; B image_overlaps project-remote-large.png & project-hero-captions.png at 1,015,200px²",
+  "which_side": "B"
+ },
+ {
+  "observation": "B stacks a separate caption-overlay image exactly on top of the product screenshot. A uses the single screenshot with annotations placed outside it.",
+  "category": "imagery",
+  "evidence": "B images: project-hero-captions.png (2333×2284, alt '') with the same rect as project-remote-large.png (270,624,900×1128); A has no image_overlaps",
+  "which_side": "B"
+ },
+ {
+  "observation": "The product screenshot is slightly wider and placed lower in A.",
+  "category": "imagery",
+  "evidence": "A project-remote-large rect x=265, y=718, 909×1139; B x=270, y=624, 900×1128",
+  "which_side": "both"
+ },
+ {
+  "observation": "The screenshot fades out at the bottom in A. B ends it in a hard white box edge.",
+  "category": "imagery",
+  "evidence": "A_slice_01: the Project Activity list fades ('Figure out who still needs a laptop' is faint); B_slice_01: the white panel cuts off sharply at 'Figure out who still needs a laptop'",
+  "which_side": "A"
+ },
+ {
+  "observation": "The growth-chart footer graphic is a full-width, prominent line drawing in A. In B it is smaller, greyer and confined to the right half.",
+  "category": "imagery",
+  "evidence": "A_slice_04 chart spans the full width with large handwritten labels; B footer-graph.png rect x=720, w=720, h=253",
+  "which_side": "A"
+ },
+ {
+  "observation": "The 'Remote' book cover is larger in A and sits on a white card with a shadow in B.",
+  "category": "imagery",
+  "evidence": "A remote-cover rect 279×380 at x=265; B 220×300 at x=240; B_slice_01/02 show a white padded frame with a drop shadow",
+  "which_side": "both"
+ },
+ {
+  "observation": "'Learn more about REMOTE' is a bordered, bold button in A and a plain green underlined link in B.",
+  "category": "components",
+  "evidence": "A_slice_02 outlined rectangle 'learn more about REMOTE'; B_slice_01/02 green underlined text link",
+  "which_side": "A"
+ },
+ {
+  "observation": "Testimonials are a single centered column of huge bold pull quotes in A. B puts them in a two-column grid of white rounded cards.",
+  "category": "layout",
+  "evidence": "A_slice_02/03 centered bold quotes; B_slice_02 two-column cards; B border_radius bucket_8_15=10 and 10 blockquotes",
+  "which_side": "both"
+ },
+ {
+  "observation": "Testimonial quotes are oversized bold sans in A and regular-weight serif body text in B.",
+  "category": "typography",
+  "evidence": "A_slice_03 quotes in heavy Graphik at headline size; B_slice_02 Georgia regular at about body size",
+  "which_side": "A"
+ },
+ {
+  "observation": "Citation styling differs: A uses an italic hyphen-led cite and B a bold grey sans with an em dash.",
+  "category": "copy",
+  "evidence": "A '-Tobi Lütke, CEO, Shopify' in italics; B '— Tobi Lütke, CEO, Shopify'; em_dashes: A=0, B=10",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses many more box shadows, mainly on the testimonial cards and the button.",
+  "category": "effects",
+  "evidence": "box_shadows: A=2, B=13",
+  "which_side": "B"
+ },
+ {
+  "observation": "A is essentially all square corners. B mixes in rounded cards and pills.",
+  "category": "effects",
+  "evidence": "A bucket_0=195, bucket_1_7=1, pill=0; B bucket_0=118, bucket_8_15=10, pill=3",
+  "which_side": "both"
+ },
+ {
+  "observation": "A defines hover transitions and transforms. B has none.",
+  "category": "effects",
+  "evidence": "transitions: A=44, B=0; transforms: A=2, B=0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's layout uses CSS grid. B uses only flex.",
+  "category": "layout",
+  "evidence": "display_grid: A=6, B=0; display_flex: A=11, B=7",
+  "which_side": "A"
+ },
+ {
+  "observation": "A is a much taller page, mainly because of its large type and stacked testimonials.",
+  "category": "layout",
+  "evidence": "page_height: A=6474px (5 slices), B=4567px (4 slices); both 1440px wide",
+  "which_side": "A"
+ },
+ {
+  "observation": "The closing CTA heading is large and set on two lines in A. B puts it on one smaller line.",
+  "category": "typography",
+  "evidence": "A_slice_04 'Have questions? Holler. / Ready to get going? Engage:' in large bold; B_slice_03 one serif line at about body size",
+  "which_side": "A"
+ },
+ {
+  "observation": "Body paragraphs are centered in A and left-aligned in B.",
+  "category": "layout",
+  "evidence": "A_slice_01 'Remote work is especially challenging…' centered; B_slice_01 the same text left-aligned at x≈340",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Hear from hundreds more customers' link is navy bold sans in A and green bold serif in B.",
+  "category": "copy",
+  "evidence": "A_slice_04 navy underlined; B_slice_03 green underlined Georgia",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer sign-off differs.",
+  "category": "copy",
+  "evidence": "A_slice_04 'Enjoy the rest of your Tuesday!' on a separate line; B_slice_03 'Copyright … Enjoy the rest of your day!' on the same line",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has looser footer link spacing than A.",
+  "category": "layout",
+  "evidence": "A_slice_04 lines about 26px apart; B_slice_03 lines about 35px apart",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses more class names, some utility-style. B has a minimal class set with no utility classes.",
+  "category": "DOM/structure",
+  "evidence": "classes total/unique: A 175/69, tailwind_like 0.246; B 25/14, tailwind_like 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has more structural and interactive elements, including a second nav, a nav toggle input/label, an hr and ARIA attributes.",
+  "category": "DOM/semantics",
+  "evidence": "A nav=2, input=1, label=1, hr=1, aria_attrs=3, section=4, div=22, a=41; B nav=1, no input/label/hr, aria_attrs=0, section=3, div=11, a=31",
+  "which_side": "A"
+ },
+ {
+  "observation": "Image delivery differs: A uses fingerprinted asset filenames. B uses plain filenames and adds decorative images with empty alt text.",
+  "category": "imagery",
+  "evidence": "A 'stars-9403af61….svg', 'remote-cover-cf480c….png'; B 'stars.svg', 'remote-cover.png', plus project-hero-captions.png and footer-graph.png with alt ''; images: A=5, B=8",
+  "which_side": "both"
+ },
+ {
+  "observation": "Word count, emoji count and exclamation count are nearly identical, so the copy is largely preserved.",
+  "category": "copy",
+  "evidence": "words: A=598, B=605; emoji 1 on each; exclamations 6 on each",
+  "which_side": "both"
+ }
+]

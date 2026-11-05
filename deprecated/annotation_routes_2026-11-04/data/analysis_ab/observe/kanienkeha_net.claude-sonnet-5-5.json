@@ -1,0 +1,172 @@
+[
+ {
+  "observation": "The page is a single-column, centered-container layout about 1040px wide (content spans x=200 to 1240 on a 1440px viewport). Sections alternate between an off-white and a pale green background.",
+  "category": "layout",
+  "evidence": "page_width 1440; image rects start at x=200; body_bg rgb(251,250,246); rgb(230,244,236) is used for 3 section backgrounds; slices show alternating bands."
+ },
+ {
+  "observation": "The header is a white bar with the logo on the left and a horizontal text nav on the right. The nav links are Words, Map, Blog, About, Resources, Contact and Log In, followed by a filled green 'Donate' button. A thin bottom border separates it from the page.",
+  "category": "component",
+  "evidence": "header 1, nav 2; logo rect x=200,y=10,w=200,h=44; slice 1 shows the nav and a green Donate pill-like button."
+ },
+ {
+  "observation": "The logo is a raster GIF wordmark with a white background. It is scaled from 660x145 to 200x44 and carries descriptive alt text.",
+  "category": "imagery",
+  "evidence": "moh-logo-1.gif natural [660,145], rect 200x44; alt 'Kanienkeha — an open source endangered language initiative'."
+ },
+ {
+  "observation": "The hero is centered. A 56px bold sans h1 mixes dark slate with a green-colored 'Kanienkeha.net'. A serif gray intro paragraph sits beneath it.",
+  "category": "typography",
+  "evidence": "h1 font_size 56px, weight 700, system-ui, color rgb(59,58,79), text-align center; slice 1 shows 'Kanienkeha.net' in green."
+ },
+ {
+  "observation": "The type system pairs two families. Headings, UI and nav use system-ui sans. Body copy, card titles and descriptions use Georgia serif. The serif is used for the Mohawk words themselves.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Georgia 163, system-ui 140; body_font_size 17px; line-height 27.2px."
+ },
+ {
+  "observation": "There is a single h1 and seven h2s, with one h3 as a green subtitle under 'Uploading your Notes'. The outline is flat and section-based.",
+  "category": "structure",
+  "evidence": "h1_count 1; heading_outline lists 7 h2 and 1 h3; h2 is 36px/700."
+ },
+ {
+  "observation": "The hero search is a pill-shaped input with a green outline and an attached filled green 'Search' button. Below it are 'Try these:' suggestion chips (apple, colors, numbers).",
+  "category": "component",
+  "evidence": "form 1, input 1, label 1; primary_button 'Search' bg rgb(27,154,85), padding 0px 24px; slice 1 shows rounded outline."
+ },
+ {
+  "observation": "CTA buttons come in two styles: solid green pill (e.g. 'Support us on Patreon') and green-outlined pill with white fill (e.g. 'Add Words', 'See more words →', 'Random Word'). They are used in pairs.",
+  "category": "component",
+  "evidence": "7 buttons; 24 pill-radius elements; slices 1, 2 and 4 show filled/outline pairs."
+ },
+ {
+  "observation": "The palette is restrained. Green (rgb 27,154,85) is the single accent, used for buttons, the highlighted h1 word, stats numbers, card left borders and arrows. A darker green (15,110,59) is used for link and word text. Slate (59,58,79) and gray (108,107,125) are used for text.",
+  "category": "color",
+  "evidence": "top_text_colors: 59,58,79 ×142; 15,110,59 ×78; 108,107,125 ×71; backgrounds: 27,154,85 ×7."
+ },
+ {
+  "observation": "The 'Most Recent' section has filter chips (All, Phrases, Occupations). 'All' is filled green and the others are outlined pills.",
+  "category": "component",
+  "evidence": "slice 1 at y≈715; pill-radius bucket 24; buttons count 7."
+ },
+ {
+  "observation": "Dictionary entries sit in a 4-column grid of white cards. Each card has a thick green left border and a small gray sans English gloss above a bold green serif Mohawk term. Cards in a row share equal heights, and long terms wrap or break mid-word (e.g. 'Kanonhkwa'tsherón:ni / s').",
+  "category": "layout",
+  "evidence": "display_grid 7; slices 1–2 show ~40 cards in 4 columns; border_radius 8–15 bucket 77."
+ },
+ {
+  "observation": "The final row of the card grid is incomplete: the last row has only two cards, leaving empty cells at the right.",
+  "category": "layout",
+  "evidence": "slice 2 shows 'Plumber' and 'Councillors' with blank space after them."
+ },
+ {
+  "observation": "The card grid is long, with roughly 40 entries visible at once, and takes up about the first 1900px of the 4883px page. It is repetitive and text-only, with no imagery per entry.",
+  "category": "content",
+  "evidence": "page_height 4883; slices 1–2 show only text cards; 14 images total, none in the cards."
+ },
+ {
+  "observation": "The map section is a two-column band on pale green. The left column holds a rounded, bordered illustration (500x262) and the right column holds an h2, a short serif paragraph and a green 'Explore the map' button.",
+  "category": "layout",
+  "evidence": "map-nap.png rect x=200,y=2214,w=500,h=262; section bg rgb(230,244,236); slice 2."
+ },
+ {
+  "observation": "The 'Uploading your Notes' section reverses the arrangement from the map section. The text and green CTA are on the left, and a 500x316 flat illustration of a study notebook, a phone and a cloud is on the right.",
+  "category": "layout",
+  "evidence": "notes-4.jpg rect x=740,y=2589,w=500,h=316; slice 3."
+ },
+ {
+  "observation": "Illustrations are flat, grainy cartoon graphics in a green/blue palette that matches the brand green. They are shown with rounded corners and a thin border.",
+  "category": "imagery",
+  "evidence": "map-nap.png, notes-4.jpg, protest-3.png visible in slices 2–3; border_radius 8–15 bucket 77."
+ },
+ {
+  "observation": "The 'Total Site Numbers' section holds four equal white stat cards (2650 Words, 159 Categories, 260 Tags, 10 Blog posts). Each has a large green bold number and a small gray label, and two of the labels are underlined links.",
+  "category": "component",
+  "evidence": "slice 3 at y≈470–580; a count of 94 anchors includes underlined 'Categories' and 'Blog posts'."
+ },
+ {
+  "observation": "The blog section is a two-column layout. The left column has a heading, a subtitle and a decorative 320x157 illustration with an empty alt. The right column is a stack of five bordered white link cards with serif bold titles and green arrows (→).",
+  "category": "layout",
+  "evidence": "protest-3.png alt '' at x=200,y=3400,w=320,h=157; slice 3 shows five cards ending in →."
+ },
+ {
+  "observation": "The 'She:kon / Greetings' section narrows to a ~680px text column on a pale green band. It contains a long serif paragraph, an italic sign-off ('Nia:wen / Thank you — Benjamin Doolittle, MohDictionary') and rows of pill link chips with icons.",
+  "category": "layout",
+  "evidence": "Text starts at x=380 in slices 3–4; chips: Facebook, Twitter, Instagram, Newsletter, Gumroad, Patreon, PayPal; em count 1."
+ },
+ {
+  "observation": "The social chips use tiny 16px favicon-style icons from third-party sites. Facebook and Twitter share the same blue bird icon, and Instagram has no icon.",
+  "category": "imagery",
+  "evidence": "16x16 images at y≈4158 and y≈4204 (favicons, fBV3Wtxe_16.png, Gumroad_icon.png, favicon.ico); slice 4 shows two identical blue bird icons."
+ },
+ {
+  "observation": "A closing centered CTA block repeats the donation ask with a solid 'Become a patron on Patreon' pill and an outlined 'Donate' pill. Beneath them are language-toggle chips with flag icons (English, Kanienkeha (Mohawk)).",
+  "category": "component",
+  "evidence": "England-32.png and Mohawk-32.png rendered at 20x20; slice 4 at y≈545–635."
+ },
+ {
+  "observation": "Donation and support prompts recur at least five times: the nav Donate button, the hero Patreon button, the social chips, the closing CTA and the intro copy. The page is oriented toward fundraising as well as dictionary use.",
+  "category": "content",
+  "evidence": "Intro text 'please consider a small donation'; buttons 'Donate', 'Support us on Patreon', 'Become a patron on Patreon'."
+ },
+ {
+  "observation": "The footer holds two decorative illustration images side by side (a 'wearefriends' banner and a longhouse scene), a centered text link row (Home, About, Donate, Resources, Sitemap, Register, Contact) and small credit lines with underlined green links.",
+  "category": "component",
+  "evidence": "wearefriends.jpg 280x54 and longhouse1.jpg 293x91 at y≈4630–4650; footer 1; nav 2."
+ },
+ {
+  "observation": "The visual language is flat. There are no box shadows, gradients, transitions, animations or transforms. Depth comes only from 1px light borders and background color changes.",
+  "category": "decoration",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, transitions 0, animations 0, transforms 0."
+ },
+ {
+  "observation": "One element uses a translucent background with backdrop blur, probably a sticky header or nav layer. A semi-transparent off-white, rgba(251,250,246,0.9), is detected.",
+  "category": "decoration",
+  "evidence": "backdrop_blur 1; top_backgrounds includes color(srgb 0.984 0.980 0.965 / 0.9)."
+ },
+ {
+  "observation": "Corner radii are mixed. Most elements (200) have none, 77 have 8–15px radius (cards, images) and 24 are full pills (buttons, chips). The search button's computed radius is 0 because it is clipped by the rounded form container.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:200, 1_7:2, 8_15:77, pill:24; primary_button radius 0px."
+ },
+ {
+  "observation": "The CSS is a single inline <style> block with no external stylesheet. It uses 30 unique semantic-style class names with almost no Tailwind-like utilities, plus just 4 inline style attributes. The layout relies on flex (69) and grid (7).",
+  "category": "structure",
+  "evidence": "stylesheets 0, style 1, classes unique 30, tailwind_like_fraction 0.005, inline_style_attrs 4, display_flex 69, display_grid 7."
+ },
+ {
+  "observation": "The DOM uses semantic landmarks (one header, one main, one footer, two navs, seven sections), but no article, aside, figure or blockquote. Many anchors (94) and spans (106) make up the card contents.",
+  "category": "structure",
+  "evidence": "semantic counts: header 1, nav 2, main 1, section 7, footer 1, article 0, figure 0; a 94, span 106."
+ },
+ {
+  "observation": "Image accessibility markup is mixed. All images have alt attributes, descriptive for content images and empty for decorative or icon images, and there are no inline SVGs, so all graphics are raster.",
+  "category": "structure",
+  "evidence": "alt_missing 0, svgs 0, images 14; alt '' on protest-3.png, favicons, flags."
+ },
+ {
+  "observation": "The copy is warm and community-oriented. It uses direct address (e.g. 'You'll be happy you did!') and Mohawk greetings and thank-yous ('She:kon', 'Nia:wen'). Mohawk orthography appears throughout with diacritics, colons and apostrophes.",
+  "category": "copy",
+  "evidence": "exclamations 1; headings 'She:kon / Greetings'; cards like 'Satkétsko', 'Oh nahò:ten tesahsenná:sere?'."
+ },
+ {
+  "observation": "The page is about 509 words and has no emoji. Typographic arrows (→, ↗-style '→') are used instead of icons for link affordance, and curly apostrophes appear in the copy.",
+  "category": "copy",
+  "evidence": "words 509, emoji 0; 'See more words →', blog card arrows; 'we'll', 'you're'."
+ },
+ {
+  "observation": "Vertical rhythm uses generous spacing. There are large gaps between the hero and 'Most Recent' (~100px) and ~56px of padding inside colored bands. Headings are tightly letter-spaced bold sans.",
+  "category": "layout",
+  "evidence": "slice 1 gap between buttons at y≈466 and h2 at y≈615; slice 2 band padding between y≈858 and 1233."
+ },
+ {
+  "observation": "Secondary text is gray (108,107,125) and small. Examples are the English glosses on cards, the subtitle lines under headings, and the 'Try these:' label. This gives a two-tier text hierarchy against the dark slate headings.",
+  "category": "typography",
+  "evidence": "top_text_colors 108,107,125 ×71; slice 1 card glosses and 'Fresh from the dictionary…' subtitle."
+ },
+ {
+  "observation": "The page is long, at 4883px tall, and runs as one linear scroll of stacked sections. Its content ordering is search, word cards, map, notes upload, stats, blog, greeting, donation CTA, footer.",
+  "category": "structure",
+  "evidence": "page_height 4883; heading_outline order."
+ }
+]

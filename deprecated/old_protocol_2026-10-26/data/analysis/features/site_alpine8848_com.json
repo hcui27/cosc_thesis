@@ -1,0 +1,622 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Document titles differ: A wraps the name in decorative punctuation, while B uses an em dash and a location suffix.",
+   "evidence": "A title '.:Alpine Everest Expedition & Trek :.'; B title 'Alpine Everest Expedition & Trek — Nepal'",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|00",
+    "alpine8848_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A uses no HTML5 semantic landmarks. B uses header, nav, main, five sections and a footer.",
+   "evidence": "A semantic counts all 0; B header 1, nav 1, main 1, section 5, footer 1",
+   "side": "generated",
+   "members": [
+    "alpine8848_com|opus|03",
+    "alpine8848_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "A has three h1 elements and no lower heading levels. B has one h1, four h2 and one h3.",
+   "evidence": "A heading_outline: h1 x3 (Welcome, Gallery, Products); B: h1, h2 x4, h3 x1",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|04",
+    "alpine8848_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "A lays out the page with tables. B uses no tables and relies on CSS grid and flex.",
+   "evidence": "A table 2, tr 6, td 7, display_grid 0, display_flex 0; B display_grid 11, display_flex 11",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|05",
+    "alpine8848_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "A loads 16 scripts and 4 external stylesheets. B has 1 script and no external stylesheets.",
+   "evidence": "A scripts 16, stylesheets 4; B scripts 1, stylesheets 0",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|08",
+    "alpine8848_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A has 20 images without alt text. B has none missing; its gallery thumbnails use empty alt and its logo and hero images have descriptive alt.",
+   "evidence": "alt_missing A 20, B 0; B welcome-img alt 'Trekkers silhouetted against Himalayan peaks'",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|10",
+    "alpine8848_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "B has a real <button> element and label elements for its form. A has no buttons or labels.",
+   "evidence": "A buttons 0, no label; B button 1, label 3",
+   "side": "generated",
+   "members": [
+    "alpine8848_com|opus|11"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I7",
+   "text": "B wraps the contact details in an <address> element.",
+   "evidence": "B tag_counts address 1; A has none",
+   "side": "generated",
+   "members": [
+    "alpine8848_com|opus|12"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I8",
+   "text": "A uses Verdana throughout. B pairs Georgia serif with system-ui sans.",
+   "evidence": "A fonts Verdana 195 / verdana 41 / Arial 4; B Georgia 67, system-ui 54",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|13",
+    "alpine8848_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "The h1 color and font family differ. A's is dark blue Verdana; B's is white Georgia, set over the hero gradient.",
+   "evidence": "A h1 color rgb(39,66,120) Verdana; B rgb(255,255,255) Georgia serif",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|14",
+    "alpine8848_com|opus|15",
+    "alpine8848_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "B defines an h2 at 36.8px. A has no h2.",
+   "evidence": "A h2 null; B h2 36.8px/700",
+   "side": "generated",
+   "members": [
+    "alpine8848_com|opus|17",
+    "alpine8848_com|sonnet|41"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A sets its body copy in small, justified gray Verdana. B sets the About text in left-aligned Georgia at a larger size.",
+   "evidence": "A_slice_00 welcome paragraphs justified, gray rgb(102,102,102) is #2 text color; B_slice_00 About paragraphs in serif",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|18",
+    "alpine8848_com|opus|19",
+    "alpine8848_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "B adds small uppercase, letter-spaced teal eyebrow labels above its section headings. A has none.",
+   "evidence": "B slices: 'ABOUT US', 'MOMENTS', 'FROM NEPAL', 'GET IN TOUCH'; teal rgb(95,158,166) in top_text_colors",
+   "side": "generated",
+   "members": [
+    "alpine8848_com|opus|20",
+    "alpine8848_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A's body background is black. B's is warm cream.",
+   "evidence": "body_bg A rgb(0,0,0); B rgb(251,248,241)",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|24",
+    "alpine8848_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "B's hero is a full-width gradient from slate blue through teal to cream, which echoes A's sky colors.",
+   "evidence": "B gradient_backgrounds 2; B_slice_00 hero band; A gradient_backgrounds 0 (its sky is an image)",
+   "side": "generated",
+   "members": [
+    "alpine8848_com|opus|21",
+    "alpine8848_com|opus|22",
+    "alpine8848_com|opus|23",
+    "alpine8848_com|opus|26",
+    "alpine8848_com|sonnet|09",
+    "alpine8848_com|sonnet|14",
+    "alpine8848_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "A's main palette is navy, gray and bright cyan text, plus light teal input fields. B's is dark slate text, white, pale blue and teal.",
+   "evidence": "A text rgb(22,38,74), rgb(102,102,102), rgb(0,153,204); A bg rgb(162,212,213); B text rgb(34,49,60), rgb(220,233,236)",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|28",
+    "alpine8848_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "A has no rounded corners. B rounds 31 elements at 8–15px and 6 as pills.",
+   "evidence": "A border_radius bucket_0 241, others 0; B bucket_8_15 31, pill 6",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|29",
+    "alpine8848_com|opus|30",
+    "alpine8848_com|sonnet|29",
+    "alpine8848_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "A's layout is a two-column fixed-width table: a left sidebar holds navigation, the form and contact details, and the content sits on the right. B stacks full-width sections in a single column.",
+   "evidence": "A_slice_00 left sidebar plus center column; B slices sequential sections",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|31",
+    "alpine8848_com|opus|32",
+    "alpine8848_com|sonnet|05",
+    "alpine8848_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "A's header is a white box with the AEG logo on the left and a broken image placeholder on the right. B uses a 'ALPINE EVEREST' text wordmark in a nav bar, and moves the logo into a rounded, shadowed card on the right of the hero.",
+   "evidence": "A_slice_00 broken image icon at top center; A images aimg2/aimg7 natural 0×0 and overlapping; B businessname-bg.jpg at x 908, y 146",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|33",
+    "alpine8848_com|sonnet|08",
+    "alpine8848_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A's nav links are centered on a hatched gray strip with blue underline bars. B's nav links are plain white text, right-aligned in the top bar.",
+   "evidence": "A_slice_00 nav strip; B_slice_00 top-right nav",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|34",
+    "alpine8848_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "A shows 'Featured Tours' as a sidebar list with rule separators. B shows the same items as a grid of rounded cream cards, each with a red arrow.",
+   "evidence": "A_slice_00 sidebar list; B_slice_00/01 six cards (Adventure Activities … Plan a trip)",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|35",
+    "alpine8848_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Both keep the yellow torn-paper 'Featured Tours' image heading. B displays it narrower and drops the 'Contact Information' image, using a serif h2 instead.",
+   "evidence": "featured-tours.png rendered 248w in A vs 190w in B; contact-information.png in A images only",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|36",
+    "alpine8848_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "A's gallery is a single row of ten 150px thumbnails, and the row overflows past the 1440px viewport. B arranges the gallery in a 7-column wrapping grid.",
+   "evidence": "A gallery image x positions 365–1850 (beyond page_width 1440); B thumbs 137×182 in rows at y 1689 and 1885",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|37",
+    "alpine8848_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "A's product images include broken 16×16 placeholders and blue caption bars such as 'Skirt -03'. B's product tiles have rounded corners and shadows, with no captions.",
+   "evidence": "A 19.jpg and 17.jpg natural 0×0 at 16×16; A_slice_01 'skirt -03', 'shirt -01' labels; B_slice_01/02 tiles",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "A places the welcome collage image to the right of the text. B places it on the left inside a white rounded card with a shadow, widened to 240px.",
+   "evidence": "A welcome-img.jpg x 1012, w 176; B x 200, w 240",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|40",
+    "alpine8848_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "A lists the product categories (Pashmina, Garments, Handicrafts) under a purple 'Products' link in the sidebar. B shows them as outlined pill chips above the products grid.",
+   "evidence": "A_slice_00 sidebar; B_slice_01 pill chips",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|41",
+    "alpine8848_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "The 'more' links differ: A uses small lowercase cyan text aligned right, while B uses a bold red, left-aligned 'More →'.",
+   "evidence": "A_slice_00/01 'more' at right; B_slice_01/02 'More →'",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|42",
+    "alpine8848_com|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "A's 'Recommend this site' form sits in the sidebar with small teal-filled inputs and a square 'Send' button. B puts it in a rounded translucent card in the dark contact band, with large white inputs and a red pill 'Send' button.",
+   "evidence": "A_slice_00 form; B_slice_02 form card; B bg rgba(255,255,255,0.08)",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|43",
+    "alpine8848_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "Class usage differs: A has 9 unique classes, B has 21.",
+   "evidence": "classes A total 89/unique 9; B total 55/unique 21, tailwind_like 0.018",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|46"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I29",
+   "text": "B uses one span-heavy structure for labels and arrows, with 11 spans. A has none and uses a single <p>.",
+   "evidence": "B span 11, p 3; A p 1, no span",
+   "side": "generated",
+   "members": [
+    "alpine8848_com|opus|47"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I30",
+   "text": "Contact details appear in A's left sidebar in small Verdana. In B they sit in a left column next to the form, set larger with a bold company name and a linked, underlined email.",
+   "evidence": "A_slice_00 sidebar contact; B_slice_02 contact column, strong 1",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|27",
+    "alpine8848_com|opus|44",
+    "alpine8848_com|opus|48",
+    "alpine8848_com|sonnet|33",
+    "alpine8848_com|sonnet|34",
+    "alpine8848_com|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "B includes charset, viewport and description meta tags. A has Content-Type and google-site-verification metas.",
+   "evidence": "A meta_names [Content-Type, google-site-verification]; B [charset, viewport, description]",
+   "side": "both",
+   "members": [
+    "alpine8848_com|opus|01",
+    "alpine8848_com|opus|02",
+    "alpine8848_com|opus|49",
+    "alpine8848_com|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "A has a fixed-width centered white container (about 980px, x 230–1210) on a dark scenic background. B uses a full-bleed layout with content aligned to a ~1040px column starting at x=200.",
+   "evidence": "A screenshot: white panels from x≈230 to 1210 over a sky-and-grass backdrop. B images start at x=200 and cards end at x≈1240.",
+   "side": "both",
+   "members": [
+    "alpine8848_com|sonnet|06"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "The two sides share the same body copy for the About, contact details and copyright text. B adds the headline and subhead above them.",
+   "evidence": "Both show 'Alpine Everest Expedition and Treks established with a view...', the P.O.Box 24601 address, and 'Copyright © ... 2010'. A words 1",
+   "side": "both",
+   "members": [
+    "alpine8848_com|sonnet|15"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "B reuses a single placeholder image, thumb.png (a brown embroidered pashmina), for all gallery and product tiles. A shows distinct photos (landscape, ceremony crowds, clothing).",
+   "evidence": "B images list: 18 entries all 'thumb.png' 113x150 natural. A has different files 11.jpg–23.jpg.",
+   "side": "generated",
+   "members": [
+    "alpine8848_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "B alternates section backgrounds (cream, white, cream-to-sand gradient, slate, near-black) to separate content. A separates blocks with bordered boxes and thin lines on a white panel.",
+   "evidence": "B top_backgrounds rgb(251,248,241), rgb(255,255,255), rgb(52,73,90), rgb(23,34,42). A top_backgrounds are mostly white with rgb(162,212,213)",
+   "side": "both",
+   "members": [
+    "alpine8848_com|sonnet|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "Both pages use both a decorative and an inline arrow glyph; the page-wide emoji count is one on each side.",
+   "evidence": "A emoji 1, B emoji 1; B adds '→' arrow glyphs on cards and More links.",
+   "side": "both",
+   "members": [
+    "alpine8848_com|sonnet|40"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page uses HTML5 semantic landmarks (header, nav, main, multiple sections, footer) rather than generic containers.",
+   "family": "semantic_dom",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "Heading hierarchy is proper: a single h1 followed by several h2 section headings and an h3.",
+   "family": "semantic_dom",
+   "items": [
+    "I2",
+    "I10"
+   ]
+  },
+  {
+   "statement": "Layout is built with CSS grid and flexbox, with no table-based layout.",
+   "family": "layout",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Page is lightweight: very few scripts and no external stylesheets, with styling kept inline.",
+   "family": "other",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Images have complete alt text: descriptive for meaningful images, empty for decorative thumbnails, none missing.",
+   "family": "semantic_dom",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Forms use real button elements and label elements for inputs.",
+   "family": "semantic_dom",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Contact details are wrapped in a semantic address element.",
+   "family": "semantic_dom",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Typography pairs a serif display and body face with a system-ui sans for UI text.",
+   "family": "typography",
+   "items": [
+    "I8",
+    "I11"
+   ]
+  },
+  {
+   "statement": "Hero h1 is white serif text set over a gradient background.",
+   "family": "typography",
+   "items": [
+    "I9",
+    "I14"
+   ]
+  },
+  {
+   "statement": "Small uppercase, letter-spaced teal eyebrow labels sit above section headings.",
+   "family": "typography",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Page background is a warm cream tone rather than black or stark white.",
+   "family": "color",
+   "items": [
+    "I13"
+   ]
+  },
+  {
+   "statement": "Hero is a full-width gradient band blending slate blue, teal and cream.",
+   "family": "decoration",
+   "items": [
+    "I14"
+   ]
+  },
+  {
+   "statement": "Palette is restrained: dark slate text, white, pale blue and teal accents, with red accents for calls to action.",
+   "family": "color",
+   "items": [
+    "I15",
+    "I26",
+    "I27"
+   ]
+  },
+  {
+   "statement": "Many elements have rounded corners, including cards, tiles and pill-shaped buttons and chips.",
+   "family": "component",
+   "items": [
+    "I16",
+    "I25",
+    "I27"
+   ]
+  },
+  {
+   "statement": "Content is stacked in full-width sections in a single column, with content aligned to a ~1040px column.",
+   "family": "layout",
+   "items": [
+    "I17",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Site name appears as a plain text wordmark in a minimal top navigation bar.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Navigation links are plain white text, right-aligned in the top bar without decorative strips.",
+   "family": "component",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Feature lists are presented as a grid of rounded cream cards, each with an arrow accent.",
+   "family": "component",
+   "items": [
+    "I20",
+    "I36"
+   ]
+  },
+  {
+   "statement": "Links like 'More →' are bold, red and left-aligned with an arrow glyph.",
+   "family": "copy",
+   "items": [
+    "I26",
+    "I36"
+   ]
+  },
+  {
+   "statement": "Images are shown in rounded, shadowed cards or tiles without caption bars.",
+   "family": "imagery",
+   "items": [
+    "I23",
+    "I24"
+   ]
+  },
+  {
+   "statement": "Galleries are arranged in a wrapping multi-column grid that stays within the viewport.",
+   "family": "layout",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Contact form sits in a rounded translucent card on a dark band, with large white inputs and a pill button.",
+   "family": "component",
+   "items": [
+    "I27",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Section backgrounds alternate between cream, white, gradient, slate and near-black to separate content.",
+   "family": "decoration",
+   "items": [
+    "I35"
+   ]
+  },
+  {
+   "statement": "Document title uses an em dash and a location suffix instead of decorative punctuation.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Head includes standard charset, viewport and description meta tags.",
+   "family": "semantic_dom",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "Tiles reuse one repeated placeholder image rather than distinct photos.",
+   "family": "imagery",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "Spans are used for small labels and arrow glyphs inside components.",
+   "family": "semantic_dom",
+   "items": [
+    "I29"
+   ]
+  }
+ ]
+}

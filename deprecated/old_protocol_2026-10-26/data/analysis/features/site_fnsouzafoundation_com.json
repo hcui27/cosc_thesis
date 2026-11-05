@@ -1,0 +1,525 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Document title differs: A uses a generic 'Home' title, while B uses the full organization name.",
+   "evidence": "A_facts title 'Home'; B_facts title 'F N Souza International Fine Arts Foundation'",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|00",
+    "fnsouzafoundation_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A includes a 'generator' meta tag, while B includes 'charset' and 'viewport' meta names instead.",
+   "evidence": "A meta_names [content-type, description, generator]; B meta_names [charset, viewport, description]",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|01",
+    "fnsouzafoundation_com|opus|02",
+    "fnsouzafoundation_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "The h1 text differs: A's first h1 is a painting title ('CIUDAD EN ESAPANA'), while B's h1 is 'Modern & Contemporary Art'.",
+   "evidence": "A h1.text 'CIUDAD EN ESAPANA'; B h1.text 'Modern & Contemporary Art'",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|04",
+    "fnsouzafoundation_com|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "The heading font family differs: A's h1 uses Cabin sans-serif in bold, while B's h1 uses a Georgia serif at regular weight.",
+   "evidence": "A h1 font 'Cabin, sans-serif' weight 700; B h1 'Georgia, \"Times New Roman\", serif' weight 400",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|06",
+    "fnsouzafoundation_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "B's headings are larger: the h1 is 84px vs 60px and the h2 is 46px vs 20px.",
+   "evidence": "A h1 60px, h2 20px; B h1 84px, h2 46px",
+   "side": "generated",
+   "members": [
+    "fnsouzafoundation_com|opus|07",
+    "fnsouzafoundation_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A's site name is set as a wide, all-caps display wordmark with a script tagline ('History & Works'). B shows the name as a small two-line serif text logo at the top left.",
+   "evidence": "A_slice_00 large centered 'F N SOUZA INTERNATIONAL FINE ARTS…' with script 'History & Works'; B_slice_00 small serif name at top left",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|09",
+    "fnsouzafoundation_com|opus|10",
+    "fnsouzafoundation_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "The body text metrics differ slightly.",
+   "evidence": "A body 16px/30px; B body 17px/28.05px",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|11",
+    "fnsouzafoundation_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "The accent color differs: A uses a red (rgb 232,43,24), for example on the active 'HOME' nav item and the user icon. B uses an orange (rgb 232,102,58) on the announcement bar, buttons and links.",
+   "evidence": "A top_backgrounds rgb(232,43,24) x7; B top_backgrounds rgb(232,102,58) x3; screenshots",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|12",
+    "fnsouzafoundation_com|opus|13",
+    "fnsouzafoundation_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "B uses a muted secondary text tone (rgb 163,154,142) for supporting copy.",
+   "evidence": "B top_text_colors rgb(163,154,142) x18",
+   "side": "generated",
+   "members": [
+    "fnsouzafoundation_com|opus|15"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I9",
+   "text": "A's hero is an image carousel of paintings, with circular pagination dots and a slide title overlaid in white. B's hero is a static dark, abstract textured background with left-aligned text.",
+   "evidence": "A_slice_00 'CIUDAD EN ESAPANA' over a painting with 9 dot indicators; B_slice_00 dark brushy background, no dots",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|18",
+    "fnsouzafoundation_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "A's nine slide titles are not presented as hero slides in B. Instead, B lists them in an italic serif horizontal strip separated by orange diamond bullets.",
+   "evidence": "B_slice_00 strip: 'Ciudad En Esapana • Multicoloured Villagescape • Vatican Cityscape…' in italics",
+   "side": "generated",
+   "members": [
+    "fnsouzafoundation_com|opus|19",
+    "fnsouzafoundation_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A's header is a semi-transparent band laid over the hero image, with the wordmark and nav centered. B's header is a horizontal bar with the logo on the left and the nav on the right.",
+   "evidence": "A_slice_00 translucent band with centered content (rgba(1,1,0,0.53) bg); B_slice_00 left logo, right-aligned nav",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|20"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I12",
+   "text": "A's nav items are uppercase. B's nav items are title case, and 'Family History' and 'Available For Sale' have small dropdown carets.",
+   "evidence": "A_slice_00 'ABOUT F N SOUZA', 'FAMILY HISTORY'…; B_slice_00 'Family History ▾', 'Available For Sale ▾'",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|21",
+    "fnsouzafoundation_com|sonnet|14",
+    "fnsouzafoundation_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "The forgery-exoneration notice appears as a long uppercase nav item wrapping over two lines in A. In B it is an underlined link in a full-width orange announcement bar at the very top.",
+   "evidence": "A_slice_00 nav line 'F. N. SOUZA EXONERATES SON… WITH FORGERIES'; B_slice_00 orange top bar with the same text in title case",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|23",
+    "fnsouzafoundation_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "Corner rounding: A has some rounded or pill elements (circles, dots), while B has zero rounded corners anywhere.",
+   "evidence": "A radius buckets pill 11, 16+ 2; B pill 0, 16+ 0, bucket_0 97",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|26",
+    "fnsouzafoundation_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "The artist bio layout differs. A shows a small 176×131 portrait thumbnail next to centered serif paragraph text with an inline 'Read More' link. B uses a two-column layout with a large 473×275 photo on the left and a heading, left-aligned paragraph and separate orange 'Read More' link on the right.",
+   "evidence": "A fnsouza.jpg rect 176×131; B rect 473×275; A_slice_01 vs B_slice_00",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|27",
+    "fnsouzafoundation_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "The gallery grids differ. A shows the six artworks in two rows of three at natural size (442px tall) within a 135–1305px container. B shows five thumbnails in one 243px-tall row, then a sixth image (Mother and child) blown up to 740×1214.",
+   "evidence": "A image rects all h 442; B five images h 243 at y 1541, mother_child rect 740×1214 from natural 270×442",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|30",
+    "fnsouzafoundation_com|opus|31",
+    "fnsouzafoundation_com|sonnet|20",
+    "fnsouzafoundation_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "In B, the bio photo's 473px rendered width exceeds its 370px natural width at a natural 275px height, so the image is stretched or cropped horizontally.",
+   "evidence": "B fnsouza.jpg natural 370×275, rect 473×275",
+   "side": "generated",
+   "members": [
+    "fnsouzafoundation_com|opus|28",
+    "fnsouzafoundation_com|opus|32",
+    "fnsouzafoundation_com|sonnet|19",
+    "fnsouzafoundation_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "Section wrappers: A has 1 <section> and 3 <header> elements, while B has 3 <section> elements and 1 <header>.",
+   "evidence": "A section 1, header 3; B section 3, header 1",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|22",
+    "fnsouzafoundation_com|opus|33",
+    "fnsouzafoundation_com|opus|35",
+    "fnsouzafoundation_com|opus|36",
+    "fnsouzafoundation_com|sonnet|04",
+    "fnsouzafoundation_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "The contact form layout differs. A uses two columns, with Name, Email and Phone on the left and Message on the right, light grey placeholder fields, and a centered outlined button. B uses a single narrow column with uppercase labels above dark bordered fields and a left-aligned orange button.",
+   "evidence": "A_slice_02 two-column form with rgb(246,246,246) fields; B_slice_02 stacked NAME/EMAIL/MESSAGE labels",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|37",
+    "fnsouzafoundation_com|opus|38",
+    "fnsouzafoundation_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "The footer content differs. A has a centered '© 2021 | PRIVACY POLICY' on black plus a 'More Art Gallery Templates at TemplateMonster.com' credit. B has the full foundation name in the copyright on the left and 'Privacy Policy' on the right, above a thin divider.",
+   "evidence": "A_slice_03; B_slice_02/03",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|40",
+    "fnsouzafoundation_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Neither page uses box shadows, gradients or backdrop blur.",
+   "evidence": "box_shadows 0, gradient_backgrounds 0, backdrop_blur 0 on both",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|46",
+    "fnsouzafoundation_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "Layout mechanisms: B uses CSS grid (5) and flexbox (6), while A uses no grid and a single flex container.",
+   "evidence": "A display_grid 0, display_flex 1; B display_grid 5, display_flex 6",
+   "side": "generated",
+   "members": [
+    "fnsouzafoundation_com|opus|47",
+    "fnsouzafoundation_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "B's content is aligned to a left edge at x=160, whereas A centers most section headings and text.",
+   "evidence": "B image rects x 160, headings left-aligned in screenshots; A centered shapes and paragraph in A_slice_00–02",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|opus|48",
+    "fnsouzafoundation_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "B's hero has two calls to action: a filled 'VIEW THE GALLERY' button and an outlined 'ABOUT THE ARTIST' button. A's hero has no buttons.",
+   "evidence": "B_slice_00 two buttons below the subtitle; A_slice_00 hero shows only a title and pagination dots",
+   "side": "generated",
+   "members": [
+    "fnsouzafoundation_com|opus|16",
+    "fnsouzafoundation_com|opus|17",
+    "fnsouzafoundation_com|opus|49",
+    "fnsouzafoundation_com|opus|50",
+    "fnsouzafoundation_com|sonnet|26",
+    "fnsouzafoundation_com|sonnet|27",
+    "fnsouzafoundation_com|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "B's sections are separated by subtle shifts in background tone (rgb 15,14,13 vs rgb 25,23,22) and thin divider lines. A separates sections with white space on a uniform white background.",
+   "evidence": "B top_backgrounds rgb(25,23,22) x6, rgb(15,14,13) x2; B_slice_02 tone change before Contact",
+   "side": "generated",
+   "members": [
+    "fnsouzafoundation_com|opus|51",
+    "fnsouzafoundation_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "B's heading hierarchy is h1 followed by three h2 (Francis Newton Souza, Photo gallery, Contact). A's h2s are only the three circular/boxed section labels, uppercase with line breaks.",
+   "evidence": "B outline h1 + 3 h2; A h2 text 'FRANCIS\\nNEWTON SOUZA', 'PHOTO\\nGALLERY', 'CONTACT\\nFORM'",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "A mixes several web fonts: Open Sans (302 elements), Cabin (155), Krona One (66), Arizonia script and FontAwesome. B uses a system sans stack and Georgia serif only.",
+   "evidence": "A fonts_by_element_count Open Sans 302, Cabin 155, Krona One 66, Arizonia 1; B -apple-system 82, Georgia 14, Arial 1",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "The gallery intro 'Explore a significant collection of the latest works.' is centred below the circle in A and left-aligned under the heading in B.",
+   "evidence": "A_slice_01 y≈710 centred; B_slice_01 y≈190 at x=160",
+   "side": "both",
+   "members": [
+    "fnsouzafoundation_com|sonnet|24"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page title uses the full organization name rather than a generic label like 'Home'.",
+   "family": "semantic_dom",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Head includes charset and viewport meta tags alongside description, for responsive, modern markup.",
+   "family": "semantic_dom",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "Headings use a Georgia-style serif at regular weight instead of bold sans-serif.",
+   "family": "typography",
+   "items": [
+    "I3",
+    "I27"
+   ]
+  },
+  {
+   "statement": "Headings are very large, with an h1 around 84px and h2 around 46px, giving strong hierarchy.",
+   "family": "typography",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Body text is about 17px with a tighter line height near 1.65.",
+   "family": "typography",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Typography is limited to a system sans stack plus one serif, with no custom web fonts.",
+   "family": "typography",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Site name appears as a small two-line serif text logo at top left.",
+   "family": "component",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "A single warm orange accent color is used for the announcement bar, buttons, links and bullets.",
+   "family": "color",
+   "items": [
+    "I7",
+    "I10"
+   ]
+  },
+  {
+   "statement": "Supporting copy uses a muted warm grey tone on a dark background.",
+   "family": "color",
+   "items": [
+    "I8"
+   ]
+  },
+  {
+   "statement": "Page uses a dark theme, with sections separated by subtle background tone shifts and thin divider lines.",
+   "family": "color",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Hero is a static dark textured background with left-aligned text, without a carousel or pagination dots.",
+   "family": "layout",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "Hero presents a filled primary button next to an outlined secondary button.",
+   "family": "component",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Item titles are listed in an italic serif strip separated by diamond bullets.",
+   "family": "component",
+   "items": [
+    "I10"
+   ]
+  },
+  {
+   "statement": "Header is a horizontal bar with logo on the left and navigation on the right.",
+   "family": "layout",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "Navigation labels use title case, and dropdown items carry small caret indicators.",
+   "family": "component",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "A full-width colored announcement bar at the very top holds an underlined notice link.",
+   "family": "component",
+   "items": [
+    "I13"
+   ]
+  },
+  {
+   "statement": "All corners are square, with no rounded elements, pills or circles.",
+   "family": "decoration",
+   "items": [
+    "I14"
+   ]
+  },
+  {
+   "statement": "Design is flat, with no box shadows, gradients or backdrop blur.",
+   "family": "decoration",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "Content is left-aligned to a consistent left edge, including headings and intro paragraphs.",
+   "family": "layout",
+   "items": [
+    "I23",
+    "I28"
+   ]
+  },
+  {
+   "statement": "Bio section uses two columns, with a large photo on the left and heading, paragraph and link on the right.",
+   "family": "layout",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Images are distorted or oversized, with stretched photos and one enlarged image breaking an otherwise uniform thumbnail row.",
+   "family": "imagery",
+   "items": [
+    "I16",
+    "I17"
+   ]
+  },
+  {
+   "statement": "Page uses multiple section elements and a single header, with a clean h1 followed by h2 section headings.",
+   "family": "semantic_dom",
+   "items": [
+    "I18",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Layout is built with CSS grid and flexbox.",
+   "family": "layout",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Contact form is a single narrow column with uppercase labels above dark bordered fields and a left-aligned accent button.",
+   "family": "component",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Footer places the full name in the copyright on the left and a Privacy Policy link on the right, above a thin divider.",
+   "family": "component",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Hero headline is a short descriptive category phrase rather than an artwork title.",
+   "family": "copy",
+   "items": [
+    "I2"
+   ]
+  }
+ ]
+}

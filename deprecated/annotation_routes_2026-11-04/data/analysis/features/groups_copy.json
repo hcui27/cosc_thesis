@@ -1,0 +1,427 @@
+{
+ "key": "8d42ac518adc",
+ "groups": [
+  {
+   "name": "No emoji, exclamation marks or em dashes",
+   "definition": "Is the visible copy free of emoji, exclamation marks and em dashes?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "exclamation_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "bathurst12hour_com_au#24",
+    "cbdoilcreamnk_com#25",
+    "educationactivities_org#29",
+    "fnsouzafoundation_com#27",
+    "gravityvault_com#28",
+    "greatdayimprovements_com#22",
+    "kneeguru_co_uk#28",
+    "merchantsavvy_co_uk#18",
+    "newclimateeconomy_net#23",
+    "seoanalyzer_me#26",
+    "stgpartners_com#27",
+    "naturalwellbeing_com#19",
+    "thefrangipanicreative_com#15",
+    "thync_com#12"
+   ]
+  },
+  {
+   "name": "Exclamation marks in promotional copy",
+   "definition": "Does the copy use exclamation marks for an upbeat or enthusiastic tone?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "exclamation_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "aeptexas_com#22",
+    "flygrant_com#29",
+    "gravityvault_com#20",
+    "insightcentral_net#22",
+    "kanienkeha_net#25",
+    "ridetech_com#26",
+    "homedesignersoftware_com#27"
+   ]
+  },
+  {
+   "name": "Title joined with em dash",
+   "definition": "Does the page title join its parts with an em dash?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "bather_com#24",
+    "stgpartners_com#0"
+   ]
+  },
+  {
+   "name": "Title joined with en dash",
+   "definition": "Does the page title join its parts with an en dash?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#0",
+    "insightcentral_net#23",
+    "kneeguru_co_uk#33",
+    "nira_org_ng#0",
+    "tellmebaby_com_au#24"
+   ]
+  },
+  {
+   "name": "Title uses pipe separator",
+   "definition": "Does the page title or caption text use a pipe character as a separator?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#21",
+    "ridetech_com#0",
+    "greatdayimprovements_com#21"
+   ]
+  },
+  {
+   "name": "Title repeats H1 wording",
+   "definition": "Does the page title repeat the wording of the h1?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "seoanalyzer_me#1",
+    "bathurst12hour_com_au#28"
+   ]
+  },
+  {
+   "name": "Title is bare organization name",
+   "definition": "Is the page title just the organization name with no tagline?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "miamidda_com#0"
+   ]
+  },
+  {
+   "name": "Truncated teaser text with ellipsis",
+   "definition": "Are card titles, teasers or excerpts cut off with a trailing ellipsis?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "insightcentral_net#6",
+    "tellmebaby_com_au#22",
+    "thefrangipanicreative_com#14"
+   ]
+  },
+  {
+   "name": "Headings with trailing ellipsis",
+   "definition": "Do headings end with an ellipsis for an inviting tone?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#14",
+    "neverskipbrunch_com#18"
+   ]
+  },
+  {
+   "name": "Links and CTAs end with arrow glyph",
+   "definition": "Do links or CTA labels end with an arrow glyph?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#15",
+    "thefrangipanicreative_com#13",
+    "neverskipbrunch_com#40",
+    "flygrant_com#31"
+   ]
+  },
+  {
+   "name": "Text-light, link-dense page",
+   "definition": "Is the page short on text, with few words and many links?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "word_count",
+    "op": "<",
+    "value": 300
+   },
+   "members": [
+    "alpine8848_com#22",
+    "bathurst12hour_com_au#23",
+    "merchantsavvy_co_uk#17"
+   ]
+  },
+  {
+   "name": "Phone number repeated as contact point",
+   "definition": "Is the phone number repeated in several places as the main contact?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "flygrant_com#30",
+    "greatdayimprovements_com#23"
+   ]
+  },
+  {
+   "name": "Formal legal footer text",
+   "definition": "Does the footer include formal legal or administrative text such as addresses, company numbers, licences or disclaimers?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "greatdayimprovements_com#24",
+    "insightcentral_net#19",
+    "kneeguru_co_uk#34"
+   ]
+  },
+  {
+   "name": "Title Case headings",
+   "definition": "Are headings and names capitalised on every word?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#1",
+    "thync_com#3"
+   ]
+  },
+  {
+   "name": "Machine-paraphrased wording",
+   "definition": "Does the text read as machine-paraphrased, with awkward synonym substitution?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#15",
+    "educationactivities_org#28"
+   ]
+  },
+  {
+   "name": "Informal first-person casual voice",
+   "definition": "Is the copy casual and written in the first person?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#23",
+    "neverskipbrunch_com#39"
+   ]
+  },
+  {
+   "name": "Playful slogan wordplay in section titles",
+   "definition": "Do section titles play on the brand slogan with warm phrasing?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#14"
+   ]
+  },
+  {
+   "name": "Brand-voiced caps fragments, sustainability theme",
+   "definition": "Does the copy use caps headline fragments and repeat a sustainability theme?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "bather_com#28"
+   ]
+  },
+  {
+   "name": "Plain direct notices",
+   "definition": "Are notices such as closures stated in plain direct sentences?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#25"
+   ]
+  },
+  {
+   "name": "Headings mismatch content",
+   "definition": "Do headings and product labels fail to match the content or imagery beneath them?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#0"
+   ]
+  },
+  {
+   "name": "Same posts repeated across sections",
+   "definition": "Do the same posts repeat across hero, grids and sidebar lists?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#27"
+   ]
+  },
+  {
+   "name": "Wordmark differs from document title",
+   "definition": "Is the wordmark truncated or misspelled relative to the document title?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#30"
+   ]
+  },
+  {
+   "name": "Generic repeated category badge",
+   "definition": "Do all cards in a section reuse the same generic category badge label?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#31"
+   ]
+  },
+  {
+   "name": "Concrete numeric facts in descriptions",
+   "definition": "Do descriptions include concrete numeric figures?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "gravityvault_com#21"
+   ]
+  },
+  {
+   "name": "Brand names repeated with registered marks",
+   "definition": "Are brand names repeated as logos and inline text with registered marks?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "greatdayimprovements_com#26"
+   ]
+  },
+  {
+   "name": "Legal line with // separators",
+   "definition": "Does the legal line separate items with '//'?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#26"
+   ]
+  },
+  {
+   "name": "Bold personal sign-off",
+   "definition": "Does a first-person mission message end with a bold personal sign-off?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#20"
+   ]
+  },
+  {
+   "name": "Parenthetical variant markers",
+   "definition": "Are entries labeled with short parenthetical markers such as (m) and (f)?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#27"
+   ]
+  },
+  {
+   "name": "Lowercase task-phrase link lists",
+   "definition": "Are link lists short lowercase verb-led phrases with arrow image bullets and dashed dividers?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#13"
+   ]
+  },
+  {
+   "name": "Inline glossary-term links in summaries",
+   "definition": "Do summaries contain inline underlined links to glossary-style terms?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#19"
+   ]
+  },
+  {
+   "name": "Generic Click Here CTAs with pill buttons",
+   "definition": "Are CTAs labelled generically, such as 'Click Here', on orange or navy pill buttons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "miamidda_com#15"
+   ]
+  },
+  {
+   "name": "Outlet-prefixed news headlines",
+   "definition": "Are news headlines prefixed with an outlet name and pipe, possibly in another language?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "miamidda_com#16"
+   ]
+  },
+  {
+   "name": "Legal disclaimers under forms",
+   "definition": "Does small-print legal text sit under forms?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "miamidda_com#20"
+   ]
+  },
+  {
+   "name": "Consistent .95 charm pricing",
+   "definition": "Do all prices end in .95?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#20"
+   ]
+  },
+  {
+   "name": "Social cards with caps, hashtags, emoji",
+   "definition": "Do social-style cards use all-caps phrases, hashtags and emoji?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#25"
+   ]
+  },
+  {
+   "name": "Casual p.s. affiliate footer",
+   "definition": "Does the footer end with a casual 'p.s.' affiliate disclosure and a copyright line below a divider?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#30"
+   ]
+  },
+  {
+   "name": "Formal institutional hero copy",
+   "definition": "Is the hero copy formal, institutional language about the organization's role?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "nira_org_ng#10"
+   ]
+  },
+  {
+   "name": "Letter-spaced uppercase red subheading",
+   "definition": "Is the subheading letter-spaced uppercase in lighter red, followed by a centred keyword-rich paragraph?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "ridetech_com#32"
+   ]
+  },
+  {
+   "name": "Placeholder zero metric values",
+   "definition": "Do listings show placeholder-like zero values for metrics?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "seoanalyzer_me#30"
+   ]
+  },
+  {
+   "name": "Sentence-case headings with eyebrow labels",
+   "definition": "Are section headings sentence-case value statements with separate one-word eyebrow labels?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#28"
+   ]
+  },
+  {
+   "name": "Verbatim long catalogue product names",
+   "definition": "Are long product names shown verbatim including size and variant strings?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "tellmebaby_com_au#23"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Climate Economy</title>
+<style>
+:root{
+  --ink:#1b2a26; --muted:#5d6b66; --bg:#fff; --soft:#f2f5f3; --line:#dde4e0;
+  --brand:#0b3d36; --accent:#1f9d7a; --accent-ink:#0b3d36;
+}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.55 Georgia,"Times New Roman",serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3,nav,.btn,.date,.label,footer{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+
+header{background:var(--brand);color:#fff}
+header .wrap{display:flex;align-items:center;gap:24px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px}
+.logo img{height:34px;width:auto}
+nav{margin-left:auto}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:15px;font-weight:600;padding:6px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a:focus-visible{border-color:var(--accent)}
+.tools{display:flex;align-items:center;gap:12px}
+.search{display:flex;background:#fff;border-radius:4px;overflow:hidden}
+.search input{border:0;padding:8px 10px;font:14px sans-serif;width:150px;min-width:0}
+.search button{border:0;background:#fff;padding:0 10px;cursor:pointer}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:9px 16px;border-radius:4px}
+.btn:hover{background:#178566}
+
+.hero{display:grid;grid-template-columns:3fr 2fr;gap:0;background:var(--soft)}
+.hero img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
+.hero .text{padding:40px;align-self:center}
+.date{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.hero h2{font-size:30px;line-height:1.2;margin:10px 0 18px}
+.more{font-family:sans-serif;font-weight:700;color:var(--accent-ink);text-decoration:none;border-bottom:2px solid var(--accent)}
+
+section{padding:48px 0}
+.label{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent-ink);margin:0 0 20px;padding-bottom:10px;border-bottom:2px solid var(--ink);display:flex;justify-content:space-between;align-items:baseline}
+.label a{font-size:13px;letter-spacing:0;text-transform:none;font-weight:600}
+
+.news{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.news h3{font-size:19px;line-height:1.3;margin:6px 0 0}
+.news a{text-decoration:none}
+.news a:hover{text-decoration:underline}
+
+.alt{background:var(--soft)}
+.videos{display:grid;grid-template-columns:2fr 1fr;gap:28px}
+.feature{position:relative;display:block;text-decoration:none;background:var(--brand);color:#fff}
+.feature img{width:100%;opacity:.85}
+.feature h3{position:absolute;left:0;right:0;bottom:0;margin:0;padding:50px 22px 20px;font-size:24px;line-height:1.25;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+.vlist{display:flex;flex-direction:column;gap:16px}
+.vlist a{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);border-left:4px solid var(--accent);padding:18px}
+.vlist a:hover{background:#fafcfb}
+.vlist h3{margin:0;font-size:18px;line-height:1.3}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.empty{color:var(--muted);font-style:italic;margin:0}
+.tweets{list-style:none;margin:0;padding:0}
+.tweets li{padding:0 0 18px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.tweets p{margin:0 0 6px}
+.tweets a{color:#0f7a5e}
+.tweets em{font:13px sans-serif;color:var(--muted)}
+
+.partners{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:32px}
+.partners img{height:56px;width:auto;object-fit:contain}
+.managing img{height:64px}
+
+footer{background:var(--soft);border-top:1px solid var(--line);padding:36px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.social{list-style:none;margin:0;padding:0;display:flex;gap:18px;flex-wrap:wrap}
+.social a{display:flex;align-items:center;gap:6px;text-decoration:none;font-weight:600}
+.social img{width:28px;height:21px;object-fit:contain}
+.social a:hover{text-decoration:underline}
+
+@media(max-width:800px){
+  nav{margin-left:0;order:3;width:100%}
+  .tools{margin-left:auto}
+  .hero,.videos,.two{grid-template-columns:1fr}
+  .hero .text{padding:28px 20px}
+  .news{grid-template-columns:1fr}
+  .hero h2{font-size:25px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="/"><img src="images/logo.png" alt="New Climate Economy"></a>
+    <div class="tools">
+      <form class="search" role="search" action="/search">
+        <input type="search" name="q" placeholder="Search" aria-label="Search">
+        <button type="submit" aria-label="Search"><img src="images/icons-search.png" alt="" width="22" height="22"></button>
+      </form>
+      <a class="btn" href="#signup">Sign Up</a>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="/content/about">About</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/publications">Publications</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article class="hero">
+    <img src="images/sb-op-ed-foto.jpg" alt="">
+    <div class="text">
+      <div class="date">April 14, 2021</div>
+      <h2>Commentary: Defeating the Inequality Disease Must Become a Global Rallying Call</h2>
+      <a class="more" href="/content/commentary-defeating-inequality-disease-must-become-global-rallying-call">Read More</a>
+    </div>
+  </article>
+
+  <section>
+    <div class="wrap">
+      <h2 class="label">Latest News <a href="/news">All news →</a></h2>
+      <ul class="news">
+        <li>
+          <div class="date">April 6, 2021</div>
+          <h3><a href="/content/commentary-climate-change-battle-can%E2%80%99t-be-won-without-industry-action">Commentary: The Climate Change Battle Can’t Be Won Without Industry Action</a></h3>
+        </li>
+        <li>
+          <div class="date">March 10, 2021</div>
+          <h3><a href="/content/commentary-new-path-us-africa-climate-relations">Commentary: A New Path for U.S.-Africa Climate Relations</a></h3>
+        </li>
+        <li>
+          <div class="date">November 30, 2020</div>
+          <h3><a href="/content/commentary-we-must-give-women-chance-build-back-better-food-system">Commentary: We must give women a chance to build back a better food system</a></h3>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap">
+      <h2 class="label">Video</h2>
+      <div class="videos">
+        <a class="feature" href="/video/unlocking-inclusive-growth-story-21st-century">
+          <img src="images/thumbnail.png" alt="">
+          <h3>Unlocking the Inclusive Growth Story of the 21st Century</h3>
+        </a>
+        <div class="vlist">
+          <a href="/video/landscape-restoration-critical-deliver-climate-action-ngozi-okonjo-iweala"><h3>Landscape restoration is critical to deliver climate action: Ngozi Okonjo-Iweala</h3></a>
+          <a href="/video/seizing-global-opportunity"><h3>Seizing the Global Opportunity</h3></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap two">
+      <div>
+        <h2 class="label">Upcoming Events <a href="/events">See Past Events →</a></h2>
+        <p class="empty">No upcoming events at the moment.</p>
+      </div>
+      <div>
+        <h2 class="label">Recent Tweets <a href="https://twitter.com/NewClimateEcon">All Tweets →</a></h2>
+        <ul class="tweets">
+          <li>
+            <p>Opinion <a href="http://twitter.com/ClimateHome">@ClimateHome</a>: As more countries move to agree on <a href="https://twitter.com//search?q=%23NetZero">#NetZero</a> targets, they would do well to move quickly to co… <a href="https://t.co/UwoYc6zL8B">https://t.co/UwoYc6zL8B</a></p>
+            <em>2 days 21 hours ago</em>
+          </li>
+          <li>
+            <p>Trinidad and Tobago's government is exploring <a href="https://twitter.com//search?q=%23ClimateFinance">#ClimateFinance</a> mechanisms to facilitate the reduction of greenhouse… <a href="https://t.co/FoqHLCjIjb">https://t.co/FoqHLCjIjb</a></p>
+            <em>2 days 23 hours ago</em>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="partners">
+    <div class="wrap">
+      <h2 class="label">Managing Partner <a href="/partners">All partners →</a></h2>
+      <ul class="partners">
+        <li class="managing"><a href="/partners/world-resources-institute"><img src="images/wri-logo-4c.png" alt="World Resources Institute"></a></li>
+        <li><a href="/partners/coalition-urban-transitions"><img src="images/customlogo.png" alt="Coalition for Urban Transitions"></a></li>
+        <li><a href="/partners/food-and-land-use-coalition"><img src="images/folu.png" alt="Food and Land Use Coalition"></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer id="signup">
+  <div class="wrap">
+    <a href="/content/careers">Careers</a>
+    <ul class="social" aria-label="Connect">
+      <li><a href="https://www.youtube.com/channel/UCQwH2YyOkr4scn4G6ZuljHA"><img src="images/icons-youtube.png" alt="">YouTube</a></li>
+      <li><a href="http://www.linkedin.com/company/new-climate-economy-project"><img src="images/icons-linkedin.png" alt="">LinkedIn</a></li>
+      <li><a href="https://plus.google.com/114394433939488130504"><img src="images/icons-gplus.png" alt="">Google+</a></li>
+      <li><a href="https://www.facebook.com/pages/New-Climate-Economy/362422800557023"><img src="images/icons-facebook.png" alt="">Facebook</a></li>
+      <li><a href="https://twitter.com/NewClimateEcon"><img src="images/icons-twitter.png" alt="">Twitter</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

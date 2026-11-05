@@ -1,0 +1,308 @@
+[
+ {
+  "observation": "Page titles use different wording and separators: A's title gives a location, B's gives the tagline",
+  "category": "metadata",
+  "evidence": "A title: \"Blue Bayou Waterpark & Dixie Landin' | Baton Rouge, LA\"; B title: \"Blue Bayou Water Park & Dixie Landin' – Play Your Day Away\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "B declares a document language; A does not",
+  "category": "DOM/semantics",
+  "evidence": "A lang: \"\"; B lang: \"en\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "A includes Open Graph and Twitter meta tags; B has only charset, viewport and description",
+  "category": "metadata",
+  "evidence": "A meta_names include og:title, og:description, twitter:title, twitter:card, etc. (9 meta); B has 3 meta",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has four h1 elements; B has a single h1",
+  "category": "DOM/semantics",
+  "evidence": "A h1_count 4 (PLAY YOUR DAY AWAY, LAND OF THE GIANTS, THRILLS, GETAWAY); B h1_count 1, and those section titles are h2",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses semantic landmark elements; A relies on divs and navs",
+  "category": "DOM/semantics",
+  "evidence": "B: header 1, section 7, footer 1, ul 4, li 15; A: header 0, section 0, footer 0, nav 4, div 99",
+  "which_side": "B"
+ },
+ {
+  "observation": "A loads scripts and external stylesheets; B is self-contained with no scripts",
+  "category": "DOM/structure",
+  "evidence": "A scripts 15, stylesheets 3; B scripts 0, stylesheets 0, style 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses h6 and h5 tags; B uses h4 for its footer column headings",
+  "category": "DOM/semantics",
+  "evidence": "A tag_counts h6 3, h5 4; B h4 4 (PARKS, PLAN, TICKETS, MORE) in heading outline",
+  "which_side": "both"
+ },
+ {
+  "observation": "B gives descriptive alt text to many images; all of A's images have empty alt",
+  "category": "imagery",
+  "evidence": "A image alts all \"\"; B alts such as \"Kids splashing at the water park\", \"Coca-Cola can\", \"Summer is waiting\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "The primary typefaces differ: A uses the Brandon Grotesque and Handyhandy web fonts, B uses the system fonts Trebuchet MS and Impact",
+  "category": "typography",
+  "evidence": "A fonts: Brandongrotesque 167, Handyhandy 14; B fonts: Trebuchet MS 138, Impact 19",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero h1 is a hand-brushed script in A and a heavy condensed sans in B, set larger in B",
+  "category": "typography",
+  "evidence": "A h1 120px Handyhandy; B h1 136px Impact; screenshots: A's lettering is brush-like and tilted, B's is a blocky condensed face",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero headline is two-tone with a drop offset; A's headline is entirely white",
+  "category": "typography",
+  "evidence": "B slice 0: 'PLAY YOUR' in white, 'DAY AWAY' in yellow, with blue offset shadows; A slice 0: all white brush text",
+  "which_side": "B"
+ },
+ {
+  "observation": "h2 weight and size differ",
+  "category": "typography",
+  "evidence": "A h2 22px weight 700; B h2 20.8px weight 400",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text size and line height differ",
+  "category": "typography",
+  "evidence": "A body 18px/28px; B body 16px/24.8px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body background and text colors differ: A uses white with gray text, B uses a cream background with dark navy text",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255), color rgb(51,51,51); B body_bg rgb(255,248,234), color rgb(16,36,58)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette centers on bright blue, burnt orange, red and gold; B's centers on dark navy and warm yellow",
+  "category": "color",
+  "evidence": "A top backgrounds: rgb(0,152,255) ×5, rgb(219,77,35) ×3, rgb(244,0,9); B top backgrounds: rgb(8,42,77) ×4, rgb(255,197,49) ×4",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no persistent header nav bar, only two logos at the top corners; B has a dark navy header bar with text nav links",
+  "category": "layout",
+  "evidence": "A slice 0: Blue Bayou logo top-left and Dixie Landin' logo top-right, with no menu links visible; B slice 0: navy bar with logo plus HOME, ATTRACTIONS, TICKETS, PLAN, CALENDAR, JOBS and the Dixie logo",
+  "which_side": "B"
+ },
+ {
+  "observation": "The opening-day notice is a centered red modal-like box overlapping the header in A, and a full-width yellow strip under the header in B",
+  "category": "component",
+  "evidence": "A slice 0: red box (rgb(244,0,9)) with centered heading and an X close mark; B slice 0: yellow band, heading inline at left, × at right",
+  "which_side": "both"
+ },
+ {
+  "observation": "A tints the split hero photos with flat color overlays (teal and gold); B shows the photos with natural colors",
+  "category": "imagery",
+  "evidence": "A slice 0: teal overlay on the left, gold overlay on the right; A backgrounds rgba(0,226,200,0.8), rgba(242,181,14,0.8); B slice 0: the photos are untinted",
+  "which_side": "A"
+ },
+ {
+  "observation": "B labels each hero half with the park logo and a caption; A does not",
+  "category": "layout",
+  "evidence": "B slice 0: Blue Bayou logo + 'WATER PARK' and Dixie Landin' logo + 'THEME PARK' at the bottom of each half; B image overlaps of the logos on the hero photos",
+  "which_side": "B"
+ },
+ {
+  "observation": "Torn brush-stroke edge graphics separate A's sections; B uses straight section edges",
+  "category": "decoration",
+  "evidence": "A uses brush-2.svg 6 times at full 1440px width; B's brush.svg has a 0×0 rect (not rendered); B slices show straight hard edges between sections",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's three CTA cards are solid orange with white button bars; B's are white rounded cards on a cyan band, with text links and arrows",
+  "category": "component",
+  "evidence": "A slice 0: orange rgb(219,77,35) cards with white buttons 'START THE EXCITEMENT'; B slice 0: white cards with a 'START THE EXCITEMENT →' red link, on an rgb(18,181,214) band",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's card subtitles are set in the brush script; B's are set in condensed Impact, left-aligned",
+  "category": "typography",
+  "evidence": "A 'TICKETS', 'PASSES', 'PARTIES' brush style, centered; B left-aligned Impact in navy",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses square corners almost everywhere; B uses many pill shapes and some large radii",
+  "category": "decoration",
+  "evidence": "A radius buckets: 0 → 190, pill 1, 16+ 0; B: 0 → 139, pill 15, 16+ 4",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's CTA buttons are square solid blocks paired with plain text links; B pairs a yellow pill button with an outlined pill button",
+  "category": "component",
+  "evidence": "A slice 1: teal/gold rectangular 'GET A SEASON PASS' + 'OR BUY TICKETS' text; B slice 1: yellow pill + white-outline pill 'OR BUY TICKETS'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Land of the Giants' section is a side-by-side image and text block on white in A, and a full-bleed background image with a dark overlay in B",
+  "category": "layout",
+  "evidence": "A landofthegiants image at x 82, w 734 with text on the right; B image at x 0, w 1440, h 665, with text overlaid on the left",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Thrills' section uses an orange gradient overlay in A and a deep red tint in B",
+  "category": "color",
+  "evidence": "A slice 1: orange gradient (gradient_backgrounds 1); B slice 1: dark red overlay, gradient_backgrounds 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A places the Thrills text at roughly the page center; B places it slightly further left",
+  "category": "layout",
+  "evidence": "A Dixie logo rect x 800; B Dixie logo rect x 760",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's eyebrow labels ('ENTER THE', 'EXPERIENCE THE') are small tracked uppercase sans; B's are yellow condensed Impact",
+  "category": "typography",
+  "evidence": "A slice 0/1: small letter-spaced dark or white labels; B slice 0/1: yellow 'ENTER THE', 'EXPERIENCE THE'",
+  "which_side": "both"
+ },
+ {
+  "observation": "'Summer is waiting for you' is a large standalone water-textured graphic on white in A, and a smaller navy stencil image inside a white card in B",
+  "category": "imagery",
+  "evidence": "A slice 2: large blue water-textured lettering spanning about 650px; B image stencil-summeriswaiting.png 540×304 in a white shadowed box",
+  "which_side": "both"
+ },
+ {
+  "observation": "'Stay up to date' is a full-width centered blue band in A; in B it sits in the right column of a two-column navy section",
+  "category": "layout",
+  "evidence": "A slice 2: blue rgb(0,152,255) band with centered heading; B slice 1: yellow heading at x≈740 beside the Summer card",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a pool photo with a yellow float that A does not show",
+  "category": "imagery",
+  "evidence": "B images include 5ac7c110e4871d29e0642b45-shutterstock.jpg 540×360 with a rounded bottom edge; A's image list has no equivalent",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses the ice-cream cone as a visible split-panel photo; B does not show it as a separate photo",
+  "category": "imagery",
+  "evidence": "A slice 2/3: ice-cream cone photo in the left half beside the blue Getaway panel; B slice 2: only a faint blue-tinted background behind Getaway",
+  "which_side": "A"
+ },
+ {
+  "observation": "Getaway links are a two-column list of uppercase text links in A and a row of outlined pill chips in B",
+  "category": "component",
+  "evidence": "A slice 2: PARK MAPS, HOTELS, DIRECTIONS… in 2 columns; B slice 2: pills PARK MAPS, DIRECTIONS, FOOD & CONCESSIONS, GROUPS, HOTELS, CORPORATE EVENTS",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's Getaway section includes a GROUPS link that A's Getaway list lacks",
+  "category": "copy",
+  "evidence": "A slice 2 list: Park Maps, Hotels, Directions, Corporate Events, Food & Concessions; B adds Groups",
+  "which_side": "B"
+ },
+ {
+  "observation": "The Getaway section is left-aligned in a right half panel in A and centered across the full width in B",
+  "category": "layout",
+  "evidence": "A slice 2: text starts at x≈797 in the blue right panel; B slice 2: centered heading and chips",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Coca-Cola promo arranges the logo, can and text left-to-right in A; B puts the logo and text on the left and the can on the right",
+  "category": "layout",
+  "evidence": "A coke logo x 72, can x 421, text at ~x 596; B logo x 160, can x 1147",
+  "which_side": "both"
+ },
+ {
+  "observation": "In the Coke promo, A emphasizes 'SAVE $5' as the large heading, while B makes the full sentence the large heading",
+  "category": "typography",
+  "evidence": "A slice 3: big brush 'SAVE $5' over a smaller tracked sentence; B slice 2: small yellow 'SAVE $5' over a large Impact 'SAVE $5 WITH ANY COCA-COLA CAN'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's Coke can overlaps the photo and section edge above it; B's can sits inside the red band, tilted with a shadow",
+  "category": "imagery",
+  "evidence": "A overlap: coke-can-full with brush-2.svg 10500px²; A slice 3 can protrudes into the ice-cream image; B slice 2 can is rotated within the band",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer is white with orange script column headings and blue tracked links in A, and dark navy with yellow uppercase headings and light sentence-case links in B",
+  "category": "color",
+  "evidence": "A slice 3: 'Parks', 'Plan', 'Tickets', 'More' in orange Handyhandy; B slice 2/3: yellow PARKS/PLAN/TICKETS/MORE on rgb(8,42,77)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Footer link casing differs: uppercase letter-spaced in A, sentence case in B",
+  "category": "copy",
+  "evidence": "A: 'PARK MAPS', 'DIXIE LANDIN''; B: 'Park Maps', 'Dixie Landin''",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social icons are square blue glyph tiles centered in A and round letter badges (F, T, Y) in B's 'More' column",
+  "category": "component",
+  "evidence": "A uses the 'Social icons' font (6 elements), with square blue icons centered in slice 3; B slice 3: circular F/T/Y badges, no icon font",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer has a horizontal divider rule above the copyright; A's does not",
+  "category": "decoration",
+  "evidence": "B slice 3: thin line above '© Blue Bayou / Dixie Landin''; A slice 3: copyright in gray without a rule",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's page is about 600px taller than B's",
+  "category": "layout",
+  "evidence": "A page_height 4793; B page_height 4181",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses CSS grid; A uses only flex",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 14; B display_grid 13, display_flex 15",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has many more transitions and transforms",
+  "category": "effects",
+  "evidence": "A transitions 61, transforms 10; B transitions 19, transforms 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's class naming partly looks utility- or framework-style (Webflow); B uses a small set of custom classes",
+  "category": "DOM/structure",
+  "evidence": "A classes total 254, unique 86, tailwind_like_fraction 0.398, webflow-icons font; B total 69, unique 36, fraction 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has a button element (the notice close ×); A uses no button elements",
+  "category": "DOM/semantics",
+  "evidence": "A buttons 0; B buttons 1, primary_button text '×'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has more anchors and ARIA attributes",
+  "category": "DOM/structure",
+  "evidence": "A anchors 58, aria_attrs 20; B anchors 44, aria_attrs 10",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's logos are larger at the top of the page and sit flush at the corners; B's header logos are smaller and inset to a content width starting at x 160",
+  "category": "layout",
+  "evidence": "A Blue Bayou logo x 10, w 194, h 70; B x 160, w 144, h 52; Dixie A x 1162, w 232 vs B x 1148, w 132",
+  "which_side": "both"
+ },
+ {
+  "observation": "B constrains content to a centered container of about 1120px; A's content spans wider, with full-bleed panels",
+  "category": "layout",
+  "evidence": "B elements consistently start at x 160 and end at ~1280 (cards, footer); A cards span x 29–1411, and the Getaway/ice-cream split covers the full width",
+  "which_side": "B"
+ },
+ {
+  "observation": "Inline links in the 'Stay up to date' text are tracked uppercase in A and underlined yellow in B",
+  "category": "copy",
+  "evidence": "A slice 2: 'FACEBOOK', 'NEWSLETTER' in small caps-style text; B slice 1: underlined yellow 'Facebook', 'newsletter'",
+  "which_side": "both"
+ }
+]

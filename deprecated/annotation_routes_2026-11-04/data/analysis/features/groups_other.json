@@ -1,0 +1,84 @@
+{
+ "key": "6ed91adeda58",
+ "groups": [
+  {
+   "name": "Motion limited to transitions only",
+   "definition": "Does the page use CSS transitions for motion while having no keyframe animations or transforms?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "animation_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "bathurst12hour_com_au#20",
+    "fnsouzafoundation_com#28",
+    "homedesignersoftware_com#33",
+    "thync_com#22"
+   ]
+  },
+  {
+   "name": "Single inline style block, no external CSS",
+   "definition": "Is all styling in one inline style block with no linked external stylesheets?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "stylesheet_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "bathurst12hour_com_au#26",
+    "seoanalyzer_me#0",
+    "kneeguru_co_uk#29",
+    "kanienkeha_net#23",
+    "gravityvault_com#25",
+    "fnsouzafoundation_com#25",
+    "nira_org_ng#21",
+    "tellmebaby_com_au#20"
+   ]
+  },
+  {
+   "name": "Few custom non-utility class names",
+   "definition": "Does the page use a small set of hand-named classes rather than utility-framework classes?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "tailwind_like_fraction",
+    "op": "<",
+    "value": 0.1
+   },
+   "members": [
+    "naturalwellbeing_com#24",
+    "thefrangipanicreative_com#21"
+   ]
+  },
+  {
+   "name": "Link-dense relative to text",
+   "definition": "Does the page have many anchors relative to its word count?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "anchor_count",
+    "op": ">=",
+    "value": 100
+   },
+   "members": [
+    "homedesignersoftware_com#28",
+    "miamidda_com#23",
+    "neverskipbrunch_com#33",
+    "nira_org_ng#24"
+   ]
+  },
+  {
+   "name": "Lightweight page without scripts or SVGs",
+   "definition": "Is the page free of scripts, external stylesheets and inline SVGs?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "script_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "newclimateeconomy_net#22"
+   ]
+  }
+ ]
+}

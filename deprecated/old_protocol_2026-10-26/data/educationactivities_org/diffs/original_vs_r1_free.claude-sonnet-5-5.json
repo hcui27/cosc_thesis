@@ -1,0 +1,248 @@
+[
+ {
+  "observation": "A renders as an unstyled, single-column document flow with a stylesheet that appears only partly applied. B renders as a fully designed multi-column magazine layout.",
+  "category": "layout",
+  "evidence": "A facts: display_grid 0, display_flex 0, page_height 16632. B facts: display_grid 13, display_flex 11, page_height 8238. A slices show lists and images stacked vertically at the left edge.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's page is about half the height of A's. B arranges posts in 2-column card grids, while A stacks every post vertically.",
+  "category": "layout",
+  "evidence": "page_height 8238 (B) vs 16632 (A). B images sit in pairs at x=156 and x=562, 382×255. A images are mostly at x=48, 300×200, one per row.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B centres its content in a bounded column with wide side margins. Content starts at x≈156 and the sidebar ends near x≈1284. A's content hugs the left edge at x=8 and is not centred.",
+  "category": "layout",
+  "evidence": "B image rects start at x=156. A logo rect x=8, first image x=8; A slice 0 shows text flush left.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a main-content column plus a right sidebar of boxed widgets (Search, Author Info, Latest Posts, Category). A's sidebar widgets are appended as plain lists below the content.",
+  "category": "layout",
+  "evidence": "B slices 0–1 show white bordered cards at x≈984–1284. A slice 12 shows Top Category, Author, TAGS, Search and Latest Posts as unstyled stacked lists.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a hero block with one large featured story (677×357) next to a column of three small thumbnail-plus-headline items. A has no equivalent hero. Its first posts are dark grey bars with overlay-style titles.",
+  "category": "component",
+  "evidence": "B image rects: hero at (156,364,677×357), three thumbnails at x=861, 120×80. A slice 0 shows grey-background post blocks with a red 'Science' label.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's masthead is centred: a small logo (109×64), a 52px Georgia h1 'Education Activities', and an italic tagline. A shows the logo at full natural size (280×165), left-aligned, with no visible page heading.",
+  "category": "typography",
+  "evidence": "B h1: 52px, weight 700, Georgia, centred. A h1_count 0. A logo rect 280×165 at x=8,y=288. B logo rect 109×64 at x=666.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no h1 and its first heading is an h3. B has exactly one h1.",
+  "category": "semantic",
+  "evidence": "A h1_count 0, heading_outline starts at level 3. B h1_count 1, 'Education Activities'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's headings skip levels: 50 h3s, 12 h2s and a single h4 (author name). B uses 34 h3s, 6 h2s, 4 h4s and 3 h5s, with sidebar widget titles as h4s.",
+  "category": "semantic",
+  "evidence": "A tag_counts h3 50, h2 12, h4 1. B tag_counts h3 34, h2 6, h4 4, h5 3. B outline shows h4 'Search', 'Author Info', 'Latest Posts', 'Category'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B wraps each post in an article element (34). A has 0 article elements and 45 figure elements with 13 figcaptions. B has no figure or figcaption.",
+  "category": "semantic",
+  "evidence": "B semantic article 34, figure 0. A semantic article 0, figure 45, figcaption 13.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's markup is heavy and class-driven: 508 divs, 273 spans, 271 anchors, 1653 class tokens across 278 unique classes, and 37 scripts. B's is compact: 68 divs, 87 anchors, 160 class tokens across 22 unique classes, no scripts and one inline style block.",
+  "category": "dom",
+  "evidence": "A tag_counts div 508, a 271, script 37; classes total 1653, unique 278. B div 68, a 87, script absent; classes total 160, unique 22; counts.scripts 0, stylesheets 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A loads external resources: 16 stylesheets, 37 script tags, 31 link tags, a JSON-LD block, an iframe, and Open Graph and Twitter meta. B is self-contained with a single style block and only charset, viewport and description meta.",
+  "category": "dom",
+  "evidence": "A counts.stylesheets 16, jsonld_blocks 1, iframe 1, meta_names include og:*, twitter:card. B stylesheets 0, jsonld_blocks 0, meta_names charset/viewport/description.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Fonts differ. A uses one webfont, Andada (a slab-like serif), for all 1325 elements. B pairs Georgia serif headings with Helvetica Neue sans-serif body text.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Andada 1325. B: Helvetica Neue 324, Georgia 51. B h1 font_family 'Georgia, serif'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B sets explicit line-height (24.8px) on a 16px body. A's body line-height is 'normal'.",
+  "category": "typography",
+  "evidence": "B body_line_height 24.8px; A body_line_height 'normal'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's type scale has larger, bolder headings: 52px h1 and 26px h2. A's h2 is 24px weight 700, though the screenshot shows its section headings as lighter, grey and unemphasised.",
+  "category": "typography",
+  "evidence": "B h1 52px/700, h2 26px/700. A h2 24px/700. A slice 1 'College and University' appears as grey regular-looking text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is a bright red accent (rgb 244,67,54), a grey (96,96,96) used for text and category bars, and a saturated blue (30,115,190) top bar. B uses a warm off-white page (250,248,244), navy (20,33,61) bars, and a burnt-orange accent (194,65,12).",
+  "category": "color",
+  "evidence": "A top_backgrounds: 244,67,54 ×17; 96,96,96 ×16; 30,115,190 ×1. B body_bg 250,248,244; top_backgrounds 228,224,216 ×18, 20,33,61 ×2, 194,65,12 ×2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body background is transparent, so the browser's white shows through. B sets an explicit warm cream background and near-black navy text.",
+  "category": "color",
+  "evidence": "A body_bg rgba(0,0,0,0); body_color 96,96,96. B body_bg 250,248,244; body_color 27,31,42.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body text is mid-grey (96,96,96) with default-looking blue-underlined or black-underlined links. B's text is near-black (27,31,42) with secondary text in slate (93,100,117).",
+  "category": "color",
+  "evidence": "A top_text_colors 96,96,96 ×899; 27,27,27 ×268. B 27,31,42 ×241; 93,100,117 ×48. A slices show underlined links.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Category labels differ. In A they are red-background chips on full-width dark grey bars (e.g. 'Science', 'Skills Development'). In B they are small uppercase burnt-orange text above each title.",
+  "category": "component",
+  "evidence": "A slices 0–1 show red-filled 'Science' tags on grey 96,96,96 bars. B slice 0/1 show 'SCIENCE', 'EDUCATION' in small orange letter-spaced caps.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows section titles as h2s with a short orange underline that overlaps a longer dark rule, plus a right-aligned 'View all →' link. A's section headings are plain text with no rule or 'View all'.",
+  "category": "component",
+  "evidence": "B slice 0/1: 'Educations', 'College and University' with two-tone underline and 'View all →'. A slice 1 shows 'College and University' as bare text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's main navigation is an unstyled bulleted list with nested sub-lists, behind a 'Primary Menu' button that shows as a red default-style button. B's navigation is a horizontal bar of 11 labels under the hero, plus a dark top utility strip with 5 links.",
+  "category": "component",
+  "evidence": "A primary_button text 'Primary Menu', bg 244,67,54, padding 1px 6px. A slice 0 shows bullets with ◦ children (Skills Development, Languages). B slice 0 shows a white nav bar (Home … Online Educat…) and a navy top bar.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's horizontal nav bar overlays the hero image mid-page, with a thin dark border above and below. It appears as a sticky or fixed element captured in the full-page screenshot, and its labels are cut off at the right ('Online Educat').",
+  "category": "decoration",
+  "evidence": "B slice 0: white bar at y≈535–583 crossing the hero illustration, 'Online Educat' clipped at x≈1284.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a navy top strip containing a 'TRENDING' orange badge and a headline link. A has a blue bar with a date ('Thu. Jun 17th, 2021') and a bulleted category list.",
+  "category": "component",
+  "evidence": "B slice 0: navy bar with orange 'TRENDING' label and '5 Big Benefits of Digital Marketing Career'. A slice 0: blue (30,115,190) block with dark grey date tab and list items Education, Financial Aid.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds an italic tagline under the h1, and the same text reappears in the footer: 'The aim of education is the knowledge not of facts but of values.' A shows no such tagline in the visible slices.",
+  "category": "copy",
+  "evidence": "B slice 0 italic line under the title; B slice 6 footer paragraph. A slice 0 has no tagline.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a 'Skills & Certification' section, and its 'Online Education' h2 groups posts that A shows differently. B regroups posts into sections and truncates the Science section to 5 posts. A repeats the same posts across multiple blocks (5 Big Benefits … appears 5 times in the heading outline).",
+  "category": "copy",
+  "evidence": "B outline h2s: Educations, College and University, Online Education, Education Activities, Skills & Certification, Science. A outline h2s include 'Latest Posts' twice and 'Science' with 20 h3s, with '5 Big Benefits of Digital Marketing Career' repeated.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows broken or alt-text-only image placeholders in its header ticker, rendered as inline link text because the images have natural size 0×0 and are 19px tall. B shows no broken images.",
+  "category": "imagery",
+  "evidence": "A images with natural [0,0] and rect h 19 (e.g. Benefits-of-Digital-Marketing-Banner-50x50.png). A slice 0 shows alt text 'The Importance of Learning Business English for Your Career' inline.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Image sizing differs. A shows 300×200 thumbnails at native size, with 720×380 images at native size for the Science section. B scales images with CSS to 382×255 (cards), 360×190 (Science row) and 120×80 (hero list thumbnails), cropped to uniform boxes.",
+  "category": "imagery",
+  "evidence": "A rects 300×200 and 720×380 equal natural sizes. B rects 382×255, 360×190 from natural 300×200 / 720×380; 120×80 thumbnails.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a circular crop for the author portrait (110×110) from a 300×173 source. A shows the same portrait rectangular at native 300×173.",
+  "category": "imagery",
+  "evidence": "B image rect 110×110, border_radius pill bucket 1. A rect 300×173 at x=48,y=15900. A slice 12 shows a rectangular portrait.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B reuses the same asset files as A (same filenames) but in a different set and order. A includes 42 img elements, 15 with missing alt. B includes 29 imgs with none missing, but nearly all content images carry an empty alt string.",
+  "category": "imagery",
+  "evidence": "A counts.images 42, alt_missing 15. B images 29, alt_missing 0, with alt '' on 27 of 29 (only the logo and author portrait have text).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's content images are mixed in with text: some are left-aligned at x=88 with indented titles beneath, others at x=48. B places the image above the category and title in each card, with consistent alignment.",
+  "category": "layout",
+  "evidence": "A image rects x=88 (JEE section) vs x=48 (later sections). B cards image at x=156/562 with identical y per row.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's post metadata sits in light grey strips ('By WebEditor / 2018-10-02') under dark grey title blocks. B shows metadata as small grey text under titles ('By WebEditor / 2021-02-18').",
+  "category": "component",
+  "evidence": "A slice 0: grey-bar byline strips. B slice 1: small slate 'By WebEditor / 2020-09-04' lines.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's search is a bare label 'Search for:' with a default-looking input and a red 'Search' button, and it appears twice. B has a single 'Go' button in burnt-orange (194,65,12) next to a placeholder 'Search articles…' inside a card.",
+  "category": "component",
+  "evidence": "A forms 2, inputs 4, textarea 1. B form 1, input 1, button 1, primary_button 'Go', padding 0px 14px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's tag cloud has varying font sizes (small 'Languages' up to large 'Education' and 'General'). B has no tag cloud, and its Category widget is a plain divided list.",
+  "category": "component",
+  "evidence": "A slice 12 'TAGS' with differently sized links. B slice 1 Category list with hairline separators.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is plain text: lists of links, a 'Top Category' list and a 'Copyright © All rights reserved. | Theme: Daily Magazine by AF themes.' line. B's footer is a dark navy block with three columns (site name plus tagline, Quick Links, Top Category) and a hairline rule above the copyright.",
+  "category": "component",
+  "evidence": "B slice 6: navy (20,33,61) footer, Georgia column headings, copyright with a divider. A slice 12: bulleted lists on a transparent background.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Border radii: A has almost none (1324 of 1325 elements at 0, one in the 1–7px bucket). B has 40 elements in 1–7px and one pill, so cards, inputs and badges have light rounding while buttons stay square.",
+  "category": "decoration",
+  "evidence": "A bucket_0 1324, bucket_1_7 1. B bucket_0 334, bucket_1_7 40, bucket_pill 1. Both primary buttons have radius 0px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 4 box-shadows and 1 transition, probably from the theme. B has none of either, and uses thin 1px borders and hairline dividers for separation.",
+  "category": "decoration",
+  "evidence": "A effects box_shadows 4, transitions 1. B box_shadows 0, transitions 0. B slice 1 cards with thin borders and divider lines.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Neither page uses gradients, backdrop blur, animations or transforms.",
+  "category": "decoration",
+  "evidence": "Both: gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page titles differ. A is 'Home - Education Activitie' (truncated site name, lang en-US). B is 'Education Activities' (lang en).",
+  "category": "copy",
+  "evidence": "A title 'Home - Education Activitie', lang 'en-US'. B title 'Education Activities', lang 'en'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A includes a skip-link, aria attributes (19) and a reCAPTCHA-like box fragment at the right edge. B has 2 aria attributes and no skip-link in the visible slices.",
+  "category": "dom",
+  "evidence": "A slice 0 'Skip to content' at the top and a small box at x≈1370,y≈825. A aria_attrs 19. B aria_attrs 2.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has leftover artefacts of an unrendered widget layout: a stray 'of' text node between post blocks, and some posts without images. B has no stray text.",
+  "category": "copy",
+  "evidence": "A slice 0 shows 'of' at y≈1218 between the Science posts and the 'Skills Development' item.",
+  "which_side": "A"
+ },
+ {
+  "observation": "The word counts are 1049 (A) and 794 (B), and both have 1 emoji and 1 exclamation mark. The headlines keep the same garbled text, e.g. 'Trump Declares Decide to Lead EPA Chemical Security Workplace' and 'Easy methods to Manage Your Dwelling…', in both.",
+  "category": "copy",
+  "evidence": "A words 1049, B words 794; both emoji 1, exclamations 1, em_dashes 0. Heading outlines match for these titles.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's story cards have uneven bottoms because titles wrap to different line counts, leaving empty cells in the 2-column grid when the post count is odd (e.g. Math card alone in its row). A has no grid rhythm.",
+  "category": "layout",
+  "evidence": "B slice 1: 'The Importance Of Primary School Mathematics' alone at left with empty space to the right. Image y values 1072, 1493, 1891 show rows of varying height.",
+  "which_side": "B"
+ }
+]

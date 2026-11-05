@@ -1,0 +1,344 @@
+[
+ {
+  "observation": "Page length differs a lot: A is about 6x taller than B",
+  "category": "layout",
+  "evidence": "layout.page_height: A 29448px vs B 4777px, both 1440px wide; A cut into 23 slices, B into 4",
+  "which_side": "A"
+ },
+ {
+  "observation": "Document titles are worded differently: A uses an SEO keyword phrase, B leads with the brand name and an author byline",
+  "category": "copy treatment",
+  "evidence": "A title 'Top US Interior Design and DIY Projects Blogger | Never Skip Brunch'; B title 'Never Skip Brunch — DIY & Home Design by Cara Newhart'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The H1 text and styling differ. A's H1 is the uppercase brand name, centered. B's H1 is the welcome line, larger and left-aligned",
+  "category": "typography",
+  "evidence": "A h1 'NEVER SKIP BRUNCH' 50px playfair, center; B h1 'welcome to never skip brunch.' 76.8px \"Playfair Display\", text_align start",
+  "which_side": "both"
+ },
+ {
+  "observation": "In B's hero headline, the word 'brunch.' is set in pink italic, while the rest of the headline is dark",
+  "category": "typography",
+  "evidence": "B_slice_00 shows 'brunch.' in pink italic serif; B has 1 em tag and top text color rgb(232,69,124)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's heading outline is mostly navigation H3s: 29 H3s and only 3 H2s, with the H2s used for blog post titles. B uses 7 H2s for section titles, H3s for card titles and H4s for footer column labels",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts h3: A 29 vs B 6; h2: A 3 vs B 7; B outline H4s are 'QUICK LINKS', 'EXPLORE', 'SERVICES'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses six font families, led by Poppins. B uses three: Montserrat, Playfair Display and Homemade Apple",
+  "category": "typography",
+  "evidence": "A fonts: poppins 403, montserrat 55+25, trirong 25, moontime 14, playfair 9; B fonts: Montserrat 173, Playfair Display 14, Homemade Apple 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "A sets display headings in a large geometric sans (Poppins), often mixing orange-gold and dark text. B sets section headings in a serif (Playfair Display)",
+  "category": "typography",
+  "evidence": "A_slice_00 'projects' in gold and '& tips' in dark; A_slice_03 'MAKE SPACE' / 'podcast'; B_slice_01 'make space' and 'fresh off the workbench.' in serif",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body line height is looser on A",
+  "category": "typography",
+  "evidence": "body_line_height: A 32px vs B 26.4px, both at 16px font size",
+  "which_side": "A"
+ },
+ {
+  "observation": "The main accent color differs: A uses an orange-gold for text, B uses a hot pink for accent text",
+  "category": "color",
+  "evidence": "A top text colors include rgb(243,179,79) ×136 and rgb(178,133,48) ×20; B top text colors include rgb(232,69,124) ×5 and a muted rgb(217,207,200) ×58",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page background differs: A's body is pure white, B's is a warm off-white cream",
+  "category": "color",
+  "evidence": "body_bg: A rgb(255,255,255) vs B rgb(255,250,245)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a set of pastel section and card fills: peach, butter yellow and pink",
+  "category": "color",
+  "evidence": "B top backgrounds rgb(253,230,211) ×5, rgb(253,238,176) ×3, rgb(251,211,222) ×1; the three blog cards in B_slice_01 are peach, yellow and pink",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses a near-black background block for the YouTube section and the footer",
+  "category": "color",
+  "evidence": "B background rgb(28,26,25) ×7; B_slice_02 dark 'fun & fresh videos.' band; B_slice_03 dark footer",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's footer is a thin dark bar holding only the copyright line",
+  "category": "layout",
+  "evidence": "A_slice_22 bottom: rgb(51,51,51) strip with 'Copyright © 2021 · NEVER SKIP BRUNCH · by Cara Newhart'",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's footer has four columns: brand plus social links, Quick Links, Explore and Services, followed by an affiliate disclosure",
+  "category": "layout",
+  "evidence": "B_slice_03 columns 'NEVER SKIP BRUNCH', 'QUICK LINKS', 'EXPLORE', 'SERVICES', with a divider and disclosure text below",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's header has a centered logo with nav items split to either side; each nav label has a small italic script line above it",
+  "category": "component choices",
+  "evidence": "A_slice_00: 'the / BLOG', 'decor & / INTERIORS', 'diy / PROJECTS' left of the logo, 'make space / PODCAST' etc. to the right",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's header has a small logo on the left and one row of uppercase nav links on the right",
+  "category": "layout",
+  "evidence": "B_slice_00: 112×56 logo at x=180; nav reads BLOG … WORK WITH ME, ABOUT",
+  "which_side": "B"
+ },
+ {
+  "observation": "The announcement bar is styled differently: A uses two colored blocks with condensed and script type, B uses a single thin yellow strip with an underlined link",
+  "category": "component choices",
+  "evidence": "A_slice_00 yellow/peach split bar 'FUN & FRESH HOME GOODIES' + 'visit the shop' script; B_slice_00 'fun & fresh home goodies visit the shop →'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a full-width photo banner with a white box overlapping it that holds a newsletter form. B's hero is a two-column layout: text and buttons on the left, a photo on the right",
+  "category": "layout",
+  "evidence": "A header1.jpg 1440×572 at y=233 with a First/Last/E-mail form and GO button; B_slice_00 headline left, 4Q5A3075.jpg 461×614 at x=799",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero photo is cropped to an arch, with a rounded top and a soft drop shadow",
+  "category": "imagery handling",
+  "evidence": "B_slice_00 arch-shaped image; B border_radius bucket_16_plus 6, box_shadows 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's hero background is a soft gradient from peach down to cream",
+  "category": "decoration/effects",
+  "evidence": "B gradient_backgrounds 1 (A 0); B_slice_00 shows the peach-to-cream fade",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows an 'as seen in…' press logo strip on a torn-paper peach graphic. B has no press logo section",
+  "category": "imagery handling",
+  "evidence": "A as-seen-in-03-15-2021.png 1028×343; A_slice_01 shows the HouseBeautiful, NBC News and INSIDER logos; not among B's 4 images",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has a large portrait photo of the author (1081×1081). B has no portrait",
+  "category": "imagery handling",
+  "evidence": "A Cara-Newhart-designer-…-1.jpg rect 1081×1081; B images list contains no portrait",
+  "which_side": "A"
+ },
+ {
+  "observation": "Image counts differ: A has 17 images (8 of them placeholder.png), B has 4",
+  "category": "imagery handling",
+  "evidence": "counts.images A 17 vs B 4; A images list repeats 'placeholder.png' 8 times",
+  "which_side": "A"
+ },
+ {
+  "observation": "Alt text differs. Most of A's content images have empty alt, and the Instagram placeholders carry whole post captions as alt. Three of B's four images have short descriptive alt; the fourth, a background-style photo, has empty alt",
+  "category": "DOM/semantic structure",
+  "evidence": "A header1.jpg alt '' and placeholder alts with full hashtag captions; B 4Q5A3075.jpg alt 'A colorful DIY paint bar studio…'; alt_missing A 1, B 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows each blog post as a 1000px-wide, 1556px-tall photo under a gold serif title. B shows posts as three text-only pastel cards in a row",
+  "category": "component choices",
+  "evidence": "A BREAKFAST-NOOK… and gold-range-hood images 1000×1556 (A_slice_06–08); B_slice_01 three cards with 'DIY' label, title and 'READ →'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's blog cards contain no images",
+  "category": "imagery handling",
+  "evidence": "B_slice_01 cards show only text; B's 4 images are logo, hero, podcast and chat background",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows a broken or empty image frame above the blog list",
+  "category": "imagery handling",
+  "evidence": "A_slice_05: a 1000px-wide empty bordered image box with a broken-image icon; one A image has natural size 0×0 (BREAKFAST-NOOK-DIY-space-makeover.jpg)",
+  "which_side": "A"
+ },
+ {
+  "observation": "Pagination differs: A lists page numbers as stacked plain gold text links, B shows them as a row of circular pill buttons with the current page filled",
+  "category": "component choices",
+  "evidence": "A_slice_09 '2','3','…','60','Next Page »' stacked vertically; B_slice_01 round chips '1' (dark), '2', '3', '…', '60', 'Next Page »'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Category links differ: A has a large 'pick a category' heading, B has a row of rounded tag chips",
+  "category": "component choices",
+  "evidence": "A_slice_03 'pick a category' in large gold sans; B_slice_01 'DIY', 'DECOR & INTERIORS', 'MAKE SPACE' chips plus a dark 'BROWSE ALL POSTS →' chip",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses pill-shaped buttons throughout. A's calls to action are plain text links or square buttons",
+  "category": "decoration/effects",
+  "evidence": "border radius bucket_pill: B 22 vs A 1; A primary_button 'about + learn more' with transparent background, radius 0, padding 0; B_slice_00 pill buttons 'ABOUT + LEARN MORE →' and 'BROWSE DIY PROJECTS'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A is almost entirely square-cornered",
+  "category": "decoration/effects",
+  "evidence": "A border radius bucket_0 539, bucket_8_15 1, bucket_16_plus 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses rounded white cards with thin borders for the 'if you…' pair and the Instagram grid",
+  "category": "component choices",
+  "evidence": "B_slice_00 two 'if you…' cards; B_slice_02 eight caption cards in a 4×2 grid; B border radius bucket_8_15 8",
+  "which_side": "B"
+ },
+ {
+  "observation": "The 'if you…' copy is laid out differently: A prints it as plain lines over a background photo, B puts it in two side-by-side cards with a script 'if you…' label",
+  "category": "copy treatment",
+  "evidence": "A_slice_03 'if you . . .' text on top of the paint-bar photo; B_slice_00 two cards with serif headlines and grey body text",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's Instagram section shows giant orange 'gallery' icon graphics that fill the full width, each with a truncated caption above it",
+  "category": "imagery handling",
+  "evidence": "A_slice_14, 15, 18–21: huge gold overlapping-squares icons and a large Instagram glyph spanning about 1440px; captions such as 'Is your closet as OUT OF CONTROL as mine was?! swi'",
+  "which_side": "A"
+ },
+ {
+  "observation": "B shows the Instagram posts as text-only caption cards ending with an ellipsis, with a 'Follow on Instagram' outlined pill below",
+  "category": "component choices",
+  "evidence": "B_slice_02/03: 8 cards such as 'Umm...did you see the fiasco in stores where I lug...' and a 'FOLLOW ON INSTAGRAM' button",
+  "which_side": "B"
+ },
+ {
+  "observation": "Social icons differ: A shows very large black brand glyphs stacked vertically, B shows small icons inside outlined circles in a footer row",
+  "category": "component choices",
+  "evidence": "A_slice_10: Facebook, Instagram, Pinterest, Twitter and YouTube icons roughly 130px tall, stacked; B_slice_03 five ~40px circled icons; svgs A 11 vs B 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "Newsletter forms differ: A has three square fields (first name, last name, email) and a 'GO' button, repeated in two places. B has one rounded email field and a pill 'SUBSCRIBE' button, centered",
+  "category": "component choices",
+  "evidence": "A forms 4, inputs 16, with forms in A_slice_00 and A_slice_11; B forms 1, inputs 1, B_slice_03 'your email address' + 'SUBSCRIBE'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a site search field. B has none",
+  "category": "component choices",
+  "evidence": "A_slice_10 'Search this website' input and 'SEARCH' button; B has 1 input in total, the newsletter email",
+  "which_side": "A"
+ },
+ {
+  "observation": "A promotes YouTube with a wide banner image that has its own red SUBSCRIBE graphic. B uses a dark band with a serif heading and an orange pill button",
+  "category": "component choices",
+  "evidence": "A YT-SUBSCRIBE-e1589308148268.png 1440×173 (A_slice_04); B_slice_02 'fun & fresh videos.' + 'WATCH ON YOUTUBE' on rgb(245,154,74)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'let's chat' section is styled differently: A sets 'COFFEE &' / 'let's chat' left-aligned over the chair photo, B dims the photo and centers white text with a script kicker",
+  "category": "imagery handling",
+  "evidence": "A_slice_09 gold 'COFFEE &' and dark 'let's chat' with no overlay; B_slice_02 grey-tinted chair image with centered white 'let's chat.' and a 'WANNA GRAB A VIRTUAL COFFEE?' pill",
+  "which_side": "both"
+ },
+ {
+  "observation": "B puts small uppercase letter-spaced labels above most section headings",
+  "category": "typography",
+  "evidence": "B_slice_00–02 'VISIT THE BLOG', 'MAKE SPACE PODCAST', 'NEW ON THE BLOG', 'YOUTUBE', '@NEVERSKIPBRUNCH' (some in pink)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses handwritten script words as decorative accents next to sans or serif text",
+  "category": "typography",
+  "evidence": "A_slice_04 'fun & fresh' script + 'videos.'; A_slice_03 'the blog' script; A_slice_11 'join the newsletter.' script; moontime font 14 elements",
+  "which_side": "A"
+ },
+ {
+  "observation": "B also uses script kickers, but fewer: only 5 elements use Homemade Apple",
+  "category": "typography",
+  "evidence": "B fonts: Homemade Apple 5; B_slice_00 '▹ by cara newhart', B_slice_03 'hello.', B_slice_02 'coffee & let's chat'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has many full-bleed, left-edge-aligned text blocks with no side margin. B keeps content inside a centered column of about 1080px",
+  "category": "layout",
+  "evidence": "A_slice_02 paragraphs start at x=0 and run nearly 1440px wide; B content starts at x≈180 and ends at ≈1260 (logo x=180; hero image right edge 1260)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid and flexbox for layout. A's DOM reports neither",
+  "category": "DOM/semantic structure",
+  "evidence": "layout.display_grid A 0 vs B 11; display_flex A 0 vs B 10",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is much heavier: it has many more scripts, style blocks, noscript tags and divs",
+  "category": "DOM/semantic structure",
+  "evidence": "script A 74 vs B 1; style A 19 vs B 1; noscript A 21 vs B 0; div A 130 vs B 26; stylesheets A 4 vs B 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has extensive meta and structured data (Open Graph, Twitter, verification, generator tags, JSON-LD). B has only charset, viewport and description",
+  "category": "DOM/semantic structure",
+  "evidence": "meta_names A 20 entries incl. og:*, twitter:*; jsonld_blocks A 1 vs B 0; B meta_names ['charset','viewport','description']",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses 4 header and 4 footer elements and 22 sections. B uses one of each landmark and 8 sections, and adds a figure element",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic A header 4, footer 4, section 22, figure 0; B header 1, footer 1, section 8, figure 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses real button elements. A uses none",
+  "category": "DOM/semantic structure",
+  "evidence": "counts.buttons A 0 vs B 2; B primary_button text 'Menu'",
+  "which_side": "B"
+ },
+ {
+  "observation": "Class usage differs: A has about 13 times as many class attributes as B",
+  "category": "DOM/semantic structure",
+  "evidence": "classes.total A 699 / unique 231 vs B 54 / unique 28; tailwind_like_fraction near 0 on both",
+  "which_side": "A"
+ },
+ {
+  "observation": "B declares CSS transitions on many elements and a backdrop blur, and uses a translucent header background",
+  "category": "decoration/effects",
+  "evidence": "transitions A 1 vs B 18; backdrop_blur B 1 (A 0); B background rgba(255,250,245,0.94)",
+  "which_side": "B"
+ },
+ {
+  "observation": "Both pages carry nearly the same amount of copy, with identical emoji, em-dash and exclamation counts",
+  "category": "copy treatment",
+  "evidence": "words A 540 vs B 514; emoji 4, em_dashes 6, exclamations 3 on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's quick links use number suffixes and decorative dot separators",
+  "category": "copy treatment",
+  "evidence": "A_slice_09/10 'BLOG01.', 'ABOUT02.', 'Contact03.', 'WORK WITH ME05.', '. . . . .'; heading outline includes '. . . . . . .' H3s",
+  "which_side": "A"
+ },
+ {
+  "observation": "B introduces new section headlines that A doesn't have, such as 'fresh off the workbench.' and 'on instagram.'",
+  "category": "copy treatment",
+  "evidence": "B outline H2s 'fresh off the workbench.', 'on instagram.', 'let's chat.'; A uses 'New on the Blog' (A_slice_04) and 'COFFEE & let's chat'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has large gaps of empty white space between blocks, notably below the portrait and around the Instagram captions",
+  "category": "layout",
+  "evidence": "A_slice_02 about 600px of blank space before 'welcome to never skip brunch.'; A_slice_13 and 16 almost entirely blank",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses a white boxed panel with a faint shadow that overlaps the hero photo. B's one shadow is on the hero image",
+  "category": "decoration/effects",
+  "evidence": "A box_shadows 3; A_slice_00–01 white panel overlapping header1.jpg; B box_shadows 1 under the arched photo",
+  "which_side": "both"
+ },
+ {
+  "observation": "The language attribute differs",
+  "category": "DOM/semantic structure",
+  "evidence": "lang: A 'en-US' vs B 'en'",
+  "which_side": "both"
+ }
+]

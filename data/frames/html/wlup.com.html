@@ -1,0 +1,977 @@
+<!DOCTYPE HTML><html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+<meta charset="UTF-8" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+<!-- Title -->
+<title>The Loop Lives On! &#8211; The Loop WLUP-FM</title><link rel='dns-prefetch' href='//www.wlup.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+
+
+<!-- Headway SEO Juice -->
+<meta name="description" content="Listen to Chicago&#039;s Classic Rock, here at wlup.com, or on our app. Also, get your hands on the official vintage t-shirt!" />
+<link rel="canonical" href="https://www.wlup.com/the-loop-lives-on/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/www.wlup.com\/wp-includes\/js\/wp-emoji.js?ver=4.9.8","twemoji":"https:\/\/www.wlup.com\/wp-includes\/js\/twemoji.js?ver=4.9.8"}};
+			( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	/*
+	 * Create a canvas element for testing native browser support
+	 * of emoji.
+	 */
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Check if two sets of Emoji characters render the same.
+	 *
+	 * @param set1 array Set of Emoji characters.
+	 * @param set2 array Set of Emoji characters.
+	 * @returns {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "flag" or "emoji".
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 55356, 56826, 55356, 56819 ],
+					[ 55356, 56826, 8203, 55356, 56819 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447 ],
+					[ 55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447 ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * She's the hero Emoji deserves, but not the one it needs right now.
+				 *
+				 * To test for support, try to render a new emoji (female superhero),
+				 * then compare it to how it would look if the browser doesn't render it correctly
+				 * (superhero + female sign).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[55358, 56760, 9792, 65039],
+					[55358, 56760, 8203, 9792, 65039]
+				);
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		
+
+<!-- Stylesheets -->
+<link rel='stylesheet' id='headway-google-fonts' href='//fonts.googleapis.com/css?family=Oswald|Lato|Fjalla+One' type='text/css' media='all' />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='bxslider-style-css'  href='https://www.wlup.com/wp-content/plugins/shared/js/bxslider/jquery.bxslider.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-promo-reel-widget-style-css'  href='https://www.wlup.com/wp-content/plugins/amp-promo-reel/includes/../css/widget.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='headway-general-https-css'  href='https://www.wlup.com/wp-content/uploads/sites/359/headway/cache/general-https-6dc3d9e.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='headway-layout-single-page-1130224-https-css'  href='https://www.wlup.com/wp-content/uploads/sites/359/headway/cache/layout-single-page-1130224-https-282f8d1.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='headway-responsive-grid-https-css'  href='https://www.wlup.com/wp-content/uploads/sites/359/headway/cache/responsive-grid-https-d2119e4.css?ver=4.9.8' type='text/css' media='all' />
+<meta name="builder-styles-css" content="" id="builder-styles-css">
+<link rel='stylesheet' id='amp-breaking-news-css'  href='https://www.wlup.com/wp-content/plugins/amp-breaking-news/public/css/public.css?ver=0.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-style-css'  href='https://www.wlup.com/wp-content/plugins/shared/css/animate.css?ver=0.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-styles-plugin-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-styles/css/public.css?ver=1.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-events-calendar-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-events/css/calendar.css?ver=1.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-events-export-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-events/css/public.css?ver=1.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='amp_feed-plugin-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-feeds/css/public.css?ver=0.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-image-rotator-plugin-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-image-rotator/public/assets/css/public.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-listen-live-plugin-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-listen-live/public/assets/css/public.css?ver=1.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-onair-plugin-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-onair/public/assets/css/public.css?ver=1.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='AMPPromoReel-plugin-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-promo-reel/css/public.css?ver=1.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='https://www.wlup.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='https://www.wlup.com/wp-includes/js/mediaelement/wp-mediaelement.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-tabs-plugin-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-tabs/public/assets/css/public.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-header-rotator-css'  href='https://www.wlup.com/wp-content/themes/Headway-AMP_CMS/css/amp-header-rotator.css?ver=1.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='amp-unified-login-style-css'  href='https://www.wlup.com/wp-content/themes/Headway-AMP_CMS/style.css?ver=1620036498' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" media="all" href="https://www.wlup.com/wp-content/themes/Headway-AMP_CMS/style.css" />
+
+<!-- Scripts -->
+<script type='text/javascript' src='https://www.wlup.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-includes/js/jquery/jquery-migrate.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/shared/js/bxslider/jquery.bxslider.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-promo-reel/includes/../js/widget.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/themes/headway/library/media/js/jquery.fitvids.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/uploads/sites/359/headway/cache/responsive-grid-js-https-e6e6939.js?ver=4.9.8'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _ampconfig = {"site_url":"https:\/\/www.wlup.com","site_id":"359","tz":"America\/Chicago","tz_offset":"-5","ts":"1622080743","blog_name":"97.9 The Loop | WLUP-FM","client_name":"cumuluspro","user_ID":"","alt_blog_name":"WLUP-FM","market":"Chicago, IL","format":"Classic Rock","ts_offset":"1622579067","version":"release-2.60.0","env":"prod","settings":{"tenant_id":"see_10484","format":"Classic Rock","market":"Chicago, IL","syn_site_name":"WLUP-FM","vidible_company_key":"06125e55709b3c4ffdfe3c3f8a9ed8bd","client_name":false,"nielsen_provider":"cumulus","promoreel_priority":true}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/shared/js/amp-common.js?ver=1622080743'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-breaking-news/public/js/public.js?ver=0.3.4'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-styles/js/public.js?ver=1.4.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var dates = {"start_of_week":"0","moment_date_format":"MMMM D, YYYY","moment_time_format":"h:mm a","calendar_date_format":"MMMM d, yyyy","calendar_time_format":"h:mm tt","date_format":"MM d, yy","time_format":"g:i a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-events/js/calendar.js?ver=1.1.4'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-events/js/public.js?ver=1.1.4'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-feeds/js/jquery.totemticker.min.js?ver=0.6.0'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-feeds/js/public.js?ver=0.6.0'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-feeds/js/date.js?ver=0.6.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _amplistenlive = {"blog_id":"359","callsign":"","mount_name":"WLUPFM","provider":"stream_the_world","gmt_offset":"-18000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-listen-live/public/assets/js/public.js?ver=1.4.4'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-onair/public/assets/js/public.js?ver=1.7.2'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/themes/Headway-AMP_CMS/js/amp-theme.js?ver=1.1.5'></script>
+
+<!--[if lt IE 9]>
+<script src="https://www.wlup.com/wp-content/themes/headway/library/media/js/html5shiv.js"></script>
+<![endif]-->
+
+<!--[if lt IE 8]>
+<script src="https://www.wlup.com/wp-content/themes/headway/library/media/js/ie8.js"></script>
+<![endif]-->
+
+<!-- BEGIN MPW INDEX LIBRARY -->
+<!-- Header bidding wrapper, must be included BEFORE DFP -->
+<script async src="//js-sec.indexww.com/ht/p/190116-151096874730217.js"></script>
+<!-- END MPW INDEX LIBRARY -->
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+	// SLOTS ARE NOW DEFINED WITHIN THEIR DISPLAY BLOCKS
+	window.GPT_SITE_ID = '/6717/cd.WLUP.FM';
+	window.googletag = window.googletag || {cmd: []};
+	googletag.cmd.push(function() {
+		googletag.pubads().collapseEmptyDivs();
+		googletag.pubads().enableLazyLoad({
+			fetchMarginPercent: 100,
+			renderMarginPercent: 100,
+			mobileScaling: 2.0
+		});
+		googletag.enableServices();
+	});
+</script>
+
+<!-- Cumulus Corporate Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','corpDataLayer','GTM-MCHQZG');</script>
+<!-- End Cumulus Corporate Google Tag Manager -->
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1199040010134765');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1199040010134765&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- BEGIN INFINITE FACEBOOK PIXEL -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '181461212508101');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=181461212508101&ev=PageView&noscript=1"
+/></noscript>
+<!-- END INFINITE FACEBOOK PIXEL -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="alternate" type="application/rss+xml" title="97.9 The Loop | WLUP-FM &raquo; Feed" href="https://www.wlup.com/feed/" />
+
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/ico" href="https://express-images.franklymedia.com/6616/sites/359/2017/09/29094634/favicon.ico" />
+
+
+<link rel='shortlink' href='https://www.wlup.com/?p=1130224' />
+			<script type="text/javascript">
+				var _gaq = _gaq || [];
+
+				
+									_gaq.push(['b._setAccount', 'UA-32629418-11']);
+					_gaq.push(['b._trackPageview']);
+				
+				(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                				    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+
+        <script type="text/javascript">var ajaxurl = "https://www.wlup.com/wp-admin/admin-ajax.php"</script>
+<!-- AMP CMS DFP custom tags -->
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+      googletag.pubads().setTargeting('cms-sname', '979 The Loop  WLUPFM');
+      googletag.pubads().setTargeting('cms-sgroup', ['All Sites', 'Format  Classic Rock', 'Market  Chicago IL', 'Cumulus OO']);
+      googletag.pubads().setTargeting('cms-ptitle', 'The Loop Lives On!');
+  });
+</script>
+<link rel="dns-prefetch" href="https://api.tunegenie.com">
+<link rel="preconnect" href="https://api.tunegenie.com">
+
+<!-- START - Open Graph for Facebook, Google+ and Twitter Card Tags 2.2.4.2 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="97.9 The Loop | WLUP-FM"/>
+  <meta property="og:title" content="The Loop Lives On!"/>
+  <meta property="og:url" content="https://www.wlup.com/the-loop-lives-on/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Chicago&#039;s Classic Rock"/>
+  <meta property="og:image" content="https://express-images.franklymedia.com/6616/sites/359/2017/09/29114127/wlup_opengraph-general_1200x630_01.jpg"/>
+  <meta property="article:publisher" content="https://www.facebook.com/979TheLoop/"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="The Loop Lives On!"/>
+  <meta itemprop="headline" content="The Loop Lives On!"/>
+  <meta itemprop="description" content="Chicago&#039;s Classic Rock"/>
+  <meta itemprop="image" content="https://express-images.franklymedia.com/6616/sites/359/2017/09/29114127/wlup_opengraph-general_1200x630_01.jpg"/>
+  <meta itemprop="author" content="Web Team"/>
+  <!--<meta itemprop="publisher" content="97.9 The Loop | WLUP-FM"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="The Loop Lives On!"/>
+  <meta name="twitter:url" content="https://www.wlup.com/the-loop-lives-on/"/>
+  <meta name="twitter:description" content="Chicago&#039;s Classic Rock"/>
+  <meta name="twitter:image" content="https://express-images.franklymedia.com/6616/sites/359/2017/09/29114127/wlup_opengraph-general_1200x630_01.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@979TheLoop"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+ <!-- is_singular -->
+<!-- END - Open Graph for Facebook, Google+ and Twitter Card Tags 2.2.4.2 -->
+	
+
+</head><!-- End <head> -->
+
+<body class="page-template-default page page-id-1130224 custom safari webkit android responsive-grid-enabled responsive-grid-active pageid-1130224 page-slug-the-loop-lives-on layout-single-page-1130224 layout-using-single-page-1130224 istouch builder-parallax-scrolling-active" itemscope itemtype="http://schema.org/WebPage">
+
+
+<div id="whitewrap">
+
+
+<div id="wrapper-wbh5aa04bdb8aba2" class="wrapper wrapper-fixed wrapper-fixed-grid grid-fluid-24-32-10 responsive-grid wrapper-mirroring-w895aa0503ea0835 wrapper-first wrapper-Micro-D bg-gray--middark pagewidth-full pad-none spacer-sides--none" data-alias="">
+
+<div class="grid-container clearfix">
+
+<section class="row row-1">
+
+<section class="column column-1 grid-left-0 grid-width-24">
+<div id="block-bqa58c964124e1be" class="block-ZERO block block-type-custom-code block-fluid-height block-mirrored block-mirroring-bqa58c964124e1be block-original-bg95aa05242063e2" data-alias="Microsite E - Link To Assets :: ">
+<div class="block-content">
+<!--Style Sheet-->
+<link rel="stylesheet" type="text/css" href="https://cumuluschicago.com/other/BBBB_GlobalWebAssets/MicrositeE/MicrositeE_02-Styles-Core_01.css">
+</div><!-- .block-content -->
+
+</div><!-- #block-bqa58c964124e1be -->
+
+</section><!-- .column -->
+
+</section><!-- .row -->
+
+
+<section class="row row-2">
+
+<section class="column column-1 grid-left-0 grid-width-24">
+<div id="block-b4v5aa0723d0bef1" class="block-ZERO block block-type-custom-code block-fluid-height block-mirrored block-mirroring-b4v5aa0723d0bef1 block-original-bk65aa072689077e" data-alias="Loop Lives - Google Font and CSS :: ">
+<div class="block-content">
+<!--Google Font-->
+<link href="https://fonts.googleapis.com/css?family=Allura|Play:400,700" rel="stylesheet">
+
+
+
+
+
+<!--CSS-->
+<style type="text/css"><!--
+
+
+
+
+/*
+============================================================================================
+============================================================================================
+		LOOP LIVES' SPLASH PAGE BASIC STYLES:
+		A combination of custom styles specific to Microsite E, as well as overrides 
+		to my basic my Microsite E CSS, and/or CORE website CSS
+============================================================================================
+============================================================================================
+*/
+	
+	
+/*
+============================================================================================
+============================================================================================
+		LOOP LIVES' SPLASH PAGE TEXT STYLES:
+		A combination of custom styles specific to Microsite E, as well as overrides 
+		to my basic my Microsite E CSS, and/or CORE website CSS
+============================================================================================
+============================================================================================
+*/
+
+	/*----------------------------------------------------------------------------------------
+		COMMON GENERAL TEXT STYLING
+	------------------------------------------------------------------------------------------*/
+		
+		/* --------------- Hyperlink Color --------------- */
+			/* For both Clean Single and Clean Teaser */
+			.Clean-Single.block-type-content div.entry-content p a,
+			.p-text--section a { 
+				color: #ffffff;
+				border-bottom: 2px solid #c90813;
+			}
+	
+		/* --------------- Font Size, Line Height, Letter Spacing, Margin Bottom --------------- */
+			/* Headings */
+			.Clean-Teaser.Large-Emph .block-title {  	
+				font-size: 50px;
+			}
+	
+			.h-header--section {
+				font-size: 32px;
+				margin-bottom: 15px !important;
+			}
+
+			.h-header--detail {
+				margin-bottom: 15px !important;
+			}
+	
+		/* --------------- Various Heading Details --------------- */
+			/* Block Title -- Basic */
+			.Clean-Teaser .block-title:after {
+				background: #e41e24;
+			}
+	
+	
+/*
+============================================================================================
+============================================================================================
+		LOOP LIVES' SPLASH PAGE CONTENT:
+		A combination of custom styles specific to Microsite E, as well as overrides 
+		to my basic my Microsite E CSS, and/or CORE website CSS
+============================================================================================
+============================================================================================
+*/
+	
+	/*----------------------------------------------------------------------------------------
+			CONTAINERS
+		------------------------------------------------------------------------------------------*/
+	
+			/* --------------- Container Logo in Section Branding Large --------------- */
+				.section-branding--splash .Container-Logo { 
+					width: 100%;
+					margin-bottom: 30px;
+				}
+	
+	/*----------------------------------------------------------------------------------------
+			SOCIAL ICONS MODULE
+		------------------------------------------------------------------------------------------*/
+
+			/* --------------- Basic Styling --------------- */
+				.social-nav {
+					height: auto !important;
+					padding-top: 10px; 
+					padding-bottom: 10px;  
+				}
+			
+			
+/*
+============================================================================================
+============================================================================================
+		LOOP LIVES' SPLASH PAGE NAVIGATION:
+		A combination of custom styles specific to Microsite E, as well as overrides 
+		to my basic my Microsite E CSS, and/or CORE website CSS
+============================================================================================
+============================================================================================
+*/	
+			
+			
+/*
+============================================================================================
+============================================================================================
+		LOOP LIVES' SPLASH PAGE ANIMATIONS:
+		A combination of custom styles specific to Microsite E, as well as overrides 
+		to my basic my Microsite E CSS, and/or CORE website CSS
+============================================================================================
+============================================================================================
+*/
+	
+	
+/*
+============================================================================================
+============================================================================================
+		LOOP LIVES' SPLASH PAGE STRUCTURAL COMPONENTS:
+		A combination of custom styles specific to Microsite E, as well as overrides 
+		to my basic my Microsite E CSS, and/or CORE website CSS
+============================================================================================
+============================================================================================
+*/
+
+
+/*
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+		MEDIA QUERIES 
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+*/
+
+/* 599px and below */
+@media only screen and (max-width: 599px) {
+	
+	/*
+	============================================================================================
+	============================================================================================
+			CONTENT - More-complicated modules/objects/blocks/items/features on the website 
+	============================================================================================
+	============================================================================================
+	*/
+	
+		/*----------------------------------------------------------------------------------------
+			CONTAINERS
+		------------------------------------------------------------------------------------------*/
+	
+			/* --------------- Container Logo in Section Branding Large --------------- */
+				.section-branding--splash .Container-Logo { 
+					max-width: 275px;
+				}
+	
+}
+	
+/* 600px and below */
+@media only screen and (max-width: 600px) {
+	
+	/*
+	============================================================================================
+	============================================================================================
+			TEXT STYLES 
+	============================================================================================
+	============================================================================================
+	*/
+				
+		/*----------------------------------------------------------------------------------------
+			COMMON GENERAL TEXT STYLES
+		------------------------------------------------------------------------------------------*/
+				
+			/* --------------- Font Size --------------- */
+				/* Headings */
+				.Clean-Teaser.Large-Emph .block-title {  	
+					font-size: 30px;
+				}
+
+				.h-header--section {
+					font-size: 22px;
+				}
+	
+}
+
+/* 600px - 768px */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	
+	/*
+	============================================================================================
+	============================================================================================
+			CONTENT - More-complicated modules/objects/blocks/items/features on the website 
+	============================================================================================
+	============================================================================================
+	*/
+	
+		/*----------------------------------------------------------------------------------------
+			CONTAINERS
+		------------------------------------------------------------------------------------------*/
+	
+			/* --------------- Container Logo in Section Branding Large --------------- */
+				.section-branding--splash .Container-Logo { 
+					max-width: 400px;
+				}
+	
+}
+
+/* 769px - 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	
+	/*
+	============================================================================================
+	============================================================================================
+			CONTENT - More-complicated modules/objects/blocks/items/features on the website 
+	============================================================================================
+	============================================================================================
+	*/
+	
+		/*----------------------------------------------------------------------------------------
+			CONTAINERS
+		------------------------------------------------------------------------------------------*/
+	
+			/* --------------- Container Logo in Section Branding Large --------------- */
+				.section-branding--splash .Container-Logo { 
+					max-width: 500px;
+				}
+	
+}
+	
+/* 1024px and below */
+@media only screen and (max-width: 1024px) {
+	
+	/*
+	============================================================================================
+	============================================================================================
+			STRUCTURAL COMPONENTS 
+	============================================================================================
+	============================================================================================
+	*/
+	
+		/*----------------------------------------------------------------------------------------
+			LAYOUT FORMATTING
+		------------------------------------------------------------------------------------------*/
+	
+			/* --------------- Row - Flex --------------- */
+				.row-flex { 
+					display: block;
+				}
+	
+			/* --------------- Column - Basic --------------- */	
+				.col {
+					float: none;
+					margin-right: 0;
+				}
+
+				/* Grid of twelve  */
+				.span_6_of_12 	{ width: 100%; }
+	
+}
+	
+/* 1025px and above */
+@media only screen and (min-width: 1025px) {
+	
+	/*
+	============================================================================================
+	============================================================================================
+			TEXT STYLES 
+	============================================================================================
+	============================================================================================
+	*/
+	
+		/*----------------------------------------------------------------------------------------
+			COMMON GENERAL TEXT STYLING
+		------------------------------------------------------------------------------------------*/
+	
+			/* --------------- Various Heading Details --------------- */
+				/* Block Title -- Large Emphasis */
+				.Clean-Teaser.Large-Emph .block-title:after {
+					display: none;
+				}
+	
+	/*
+	============================================================================================
+	============================================================================================
+			CONTENT - More-complicated modules/objects/blocks/items/features on the website 
+	============================================================================================
+	============================================================================================
+	*/
+	
+		/*----------------------------------------------------------------------------------------
+			CONTAINERS
+		------------------------------------------------------------------------------------------*/
+	
+			/* --------------- Container Logo in Section Branding Large --------------- */
+				.section-branding--splash .Container-Logo { 
+					max-width: 650px;
+				}
+	
+}
+	
+		
+/*
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+		END OF MEDIA QUERIES 
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+========================================================================================================================================================================================
+*/
+
+
+-->
+</style>
+</div><!-- .block-content -->
+
+</div><!-- #block-b4v5aa0723d0bef1 -->
+
+</section><!-- .column -->
+
+</section><!-- .row -->
+
+
+<section class="row row-3">
+
+<section class="column column-1 grid-left-0 grid-width-24">
+<section id="block-bwq5aa05091386dc" class="social-nav block-ZERO block block-type-social block-fixed-height block-mirrored block-mirroring-bwq5aa05091386dc block-original-bi35aa0524201b38" data-alias="Social Navigation - Splash Page Setup :: ">
+<div class="block-content">
+<div class="social-icons-container"><ul class="social-icons"><li><a href="http://www.facebook.com/979TheLoop" target="_blank"><img src="https://www.wlup.com/wp-content/uploads/sites/359/2016/08/facebook.svg" title="Facebook" class="img-1" width="18" /></a></li><li><a href="http://twitter.com/979TheLoop" target="_blank"><img src="https://www.wlup.com/wp-content/uploads/sites/359/2016/08/twitter.svg" title="Twitter" class="img-2" width="18" /></a></li><li><a href="https://www.instagram.com/979theloop/" target="_blank"><img src="https://www.wlup.com/wp-content/uploads/sites/359/2016/08/instagram.svg" title="Instagram" class="img-3" width="18" /></a></li><li><a href="https://www.youtube.com/user/TheLoop979/videos" target="_blank"><img src="https://www.wlup.com/wp-content/uploads/sites/359/2016/08/youtube.svg" title="YouTube" class="img-4" width="18" /></a></li><li><a href="https://www.snapchat.com/add/theloop979" target="_blank"><img src="https://express-images.franklymedia.com/6616/sites/359/2018/03/07142722/snapchat.svg" title="Snapchat" class="img-5" width="18" /></a></li></ul></div><!-- .social-icons-container -->
+</div><!-- .block-content -->
+
+</section><!-- #block-bwq5aa05091386dc -->
+
+</section><!-- .column -->
+
+</section><!-- .row -->
+
+
+</div><!-- .grid-container -->
+
+</div><!-- .wrapper -->
+
+<div id="wrapper-wx35aa04e3eb001a" class="wrapper wrapper-fixed wrapper-fixed-grid grid-fluid-24-32-10 responsive-grid wrapper-last wrapper-Micro-D pagewidth-full pad-none spacer-sides--none" data-alias="Loop Lives - Hero Info Content Area :: ">
+
+<div class="grid-container clearfix">
+
+<section class="row row-1">
+
+<section class="column column-1 grid-left-0 grid-width-24">
+<div id="block-bu65aa052ee6bea4" class="marg-bot-none block block-type-custom-code block-fluid-height" data-alias="Hero Info">
+<div class="block-content">
+<section class="section-branding--splash cover"><!--no pad-section and no spacer-sides-->
+	<div class="bg-branding branding-splashimage">
+        <div style="background-image: url(https://express-images.franklymedia.com/6616/sites/359/2018/03/07182000/branding-splashimage_1920x1080_01.jpg);"></div>
+    </div>
+
+    <div id='div-gpt-ad-1418849849333-1' align="center" style="position:absolute;z-index:2;top:0;left:50%;transform:translateX(-50%)">
+    <script type="module">
+    googletag.cmd.push(function() {
+    	var sizeMap = googletag.sizeMapping()
+    		.addSize([970, 0], [[728, 90], [970, 90]])
+    		.addSize([750, 0], [728, 90])
+    		.addSize([0, 0], [[320, 50], [320, 53]])
+    		.build();
+    
+    	googletag.defineSlot(
+    		GPT_SITE_ID,
+    		[[728, 90], [970, 90]],
+    		'div-gpt-ad-1418849849333-1'
+    	)
+    	.addService(googletag.pubads())
+    	.defineSizeMapping(sizeMap)
+    	.setCollapseEmptyDiv(true)
+    	.setTargeting("pos","top");
+    
+    	googletag.display('div-gpt-ad-1418849849333-1');
+    });
+    </script>
+    </div>
+    
+    <div class="box-info">
+		
+		<div class="pagewidth-two spacer-sides--2">
+			<div class="row-flex">
+				<div class="col span_6_of_12">
+					<div class="Container-Logo">
+						<img src="https://express-images.franklymedia.com/6616/sites/359/2018/03/07183255/wlup-logo_800w_01.png" />
+					</div>
+					<div class="Clean-Teaser Large-Emph">
+						<h1 class="block-title">The Loop lives on!</h1>
+					</div>
+				</div>
+				<div class="col span_6_of_12">
+					
+					<div style="text-align: center">
+						<h2 class="h-header--section">Three ways to listen:</h2>
+						<h3 class="h-header--detail ">1. Stream us HERE at wlup.com</h3>
+						<h3 class="h-header--detail ">2. Download The Loop app</h3>
+						<a class="btn-type--1 btn-color--red marg-bot--1" style="margin-right: 10px" href="https://itunes.apple.com/us/app/97.9-the-loop-wlup/id864139160?mt=8" target="_blank" rel="noopener">iPhone</a>
+						<a class="btn-type--1 btn-color--red marg-bot--1" style="margin-right: 10px" href="https://play.google.com/store/apps/details?id=com.airkast.WLUPFM&hl=en" target="_blank" rel="noopener">Google Play</a>
+						<a class="btn-type--1 btn-color--red marg-bot--1" href="https://www.amazon.com/AirKast-Inc-97-9-Loop-WLUP/dp/B00M9GEGF8/189-8538434-7611731?ie=UTF8&*Version*=1&*entries*=0" target="_blank" rel="noopener">Amazon</a>
+						
+						<h3 class="h-header--detail ">3. Listen Live with Alexa</h3>
+						<div style="max-width: 320px; margin-left: auto; margin-right: auto">
+							<p class="p-text--section marg-bot--2">Say, “Alexa, enable the THE LOOP NINETY SEVEN POINT NINE Skill”<br/>
+							<a style="font-size: 85%; border-bottom: none; color: #666666;" href="/listen-live-with-alexa/">Need help?</a></p>
+						</div>
+						
+						<h2 class="h-header--section">Official Loop t-shirt</h2>
+						<h3 class="h-header--detail ">Get your hands on the classic shirt!</h3>
+						<a class="btn-type--1 btn-color--red" href="https://wlupstore.com/" target="_blank" rel="noopener">Buy Now</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+    </div>
+</section>
+</div><!-- .block-content -->
+
+</div><!-- #block-bu65aa052ee6bea4 -->
+
+</section><!-- .column -->
+
+</section><!-- .row -->
+
+
+<section class="row row-2">
+
+<section class="column column-1 grid-left-20 grid-width-4">
+<div id="block-bsf5ae373e20536a" class="gigya-actions block block-type-custom-code block-fluid-height" data-alias="">
+<div class="block-content">
+<div class="see-widget" data-see-type="regUi" data-see-loginbonus="false" ></div>
+</div><!-- .block-content -->
+
+</div><!-- #block-bsf5ae373e20536a -->
+
+</section><!-- .column -->
+
+</section><!-- .row -->
+
+
+</div><!-- .grid-container -->
+
+</div><!-- .wrapper -->
+
+
+
+<img src="https://thrtle.com/sync?vxii_pid=7004" alt="" style="display: none" width="1" height="1" /><script>_AMP.theme.init();</script>
+<script type='text/javascript' src='//engage-see.franklymedia.com/widget/see_10484/see.js'></script><link rel='stylesheet' id='amp-polls-plugin-styles-css'  href='https://www.wlup.com/wp-content/plugins/amp-polls/css/widget.css?ver=4.9.8' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var themify_vars = {"version":"2.2.6.6","url":"https:\/\/www.wlup.com\/wp-content\/plugins\/themify-builder\/themify","map_key":null,"includesURL":"https:\/\/www.wlup.com\/wp-includes\/","isCached":null,"minify":{"css":{"themify-icons":false,"themify.framework":false,"lightbox":false,"themify-builder-style":false},"js":{"backstretch.themify-version":false,"bigvideo":false,"themify.dropdown":false,"themify.builder.script":false,"themify.scroll-highlight":false,"themify-youtube-bg":false,"themify.parallaxit":false,"themify.ticks":false}}};
+var tbLocalScript = {"isAnimationActive":"1","isParallaxActive":"1","isParallaxScrollActive":"1","animationInviewSelectors":[".module.wow",".module_row.wow",".builder-posts-wrap > .post.wow"],"backgroundSlider":{"autoplay":5000,"speed":2000},"animationOffset":"100","videoPoster":"https:\/\/www.wlup.com\/wp-content\/plugins\/themify-builder\/img\/blank.png","backgroundVideoLoop":"yes","builder_url":"https:\/\/www.wlup.com\/wp-content\/plugins\/themify-builder","framework_url":"https:\/\/www.wlup.com\/wp-content\/plugins\/themify-builder\/themify","version":"2.2.6.6","fullwidth_support":"","fullwidth_container":"body","loadScrollHighlight":"","addons":[],"breakpoints":{"tablet_landscape":[769,1280],"tablet":[681,768],"mobile":680},"ticks":{"tick":240,"ajaxurl":"https:\/\/www.wlup.com\/wp-admin\/admin-ajax.php","postID":1130224}};
+var themifyScript = {"lightbox":{"lightboxSelector":".themify_lightbox","lightboxOn":true,"lightboxContentImages":false,"lightboxContentImagesSelector":"","theme":"pp_default","social_tools":false,"allow_resize":true,"show_title":false,"overlay_gallery":false,"screenWidthNoLightbox":600,"deeplinking":false,"contentImagesAreas":"","gallerySelector":".gallery-icon > a","lightboxGalleryOn":true},"lightboxContext":"body"};
+var tbScrollHighlight = {"fixedHeaderSelector":"","speed":"900","navigation":"#main-nav","scrollOffset":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/themify-builder/themify/js/main.js?ver=2.2.6.6'></script>
+<script type='text/javascript' src='https://www.wlup.com/wp-content/plugins/amp-polls/js/widget-front-end.js?ver=4.9.8'></script>
+<script src="https://wlup.tunegenie.com/station/pwa/fullfooter.js?bs=wlup"></script>
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+    // google analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-7150119-1', 'auto', 'm2gTracker');
+    navigator.serviceWorker.getRegistrations().then(function (registrations) {
+      if (registrations.length) {
+        for(let registration of registrations) {
+          var tg_brand = "wlup";
+          // unregister old version
+          if (registration.active.scriptURL.endsWith('tg-sw.js') || registration.active.scriptURL.endsWith('tg2-sw.js')) {
+            registration.unregister().then(function(success) {
+              if (success) {
+                ga('m2gTracker.send', 'event', tg_brand, 'pwa/unregister', 'wordpress');
+                console.log('removed service worker');
+              }
+            }).catch(function(err) {
+              ga('m2gTracker.send', 'event', tg_brand, 'pwa/unregister/error', 'wordpress');
+              console.log('remove sw failed.');
+            });
+          }
+        }
+      }
+    }).catch(function(err) {
+      console.log('get registrations failed: ' + error);
+    });
+  }
+</script>
+
+
+</div><!-- #whitewrap -->
+
+<!-- TGMP PLUGIN ENABLED 2016-08-05T00:55:20.928Z -->
+
+<!-- 
+Brian removed the Facebook Javascript SDK for Module code from here and put it within the the body, per Facebook's instructions.
+Just trying to clean up the code on this site.
+-->
+
+<script>
+function myFunction(item) {
+    _gaq.push(['b._trackEvent', 'CatView', item]);
+    console.log('tracked category '+item);
+}
+var erik_url = window.googletag.pubads().getSlots()[0]['ca'];
+var erik_array1 = erik_url.split('pcat%3D');
+var erik_array2 = erik_array1[1].split('&cookie');
+var erik_dbl_enc = erik_array2[0];
+var erik_encode = erik_dbl_enc.replace(/25/g,'');
+var erik_decode = decodeURI(erik_encode);
+var erik_array3 = erik_decode.split('%2C');
+erik_array3.forEach(myFunction);
+//console.log(erik_array3[0]+' '+erik_array3[1]);
+</script>
+<img src="https://cumuluschicago.com/active/index.php?station=wlup-fm" width="1" height="1" />
+
+<script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=608738118"></script>
+</body>
+
+
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Object Caching 11/95 objects using memcache
+Page Caching using memcache 
+Database Caching 53/81 queries in 0.105 seconds using memcache
+
+Served from: www.kruz1033.com @ 2021-06-01 20:24:27 by W3 Total Cache
+-->

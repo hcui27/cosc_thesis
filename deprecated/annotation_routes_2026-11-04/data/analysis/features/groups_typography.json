@@ -1,0 +1,304 @@
+{
+ "key": "20d9c0a4c907",
+ "groups": [
+  {
+   "name": "Single font family, no web fonts",
+   "definition": "Does the page use only one font family (typically a system font stack) for all text with no web fonts loaded?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "font_family_count",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "aeptexas_com#2",
+    "allstate_jobs#2",
+    "bather_com#1",
+    "bathurst12hour_com_au#5",
+    "gravityvault_com#0",
+    "homedesignersoftware_com#0",
+    "insightcentral_net#3",
+    "merchantsavvy_co_uk#0",
+    "miamidda_com#2",
+    "naturalwellbeing_com#0",
+    "nira_org_ng#1",
+    "stgpartners_com#2",
+    "tellmebaby_com_au#0",
+    "thync_com#0",
+    "alpine8848_com#0"
+   ]
+  },
+  {
+   "name": "Serif body paired with sans headings",
+   "definition": "Is a serif face used for body or descriptive text while headings, nav and UI use a sans-serif?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#2",
+    "educationactivities_org#5",
+    "flygrant_com#0",
+    "kneeguru_co_uk#2",
+    "newclimateeconomy_net#0"
+   ]
+  },
+  {
+   "name": "Serif display headings with sans body",
+   "definition": "Are headings set in a serif display face while body and UI text use a sans-serif?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#4",
+    "thefrangipanicreative_com#0"
+   ]
+  },
+  {
+   "name": "Heavy condensed display face for headings",
+   "definition": "Does the page pair a body sans with a heavy condensed display typeface for headings?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#3",
+    "ridetech_com#4"
+   ]
+  },
+  {
+   "name": "Three-face type system with script accents",
+   "definition": "Does the page combine a sans body, a serif heading face and a handwritten script accent face?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#7"
+   ]
+  },
+  {
+   "name": "Generous body line height",
+   "definition": "Is body text set with a line height of roughly 1.5 or more of the font size?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "body_size_px",
+    "op": ">=",
+    "value": 16
+   },
+   "members": [
+    "aeptexas_com#3",
+    "bather_com#3",
+    "bathurst12hour_com_au#10",
+    "cbdoilcreamnk_com#4",
+    "educationactivities_org#8",
+    "fnsouzafoundation_com#6",
+    "greatdayimprovements_com#13",
+    "homedesignersoftware_com#1",
+    "kanienkeha_net#2",
+    "kneeguru_co_uk#4",
+    "naturalwellbeing_com#2",
+    "neverskipbrunch_com#11",
+    "newclimateeconomy_net#1",
+    "ridetech_com#6",
+    "thefrangipanicreative_com#2",
+    "thync_com#1"
+   ]
+  },
+  {
+   "name": "Uppercase tracked eyebrow label above heading",
+   "definition": "Does a small uppercase, letter-spaced eyebrow or kicker label sit above section headings or the main headline?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#4",
+    "bluebayou_com#5",
+    "flygrant_com#4",
+    "fnsouzafoundation_com#7",
+    "naturalwellbeing_com#3",
+    "stgpartners_com#4",
+    "thefrangipanicreative_com#5",
+    "bathurst12hour_com_au#7",
+    "neverskipbrunch_com#9"
+   ]
+  },
+  {
+   "name": "Small uppercase letter-spaced labels",
+   "definition": "Are small uppercase letter-spaced labels used for categories, metadata, stats, or list/group headings?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#12",
+    "flygrant_com#3",
+    "homedesignersoftware_com#3",
+    "kneeguru_co_uk#6",
+    "newclimateeconomy_net#3",
+    "seoanalyzer_me#19",
+    "tellmebaby_com_au#12",
+    "miamidda_com#3",
+    "educationactivities_org#6"
+   ]
+  },
+  {
+   "name": "Uppercase tracked nav and button labels",
+   "definition": "Are navigation, button, badge or footer labels set in uppercase with letter-spacing?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#5",
+    "bathurst12hour_com_au#8",
+    "ridetech_com#7",
+    "stgpartners_com#5",
+    "miamidda_com#21",
+    "bluebayou_com#6"
+   ]
+  },
+  {
+   "name": "All-caps large section headings",
+   "definition": "Are headings set in large all-caps type?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#1",
+    "bather_com#2"
+   ]
+  },
+  {
+   "name": "Sentence-case titles contrasting all-caps labels",
+   "definition": "Do card or article titles use sentence case in contrast with all-caps labels or headings?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#21",
+    "bathurst12hour_com_au#9"
+   ]
+  },
+  {
+   "name": "Large bold H1 with defined heading scale",
+   "definition": "Is the h1 large and bold with a clearly smaller bold h2 forming a distinct heading scale?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_body_ratio",
+    "op": ">=",
+    "value": 3
+   },
+   "members": [
+    "bathurst12hour_com_au#6",
+    "cbdoilcreamnk_com#3",
+    "homedesignersoftware_com#2",
+    "merchantsavvy_co_uk#1",
+    "nira_org_ng#2",
+    "seoanalyzer_me#2",
+    "thync_com#2",
+    "insightcentral_net#5",
+    "newclimateeconomy_net#2",
+    "kneeguru_co_uk#25"
+   ]
+  },
+  {
+   "name": "Extreme type scale contrast",
+   "definition": "Is there extreme contrast between huge display headings and small body text with few intermediate sizes?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#7"
+   ]
+  },
+  {
+   "name": "Headings at body size",
+   "definition": "Are section headings set at body size or only modestly larger so hierarchy is weak?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#1"
+   ]
+  },
+  {
+   "name": "Two-color split heading",
+   "definition": "Is a heading split into two colors or weights within one headline, such as an accent-colored line or word?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#4",
+    "greatdayimprovements_com#12",
+    "insightcentral_net#4",
+    "miamidda_com#1",
+    "neverskipbrunch_com#10",
+    "naturalwellbeing_com#1"
+   ]
+  },
+  {
+   "name": "Light or regular-weight large headings",
+   "definition": "Are large headings set in light or regular weight rather than bold?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_weight",
+    "op": "<=",
+    "value": 400
+   },
+   "members": [
+    "fnsouzafoundation_com#5",
+    "stgpartners_com#3",
+    "neverskipbrunch_com#8"
+   ]
+  },
+  {
+   "name": "White hero headline on dark or photo",
+   "definition": "Is the hero headline large white type over a dark, colored or photo background?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#1",
+    "thefrangipanicreative_com#1"
+   ]
+  },
+  {
+   "name": "Italic serif tagline or secondary text",
+   "definition": "Is italic text used for taglines, secondary links or disclaimers?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#2",
+    "kneeguru_co_uk#23"
+   ]
+  },
+  {
+   "name": "Lead paragraph then smaller body",
+   "definition": "Does intro text use a larger lighter lead paragraph followed by smaller darker body text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "miamidda_com#13"
+   ]
+  },
+  {
+   "name": "Underlined inline links",
+   "definition": "Are inline links within paragraphs underlined?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#19"
+   ]
+  },
+  {
+   "name": "Bold labels with little prose",
+   "definition": "Is bold text used heavily for names and labels with little paragraph prose?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "tellmebaby_com_au#21"
+   ]
+  },
+  {
+   "name": "Navy-colored headings",
+   "definition": "Are headings colored dark navy rather than black?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#3"
+   ]
+  },
+  {
+   "name": "Meta text such as bylines is very small, gray sans with a mi",
+   "definition": "Meta text such as bylines is very small, gray sans with a middle-dot separator.",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#7"
+   ]
+  }
+ ]
+}

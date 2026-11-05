@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miami Downtown Development Authority</title>
+<meta name="description" content="The Miami DDA grows, strengthens, and promotes the economic health and vitality of Downtown Miami.">
+<style>
+:root{
+  --ink:#10222f;
+  --muted:#5a6b78;
+  --navy:#0b2a42;
+  --teal:#0e8fa0;
+  --sun:#f2a33a;
+  --paper:#ffffff;
+  --mist:#f2f6f8;
+  --line:#dde5ea;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:var(--teal)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* utility bar */
+.util{background:var(--navy);color:#cfdce5;font-size:13px}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;min-height:40px}
+.util a{color:#cfdce5;text-decoration:none;margin-right:18px}
+.util a:hover{color:#fff}
+.util .right{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.util select{background:transparent;color:#cfdce5;border:1px solid #38566d;border-radius:4px;padding:3px 6px;font-size:13px}
+.util select option{color:#000}
+.social a{margin:0 0 0 12px}
+
+/* header */
+header.main{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+header.main .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px}
+.logo img{height:64px;width:auto}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:6px}
+nav li{position:relative}
+nav>ul>li>button{background:none;border:0;font:inherit;font-weight:600;color:var(--ink);padding:30px 14px;cursor:pointer}
+nav>ul>li:hover>button,nav>ul>li:focus-within>button{color:var(--teal)}
+nav .sub{display:none;position:absolute;left:0;top:100%;min-width:290px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--sun);box-shadow:0 12px 28px rgba(11,42,66,.15);padding:8px 0;flex-direction:column;gap:0}
+nav li:hover>.sub,nav li:focus-within>.sub{display:flex}
+nav .sub a{display:block;padding:9px 20px;color:var(--ink);text-decoration:none;font-size:15px}
+nav .sub a:hover{background:var(--mist);color:var(--teal)}
+.menu-toggle{display:none;background:var(--navy);color:#fff;border:0;border-radius:6px;padding:10px 14px;font:inherit}
+
+/* hero */
+.hero{position:relative;color:#fff;background:var(--navy) url(images/image-02.jpg) center/cover;min-height:640px;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,42,66,.88) 0%,rgba(11,42,66,.55) 55%,rgba(11,42,66,.15) 100%)}
+.hero .wrap{position:relative;padding-top:80px;padding-bottom:180px}
+.hero h1{margin:0;font-size:clamp(38px,7vw,78px);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+.hero h1 span{display:block}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero .tag{margin:22px 0 30px;font-size:clamp(18px,2.4vw,26px);letter-spacing:.14em;text-transform:uppercase;font-weight:300}
+.btn{display:inline-block;background:var(--sun);color:#1b1305;font-weight:700;text-decoration:none;padding:14px 28px;border-radius:999px;transition:transform .15s,background .15s}
+.btn:hover{background:#ffb859;transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#fff;border:2px solid #fff;padding:12px 24px}
+.btn.ghost:hover{background:#fff;color:var(--navy)}
+.hero .slant{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:auto}
+
+/* contest */
+.contest{background:var(--sun);color:#1b1305}
+.contest .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
+.contest h3{margin:0;font-size:22px}
+.contest small{display:block;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+.contest .btn{background:var(--navy);color:#fff}
+.contest .btn:hover{background:#12466b}
+
+/* sections */
+section{padding:84px 0}
+h2{font-size:clamp(28px,4vw,42px);line-height:1.15;margin:0 0 20px;color:var(--navy);letter-spacing:-.01em}
+.eyebrow{color:var(--teal);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.lead{color:var(--muted);font-size:19px}
+
+.living .cols{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.chips{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+.chips a{background:var(--mist);border:1px solid var(--line);color:var(--navy);text-decoration:none;padding:10px 18px;border-radius:999px;font-size:15px;font-weight:600;transition:.15s}
+.chips a:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.chips h3{width:100%;margin:6px 0 2px;font-size:15px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+
+/* follow the sun */
+.sun{background:linear-gradient(135deg,#fff4e0,#ffe2b3);padding:64px 0}
+.sun .wrap{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:center}
+.sun img{width:100%;border-radius:14px;box-shadow:0 14px 36px rgba(11,42,66,.18)}
+.sun p{margin:0 0 6px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:13px;color:#8a5a10}
+
+/* about */
+.about{background:var(--mist)}
+.about .grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:start}
+.about strong{color:var(--navy)}
+.stats{display:grid;gap:16px}
+.stat{background:#fff;border-radius:14px;padding:22px 26px;border-left:6px solid var(--sun);box-shadow:0 6px 20px rgba(11,42,66,.07)}
+.stat b{display:block;font-size:46px;line-height:1;color:var(--navy)}
+.stat span{color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:600}
+
+.skyline{position:relative;padding:0;height:420px;background:#000 url(images/skyline.jpg) center/cover;background-attachment:fixed}
+.skyline figcaption{position:absolute;right:16px;bottom:12px;background:rgba(0,0,0,.6);color:#ddd;font-size:12px;padding:5px 10px;border-radius:4px}
+.skyline figcaption a{color:#fff}
+figure.skyline{margin:0}
+
+/* news/events */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;transition:.2s}
+.card:hover{box-shadow:0 14px 30px rgba(11,42,66,.12);transform:translateY(-3px)}
+.card time{color:var(--teal);font-weight:700;font-size:14px;letter-spacing:.06em}
+.card h3{font-size:18px;line-height:1.35;margin:8px 0 10px;color:var(--navy)}
+.card p{color:var(--muted);font-size:15px;margin:0 0 18px}
+.card a{margin-top:auto;font-weight:700;text-decoration:none}
+.card a:hover{text-decoration:underline}
+.more{margin-top:30px;text-align:center}
+.events{background:var(--mist)}
+.events .card{background:#fff}
+
+/* contact */
+.contact{background:var(--navy);color:#dbe6ee}
+.contact h2{color:#fff}
+.contact h4{margin:0 0 14px;font-size:19px;font-weight:400;color:#b7c9d6}
+.contact .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:56px}
+form{display:grid;gap:12px}
+input,select.f{width:100%;padding:13px 14px;border-radius:8px;border:1px solid #38566d;background:#12384f;color:#fff;font:inherit}
+input::placeholder{color:#8fa8b9}
+.fine{font-size:13px;color:#93aabb;margin-top:6px}
+.dist{display:flex;gap:8px;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+.dist li{border:1px solid #38566d;border-radius:999px;padding:8px 16px;font-size:15px}
+
+/* footer */
+footer{background:#071b2b;color:#9fb3c2;padding:60px 0 28px;font-size:15px}
+footer .cols{display:grid;grid-template-columns:repeat(5,1fr);gap:28px}
+footer h5{color:#fff;margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:.1em}
+footer ul{list-style:none;margin:0 0 18px;padding:0}
+footer li{margin:6px 0}
+footer a{color:#9fb3c2;text-decoration:none}
+footer a:hover{color:#fff}
+footer .sub-form{margin-top:44px;padding-top:30px;border-top:1px solid #1c3a50;display:grid;grid-template-columns:1fr 1.2fr;gap:30px;align-items:start}
+footer .sub-form form{grid-template-columns:1fr auto}
+footer .sub-form .fine{grid-column:1/-1}
+footer .bottom{margin-top:34px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px}
+footer .bottom a{margin-left:16px}
+footer button.btn{border:0;cursor:pointer;font:inherit;font-weight:700}
+
+@media (max-width:960px){
+  .menu-toggle{display:block}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px 18px}
+  nav.open{display:block}
+  nav ul{flex-direction:column}
+  nav>ul>li>button{padding:12px 0;width:100%;text-align:left}
+  nav .sub{display:flex;position:static;box-shadow:none;border:0;border-left:3px solid var(--sun);min-width:0;margin-left:4px}
+  .living .cols,.about .grid,.contact .grid,footer .sub-form{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .sun .wrap{grid-template-columns:1fr}
+  .sun img{max-width:300px}
+  footer .cols{grid-template-columns:1fr 1fr}
+  .skyline{background-attachment:scroll;height:260px}
+  section{padding:60px 0}
+}
+@media (max-width:520px){
+  footer .sub-form form{grid-template-columns:1fr}
+  .hero{min-height:560px}
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="wrap">
+    <div>
+      <a href="https://www.miamidda.com/media-center/">Media and Press Center</a>
+      <a href="https://www.miamidda.com/public-meetings/">Public Meetings</a>
+    </div>
+    <div class="right">
+      <label>
+        <span style="position:absolute;left:-9999px">Translate</span>
+        <select aria-label="Translate">
+          <option>Translate</option><option>Arabic</option><option>Chinese (Simplified)</option><option>Chinese (Traditional)</option><option>French</option><option>German</option><option>Haitian Creole</option><option>Hebrew</option><option>Hindi</option><option>Italian</option><option>Japanese</option><option>Korean</option><option>Portuguese</option><option>Russian</option><option>Spanish</option><option>Vietnamese</option>
+        </select>
+      </label>
+      <span class="social">
+        <a href="https://www.instagram.com/downtownmia/">Instagram</a>
+        <a href="https://twitter.com/downtownmia">Twitter</a>
+        <a href="https://www.youtube.com/user/miamidda2929">YouTube</a>
+        <a href="https://www.facebook.com/downtownMIA/">Facebook</a>
+        <a href="https://www.linkedin.com/company/miami-downtown-development-authority">LinkedIn</a>
+        <a href="mailto:info@miamidda.com">Email</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+<header class="main">
+  <div class="wrap">
+    <a class="logo" href="https://www.miamidda.com"><img src="images/logo-animated.gif" alt="Miami Downtown Development Authority"></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><button>Focus Areas ▾</button>
+          <div class="sub">
+            <a href="https://www.miamidda.com/business/">Business Support + Economic Development</a>
+            <a href="https://www.miamidda.com/quality-of-life/">Enhanced Services</a>
+            <a href="https://www.miamidda.com/marketing-comm/">Branding, Communications, and Events</a>
+            <a href="https://www.miamidda.com/placemaking-transportation/">Planning, Transportation &amp; Resiliency</a>
+            <a href="https://www.miamidda.com/collateral/">Research &amp; Reports</a>
+            <a href="https://www.miamidda.com/communityresources/">Community Resources</a>
+          </div></li>
+        <li><button>Explore Downtown ▾</button>
+          <div class="sub">
+            <a href="https://www.miamidda.com/explore-downtown/">Attractions</a>
+            <a href="https://www.miamidda.com/dine/">Dine</a>
+            <a href="https://www.miamidda.com/explore-downtown/shop/">Shop</a>
+            <a href="https://www.miamidda.com/explore-downtown/stay/">Stay</a>
+            <a href="https://www.miamidda.com/explore-downtown/nightlife/">Downtown Nightlife</a>
+            <a href="https://www.miamidda.com/explore-downtown/mobility/">Getting to and Around Downtown</a>
+          </div></li>
+        <li><button>About Us ▾</button>
+          <div class="sub">
+            <a href="https://www.miamidda.com/message-to-our-directors/">Welcome to Downtown Miami</a>
+            <a href="https://www.miamidda.com/dda-budget/">DDA Budget</a>
+            <a href="https://www.miamidda.com/dda-procurement/">DDA Procurement</a>
+            <a href="https://www.miamidda.com/data-resources/districts-maps/">DDA District Maps</a>
+            <a href="https://www.miamidda.com/dda-board/">DDA Board</a>
+            <a href="https://www.miamidda.com/staff-roster/">DDA Staff</a>
+            <a href="https://www.miamidda.com/contact-us/">Contact Us</a>
+            <a href="https://www.miamidda.com/dda-meetings/">Event Calendar</a>
+          </div></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <h1><span>Living</span><em>Downtown Mia</em></h1>
+    <h1><span>Doing Business</span><em>Downtown Mia</em></h1>
+    <h1><span>Exploring</span><em>Downtown Mia</em></h1>
+    <p class="tag">Epicenter of the Americas</p>
+    <a class="btn" href="#living">Discover the Possibilities</a>
+  </div>
+  <img class="slant" src="images/triangle.svg" alt="">
+</div>
+
+<div class="contest">
+  <div class="wrap">
+    <div>
+      <small>More information</small>
+      <h3>School Agenda Cover Contest for Kids</h3>
+    </div>
+    <a class="btn" href="https://www.miamidda.com/artcontest/">Click here to enter contest</a>
+  </div>
+</div>
+
+<section class="living" id="living">
+  <div class="wrap cols">
+    <div>
+      <div class="eyebrow">Residents</div>
+      <h2>Living in Downtown Miami</h2>
+      <p class="lead">Truly electrifying and uniquely refreshing, Downtown Miami is a special place to call home. With extensive and diverse living options, including more than 100 residential buildings, you’ll find something for everyone here – from the young professional to the growing family unit. When it comes to activities, there’s an equal wealth of choices waiting outside your door. Let us help you learn more about living in our ever-evolving, always-intriguing home.</p>
+      <p>Whether you are a current resident or are looking to become one, we want to help you En Vogue with everything that is happening from the arts and food scenes to the ins outs of major projects transforming Downtown Miami.</p>
+    </div>
+    <div class="chips">
+      <h3>Quick links</h3>
+      <a href="https://www.miamidda.com/small-businesses/">Small Business &amp; Loan Assistance</a>
+      <a href="https://www.miamidda.com/explore-downtown/mobility/">Getting Around Town</a>
+      <a href="https://www.miamidda.com/communityresources/">Community Resources</a>
+      <a href="https://www.miamidda.com/dine/">Dine</a>
+      <a href="https://www.miamidda.com/small-businesses/">Small Business Assistance</a>
+      <a href="https://www.miamidda.com/message-to-our-dwntwnrs/">Message to Our DWNTWNRs</a>
+      <a href="https://www.miamidda.com/community-grants/incentives/">Incentives</a>
+      <a href="https://www.miamidda.com/services-initiatives/business-development-research/education/">Education</a>
+      <a href="https://www.miamidda.com/explore-downtown/stay/">Places to Stay</a>
+    </div>
+  </div>
+</section>
+
+<div class="sun">
+  <div class="wrap">
+    <img src="images/FollowtheSun-logo.png" alt="Follow the Sun logo">
+    <div>
+      <p>For Information On</p>
+      <h2>Making Miami Your Forever Home – ‘Follow The Sun’</h2>
+      <a class="btn" href="https://www.miamidda.com/follow-the-sun/">Click Here</a>
+    </div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap grid">
+    <div>
+      <div class="eyebrow">About</div>
+      <h2>What is the Miami Downtown Development Authority?</h2>
+      <p>The Miami Downtown Development Authority (Miami DDA) is an independent agency of the City of Miami funded by a special tax levy on properties within its district boundaries. The agency is governed by a 15-member board of directors, including three public appointees and 12 downtown property owners, business owners, and/or residents. The board sets policy direction, which is implemented by a multi-disciplinary team under the executive director's oversight.</p>
+      <p>Our mission is to grow, strengthen, and promote the economic health and vitality of Downtown Miami. As an autonomous agency of the City, the Miami DDA advocates, facilitates, plans, and executes business development, planning, capital improvements, and marketing and communication strategies.</p>
+      <p><strong>We commit to fulfill our mission collaboratively, ethically, and professionally, consistent with the Authority's public purpose.</strong></p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>1967</b><span>We were established</span></div>
+      <div class="stat"><b>15</b><span>Member board</span></div>
+      <div class="stat"><b>2</b><span>Square miles</span></div>
+    </div>
+  </div>
+</section>
+
+<figure class="skyline" role="img" aria-label="Twilight Miami skyline">
+  <figcaption>
+    <a href="https://www.flickr.com/photos/joiseyshowaa/">@joiseyshowaa</a> ·
+    <a href="https://www.flickr.com/photos/joiseyshowaa/40034610353/in/photolist-2cSPfzu-23ZHQSD-2fGmTcA">Twilight Miami Skyline</a> ·
+    <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>
+  </figcaption>
+</figure>
+
+<section id="news">
+  <div class="wrap">
+    <div class="eyebrow">Press</div>
+    <h2>Latest News</h2>
+    <div class="cards">
+      <article class="card"><time>5.17.21</time><h3>WSVN 7 News | Pop-up vaccination site unveiled at downtown Miamis DuPont Building</h3><a href="https://www.miamidda.com/wsvn-7-news-pop-up-vaccination-site-unveiled-at-downtown-miamis-dupont-building/">Read More →</a></article>
+      <article class="card"><time>5.19.21</time><h3>Telemundo 51 | Comienza proyecto millionario para reviltalizar la calle Flagler</h3><a href="https://www.miamidda.com/telemundo-51-comienza-proyecto-millionario-para-reviltalizar-la-calle-flagler/">Read More →</a></article>
+      <article class="card"><time>5.19.21</time><h3>WSVN 7 News | Miami-Dade leaders begin Flagler Street beautification project</h3><a href="https://www.miamidda.com/wsvn-7-news-miami-dade-leaders-begin-flagler-street-beautification-project/">Read More →</a></article>
+    </div>
+    <div class="more"><a class="btn ghost" style="color:var(--navy);border-color:var(--navy)" href="https://www.miamidda.com/media-center/press/">View All News</a></div>
+  </div>
+</section>
+
+<section class="events" id="events">
+  <div class="wrap">
+    <div class="eyebrow">Calendar</div>
+    <h2>Upcoming Events</h2>
+    <div class="cards">
+      <article class="card"><time>6.3.21</time><h3>Miami DDA Nominating Committee Meeting – Board Candidate Finalist Interviews Part 2</h3><p>The June 3, 2021 Miami DDA Nominating Committee Meeting – Board Candidate Finalist Interviews Part 2, will be held at the Miami DDA Conference...</p><a href="https://www.miamidda.com/event/miami-dda-nominating-committee-meeting-board-candidate-finalist-interviews-part-1/">See Details →</a></article>
+      <article class="card"><time>6.14.21</time><h3>Miami DDA COVID-19 Recovery Committee Meeting – Revised Date</h3><p>The June 14, 2021 Miami DDA COVID-19 Recovery Committee Meeting will be held at the Miami DDA Conference Room located at 200 South Biscayne Blvd.,...</p><a href="https://www.miamidda.com/event/miami-dda-covid-19-recovery-committee-meeting-revised-date/">See Details →</a></article>
+      <article class="card"><time>6.17.21</time><h3>Miami DDA Finance Committee Meeting</h3><p>The June 17, 2021 Miami DDA Finance Committee Meeting will be held at the Miami DDA Conference Room located at 200 South Biscayne Blvd., Suite 2929,...</p><a href="https://www.miamidda.com/event/miami-dda-finance-committee-meeting-2/">See Details →</a></article>
+    </div>
+    <div class="more"><a class="btn ghost" style="color:var(--navy);border-color:var(--navy)" href="https://www.miamidda.com/dda-meetings/">View All Events</a></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap grid">
+    <div>
+      <h2>Proudly Serving Downtown Miami: The Arts &amp; Entertainment District, Miami CBD, and Brickell.</h2>
+      <ul class="dist"><li>Arts &amp; Entertainment</li><li>Central Business District</li><li>Brickell</li></ul>
+    </div>
+    <div>
+      <h4>Contact us today to learn more about our great districts.</h4>
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thank you!'">
+        <input type="text" placeholder="Name" aria-label="Name" required>
+        <input type="email" placeholder="Email" aria-label="Email" required>
+        <input type="text" placeholder="Message" aria-label="Message">
+        <button class="btn" type="submit" style="border:0;cursor:pointer;font:inherit;font-weight:700">Send</button>
+        <p class="fine">Under Florida law, e-mail addresses and contact information are public records. If you do not want your information released in response to a public records request, do not submit your information to this entity. Instead, contact the Miami Downtown Development Authority (DDA) by phone or in writing.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h5>@downtownmia</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/downtownmia/">Instagram</a></li>
+          <li><a href="https://twitter.com/downtownmia">Twitter</a></li>
+          <li><a href="https://www.facebook.com/downtownMIA/">Facebook</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Miami DDA</h5>
+        <ul>
+          <li><a href="https://www.miamidda.com/services-initiatives/marketing-comm/">Marketing &amp; Events</a></li>
+          <li><a href="https://www.miamidda.com/business/">Business Support + Economic Development</a></li>
+          <li><a href="https://www.miamidda.com/quality-of-life/">Enhanced Services</a></li>
+          <li><a href="https://www.miamidda.com/placemaking-transportation/">Planning, Transportation &amp; Resiliency</a></li>
+        </ul>
+        <h5>Data + Research</h5>
+        <ul>
+          <li><a href="https://www.miamidda.com/collateral/">Research &amp; Reports</a></li>
+          <li><a href="https://www.miamidda.com/data-resources/districts-maps/">Maps</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Community Grants</h5>
+        <ul><li><a href="https://www.miamidda.com/marketing-comm/miami-dda-funding-programs/">Community Grants</a></li></ul>
+        <h5>Calendars</h5>
+        <ul><li><a href="https://www.miamidda.com/public-meetings/">Public Meetings</a></li></ul>
+      </div>
+      <div>
+        <h5>Explore Downtown</h5>
+        <ul>
+          <li><a href="https://www.miamidda.com/explore-downtown/">Things to Do</a></li>
+          <li><a href="https://www.miamidda.com/dine/">Dining</a></li>
+          <li><a href="https://www.miamidda.com/explore-downtown/nightlife/">Nightlife</a></li>
+          <li><a href="https://www.miamidda.com/explore-downtown/stay/">Hotels</a></li>
+          <li><a href="https://www.miamidda.com/explore-downtown/shop/">Shopping</a></li>
+          <li><a href="https://www.miamidda.com/explore-downtown/mobility/">Getting Around</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Media Center</h5>
+        <ul>
+          <li><a href="https://www.miamidda.com/media-center/dwntwnr/">Newsletters</a></li>
+          <li><a href="https://www.miamidda.com/media-center/business-spotlight/">Video Spotlight</a></li>
+          <li><a href="https://www.miamidda.com/media-center/press/">Press</a></li>
+          <li><a href="https://www.miamidda.com/media-center/collateral-images/">Downloadable Images</a></li>
+          <li><a href="https://www.miamidda.com/media-center/logos-usage/">Miami DDA Logos</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sub-form">
+      <h5 style="font-size:20px;text-transform:none;letter-spacing:0;margin:0">Get Downtown Updates</h5>
+      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed!'">
+        <input type="email" placeholder="Email address" aria-label="Email address" required>
+        <button class="btn" type="submit">Subscribe</button>
+        <p class="fine">Under Florida law, e-mail addresses and contact information are public records. If you do not want your information released in response to a public records request, do not submit your information to this entity. Instead, contact the Miami Downtown Development Authority (DDA) by phone or in writing.</p>
+      </form>
+    </div>
+
+    <div class="bottom">
+      <span>Made with ♥ by <a href="https://www.pacific54.com" style="margin:0">Pacific54</a> · © 2019 Miami Downtown Development Authority</span>
+      <span><a href="https://www.miamidda.com/ada-compliance/">ADA Compliance</a><a href="https://www.miamidda.com/wp-content/uploads/AnnualReport_1718_web.pdf">Annual Report</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const t=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
+  t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

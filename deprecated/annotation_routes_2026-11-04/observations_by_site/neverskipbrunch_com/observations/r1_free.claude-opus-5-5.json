@@ -1,0 +1,262 @@
+[
+ {
+  "observation": "The page title follows a 'Brand — tagline by person' pattern, and the document language is set to English.",
+  "category": "metadata",
+  "evidence": "facts.title = 'Never Skip Brunch — DIY & Home Design by Cara Newhart'; lang = 'en'; meta names are charset, viewport and description; jsonld_blocks = 0"
+ },
+ {
+  "observation": "A full-width magenta announcement bar sits at the very top, with a promo phrase, a sparkle glyph and an underlined 'visit the shop →' link.",
+  "category": "layout",
+  "evidence": "slice_00 top strip reads 'fun & fresh home goodies ✦ visit the shop →' on a pink background; rgb(230,25,107) appears in top_backgrounds (3)"
+ },
+ {
+  "observation": "The header puts the logo image on the left and a horizontal nav of uppercase, letter-spaced sans-serif links on the right, ending in a 'MORE ▾' dropdown trigger.",
+  "category": "layout",
+  "evidence": "slice_00: BLOG, DECOR & INTERIORS, DIY PROJECTS, PODCAST, PLANS + TEMPLATES, MORE ▾; the logo is at x=160, y=49, 190×95"
+ },
+ {
+  "observation": "The logo is a raster PNG stamp that combines a serif wordmark with a handwritten script 'by cara newhart' and a small circular emblem.",
+  "category": "imagery",
+  "evidence": "images[0] cropped-NSB-logo-stamp-cara-newhart.png, natural 700×350, alt 'Never Skip Brunch by Cara Newhart'"
+ },
+ {
+  "observation": "The header area uses a lighter cream than the hero, and a faint rule separates the two.",
+  "category": "color",
+  "evidence": "slice_00: the header band near y≈43–222 is lighter, with a thin line above the peach hero"
+ },
+ {
+  "observation": "The page body background is a warm off-white cream, not pure white.",
+  "category": "color",
+  "evidence": "colors.body_bg = rgb(255,250,241)"
+ },
+ {
+  "observation": "The main text color is a near-black warm charcoal, not pure black.",
+  "category": "color",
+  "evidence": "body_color and h1 color = rgb(28,26,25); it is the top text color, at 137 elements"
+ },
+ {
+  "observation": "The page uses three typefaces: Jost (geometric sans) for most text, Caveat (handwritten script) for accents, and Playfair Display (serif) for headings.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Jost 196, Caveat 13, Playfair Display 10"
+ },
+ {
+  "observation": "The H1 is set very large in Playfair Display italic at normal weight, all lowercase, and ends with a period.",
+  "category": "typography",
+  "evidence": "h1 font_size 73.6px, weight 400, family 'Playfair Display', Georgia, serif; text 'welcome to never skip brunch.'; it renders italic in slice_00"
+ },
+ {
+  "observation": "H2 headings are 48px at weight 400 in the serif and are mostly lowercase.",
+  "category": "typography",
+  "evidence": "h2 font_size 48px, weight 400; 'visit the blog', 'new on the blog', 'on instagram' in slices 01–03"
+ },
+ {
+  "observation": "Most section headings are preceded by a small kicker line in magenta Caveat script.",
+  "category": "typography",
+  "evidence": "'by cara newhart', 'projects & tips', 'a home design show', 'fun & fresh videos.', '@neverskipbrunch' in pink handwriting above their headings"
+ },
+ {
+  "observation": "The hero kicker has a small outlined triangle/arrow glyph in front of it.",
+  "category": "decoration",
+  "evidence": "slice_00: '▻ by cara newhart' in pink above the H1"
+ },
+ {
+  "observation": "Body copy is 17px with a line-height of about 1.65.",
+  "category": "typography",
+  "evidence": "body_font_size 17px; body_line_height 28.05px"
+ },
+ {
+  "observation": "The hero is a two-column split: text on the left and a tall portrait photo on the right, with the text block aligned toward the bottom of the column.",
+  "category": "layout",
+  "evidence": "slice_00–01: the left column is empty until y≈990, where the kicker/H1 start; image rect x=805, w=475, h=2048"
+ },
+ {
+  "observation": "The hero photo is masked into an arch shape (a semicircular top) with rounded bottom corners and a soft surrounding shadow.",
+  "category": "imagery",
+  "evidence": "slice_00 shows the rounded arch top; slice_01 shows the rounded bottom and a diffuse glow; effects.box_shadows = 1"
+ },
+ {
+  "observation": "The hero image fills a very tall frame of 2048px rendered height, which stretches the hero section well past one viewport.",
+  "category": "layout",
+  "evidence": "images[1] 4Q5A3075.jpg rect h=2048 (natural 1334×2048); the hero continues through slice_01 to y≈960"
+ },
+ {
+  "observation": "The hero background is a vertical peach-to-cream gradient.",
+  "category": "color",
+  "evidence": "effects.gradient_backgrounds = 1; slice_00–01 shift from peach to lighter cream going down"
+ },
+ {
+  "observation": "The hero has a CTA pair: a solid black pill button with an arrow and an outlined pill button.",
+  "category": "components",
+  "evidence": "slice_01: 'about + learn more →' black filled; 'visit the blog' with a thin black outline, both fully rounded"
+ },
+ {
+  "observation": "Buttons are mainly pill-shaped, and pill radii make up the largest group of non-zero radii.",
+  "category": "components",
+  "evidence": "border_radius_buckets: pill 26, 16+ 14, 8–15 17, 1–7 0; the primary_button radius is 999px"
+ },
+ {
+  "observation": "No border radius between 1 and 7px is used: corners are square, medium-to-large rounded, or pill.",
+  "category": "decoration",
+  "evidence": "bucket_1_7 = 0; bucket_0 = 162"
+ },
+ {
+  "observation": "The 'visit the blog' section uses two white bordered cards with large rounded corners, each starting with 'if you . . .' in script and continuing with a different audience description.",
+  "category": "components",
+  "evidence": "slices 01–02; heading_outline has two h4 'if you . . .'; card text 'are an avid DIY-er…' / 'are new or doubting your creative capacity…'"
+ },
+ {
+  "observation": "Ellipses are typed as spaced periods ('. . .') in the card headings.",
+  "category": "copy",
+  "evidence": "heading_outline h4 text 'if you . . .'"
+ },
+ {
+  "observation": "A centered black pill button 'browse all posts →' follows the audience cards.",
+  "category": "components",
+  "evidence": "slice_02 top"
+ },
+ {
+  "observation": "The podcast section is a full-bleed 50/50 split: a flat-lay photo on the left and a pale yellow text panel on the right.",
+  "category": "layout",
+  "evidence": "slice_02: image rect x=0, w=785, h=429; the right panel is pale yellow, matching rgb(253,238,176) in top_backgrounds"
+ },
+ {
+  "observation": "The podcast heading mixes faces: one word is set in magenta italic serif inside an otherwise roman serif heading.",
+  "category": "typography",
+  "evidence": "'make space podcast' with 'space' in pink italic; tag_counts em = 1"
+ },
+ {
+  "observation": "The podcast image is styled to match the brand palette: a yellow damask background with pink and yellow cords.",
+  "category": "imagery",
+  "evidence": "images[2] alt 'A phone playing the Make Space podcast on a stack of books, with a yarn-wrapped charging cable'; slice_02"
+ },
+ {
+  "observation": "A minimal YouTube block has only a script kicker and an outlined pill button, with no heading or embed.",
+  "category": "components",
+  "evidence": "slice_02: 'fun & fresh videos.' + 'watch on youtube →'; no h2 for it in heading_outline"
+ },
+ {
+  "observation": "'new on the blog' shows three equal white post cards with a small peach pill category tag, a serif title and a magenta 'read the post →' text link. None of the cards has a thumbnail image.",
+  "category": "components",
+  "evidence": "slice_02 bottom: 'DIY' tags; three h3s in heading_outline; images count is only 4, none of them in the cards"
+ },
+ {
+  "observation": "Post titles are lowercase and use em dashes and plus signs as separators.",
+  "category": "copy",
+  "evidence": "'part 02 — breakfast nook diy: space makeover + small dining room ideas on a budget'; em_dashes = 6"
+ },
+ {
+  "observation": "One heading_outline entry for the first post's title is truncated in the DOM text, ending at 'on a budg'.",
+  "category": "DOM",
+  "evidence": "heading_outline h3 'part 02 — breakfast nook diy: … on a budg' vs the rendered '…on a budget' in slice_02"
+ },
+ {
+  "observation": "Numbered pagination appears as circles, with the active page filled black, an ellipsis, a last page of 60 and a pill 'Next page »'.",
+  "category": "components",
+  "evidence": "slice_03 top: 1 (black), 2, 3, …, 60, Next page »"
+ },
+ {
+  "observation": "A full-width photo band with a dark overlay carries centered white serif italic text, a pale-yellow script kicker and a white pill button.",
+  "category": "imagery",
+  "evidence": "images[3] tim-wright-unsplash…jpg rect 1440×528, alt ''; slice_03 'coffee & let's chat', 'I love connecting with women about DIY + design', 'wanna grab a virtual coffee?'"
+ },
+ {
+  "observation": "The decorative band photo has an empty alt attribute, and no image is missing its alt.",
+  "category": "DOM",
+  "evidence": "images[3].alt = ''; counts.alt_missing = 0"
+ },
+ {
+  "observation": "The Instagram section has a peach background and a 4×2 grid of white rounded text cards. Each card holds a pink heart icon and a truncated caption, with no photos.",
+  "category": "components",
+  "evidence": "slice_03: 8 cards with captions ending '…'; peach rgb(253,230,211) in top_backgrounds (4)"
+ },
+ {
+  "observation": "The Instagram captions keep their social-media voice: all-caps phrases, hashtags and emoji.",
+  "category": "copy",
+  "evidence": "'GUESS WHAT?! season 2 of the #FurnitureFlipChallenge…', 'the HYPE IS REAL 😲'; text_stats emoji = 5"
+ },
+ {
+  "observation": "The footer is a dark charcoal block with four columns: quick links, more links, search plus social, and newsletter plus disclosure.",
+  "category": "layout",
+  "evidence": "slice_04; rgb(28,26,25) background (7); cream text rgb(243,233,220) (35)"
+ },
+ {
+  "observation": "Footer headings use Caveat script in pale yellow.",
+  "category": "typography",
+  "evidence": "'oh hey, here's some quick links', 'looking for something?', 'let's connect', 'hello.' in yellow script; rgb(253,238,176) text color (6)"
+ },
+ {
+  "observation": "Footer links are followed by small magenta sequence numbers (01.–10.).",
+  "category": "decoration",
+  "evidence": "slice_04: 'Blog 01.', 'About 02.' … 'Portfolio 10.'"
+ },
+ {
+  "observation": "The footer has two inline forms (search and newsletter), each with a white pill input and a magenta pill button.",
+  "category": "components",
+  "evidence": "tag_counts form 2, input 2; 'search the blog' + 'go', 'your email' + 'subscribe'"
+ },
+ {
+  "observation": "Social links are white circular icon buttons drawn as inline SVGs.",
+  "category": "components",
+  "evidence": "slice_04: Facebook, Instagram, Pinterest, Twitter, YouTube circles; svg 5 / path 5"
+ },
+ {
+  "observation": "The footer includes an affiliate disclosure starting with 'p.s.' in small muted text, plus a copyright line dated 2021 below a thin divider.",
+  "category": "copy",
+  "evidence": "'p.s. This site contains affiliate linking…Amazon Associate…'; 'Copyright © 2021 · NEVER SKIP BRUNCH · by Cara Newhart'"
+ },
+ {
+  "observation": "One footer h4 is empty, apparently used as a spacer above the second link column.",
+  "category": "DOM",
+  "evidence": "heading_outline has an h4 with text ''; slice_04 second column has no heading"
+ },
+ {
+  "observation": "The heading hierarchy skips levels: h4s directly follow h2s, and the footer uses h4s with no h3 parent.",
+  "category": "DOM",
+  "evidence": "outline: h2 'visit the blog' → h4 'if you . . .'; footer h4 ×5"
+ },
+ {
+  "observation": "Semantic landmarks are minimal: one header, nav, main and footer, plus 3 sections, with no article, aside or figure elements, even for the blog post cards.",
+  "category": "DOM",
+  "evidence": "semantic: article 0, aside 0, figure 0, section 3"
+ },
+ {
+  "observation": "The page is link-heavy relative to its text: 65 anchors for 487 words.",
+  "category": "DOM",
+  "evidence": "counts.anchors 65; text_stats.words 487"
+ },
+ {
+  "observation": "Class naming is compact and non-utility: 35 unique classes, with no Tailwind-like patterns.",
+  "category": "DOM",
+  "evidence": "classes total 73, unique 35, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Layout uses both flex and grid, flex more often.",
+  "category": "layout",
+  "evidence": "display_flex 21, display_grid 11"
+ },
+ {
+  "observation": "Motion is limited to transitions, with no animations or transforms.",
+  "category": "decoration",
+  "evidence": "transitions 24, animations 0, transforms 0, backdrop_blur 0"
+ },
+ {
+  "observation": "Content sits in a centered container with about 160px side margins at the 1440px width, while the podcast, photo band and Instagram bands run full-bleed.",
+  "category": "layout",
+  "evidence": "the logo and headings start at x=160, cards end near x=1280; page_width 1440; podcast image x=0 and band image w=1440"
+ },
+ {
+  "observation": "The page is long, about four viewport heights at the 1440 width.",
+  "category": "layout",
+  "evidence": "page_height 5774"
+ },
+ {
+  "observation": "The copy is written in a casual first-person voice, with ampersands and plus signs used as conjunctions.",
+  "category": "copy",
+  "evidence": "'I'm Cara Newhart — a color & prints obsessed DIY queen…', 'about + learn more', 'listen + subscribe', 'wanna grab a virtual coffee?'; exclamations = 3"
+ },
+ {
+  "observation": "The 'Menu' button that facts.json measured as the primary button is transparent with a pill radius and does not show in the desktop render, which suggests a mobile-only nav toggle.",
+  "category": "components",
+  "evidence": "primary_button text 'Menu', bg rgba(0,0,0,0), radius 999px; it is not visible in slice_00"
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "observation": "Page is a short, single-column hub of link cards: a hero, then three titled sections of tile links, then a footer. Total height is 2419px at 1440px width, and content sits in a container starting at x≈160.",
+  "category": "layout",
+  "evidence": "page_height 2419, page_width 1440; logo, h1, and cards all start at x=160; 3 section tags"
+ },
+ {
+  "observation": "Header is a white bar with the logo at left and a nav at right. The nav has three dropdown-style items with chevrons (Merchant Accounts, Card Machines, Online) and a filled pill 'Quotes' button.",
+  "category": "component",
+  "evidence": "header 1, nav 1; screenshot top bar; pill radius bucket 2"
+ },
+ {
+  "observation": "The hero has a deep indigo background with a diagonal gradient that lightens toward the bottom right. The right half of the hero is empty.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(30,34,140); gradient_backgrounds 4; visible empty right side of hero"
+ },
+ {
+  "observation": "The H1 is large, bold, white text on the indigo hero, wrapped to two lines. It uses tight letter-spacing and left alignment.",
+  "category": "typography",
+  "evidence": "h1 font_size 54.4px, weight 700, color rgb(255,255,255), text_align start; h1_count 1"
+ },
+ {
+  "observation": "The hero lists four benefit points with amber circular check icons instead of a paragraph. The copy is short, marketing-style, and uses ampersands.",
+  "category": "copy",
+  "evidence": "Visible bullets such as 'We'll get you preferential rates & lower your card processing costs'; amber rgb(244,180,60); 3 inline svgs"
+ },
+ {
+  "observation": "The primary CTA 'Get a quote' is an amber pill button with dark text. It is the only warm accent on an otherwise blue and white page. It sits directly against a white logo strip with no gap.",
+  "category": "component",
+  "evidence": "Amber background rgb(244,180,60) used on 1 element; button at x≈160–305 abuts logo box starting x≈309; pill bucket 2"
+ },
+ {
+  "observation": "A white rounded box in the hero holds a faded, low-contrast row of payment logos (Visa, Mastercard, Pay, Apple Pay, contactless). It is placed beside the CTA at the bottom of the hero.",
+  "category": "imagery",
+  "evidence": "img msuk-payment-logos...png 300x50 at (329,557); alt 'Accepted payment and banking partner logos'"
+ },
+ {
+  "observation": "The type is a system font stack with no web fonts loaded. All 136 counted elements use system-ui.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['system-ui',136]]; stylesheets 0; h1 font_family system-ui, -apple-system, Segoe UI, Roboto…"
+ },
+ {
+  "observation": "The type scale is simple: 16px body at 25.6px line-height (1.6), 28.8px bold h2s, and a 54.4px h1. Section subtitles are in a muted gray-purple.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px, h2 28.8px/700; text color rgb(91,94,122) on 11 elements"
+ },
+ {
+  "observation": "The palette is restrained: near-navy body text, indigo brand blue, amber accent, white and pale lavender-gray section backgrounds.",
+  "category": "color",
+  "evidence": "body_color rgb(28,29,58); backgrounds rgb(30,34,140), rgb(244,180,60), rgb(244,245,251), white x22"
+ },
+ {
+  "observation": "Sections alternate white and pale lavender backgrounds. 'Payment Processing' is on white, 'Finance & Banking' on tinted gray-blue, and 'Research & Stats' back on white.",
+  "category": "layout",
+  "evidence": "rgb(244,245,251) background on 1 element; visible band change at y≈1129 and y≈1525"
+ },
+ {
+  "observation": "The Payment Processing section is a 4-column grid of text-only link cards in two rows, each with a right-pointing arrow icon. Titles wrap to two lines in some cards.",
+  "category": "component",
+  "evidence": "8 cards, e.g. 'Merchant Account Providers', 'EPOS Systems'; display_grid 12; arrows visible at card right edges"
+ },
+ {
+  "observation": "Finance & Banking uses a 3-column grid of the same card style, in two rows of three. It reuses the card pattern with different column count and wider cards.",
+  "category": "layout",
+  "evidence": "Cards 'Merchant Cash Advance', 'Start Up Loans', 'Business Credit Cards', 'Business Bank Accounts', 'Sole Trader Bank Accounts', 'Charity & Community Bank Accounts'"
+ },
+ {
+  "observation": "Cards are white with a thin light border and modest rounded corners, and have no drop shadows. Depth comes from borders and background tint only.",
+  "category": "decoration",
+  "evidence": "box_shadows 0; border_radius bucket_8_15 31; button radius 8px"
+ },
+ {
+  "observation": "Research & Stats uses image-topped cards in 4 columns. Three tiles use a gradient indigo block with a white line icon (phone, cart, monitor) as a placeholder image. One tile has an isometric blue illustration and one a flat cartoon hacker illustration.",
+  "category": "imagery",
+  "evidence": "charts.jpg and payment-fraud-stats.jpg 600x400 shown at 263x175; inline svgs 3; labels UK SMEs, Mobile Payments, Mobile Ecommerce, Remote Working, Payment Fraud"
+ },
+ {
+  "observation": "The Research grid wraps to a fifth card, 'Payment Fraud', alone on a second row. This leaves the row mostly empty on the right.",
+  "category": "layout",
+  "evidence": "Payment Fraud card at x≈160–425, y≈587 below the 4-card row"
+ },
+ {
+  "observation": "The two Research images have empty alt text, so they are treated as decorative. The logo, partner logo strip, and payment-types image have descriptive alt text.",
+  "category": "semantics",
+  "evidence": "charts.jpg alt ''; payment-fraud-stats.jpg alt ''; alt_missing 0; payment-types alt lists Visa, Mastercard…"
+ },
+ {
+  "observation": "The footer is a plain text block with a hairline top border. It carries the copyright, a company statement and registered address, two blue underlined-style links (Privacy Policy, Terms Of Use), and a payment-scheme logo strip. Text is small and gray.",
+  "category": "component",
+  "evidence": "footer 1; payment-types.png 528x23 at (160,2356); text 'Merchant Savvy is a division of VUBO Ltd (Company Number 09017066)'"
+ },
+ {
+  "observation": "The footer copyright reads 2021, so the footer content looks dated against today's date.",
+  "category": "copy",
+  "evidence": "Text 'Copyright © ALL RIGHTS RESERVED 2021'"
+ },
+ {
+  "observation": "The DOM is lean and uses semantic landmarks, with one h1 and three h2s in a clean hierarchy. There is a single main element, no article/aside/figure, and heavy list use for nav and cards.",
+  "category": "semantics",
+  "evidence": "header/nav/main/footer 1 each; h1 1, h2 3; ul 11, li 40; article 0, figure 0"
+ },
+ {
+  "observation": "Card tiles are anchors in lists, not buttons, so about 35 anchors drive nearly all interaction. The only button is a 'Menu' toggle (transparent background, indigo text, 8px radius, 8px 14px padding), probably for mobile nav.",
+  "category": "semantics",
+  "evidence": "anchors 35, buttons 1; primary_button text 'Menu' bg rgba(0,0,0,0)"
+ },
+ {
+  "observation": "Styling is handwritten, with a single inline style block, no external stylesheets, and no utility classes. Class names are few and semantic-looking.",
+  "category": "structure",
+  "evidence": "style 1, stylesheets 0, inline_style_attrs 0; classes total 33, unique 19, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Interactivity is light: 19 elements have transitions (hover states), but there are no animations, transforms, or backdrop blur.",
+  "category": "decoration",
+  "evidence": "transitions 19, animations 0, transforms 0, backdrop_blur 0"
+ },
+ {
+  "observation": "Layout uses both CSS grid (12 elements) and flexbox (17 elements). Grid is used for the card matrices and flex for the header, card rows and checklist.",
+  "category": "layout",
+  "evidence": "display_grid 12, display_flex 17"
+ },
+ {
+  "observation": "Copy is short and offer-led, with UK-specific wording (en-GB, 'acquiring banks', 'Reading, RG1'). The page title adds a parenthetical '(& Cheaper)', and no emoji, exclamation marks or em dashes appear.",
+  "category": "copy",
+  "evidence": "lang en-GB; title 'Merchant Savvy | Payment Processing Made Simple (& Cheaper)'; emoji 0, exclamations 0, em_dashes 0; words 188"
+ },
+ {
+  "observation": "The page is very low on text, with about 188 words. Section intros are one or two sentences, and most content is link labels.",
+  "category": "copy",
+  "evidence": "text_stats words 188; p count 3"
+ },
+ {
+  "observation": "Section headings are left-aligned bold navy with a short gray description beneath. Content blocks have generous vertical spacing, roughly 60–100px between sections.",
+  "category": "layout",
+  "evidence": "h2 at y≈789, 1211, 1830 (slice offsets); description paragraphs at ~26px line spacing; section padding bands visible"
+ },
+ {
+  "observation": "The logo is a vector SVG wordmark in purple and navy at about 157x36, placed at the left of the header. A separate lightweight 'Menu' toggle is hidden at desktop width.",
+  "category": "imagery",
+  "evidence": "img merchant-savvy-purple.svg natural 300x69, rendered 157x36 at (160,19)"
+ },
+ {
+  "observation": "Chevron and arrow icons are inline SVGs that follow the brand blue and navy. Arrows are right-aligned inside each card, so the cards read as navigation links.",
+  "category": "component",
+  "evidence": "Visible arrows in each card at x≈400, 684, 968, 1252; svg 3, path 3, circle 2, rect 2"
+ },
+ {
+  "observation": "Corner radii are mixed. Cards and buttons use 8–15px radii and the CTA and Quotes buttons are pills, while most of the 103 other elements are square.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0→103, 8_15→31, pill→2, 16_plus→0"
+ }
+]

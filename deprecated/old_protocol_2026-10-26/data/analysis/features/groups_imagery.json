@@ -1,0 +1,156 @@
+{
+ "key": "a0a5530f8a80",
+ "groups": [
+  {
+   "name": "Text glyph icons",
+   "definition": "Are icons rendered as text glyphs or emoji rather than image, sprite, or icon-font icons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#22",
+    "merchantsavvy_co_uk#9",
+    "seoanalyzer_me#10"
+   ]
+  },
+  {
+   "name": "Descriptive image alt text",
+   "definition": "Do images carry descriptive, human-readable alt text naming their content or item?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#23",
+    "homedesignersoftware_com#13",
+    "kanienkeha_net#20",
+    "tellmebaby_com_au#24",
+    "thync_com#11"
+   ]
+  },
+  {
+   "name": "Empty alt on decorative images",
+   "definition": "Is alt text empty for decorative images or thumbnails while hero or people images have descriptive alt?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#22",
+    "ridetech_com#17",
+    "merchantsavvy_co_uk#13"
+   ]
+  },
+  {
+   "name": "Rounded or circular image crops",
+   "definition": "Are images cropped into circles or rounded-corner tiles or cards?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#20",
+    "alpine8848_com#19",
+    "bluebayou_com#20",
+    "educationactivities_org#17",
+    "kanienkeha_net#21"
+   ]
+  },
+  {
+   "name": "Uniform square-cropped images",
+   "definition": "Are images or thumbnails cropped to uniform sizes or aspect ratios (square, tall) across cards?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#21",
+    "insightcentral_net#10"
+   ]
+  },
+  {
+   "name": "Repeated placeholder or reused images",
+   "definition": "Is the same image or placeholder reused repeatedly in multiple tiles or places?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#25",
+    "nira_org_ng#14"
+   ]
+  },
+  {
+   "name": "Color blocks replace images",
+   "definition": "Are images replaced by flat or gradient color blocks or neutral gray placeholders instead of photos?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#9",
+    "seoanalyzer_me#13"
+   ]
+  },
+  {
+   "name": "Logo sizing and repetition",
+   "definition": "Are logos large or repeated, or low-visibility (light logos on white tiles falling back to text)?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#28",
+    "bathurst12hour_com_au#29",
+    "merchantsavvy_co_uk#5"
+   ]
+  },
+  {
+   "name": "Darkened or color-overlaid photo backgrounds",
+   "definition": "Do hero or feature sections use full-bleed photos or artwork with a dark or colored overlay behind text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#21",
+    "flygrant_com#18",
+    "stgpartners_com#6",
+    "miamidda_com#23"
+   ]
+  },
+  {
+   "name": "Distorted or oversized images",
+   "definition": "Are images stretched, distorted, or oversized so they break an otherwise uniform layout?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#20"
+   ]
+  },
+  {
+   "name": "Photos on collection cards",
+   "definition": "Are photographs used as card imagery with product or item lists beneath them?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#11"
+   ]
+  },
+  {
+   "name": "Uniform icon sizing in cards",
+   "definition": "Are icons sized uniformly (about 60px) and styled consistently within cards?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#20"
+   ]
+  },
+  {
+   "name": "CSS background images for photos",
+   "definition": "Are photos shown as CSS background images rather than img elements?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "thefrangipanicreative_com#2"
+   ]
+  },
+  {
+   "name": "No photographic imagery",
+   "definition": "Does the page lack photographs or illustrative images, using only dark gradient backgrounds, text cards, logos and badges?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "image_count",
+    "op": "<=",
+    "value": 3
+   },
+   "members": [
+    "thync_com#9",
+    "thync_com#10"
+   ]
+  }
+ ]
+}

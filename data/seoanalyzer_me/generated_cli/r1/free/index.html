@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seo Analyzer – Instant analysis of your SEO problems</title>
+<meta name="description" content="Seo Analyzer pinpoints SEO errors and helps you improve your site's content for better optimization.">
+<style>
+:root{--bg:#f7f8fc;--surface:#fff;--text:#1b2033;--muted:#5b6379;--accent:#3856e0;--accent-d:#2a43b8;--line:#e3e6f0;--good:#1a8f4c;--mid:#b7791f;--bad:#c53030}
+@media (prefers-color-scheme:dark){:root{--bg:#0f121c;--surface:#181c2a;--text:#e8eaf3;--muted:#a0a7bd;--accent:#7b93ff;--accent-d:#9eb0ff;--line:#2a3048;--good:#4cc38a;--mid:#e0b04f;--bad:#f07a7a}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{font-weight:800;font-size:1.2rem;color:var(--text);text-decoration:none}
+.logo span{color:var(--accent)}
+nav{display:flex;align-items:center;gap:20px;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--accent)}
+.lang{border:1px solid var(--line);border-radius:6px;padding:2px 10px;font-size:.85rem;color:var(--muted)}
+.hero{padding:88px 0 72px;text-align:center}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 16px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{max-width:620px;margin:0 auto 28px;color:var(--muted);font-size:1.15rem}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:#fff}.btn.p:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn.s{color:var(--accent)}.btn.s:hover{background:var(--line)}
+section{padding:56px 0}
+h2{font-size:1.8rem;margin:0 0 8px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 32px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.feat{padding:24px}
+.feat h3{margin:0 0 8px;font-size:1.15rem}
+.feat p{margin:0;color:var(--muted)}
+.ico{width:40px;height:40px;border-radius:10px;background:var(--line);display:grid;place-items:center;margin-bottom:14px;font-size:1.2rem}
+.examples{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:24px}
+.tag{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem;text-decoration:none}
+.badge{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.site img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--line)}
+.site .ph{aspect-ratio:4/3;display:grid;place-items:center;background:var(--line);color:var(--muted);font-weight:600}
+.site .body{padding:16px 18px 18px}
+.site h3{margin:0 0 12px;font-size:1.05rem;word-break:break-all}
+.site h3 a{text-decoration:none;color:var(--text)}.site h3 a:hover{color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+.stats div{background:var(--bg);border-radius:8px;padding:8px 4px}
+.stats b{display:block;font-size:1.05rem}
+.stats small{color:var(--muted);font-size:.72rem}
+.good{color:var(--good)}.mid{color:var(--mid)}.bad{color:var(--bad)}
+.more{text-align:center;margin-top:28px}
+.about{background:var(--surface);border-block:1px solid var(--line)}
+.about p{max-width:720px;font-size:1.1rem}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:6px 20px;margin:0}
+.contact dt{font-weight:600}.contact dd{margin:0}
+footer{padding:32px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.social{display:flex;gap:10px}
+.social span{width:32px;height:32px;border-radius:50%;background:var(--line);display:grid;place-items:center;font-size:.8rem;font-weight:700}
+@media(max-width:600px){nav a.hide{display:none}.hero{padding:56px 0 48px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <a class="logo" href="#top">Seo<span>Analyzer</span></a>
+  <nav aria-label="Main">
+   <a href="#top">Home</a>
+   <a class="hide" href="https://seoanalyzer.me/site-vs-site">Site vs Site</a>
+   <span class="lang" aria-label="Language">EN</span>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+ <h1>Get an instant analysis of <em>your SEO problems</em></h1>
+ <p>Seo Analyzer pinpoints SEO errors and helps you improve your site's content for better optimization.</p>
+ <div class="btns">
+  <a class="btn p" href="https://seoanalyzer.me/">Analyze your site</a>
+  <a class="btn s" href="https://seoanalyzer.me/site-vs-site">Compare Site vs Site</a>
+ </div>
+ <div class="examples" style="justify-content:center">
+  <span class="badge">Review</span>
+  <a class="tag" href="https://seoanalyzer.me/domain/h-supertools.com">h-supertools.com</a>
+  <a class="tag" href="https://seoanalyzer.me/domain/booksandmore.blog">booksandmore.blog</a>
+  <a class="tag" href="https://seoanalyzer.me/domain/L-ink.me">L-ink.me</a>
+ </div>
+</div></div>
+
+<section id="features"><div class="wrap">
+ <h2>Features</h2>
+ <p class="sub">Everything you need to understand and fix your SEO.</p>
+ <div class="grid">
+  <div class="card feat"><div class="ico" aria-hidden="true">∞</div><h3>Unlimited Analysis</h3><p>Run as many analyses as you want, processed on our most powerful servers. Saved reports let you look back at your progress and earlier work.</p></div>
+  <div class="card feat"><div class="ico" aria-hidden="true">🔍</div><h3>In-Depth Reviews</h3><p>Detailed website analysis that explains how to fix SEO issues, with a plain definition for every SEO metric.</p></div>
+  <div class="card feat"><div class="ico" aria-hidden="true">⚖</div><h3>Competitive Analysis</h3><p>Compare your site's SEO side by side with competitors to see where you can improve against them.</p></div>
+ </div>
+</div></section>
+
+<section id="recent" style="padding-top:0"><div class="wrap">
+ <h2>Recently listed sites</h2>
+ <p class="sub">Overall score, global rank and page speed for recently analysed sites.</p>
+ <div class="grid" id="sites"></div>
+ <div class="more"><a class="btn s" href="https://seoanalyzer.me/recent">View More</a></div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+ <h2>About us</h2>
+ <p>Our mission is to simplify search engine optimization (SEO). We offer straightforward, professional-grade SEO analysis plus essential SEO monitoring for websites. Our tools are designed to be intuitive and easy to grasp, and we've helped thousands of small-business owners, webmasters and SEO professionals strengthen their online presence.</p>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+ <h2>Contact</h2>
+ <dl>
+  <dt>Address</dt><dd>SE Lawnfield Rd</dd>
+  <dt>Email</dt><dd><a href="mailto:support@h-educate.com">support@h-educate.com</a></dd>
+ </dl>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <span>Copyright © 2020, H-educate. All rights reserved.</span>
+ <div class="social" aria-label="Social media"><span>f</span><span>t</span><span>in</span><span>ig</span></div>
+</div></footer>
+
+<script>
+const sites=[
+ ["Bulktrkr.com","bulktrkr.com","bulktrkr.com.jpg",72,"430,476","99%"],
+ ["Homework-solutions.blogspot.com","homework-solutions.blogspot.com","homework-solutions-blogspot.com.jpg",63,"0","0%"],
+ ["Herblsuplements.com","herblsuplements.com","herblsuplements.com.jpg",69,"0","75%"],
+ ["Jamiesonmotors.net","jamiesonmotors.net","jamiesonmotors.net.jpg",45,"0","0%"],
+ ["Goldcoastshuttersolutions.com.au","goldcoastshuttersolutions.com.au","goldcoastshuttersolutions-com.au.jpg",72,"0","0%"],
+ ["Portal.oouagoiwoye.edu.ng","portal.oouagoiwoye.edu.ng",null,63,"185,812","0%"]
+];
+const cls=s=>s>=70?"good":s>=50?"mid":"bad";
+document.getElementById("sites").innerHTML=sites.map(([n,d,img,s,r,p])=>`
+<article class="card site">
+ ${img?`<img src="images/${img}" alt="Screenshot of ${n}" loading="lazy">`:`<div class="ph">No preview</div>`}
+ <div class="body">
+  <h3><a href="https://seoanalyzer.me/domain/${d}">${n}</a></h3>
+  <div class="stats">
+   <div><b class="${cls(s)}">${s}/100</b><small>Score</small></div>
+   <div><b>${r}</b><small>Global rank</small></div>
+   <div><b>${p}</b><small>Page speed</small></div>
+  </div>
+ </div>
+</article>`).join("");
+</script>
+</body>
+</html>

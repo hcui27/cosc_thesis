@@ -1,0 +1,172 @@
+[
+ {
+  "observation": "Page uses a near-black dark theme throughout: body background rgb(15,14,14) with warm off-white text rgb(242,236,228); alternating sections use slightly lighter rgb(24,22,22).",
+  "category": "color",
+  "evidence": "facts colors.body_bg rgb(15,14,14), body_color rgb(242,236,228), top_backgrounds include rgb(24,22,22) x2; contact section is visibly lighter than the gallery above it"
+ },
+ {
+  "observation": "A single saturated orange accent (rgb(226,104,43)) is used for the top banner, eyebrow label, pill buttons, and diamond bullets; everything else is neutral.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(226,104,43) x5; orange banner at top, 'HISTORY & WORKS' eyebrow, 'Explore the gallery', 'Read More' and 'Send message' buttons"
+ },
+ {
+  "observation": "A full-width orange announcement banner with underlined dark text sits above the header, carrying a legal/news statement about forgeries.",
+  "category": "component",
+  "evidence": "Top strip text 'F. N. Souza Exonerates Son and Sole Heir Francis Patrick Souza Of All Accusations and Any Involvement With Forgeries', dark text rgb(22,16,12) on orange"
+ },
+ {
+  "observation": "Type pairing of Georgia serif for display headings/logo/titles and system-ui sans for body, nav, and UI text.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 88, Georgia 15, Arial 2; h1 font-family Georgia, 'Times New Roman', serif"
+ },
+ {
+  "observation": "Hero H1 is very large (76px) at regular weight 400 in serif, wrapping to two lines, left-aligned.",
+  "category": "typography",
+  "evidence": "h1 font_size 76px, font_weight 400, text_align start; 'Modern & Contemporary Art'"
+ },
+ {
+  "observation": "H2 headings are 44px regular weight serif, a consistent step down from the H1; no bold headings.",
+  "category": "typography",
+  "evidence": "h2 font_size 44px, font_weight 400; 'Francis Newton Souza', 'Photo gallery', 'Contact form'"
+ },
+ {
+  "observation": "Body text is 17px with generous line-height (~28px, ≈1.65).",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 28.05px"
+ },
+ {
+  "observation": "Small uppercase, letter-spaced orange eyebrow label above the hero heading, and uppercase muted form labels.",
+  "category": "typography",
+  "evidence": "'HISTORY & WORKS' in orange with wide tracking; 'NAME', 'EMAIL', 'MESSAGE' small caps-style labels"
+ },
+ {
+  "observation": "Hero is a full-width painterly background image (dark teal-to-rust abstract brushwork) with a dark fade at the bottom, with text left-aligned over it.",
+  "category": "imagery",
+  "evidence": "Slice 1 hero ~640px tall; image darkens toward the bottom edge; heading and CTAs sit at left over the texture"
+ },
+ {
+  "observation": "Hero has two pill CTAs: solid orange primary and outlined secondary with light border.",
+  "category": "component",
+  "evidence": "'Explore the gallery' (orange fill) and 'About the artist' (transparent with thin border); bucket_pill 5 in border radii"
+ },
+ {
+  "observation": "Header is a dark bar with serif two-line wordmark at left and a right-aligned inline text nav; two items carry dropdown caret glyphs.",
+  "category": "layout",
+  "evidence": "Nav items Home, About F N Souza, Family History ▾, Gallery, Available For Sale ▾, News, Contacts; 1 header, 1 nav, 2 ul"
+ },
+ {
+  "observation": "Header uses translucent background with backdrop blur, suggesting sticky/overlay behavior.",
+  "category": "effects",
+  "evidence": "top_backgrounds rgba(15,14,14,0.92) x1; backdrop_blur 1"
+ },
+ {
+  "observation": "Nav contains a 'Menu' button with transparent background, 6px radius, 8px 12px padding (likely a mobile toggle, not visible at desktop).",
+  "category": "component",
+  "evidence": "primary_button text 'Menu', bg rgba(0,0,0,0), radius 6px; 8 buttons total"
+ },
+ {
+  "observation": "A horizontal strip beneath the hero lists artwork series titles in italic serif, each prefixed with an orange four-point star glyph, centered and wrapping to two lines.",
+  "category": "component",
+  "evidence": "Ciudad En Esapana, Multicoloured Villagescape, Vatican Cityscape, God, Sex & The City, Landscape, City Landscape, Faces, Last Supper; strip bg rgb(24,22,22) with top/bottom hairline borders"
+ },
+ {
+  "observation": "Artist intro section is a two-column split: portrait photo left, heading, paragraph and 'Read More' pill button right.",
+  "category": "layout",
+  "evidence": "fnsouza.jpg at x160,y924, 484x275; heading at x700; display_grid 10 elements"
+ },
+ {
+  "observation": "Portrait photo has slightly rounded corners and a soft drop shadow; it is a low-resolution image (370x275 natural) displayed at 484px wide, i.e., upscaled.",
+  "category": "imagery",
+  "evidence": "images[0] natural [370,275], rect w 484; box_shadows 1; border radius small"
+ },
+ {
+  "observation": "Photo gallery is a single row of six equal-sized tall thumbnails (177x340) with ~12px gaps, cropped uniformly regardless of natural aspect ratios.",
+  "category": "imagery",
+  "evidence": "rects at x160,349,537,726,915,1103 each w177 h340; naturals 570x442, 270x442, 370x442, 471x442 – different ratios cropped to a common size"
+ },
+ {
+  "observation": "Gallery thumbnails have no captions or visible labels; alt text provides names (Landscape, Last Supper, Chess, Mother and child).",
+  "category": "imagery",
+  "evidence": "0 figure/figcaption; alt_missing 0; slice 2 shows images only"
+ },
+ {
+  "observation": "Gallery heading row pairs the H2 at left with a right-aligned muted subtitle 'Explore a significant collection of the latest works.'",
+  "category": "layout",
+  "evidence": "Slice 2 top: 'Photo gallery' left and muted gray text right-aligned at x~1280"
+ },
+ {
+  "observation": "Content is held in a ~1120px container with 160px side margins on a 1440px canvas.",
+  "category": "layout",
+  "evidence": "Content x from 160 to 1280; page_width 1440"
+ },
+ {
+  "observation": "Contact form is a narrow left-aligned column (~620px) with the right half of the section empty.",
+  "category": "layout",
+  "evidence": "Inputs span x160–780 of 1440 width; empty space to the right in slice 2"
+ },
+ {
+  "observation": "Form fields are dark filled boxes with subtle borders and small radius, with labels above; no placeholder text visible and submit is an orange pill.",
+  "category": "component",
+  "evidence": "3 labeled fields (Name, Email, Message textarea) near-black fill rgb(~13,13,13); 'Send message' pill in orange; 1 textarea, 5 inputs"
+ },
+ {
+  "observation": "Footer is minimal: copyright and Privacy Policy link at left, 'Login or register' underlined link at right, separated by a hairline top border.",
+  "category": "component",
+  "evidence": "'© 2021 Privacy Policy' and 'Login or register'; 1 footer; muted text rgb(167,158,148)"
+ },
+ {
+  "observation": "Two native dialog elements exist (login/register and likely another) with an H3 'Login or register', hidden from the rendered view.",
+  "category": "structure",
+  "evidence": "tag_counts dialog 2, h3 1, form 2; heading_outline h3 'Login or register'"
+ },
+ {
+  "observation": "Semantic structure: single header, nav, main, footer, three sections; heading outline is one H1 then three H2s and one H3 with no skipped levels.",
+  "category": "structure",
+  "evidence": "semantic counts header1 nav1 main1 section3 footer1; h1_count 1; outline"
+ },
+ {
+  "observation": "No articles, figures, blockquotes or SVGs; all imagery is raster img tags and the star bullets are text glyphs.",
+  "category": "structure",
+  "evidence": "semantic article 0 figure 0; svgs 0; images 8 (one empty/placeholder entry with no src)"
+ },
+ {
+  "observation": "Styling is embedded in a single style block with no external stylesheets and minimal inline style attributes; class names are few and not utility-based.",
+  "category": "structure",
+  "evidence": "style 1, stylesheets 0, inline_style_attrs 9, classes total 34 unique 21, tailwind_like_fraction 0.029"
+ },
+ {
+  "observation": "Page is short and sparse: about 160 words, 2567px tall, with no emoji, exclamation marks or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats words 160, emoji 0, em_dashes 0, exclamations 0; page_height 2567"
+ },
+ {
+  "observation": "Copy tone is biographical and reverential, using phrases like 'India's mystical expressionist' and 'pioneer of his time'.",
+  "category": "copy",
+  "evidence": "Hero subtitle and intro paragraph text in slices"
+ },
+ {
+  "observation": "Decoration is restrained: corners mostly square (75 elements at 0 radius, 25 at 1–7px, 5 pills), one box shadow, no gradients or animations; 12 transitions suggest hover states.",
+  "category": "effects",
+  "evidence": "border_radius_buckets 0:75, 1_7:25, pill:5; gradient_backgrounds 0; animations 0; transitions 12; transforms 0"
+ },
+ {
+  "observation": "Sections are separated by hairline borders and background tone shifts rather than large dividers or imagery.",
+  "category": "layout",
+  "evidence": "Thin lines below header, around series strip, above contact section, and above footer; alternating rgb(15,14,14)/rgb(24,22,22)"
+ },
+ {
+  "observation": "Generous vertical padding between sections (~90–100px) gives wide empty dark gaps around content.",
+  "category": "layout",
+  "evidence": "Gap between series strip (y~835) and portrait (y924); gallery bottom y~410 in slice 2 to section border ~498"
+ },
+ {
+  "observation": "Secondary text uses a muted warm gray (rgb(167,158,148)) for nav, subtitles, labels and footer, establishing a two-tone text hierarchy.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(167,158,148) x37 vs rgb(242,236,228) x58"
+ },
+ {
+  "observation": "Links in banner and footer are underlined, while nav links are plain with no underline.",
+  "category": "component",
+  "evidence": "Banner and footer links underlined in screenshot; nav items undecorated"
+ }
+]

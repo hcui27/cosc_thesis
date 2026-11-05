@@ -1,0 +1,162 @@
+[
+ {
+  "observation": "Single H1 'New heights can always be reached.' is centered white 48px/700 text over a full-width hero photo. A subhead and an orange 'Find a Location' button sit below it.",
+  "category": "typography",
+  "evidence": "h1_count 1; h1 font_size 48px, weight 700, color rgb(255,255,255), text_align center; hero img rect 1440x399"
+ },
+ {
+  "observation": "The whole page uses one system-ui font stack with no webfont. Hierarchy comes from size and weight only.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 245; font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'; stylesheets 0"
+ },
+ {
+  "observation": "The palette is navy, a single orange accent, white and a pale grey-blue page background. Orange is reserved for CTAs, badges, link text and heading underlines.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 26, rgb(228,87,46) 6, rgb(18,35,59) 3, rgb(29,53,87) 2, body rgb(245,247,250); button bg rgb(228,87,46)"
+ },
+ {
+  "observation": "A dark navy utility bar sits above the main header. It holds Gift Cards and Contact Us links on the left, and a 'Find a Location' label, a state select and an orange Search button on the right.",
+  "category": "layout",
+  "evidence": "Slice 1 top bar; 1 select with 5 options, 2 forms; primary_button text 'Search', radius 4px, padding 5px 10px"
+ },
+ {
+  "observation": "The main nav has the logo on the left and seven text links on the right. The active 'Home' link carries an orange underline.",
+  "category": "component",
+  "evidence": "nav count 2; nav items Home, Options to Climb, Locations, Covid-19 Updates, About, Franchising, Contact, Careers; logo rect 242x52 at x150"
+ },
+ {
+  "observation": "Content is held in a centered column about 1140px wide, with left and right edges at x=150 and x=1290 on a 1440px canvas. Every section aligns to the same edges.",
+  "category": "layout",
+  "evidence": "Image rects start at x=150/151; logo at x150; footer divider spans 150–1290; page_width 1440"
+ },
+ {
+  "observation": "The hero image is a blurred, darkened wall photo that spans the full width and sits behind the heading. Four promo cards overlap its bottom edge.",
+  "category": "imagery",
+  "evidence": "Hero img rect y125 h399; card imgs begin y474, so they overlap the hero by 50px; image_overlaps lists 4 overlaps of 13450px²"
+ },
+ {
+  "observation": "Four equal promo cards sit in a row: Gift Cards, Waivers, Visiting Us During This Time and Franchising. Each has a photo, an H4 title and a paragraph. The cards carry no visible buttons or links.",
+  "category": "component",
+  "evidence": "Slice 1; heading_outline H4 entries; card imgs 269x192 at x150, 441, 731, 1022"
+ },
+ {
+  "observation": "Card bodies are different lengths. Cards stretch to equal height, which leaves empty white space under the shorter text.",
+  "category": "layout",
+  "evidence": "Gift Cards card has 3 lines while Waivers has 8, and all four share the same bottom edge at about y955"
+ },
+ {
+  "observation": "Nearly every photo is the same indoor climbing-wall image, repeated across promo and location cards. Only the hero looks like a blurred version. The natural size is 326x233, so images are upscaled to about 267x190.",
+  "category": "imagery",
+  "evidence": "images: 22 of 23 are 'img' at natural 326x233; 1 logo.png reused 3 times; rects 267x190 and 269x192"
+ },
+ {
+  "observation": "All content images have empty alt text. Only the three logo instances have descriptive alt.",
+  "category": "semantics",
+  "evidence": "alt_missing 0 but the content images have alt ''; logo alts 'The Gravity Vault Indoor Rock Gyms' / 'The Gravity Vault'"
+ },
+ {
+  "observation": "A navy mission band holds a white logo and a bold centered paragraph of about four lines, with generous vertical padding.",
+  "category": "component",
+  "evidence": "Slice 1 bottom/slice 2 top; background rgb(29,53,87); logo rect 298x64 at y1079; white bold text"
+ },
+ {
+  "observation": "Heading levels are uneven. The promo cards use H4 directly after the H1. The 'Our Locations' H2 is followed by state H3s and location H4s, so the outline skips levels H2 and H3 at the start.",
+  "category": "semantics",
+  "evidence": "heading_outline: H1, H4 x4, H2, H3, H4 …; h4 count 19, h3 4, h2 1, h5 2"
+ },
+ {
+  "observation": "The 'Our Locations' H2 is centered and has a muted one-line subtitle, 'Pick a state or browse them all.'",
+  "category": "typography",
+  "evidence": "h2 font_size 32px weight 700; slice 2 centered text"
+ },
+ {
+  "observation": "Pill-shaped filter buttons (All, California, New Jersey, New York, Pennsylvania) are centered below the heading. 'All' is filled navy and the others are white with a thin border.",
+  "category": "component",
+  "evidence": "border_radius pill bucket 13; button count 7; slice 2 chips at y~332"
+ },
+ {
+  "observation": "Locations are grouped by state under H3 headings with a short orange underline. The underline is only as wide as the heading text.",
+  "category": "decoration",
+  "evidence": "California, New Jersey, New York, Pennsylvania H3s; orange rule visible under each in slices 2–4"
+ },
+ {
+  "observation": "Location cards sit in a 4-column grid with 22px gaps. States with fewer locations leave empty cells: California has 1 card, New York 3, Pennsylvania 3.",
+  "category": "layout",
+  "evidence": "display_grid 6; card x positions 151, 442, 732, 1023; California has a single card at left, with the rest of the row empty"
+ },
+ {
+  "observation": "The 15 location cards are article elements, each with an image, an H4 city name, a gray description and an orange 'View location →' link. Several cards (Brick, Montclair, Nassau County, Lehigh Valley, Philadelphia) have no description, and some of those have no link either.",
+  "category": "component",
+  "evidence": "article count 15; slices 2–4; Marin has only the link, Nassau/Lehigh/Philadelphia show the title alone"
+ },
+ {
+  "observation": "Cards have a thin light border, a modest corner radius and almost no shadow. The promo cards use a soft shadow instead. Corner radii of 8–15px dominate the rounded elements.",
+  "category": "decoration",
+  "evidence": "border_radius bucket_8_15 19, bucket_1_7 5; box_shadows 4; transitions 4, animations 0"
+ },
+ {
+  "observation": "Orange pill 'COMING SOON!' badges sit in the top-left corner of some location images. They use uppercase bold white text.",
+  "category": "component",
+  "evidence": "Badges on Nassau County, Lehigh Valley and Philadelphia cards in slices 3–4; span count 4"
+ },
+ {
+  "observation": "Text-link CTAs use orange bold text with an arrow glyph ('View location →'). They are not buttons.",
+  "category": "copy",
+  "evidence": "Repeated in cards; color matches rgb(228,87,46)"
+ },
+ {
+  "observation": "Copy is friendly and promotional. It uses exclamation marks, second-person address and mission language about inclusivity and community.",
+  "category": "copy",
+  "evidence": "exclamations 19; words 650; 'Give the gift of climbing!'; 'Now open!'; 'FREE parking!'"
+ },
+ {
+  "observation": "Page text is mostly dark slate and grey. Body copy is 16px with about 1.55 line-height, and card descriptions use a lighter grey.",
+  "category": "typography",
+  "evidence": "body_color rgb(31,41,55); body_font_size 16px, line_height 24.8px; text colors rgb(91,102,118) 14"
+ },
+ {
+  "observation": "The footer is dark navy with a three-part layout: a logo plus newsletter form, a two-column Links list, and a bottom bar. The bottom bar has the copyright and policy links on the left and the agency credit on the right.",
+  "category": "layout",
+  "evidence": "Slice 4; footer count 1; h5 count 2; footer background rgb(18,35,59); divider at y~766"
+ },
+ {
+  "observation": "Newsletter signup is an inline email input beside an orange 'Sign up' button. Social links appear as outlined pill chips with text labels and no icons.",
+  "category": "component",
+  "evidence": "input count 1; form count 2; svgs 0; chips Facebook, Instagram, Twitter, LinkedIn, Pinterest"
+ },
+ {
+  "observation": "The page uses no SVG icons, gradients, blur, transforms or animations. Decoration comes from photos, flat color blocks, pills and thin borders.",
+  "category": "decoration",
+  "evidence": "svgs 0; gradient_backgrounds 0; backdrop_blur 0; transforms 0; animations 0"
+ },
+ {
+  "observation": "The CSS is hand-written. A single inline style block holds the styling, with few classes and almost no Tailwind-style utilities.",
+  "category": "structure",
+  "evidence": "stylesheets 0, style tag 1; classes total 98, unique 26; tailwind_like_fraction 0.041; inline_style_attrs 1"
+ },
+ {
+  "observation": "Semantic landmarks are in place: one header, one main, one footer, two navs and three sections. A single script tag adds the state filtering.",
+  "category": "structure",
+  "evidence": "semantic header 1, main 1, footer 1, nav 2, section 3; scripts 1; aria_attrs 10"
+ },
+ {
+  "observation": "The page is long and mostly vertical, about 4,732px tall. Roughly two thirds of that is repeated location-card rows, with only brief intro content above.",
+  "category": "layout",
+  "evidence": "page_height 4732; 15 location articles across slices 2–4; flex 42, grid 6"
+ },
+ {
+  "observation": "The head carries a title and a description meta tag but no structured data.",
+  "category": "structure",
+  "evidence": "title 'The Gravity Vault Indoor Rock Gyms'; meta_names charset, viewport, description; jsonld_blocks 0; lang 'en'"
+ },
+ {
+  "observation": "Section backgrounds alternate: a white header, a hero photo, a pale grey body, a navy mission band, a pale grey locations area and a darker navy footer.",
+  "category": "color",
+  "evidence": "Slices 1–4; backgrounds rgb(255,255,255), rgb(245,247,250), rgb(29,53,87), rgb(18,35,59)"
+ },
+ {
+  "observation": "Footer credit text names the web agency ('Lform Design | NJ Web Design Company'), and the copyright says '© 2021 Gravity Vault'.",
+  "category": "copy",
+  "evidence": "Slice 4 bottom bar"
+ }
+]

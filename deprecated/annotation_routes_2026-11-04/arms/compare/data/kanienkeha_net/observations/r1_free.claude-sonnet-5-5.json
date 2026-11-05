@@ -1,0 +1,236 @@
+[
+ {
+  "observation": "Page frame: A confines all content in a white 1080px-wide column (x≈180–1260) centred on a near-black textured background. B has full-width white header and footer bands, and the content sits on a dark textured background as separate white cards.",
+  "category": "layout",
+  "evidence": "A_slice_00 shows a white column against black margins; B_slice_00 shows a white header band, then dark body with cards. B body_bg is rgb(238,246,248) but the dark texture is visible in the screenshots.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's logo is displayed at its natural size (660x145), centred in a large header. B's logo is scaled down to 380x83 and left-aligned.",
+  "category": "imagery",
+  "evidence": "A images[0] rect x390 y60 w660 h145; B images[0] rect x180 y14 w380 h83.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'Wa'tkwanonhwerá:ton' owl banner sits at the top-left in a dark strip above the white column. B moves it to the top-right of the header, next to the logo, as a dark pill.",
+  "category": "layout",
+  "evidence": "A_slice_00 top-left strip; B images[1] owl.gif at x1041 y41.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's main nav is a green bar with a textured pattern, uppercase bold white labels and vertical dividers. 'HOME' is highlighted in orange-red with a dropdown chevron, and 'Contact' wraps to a second row. B's nav is plain dark-text title-case links on white, wrapping to two rows, with 'Donate' as a green filled tab.",
+  "category": "component",
+  "evidence": "A_slice_00 nav at y200–300; B_slice_00 nav at y110–200; B nav labels are title case, e.g. 'Language Information'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The nav items differ. A has Home, Categories, Add Words, Language Information, Blog, Map, Resources, Donate, Log In, Register, Contact. B swaps in an 'About' link and has no Map in a different position, and orders Register and Donate last.",
+  "category": "copy",
+  "evidence": "A_slice_00 nav; B_slice_00 nav: Home…Resources, About, Contact, Log In, Register, Donate.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's search is a full-width rectangular input with a green square arrow-icon submit button and the placeholder 'Search Dictionary'. B's search is a centred, narrower pill-shaped field with a green rounded border and a labelled 'Search' button, with the placeholder 'Search words and phrases…'.",
+  "category": "component",
+  "evidence": "A_slice_00 search at y305–350; B_slice_00 pill at x440–1000; B primary_button text 'Search', bg rgb(27,154,75), padding 0px 24px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Try these' suggestions are plain orange text links separated by commas in A. B shows them as light-green pill chips.",
+  "category": "component",
+  "evidence": "A_slice_00 'apple,colors,numbers' in orange; B_slice_00 chips with pale-green fills.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The intro paragraph is grey text on white, centred, with a bold 'Support us on Patreon!' inline red link in A. In B the same intro text is dark on the dark background and nearly illegible, and the Patreon call to action is a separate pink pill button.",
+  "category": "copy",
+  "evidence": "A_slice_00 y400–445; B_slice_00 faint text at y370–440 and a pink button 'Support us on Patreon!'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a two-column layout with a ~583px main column and a ~417px sidebar. B uses a wider main column (~730px) and a narrower sidebar (~320px) and has 5 grid containers, whereas A has none.",
+  "category": "layout",
+  "evidence": "A map rect w583, sidebar x823–1240; B map rect w730, sidebar x940–1260; display_grid A 0, B 5.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The map image has no border or radius in A, with the 'MOST RECENT' green bar attached directly below it. In B the map has rounded corners and a green bottom edge, and sits as a standalone element above a separate card.",
+  "category": "imagery",
+  "evidence": "A_slice_00 map flush to header bar; B_slice_00 map with rounded corners at y552–935. B map alt text 'World map: Kanienkeha Map, 200+ locations' vs A alt 'Traditional Names Map'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Most Recent' list is a single column of full-width rows in A, with an English term in green on the left, the Mohawk term in grey right-aligned, and thin dividers. B turns it into a two-column grid of bordered cards, each with a bold black English title and a green italic Mohawk translation.",
+  "category": "component",
+  "evidence": "A_slice_00/01 rows of 48px; B_slice_00/01/02 cards in 2 columns with left accent borders.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's cards have coloured 3px left borders that change from green to blue partway down the list. A has no such accent.",
+  "category": "decoration",
+  "evidence": "B_slice_01 first cards have a green left border, from 'Brush your teeth' down they are blue; top_text_colors include rgb(19,128,181).",
+  "which_side": "B"
+ },
+ {
+  "observation": "In A, the long 'Education Director' entry overlaps its Mohawk translation in the row. In B, the card wraps the translation onto two lines without overlap.",
+  "category": "layout",
+  "evidence": "A_slice_01 'Education DirectorOhén:ton Í:rate…' collision; B_slice_01 two-line italic translation.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's section headers are green bars with white uppercase text ('MOST RECENT') or all-caps grey headings with a green underline and an illustrated icon ('#WORDOFTHEDAY', 'SPREAD THE WORD!', 'TOTAL SITE NUMBERS'). B uses title-case green headings inside white rounded cards, in some cases with the same icon.",
+  "category": "typography",
+  "evidence": "A heading_outline: 'MOST RECENT','#WORDOFTHEDAY','SPREAD THE WORD!'; B heading_outline: 'Most Recent','#WordOfTheDay','Spread the word!'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's 'Most Recent' heading is preceded by a solid green square (the icon appears missing or blank), and has filter chips 'All / Phrases / Occupations'. A has neither.",
+  "category": "component",
+  "evidence": "B_slice_00 green square at x203–237 y983 and pills at y1049; B has 4 button elements and A has 0.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Pagination: A uses flat square tabs (red active page, pale-green inactive with white text). B uses small rounded-corner outlined buttons (green filled active, white with a border for inactive).",
+  "category": "component",
+  "evidence": "A_slice_02 y645–688; B_slice_02 y752–793.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The sidebar blog list in A is red text links separated by thin rules below a banner image. B turns the headline into a 'From the Blog' heading and shows the links in blue.",
+  "category": "copy",
+  "evidence": "A top_text_colors rgb(231,76,60) x82; B rgb(19,128,181) x30; B has an extra h2 'From the Blog' that A does not have.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The language chooser in A is a heading followed by plain flag and text links. B puts it in a card with button-like chips; the English chip is highlighted with a green tint and border. Flag images are shown at 37x32 in A and 24x24 in B.",
+  "category": "component",
+  "evidence": "A images England-32.png rect w37 h32; B England.png rect w24 h24.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's sidebar has a large empty area with a loading spinner where the word-of-the-day content should be. B shows only a 'Random Word' underlined link in that card.",
+  "category": "component",
+  "evidence": "A_slice_01 top: spinner at x1030 y20; B_slice_01 '#WordOfTheDay' card with 'Random Word' link.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social buttons in A are three solid coloured squares with icons (Facebook green, Twitter light green, Instagram blue), followed by full-width 'Random Word' (green) and 'Become a patron' (salmon) bars. B shows rounded pale-green text pills (Facebook, Twitter, Instagram) and a salmon rounded 'Become a patron on Patreon' button; there are no icon glyphs.",
+  "category": "component",
+  "evidence": "A_slice_01 y295–482; B_slice_01 y197–293; A has 8 svg and 8 FontAwesome 'i' elements, B has 0 svg.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Site statistics: A uses a ruled list of labels with small green count badges on the right (the 'Categories' and 'Blog' labels are in red). B uses a 2x2 grid of pale-green tiles with large bold counts and small labels underneath.",
+  "category": "component",
+  "evidence": "A_slice_01 y1075–1200; B_slice_01 y425–580.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Uploading your Notes' section sits in the sidebar in A with a small image (417x263, notes-4.jpg). In B it moves to a main-column card with a larger image (523x330, notes.jpg), and the heading is on its own line below the icon.",
+  "category": "layout",
+  "evidence": "A images notes-4.jpg rect x823 y2011 w417 h263; B notes.jpg rect x203 y3667 w523 h330.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'She:kon/Greetings' section is in the right sidebar in A, with the social links stacked as six identical 'mohdictionary' lines with icons. In B it is a main-column card, and the social links appear in the footer as a wrapped row of icon links.",
+  "category": "layout",
+  "evidence": "A_slice_02 y1–450 sidebar; B_slice_03 footer y535–600; A images at y2914–3034 in the sidebar, B images at y4459–4489 in the footer.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer in A is a green band with a silhouette illustration along its top edge and white text ('kanienkeha.net', 'Developed by: Doolittle Productions'), followed by a black area with red links. B has a white footer with a green top border, small blue underlined links, and two illustration strips (longhouse, 'we are friends') placed bottom-left as images.",
+  "category": "decoration",
+  "evidence": "A_slice_02 y705–840 green footer; B images longhouse1.jpg 293x91 and wearefriends.jpg 280x54 at x180 y4523/4624.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The type system differs. A's computed fonts are Verdana (668 elements), Open Sans (93), -apple-system, FontAwesome and lucida grande. B uses a single 'Segoe UI' stack on all 382 measured elements (rendered with a fallback sans).",
+  "category": "typography",
+  "evidence": "fonts_by_element_count in A_facts and B_facts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Base text size and line height: A is 16px/24px and B is 17px/27.2px. B's h2 is 22.4px, while A's h2 is 16px bold.",
+  "category": "typography",
+  "evidence": "body_font_size, body_line_height and h2 in facts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has an h1 element, but it is empty and styled 36px weight 900 in Open Sans (the logo is the visible title). B has no h1 at all.",
+  "category": "semantics",
+  "evidence": "A h1_count 1, h1.text ''; B h1_count 0, h1 null.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's heading outline has 58 h2 elements, because each dictionary entry is an h2 inside an article, plus 2 h3. B has 8 h2 and 1 h3, and the dictionary entries are not headings.",
+  "category": "semantics",
+  "evidence": "tag_counts h2: A 58, B 8; A article 51, B article 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B structures content with 9 section elements and no article. A uses 51 article elements and 0 sections, and has 2 header elements against B's 1.",
+  "category": "semantics",
+  "evidence": "semantic counts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The DOM is much heavier in A (317 divs, 154 anchors, 60 scripts, 12 style tags, 43 links, 8 SVGs, 2 iframes, 112 inline style attributes, 3 JSON-LD blocks). B has 14 divs, 104 anchors, 1 script, 1 style, 1 link, 0 SVG, 9 inline style attributes and no JSON-LD.",
+  "category": "structure",
+  "evidence": "tag_counts and counts in both facts files.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has rich head metadata (24 meta tags: og:*, twitter:*, fb:app_id, apple-mobile-web-app and others). B has only charset, viewport and description.",
+  "category": "structure",
+  "evidence": "meta_names lists.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Class counts: A has 1581 class tokens (416 unique) with typical CMS naming. B has 197 tokens (38 unique), a compact custom set.",
+  "category": "structure",
+  "evidence": "classes.total/unique: A 1581/416, B 197/38; tailwind_like_fraction 0 for both.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Colour palettes: A is mostly mid-greys (rgb(112,123,119), rgb(102,102,102)) with green rgb(18,164,101), red-orange rgb(231,76,60) and mint rgb(183,226,207). B uses a dark ink rgb(42,47,58), deep green rgb(15,107,50), blue rgb(19,128,181), pink rgb(214,69,127) and coral rgb(249,104,84).",
+  "category": "color",
+  "evidence": "top_text_colors and top_backgrounds.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Effects: A has 18 box-shadows, 7 gradient backgrounds, 8 animations, 15 transforms and 166 transitions. B has 0 shadows, 0 gradients, 0 animations, 0 transforms and 50 transitions. B's cards are separated by borders instead.",
+  "category": "decoration",
+  "evidence": "effects objects.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Corner rounding: A is nearly all square (764 elements with radius 0, 16 at 1–7px, 2 at 8–15px, 11 pill). B has 92 elements at 8–15px radius (cards, tiles, chips) and 8 pill-shaped.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B repeats a small round-heart icon (love1.png, 34x33) as a heading ornament for 'Uploading your Notes' and 'She:kon'. It also uses 4green.png, wordoftheday1.jpg, social1.jpg and forum-stats1.png as section icons, which are the same icons A shows beside its sidebar headings.",
+  "category": "imagery",
+  "evidence": "B images list; A_slice_01 shows the same icons at y255, y540, y1030, y1260.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The alt text in B is filled for the content images (0 missing alt attributes). A has 2 missing alt attributes, and its social icons carry URL strings as alt text.",
+  "category": "semantics",
+  "evidence": "counts.alt_missing A 2, B 0; A image alts like 'https://www.facebook.com/mohdictionary'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page length: A is 3590px tall and B is 4706px tall, because B's cards, padding and notes image push it down, and its sidebar ends well above the main column.",
+  "category": "layout",
+  "evidence": "layout.page_height; B_slice_02 has an empty right column from y≈600 in slice 01 onward.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Text content is about the same size in both (440 vs 459 words, 4 exclamation marks each) and the Mohawk and English wording is preserved. B adds a couple of microcopy changes, e.g. 'Kanienkeha' instead of 'Kanienkeha (Mohawk)' and 'English' instead of 'English (English)'. It also drops the 'Support us on Patreon' inline link in favour of a button.",
+  "category": "copy",
+  "evidence": "text_stats; A_slice_00 'English (English)', 'Kanienkeha (Mohawk)' vs B_slice_00 labels.",
+  "which_side": "both"
+ }
+]

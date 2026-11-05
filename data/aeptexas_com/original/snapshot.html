@@ -1,0 +1,3208 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" class="">
+<head><title>
+	AEP Texas
+</title><meta id="ctl02_googleSiteVerify" name="google-site-verification" content="aZZcKJDm7WPRwCyUAYxtVL9qwuC69r8CETi_NMCMCok"></meta>
+
+
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link id="ctl02_LnkLanguageEn" rel="alternate" hreflang="en" href="https://www.aeptexas.com/"></link>
+<link id="ctl02_LnkLanguageEs" rel="alternate" hreflang="es" href="https://espanol.aeptexas.com/"></link>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5" />
+<link rel="icon" href="/favicon.ico?v=5" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+<!-- fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/idf5puj.css">
+<link href="/bundles/css-global?v=UqM8q-IVRY1bBnsnWG9lsTcQAWdUQvJsYcQjsD8KkhM1" rel="stylesheet"/>
+
+
+
+
+
+
+
+<script src="/bundles/scripts-head?v=ePGCFYM84YPvwj1ra2KxkIoc1ypg4XIKZTOfs0BSJi01"></script>
+
+
+
+
+
+
+
+<script>
+	Analytics.GAUtilityID = 'UA-50026832-1';
+	Analytics.GAUtilityName = 'aeptexas.com';
+	Analytics.trackGAPage();
+</script>
+
+
+
+
+
+
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NL3GFM9');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script IGNORE="fusionbot">
+function WebsiteTracker(trackingPixelUrl) {
+    this.trackingPixelUrl = trackingPixelUrl;
+    this.formQuery = false;
+    this.fieldQueries = false;
+
+    this.isValidEmail = function (email) {
+        var blacklist = [];
+        var emailParts = email.split('@');
+        if (emailParts.length !== 2) {
+            return false;
+        }
+        if (emailParts[0].length == 0) {
+            return false;
+        }
+
+        domainParts = emailParts[1].split('.');
+        if (domainParts.length < 2) {
+            return false;
+        }
+        for (var i = 0; i < domainParts.length; i++) {
+            if (domainParts[i].length == 0) {
+                return false;
+            }
+        }
+
+        if (email.indexOf(' ') > -1) {
+            return false;
+        }
+
+        for (var i = 0; i < blacklist.length; i++) {
+            if (blacklist[i].test(email)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    this.getSessionId = function(){
+        var regSessionId = new RegExp("sessionId" + "=([^;]+)");
+        var sessionId = regSessionId.exec(document.cookie);
+        if (sessionId == null) {
+            sessionId = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 9);
+            today = new Date();
+            today.setDate(today.getDate() + 30 * 60 * 1000);
+            expires = today.toUTCString();
+            document.cookie = "sessionId="+sessionId+";"+"expires="+expires+";domain="+document.domain+";path=/;";
+        }else{
+            sessionId = sessionId[1];
+        }
+        return sessionId;
+    };
+
+    this.getTsyCuid = function() {
+        var tsyCUID = document.cookie.replace(/(?:(?:^|.*;\s*)tsyCUID\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        var today, expires;
+
+        if (!tsyCUID) {
+            tsyCUID = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var seed = Math.random()*16|0, v = c == 'x' ? seed : (seed&0x3|0x8);
+                return v.toString(16);
+            });
+
+            document.cookie="tsyCUID="+tsyCUID+";domain="+document.domain+";path=/;";
+        }
+        return tsyCUID;
+    }
+
+    this.getSessionData = function() {
+        var regSessionData = new RegExp("sessData" + "=([^;]+)");
+        var sessionData = regSessionData.exec(document.cookie);
+        if(sessionData == null){
+            var widX = window.screen.width;
+            var heightX = window.screen.height;
+            var offset = new Date().getTimezoneOffset();
+            var longTime = new Date();
+            var timeX = longTime.getTime();
+            var uaLen = window.navigator.userAgent.length;
+            var cookieEnabled = window.navigator.cookieEnabled;
+            
+            String.prototype.hashCode = function(){
+                var hash = 0;
+                if (this.length == 0) return hash;
+                for (i = 0; i < this.length; i++) {
+                    char = this.charCodeAt(i);
+                    hash = ((hash<<5)-hash)+char;
+                    hash = hash & hash; // Convert to 32bit integer
+                }
+                return hash;
+            }
+                    
+            var plugX=window.navigator.plugins.length;
+            for(var i=0;i<plugX;i++)
+                {
+                plugTXT+=navigator.plugins[i].name; 
+                }
+            var plugTXT=plugX+plugTXT;
+            var plugTXT2 = plugTXT.toString().hashCode();
+            
+            var mimeX=window.navigator.mimeTypes.length; 
+            var mimeTXT=mimeX+mimeTXT;
+            for(var k=0;k<mimeX;k++)
+            {
+            mimeTXT+=navigator.mimeTypes[k].description; 
+            }
+            var mimeTXT2 = mimeTXT.toString().hashCode();
+            
+            var re4 = new RegExp("sessionPageCount" + "=([^;]+)");
+            var pageCount = re4.exec(document.cookie)?re4.exec(document.cookie)[0].split('=')[1]:0;
+                if(pageCount == 0) {
+                    document.cookie="sessionPageCount=1;domain="+document.domain + ";path=/;";
+                    var ref = document.referrer||"direct";
+                }else{
+                    pageCount++;
+                    document.cookie="sessionPageCount="+pageCount+";domain="+document.domain+";path=/;";
+                }
+            
+            var sessData = "&ref2="+ref+"&width="+widX+"&height="+heightX+"&offset="+offset+"&time="+longTime+"&timeX="+timeX+"&agentLen="+uaLen+"&cookie="+cookieEnabled+"&plugHash="+plugTXT2+"&mimeHash="+mimeTXT2+"&pageCount="+pageCount;
+            sessionData = sessData;
+            document.cookie="sessData="+sessData+";domain="+document.domain+";path=/;";
+        }else{
+            var sessionData = sessionData[1];
+        }
+        return sessionData;
+    }
+
+    this.addPixel = function(pixelUrl){
+        var img = document.createElement('img');
+        img.width="0";
+        img.height="0";
+        img.style.display="none";
+        img.src= pixelUrl;
+        img.alt="";
+        img.tabindex="-1";
+        document.body.appendChild(img);
+    }
+
+    this.trackPageLoad = function(){
+        // pageview tracking
+        var referrer = document.referrer||"direct"
+        var bust = Math.round(new Date().getTime() / 1000);
+        var pixelUrl = trackingPixelUrl+"?bust="+bust+"&table=pageview&sessionId="+this.getSessionId()+"&tsyCUID="+this.getTsyCuid()+"&ref="+referrer+this.getSessionData();
+        this.addPixel(pixelUrl);
+        // appnexus tracking
+        pixelUrl ="https://secure.adnxs.com/getuid?"+trackingPixelUrl+"?table=uid_map&bust="+bust+"&adnxs_uid=+$UID" + "&sessionId="+this.getSessionId()+"&tsyCUID="+this.getTsyCuid();
+        this.addPixel(pixelUrl);
+    };
+
+    this.trackFormData = function(form, fields){
+        document.querySelector(form).addEventListener('submit', function() { 
+            var bust = Math.round(new Date().getTime() / 1000);
+            var queryString = '';
+            var formIsValid = true;
+            for(key in fields){
+                var fieldValue = document.querySelector(fields[key]).value;
+                if (key == 'email') {
+                    formIsValid = this.isValidEmail(fieldValue);
+                    handle_cipher = sjcl.hash.sha256.hash(fieldValue);
+                    fieldValue = sjcl.codec.hex.fromBits(handle_cipher);
+                }
+                
+                queryString += '&' + encodeURIComponent(key) + '=' + encodeURIComponent(fieldValue);
+            }
+            if(formIsValid){
+                var pixelUrl = trackingPixelUrl+"?bust="+bust+"&table=pageview"+queryString+"&sessionId="+this.getSessionId()+"&tsyCUID="+this.getTsyCuid()+this.getSessionData();
+                this.addPixel(pixelUrl);
+                
+                // appnexus tracking
+                pixelUrl ="https://secure.adnxs.com/getuid?"+trackingPixelUrl+"?table=uid_map&bust="+bust+"&adnxs_uid=+$UID" + queryString + "&sessionId="+this.getSessionId()+"&tsyCUID="+this.getTsyCuid();
+                this.addPixel(pixelUrl);
+            }
+        }.bind(this));
+    }  
+
+    this.setupFormTracking = function(formQuery, fieldQueries) {
+        this.formQuery = formQuery;
+        this.fieldQueries = fieldQueries;
+        if (document.querySelector(formQuery)){ // Form is already in DOM
+            this.trackFormData(this.formQuery, this.fieldQueries);
+        } else { // Form gets inserted to the DOM via AJAX
+            var observer = new MutationObserver(function (mutations) { 
+                this.trackFormData(this.formQuery, this.fieldQueries);
+            }.bind(this));
+
+            observer.observe(document.body, {
+                attributes: true,
+                childList: true,
+                characterData: true
+            });
+        }
+    }
+}
+
+
+// ------------------------------------------------------------------
+var sjcl = document.createElement('script');
+sjcl.src = "https://cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.6/sjcl.min.js";
+document.getElementsByTagName('head')[0].appendChild(sjcl);
+
+var wt = new WebsiteTracker('https://aep-power.tsyawshost.com/pixel.gif');
+
+var url = (document.location.host + document.location.pathname).replace('www.', '');
+var form = false;
+var fields = false;
+switch(url) {
+    case 'aepaccount.com':
+    case 'aepaccount.com/zipr/':
+    case 'aepaccount.com/zipr/StormsAndOutages/':
+    case 'aepaccount.com/zipr/StartAndStopService/':
+        form = '#form1';
+        fields = { 'zipcode': '#cphContentMain_ctl00_ctl00_TbZipCodeSearch' };
+        break;
+    case 'aep.com/community/SafetyAndHealth/':
+        form = '#form1';
+        fields = { 'zipcode': '#cphContentMain_ctl00_ctl00_TbZipCodeSearch' };
+        break;
+    case 'aep.com/contact/':
+        form = '#form1';
+        fields = {
+            'recipient': '#CphContent_DdlRecipient',
+            'email': '#CphContent_TbEmailAddress',
+            'phone': '#CphContent_TbPhoneNumber',
+            'address': '#CphContent_TbStreetAddress',
+            'city': '#CphContent_TbCity',
+            'state': '#CphContent_TbState',
+            'zip': '#CphContent_TbZipCode'
+        };
+        break;
+    case 'aeped.com/contact-us/':
+        form = '#gform_1';
+        fields = {
+            'phone': '#input_1_3',
+            'company': '#input_1_5'
+        };
+        break;
+    case 'aepnationalaccounts.com/account/register.aspx':
+    case 'aeptexas.com/account/register.aspx':
+    case 'appalachianpower.com/account/register.aspx':
+    case 'indianamichiganpower.com/account/register.aspx':
+    case 'kentuckypower.com/account/register.aspx':
+    case 'psoklahoma.com/account/register.aspx':
+    case 'swepco.com/account/register.aspx':
+    case 'aepohio.com/account/register.aspx':
+        form = '#form1';
+        fields = { 'email': '#cphContentMain_ctl00_TbCreateIDAndPasswordEmail1' };
+        break;
+    case 'aepohio.com/safety/dvd/':
+    case 'aeptexas.com/safety/dvd/':
+    case 'appalachianpower.com/safety/dvd/':
+    case 'indianamichiganpower.com/safety/dvd/':
+    case 'kentuckypower.com/safety/dvd/':
+    case 'psoklahoma.com/safety/dvd/':
+    case 'swepco.com/safety/dvd/':
+    case 'aepohio.com/safety/dvd/default.aspx':
+    case 'aeptexas.com/safety/dvd/default.aspx':
+    case 'appalachianpower.com/safety/dvd/default.aspx':
+    case 'indianamichiganpower.com/safety/dvd/default.aspx':
+    case 'kentuckypower.com/safety/dvd/default.aspx':
+    case 'psoklahoma.com/safety/dvd/default.aspx':
+    case 'swepco.com/safety/dvd/default.aspx':
+        form = '#form1';
+        fields = {
+            'email': '#cphContentMain_ctl00_TbEmail',
+            'phone': '#cphContentMain_ctl00_TbPhone',
+            'address': '#cphContentMain_ctl00_TbAddress',
+            'city': '#cphContentMain_ctl00_TbCity',
+            'state': '#cphContentMain_ctl00_DdlState',
+            'zip': '#cphContentMain_ctl00_TbZipCode'
+        };
+        break;
+    case 'aepnationalaccounts.com/contact/':
+    case 'aepohio.com/contact/':
+    case 'aeptexas.com/contact/':
+    case 'appalachianpower.com/contact/':
+    case 'indianamichiganpower.com/contact/':
+    case 'kentuckypower.com/contact/':
+    case 'psoklahoma.com/contact/':
+    case 'swepco.com/contact/':
+    case 'aepnationalaccounts.com/contact/default.aspx':
+    case 'aepohio.com/contact/default.aspx':
+    case 'aeptexas.com/contact/default.aspx':
+    case 'appalachianpower.com/contact/default.aspx':
+    case 'indianamichiganpower.com/contact/default.aspx':
+    case 'kentuckypower.com/contact/default.aspx':
+    case 'psoklahoma.com/contact/default.aspx':
+    case 'swepco.com/contact/default.aspx':
+        form = '#form1';
+        fields = {
+            'email': '#cphCloudPromos_TbEmail1',
+            'phone': '#cphCloudPromos_TbPhoneNumber',
+            'address': '#cphCloudPromos_TbStreetAddress',
+            'city': '#cphCloudPromos_TbCity',
+            'state': '#cphContentMain_ctl00_DdlState',
+            'zip': '#cphCloudPromos_TbZipCode'
+        };
+        break;
+    case 'aeptexas.com/save/residential/programs/default.aspx':
+        form = '#form1';
+        fields = { 'zip': '#cphContentMain_ctl00_TbZipCode' };
+        break;
+
+    case 'aepohio.energysavvy.com/residential/start/':
+        form = 'form.IntroForm-form-Glu57-OEzrm70-';
+        fields = {
+            'address': '#street_address',
+            'unitNumber': '#unit_number',
+            'zip': '#zip_code'
+        };
+
+        break;
+    case 'aepohio.energysavvy.com/residential/results/':
+        form = '.Dialog-content-EL6VD-2aYkLLoy form';
+        fields = {
+            'email': '#user-email'
+        }
+        break;
+}
+
+if (document.readyState === "complete") {
+    wt.trackPageLoad();
+    if (form && fields) {
+        wt.setupFormTracking(form, fields);
+    }
+}
+else {
+    document.addEventListener("DOMContentLoaded", function (event) {
+        wt.trackPageLoad();
+        if (form && fields) {
+            wt.setupFormTracking(form, fields);
+        }
+    });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <form method="post" action="./" id="form1" novalidate="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="a91zAxdEEhl+IG/8Ty9JstOM/HaeYf6E5ZFUuqgLcASKY+u/9vAl3QDe9rClBQ/TMr7ByWmMnmeAH60DYzLHS3cwy+RElTVodDPjGh02BXbePZ0Soa3GcDl3fh+fKjE3kjhb63H+0ho3bSIbpywitqVN0tsdcqLALTDuc+8MSuZsjm2I5kRjkvWkyMNf9Ald3GQphS+L9srvrI8BKf0zzZkyEoxjrE67ebPEXJB8kKWIrryrn71rfFEa/KMaR3fFlGdKUPdI9qhB9yweaOaVsEVTKSRk7TvYMIjyXqiuDFhTeOxvXJ60rUXrIwJft2R4UDPXoV+KbV1aOjcUuna8EqpGjYM0JyroFiYE7jeAjQbBAp/w4kmHlOI0R3I3lABoFfEEehqcyE3KqSJGg//CS1XhUE6Xzsd9wHe+Q6WRAoc3SAJVkN8z4Zn00SJiw0sF5fQYN9vHEehnWpMTo+0SIbn3rrNEkGTcsd7sVL2vBKxPl2gjs6ZmdIwDw3VjwDnbLRBzh1VFVdsNzRgWKq2TWBqS0bg++FUMOgjrJ3r8cIOb/bVYhW51g9JD465NdbRIZdF0xxvxZgl3YcOm1nL/y1fKKsTZurw+B9sckH8W4teY0IdNx9UQq9BJYGq17NUL2iqhEeY9RLSuFkWRh6rVCkFCgeK8G+hKpYVSrdMBFJ2arvgzv+sREmT23JMRRzVlKu2KNYaenilyxaLaNhgm/aIT6TKaIWwADFppBjQ0h94=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="oNqZwimh5u4YihBdWeyFNI3+CSG+gOS5DlKfe7rCcJ15ERw6Jl2dQMWg00HCzPBuWKQFmt3X9X3m1HtebP4Wrv5bPa7JnLQ7zSN8XwXIuhzWsk05ZTO/4S0kgaDhxjd/A5qLFnC0J4U7BPwpUJAnayYE3/vYU3zOIGNl2LA47HaH5QUVKjFEU1OXmon28JTLyGME6uBUNEjJOSdwy6fKX006Nyre9DMhbKZ9GgBXhWvocX6ain8Z00BdoH0yzuacERquqBjwQTuR9aF7AXG6FslQ/WuynjmFij4CS1m9VH4g5Jsk9vBfXNgWsHUHw3Zg" />
+        <span id="FormProcessingOverlay"><div id="ctl03_FormProcessingOverlay">
+    <div class="form-processing-overlay">
+        <div class="fpo-content">
+            <img src="/lib/images/global/animated-bulb-processing.gif" alt="Loading..." />
+            <div class="fpo-text">
+                <h2>Processing your request</h2>
+                <p>Thank you for your patience.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</span>
+        <span id="HeaderControl">
+
+<noindexfb>
+
+<div id="ctl04_DivSkipNav" class="d-flex">
+    <a href="#main" tabindex="1" accesskey="2" class=" mx-auto sr-only sr-only-focusable">Skip to main content</a>
+</div>
+
+
+
+  <div id="ctl04_DivAEPTexasEspanolHeader" class="espanol-toggle-header">
+        <div class="container"><script src="/lib/js/local/switchLanguage.js"></script>
+             <a mporgnav href="https://espanol.aeptexas.com" onclick="return switchLanguage('es');">Español</a>
+        </div>
+  </div>
+<nav class="navbar navbar-light navbar-expand-md aep-navbar home">
+    <div class="container">
+        <a class="navbar-brand aep-brand" href="https://www.aeptexas.com">
+            <img src="/lib/images/svgs/logos/TEXAS_Primary_RGB_RG.svg" class="aep-brand-image" alt="Aep Texas" />
+        </a>
+        <span id="ctl04_loginButtonMobile">
+            <button class="btn btn-danger btn-global-login login-sm collapsed" data-btn="login" type="button" data-toggle="collapse" data-target="#globalLoginMenu" aria-expanded="false" aria-controls="">LOG IN</button>
+        </span>
+        
+        <button class="hamburger hamburger--squeeze collapsed" type="button" id="mobileNavToggle" data-toggle="collapse" data-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div class="mobile-nav-container collapse" id="mobileNav" >
+           	
+            <div class="search-bar">
+                <div id="ctl04_PanelMobileSearchBar" class="search-form">
+	
+                    <input name="ctl00$ctl04$MobileSearchTextBox" type="text" id="ctl04_MobileSearchTextBox" class="form-control search-input js-site-search-input" placeholder="What can we help you find?" />
+                    <a id="ctl04_SiteSearchButtonMobile" class="search-icon" href="javascript:__doPostBack(&#39;ctl00$ctl04$SiteSearchButtonMobile&#39;,&#39;&#39;)"></a>
+                
+</div>
+            </div>
+            <div class="mobile-nav">
+                <ul class="level-1">
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item has-children  collapsed" data-toggle="collapse" data-target="#My_Account_Children" aria-expanded="true" aria-controls="My_Account_Children">
+        <div class="nav-item-text" id="My_Account">
+            <div>My Account</div>
+        </div>
+        <div class="nav-item-expander " ></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="My_Account_Children" aria-labelledby="My_Account" data-parent="#My_Account">
+    <ul class="level-2">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/account/">Account Summary</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Bills___Payments">
+    <a href="/account/bills/">Bills & Payments</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#My_Account_Service_Requests_Children" aria-expanded="true" aria-controls="My_Account_Service_Requests_Children">
+<div class="nav-item-text" id="My_Account_Service_Requests">
+            <div>Service Requests</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="My_Account_Service_Requests_Children" aria-labelledby="My_Account_Service_Requests" data-parent="#My_Account_Service_Requests">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/account/service/">Service Requests Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Service_Requests_Start__Stop_or_Transfer_Your_Service">
+    <a href="/account/service/start-stop-transfer">Start, Stop or Transfer Your Service</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#My_Account_Service_Requests_Modify_Service_Children" aria-expanded="true" aria-controls="My_Account_Service_Requests_Modify_Service_Children">
+<div class="nav-item-text" id="My_Account_Service_Requests_Modify_Service">
+            <div>Modify Service</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="My_Account_Service_Requests_Modify_Service_Children" aria-labelledby="My_Account_Service_Requests_Modify_Service" data-parent="#My_Account_Service_Requests_Modify_Service">
+    <ul class="level-4">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/account/service/modify/">Change or Upgrade Your Service</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Service_Requests_Modify_Service_Modify_Home_Service">
+    <a href="/account/service/modify/home">Modify Home Service</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Service_Requests_Modify_Service_Modify_Business_Service">
+    <a href="/account/service/modify/business">Modify Business Service</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Service_Requests_Meter_Reading_Schedule">
+    <a href="/account/service/meter-reading-schedule">Meter Reading Schedule</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Service_Requests_Electric_Choice">
+    <a href="/company/about/choice/">Electric Choice</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Your_Energy_Usage">
+    <a href="/account/usage/">Your Energy Usage</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#My_Account_Account_Settings_Children" aria-expanded="true" aria-controls="My_Account_Account_Settings_Children">
+<div class="nav-item-text" id="My_Account_Account_Settings">
+            <div>Account Settings</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="My_Account_Account_Settings_Children" aria-labelledby="My_Account_Account_Settings" data-parent="#My_Account_Account_Settings">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/account/settings/">Account Settings Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Notifications">
+    <a href="/account/settings/notifications/">Notifications</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#My_Account_Account_Settings_Manage_Multiple_Accounts_Children" aria-expanded="true" aria-controls="My_Account_Account_Settings_Manage_Multiple_Accounts_Children">
+<div class="nav-item-text" id="My_Account_Account_Settings_Manage_Multiple_Accounts">
+            <div>Manage Multiple Accounts</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="My_Account_Account_Settings_Manage_Multiple_Accounts_Children" aria-labelledby="My_Account_Account_Settings_Manage_Multiple_Accounts" data-parent="#My_Account_Account_Settings_Manage_Multiple_Accounts">
+    <ul class="level-4">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/account/settings/accounts/">View Your Accounts</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Manage_Multiple_Accounts_Add_Account">
+    <a href="/account/settings/accounts/add">Add Account</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Manage_Multiple_Accounts_Remove_Account">
+    <a href="/account/settings/accounts/remove">Remove Account</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Manage_Multiple_Accounts_Change_Default_Login_Account">
+    <a href="/account/settings/default-account">Change Default Login Account</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Change_Account_Password">
+    <a href="/account/settings/password">Change Account Password</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Change_Email_Address">
+    <a href="/account/settings/email">Change Email Address</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Change_Mailing_Address">
+    <a href="/account/settings/mailing-address">Change Mailing Address</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Change_Phone_Number">
+    <a href="/account/settings/phone">Change Phone Number</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Account_Settings_Change_Profile_Name">
+    <a href="/account/settings/change-name">Change Profile Name</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="My_Account_Business_Accounts">
+    <a href="/business/">Business Accounts</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item has-children  collapsed" data-toggle="collapse" data-target="#Outages_Children" aria-expanded="true" aria-controls="Outages_Children">
+        <div class="nav-item-text" id="Outages">
+            <div>Outages</div>
+        </div>
+        <div class="nav-item-expander " ></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Outages_Children" aria-labelledby="Outages" data-parent="#Outages">
+    <ul class="level-2">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/outages/">Outages Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Report_Power_Outage">
+    <a href="/outages/report/">Report Power Outage</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Check_Outage_Status">
+    <a href="/outages/status">Check Outage Status</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_View_Outage_Map">
+    <a href="http://outagemap.aeptexas.com.s3.amazonaws.com/external/default.html">View Outage Map</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Outage_Alerts">
+    <a href="/account/settings/notifications">Outage Alerts</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Outages_Report_Other_Problem_Children" aria-expanded="true" aria-controls="Outages_Report_Other_Problem_Children">
+<div class="nav-item-text" id="Outages_Report_Other_Problem">
+            <div>Report Other Problem</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Outages_Report_Other_Problem_Children" aria-labelledby="Outages_Report_Other_Problem" data-parent="#Outages_Report_Other_Problem">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Report_Other_Problem_Report_Safety_Hazard">
+    <a href="/outages/report/safety-hazard">Report Safety Hazard</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Report_Other_Problem_Report_Tree_Problem">
+    <a href="/outages/problem/tree">Report Tree Problem</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Report_Other_Problem_Report_Streetlight_Problem">
+    <a href="/outages/problem/streetlight">Report Streetlight Problem</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Report_Other_Problem_Report_Leased_Light_Problem">
+    <a href="/outages/problem/leased-light">Report Leased Light Problem</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Report_Other_Problem_Report_Power_Theft">
+    <a href="/outages/problem/power-theft">Report Power Theft</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Outages_Outages_FAQ">
+    <a href="/outages/faq">Outages FAQ</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item has-children  collapsed" data-toggle="collapse" data-target="#Savings_Children" aria-expanded="true" aria-controls="Savings_Children">
+        <div class="nav-item-text" id="Savings">
+            <div>Savings</div>
+        </div>
+        <div class="nav-item-expander " ></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Savings_Children" aria-labelledby="Savings" data-parent="#Savings">
+    <ul class="level-2">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/savings/">Savings Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Savings_Money_and_Energy_Savings_for_Your_Home_Children" aria-expanded="true" aria-controls="Savings_Money_and_Energy_Savings_for_Your_Home_Children">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home">
+            <div>Money and Energy Savings for Your Home</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Savings_Money_and_Energy_Savings_for_Your_Home_Children" aria-labelledby="Savings_Money_and_Energy_Savings_for_Your_Home" data-parent="#Savings_Money_and_Energy_Savings_for_Your_Home">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/savings/home/">Home Savings Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Savings_Money_and_Energy_Savings_for_Your_Home_Savings_Toolkit_Children" aria-expanded="true" aria-controls="Savings_Money_and_Energy_Savings_for_Your_Home_Savings_Toolkit_Children">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Savings_Toolkit">
+            <div>Savings Toolkit</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Savings_Money_and_Energy_Savings_for_Your_Home_Savings_Toolkit_Children" aria-labelledby="Savings_Money_and_Energy_Savings_for_Your_Home_Savings_Toolkit" data-parent="#Savings_Money_and_Energy_Savings_for_Your_Home_Savings_Toolkit">
+    <ul class="level-4">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/savings/home/toolkit/">Savings Toolkit Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Savings_Toolkit_Temperature_Tracker">
+    <a href="/savings/home/temperature">Temperature Tracker</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy_Children" aria-expanded="true" aria-controls="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy_Children">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy">
+            <div>Save Energy</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy_Children" aria-labelledby="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy" data-parent="#Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy">
+    <ul class="level-4">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/savings/home/energy/">Save Energy Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy_Appliances___Electronics">
+    <a href="/savings/home/energy/appliances-electronics/">Appliances & Electronics</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy_Heating___Cooling">
+    <a href="/savings/home/energy/Heating-Cooling">Heating & Cooling</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy_Landscaping">
+    <a href="/savings/home/energy/landscaping">Landscaping</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy_Lighting">
+    <a href="/savings/home/energy/Lighting">Lighting</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Save_Energy_Water_Heating">
+    <a href="/savings/home/energy/Water-Heating">Water Heating</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Home_Temperature_Tracker">
+    <a href="/savings/home/temperature">Temperature Tracker</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Savings_Money_and_Energy_Savings_for_Your_Business_Children" aria-expanded="true" aria-controls="Savings_Money_and_Energy_Savings_for_Your_Business_Children">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Business">
+            <div>Money and Energy Savings for Your Business</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Savings_Money_and_Energy_Savings_for_Your_Business_Children" aria-labelledby="Savings_Money_and_Energy_Savings_for_Your_Business" data-parent="#Savings_Money_and_Energy_Savings_for_Your_Business">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/savings/business/">Money and Energy Savings for Your Business Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy_Children" aria-expanded="true" aria-controls="Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy_Children">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy">
+            <div>Save Energy</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy_Children" aria-labelledby="Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy" data-parent="#Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy">
+    <ul class="level-4">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/savings/business/energy/">Save Energy Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy_Heating___Cooling__HVAC_">
+    <a href="/savings/business/energy/Heating-Cooling">Heating & Cooling (HVAC)</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy_Lighting">
+    <a href="/savings/business/energy/Lighting">Lighting</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy_Motors___Drives">
+    <a href="/savings/business/energy/Motors-Drives">Motors & Drives</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Business_Save_Energy_Refrigeration">
+    <a href="/savings/business/energy/Refrigeration">Refrigeration</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Business_Temperature_Tracker">
+    <a href="/savings/business/temperature">Temperature Tracker</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Money_and_Energy_Savings_for_Your_Business_Savings_Toolkit">
+    <a href="/savings/business/toolkit/">Savings Toolkit</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Savings_Your_Energy_Usage">
+    <a href="/account/usage/">Your Energy Usage</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item has-children  collapsed" data-toggle="collapse" data-target="#Community_Children" aria-expanded="true" aria-controls="Community_Children">
+        <div class="nav-item-text" id="Community">
+            <div>Community</div>
+        </div>
+        <div class="nav-item-expander " ></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Community_Children" aria-labelledby="Community" data-parent="#Community">
+    <ul class="level-2">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/community/">Community Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Community_Caring_For_Our_Community_Children" aria-expanded="true" aria-controls="Community_Caring_For_Our_Community_Children">
+<div class="nav-item-text" id="Community_Caring_For_Our_Community">
+            <div>Caring For Our Community</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Community_Caring_For_Our_Community_Children" aria-labelledby="Community_Caring_For_Our_Community" data-parent="#Community_Caring_For_Our_Community">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/community/caring/">Caring For Our Community Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Caring_For_Our_Community_Volunteering">
+    <a href="/community/caring/volunteerism">Volunteering</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Caring_For_Our_Community_Charitable_Giving">
+    <a href="/community/caring/giving">Charitable Giving</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Caring_For_Our_Community_Our_Response_to_Coronavirus">
+    <a href="/community/caring/coronavirus/">Our Response to Coronavirus</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Caring_For_Our_Community_Featured_Stories">
+    <a href="/community/caring/featured-stories">Featured Stories</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Community_Growing_Our_Community_Children" aria-expanded="true" aria-controls="Community_Growing_Our_Community_Children">
+<div class="nav-item-text" id="Community_Growing_Our_Community">
+            <div>Growing Our Community</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Community_Growing_Our_Community_Children" aria-labelledby="Community_Growing_Our_Community" data-parent="#Community_Growing_Our_Community">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/community/growing/">Growing Our Community Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Growing_Our_Community_Community_Affairs_and_Economic_Development_Managers">
+    <a href="/community/growing/managers/">Community Affairs and Economic Development Managers</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Community_Power_Projects___Plans_Children" aria-expanded="true" aria-controls="Community_Power_Projects___Plans_Children">
+<div class="nav-item-text" id="Community_Power_Projects___Plans">
+            <div>Power Projects & Plans</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Community_Power_Projects___Plans_Children" aria-labelledby="Community_Power_Projects___Plans" data-parent="#Community_Power_Projects___Plans">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/community/projects/">Power Projects & Plans Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Power_Projects___Plans_Reliability___Tree_Trimming">
+    <a href="/community/projects/tree-trimming">Reliability & Tree Trimming</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Power_Projects___Plans_McAllen___Mission_Area_Transition_from_Oncor">
+    <a href="/community/projects/mcallen-mission">McAllen & Mission Area Transition from Oncor</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Power_Projects___Plans_Smart_Meters">
+    <a href="/community/projects/smart-meters">Smart Meters</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Community_Energy_Education_Children" aria-expanded="true" aria-controls="Community_Energy_Education_Children">
+<div class="nav-item-text" id="Community_Energy_Education">
+            <div>Energy Education</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Community_Energy_Education_Children" aria-labelledby="Community_Energy_Education" data-parent="#Community_Energy_Education">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/community/education/">Energy Education Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Energy_Education_Kids___Teachers">
+    <a href="/community/education/kids-teachers/">Kids & Teachers</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Energy_Education_Electric___Magnetic_Fields">
+    <a href="/community/education/emf">Electric & Magnetic Fields</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Clean_Energy">
+    <a href="/clean-energy/">Clean Energy</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Economic_Development">
+    <a href="/company/economic/">Economic Development</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Electric_Cars">
+    <a href="/clean-energy/electric-cars/">Electric Cars</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Electrification_for_Your_Business">
+    <a href="/clean-energy/electrification-for-business/">Electrification for Your Business</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Community_Featured_Stories">
+    <a href="/community/caring/featured-stories">Featured Stories</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item has-children  collapsed" data-toggle="collapse" data-target="#Safety_Children" aria-expanded="true" aria-controls="Safety_Children">
+        <div class="nav-item-text" id="Safety">
+            <div>Safety</div>
+        </div>
+        <div class="nav-item-expander " ></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Safety_Children" aria-labelledby="Safety" data-parent="#Safety">
+    <ul class="level-2">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/safety/">Safety Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Safety_Order_Safety_DVD">
+    <a href="/safety/dvd">Order Safety DVD</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Safety_Power_Line_Safety">
+    <a href="/safety/power-lines">Power Line Safety</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Safety_Staying_Safe_at_Home">
+    <a href="/safety/home">Staying Safe at Home</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Safety_Contractors">
+    <a href="/safety/Contractors">Contractors</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Safety_Emergency_Responders">
+    <a href="/safety/emergency-responders">Emergency Responders</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item has-children  collapsed" data-toggle="collapse" data-target="#Company_Children" aria-expanded="true" aria-controls="Company_Children">
+        <div class="nav-item-text" id="Company">
+            <div>Company</div>
+        </div>
+        <div class="nav-item-expander " ></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Company_Children" aria-labelledby="Company" data-parent="#Company">
+    <ul class="level-2">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/company/">Company Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Company_About_Us_Children" aria-expanded="true" aria-controls="Company_About_Us_Children">
+<div class="nav-item-text" id="Company_About_Us">
+            <div>About Us</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Company_About_Us_Children" aria-labelledby="Company_About_Us" data-parent="#Company_About_Us">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/company/about/">About Us Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Company_About_Us_AEP_Texas_Electric_Choice_Children" aria-expanded="true" aria-controls="Company_About_Us_AEP_Texas_Electric_Choice_Children">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice">
+            <div>AEP Texas Electric Choice</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Company_About_Us_AEP_Texas_Electric_Choice_Children" aria-labelledby="Company_About_Us_AEP_Texas_Electric_Choice" data-parent="#Company_About_Us_AEP_Texas_Electric_Choice">
+    <ul class="level-4">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/company/about/choice/">AEP Texas Electric Choice Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_Business_Hours___Holiday_Schedule">
+    <a href="/company/about/choice/business-hours">Business Hours & Holiday Schedule</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_Letters_of_Authorization">
+    <a href="/company/about/choice/loas">Letters of Authorization</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_Permit___Inspection_Requirements">
+    <a href="/company/about/choice/permit-inspections">Permit & Inspection Requirements</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_How_to_Register_As_A_REP">
+    <a href="/company/about/choice/register-rep">How to Register As A REP</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_REP_Desk">
+    <a href="/company/about/choice/rep-desk">REP Desk</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_Meter_Reading_Schedule">
+    <a href="/company/about/choice/meter-schedule">Meter Reading Schedule</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_SAC___TDSP_Codes">
+    <a href="/company/about/choice/sac-tdsp-codes">SAC & TDSP Codes</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_Tariff_Codes">
+    <a href="/company/about/choice/tariff-codes">Tariff Codes</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_Transition_Deposit_Charge_Agreements">
+    <a href="/company/about/choice/transition-deposit-charge">Transition Deposit Charge Agreements</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_Workshops">
+    <a href="/company/about/choice/workshops">Workshops</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Choice_ZIP_codes">
+    <a href="/company/about/choice/zip-codes">ZIP codes</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Leadership">
+    <a href="/company/about/leadership/">AEP Texas Leadership</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_About_Us_AEP_Texas_Electric_Rates">
+    <a href="/company/about/rates/">AEP Texas Electric Rates</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Company_Economic_Development_Children" aria-expanded="true" aria-controls="Company_Economic_Development_Children">
+<div class="nav-item-text" id="Company_Economic_Development">
+            <div>Economic Development</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Company_Economic_Development_Children" aria-labelledby="Company_Economic_Development" data-parent="#Company_Economic_Development">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/company/economic/">Economic Development Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_Economic_Development_AEP_Economic_Development">
+    <a href="https://aeped.com/">AEP Economic Development</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_Economic_Development_Shale_Oil_and_Gas_Location">
+    <a href="/company/economic/shale-oil-gas">Shale Oil and Gas Location</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Company_News_Releases_Children" aria-expanded="true" aria-controls="Company_News_Releases_Children">
+<div class="nav-item-text" id="Company_News_Releases">
+            <div>News Releases</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Company_News_Releases_Children" aria-labelledby="Company_News_Releases" data-parent="#Company_News_Releases">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/company/news/">News Releases Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_News_Releases_AEP_Texas_Media_Contacts">
+    <a href="/company/news/media-contacts">AEP Texas Media Contacts</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_Careers">
+    <a href="/company/careers">Careers</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_Legal_Notices">
+    <a href="/company/legal-notices">Legal Notices</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Company_Media_Gallery">
+    <a href="/company/media-gallery">Media Gallery</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item has-children  collapsed" data-toggle="collapse" data-target="#Clean_Energy_Children" aria-expanded="true" aria-controls="Clean_Energy_Children">
+        <div class="nav-item-text" id="Clean_Energy">
+            <div>Clean Energy</div>
+        </div>
+        <div class="nav-item-expander " ></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Clean_Energy_Children" aria-labelledby="Clean_Energy" data-parent="#Clean_Energy">
+    <ul class="level-2">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/clean-energy/">Clean Energy Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Clean_Energy_Electric_Cars_Children" aria-expanded="true" aria-controls="Clean_Energy_Electric_Cars_Children">
+<div class="nav-item-text" id="Clean_Energy_Electric_Cars">
+            <div>Electric Cars</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Clean_Energy_Electric_Cars_Children" aria-labelledby="Clean_Energy_Electric_Cars" data-parent="#Clean_Energy_Electric_Cars">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/clean-energy/electric-cars/">Electric Cars Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Clean_Energy_Electric_Cars_Electric_Vehicles_for_Your_Business">
+    <a href="/clean-energy/electric-cars/business">Electric Vehicles for Your Business</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Clean_Energy_Electrification_for_Your_Business_Children" aria-expanded="true" aria-controls="Clean_Energy_Electrification_for_Your_Business_Children">
+<div class="nav-item-text" id="Clean_Energy_Electrification_for_Your_Business">
+            <div>Electrification for Your Business</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Clean_Energy_Electrification_for_Your_Business_Children" aria-labelledby="Clean_Energy_Electrification_for_Your_Business" data-parent="#Clean_Energy_Electrification_for_Your_Business">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/clean-energy/electrification-for-business/">Electrification for Your Business Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Clean_Energy_Electrification_for_Your_Business_Electric_Forklifts">
+    <a href="/clean-energy/electrification-for-business/forklifts">Electric Forklifts</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Clean_Energy_Environment">
+    <a href="/clean-energy/environment/">Environment</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Clean_Energy_Renewable_Energy_Children" aria-expanded="true" aria-controls="Clean_Energy_Renewable_Energy_Children">
+<div class="nav-item-text" id="Clean_Energy_Renewable_Energy">
+            <div>Renewable Energy</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Clean_Energy_Renewable_Energy_Children" aria-labelledby="Clean_Energy_Renewable_Energy" data-parent="#Clean_Energy_Renewable_Energy">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/clean-energy/renewable/">Renewable Energy Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Clean_Energy_Renewable_Energy_Solar_Children" aria-expanded="true" aria-controls="Clean_Energy_Renewable_Energy_Solar_Children">
+<div class="nav-item-text" id="Clean_Energy_Renewable_Energy_Solar">
+            <div>Solar</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Clean_Energy_Renewable_Energy_Solar_Children" aria-labelledby="Clean_Energy_Renewable_Energy_Solar" data-parent="#Clean_Energy_Renewable_Energy_Solar">
+    <ul class="level-4">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/clean-energy/renewable/solar">Solar Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Clean_Energy_Renewable_Energy_Solar_Do_s_and_Don_ts_of_Hiring_a_Contractor">
+    <a href="/clean-energy/renewable/solar/hiring-a-contractor">Do's and Don'ts of Hiring a Contractor</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Clean_Energy_Renewable_Energy_Solar_How_Residential_Solar_Panels_Work">
+    <a href="/clean-energy/renewable/solar/how-solar-panels-work">How Residential Solar Panels Work</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Clean_Energy_Renewable_Energy_Wind">
+    <a href="/clean-energy/renewable/wind">Wind</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+    </ul>
+</div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item has-children  collapsed" data-toggle="collapse" data-target="#Business_Customers_Children" aria-expanded="true" aria-controls="Business_Customers_Children">
+        <div class="nav-item-text" id="Business_Customers">
+            <div>Business Customers</div>
+        </div>
+        <div class="nav-item-expander " ></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Business_Customers_Children" aria-labelledby="Business_Customers" data-parent="#Business_Customers">
+    <ul class="level-2">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/business/">Business Summary</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Business_Customers_Business_To_Business_Children" aria-expanded="true" aria-controls="Business_Customers_Business_To_Business_Children">
+<div class="nav-item-text" id="Business_Customers_Business_To_Business">
+            <div>Business To Business</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Business_Customers_Business_To_Business_Children" aria-labelledby="Business_Customers_Business_To_Business" data-parent="#Business_Customers_Business_To_Business">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/business/b2b/">Business To Business Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Business_To_Business_Pole_Attachment_Policy">
+    <a href="/business/b2b/pole-attachment/">Pole Attachment Policy</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Business_Customers_Industry_Solutions_Children" aria-expanded="true" aria-controls="Business_Customers_Industry_Solutions_Children">
+<div class="nav-item-text" id="Business_Customers_Industry_Solutions">
+            <div>Industry Solutions</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Business_Customers_Industry_Solutions_Children" aria-labelledby="Business_Customers_Industry_Solutions" data-parent="#Business_Customers_Industry_Solutions">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/business/industry-solutions/">Industry Solutions Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Industry_Solutions_Associated_Business_Development">
+    <a href="/business/industry-solutions/abd">Associated Business Development</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Industry_Solutions_Economic___Business_Development">
+    <a href="/business/industry-solutions/ebd">Economic & Business Development</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Industry_Solutions_Electrification">
+    <a href="/business/industry-solutions/electrification">Electrification</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Industry_Solutions_Grid_Solutions">
+    <a href="/business/industry-solutions/grid-solutions">Grid Solutions</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Industry_Solutions_Sustainability">
+    <a href="/business/industry-solutions/sustainability">Sustainability</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item  has-children  collapsed" data-toggle="collapse" data-target="#Business_Customers_Builders___Contractors_Children" aria-expanded="true" aria-controls="Business_Customers_Builders___Contractors_Children">
+<div class="nav-item-text" id="Business_Customers_Builders___Contractors">
+            <div>Builders & Contractors</div>
+        </div><div class="nav-item-expander"></div>
+    </div>
+
+<div class="nav-item-children collapse  " id="Business_Customers_Builders___Contractors_Children" aria-labelledby="Business_Customers_Builders___Contractors" data-parent="#Business_Customers_Builders___Contractors">
+    <ul class="level-3">
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item">
+        <div class="nav-item-text">
+            <a href="/business/builders/">Builders & Contractors Overview</a>
+        </div>
+    </div>
+</li>
+
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Builders___Contractors_Installing_Generating_Equipment">
+    <a href="/business/builders/generating-equipment">Installing Generating Equipment</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Builders___Contractors_Meter_Install_Order_Status">
+    <a href="/business/builders/meter-status">Meter Install Order Status</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Builders___Contractors_New_Business_Service">
+    <a href="/business/builders/new-business">New Business Service</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Builders___Contractors_New_Home_Service">
+    <a href="/business/builders/new-home">New Home Service</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Builders___Contractors_RV_Park_Meter_Policy">
+    <a href="/business/builders/rv-park">RV Park Meter Policy</a>
+        </div>
+    </div>
+</li>
+<li class="mobile-nav-item-container">
+    <div class="mobile-nav-item ">
+<div class="nav-item-text" id="Business_Customers_Builders___Contractors_Temporary_Service">
+    <a href="/business/builders/temporary">Temporary Service</a>
+        </div>
+    </div>
+</li>
+    </ul>
+</div></li>
+    </ul>
+</div>
+</li></ul>
+                <div class="mobile-nav-footer ">
+                    <div class="footer-icon-callouts is-texas">
+                        <a href="/account/register" class="footer-callout">
+                            <span class="ai ai-pointer filter-dark-gray"></span>
+                            <span class="footer-callout-text">Register</span>
+                        </a>
+                        <a href="/contact" class="footer-callout">
+                            <span class="ai ai-phone filter-dark-gray"></span>
+                            <span class="footer-callout-text">Contact us</span>
+                        </a>
+                         <div id="ctl04_DivAEPTexasEspanolMenu" class="espanol-toggle-menu">
+                            <a mporgnav href="https://espanol.aeptexas.com" onclick="return switchLanguage('es');">Español</a>
+                        </div>
+                    </div>
+                    <div class="mobile-nav-feedback">
+                        <a id="MobileFeedbackBtn" class="button" onclick="document.getElementById('nebula_div_btn').click()">Give feedback</a>
+                    </div>
+                </div>
+            </div>
+           
+
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav aep-navbar-nav ml-auto">
+                <li id="ctl04_liAccount" class="nav-item">
+                    <a class="nav-link dropdown-toggle" id="navbarAccount" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>My Account</span><span class="sr-only">(current)</span></a>
+                    <div id="navbarAccountDropdown" class="dropdown-menu" aria-labelledby="navbarAccount">
+                        <div class="row">
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/account/" class="dropdown-item">Account Summary</a>
+                                    </h6>
+                                    <ul id="ctl04_navbarCompanyElectric" class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/company/about/choice/">Electric Choice</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/company/about/rates/">Electric Rates</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                
+
+                                <div id="ctl04_navbarAEPTexasAccount1" class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a class="dropdown-item" href="/account/bills/">Billing Issues</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/account/bills/fraud-scams">Report Fraud and Scams</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                
+
+                                <div id="ctl04_navbarAEPTexasAccount4" class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/account/service/" class="dropdown-item">Service Requests</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/account/service/start-stop-transfer">Start, Stop &amp; <span class="no-break">Transfer Service</span></a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/account/service/modify">Modify Service</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                
+
+                                <div id="ctl04_navbarAEPTexasAccount2" class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/account/usage" class="dropdown-item">Energy Usage</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/account/usage">View Usage</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/savings/home/energy/">Energy Saving Tips</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="https://aeptexasefficiency.com/#/residential">Rebates & Incentives</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/business/" class="dropdown-item">Business Accounts</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/business/">Business Summary</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/business/industry-solutions">Industry Solutions</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/business/builders/">Builders & Contractors</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/business/b2b/">Business to Business</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-0">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/account/register" class="dropdown-item">Register</a>
+                                    </h6>
+                                </div>
+
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/account/settings/" class="dropdown-item">Account Settings</a>
+                                    </h6>
+                                    <div><span class="text-italic">Change your email, phone number, and other settings on your profile</span></div>
+                                </div>
+
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/account/settings/notifications/" class="dropdown-item">Notification Preferences</a>
+                                    </h6>
+                                    <div><span class="text-italic">Get  outage alerts, or manage how we contact you</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="ctl04_liOutages" class="nav-item">
+                    <a class="nav-link dropdown-toggle" id="navbarOutages" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Outages</span><span class="sr-only">(current)</span></a>
+                    <div id="navbarOutagesDropdown" class="dropdown-menu" aria-labelledby="navbarOutages">
+                        <div class="row">
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a class="dropdown-item" href="/outages/">Outages Overview</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/outages/report">Report an Outage</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/outages/status">Check Outage Status</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/account/settings/notifications/">Outage Alerts</a>
+                                        </li>
+                                        <li id="ctl04_nationalOutageMap">
+                                            <a id="ctl04_opcoOutageMap" class="menu-item dropdown-item" href="http://outagemap.aeptexas.com.s3.amazonaws.com/external/default.html">View Outage Map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <div class="dropdown-container">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/outages/faq">Power Restoration FAQs</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/safety/" class="dropdown-item">Safety</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/safety/power-lines">Power Line Safety</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-0">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/outages/problem" class="dropdown-item">Report Other Problems</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/outages/problem/tree">Tree Problem</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/outages/problem/streetlight">Streetlight Problem</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/outages/report/safety-hazard/">Safety Hazard</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="ctl04_liSavings" class="nav-item">
+                    <a class="nav-link dropdown-toggle" id="navbarSavings" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Savings</span><span class="sr-only">(current)</span></a>
+                    <div id="navbarSavingsDropdown" class="dropdown-menu" aria-labelledby="navbarSavings">
+                        <div class="row">
+                            
+
+                            
+                            
+
+                            <div id="ctl04_navbarAEPTexasSavings1" class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a class="dropdown-item" href="/savings/">Home Savings</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="https://aeptexasefficiency.com/#/residential">Rebates &amp; Incentives</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                
+
+                                 
+
+                                
+
+                                
+
+                                <div id="ctl04_navbarAEPDefaultSavings5" class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/savings/home/energy" class="dropdown-item">Energy Tips</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/savings/home/energy/Heating-Cooling">Heating & Cooling</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/savings/home/energy/Lighting">Lighting</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/savings/home/energy/landscaping">Landscaping</a>
+                                        </li>
+                                        <li id="ctl04_navbarAEPImPsoSavings6">
+                                            <a class="menu-item dropdown-item" href="/savings/home/energy/appliances-electronics/">Appliances & Electronics</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            
+                            <div id="ctl04_navbarAEPDefaultSavingsCol3" class="col-md-3 sub-menu mb-0">
+                                <div class="dropdown-container">
+
+                                    <h6 class="sub-title">
+                                        <a id="ctl04_LnkSavingsBusiness" class="dropdown-item" href="/savings/business/">Business Savings</a>
+                                    </h6>
+
+                                    <ul id="ctl04_navbarAEPDefaultSavings6" class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/savings/business/energy">Energy Saving Tips</a>
+                                        </li>
+                                        
+                                        <li id="ctl04_navbarAEPTexasSavings2" class="list-unstyled">
+                                            <a class="menu-item dropdown-item" href="/savings/business/temperature">Temperature Tracker</a>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+
+                                
+
+                                
+
+                                
+
+                            </div>
+
+                            <div id="ctl04_navbarDefaultSavingsCol4" class="col-md-3 sub-menu mb-0">
+                                <div id="ctl04_navbarAEPDefaultSavingsEnergy4" class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/account/usage" class="dropdown-item">Energy Usage</a>
+                                    </h6>
+                                </div>
+
+                                
+
+                                
+
+                                
+
+                                
+
+                                
+                              
+
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+                </li>
+                <li id="ctl04_liCommunity" class="nav-item">
+                    <a class="nav-link dropdown-toggle" id="navbarCommunity" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Community</span><span class="sr-only">(current)</span></a>
+                    <div id="navbarCommunityDropdown" class="dropdown-menu" aria-labelledby="navbarCommunity">
+                        <div class="row">
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a class="dropdown-item" href="/community/">Community Overview</a>
+                                    </h6>
+                                </div>
+
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a class="dropdown-item" href="/community/caring">Caring for Our Community</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/community/caring/featured-stories">Featured Stories</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/community/caring/volunteerism">Volunteering</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                
+
+                                <div class="dropdown-container">
+                                    <ul class="list-unstyled">
+                                        
+                                        <li id="ctl04_LICharitableGiving">
+                                            <a class="menu-item dropdown-item" href="/community/caring/giving">Charitable Giving</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/community/projects" class="dropdown-item">Projects & Plans</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li id="ctl04_navbarAEPCommunity2">
+                                            <a id="ctl04_linkSmartMeters" class="menu-item dropdown-item" href="/community/projects/smart-meters">Smart Meters</a>
+                                        </li>
+                                        
+                                        
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/community/projects/tree-trimming">Reliability & Tree Trimming</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/company/economic/" class="dropdown-item">Economic Development</a>
+                                    </h6>
+                                    
+                                </div>
+                                </div>
+
+
+                            <div class="col-md-3 sub-menu mb-0">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/clean-energy/" class="dropdown-item">Clean Energy</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/clean-energy/environment">Environment</a>
+                                        </li>
+                                        <li id="ctl04_navbarAEPDefaultCommunity1">
+                                            <a class="menu-item dropdown-item" href="/clean-energy/electrification-for-business">Electrification for Your Business</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/clean-energy/renewable">Renewable Energy</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/clean-energy/electric-cars">Electric Cars</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3 sub-menu mb-0">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/company/" class="dropdown-item">Our Company</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/company/news">News Releases</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/company/about">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/company/careers">Careers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li id="ctl04_liContact" class="nav-item">
+                    <a class="nav-link dropdown-toggle" id="navbarContact" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Contact</span><span class="sr-only">(current)</span></a>
+                    <div id="navbarContactDropdown" class="dropdown-menu" aria-labelledby="navbarContact">
+                        <div class="row">
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a class="dropdown-item" href="/contact">Contact Overview</a>
+                                    </h6>
+                                </div>
+                                
+                                <div id="ctl04_DivContactPhoneTx" class="dropdown-container">
+                                    <h6 class="sub-title dropdown-item text-bold">Customer Service:</h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="tel:1-877-373-4858" class="menu-item dropdown-item">1.877.373.4858</a>
+                                        </li>
+                                    </ul>
+                                    <h6 class="sub-title dropdown-item text-bold">Outages:</h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="tel:1-866-223-8508" class="menu-item dropdown-item">1.866.223.8508</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="ctl04_navbarAEPContact5" class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a class="dropdown-item" href="/company/careers">Careers</a>
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/outages/" class="dropdown-item">Power out?</a>
+                                    </h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/outages/report">Report an Outage</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/outages/status">Check Outage Status</a>
+                                        </li>
+                                        <li id="ctl04_nationalContactOutageMap">
+                                            <a id="ctl04_opcoContactOutageMap" class="menu-item dropdown-item" href="http://outagemap.aeptexas.com.s3.amazonaws.com/external/default.html">View Outage Map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/safety/Home#call811" class="dropdown-item">Call 811 Before You Dig</a>
+                                    </h6>
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-md-0 mb-4">
+                                <div class="dropdown-container">
+                                    <h6 class="sub-title">
+                                        <a href="/account/" class="dropdown-item">Account Maintenance</a>
+                                    </h6>
+                                    
+
+                                    <ul id="ctl04_navbarAEPContact3" class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/account/service/start-stop-transfer">Start, Stop & Transfer</a>
+                                        </li>
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/account/settings/notifications">Notification Preferences</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 sub-menu mb-0">
+                                <div id="ctl04_DivOtherContacts" class="dropdown-container">
+                                    <h6 class="sub-title dropdown-item text-bold">Other Contacts:</h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="menu-item dropdown-item" href="/company/news/media-contacts">Media Contacts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="ctl04_navigationSocialMedia" class="dropdown-container">
+                                    <h6 class="sub-title dropdown-item text-bold">Social Media:</h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a id="ctl04_megaMenuFacebook" class="menu-item dropdown-item" href="https://www.facebook.com/AEPTexas">Facebook</a>
+                                        </li>
+                                        <li>
+                                            <a id="ctl04_megaMenuTwitter" class="menu-item dropdown-item" href="https://twitter.com/intent/user?screen_name=AEPTexas">Twitter</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <span id="ctl04_loginButtonsDesktop">
+                <button class="btn btn-danger btn-global-login collapsed" data-btn="login" type="button" data-toggle="collapse" data-target="#globalLoginMenu" aria-expanded="false" aria-controls="globalLoginMenu">LOG IN</button>
+            </span>
+            
+
+            <div class="search-container" aria-hidden="true">
+
+                <div id="ctl04_PnlSearch" class="form-inline search-form">
+	
+                    <a class="close-search" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </a>
+                    <input name="ctl00$ctl04$SiteSearchInput" type="text" id="ctl04_SiteSearchInput" class="form-control search-input js-site-search-input" placeholder="Search" />
+                    <a id="ctl04_SiteSearchButton" class="search-icon" href="javascript:__doPostBack(&#39;ctl00$ctl04$SiteSearchButton&#39;,&#39;&#39;)"></a>
+                
+</div>
+
+            </div>
+
+            <div class="open-search" alt="magnifying glass search icon" class="aep-nav-search"></div>
+            
+            <div class="nav-overlay"></div>
+
+        </div>
+
+    </div>
+</nav>
+ </noindexfb>
+
+<span id="ctl04_BreadcrumbsControl">
+<div aria-label="breadcrumb" class="aep-breadcrumb-nav home">
+    <div class="container">
+        <ol class="breadcrumb aep-breadcrumb">
+            
+        </ol>
+    </div>
+</div>
+
+</span>
+<span id="ctl04_BannerControl">
+
+
+<div id="ctl04_ctl02_bannerContainerHome" class="banner-container home">
+    <div id="bannerImage" class="banner-image home" style="background-image: url('/lib/images/banners/homepage-right-phone.jpg'); position:relative;">
+        <div class="container" style="height:100%;">
+            <div id="ctl04_ctl02_bannerContentHome" class="row d-lg-flex align-items-center" style="height: 100%">
+                <div class="col-8 col-md-6 col-xl-5 banner-contents">
+                    <div class="d-block">
+                        <h1 class="banner-title color-dark-red">KNOWLEDGE IS POWER.</h1>
+                        <a href="/account/bills/fraud-scams" class="d-block banner-description color-dark-gray">Due to the pandemic, scams have been on the rise. <span class='d-none d-md-inline'>Learn what you need to do to keep your family <nobr>safe.</span><span class="link-icon"></span></nobr></a>
+                    </div>
+                </div>
+            </div>
+        </div><!--end container -->
+        <div style="position:absolute; width:100%; bottom:0; background-color: rgba(255,255,255,0.9); border-bottom:1px solid #9e9fa1;" class="d-none d-md-block">
+            <div class="container">
+                <div class="task-bar home" >
+                    
+                    <div id="ctl04_ctl02_taskBarButtonChoice" class="task-bar-item  pl-0">
+                        <a href="/company/about/choice/" class=""><span class="ai ai-transmission-circle filter-dark-blue"></span><span class="shrink-wrap-text">Electric Choice</span></a>
+                    </div>
+                    <div id="ctl04_ctl02_dividerPay" class="task-divider"></div>
+                    <div class="task-bar-item">
+                        <a href="/outages/report" class="" title="report power outage"><span class="ai ai-lightning-circle filter-orange"></span><span class="shrink-wrap-text">Report <span class="text-nowrap">an outage</span></span></a>
+                    </div>
+                    <div class="task-divider"></div>
+                    <div class="task-bar-item">
+                        <a href="/account/service" title="start, stop, move service"><span class="ai ai-start-service-circle filter-teal"></span><span class="shrink-wrap-text">Start, Stop, <span class="text-nowrap">Move service</span></span></a>
+                    </div>
+                    <div id="ctl04_ctl02_dividerAssistance" class="task-divider"></div>
+                                        
+                     <div id="ctl04_ctl02_dividerChoice" class="task-divider"></div>
+                    <div id="ctl04_ctl02_taskBarButtonRates" class="task-bar-item pr-0">
+                        <a href="/company/about/rates/" class=""><span class="ai ai-info-dollar filter-green"></span><span class="shrink-wrap-text"><nobr>Rates &amp;</nobr> Tariffs</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+</span>
+<div class="mb-20 mb-sm-30 mb-lg-60"></div>
+
+</span>
+        <div id="main" class="container">
+            
+	<span id="cphContentMain_GlobalUserControl1">
+
+<style>    
+    .task-link {
+        display:block;
+        margin:0 0 15px 15px;
+        text-align: center;
+        font-weight:600;
+        font-size: 0.95rem;
+        line-height: 1;
+        padding:10px 20px;
+        text-transform:uppercase;
+    }
+    .ai.home {
+        width:28px;
+        height:28px;
+        margin:0 auto 5px auto;        
+    }
+    .task-text {
+        display:block;
+    }
+
+    .ai-meter-circle {
+        width:60px;
+        height:60px;
+    }
+    .ai-paper-leaf {
+        width:60px;
+    }
+    @media (min-width: 400px) {
+        .ai-meter-circle {
+            width:80px;
+            height:80px;
+        }
+        .ai-paper-leaf {
+            width:70px;
+        }
+    }
+    @media (min-width: 576px) {
+        .task-link {
+            box-sizing:border-box;
+            text-align: left;
+            display:flex;
+            align-items:center !important;
+            min-height:75px;
+            font-size:1.125rem;
+            line-height: 1.125;
+        }
+        .ai.home {
+            display: inline-block;
+            width:39px;
+            height:39px;    
+            margin:0 15px 0 10px;
+            display:inline-block;
+            overflow:visible;
+        }
+        .ai.home.ai-home-start-service,
+        .ai.home.ai-payment-assistance-circle {
+            width:60px;
+            max-width:39px;
+        }
+        .task-text {
+            display:inline;
+        }        
+    }
+</style>
+
+<div class="row no-gutters d-md-none mb-15 ml-n15">
+	
+    <div id="cphContentMain_ctl00_taskButtonStartService" class="col-6">
+        <a href="/account/service" title="Start, stop, move service" class="task-link border border-teal rounded">
+            <span class="ai home ai-home-start-service filter-teal"></span>
+            <span class="color-dark-gray" >Start, Stop, <span class="task-text"><span class="text-nowrap">Move service</span></span></span>
+        </a>        
+    </div>
+    <div id="cphContentMain_ctl00_taskButtonOutage" class="col-6">
+        <a href="/outages/report" title="Report an outage" class="task-link border border-orange rounded">
+            <span class="ai ai-home-report-outage home filter-orange"></span>
+            <span class="color-dark-gray">Report an <span class="task-text">outage</span></span>
+        </a>        
+    </div>
+     
+
+    <div id="cphContentMain_ctl00_taskButtonChoice" class="col-6">
+        <a href="/company/about/choice/" title="Electric Choice" class="task-link border border-dark-blue rounded">
+            <span class="ai ai-transmission-circle filter-dark-blue home"></span>
+            <span class="color-dark-gray">Electric  <span class="task-text">choice</span></span>
+        </a>        
+    </div>
+    <div id="cphContentMain_ctl00_taskButtonRates" class="col-6">
+        <a href="/company/about/rates/" title="Rates and Tariffs" class="task-link border border-green rounded">
+            <span class="ai ai-info-dollar filter-green home"></span>
+            <span class="color-dark-gray">Rates   <span class="task-text">and Tariffs</span></span>
+        </a>        
+    </div>    
+</div>
+
+
+
+
+<!-- AEP Ohio CONTENT -->
+
+<!-- END Ohio CONTENT -->
+
+<!-- AEP TEXAS CONTENT -->
+<div id="cphContentMain_ctl00_DivTexasContent">
+    <div class="row mb-st">
+        <div class="col-12 col-md-8 mb-30 mb-md-0">
+            <h2>Bring Home Energy Savings</h2>
+            <p class="mb-30">Apply for rebates and start saving energy and money at home.  AEP Texas  offers rebates to help bridge the gap when you make energy efficient upgrades in your home. By upgrading now, ENERGY STAR&reg; appliances, heating and cooling systems, and other efficient upgrades can save you energy and money for years to come.</p>
+            <a href="https://aeptexasefficiency.com/" class="btn btn-secondary">Learn about incentives</a>
+        </div>
+        <div class="col-12 col-md-4 text-md-center pl-15 pl-md-40 pl-lg-50 pl-xl-60">
+            <hr class="divider-sm mb-30 d-md-none" />
+            <div class="row no-gutters d-flex align-items-sm-center">
+                <div class="col-3 col-sm-2 col-md-12 mb-md-15"><span class="ai ai-lightbulb-savings filter-green mx-md-auto"></span></div>            
+                <div class="col-9 col-sm-6 col-md-12 pl-20 pl-md-0 mb-md-30">
+                    <span class="h4 mb-0">Choosing LED bulbs can help save you more money.</span>
+                    <p class="mt-20 mb-0 d-sm-none"><a href="/savings/business/energy/lighting" class="btn btn-secondary">See how</a></p>
+                </div>
+                <div class="col-12 col-sm-4 text-sm-right text-md-center col-md-12 pl-20 pl-xs-0 d-none d-sm-block">
+                    <a href="/savings/business/energy/lighting" class="btn btn-secondary">See how</a>
+                </div>
+            </div>
+            <hr class="divider-sm mt-30 d-md-none" />
+        </div>
+    </div>                
+
+    <div class="row mb-st">
+        <div class="col">
+            <!-- be sure and remove the underscore proceeding the runat attribute below -->
+            
+
+
+<a href="/clean-energy/electric-cars" class="visual-callout  white left" id="">
+    <span class="rounded d-block visual-image-container" style="background-image:url('lib/images/promos/primary/electric-car-image-aep-texas.jpg');">
+        <img src="lib/images/promos/primary/electric-car-image-aep-texas.jpg" alt="" class="img-fluid rounded" style="visibility:hidden;" />
+    </span>
+    <span class="visual-callout-content">
+        <span class="d-block">
+            <span class="visual-callout-title">Get Revved up for Electric <nobr>Cars<span class="link-icon"></span></nobr></span>
+            <span class="visual-callout-description">What you should know before you buy <nobr>electric<span class="link-icon"></span></nobr></span>
+        </span>
+    </span>
+</a>
+
+
+
+        </div>
+    </div>
+
+    <div class="row mb-st">
+        <div class="col-12 col-sm-6 mb-30 mb-sm-0">
+            <!-- be sure and remove the underscore proceeding the runat attribute below -->
+            
+
+
+<a href="/business/industry-solutions/" class="visual-callout half white " id="">
+    <span class="rounded d-block visual-image-container" style="background-image:url('/lib/images/promos/secondary/woman-in-white-blouse-on-laptop.jpg');">
+        <img src="/lib/images/promos/secondary/woman-in-white-blouse-on-laptop.jpg" alt="" class="img-fluid rounded" style="visibility:hidden;" />
+    </span>
+    <span class="visual-callout-content">
+        <span class="d-block">
+            <span class="visual-callout-title">Solutions for your <nobr>business<span class="link-icon"></span></nobr></span>
+            <span class="visual-callout-description">Find out how to save money, connect service, and <nobr>more.<span class="link-icon"></span></nobr></span>
+        </span>
+    </span>
+</a>
+
+
+           
+        </div>
+        <div class="col-12 col-sm-6">
+            <!-- be sure and remove the underscore proceeding the runat attribute below -->
+            
+
+
+<a href="/account/register" class="visual-callout half dark-gray " id="">
+    <span class="rounded d-block visual-image-container" style="background-image:url('/lib/images/promos/secondary/new-service.jpg');">
+        <img src="/lib/images/promos/secondary/new-service.jpg" alt="" class="img-fluid rounded" style="visibility:hidden;" />
+    </span>
+    <span class="visual-callout-content">
+        <span class="d-block">
+            <span class="visual-callout-title">ARE YOU NEW TO AEP <nobr>TEXAS<span class="link-icon"></span></nobr></span>
+            <span class="visual-callout-description">Welcome to the AEP Family! Register for your new account <nobr>here.<span class="link-icon"></span></nobr></span>
+        </span>
+    </span>
+</a>
+
+
+ 
+        </div>
+    </div>
+
+    
+    <hr class="divider-lg mb-30 mb-xl-40" />
+    
+
+
+<div class="row icon-callout ">
+    <div class="col-md-7 col-lg-8 d-flex">
+        <span id="cphContentMain_ctl00_iconCalloutTx_iconContainer" class="mr-20 ml-20 ml-lg-30">
+            <a href="/account/settings/notifications/" class="ai ai-bolt filter-orange align-self-center" aria-hidden="true"></a>
+        </span>
+        <span id="cphContentMain_ctl00_iconCalloutTx_textContainer" class="mt-1 mt-md-10 mb-1 mb-md-0">
+            <a href="/account/settings/notifications/" class="h2 orange text-lower">Enroll in outage alerts</a>
+            <span id="cphContentMain_ctl00_iconCalloutTx_descriptionText" class="h4 ml-0 mt-2 d-block ">Stay in the loop—get email or text alerts to let you know when your power goes out and when it’s restored.</span>
+        </span>
+    </div>
+    <div id="cphContentMain_ctl00_iconCalloutTx_btnContainer" class="col-md-5 col-lg-4 mt-2 mt-md-0 ml-80 ml-sm-90 ml-md-0 ic-btn-container align-self-center">
+        <a href="/account/settings/notifications/" class="btn btn-default align-self-center">Sign up today</a>
+    </div>
+</div>
+
+
+    <hr class="divider-lg mt-30 mt-xl-40 mb-st" />
+    
+
+    <div class="row tp">
+        <!-- first promo container defining column width of promo -->
+        <div class="col-lg-4 mb-30 mb-lg-0">
+            <div class="row">
+                <div class="tp-image-container col-sm-6 col-lg-12">
+                    <img src="/lib/images/promos/tertiary/meter-status.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="tp-info col-sm-6 col-lg-12">
+                    <!-- wrapper adds necessary margins -->
+                    <div class="col">
+                        <h3>View Your Meter Order Status</h3>
+                        <p class="tp-text">Want to know the status of your meter installation? Let’s show you how to follow your order process from start to finish.</p>
+                        <a class="btn btn-default mb-20" href="/business/builders/meter-status" title="">Track your order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second promo container -->
+        <div class="col-lg-4 mb-30 mb-lg-0">
+            <div class="row">
+                <div class="tp-image-container col-sm-6 col-lg-12">
+                    <img src="/lib/images/promos/tertiary/outages-faq.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="tp-info col-sm-6 col-lg-12">
+                    <div class="col">
+                        <h3>Confused About Outages?</h3>
+                        <p class="tp-text">We’ve compiled answers to our most frequently asked questions.</p>
+                        <a class="btn btn-default" href="/outages/faq">Get answers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- third promo container -->
+        <div class="col-lg-4">
+            <div class="row">
+                <div class="tp-image-container col-sm-6 col-lg-12">
+                    <img src="/lib/images/promos/tertiary/community.jpg" class="img-fluid rounded" alt="">
+                </div>
+                <div class="tp-info col-sm-6 col-lg-12">
+                    <div class="col">
+                        <h3>Caring for Our Community</h3>
+                        <p class="tp-text">See how we’re working with you to deliver brighter futures for our communities.</p>
+                        <a class="btn btn-default" href="/community/caring">How we're helping</a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>    
+</div>
+<!-- END AEP TEXAS CONTENT -->
+
+<!-- APCO CONTENT -->
+
+<!-- END APCO POWER CONTENT -->
+
+<!-- I&M CONTENT -->
+
+<!-- END I&M CONTENT -->
+
+<!-- KY POWER CONTENT -->
+
+<!-- END KY POWER CONTENT -->
+
+<!-- PSO CONTENT -->
+
+<!-- END PSO CONTENT -->
+
+<!-- SWEPCO CONTENT -->
+
+<!-- END SWEPCO CONTENT -->
+
+<!-- BEGIN NATIONAL CONTENT -->
+
+<!-- END NATIONAL CONTENT --></span>	
+
+        </div>
+
+        <span id="GlobalUserControl1"><span id="ctl05_BreadcrumbsControl">
+</span>
+
+<footer class="footer-nav">
+    <div class="background-red">
+        <div class="container">
+            <ul class="footer">
+                <li><a href="/safety/" title="Safety">Safety</a></li>
+                <li><a href="/company/" title="Company">Company</a></li>
+                <li><a href="/clean-energy/" title="Clean Energy">Clean Energy</a></li>
+                <li><a href="/business/" title="Business">Business</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row mb-md-40 mb-lg-35 mb-xl-45">
+                <div class="col-md-12 mb-30 mb-md-0 text-center text-lg-left">
+                    <span class="mr-md-12 mr-lg-10 mr-xl-15 info-callout">Need help? Call us.</span>
+                    <div class="mt-10 mt-lg-0 d-md-inline-block">
+                        <a href="tel:8662238508" aria-label="8 6 6. 2 2 3. 8 5 0 8." class="btn-underline">866.223.8508</a>
+                  </div>
+                </div>
+                
+            </div>
+            
+            
+            
+            <div id="ctl05_DivAEPTexasEspanol" class="row">
+                <div class="col-12 text-center text-lg-left">
+                    <a mporgnav href="https://espanol.aeptexas.com" class="espanol-footer-toggle" onclick="return switchLanguage('es');">Español</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col footer-links">
+                    <a href="https://www.aep.com" title="Visit AEP.com">Visit AEP.com</a><span class="footer-pipe">|</span><a href="https://aep.com/investors/" title="Investors">Investors</a><span class="footer-pipe">|</span><a href="https://aep.com/careers/ " title="Careers">Careers</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex flex-column flex-lg-row">
+                    <div class="disclaimer mr-lg-auto">
+                        <span>Use of this site constitutes acceptance of the AEP Terms and Conditions |  <a href="/privacy-policy" title="View our Privacy Policy">View our Privacy Policy</a>.</span>
+                        <span>© 1996-2021 American Electric Power. All Rights Reserved.</span>
+                    </div>
+                    <div id="ctl05_footerSocialContainer" class="d-flex justify-content-center justify-content-lg-end social-media">
+                        
+                        <a id="ctl05_footerTwitter" class="ai-twitter ai-small" href="https://twitter.com/intent/user?screen_name=AEPTexas" target="_blank"></a>
+                        <a id="ctl05_footerFacebook" class="ai-facebook ai-small" href="https://www.facebook.com/AEPTexas" target="_blank"></a>
+                        <a id="ctl05_footerYoutube" class="ai-you-tube ai-small" href="https://www.youtube.com/user/AEPTexas" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<span id="ctl05_FooterAdminPanelControl"></span>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="footerPDFModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-bottom" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" title="close"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 class="text-sm-center mt-40 mt-sm-0 mb-24">Select your state handbook</h2>
+                <hr class="divider-lg my-20" />
+                <ul id="ctl05_ulIM" class="document-icon-list d-block">
+                    <li class="ml-10 ml-sm-20">
+                        <a href="/lib/docs/global/CustomerHandbooks/Indiana_Michigan_Power_IN_Handbook.pdf" class="pdf-icon document-icon">Indiana Customer Handbook</a>
+                    </li>
+                    <li>
+                        <hr class="divider-sm my-35" />
+                    </li>
+                    <li class="ml-10 ml-sm-20">
+                        <a href="/lib/docs/global/CustomerHandbooks/Indiana_Michigan_Power_MI_Handbook.pdf" class="pdf-icon document-icon">Michigan Customer Handbook</a>
+                    </li>
+                </ul>
+                <ul id="ctl05_ulSWEPCO" class="document-icon-list d-block">
+                    <li class="ml-10 ml-sm-20">
+                        <a href="/lib/docs/global/CustomerHandbooks/SWEPCO_Texas_Handbook.pdf" class="pdf-icon document-icon">Texas Customer Handbook</a>
+                    </li>
+                    <li>
+                        <hr class="divider-sm my-35" />
+                    </li>
+                    <li class="ml-10 ml-sm-20">
+                        <a href="/lib/docs/global/CustomerHandbooks/2011ARSWEPCOHandbook.pdf" class="pdf-icon document-icon">Arkansas: Your Rights as a Customer</a>
+                    </li>
+                    <li>
+                        <hr class="divider-sm my-35" />
+                    </li>
+                    <li class="ml-10 ml-sm-20">
+                        <a href="/lib/docs/global/CustomerHandbooks/2011ARSWEPCOCommercialHandbook.pdf" class="pdf-icon document-icon">Arkansas: "Arkansas Commercial/Industrial Price Options"</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modals -->
+<span id="ctl05_GlobalUserControl1"><div id="ctl05_ctl02_DivGeneric">
+    <span id="ctl05_ctl02_ModalPaperlessQuestionControl">
+
+</span>
+    <span id="ctl05_ctl02_ModalDisconnectControl">
+
+
+</span>
+    <span id="ctl05_ctl02_ModalReconnectControl">
+
+
+</span>
+</div>
+
+</span>
+<span id="ctl05_VideoModalControl">
+
+<div id="ModalVideo" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 class="video-title" id="modalVideoTitle">Loading video...</h2>  
+                <hr class="divider-sm mb-30" />
+                <div class="mx-md-40">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe id="videoIframe" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                    </div> 
+                    <p class="video-description mt-20 mb-0" id="videoDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></span>
+<span id="ctl05_PrivacyPolicyModalControl">
+
+<div class="modal fade" tabindex="-1" role="dialog" id="ModalPrivacyPolicy" aria-labelledby="#ModalPrivacyPolicyTitle">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            	<h3>Privacy Policy for AEP Texas, a unit of American Electric Power (AEP)</h3>
+<hr class='divider-lg my-25' />
+<h4 class='mt-st'>Scope</h4>
+<p>
+This Privacy Policy applies only to 
+     <a href='https://www.AEPTexas.com' target='_blank'>AEPTexas.com</a> and the AEP Texas customer mobile app (com.aep.customerapp.aeptexas).
+    Other AEP websites and apps may be governed by their own privacy policies, appropriate to the uses and needs of each. 
+    Throughout the site or app, we may provide links to resources and sites that are not part of AEPTexas.com or the AEP Texas customer mobile app.
+    This Privacy Policy does not apply to those resources and sites.
+</p>
+
+
+<h4 class='mt-st'>Consent</h4>
+<p>
+	By using this site or app, you consent to the terms of this Privacy Policy. 
+	Whenever you submit information via this site or app, you agree to the collection, use, and disclosure of that information in accordance with this Privacy Policy.
+</p>
+
+<h4 class='mt-st'>Information Collected</h4>
+<ol style='list-style-type: lower-alpha;'>
+	<li>
+		<p class='mb-1'><strong>Passively collected information</strong></p>
+		During your use of this site or app, we may collect anonymous information about your visit here through the use of server logs, cookies, scripts, tracking pixels 
+        and other Web traffic tracking systems. This information is aggregated and used to improve user experience through analysis of user activities. 
+        This information is never combined with any of the personally identifiable information you may provide in your use of the features of this site or app.
+    </li>		
+	<li>
+		<p class='mb-1'><strong>Personally identifiable information</p></strong>
+		On certain forms of this site or app, you may be asked to provide information about yourself or your account with us, either to identify yourself to us or to request a service from us. 
+        In each case, we will inform you what information is provided at your option and what information is required to complete the transaction or activity you are engaged in. 
+        If you are unwilling to provide this required information, you will be unable to complete the requested transaction.
+	</li>
+</ol>
+
+<h4 class='mt-st'>Use and disclosure of information</h4>
+<p>The information you provide to us will be used to respond to requests you may make for services. Some or all of this information may be added to your permanent account record and may be used for research purposes. </p>
+<p>In addition, we may use elements of this information in the following situations:</p>
+<ol>
+	<li>We may transfer the information to AEP Texas’s affiliates and subsidiaries, unless such transfer is prohibited by law; </li>
+	<li>We may transfer the information as part of a merger, consolidation, acquisition, divestiture or other corporate restructuring (including bankruptcy); </li>
+	<li>We may make the information available to third parties who are providing the product, service or information that you have requested (but not your password); </li>
+	<li>We may make such information available to third parties who are providing services to AEP Texas (for example, providing the information to third parties performing computer-related services for AEP Texas); </li>
+	<li>We may use the information to communicate with you about products and services that may be of interest to you.</li>
+	<li>We may disclose the information if we form a good-faith belief that disclosure of such information is necessary to investigate, prevent, or take action regarding any illegal activities or regarding interference with the operation of our site or violation of its terms of use; or </li>
+	<li>We may disclose the information if we believe that disclosure is required by law or regulation or in response to a subpoena or other order of a court or other governmental agency. </li>
+</ol>
+<p>AEP Texas uses Flurry Analytics Service (provided by Yahoo) in order to improve its mobile apps. <a href='https://developer.yahoo.com/flurry/legal-privacy/terms-service/' target='_blank'>Flurry’s privacy policy</a> governs the use of this information.</p>
+<p>Also, AEP Texas reserves the right to share any aggregated information (i.e., non-personally identifiable information) with any third parties for any reason, unless prohibited by law. </p>
+<p>We will not sell, rent or otherwise disclose the information we gather about you or your account to any third party, except as outlined in this Privacy Policy.</p>
+
+
+<h4 class='mt-st'>Security</h4>
+<p>AEP Texas takes reasonable steps to protect your personally identifiable information as it is transferred to us, through the use of Web technologies such as the Secure Sockets Layer and others. However, no Internet transmission of information is ever completely secure or error-free. In particular, e-mail sent to or from AEP Texas may not be secure.</p>
+
+<h4 class='mt-st'>How to Reach Us</h4>
+<p>
+	If you would like to update your personally identifiable information or if you have questions 
+	about this privacy policy, please <a href='mailto:customerprivacy@AEP.com'>contact us</a>.
+</p>
+
+<h4 class='mt-st'>Changes to This Policy</h4>
+<p>
+	AEP Texas reserves the right to change this Privacy Policy at any time.  If this Privacy Policy 
+	changes, the revised policy will be posted to this site. Please review this Privacy Policy before 
+	you provide any personally identifiable information through this site. Use of our web site after 
+	the posting of a revised privacy policy constitutes your consent to the revised policy. 
+</p>
+
+<p>This policy was last revised on December 13, 2017.</p>
+            	<hr class="divider-sm mb-30 mt-20" />
+            	<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</span>
+
+<!-- Modal for login form, backdrop issues when included in global login control -->
+<div class="modal fade" tabindex="-1" role="dialog" id="rememberUserIdModal" aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>What Does "Remember User ID” Mean?</h3>
+                <p>“Remember User ID” helps you log in without having to memorize your ID or look it up every time. When you opt in, we automatically fill in your ID from then on. To avoid unauthorized access, you’ll still have to enter your password.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="securityCodeModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3 class="video-title">Security Code</h3>
+                <p>Your security code is a short word or phrase you set up with our customer service associates to provide extra protection for your online account.</p>
+                <p>If you have forgotten your security code, please call 877.373.4858.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<span id="ctl05_GlobalLoginControl">
+<div id="globalLoginMenu" class="collapse home is-texas ">
+    <div class="off-canvas-overlay" id="loginOverlay"></div>
+
+    <div id="globalLoginMenuContainer999999999" class="container px-0 position-relative">
+		<div id="globalLoginMenuContents">
+			<span id="ctl05_ctl05_LoginControl" ValidationGroup="GlobalLogin" Heading="Welcome back!">
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="ctl05_ctl05_ctl00_PnlLoginForm">
+	
+    <div id="ctl05_ctl05_ctl00_loginForm" role="form" class="form-red">
+        
+        
+        <div id="ctl05_ctl05_ctl00_DivHeading" class="row">
+            <div class="col">
+                <h3 class="mb-0"">Welcome back!</h3>
+                <p>Please login to manage your account.</p>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="col">
+                <div id="ctl05_ctl05_ctl00_TbUserID_ctl05_ctl05_ctl00_TbUserID_wrapper" class=" form-group aep-custom "><label for="ctl05_ctl05_ctl00_TbUserID">User ID</label><div class=" input-group"><input name="ctl00$ctl05$ctl05$ctl00$TbUserID$ctl05_ctl05_ctl00_TbUserID" type="text" id="ctl05_ctl05_ctl00_TbUserID" class=" form-control" autocapitalize="off" data-required="true" autocorrect="off" data-field-type="user-id" onblur="$(this).validate();" validationgroup="GlobalLogin" autocomplete="off" placeholder="User ID" data-validation-type="login" data-required-message="Please enter your User ID" /></div></div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <div id="ctl05_ctl05_ctl00_TbPassword_ctl05_ctl05_ctl00_TbPassword_wrapper" class=" form-group aep-custom mb-0"><label for="ctl05_ctl05_ctl00_TbPassword">Password</label><div class=" input-group"><input name="ctl00$ctl05$ctl05$ctl00$TbPassword$ctl05_ctl05_ctl00_TbPassword" type="password" id="ctl05_ctl05_ctl00_TbPassword" class=" form-control" data-validation-type="login" data-field-type="password" onblur="$(this).validate();" validationgroup="GlobalLogin" data-required="true" placeholder="Password" autocomplete="off" /></div></div>
+            </div>
+        </div>
+        <div class="form-row ">
+            <div class="col d-flex align-items-center">
+                <div class="selector-wrap "><div class="checkbox"><input name="ctl00$ctl05$ctl05$ctl00$CbRememberUserID$ctl05_ctl05_ctl00_CbRememberUserID" type="checkbox" id="ctl05_ctl05_ctl00_CbRememberUserID" onblur="$(this).validate();" onchange="$(this).validate();" validationgroup="NormalLogin" data-field-type="checkbox" class="" /><label for="ctl05_ctl05_ctl00_CbRememberUserID">Remember User ID</label></div></div>
+                
+            </div>
+
+            
+        </div>
+        <div class="d-flex flex-wrap mb-n20">
+            <div class="flex-shrink-1 mt-1 order-2 ml-auto ">
+                <!-- use linkbutton so global login is not the first input type submit button on the page causing issues with enter key -->
+                
+            <input type="submit" name="ctl00$ctl05$ctl05$ctl00$BtnLogin" value="GO" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl05$ctl05$ctl00$BtnLogin&quot;, &quot;&quot;, true, &quot;GlobalLogin&quot;, &quot;&quot;, false, false))" id="ctl05_ctl05_ctl00_BtnLogin" class="btn btn-secondary-white mb-20" />
+            </div>
+            <div id="ctl05_ctl05_ctl00_DivForgetUserIDPasswordRegisterShort" class="order-1 mr-20 mr-sm-60 mb-20 text-forgot">
+                <span>
+                    Forgot <a href="/account/forgot-user-id">User ID</a> or <a href="/account/forgot-password/">Password</a>?
+                </span><br>
+                <a href="/account/register">Register</a>
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+</span>
+		</div>
+	</div>
+</div>
+</span>
+
+<span id="ctl05_OpowerWidgetInitalizeControlFooter">
+
+
+
+
+</span>
+
+<span id="ctl05_smartAppBanner">
+
+
+
+
+
+</span>
+
+<span id="ctl05_SurveyControl"><div id="ctl05_ctl08_plSurveyContent"><script type="text/javascript" src="https://nebula-cdn.kampyle.com/wu/472396/onsite/embed.js" async></script></div>
+
+<script type="text/javascript">
+
+	var OPCO_NAME = "AEP Texas";
+	var OPCO_NUMBER = ""
+	var BILLING_ACCOUNT_NUMBER = ""
+	var ACCOUNT_CLASS_CODE = ""
+	var ACCOUNT_STATUS_CODE = ""
+	var SERVICE_CITY = ""
+	var SERVICE_STATE = ""
+	var SERVICE_ZIP = ""
+	var PAPERLESS_ENROLLMENT = ""
+	var BUDGET_AMP = ""
+	var EMAIL_ADDRESS = ""
+	var IS_BILLING_ALERT_ENROLLED = ""
+	var IS_OUTAGE_ALERT_ENROLLED = ""
+	var EDI_BILL_CODE = ""
+	var PAGE_URL = "https://www.aeptexas.com/default.aspx"
+	var showACHSurvey = "false"
+	var hideMedalliaSurvey = "true"
+
+</script>
+</span>
+<span id="ctl05_WebChatControl">
+</span>
+
+<div class="off-canvas-overlay" id="pageOverlay"></div>
+</span>
+
+        <span id="FormEndControl">
+
+
+<script>var IS_IE_LT9 = false;</script>
+<!--[if lt IE 9]>
+	<script>IS_IE_LT9 = true;</script>	
+<!-- <![endif]-->
+	
+<!-- specified in ApplicationEventLogic -->
+
+<script src="/bundles/scripts-formend?v=VNa3FGomZYGc1YJc5T-8omswmMbfG4IKCm16bpU-8To1"></script>
+
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+
+<!--noindex begin-->
+<!-- Conversion Pixel - AEP_2018_Site_Visit - DO NOT MODIFY -->
+<img src="https://secure.adnxs.com/px?id=1032291&seg=14605863&t=2" width="1" height="1" style="position:absolute; visibility:hidden;" />
+<!-- End of Conversion Pixel -->
+<!--noindex end-->
+
+
+
+</span>
+        
+        
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+        if(APP.cookieGet('Modal.Question.Asked')){APP.cookieDelete('Modal.Question.Asked');}
+        //]]>
+</script>
+</form>
+</body>
+</html>

@@ -1,0 +1,689 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page height differs greatly. A is about 22,740px tall; B is about 3,857px.",
+   "evidence": "A layout.page_height 22740 (18 slices); B layout.page_height 3857 (3 slices)",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|01",
+    "naturalwellbeing_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "B uses no SVG icons. Social links, search, cart and login are plain text labels.",
+   "evidence": "B svgs: 0. B slice 00 header shows the text 'Log in', 'Search', 'Cart'; the top bar shows 'Facebook Pinterest Instagram' as text.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|03",
+    "naturalwellbeing_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B has a teal announcement bar at the top with centered white text. In A the same copy is a plain text line partway down the page.",
+   "evidence": "B slice 00: 'Free Shipping on all US orders over $50' on teal. B backgrounds include rgb(26,138,148). A slice 12 shows the same text as plai",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|04",
+    "naturalwellbeing_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B has a light utility bar with the phone number and Contact Us on the left and social links on the right.",
+   "evidence": "B slice 00, second row on a pale background (rgb(241,247,246) is among B's backgrounds)",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|05",
+    "naturalwellbeing_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "B's main header is a single horizontal row: logo on the left, centered navigation links, and account links on the right.",
+   "evidence": "B slice 00: logo at x=150, nav items 'Shop▾ Our Story The Natural Wellbeing Difference Health Journal', then 'Log in Search Cart'",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|06",
+    "naturalwellbeing_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "B's 'Shop' item shows only a caret, and no submenu is visible in the static render.",
+   "evidence": "B slice 00 'Shop▾'. B ul count is 11, li 59.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|08"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I6",
+   "text": "The H1 differs. A's H1 is the brand name 'Natural Wellbeing' at 32px. B's H1 is the hero headline 'For Women Like You' at 67.2px.",
+   "evidence": "A h1 text 'Natural Wellbeing', font_size 32px. B h1 text 'For Women\\nLike You', font_size 67.2px.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|09",
+    "naturalwellbeing_com|opus|11",
+    "naturalwellbeing_com|opus|12",
+    "naturalwellbeing_com|opus|13",
+    "naturalwellbeing_com|sonnet|01",
+    "naturalwellbeing_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "B's call-to-action buttons are pill-shaped. They come in filled teal or teal-outlined versions.",
+   "evidence": "B border_radius bucket_pill: 7. B slices show 'Shop All' and 'Shop Wellness Kits' filled, and 'View all', 'Get Rewarded', 'Say Hello' and 'H",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|14",
+    "naturalwellbeing_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "B uses small and medium corner radii on cards and buttons.",
+   "evidence": "B bucket_1_7: 16, bucket_8_15: 19. B's primary_button radius is 6px.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|16",
+    "naturalwellbeing_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "B presents Best Sellers as a 4-column grid of 12 bordered cards, each with the product name in bold and the price in teal.",
+   "evidence": "B slice 00 'Best Sellers' grid, 3 rows × 4. B display_grid: 4. Product names are h3 elements (12 product h3s in B's heading_outline).",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|17",
+    "naturalwellbeing_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "B adds an h2 'Best Sellers' that does not appear in A's heading outline.",
+   "evidence": "B heading_outline level 2 'Best Sellers'",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|19",
+    "naturalwellbeing_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "Neither page shows product images. A's product images have zero size, and B's product cards contain text only.",
+   "evidence": "A product images (e.g. Hair_Essentials_90caps…png) have rect w:0 h:0. B slice 00 cards are text only. B .jpg images have rect 0×0.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|20",
+    "naturalwellbeing_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "B shows the four 'Life' category icons as a 4-column row of white cards on a pale tinted band, with icon and label centered.",
+   "evidence": "B slice 01. Icons at x=249, 539, 829, 1119, y=1543, sized 72×72.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|22",
+    "naturalwellbeing_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "Both pages use the same four colored knot-motif category icons: orange, green, teal and magenta.",
+   "evidence": "A nwb_icon-life_*.png and B nwb-icon-life-*.png, both natural size 100×100. Visible in A slice 13 and B slice 01.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|24"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I14",
+   "text": "B treats 'Inspired By Nature / Refined By Science' as a full-width dark-teal band with white text: a light first line, a bold second line, and a white pill 'Learn More' button.",
+   "evidence": "B slice 01. B backgrounds include rgb(19,104,112). B heading_outline h2 'Inspired By Nature\\nRefined By Science'.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|25",
+    "naturalwellbeing_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "B adds a 'Shop Wellness Kits' button under 'Renew Yourself, Naturally'. A's section has no button.",
+   "evidence": "B slice 01 shows the button. A slice 13 shows only the paragraph.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|27",
+    "naturalwellbeing_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "B sets body copy in centered, narrow columns with muted grey text and generous line height.",
+   "evidence": "B body_line_height 25.6px; A body_line_height normal. B text colors include rgb(93,109,112). B slices 01–02 show centered paragraphs.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|28",
+    "naturalwellbeing_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "B shows the three engagement blocks (Wellbeing Rewards, Meet Our Team, Ask An Expert) as three bordered cards with teal h3 titles and outlined pill buttons.",
+   "evidence": "B slice 02. The three h3 elements are in teal rgb(19,104,112).",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|30",
+    "naturalwellbeing_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "B's footer has a dark charcoal-teal background with light text, laid out in four columns: Shop, Learn More, Contact Us, Sign Up and Save.",
+   "evidence": "B backgrounds include rgb(31,47,49). B text colors include rgb(212,224,224). B slice 02.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|32",
+    "naturalwellbeing_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "Footer column headings differ in markup. B uses h4 elements. A has a single h4, 'WHAT'S YOUR EMAIL?', which is not visible in the screenshots.",
+   "evidence": "B heading_outline h4: Shop, Learn More, Contact Us, Sign Up and Save. A heading_outline h4: \"WHAT'S YOUR EMAIL?\".",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|34",
+    "naturalwellbeing_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "B's newsletter field is an email input joined to a teal 'Subscribe' button. A shows a default input next to a grey button with a large envelope icon.",
+   "evidence": "B slice 02. A slice 16 shows the default input and a 'Subscribe' button with an envelope SVG.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I21",
+   "text": "Both pages show the same nine payment-method icons. A lists them vertically with bullets; B shows them in a horizontal row.",
+   "evidence": "A slice 17: bulleted vertical list. B images from american-express.svg through visa.svg at y=3758, x from 150 to 573.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I22",
+   "text": "B's Apple Pay icon renders as an empty white badge with a black curve. A's Apple Pay badge shows the 'Pay' mark.",
+   "evidence": "B slice 02: the second payment badge has no visible logo. A slice 17 shows the Apple Pay logo.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|37"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I23",
+   "text": "B separates the FDA disclaimer and copyright from the footer columns with a thin divider line and sets them in small light text. A centers the disclaimer at the default text size.",
+   "evidence": "B slice 02, bottom. A slice 17: the disclaimer is centered in about a 720px block.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|38"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I24",
+   "text": "A shows two logo images side by side (140px and 110px) next to the text H1 'Natural Wellbeing'. B shows one 140×46 logo in the header.",
+   "evidence": "A images nwb_logo_140x.png at (267,10830) and nwb_logo_110x.png at (415,10840). B nwb-logo.png at (150,87).",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|39",
+    "naturalwellbeing_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "B has no visible search input. 'Search' is a text link in the header.",
+   "evidence": "B input count 1 (email only). A input count 8, including 'Search our store'.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|41"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I26",
+   "text": "B uses semantic sectioning elements: one nav and seven section elements. A has no nav or section elements.",
+   "evidence": "B semantic: nav 1, section 7. A semantic: nav 0, section 0.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|43",
+    "naturalwellbeing_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "The page titles differ. A: 'Holistic Health Supplements – Natural Wellbeing'. B: 'Natural Wellbeing | All-Natural Supplements For Women Like You'.",
+   "evidence": "title fields in A_facts and B_facts",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|49",
+    "naturalwellbeing_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "B uses flexbox and grid (21 flex and 4 grid containers). A's computed layout has none.",
+   "evidence": "B display_flex 21, display_grid 4. A display_flex 0, display_grid 0.",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|opus|50",
+    "naturalwellbeing_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "Neither page uses box shadows; B separates its cards with thin light borders.",
+   "evidence": "box_shadows 0 on both. B slice 00 cards have 1px light-grey borders.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|51",
+    "naturalwellbeing_com|opus|52",
+    "naturalwellbeing_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "B's palette is teal-centric (several shades of teal, slate text, pale mint). A is black text, default link blue and light-grey button fills.",
+   "evidence": "B top_backgrounds: rgb(26,138,148), rgb(19,104,112), rgb(241,247,246). A top_backgrounds: rgb(239,239,239) (20), rgb(255,255,255).",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|53",
+    "naturalwellbeing_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "A's visible word count is higher (636 vs 428), mostly because its navigation is repeated. A also has 2 emoji; B has none.",
+   "evidence": "text_stats.words: A 636, B 428. Emoji: A 2, B 0. Both have 3 exclamations.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|54",
+    "naturalwellbeing_com|sonnet|38",
+    "naturalwellbeing_com|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "Class usage differs. A has 1,190 class uses (316 unique, about 17% Tailwind-like). B has 77 class uses (30 unique) and no Tailwind-like classes.",
+   "evidence": "A classes total 1190, unique 316, tailwind_like_fraction 0.168. B total 77, unique 30, fraction 0.",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|opus|46",
+    "naturalwellbeing_com|opus|55",
+    "naturalwellbeing_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "Side A renders as essentially unstyled default HTML: Times New Roman is the computed font on 920 elements, with Arial on 77 and FontAwesome on 1. Side B uses a single \"Helvetica Neue\" sans-serif stack on all 286 measured elements.",
+   "evidence": "A fonts_by_element_count: Times New Roman 920, Arial 77, FontAwesome 1; B: Helvetica Neue 286",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "A's h2 is computed at 80px bold, much larger than B's h2 at 35.2px weight 400. A's h2 scale is oversized relative to its body text, while B's section headings stay moderate.",
+   "evidence": "A h2 font_size 80px weight 700; B h2 35.2px weight 400",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "B's body background is explicitly white (rgb(255,255,255)). A's body background is transparent (rgba(0,0,0,0)).",
+   "evidence": "A body_bg rgba(0,0,0,0); B body_bg rgb(255,255,255)",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|sonnet|05"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "A's DOM carries heavy platform scaffolding: 96 scripts, 27 style tags, 12 links, 11 noscript, 4 iframes and 21 meta tags (og, twitter, shopify). B has 1 script, 1 link, 3 meta tags and 0 svg elements.",
+   "evidence": "A script 96, style 27, iframe 4; B script 1, link 1, meta 3",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "B's heading hierarchy skips levels and starts at h3. The nav category labels (Life Boosters, etc.) are h3s before the h1 in DOM order, and the product titles are h3s under an h2 'Best Sellers'.",
+   "evidence": "B heading_outline begins with level 3 'Life Boosters' ... then level 1",
+   "side": "generated",
+   "members": [
+    "naturalwellbeing_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I38",
+   "text": "A has 169 anchors and 20 buttons. B has 87 anchors and 3 buttons. A's link count is inflated by repeated mobile/desktop menus and carousel structure, and is mostly rendered as blue underlined default links.",
+   "evidence": "counts anchors A 169, B 87; buttons A 20, B 3; A text color rgb(0,0,238) on 390 elements",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|sonnet|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I39",
+   "text": "B's content is centered within a ~1140px column (x=150 to 1290) with consistent margins. A's content sits flush at the left edge (x=8 default body margin) with no max-width container.",
+   "evidence": "B rects x=150..1290; A rects x=8; A_slice_14 text at x=8",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I40",
+   "text": "B's section rhythm alternates white, pale mint (#F1F7F6) and dark teal bands. A's slices show one continuous white background with no section colour banding.",
+   "evidence": "B top_backgrounds #F1F7F6 2, #136870 1, #1F2F31 1; A top backgrounds only #EFEFEF and white",
+   "side": "both",
+   "members": [
+    "naturalwellbeing_com|sonnet|37"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Primary and secondary call-to-action buttons are fully rounded pills, in filled or outlined variants.",
+   "family": "component",
+   "items": [
+    "I7",
+    "I14",
+    "I17"
+   ]
+  },
+  {
+   "statement": "Cards and buttons use modest small-to-medium corner radii alongside pill shapes.",
+   "family": "decoration",
+   "items": [
+    "I8"
+   ]
+  },
+  {
+   "statement": "Product listings appear as a multi-column grid of thin-bordered cards with bold names and accent-colored prices.",
+   "family": "component",
+   "items": [
+    "I9",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Cards are separated by thin light borders rather than box shadows, giving a flat look.",
+   "family": "decoration",
+   "items": [
+    "I29"
+   ]
+  },
+  {
+   "statement": "Icons are absent as SVGs; utility actions like search, cart, login and social links are plain text labels.",
+   "family": "imagery",
+   "items": [
+    "I1",
+    "I25"
+   ]
+  },
+  {
+   "statement": "A colored announcement bar with centered white text sits at the very top of the page.",
+   "family": "component",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "A light utility bar above the header holds contact details on the left and social links on the right.",
+   "family": "layout",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Header is a single horizontal row: logo left, centered navigation links, account links right.",
+   "family": "layout",
+   "items": [
+    "I4",
+    "I24"
+   ]
+  },
+  {
+   "statement": "Dropdown navigation items show only a caret indicator, with no submenu visible in the static state.",
+   "family": "component",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "The H1 is a large hero headline (about 67px) rather than the brand name.",
+   "family": "typography",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Section headings are moderate in size and light weight, keeping a restrained heading scale.",
+   "family": "typography",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "Entire page uses a single clean sans-serif font stack consistently across all elements.",
+   "family": "typography",
+   "items": [
+    "I33"
+   ]
+  },
+  {
+   "statement": "Body copy is muted grey, centered in narrow columns, with generous line height.",
+   "family": "typography",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Palette is teal-centric, with several teal shades, slate text and pale mint tints.",
+   "family": "color",
+   "items": [
+    "I30",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Sections alternate between white, pale mint and dark teal full-width bands for visual rhythm.",
+   "family": "color",
+   "items": [
+    "I40",
+    "I14"
+   ]
+  },
+  {
+   "statement": "A full-width dark band features white text, a light first line, a bold second line and a white pill button.",
+   "family": "component",
+   "items": [
+    "I14"
+   ]
+  },
+  {
+   "statement": "Category icons appear as a centered row of four white cards on a pale tinted band, each with icon and label.",
+   "family": "layout",
+   "items": [
+    "I12",
+    "I13"
+   ]
+  },
+  {
+   "statement": "Engagement blocks are three bordered cards with accent-colored titles and outlined pill buttons.",
+   "family": "component",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Sections end with explicit call-to-action buttons beneath short intro paragraphs.",
+   "family": "copy",
+   "items": [
+    "I15",
+    "I7"
+   ]
+  },
+  {
+   "statement": "Footer has a dark background with light text in four columns with h4 headings.",
+   "family": "layout",
+   "items": [
+    "I18",
+    "I19"
+   ]
+  },
+  {
+   "statement": "Newsletter signup is an email input joined to an accent-colored Subscribe button.",
+   "family": "component",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Payment method icons are shown in a compact horizontal row.",
+   "family": "layout",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "Legal disclaimer and copyright sit below a thin divider line in small, light text.",
+   "family": "decoration",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "Content is centered in a fixed-width container (about 1140px) with consistent side margins.",
+   "family": "layout",
+   "items": [
+    "I39"
+   ]
+  },
+  {
+   "statement": "Layout is built with flexbox and grid containers.",
+   "family": "layout",
+   "items": [
+    "I28",
+    "I9"
+   ]
+  },
+  {
+   "statement": "Page is compact and short, with few sections and little repeated content.",
+   "family": "layout",
+   "items": [
+    "I0",
+    "I31"
+   ]
+  },
+  {
+   "statement": "Markup uses semantic nav and section elements.",
+   "family": "semantic_dom",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Heading hierarchy is irregular, starting at h3 and skipping levels, with product titles as h3 under an h2.",
+   "family": "semantic_dom",
+   "items": [
+    "I37",
+    "I10",
+    "I9"
+   ]
+  },
+  {
+   "statement": "DOM is lean, with minimal scripts, meta tags, few classes and no utility-framework classes.",
+   "family": "semantic_dom",
+   "items": [
+    "I36",
+    "I32",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Page title pairs brand name with a benefit-oriented tagline.",
+   "family": "copy",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Product cards show text only, with no product imagery.",
+   "family": "imagery",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "Copy has no emoji and uses a restrained, warm and direct tone.",
+   "family": "copy",
+   "items": [
+    "I31"
+   ]
+  }
+ ]
+}

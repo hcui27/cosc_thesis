@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knee Guru – Your source of knee information</title>
+<meta name="description" content="Primers, courses, eBooks, expert views and articles about knees, from the KNEEguru editorial team and knee specialists.">
+<style>
+:root{
+  --bg:#fff; --surface:#f2f6fa; --ink:#1d2a36; --muted:#55657a;
+  --brand:#1f6fb2; --brand-dark:#154e80; --accent:#d62839; --line:#dbe3ec;
+  --radius:14px; --max:1120px;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#10171e; --surface:#18222c; --ink:#e8eef4; --muted:#9fb0c2; --brand:#6db3ee; --brand-dark:#9ccdf7; --line:#2a3745}
+}
+*{box-sizing:border-box}
+html{font-size:100%;scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+img{max-width:100%;height:auto}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{line-height:1.2;margin:0 0 .5em}
+section{padding:64px 0}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+/* top bar */
+.top{background:var(--brand-dark);color:#fff;font-size:.85rem}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:40px;flex-wrap:wrap}
+.top a{color:#fff;margin-right:14px}
+.textsize{display:flex;align-items:center;gap:6px}
+.textsize button{background:rgba(255,255,255,.15);color:#fff;border:0;border-radius:6px;padding:2px 9px;cursor:pointer;font:inherit}
+.textsize button:hover{background:rgba(255,255,255,.3)}
+
+/* header */
+header.site{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
+.logo{font-weight:800;font-size:1.45rem;color:var(--ink);letter-spacing:-.02em}
+.logo span{color:var(--brand)}
+.logo:hover{text-decoration:none}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+nav li{position:relative}
+nav a.t{display:block;padding:10px 12px;color:var(--ink);font-weight:500;border-radius:8px}
+nav a.t:hover{background:var(--surface);text-decoration:none}
+nav .sub{display:none;position:absolute;left:0;top:100%;min-width:230px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+nav li:hover>.sub,nav li:focus-within>.sub{display:block}
+nav .sub a{display:block;padding:7px 10px;border-radius:6px;color:var(--ink);font-size:.95rem}
+nav .sub a:hover{background:var(--surface);text-decoration:none}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 12px;font:inherit;cursor:pointer}
+
+/* hero */
+.hero{padding:56px 0 72px;background:linear-gradient(180deg,var(--surface),var(--bg))}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.03em;margin:.2em 0 .4em}
+.hero h1 em{font-style:normal;color:var(--brand)}
+.hero p.lead{font-size:1.15rem;color:var(--muted);max-width:34em}
+.hero img{border-radius:24px;box-shadow:0 20px 50px rgba(20,50,80,.2);display:block;width:100%;max-width:480px;margin-left:auto}
+.paths{list-style:none;padding:0;margin:28px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.paths a{display:flex;align-items:center;gap:12px;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);font-weight:500;transition:.15s}
+.paths a:hover{border-color:var(--brand);transform:translateY(-2px);text-decoration:none;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.paths img{width:32px;height:28px;object-fit:contain;flex:none;box-shadow:none;border-radius:0;margin:0;filter:none}
+@media (prefers-color-scheme:dark){.paths img{filter:invert(1)}}
+.paths a::after{content:"→";margin-left:auto;color:var(--brand)}
+
+/* portfolio */
+.head{max-width:640px;margin-bottom:36px}
+.head h2{font-size:clamp(1.7rem,3.5vw,2.4rem);letter-spacing:-.02em}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px;color:var(--ink);transition:.15s}
+.card:hover{transform:translateY(-4px);border-color:var(--brand);text-decoration:none;box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.card img{width:44px;height:52px;object-fit:contain;margin-bottom:16px;align-self:flex-start}
+.card h3{font-size:.95rem;letter-spacing:.1em;color:var(--brand)}
+.card p{margin:0;color:var(--muted)}
+
+/* latest */
+.latest{background:var(--surface)}
+.articles{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+article{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+article h3{font-size:1.1rem;margin-bottom:.5em}
+article h3 a{color:var(--ink)}
+article h3 a:hover{color:var(--brand)}
+article p{margin:0;color:var(--muted);font-size:.95rem}
+
+/* sponsors */
+.sponsors p{max-width:760px;color:var(--muted)}
+.logos{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin:28px 0}
+.logos a{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 22px;display:flex;align-items:center;min-height:88px}
+.logos img{display:block;max-height:60px;width:auto}
+.logos .txt{font-weight:600;color:#154e80}
+
+/* standards */
+.standards{background:var(--surface)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:36px}
+.hon{display:flex;gap:16px;align-items:flex-start}
+.hon img{background:#fff;border-radius:6px;padding:4px;flex:none}
+.rss{display:inline-flex;align-items:center;gap:10px;margin-top:14px}
+.rss img{width:28px;height:28px}
+.standards h2,.contact h2{font-size:1.3rem}
+.standards p,.contact p{color:var(--muted);margin:.3em 0 .8em}
+
+form.sub-form{display:flex;gap:8px;flex-wrap:wrap}
+form.sub-form input{flex:1 1 200px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:var(--bg);color:var(--ink)}
+form.sub-form button,.btn{background:var(--brand);color:#fff;border:0;border-radius:10px;padding:12px 20px;font:inherit;font-weight:600;cursor:pointer}
+@media (prefers-color-scheme:dark){form.sub-form button{color:#10171e}}
+form.sub-form button:hover{background:var(--brand-dark)}
+.msg{margin:.6em 0 0;font-size:.9rem;color:var(--brand)}
+
+/* footer */
+footer{background:#0f1c28;color:#b9c7d6;padding:48px 0 32px;font-size:.92rem}
+footer a{color:#d6e4f2}
+footer h2{color:#fff;font-size:1.1rem}
+footer .links{display:flex;flex-wrap:wrap;gap:8px 22px;margin:16px 0 24px}
+footer .safety{border-top:1px solid #243445;padding-top:20px}
+footer .social{display:flex;gap:18px;margin-top:20px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero img{margin:0 auto;max-width:360px}
+  .menu-btn{display:block}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 20px 20px;max-height:75vh;overflow:auto}
+  nav.open{display:block}
+  nav ul{flex-direction:column}
+  nav .sub{display:block;position:static;border:0;box-shadow:none;padding:0 0 6px 12px}
+  header.site .wrap{position:relative}
+  section{padding:44px 0}
+}
+@media (max-width:520px){.paths{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <div>
+      <a href="https://twitter.com/KNEEguru" rel="noopener">Twitter</a>
+      <a href="https://www.facebook.com/The.KNEEguru" rel="noopener">Facebook</a>
+      <a href="https://www.youtube.com/user/kneeguru" rel="noopener">YouTube</a>
+      <a href="https://www.pinterest.com/kneeguru" rel="noopener">Pinterest</a>
+    </div>
+    <div class="textsize" role="group" aria-label="Text size">
+      <button type="button" data-size="0.9" aria-label="Smaller text">-A</button>
+      <button type="button" data-size="1" aria-label="Reset text size">A</button>
+      <button type="button" data-size="1.15" aria-label="Larger text">+A</button>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/">Knee <span>Guru</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a class="t" href="/KNEEnotes/about">About</a></li>
+        <li><a class="t" href="/KNEEnotes/learning-portfolio">Learning Portfolio</a>
+          <div class="sub">
+            <a href="/KNEEnotes/learning-portfolio#Primers">Primers</a>
+            <a href="/KNEEnotes/learning-portfolio#Courses">Courses</a>
+            <a href="/KNEEnotes/learning-portfolio#eBooks">eBooks</a>
+            <a href="/KNEEnotes/learning-portfolio#Expert-Views">Expert Views</a>
+            <a href="/KNEEnotes/learning-portfolio#General-Articles">General Articles</a>
+            <a href="/KNEEnotes/learning-portfolio#Journal-Interpretations">Journal Interpretations</a>
+          </div>
+        </li>
+        <li><a class="t" href="/knee-dictionary/letter_a">Dictionary</a></li>
+        <li><a class="t" href="/KNEEnotes/community">Community</a>
+          <div class="sub">
+            <a href="https://www.kneeguru.co.uk/KNEEtalk/">Forum discussion</a>
+            <a href="/KNEEnotes/be-social">Be Social</a>
+            <a href="/KNEEnotes/readers-blogs">Readers' Blogs</a>
+            <a href="/KNEEnotes/contributions-patients">Contributions from Patients</a>
+            <a href="/KNEEnotes/testimonials">Testimonials</a>
+            <a href="/KNEEnotes/live-events-0">Live Events</a>
+            <a href="https://www.kneeguru.co.uk/KNEEnotes/donate-kneeguru-website">Donations</a>
+          </div>
+        </li>
+        <li><a class="t" href="/KNEEnotes/specialists">Specialists</a></li>
+        <li><a class="t" href="/clinics">Clinics</a></li>
+        <li><a class="t" href="/KNEEnotes/product-reviews">Product Reviews</a>
+          <div class="sub">
+            <a href="/KNEEnotes/shop#Book-Reviews">Book Reviews</a>
+            <a href="/KNEEnotes/shop#Product-Reviews">Product Reviews</a>
+          </div>
+        </li>
+        <li><a class="t" href="/KNEEnotes/the-team">The Team</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Your source of knee information</p>
+        <h1>Learn about <em>knees</em>…</h1>
+        <p class="lead">Trusted explanations, expert views and rehabilitation guidance for patients, from knee surgeons and physiotherapists.</p>
+        <ul class="paths">
+          <li><a href="https://www.kneeguru.co.uk/knee-dictionary/letter_a"><img src="images/dottedArrow.png" alt="">Look up a specific knee topic</a></li>
+          <li><a href="https://www.kneeguru.co.uk/KNEEnotes/primers/knee-anatomy/knee-anatomy-putting-content-context"><img src="images/dottedArrow.png" alt="">Get to grips with knee anatomy</a></li>
+          <li><a href="https://www.kneeguru.co.uk/KNEEtalk/index.php?board=7.0"><img src="images/dottedArrow.png" alt="">Participate in forum discussions</a></li>
+          <li><a href="https://www.kneeguru.co.uk/KNEEnotes/primers/a-z-rehabilitation-exercises/active-assisted-flexion"><img src="images/dottedArrow.png" alt="">See knee rehabilitation exercises</a></li>
+          <li><a href="https://www.kneeguru.co.uk/KNEEnotes/knee-professionals/knee-surgeons"><img src="images/dottedArrow.png" alt="">Locate a knee surgeon nearby</a></li>
+          <li><a href="https://www.kneeguru.co.uk/KNEEnotes/articles/general-articles/2020/online-consultations-and-second-opinions"><img src="images/dottedArrow.png" alt="">Book an online consultation</a></li>
+        </ul>
+      </div>
+      <img src="images/hero_06a.jpg" alt="A presenter sketching a knee diagram on a whiteboard and labelling the patella" width="695" height="695">
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Learning Portfolio</p>
+        <h2>Pick the format that suits how you learn</h2>
+      </div>
+      <div class="cards">
+        <a class="card" href="/KNEEnotes/learning-portfolio#Primers"><img src="images/primers_icon.svg" alt=""><h3>PRIMERS</h3><p>ABCs for beginners wanting to understand the basics about knees</p></a>
+        <a class="card" href="/KNEEnotes/learning-portfolio#Courses"><img src="images/courses_icon.svg" alt=""><h3>COURSES</h3><p>Selected knee topics presented by Experts in a detailed course format</p></a>
+        <a class="card" href="/KNEEnotes/learning-portfolio#eBooks"><img src="images/eBooks_icon.svg" alt=""><h3>EBOOKS</h3><p>Downloadable monographs on selected knee topics for you to read at your leisure</p></a>
+        <a class="card" href="/KNEEnotes/learning-portfolio#Expert-Views"><img src="images/expert_views_icon.svg" alt=""><h3>EXPERT VIEWS</h3><p>Blogs from knee surgeons and physiotherapists with knee expertise</p></a>
+        <a class="card" href="/KNEEnotes/learning-portfolio#General-Articles"><img src="images/general_articles_icon.svg" alt=""><h3>GENERAL ARTICLES</h3><p>In-house blogs about knee issues by our editorial team</p></a>
+        <a class="card" href="/KNEEnotes/learning-portfolio#Journal-Interpretations"><img src="images/journal_icon.svg" alt=""><h3>JOURNAL INTERPRETATIONS</h3><p>Interpretations by our editorial team of published medical articles</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest" id="latest">
+    <div class="wrap">
+      <div class="head"><p class="eyebrow">What's new</p><h2>Latest Content</h2></div>
+      <div class="articles">
+        <article><h3><a href="/KNEEnotes/articles/general-articles/2019/all-about-arthrofibrosis-knee">All about arthrofibrosis of the knee</a></h3><p>Q&amp;A-style article all about arthrofibrosis.</p></article>
+        <article><h3><a href="/KNEEnotes/articles/general-articles/2018/implications-floating-knee-meniscus">Implications of a 'floating' knee meniscus</a></h3><p>An explanation of what it means to have a 'floating' knee <a href="https://www.kneeguru.co.uk/KNEEnotes/knee-dictionary/meniscus">meniscus</a> on <a href="https://www.kneeguru.co.uk/KNEEnotes/knee-dictionary/mri">MRI</a> imaging.</p></article>
+        <article><h3><a href="/KNEEnotes/articles/general-articles/2020/online-consultations-and-second-opinions">Online Consultations and Second Opinions</a></h3><p>A list of surgeons and physiotherapists associated with KNEEguru who are willing to do online consultations.</p></article>
+        <article><h3><a href="/KNEEnotes/articles/general-articles/2020/what-does-metal-allergy-mean-patients-waiting-have-knee">What does metal allergy mean for patients waiting to have knee replacement surgery?</a></h3><p>A <a href="https://www.kneeguru.co.uk/KNEEnotes/knee-dictionary/knee-surgeon">knee surgeon</a> discusses why metal allergy can be important when considering <a href="https://www.kneeguru.co.uk/KNEEnotes/knee-dictionary/knee-replacement">knee replacement</a>.</p></article>
+        <article><h3><a href="/KNEEnotes/articles/expert-views/2017/arthroscopic-excision-osgood-schlatter-ossicle">Arthroscopic excision of an Osgood Schlatter ossicle</a></h3><p>Dr Lars Blønd discusses a case of a patient who had had Osgood Schlatters' disorder as a child, but continued to be symptomatic into adulthood.</p></article>
+        <article><h3><a href="/KNEEnotes/articles/general-articles/2020/meniscus-substitution-webinar-presented-professor-peter">Meniscus substitution - Webinar presented by Professor Peter Verdonk and Mr Tim Spalding</a></h3><p>Webinar recording of event hosted in July 2020 about current options for patients who have lost their <a href="https://www.kneeguru.co.uk/KNEEnotes/knee-dictionary/medial-meniscus">medial meniscus</a></p></article>
+        <article><h3><a href="/KNEEnotes/articles/general-articles/2020/second-opinions-and-online-consultations-knee-surgeons">Second opinions and online consultations with knee surgeons</a></h3><p>Short article discussing the options of consulting a <a href="https://www.kneeguru.co.uk/KNEEnotes/knee-dictionary/knee-surgeon">knee surgeon</a> online.</p></article>
+        <article><h3><a href="/KNEEnotes/articles/journal-interpretations/2017/2017-primary-repair-anterior-cruciate-ligament">2017 - Primary repair of the anterior cruciate ligament: A paradigm shift.</a></h3><p>An interpretation by the editor of a 2017 medical publication.</p></article>
+        <article><h3><a href="/KNEEnotes/articles/expert-views/2017/knee-surgeons-online-educators-their-peers">Knee Surgeons as online educators of their peers</a></h3><p>A brief discussion about the direction of medical education.</p></article>
+        <article><h3><a href="/KNEEnotes/articles/expert-views/2020/arthrofibrosis-and-rheumatoid-arthritis">Arthrofibrosis and rheumatoid arthritis</a></h3><p>Dr Kayley Usher offers some practical information to patients with <a href="https://www.kneeguru.co.uk/KNEEnotes/knee-dictionary/rheumatoid-arthritis">rheumatoid arthritis</a> who also suffer from <a href="https://www.kneeguru.co.uk/KNEEnotes/knee-dictionary/arthrofibrosis">arthrofibrosis</a>.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sponsors" id="sponsors">
+    <div class="wrap">
+      <h2>Our Sponsors</h2>
+      <p>As the KNEEguru matures in both concept and content, it is requiring more substantial financial support to allow us to continue to deliver fresh high quality content and interactive media. Unique content takes considerable time to craft, and we are very grateful for this extra support.</p>
+      <div class="logos">
+        <a href="http://jointoperations.co.uk/" rel="noopener" aria-label="Joint Operations"><img src="images/joint-operations-logo.jpg" alt="Joint Operations" width="84" height="119"></a>
+        <a href="https://www.ossur.co.uk/" rel="noopener" aria-label="Össur"><img src="images/8" alt="Össur" width="120" height="60"></a>
+        <a href="https://www.theregenerativeclinic.co.uk/our-clinics/" rel="noopener"><span class="txt">The Regenerative Clinic</span></a>
+      </div>
+      <a href="/KNEEnotes/the-team"><em>More about us…</em></a>
+    </div>
+  </section>
+
+  <section class="standards">
+    <div class="wrap grid3">
+      <div>
+        <h2>Professional Standards</h2>
+        <div class="hon">
+          <img src="images/honconduct712243_s.jpg" alt="HONcode certification seal" width="49" height="72">
+          <p>This site complies with the <a href="https://www.healthonnet.org/HONcode/Conduct.html">HONcode standard for trustworthy health</a> information:<br><a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct712243">Verify here.</a></p>
+        </div>
+        <a class="rss" href="https://www.kneeguru.co.uk/KNEEnotes/rss.xml"><img src="images/feed.svg" alt="">Subscribe via RSS</a>
+      </div>
+      <div>
+        <h2>Corporate Details</h2>
+        <p>This site is owned by a UK-based limited company (company number 2893459; incorporated 1st February 1994). The domain was first registered on 4th February 1997.</p>
+        <p>Registered Address: The KNEEguru, c/o Price Pearson Limited (att. Chris Cooper, Accountant), Finch House, 28/30 Wolverhampton Street, Dudley, West Midlands, DY1 1DB, United Kingdom.</p>
+      </div>
+      <div class="contact">
+        <h2>Stay in touch</h2>
+        <p>Sign up to stay in touch. We will mail you when there is important new content on our sites to share with you, or if there are any significant changes.</p>
+        <form class="sub-form" id="signup">
+          <input type="email" name="email" placeholder="Your email address" aria-label="Email address" required>
+          <button type="submit">Sign up</button>
+        </form>
+        <p class="msg" id="msg" role="status"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="safety">
+      <h2>Your safety</h2>
+      <p>Information provided on the site is meant to complement and not replace any advice or information from a health professional.</p>
+    </div>
+    <div class="links">
+      <a href="/KNEEnotes/mission-statement">Mission Statement</a>
+      <a href="/KNEEnotes/our-team-and-principles/privacy-policy">Privacy Policy</a>
+      <a href="/KNEEnotes/our-team-and-principles/cookies-policy">Cookies Policy</a>
+      <a href="/KNEEnotes/our-team-and-principles/terms-and-conditions">Terms and Conditions</a>
+      <a href="/KNEEnotes/our-team-and-principles/ads-policy">Funding, Advertising &amp; Sponsorship Policy</a>
+      <a href="/KNEEnotes/giving-back-kneeguru-site/donate-kneeguru-website">Make a one-off Donation</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile menu
+  var btn=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  // text size
+  document.querySelectorAll('.textsize button').forEach(function(b){
+    b.addEventListener('click',function(){document.documentElement.style.fontSize=(parseFloat(b.dataset.size)*100)+'%'});
+  });
+  // sign-up (front-end only; wire to a mailing-list endpoint)
+  document.getElementById('signup').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('msg').textContent='Thanks – you’re on the list.';
+    e.target.reset();
+  });
+</script>
+</body>
+</html>

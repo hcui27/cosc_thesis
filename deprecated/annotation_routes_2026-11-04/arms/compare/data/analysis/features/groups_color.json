@@ -1,0 +1,183 @@
+{
+ "key": "ee7e471b803a",
+ "groups": [
+  {
+   "name": "Near-black or tinted dark body text",
+   "definition": "Is the body text a dark tinted (navy, slate, green) or near-black color rather than neutral gray or pure black?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "text_color_lightness",
+    "op": "<=",
+    "value": 0.25
+   },
+   "members": [
+    "aeptexas_com#18",
+    "cbdoilcreamnk_com#2",
+    "educationactivities_org#3",
+    "greatdayimprovements_com#7",
+    "gravityvault_com#12",
+    "homedesignersoftware_com#4",
+    "merchantsavvy_co_uk#4",
+    "newclimateeconomy_net#1",
+    "stgpartners_com#6",
+    "tellmebaby_com_au#19",
+    "thync_com#7",
+    "miamidda_com#7",
+    "nira_org_ng#18",
+    "bluebayou_com#8",
+    "seoanalyzer_me#18"
+   ]
+  },
+  {
+   "name": "Dark theme with light text",
+   "definition": "Does the page use a dark near-black body background with light/near-white text?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "body_bg_dark",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "bathurst12hour_com_au#17",
+    "fnsouzafoundation_com#0",
+    "insightcentral_net#0",
+    "insightcentral_net#2"
+   ]
+  },
+  {
+   "name": "Alternating full-width background bands",
+   "definition": "Do sections alternate between differently colored full-width background bands (white, pale, dark)?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#16",
+    "bluebayou_com#9",
+    "cbdoilcreamnk_com#3",
+    "gravityvault_com#14",
+    "kneeguru_co_uk#15",
+    "naturalwellbeing_com#14",
+    "ridetech_com#5",
+    "tellmebaby_com_au#18",
+    "thefrangipanicreative_com#6",
+    "merchantsavvy_co_uk#12",
+    "educationactivities_org#4"
+   ]
+  },
+  {
+   "name": "Warm cream or off-white page background",
+   "definition": "Is the page background a warm cream or off-white tint rather than pure white?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "body_bg_lightness",
+    "op": ">=",
+    "value": 0.9
+   },
+   "members": [
+    "seoanalyzer_me#17"
+   ]
+  },
+  {
+   "name": "Single accent color",
+   "definition": "Is one single accent color used consistently across buttons, links and labels?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#16",
+    "fnsouzafoundation_com#1",
+    "gravityvault_com#13",
+    "greatdayimprovements_com#6",
+    "insightcentral_net#1",
+    "kneeguru_co_uk#5",
+    "neverskipbrunch_com#4",
+    "ridetech_com#4",
+    "stgpartners_com#10",
+    "tellmebaby_com_au#17",
+    "flygrant_com#17",
+    "homedesignersoftware_com#3"
+   ]
+  },
+  {
+   "name": "Restrained multi-hue palette",
+   "definition": "Is the overall palette a small, specific set of named hues (e.g. green/gold, teal, navy/amber) rather than generic colors?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#22",
+    "alpine8848_com#11",
+    "bather_com#4",
+    "kanienkeha_net#17",
+    "merchantsavvy_co_uk#6",
+    "naturalwellbeing_com#13",
+    "newclimateeconomy_net#0"
+   ]
+  },
+  {
+   "name": "Muted secondary text color",
+   "definition": "Is secondary text (dates, subtitles, labels) shown in a muted gray or taupe tone?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#14",
+    "fnsouzafoundation_com#2"
+   ]
+  },
+  {
+   "name": "Solid black announcement bar",
+   "definition": "Is the announcement bar solid black with bold white text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#5"
+   ]
+  },
+  {
+   "name": "Light header with thin border",
+   "definition": "Is the header white or light with a thin bottom border and dark text navigation?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#1"
+   ]
+  },
+  {
+   "name": "Hero diagonal gradient background",
+   "definition": "Does the hero use a diagonal gradient background instead of flat color?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "gradient_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "seoanalyzer_me#2"
+   ]
+  },
+  {
+   "name": "Score-coded metric colors",
+   "definition": "Are metric values color-coded by score level at uniform size?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "seoanalyzer_me#11"
+   ]
+  },
+  {
+   "name": "Green deep link text",
+   "definition": "Are links deep green text without chevron markers?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "nira_org_ng#17"
+   ]
+  },
+  {
+   "name": "Light uppercase links without underline",
+   "definition": "Are links light or white uppercase text without underline, except inline card links?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#23"
+   ]
+  }
+ ]
+}

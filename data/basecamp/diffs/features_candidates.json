@@ -1,0 +1,924 @@
+[
+ {
+  "feature_id": "F001",
+  "name": "Serif body/heading font stack",
+  "family": "typography",
+  "definition": "Check whether headings and body text use a generic serif stack (e.g. Georgia, Times New Roman, serif) instead of a sans-serif.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-01",
+   "S2-02",
+   "S2-15",
+   "S2-27",
+   "S2-30",
+   "S1-01",
+   "S2-22",
+   "S1-22"
+  ],
+  "confound": null,
+  "note": "Original font files were not in the prompt, so the generator picked its own fonts; counted as a possible signature (user decision)."
+ },
+ {
+  "feature_id": "F002",
+  "name": "Inter / system-ui sans font stack",
+  "family": "typography",
+  "definition": "Check whether the font-family stack is Inter and/or system-ui/sans-serif with no custom brand or webfont.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-04",
+   "F1-01",
+   "S1-02"
+  ],
+  "confound": null,
+  "note": "Original font files were not in the prompt, so the generator picked its own fonts; counted as a possible signature (user decision)."
+ },
+ {
+  "feature_id": "F003",
+  "name": "Moderate H1 size (about 60-64px)",
+  "family": "typography",
+  "definition": "Check whether the desktop H1 font-size is roughly 60-64px, smaller than an oversized display headline.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-04",
+   "S2-02",
+   "F2-05",
+   "S1-01",
+   "F1-01"
+  ],
+  "confound": {
+   "type": "original-brand-specific",
+   "reason": "The original used an unusually large 76px H1, so the difference is partly the original's choice."
+  }
+ },
+ {
+  "feature_id": "F004",
+  "name": "Conventional 16-17px base body size",
+  "family": "typography",
+  "definition": "Check whether the body base font-size is 16-17px rather than an oversized value.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-05",
+   "S1-02",
+   "F1-02"
+  ],
+  "confound": {
+   "type": "original-brand-specific",
+   "reason": "Original used an oversized 23.2px body, so the contrast reflects the original more than a generator trait."
+  }
+ },
+ {
+  "feature_id": "F005",
+  "name": "Light/regular heading weight",
+  "family": "typography",
+  "definition": "Check whether section headings use regular or light weight rather than heavy bold display weight.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-02",
+   "S2-15"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F006",
+  "name": "Small regular-weight testimonial quote text",
+  "family": "typography",
+  "definition": "Check whether testimonial quotes are set at body size (about 15-17px) in regular weight rather than as large bold pull-quotes.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-22",
+   "S1-22",
+   "F1-23",
+   "S2-21"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F007",
+  "name": "Bold em-dash testimonial attribution",
+  "family": "typography",
+  "definition": "Check whether testimonial attributions use bold (or accent-colored) name text with a leading em-dash.",
+  "detector": "text",
+  "evidence_ids": [
+   "F2-13",
+   "S1-22",
+   "S1-23",
+   "F1-23",
+   "S2-24"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F008",
+  "name": "Em-dash attribution prefix",
+  "family": "copy",
+  "definition": "Check whether attribution lines begin with an em dash followed by a space ('— Name, Title') rather than a hyphen.",
+  "detector": "text",
+  "evidence_ids": [
+   "S2-24",
+   "F2-13",
+   "S1-23",
+   "F1-23",
+   "F1-24"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F009",
+  "name": "Small light-grey social-proof caption",
+  "family": "typography",
+  "definition": "Check whether microcopy under the hero CTA is small and light grey with reduced contrast.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-27",
+   "F1-11"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F010",
+  "name": "Uniform solid underlined accent-colored links",
+  "family": "typography",
+  "definition": "Check whether inline links are uniformly solid-underlined in the accent color.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-40",
+   "S2-17",
+   "S2-26",
+   "F2-35",
+   "S1-27"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F011",
+  "name": "Highlighter-style yellow underline on links",
+  "family": "decoration/effects",
+  "definition": "Check whether inline links use a thick yellow highlighter-like underline or background strip.",
+  "detector": "css",
+  "evidence_ids": [
+   "F1-15"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F012",
+  "name": "Reduced-size closing CTA headline",
+  "family": "typography",
+  "definition": "Check whether the closing call-to-action text is small, single-line body-like text rather than a large display heading.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-27",
+   "S1-26",
+   "F1-26"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F013",
+  "name": "Muted italic footer copyright",
+  "family": "typography",
+  "definition": "Check whether the footer copyright/closing line is italic in a muted color.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-38",
+   "F1-29"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F014",
+  "name": "Generous vertical spacing between footer link rows",
+  "family": "layout",
+  "definition": "Check whether footer link rows are stacked with large vertical gaps.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-38"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F015",
+  "name": "Warm cream page background",
+  "family": "color",
+  "definition": "Check whether the body or hero background is a warm off-white/cream (e.g. around rgb(251,248,241)) instead of pure white.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-05",
+   "F2-01",
+   "S1-03",
+   "F1-05",
+   "F1-06"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F016",
+  "name": "Alternating full-width section background bands",
+  "family": "color",
+  "definition": "Check whether consecutive sections alternate full-width background colors (cream, white, sage, dark) to separate content.",
+  "detector": "vision",
+  "evidence_ids": [
+   "F2-16",
+   "S1-03",
+   "F1-06",
+   "F1-16"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F017",
+  "name": "Green accent palette",
+  "family": "color",
+  "definition": "Check whether the primary accent used for CTAs, links and highlights is a green hue.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-02",
+   "S1-04",
+   "S1-06",
+   "S2-17",
+   "S2-18",
+   "S2-26",
+   "F2-35"
+  ],
+  "confound": {
+   "type": "unclear",
+   "reason": "Brand recolor from yellow to green; could be generator preference or arbitrary choice."
+  }
+ },
+ {
+  "feature_id": "F018",
+  "name": "Green-tinted near-black text color",
+  "family": "color",
+  "definition": "Check whether body text color is a tinted dark (green or slate) rather than neutral black.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-03",
+   "S1-06"
+  ],
+  "confound": {
+   "type": "unclear",
+   "reason": "Original also used a tinted navy, so only the hue differs."
+  }
+ },
+ {
+  "feature_id": "F019",
+  "name": "Dark solid footer with light text",
+  "family": "color",
+  "definition": "Check whether the footer has a dark (green or navy) solid background with light text.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-37",
+   "S1-28",
+   "S1-31",
+   "F1-27",
+   "F1-28"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F020",
+  "name": "Saturated full-width yellow feature band",
+  "family": "color",
+  "definition": "Check whether a section sits on a full-width saturated yellow background band.",
+  "detector": "vision",
+  "evidence_ids": [
+   "F1-16"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F021",
+  "name": "Sage-green section band behind white cards",
+  "family": "color",
+  "definition": "Check whether a muted sage/grey-green section background hosts white cards.",
+  "detector": "vision",
+  "evidence_ids": [
+   "F2-12"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F022",
+  "name": "Dark filled primary CTA",
+  "family": "color",
+  "definition": "Check whether the primary CTA is a dark filled (green or navy) button with white text.",
+  "detector": "css",
+  "evidence_ids": [
+   "S1-04",
+   "F2-02",
+   "F2-26",
+   "F1-09"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F023",
+  "name": "Pill-shaped (fully rounded) CTA buttons",
+  "family": "component",
+  "definition": "Check whether CTA buttons use a fully rounded pill shape (border-radius around 999px).",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-06",
+   "S2-07",
+   "S2-38",
+   "F2-22",
+   "F2-26",
+   "S1-04",
+   "S1-05",
+   "S1-07",
+   "F1-04",
+   "F1-09"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F024",
+  "name": "Plain-text Sign in beside filled pill nav CTA",
+  "family": "component",
+  "definition": "Check whether the header shows an unbordered text 'Sign in' link next to a filled pill CTA.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-07",
+   "F2-22",
+   "S1-07",
+   "F1-04"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F025",
+  "name": "Roomier constrained-width header",
+  "family": "layout",
+  "definition": "Check whether the header sits inside a max-width container with generous padding and spacing.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-22",
+   "S1-08",
+   "F1-04"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F026",
+  "name": "Logo as circular badge icon plus wordmark",
+  "family": "component",
+  "definition": "Check whether the logo is a round badge icon next to a wordmark.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S2-07",
+   "F2-21",
+   "S1-07",
+   "F1-04"
+  ],
+  "confound": {
+   "type": "unclear",
+   "reason": "Logo asset may come from generator's re-creation of brand material."
+  }
+ },
+ {
+  "feature_id": "F027",
+  "name": "Logo as external img file, not inline SVG",
+  "family": "semantic/DOM",
+  "definition": "Check whether the header logo is an img element referencing an .svg file instead of inline SVG.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-08",
+   "F2-21",
+   "S1-09",
+   "F1-30"
+  ],
+  "confound": {
+   "type": "prompt-artifact",
+   "reason": "Asset handling depends on the supplied files and pipeline."
+  }
+ },
+ {
+  "feature_id": "F028",
+  "name": "Review quotes in white rounded chips/cards",
+  "family": "component",
+  "definition": "Check whether review-star snippets are wrapped in white rounded cards or chips.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S1-10",
+   "F1-07"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F029",
+  "name": "Enlarged star ratings with extra spacing",
+  "family": "layout",
+  "definition": "Check whether rating stars are large (yellow) and spaced out in a row above the headline.",
+  "detector": "vision",
+  "evidence_ids": [
+   "F2-24",
+   "S2-09",
+   "F1-07"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F030",
+  "name": "Testimonials as white rounded card grid",
+  "family": "component",
+  "definition": "Check whether testimonials are rendered as white cards with rounded corners in a multi-column grid.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S2-21",
+   "F2-10",
+   "F2-12",
+   "S1-21",
+   "S1-24",
+   "F1-20"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F031",
+  "name": "Masonry columns with uneven heights",
+  "family": "layout",
+  "definition": "Check whether card columns have staggered start positions or uneven heights (masonry).",
+  "detector": "vision",
+  "evidence_ids": [
+   "S2-23",
+   "F2-10",
+   "F1-20",
+   "S1-21"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F032",
+  "name": "Column-wise reading order from masonry",
+  "family": "layout",
+  "definition": "Check whether card content order flows down the left column then the right, breaking row-wise reading.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-25",
+   "S1-25",
+   "F1-22"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F033",
+  "name": "Featured first card with highlight treatment",
+  "family": "component",
+  "definition": "Check whether the first testimonial card is visually emphasized (colored outline, fill or larger size).",
+  "detector": "vision",
+  "evidence_ids": [
+   "F2-11",
+   "F1-21"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F034",
+  "name": "Colored left accent border on cards",
+  "family": "decoration/effects",
+  "definition": "Check whether cards have a thick colored left border accent.",
+  "detector": "css",
+  "evidence_ids": [
+   "S1-21",
+   "S1-24"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F035",
+  "name": "Before/After comparison as two side-by-side colored-label cards",
+  "family": "component",
+  "definition": "Check whether a before/after comparison is split into two side-by-side cards with colored (red/green) labels.",
+  "detector": "vision",
+  "evidence_ids": [
+   "F1-08"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F036",
+  "name": "Secondary action rendered as plain text link",
+  "family": "component",
+  "definition": "Check whether a secondary action (e.g. 'learn more') is a plain underlined text link rather than a bordered button.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-18",
+   "S1-19"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F037",
+  "name": "Dark filled secondary button",
+  "family": "component",
+  "definition": "Check whether a secondary action is a dark filled button.",
+  "detector": "css",
+  "evidence_ids": [
+   "F1-18"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F038",
+  "name": "Book/product cover with drop shadow or tilt",
+  "family": "decoration/effects",
+  "definition": "Check whether a product image has a drop shadow, card frame, or slight tilt.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-18",
+   "F2-09",
+   "F1-17",
+   "S1-19"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F039",
+  "name": "Hero screenshot framed in a shadowed card",
+  "family": "component",
+  "definition": "Check whether the product screenshot sits in a bordered or shadowed card container.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-19",
+   "F1-12",
+   "S1-14"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F040",
+  "name": "Hero image abruptly cropped instead of faded",
+  "family": "imagery",
+  "definition": "Check whether the hero image ends with a hard crop rather than a fade or blend into the background.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S1-14",
+   "F2-19"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F041",
+  "name": "Two-column image-left, text-right sections",
+  "family": "layout",
+  "definition": "Check whether content sections use a two-column split with image on the left and copy on the right.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-08",
+   "F2-09",
+   "F1-12",
+   "F1-14",
+   "S2-19",
+   "S1-19"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F042",
+  "name": "Left-aligned headings and body copy",
+  "family": "layout",
+  "definition": "Check whether section headings and paragraphs are left-aligned rather than centered.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-16",
+   "S1-17",
+   "S1-18",
+   "F1-14"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F043",
+  "name": "Max-width constrained content with wide margins",
+  "family": "layout",
+  "definition": "Check whether content is held in a max-width container with wide side margins.",
+  "detector": "css",
+  "evidence_ids": [
+   "F2-39"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F044",
+  "name": "Compact page height with tighter vertical rhythm",
+  "family": "layout",
+  "definition": "Check whether total page height and section spacing are compact relative to a spacious layout.",
+  "detector": "vision",
+  "evidence_ids": [
+   "F2-07",
+   "S1-32",
+   "S1-12",
+   "S2-19"
+  ],
+  "confound": {
+   "type": "original-brand-specific",
+   "reason": "Original has very large type and whitespace; difference is partly derived from that."
+  }
+ },
+ {
+  "feature_id": "F045",
+  "name": "Uniformly rounded corners across components",
+  "family": "decoration/effects",
+  "definition": "Check whether most buttons, cards and containers share rounded corners.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-38",
+   "F2-12",
+   "F1-07",
+   "F2-19"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F046",
+  "name": "Soft drop shadows on cards and buttons",
+  "family": "decoration/effects",
+  "definition": "Check whether cards and buttons use subtle box-shadow for depth.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-06",
+   "F2-12",
+   "F2-26",
+   "S1-24",
+   "F1-07",
+   "F2-19"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F047",
+  "name": "Thin straight grey section dividers",
+  "family": "decoration/effects",
+  "definition": "Check whether sections are separated by thin straight grey rules instead of decorative dividers.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S2-20"
+  ],
+  "confound": {
+   "type": "original-brand-specific",
+   "reason": "Original used a hand-drawn squiggle, so this mainly reflects the missing brand art."
+  }
+ },
+ {
+  "feature_id": "F048",
+  "name": "Flat straight-edged bands without organic shapes",
+  "family": "decoration/effects",
+  "definition": "Check whether section transitions use flat straight-edged bands rather than organic or torn-paper shapes.",
+  "detector": "vision",
+  "evidence_ids": [
+   "F1-05",
+   "F2-16",
+   "S1-03"
+  ],
+  "confound": {
+   "type": "original-brand-specific",
+   "reason": "Original's hand-drawn blobs and torn edges were absent from the regeneration."
+  }
+ },
+ {
+  "feature_id": "F049",
+  "name": "Handwritten annotation overlays colliding with UI",
+  "family": "imagery",
+  "definition": "Check whether hand-lettered annotations on the hero image overlap UI or other text.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S2-10",
+   "F2-18",
+   "S1-13",
+   "F1-13"
+  ],
+  "confound": null,
+  "note": "Image roles were deliberately not described in the prompt; misplaced overlay images are recorded as a possible signature (decision 2026-10-11)."
+ },
+ {
+  "feature_id": "F050",
+  "name": "Extra duplicate hero illustration asset",
+  "family": "imagery",
+  "definition": "Check whether the page loads additional illustration images beyond the original's set.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-13",
+   "F2-20",
+   "S1-37"
+  ],
+  "confound": {
+   "type": "prompt-artifact",
+   "reason": "Image set depends on assets supplied to the generator."
+  }
+ },
+ {
+  "feature_id": "F051",
+  "name": "Footer chart image cropped with truncated labels",
+  "family": "imagery",
+  "definition": "Check whether a footer illustration is cropped or oversized so its labels are cut off.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S2-28",
+   "S2-29"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F052",
+  "name": "Decorative image as faint low-contrast background",
+  "family": "imagery",
+  "definition": "Check whether a large illustration is used as a faint low-contrast background texture on a dark section.",
+  "detector": "vision",
+  "evidence_ids": [
+   "F2-37"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F053",
+  "name": "Footer illustration omitted",
+  "family": "imagery",
+  "definition": "Check whether the footer has no illustration or chart, only text links.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S1-28",
+   "F1-27"
+  ],
+  "confound": {
+   "type": "original-brand-specific",
+   "reason": "Omission of the original's hand-drawn growth chart."
+  }
+ },
+ {
+  "feature_id": "F054",
+  "name": "Pale green tinted footer background",
+  "family": "color",
+  "definition": "Check whether the footer sits on a pale tinted green background.",
+  "detector": "css",
+  "evidence_ids": [
+   "S2-28"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F055",
+  "name": "Local relative image paths",
+  "family": "semantic/DOM",
+  "definition": "Check whether images are loaded from local relative file paths instead of a CDN.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-39",
+   "S1-37",
+   "F1-32"
+  ],
+  "confound": {
+   "type": "prompt-artifact",
+   "reason": "Reflects the generation and rendering pipeline."
+  }
+ },
+ {
+  "feature_id": "F056",
+  "name": "Lean self-contained document with minimal scripts and meta",
+  "family": "semantic/DOM",
+  "definition": "Check whether the document has zero or few script/link tags and a minimal head (about 2 meta tags, 1 title).",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-32",
+   "S1-33",
+   "F1-30"
+  ],
+  "confound": {
+   "type": "prompt-artifact",
+   "reason": "Original's script overhead came from archived tracking and site code."
+  }
+ },
+ {
+  "feature_id": "F057",
+  "name": "Testimonials marked up as figure/blockquote/figcaption",
+  "family": "semantic/DOM",
+  "definition": "Check whether testimonials use figure, blockquote and figcaption elements rather than blockquote plus cite.",
+  "detector": "dom",
+  "evidence_ids": [
+   "F2-15",
+   "F1-24"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F058",
+  "name": "Single H1 element",
+  "family": "semantic/DOM",
+  "definition": "Check whether the page has exactly one h1.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-34"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F059",
+  "name": "Simplified responsive picture/source sets",
+  "family": "semantic/DOM",
+  "definition": "Check whether picture elements have fewer source elements.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-36",
+   "F2-41"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F060",
+  "name": "Fewer anchors and simplified link set",
+  "family": "semantic/DOM",
+  "definition": "Check whether the link count is reduced and content is mostly paragraphs.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S2-37",
+   "F2-31"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F061",
+  "name": "Footer links as paragraphs/spans instead of lists",
+  "family": "semantic/DOM",
+  "definition": "Check whether footer links are marked up with p/span instead of ul/li.",
+  "detector": "dom",
+  "evidence_ids": [
+   "F2-31"
+  ],
+  "confound": {
+   "type": "unclear",
+   "reason": "Evidence is an inference from tag counts."
+  }
+ },
+ {
+  "feature_id": "F062",
+  "name": "Fewer form inputs and labels",
+  "family": "semantic/DOM",
+  "definition": "Check whether the page omits search or form input/label elements.",
+  "detector": "dom",
+  "evidence_ids": [
+   "F1-30"
+  ],
+  "confound": {
+   "type": "original-brand-specific",
+   "reason": "Original had a search input that was not reproduced."
+  }
+ },
+ {
+  "feature_id": "F063",
+  "name": "Added italic emphasis on key word",
+  "family": "copy",
+  "definition": "Check whether copy adds italic emphasis on a single word, such as 'quick'.",
+  "detector": "dom",
+  "evidence_ids": [
+   "S1-20",
+   "F2-34"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F064",
+  "name": "Round-number social-proof statistic",
+  "family": "copy",
+  "definition": "Check whether social-proof stats use round numbers (e.g. '4,000') instead of precise figures.",
+  "detector": "text",
+  "evidence_ids": [
+   "S2-14",
+   "F2-25",
+   "S1-11",
+   "F1-10"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F065",
+  "name": "Rewritten generic benefit-style document title",
+  "family": "copy",
+  "definition": "Check whether the page title is rewritten into a generic benefit-style phrase (e.g. 'The All-In-One Toolkit for ...').",
+  "detector": "text",
+  "evidence_ids": [
+   "F2-29"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F066",
+  "name": "Generic footer sign-off replacing date-specific copy",
+  "family": "copy",
+  "definition": "Check whether footer sign-off text is generic ('Enjoy the rest of your day!') rather than dynamic or date-based.",
+  "detector": "text",
+  "evidence_ids": [
+   "F1-29"
+  ],
+  "confound": null
+ },
+ {
+  "feature_id": "F067",
+  "name": "Hero star-quote snippets inline in a single row",
+  "family": "layout",
+  "definition": "Check whether review snippets sit inline in one horizontal row with stars at left of each.",
+  "detector": "vision",
+  "evidence_ids": [
+   "S2-09"
+  ],
+  "confound": null
+ }
+]

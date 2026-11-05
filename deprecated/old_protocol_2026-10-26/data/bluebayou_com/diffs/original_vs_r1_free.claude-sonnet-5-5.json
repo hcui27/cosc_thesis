@@ -1,0 +1,236 @@
+[
+ {
+  "observation": "Page title and html lang differ: A uses 'Blue Bayou Waterpark & Dixie Landin' | Baton Rouge, LA' with an empty lang attribute; B uses 'Blue Bayou Water Park & Dixie Landin' — Play Your Day Away' with lang='en'.",
+  "category": "DOM/semantic structure",
+  "evidence": "A_facts title / lang \"\"; B_facts title / lang \"en\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has four h1 elements (hero, Land of the Giants, Thrills, Getaway), and its h2s are used for small eyebrow labels such as 'BUY', 'SEASON' and 'BIRTHDAY'. B has a single h1, and its section titles are h2.",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 4; B h1_count 1; B outline has LAND OF THE GIANTS, THRILLS and GETAWAY at level 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses HTML5 landmark and sectioning tags (1 header, 7 sections, 1 footer). A uses none of them and builds the page from 99 divs.",
+  "category": "DOM/semantic structure",
+  "evidence": "B semantic header 1, section 7, footer 1; A semantic all 0 except nav 4; A div 99 vs B div 29",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 4 nav elements and B has 1. B's footer is built with 6 ul and 30 li. A's tag counts include no ul or li.",
+  "category": "DOM/semantic structure",
+  "evidence": "A nav 4, B nav 1; B ul 6, li 30; A has no ul/li in tag_counts",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer column titles are h4 elements (PARKS, PLAN, TICKETS, MORE). A's footer titles use h5/h6-level markup (its tag counts show h5 4, h6 3) and appear as script-font 'Parks / Plan / Tickets / More'.",
+  "category": "DOM/semantic structure",
+  "evidence": "B heading_outline has four h4; A tag_counts h5 4, h6 3; A_slice_03 shows orange script-style footer headings",
+  "which_side": "both"
+ },
+ {
+  "observation": "A loads 15 scripts, 3 stylesheets and 3 style tags, and its head carries Open Graph and Twitter meta tags. B has no scripts or external stylesheets, one style tag, and only charset, viewport and description meta.",
+  "category": "DOM/semantic structure",
+  "evidence": "A scripts 15, stylesheets 3, meta 9 with og:/twitter:; B scripts 0, stylesheets 0, meta 3",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a custom Webflow-style class vocabulary with 254 class tokens and 86 unique, about 40% tailwind-like. B uses 62 tokens and 35 unique, about 2% tailwind-like.",
+  "category": "DOM/semantic structure",
+  "evidence": "A classes total 254, unique 86, tailwind_like_fraction 0.398; B total 62, unique 35, 0.016",
+  "which_side": "both"
+ },
+ {
+  "observation": "A relies on more inline styles and ARIA attributes (9 inline style attrs, 20 aria attrs, including Webflow nav widgets). B has 1 inline style attr and 2 aria attrs.",
+  "category": "DOM/semantic structure",
+  "evidence": "A inline_style_attrs 9, aria_attrs 20; B 1 and 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "Image alt text differs: all 13 of A's images have empty alt, including the logos and the Coke can. B gives descriptive alt to 8 of its 12 images (e.g. 'Guests splashing at Blue Bayou Water Park', 'Coca-Cola can') and keeps empty alt only on the brush divider and the two section backgrounds.",
+  "category": "imagery handling",
+  "evidence": "A images all alt \"\"; B alts such as 'Dixie Landin' theme park', 'Summer is waiting'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Typography: A sets nearly all text in a custom geometric sans (Brandon Grotesque, 167 elements) with a hand-brushed display font (Handy Handy, 14 elements). B uses only the system 'Trebuchet MS' stack (166 elements) and has no web fonts or icon fonts.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count Brandongrotesque 167, Handyhandy 14; B Trebuchet MS 166",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero h1 is 120px at weight 400 in the brush script in A. In B it is 104px at weight 900 in Trebuchet, as plain upright bold capitals.",
+  "category": "typography",
+  "evidence": "A h1 Handyhandy 120px/400; B h1 Trebuchet 104px/900",
+  "which_side": "both"
+ },
+ {
+  "observation": "A rotates and angles the hero headline, with 'PLAY YOUR' and 'DAY AWAY' on skewed lines. B renders the two lines straight and centered, colors the second line 'DAY AWAY' yellow, and adds a text shadow.",
+  "category": "typography",
+  "evidence": "A_slice_00 tilted brush lettering; B_slice_00 'DAY AWAY' in yellow (rgb(255,198,41))",
+  "which_side": "both"
+ },
+ {
+  "observation": "Base text is larger in A, at 18px body size and 28px line height with h2 at 22px. B uses 16px body, 25.6px line height and 17.6px h2.",
+  "category": "typography",
+  "evidence": "A body_font_size 18px, h2 22px; B 16px, 17.6px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer headings and links differ in style: orange script headings ('Parks', 'Plan', 'Tickets', 'More') over blue uppercase letter-spaced links. B's footer has small white uppercase letter-spaced headings over sentence-case light-blue-gray links.",
+  "category": "typography",
+  "evidence": "A_slice_03 vs B_slice_03",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's section headings ('LAND OF THE GIANTS', 'THRILLS', 'GETAWAY', 'STAY UP TO DATE', 'SAVE $5') all use the brush display face. B sets the same headings in Trebuchet bold capitals, with small yellow or blue letter-spaced eyebrows ('ENTER THE', 'EXPERIENCE THE', 'PLAN YOUR SUMMER').",
+  "category": "typography",
+  "evidence": "A_slice_01/02 brush headings; B_slice_01/02 sans headings with colored eyebrows",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is saturated and flat: aqua rgb(0,226,200), sky blue rgb(0,152,255), orange rgb(219,77,35), gold rgb(242,181,14) and red rgb(244,0,9). B uses a navy, royal blue, yellow, red and purple palette: rgb(6,57,95), rgb(10,110,189), rgb(255,198,41), rgb(228,49,43) and rgb(122,62,168).",
+  "category": "color",
+  "evidence": "A top_backgrounds list; B top_backgrounds list",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a split-screen of two photos tinted with aqua (left) and gold (right) color overlays, and the headline sits across the seam. B's hero is a vertical blue gradient background holding two untinted, rounded photo cards.",
+  "category": "layout",
+  "evidence": "A_slice_00; B_slice_00; B gradient_backgrounds 3; B images 530x353 at x=180 and x=730",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's hero cards are captioned with 'BLUE BAYOU WATER PARK' and 'DIXIE LANDIN'' text overlaid at the bottom-left of each photo. A's hero photos carry no captions.",
+  "category": "copy treatment",
+  "evidence": "B_slice_00 captions; A_slice_00 has none",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's hero photos appear to be CSS background images. They are not in the img list, which holds only the logos, brush dividers and the Land of the Giants photo and the Coke images. B lists the hero photos (shutterstock_138243329.jpg, DL.jpg, 1500x1000) as img elements with alt text.",
+  "category": "imagery handling",
+  "evidence": "A images list has no hero photo files; B images include shutterstock_138243329.jpg and DL.jpg",
+  "which_side": "both"
+ },
+ {
+  "observation": "The opening-day notice is a closable red box in A, centered over the hero with a white 'X'. It has a bold uppercase heading 'OPENING DAY MAY 29, 2021'. In B it is a yellow strip under a dark navy sticky-looking nav bar, with the first line partly hidden behind the nav.",
+  "category": "component choices",
+  "evidence": "A_slice_00 red box with X; B_slice_00 yellow band at y~100-145 with cut-off first line",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's top bar is a white band with the Blue Bayou logo at the left edge and Dixie Landin' at the right edge (194x70 and 232x70) and no text links. B has a dark navy nav bar with a centered-width container: logo at x=180, links HOME, ATTRACTIONS, TICKETS, PLAN, CALENDAR and JOBS, and a smaller Dixie Landin' logo (146x44).",
+  "category": "component choices",
+  "evidence": "A images rect (10,10) and (1162,10); B rects (180,12) 122x44 and (1114,12) 146x44; B_slice_00 nav",
+  "which_side": "both"
+ },
+ {
+  "observation": "The three promo tiles differ. A has flat orange (rgb(219,77,35)) boxes with square corners and drop shadows, centered text, and a white full-width rectangular button inside each. B has rounded cards in three colors (blue, red, purple) with left-aligned text, a large gap, and an arrow-suffixed text link ('START THE EXCITEMENT →') at the bottom.",
+  "category": "component choices",
+  "evidence": "A primary_button radius 0px, bg white; B_slice_00 tiles; B uses '→' glyphs",
+  "which_side": "both"
+ },
+ {
+  "observation": "Primary button styling: A is a square-cornered rectangle (radius 0px, padding 10px 20px), white with orange text, 'START THE EXCITEMENT'. B is a pill (radius 999px, padding 12.24px 23.04px), yellow with navy text, 'GET A SEASON PASS'.",
+  "category": "component choices",
+  "evidence": "A/B primary_button facts",
+  "which_side": "both"
+ },
+ {
+  "observation": "Border radius usage: A is almost entirely square, with 190 zero-radius elements and 1 pill. B has 6 elements at 8–15px, 5 at 16px or more and 6 pills, mixing rounded cards, input-like link tiles and pill buttons.",
+  "category": "decoration/effects",
+  "evidence": "A border_radius_buckets bucket_0 190, pill 1; B bucket_8_15 6, 16_plus 5, pill 6",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses more shadows, transitions and transforms (9 box shadows, 61 transitions, 10 transforms). B has 3 shadows, 17 transitions and no transforms.",
+  "category": "decoration/effects",
+  "evidence": "A effects box_shadows 9, transitions 61, transforms 10; B 3, 17, 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hand-painted brush-stroke SVG divider (brush-2.svg) is a recurring motif in both. A uses it 6 times, at hero top and bottom, around the Thrills photo, above Stay Up To Date and under the Coke banner, tinted to each section's color. B uses it once, under the hero.",
+  "category": "decoration/effects",
+  "evidence": "A images list shows brush-2.svg at y=-35, 780, 1541, 2352, 3073 and 4280; B shows it once at y=888",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Land of the Giants section is a split layout in A, with a 734x490 photo at the left, the Blue Bayou logo and text at the right, and square-cornered buttons on a white background. In B it is a full-bleed 1440x620 photo with a dark blue overlay, text left-aligned at x=180, and a pill button pair (solid yellow + outlined white).",
+  "category": "layout",
+  "evidence": "A image rect (82,1037,734x490) with logo at x=838; B image rect (0,1365,1440x620); B_slice_01",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Thrills section differs. In A the photo has an orange gradient overlay fading to the right with text on the right half at x=800. In B the photo has a dark red overlay across the full width, with the text at the left. The yellow/outline button pair repeats in both sections of B.",
+  "category": "imagery handling",
+  "evidence": "A_slice_01 orange gradient; B_slice_01 maroon tint; A Dixie logo rect x=800; B x=180",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Summer is waiting for you' graphic is shown very large in A (a pool-water-textured, yellow and blue lettering on white, about 650px wide). In B it is a small navy-lettered PNG in a pale gray-blue box, 560x315, on a navy background.",
+  "category": "imagery handling",
+  "evidence": "A_slice_02 water-filled lettering; B_slice_03 stencil-summeriswaiting.png at 560x315 on navy",
+  "which_side": "both"
+ },
+ {
+  "observation": "The newsletter block differs: A shows 'STAY UP TO DATE' in white brush type on a sky-blue band under a brush edge, with bold small-caps FACEBOOK and NEWSLETTER links. B shows it on navy under the graphic, with plain white sans heading and yellow underlined 'Facebook' and 'newsletter' links.",
+  "category": "component choices",
+  "evidence": "A_slice_02; B_slice_02",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Getaway module is a two-column band in both, with an ice-cream-cone photo on the left. A's right column is a solid sky-blue panel with plain uppercase letter-spaced text links in a two-column list. B's right column is cream (rgb(255,248,230)) with six rounded white bordered link tiles in a 2x3 grid, including a 'Groups' link not shown in A.",
+  "category": "component choices",
+  "evidence": "A_slice_02 PARK MAPS, HOTELS, DIRECTIONS, CORPORATE EVENTS, FOOD & CONCESSIONS; B_slice_03 six tiles; B display_grid 5, A display_grid 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Getaway CTAs are split in B into a blue pill 'GET A SEASON PASS' and a yellow pill 'OR BUY TICKETS'. A shows a gold rectangle 'GET A SEASON PASS' next to a plain white text link 'OR BUY TICKETS'.",
+  "category": "component choices",
+  "evidence": "A_slice_03 top; B_slice_02",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Coca-Cola promo in A is a red band with a large white script logo at the left, a full can overlapping up into the ice-cream photo, and a brush-torn bottom edge. 'SAVE $5' is in the brush font above a smaller uppercase line. In B the band is flat red with a small can at the left, logo, a small yellow 'SAVE $5' eyebrow and a large uppercase headline.",
+  "category": "layout",
+  "evidence": "A can rect 150x279 at (421,4071), logo 324x108; B can 108x200 at (189,3725), logo 220x73; B_slice_02/03",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer differs in color and structure. A's is white with orange script column titles, blue links in five columns (Plan is split in two) and three solid-blue square social icon tiles (icon font). B's is a dark navy (rgb(4,36,61)) block with four columns, Facebook/Twitter/YouTube as plain text links in the 'More' column, 'Birthday Parties' and 'Groups' links added, and a thin rule above the copyright.",
+  "category": "component choices",
+  "evidence": "A_slice_03 social icons font 'Social icons' (6); B_slice_03; B fonts list has no icon font",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is taller than B's. A's page_height is 4793 px against 4379 px for B, both at width 1440.",
+  "category": "layout",
+  "evidence": "layout.page_height A 4793, B 4379",
+  "which_side": "both"
+ },
+ {
+  "observation": "Content is held in a constrained container in B (content edges align at x=180 and x=1260 for nav, hero cards, sections and footer). A mixes full-bleed elements with different margins (promo tiles at x≈29, content at x≈82, text at x=800–838, footer at x=82).",
+  "category": "layout",
+  "evidence": "B image rects x=180/730 w=530, logos x=180; A rects x=10, 82, 800, 838; A_slice_00",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's text-color system uses a pale blue (rgb(207,227,242)) as its second most common text color (48 elements) and a dark navy (rgb(16,34,47)) body color. A uses orange rgb(219,77,35) for 36 elements and blue rgb(0,152,255) for 33, on a body color of rgb(51,51,51).",
+  "category": "color",
+  "evidence": "A top_text_colors; B top_text_colors; body_color A rgb(51,51,51), B rgb(16,34,47)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Copy is mostly the same in both, including the opening-day notice, Land of the Giants and Thrills paragraphs, the Covid closure notice and the ticket-validation note. Word counts are close (A 251, B 263). B adds hero captions, extra nav labels and extra footer links (Birthday Parties, Groups, social names). A's notice has an extra bold 'OPENING DAY MAY 29, 2021' heading that is hidden or clipped in B.",
+  "category": "copy treatment",
+  "evidence": "text_stats words A 251, B 263; B_slice_00 notice line begins mid-text behind nav",
+  "which_side": "both"
+ },
+ {
+  "observation": "Gradients: A has 1 gradient background (the orange overlay on Thrills). B has 3 (hero blue gradient and the image overlay tints on the Giants and Thrills sections).",
+  "category": "decoration/effects",
+  "evidence": "A gradient_backgrounds 1; B 3",
+  "which_side": "both"
+ }
+]

@@ -1,0 +1,257 @@
+[
+ {
+  "observation": "The document title names both parks and a tagline, separated by an en dash",
+  "category": "metadata",
+  "evidence": "title: \"Blue Bayou Water Park & Dixie Landin' – Play Your Day Away\""
+ },
+ {
+  "observation": "The page is 1440px wide and 4181px tall",
+  "category": "layout",
+  "evidence": "layout.page_width 1440, page_height 4181"
+ },
+ {
+  "observation": "There is exactly one h1, the hero tagline, split over two lines with a <br>",
+  "category": "dom-structure",
+  "evidence": "h1_count 1; h1 text 'PLAY YOUR\\nDAY AWAY'; tag_counts br: 1"
+ },
+ {
+  "observation": "An h2 comes before the h1 in document order: it is the alert banner heading",
+  "category": "dom-structure",
+  "evidence": "heading_outline starts with h2 'OPENING DAY MAY 29, 2021', then h1"
+ },
+ {
+  "observation": "Headings are inverted: a small h2 eyebrow ('BUY', 'SEASON', 'BIRTHDAY') sits above a larger h3 word ('TICKETS', 'PASSES', 'PARTIES')",
+  "category": "dom-structure",
+  "evidence": "heading_outline h2 BUY → h3 TICKETS, etc.; slice_00 cards show small blue 'BUY' above large 'TICKETS'"
+ },
+ {
+  "observation": "There is no <main> element, but there are 7 <section> elements, plus one header, nav and footer",
+  "category": "dom-structure",
+  "evidence": "semantic: main 0, section 7, header 1, nav 1, footer 1"
+ },
+ {
+  "observation": "No article, aside, figure, or blockquote elements are used",
+  "category": "dom-structure",
+  "evidence": "semantic article/aside/figure/blockquote all 0"
+ },
+ {
+  "observation": "The page has no scripts and no external stylesheets; styling comes from a single <style> block",
+  "category": "dom-structure",
+  "evidence": "counts.scripts 0, stylesheets 0; tag_counts style 1"
+ },
+ {
+  "observation": "Class naming does not follow a utility pattern: there are 69 class uses across 36 unique classes",
+  "category": "dom-structure",
+  "evidence": "classes total 69, unique 36, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Two typefaces are used. Trebuchet MS covers body and UI text, and Impact is used for display headings",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Trebuchet MS 138, Impact 19, Arial 1"
+ },
+ {
+  "observation": "The h1 is set in Impact at 136px, weight 400, white and centered",
+  "category": "typography",
+  "evidence": "h1 font_size 136px, font_family Impact..., color rgb(255,255,255), text_align center"
+ },
+ {
+  "observation": "The hero h1 is two-colored: 'PLAY YOUR' is white and 'DAY AWAY' is yellow, both with a blue offset drop shadow",
+  "category": "typography",
+  "evidence": "slice_00 hero text; yellow rgb(255,197,49) appears among top_text_colors"
+ },
+ {
+  "observation": "Body text is 16px with a 24.8px line height (1.55 ratio)",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 24.8px"
+ },
+ {
+  "observation": "The h2 computed size is a small 20.8px at weight 400, used as eyebrow labels",
+  "category": "typography",
+  "evidence": "h2 font_size 20.8px; slice_01 'EXPERIENCE THE' in small yellow above 'THRILLS'"
+ },
+ {
+  "observation": "Navigation and headings are set almost entirely in uppercase",
+  "category": "copy",
+  "evidence": "slice_00 nav HOME/ATTRACTIONS/TICKETS/PLAN/CALENDAR/JOBS; all heading_outline texts are uppercase"
+ },
+ {
+  "observation": "Section headings repeat one pattern: a small yellow Impact eyebrow phrase, then a very large white Impact word",
+  "category": "typography",
+  "evidence": "'ENTER THE / LAND OF THE GIANTS', 'EXPERIENCE THE / THRILLS', 'PLAN YOUR SUMMER / GETAWAY' in slices 00–02"
+ },
+ {
+  "observation": "The page background is a warm cream, and body text is a dark navy",
+  "category": "color",
+  "evidence": "body_bg rgb(255,248,234), body_color rgb(16,36,58)"
+ },
+ {
+  "observation": "The palette centers on dark navy, sunshine yellow, cyan, mid blue and red",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(8,42,77), rgb(255,197,49), rgb(18,181,214), rgb(10,111,194), rgb(228,38,44)"
+ },
+ {
+  "observation": "Most text is white on dark or photo backgrounds, and a pale blue is the second most common text color",
+  "category": "color",
+  "evidence": "top_text_colors white 77, rgb(207,227,245) 46"
+ },
+ {
+  "observation": "The header is a dark navy bar, with the Blue Bayou logo on the left and the nav links plus the Dixie Landin' logo on the right",
+  "category": "layout",
+  "evidence": "slice_00 header; Blue Bayou logo rect x160; Dixie Landin' logo rect x1148 w132"
+ },
+ {
+  "observation": "One nav item, 'PLAN', is shown in a muted color, unlike the other white links",
+  "category": "component",
+  "evidence": "slice_00 nav: PLAN rendered grayer than HOME/ATTRACTIONS"
+ },
+ {
+  "observation": "A full-width yellow alert banner below the header holds an Impact heading, a paragraph and a dismiss '×' button",
+  "category": "component",
+  "evidence": "slice_00 yellow bar; primary_button text '×', bg transparent, color rgb(8,42,77), radius 0px"
+ },
+ {
+  "observation": "The page's only <button> is the alert-close ×. All CTAs are anchors",
+  "category": "dom-structure",
+  "evidence": "counts.buttons 1 (primary_button '×'); anchors 44"
+ },
+ {
+  "observation": "The hero is split 50/50 into two 720×560 photos, a water slide and a ferris wheel, each representing one park",
+  "category": "imagery",
+  "evidence": "images: shutterstock.jpg rect x0 w720 h560; DL.jpg rect x720 w720 h560"
+ },
+ {
+  "observation": "Each hero half has a park logo and a label ('WATER PARK' / 'THEME PARK') laid over its lower-left corner",
+  "category": "imagery",
+  "evidence": "image_overlaps logo SVG over hero photos; slice_00 labels; logo rects y646"
+ },
+ {
+  "observation": "The hero photos are tinted with a blue/indigo overlay",
+  "category": "imagery",
+  "evidence": "slice_00 hero both halves have blue cast"
+ },
+ {
+  "observation": "Three white quick-link cards sit in a row on a cyan band. They have rounded corners and a solid colored bottom-edge shadow",
+  "category": "component",
+  "evidence": "slice_00 cards on rgb(18,181,214) band; border_radius bucket_16_plus 4; box_shadows 7"
+ },
+ {
+  "observation": "Each card ends in a red uppercase link line with an arrow",
+  "category": "copy",
+  "evidence": "slice_00 'START THE EXCITEMENT →', 'MORE FUN FOR EVERYONE →', 'CELEBRATE WITH US →'"
+ },
+ {
+  "observation": "Two park-feature sections use full-bleed background photos with color washes: blue for Land of the Giants and red for Thrills",
+  "category": "imagery",
+  "evidence": "landofthegiants.jpg rect w1440 h665; Thrills.jpg w1440 h583; slice_01 blue and red tints"
+ },
+ {
+  "observation": "The two feature sections place their text column on alternating sides: left for Blue Bayou, right for Dixie Landin'",
+  "category": "layout",
+  "evidence": "Blue Bayou logo x160 y1104; Dixie Landin' logo x760 y1769; slice_01"
+ },
+ {
+  "observation": "A CTA pair repeats three times: a filled yellow pill 'GET A SEASON PASS' and an outlined white pill 'OR BUY TICKETS'",
+  "category": "component",
+  "evidence": "slices 01 and 02 show the same button pair; bucket_pill 15"
+ },
+ {
+  "observation": "Pill-shaped radii are common, while most elements have square corners and none use small radii",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0 → 139, pill 15, 1–7 → 0, 8–15 → 0, 16+ → 4"
+ },
+ {
+  "observation": "The page has no gradients, backdrop blur, or CSS animations, but uses 19 transitions and 1 transform",
+  "category": "decoration",
+  "evidence": "effects gradient_backgrounds 0, backdrop_blur 0, animations 0, transitions 19, transforms 1"
+ },
+ {
+  "observation": "The page states closures and postponements in plain sentences: an opening-day delay and a Covid-19 season closure",
+  "category": "copy",
+  "evidence": "slice_00 banner postponing to May 29, 2021; slice_01 'Due to Covid-19 Dixie Landin' Theme Park will remain closed throughout the 2021 Season'"
+ },
+ {
+  "observation": "The 'Stay up to date' section pairs a white card holding a hand-lettered 'Summer is waiting for you' stencil image with a rounded pool photo",
+  "category": "imagery",
+  "evidence": "stencil-summeriswaiting.png rect x160 w540; shutterstock.jpg x740 w540 h360; slice_01/02"
+ },
+ {
+  "observation": "The pool photo has a rounded top and a solid blue bottom-edge offset, matching the card shadow style",
+  "category": "decoration",
+  "evidence": "slice_02 photo bottom has blue band"
+ },
+ {
+  "observation": "The inline Facebook and newsletter links are yellow and underlined on navy",
+  "category": "typography",
+  "evidence": "slice_01 'Follow us on Facebook or sign up for our newsletter.'"
+ },
+ {
+  "observation": "The Getaway section is centered over a blue-tinted photo and holds a row of six outlined pill links that wraps to a second line",
+  "category": "component",
+  "evidence": "slice_02 PARK MAPS, DIRECTIONS, FOOD & CONCESSIONS, GROUPS, HOTELS, CORPORATE EVENTS"
+ },
+ {
+  "observation": "Fine-print policy text (next-day return) appears centered below the Getaway CTAs at a smaller size",
+  "category": "copy",
+  "evidence": "slice_02 'If you pay the full daily admission price...'"
+ },
+ {
+  "observation": "A solid red sponsor band shows the white Coca-Cola wordmark, a 'SAVE $5' promo headline and a tilted can image on the right",
+  "category": "component",
+  "evidence": "background rgb(228,38,44); coke-white.png x160 w320; coke-can-full.png x1147 w148 h234; slice_02"
+ },
+ {
+  "observation": "The sponsor band repeats its promo text in an h3 eyebrow and then an h2",
+  "category": "copy",
+  "evidence": "heading_outline h3 'SAVE $5', h2 'SAVE $5 WITH ANY COCA-COLA CAN'"
+ },
+ {
+  "observation": "The footer is navy with four columns, each topped by a yellow uppercase h4 (PARKS, PLAN, TICKETS, MORE) over pale-blue link lists",
+  "category": "layout",
+  "evidence": "h4 x4, ul 4, li 15; slices 02–03"
+ },
+ {
+  "observation": "Social links in the footer are round translucent circles holding single letters (F, T, Y) instead of icons",
+  "category": "component",
+  "evidence": "slice_03; background rgba(255,255,255,0.12) x3; svgs 0"
+ },
+ {
+  "observation": "The footer ends with a thin divider rule and a centered copyright line",
+  "category": "layout",
+  "evidence": "slice_03 '© Blue Bayou / Dixie Landin'. All Rights Reserved.'"
+ },
+ {
+  "observation": "The content column runs from about x=160 to x=1280, a 1120px container inside the 1440px viewport",
+  "category": "layout",
+  "evidence": "logo rect x160; card/footer edges at 160 and 1280; Dixie Landin' header logo ends at 1280"
+ },
+ {
+  "observation": "Every image has an alt attribute. Decorative repeats and background photos use empty alt",
+  "category": "dom-structure",
+  "evidence": "alt_missing 0; several images alt ''"
+ },
+ {
+  "observation": "The park logos repeat several times: each appears in the header, the hero and its feature section",
+  "category": "imagery",
+  "evidence": "Blue Bayou Logo.svg 3 instances, Dixie Landin Logo.svg 3 instances in images list"
+ },
+ {
+  "observation": "A brush.svg image is in the DOM but renders at 0×0",
+  "category": "imagery",
+  "evidence": "brush.svg rect w0 h0"
+ },
+ {
+  "observation": "Layout uses both grid and flex in similar amounts",
+  "category": "layout",
+  "evidence": "display_grid 13, display_flex 15"
+ },
+ {
+  "observation": "The copy is short: 262 words, with no emoji, em dashes or exclamation marks",
+  "category": "copy",
+  "evidence": "text_stats words 262, emoji 0, em_dashes 0, exclamations 0"
+ },
+ {
+  "observation": "The page uses 10 ARIA attributes and 2 inline style attributes",
+  "category": "dom-structure",
+  "evidence": "aria_attrs 10, inline_style_attrs 2"
+ }
+]

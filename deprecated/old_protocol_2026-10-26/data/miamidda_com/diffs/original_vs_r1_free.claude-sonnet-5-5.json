@@ -1,0 +1,260 @@
+[
+ {
+  "observation": "The page title differs. A uses a long, repeated keyword string. B uses a short name.",
+  "category": "copy",
+  "evidence": "A title: 'Miami DDA - Economic Development Miami – Tourism Miami | Miami DDA'. B title: 'Miami Downtown Development Authority'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 8 h1 elements. Some are duplicates (LIVING/Living, DOING BUSINESS/Doing Business, EXPLORING/Exploring), and two read 'Original text'. B has a single h1 holding the three words 'Living / Doing Business / Exploring'.",
+  "category": "DOM/semantic structure",
+  "evidence": "A_facts h1_count 8. B_facts h1_count 1 with text 'Living\\nDoing Business\\nExploring'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses landmark and semantic elements: nav, main, figure/figcaption, blockquote, and 6 time elements. A has no nav, main, figure, blockquote or time, and has only header, footer and 11 sections.",
+  "category": "DOM/semantic structure",
+  "evidence": "B semantic: nav 1, main 1, figure 1, figcaption 1, blockquote 1, time 6. A semantic: nav 0, main 0, figure 0, blockquote 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM is much heavier: 67 scripts, 36 links, 182 divs, 182 li, 135 anchors, 30 svgs, 5 iframes and 3 forms. B has 1 script, 45 divs, 26 li, 80 anchors, 1 svg, 0 iframes and 1 form.",
+  "category": "DOM/semantic structure",
+  "evidence": "A tag_counts vs B tag_counts.",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has no external stylesheets and a single style block. A loads 20 stylesheets, has 7 style tags and 48 inline style attributes.",
+  "category": "DOM/semantic structure",
+  "evidence": "A counts stylesheets 20, inline_style_attrs 48. B stylesheets 0, style 1, inline_style_attrs 6.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's class usage is large and framework-like: 626 class tokens, 210 unique. B is minimal, with 57 class tokens and 31 unique.",
+  "category": "DOM/semantic structure",
+  "evidence": "A classes total 626, unique 210. B classes total 57, unique 31.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's typography is mixed. Nunito is the main face across 674 elements, with Roboto (33), arial (28) and moovegdpr (3). B uses only Helvetica Neue, across 238 elements.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count in both facts files.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text size and leading differ. A uses 14px with a 17.5px line-height. B uses 17px with a 28.05px line-height, which looks airier.",
+  "category": "typography",
+  "evidence": "body_font_size and body_line_height in both facts files.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero heading is far larger and left-aligned in B: 80px, weight 800, three stacked lines, with 'Doing Business' and 'Exploring' in yellow. In A the h1 is a 32px centered white 'LIVING' label inside a tile.",
+  "category": "typography",
+  "evidence": "A h1 32px/700, center, white. B h1 80px/800, text_align start. B_slice_00 shows the yellow lines.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero has a light, wide-tracked 'DOWNTOWN MIAMI' wordmark-style title with the subtitle 'Epicenter of the Americas' centered under it. B moves 'EPICENTER OF THE AMERICAS' into a small yellow letter-spaced eyebrow above the heading.",
+  "category": "typography",
+  "evidence": "A_slice_00 centered title. B_slice_00 yellow eyebrow at top-left of the hero.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is composed of three angled/trapezoid photo tiles (Living, Doing Business, Exploring), each with a colored overlay (blue, teal, pink) and a label. B has no tiles and replaces them with a text-only stacked heading.",
+  "category": "layout",
+  "evidence": "A_slice_00 shows the tiles over the skyline. B_slice_00 hero has no tile images. B has only 2 images in total.",
+  "which_side": "A"
+ },
+ {
+  "observation": "Both heroes use a skyline photo and a diagonal white cut at the bottom. A centers its content and uses a bright, mostly unshaded photo. B darkens the photo with a navy overlay and left-aligns the text.",
+  "category": "imagery",
+  "evidence": "A_slice_00 vs B_slice_00. A also has triangle.svg at 1490x177.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A places a promo card in the hero's upper-left: a navy box with a teal 'More information…' bar, the title 'Friday Forums: Fundamentals of Digital Transformation Class' and a pink 'Register for class' button. B replaces this with a full-width pink banner below the hero reading 'School Agenda Cover Contest for Kids', with a 'More information' link and a white pill 'CLICK HERE TO ENTER CONTEST' button.",
+  "category": "component",
+  "evidence": "A_slice_00 promo card. B_slice_00 pink banner. B heading outline includes the h3 'School Agenda Cover Contest for Kids'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a top pink announcement bar with an underlined COVID-19 link, and a cookie-consent bar with a blue 'Accept' button. B has neither. It has a dark navy top utility bar with Media and Press Center and Public Meetings on the left and social links (Instagram, Twitter, YouTube, Facebook, LinkedIn, Email) on the right.",
+  "category": "component",
+  "evidence": "A_slice_00 pink strip at top and dark cookie bar at y≈870. B_slice_00 top bar.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header is transparent over the hero. It has the full MIAMI DDA logo, two nav links, and Translate, Social and Search items with an icon. B's header is a navy band with only the icon mark (no wordmark) and four bold nav items with caret indicators: Focus Areas, Explore Downtown, About Us, Event Calendar.",
+  "category": "component",
+  "evidence": "A_slice_00 vs B_slice_00. B logo img rect 38x56 at x=160. A logo rect 24x35 at x=45.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Header and content alignment differ. A's logo sits at x=45 with a full-bleed header. B's logo and content align to a left edge at x=160, giving a contained container of about 1120px.",
+  "category": "layout",
+  "evidence": "Image rects: A logo x=45, B logo x=160, B Follow the Sun image x=160.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A presents the 'Living in Downtown Miami' intro as centered paragraph text with a bold second paragraph. B places it in a two-column layout. The left column has an h2 'Living in Downtown Miami' and the paragraphs. The right column has pink letter-spaced category labels (LIVING, DOING BUSINESS, EXPLORING) over groups of outlined pill links.",
+  "category": "layout",
+  "evidence": "B_slice_00/01 pills such as 'Message to Our DWNTWNRs', 'Community Resources' and 'Small Business & Loan Assistance'. A_slice_00 has centered text only.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds a new set of outlined pill navigation links (Getting Around Town, Places to Stay, Incentives, Education, Dine and others) that is not visible in A's screenshots.",
+  "category": "copy",
+  "evidence": "B_slice_00/01 pills. B border_radius pill bucket 19 vs A 2.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's section h2 headings 'Living in Downtown Miami', 'Doing Business in Downtown Miami' and 'Exploring Downtown Miami' appear in the heading outline, but only a blank area shows in the screenshot (large white gaps at the bottom of slice 0 and top of slice 1). B has only the Living h2, with the other categories reduced to h3 labels.",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline h2s. B outline h3 'LIVING', 'DOING BUSINESS', 'EXPLORING'. A_slice_00 and A_slice_01 show unexplained whitespace.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'Follow the Sun' promo differs. In A it is a 556x315 image (alt 'Book') that is not visible in the screenshots. In B it is a full-width band with a yellow-to-pink pastel gradient. The logo is shown at 340x717, with a small caps 'FOR INFORMATION ON' eyebrow, an h2 and a pink pill 'CLICK HERE' button.",
+  "category": "component",
+  "evidence": "A images: FollowtheSun_logo_225.png rect 556x315, alt 'Book'. B image rect 340x717, alt 'Follow the Sun'. B gradient_backgrounds 1 vs A 0. B_slice_01.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'What is the Miami DDA' section differs. A uses a two-column layout with the black MIAMI DDA logo and an embedded YouTube video on the left, and h2, paragraphs and big teal stats on the right. B uses a pale blue-gray band with the h2 and a paragraph on the left and the mission text, a pink-bordered blockquote and white stat cards on the right. There is no video.",
+  "category": "component",
+  "evidence": "A has 5 iframes and a video player in A_slice_01. B has 0 iframes and 1 blockquote. B_slice_02.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Stats are treated differently. A shows large unboxed teal numerals (1967, 15, 2) with uppercase teal captions. B shows the numerals in blue inside rounded white cards with sentence-case gray captions.",
+  "category": "component",
+  "evidence": "A_slice_01 teal numbers (24,182,205-like). B_slice_02 cards. B's 3 radius values in the 8–15 bucket.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B inserts a full-bleed sunset palm-tree photo band with a dark caption strip crediting @joiseyshowaa. A's equivalent credit label sits over a flat gray Latest News background where no photo is visible in the screenshot.",
+  "category": "imagery",
+  "evidence": "B_slice_02 photo band at y≈363–883. A_slice_01 gray block with the small credit text 'Twilight Miami Skyline · CC BY-SA 2.0'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "'Latest News' and 'Upcoming Events' are stacked sections in A, each with a centered heading and three equal bordered, rounded white cards. In B they sit side by side as two columns of divider-separated list items, with left-aligned h2s that have yellow underlines.",
+  "category": "layout",
+  "evidence": "A_slice_01/02 card grids. B_slice_02/03 two columns. B display_grid 7 vs A 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's news and event titles are large (about 24px) bold headings inside cards, with event dates in pink. B's items are compact: a small pink bold date above a ~17px bold title, with blue 'Read More →' and 'See Details →' links.",
+  "category": "typography",
+  "evidence": "A_slice_01/02 vs B_slice_02/03.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'Latest News' heading is white on a mid-gray block. B's section headings are navy with a short yellow underline accent.",
+  "category": "color",
+  "evidence": "A_slice_01 'Latest News' white on gray. B_slice_02 yellow rule under 'Latest News' and 'Upcoming Events'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The districts section differs. A shows 'Proudly Serving…' left-aligned over a grayscale street map with colored district polygons and a legend (Arts & Entertainment, Central Business District, Brickell). B uses a solid navy section with a centered white heading, outlined pill buttons for the three districts and a pink 'CONTACT US' pill. There is no map image.",
+  "category": "component",
+  "evidence": "A has an img alt 'Map' and legend in A_slice_02/03. B_slice_03 has no map and 1 svg overall.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a '@DOWNTOWNMIA' social band on dark indigo (rgb 36,35,88) that is mostly empty in the screenshot, apart from the heading. B moves the social links to the top bar and the footer column.",
+  "category": "component",
+  "evidence": "A_slice_03 shows a large blank navy area. A h4 '@DOWNTOWNMIA'. B footer h5 '@DOWNTOWNMIA' with Instagram, Facebook and Twitter links.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The newsletter signup is placed differently. A has a full-width pink strip with the heading 'Get Downtown Updates', a wide email input and a navy 'Subscribe' button. B puts a narrow email input and a pink pill 'SUBSCRIBE' button in the last footer column.",
+  "category": "component",
+  "evidence": "A_slice_03 pink strip. B_slice_04 fourth footer column.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer differs in structure. A's is a single thin row with the white logo, 'Made with ♥ by Pacific54', a © 2019 notice and bordered 'ADA Compliance' and 'Annual Report' buttons. B has a four-column dark navy link directory (Miami DDA, Explore Downtown, Media Center, Get Downtown Updates) with small caps letter-spaced headings, then a hairline-separated bottom row with plain links.",
+  "category": "component",
+  "evidence": "A_slice_03 footer vs B_slice_04. B h5 count 8.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer is a new link directory with groups such as Data + Research, Community Grants, Calendars and Media Center items (Newsletters, Video Spotlight, Press). These do not appear in A's screenshots.",
+  "category": "copy",
+  "evidence": "B_slice_04 text.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The palette differs. A uses a bright pink (235,82,157), cyan/teal (24,182,205 and 0,181,204), royal blue (12,77,162) and indigo (36,35,88), with black text. B uses a magenta (224,25,143), deep navy (10,31,68 and 6,20,46), a yellow accent, pale blue-gray (245,247,251) and navy-slate body text (27,36,55).",
+  "category": "color",
+  "evidence": "top_backgrounds and top_text_colors in both facts files.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Link colors differ. A has 62 elements in default link blue (0,0,238) and 134 in (24,132,184). B's links are light blue-gray (185,198,224) on dark backgrounds and royal blue on light ones.",
+  "category": "color",
+  "evidence": "A top_text_colors vs B top_text_colors.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The primary CTA looks different. A's is 'Discover the Possibilities', a teal (0,181,204) rectangle with 3px radius and 12px 36px padding, in title case. B's is an uppercase magenta pill with the same label. The facts' 'primary_button' for B is the transparent 'Menu' button, but the visible hero CTA is the pink pill.",
+  "category": "component",
+  "evidence": "A primary_button radius 3px, bg rgb(0,181,204). B_slice_00 pill. B primary_button text 'Menu', radius 6px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Corner radii go from mostly square to rounded. A has 692 zero-radius elements, 27 at 1–7px and 12 at 8–15px. B has 216 at zero, none at 1–7px and 19 pill-radius elements.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets in both facts files.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has far more motion and effect machinery: 222 transitions, 4 animations and 29 transforms, plus 8 box-shadows. B has 15 transitions, 0 animations, 0 transforms and 4 box-shadows. B also uses 1 gradient where A uses 0.",
+  "category": "decoration",
+  "evidence": "effects objects in both facts files.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's CTAs and headings use uppercase with wide letter-spacing for eyebrows and labels (EPICENTER OF THE AMERICAS, LIVING, FOR INFORMATION ON, footer headings) and uppercase button text (CONTACT US, SUBSCRIBE). A's uppercase use is limited to tile labels such as 'DOWNTOWN MIA' and the stat captions.",
+  "category": "typography",
+  "evidence": "B_slice_00–04 vs A_slice_00/01.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The hero tagline in B overlays the busy skyline with no backing panel. It reads 'Downtown Miami — electrifying, ever-evolving, always intriguing.' and includes an em dash. A has no em dashes and no such tagline.",
+  "category": "copy",
+  "evidence": "B text_stats em_dashes 1 vs A 0. B_slice_00 shows the tagline overlapping buildings.",
+  "which_side": "B"
+ },
+ {
+  "observation": "Image accessibility and handling differ. A has 8 images with 3 missing alt, and the logo and newsletter images have empty alt. B has 2 images, both with descriptive alt text, and 7 aria attributes versus A's 4.",
+  "category": "imagery",
+  "evidence": "A alt_missing 3, images 8. B alt_missing 0, images 2. aria_attrs A 4 vs B 7.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page length and width are similar but not identical. A is 1440x4945 and B is 1440x5669. B is taller because of larger type, more padding and a longer footer.",
+  "category": "layout",
+  "evidence": "layout.page_height in both facts files.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A page-level white right-edge strip appears in A's screenshots, where the background and bands stop at about x=1440 while the capture is wider. The body background is transparent (rgba 0,0,0,0). B sets an explicit white body background and its bands run edge to edge.",
+  "category": "layout",
+  "evidence": "A body_bg rgba(0,0,0,0) vs B rgb(255,255,255). Visible in A_slice_00–03.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'View All News' and 'View All Events' links are centered underlined text in A. In B they are left-aligned, bold navy, underlined, and end with an arrow (→).",
+  "category": "component",
+  "evidence": "A_slice_02 vs B_slice_03.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages carry over the same content strings: the three news headlines, the three event titles and dates, the 1967/15/2 stats, the Pacific54 credit and the © 2019 line. Differences are in treatment, not text.",
+  "category": "copy",
+  "evidence": "Matching heading_outline entries in both facts files.",
+  "which_side": "both"
+ }
+]

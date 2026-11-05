@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "S2-01",
+  "run": "single-file v2",
+  "category": "typography",
+  "observation": "Body font: A uses a Graphik/Helvetica sans-serif stack everywhere; B swaps headings and body to Georgia serif, giving a different typographic voice.",
+  "evidence": "A fonts: Graphik, Helvetica Neue...; B fonts: Georgia, Times New Roman, serif + system-ui; B h1 fontFamily Georgia",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-02",
+  "run": "single-file v2",
+  "category": "typography",
+  "observation": "A headline is a heavy, tightly set bold grotesque; B headline is a lighter serif with looser rhythm.",
+  "evidence": "A h1 76.56px Graphik; B h1 64px Georgia; screenshots show A bold sans h1, B serif h1",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-04",
+  "run": "single-file v2",
+  "category": "typography",
+  "observation": "H1 is smaller in B (64px vs 76.56px).",
+  "evidence": "h1.fontSize values",
+  "which_side": "B"
+ },
+ {
+  "id": "S2-05",
+  "run": "single-file v2",
+  "category": "color",
+  "observation": "Page background: A is white in the hero/main with a cream paper-like band only under the product illustration; B uses a warm cream (rgb 251,248,241) body background throughout.",
+  "evidence": "bodyBg A rgb(255,255,255); B rgb(251,248,241); B screenshot cream overall",
+  "which_side": "B"
+ },
+ {
+  "id": "S2-06",
+  "run": "single-file v2",
+  "category": "component",
+  "observation": "Primary CTA 'Give Basecamp a Try' is yellow in both, but B is a pill (999px radius) with a drop shadow look, while A's is a flatter yellow rectangle with small corners.",
+  "evidence": "B button radius 999px bg rgb(233,183,43); A screenshot rectangular yellow button",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-07",
+  "run": "single-file v2",
+  "category": "component",
+  "observation": "Header: A has a small Basecamp wordmark logo at top-left; B uses a yellow circular logo icon plus wordmark, and B's header nav has a pill 'Try it FREE' button while A has 'Sign in' outlined and a dark 'Try it FREE' button.",
+  "evidence": "A header: outlined Sign in, black Try it FREE; B: plain Sign in, yellow pill Try it FREE; B images[0] basecamp-logo.svg 300x83",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-08",
+  "run": "single-file v2",
+  "category": "DOM",
+  "observation": "Logo is a standalone img in B; in A it is an inline SVG (path/g).",
+  "evidence": "A tags svg:1, path:12; B no svg, img count includes basecamp-logo.svg",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-09",
+  "run": "single-file v2",
+  "category": "layout",
+  "observation": "Review-quote stars row: A renders three star badges each with small grey quote beneath, centered and small; B places three stars+quotes inline in one row with larger italic quotes and stars on the left of each.",
+  "evidence": "Screenshots top of both; both use stars svg x3 in dom images",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-10",
+  "run": "single-file v2",
+  "category": "imagery",
+  "observation": "Hero product illustration: A uses a single composite image with handwritten annotations cleanly placed and a cream curved/paper-torn backdrop; B uses a different 'project-hero-captions.png' where annotation text overlaps the UI (e.g. 'Create a place in Basecamp for each project or team' collides with 'Honcho Co', 'Involve everyone...' overlaps 'Message Board').",
+  "evidence": "B images[5] project-hero-captions.png 2333x2284; screenshot B shows overlapping handwriting; A uses project-remote-large 1760x2205",
+  "which_side": "B"
+ },
+ {
+  "id": "S2-12",
+  "run": "single-file v2",
+  "category": "imagery",
+  "observation": "A illustration is fully shown with soft fade at bottom (cut off in Project Activity); B shows the full illustration including ending items and a vertical divider.",
+  "evidence": "A screenshot ends with faded activity feed; B shows 'Figure out who still needs a laptop' fully",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-13",
+  "run": "single-file v2",
+  "category": "DOM",
+  "observation": "Hero image extra asset: B loads two illustration PNGs (project-remote-large and project-hero-captions), A just one.",
+  "evidence": "A images has project-remote-large only; B has both",
+  "which_side": "B"
+ },
+ {
+  "id": "S2-14",
+  "run": "single-file v2",
+  "category": "copy",
+  "observation": "Social-proof count copy changed: A says '3,455 companies signed up in the last week alone!'; B says '4,000 companies signed up...'.",
+  "evidence": "Screenshot text beneath both CTAs",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-15",
+  "run": "single-file v2",
+  "category": "typography",
+  "observation": "Headline for section 2 'One place, not all over the place.' is large bold sans in A; B renders it smaller serif and lighter.",
+  "evidence": "Screenshots; B h2 serif",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-16",
+  "run": "single-file v2",
+  "category": "layout",
+  "observation": "Body paragraphs in A are centered with bold lead-ins; in B they are left-aligned within a narrower column.",
+  "evidence": "A 'One place' paragraphs centered; B left-aligned in screenshot",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-17",
+  "run": "single-file v2",
+  "category": "color",
+  "observation": "Links: A uses underlined dark text for 'Basecamp is different - take a deeper look' etc.; B styles them green and underlined/bold.",
+  "evidence": "B screenshot green links; A black underlined",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-18",
+  "run": "single-file v2",
+  "category": "component",
+  "observation": "Book section: A shows the REMOTE cover with a dark outlined 'learn more about REMOTE' button; B shows a plain green underlined text link and cover with drop shadow.",
+  "evidence": "A has bordered button; B has green link; B cover shadow visible",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-19",
+  "run": "single-file v2",
+  "category": "layout",
+  "observation": "Book section copy in A has more breathing room with bold sans body at larger size; B is compact. Body in A is two-column layout with large margins; B cover is placed left with text to the right at smaller scale.",
+  "evidence": "Screenshots book section",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-20",
+  "run": "single-file v2",
+  "category": "effects",
+  "observation": "Horizontal rule/decoration: A uses a hand-drawn wavy squiggle line (hr) between book and testimonials; B uses thin straight grey rules between sections.",
+  "evidence": "A hr:1 and wavy line visible; B no hr in tags, thin lines visible",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-21",
+  "run": "single-file v2",
+  "category": "layout",
+  "observation": "Testimonials: A shows them as one big centered column of large bold pull-quotes with attribution beneath, no containers; B puts them in a two-column card grid with white rounded cards and small regular-weight quotes.",
+  "evidence": "Both have blockquote:10, cite:10; screenshot A single column, B two-column cards",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-22",
+  "run": "single-file v2",
+  "category": "typography",
+  "observation": "Testimonial type scale: A quotes are heavy ~30px+ headline-style; B quotes are body-size serif.",
+  "evidence": "Screenshots",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-23",
+  "run": "single-file v2",
+  "category": "layout",
+  "observation": "B testimonial cards use masonry-like staggered heights leaving uneven columns; the right column starts lower than the left.",
+  "evidence": "B screenshot cards at y~1190 vs 1050",
+  "which_side": "B"
+ },
+ {
+  "id": "S2-24",
+  "run": "single-file v2",
+  "category": "copy",
+  "observation": "Attribution style: A uses small italic dash-prefixed cite; B uses an em-dash with sans-serif grey text inside the card.",
+  "evidence": "Screenshots cite text '-Tobi Lutke...' vs '— Tobi Lütke, CEO, Shopify'",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-25",
+  "run": "single-file v2",
+  "category": "copy",
+  "observation": "Quote copy is nearly identical across sides but A wraps quotes in smart quotes in the heading; B uses same text. Testimonial order differs: A is linear; B column-flows left then right.",
+  "evidence": "Order Tobi, Tina, Dale, George, Samantha left; Brad, Joey, Kyle, Spencer, Scot right",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-26",
+  "run": "single-file v2",
+  "category": "color",
+  "observation": "'Hear from hundreds more customers...' link: A dark blue-black bold underlined; B green bold underlined.",
+  "evidence": "Screenshots",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-27",
+  "run": "single-file v2",
+  "category": "typography",
+  "observation": "Final CTA block: A shows 'Have questions? Holler. Ready to get going? Engage:' as large bold sans; B renders it small, bold serif-ish.",
+  "evidence": "Screenshots near bottom",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-28",
+  "run": "single-file v2",
+  "category": "imagery",
+  "observation": "Footer: A is white with growth chart line spanning the whole width with hand-drawn labels (2005: 14k ... 2021: 3.5mil) behind/under text; B footer sits on a pale green tinted background with the chart as a cropped, smaller image at the bottom right and its labels partially cut off.",
+  "evidence": "B images[7] footer-graph.png 3000x1053; B screenshot green tint; A chart is inline full width",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-29",
+  "run": "single-file v2",
+  "category": "imagery",
+  "observation": "Footer chart: A is a full-bleed hand-drawn curve with legible year labels; B image is cropped/overflowing and labels truncated.",
+  "evidence": "Screenshots bottom",
+  "which_side": "B"
+ },
+ {
+  "id": "S2-30",
+  "run": "single-file v2",
+  "category": "typography",
+  "observation": "Footer link text is small and left-aligned in both, but A is bold sans with underlines while B is serif with underlines.",
+  "evidence": "Screenshots footer",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-32",
+  "run": "single-file v2",
+  "category": "DOM",
+  "observation": "A includes a hero-level scripts/meta stack (13 scripts, 9 links, 13 meta, 2 title) from the original site; B is self-contained with 0 scripts, 2 meta, 1 title.",
+  "evidence": "A tags script:13 link:9 meta:13; B has no script/link",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-34",
+  "run": "single-file v2",
+  "category": "DOM",
+  "observation": "A has 4 sections and 2 h1; B has 3 sections and 1 h1, so B is semantically cleaner at the h1 level.",
+  "evidence": "A h1:2 section:4; B h1:1 section:3",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-36",
+  "run": "single-file v2",
+  "category": "DOM",
+  "observation": "A uses picture with 2 source elements; B uses 1.",
+  "evidence": "A source:2; B source:1",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-37",
+  "run": "single-file v2",
+  "category": "DOM",
+  "observation": "B has more p elements (28 vs 25) and fewer anchors (31 vs 41), reflecting a simplified link set.",
+  "evidence": "tags counts",
+  "which_side": "B"
+ },
+ {
+  "id": "S2-38",
+  "run": "single-file v2",
+  "category": "effects",
+  "observation": "B rounds visual elements generally (pill buttons, rounded white cards); A is sharp-cornered and flat/typographic.",
+  "evidence": "B button radius 999px, rounded cards; A button radius 0px per dom",
+  "which_side": "both"
+ },
+ {
+  "id": "S2-39",
+  "run": "single-file v2",
+  "category": "DOM",
+  "observation": "Image assets are served from the archive CDN in A (web.archive.org URLs) and from local relative files in B (file:// .../generated/single/images/).",
+  "evidence": "images src values",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-01",
+  "run": "framework v2",
+  "category": "color",
+  "observation": "Page background is pure white in A but a warm cream in B for the hero and book sections.",
+  "evidence": "original_dom bodyBg rgb(255,255,255); framework_dom bodyBg rgb(251,247,238); B screenshot shows cream hero and book bands.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-02",
+  "run": "framework v2",
+  "category": "color",
+  "observation": "B introduces a green brand palette (dark green CTAs, green links, green author names); A uses yellow CTA buttons and black/dark-navy text with underlined black links.",
+  "evidence": "A screenshot: yellow 'Give Basecamp a Try' and 'Try it FREE' (dark) buttons; B screenshot: dark green pill 'Give Basecamp a Try', green 'Try it FREE' nav pill, green underlined links.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-03",
+  "run": "framework v2",
+  "category": "color",
+  "observation": "Body text color differs: A uses a blue-grey navy, B a dark green-black.",
+  "evidence": "bodyColor A rgb(29,45,53); B rgb(31,42,36).",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-04",
+  "run": "framework v2",
+  "category": "typography",
+  "observation": "Typeface changed from Graphik (with Helvetica Neue fallbacks) to Inter / system-ui.",
+  "evidence": "fonts A: 'Graphik, \"Helvetica Neue\", helvetica, ...'; B: 'Inter, system-ui, sans-serif'.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-05",
+  "run": "framework v2",
+  "category": "typography",
+  "observation": "A has much larger type: H1 about 76.6px with 23.2px body, whereas B uses 60px H1 and 16px body, giving B a more compact, conventional text scale.",
+  "evidence": "h1.fontSize A 76.56px, B 60px; bodyFontSize A 23.2px, B 16px.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-07",
+  "run": "framework v2",
+  "category": "layout",
+  "observation": "Page is nearly twice as tall in A (6474px) as in B (3492px) because of larger type, stacked testimonials and generous whitespace; B compresses via side-by-side columns and grid.",
+  "evidence": "pageHeight A 6474, B 3492.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-08",
+  "run": "framework v2",
+  "category": "layout",
+  "observation": "A's 'One place' section is a single centered column with the product screenshot full-width above the text; B places the screenshot on the left and copy on the right in a two-column split.",
+  "evidence": "A screenshot: screenshot at y~220-570 above centered heading at y~590. B screenshot: image at left x~120-375, heading and paragraphs at right x~425-730.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-09",
+  "run": "framework v2",
+  "category": "layout",
+  "observation": "The 'We literally wrote the book' section is centered with the book cover left-aligned below the heading in A, while B uses a clean two-column row with the cover left and heading plus copy right, and tilted cover with shadow.",
+  "evidence": "A: heading centered at y~800, cover at x~90-160 beneath; B: cover at x~125-285 with drop shadow, heading to its right at y~830.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-10",
+  "run": "framework v2",
+  "category": "component",
+  "observation": "Testimonials are a single-column stack of large centered pull quotes in A; B renders them as a three-column masonry of white cards.",
+  "evidence": "A screenshot: 10 quotes at large bold type centered one per row from y~1050-1970 (display). B screenshot: cards in three columns at x~95-730, y~1240-1620.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-11",
+  "run": "framework v2",
+  "category": "effects",
+  "observation": "B gives the first testimonial (Tobi Lutke) a green outline to highlight it as featured; A gives no quote special emphasis.",
+  "evidence": "B screenshot: first card at top-left has a green border; no matching treatment in A.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-12",
+  "run": "framework v2",
+  "category": "effects",
+  "observation": "Quote cards in B have white fill, rounded corners and subtle shadow on a sage-green band; A quotes have no containers.",
+  "evidence": "B screenshot: rounded white cards on grey-green section background; A screenshot: plain text on white.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-13",
+  "run": "framework v2",
+  "category": "copy",
+  "observation": "Testimonial attribution style differs: A uses small italic dash-prefixed text under the quote in dark ('-Tobi Lütke, CEO, Shopify'); B uses bold green text with an em dash ('— Tobi Lütke, CEO, Shopify').",
+  "evidence": "A screenshot attribution lines are small and grey-black without space after hyphen; B screenshot green bold names with '— '.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-15",
+  "run": "framework v2",
+  "category": "semantics",
+  "observation": "Testimonial markup differs: A has 10 blockquote + 10 cite elements; B wraps 10 blockquote in 10 figure with 10 figcaption and has no cite.",
+  "evidence": "original_dom tags blockquote 10, cite 10; framework_dom tags figure 10, blockquote 10, figcaption 10 (no cite key).",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-16",
+  "run": "framework v2",
+  "category": "layout",
+  "observation": "B's section background bands alternate (cream, white, cream, sage green, white, dark green) to separate sections; A uses mostly white with a hand-drawn squiggle divider and a beige wavy blob under the hero.",
+  "evidence": "B screenshot color bands at y~0-355, 355-750, 750-1045, 1045-1800, 1810+; A screenshot: beige torn-edge shape at y~640-700 and a wavy line divider at y~960.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-18",
+  "run": "framework v2",
+  "category": "imagery",
+  "observation": "The hero product screenshot in A has hand-lettered callouts ('Create a place in Basecamp...', 'Involve everyone...') cleanly arranged around a large screenshot; in B the same image is smaller and the callouts overlap the avatar row and text, looking cluttered.",
+  "evidence": "A screenshot y~200-560; B screenshot y~390-710 shows annotation text overlapping 'Create ... for each project or team' and the avatar row.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-19",
+  "run": "framework v2",
+  "category": "effects",
+  "observation": "The screenshot in B has a rounded card with drop shadow, floating on white, while A's screenshot fades seamlessly into the beige band without a visible card edge.",
+  "evidence": "B screenshot: rounded white panel with shadow at x~120-375; A screenshot: panel blends with its background and cuts off at bottom edge.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-20",
+  "run": "framework v2",
+  "category": "imagery",
+  "observation": "B loads an extra image (project-hero-captions.png, 2333x2284) not in A's image list, plus a logo image and a footer-graph.png; A's DOM lists only stars (x3), project-remote-large and remote-cover.",
+  "evidence": "framework_dom images: basecamp-logo.svg, 3x stars.svg, project-remote-large.png, project-hero-captions.png, remote-cover.png, footer-graph.png (8 img); original_dom images list 5 entries.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-21",
+  "run": "framework v2",
+  "category": "imagery",
+  "observation": "The logo in A is rendered with inline SVG paths; B uses an img tag pointing to basecamp-logo.svg at 300x83 intrinsic size. B logo is a yellow badge icon with the wordmark in a larger size.",
+  "evidence": "original_dom svg:1, path:12 and no logo in images list; framework_dom images[0] basecamp-logo.svg.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-22",
+  "run": "framework v2",
+  "category": "component",
+  "observation": "A's header is a small, flush-left/right bar with tiny nav links and a boxed 'Sign in' and a dark 'Try it FREE' rectangle; B has a roomier, constrained-width header with pill 'Try it FREE' in green and plain-text 'Sign in'.",
+  "evidence": "A screenshot header at y~0-25 with outlined 'Sign in' box and dark rectangular button; B screenshot header with unbordered 'Sign in' and green rounded pill. A button radius reported 0px.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-24",
+  "run": "framework v2",
+  "category": "layout",
+  "observation": "A's star-rating row uses three quote snippets with small stars and sits tightly above the H1; B gives the same three snippets larger yellow stars and more space.",
+  "evidence": "A screenshot stars at y~45-60 near top; B screenshot stars at y~68 with larger star glyphs. Both use stars.svg (300x53).",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-25",
+  "run": "framework v2",
+  "category": "copy",
+  "observation": "CTA copy is unchanged ('Give Basecamp a Try') but the social-proof microcopy number changed from 3,455 to 4,000.",
+  "evidence": "A screenshot: '3,455 companies signed up in the last week alone!'; B screenshot: '4,000 companies signed up in the last week alone!'.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-26",
+  "run": "framework v2",
+  "category": "component",
+  "observation": "The hero CTA button in A is a wide rectangular yellow button with dark text; B's is a green pill with white text and soft shadow.",
+  "evidence": "A screenshot yellow button at y~162; B screenshot dark green rounded button with shadow at y~280. A button radius 0px in original_dom.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-27",
+  "run": "framework v2",
+  "category": "typography",
+  "observation": "Social-proof caption is dark in A and lighter grey small text in B.",
+  "evidence": "B screenshot '4,000 companies signed up...' rendered in light grey; A rendered in dark text.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-29",
+  "run": "framework v2",
+  "category": "copy",
+  "observation": "The document title differs: A 'Basecamp: Project Management & Team Communication Software', B 'Basecamp – The All-In-One Toolkit for Working Remotely'.",
+  "evidence": "title fields in both dom.json files.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-31",
+  "run": "framework v2",
+  "category": "semantics",
+  "observation": "A has deeper list markup (2 ul, 14 li) with many span (14) and strong (14); B has 1 ul/3 li for nav and more span (19) elements, suggesting the footer links in B are paragraphs not lists, as in A where footer lists exist.",
+  "evidence": "original_dom ul 2, li 14; framework_dom ul 1, li 3, span 19, p 15 vs A p 25.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-34",
+  "run": "framework v2",
+  "category": "copy",
+  "observation": "Book copy ends with 'get up to speed quick.' with 'quick' italic in B, matching A's em usage; B has fewer em elements overall (1 vs 2).",
+  "evidence": "B screenshot: italic 'quick'; em count A 2, B 1.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-35",
+  "run": "framework v2",
+  "category": "color",
+  "observation": "The 'Basecamp is different' link is bold black underlined in A and bold green underlined in B.",
+  "evidence": "A screenshot link at y~668 black underlined; B at y~682 green underlined.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-37",
+  "run": "framework v2",
+  "category": "imagery",
+  "observation": "The footer in A sits on white with small black text and the growth-chart illustration (hand-drawn line with years 2005-2021 and account counts) fully visible and prominent; B moves the footer onto a dark-green background with white text and shows the chart as faint, cropped, low-contrast lines in the background.",
+  "evidence": "A screenshot y~1990-2000 with labels '2021: 3.5mil accounts signed up'; B screenshot dark band y~1810+ with faint chart; framework_dom images footer-graph.png 3000x1053.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-38",
+  "run": "framework v2",
+  "category": "typography",
+  "observation": "Footer copyright text is italic in both but B places it on dark bg in muted color; footer link rows in B are spaced vertically with larger gaps.",
+  "evidence": "B screenshot lines at y~1848, 1868, 1888, 1908, 1928, 1961; A lines tightly stacked at y~1905-1960 at small size.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-39",
+  "run": "framework v2",
+  "category": "layout",
+  "observation": "Content width is constrained in B (about 640px at 825-wide display, i.e. roughly 1100px of 1440) with wide margins, while A uses a narrow centered text column (~600px at 1440) in a large white field.",
+  "evidence": "B screenshot content spans x~95-730 of 825; A screenshot content mostly x~90-360 of 445.",
+  "which_side": "both"
+ },
+ {
+  "id": "F2-40",
+  "run": "framework v2",
+  "category": "typography",
+  "observation": "Link underline treatment: A uses dotted/hand-styled underlines (e.g. 'Schedule', 'Equipment' in the screenshot, and underlined 'Holler.'), B uses uniform solid underlines in green.",
+  "evidence": "B screenshot footer and body links underlined green; A footer links underlined black.",
+  "which_side": "B"
+ },
+ {
+  "id": "F2-41",
+  "run": "framework v2",
+  "category": "semantics",
+  "observation": "Both keep the same section structure: 4 section elements, 3 h2, one picture element; B has 1 source versus 2 in A, so the responsive image set for the hero is simplified.",
+  "evidence": "section 4/4, h2 3/3, picture 1/1; source A 2, B 1.",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-01",
+  "run": "single-file v1",
+  "category": "typography",
+  "observation": "Headline typeface: A uses heavy geometric sans (Graphik) at ~77px; B swaps to Georgia serif at 60px, changing brand tone from bold/modern to editorial/traditional.",
+  "evidence": "dom.json h1 fontFamily Graphik 76.56px (A) vs Georgia, 'Times New Roman', serif 60px (B)",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-02",
+  "run": "single-file v1",
+  "category": "typography",
+  "observation": "Body font changes from Graphik sans at 23.2px to system-ui at 17px, so body copy is much smaller and denser in B.",
+  "evidence": "bodyFontSize 23.2px (A) vs 17px (B); fonts list Graphik vs Georgia + system-ui",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-03",
+  "run": "single-file v1",
+  "category": "color",
+  "observation": "Page background: A is stark white with off-white/cream torn-paper bands; B uses a warm cream (#FBF8F1) body with alternating beige section bands.",
+  "evidence": "bodyBg rgb(255,255,255) (A) vs rgb(251,248,241) (B); B screenshot shows beige bands behind diagram, book and testimonials",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-04",
+  "run": "single-file v1",
+  "category": "color",
+  "observation": "Primary CTA recolored: A has yellow/gold rectangular 'Give Basecamp a Try' button; B has dark green pill button with white text.",
+  "evidence": "A button visible in yellow in screenshot; B dom button bg rgb(27,106,58), color white, radius 999px",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-05",
+  "run": "single-file v1",
+  "category": "component",
+  "observation": "CTA shape: A buttons are square-cornered (radius 0, dark text); B uses fully rounded pills, a softer friendlier component style.",
+  "evidence": "dom.json button radius 0px (A) vs 999px (B)",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-06",
+  "run": "single-file v1",
+  "category": "color",
+  "observation": "Text color shifted from blue-slate navy to forest green-black; links and accents become green in B (underlined green links) versus black underlined links in A.",
+  "evidence": "bodyColor rgb(29,45,53) (A) vs rgb(29,43,31) (B); B 'take a deeper look' and 'learn more about REMOTE' are green",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-07",
+  "run": "single-file v1",
+  "category": "component",
+  "observation": "Header: A has a logo at left, text nav and outlined 'Sign in' plus black 'Try it FREE' buttons; B has a logo with yellow mark, plain-text nav, 'Sign in' as plain text and a green pill 'Try it FREE'.",
+  "evidence": "Top bar of both screenshots; A has two nav elements (nav:2), B has nav:1",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-08",
+  "run": "single-file v1",
+  "category": "layout",
+  "observation": "A header nav is small/tight and rendered on a white bar; B header sits on cream with larger spacing and logo is bigger (300x83 file).",
+  "evidence": "B images[0] basecamp-logo.svg 300x83; A logo is inline svg (svg:1, path:12)",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-09",
+  "run": "single-file v1",
+  "category": "imagery",
+  "observation": "Logo handling: A inlines the logo as SVG paths in the DOM; B references an external basecamp-logo.svg image file.",
+  "evidence": "A tags svg:1, path:12, g:1; B has img for basecamp-logo.svg and no svg tag",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-10",
+  "run": "single-file v1",
+  "category": "component",
+  "observation": "Review-star badges: A shows three plain star images with quote text floating beneath, inline with no container; B wraps each in a white rounded pill chip.",
+  "evidence": "B desktop shows three rounded white pills 'extremely user friendly' etc.; A shows stars+italic text unboxed",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-11",
+  "run": "single-file v1",
+  "category": "copy",
+  "observation": "Social proof count microcopy changed from 3,455 to 4,000 companies signed up in the last week.",
+  "evidence": "A: '3,455 companies signed up in the last week alone!'; B: '4,000 companies...'",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-12",
+  "run": "single-file v1",
+  "category": "layout",
+  "observation": "Hero is more compact and left less vertical whitespace in B; hero headline wraps to two lines with centered stars above, while A's headline is larger with tighter leading and stars above.",
+  "evidence": "Desktop screenshots: A hero ends ~y=540/2000 scaled; B hero ends y~260 of 2000 at different scale",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-13",
+  "run": "single-file v1",
+  "category": "imagery",
+  "observation": "The product diagram image is displayed differently: A shows a clean diagram with handwritten annotations placed outside the screenshot at readable positions; B uses a different asset (project-hero-captions.png, 2333x2284) in which handwritten captions overlap UI content (e.g. 'Create a place in Basecamp' overlapping 'Get set up', 'Involve everyone' overlapping 'Message Board').",
+  "evidence": "B images list adds project-hero-captions.png; B screenshot shows overlapping annotation text near top-left of diagram",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-14",
+  "run": "single-file v1",
+  "category": "component",
+  "observation": "Diagram container: A fades the diagram into the page with a gradient/white fade and torn-paper edge; B places it as a hard-edged white card with square corners on beige background and a visible crop at the bottom.",
+  "evidence": "A screenshot diagram bottom fades; B diagram ends abruptly at y~780 before the 'One place' section",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-17",
+  "run": "single-file v1",
+  "category": "layout",
+  "observation": "Section headings: A uses bold centered sans headings; B left-aligns the 'One place, not all over the place.' heading and body text while keeping 'We literally wrote the book' and 'Companies change' centered.",
+  "evidence": "B screenshot 'One place' heading left aligned at x~150; A centered",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-18",
+  "run": "single-file v1",
+  "category": "layout",
+  "observation": "'One place' text block: A's copy is centered in a narrow column with large type; B is left-aligned in a wider column with small body text and bold lead-ins.",
+  "evidence": "A paragraphs centered below diagram; B paragraphs left aligned, bold 'Remote work is especially challenging when'",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-19",
+  "run": "single-file v1",
+  "category": "component",
+  "observation": "Book section: A places the REMOTE book cover at left with text to the right and an outlined dark 'learn more about REMOTE' button; B shows the cover in a white bordered card at left with a plain green underlined text link instead of a button.",
+  "evidence": "A has a bordered button 'learn more about REMOTE'; B has an underlined link",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-20",
+  "run": "single-file v1",
+  "category": "copy",
+  "observation": "Book section copy tweaks: B adds the italic 'quick' emphasis in 'get up to speed quick.' where A's text lacks emphasis; strong 'REMOTE' preserved.",
+  "evidence": "B text 'get up to speed quick.' appears italic; A 'get up to speed quick.' plain",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-21",
+  "run": "single-file v1",
+  "category": "layout",
+  "observation": "Testimonials layout: A stacks ten quotes in one centered column as huge bold pull-quotes with no containers; B arranges them in a two-column masonry of white cards with yellow left borders.",
+  "evidence": "A screenshot single column large quotes; B two columns of cards with gold left accent line",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-22",
+  "run": "single-file v1",
+  "category": "typography",
+  "observation": "Quote typography: A renders quotes in large bold sans (~40px) with small italic attributions; B renders quotes in small regular serif inside cards with an em-dash attribution in bold.",
+  "evidence": "A quotes bold large; B '— Tobi Lütke, CEO, Shopify' prefixed with an em-dash",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-23",
+  "run": "single-file v1",
+  "category": "copy",
+  "observation": "Attribution format: A uses a leading hyphen '-Tobi Lütke...' italic and tiny; B uses '— Name' with em dash and bolder styling.",
+  "evidence": "A '-Tina Lannin, 121 Captions'; B '— Tina Lannin, 121 Captions'",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-24",
+  "run": "single-file v1",
+  "category": "effects",
+  "observation": "Card affordances: B testimonial cards have drop shadows, rounded corners and a color accent, adding depth that A (flat typographic style) lacks.",
+  "evidence": "B screenshot shows shadowed white cards with yellow left border",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-25",
+  "run": "single-file v1",
+  "category": "layout",
+  "observation": "Testimonial order/reading flow: A is strictly sequential top-to-bottom; B's two-column masonry splits order (left column ends with Samantha Silberberg while right column starts with Brad Vandiviere), breaking linear reading.",
+  "evidence": "B right column starts with 'We don't need to spend as much time in meetings'",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-26",
+  "run": "single-file v1",
+  "category": "component",
+  "observation": "Closing CTA: A repeats 'Have questions? Holler. Ready to get going? Engage:' in large bold sans with a yellow button; B keeps same copy small in serif with a green pill button.",
+  "evidence": "Both have text 'Have questions? Holler.' - B in smaller type",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-27",
+  "run": "single-file v1",
+  "category": "component",
+  "observation": "Link to testimonials: both keep 'Hear from hundreds more customers...' as an underlined link; A is bold and dark and wraps wide, B is green.",
+  "evidence": "Both screenshots near y~1980 (A) and y~1700 (B)",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-28",
+  "run": "single-file v1",
+  "category": "imagery",
+  "observation": "Footer: A has white background with dark text links and a large hand-drawn growth-curve illustration (2005: 14k ... 2021: 3.5mil accounts signed up) filling the bottom; B drops the illustration entirely and uses a dark-green footer block with white text.",
+  "evidence": "A footer shows annotated curve labels '2013: 1.2mil', '2021: 3.5mil accounts signed up'; B footer is dark green block",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-30",
+  "run": "single-file v1",
+  "category": "copy",
+  "observation": "Footer copy is preserved nearly verbatim in both (apps, company, guides, 'HEY - email at its best', fine print, copyright 1999-2021).",
+  "evidence": "Footer link rows identical text in both",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-31",
+  "run": "single-file v1",
+  "category": "color",
+  "observation": "Footer links: A has small dark text on white; B is white-on-dark-green with same underlined links, higher contrast anchor to page end.",
+  "evidence": "B footer background dark green rgb approx (29,43,31)",
+  "which_side": "B"
+ },
+ {
+  "id": "S1-32",
+  "run": "single-file v1",
+  "category": "layout",
+  "observation": "Overall page length is shorter in B (4538px vs 6474px at desktop) because of smaller type, two-column testimonials and no footer illustration.",
+  "evidence": "dom.json pageHeight 6474 (A) vs 4538 (B)",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-33",
+  "run": "single-file v1",
+  "category": "DOM",
+  "observation": "DOM semantics: A has far more scripts/links/meta (script:13, link:9, meta:13, title:2); B is a lean single style block with no scripts, 2 meta tags, 1 title.",
+  "evidence": "A tags script:13 link:9 meta:13; B has no script/link tags",
+  "which_side": "both"
+ },
+ {
+  "id": "S1-37",
+  "run": "single-file v1",
+  "category": "imagery",
+  "observation": "Image count: B uses 7 imgs (adds logo and a second diagram asset) versus A's 5 imgs; A's images load from web.archive.org URLs, B from local files under generated/single/images/.",
+  "evidence": "images arrays: A src web.archive.org/web/2021...; B file:///.../generated/single/images/",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-01",
+  "run": "framework v1",
+  "category": "typography",
+  "observation": "Headline font is Graphik (heavy, tight, ~76px) in A versus Inter (~60px) in B, making B's headline smaller and less condensed",
+  "evidence": "dom fonts: A 'Graphik, Helvetica Neue...' h1 76.56px; B 'Inter, system-ui' h1 60px",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-02",
+  "run": "framework v1",
+  "category": "typography",
+  "observation": "Body text base size much larger in A (23.2px) than B (16px); A copy looks oversized, B more conventional",
+  "evidence": "dom bodyFontSize A 23.2px vs B 16px",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-04",
+  "run": "framework v1",
+  "category": "component",
+  "observation": "Header in A is minimal top bar: small logo left, right-aligned nav with outlined 'Sign in' and dark 'Try it FREE'; B centers nav links, has circular yellow logo mark and pill yellow 'Try it FREE'; Sign in is plain text in B",
+  "evidence": "desktop screenshots header; A has 'Sign in' boxed button",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-05",
+  "run": "framework v1",
+  "category": "color",
+  "observation": "A's page background is plain white with a hand-drawn cream/beige blob/wave edge under the product screenshot section; B uses flat cream band for hero and flat sections",
+  "evidence": "A: beige torn-edge shape near y~640 of display; B hero background flat #fdf8ee-ish",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-06",
+  "run": "framework v1",
+  "category": "color",
+  "observation": "B's hero has a cream background full-bleed band; A hero is white",
+  "evidence": "B hero 0-400 cream; A white",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-07",
+  "run": "framework v1",
+  "category": "component",
+  "observation": "Star ratings in A are small, plain, floating above the headline with quotes in italic gray; B wraps each in a white rounded card with border/shadow and larger stars",
+  "evidence": "B three cards with stars + quote at top of hero; A tiny stars at top",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-08",
+  "run": "framework v1",
+  "category": "component",
+  "observation": "Before/After Basecamp copy is a single paragraph in A with bold run-in labels; B splits into two side-by-side white cards with colored labels (red Before, green After)",
+  "evidence": "A paragraph 'Before Basecamp: ... After Basecamp:...'; B two cards",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-09",
+  "run": "framework v1",
+  "category": "color",
+  "observation": "Primary CTA 'Give Basecamp a Try' is a yellow button with dark text in A; B turns it dark navy pill with white text",
+  "evidence": "A yellow button under hero; B dark rounded pill",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-10",
+  "run": "framework v1",
+  "category": "copy",
+  "observation": "Social-proof count differs: A says '3,455 companies', B says '4,000 companies'",
+  "evidence": "microcopy under CTA",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-11",
+  "run": "framework v1",
+  "category": "typography",
+  "observation": "A's CTA subtext is dark/small centered; B's is gray, smaller",
+  "evidence": "caption under button",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-12",
+  "run": "framework v1",
+  "category": "layout",
+  "observation": "Product screenshot in A sits centered full width with hand-drawn handwritten annotations around it and a gradient fade at bottom; B places it in a bordered card with shadow on left in a two-column layout beside text",
+  "evidence": "A 'Create a place...' annotations outside screenshot; B image left, text right",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-13",
+  "run": "framework v1",
+  "category": "imagery",
+  "observation": "B uses a different, cropped/rescaled screenshot with annotations overlapping the UI, causing text overlap (Involve everyone... overlaps Message Board); A annotations placed clear of UI",
+  "evidence": "B screenshot at y~520 handwritten text overlays the Message Board labels; an extra image project-hero-captions.png in B",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-14",
+  "run": "framework v1",
+  "category": "layout",
+  "observation": "'One place, not all over the place.' heading is centered in A and left-aligned in B in a two-column row",
+  "evidence": "A heading centered below image; B right column",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-15",
+  "run": "framework v1",
+  "category": "effects",
+  "observation": "Underlined links: A uses black underline plain; B uses yellow highlighter-style underline for 'Basecamp is different' link and 'Hear from hundreds more' and 'Holler'",
+  "evidence": "B yellow underline strips under links",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-16",
+  "run": "framework v1",
+  "category": "color",
+  "observation": "REMOTE book section in A is white with centered heading above a left book image; B places it in a full-width saturated yellow band with book image left in a card and heading left aligned beside it",
+  "evidence": "B yellow band ~y840-1100; A white",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-17",
+  "run": "framework v1",
+  "category": "imagery",
+  "observation": "Book cover in B has drop shadow/card; A book cover is flat with slight shadow",
+  "evidence": "book image",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-18",
+  "run": "framework v1",
+  "category": "component",
+  "observation": "'Learn more about REMOTE' button is white outlined with dark border in A and dark filled in B",
+  "evidence": "button style",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-20",
+  "run": "framework v1",
+  "category": "layout",
+  "observation": "Testimonials in A are a single centered column of large bold quotes in 10 stacked blocks with italic small attributions; B arranges them in a masonry-like 3-column grid of cream cards",
+  "evidence": "A blockquote 10 stacked; B 3-column cards with rounded corners",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-21",
+  "run": "framework v1",
+  "category": "component",
+  "observation": "B highlights the first testimonial (Tobi Lutke) as a larger yellow card, emphasizing hierarchy; A treats all quotes equally large",
+  "evidence": "B yellow card at top-left",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-22",
+  "run": "framework v1",
+  "category": "copy",
+  "observation": "Testimonial order differs: A runs Tobi, Tina, Dale, George, Samantha, Brad, Joey, Kyle, Spencer, Scot in one column; B distributes across columns so reading order is column-wise",
+  "evidence": "A vs B quote sequence",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-23",
+  "run": "framework v1",
+  "category": "typography",
+  "observation": "Quote text in A uses large bold weight; B uses small regular weight with em-dash attributions in bold",
+  "evidence": "A bold ~34px quotes; B ~15px regular, '— Name, Company'",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-24",
+  "run": "framework v1",
+  "category": "semantic",
+  "observation": "Attribution format: A uses '-Name, Company' small italic in blockquote; B uses figcaption with em dash and bold name",
+  "evidence": "tags A cite:10; B figcaption:10 and figure:13",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-26",
+  "run": "framework v1",
+  "category": "layout",
+  "observation": "Closing CTA in A is two-line text 'Have questions? Holler. Ready to get going? Engage:' centered bold; B is a single line, smaller, on a cream band with dark button",
+  "evidence": "bottom CTA section",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-27",
+  "run": "framework v1",
+  "category": "imagery",
+  "observation": "A's footer is white with small link text and a chart of 'accounts signed up' growth curve (2005: 14k to 2021: 3.5mil) with handwritten labels; B replaces with a flat dark navy footer and no growth chart",
+  "evidence": "A bottom hand-drawn line chart; B dark footer #1d2d35",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-28",
+  "run": "framework v1",
+  "category": "color",
+  "observation": "Footer link text in B is light on dark with underlined links; A dark on white",
+  "evidence": "footer",
+  "which_side": "B"
+ },
+ {
+  "id": "F1-29",
+  "run": "framework v1",
+  "category": "copy",
+  "observation": "B footer copyright is italic muted gray 'Enjoy the rest of your day!'; A reads 'Enjoy the rest of your Tuesday!' (date-based)",
+  "evidence": "footer microcopy",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-30",
+  "run": "framework v1",
+  "category": "semantic",
+  "observation": "A has more head/script overhead (13 scripts, 9 links, 13 metas, style tag, svg inline logo with 12 paths) and a search input/label; B is lean (1 script, 3 links, 2 metas), logo as img",
+  "evidence": "dom tags A script 13 input 1 label 1 svg 1; B script 1 img logo basecamp-logo.svg",
+  "which_side": "both"
+ },
+ {
+  "id": "F1-32",
+  "run": "framework v1",
+  "category": "semantic",
+  "observation": "Images in A are served from web.archive.org with fingerprinted asset paths; B uses local /images/ static files",
+  "evidence": "dom images src",
+  "which_side": "both"
+ }
+]

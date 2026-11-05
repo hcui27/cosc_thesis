@@ -1,0 +1,54 @@
+[start] Wed Nov  4 15:45:04 EST 2026
+[elements] 4 sites
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/element_map.py --sites kanienkeha_net,neverskipbrunch_com,insightcentral_net,bathurst12hour_com_au
+kanienkeha_net 336 elements
+neverskipbrunch_com 177 elements
+insightcentral_net 93 elements
+bathurst12hour_com_au 199 elements
+[observe] 4 sites
+  8 observation calls
+  observed kanienkeha_net original
+  observed neverskipbrunch_com generated
+  observed neverskipbrunch_com original
+  observed kanienkeha_net generated
+  observed insightcentral_net original
+  observed insightcentral_net generated
+  observed bathurst12hour_com_au original
+  observed bathurst12hour_com_au generated
+[combine] 4 sites
+  combined bathurst12hour_com_au
+  combined insightcentral_net
+  combined neverskipbrunch_com
+  combined kanienkeha_net
+[tag] 4 sites
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/tag_observations.py --sites kanienkeha_net,neverskipbrunch_com,insightcentral_net,bathurst12hour_com_au
+  tagged kanienkeha_net: 53 observations, vocabulary 55 attributes
+  tagged neverskipbrunch_com: 45 observations, vocabulary 82 attributes
+  tagged insightcentral_net: 43 observations, vocabulary 108 attributes
+  tagged bathurst12hour_com_au: 50 observations, vocabulary 132 attributes
+[master] 4 sites
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/build_master.py --min-sites 2
+4 sites, 223 tags
+master list: 75 attributes in 8 families -> data/master/master_list.json
+[galleries] 4 sites
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/evidence_galleries.py --min-sites 2
+127 galleries; 157 of 157 (page, value) pairs with evidence (100%); 674 instance crops; sheets in data/master/galleries
+[seed] 4 sites
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/match_seed.py --seed v1_3 --min-sites 2
+# Master list vs seed list v1_3
+120 seed items, 75 master attributes over 4 sites. Nothing culled.
+
+## Seed items corroborated by the observations
+- with at least one matched master attribute: 13 of 120; AI-built page shows it on >= 1 site: 13, >= 2: 8, >= half the sites: 8; no match: 107
+- by kind (matched): component 12/107, page_section 1/13
+
+## What the observations add beyond the seed list
+- master attributes about a seed item: 24 (3 the item itself, 21 a property of it)
+- ADDED (not about any seed item): 51 of 75 (68%); of those on >= 2 sites: 34; of all attributes on >= 2 sites: 51
+- by family (is_item / property_of_item / none): color: 0/2/7; component: 1/5/3; copy: 0/2/5; decoration: 0/3/3; imagery: 0/0/5; layout: 0/5/10; semantic_dom: 2/1/11; typography: 0/3/7
+
+## Seed items never matched (107): Accordion, Alert, Avatar, Badge, Breadcrumbs, Button group, Carousel, Checkbox, Color picker, Combobox, Date input, Datepicker, Drawer, Dropdown menu, Empty state, Fieldset, File, File upload, Icon, Image, Label, List, Modal, Pagination, Popover, Progress bar, Progress indicator, Quote, Radio button, Rating, Rich text editor, Search input, Segmented control, Select, Separator, Skeleton, Slider, Spinner, Stack, Stepper, Table, Tabs, Text input, Textarea, Toast, Toggle, Tooltip, Tree view, Video, Visually hidden, grid, text, checkbox group, comment, listbox, feed, Feature Sections, CTA Sections, Pricing Sections, Testimonials, Bento Grids, Newsletter Sections, Stats Sections, Blog Sections, Contact Sections, Team Sections, Logo Clouds, FAQs, Close button, Figure, Media object, Menu, Input group, Floating label, Box, Section, Level, Icon link, Focus ring, Scrollspy, Sticky, Drilldown menu, Accordion menu, 2D-Matrix Input Control, Anchor Link, Back-to-Top Button, Bottom Sheet, Contextual Menu, Control, Expandable Menu, Floating Button, Input Control, Input Stepper, Knob, Lightbox, Megamenu, Menu Bar, Overlay, Picker, Pie Menu, Popup Tip, Ribbon, Scrollbar, Split Button, State-Switch Control, Submenu, Wheel Picker
+
+## Added attributes seen on the most sites
+- body background color (color, 4 sites): AI-built pages most commonly use an off-white body background (2 of 4 sites, the others near-black and pale grey-blue), whereas originals lean darker or neutral (2 near-black, 1 pale grey, 1 white).
+[all done] Wed Nov  4 15:52:13 EST 2026

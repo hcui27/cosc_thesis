@@ -1,0 +1,102 @@
+{
+ "attributes": [
+  {
+   "name": "image_shape_and_crop",
+   "definition": "How images/thumbnails are cropped or shaped (aspect ratio, corner treatment) and whether sizing is uniform or distorted.",
+   "family": "imagery",
+   "values": [
+    {
+     "value": "uniform_square_rounded",
+     "definition": "Images cropped to consistent squares with rounded corners."
+    },
+    {
+     "value": "distorted_or_inconsistent",
+     "definition": "Images stretched, oversized, or sized inconsistently, breaking uniformity."
+    },
+    {
+     "value": "other_or_not_applicable",
+     "definition": "Other treatment or no images."
+    }
+   ]
+  },
+  {
+   "name": "image_content_type",
+   "definition": "Whether image slots show distinct real photos, repeated placeholders, or non-photographic colour blocks.",
+   "family": "imagery",
+   "values": [
+    {
+     "value": "distinct_photos",
+     "definition": "Each image slot shows a different real photo."
+    },
+    {
+     "value": "repeated_placeholder",
+     "definition": "The same placeholder image is reused across multiple slots."
+    },
+    {
+     "value": "flat_or_gradient_blocks",
+     "definition": "Images are replaced by flat or gradient colour blocks."
+    },
+    {
+     "value": "other_or_not_applicable",
+     "definition": "Other or no images."
+    }
+   ]
+  },
+  {
+   "name": "thumbnail_row_arrangement",
+   "definition": "How small thumbnails are laid out relative to each other.",
+   "family": "layout",
+   "values": [
+    {
+     "value": "tight_centered_row",
+     "definition": "Thumbnails sit in a tight, centered, evenly sized row."
+    },
+    {
+     "value": "row_broken_by_oversized_item",
+     "definition": "A uniform row is disrupted by one enlarged item."
+    },
+    {
+     "value": "not_present_or_other",
+     "definition": "No thumbnail row or other arrangement."
+    }
+   ]
+  }
+ ],
+ "codes": [
+  {
+   "id": "s48",
+   "attribute": "image_shape_and_crop",
+   "value": "uniform_square_rounded"
+  },
+  {
+   "id": "s48",
+   "attribute": "thumbnail_row_arrangement",
+   "value": "tight_centered_row"
+  },
+  {
+   "id": "s82",
+   "attribute": "image_content_type",
+   "value": "repeated_placeholder"
+  },
+  {
+   "id": "s93",
+   "attribute": "image_content_type",
+   "value": "flat_or_gradient_blocks"
+  },
+  {
+   "id": "s93",
+   "attribute": "image_shape_and_crop",
+   "value": "distorted_or_inconsistent"
+  },
+  {
+   "id": "s264",
+   "attribute": "image_shape_and_crop",
+   "value": "distorted_or_inconsistent"
+  },
+  {
+   "id": "s264",
+   "attribute": "thumbnail_row_arrangement",
+   "value": "row_broken_by_oversized_item"
+  }
+ ]
+}

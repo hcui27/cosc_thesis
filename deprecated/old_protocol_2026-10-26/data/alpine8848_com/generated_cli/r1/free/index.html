@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alpine Everest Expedition &amp; Trek — Nepal</title>
+<meta name="description" content="Custom-tailored treks, expeditions and holiday tours in Nepal, plus pashmina, garments and handicrafts from Alpine Everest Group, Kathmandu.">
+<style>
+  :root{
+    --ink:#22313c; --slate:#34495a; --teal:#a0d2d6; --teal-d:#5f9ea6;
+    --sand:#f1e2bd; --paper:#fbf8f1; --red:#c8202b; --muted:#5b6b76;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--paper);line-height:1.65}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .sans{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+
+  /* nav */
+  header{background:var(--slate);color:#fff;position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+  .brand{font-weight:700;letter-spacing:.04em;text-decoration:none;font-size:1.05rem}
+  nav ul{list-style:none;padding:0;display:flex;gap:22px;flex-wrap:wrap}
+  nav a{text-decoration:none;font-size:.95rem;opacity:.9;padding:6px 0;border-bottom:2px solid transparent}
+  nav a:hover{opacity:1;border-color:var(--teal)}
+
+  /* hero */
+  .hero{background:linear-gradient(180deg,var(--slate) 0%,#5a8793 38%,var(--teal) 78%,var(--sand) 100%);padding:72px 0 96px;position:relative;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.1;color:#fff;margin-bottom:20px}
+  .hero p{font-size:1.15rem;color:#eef7f8;max-width:34em;margin-bottom:30px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:1rem;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--red);color:#fff}
+  .btn-primary:hover{background:#a91922}
+  .btn-ghost{border:2px solid #fff;color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.15)}
+  .logo-card{background:#fff;border-radius:var(--radius);padding:14px;box-shadow:0 18px 40px rgba(0,0,0,.25);justify-self:center;max-width:320px}
+  .logo-card img{border-radius:8px}
+  .grass{position:absolute;left:0;right:0;bottom:0;height:36px;background:linear-gradient(transparent,rgba(0,0,0,.0))}
+
+  section{padding:72px 0}
+  h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:10px}
+  .eyebrow{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-d);font-weight:700;margin-bottom:8px;display:block}
+
+  /* welcome */
+  .welcome .wrap{display:grid;grid-template-columns:240px 1fr;gap:48px;align-items:center}
+  .welcome img{width:100%;max-width:240px;border-radius:var(--radius);box-shadow:0 10px 30px rgba(34,49,60,.18)}
+  .welcome p{margin-top:14px;color:#33444f}
+
+  /* tours */
+  .tours{background:#fff}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin-top:32px}
+  .card{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:22px;border-radius:var(--radius);background:var(--paper);border:1px solid #e6dfcc;text-decoration:none;font-weight:600;transition:.15s}
+  .card:hover{background:var(--slate);color:#fff;transform:translateY(-3px);border-color:var(--slate)}
+  .card::after{content:"→";color:var(--red)}
+  .card:hover::after{color:var(--teal)}
+  .tours-head{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .tours-head img{width:190px}
+
+  /* thumbs */
+  .thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:14px;margin-top:30px}
+  .thumbs a{display:block;border-radius:10px;overflow:hidden;background:#eee;aspect-ratio:3/4;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+  .thumbs img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+  .thumbs a:hover img{transform:scale(1.07)}
+  .more{display:inline-block;margin-top:26px;font-weight:700;color:var(--red);text-decoration:none}
+  .more:hover{text-decoration:underline}
+  .products{background:linear-gradient(180deg,var(--paper),var(--sand))}
+  .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .chip{padding:6px 16px;border-radius:999px;background:#fff;border:1px solid #e0d4b0;text-decoration:none;font-size:.92rem}
+  .chip:hover{background:var(--slate);color:#fff}
+
+  /* contact */
+  .contact{background:var(--slate);color:#fff}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+  .contact h2{color:#fff}
+  address{font-style:normal;margin-top:16px;display:grid;gap:6px;color:#dce9ec}
+  address strong{color:#fff}
+  address a{color:var(--teal)}
+  form{background:rgba(255,255,255,.08);padding:28px;border-radius:var(--radius);display:grid;gap:14px}
+  form h3{font-size:1.2rem}
+  label{display:grid;gap:5px;font-size:.9rem}
+  input{padding:11px 13px;border-radius:8px;border:0;font:inherit;font-family:system-ui,sans-serif}
+  form .btn{border:0;cursor:pointer;font:inherit;font-weight:600;justify-self:start}
+  footer{background:#17222a;color:#9fb0ba;text-align:center;padding:24px 20px;font-size:.88rem}
+
+  @media (max-width:820px){
+    .hero .wrap,.welcome .wrap,.contact .wrap{grid-template-columns:1fr;gap:32px}
+    .hero{padding:48px 0 64px}
+    .logo-card{max-width:240px}
+    section{padding:52px 0}
+    nav ul{gap:16px}
+  }
+</style>
+</head>
+<body>
+
+<header class="sans">
+  <div class="wrap">
+    <a class="brand" href="#top">ALPINE EVEREST</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Namaste, Welcome to Alpine Everest</h1>
+        <p class="sans">Personalized treks, expeditions and holiday tours across Nepal — designed around you, and supervised with care from first step to last.</p>
+        <div class="btns sans">
+          <a class="btn btn-primary" href="index.php?action=planatrip">Plan a trip</a>
+          <a class="btn btn-ghost" href="#tours">Featured tours</a>
+        </div>
+      </div>
+      <div class="logo-card">
+        <img src="images/businessname-bg.jpg" width="268" height="277" alt="Alpine Everest Group — Expedition &amp; Trek, Import &amp; Export">
+      </div>
+    </div>
+  </div>
+
+  <section class="welcome" id="about">
+    <div class="wrap">
+      <img src="images/welcome-img.jpg" width="176" height="260" alt="Trekkers silhouetted against Himalayan peaks">
+      <div>
+        <span class="eyebrow sans">About Us</span>
+        <h2>Quality service, smooth and enjoyable trips</h2>
+        <p>Alpine Everest Expedition and Treks established with a view to provide best services to its beloved guest. Guest satisfaction during tour and trek under our best supervision is our business moto. We strongly believe in quality service and our prime objective is to make every trip of our valued customers smooth and enjoyable.</p>
+        <p>As we firmly believe in personalized service, we always design the custom tailored itineraries where people are not bound to take set programs. We are planning to sale a lots of holiday package tours including high and soft adventure trips, school trips, family holiday trip etc. in the coming years. For reliability, quality service and tours of great style, please remember us we are always at your service.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tours" id="tours">
+    <div class="wrap">
+      <div class="tours-head">
+        <img src="images/featured-tours.png" width="248" height="94" alt="Featured Tours">
+      </div>
+      <div class="grid sans">
+        <a class="card" href="index.php?linkId=1">Adventure Activities</a>
+        <a class="card" href="index.php?linkId=2">Destination</a>
+        <a class="card" href="index.php?linkId=3">Special Packages</a>
+        <a class="card" href="index.php?linkId=4">Services</a>
+        <a class="card" href="index.php?linkId=31">Gallery</a>
+        <a class="card" href="index.php?action=planatrip">Plan a trip</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <span class="eyebrow sans">Moments</span>
+      <h2>Gallery</h2>
+      <div class="thumbs" id="gallery-grid"></div>
+      <a class="more sans" href="index.php?linkId=32">More →</a>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="wrap">
+      <span class="eyebrow sans">From Nepal</span>
+      <h2>Products</h2>
+      <div class="chips sans">
+        <a class="chip" href="index.php?linkId=33">Pashmina</a>
+        <a class="chip" href="index.php?linkId=34">Garments</a>
+        <a class="chip" href="index.php?linkId=44">Handicrafts</a>
+      </div>
+      <div class="thumbs" id="product-grid"></div>
+      <a class="more sans" href="index.php?linkId=36">More →</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow sans" style="color:var(--teal)">Get in touch</span>
+        <h2>Contact Information</h2>
+        <address class="sans">
+          <strong>Alpine Everest Group</strong>
+          <span>P.O.Box: 24601</span>
+          <span>Lazimpat-2, Kathmandu, Nepal</span>
+          <span>Tel/Fax: +977-1-4441377, 400-50-00, 400-50-57</span>
+          <span>Cell: +977-9841330184, 9741178888</span>
+          <span>Skype: alpine8848</span>
+          <span>MSN: alpine8848@live.com</span>
+          <span>Email: <a href="mailto:alpine8848@asia.com">alpine8848@asia.com</a></span>
+        </address>
+      </div>
+      <form class="sans" action="#" onsubmit="return false">
+        <h3>Recommend this site to a Friend</h3>
+        <label>Your Name<input name="yourname" autocomplete="name"></label>
+        <label>Friend's Name<input name="friendname"></label>
+        <label>Friend's Email<input type="email" name="friendemail"></label>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="sans">Copyright © Alpine Everest Expedition &amp; Trek 2010. All rights reserved.</footer>
+
+<script>
+  // Thumbnail links from the original site; the source only supplied one image file.
+  const build = (id, base, ids) => document.getElementById(id).innerHTML = ids.map(n =>
+    `<a href="index.php?${base}=${n}"><img src="images/thumb.png" alt="" loading="lazy"></a>`).join('');
+  build('gallery-grid','galleryId',[20,14,15,12,16,21,11,17,22,18]);
+  build('product-grid','listId',[23,22,21,20,19,18,17,16]);
+</script>
+</body>
+</html>

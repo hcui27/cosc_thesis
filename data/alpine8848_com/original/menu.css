@@ -1,0 +1,69 @@
+#vertnav, #vertnav2{list-style: none; padding:0px; margin:0;margin-left:5px;}
+
+#vertnav ul, #vertnav2 ul { 
+	padding:0;
+	margin:0;
+	list-style: none;
+    /*width:13em;*/
+    z-index:99;
+    overflow:visible;
+    position:absolute; 
+	background-color:#8FBFC3;
+	border:1px solid #468084;
+	background-position:0px 0px;
+}
+#vertnav li, #vertnav2 li {
+	position: relative;
+	background-position:left 6px;
+	width: 17.5em;
+	display:block;
+	margin:0;   
+	padding-left:10px;
+}
+	
+
+#vertnav li{ }
+#vertnav li:last-child{}
+
+#vertnav li:hover, #vertnav2 li:hover
+{
+	text-decoration:none;
+	position: relative;
+	background-position:left 6px;
+}
+
+#vertnav ul, #vertnav ul ul, #vertnav ul ul ul,   #vertnav2 ul, #vertnav2 ul ul, #vertnav2 ul ul ul{
+    display:none; 
+    position:absolute; 
+    top:0; 
+    left:17.5em;
+	padding:3px;
+}
+
+#vertnav li:hover ul ul, #vertnav li:hover ul ul ul, #vertnav li:hover ul ul ul ul, #vertnav li:hover ul ul ul ul ul, #vertnav li:hover ul ul ul ul ul ul,
+#vertnav2 li:hover ul ul, #vertnav2 li:hover ul ul ul, #vertnav2 li:hover ul ul ul ul, #vertnav2 li:hover ul ul ul ul ul, #vertnav2 li:hover ul ul ul ul ul ul{
+    display:none;
+}
+
+#vertnav li:hover ul, #vertnav ul li:hover ul, #vertnav ul ul li:hover ul, #vertnav ul ul ul li:hover ul, #vertnav ul ul ul ul li:hover ul, #vertnav ul ul ul ul ul li:hover ul,
+#vertnav2 li:hover ul, #vertnav2 ul li:hover ul, #vertnav2 ul ul li:hover ul, #vertnav2 ul ul ul li:hover ul, #vertnav2 ul ul ul ul li:hover ul, #vertnav2 ul ul ul ul ul li:hover ul
+{
+    display:block;
+}
+
+li>ul { 
+	top: auto;
+	left: auto;
+}
+
+/* Win IE only \*/
+* html #vertnav li{float:left;} 
+* html #vertnav2 li{float:left;} 
+/* end holly hack */
+
+
+	
+/*.menupartition {
+	border-bottom:1px solid #C9C7C7;
+	color:#265103;
+ }*/

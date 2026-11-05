@@ -1,0 +1,308 @@
+[
+ {
+  "observation": "Page background color differs: A sets an orange-red body background, B uses white",
+  "category": "color",
+  "evidence": "A body_bg rgb(213, 68, 39); B body_bg rgb(255, 255, 255)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's palette is built on dark green and teal, which A does not use",
+  "category": "color",
+  "evidence": "B top_backgrounds include rgb(11, 61, 54) and rgb(31, 157, 122); text colors include rgb(15, 122, 94). A's accents are rgb(213, 68, 39) and rgb(156, 197, 36)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's header sits on a red-tinted city-skyline photo with a TV tower; B's header is a flat dark green bar",
+  "category": "imagery handling",
+  "evidence": "A_slice_00 shows the skyline behind the logo and nav; B_slice_00 shows a solid dark green strip about 76px tall",
+  "which_side": "A"
+ },
+ {
+  "observation": "Header height and arrangement differ: A stacks the logo, utility links and the nav row over about 230px; B puts the logo, search, Sign Up and nav in one row",
+  "category": "layout",
+  "evidence": "A's hero image starts at y=233; B's hero image starts at y=76",
+  "which_side": "both"
+ },
+ {
+  "observation": "Logo size differs: B renders it at half its natural size, A shows a large logo with tagline",
+  "category": "imagery handling",
+  "evidence": "B logo.png rect is 262x34 (natural 524x68); A's logo appears large at the top-left of A_slice_00",
+  "which_side": "both"
+ },
+ {
+  "observation": "Search treatment differs: A shows an underlined 'Search' text field with an icon; B shows a white boxed input with a magnifier icon image",
+  "category": "component choices",
+  "evidence": "A_slice_00 shows 'Search' above a thin line; B has an icons-search.png image at x=636 inside a white box",
+  "which_side": "both"
+ },
+ {
+  "observation": "Newsletter call to action differs: A uses a 'Get the Newsletter' text link with an icon; B uses a filled teal 'Sign Up' button",
+  "category": "component choices",
+  "evidence": "A_slice_00 top right shows 'Get the Newsletter'; B_slice_00 shows a teal 'Sign Up' button. B has 1 button element, A has 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "Nav placement and type differ: A's links are large regular-weight text in their own row under the logo; B's are small bold links aligned right in the top bar",
+  "category": "layout",
+  "evidence": "A_slice_00 shows About, News, Publications and Contact Us at about 22px, left-aligned at y≈197; B_slice_00 shows them bold at the right, y≈38",
+  "which_side": "both"
+ },
+ {
+  "observation": "B wraps the nav links in a nav element; A has no nav element",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic.nav: A 0, B 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "The hero image is contained in A but bleeds to the left edge in B",
+  "category": "layout",
+  "evidence": "A sb_op-ed_foto.jpg rect x=120, 835x557; B sb-op-ed-foto.jpg rect x=0, 864x576",
+  "which_side": "both"
+ },
+ {
+  "observation": "A overlays the hero headline on a dark band under the photo; B puts it in a light gray panel to the right of the photo",
+  "category": "layout",
+  "evidence": "A_slice_00 shows the date and headline on a dark #1f1f1f-style strip; B_slice_00 shows the headline in the right column on rgb(242,245,243)",
+  "which_side": "both"
+ },
+ {
+  "observation": "'Read More' is styled differently: inline orange text after the A headline, versus a separate underlined green link in B",
+  "category": "copy treatment",
+  "evidence": "A_slice_00 shows 'Read More' in orange at the end of the headline; B_slice_00 shows an underlined dark green 'Read More' below the headline",
+  "which_side": "both"
+ },
+ {
+  "observation": "Hero headline weight and color differ: white medium-weight in A, dark green bold in B",
+  "category": "typography",
+  "evidence": "A h2 font_weight 500; B h2 font_weight 700. The B headline is dark green and the A headline is white on dark",
+  "which_side": "both"
+ },
+ {
+  "observation": "Dates are mixed case in A and uppercase letter-spaced small text in B",
+  "category": "typography",
+  "evidence": "A shows 'April 14, 2021'; B shows 'APRIL 14, 2021' and 'MARCH 10, 2021'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Latest News is a vertical sidebar beside the hero in A and a full-width three-column row below the hero in B",
+  "category": "layout",
+  "evidence": "A_slice_00 has a Latest News white panel on the right of the hero; B_slice_00 has three columns at y≈760 below the hero",
+  "which_side": "both"
+ },
+ {
+  "observation": "News headline links are orange regular text with '›' in A, and dark bold text without chevrons in B",
+  "category": "typography",
+  "evidence": "A_slice_00 news links are orange and end with ›; B_slice_00 news headlines are dark and bold",
+  "which_side": "both"
+ },
+ {
+  "observation": "Section titles are italic serif in A and uppercase letter-spaced bold sans in B",
+  "category": "typography",
+  "evidence": "A shows 'Latest News', 'Video' and 'Upcoming Events' in italic Georgia-style type; B headings read 'LATEST NEWS', 'VIDEO' and 'UPCOMING EVENTS'",
+  "which_side": "both"
+ },
+ {
+  "observation": "'All …' links sit at the bottom of each panel in A, but in the section header row in B with a → arrow",
+  "category": "component choices",
+  "evidence": "A_slice_00 puts 'All news ›' at the panel bottom; B_slice_00 puts 'All news →' at the right of the LATEST NEWS header rule",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's section headers sit on a thick dark rule; A's panel titles use a thin light divider",
+  "category": "decoration/effects",
+  "evidence": "B_slice_00 and B_slice_01 show a dark line under each uppercase heading; A_slice_00 shows thin gray lines under the titles",
+  "which_side": "both"
+ },
+ {
+  "observation": "B nests the link text inside its h2 headings",
+  "category": "DOM/semantic structure",
+  "evidence": "B heading_outline has 'LATEST NEWS\\nAll news →' and 'RECENT TWEETS\\nAll Tweets →'",
+  "which_side": "B"
+ },
+ {
+  "observation": "The lower content is three white or dark cards side by side on orange in A, and stacked full-width bands of alternating white and light gray in B",
+  "category": "layout",
+  "evidence": "A_slice_00 shows Video, Upcoming Events and Recent Tweets cards in one row; B shows a VIDEO band on gray, then an Events/Tweets band on white, then a Partner band on gray",
+  "which_side": "both"
+ },
+ {
+  "observation": "The video block is a dark card with a small thumbnail and circular chevron icons beside each list item in A; B uses a large video thumbnail with a separate list",
+  "category": "component choices",
+  "evidence": "A_slice_00/01 show circular > icons beside the video titles; B thumbnail.png rect is 688x386",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's video list items are white boxes with a green left border",
+  "category": "decoration/effects",
+  "evidence": "B_slice_00 'Landscape restoration…' and 'Seizing the Global Opportunity' boxes have a green left edge",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's video thumbnail has a play-circle icon and the title overlaid at the top; B overlays the title near the player controls at the bottom",
+  "category": "imagery handling",
+  "evidence": "A_slice_00 shows a circle > icon above the title; B_slice_01 shows the bold white title over the control bar",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Upcoming Events panel shows only a 'See Past Events' link in A, while B adds an italic placeholder line",
+  "category": "copy treatment",
+  "evidence": "B_slice_01 'No upcoming events at the moment.' is italic serif; A_slice_00 shows only 'See Past Events ›'",
+  "which_side": "B"
+ },
+ {
+  "observation": "Tweet text is a sans font in a narrow indented column in A, and a serif font across a wider column in B",
+  "category": "typography",
+  "evidence": "A_slice_00/01 tweets are narrow sans text; B_slice_01 tweets are Georgia-like serif. Georgia is used by 52 elements in B vs 6 in A",
+  "which_side": "both"
+ },
+ {
+  "observation": "Tweet links are orange without underline in A and underlined green in B",
+  "category": "color",
+  "evidence": "A '#NetZero' is orange; B '@ClimateHome' and '#NetZero' are green and underlined",
+  "which_side": "both"
+ },
+ {
+  "observation": "The partner area in A is a white box with a duplicated 'Managing Partner' label (italic plus bold) and a vertical divider; B has a single header and a logo row",
+  "category": "copy treatment",
+  "evidence": "A heading_outline has h2 and h3 'Managing Partner'; A_slice_01 shows both labels. B has one 'MANAGING PARTNER' h2",
+  "which_side": "A"
+ },
+ {
+  "observation": "Partner logos are displayed larger in B",
+  "category": "imagery handling",
+  "evidence": "wri logo 110x38 in A vs 184x64 in B; customlogo 154x34 vs 255x56; folu 154x39 vs 220x56",
+  "which_side": "B"
+ },
+ {
+  "observation": "B gives alt text to two partner logos that A leaves empty",
+  "category": "DOM/semantic structure",
+  "evidence": "customlogo.png and folu.png alt is '' in A; 'Coalition for Urban Transitions' and 'Food and Land Use Coalition' in B",
+  "which_side": "B"
+ },
+ {
+  "observation": "Social icons are shown alone after 'Connect' in A, and with text labels in B",
+  "category": "component choices",
+  "evidence": "A_slice_01 shows 'Connect' plus 5 icons; B_slice_01 shows 'YouTube', 'LinkedIn', 'Google+', 'Facebook' and 'Twitter' labels next to the icon images",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer sits on the orange background with white text in A, and on light gray with a dark underlined Careers link in B",
+  "category": "color",
+  "evidence": "A_slice_01 shows 'Careers ›' in white on orange; B_slice_01 shows an underlined 'Careers' on gray",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a footer element; A has none",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic.footer: A 0, B 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses main and section elements; A uses neither",
+  "category": "DOM/semantic structure",
+  "evidence": "B main 1, section 4; A main 0, section 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses many header and article elements",
+  "category": "DOM/semantic structure",
+  "evidence": "A header 6, article 8; B header 1, article 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has one h1, which is empty; B has no h1",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 1, text ''; B h1_count 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has hidden h2 headings such as 'Search form' and 'Sign Up'",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline includes h2 'Search form' and 'Sign Up'; A has 14 h2s vs 6 in B",
+  "which_side": "A"
+ },
+ {
+  "observation": "Heading hierarchy differs: A makes article titles h2, while B makes them h3 under section h2s",
+  "category": "DOM/semantic structure",
+  "evidence": "A has 'Commentary: The Climate Change Battle…' as an h2; B has it as an h3. B has 6 h3s vs 2 in A",
+  "which_side": "both"
+ },
+ {
+  "observation": "Primary font differs: proxima-nova in A, the system font stack plus Georgia in B",
+  "category": "typography",
+  "evidence": "A fonts: proxima-nova 169; B fonts: -apple-system 53, Georgia 52",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text metrics differ",
+  "category": "typography",
+  "evidence": "A body 16px / 20px line height; B 17px / 26.35px",
+  "which_side": "both"
+ },
+ {
+  "observation": "Base text color is neutral gray in A and green-tinted near-black in B",
+  "category": "color",
+  "evidence": "A body_color rgb(51, 51, 51); B body_color rgb(27, 42, 38)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A loads many scripts and external stylesheets; B has none",
+  "category": "DOM/semantic structure",
+  "evidence": "scripts: A 32, B 0; stylesheets: A 3, B 0; style tags: A 6, B 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A includes a long title suffix and more meta tags",
+  "category": "DOM/semantic structure",
+  "evidence": "A title 'New Climate Economy | Commission on the Economy and Climate |' with 8 meta tags; B title 'New Climate Economy' with 2",
+  "which_side": "A"
+ },
+ {
+  "observation": "Layout techniques differ: B uses CSS grid, A uses only flex",
+  "category": "layout",
+  "evidence": "display_grid: A 0, B 4; display_flex: A 10, B 18",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has a richer class vocabulary",
+  "category": "DOM/semantic structure",
+  "evidence": "classes total/unique: A 267/112; B 34/21",
+  "which_side": "A"
+ },
+ {
+  "observation": "B is taller",
+  "category": "layout",
+  "evidence": "page_height A 1894, B 2188; both 1440 wide",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses a few small rounded corners; A is fully square-cornered",
+  "category": "decoration/effects",
+  "evidence": "bucket_1_7: A 0, B 2; A has 180 elements at 0 radius. The Sign Up button and search box in B look slightly rounded",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has one box shadow and two gradients; B has no shadows and one gradient",
+  "category": "decoration/effects",
+  "evidence": "box_shadows A 1, B 0; gradient_backgrounds A 2, B 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses ARIA attributes; A has none",
+  "category": "DOM/semantic structure",
+  "evidence": "aria_attrs A 0, B 4",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses social icons and a video thumbnail as img elements, giving it more images",
+  "category": "imagery handling",
+  "evidence": "images: A 5, B 12, including icons-youtube.png, icons-twitter.png and thumbnail.png",
+  "which_side": "B"
+ },
+ {
+  "observation": "Word count is the same on both sides",
+  "category": "copy treatment",
+  "evidence": "text_stats.words 168 for both; no emoji, em dashes or exclamations",
+  "which_side": "both"
+ }
+]

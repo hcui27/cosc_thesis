@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),this._loadEverythingNow()}async _loadEverythingNow(){this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{var n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){const n=e[t];Object.defineProperty(e,t,{get:n||function(){},set:n=>{e["rocket"+t]=n}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e?"rocket-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const a=document.createDocumentFragment();r.setStart(a,0),a.appendChild(r.createContextualFragment(t)),i.insertBefore(a,o)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mouseover","touchmove","touchstart","wheel"]);e._delayEventListeners(),e._delayJQueryReady(e),e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='max-image-preview:large' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v14.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Home | Bomba Courses</title><style id="rocket-critical-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-20:#005a87}.grid-container:after{clear:both}@-ms-viewport{width:auto}.grid-container:after,.grid-container:before{content:".";display:block;overflow:hidden;visibility:hidden;font-size:0;line-height:0;width:0;height:0}.grid-container{margin-left:auto;margin-right:auto;max-width:1200px;padding-left:10px;padding-right:10px}.grid-parent{padding-left:0;padding-right:0}a,body,div,h1,html,li,p,span,strong,ul{border:0;margin:0;padding:0}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}header,nav,section{display:block}ul{list-style:none}a{background-color:transparent}a img{border:0}body,button{font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-weight:400;text-transform:none;font-size:17px;line-height:1.5}p{margin-bottom:1.5em}h1{font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit}h1{font-size:42px;margin-bottom:20px;line-height:1.2em;font-weight:400;text-transform:none}ul{margin:0 0 1.5em 3em}ul{list-style:disc}li>ul{margin-bottom:0;margin-left:1.5em}strong{font-weight:700}i{font-style:italic}img{height:auto;max-width:100%}button{font-size:100%;margin:0;vertical-align:baseline}button{border:1px solid transparent;background:#55555e;-webkit-appearance:button;padding:10px 20px;color:#fff}button::-moz-focus-inner{border:0;padding:0}a,a:visited{text-decoration:none}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}.site-content:after,.site-header:after{content:"";display:table;clear:both}.main-navigation{z-index:100;padding:0;clear:both;display:block}.main-navigation a{display:block;text-decoration:none;font-weight:400;text-transform:none;font-size:15px}.main-navigation ul{list-style:none;margin:0;padding-left:0}.main-navigation .main-nav ul li a{padding-left:20px;padding-right:20px;line-height:60px}.inside-navigation{position:relative}.main-navigation li{float:left;position:relative}.main-navigation ul ul{display:block;box-shadow:1px 1px 0 rgba(0,0,0,.1);float:left;position:absolute;left:-99999px;opacity:0;z-index:99999;width:200px;text-align:left;top:auto;height:0;overflow:hidden}.main-navigation ul ul a{display:block}.main-navigation ul ul li{width:100%}.main-navigation .main-nav ul ul li a{line-height:normal;padding:10px 20px;font-size:14px}.main-navigation .main-nav ul li.menu-item-has-children>a{padding-right:0;position:relative}.menu-item-has-children .dropdown-menu-toggle{display:inline-block;height:100%;clear:both;padding-right:20px;padding-left:10px}.site-header{position:relative}.inside-header{padding:20px 40px}.main-title{margin:0;font-size:25px;line-height:1.2em;word-wrap:break-word;font-weight:700;text-transform:none}.site-description{margin:0;line-height:1.5;font-weight:400;text-transform:none;font-size:15px}.site-logo{display:inline-block;max-width:100%}.site-header .header-image{vertical-align:middle}.site-branding-container{display:inline-flex;align-items:center;text-align:left}.site-branding-container .site-logo{margin-right:1.5em}.site-content{word-wrap:break-word}.full-width-content .container.grid-container{max-width:100%}.container.grid-container{width:auto}@font-face{font-family:GeneratePress;src:url(https://bombacourses.com/wp-content/themes/generatepress/assets/fonts/generatepress.eot);src:url(https://bombacourses.com/wp-content/themes/generatepress/assets/fonts/generatepress.eot#iefix) format("embedded-opentype"),url(https://bombacourses.com/wp-content/themes/generatepress/assets/fonts/generatepress.woff2) format("woff2"),url(https://bombacourses.com/wp-content/themes/generatepress/assets/fonts/generatepress.woff) format("woff"),url(https://bombacourses.com/wp-content/themes/generatepress/assets/fonts/generatepress.ttf) format("truetype"),url(https://bombacourses.com/wp-content/themes/generatepress/assets/fonts/generatepress.svg#GeneratePress) format("svg");font-weight:400;font-style:normal}.dropdown-menu-toggle:before,.menu-toggle:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.menu-toggle:before{content:"\f0c9";font-family:GeneratePress;width:1.28571429em;text-align:center;display:inline-block}.dropdown-menu-toggle:before{content:"\f107";font-family:GeneratePress;display:inline-block;width:.8em;text-align:left}.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated{padding:10px}@media (max-width:767px){.elementor-column{width:100%}}.screen-reader-text{position:absolute;top:-10000em;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.elementor-clearfix:after{content:"";display:block;clear:both;width:0;height:0}.elementor{-webkit-hyphens:manual;-ms-hyphens:manual;hyphens:manual}.elementor *,.elementor :after,.elementor :before{-webkit-box-sizing:border-box;box-sizing:border-box}.elementor a{-webkit-box-shadow:none;box-shadow:none;text-decoration:none}.elementor .elementor-background-overlay{height:100%;width:100%;top:0;left:0;position:absolute}@media (max-width:1024px){.elementor-tablet-align-left{text-align:left}.elementor-tablet-align-left .elementor-button{width:auto}}:root{--page-title-display:block}.elementor-section{position:relative}.elementor-section .elementor-container{display:-webkit-box;display:-ms-flexbox;display:flex;margin-right:auto;margin-left:auto;position:relative}@media (max-width:1024px){.elementor-section .elementor-container{-ms-flex-wrap:wrap;flex-wrap:wrap}}.elementor-section.elementor-section-boxed>.elementor-container{max-width:1140px}.elementor-row{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex}@media (max-width:1024px){.elementor-row{-ms-flex-wrap:wrap;flex-wrap:wrap}}.elementor-widget-wrap{position:relative;width:100%;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-line-pack:start;align-content:flex-start}.elementor:not(.elementor-bc-flex-widget) .elementor-widget-wrap{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-wrap>.elementor-element{width:100%}.elementor-widget{position:relative}.elementor-widget:not(:last-child){margin-bottom:20px}.elementor-column{min-height:1px}.elementor-column,.elementor-column-wrap{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-column-wrap{width:100%}@media (min-width:768px){.elementor-column.elementor-col-50{width:50%}}@media (max-width:767px){.elementor-column{width:100%}}.elementor-button{display:inline-block;line-height:1;background-color:#818a91;font-size:15px;padding:12px 24px;-webkit-border-radius:3px;border-radius:3px;color:#fff;fill:#fff;text-align:center}.elementor-button:visited{color:#fff}.elementor-button-content-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.elementor-button-icon{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}.elementor-button-text{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-ordinal-group:11;-ms-flex-order:10;order:10;display:inline-block}.elementor-button.elementor-size-md{font-size:16px;padding:15px 30px;-webkit-border-radius:4px;border-radius:4px}.elementor-button .elementor-align-icon-left{margin-right:5px;-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}.elementor-button span{text-decoration:inherit}.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-kit-17{--e-global-color-primary:#6EC1E4;--e-global-color-secondary:#54595F;--e-global-color-text:#7A7A7A;--e-global-color-accent:#61CE70;--e-global-typography-primary-font-family:"Roboto";--e-global-typography-primary-font-weight:600;--e-global-typography-secondary-font-family:"Roboto Slab";--e-global-typography-secondary-font-weight:400;--e-global-typography-text-font-family:"Roboto";--e-global-typography-text-font-weight:400;--e-global-typography-accent-font-family:"Roboto";--e-global-typography-accent-font-weight:500}.elementor-section.elementor-section-boxed>.elementor-container{max-width:1140px}.elementor-widget:not(:last-child){margin-bottom:20px}@media (max-width:1024px){.elementor-section.elementor-section-boxed>.elementor-container{max-width:1025px}}@media (max-width:767px){.elementor-section.elementor-section-boxed>.elementor-container{max-width:768px}}.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fa-book-reader:before{content:"\f5da"}@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;font-display:auto;src:url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot);src:url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2) format("woff2"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff) format("woff"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.ttf) format("truetype"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.svg#fontawesome) format("svg")}@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:auto;src:url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot);src:url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2) format("woff2"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff) format("woff"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf) format("truetype"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fas{font-family:"Font Awesome 5 Free"}.fas{font-weight:900}.elementor-widget-heading .elementor-heading-title{color:var(--e-global-color-primary);font-family:var(--e-global-typography-primary-font-family),Sans-serif;font-weight:var(--e-global-typography-primary-font-weight)}.elementor-widget-text-editor{color:var(--e-global-color-text);font-family:var(--e-global-typography-text-font-family),Sans-serif;font-weight:var(--e-global-typography-text-font-weight)}.elementor-widget-button .elementor-button{font-family:var(--e-global-typography-accent-font-family),Sans-serif;font-weight:var(--e-global-typography-accent-font-weight);background-color:var(--e-global-color-accent)}.elementor-58 .elementor-element.elementor-element-20f57b9b>.elementor-container>.elementor-row>.elementor-column>.elementor-column-wrap>.elementor-widget-wrap{align-content:center;align-items:center}.elementor-58 .elementor-element.elementor-element-20f57b9b:not(.elementor-motion-effects-element-type-background){background-color:#ffffff;background-image:url("https://bombacourses.com/wp-content/uploads/2020/09/home-banner-02.jpg");background-position:bottom center;background-repeat:no-repeat;background-size:cover}.elementor-58 .elementor-element.elementor-element-20f57b9b>.elementor-background-overlay{background-color:transparent;background-image:linear-gradient(140deg,#2F93DB 0%,rgba(255,255,255,0) 51%);opacity:0.8}.elementor-58 .elementor-element.elementor-element-20f57b9b{padding:15% 0% 10% 0%}.elementor-58 .elementor-element.elementor-element-90a83e2>.elementor-element-populated{padding:50px 0px 50px 0px}.elementor-58 .elementor-element.elementor-element-cd216a8{text-align:left}.elementor-58 .elementor-element.elementor-element-cd216a8 .elementor-heading-title{color:#000000}.elementor-58 .elementor-element.elementor-element-cd216a8>.elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.elementor-58 .elementor-element.elementor-element-26ba7f3{color:#353535}.elementor-58 .elementor-element.elementor-element-26ba7f3>.elementor-widget-container{margin:20px 0px 40px 0px}.elementor-58 .elementor-element.elementor-element-c8fc31e .elementor-button{box-shadow:0px 10px 50px -10px rgba(206,41,126,0.5)}@media (max-width:1024px){.elementor-58 .elementor-element.elementor-element-20f57b9b{padding:0px 0px 0px 0px}.elementor-58 .elementor-element.elementor-element-90a83e2>.elementor-element-populated{padding:40px 40px 40px 40px}}@media (max-width:767px){.elementor-58 .elementor-element.elementor-element-20f57b9b{padding:40px 20px 30px 20px}.elementor-58 .elementor-element.elementor-element-90a83e2>.elementor-element-populated{padding:0px 0px 0px 0px}.elementor-58 .elementor-element.elementor-element-26ba7f3>.elementor-widget-container{margin:0px 0px 0px 0px}}.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fa-book-reader:before{content:"\f5da"}@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:auto;src:url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot);src:url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2) format("woff2"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff) format("woff"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf) format("truetype"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fas{font-family:"Font Awesome 5 Free";font-weight:900}</style><link rel="preload" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" /><link rel="preload" href="https://bombacourses.com/wp-content/cache/min/1/39bae4ba10e735a38b2414aacd625349.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" media="all" data-minify="1" />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://bombacourses.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Home | Bomba Courses" />
+	<meta property="og:description" content="Awarded Yoga Instructor in New Jersey Consectetur adipiscing elit elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.​ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contact Today Dive in the World Of Health &#038; Fitness Et ligula sit quam, sapien lorem. Nec risus lorem vestibulum mi facilisis. Tincidunt urna accumsan nec risus lorem vestibulum &hellip;  Home Read More &raquo;" />
+	<meta property="og:url" content="https://bombacourses.com/" />
+	<meta property="og:site_name" content="Bomba Courses" />
+	<meta property="article:modified_time" content="2020-12-10T08:42:56+00:00" />
+	<meta property="og:image" content="https://bombacourses.com/wp-content/uploads/elementor/thumbs/No-Group-Buys-ovzlxhvj3d0hqs6ki7iqtq3gko990718rhi8dsctyo.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://bombacourses.com/#/schema/person/c7a5a7300edb3ead31b480ad08cfd382","name":"ninoslavic19","image":{"@type":"ImageObject","@id":"https://bombacourses.com/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/01768f270ddbf037e345bb6e36a5e022?s=96&d=mm&r=g","caption":"ninoslavic19"},"logo":{"@id":"https://bombacourses.com/#personlogo"}},{"@type":"WebSite","@id":"https://bombacourses.com/#website","url":"https://bombacourses.com/","name":"Bomba Courses","description":"Over 3000 Courses at One Place","publisher":{"@id":"https://bombacourses.com/#/schema/person/c7a5a7300edb3ead31b480ad08cfd382"},"potentialAction":[{"@type":"SearchAction","target":"https://bombacourses.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://bombacourses.com/#primaryimage","inLanguage":"en-US","url":"https://bombacourses.com/wp-content/uploads/elementor/thumbs/No-Group-Buys-ovzlxhvj3d0hqs6ki7iqtq3gko990718rhi8dsctyo.png"},{"@type":"WebPage","@id":"https://bombacourses.com/#webpage","url":"https://bombacourses.com/","name":"Home | Bomba Courses","isPartOf":{"@id":"https://bombacourses.com/#website"},"about":{"@id":"https://bombacourses.com/#/schema/person/c7a5a7300edb3ead31b480ad08cfd382"},"primaryImageOfPage":{"@id":"https://bombacourses.com/#primaryimage"},"datePublished":"2020-09-11T09:18:10+00:00","dateModified":"2020-12-10T08:42:56+00:00","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://bombacourses.com/"]}]}]}</script>
+	<meta name="yandex-verification" content="c1e14024b0f263c5" />
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Bomba Courses &raquo; Feed" href="https://bombacourses.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bomba Courses &raquo; Comments Feed" href="https://bombacourses.com/comments/feed/" />
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+
+
+
+
+
+
+
+<style id='generate-style-inline-css'>
+body{background-color:#efefef;color:#3a3a3a;}a{color:#1e73be;}a:hover, a:focus, a:active{color:#000000;}body .grid-container{max-width:1100px;}.wp-block-group__inner-container{max-width:1100px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:100px;}body, button, input, select, textarea{font-family:"Open Sans", sans-serif;}body{line-height:1.5;}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:1.5em;}.main-title{font-size:45px;}.main-navigation .main-nav ul ul li a{font-size:14px;}.sidebar .widget, .footer-widgets .widget{font-size:17px;}h1{font-weight:300;font-size:40px;}h2{font-weight:300;font-size:30px;}h3{font-size:20px;}h4{font-size:inherit;}h5{font-size:inherit;}@media (max-width:768px){.main-title{font-size:30px;}h1{font-size:30px;}h2{font-size:25px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;color:#3a3a3a;}.site-header a{color:#3a3a3a;}.main-title a,.main-title a:hover{color:#222222;}.site-description{color:#757575;}.main-navigation,.main-navigation ul ul{background-color:#222222;}.main-navigation .main-nav ul li a,.menu-toggle, .main-navigation .menu-bar-items{color:#ffffff;}.main-navigation .main-nav ul li:hover > a,.main-navigation .main-nav ul li:focus > a, .main-navigation .main-nav ul li.sfHover > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:#ffffff;background-color:#3f3f3f;}button.menu-toggle:hover,button.menu-toggle:focus,.main-navigation .mobile-bar-items a,.main-navigation .mobile-bar-items a:hover,.main-navigation .mobile-bar-items a:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#3f3f3f;}.main-navigation .main-nav ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a{color:#ffffff;background-color:#3f3f3f;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#ffffff;background-color:#3f3f3f;}.main-navigation ul ul{background-color:#3f3f3f;}.main-navigation .main-nav ul ul li a{color:#ffffff;}.main-navigation .main-nav ul ul li:hover > a,.main-navigation .main-nav ul ul li:focus > a,.main-navigation .main-nav ul ul li.sfHover > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#ffffff;background-color:#4f4f4f;}.main-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover > a{color:#ffffff;background-color:#4f4f4f;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:#ffffff;}.entry-meta{color:#595959;}.entry-meta a{color:#595959;}.entry-meta a:hover{color:#1e73be;}.sidebar .widget{background-color:#ffffff;}.sidebar .widget .widget-title{color:#000000;}.footer-widgets{color:#ffffff;background-color:#222222;}.footer-widgets .widget-title{color:#ffffff;}.site-info{color:#ffffff;background-color:#222222;}.site-info a{color:#ffffff;}.site-info a:hover{color:#606060;}.footer-bar .widget_nav_menu .current-menu-item a{color:#606060;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#fafafa;border-color:#cccccc;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#bfbfbf;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#666666;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f3f3f;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}@media (max-width:768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#ffffff;}}.inside-top-bar{padding:10px;}.inside-header{padding:40px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}.site-info{padding:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header, .wp-block-group__inner-container{padding:30px;}.site-info{padding-right:10px;padding-left:10px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}}.one-container .sidebar .widget{padding:0px;}@media (max-width:768px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav{display:none;}[class*="nav-float-"] .site-header .inside-header > *{float:none;clear:both;}}
+.dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}.one-container.blog .dynamic-content-template:not(:last-child), .one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
+</style>
+
+
+
+
+
+
+
+
+<style id='elementor-frontend-inline-css'>
+@font-face{font-family:eicons;src:url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://bombacourses.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+
+
+
+
+
+
+
+
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://bombacourses.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}.wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+
+
+
+<script src='https://bombacourses.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script src='https://bombacourses.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script data-minify="1" src='https://bombacourses.com/wp-content/cache/min/1/wp-content/plugins/mts-wp-notification-bar/public/js/jquery.cookie.js?ver=1619534300' id='mtsnb-cookie-js'></script>
+<script id='mts-notification-bar-js-extra'>
+var mtsnb_data = {"ajaxurl":"https:\/\/bombacourses.com\/wp-admin\/admin-ajax.php","cookies_expiry":"365"};
+</script>
+<script data-minify="1" src='https://bombacourses.com/wp-content/cache/min/1/wp-content/plugins/mts-wp-notification-bar/public/js/mts-notification-bar-public.js?ver=1619534300' id='mts-notification-bar-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.2.4' id='font-awesome-4-shim-js'></script>
+<link rel="https://api.w.org/" href="https://bombacourses.com/wp-json/" /><link rel="alternate" type="application/json" href="https://bombacourses.com/wp-json/wp/v2/pages/58" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bombacourses.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://bombacourses.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.2" />
+<link rel='shortlink' href='https://bombacourses.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://bombacourses.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbombacourses.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://bombacourses.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbombacourses.com%2F&#038;format=xml" />
+		<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+			//<![CDATA[
+			var show_msg = '';
+			if (show_msg !== '0') {
+				var options = {view_src: "View Source is disabled!", inspect_elem: "Inspect Element is disabled!", right_click: "Right click is disabled!", copy_cut_paste_content: "Cut/Copy/Paste is disabled!", image_drop: "Image Drag-n-Drop is disabled!" }
+			} else {
+				var options = '';
+			}
+
+         	function nocontextmenu(e) { return false; }
+         	document.oncontextmenu = nocontextmenu;
+         	document.ondragstart = function() { return false;}
+
+			document.onmousedown = function (event) {
+				event = (event || window.event);
+				if (event.keyCode === 123) {
+					if (show_msg !== '0') {show_toast('inspect_elem');}
+					return false;
+				}
+			}
+			document.onkeydown = function (event) {
+				event = (event || window.event);
+				//alert(event.keyCode);   return false;
+				if (event.keyCode === 123 ||
+						event.ctrlKey && event.shiftKey && event.keyCode === 73 ||
+						event.ctrlKey && event.shiftKey && event.keyCode === 75) {
+					if (show_msg !== '0') {show_toast('inspect_elem');}
+					return false;
+				}
+				if (event.ctrlKey && event.keyCode === 85) {
+					if (show_msg !== '0') {show_toast('view_src');}
+					return false;
+				}
+			}
+			function addMultiEventListener(element, eventNames, listener) {
+				var events = eventNames.split(' ');
+				for (var i = 0, iLen = events.length; i < iLen; i++) {
+					element.addEventListener(events[i], function (e) {
+						e.preventDefault();
+						if (show_msg !== '0') {
+							show_toast(listener);
+						}
+					});
+				}
+			}
+			addMultiEventListener(document, 'contextmenu', 'right_click');
+			addMultiEventListener(document, 'cut copy paste print', 'copy_cut_paste_content');
+			addMultiEventListener(document, 'drag drop', 'image_drop');
+			function show_toast(text) {
+				var x = document.getElementById("amm_drcfw_toast_msg");
+				x.innerHTML = eval('options.' + text);
+				x.className = "show";
+				setTimeout(function () {
+					x.className = x.className.replace("show", "")
+				}, 3000);
+			}
+		//]]>
+		</script>
+		<style type="text/css">body * :not(input):not(textarea){user-select:none !important; -webkit-touch-callout: none !important;  -webkit-user-select: none !important; -moz-user-select:none !important; -khtml-user-select:none !important; -ms-user-select: none !important;}#amm_drcfw_toast_msg{visibility:hidden;min-width:250px;margin-left:-125px;background-color:#333;color:#fff;text-align:center;border-radius:2px;padding:16px;position:fixed;z-index:999;left:50%;bottom:30px;font-size:17px}#amm_drcfw_toast_msg.show{visibility:visible;-webkit-animation:fadein .5s,fadeout .5s 2.5s;animation:fadein .5s,fadeout .5s 2.5s}@-webkit-keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@keyframes fadein{from{bottom:0;opacity:0}to{bottom:30px;opacity:1}}@-webkit-keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}@keyframes fadeout{from{bottom:30px;opacity:1}to{bottom:0;opacity:0}}</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Facebook Pixel Code -->
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+</script>
+<!-- End Facebook Pixel Code -->
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+  fbq('init', '2038105819665967', {}, {
+    "agent": "wordpress-5.7.2-3.0.5"
+});
+</script><script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+  fbq('track', 'PageView', []);
+</script>
+<!-- Facebook Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none" alt="fbpx"
+src="https://www.facebook.com/tr?id=2038105819665967&ev=PageView&noscript=1" />
+</noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=UA-178388467-1"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178388467-1');
+</script>
+<meta name="google-site-verification" content="BwX-q19Q-DLN0IpyMuXR95T1vTpW5p6BpwTS7XEIQR8" /><meta name="trustpilot-one-time-domain-verification-id" content="c4619f07-d431-4969-9819-4333a2cae30a"/><link rel="icon" href="https://bombacourses.com/wp-content/uploads/2020/09/images-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://bombacourses.com/wp-content/uploads/2020/09/images.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://bombacourses.com/wp-content/uploads/2020/09/images.png" />
+<meta name="msapplication-TileImage" content="https://bombacourses.com/wp-content/uploads/2020/09/images.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+
+<body data-rsssl=1 class="home page-template page-template-elementor_header_footer page page-id-58 wp-custom-logo wp-embed-responsive post-image-aligned-center generatepress right-sidebar nav-below-header separate-containers fluid-header active-footer-widgets-3 nav-aligned-left header-aligned-left dropdown-hover elementor-default elementor-template-full-width elementor-kit-17 elementor-page elementor-page-58 full-width-content" itemtype="https://schema.org/WebPage" itemscope>
+	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header id="masthead" class="site-header" itemtype="https://schema.org/WPHeader" itemscope>
+			<div class="inside-header grid-container grid-parent">
+				<div class="site-branding-container"><div class="site-logo">
+					<a href="https://bombacourses.com/" title="Bomba Courses" rel="home">
+						<img width="221" height="228"  class="header-image is-logo-image" alt="Bomba Courses" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20221%20228'%3E%3C/svg%3E" title="Bomba Courses" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/images.png" /><noscript><img width="221" height="228"  class="header-image is-logo-image" alt="Bomba Courses" src="https://bombacourses.com/wp-content/uploads/2020/09/images.png" title="Bomba Courses" /></noscript>
+					</a>
+				</div><div class="site-branding">
+						<p class="main-title" itemprop="headline">
+					<a href="https://bombacourses.com/" rel="home">
+						Bomba Courses
+					</a>
+				</p>
+						<p class="site-description" itemprop="description">
+					Over 3000 Courses at One Place
+				</p>
+					</div></div>			</div>
+		</header>
+				<nav id="site-navigation" class="main-navigation sub-menu-right" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container grid-parent">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="mobile-menu">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-menu-1" class=" menu sf-menu"><li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-37"><a href="https://bombacourses.com/" aria-current="page">Home</a></li>
+<li id="menu-item-499" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-499"><a href="https://bombacourses.com/special-offer/">Special Offer</a></li>
+<li id="menu-item-143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-143"><a href="https://bombacourses.com/downloads/">Downloads<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-207" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-207"><a href="https://bombacourses.com/ecommerce/">Ecommerce</a></li>
+	<li id="menu-item-215" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-215"><a href="https://bombacourses.com/advertsing/">Advertsing</a></li>
+	<li id="menu-item-216" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-216"><a href="https://bombacourses.com/affiliate/">Affiliate</a></li>
+	<li id="menu-item-518" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-518"><a href="https://bombacourses.com/agency/">Agency</a></li>
+	<li id="menu-item-217" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-217"><a href="https://bombacourses.com/amazon/">Amazon</a></li>
+	<li id="menu-item-218" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-218"><a href="https://bombacourses.com/blogging/">Blogging</a></li>
+	<li id="menu-item-219" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-219"><a href="https://bombacourses.com/business/">Business</a></li>
+	<li id="menu-item-220" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-220"><a href="https://bombacourses.com/copywriting/">Copywriting</a></li>
+	<li id="menu-item-222" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-222"><a href="https://bombacourses.com/email-marketing/">Email Marketing</a></li>
+	<li id="menu-item-223" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-223"><a href="https://bombacourses.com/facebook/">Facebook</a></li>
+	<li id="menu-item-520" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-520"><a href="https://bombacourses.com/funnel/">Funnel</a></li>
+	<li id="menu-item-225" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-225"><a href="https://bombacourses.com/internet-marketing/">Internet Marketing</a></li>
+	<li id="menu-item-521" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-521"><a href="https://bombacourses.com/trading/">Trading</a></li>
+	<li id="menu-item-522" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-522"><a href="https://bombacourses.com/traffic/">Traffic</a></li>
+	<li id="menu-item-227" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-227"><a href="https://bombacourses.com/other/">Other</a></li>
+	<li id="menu-item-228" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-228"><a href="https://bombacourses.com/ppc/">PPC</a></li>
+	<li id="menu-item-229" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-229"><a href="https://bombacourses.com/seo/">SEO</a></li>
+	<li id="menu-item-230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-230"><a href="https://bombacourses.com/social-marketing/">Social Marketing</a></li>
+	<li id="menu-item-232" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-232"><a href="https://bombacourses.com/youtube/">Youtube</a></li>
+</ul>
+</li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-43"><a rel="nofollow" href="https://bombacourses.com/members-area/">Members Area<span role="presentation" class="dropdown-menu-toggle"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a rel="nofollow" href="https://bombacourses.com/login/">Login</a></li>
+	<li id="menu-item-204" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-204"><a rel="nofollow" href="https://bombacourses.com/account/">Account</a></li>
+	<li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a rel="nofollow" href="https://bombacourses.com/contact/">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a rel="nofollow" href="https://bombacourses.com/register/">Sign Up</a></li>
+<li class=" astm-search-menu is-menu is-dropdown menu-item"><a href="#" aria-label="Search Icon Link"><svg width="20" height="20" class="search-icon" role="img" viewBox="2 9 20 5" focusable="false" aria-label="Search">
+						<path class="search-icon-path" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></a><form  class="is-search-form is-form-style is-form-style-3 is-form-id-0 " action="https://bombacourses.com/" method="get" role="search" ><label for="is-search-input-0"><span class="is-screen-reader-text">Search for:</span><input  type="search" id="is-search-input-0" name="s" value="" class="is-search-input" placeholder="Search here..." autocomplete="off" /></label><button type="submit" class="is-search-submit"><span class="is-screen-reader-text">Search Button</span><span class="is-search-icon"><svg focusable="false" aria-label="Search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span></button></form></li></ul></div>			</div>
+		</nav>
+		
+	<div id="page" class="site grid-container container hfeed grid-parent">
+				<div id="content" class="site-content">
+					<div data-elementor-type="wp-post" data-elementor-id="58" class="elementor elementor-58" data-elementor-settings="[]">
+						<div class="elementor-inner">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-20f57b9b elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="20f57b9b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-90a83e2" data-id="90a83e2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-cd216a8 elementor-widget elementor-widget-heading" data-id="cd216a8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">No.1 Place For Internet Marketers</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-26ba7f3 elementor-widget elementor-widget-text-editor" data-id="26ba7f3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+					<p><strong>Join us and learn from already successful people&#8230;</strong></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c8fc31e elementor-tablet-align-left elementor-widget elementor-widget-button" data-id="c8fc31e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://bombacourses.com/downloads/" class="elementor-button-link elementor-button elementor-size-md elementor-animation-float" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fas fa-book-reader"></i>			</span>
+						<span class="elementor-button-text">OUR COLLECTION</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-619993d" data-id="619993d" data-element_type="column">
+			<div class="elementor-column-wrap">
+							<div class="elementor-widget-wrap">
+								</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-fd7fe68 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="fd7fe68" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-64af91f" data-id="64af91f" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-6ed64660 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ed64660" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-726258d2" data-id="726258d2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4ef92470 elementor-widget elementor-widget-image" data-id="4ef92470" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="120" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3E%3C/svg%3E" title="No-Group-Buys" alt="No-Group-Buys" data-lazy-src="https://bombacourses.com/wp-content/uploads/elementor/thumbs/No-Group-Buys-ovzlxhvj3d0hqs6ki7iqtq3gko990718rhi8dsctyo.png" /><noscript><img width="120" height="120" src="https://bombacourses.com/wp-content/uploads/elementor/thumbs/No-Group-Buys-ovzlxhvj3d0hqs6ki7iqtq3gko990718rhi8dsctyo.png" title="No-Group-Buys" alt="No-Group-Buys" /></noscript>														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4c63f24f animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="4c63f24f" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Group Buys</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f01052b elementor-invisible elementor-widget elementor-widget-text-editor" data-id="f01052b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+					<p>Group Buys available for a small fee!</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3d34c2ab elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3d34c2ab" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1a7ff6ee" data-id="1a7ff6ee" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-775b2cd2 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="775b2cd2" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/Requested-Courses.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Requested-Courses-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Requested-Courses-150x150.png 150w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/Requested-Courses.png" /><noscript><img width="500" height="500" src="https://bombacourses.com/wp-content/uploads/2020/09/Requested-Courses.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/Requested-Courses.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Requested-Courses-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Requested-Courses-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Requested Courses</h3><p class="elementor-image-box-description">We take your requests seriously, we get 99% of requested courses.</p></div></div>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2549193" data-id="2549193" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7d3f3c2 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="7d3f3c2" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/Your-Choice.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Your-Choice-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Your-Choice-150x150.png 150w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/Your-Choice.png" /><noscript><img width="500" height="500" src="https://bombacourses.com/wp-content/uploads/2020/09/Your-Choice.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/Your-Choice.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Your-Choice-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Your-Choice-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Your Choice</h3><p class="elementor-image-box-description">Download, or watch online, it is up to you, your choice.</p></div></div>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-086a900" data-id="086a900" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b4e0411 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="b4e0411" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/Huge-Collection.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Huge-Collection-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Huge-Collection-150x150.png 150w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/Huge-Collection.png" /><noscript><img width="500" height="500" src="https://bombacourses.com/wp-content/uploads/2020/09/Huge-Collection.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/Huge-Collection.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Huge-Collection-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Huge-Collection-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Huge Collection</h3><p class="elementor-image-box-description">We have over 20 TB available for download. Over 3000 courses.
+
+</p></div></div>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-48c35fb6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="48c35fb6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ad64bff" data-id="ad64bff" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5247b26 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="5247b26" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/Permanent-Storage.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Permanent-Storage-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Permanent-Storage-150x150.png 150w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/Permanent-Storage.png" /><noscript><img width="500" height="500" src="https://bombacourses.com/wp-content/uploads/2020/09/Permanent-Storage.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/Permanent-Storage.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Permanent-Storage-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Permanent-Storage-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Permanent Storage</h3><p class="elementor-image-box-description">Our links are permanently stored, no reason to hurry up with downloading.</p></div></div>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3dbb37e" data-id="3dbb37e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-7f8ce45 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="7f8ce45" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/Control-Your-Payments.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Control-Your-Payments-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Control-Your-Payments-150x150.png 150w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/Control-Your-Payments.png" /><noscript><img width="500" height="500" src="https://bombacourses.com/wp-content/uploads/2020/09/Control-Your-Payments.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/Control-Your-Payments.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Control-Your-Payments-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Control-Your-Payments-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Control Your Payments</h3><p class="elementor-image-box-description">There are no recurring payments, you decide if you will stay a member.</p></div></div>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3ae1ee3" data-id="3ae1ee3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-9a6e0de elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-id="9a6e0de" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="500" height="500" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20500'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/Support-247.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Support-247-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Support-247-150x150.png 150w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/Support-247.png" /><noscript><img width="500" height="500" src="https://bombacourses.com/wp-content/uploads/2020/09/Support-247.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/Support-247.png 500w, https://bombacourses.com/wp-content/uploads/2020/09/Support-247-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/Support-247-150x150.png 150w" sizes="(max-width: 500px) 100vw, 500px" /></noscript></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Support 24/7</h3><p class="elementor-image-box-description">If you have any questions, you get instant answers. Fast support.</p></div></div>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-709a2a4d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="709a2a4d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3489dc14" data-id="3489dc14" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-533a360c elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="533a360c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-46f3323" data-id="46f3323" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-162c9943 elementor-widget elementor-widget-image" data-id="162c9943" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="120" height="120" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20120%20120'%3E%3C/svg%3E" title="Right Place" alt="Right Place" data-lazy-src="https://bombacourses.com/wp-content/uploads/elementor/thumbs/580b57fbd9996e24bc43c056-ovzlt4whe11lvwikyto1rbphdbqyaqq2hwk58ktkts.png" /><noscript><img width="120" height="120" src="https://bombacourses.com/wp-content/uploads/elementor/thumbs/580b57fbd9996e24bc43c056-ovzlt4whe11lvwikyto1rbphdbqyaqq2hwk58ktkts.png" title="Right Place" alt="Right Place" /></noscript>														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1b238af0 elementor-widget elementor-widget-heading" data-id="1b238af0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">We know exactly what to do!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1240182e elementor-invisible elementor-widget elementor-widget-text-editor" data-id="1240182e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+					<p>We have over 7 years of experience. You are definitely in the right place!</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-321aaa18 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="321aaa18" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-fed0eea" data-id="fed0eea" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1c28875d elementor-widget elementor-widget-image" data-id="1c28875d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="400" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/5841c4aba6515b1e0ad75aa7.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/5841c4aba6515b1e0ad75aa7-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/5841c4aba6515b1e0ad75aa7-150x150.png 150w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/5841c4aba6515b1e0ad75aa7.png" /><noscript><img width="400" height="400" src="https://bombacourses.com/wp-content/uploads/2020/09/5841c4aba6515b1e0ad75aa7.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/5841c4aba6515b1e0ad75aa7.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/5841c4aba6515b1e0ad75aa7-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/5841c4aba6515b1e0ad75aa7-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" /></noscript>														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-7144b5f2" data-id="7144b5f2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-476ed5d3 elementor-widget elementor-widget-image" data-id="476ed5d3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="400" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/584ac2d03ac3a570f94a666d.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/584ac2d03ac3a570f94a666d-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/584ac2d03ac3a570f94a666d-150x150.png 150w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/584ac2d03ac3a570f94a666d.png" /><noscript><img width="400" height="400" src="https://bombacourses.com/wp-content/uploads/2020/09/584ac2d03ac3a570f94a666d.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/584ac2d03ac3a570f94a666d.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/584ac2d03ac3a570f94a666d-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/584ac2d03ac3a570f94a666d-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" /></noscript>														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-1b830370" data-id="1b830370" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-e9da4a5 elementor-widget elementor-widget-image" data-id="e9da4a5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="400" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/google.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/google-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/google-150x150.png 150w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/google.png" /><noscript><img width="400" height="400" src="https://bombacourses.com/wp-content/uploads/2020/09/google.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/google.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/google-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/google-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" /></noscript>														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-503d2f31" data-id="503d2f31" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6ecec0d0 elementor-widget elementor-widget-image" data-id="6ecec0d0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="400" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/580b57fcd9996e24bc43c518.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/580b57fcd9996e24bc43c518-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/580b57fcd9996e24bc43c518-150x150.png 150w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/580b57fcd9996e24bc43c518.png" /><noscript><img width="400" height="400" src="https://bombacourses.com/wp-content/uploads/2020/09/580b57fcd9996e24bc43c518.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/580b57fcd9996e24bc43c518.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/580b57fcd9996e24bc43c518-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/580b57fcd9996e24bc43c518-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" /></noscript>														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-143e35cd" data-id="143e35cd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3ea5fb49 elementor-widget elementor-widget-image" data-id="3ea5fb49" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="400" height="400" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20400'%3E%3C/svg%3E" class="attachment-full size-full" alt="Ecom" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/58482ec0cef1014c0b5e4a70.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/58482ec0cef1014c0b5e4a70-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/58482ec0cef1014c0b5e4a70-150x150.png 150w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/58482ec0cef1014c0b5e4a70.png" /><noscript><img width="400" height="400" src="https://bombacourses.com/wp-content/uploads/2020/09/58482ec0cef1014c0b5e4a70.png" class="attachment-full size-full" alt="Ecom" srcset="https://bombacourses.com/wp-content/uploads/2020/09/58482ec0cef1014c0b5e4a70.png 400w, https://bombacourses.com/wp-content/uploads/2020/09/58482ec0cef1014c0b5e4a70-300x300.png 300w, https://bombacourses.com/wp-content/uploads/2020/09/58482ec0cef1014c0b5e4a70-150x150.png 150w" sizes="(max-width: 400px) 100vw, 400px" /></noscript>														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-293589c2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="293589c2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9928ef7" data-id="9928ef7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-24da4dc9 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="24da4dc9" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-461f0ff3" data-id="461f0ff3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-e0d53db animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="e0d53db" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Numbers Speak</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-54ee8217 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="54ee8217" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+					<p>Number are worth thousands of words!</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-17f5f3bc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="17f5f3bc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-342c34a0 elementor-invisible" data-id="342c34a0" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4fc6158a elementor-widget elementor-widget-counter" data-id="4fc6158a" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="7" data-from-value="0">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+							<div class="elementor-counter-title">Years of Experience</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5f7c63bb elementor-invisible elementor-widget elementor-widget-text-editor" data-id="5f7c63bb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+					<p>Over 7 years of experience.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1ef1ac6 elementor-invisible" data-id="1ef1ac6" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2f9189e elementor-widget elementor-widget-counter" data-id="2f9189e" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="999" data-from-value="0">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+							<div class="elementor-counter-title">Happy Members</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-76f3d48 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="76f3d48" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+					<p>We have thousands of satisfied members.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-73cf2f8 elementor-invisible" data-id="73cf2f8" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-21b528f elementor-widget elementor-widget-counter" data-id="21b528f" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="3000" data-from-value="0">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+							<div class="elementor-counter-title">Premium Courses</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8d0f0bb elementor-invisible elementor-widget elementor-widget-text-editor" data-id="8d0f0bb" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+					<p>Over 3000 courses and over 20TB of content!</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8acdc40 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8acdc40" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-no">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7dec30a6" data-id="7dec30a6" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2a3df0a elementor-widget elementor-widget-image" data-id="2a3df0a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="825" height="549" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20825%20549'%3E%3C/svg%3E" class="attachment-large size-large" alt="library, book, reading" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690-1024x682.jpg 1024w, https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690-300x200.jpg 300w, https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690-768x511.jpg 768w, https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690.jpg 1280w" data-lazy-sizes="(max-width: 825px) 100vw, 825px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690-1024x682.jpg" /><noscript><img width="825" height="549" src="https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690-1024x682.jpg" class="attachment-large size-large" alt="library, book, reading" srcset="https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690-1024x682.jpg 1024w, https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690-300x200.jpg 300w, https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690-768x511.jpg 768w, https://bombacourses.com/wp-content/uploads/2020/09/library-book-reading-488690.jpg 1280w" sizes="(max-width: 825px) 100vw, 825px" /></noscript>														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-56019890" data-id="56019890" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-background-overlay"></div>
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-26f2e7db animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="26f2e7db" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">JOIN US TODAY</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-27a3ddf1 elementor-widget elementor-widget-text-editor" data-id="27a3ddf1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+					<p>And get unlimited access to all courses, hidden areas &amp; requests for only a cup of coffee.</p><div class="elementor-cta__description elementor-cta__content-item elementor-content-item"> </div>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-183280e7 elementor-tablet-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="183280e7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://bombacourses.com/register/" rel="nofollow" class="elementor-button-link elementor-button elementor-size-sm elementor-animation-float" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Join Us</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4f1f6b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4f1f6b3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bc43087" data-id="bc43087" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ee93812 elementor-headline--style-highlight elementor-invisible elementor-widget elementor-widget-animated-headline" data-id="ee93812" data-element_type="widget" data-settings="{&quot;highlighted_text&quot;:&quot;Courses&quot;,&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;marker&quot;:&quot;circle&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="animated-headline.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-headline">
+					<span class="elementor-headline-plain-text elementor-headline-text-wrapper">Newest</span>
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">Courses</span>
+				</span>
+				</h3>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2fc17e5 uael-post__news-stack-no elementor-widget elementor-widget-uael-posts" data-id="2fc17e5" data-element_type="widget" data-widget_type="uael-posts.news">
+				<div class="elementor-widget-container">
+					<div class="uael-post__header">
+					</div>
+		<div class="uael-post__body">
+			
+		<div class="uael-post-image-left uael-post-grid uael-posts uael-post_structure-featured uael-featured_post_structure-" data-query-type="custom" data-structure="featured" data-layout="" data-page="58" data-skin="news" data-filter-default="" data-offset-top="30" >
+
+			
+
+<div class="uael-post-wrapper  uael-post-wrapper-featured special-offer ">
+	<div class="uael-post__bg-wrap">
+		
+		
+		<div class="uael-post__inner-wrap">
+
+				<div class="uael-post__thumbnail">
+			<a data-bg="https://bombacourses.com/wp-content/uploads/2021/06/MICRO-workshop-recordings-by-Ryan-lee.jpg" class="rocket-lazyload" target="_self" href="https://bombacourses.com/ryan-lee-micro-workshop-recordings/" title="Ryan Lee &#8211; Micro Workshop Recordings" style="">
+								</a>
+		</div>
+		
+			
+			<div class="uael-post__content-wrap ">
+				<div class="uael-post__terms-wrap">
+					<span class="uael-post__terms"><a href="https://bombacourses.com/special-offer/" class="uael-listing__terms-link" id="uael-post-term-special offer" aria-labelledby="uael-post-term-special offer">Special Offer</a></span>				</div>
+					<h5 class="uael-post__title">
+
+		
+						<a href="https://bombacourses.com/ryan-lee-micro-workshop-recordings/" target="_self">
+				Ryan Lee &#8211; Micro Workshop Recordings			</a>
+
+				</h5>
+		
+		<div class="uael-post__meta-data">
+
+				<span class="uael-post__date">
+													<i aria-hidden="true" class="fa fa-calendar"></i>									
+			June 5, 2021		</span>
+				<span class="uael-post__comments">
+												<i aria-hidden="true" class="fa fa-comments"></i>										No Comments		</span>
+		
+		</div>
+
+					</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+
+						<div class="uael-post-grid__inner uael-post__columns-1 uael-post__columns-tablet-2 uael-post__columns-mobile-1">
+			
+
+<div class="uael-post-wrapper   special-offer ">
+	<div class="uael-post__bg-wrap">
+		
+		
+		<div class="uael-post__inner-wrap">
+
+				<div class="uael-post__thumbnail">
+			<a data-bg="https://bombacourses.com/wp-content/uploads/2021/06/Mark-William.png" class="rocket-lazyload" target="_self" href="https://bombacourses.com/mark-william-augmented-scaling-system/" title="Mark William  &#8211; Augmented Scaling System" style="">
+								</a>
+		</div>
+		
+			
+			<div class="uael-post__content-wrap ">
+				<div class="uael-post__terms-wrap">
+					<span class="uael-post__terms"><a href="https://bombacourses.com/special-offer/" class="uael-listing__terms-link" id="uael-post-term-special offer" aria-labelledby="uael-post-term-special offer">Special Offer</a></span>				</div>
+					<h5 class="uael-post__title">
+
+		
+						<a href="https://bombacourses.com/mark-william-augmented-scaling-system/" target="_self">
+				Mark William  &#8211; Augmented Scaling System			</a>
+
+				</h5>
+					<div class="uael-post__meta-data">
+					<span class="uael-post__date">
+													<i aria-hidden="true" class="fa fa-calendar"></i>									
+			June 5, 2021		</span>
+				<span class="uael-post__comments">
+												<i aria-hidden="true" class="fa fa-comments"></i>										No Comments		</span>
+				</div>
+					</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+
+
+<div class="uael-post-wrapper   business ">
+	<div class="uael-post__bg-wrap">
+		
+		
+		<div class="uael-post__inner-wrap">
+
+				<div class="uael-post__thumbnail">
+			<a data-bg="https://bombacourses.com/wp-content/uploads/2021/06/Joel-2.png" class="rocket-lazyload" target="_self" href="https://bombacourses.com/joel-bauer-profit-point/" title="Joel Bauer- Profit Point" style="">
+								</a>
+		</div>
+		
+			
+			<div class="uael-post__content-wrap ">
+				<div class="uael-post__terms-wrap">
+					<span class="uael-post__terms"><a href="https://bombacourses.com/business/" class="uael-listing__terms-link" id="uael-post-term-business" aria-labelledby="uael-post-term-business">Business</a></span>				</div>
+					<h5 class="uael-post__title">
+
+		
+						<a href="https://bombacourses.com/joel-bauer-profit-point/" target="_self">
+				Joel Bauer- Profit Point			</a>
+
+				</h5>
+					<div class="uael-post__meta-data">
+					<span class="uael-post__date">
+													<i aria-hidden="true" class="fa fa-calendar"></i>									
+			June 5, 2021		</span>
+				<span class="uael-post__comments">
+												<i aria-hidden="true" class="fa fa-comments"></i>										No Comments		</span>
+				</div>
+					</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+
+
+<div class="uael-post-wrapper   funnel ">
+	<div class="uael-post__bg-wrap">
+		
+		
+		<div class="uael-post__inner-wrap">
+
+				<div class="uael-post__thumbnail">
+			<a data-bg="https://bombacourses.com/wp-content/uploads/2021/06/FunnelFlix-Collection.png" class="rocket-lazyload" target="_self" href="https://bombacourses.com/funnelflix-collection/" title="FunnelFlix Collection" style="">
+								</a>
+		</div>
+		
+			
+			<div class="uael-post__content-wrap ">
+				<div class="uael-post__terms-wrap">
+					<span class="uael-post__terms"><a href="https://bombacourses.com/funnel/" class="uael-listing__terms-link" id="uael-post-term-funnel" aria-labelledby="uael-post-term-funnel">Funnel</a></span>				</div>
+					<h5 class="uael-post__title">
+
+		
+						<a href="https://bombacourses.com/funnelflix-collection/" target="_self">
+				FunnelFlix Collection			</a>
+
+				</h5>
+					<div class="uael-post__meta-data">
+					<span class="uael-post__date">
+													<i aria-hidden="true" class="fa fa-calendar"></i>									
+			June 4, 2021		</span>
+				<span class="uael-post__comments">
+												<i aria-hidden="true" class="fa fa-comments"></i>										No Comments		</span>
+				</div>
+					</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+
+
+<div class="uael-post-wrapper   other ">
+	<div class="uael-post__bg-wrap">
+		
+		
+		<div class="uael-post__inner-wrap">
+
+				<div class="uael-post__thumbnail">
+			<a data-bg="https://bombacourses.com/wp-content/uploads/2021/06/MindValley-Collection.jpg" class="rocket-lazyload" target="_self" href="https://bombacourses.com/mindvalley-collection/" title="Mindvalley Collection" style="">
+								</a>
+		</div>
+		
+			
+			<div class="uael-post__content-wrap ">
+				<div class="uael-post__terms-wrap">
+					<span class="uael-post__terms"><a href="https://bombacourses.com/other/" class="uael-listing__terms-link" id="uael-post-term-other" aria-labelledby="uael-post-term-other">Other</a></span>				</div>
+					<h5 class="uael-post__title">
+
+		
+						<a href="https://bombacourses.com/mindvalley-collection/" target="_self">
+				Mindvalley Collection			</a>
+
+				</h5>
+					<div class="uael-post__meta-data">
+					<span class="uael-post__date">
+													<i aria-hidden="true" class="fa fa-calendar"></i>									
+			June 4, 2021		</span>
+				<span class="uael-post__comments">
+												<i aria-hidden="true" class="fa fa-comments"></i>										No Comments		</span>
+				</div>
+					</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+
+
+<div class="uael-post-wrapper   seo ">
+	<div class="uael-post__bg-wrap">
+		
+		
+		<div class="uael-post__inner-wrap">
+
+				<div class="uael-post__thumbnail">
+			<a data-bg="https://bombacourses.com/wp-content/uploads/2021/06/Neil-Patel.jpg" class="rocket-lazyload" target="_self" href="https://bombacourses.com/neil-patel-the-growth-accelerator-mastermind/" title="Neil Patel &#8211; The Growth Accelerator Mastermind" style="">
+								</a>
+		</div>
+		
+			
+			<div class="uael-post__content-wrap ">
+				<div class="uael-post__terms-wrap">
+					<span class="uael-post__terms"><a href="https://bombacourses.com/seo/" class="uael-listing__terms-link" id="uael-post-term-seo" aria-labelledby="uael-post-term-seo">SEO</a></span>				</div>
+					<h5 class="uael-post__title">
+
+		
+						<a href="https://bombacourses.com/neil-patel-the-growth-accelerator-mastermind/" target="_self">
+				Neil Patel &#8211; The Growth Accelerator Mastermind			</a>
+
+				</h5>
+					<div class="uael-post__meta-data">
+					<span class="uael-post__date">
+													<i aria-hidden="true" class="fa fa-calendar"></i>									
+			June 4, 2021		</span>
+				<span class="uael-post__comments">
+												<i aria-hidden="true" class="fa fa-comments"></i>										No Comments		</span>
+				</div>
+					</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+
+
+<div class="uael-post-wrapper   seo ">
+	<div class="uael-post__bg-wrap">
+		
+		
+		<div class="uael-post__inner-wrap">
+
+				<div class="uael-post__thumbnail">
+			<a data-bg="https://bombacourses.com/wp-content/uploads/2021/06/paul-james.jpeg" class="rocket-lazyload" target="_self" href="https://bombacourses.com/paul-james-local-seo-rank-rent/" title="Paul James &#8211; Local SEO (Rank &#038; Rent)" style="">
+								</a>
+		</div>
+		
+			
+			<div class="uael-post__content-wrap ">
+				<div class="uael-post__terms-wrap">
+					<span class="uael-post__terms"><a href="https://bombacourses.com/seo/" class="uael-listing__terms-link" id="uael-post-term-seo" aria-labelledby="uael-post-term-seo">SEO</a></span>				</div>
+					<h5 class="uael-post__title">
+
+		
+						<a href="https://bombacourses.com/paul-james-local-seo-rank-rent/" target="_self">
+				Paul James &#8211; Local SEO (Rank &#038; Rent)			</a>
+
+				</h5>
+					<div class="uael-post__meta-data">
+					<span class="uael-post__date">
+													<i aria-hidden="true" class="fa fa-calendar"></i>									
+			June 4, 2021		</span>
+				<span class="uael-post__comments">
+												<i aria-hidden="true" class="fa fa-comments"></i>										No Comments		</span>
+				</div>
+					</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+
+
+<div class="uael-post-wrapper   ecommerce ">
+	<div class="uael-post__bg-wrap">
+		
+		
+		<div class="uael-post__inner-wrap">
+
+				<div class="uael-post__thumbnail">
+			<a data-bg="https://bombacourses.com/wp-content/uploads/2021/06/Mossab-Balatif-9K-Day-Profit-Formula.png" class="rocket-lazyload" target="_self" href="https://bombacourses.com/mossab-balatif-9k-day-profit-formula/" title="Mossab Balatif &#8211; $9K-Day Profit Formula" style="">
+								</a>
+		</div>
+		
+			
+			<div class="uael-post__content-wrap ">
+				<div class="uael-post__terms-wrap">
+					<span class="uael-post__terms"><a href="https://bombacourses.com/ecommerce/" class="uael-listing__terms-link" id="uael-post-term-ecommerce" aria-labelledby="uael-post-term-ecommerce">Ecommerce</a></span>				</div>
+					<h5 class="uael-post__title">
+
+		
+						<a href="https://bombacourses.com/mossab-balatif-9k-day-profit-formula/" target="_self">
+				Mossab Balatif &#8211; $9K-Day Profit Formula			</a>
+
+				</h5>
+					<div class="uael-post__meta-data">
+					<span class="uael-post__date">
+													<i aria-hidden="true" class="fa fa-calendar"></i>									
+			June 3, 2021		</span>
+				<span class="uael-post__comments">
+												<i aria-hidden="true" class="fa fa-comments"></i>										No Comments		</span>
+				</div>
+					</div>
+			
+		</div>
+		
+	</div>
+
+</div>
+				</div>
+			
+		</div>
+				</div>
+		<div class="uael-post__footer">
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-369dbdff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="369dbdff" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5822b012" data-id="5822b012" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-daa79e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="daa79e1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1dc3bc3d" data-id="1dc3bc3d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1bfc3ab8 animated-fast elementor-invisible elementor-widget elementor-widget-heading" data-id="1bfc3ab8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">What Our Clients​​ Say about Us</h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-63f4d66d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="63f4d66d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-53dd7b30" data-id="53dd7b30" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-381f5211 animated-slow elementor-invisible elementor-widget elementor-widget-testimonial" data-id="381f5211" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper elementor-testimonial-text-align-left">
+							<div class="elementor-testimonial-content">Most recommended website ever on the internet for Internet Marketers. You dont need to buy any product for Lifetime I promise you.
+This Website just changed my life and now i am earning 6 figure income with the help of bombacourses!</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img width="160" height="160" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20160%20160'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/client1-free-img-4.png 160w, https://bombacourses.com/wp-content/uploads/2020/09/client1-free-img-4-150x150.png 150w" data-lazy-sizes="(max-width: 160px) 100vw, 160px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/client1-free-img-4.png" /><noscript><img width="160" height="160" src="https://bombacourses.com/wp-content/uploads/2020/09/client1-free-img-4.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/client1-free-img-4.png 160w, https://bombacourses.com/wp-content/uploads/2020/09/client1-free-img-4-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px" /></noscript>						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Freya Sanz</div>
+																						<div class="elementor-testimonial-job">Digital Marketer</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-595ac51" data-id="595ac51" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5347477 animated-slow elementor-invisible elementor-widget elementor-widget-testimonial" data-id="5347477" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper elementor-testimonial-text-align-left">
+							<div class="elementor-testimonial-content">From the beginning i am here. I recommend this site to everyone. It is very cheap and you get everything you need, even if you are beginner. Thank you guys for making this possible and thank you for your time.</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img width="160" height="160" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20160%20160'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/client4-free-img-4.png 160w, https://bombacourses.com/wp-content/uploads/2020/09/client4-free-img-4-150x150.png 150w" data-lazy-sizes="(max-width: 160px) 100vw, 160px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/client4-free-img-4.png" /><noscript><img width="160" height="160" src="https://bombacourses.com/wp-content/uploads/2020/09/client4-free-img-4.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/client4-free-img-4.png 160w, https://bombacourses.com/wp-content/uploads/2020/09/client4-free-img-4-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px" /></noscript>						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Mark Ficher</div>
+																						<div class="elementor-testimonial-job">Agency Owner</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a6df0ed" data-id="a6df0ed" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6e66903 animated-slow elementor-invisible elementor-widget elementor-widget-testimonial" data-id="6e66903" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper elementor-testimonial-text-align-left">
+							<div class="elementor-testimonial-content">I am produt to be member of BC! I am a total newbie, and i found BC very helpful for me! I love ecom courses mostly. Everything you need in one place! Diana Burnwood</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img width="160" height="160" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20160%20160'%3E%3C/svg%3E" class="attachment-full size-full" alt="" data-lazy-srcset="https://bombacourses.com/wp-content/uploads/2020/09/client3-free-img-4.png 160w, https://bombacourses.com/wp-content/uploads/2020/09/client3-free-img-4-150x150.png 150w" data-lazy-sizes="(max-width: 160px) 100vw, 160px" data-lazy-src="https://bombacourses.com/wp-content/uploads/2020/09/client3-free-img-4.png" /><noscript><img width="160" height="160" src="https://bombacourses.com/wp-content/uploads/2020/09/client3-free-img-4.png" class="attachment-full size-full" alt="" srcset="https://bombacourses.com/wp-content/uploads/2020/09/client3-free-img-4.png 160w, https://bombacourses.com/wp-content/uploads/2020/09/client3-free-img-4-150x150.png 150w" sizes="(max-width: 160px) 100vw, 160px" /></noscript>						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Diana Burnwood</div>
+																						<div class="elementor-testimonial-job">Entrepreneur</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+						</div>
+						</div>
+					</div>
+		
+	</div>
+</div>
+
+
+<div class="site-footer footer-bar-active footer-bar-align-right">
+				<div id="footer-widgets" class="site footer-widgets">
+				<div class="footer-widgets-container grid-container grid-parent">
+					<div class="inside-footer-widgets">
+							<div class="footer-widget-1 grid-parent grid-33 tablet-grid-50 mobile-grid-100">
+		<aside id="text-5" class="widget inner-padding widget_text"><h2 class="widget-title">DMCA Notice</h2>			<div class="textwidget"><p><span class="fontstyle0">All of the Courses found on this website are hosted on third-party servers that are freely available to watch online for all internet users. Any legal issues regarding the free online courses<br />
+on this website should be taken up with the actual file hosts themselves, as we&#8217;re not affiliated<br />
+with them.</span></p>
+</div>
+		</aside>	</div>
+		<div class="footer-widget-2 grid-parent grid-33 tablet-grid-50 mobile-grid-100">
+		
+		<aside id="recent-posts-4" class="widget inner-padding widget_recent_entries">
+		<h2 class="widget-title">Newest Courses</h2>
+		<ul>
+											<li>
+					<a href="https://bombacourses.com/ryan-lee-micro-workshop-recordings/">Ryan Lee &#8211; Micro Workshop Recordings</a>
+									</li>
+											<li>
+					<a href="https://bombacourses.com/mark-william-augmented-scaling-system/">Mark William  &#8211; Augmented Scaling System</a>
+									</li>
+											<li>
+					<a href="https://bombacourses.com/joel-bauer-profit-point/">Joel Bauer- Profit Point</a>
+									</li>
+											<li>
+					<a href="https://bombacourses.com/funnelflix-collection/">FunnelFlix Collection</a>
+									</li>
+											<li>
+					<a href="https://bombacourses.com/mindvalley-collection/">Mindvalley Collection</a>
+									</li>
+					</ul>
+
+		</aside>	</div>
+		<div class="footer-widget-3 grid-parent grid-33 tablet-grid-50 mobile-grid-100">
+			</div>
+						</div>
+				</div>
+			</div>
+					<footer class="site-info" itemtype="https://schema.org/WPFooter" itemscope>
+			<div class="inside-site-info grid-container grid-parent">
+						<div class="footer-bar">
+			<aside id="nav_menu-4" class="widget inner-padding widget_nav_menu"><div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131"><a rel="nofollow" href="https://bombacourses.com/dmca-policy/">DMCA Policy</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a rel="nofollow" href="https://bombacourses.com/privacy-policy-2/">Privacy Policy</a></li>
+<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a rel="nofollow" href="https://bombacourses.com/terms-of-use/">Terms Of Use</a></li>
+<li id="menu-item-130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-130"><a rel="nofollow" href="https://bombacourses.com/contact/">Contact Us</a></li>
+</ul></div></aside>		</div>
+						<div class="copyright-bar">
+					&copy; 2012-2021. Bomba Courses. All Rights Reserved.				</div>
+			</div>
+		</footer>
+		</div>
+
+    <div id="amm_drcfw_toast_msg"></div>
+				<div class="mtsnb mtsnb-sp-right mtsnb-button mtsnb-shown mtsnb-invisible mtsnb-top mtsnb-fixed" id="mtsnb-1161" data-mtsnb-id="1161" style="background-color:#66bc34;color:#ffffff;" data-bar-animation="mtsnb-bounce" data-bar-content-animation="mtsnb-pulse" data-sp-selector= "">
+			<style type="text/css">
+				.mtsnb { position: fixed; }
+				.mtsnb .mtsnb-container { width: 1080px; font-size: 15px; font-weight: bold; line-height: 1.4}
+				.mtsnb a { color: ;}
+				.mtsnb a:hover { color: #ffffff;}
+				.mtsnb .mtsnb-button, #mtsnb-sp-selector, #mtsnb-sp-selector .mtsnb-sp-icon { color: #ffffff!important; background-color: #3071A9;}
+			</style>
+			<div class="mtsnb-container-outer">
+				<div class="mtsnb-container mtsnb-clearfix" style="padding-top: 10px; padding-bottom: 10px; text-align: center">
+										<div class="mtsnb-button-type mtsnb-content" data-mtsnb-variation="none"><span class="mtsnb-text">Lifetime Access to 99% Courses for $199!</span><a href="https://bombacourses.com/contact/" class="mtsnb-button" target="_blank">Contact Us</a></div>									</div>
+													<a href="#" class="mtsnb-hide" style="background-color:#66bc34;color:#ffffff;"><i class="fa fa-bomb"></i></a>
+							</div>
+		</div>
+		<!--Start of Tawk.to Script (0.5.4)-->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+var Tawk_API=Tawk_API||{};
+var Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ff5b829a9a34e36b969a8a8/1erbteolh';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script (0.5.4)-->
+    <!-- Facebook Pixel Event Code -->
+    <script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+        if( "fb_pxl_code" in event.detail.apiResponse){
+          eval(event.detail.apiResponse.fb_pxl_code);
+        }
+      }, false );
+    </script>
+    <!-- End Facebook Pixel Event Code -->
+    <div id='fb-pxl-ajax-code'></div><style type="text/css" media="screen">.is-menu path.search-icon-path { fill: #ffffff;}body .popup-search-close:after, body .search-close:after { border-color: #ffffff;}body .popup-search-close:before, body .search-close:before { border-color: #ffffff;}</style><script id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id='rocket-preload-links-js-extra'>
+var RocketPreloadLinksConfig = {"excludeUris":"\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/bombacourses.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<!--[if lte IE 11]>
+<script src='https://bombacourses.com/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.0.3' id='generate-classlist-js'></script>
+<![endif]-->
+<script id='generate-main-js-extra'>
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script src='https://bombacourses.com/wp-content/themes/generatepress/assets/js/main.min.js?ver=3.0.3' id='generate-main-js'></script>
+<script id='ivory-search-scripts-js-extra'>
+var IvorySearchVars = {"is_analytics_enabled":"1"};
+</script>
+<script src='https://bombacourses.com/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=4.6.4' id='ivory-search-scripts-js'></script>
+<script src='https://bombacourses.com/wp-includes/js/wp-embed.min.js?ver=5.7.2' id='wp-embed-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1' id='jquery-numerator-js'></script>
+<script src='https://bombacourses.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/ultimate-elementor/assets/lib/slick/slick.min.js?ver=1.31.0' id='uael-slick-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/ultimate-elementor/assets/lib/isotope/isotope.min.js?ver=1.31.0' id='uael-isotope-js'></script>
+<script id='uael-posts-js-extra'>
+var uael_posts_script = {"ajax_url":"https:\/\/bombacourses.com\/wp-admin\/admin-ajax.php","posts_nonce":"4438842c42"};
+</script>
+<script src='https://bombacourses.com/wp-content/plugins/ultimate-elementor/assets/min-js/uael-posts.min.js?ver=1.31.0' id='uael-posts-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/ultimate-elementor/assets/lib/jquery-element-resize/jquery_resize.min.js?ver=1.31.0' id='uael-element-resize-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.2.2' id='elementor-pro-webpack-runtime-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.2.4' id='elementor-webpack-runtime-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.2.4' id='elementor-frontend-modules-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.2.2' id='elementor-sticky-js'></script>
+<script id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/bombacourses.com\/wp-admin\/admin-ajax.php","nonce":"1cf58a12e2","urls":{"assets":"https:\/\/bombacourses.com\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/bombacourses.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.2.2' id='elementor-pro-frontend-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2' id='elementor-waypoints-js'></script>
+<script src='https://bombacourses.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6' id='swiper-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.2.4' id='share-link-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1' id='elementor-dialog-js'></script>
+<script id='elementor-frontend-js-extra'>
+var uael_particles_script = {"uael_particles_url":"https:\/\/bombacourses.com\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js","particles_url":"https:\/\/bombacourses.com\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js"};
+</script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1365,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1620,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"direction":"min","is_enabled":false}}},"version":"3.2.4","is_static":false,"experimentalFeatures":{"form-submissions":true},"urls":{"assets":"https:\/\/bombacourses.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":58,"title":"Home%20%7C%20Bomba%20Courses","excerpt":"<p>Awarded Yoga Instructor in New Jersey Consectetur adipiscing elit elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.\u200b Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contact Today Dive in the World Of Health &#038; Fitness Et ligula sit quam, sapien lorem. Nec risus lorem vestibulum mi facilisis. Tincidunt urna accumsan nec risus lorem vestibulum &hellip;<\/p>\n<p class=\"read-more\"> <a class=\"\" href=\"https:\/\/websitedemos.net\/yoga-instructor-02\/\"> <span class=\"screen-reader-text\">Home<\/span> Read More &raquo;<\/a><\/p>\n","featuredImage":false}};
+</script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.2.4' id='elementor-frontend-js'></script>
+<script id='elementor-frontend-js-after'>
+window.scope_array = [];
+								window.backend = 0;
+								jQuery.cachedScript = function( url, options ) {
+									// Allow user to set any option except for dataType, cache, and url.
+									options = jQuery.extend( options || {}, {
+										dataType: "script",
+										cache: true,
+										url: url
+									});
+									// Return the jqXHR object so we can chain callbacks.
+									return jQuery.ajax( options );
+								};
+							    jQuery( window ).on( "elementor/frontend/init", function() {
+									elementorFrontend.hooks.addAction( "frontend/element_ready/global", function( $scope, $ ){
+										if ( "undefined" == typeof $scope ) {
+												return;
+										}
+										if ( $scope.hasClass( "uael-particle-yes" ) ) {
+											window.scope_array.push( $scope );
+											$scope.find(".uael-particle-wrapper").addClass("js-is-enabled");
+										}else{
+											return;
+										}
+										if(elementorFrontend.isEditMode() && $scope.find(".uael-particle-wrapper").hasClass("js-is-enabled") && window.backend == 0 ){		
+											var uael_url = uael_particles_script.uael_particles_url;
+											
+											jQuery.cachedScript( uael_url );
+											window.backend = 1;
+										}else if(elementorFrontend.isEditMode()){
+											var uael_url = uael_particles_script.uael_particles_url;
+											jQuery.cachedScript( uael_url ).done(function(){
+												var flag = true;
+											});
+										}
+									});
+								});
+								 jQuery( document ).on( "ready elementor/popup/show", () => {
+									if ( jQuery.find( ".uael-particle-yes" ).length < 1 ) {
+										return;
+									}
+									var uael_url = uael_particles_script.uael_particles_url;
+									jQuery.cachedScript = function( url, options ) {
+										// Allow user to set any option except for dataType, cache, and url.
+										options = jQuery.extend( options || {}, {
+											dataType: "script",
+											cache: true,
+											url: url
+										});
+										// Return the jqXHR object so we can chain callbacks.
+										return jQuery.ajax( options );
+									};
+									jQuery.cachedScript( uael_url );
+								});	
+</script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.2.2' id='pro-preloaded-elements-handlers-js'></script>
+<script src='https://bombacourses.com/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.2.4' id='preloaded-modules-js'></script>
+<script src='https://bombacourses.com/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script id='wp-util-js-extra'>
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src='https://bombacourses.com/wp-includes/js/wp-util.min.js?ver=5.7.2' id='wp-util-js'></script>
+<script id='wpforms-elementor-js-extra'>
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script src='https://bombacourses.com/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.6.7' id='wpforms-elementor-js'></script>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://bombacourses.com/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script>
+<script type="rocketlazyloadscript">"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://bombacourses.com/wp-content/cache/min/1/39bae4ba10e735a38b2414aacd625349.css" media="all" data-minify="1" /></noscript></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

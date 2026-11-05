@@ -1,0 +1,236 @@
+[
+ {
+  "observation": "Page length differs enormously: A is a ~29,448px-tall scroll while B is ~5,774px, so B condenses the same content into roughly a fifth of the height.",
+  "category": "layout",
+  "evidence": "layout.page_height A 29448 vs B 5774; 23 slices vs 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page title is an SEO-style descriptor ('Top US Interior Design and DIY Projects Blogger | Never Skip Brunch'). B's title is a short branded line naming the author.",
+  "category": "copy",
+  "evidence": "A title vs B title 'Never Skip Brunch — DIY & Home Design by Cara Newhart'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A carries heavy SEO and social metadata: 22 meta tags including og:* and twitter:*, a JSON-LD block, robots and google-site-verification. B has only charset, viewport and description, with no JSON-LD.",
+  "category": "DOM/semantic structure",
+  "evidence": "A meta_names list, jsonld_blocks 1; B meta_names 3, jsonld_blocks 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A is a bloated WordPress/page-builder DOM: 74 scripts, 19 style tags, 21 noscript, 130 divs, 699 class usages and 231 unique classes. B is lean: 1 script, 1 style, 30 divs, 73 class usages and 35 unique classes.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts and classes for A vs B",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's headings are mostly h3 (29) and h5/h6 are used, with no hierarchy. The h1 is followed directly by h3s, and h2 appears only on blog post titles. B uses a cleaner h1, then h2 section titles, then h3 post titles, with h4 in the footer.",
+  "category": "DOM/semantic structure",
+  "evidence": "A h3:29, h2:3, h5:10, h6:6; B h2:5, h3:3, h4:7",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's h1 is a centered, uppercase brand name ('NEVER SKIP BRUNCH') at 50px. B's h1 is a left-aligned lowercase greeting ('welcome to never skip brunch.') at 73.6px in italic Playfair Display.",
+  "category": "typography",
+  "evidence": "h1 facts: A 50px center, playfair; B 73.6px, text_align start",
+  "which_side": "both"
+ },
+ {
+  "observation": "A mixes many typefaces: Poppins on 403 elements, Montserrat, Trirong, a 'moontime' script and playfair. B uses a three-font system of Jost (196 elements) for body, Caveat for script accents and Playfair Display for headings.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count A vs B",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text differs. A is 16px with a 32px line-height (double spacing). B is 17px with a 28.05px line-height (about 1.65).",
+  "category": "typography",
+  "evidence": "body_font_size and body_line_height",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's nav labels are tiny, letter-spaced uppercase, each with a small orange script word above ('the', 'decor &', 'diy', 'make space', 'diy & design'). B uses single-line uppercase labels in Jost with no script overlay.",
+  "category": "component",
+  "evidence": "A_slice_00 nav vs B_slice_00 nav",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's header is centered. The logo sits in the middle with nav items split left and right around it. B's header has the logo at the left (190x95) and the nav grouped at the right, with a 'MORE ▾' item.",
+  "category": "layout",
+  "evidence": "A_slice_00 vs B_slice_00; B logo rect x160,y49",
+  "which_side": "both"
+ },
+ {
+  "observation": "The top announcement bar differs. A is split into a yellow area with condensed uppercase 'FUN & FRESH HOME GOODIES' and a peach block with script 'visit the shop'. B is a full-width hot-pink bar with centered text and an underlined 'visit the shop →' link.",
+  "category": "component",
+  "evidence": "A_slice_00 top; B_slice_00 top; B has rgb(230,25,107) backgrounds ×3",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a full-bleed 1440x572 photo (header1.jpg) with an overlapping white card holding a signup form and large 'projects & tips' type. B's hero is a split layout. Text sits at the left over a peach gradient, and an arch-shaped portrait photo sits at the right.",
+  "category": "layout",
+  "evidence": "A images header1.jpg rect 0,233,1440x572; B 4Q5A3075.jpg at x805, w475; B gradient_backgrounds 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "B crops the portrait into an arch (rounded-top) shape with a soft shadow. A shows images as plain rectangles. A's border radii are almost all 0 (539 elements in bucket_0).",
+  "category": "decoration",
+  "evidence": "B_slice_00 arch; A border_radius_buckets bucket_0 539, pill 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses many rounded shapes: 26 pill-radius elements, 14 with 16px+ radius and 17 with 8-15px. Cards, buttons, tags and inputs are rounded. A is almost entirely square-cornered.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets B pill 26, 16+ 14, 8-15 17 vs A pill 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's hero headline treatment is oversized Poppins words, a pale-yellow 'projects' and a dark '& tips', rendered as separate large text blocks. B's hero pairs a pink Caveat script eyebrow ('▻ by cara newhart') with the large italic serif h1.",
+  "category": "typography",
+  "evidence": "A_slice_00 vs B_slice_00",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is white and near-white (rgb(250,249,247)) with peach, yellow and orange accents. Its dominant accent text is orange rgb(243,179,79), used on 136 elements. B's palette is a cream body (rgb(255,250,241)) with hot-pink rgb(230,25,107) accents, a dark rgb(28,26,25) footer and pale-yellow panels.",
+  "category": "color",
+  "evidence": "colors.top_text_colors and body_bg for each side",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's CTAs are filled dark pill buttons ('browse all posts →', 'listen + subscribe') and an outlined pill ('watch on youtube →'). A's main CTAs are image-based (signupbutton.png), text links in orange (primary_button 'about + learn more', 0 radius), and a small square dark 'GO' button.",
+  "category": "component",
+  "evidence": "A primary_button radius 0px, padding 0; B primary_button radius 999px; A counts buttons 0 vs B buttons 4",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses no semantic button elements (buttons: 0). B has 4 buttons and CSS grid (11) and flex (21) layout. A reports 0 grid and 0 flex, so its layout comes from legacy float or builder columns.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts.buttons, layout.display_grid/display_flex",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'as seen in…' press-logo strip is a single flattened PNG (2000x667) on a torn-paper peach background with a script heading. B has no press-logo section.",
+  "category": "imagery",
+  "evidence": "A image as-seen-in-03-15-2021.png; B images list has no equivalent",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's email signup is a form of First Name, Last Name and E-mail inputs with a small 'GO' button, plus an image button and a hand-drawn arrow 'SIGN UP NOW'. B's signup is a single pill email field with a pink 'subscribe' button in the footer.",
+  "category": "component",
+  "evidence": "A_slice_00 form; B_slice_04 footer; B inputs 2",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a large, mostly empty vertical region. The Instagram feed is 'placeholder.png' images with long caption text as alt, and several slices are blank white with only a stray line of orange caption text. B has no such sparse areas.",
+  "category": "imagery",
+  "evidence": "A images file placeholder.png ×8 with 1000x560 rects; A_slice_12",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has visible broken or empty images. The breakfast-nook image has natural size 0x0, a spacer-blank PNG is present, and the screenshot shows a broken-image icon. Several images are 1000x1556 blocks left-aligned in a 1440 viewport.",
+  "category": "imagery",
+  "evidence": "A image BREAKFAST-NOOK-DIY-space-makeover.jpg natural [0,0]; A_slice_05",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's alt text is mostly empty on content images, and one is missing. The Instagram images carry full Instagram captions with hashtags as alt. B gives descriptive, concise alt text to its logo, portrait and podcast images.",
+  "category": "copy",
+  "evidence": "A alt_missing 1; A placeholder.png alt strings; B alt_missing 0, alt 'A phone playing the Make Space podcast…'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows only 4 images, which are a logo, a portrait, a podcast photo and a landscape banner. A has 17 images, many of them large (up to 1081x1081 and 1000x1556).",
+  "category": "imagery",
+  "evidence": "counts.images A 17 vs B 4",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's blog section is three equal-width rounded cards. Each has a peach 'DIY' pill tag, a serif title and a pink 'read the post →' link, with no thumbnails. A lists the blog posts as full-size 1000x1556 images with h2 titles in a vertical stack.",
+  "category": "component",
+  "evidence": "B_slice_02 cards; A images BREAKFAST-NOOK… 1000x1556; A articles 4",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's podcast block is a split panel with a full-height photo on the left and pale-yellow (253,238,176) copy on the right. The heading 'make space podcast' sets 'space' in pink italic. A's podcast content is split across h3 labels ('PODCAST', 'SUBSCRIBE.', 'EPISODES.', 'FEEDBACK.') in its mega-menu and nav.",
+  "category": "component",
+  "evidence": "B_slice_02; A heading_outline",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's heading text mixes an italic accent word inside the heading ('make *space* podcast') in pink. A's headings do not use inline accent styling.",
+  "category": "typography",
+  "evidence": "B_slice_02 podcast heading; B has em:1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's outline lists many nav and mega-menu items as headings (BLOG, INTERIORS, BROWSE HOME PROJECTS., DESIGN CONSULTATION, 'INTERIOR DESIGN CALCULATORS.' and more). These are h3s at the top of the document. B's menu items are plain links with no headings.",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline first ~27 h3 entries; B outline starts with h1 then 'visit the blog'",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's two 'if you . . .' intro blocks sit in white rounded cards with 1px borders. A has the same h4 'if you . . .' strings, but they appear in an unrounded layout.",
+  "category": "component",
+  "evidence": "B_slice_02 cards; both heading_outlines contain 'if you . . .' ×2",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer is a dark (28,26,25) four-column block with Caveat pale-yellow headings, numbered links (01–10 in pink), round white social icon circles, a search field with a pink 'go' pill and a newsletter form. A has 4 footer elements and 4 forms spread across the long page, and its footer is not a unified dark block like B's.",
+  "category": "component",
+  "evidence": "B_slice_04; footer count A 4 vs B 1; forms A 4 vs B 2",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's footer numbers its links (Blog 01 … Terms of use 06, Podcast 07 … Portfolio 10) in small pink numerals, a decorative treatment with no equivalent visible in A.",
+  "category": "decoration",
+  "evidence": "B_slice_04",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses a handful of dark panels (rgb(34,34,34), 4 backgrounds) and peach and yellow blocks (255,187,152; 255,208,186; 255,223,149). B uses pale peach (253,230,211) cards and tags, a pink bar and a gradient hero.",
+  "category": "color",
+  "evidence": "top_backgrounds for A and B",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has far more interaction styling: 24 transitions in CSS against A's 1. A has 1 transform, B has none, and neither has animations.",
+  "category": "decoration",
+  "evidence": "effects.transitions A 1 vs B 24; transforms A 1 vs B 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "Effects are sparse on both sides. A has 3 box-shadows. B has 1 (on the arch portrait), a hero gradient and no backdrop blur. A's white card overlapping the hero has a faint shadow.",
+  "category": "decoration",
+  "evidence": "box_shadows A 3 vs B 1; gradient_backgrounds A 0 vs B 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has an extra section on the Instagram feed made of image tiles with caption text, and an 'about + learn more' link. B condenses Instagram to a header 'on instagram' and a banner image with overlaid text. Its closing banner is a full-width photo (tim-wright-unsplash, 1440x528).",
+  "category": "imagery",
+  "evidence": "B images tim-wright-unsplash-e1551215652231.jpg rect 0,4077,1440x528; B heading 'on instagram'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A repeats 'YT-SUBSCRIBE' as a full-width image banner (2176x262, shown 1440x173) as its YouTube call to action. B uses a text 'fun & fresh videos.' Caveat label and an outlined 'watch on youtube →' pill.",
+  "category": "component",
+  "evidence": "A image YT-SUBSCRIBE-e1589308148268.png; B_slice_02",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's ornamental dividers are typed text ('. . . . . . .' as h3) and dot spacers. B uses small icon marks (✦, →, ▻, ▾) and rounded numerals.",
+  "category": "decoration",
+  "evidence": "A heading_outline '. . . . . . .' ×2; B_slice_00 '✦', '▻'; B_slice_04 numerals",
+  "which_side": "both"
+ },
+ {
+  "observation": "Copy is similar in overall volume: A has 540 words and B has 487. Both use 6 em-dashes and 3 exclamation marks. B has 5 emoji against A's 4. B reorganizes the copy into short marketing blocks, such as the 'welcome' intro.",
+  "category": "copy",
+  "evidence": "text_stats A vs B",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's page uses a more contained 1120px column (content starting at x=160 and ending at x=1280) with consistent gutters. A's content widths vary: 1028px logo strip, 1081px photo and 1000px images, left-flush at x=0. A's builder card is 1100px wide and centered.",
+  "category": "layout",
+  "evidence": "B image/section rects (x160, x1280); A image rects x0 w1081/1000, x206 w1028",
+  "which_side": "both"
+ }
+]

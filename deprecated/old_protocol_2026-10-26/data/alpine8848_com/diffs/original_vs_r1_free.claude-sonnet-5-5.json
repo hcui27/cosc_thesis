@@ -1,0 +1,254 @@
+[
+ {
+  "observation": "Page titles differ: A uses a decorative dotted-punctuation title; B uses a cleaner title with an em dash and the country name.",
+  "category": "copy",
+  "evidence": "A title '.:Alpine Everest Expedition & Trek :.'; B title 'Alpine Everest Expedition & Trek — Nepal'; B em_dashes=1, A=0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has three h1 elements (welcome, Gallery, Products) and no h2. B has one h1 followed by a h2/h3 hierarchy.",
+  "category": "dom-semantics",
+  "evidence": "A h1_count=3, h2=null; B h1_count=1, four h2 and one h3 (outline: Quality service..., Gallery, Products, Contact Information; h3 Recommend this site to a Friend).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses no HTML5 landmark elements. B uses header, nav, main, five sections and a footer.",
+  "category": "dom-semantics",
+  "evidence": "A semantic counts all 0; B header 1, nav 1, main 1, section 5, footer 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A is built on legacy markup: tables, br tags, a font tag, object/embed/param Flash elements, and many divs.",
+  "category": "dom-semantics",
+  "evidence": "A tag_counts: table 2, td 7, br 29, font 1, object 2, embed 2, param 6, div 44. B has none of these and uses flex/grid (display_grid 11, display_flex 11).",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses no flex or grid, so it is positioned by absolute and float layout. B uses flex and grid containers throughout.",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 0; B display_grid 11, display_flex 11.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A is a short page, 1363px tall, with a compressed two-column layout. B is a long single-column page of stacked full-width sections, 3575px tall.",
+  "category": "layout",
+  "evidence": "A page_height 1363; B page_height 3575; both width 1440.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a fixed-width centered white container (about 980px, x 230–1210) on a dark scenic background. B uses a full-bleed layout with content aligned to a ~1040px column starting at x=200.",
+  "category": "layout",
+  "evidence": "A screenshot: white panels from x≈230 to 1210 over a sky-and-grass backdrop. B images start at x=200 and cards end at x≈1240.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page background is a dark scenic sky gradient with silhouetted grass and black side bands. B has no scenic background and uses cream, white and slate blocks.",
+  "category": "color",
+  "evidence": "A body_bg rgb(0,0,0), with a visible grass-silhouette image at the edges. B body_bg rgb(251,248,241).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header is a white banner with the logo at left and a broken image icon at right. B has a slim top bar with a text wordmark 'ALPINE EVEREST' and nav links over a gradient hero.",
+  "category": "layout",
+  "evidence": "A images aimg2.jpg and aimg7.jpg are 16x16 with natural size 0x0 (broken). B nav ul has 4 li, and the wordmark is text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a full-width hero with a vertical gradient from slate blue through teal to sand. It has a large serif headline, a subhead, and two CTA buttons. A has no hero or CTA.",
+  "category": "component",
+  "evidence": "B h1 57.6px Georgia white; gradient_backgrounds 2; buttons 'Plan a trip' and 'Featured tours'. A h1 is 16px.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The H1 differs sharply in scale and style. A is 16px Verdana bold in navy, with 'Welcome to Alpine Everest' in olive green. B is 57.6px Georgia bold in white.",
+  "category": "typography",
+  "evidence": "A h1 font_size 16px, rgb(39,66,120), Verdana; B h1 57.6px, Georgia, rgb(255,255,255).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses Verdana for nearly all text. B pairs Georgia serif for headings and body paragraphs with system-ui sans for nav, buttons and labels.",
+  "category": "typography",
+  "evidence": "A fonts: Verdana 195, verdana 41, Arial 4, Times New Roman 1. B fonts: Georgia 67, system-ui 54.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body text is small and grey, about 11px, in dense narrow columns. B's body text is 16px with a 26.4px line height and a wider measure.",
+  "category": "typography",
+  "evidence": "A body_line_height 'normal'; top text color rgb(102,102,102) on 85 elements. B body_line_height 26.4px, body_color rgb(34,49,60).",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds small uppercase, letter-spaced eyebrow labels above section headings (ABOUT US, MOMENTS, FROM NEPAL, GET IN TOUCH) in teal. A has none.",
+  "category": "typography",
+  "evidence": "B screenshot eyebrows in teal rgb(95,158,166)-like color; A headings stand alone.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds a new h2 headline, 'Quality service, smooth and enjoyable trips', and a hero subhead ('Personalized treks, expeditions and holiday tours across Nepal — designed around you...'). A has no matching copy.",
+  "category": "copy",
+  "evidence": "B heading_outline h2 'Quality service, smooth and enjoyable trips'; A outline has no such text.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The two sides share the same body copy for the About, contact details and copyright text. B adds the headline and subhead above them.",
+  "category": "copy",
+  "evidence": "Both show 'Alpine Everest Expedition and Treks established with a view...', the P.O.Box 24601 address, and 'Copyright © ... 2010'. A words 192, B words 240.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a navy/olive two-tone H1 and teal-blue underlined nav links. B uses a slate, cream and red scheme with a single red accent.",
+  "category": "color",
+  "evidence": "A text colors rgb(22,38,74), rgb(0,153,204), rgb(39,66,120), backgrounds rgb(162,212,213). B backgrounds rgb(52,73,90), rgb(251,248,241), rgb(200,32,43), rgb(23,34,42).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's nav is a centered text row on a faint diagonal-textured strip, with each link underlined by a thick blue bar. B's nav is right-aligned in the top bar with no underlines.",
+  "category": "component",
+  "evidence": "A screenshot: Home, About Us, Testimonials, Contact Us at y≈329 with blue underlines. B nav at top right, white text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows the 'Featured Tours' and 'Contact Information' headings as yellow torn-paper image banners about 248x94. B keeps the Featured Tours image but shrinks it to 190px wide, and renders Contact Information as live text.",
+  "category": "imagery",
+  "evidence": "A featured-tours.png rect 248x94 and contact-information.png 253x94. B has featured-tours.png at 190x94 and no contact-information image. B h2 'Contact Information' is text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's Featured Tours and Products links are plain text lists with thin dividers in a left sidebar. B's Featured Tours links are rounded bordered cards with a red arrow, in a four-column grid that wraps to a second row.",
+  "category": "component",
+  "evidence": "A has ul 13 and li 45 with no radius. B screenshot shows six cream cards (Adventure Activities ... Plan a trip) with red arrows. B ul 1 and li 4.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A places the Products subcategories (Pashmina, Garments, Handicrafts) as a plain link list in the sidebar. B shows them as white pill chips above the product grid.",
+  "category": "component",
+  "evidence": "A screenshot: purple 'Products' label with a list. B screenshot: three bordered pill chips; border_radius pill bucket = 6.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's sidebar-plus-content layout puts navigation links, the recommend form and the contact info in a narrow left column. B drops the sidebar and gives each content block its own full-width section.",
+  "category": "layout",
+  "evidence": "A: sidebar x≈235–495, main column x≈520–1190. B: 5 sections stacked.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's About block has three tilted, overlapping polaroid-style photos floated at the right of the text, as a single welcome-img.jpg 176x260. B puts the same image at the left in a rounded white card, enlarged to 240x260 with a shadow.",
+  "category": "imagery",
+  "evidence": "A welcome-img.jpg rect x1012 w176; B rect x200 w240 h260. B alt text is descriptive.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's gallery is a bordered strip with a horizontal row of 150x150 JPEG thumbnails in different photos, which extends beyond the 1440 viewport (x up to 2000). B's gallery is a wrapped grid of rounded tiles with shadows.",
+  "category": "imagery",
+  "evidence": "A image rects at x 365–1850 and y 664, with a mw=150&mh=150&fix query string. B thumbs at 137x182, 7 per row, 10 in the gallery.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B reuses a single placeholder image, thumb.png (a brown embroidered pashmina), for all gallery and product tiles. A shows distinct photos (landscape, ceremony crowds, clothing).",
+  "category": "imagery",
+  "evidence": "B images list: 18 entries all 'thumb.png' 113x150 natural. A has different files 11.jpg–23.jpg.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's products row shows distinct photos (a top, skirts) with blue caption labels such as 'Skirt-03' and 'Skirt-01'. Some slots are broken images. B shows no captions on products.",
+  "category": "imagery",
+  "evidence": "A images 19.jpg and 17.jpg are 16x16 with natural 0x0. A screenshot shows blue caption bars at the product bottoms. B alt_missing 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has two failed Flash plugin areas that read \"Couldn't load plugin.\", leaving large white gaps. B has no embedded objects.",
+  "category": "imagery",
+  "evidence": "A object 2, embed 2; screenshot text \"Couldn't load plugin.\" twice around y≈979.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's images mostly lack alt text. Every B image has alt text, and the B hero logo and welcome image have descriptive alts.",
+  "category": "dom-semantics",
+  "evidence": "A alt_missing 20 of 23 images; B alt_missing 0 of 21, alts such as 'Trekkers silhouetted against Himalayan peaks'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's logo sits flat on the white header with a faint border. B puts it in a rounded white card with a soft shadow at the right of the hero.",
+  "category": "imagery",
+  "evidence": "A logo at x≈240–500, y≈25–290. B businessname-bg.jpg at x908 y146 268x277 inside a rounded card.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a rich effects layer: 20 box-shadows, 27 transitions, 2 gradients, and rounded corners (31 elements at 8–15px, 6 pill). A has none of these.",
+  "category": "decoration",
+  "evidence": "B effects box_shadows 20, transitions 27, gradient_backgrounds 2, radius buckets 8_15=31, pill=6. A box_shadows 0, transitions 0, gradient 0, all 241 elements at radius 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has square corners everywhere and decoration comes from image assets (torn-paper banners, textured nav strip, grass silhouette). B's corners are rounded and its decoration is CSS-generated.",
+  "category": "decoration",
+  "evidence": "A bucket_0=241 and the rest 0. B bucket_0=84.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a prominent red pill-shaped primary button ('Plan a trip', 999px radius, 13px 26px padding) plus an outlined ghost pill 'Featured tours'. A has no styled CTA.",
+  "category": "component",
+  "evidence": "B primary_button bg rgb(200,32,43), radius 999px; A primary_button null.",
+  "which_side": "B"
+ },
+ {
+  "observation": "The 'Recommend this site' form uses a teal-filled input and a small square-edged Send button in A's sidebar. In B it is a card on a slate band, with white rounded inputs, labels and a red pill Send button.",
+  "category": "component",
+  "evidence": "A inputs 4, tiny size, bg rgb(162,212,213). B label 3, input 3, button 1, form inside a translucent card (rgba(255,255,255,0.08)).",
+  "which_side": "both"
+ },
+ {
+  "observation": "In A the recommend form comes before Contact Information in the sidebar. In B the order flips: contact details at left and the form card at right, both in a dark footer-like section.",
+  "category": "layout",
+  "evidence": "A screenshot: form at y≈817–960, contact at y≈985–1235. B: Contact Information at left, form at right, same band.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's contact area is a dark slate full-width band with white text and a teal underlined email link. A's contact details are tiny black text in the white sidebar.",
+  "category": "color",
+  "evidence": "B background rgb(52,73,90); B text rgb(220,233,236). A contact text is ~11px dark on white.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer is a separate darker bar (rgb(23,34,42)) with centered grey copyright text. A's copyright is white small text on a black band, left-aligned within the content width.",
+  "category": "component",
+  "evidence": "B footer 1, bg rgb(23,34,42). A has no footer tag; the copyright at x≈230.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B alternates section backgrounds (cream, white, cream-to-sand gradient, slate, near-black) to separate content. A separates blocks with bordered boxes and thin lines on a white panel.",
+  "category": "color",
+  "evidence": "B top_backgrounds rgb(251,248,241), rgb(255,255,255), rgb(52,73,90), rgb(23,34,42). A top_backgrounds are mostly white with rgb(162,212,213).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A relies on inline styles and external resources. B is self-contained with one style block and one script.",
+  "category": "dom-semantics",
+  "evidence": "A inline_style_attrs 38, scripts 16, stylesheets 4, 9 unique classes. B inline_style_attrs 4, scripts 1, stylesheets 0, 21 unique classes.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's markup carries a viewport meta, a description meta, lang='en', and a few aria attributes. A has no lang, no viewport and no aria.",
+  "category": "dom-semantics",
+  "evidence": "A lang '', meta_names Content-Type and google-site-verification, aria_attrs 0. B lang 'en', meta charset/viewport/description, aria_attrs 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The 'more' links differ. In A they are tiny teal lowercase text at the right under each strip. In B they are bold red 'More →' links aligned left under each grid.",
+  "category": "component",
+  "evidence": "A 'more' at x≈1181 in rgb(0,153,204)-like blue. B 'More →' at x=200 in red.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages use both a decorative and an inline arrow glyph; the page-wide emoji count is one on each side.",
+  "category": "copy",
+  "evidence": "A emoji 1, B emoji 1; B adds '→' arrow glyphs on cards and More links.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's Gallery and Products headings are small 16px bold navy h1s sitting on top of the bordered thumbnail strips, with no spacing. B's are large Georgia h2s of 36.8px with generous whitespace.",
+  "category": "typography",
+  "evidence": "A h1_count 3 includes 'Gallery' and 'Products'. B h2 font_size 36.8px, weight 700.",
+  "which_side": "both"
+ }
+]

@@ -1,0 +1,61 @@
+:root{--green:#008751;--green-d:#005f39;--ink:#1c2b24;--muted:#5a6b62;--bg:#f6f9f7;--card:#fff;--line:#dce6e0}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--green-d)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.top{background:#fff;border-bottom:3px solid var(--green)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;flex-wrap:wrap}
+.bar img{display:block}
+.contact{font-size:.9rem;text-align:right;color:var(--muted)}
+.contact a{text-decoration:none}
+nav.main{background:var(--green)}
+nav.main ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+nav.main a{display:block;padding:12px 16px;color:#fff;text-decoration:none;font-weight:500}
+nav.main a:hover,nav.main a:focus-visible{background:var(--green-d)}
+nav.main li:last-child{margin-left:auto}
+.hero{background:linear-gradient(135deg,var(--green-d),var(--green));color:#fff;position:relative}
+.slide{display:none;padding:64px 0 72px}
+.slide.on{display:block}
+.slide h1,.slide h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;margin:0 0 12px}
+.slide p{max-width:620px;font-size:1.1rem;margin:0 0 20px;opacity:.95}
+.btn{display:inline-block;background:#fff;color:var(--green-d);padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600}
+.btn:hover{background:#e8f3ed}
+.dots{position:absolute;bottom:20px;left:0;right:0}
+.dots button{width:12px;height:12px;border-radius:50%;border:2px solid #fff;background:transparent;margin-right:8px;padding:0;cursor:pointer}
+.dots button[aria-current=true]{background:#fff}
+.quick{background:#fff;border-bottom:1px solid var(--line)}
+.quick ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 24px;padding:12px 0}
+.quick a{font-weight:600;text-decoration:none}
+.quick a:hover{text-decoration:underline}
+main section{padding:44px 0}
+h2.sec{font-size:1.6rem;margin:0 0 20px;color:var(--green-d)}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3{margin:0 0 8px}
+.media{display:flex;gap:18px;align-items:flex-start}
+.media img{flex:none}
+.tag{font-weight:700;color:var(--green)}
+.calendar table{border-collapse:collapse;width:100%;table-layout:fixed;background:#fff}
+.calendar th,.calendar td{border:1px solid var(--line);padding:10px 6px;text-align:center}
+.calendar th{background:#eaf4ee;font-size:.85rem}
+.calendar td:empty{background:#fafcfb}
+.calendar .head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:8px;flex-wrap:wrap}
+.calendar .head a{font-size:.9rem}
+ul.links{list-style:none;padding:0;margin:0}
+ul.links li{padding:6px 0;border-bottom:1px solid var(--line)}
+ul.links li:last-child{border:0}
+.news .item{display:flex;gap:12px;align-items:center}
+video{width:100%;max-height:340px;background:#111;border-radius:8px}
+form.nl{display:flex;gap:8px;flex-wrap:wrap}
+form.nl input{flex:1;min-width:220px;padding:10px 12px;border:1px solid #b9c9c0;border-radius:6px;font:inherit}
+form.nl button{background:var(--green);color:#fff;border:0;border-radius:6px;padding:10px 20px;font:inherit;font-weight:600;cursor:pointer}
+form.nl button:hover{background:var(--green-d)}
+footer{background:var(--ink);color:#d5e0da;padding:36px 0 24px;font-size:.95rem}
+footer a{color:#fff}
+footer .cols{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+footer h3{color:#fff;font-size:1rem;margin:0 0 8px}
+.social{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.social img{display:block;background:#fff;border-radius:6px;padding:2px}
+.legal{border-top:1px solid #3a4a42;margin-top:24px;padding-top:16px;font-size:.85rem}
+@media(max-width:640px){.contact{text-align:left}nav.main li:last-child{margin-left:0}.slide{padding:40px 0 56px}.media{flex-direction:column}}
+@media(prefers-reduced-motion:no-preference){.slide.on{animation:f .5s}@keyframes f{from{opacity:0}to{opacity:1}}}

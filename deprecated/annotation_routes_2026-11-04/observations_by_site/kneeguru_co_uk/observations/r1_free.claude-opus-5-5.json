@@ -1,0 +1,282 @@
+[
+ {
+  "observation": "The page has no h1 element. The outline starts at h2 ('Learn about knees...'), and the logo text 'Knee Guru' is not a heading.",
+  "category": "semantic structure",
+  "evidence": "facts h1_count: 0, h1: null; heading_outline[0] is level 2 'Learn about knees...'"
+ },
+ {
+  "observation": "The heading hierarchy skips from h2 to h4 for the Learning Portfolio category labels. h3 is used later for article titles.",
+  "category": "semantic structure",
+  "evidence": "heading_outline: h2 'Learning Portfolio' followed by h4 'PRIMERS', 'COURSES', etc.; h3 used under 'Latest Content'"
+ },
+ {
+  "observation": "Two font families split the type. Helvetica Neue is used for headings, nav and link-style labels, and Georgia serif for body and description text.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Georgia 124, Helvetica Neue 114; slice 1 card descriptions are in serif and titles in sans"
+ },
+ {
+  "observation": "Section h2s are 35.2px, weight 700, in dark blue. Each sits on a short blue underline bar that matches the heading's text width.",
+  "category": "typography",
+  "evidence": "facts h2 font_size 35.2px, weight 700; slices show a blue rule under 'Learning Portfolio', 'Latest Content', 'Our Sponsors', 'Professional Standards', 'Corporate Details'"
+ },
+ {
+  "observation": "Body text is 16px with a 25.6px line height (a 1.6 ratio). The text color is a dark slate, not pure black.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px, body_color rgb(31, 42, 55)"
+ },
+ {
+  "observation": "The palette is mostly blue. The main text and accent colors are a mid blue rgb(29,111,165) and a darker navy rgb(20,80,122).",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(29,111,165) ×47, rgb(20,80,122) ×12; top_backgrounds include rgb(20,80,122) and rgb(29,111,165)"
+ },
+ {
+  "observation": "A thin navy utility bar runs across the top. It holds text social links on the left and three text-resize buttons on the right.",
+  "category": "layout",
+  "evidence": "slice 1 top strip: 'Twitter Facebook YouTube Pinterest' at left and '-A', 'A', '+A' at right; background rgb(20,80,122)"
+ },
+ {
+  "observation": "The text-resize controls are outlined buttons with a transparent fill, white text, a 4px radius and 2px 8px padding. They are the page's detected 'primary button'.",
+  "category": "components",
+  "evidence": "primary_button: text '-A', bg rgba(0,0,0,0), color white, radius 4px, padding 2px 8px"
+ },
+ {
+  "observation": "Social media links are plain white text labels with no icons.",
+  "category": "imagery handling",
+  "evidence": "slice 1 top bar shows only text 'Twitter', 'Facebook', 'YouTube', 'Pinterest'; svgs count 0"
+ },
+ {
+  "observation": "The header pairs a blue sans-serif wordmark 'Knee Guru' with a small letter-spaced uppercase tagline, 'YOUR SOURCE OF KNEE INFORMATION'.",
+  "category": "typography",
+  "evidence": "slice 1 header left block"
+ },
+ {
+  "observation": "The main navigation is a row of seven dark plain-text links, right-aligned on the same line as the logo, with no dropdown indicators or a highlighted active state.",
+  "category": "layout",
+  "evidence": "slice 1: About, Learning Portfolio, Dictionary, Community, Specialists, Reviews, The Team; one nav element"
+ },
+ {
+  "observation": "A thin grey border separates the header from the hero.",
+  "category": "decoration",
+  "evidence": "slice 1 horizontal line below the header at about y=113"
+ },
+ {
+  "observation": "The hero has a very pale blue-to-white wash. This is likely the page's single gradient background.",
+  "category": "decoration",
+  "evidence": "effects gradient_backgrounds: 1; slice 1 hero area is tinted light blue, fading toward white"
+ },
+ {
+  "observation": "The hero is two columns: a heading plus a link list on the left, and a large square photo on the right.",
+  "category": "layout",
+  "evidence": "slice 1; 06a.jpg rect x 765, w 460, h 460"
+ },
+ {
+  "observation": "The hero photo shows a man from behind, drawing a knee diagram on a whiteboard with 'patella' written in red. It has rounded corners and a soft drop shadow.",
+  "category": "imagery handling",
+  "evidence": "06a.jpg alt 'Man drawing a knee diagram on a whiteboard and labelling the patella'; box_shadows: 1; slice 1"
+ },
+ {
+  "observation": "The hero photo is downscaled from 695×695 to a 460×460 render.",
+  "category": "imagery handling",
+  "evidence": "06a.jpg natural [695,695], rect w 460 h 460"
+ },
+ {
+  "observation": "The hero list has six task-oriented links in lowercase, each starting with a verb, such as 'look up', 'get to grips' and 'book'.",
+  "category": "copy",
+  "evidence": "slice 1: 'look up a specific knee topic', 'get to grips with knee anatomy', … 'book an online consultation'"
+ },
+ {
+  "observation": "Each hero link has a faint dotted-arrow raster image as a bullet and a dashed divider beneath it.",
+  "category": "decoration",
+  "evidence": "six dottedArrow.png images at x 186, spaced 47px apart (y 287–522), 34×30; slice 1 dashed lines between items"
+ },
+ {
+  "observation": "The dotted-arrow bullets have empty alt text, so they are treated as decorative.",
+  "category": "semantic structure",
+  "evidence": "dottedArrow.png alt '' for all six; alt_missing 0"
+ },
+ {
+  "observation": "The hero heading ends with an ellipsis: 'Learn about knees...'.",
+  "category": "copy",
+  "evidence": "heading_outline level 2 'Learn about knees...'"
+ },
+ {
+  "observation": "Learning Portfolio is a four-column card grid with six cards. The second row holds only two cards and leaves the rest of the row empty.",
+  "category": "layout",
+  "evidence": "icon rects at x 281/541/809/1087 (row 1, y 796) and x 273/534 (row 2, y 1061); slice 1"
+ },
+ {
+  "observation": "Portfolio cards are white with a thin light-grey border and a small radius. Their content is centred: an icon, an uppercase blue sans title and a serif description.",
+  "category": "components",
+  "evidence": "slice 1 cards; border_radius_buckets 1–7: 39, 8–15: 7"
+ },
+ {
+  "observation": "The portfolio icons are mixed illustrations in different colors: a dark grey book, an orange mortarboard, a cyan cloud download, a blue lectern figure, a slate pencil and a black open book.",
+  "category": "imagery handling",
+  "evidence": "primers-icon.svg, courses-icon.svg, eBooks-icon.svg, expert-views-icon.svg, general-articles-icon.svg, journal-icon.svg; slice 1"
+ },
+ {
+  "observation": "The portfolio icons are SVG files loaded through img tags rather than inline SVG. All are rendered 78px tall at varying widths.",
+  "category": "imagery handling",
+  "evidence": "counts svgs 0; *-icon.svg images all rect h 78, w 64–101"
+ },
+ {
+  "observation": "The portfolio category titles are uppercase h4s, with letter spacing.",
+  "category": "typography",
+  "evidence": "heading_outline h4 'PRIMERS', 'COURSES', 'EBOOKS', 'EXPERT VIEWS', 'GENERAL ARTICLES', 'JOURNAL INTERPRETATIONS'"
+ },
+ {
+  "observation": "The page alternates white and pale blue section backgrounds: hero tint, white portfolio, pale blue Latest Content, white Sponsors, then pale blue standards and corporate details.",
+  "category": "layout",
+  "evidence": "top_backgrounds rgb(238,245,250) ×2; slices 2–3"
+ },
+ {
+  "observation": "Latest Content is a three-column grid of ten article cards, leaving a single card in the last row.",
+  "category": "layout",
+  "evidence": "article count 10; slice 2 shows rows of 3,3,3,1"
+ },
+ {
+  "observation": "Latest Content cards have a thick blue left border accent, a white background and a thin border on the other sides.",
+  "category": "decoration",
+  "evidence": "slice 2 cards each show a solid blue vertical bar on the left edge"
+ },
+ {
+  "observation": "Each article card is a semantic article element with an h3 title in blue sans-serif and a short serif summary.",
+  "category": "semantic structure",
+  "evidence": "semantic article: 10; ten h3 entries under 'Latest Content'"
+ },
+ {
+  "observation": "Article summaries contain inline underlined links to glossary-style terms such as meniscus, MRI, knee surgeon and rheumatoid arthritis.",
+  "category": "copy",
+  "evidence": "slice 2: underlined 'meniscus', 'MRI', 'knee surgeon', 'knee replacement', 'medial meniscus', 'arthrofibrosis'"
+ },
+ {
+  "observation": "Within each row, article cards stretch to equal height regardless of text length.",
+  "category": "layout",
+  "evidence": "slice 2 first row: the one-line 'Q&A-style article…' card matches its neighbours' height; display_grid 5"
+ },
+ {
+  "observation": "Article titles appear as given, with no dates, thumbnails or author bylines in the card UI. One title includes a year prefix ('2017 - Primary repair…').",
+  "category": "components",
+  "evidence": "slice 2 cards contain only a title and summary; heading '2017 - Primary repair of the anterior cruciate ligament: A paradigm shift.'"
+ },
+ {
+  "observation": "The Sponsors section opens with a full-width serif paragraph, followed by a row of mixed sponsor elements: two logo images and one text-only link.",
+  "category": "components",
+  "evidence": "slice 2: joint-operations-logo.jpg (56×80), Össur image (120×60, framed with a border), and 'The Regenerative Clinic' as underlined text"
+ },
+ {
+  "observation": "The Össur logo sits in a thin black-bordered box, but the Joint Operations logo has no frame.",
+  "category": "imagery handling",
+  "evidence": "slice 2 sponsor row"
+ },
+ {
+  "observation": "The page uses an italic underlined link, 'More about us...', and an italic disclaimer sentence in the footer.",
+  "category": "typography",
+  "evidence": "slice 2 'More about us...'; slice 3 footer italic line; tag_counts em: 1"
+ },
+ {
+  "observation": "Professional Standards and Corporate Details are side by side in two columns, both on a pale blue background.",
+  "category": "layout",
+  "evidence": "slice 3 top half"
+ },
+ {
+  "observation": "A HONcode certification seal image marked 'CERTIFIED 04/2017' is shown next to compliance text with a 'Verify here.' link.",
+  "category": "imagery handling",
+  "evidence": "honconduct712243-s.jpg alt 'HONcode certification seal', 49×72; slice 3"
+ },
+ {
+  "observation": "A small black circular RSS icon sits alone below the HONcode block, with no label text.",
+  "category": "components",
+  "evidence": "feed.svg alt 'RSS feed', 34×30 at y 2847; slice 3"
+ },
+ {
+  "observation": "Corporate Details copy is formal legal and administrative text: the company number, incorporation date, domain registration date and a full UK postal address.",
+  "category": "copy",
+  "evidence": "slice 3: 'company number 2893459; incorporated 1st February 1994', 'Dudley, West Midlands, DY1 1DB'"
+ },
+ {
+  "observation": "The footer is a dark near-black navy band with white headings, light grey body text and light-blue underlined links.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(22,33,44); slice 3 footer"
+ },
+ {
+  "observation": "The footer has two columns: 'Stay in touch', with an email signup form, and 'Your safety', a wrapped inline row of policy links.",
+  "category": "layout",
+  "evidence": "heading_outline h2 'Stay in touch', 'Your safety'; form 1, input 1; slice 3"
+ },
+ {
+  "observation": "The email signup is a white text input with placeholder 'Your email address' next to a solid blue 'Sign up' button with a small radius.",
+  "category": "components",
+  "evidence": "slice 3; top_backgrounds rgb(29,111,165) ×1"
+ },
+ {
+  "observation": "The footer h2s are rendered much smaller than the 35.2px body-section h2s, with no blue underline bar.",
+  "category": "typography",
+  "evidence": "slice 3 'Stay in touch' / 'Your safety' are visibly small, bold, white"
+ },
+ {
+  "observation": "A thin horizontal rule in the footer separates the signup and policy columns from the closing health disclaimer.",
+  "category": "decoration",
+  "evidence": "slice 3 line above 'Information provided on the site is meant to complement…'"
+ },
+ {
+  "observation": "Content is held in a centred container that spans roughly x 186 to 1254 within a 1440px viewport.",
+  "category": "layout",
+  "evidence": "page_width 1440; images left-aligned at x 186; card grid right edge about 1254 in slices"
+ },
+ {
+  "observation": "The page is 3245px tall and has 547 words, with no emoji, exclamation marks or em dashes.",
+  "category": "copy",
+  "evidence": "layout page_height 3245; text_stats words 547, emoji 0, exclamations 0, em_dashes 0"
+ },
+ {
+  "observation": "Most elements have square corners. Rounded corners are small; nothing is pill-shaped or has a radius of 16px or more.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0 → 192, 1–7 → 39, 8–15 → 7, 16+ → 0, pill → 0"
+ },
+ {
+  "observation": "Motion is minimal: 6 transitions and no animations or transforms. There is one box shadow and no backdrop blur.",
+  "category": "decoration",
+  "evidence": "effects transitions 6, animations 0, transforms 0, box_shadows 1, backdrop_blur 0"
+ },
+ {
+  "observation": "Class usage is sparse and not utility-based: 44 class attributes with 25 unique values, and a Tailwind-like fraction of 0.023.",
+  "category": "DOM structure",
+  "evidence": "classes total 44, unique 25, tailwind_like_fraction 0.023"
+ },
+ {
+  "observation": "Styling is in a single embedded style block with no external stylesheets, plus one inline style attribute and one script.",
+  "category": "DOM structure",
+  "evidence": "tag_counts style 1; counts stylesheets 0, inline_style_attrs 1, scripts 1"
+ },
+ {
+  "observation": "The page is link-heavy: 78 anchors against 4 buttons, and 34 list items across 7 lists.",
+  "category": "DOM structure",
+  "evidence": "counts anchors 78, buttons 4; tag_counts ul 7, li 34"
+ },
+ {
+  "observation": "The document language is British English, and the head contains only charset, viewport and description meta tags, with no JSON-LD.",
+  "category": "DOM structure",
+  "evidence": "lang 'en-GB'; meta_names charset, viewport, description; jsonld_blocks 0"
+ },
+ {
+  "observation": "The page uses landmark elements: one header, nav, main and footer, and 4 sections, but no aside or figure.",
+  "category": "semantic structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 4, footer 1, aside 0, figure 0"
+ },
+ {
+  "observation": "Every image has an alt attribute. Content images and sponsor logos have descriptive alts, and decorative arrows and icons have empty ones.",
+  "category": "imagery handling",
+  "evidence": "alt_missing 0; 06a.jpg, Össur, Joint Operations, HONcode and RSS have alts; dottedArrow and *-icon.svg alt ''"
+ },
+ {
+  "observation": "The page title uses an en dash separator and repeats the tagline: 'Knee Guru – Your source of knee information'.",
+  "category": "copy",
+  "evidence": "facts title"
+ },
+ {
+  "observation": "The brand name appears in two forms: 'Knee Guru' in the logo and title, and 'KNEEguru' in body copy.",
+  "category": "copy",
+  "evidence": "slice 1 logo 'Knee Guru'; slice 2/3 text 'the KNEEguru', 'associated with KNEEguru'"
+ }
+]

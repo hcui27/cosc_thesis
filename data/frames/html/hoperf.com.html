@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Professional RF IC&amp;modules and Digital Sensor designer and manufacturer Shenzhen Hope Microelectronics Co., Ltd </title>
+        <meta name="keywords" content="RF IC,RF module,digital sensor,RF transceiver,Chip" />
+        <meta name="description" content="HOPERF is a China leading own-designed manufacturer in digital sensor, RF transmitter &amp; receiver &amp; transceiver modules and ICs, and related network application solutions.">
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link rel="stylesheet" href="/public/Home/js/lib/swiper.min.css?t=1234ty">
+<link rel="stylesheet" href="/public/Home/js/lib/animate.min.css?t=1234ty">
+<script src="/public/Home/js/lib/jquery.min.js?t=1234ty"></script>
+<script src="/public/Home/js/lib/swiper.min.js?t=1234ty"></script>
+<script src="/public/Home/js/menu.js?t=1234ty"></script>
+<script src="/public/Home/js/lib/swiper.animate1.0.3.min.js?t=1234ty"></script>
+<script src="/public/Home/js/lib/common.js?t=1234ty"></script>
+<script src="/public/js/jquery.lazyload.min.js?t=1234ty"></script>
+ <script type="text/javascript" charset="utf-8">
+  $(function() {
+     $("img.lazy").lazyload();
+  });
+  </script>
+<script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth)
+                        return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+        if (!doc.addEventListener)
+            return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    function toLocation(toUrl) {
+        if(toUrl==""){
+            return;
+        }
+        window.location.href = toUrl;
+    }
+    var data={};
+    
+    //搜索功能
+    function searchover(e,type) {
+      if (!e) e = window.event;
+      if ((e.keyCode || e.which) == 13) {
+        searchpage(type);
+      }
+    }
+    function searchpage(type){
+        if(type==1){
+           var seachername =document.getElementById('seachername').value;
+        }else{
+           var seachername = document.getElementById('searchValue').value;
+        }
+       // alert(seachername);
+       if(seachername!==''){
+           location.href="/index.php?g=Home&m=Search&a=search&like="+seachername;
+       }
+    }
+    function toswitch(){
+        location.href="/index.php?g=Home&m=Search&a=search&like=";
+    }
+    //划到顶部
+    window.onload = function(){
+    var btnTop = document.getElementById("btnTop");
+    var timer = null;
+
+    window.onscroll = function(){
+        var scrollup = document.getElementById('scroll');
+        if(!!scrollup){
+            //变量t是滚动条滚动时，距离顶部的距离
+            var t = document.documentElement.scrollTop || document.body.scrollTop;
+            var x = scrollup.offsetTop;
+            //当滚动到距离顶部200px时，返回顶部的锚点显示
+            if (t > x) {
+                scrollup.style.position = "fixed";
+            } else {          //恢复正常
+                scrollup.style.position = "relative";
+            }
+        }
+        var backTop = getScrollTop();
+        if(backTop >= 20){ //当前视口顶端大于等于20时，显示返回顶部的按钮
+            btnTop.style.display = "block";
+        }else {
+            btnTop.style.display = "none";
+        }
+    };
+
+    btnTop.onclick = function(){
+        //定时执行
+        // timer = setInterval(function(){
+        //     var backTop = getScrollTop();
+        //     var speedTop = backTop / 10;
+        //     //修改当前视口的数值，产生向上活动的效果
+        //     setScrollTop(backTop - speedTop);
+        //     // if(backTop <= 0){
+        //     //     //结束函数执行
+        //     //     clearInterval(timer);
+        //     // }
+            
+        // },30);
+        timer =setInterval(function(){
+                var backTop = getScrollTop();
+                var step = backTop/10;
+                step>0?step = Math.ceil(step):step = Math.floor(step);
+                setScrollTop(backTop - step);
+                if(step==0){
+                    console.log(step);
+                    clearInterval(timer)
+                }
+        },10)
+
+    };
+    //获取当前视口的顶端数值
+    var getScrollTop = function(){
+        var sTop ;
+        if (document.compatMode == "BackCompat")
+        {
+            sTop = document.body.scrollTop;
+        }
+        else
+        {
+            //document.compatMode == \"CSS1Compat\"
+            sTop = document.documentElement.scrollTop == 0 ? document.body.scrollTop : document.documentElement.scrollTop;
+        }
+        return sTop;
+    };
+    //设置当前视口的顶端数值
+    var setScrollTop = function(top){
+
+        if (document.compatMode == "BackCompat")
+        {
+            document.body.scrollTop = top;
+        }
+        else
+        {
+            if(document.documentElement.scrollTop == 0){
+                document.body.scrollTop = top;
+            }else{
+                document.documentElement.scrollTop = top;
+            }
+        }
+    }
+};
+</script>
+    <link rel="stylesheet" href="/public/Home/css/main.css?t=4561gh">
+</head>
+<div class="tv-header-main as-width">
+    
+<header class="header">
+    <div class="containers clearfix">
+        <a href="tel:0086-4001189180" class="telPhone">0086-4001-189-180<img src="/public/Home/img/phone.jpg" alt=""  class="imgIcon"></a>
+        <div class="topFr clearfix">
+            <div class="china " onclick="toLocation('http://www.hoperf.cn')">中文</div>
+            <div class="english " onclick="toLocation('http://www.hoperf.com')">English</div>
+        </div>
+        <a onclick="toswitch()" style="float: right;line-height: 40px;height:40px;" class="toswitch">
+        <img src="/public/Home/img/search.png" alt="" style="margin-top:5px;" class="imgIcon">
+        </a>
+        <div class="headSearch">
+            <input type="text" placeholder="Keywords" class="headinput" id="searchValue" onkeydown="searchover(event,0)" value="">
+            <div class="headicon" onclick="searchpage()" style="cursor: pointer;">
+                <img src="/public/Home/img/search.png" alt=""  class="imgIcon">
+            </div>
+        </div>
+    </div>
+</header>
+<a id="btnTop" class="btnTop" style="display:none;color:#fff;line-height:40px;text-align:center;position: fixed; right: 4%; bottom: 30%; cursor: pointer; opacity: .7; z-index: 9;background-color: red;height:40px;width:40px;" href="javascript:;" title="Back to top">
+    <img style="width:50px;height:80px;" src="/public/Home/img/backtop.png" alt="">
+</a>
+
+    <style type="text/css">
+    .wrap-menu { overflow:auto; background:#F6F6F6; font:12px/1.5 Tahoma,Arial,sans-serif}
+    .wrap-menu ul{ list-style:none; margin:0; padding:0;}
+    .wrap-menu ul li{ text-indent:3em; white-space:nowrap; }
+    .wrap-menu ul li h2{ cursor:pointer; height:100%; width:100%; margin:0 0 1px 0; font:12px/31px '宋体'; color:#fff; background:red;}
+    .wrap-menu ul li a{ display:block; outline:none; height:25px; line-height:25px; margin:1px 0; color:#1A385C; text-decoration:none;}
+    .wrap-menu ul li img{ margin-right:10px; margin-left:-17px; margin-top:9px; width:7px; height:7px; background:url(images/arrow.gif) no-repeat; border:none;}
+    .wrap-menu ul li img.unfold{ background-position:0 -9px;}
+    .wrap-menu ul li a:hover{ background-color:#ccc; background-image:none;}
+</style>
+<script>
+    var menu = [{"name":" Home ","url":"\/","submenu":[{"name":" Home ","url":"\/"}]},{"name":"Products","submenu":[{"name":"Products","url":"\/product\/index.html"},{"name":"RF Chips","url":"\/ic\/index.html"},{"name":"RF Modules ","url":"\/modules\/index.html"},{"name":"Sensors","url":"\/sensor\/index.html"},{"name":"Products Selection Table","url":"\/Home\/Product\/tableDetail.html"}]},{"name":"Solutions","submenu":[{"name":"Solutions","url":"\/solution\/index.html"},{"name":"Intelligent Equipment","url":"\/Home\/Solution\/index\/term_id\/24.html"},{"name":"Wireless Intelligent Copy System","url":"\/Home\/Solution\/index\/term_id\/23.html"},{"name":"Security Alarm","url":"\/Home\/Solution\/index\/term_id\/22.html"},{"name":" Automotive Electronics","url":"\/Home\/Solution\/index\/term_id\/21.html"}]},{"name":" Supports","url":"\/information\/tool.html","submenu":[{"name":"DEMO &amp; Tools","url":"\/information\/tool.html"},{"name":"Design Guides","url":"\/information\/design_guides.html"},{"name":"FAQs","url":"\/information\/fqas.html"},{"name":"Certification &amp; Test Reports","url":"\/information\/cert.html"},{"name":"Videos","url":"\/information\/video.html"}]},{"name":"News Center","url":"\/news\/index.html","submenu":[{"name":"HOPERF Dynamics","url":"\/news\/hoperf.html"},{"name":"Product Release","url":"\/news\/product.html"},{"name":"Company Culture","url":"\/news\/cultures.html"},{"name":"Business News","url":"\/news\/industry.html"}]},{"name":"About HOPERF","url":"\/about\/index.html","submenu":[{"name":"About HOPERF","url":"\/about\/index.html"}]},{"name":"Contact Us","url":"\/contact\/index.html","submenu":[{"name":"Contact Us","url":"\/contact\/index.html"},{"name":"Authorized Distributor","url":"\/Home\/Contact\/abouttwo.html"}]}];
+    //console.log(menu);
+</script>
+<nav class="menu">
+    <div class="menu-container clearfix">
+        <div class="icon">
+            <a href="/"><img src="/public/Home/img/icon.jpg" alt=""></a>
+        </div>
+        <div class="nav clearfix">
+            <a href="/" class="nav-d  navlist active ">
+                Home
+            </a>
+
+            <div class="nav-d navlist ">
+                <a href="/product/index.html">Products</a>
+                <div class="nav-menu">
+                    <div class="nav-content clearfix">
+
+                                                    <div class="fl v-list" >
+                                    <div class="nav-top" onclick="toLocation('/ic/index.html')">RF Chips</div>
+                                    <div class="nav-b clarfix">
+                                        <div class="fl v-l-a">
+                                            <div class="v-l-c">
+                                                    <a  href="/ic/rf_transmitter/index.html">
+                                                        Sub-1GHz Transmitter IC                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/ic/encode/index.html">
+                                                        Encode Remote IC                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/ic/soc/index.html">
+                                                        SoC Remote IC                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/ic/rf_receiver/index.html">
+                                                        Sub-1GHz Receiver IC                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/ic/rf_transceiver/index.html">
+                                                        Sub-1GHz Transceiver IC                                                    </a>
+                                                </div>                                        </div>
+                                        <div class="fl v-l-a">
+                                            <div class="v-l-c">
+                                                    <a href="/ic/rf_BLE/index.html">
+                                                        BLE RF IC                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a href="/Home/Product/productList/child_id/125/term_id/5.html">
+                                                        Decode Remote IC                                                    </a>
+                                                </div>                                        </div>
+                                    </div>
+                                </div>                                                                                                                <div class="fl v-list" >
+                                    <div class="nav-top" onclick="toLocation('/modules/index.html')">RF Modules </div>
+                                    <div class="nav-b clarfix">
+                                        <div class="fl v-l-a">
+                                            <div class="v-l-c">
+                                                    <a  href="/modules/rf_transmitter/index.html">
+                                                        Sub-1GHz Transmitter Module                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/modules/rf_receiver/index.html">
+                                                        Sub-1GHz Receiver Module                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/modules/rf_transceiver/index.html">
+                                                        Sub-1GHz Transceiver Module                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/modules/soc/index.html">
+                                                        SOC Transceiver Module                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/modules/lora/index.html">
+                                                        LoRa Module                                                    </a>
+                                                </div>                                        </div>
+                                        <div class="fl v-l-a">
+                                            <div class="v-l-c">
+                                                    <a href="/modules/enhanced_power/index.html">
+                                                        Enhanced Power Module                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a href="/modules/2.4g/index.html">
+                                                        2.4GHz RF Module                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a href="/modules/Bluetooth/index.html">
+                                                        Bluetooth Module                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a href="/modules/LoRaWAN/index.html">
+                                                        LoRaWAN Module                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a href="/modules/Wi-Fi/index.html">
+                                                        Wi-Fi Module                                                    </a>
+                                                </div>                                        </div>
+                                    </div>
+                                </div>                                                                                                                <div class="fl v-list v-lista" >
+                                    <div class="nav-top" onclick="toLocation('/sensor/index.html')">Sensors</div>
+                                    <div class="nav-b clarfix">
+                                        <div class="fl v-l-aa v-l-a">
+                                            <div class="v-l-c">
+                                                    <a  href="/sensor/pressure_sensor/index.html">
+                                                        Pressure Sensor                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/sensor/temperature_sensor/index.html">
+                                                        Temperature &amp; Humidity Sensor                                                    </a>
+                                                </div><div class="v-l-c">
+                                                    <a  href="/sensor/Sensor_Application_Module/index.html">
+                                                        Sensor Application Module                                                    </a>
+                                                </div>                                        </div>
+                                        <div class="fl v-l-a">
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                <div class="fl v-list v-listc">
+                            <div class="nav-top" onclick="toLocation('/Products_Selection_Table/index.html')">Products Selection Table</div>
+                            <div class="nav-b clarfix">
+                                <div class="fl v-l-a">
+                                    <div class="v-l-c">
+                                            <a href="/products_selection_table/rf_chips/index.html">
+                                                RF Chips                                            </a>
+                                        </div><div class="v-l-c">
+                                            <a href="/products_selection_table/rf_modules/index.html">
+                                                RF Modules                                             </a>
+                                        </div><div class="v-l-c">
+                                            <a href="/products_selection_table/sensors/index.html">
+                                                Sensors                                             </a>
+                                        </div>                                </div>
+                                <div class="fl v-l-a">
+                                                                    </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav-d navlist " >
+                <a href="/solution/index.html">Solutions</a>
+                <div class="nav-menu" style="height:auto;">
+                    <div class="nav-content clearfix">
+                        <div class="nav-t fr" style="color:#333;" onclick="toLocation('/Home/Solution/index/term_id/24.html')">Intelligent Equipment</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/Home/Solution/index/term_id/23.html')">Wireless Intelligent Copy System</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/Home/Solution/index/term_id/22.html')">Security Alarm</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/Home/Solution/index/term_id/21.html')"> Automotive Electronics</div>                    </div>
+                </div>
+            </div>
+            <div class="nav-d navlist " >
+                <a href="/information/tool.html">Supports</a>
+                <div class="nav-menu" style="height:auto;">
+                    <div class="nav-content clearfix">
+                        <div class="nav-t fr" style="color:#333;" onclick="toLocation('/information/video.html')">Videos</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/information/cert.html')">Certification &amp; Test Reports</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/information/fqas.html')">FAQs</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/information/design_guides.html')">Design Guides</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/information/tool.html')">DEMO &amp; Tools</div>                    </div>
+                </div>
+            </div>
+            <div class="nav-d navlist " style='width:120px;'>
+                <a href="/news/index.html">News Center</a>
+                <div class="nav-menu" style="height:auto;">
+                    <div class="nav-content clearfix">
+                        <div class="nav-t fr" style="color:#333;" onclick="toLocation('/news/industry.html')">Business News</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/news/cultures.html')">Company Culture</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/news/product.html')">Product Release</div><div class="nav-t fr" style="color:#333;" onclick="toLocation('/news/hoperf.html')">HOPERF Dynamics</div>                    </div>
+                </div>
+            </div>
+            <a class="nav-d navlist " href="/about/index.html" style='width:120px;'>
+                About HOPERF
+            </a>
+            <div class="nav-d navlist ">
+                <a href="/contact/index.html">Contact Us</a>
+                 <div class="nav-menu" style="height:auto;">
+                    <div class="nav-content clearfix">
+                            <div class="nav-t fr" style="color:#333;" onclick="toLocation('/contact/index.html')">Contact Us</div>
+                            <div class="nav-t fr" style="color:#333;" onclick="toLocation('/Home/Contact/abouttwo.html')">Authorized Distributor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger" id="hamburger-1" onclick="tabShow()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+</nav>
+<div class="pop-up" id="pop-up">
+    <div class="p-top clearfix">
+        <div class="p-fl p-main"><a>Home</a></div>
+        <div class="close" onclick="closeShow()"></div>
+    </div>
+    <div class="wrap-menu">
+
+    </div>
+</div>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                    <img src="https://www.hoperf.com/data/upload/admin/20181227/5c24728aeace8.jpg" onclick="toLocation('')"  atl="领先供应商" class="list">
+                </div><div class="swiper-slide">
+                    <img src="https://www.hoperf.com/data/upload/admin/20181227/5c24727720c5b.jpg" onclick="toLocation('information/index.html')"  atl="开发平台支持" class="list">
+                </div><div class="swiper-slide">
+                    <img src="https://www.hoperf.com/data/upload/admin/20181227/5c24725439d57.jpg" onclick="toLocation('')"  atl="射频芯片大图" class="list">
+                </div><div class="swiper-slide">
+                    <img src="https://www.hoperf.com/data/upload/admin/20181227/5c247233c0053.jpg" onclick="toLocation('')"  atl="传感器" class="list">
+                </div>        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination">
+        </div>
+    </div>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            onInit: function (swiper) {
+                swiperAnimateCache(swiper);
+                swiperAnimate(swiper);
+            },
+            onSlideChangeEnd: function (swiper) {
+                swiperAnimate(swiper);
+            },
+            autoplay: '5000'
+        });
+
+    </script>
+
+    <div class="product">
+        <div class="top">
+            <div class="title"><a  >Products</a></div>
+          
+        </div>
+        <div class="bottom clearfix">
+            <!--取产品分类推荐的前3个-->
+                        <a class="product-list">
+                    <div class="pro-top"><img data-original="https://www.hoperf.com/data/upload/portal/20180905/5b8f994e699dc.jpg" class="lazy" alt=""></div>
+                    <div class="pro-bottom">
+                        <div class="pro-title" >RF Chips</div>
+                        <div class="pro-text" >Advanced digital-analog hybrid mode design, innovative RF developing platform, easy to pass the European and American safety certification</div>
+                        <div class="pro-more" onclick="toLocation('/ic/index.html')">More</div>                                            </div>
+                </a><a class="product-list">
+                    <div class="pro-top"><img data-original="https://www.hoperf.com/data/upload/portal/20180905/5b8f995e14593.jpg" class="lazy" alt=""></div>
+                    <div class="pro-bottom">
+                        <div class="pro-title" >RF Modules </div>
+                        <div class="pro-text" >RF COB Module, Wireless Transmission Module, LoRa Module, Zigbee Module, 2.4GHz Module etc…, with long distance transmission, wide coverage, low power consumption thus to meet  the different requirements of customers
+</div>
+                        <div class="pro-more" onclick="toLocation('/modules/index.html')">More</div>                                            </div>
+                </a><a class="product-list">
+                    <div class="pro-top"><img data-original="https://www.hoperf.com/data/upload/portal/20180711/5b45a312898ba.png" class="lazy" alt=""></div>
+                    <div class="pro-bottom">
+                        <div class="pro-title" >Sensors</div>
+                        <div class="pro-text" >Ultra low power consumption, high temperature resistance, high stability, precision waterproofing, to provide customized development and design</div>
+                        <div class="pro-more" onclick="toLocation('/sensor/index.html')">More</div>                                            </div>
+                </a>        </div>
+    </div>
+        <div class="resolve">
+        <div class="top">
+            <div class="title"><a>Solutions</a></div>
+        </div>
+        <div class="s-content clearfix">
+            <div class="s-img">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba45b678dbd8.jpg" alt="">
+                <div class="s-j"></div>
+            </div>
+            <div class="s-img">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba45b678dbd8.jpg" alt="">
+                <div class="s-test" style="width: 100%;">
+                    <div class="s-title"> Automotive Electronics</div>
+                    <p class="s-p">TPMS Tire Pressure Ttest, Bothway Remote RKE, Electric Remote Control Key…</p>
+                    <div class="s-more" onclick="toLocation('/Home/Solution/index/term_id/21.html')">More</div>
+                </div>
+            </div>
+            <div class="s-img s-img-close">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba45b503316a.jpg" alt="">
+                <div class="s-j"></div>
+            </div>
+            <div class="s-img">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba45b503316a.jpg" alt="">
+                <div class="s-test" style="width: 100%;">
+                    <div class="s-title">Security Alarm</div>
+                    <p class="s-p">Smoke Alarm, Wireless doorbell, Wireless Door Magnetic... </p>
+                    <div class="s-more" onclick="toLocation('/Home/Solution/index/term_id/22.html')">More</div>
+                </div>
+            </div>
+            <div class="s-img s-img-active">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba45b503316a.jpg" alt="">
+                <div class="s-k"></div>
+            </div>
+        </div>
+
+        <div class="s-content clearfix">
+            <div class="s-img s-img-active">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba45b43e9c66.jpg" alt="">
+                <div class="s-j"></div>
+            </div>
+            <div class="s-img">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba45b43e9c66.jpg" alt="">
+                <div class="s-test" style="width: 100%;">
+                    <div class="s-title">Wireless Intelligent Copy System</div>
+                    <p class="s-p">Meter Directly-Reading System, Monitoring &amp; Positioning System, Active RFID ... </p>
+                    <div class="s-more" onclick="toLocation('/Home/Solution/index/term_id/23.html')">More</div>
+                </div>
+            </div>
+            <div class="s-img s-img-close">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba45b43e9c66.jpg" alt="">
+                <div class="s-j"></div>
+            </div>
+            <div class="s-img">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba460bcb6f70.jpg" alt="">
+                <div class="s-test" style="width: 100%;">
+                    <div class="s-title">Intelligent Equipment</div>
+                    <p class="s-p">3D Navigation,Outdoor Sports Product, Smart Phone…</p>
+                    <div class="s-more" onclick="toLocation('/Home/Solution/index/term_id/24.html')">More</div>
+                </div>
+            </div>
+            <div class="s-img">
+                <img src="https://www.hoperf.com/data/upload/portal/20180921/5ba460bcb6f70.jpg" alt="">
+                <div class="s-k"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="star" style="margin-top: 0px;">
+        <div class="container-star">
+            <div class="stars">
+                <div class="top star-top">
+                    <div class="title"><a to="/main/product"  @click.native="navSelect(3)">Advantages</a></div>
+                </div>
+                <div class="star-s" style="font-size: 20px;">
+                    HOPERF is committed to be a leading manufacturer of IoT key components for wireless radio frequency and sensor R&D, packaging, testing, service and customization
+                </div>
+                <div class="goods">
+                    <div class="goods-list clearfix">
+                        <div class="goods-message">
+                            <img src="/public/Home/img/1.png" alt="">
+                            <div class="goods-t">R&D</div>
+                            <p class="goods-c">
+                                ASIC chip design, independent NEXTGENRF patent algorithm, senior R&D team, 26 national patents and 9 software copyrights
+                            </p>
+                        </div>
+                        <div class="goods-message">
+                            <img src="/public/Home/img/2.png" alt="">
+                            <div class="goods-t">Package</div>
+                            <p class="goods-c">
+                                The original equipments from US, Japan or Germany with unique packaging and calibration process to ensure high consistency
+                            </p>
+                        </div>
+                        <div class="goods-message">
+                            <img src="/public/Home/img/3.png" alt="">
+                            <div class="goods-t">Testing</div>
+                            <p class="goods-c">
+                                14 Reliability Tests, including of high-low temperature, vibration test, drop test, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-bottom">
+                    <div class="goods-list g-ts clearfix">
+                        <div class="goods-message g-m">
+                            <img src="/public/Home/img/4.png" alt="">
+                            <div class="goods-t">Service</div>
+                            <p class="goods-c">
+                                With 20 years of industry experience, covering 33 countries in the world, serving more than 3000 brand customers
+                            </p>
+                        </div>
+                        <div class="goods-message g-m">
+                            <img src="/public/Home/img/5.png" alt="">
+                            <div class="goods-t">Customization</div>
+                            <p class="goods-c">
+                                Wireless RF and sensor customized development, provide personalized service to meet the differentiated needs of customers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-style">
+                    <div style="width:100%;text-align: center;margin-top:20px;">
+                        <img src="/public/Home/img/1.png" alt="">
+                        <div class="goods-t">R&D</div>
+                        <p class="goods-c">
+                            ASIC chip design, independent NEXTGENRF patent algorithm, senior R&D team, 26 national patents and 9 software copyrights
+                        </p>
+                    </div>
+                    <div style="width:100%;text-align: center;margin-top:20px;">
+                        <img src="/public/Home/img/2.png" alt="">
+                        <div class="goods-t">Package</div>
+                        <p class="goods-c">
+                            The original equipments from US, Japan or Germany with unique packaging and calibration process to ensure high consistency
+                        </p>
+                    </div>
+                    <div style="width:100%;text-align: center;margin-top:20px;">
+                        <img src="/public/Home/img/3.png" alt="">
+                        <div class="goods-t">Testing</div>
+                        <p class="goods-c">
+                            14 Reliability Tests, including of high-low temperature, vibration test, drop test, etc.
+                        </p>
+                    </div>
+                    <div style="width:100%;text-align: center;margin-top:20px;">
+                        <img src="/public/Home/img/4.png" alt="">
+                        <div class="goods-t">Service</div>
+                        <p class="goods-c">
+                            With 20 years of industry experience, covering 33 countries in the world, serving more than 3000 brand customers
+                        </p>
+                    </div>
+                    <div style="width:100%;text-align: center;margin-top:20px;">
+                        <img src="/public/Home/img/5.png" alt="">
+                        <div class="goods-t">Customization</div>
+                        <p class="goods-c">
+                            Wireless RF and sensor customized development, provide personalized service to meet the differentiated needs of customers
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="tv-footer">
+    <div class="tv-footer-container as-width clearfix" style="padding: 75px 0 58px 0;">
+        <ul class="tv-footer-l">
+            <li><img src="/public/Home/img/chat.jpg" alt="">
+            </li>
+            <li class="chat">Scan GRCODE to follow us</li>
+        </ul>
+        <ul class="tv-footer-l">
+            <li>Solutions</li>
+                        <li class="tv-footer-li" ><a href="/Home/Solution/index/term_id/24.html">Intelligent Equipment</a></li><li class="tv-footer-li" ><a href="/Home/Solution/index/term_id/23.html">Wireless Intelligent Copy System</a></li><li class="tv-footer-li" ><a href="/Home/Solution/index/term_id/22.html">Security Alarm</a></li><li class="tv-footer-li" ><a href="/Home/Solution/index/term_id/21.html"> Automotive Electronics</a></li>
+        </ul>
+        <ul class="tv-footer-l">
+            <li>Supports</li>
+            <li class="tv-footer-li"><a href="/information/tool.html">DEMO &amp; Tools</a></li><li class="tv-footer-li"><a href="/information/design_guides.html">Design Guides</a></li><li class="tv-footer-li"><a href="/information/fqas.html">FAQs</a></li><li class="tv-footer-li"><a href="/information/cert.html">Certification &amp; Test Reports</a></li><li class="tv-footer-li"><a href="/information/video.html">Videos</a></li>        </ul>
+        <ul class="tv-footer-l">
+            <li>News Center</li>
+            <li class="tv-footer-li"><a href="/news/industry.html">Business News</a></li><li class="tv-footer-li"><a href="/news/cultures.html">Company Culture</a></li><li class="tv-footer-li"><a href="/news/product.html">Product Release</a></li><li class="tv-footer-li"><a href="/news/hoperf.html">HOPERF Dynamics</a></li>        </ul>
+        <ul class="tv-footer-l">
+            <li>About HOPERF</li>
+            <li class="tv-footer-li"><a href="/about/index.html#instr">About Us</a></li>
+            <li class="tv-footer-li"><a href="/about/index.html#product">Brand Introduction</a></li>
+            <li class="tv-footer-li"><a href="/about/index.html#team">R & D Team</a></li>
+            <li class="tv-footer-li"><a href="/about/index.html#process">Company History</a></li>
+            <li class="tv-footer-li"><a href="/about/index.html#kgs">The Quality</a></li>
+            <li class="tv-footer-li"><a href="/about/index.html#Qualification">Qualification & Patent</a></li>
+        </ul>
+    </div>
+    <div class="hp-bt" id="hp-bt">
+        <dl class="list_dl">
+            <dt class="list_dt">
+            <span class="_after"></span>
+            <p>Solutions</p>
+            <i class="list_dt_icon"></i>
+            </dt>
+            <dd class="list_dd">
+                <ul>
+                    <li class="list_li"><a href="/Home/Solution/index/term_id/24.html">Intelligent Equipment</a></li><li class="list_li"><a href="/Home/Solution/index/term_id/23.html">Wireless Intelligent Copy System</a></li><li class="list_li"><a href="/Home/Solution/index/term_id/22.html">Security Alarm</a></li><li class="list_li"><a href="/Home/Solution/index/term_id/21.html"> Automotive Electronics</a></li>                </ul>
+            </dd>
+            <dt class="list_dt">
+            <span class="_after"></span>
+            <p href="">Supports</p>
+            <i class="list_dt_icon"></i>
+            </dt>
+            <dd class="list_dd">
+                <ul>
+                    <li class="list_li"><a href="/information/tool.html">DEMO &amp; Tools</a></li><li class="list_li"><a href="/information/design_guides.html">Design Guides</a></li><li class="list_li"><a href="/information/fqas.html">FAQs</a></li><li class="list_li"><a href="/information/cert.html">Certification &amp; Test Reports</a></li><li class="list_li"><a href="/information/video.html">Videos</a></li>                </ul>
+            </dd>
+            <dt class="list_dt">
+            <span class="_after"></span>
+            <p href="">News Center</p>
+            <i class="list_dt_icon"></i>
+            </dt>
+            <dd class="list_dd">
+                <ul>
+                     <li class="list_li"><a href="/news/industry.html">Business News</a></li><li class="list_li"><a href="/news/cultures.html">Company Culture</a></li><li class="list_li"><a href="/news/product.html">Product Release</a></li><li class="list_li"><a href="/news/hoperf.html">HOPERF Dynamics</a></li>                </ul>
+            </dd>
+            <dt class="list_dt">
+            <span class="_after"></span>
+            <p href="">About HOPERF </p>
+            <i class="list_dt_icon"></i>
+            </dt>
+            <dd class="list_dd">
+                <ul>
+                    <li class="list_li"><a href="/about/index.html#instr">About Us</a></li>
+                    <li class="list_li"><a href="/about/index.html#product">Brand Introduction</a></li>
+                    <li class="list_li"><a href="/about/index.html#team">R & D Team</a></li>
+                    <li class="list_li"><a href="/about/index.html#process">Company History</a></li>
+                    <li class="list_li"><a href="/about/index.html#kgs">The Quality</a></li>
+                    <li class="list_li"><a href="/about/index.html#Qualification">Qualification & Patent</a></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+</div>
+<style>
+
+    .keep{
+        height:98px;
+        width:100%;
+        background-color: #000000;
+        padding:30px 0;
+    }
+    .keep>div{
+        margin:0 auto;
+        width:1200px;
+        text-align: center;
+        color:#999;
+        font-size:14px;
+        line-height: 14px;
+        height:14px;
+    }
+    .keep>.record{
+        margin-top:10px;
+    }
+    @media screen and (max-width: 1200px) {
+        .keep>div{
+            width:100%;
+        }
+    }
+    @media screen and (max-width: 762px) {
+        .keep{
+            padding:20px 0;
+        }
+    }
+    .keep>.record{
+        margin-top:20px;
+    }
+</style>
+<div class="keep">
+<div>Professional RF&amp;SENSOR Designer and Manufacturer</div>
+<div class="record">Copyright ©2018 HOPE Microelectronics CO., Ltd. All rights reserved.</div>
+</div>
+<script> 
+   $(".list_dt").on("click", function () {
+    $('.list_dd').stop();
+    $(this).siblings("dt").removeAttr("id");
+    if ($(this).attr("id") == "open") {
+        $(this).removeAttr("id").siblings("dd").slideUp();
+    } else {
+        $(this).attr("id", "open").next().slideDown().siblings("dd").slideUp();
+    }
+});
+</script>
+</div>
+<!-- <script src="/public/Home/js/lib/common.js"></script> -->
+<script>
+    var splitmessage = document.getElementsByClassName('s-p');
+    for(var i = 0;i<splitmessage.length;i++){
+
+        if(splitmessage[i].innerHTML.length>20){
+            console.log(splitmessage[i].innerHTML)
+            splitmessage[i].innerHTML = splitmessage[i].innerHTML.substr(0,20)+'...';
+        }
+    }
+</script>
+</body>
+</html>

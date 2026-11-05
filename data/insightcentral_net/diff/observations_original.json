@@ -1,0 +1,177 @@
+[
+ {
+  "observation": "The page title is 'Honda Insight Forum' and it has no h1. The only headings are two h3s ('Our Top Forums', 'Top Contributors this Month'). The 'Recommended for you' and forum-name titles are styled as headings but are not heading tags.",
+  "category": "semantic structure",
+  "evidence": "facts: title 'Honda Insight Forum'; h1_count 0; heading_outline has only two level-3 entries"
+ },
+ {
+  "observation": "Semantic landmarks are sparse. There is one header, one section and one footer, and there are no nav, main, article or aside elements. The page is built from generic containers.",
+  "category": "semantic structure",
+  "evidence": "semantic: header 1, section 1, footer 1, nav 0, main 0, article 0, aside 0; tag_counts div 445, span 219"
+ },
+ {
+  "observation": "The DOM is large and link-heavy. It has 260 anchors, 55 scripts, 37 link tags and 27 meta tags. The meta tags include OG/Twitter tags, fb:app_id, theme-color and 11 origin-trial tags. There is also one JSON-LD block.",
+  "category": "semantic structure",
+  "evidence": "counts anchors 260, scripts 55; meta_names list; jsonld_blocks 1"
+ },
+ {
+  "observation": "A full-width hero banner photo, 1440×180, sits at the top. It shows three Honda Insight generations in an urban setting. The logo, search bar and account icons are overlaid on it.",
+  "category": "imagery",
+  "evidence": "image insightcentral_net_banner_2880w.jpg rect 0,0,1440,180; overlap with insightcentral_net.svg logo"
+ },
+ {
+  "observation": "The logo is an SVG image, a blue italic condensed 'InsightCentral.net' wordmark, placed at x=140 over the banner photo. The header holds a translucent dark search field with a magnifier icon, a circular white 'NEW' badge, a list icon, a 'Login / Join' link with a user icon, and a kebab menu. All of it is white on the photo.",
+  "category": "components",
+  "evidence": "insightcentral_net.svg 209×45 at 140,122; screenshot header; Font Awesome 5 Pro used on 5 elements"
+ },
+ {
+  "observation": "The layout is a centered two-column design on a pale blue-grey page background. A main feed about 842px wide (x 140–982) sits beside a sidebar about 300px wide (x 1000–1300). The content column spans roughly 140–1300 inside a 1440px viewport.",
+  "category": "layout",
+  "evidence": "page_width 1440; image rects at x=140; sidebar cards at x≈1000–1300; background rgb(240,243,245) on 28 elements"
+ },
+ {
+  "observation": "Three image-led featured cards sit in a row at the top of the feed. Each is about 269px wide with a dark gradient overlay. A white bold title, an avatar chip, a username and a comment count are overlaid at the bottom left. Titles are truncated with an ellipsis.",
+  "category": "components",
+  "evidence": "image rects 269×269, 269×358, 269×479 at y=207; gradient_backgrounds 8; screenshot cards ('50% off pick n pull this last weekend, new arm res…')"
+ },
+ {
+  "observation": "The three featured-card photos have natural sizes with different aspect ratios (700×700, 525×700, 393×700). They are displayed in an equal-height tile, so they appear cropped to fill.",
+  "category": "imagery",
+  "evidence": "images natural [700,700], [525,700], [393,700]; screenshot shows equal tiles"
+ },
+ {
+  "observation": "Thread rows in the 'Recommended for you' feed are stacked white cards with small radii and soft shadows, separated by ~10px gaps. Each card has a category label in small grey text, a bold blue title, a grey meta line ('user · a moment ago · X replied a moment ago') and a pill comment-count badge on a pale grey background.",
+  "category": "components",
+  "evidence": "top_backgrounds white 36; box_shadows 37; border_radius_buckets bucket_1_7 115; 25 time elements; screenshot"
+ },
+ {
+  "observation": "Timestamps are all shown as the relative phrase 'a moment ago', and they are wrapped in 25 time elements.",
+  "category": "copy",
+  "evidence": "tag_counts time 25; screenshot meta lines"
+ },
+ {
+  "observation": "Thread avatars are mixed. Many are letter-initial tiles in flat varied colours (orange 't', peach 'S', mauve 'H', green 'I', purple 'J', teal 'F'). Others are 48px photo avatars, and some have a small blue verified-style badge in the lower-right corner. The tiles are rounded squares.",
+  "category": "imagery",
+  "evidence": "avatar images 96×96 natural rendered at 48×48 (some 44×44); backgrounds rgb(168,138,138), rgb(51,153,102), rgb(153,102,102)"
+ },
+ {
+  "observation": "Several thread thumbnails render as broken images. The alt text shows in blue link style at the right edge of the card, for example 'FoMoCo 3.3kWh Battery Module Testing', 'Unknown part' and 'Lean Burn Indicator'. In some cards the text wraps and overflows the card bottom (the garnish assy one).",
+  "category": "imagery",
+  "evidence": "images with file '' and natural [0,0] with alt text, rects 135×68, 110×23, 135×90; screenshot broken-image icons"
+ },
+ {
+  "observation": "Some images lack alt text, and a few are tracking or placeholder elements with a 0×0 rect. Five images have a missing alt attribute.",
+  "category": "semantic structure",
+  "evidence": "counts alt_missing 5; images with rect 0,0,0,0"
+ },
+ {
+  "observation": "A single sans-serif stack is used almost everywhere. 'Helvetica Neue' is the computed font on 983 elements and Arial on 81. Font Awesome 5 Pro (5 elements) and Brands (1) supply the icons. The body text is 15px on a 22.5px line-height.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count; body_font_size 15px; body_line_height 22.5px"
+ },
+ {
+  "observation": "The type hierarchy is built from weight and colour more than from size. Thread titles are bold blue (~18px). Category labels and meta lines are small grey (~13px). The 'Recommended for you' heading is large and bold dark grey, and the sidebar stats '414K' and '180.3K' are very large numerals.",
+  "category": "typography",
+  "evidence": "screenshot; top_text_colors rgb(0,95,217) 129, rgb(104,108,110) 401, rgb(56,58,59) 302"
+ },
+ {
+  "observation": "The palette is neutral grey with one saturated blue accent. Body text is rgb(56,58,59), secondary text rgb(104,108,110), and links and titles are rgb(0,95,217). The same blue fills the 'Join Community' button. Near-black rgb(35,35,36) is used for the footer.",
+  "category": "color",
+  "evidence": "colors.body_color, top_text_colors, top_backgrounds rgb(35,35,36) 3; screenshot"
+ },
+ {
+  "observation": "The sidebar is a stack of white rounded cards. The first is a forum intro with the name, 'Since 2003', a description and two big stats (414K posts, 180.3K members) split by a thin vertical divider. A full-width blue 'Join Community' button with a user icon follows. The button has a 3px radius.",
+  "category": "components",
+  "evidence": "screenshot sidebar; primary_button radius 3px, color white; text '414K posts', '180.3K members'"
+ },
+ {
+  "observation": "The 'Our Top Forums' card lists five forum names as blue links. Under each are a speech-bubble count and an eye-icon view count (for example 131.7K / 24.8M), with a 'View All →' link under the heading.",
+  "category": "components",
+  "evidence": "heading_outline 'Our Top Forums'; screenshot list"
+ },
+ {
+  "observation": "The 'Top Contributors this Month' card lists three users with initial or photo avatars, a blue username and a grey reply count (183, 102, 82 Replies).",
+  "category": "components",
+  "evidence": "heading_outline; avatars 189418.jpg 28×28 rendered; screenshot"
+ },
+ {
+  "observation": "The 'Recommended Communities' card shows square logo avatars for DIY Electric Car Forums, Snowmobile World and Royal Enfield Forum, each with a member count. Royal Enfield carries a small blue 'NEW!' tag.",
+  "category": "components",
+  "evidence": "images diyelectriccar_com_profile.png, snowmobileworld_com_profile.png, royalenfieldforum_com_profile.png at 36×36; screenshot"
+ },
+ {
+  "observation": "The 'Recommended Communities' card is a heading with no h-tag. Its heading is styled like the h3s but is not in the outline.",
+  "category": "semantic structure",
+  "evidence": "heading_outline only two entries while screenshot shows a third card title"
+ },
+ {
+  "observation": "Corner radii are mostly square for non-decorative elements. 891 elements have a 0 radius, 115 have 1–7px, 25 have 8–15px and 39 are pill-shaped. No element has a radius of 16px or more apart from the pills. Cards are lightly rounded and the badges and count chips are pills.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets"
+ },
+ {
+  "observation": "Depth comes from many subtle shadows. 37 elements have box-shadows, and there are 8 gradient backgrounds, 11 transitions and one animation. There is no backdrop blur and there are no transforms.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 37, gradient_backgrounds 8, transitions 11, animations 1, backdrop_blur 0, transforms 0"
+ },
+ {
+  "observation": "Flexbox is the main layout tool and there is a single grid. 175 elements use display:flex, and one uses display:grid.",
+  "category": "layout",
+  "evidence": "layout display_flex 175, display_grid 1"
+ },
+ {
+  "observation": "Styling is class-driven and semantic, not utility-driven. There are 1199 class uses, 254 unique classes, and only 4.2% look Tailwind-like. There are also 73 inline style attributes.",
+  "category": "DOM",
+  "evidence": "classes total 1199, unique 254, tailwind_like_fraction 0.042; counts inline_style_attrs 73"
+ },
+ {
+  "observation": "The feed ends with a full-width white 'Load More' button with centred grey text, instead of numbered pagination. It sits just above the footer.",
+  "category": "components",
+  "evidence": "screenshot slice 3; buttons count 2"
+ },
+ {
+  "observation": "The dark footer spans the full width. It has a row of white text links (Home, About Us, Terms of Use, Privacy Policy, Help, Contact us) and an RSS icon. Below them are small grey address and disclaimer paragraphs, with a 'fora' logo and a BBB accredited badge at the right.",
+  "category": "components",
+  "evidence": "footer 1; screenshot slice 3; footer bg rgb(35,35,36)"
+ },
+ {
+  "observation": "The footer copy contains legal and ownership statements. It names VerticalScope Inc. with a Toronto address, mentions the XenForo software, and says the site is not affiliated with Honda Motor Company.",
+  "category": "copy",
+  "evidence": "footer text in screenshot"
+ },
+ {
+  "observation": "The copy has a forum voice, with user-generated thread titles in mixed case. Examples are '$20 DIY battery powered transfer pump', 'WTB - 1G Steering Wheel' and 'Parking brake cables available on Amazon.com !!!'. System copy is short: 'Recommended for you', 'Full Forum Listing', 'Join Community'.",
+  "category": "copy",
+  "evidence": "screenshot titles; text_stats words 643, exclamations 6, emoji 0"
+ },
+ {
+  "observation": "The page makes no use of emoji or em dashes. It has 643 words, and most of the text is thread metadata.",
+  "category": "copy",
+  "evidence": "text_stats emoji 0, em_dashes 0, words 643"
+ },
+ {
+  "observation": "The feed has category labels (Modifications and Technical Issues, Problems and Troubleshooting, Buy/Sell Insight-Related Items) printed above each title. This repeats a small set of taxonomy labels many times down the list.",
+  "category": "copy",
+  "evidence": "screenshot slices 1–3"
+ },
+ {
+  "observation": "Two forms and 14 inputs are present, though few are visible. There is a Google sign-in image button with a 16×17 base64 icon and an alt of 'Continue with Google button'. The page also embeds 2 iframes and 2 noscript blocks.",
+  "category": "DOM",
+  "evidence": "tag_counts form 2, input 14, iframe 2, noscript 2; image gIvkBKjE2YsSQAAAABJRU5ErkJggg== at 1025,895"
+ },
+ {
+  "observation": "Responsive images use picture and source elements. There are 14 picture tags and 18 source tags among 36 img elements, which suggests format or size variants for thumbnails.",
+  "category": "imagery",
+  "evidence": "tag_counts picture 14, source 18, img 36"
+ },
+ {
+  "observation": "Vertical rhythm in the feed is regular. Thread cards are about 92–101px tall and spaced about 101px apart, which gives a uniform repeating list. Long titles wrap inside the card, for example the flat-towing title across two lines.",
+  "category": "layout",
+  "evidence": "avatar y positions 469, 568, 871, 972, 1073, 1174 (about 101px steps); screenshot"
+ },
+ {
+  "observation": "The page is 3333px tall at 1440px wide. The feed column is much longer than the sidebar, which ends around y≈1470. The area to the right of the feed is empty for the lower two thirds of the page.",
+  "category": "layout",
+  "evidence": "page_height 3333, page_width 1440; screenshot slices 2–3"
+ }
+]

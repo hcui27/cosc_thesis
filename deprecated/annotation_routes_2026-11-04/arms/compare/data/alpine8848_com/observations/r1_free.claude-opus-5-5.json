@@ -1,0 +1,302 @@
+[
+ {
+  "observation": "Document title differs: A wraps the name in decorative punctuation, while B uses the plain name",
+  "category": "metadata",
+  "evidence": "A title \".:Alpine Everest Expedition & Trek :.\"; B title \"Alpine Everest Expedition & Trek\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "B declares a language attribute and A does not",
+  "category": "DOM/semantic structure",
+  "evidence": "A lang \"\"; B lang \"en\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "B includes viewport and description meta tags. A has Content-Type and google-site-verification instead",
+  "category": "metadata",
+  "evidence": "A meta_names [Content-Type, google-site-verification]; B [charset, viewport, description]",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no HTML5 semantic landmarks. B uses header, nav, main, aside, footer and 3 section elements",
+  "category": "DOM/semantic structure",
+  "evidence": "A semantic counts all 0; B header 1, nav 1, main 1, section 3, aside 1, footer 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses table markup (2 tables, 7 td) as part of its layout, and B uses no tables",
+  "category": "DOM/semantic structure",
+  "evidence": "A tag_counts table 2, tr 6, td 7; B has no table tags",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has three h1 headings (Welcome, Gallery, Products). B has one h1 (the site name) and four h2s",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline: 3 × level 1; B: h1 \"Alpine Everest Expedition & Trek\" plus h2 for Recommend, Namaste, Gallery, Products",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows the site name as visible header text beside the logo. In A the brand name appears only inside the logo image",
+  "category": "copy treatment",
+  "evidence": "B h1 is 35.2px white text in the header band; A has no text heading in the header",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds an italic tagline that does not appear in A",
+  "category": "copy treatment",
+  "evidence": "B slice 0 shows \"Personalized tours and treks, Kathmandu, Nepal\" under the h1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's main h1 is small bold Verdana in navy, with \"Welcome to Alpine Everest\" in olive green. B's welcome heading is large regular-weight Georgia in a single slate color",
+  "category": "typography",
+  "evidence": "A h1 16px, weight 700, Verdana, rgb(39,66,120); B h2 headings visually around 30px in serif slate",
+  "which_side": "both"
+ },
+ {
+  "observation": "Font families differ completely: A is set mostly in Verdana sans-serif, and B uses only Georgia serif",
+  "category": "typography",
+  "evidence": "A fonts: Verdana 195, verdana 41, Arial 4, Times New Roman 1; B fonts: Georgia 117",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body line height differs: A uses normal line height, and B sets 26.4px",
+  "category": "typography",
+  "evidence": "A body_line_height \"normal\"; B \"26.4px\"",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's body copy is small grey sans-serif text in justified paragraphs. B's body copy is larger, dark serif and left-aligned",
+  "category": "typography",
+  "evidence": "A slice 0 shows tight grey justified paragraphs (text color rgb(102,102,102), 85 elements); B paragraphs are in dark rgb(31,45,58) serif with wider leading",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body background differs: A's computed body background is black and its scenic artwork (sky, teal gradient, grass silhouettes) fills the sides. B uses a flat teal body color with a gradient header band",
+  "category": "color",
+  "evidence": "A body_bg rgb(0,0,0) and slice 0 shows grass silhouettes on the sides; B body_bg rgb(162,211,214) and gradient_backgrounds 1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has decorative black grass silhouettes at the lower page edges, and B has no such imagery",
+  "category": "decoration/effects",
+  "evidence": "A slices 0–1 show black grass shapes on the left and right; B's sides are plain teal",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's header is a white box with the logo on the left and a broken-image icon at top center-right. B's header is a dark slate band with a small logo card and text",
+  "category": "layout",
+  "evidence": "A image aimg2/aimg7 rendered at 16×16 at x 510 (broken) and overlapping; B businessname.jpg at 150×155 inside a dark header",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's logo is displayed much larger than B's",
+  "category": "imagery handling",
+  "evidence": "A slice 0 logo about 260px wide; B businessname.jpg rect 150×155",
+  "which_side": "A"
+ },
+ {
+  "observation": "Navigation styling differs: A has centered sans-serif links with blue underlines on a hatched strip. B has left-aligned bold serif tabs, a gold-filled active \"Home\" tab and a gold bottom border",
+  "category": "component choices",
+  "evidence": "A slice 0 nav at y≈329 centered with underline bars; B slice 0 nav with gold \"Home\" background and gold rule",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's navigation strip spans the full width of the viewport, while A's sits in a narrower centered strip",
+  "category": "layout",
+  "evidence": "B nav background runs edge to edge at y≈193–265; A's hatched nav strip runs about x 299–1142",
+  "which_side": "B"
+ },
+ {
+  "observation": "In the welcome section A puts text on the left and the trekker collage on the right. B reverses this, with the collage on the left",
+  "category": "layout",
+  "evidence": "A welcome-img x 1012; B welcome-img x 530 with text starting at about x 734",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's trekker collage extends past the right edge of its content box, while B's sits inside the card",
+  "category": "imagery handling",
+  "evidence": "A slice 0: collage reaches about x 1188, past the panel edge at about x 1150",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's gallery is a single horizontal row of 10 distinct 150px photos that runs past the viewport, with only 4 visible. B shows a 5×2 grid of 106×140 thumbnails",
+  "category": "layout",
+  "evidence": "A gallery image x positions run from 365 to 1850 (beyond 1440); B gallery images in 2 rows at y 940 and 1108",
+  "which_side": "both"
+ },
+ {
+  "observation": "B repeats the same placeholder image (imager.png) for every gallery and product thumbnail. A uses distinct photos: landscapes, ceremonies and garments",
+  "category": "imagery handling",
+  "evidence": "B images 5–22 are all file imager.png showing a shawl; A files 20.jpg, 14.jpg, 15.jpg and others",
+  "which_side": "B"
+ },
+ {
+  "observation": "B gives every image descriptive alt text, while A leaves most alt attributes empty",
+  "category": "DOM/semantic structure",
+  "evidence": "A alt_missing 20; B alt_missing 0 (e.g. \"Gallery photo 1\", \"Pashmina shawl 3\")",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's thumbnails sit in bordered white frames with padding. A's thumbnails sit flush in a thin-bordered strip",
+  "category": "imagery handling",
+  "evidence": "B slice 0 shows each thumbnail in a light frame card; A slice 0 shows photos edge to edge in one bordered container",
+  "which_side": "B"
+ },
+ {
+  "observation": "A contains two embedded plugin objects that render the text \"Couldn't load plugin.\" B has no embeds",
+  "category": "component choices",
+  "evidence": "A tag_counts object 2, embed 2, param 6; slice 0 text at y≈979; B has no object or embed",
+  "which_side": "A"
+ },
+ {
+  "observation": "A leaves a large blank area between the Gallery and Products sections where the plugins would be. B moves straight from Gallery to Products",
+  "category": "layout",
+  "evidence": "A slice 0 shows empty space from y≈830 to y≈1140 apart from the plugin messages",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's Products section shows garment photos with blue caption bars (e.g. \"Skirt -03\") and one broken image. B shows 8 identical shawl thumbnails without captions",
+  "category": "imagery handling",
+  "evidence": "A slice 0/1: blue labels \"Skirt -03\", \"Shirt -01\" and a broken icon at x≈1092; B products are imager.png × 8",
+  "which_side": "both"
+ },
+ {
+  "observation": "The \"more\" links differ: A uses a small right-aligned link in light blue. B uses a bold, underlined red-brown link with an arrow, aligned left",
+  "category": "component choices",
+  "evidence": "A \"more\" at x≈1167, color rgb(0,153,204); B slice 0/1 \"more →\" below each grid",
+  "which_side": "both"
+ },
+ {
+  "observation": "B underlines its section headings with a gold rule, which A does not",
+  "category": "decoration/effects",
+  "evidence": "B slice 0 shows gold lines under Namaste, Gallery and Products; A headings have no rule",
+  "which_side": "B"
+ },
+ {
+  "observation": "B puts content in white cards with rounded corners and shadows. A uses square-cornered panels with no shadows",
+  "category": "decoration/effects",
+  "evidence": "A border_radius bucket_0 241, others 0, box_shadows 0; B bucket_1_7 27, box_shadows 5",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses CSS transitions, and A has none",
+  "category": "decoration/effects",
+  "evidence": "A transitions 0; B transitions 18",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses CSS grid and flexbox for layout, and A uses neither",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 0; B display_grid 9, display_flex 3",
+  "which_side": "B"
+ },
+ {
+  "observation": "The sidebar is split differently: A has one continuous hatched sidebar with the form and contact details placed loosely below. B splits it into three separate white cards (menu, recommend form, contact)",
+  "category": "layout",
+  "evidence": "A slice 0 left column is continuous; B slice 0/1 shows three rounded cards with gaps between them",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both sides reuse the yellow torn-paper \"Featured Tours\" and \"Contact Information\" header images",
+  "category": "imagery handling",
+  "evidence": "featured-tours.png and contact-information.png (248×94) appear in both image lists",
+  "which_side": "both"
+ },
+ {
+  "observation": "The \"Products\" subheading in the sidebar differs: A shows it as a purple sans-serif link outside the menu indent. B shows it as a small uppercase, letter-spaced grey label",
+  "category": "typography",
+  "evidence": "A slice 0 \"Products\" at x≈235 in purple; B \"PRODUCTS\" small caps style at y≈677",
+  "which_side": "both"
+ },
+ {
+  "observation": "Sidebar menu rows are spaced more widely in B than in A",
+  "category": "layout",
+  "evidence": "A items about 28px apart (y 480→508); B items about 45px apart (y 405→451)",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's recommend-form inputs are small and filled with teal, and its Send button is small and plain. B has full-width white inputs and a full-width gold Send button",
+  "category": "component choices",
+  "evidence": "A slice 0 inputs about 150px wide with teal fill; B primary_button bg rgb(233,213,127), radius 4px, padding 9px",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's form uses label elements and a button element. A has neither",
+  "category": "DOM/semantic structure",
+  "evidence": "A buttons 0, no label tags, input 4; B label 3, button 1, input 3",
+  "which_side": "B"
+ },
+ {
+  "observation": "B wraps contact details in an address element with a bold company name and an underlined email link. A shows them as plain lines separated by br tags",
+  "category": "DOM/semantic structure",
+  "evidence": "B tag_counts address 1, b 1; A br 29 and slice 0 shows plain contact text",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's footer is white copyright text on the black background, aligned left. B's footer is a full-width near-black band with centered serif text",
+  "category": "layout",
+  "evidence": "A slice 1 copyright at x≈230; B slice 1 footer bg rgb(14,17,20) with text centered",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a cooler palette of navy, grey and light blue. B adds a gold/khaki accent and dark slate tones",
+  "category": "color",
+  "evidence": "A top text colors rgb(22,38,74), rgb(102,102,102), rgb(0,153,204); B rgb(31,45,58), with gold rgb(233,213,127) backgrounds",
+  "which_side": "both"
+ },
+ {
+  "observation": "A loads 16 scripts and 4 stylesheets. B has no scripts and no external stylesheets",
+  "category": "DOM/semantic structure",
+  "evidence": "A scripts 16, stylesheets 4; B scripts 0, stylesheets 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses many more inline style attributes than B",
+  "category": "DOM/semantic structure",
+  "evidence": "A inline_style_attrs 38; B 3",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses a deprecated font tag, and B does not",
+  "category": "DOM/semantic structure",
+  "evidence": "A tag_counts font 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has about twice as many links as B and more lists",
+  "category": "DOM/semantic structure",
+  "evidence": "A anchors 67, ul 13, li 45; B anchors 34, ul 3, li 13",
+  "which_side": "A"
+ },
+ {
+  "observation": "A is much shorter than B",
+  "category": "layout",
+  "evidence": "A page_height 1363; B 1915",
+  "which_side": "B"
+ },
+ {
+  "observation": "Only B uses ARIA attributes",
+  "category": "DOM/semantic structure",
+  "evidence": "A aria_attrs 0; B 2",
+  "which_side": "B"
+ },
+ {
+  "observation": "Word counts are similar, and only A contains an emoji character",
+  "category": "copy treatment",
+  "evidence": "A words 192, emoji 1; B words 209, emoji 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's main content panel stretches toward the right edge of the white page area, at about 1210px. B's main card ends at about 1224px, with even teal margins on both sides",
+  "category": "layout",
+  "evidence": "A slice 0 white container spans x 230–1210; B content spans x 216–1224",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses fewer CSS classes than B, but applies them many more times",
+  "category": "DOM/semantic structure",
+  "evidence": "A classes total 89, unique 9; B total 16, unique 10, tailwind_like_fraction 0.125",
+  "which_side": "both"
+ }
+]

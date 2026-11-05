@@ -1,0 +1,167 @@
+[
+ {
+  "observation": "Page title and H1 both state the product's purpose, and there is exactly one H1, in white bold text centered over the hero.",
+  "category": "typography",
+  "evidence": "facts.title 'Seo Analyzer – Instantly Analyze Your SEO Issues'; h1_count 1; h1 51.2px, weight 700, rgb(255,255,255), text-align center"
+ },
+ {
+  "observation": "The hero is a full-width blue diagonal gradient band holding the headline, a one-line subtitle, a search form and chips. It is the only gradient on the page.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 1; screenshot shows dark-to-bright blue gradient from y≈60 to 455; button bg rgb(29,78,216)"
+ },
+ {
+  "observation": "The primary interaction is a single-input domain form with an inline REVIEW button inside a white rounded container with a soft shadow.",
+  "category": "components",
+  "evidence": "form 1, input 1, button 1; primary_button text 'REVIEW', radius 7px, padding 0 26px; box_shadows 1; placeholder 'Enter your domain, e.g. example.com'"
+ },
+ {
+  "observation": "Three translucent pill-like chips under the form (H-supertools, Booksandmore, L-ink) act as quick-link suggestions.",
+  "category": "components",
+  "evidence": "rgba(255,255,255,0.15) background on 3 elements; chip labels visible in hero"
+ },
+ {
+  "observation": "The header is a plain white bar with a logo (icon plus 'Seo' in dark and 'Analyzer' in blue), two text links and an outlined 'EN' language box.",
+  "category": "layout",
+  "evidence": "header 1, nav 1; screenshot top bar shows 'Home', 'Site vs Site', 'EN'"
+ },
+ {
+  "observation": "The whole page uses one system-font stack, with no webfont and no external stylesheet or script. Styling comes from a single inline style block.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count system-ui 162, Arial 2; stylesheets 0, scripts 0; style tag count 1"
+ },
+ {
+  "observation": "The palette is a cool neutral scheme: near-white blue-grey page background, white cards, dark navy text, and one saturated blue accent used for links, icons and the button.",
+  "category": "color",
+  "evidence": "body_bg rgb(245,247,251); body_color rgb(28,36,51); text rgb(37,99,235) on 15 elements; muted text rgb(93,103,121) on 34"
+ },
+ {
+  "observation": "Three feature cards in a row, each with a tinted-blue rounded icon tile, an H4 title and a short paragraph.",
+  "category": "components",
+  "evidence": "h4 'Unlimited Analysis', 'In-Depth Reviews', 'Competitive Analysis'; blue-tint background color(srgb 0.145 0.388 0.92 / 0.14) on 3 elements; line icons visible"
+ },
+ {
+  "observation": "The heading hierarchy skips levels: the H1 is followed by H4s for the feature cards, then H2 sections, with H3 for site names.",
+  "category": "structure",
+  "evidence": "heading_outline: h1, h4 x3, h2 'Recently Listed', h3 x6, h2 'About Us', 'Contact Info', 'Navigation'"
+ },
+ {
+  "observation": "The 'Recently Listed' section uses a 3-column card grid of site screenshots with the six entries in two rows. The section heading is left-aligned with a 'View More →' link at the far right.",
+  "category": "layout",
+  "evidence": "article 6; image rects x=187/550/912, w≈341; two rows at y=882 and y=1297; display_grid 18"
+ },
+ {
+  "observation": "Each listing card stacks a 4:3 screenshot thumbnail, a bold domain name, and three stat tiles for SCORE, GLOBAL RANK and PAGE SPEED.",
+  "category": "components",
+  "evidence": "images natural 600x450, rendered 341x255; 18 b and 18 small elements; uppercase small labels in screenshot"
+ },
+ {
+  "observation": "The score and page-speed values are colour-coded green, amber or red by value, while global rank stays dark neutral.",
+  "category": "color",
+  "evidence": "72/100 and 99% green; 63/100, 69/100 and 75% amber; 45/100 and 0% red; rank values dark"
+ },
+ {
+  "observation": "Several stat values are literal zeros ('0' rank, '0%' speed), so the cards show placeholder-like data.",
+  "category": "copy",
+  "evidence": "Homework-solutions: rank 0, speed 0%; Jamiesonmotors 0 / 0%; Goldcoast 0 / 0%"
+ },
+ {
+  "observation": "Screenshot thumbnails are uncropped website captures of varying content (captcha, blog, black page, truck photo, dark layout). One card has a grey 'No preview available' placeholder instead of an image.",
+  "category": "imagery",
+  "evidence": "5 img elements with alt 'Screenshot of …', alt_missing 0; 6 articles, so the sixth (Portal.oouagoiwoye.edu.ng) has no image"
+ },
+ {
+  "observation": "The card images sit flush at the top of each card, with the card's rounded corners clipping them.",
+  "category": "imagery",
+  "evidence": "border_radius_buckets bucket_8_15: 31; screenshot shows thumbnails touching the card border"
+ },
+ {
+  "observation": "Domain names are capitalized in headings, e.g. 'Bulktrkr.com', 'Portal.oouagoiwoye.edu.ng'.",
+  "category": "copy",
+  "evidence": "h3 texts in heading_outline"
+ },
+ {
+  "observation": "The cards and feature tiles are white with thin light-grey borders and about 10–16px rounding. There are almost no shadows, and borders do the separating.",
+  "category": "decoration",
+  "evidence": "box_shadows 1 overall; bucket_8_15 31 elements; bucket_pill 0; screenshot cards have hairline outlines"
+ },
+ {
+  "observation": "Most elements have square corners (128 of about 164 have none). Rounding is limited to cards, tiles, inputs and buttons.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 128, bucket_1_7 2, bucket_16_plus 3"
+ },
+ {
+  "observation": "Page sections alternate background bands: hero blue, features and listings on light grey-blue, About Us on white, footer dark navy.",
+  "category": "layout",
+  "evidence": "top_backgrounds rgb(245,247,251) x19, white x12, rgb(15,23,42) x1; screenshot band changes at y≈456 and 770 of slice 2"
+ },
+ {
+  "observation": "The About Us section has a short left-aligned paragraph limited to about two-thirds of the container width, leaving the right side empty.",
+  "category": "layout",
+  "evidence": "paragraph spans x=186–940 within a 1068px container; larger muted-grey text about 18px"
+ },
+ {
+  "observation": "The footer is a dark navy two-column block (Contact Info, Navigation) with a hairline divider and a small copyright line. The navigation list has only one item.",
+  "category": "components",
+  "evidence": "footer 1, ul 1, li 1; rgb(15,23,42) background; 'Home' only; 'Copyright © 2020. H-educate All rights reserved.'"
+ },
+ {
+  "observation": "The content is constrained to a centered container about 1068px wide (x 186–1254) on a 1440px canvas. The page is about 2316px tall in total.",
+  "category": "layout",
+  "evidence": "page_width 1440, page_height 2316; card edges at x=187 and 1253"
+ },
+ {
+  "observation": "The DOM is mostly divs, with real landmark tags (header, nav, main, 3 sections, 6 articles, footer). There is little ARIA and no figure/figcaption or JSON-LD.",
+  "category": "structure",
+  "evidence": "div 50; semantic header/nav/main/footer 1 each; aria_attrs 1; jsonld_blocks 0; figure 0"
+ },
+ {
+  "observation": "Class use is light: 21 unique class names across 59 uses, none Tailwind-like. Three inline style attributes appear.",
+  "category": "structure",
+  "evidence": "classes total 59, unique 21, tailwind_like_fraction 0; inline_style_attrs 3"
+ },
+ {
+  "observation": "Small interactive polish is limited to a few CSS transitions. There are no animations, transforms or backdrop blur.",
+  "category": "decoration",
+  "evidence": "transitions 6, animations 0, transforms 0, backdrop_blur 0"
+ },
+ {
+  "observation": "Heading and body type is a mid-size neo-grotesque (Inter-like in render) at 16px with a 1.6 line-height. H2s are 27.2px bold.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, line_height 25.6px; h2 27.2px weight 700"
+ },
+ {
+  "observation": "Stat labels use small uppercase tracked grey text under larger bold values, forming a value-over-label pattern inside light grey tiles.",
+  "category": "typography",
+  "evidence": "'SCORE', 'GLOBAL RANK', 'PAGE SPEED' labels; tile bg rgb(227,232,240) on 6 elements"
+ },
+ {
+  "observation": "Copy is plain and benefit-oriented, with no emoji, exclamation marks or em dashes. The whole page is about 210 words.",
+  "category": "copy",
+  "evidence": "text_stats words 210, emoji 0, em_dashes 0, exclamations 0"
+ },
+ {
+  "observation": "The icons are four small inline SVG line icons: a logo, a refresh arrow, a magnifier and a bar chart. The 'View More →' arrow is probably a text glyph.",
+  "category": "imagery",
+  "evidence": "svg 4, path 4, circle 2; img count 5 are only screenshots"
+ },
+ {
+  "observation": "The hero background uses a darker blue (left) to brighter blue (right) shift, with white text and light-blue (rgb(203,213,225)) secondary text on dark surfaces.",
+  "category": "color",
+  "evidence": "top_text_colors include rgb(255,255,255) x12 and rgb(203,213,225) x11; screenshot hero subtitle appears in near-white"
+ },
+ {
+  "observation": "The footer links and text sit in light grey on dark navy, and the copyright line is dimmer than the rest.",
+  "category": "color",
+  "evidence": "rgb(203,213,225) text on rgb(15,23,42) background; screenshot copyright appears muted"
+ },
+ {
+  "observation": "Vertical rhythm is generous: about 65px between the hero and the feature cards, and large gaps before each section heading.",
+  "category": "layout",
+  "evidence": "hero ends y≈456, cards begin y≈520; 'Recently Listed' heading at y≈830 after cards ending y≈745"
+ },
+ {
+  "observation": "The 'View More →' link and the inline accent links use the same blue as the logo and icons, as the single accent used for navigation.",
+  "category": "color",
+  "evidence": "rgb(37,99,235) on 15 text elements; 21 anchors in total"
+ }
+]

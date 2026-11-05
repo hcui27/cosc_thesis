@@ -1,0 +1,245 @@
+{
+ "key": "abb4293d8edc",
+ "groups": [
+  {
+   "name": "Rounded cards with soft shadows",
+   "definition": "Do cards or panels combine rounded corners with soft drop shadows for depth?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#12",
+    "kneeguru_co_uk#9",
+    "thefrangipanicreative_com#16",
+    "miamidda_com#13"
+   ]
+  },
+  {
+   "name": "Flat look without shadows or gradients",
+   "definition": "Does the page look flat, with no or almost no box shadows, gradients, or backdrop blur?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "shadow_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "allstate_jobs#24",
+    "greatdayimprovements_com#16",
+    "insightcentral_net#24",
+    "newclimateeconomy_net#15",
+    "kanienkeha_net#18",
+    "merchantsavvy_co_uk#18",
+    "naturalwellbeing_com#3",
+    "nira_org_ng#21",
+    "bather_com#7",
+    "bathurst12hour_com_au#18"
+   ]
+  },
+  {
+   "name": "Restrained visual effects overall",
+   "definition": "Are visual effects (shadows, transitions, transforms) minimal across the page?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "transform_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "flygrant_com#27",
+    "kneeguru_co_uk#23"
+   ]
+  },
+  {
+   "name": "Hover transitions on interactive elements",
+   "definition": "Do interactive elements define CSS transitions?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "transition_count",
+    "op": ">=",
+    "value": 5
+   },
+   "members": [
+    "alpine8848_com#21",
+    "stgpartners_com#18",
+    "tellmebaby_com_au#25"
+   ]
+  },
+  {
+   "name": "Gradient hero background",
+   "definition": "Does the hero section use a CSS gradient background rather than a photo?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#6",
+    "homedesignersoftware_com#7",
+    "merchantsavvy_co_uk#5",
+    "thync_com#3"
+   ]
+  },
+  {
+   "name": "Large or medium rounded corners widely used",
+   "definition": "Are medium-to-large corner radii (about 8px or more) used widely across cards, buttons and images?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "radius_round_share",
+    "op": ">=",
+    "value": 0.3
+   },
+   "members": [
+    "cbdoilcreamnk_com#6",
+    "flygrant_com#6",
+    "homedesignersoftware_com#6",
+    "seoanalyzer_me#12",
+    "tellmebaby_com_au#24"
+   ]
+  },
+  {
+   "name": "Small or square corner radii",
+   "definition": "Are corners square or only slightly rounded, with no large radii?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "radius_round_share",
+    "op": "<",
+    "value": 0.1
+   },
+   "members": [
+    "ridetech_com#23",
+    "stgpartners_com#17",
+    "naturalwellbeing_com#1"
+   ]
+  },
+  {
+   "name": "Soft large-blur image shadows",
+   "definition": "Do feature images carry soft, large-blur drop shadows?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#7"
+   ]
+  },
+  {
+   "name": "Offset lip edges and tilted elements",
+   "definition": "Do cards and photos use solid offset edges and tilted shadowed elements instead of soft effects?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#25"
+   ]
+  },
+  {
+   "name": "No brush-stroke section dividers",
+   "definition": "Are section edges free of brush-stroke or torn-paint dividers?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bluebayou_com#26"
+   ]
+  },
+  {
+   "name": "Plain text rows with divider rules",
+   "definition": "Are lists plain text rows separated by thin divider rules without icons?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#15"
+   ]
+  },
+  {
+   "name": "Decorative star-glyph italic label strip",
+   "definition": "Is there a strip of italic serif labels with decorative star bullets below the hero?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#9"
+   ]
+  },
+  {
+   "name": "Sections separated by tone and rules",
+   "definition": "Are sections separated by alternating dark tones and thin horizontal rules?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#19"
+   ]
+  },
+  {
+   "name": "Short accent underline under headings",
+   "definition": "Do section headings have a short colored accent underline bar?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "gravityvault_com#21",
+    "ridetech_com#3"
+   ]
+  },
+  {
+   "name": "White bordered cards on off-white background",
+   "definition": "Do content cards and plates sit as white, bordered, rounded boxes on an off-white or tinted page background?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "greatdayimprovements_com#10",
+    "nira_org_ng#13"
+   ]
+  },
+  {
+   "name": "Colored left-border accent on cards",
+   "definition": "Do cards carry a thick accent-colored left border?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#10",
+    "kneeguru_co_uk#12"
+   ]
+  },
+  {
+   "name": "Decorative marker on card headings",
+   "definition": "Are card headings marked with a small green square or decorative icon image?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#11"
+   ]
+  },
+  {
+   "name": "Diagonal wedge section divider",
+   "definition": "Does the hero end with a full-width diagonal wedge divider?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "miamidda_com#11"
+   ]
+  },
+  {
+   "name": "Footer disclaimer below thin divider",
+   "definition": "Do legal disclaimer and copyright sit below a thin divider in small light text?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#22"
+   ]
+  },
+  {
+   "name": "Sticky header with backdrop blur",
+   "definition": "Does the header use a semi-transparent background with backdrop blur?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "backdrop_blur_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "stgpartners_com#16"
+   ]
+  },
+  {
+   "name": "Hero background is a soft peach-to-cream gradient.",
+   "definition": "Hero background is a soft peach-to-cream gradient.",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#9"
+   ]
+  }
+ ]
+}

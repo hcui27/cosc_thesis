@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Never Skip Brunch — DIY &amp; Home Design by Cara Newhart</title>
+<meta name="description" content="Empowering women to DIY big. Home design advice, chic DIY tutorials and the Make Space podcast by Cara Newhart.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&family=Homemade+Apple&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c1a19; --muted:#6b625d; --bg:#fffaf5; --peach:#fde6d3; --butter:#fdeeb0;
+  --orange:#f59a4a; --pink:#e8457c; --card:#fff;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Montserrat',system-ui,sans-serif; --script:'Homemade Apple',cursive;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.script{font-family:var(--script);color:var(--pink);font-size:1rem}
+.eyebrow{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--pink)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.15}
+h2{font-size:clamp(2rem,4vw,3rem)}
+.btn{display:inline-block;padding:.85em 1.7em;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;transition:transform .2s,background .2s}
+.btn:hover{background:var(--pink);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+
+.promo{background:var(--butter);text-align:center;padding:.55em 20px;font-size:.8rem;letter-spacing:.08em}
+.promo a{font-weight:600;margin-left:.6em}
+
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,250,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid #f1e3d6}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:72px}
+.nav .logo img{height:56px}
+.nav ul{list-style:none;display:flex;gap:26px;padding:0}
+.nav ul a{text-decoration:none;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.nav ul a:hover{color:var(--pink)}
+.menu-btn{display:none;background:none;border:0;font:inherit;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;font-weight:600}
+
+.hero{background:linear-gradient(180deg,var(--peach),var(--bg));overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:64px;padding-bottom:72px}
+.hero h1{font-size:clamp(2.6rem,6vw,4.8rem);margin:.3em 0 .35em}
+.hero h1 em{color:var(--pink)}
+.hero p{max-width:34em;color:#3d3633;margin-bottom:1em}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:1.6em}
+.hero figure{position:relative}
+.hero figure img{border-radius:240px 240px 16px 16px;aspect-ratio:3/4;object-fit:cover;width:100%;box-shadow:0 30px 60px -25px rgba(120,60,20,.4)}
+.hero figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:240px 240px 16px 16px;background:var(--butter);z-index:-1}
+
+section{padding:88px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.audience{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.audience article{background:var(--card);border-radius:18px;padding:34px;border:1px solid #f1e3d6}
+.audience h3{font-size:1.35rem;margin:.4em 0 .5em}
+.audience p{color:var(--muted);font-size:.95rem}
+.sec-head{max-width:640px}
+.sec-head p{margin-top:1em;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.tags a{padding:.5em 1.1em;border-radius:999px;background:var(--peach);text-decoration:none;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+.tags a:hover{background:var(--orange);color:#fff}
+
+.podcast{background:var(--butter);padding:0}
+.podcast .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center;padding-top:0;padding-bottom:0}
+.podcast .txt{padding:72px 0}
+.podcast h2{margin:.2em 0 .1em}
+.podcast h3{font-family:var(--sans);font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin:1em 0 .6em}
+.podcast p{margin-bottom:1.6em;max-width:30em}
+.podcast img{width:100%}
+
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.post{display:flex;flex-direction:column;justify-content:space-between;min-height:290px;padding:30px;border-radius:18px;text-decoration:none;transition:transform .25s,box-shadow .25s}
+.post:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(0,0,0,.3)}
+.post:nth-child(1){background:var(--peach)}
+.post:nth-child(2){background:var(--butter)}
+.post:nth-child(3){background:#fbd3de}
+.post span{font-size:.72rem;letter-spacing:.2em;font-weight:600}
+.post h3{font-size:1.3rem;text-transform:lowercase}
+.post b{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
+.pager{display:flex;gap:8px;flex-wrap:wrap;margin-top:36px;align-items:center}
+.pager a{min-width:40px;text-align:center;padding:.4em .8em;border:1px solid #e6d5c6;border-radius:999px;text-decoration:none;font-size:.85rem}
+.pager a:hover,.pager a.cur{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+.video{background:var(--ink);color:#fff;text-align:center}
+.video h2{margin-bottom:.5em}
+.video .btn{background:var(--orange);color:var(--ink)}
+.video .btn:hover{background:#fff}
+
+.chat{padding:0;position:relative;color:#fff}
+.chat>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.chat::after{content:"";position:absolute;inset:0;background:rgba(28,22,20,.55)}
+.chat .wrap{position:relative;z-index:1;padding-top:110px;padding-bottom:110px;max-width:760px;text-align:center}
+.chat .script{color:var(--butter)}
+.chat h2{margin:.3em 0 .6em}
+.chat p{margin-bottom:.8em}
+.chat .btn{margin-top:1em;background:#fff;color:var(--ink)}
+.chat .btn:hover{background:var(--pink);color:#fff}
+
+.insta{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.insta a{min-height:150px;padding:18px;border-radius:14px;background:var(--card);border:1px solid #f1e3d6;text-decoration:none;font-size:.88rem;color:var(--muted);transition:background .2s}
+.insta a:hover{background:var(--peach);color:var(--ink)}
+.insta-cta{text-align:center;margin-top:32px}
+
+.news{background:var(--peach);text-align:center}
+.news form{display:flex;gap:10px;max-width:480px;margin:28px auto 0}
+.news input{flex:1;min-width:0;padding:.9em 1.3em;border-radius:999px;border:1.5px solid transparent;font:inherit;background:#fff}
+.news button{border:0;cursor:pointer;font-family:inherit}
+
+footer{background:var(--ink);color:#d9cfc8;padding:64px 0 32px;font-size:.9rem}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:36px}
+footer h4{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:#fff;margin-bottom:1em}
+footer ul{list-style:none;padding:0}
+footer li{margin:.35em 0}
+footer a{text-decoration:none}
+footer a:hover{color:var(--orange)}
+.social{display:flex;gap:12px;margin-top:8px}
+.social a{width:40px;height:40px;border-radius:50%;border:1px solid #5a4f4a;display:grid;place-items:center}
+.social a:hover{background:var(--pink);border-color:var(--pink);color:#fff}
+.social svg{width:18px;height:18px;fill:currentColor}
+.legal{margin-top:48px;padding-top:24px;border-top:1px solid #3a322f;font-size:.78rem;color:#9c918a}
+.legal p+p{margin-top:.8em}
+
+@media(max-width:900px){
+  .hero .wrap,.podcast .wrap,.split,.audience{grid-template-columns:1fr}
+  .hero figure{max-width:380px}
+  .posts{grid-template-columns:1fr}
+  .post{min-height:200px}
+  .insta{grid-template-columns:1fr 1fr}
+  footer .cols{grid-template-columns:1fr 1fr}
+  .podcast .txt{padding:56px 0 0}
+  section{padding:64px 0}
+  .menu-btn{display:block}
+  .nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;padding:18px 20px;gap:14px;border-bottom:1px solid #f1e3d6}
+  .nav ul.open{display:flex}
+}
+@media(max-width:520px){
+  .news form{flex-direction:column}
+  footer .cols{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="promo">fun &amp; fresh home goodies <a href="https://shop.neverskipbrunch.com">visit the shop →</a></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="https://www.neverskipbrunch.com/" aria-label="Never Skip Brunch by Cara Newhart"><img src="images/cropped-NSB_logo_stamp_cara_newhart.png" alt="Never Skip Brunch by Cara Newhart"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="https://www.neverskipbrunch.com/home-design/">Decor &amp; Interiors</a></li>
+        <li><a href="https://www.neverskipbrunch.com/diy-projects/">DIY Projects</a></li>
+        <li><a href="#podcast">Podcast</a></li>
+        <li><a href="https://divein.neverskipbrunch.com/">Plans + Templates</a></li>
+        <li><a href="https://www.neverskipbrunch.com/work-with-me/">Work With Me</a></li>
+        <li><a href="https://www.neverskipbrunch.com/about/">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="script">▻ by cara newhart</p>
+      <h1>welcome to never skip <em>brunch.</em></h1>
+      <p>I'm Cara Newhart — a color &amp; prints obsessed DIY queen who's here to help you create a beautifully lived-in life through home design advice and chic DIY tutorials.</p>
+      <p>I want to channel all the good vibes and 'grammable moments of brunch &amp; curate a space that helps you grow your crafty side so you can make like a pro.</p>
+      <div class="cta">
+        <a class="btn" href="https://www.neverskipbrunch.com/about/">about + learn more →</a>
+        <a class="btn ghost" href="https://www.neverskipbrunch.com/diy-projects/">browse diy projects</a>
+      </div>
+    </div>
+    <figure><img src="images/4Q5A3075.jpg" alt="A colorful DIY paint bar studio with a floral-wrapped fridge, yellow stools and a gold wall planter" fetchpriority="high"></figure>
+  </div>
+</section>
+
+<section id="blog">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">visit the blog</p>
+      <h2>if you . . .</h2>
+    </div>
+    <div class="audience">
+      <article>
+        <p class="script">if you . . .</p>
+        <h3>are an avid DIY-er or have solid home design experience</h3>
+        <p>This is a library of fun projects, decor guidance, and home styling advice at your fingertips.</p>
+      </article>
+      <article>
+        <p class="script">if you . . .</p>
+        <h3>are new or doubting your creative capacity</h3>
+        <p>My wish is for you to find inspo &amp; creative encouragement in the pages of Never Skip Brunch.</p>
+      </article>
+    </div>
+    <div class="tags" aria-label="Pick a category">
+      <a href="https://www.neverskipbrunch.com/topics/diy/">DIY</a>
+      <a href="https://www.neverskipbrunch.com/home-design/">Decor &amp; Interiors</a>
+      <a href="https://www.neverskipbrunch.com/topics/make-space/">Make Space</a>
+      <a href="https://www.neverskipbrunch.com/blog/" style="background:var(--ink);color:#fff">Browse all posts →</a>
+    </div>
+  </div>
+</section>
+
+<section class="podcast" id="podcast">
+  <div class="wrap">
+    <div class="txt">
+      <p class="eyebrow">make space podcast</p>
+      <h2>make space</h2>
+      <h3>a home design show</h3>
+      <p>From home design strategies, to decor advice, to interior design tips &amp; tricks — these conversations help you dream up a beautifully lived-in home.</p>
+      <a class="btn" href="https://www.neverskipbrunch.com/make-space-podcast/">listen + subscribe</a>
+    </div>
+    <img src="images/MAKE-SPACE-Podcast-HOMEPAGE-Image.png" alt="A phone playing the Make Space podcast on a polka-dot book, with a hand-wrapped pink and yellow charging cable" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">new on the blog</p>
+    <h2>fresh off the workbench.</h2>
+    <div class="posts">
+      <a class="post" href="https://www.neverskipbrunch.com/part-02-breakfast-nook-diy-space-makeover-small-dining-room-ideas-on-a-budget/"><span>DIY</span><h3>part 02 — breakfast nook diy: space makeover + small dining room ideas on a budget</h3><b>read →</b></a>
+      <a class="post" href="https://www.neverskipbrunch.com/breakfast-nook-diy-furniture-flip-table-and-chairs/"><span>DIY</span><h3>part 01 — breakfast nook diy: furniture flip table and chairs</h3><b>read →</b></a>
+      <a class="post" href="https://www.neverskipbrunch.com/diy-gold-range-hood-simple-renter-friendly-appliance-makeover/"><span>DIY</span><h3>diy gold range hood — simple + renter-friendly appliance makeover</h3><b>read →</b></a>
+    </div>
+    <nav class="pager" aria-label="Blog pages">
+      <a class="cur" href="https://www.neverskipbrunch.com/" aria-current="page">1</a>
+      <a href="https://www.neverskipbrunch.com/page/2/">2</a>
+      <a href="https://www.neverskipbrunch.com/page/3/">3</a>
+      <span>…</span>
+      <a href="https://www.neverskipbrunch.com/page/60/">60</a>
+      <a href="https://www.neverskipbrunch.com/page/2/">Next Page »</a>
+    </nav>
+  </div>
+</section>
+
+<section class="video">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--orange)">youtube</p>
+    <h2>fun &amp; fresh videos.</h2>
+    <a class="btn" href="https://bit.ly/NeverSkipBrunchYouTube">watch on youtube</a>
+  </div>
+</section>
+
+<section class="chat">
+  <img src="images/tim-wright-272031-unsplash-e1551215652231.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <p class="script">coffee &amp; let's chat</p>
+    <h2>let's chat.</h2>
+    <p>I love connecting with women about diy + design questions &amp; feedback — just let me know what you think!</p>
+    <p>Are you a brand looking to collab? Just visit my contact page for more info.</p>
+    <a class="btn" href="https://www.neverskipbrunch.com/contact">wanna grab a virtual coffee?</a>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">@neverskipbrunch</p>
+    <h2>on instagram.</h2>
+    <div class="insta">
+      <a href="https://www.instagram.com/p/CO39UHFgdld/">Umm...did you see the fiasco in stores where I lug…</a>
+      <a href="https://www.instagram.com/p/CM4riwAgXfv/">I can never catch a break around here...the second…</a>
+      <a href="https://www.instagram.com/p/CMItEgYggRy/">GUESS WHAT?! season 2 of the #FurnitureFlipChallen…</a>
+      <a href="https://www.instagram.com/p/CKXnxLPAjWZ/">Is your closet as OUT OF CONTROL as mine was?! swi…</a>
+      <a href="https://www.instagram.com/p/CKU1neZAMz_/">HOW I GOT STARTED 👩🏻‍🔧 i get this quest…</a>
+      <a href="https://www.instagram.com/p/CIqYO5Zgjl_/">SO EXCITED for #FINISHFRIDAY...once we make it out…</a>
+      <a href="https://www.instagram.com/p/CIZZTB5glH8/">the HYPE IS REAL 😲 can a bidet be life changing…</a>
+      <a href="https://www.instagram.com/p/CIJxWd_gn0c/">this fireplace was the last detail this guest room…</a>
+    </div>
+    <p class="insta-cta"><a class="btn ghost" href="https://www.instagram.com/neverskipbrunch/">Follow on Instagram</a></p>
+  </div>
+</section>
+
+<section class="news">
+  <div class="wrap">
+    <p class="script">hello.</p>
+    <h2>join the newsletter.</h2>
+    <form onsubmit="event.preventDefault();this.querySelector('button').textContent='thank you!'">
+      <label for="email" style="position:absolute;left:-9999px">Email address</label>
+      <input id="email" type="email" required placeholder="your email address">
+      <button class="btn" type="submit">subscribe</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>never skip brunch</h4>
+        <p>Empowering women to DIY big.<br>by Cara Newhart</p>
+        <h4 style="margin-top:1.8em">let's connect</h4>
+        <div class="social">
+          <a href="https://facebook.com/neverskipbrunch" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.7.2-1 1.2-1H17V2h-2.8C11.4 2 10 3.600 10 6v2H7.500v3.500H10V22h4V11.500h2.800L17.300 8z"/></svg></a>
+          <a href="https://instagram.com/neverskipbrunch" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3zm5 3.500a4.500 4.500 0 110 9 4.500 4.500 0 010-9zm0 2a2.500 2.500 0 100 5 2.500 2.500 0 000-5zM17.500 5.800a1.100 1.100 0 110 2.200 1.100 1.100 0 010-2.200z"/></svg></a>
+          <a href="https://pinterest.com/neverskipbrunch" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-3.600 19.300c-.1-.8-.2-2 0-2.900l1.200-5s-.3-.6-.3-1.500c0-1.400.8-2.400 1.800-2.400.9 0 1.300.6 1.300 1.400 0 .9-.5 2.100-.8 3.300-.2 1 .5 1.800 1.500 1.800 1.800 0 3.200-1.900 3.200-4.600 0-2.400-1.700-4.100-4.200-4.100-2.900 0-4.600 2.200-4.600 4.400 0 .9.300 1.800.7 2.300.1.100.1.200.1.300l-.3 1.100c0 .2-.1.200-.3.100-1.300-.6-2.100-2.500-2.100-4 0-3.300 2.400-6.300 6.900-6.300 3.600 0 6.400 2.600 6.400 6 0 3.600-2.300 6.500-5.400 6.500-1.100 0-2.100-.6-2.400-1.200l-.7 2.500c-.2.900-.9 2.100-1.300 2.800A10 10 0 1012 2z"/></svg></a>
+          <a href="https://twitter.com/neverskipbrunch" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M22 5.900c-.7.3-1.500.5-2.400.6.900-.5 1.500-1.300 1.800-2.300-.8.5-1.700.8-2.600 1a4.100 4.100 0 00-7 3.700A11.600 11.600 0 013.400 4.700a4.100 4.100 0 001.300 5.500c-.7 0-1.300-.2-1.900-.5 0 2 1.400 3.700 3.300 4.100-.6.200-1.200.2-1.800.1.500 1.600 2 2.800 3.800 2.800A8.300 8.300 0 012 18.400 11.700 11.700 0 008.300 20.200c7.500 0 11.700-6.300 11.700-11.700v-.5c.8-.6 1.500-1.300 2-2.100z"/></svg></a>
+          <a href="https://youtube.com/c/neverskipbrunch" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.600 7.200a2.500 2.500 0 00-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 002.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 001.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 001.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>quick links</h4>
+        <ul>
+          <li><a href="https://www.neverskipbrunch.com/blog/">Blog</a></li>
+          <li><a href="https://www.neverskipbrunch.com/about/">About</a></li>
+          <li><a href="https://www.neverskipbrunch.com/contact/">Contact</a></li>
+          <li><a href="https://www.neverskipbrunch.com/press">Press</a></li>
+          <li><a href="https://www.neverskipbrunch.com/work-with-me/">Work With Me</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>explore</h4>
+        <ul>
+          <li><a href="https://www.neverskipbrunch.com/make-space-podcast">Podcast</a></li>
+          <li><a href="https://neverskipbrunch.eventbrite.com/">Workshops</a></li>
+          <li><a href="https://shop.neverskipbrunch.com">The NSB Shop →</a></li>
+          <li><a href="https://www.neverskipbrunch.com/portfolio/">Portfolio</a></li>
+          <li><a href="https://www.neverskipbrunch.com/downloads/">Free Downloads</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>services</h4>
+        <ul>
+          <li><a href="https://www.neverskipbrunch.com/services/">DIY Project Coaching</a></li>
+          <li><a href="https://www.neverskipbrunch.com/services/">Design Consultations</a></li>
+          <li><a href="https://www.neverskipbrunch.com/interior-design-calculators/">Design Calculators</a></li>
+          <li><a href="https://www.neverskipbrunch.com/tools">Starter Tools</a></li>
+          <li><a href="https://www.neverskipbrunch.com/terms-of-use/">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>p.s. This site contains affiliate linking for your convenience. As an Amazon Associate and member of other affiliate programs, I earn from qualifying purchases. These links don’t cost extra for you to use + I always share my honest opinion.</p>
+      <p>Copyright © 2021 · NEVER SKIP BRUNCH · <a href="https://neverskipbrunch.com/about">by Cara Newhart</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const b=document.querySelector('.menu-btn'),m=document.getElementById('menu');
+b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',e=>{if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+</script>
+</body>
+</html>

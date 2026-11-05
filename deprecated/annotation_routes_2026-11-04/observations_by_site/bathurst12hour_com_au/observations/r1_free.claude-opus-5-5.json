@@ -1,0 +1,242 @@
+[
+ {
+  "observation": "The page is titled after the event name, and the single h1 repeats that name in uppercase.",
+  "category": "DOM/semantic structure",
+  "evidence": "title 'Liqui-Moly Bathurst 12 Hour'; h1_count 1, h1 text 'LIQUI-MOLY BATHURST 12 HOUR'"
+ },
+ {
+  "observation": "The heading outline is shallow and in order: one h1, one h2 section label, seven h3 article titles and two h4 footer labels.",
+  "category": "DOM/semantic structure",
+  "evidence": "heading_outline: h1, h2 'LATEST NEWS', 7 h3, h4 'FOLLOW US', h4 'LINKS'"
+ },
+ {
+  "observation": "Each news item is marked up as an article element with a time element, giving seven articles and seven times.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts article 7, time 7, h3 7"
+ },
+ {
+  "observation": "The landmark structure uses header, nav, main, one section and footer, with no aside, figure or blockquote.",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 1, footer 1, aside 0, figure 0, blockquote 0"
+ },
+ {
+  "observation": "The page uses a dark theme: a near-black body background with off-white text.",
+  "category": "color",
+  "evidence": "body_bg rgb(14,15,18); body_color rgb(236,238,242)"
+ },
+ {
+  "observation": "A saturated red is the single accent colour, used for the date badge, the 'FEATURED NEWS' tag, the 'LATEST NEWS' label and the 'READ MORE' links.",
+  "category": "color",
+  "evidence": "rgb(228,0,43) appears as a background twice and as a text colour 8 times; red elements are visible in both slices"
+ },
+ {
+  "observation": "Secondary text, such as dates and the footer copy, uses a muted grey-blue.",
+  "category": "color",
+  "evidence": "text colour rgb(154,160,173) appears 31 times; grey dates such as 'Feb 13, 2020' are visible"
+ },
+ {
+  "observation": "The news cards sit on a slightly lighter charcoal surface than the page background.",
+  "category": "color",
+  "evidence": "background rgb(24,26,31) appears 7 times; the cards appear as dark grey panels with thin borders"
+ },
+ {
+  "observation": "The entire page uses a system font stack, with no web fonts.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 209; h1 font-family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'"
+ },
+ {
+  "observation": "The h1 is very large and bold: 67.2px against a 16px body size, a ratio of about 4.2x.",
+  "category": "typography",
+  "evidence": "h1 font_size 67.2px, weight 700; body_font_size 16px"
+ },
+ {
+  "observation": "The h2 is small (14px bold), uppercase and letter-spaced, so it reads as an eyebrow label rather than a large heading.",
+  "category": "typography",
+  "evidence": "h2 font_size 14px, weight 700; 'LATEST NEWS' is visible as small spaced red caps"
+ },
+ {
+  "observation": "Navigation items, badges, 'READ MORE' links and footer h4 labels share a style: uppercase, bold and widely tracked.",
+  "category": "typography",
+  "evidence": "nav 'HOME NEWS VIDEO…', 'FEATURED NEWS', 'READ MORE →' and 'FOLLOW US' are all visible as spaced caps"
+ },
+ {
+  "observation": "Body line height is 1.5x the font size.",
+  "category": "typography",
+  "evidence": "body_line_height 24px with body_font_size 16px"
+ },
+ {
+  "observation": "Article headlines are in sentence case and bold, which sets them apart from the all-caps UI labels.",
+  "category": "typography",
+  "evidence": "h3 text such as 'Pepper beats housemate to Bathurst honour' is visible in bold sentence case"
+ },
+ {
+  "observation": "The header is a dark horizontal bar with a small logo on the left, a row of 10 uppercase links, and circular social icons on the right.",
+  "category": "layout",
+  "evidence": "headerlogo.png rendered 34x44 at x136; nav links from HOME to BUSHFIRES APPEAL; Facebook and Twitter circles at the top right"
+ },
+ {
+  "observation": "Several two-word nav labels wrap onto two lines rather than staying on one line.",
+  "category": "layout",
+  "evidence": "'THE EVENT', 'THE RACE', 'PREVIOUS RACES' and 'BUSHFIRES APPEAL' each render stacked over two lines in slice 0"
+ },
+ {
+  "observation": "The header background is slightly translucent and has a backdrop blur.",
+  "category": "decoration/effects",
+  "evidence": "background rgba(14,15,18,0.95) appears once; effects.backdrop_blur 1"
+ },
+ {
+  "observation": "The hero has a dark carbon-fibre texture with red and blue diagonal shards in the upper right; this is visual decoration, not an img element.",
+  "category": "imagery handling",
+  "evidence": "slice 0 hero shows a woven texture and a red/blue angled wedge; gradient_backgrounds 0 and no hero image in the images list"
+ },
+ {
+  "observation": "The hero content is left-aligned: h1, a subtitle 'Australia's International Endurance race', and a red rectangular date badge.",
+  "category": "layout",
+  "evidence": "h1 text_align start; '31 JANUARY – 2 FEBRUARY 2020' sits on a red block below the subtitle"
+ },
+ {
+  "observation": "The hero date badge is a non-interactive label styled as a sharp-cornered red block.",
+  "category": "component choices",
+  "evidence": "buttons count 1 (the Menu button); the date badge is visible with square corners"
+ },
+ {
+  "observation": "The content area spans a fixed-width container from about x=136 to x=1304 on a 1440px page.",
+  "category": "layout",
+  "evidence": "images start at x 136/137 and the third column ends at 929+374=1303; page_width 1440"
+ },
+ {
+  "observation": "The featured story is a full-width horizontal card: an image of about 643px on the left and a text panel on the right.",
+  "category": "layout",
+  "evidence": "Bath12Hr-MH3.jpg rect w643 h401 at x137 y653; the text panel to its right holds the badge, title, date and share links"
+ },
+ {
+  "observation": "The featured card puts a 'FEATURED NEWS' tag above the headline, followed by the date, text links 'Share on Facebook' and 'Tweet', and a 'READ MORE →' link pinned near the bottom of the panel.",
+  "category": "component choices",
+  "evidence": "slice 0 featured card content; READ MORE sits near the bottom of the card at about y=1011"
+ },
+ {
+  "observation": "The remaining six stories form a three-column grid of equal cards, each about 374x234px, with about 22px gutters.",
+  "category": "layout",
+  "evidence": "image rects at x 137, 533 and 929 with w374 h234; rows at y1076 and y1472"
+ },
+ {
+  "observation": "Each grid card follows the same order: image on top, then the bold title, the grey date and a red 'READ MORE →' link.",
+  "category": "component choices",
+  "evidence": "slice 1 shows the same structure in all six cards"
+ },
+ {
+  "observation": "Article thumbnails are cropped to a uniform landscape box whatever their source size.",
+  "category": "imagery handling",
+  "evidence": "Bushfireappeal.jpg natural 2500x1683 and M20-fine.jpg natural 385x305 both render at 374x234"
+ },
+ {
+  "observation": "The page repeats the same imagery: the featured photo of the cars on the grid appears again as the third thumbnail in the grid.",
+  "category": "imagery handling",
+  "evidence": "Bath12Hr-MH3.jpg and Bath12Hr-MH3_2.jpg show the same scene in slice 0; file names MH1.jpg and MH1_2.jpg suggest another duplicate pair"
+ },
+ {
+  "observation": "Article images have empty alt text, while sponsor logos have descriptive alt text.",
+  "category": "DOM/semantic structure",
+  "evidence": "Bath12Hr-MH3.jpg alt '', Bushfireappeal.jpg alt ''; LiquiMoly.png alt 'Liqui Moly', Pirelli.png alt 'Pirelli'; alt_missing 0"
+ },
+ {
+  "observation": "The cards have a 1px light border and no drop shadow.",
+  "category": "decoration/effects",
+  "evidence": "box_shadows 0; thin outlines around the cards are visible in slice 1"
+ },
+ {
+  "observation": "Corner radii are mostly 0, with a minority of small radii and a few pill or circle shapes.",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets: 0 → 179, 1–7 → 26, 8–15 → 0, 16+ → 0, pill → 4; primary_button radius 6px"
+ },
+ {
+  "observation": "The circle shapes are the outlined social icon buttons, which appear in both the header and the footer.",
+  "category": "component choices",
+  "evidence": "bucket_pill 4; svgs 4 and paths 4; Facebook and Twitter circles in the header (slice 0) and footer (slice 1)"
+ },
+ {
+  "observation": "Motion is limited to transitions: there are no keyframe animations or transforms.",
+  "category": "decoration/effects",
+  "evidence": "transitions 40, animations 0, transforms 0"
+ },
+ {
+  "observation": "The page uses no gradients and no shadows, so depth comes only from flat colour steps between near-black tones.",
+  "category": "decoration/effects",
+  "evidence": "gradient_backgrounds 0, box_shadows 0; backgrounds rgb(14,15,18), rgb(24,26,31) and rgb(8,9,11)"
+ },
+ {
+  "observation": "The 'Menu' button is transparent with off-white text, 6px radius and 8px 12px padding, and is not visible in the desktop rendering.",
+  "category": "component choices",
+  "evidence": "primary_button: text 'Menu', bg rgba(0,0,0,0), radius 6px, padding 8px 12px; slice 0 shows no Menu button"
+ },
+ {
+  "observation": "The footer is separated from the content by a horizontal rule and opens with a two-column block: 'FOLLOW US' with copy and social icons, and 'LINKS' with four text links.",
+  "category": "layout",
+  "evidence": "slice 1: divider above the footer; 'FOLLOW US' on the left and 'LINKS' (Contacts, Media, Privacy Policy, Terms & Conditions) at about x=736"
+ },
+ {
+  "observation": "The sponsor logos sit in a 9-column grid of white rectangles with small rounded corners, each logo 100x60px.",
+  "category": "layout",
+  "evidence": "logo rects at x 146, 277 … 1194 with w100 h60; rows at y2160, 2238 and 2316; white rgb(255,255,255) backgrounds appear 26 times"
+ },
+ {
+  "observation": "Most sponsor logos are close to invisible on their white tiles, so many tiles look empty; only a 'McLaren' text label and the faint Pirelli, AMG, Audi Sport, Porsche and Fox Sports marks can be made out.",
+  "category": "imagery handling",
+  "evidence": "slice 1 sponsor grid: most white tiles show nothing legible"
+ },
+ {
+  "observation": "One sponsor tile shows the text 'McLaren', but no McLaren image appears in the images list.",
+  "category": "imagery handling",
+  "evidence": "a 'McLaren' text tile is visible in row 2; the images list has 31 logos with no McLaren entry, and the tile at x=408 in row 2 is missing from the list"
+ },
+ {
+  "observation": "The page ends with a bottom bar holding a small logo and a copyright line, separated by a thin rule.",
+  "category": "layout",
+  "evidence": "footerlogo.png 42x48 at y2439; '© 2021 LIQUI-MOLY Bathurst 12 Hour. All Rights Reserved'"
+ },
+ {
+  "observation": "The footer copyright year (2021) and the latest article date (Oct 19, 2020) are later than the event dates shown in the hero (Jan–Feb 2020).",
+  "category": "copy treatment",
+  "evidence": "hero '31 JANUARY – 2 FEBRUARY 2020'; featured date 'Oct 19, 2020'; '© 2021'"
+ },
+ {
+  "observation": "The page has very little text, almost all of it headlines, labels and links, with only two paragraphs.",
+  "category": "copy treatment",
+  "evidence": "text_stats words 161; tag_counts p 2"
+ },
+ {
+  "observation": "The copy uses no emoji, exclamation marks or em dashes, though it does use hashtags such as #B12hr and #B12HR.",
+  "category": "copy treatment",
+  "evidence": "emoji 0, exclamations 0, em_dashes 0; 'via #B12hr', '#B12HR news'"
+ },
+ {
+  "observation": "Links are dense relative to text: 82 anchors against 161 words.",
+  "category": "DOM/semantic structure",
+  "evidence": "counts anchors 82, words 161"
+ },
+ {
+  "observation": "Layout relies heavily on CSS grid, with flexbox as well.",
+  "category": "layout",
+  "evidence": "layout display_grid 33, display_flex 21"
+ },
+ {
+  "observation": "The CSS uses a small set of custom class names rather than utility classes.",
+  "category": "DOM/semantic structure",
+  "evidence": "classes total 49, unique 20, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "All styles are in a single inline style block, with no external stylesheets and only one script.",
+  "category": "DOM/semantic structure",
+  "evidence": "tag_counts style 1, stylesheets 0, scripts 1, inline_style_attrs 1"
+ },
+ {
+  "observation": "There is minimal ARIA use and no structured data.",
+  "category": "DOM/semantic structure",
+  "evidence": "aria_attrs 7; jsonld_blocks 0; meta names: charset, viewport, description"
+ },
+ {
+  "observation": "The page is 2511px tall at 1440px wide, about 1.7 viewport-widths of vertical content.",
+  "category": "layout",
+  "evidence": "layout page_height 2511, page_width 1440"
+ }
+]

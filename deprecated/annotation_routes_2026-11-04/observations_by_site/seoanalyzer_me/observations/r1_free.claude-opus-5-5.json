@@ -1,0 +1,257 @@
+[
+ {
+  "observation": "Page title and H1 share the same wording, with the brand name prefixed in the title",
+  "category": "copy",
+  "evidence": "title 'Seo Analyzer – Instantly Analyze Your SEO Issues'; h1 'Instantly Analyze Your SEO Issues'"
+ },
+ {
+  "observation": "Exactly one H1, center-aligned in white on the hero",
+  "category": "typography",
+  "evidence": "h1_count 1; h1 text_align center, color rgb(255,255,255)"
+ },
+ {
+  "observation": "H1 is 51.2px at weight 700, which is 3.2× the 16px body size",
+  "category": "typography",
+  "evidence": "h1 font_size 51.2px, body_font_size 16px"
+ },
+ {
+  "observation": "H2s are 27.2px at weight 700 (1.7× body), so the type scale steps by multiples of 1rem",
+  "category": "typography",
+  "evidence": "h2 font_size 27.2px, font_weight 700"
+ },
+ {
+  "observation": "Uses a system font stack and loads no web fonts",
+  "category": "typography",
+  "evidence": "h1 font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'; system-ui on 162 elements, Arial on 2; stylesheets 0"
+ },
+ {
+  "observation": "Body line height is 1.6× the font size",
+  "category": "typography",
+  "evidence": "body_line_height 25.6px with 16px font size"
+ },
+ {
+  "observation": "The page is styled by a single inline style block, with no external stylesheets or scripts",
+  "category": "dom",
+  "evidence": "tag_counts style 1; stylesheets 0; scripts 0"
+ },
+ {
+  "observation": "Class names are few and hand-written, not utility classes",
+  "category": "dom",
+  "evidence": "classes total 59, unique 21, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Uses semantic landmarks: header, nav, main, footer, 3 sections and 6 articles",
+  "category": "dom",
+  "evidence": "semantic counts header 1, nav 1, main 1, section 3, article 6, footer 1"
+ },
+ {
+  "observation": "The six listing cards are article elements, and each site name is an H3",
+  "category": "dom",
+  "evidence": "article 6; heading_outline has six level-3 domain names"
+ },
+ {
+  "observation": "The heading outline jumps from H1 to H4 for the three feature cards",
+  "category": "dom",
+  "evidence": "heading_outline: level 1 followed by level 4 'Unlimited Analysis', 'In-Depth Reviews', 'Competitive Analysis'"
+ },
+ {
+  "observation": "Footer column titles are marked up as H2s at the same level as the main section headings",
+  "category": "dom",
+  "evidence": "heading_outline level 2 'Contact Info' and 'Navigation' alongside 'Recently Listed' and 'About Us'"
+ },
+ {
+  "observation": "Metric values and labels use b and small elements, 18 of each, which works out to 3 metrics × 6 cards",
+  "category": "dom",
+  "evidence": "tag_counts b 18, small 18; slices show three stat tiles per card"
+ },
+ {
+  "observation": "Layout uses CSS grid more than flexbox",
+  "category": "layout",
+  "evidence": "display_grid 18, display_flex 12"
+ },
+ {
+  "observation": "The page is 1440px wide and 2316px tall; content sits in a container of about 1068px, from x≈186 to x≈1254",
+  "category": "layout",
+  "evidence": "page_width 1440, page_height 2316; image rects start at x 187 and the right column ends near 1253"
+ },
+ {
+  "observation": "Header is a white bar with the logo on the left and the nav links plus a bordered 'EN' language box on the right",
+  "category": "layout",
+  "evidence": "slice_00 top: 'Seo Analyzer' logo with magnifier icon; 'Home', 'Site vs Site', 'EN' box"
+ },
+ {
+  "observation": "The two words of the logo are colored differently: 'Seo' is dark and 'Analyzer' is blue",
+  "category": "color",
+  "evidence": "slice_00 header logo; text color rgb(37,99,235) used 15 times"
+ },
+ {
+  "observation": "The hero is a full-width diagonal blue gradient, the only gradient on the page",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 1; slice_00 hero shades from darker blue at top-left to brighter blue at right"
+ },
+ {
+  "observation": "The hero holds a centered domain-input form: a white rounded container with the input and a blue 'REVIEW' button inside it",
+  "category": "component",
+  "evidence": "form 1, input 1, button 1; slice_00 placeholder 'Enter your domain, e.g. example.com'"
+ },
+ {
+  "observation": "The primary button is solid blue with uppercase text, a 7px radius and 26px horizontal padding",
+  "category": "component",
+  "evidence": "primary_button bg rgb(29,78,216), text 'REVIEW', radius 7px, padding 0px 26px"
+ },
+ {
+  "observation": "The search container appears to carry the page's only box shadow",
+  "category": "decoration",
+  "evidence": "box_shadows 1; slice_00 shows a soft shadow beneath the white search bar"
+ },
+ {
+  "observation": "Three pill-like chips with translucent white fill sit below the search form",
+  "category": "component",
+  "evidence": "background rgba(255,255,255,0.15) ×3; slice_00 chips 'H-supertools', 'Booksandmore', 'L-ink'"
+ },
+ {
+  "observation": "No element uses a true pill radius",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_pill 0"
+ },
+ {
+  "observation": "Most rounded elements use radii in the 8–15px range, but most elements have no radius at all",
+  "category": "decoration",
+  "evidence": "bucket_8_15 31, bucket_0 128, bucket_16_plus 3, bucket_1_7 2"
+ },
+ {
+  "observation": "Below the hero is a 3-column row of white feature cards, each with a thin border and rounded corners",
+  "category": "layout",
+  "evidence": "slice_00 cards 'Unlimited Analysis', 'In-Depth Reviews', 'Competitive Analysis'"
+ },
+ {
+  "observation": "Each feature card has a line icon on a square tile tinted light blue",
+  "category": "imagery",
+  "evidence": "background color(srgb 0.145 0.388 0.922 / 0.14) ×3; svg 4 total; slice_00 shows refresh, zoom and bar-chart icons"
+ },
+ {
+  "observation": "Feature card body text is muted gray-blue and the titles are dark",
+  "category": "color",
+  "evidence": "text colors rgb(93,103,121) ×34 and rgb(28,36,51) ×79"
+ },
+ {
+  "observation": "The page background is a very light cool gray, and cards sit on it in white",
+  "category": "color",
+  "evidence": "body_bg rgb(245,247,251) ×19; rgb(255,255,255) ×12"
+ },
+ {
+  "observation": "The 'Recently Listed' header row has the heading on the left and a blue 'View More →' text link on the right",
+  "category": "layout",
+  "evidence": "slice_00 'Recently Listed' h2 and 'View More' link with an arrow"
+ },
+ {
+  "observation": "Listings appear as a 3×2 grid of cards, each with a site screenshot on top",
+  "category": "layout",
+  "evidence": "image rects at y 882 and y 1297 across x 187/550/912"
+ },
+ {
+  "observation": "Screenshots render at 341×255, which keeps the 4:3 ratio of the 600×450 source",
+  "category": "imagery",
+  "evidence": "images natural [600,450], rect w 341 h 255/256"
+ },
+ {
+  "observation": "Every image has alt text in the form 'Screenshot of <domain>'",
+  "category": "imagery",
+  "evidence": "alt_missing 0; e.g. alt 'Screenshot of bulktrkr.com'"
+ },
+ {
+  "observation": "One listing has no image and shows a gray placeholder with 'No preview available'",
+  "category": "imagery",
+  "evidence": "5 img for 6 articles; slice_01 Portal.oouagoiwoye.edu.ng card; background rgb(227,232,240)"
+ },
+ {
+  "observation": "The screenshots are third-party captures with varied content, including a captcha page and a dark site with raw link text",
+  "category": "imagery",
+  "evidence": "slice_00 Bulktrkr captcha pattern; Herblsuplements dark screenshot"
+ },
+ {
+  "observation": "Each listing card has three stat tiles on a light background: Score, Global Rank and Page Speed",
+  "category": "component",
+  "evidence": "slice_00/01 tiles labeled 'SCORE', 'GLOBAL RANK', 'PAGE SPEED'"
+ },
+ {
+  "observation": "Stat labels are uppercase small text with letter spacing",
+  "category": "typography",
+  "evidence": "slice_00 'GLOBAL RANK' in small letter-spaced caps; small ×18"
+ },
+ {
+  "observation": "Metric values are colored by threshold: green for high, orange for mid-range, red for low or zero, and dark for neutral rank figures",
+  "category": "color",
+  "evidence": "slice_00 '72/100' and '99%' green, '63/100' orange, '0%' red; slice_01 '45/100' red"
+ },
+ {
+  "observation": "Some listings show placeholder-like values, such as a global rank of 0 and a page speed of 0%",
+  "category": "copy",
+  "evidence": "slice_00 Homework-solutions '0' and '0%'; slice_01 Jamiesonmotors '0', '0%'"
+ },
+ {
+  "observation": "Domain names are shown capitalized as H3 card titles",
+  "category": "copy",
+  "evidence": "heading_outline 'Bulktrkr.com', 'Portal.oouagoiwoye.edu.ng'"
+ },
+ {
+  "observation": "The 'About Us' section sits on a white full-width band, with paragraph text limited to about 60% of the container width",
+  "category": "layout",
+  "evidence": "slice_01 About Us text wraps near x≈940 inside a container ending at 1254"
+ },
+ {
+  "observation": "The About copy is a single descriptive paragraph in muted gray at a larger size",
+  "category": "copy",
+  "evidence": "slice_01 paragraph beginning 'Our aim to make search engine optimization (SEO) easy...'"
+ },
+ {
+  "observation": "The footer is a dark navy full-width block with a two-column layout: Contact Info and Navigation",
+  "category": "layout",
+  "evidence": "background rgb(15,23,42) ×1; slice_01 footer columns"
+ },
+ {
+  "observation": "Footer text is light slate on the dark background",
+  "category": "color",
+  "evidence": "text color rgb(203,213,225) ×11"
+ },
+ {
+  "observation": "A thin divider separates the footer columns from a small copyright line",
+  "category": "layout",
+  "evidence": "slice_01 'Copyright © 2020. H-educate All rights reserved.' under a rule"
+ },
+ {
+  "observation": "The footer navigation is a list with a single item",
+  "category": "dom",
+  "evidence": "ul 1, li 1; slice_01 'Home' under Navigation"
+ },
+ {
+  "observation": "Copy is short, with no emoji, exclamation marks or em dashes",
+  "category": "copy",
+  "evidence": "text_stats words 210, emoji 0, exclamations 0, em_dashes 0"
+ },
+ {
+  "observation": "Motion is limited to transitions; there are no animations, transforms or backdrop blur",
+  "category": "decoration",
+  "evidence": "transitions 6, animations 0, transforms 0, backdrop_blur 0"
+ },
+ {
+  "observation": "The page has very few ARIA attributes and no structured data",
+  "category": "dom",
+  "evidence": "aria_attrs 1; jsonld_blocks 0"
+ },
+ {
+  "observation": "Meta tags are minimal: charset, viewport and description only",
+  "category": "dom",
+  "evidence": "meta_names ['charset','viewport','description']"
+ },
+ {
+  "observation": "Inline style attributes are used sparingly",
+  "category": "dom",
+  "evidence": "inline_style_attrs 3"
+ },
+ {
+  "observation": "The palette is blue on cool neutrals, with green, orange and red appearing only as status colors on the metrics",
+  "category": "color",
+  "evidence": "top colors are blues rgb(29,78,216)/rgb(37,99,235) and slate grays; status colors visible only in the stat tiles"
+ }
+]

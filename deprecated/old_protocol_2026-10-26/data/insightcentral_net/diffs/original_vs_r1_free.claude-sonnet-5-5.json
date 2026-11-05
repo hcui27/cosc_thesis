@@ -1,0 +1,248 @@
+[
+ {
+  "observation": "Page theme is light in A: a pale blue-grey page background with white cards. B is dark: a near-black navy body background with slightly lighter navy panels.",
+  "category": "color",
+  "evidence": "A top backgrounds: rgb(255,255,255) x36 and rgb(240,243,245) x28; A body_color rgb(56,58,59). B body_bg rgb(11,17,24), panels rgb(19,28,39) x11 and rgb(26,38,52) x8, body_color rgb(232,238,245).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a royal-blue accent (rgb(0,95,217)) for thread titles, links and the Join Community button. B uses a cyan accent (rgb(39,209,255)) for buttons, highlighted headline words, eyebrow text and avatar initials.",
+  "category": "color",
+  "evidence": "A top_text_colors rgb(0,95,217) x129. B top_backgrounds rgb(39,209,255) x5, top_text_colors rgb(39,209,255) x8.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A opens with a full-width photographic banner (three Honda Insight cars) behind the logo, search bar and account icons. B opens with a plain dark top bar and a text-led hero, with no banner image.",
+  "category": "imagery",
+  "evidence": "A images[0] insightcentral_net_banner_2880w.jpg at 1440x180, y=0. B has no banner; its first image is the logo, 130x28 at y=18.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header places the logo over the banner image, with a 'Search Community' field, a NEW badge icon, a list icon, a Login/Join link and a kebab menu. B's header is a thin bar with the logo on the left and 'What's New' and 'Forums' links, plus a pill 'Login / Join' button on the right. B has no search field.",
+  "category": "layout",
+  "evidence": "A screenshot slice 0 shows the search input in the header and the logo rect at 209x45. B has nav=1 and 26 anchors, the logo at 130x28, and primary_button 'Login / Join' with radius 999px and bg rgb(39,209,255).",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a large centered hero with an eyebrow pill, a 64px bold H1 with two words in cyan, a subtitle, two CTA buttons and a three-stat row. A has no hero section and starts straight into content cards and a sidebar.",
+  "category": "layout",
+  "evidence": "B h1 'The ultimate Honda Insight forum', font_size 64px, weight 700, text_align center. A h1_count 0, h1 null.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has no H1, and its headings are only two H3s. B has one H1, four H2s and three H3s in a hierarchical outline.",
+  "category": "semantic-structure",
+  "evidence": "A heading_outline: H3 'Our Top Forums', H3 'Top Contributors this Month'. B heading_outline: H1, H2 'Latest conversations', H3 x3 card titles, H2 'Top Contributors this Month', H2 'Recommended Communities', H2 'Join now to ask and comment!'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses semantic landmarks (nav, main, four sections, header, footer). A has only one header, one section and one footer, with no nav or main.",
+  "category": "semantic-structure",
+  "evidence": "B semantic: nav 1, main 1, section 4. A semantic: nav 0, main 0, section 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's DOM is deeply nested and div/span heavy, with many scripts, link tags, iframes and inline styles. B's DOM is minimal, with no scripts, no stylesheets and no inline style attributes.",
+  "category": "dom-structure",
+  "evidence": "A: div 445, span 219, a 260, script 55, stylesheets 23, inline_style_attrs 73, iframe 2. B: div 23, span 16, a 26, scripts 0, stylesheets 0, inline_style_attrs 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's head carries rich metadata (og, twitter, fb:app_id, theme-color, origin-trial tags, JSON-LD). B's head carries only charset, viewport and description.",
+  "category": "dom-structure",
+  "evidence": "A meta_names has 27 entries and jsonld_blocks 1. B meta_names is charset, viewport, description; jsonld_blocks 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page titles and language attributes differ. A's title is the short 'Honda Insight Forum' with lang en-US. B's title is 'Honda Insight Forum Since 2003 | InsightCentral' with lang en.",
+  "category": "copy",
+  "evidence": "A_facts title and lang 'en-US'; B_facts title and lang 'en'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B is styled with semantic or utility-free short class names, only 50 class uses across 21 unique classes. A has 1199 class uses across 254 unique classes, a framework-style naming system.",
+  "category": "dom-structure",
+  "evidence": "A classes total 1199, unique 254, tailwind_like_fraction 0.042. B total 50, unique 21, tailwind_like_fraction 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's typography is Helvetica Neue at a 15px base, with Arial as a fallback on some elements and Font Awesome icon fonts. B uses a single system-ui stack at a 16px base and no icon fonts.",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: helvetica neue 983, arial 81, font awesome 5 pro 5, font awesome 5 brands 1; body_font_size 15px, line-height 22.5px. B: system-ui 131; body 16px, line-height 25.6px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's headline typography is large and hierarchical, with a 64px H1 and 25.6px H2s. A's heading text is small. Its sidebar card title 'Honda Insight Forum' renders around 24px, and thread titles are bold blue about 18px.",
+  "category": "typography",
+  "evidence": "B h1 font_size 64px and h2 font_size 25.6px. A has no H1 or H2 (h1/h2 null), and its titles are visible as bold blue links in slice 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a small uppercase, letter-spaced eyebrow label inside a bordered pill ('HONDA INSIGHT FORUM · SINCE 2003') above the H1. A shows 'Since 2003' as plain grey small text under the sidebar title.",
+  "category": "typography",
+  "evidence": "B slice 0 shows the eyebrow pill with cyan tracked caps. A slice 0 shows 'Since 2003' as plain text in the sidebar card.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The forum description is treated as a hero subtitle in B. In A it is short body text inside a sidebar card, with slightly different wording.",
+  "category": "copy",
+  "evidence": "A: 'We're the ultimate Honda Insight forum to talk about Honda's hybrid car and its fuel economy and specs!'. B: 'Talk about Honda's hybrid car and its fuel economy and specs with the community that's been doing it since 2003.'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A presents the stats (414K posts, 180.3K members) in a two-column block inside the sidebar card with a vertical divider. B presents three centered stats under the hero CTAs, adding a third '2003 — and still going'.",
+  "category": "component",
+  "evidence": "A slice 0 shows 414K and 180.3K separated by a divider. B slice 0 shows 414K, 180.3K and 2003 with captions 'posts', 'members' and 'and still going'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a long 'Recommended for you' feed of about 25 thread rows, with category label, title, author, reply snippet and reply-count chip. B drops this feed entirely.",
+  "category": "component",
+  "evidence": "A slices 0-2 show rows from 'FoMoCo 3.3kWh Battery Module Testing' to 'WTB Windshield pillar arm clips' plus a 'Load More' button. B has 3 conversation cards and no list feed.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's feed has 'Recommended for you' and 'Full Forum Listing' links, and ends in a full-width 'Load More' button. B has no pagination or load-more control.",
+  "category": "component",
+  "evidence": "A slice 0 shows the 'Full Forum Listing >' link and slice 2 shows 'Load More'. B counts show buttons 0.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's three featured thread tiles are about 269px wide with different heights (269, 358 and 479px), with the title and meta overlaid on the photo. B's three conversation cards share equal 341x341 image areas, with the title and meta in a separate text panel below the photo.",
+  "category": "imagery",
+  "evidence": "A images rects 269x269, 269x358, 269x479 at y=207. B images rects 341x341 at y=858. B slice 0 shows titles below the images.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses object-fit-style square cropping on images whose natural ratios differ. The 700x700, 525x700 and 393x700 images all render at 341x341.",
+  "category": "imagery",
+  "evidence": "B images natural [700,700], [525,700], [393,700] with rects 341x341.",
+  "which_side": "B"
+ },
+ {
+  "observation": "A overlays a dark gradient scrim on its photo tiles, with white bold text and a small avatar badge, author name and a reply-bubble count on top. B places the author initial avatar, name and 'N replies' text in a separate card footer.",
+  "category": "decoration",
+  "evidence": "A slice 0 shows the text over the image with a letter badge, name and bubble icon. B slice 0 shows 'Bobhpete  9 replies' in the card footer.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Many thread thumbnails in A render as broken-image placeholders showing alt text in blue link style, at the right of the rows. B has no broken images.",
+  "category": "imagery",
+  "evidence": "A images with empty file and natural [0,0], such as alt 'FoMoCo 3.3kWh Battery Module Testing' and 'Unknown part', and visible alt text in slice 0 and 1. B images all have non-zero natural sizes.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses user avatars throughout the feed: 48px square photos or colored letter tiles (orange 't', salmon 'S', purple 'J' and others) with small verified-badge overlays. B shows avatars only as small cyan italic initials in dark circles, apart from one photo (mudder).",
+  "category": "imagery",
+  "evidence": "A avatar images 96x96 natural at 48x48, with colored tiles visible in slices 0-2. B images list has only 189418.jpg at 48x48 as a user photo; the others are initial circles.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's image alt texts are mostly empty, including the content photos and community avatars. A has alt text on most images, although 5 are missing it.",
+  "category": "imagery",
+  "evidence": "B images alt '' for all except the logo 'InsightCentral' (counts alt_missing 0 despite empty alts). A alt_missing 5, with descriptive alts such as 'Community avatar for DIY Electric Car Forums'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's 'Top Contributors this Month' is a vertical list in a sidebar card with a 'View All →' link. B lays the contributors out as three horizontal cards in a row, with a pill 'View All' button on the right of the heading.",
+  "category": "layout",
+  "evidence": "A slice 0 shows a stacked list of hondarider90, mudder and Joule in the 300px-wide sidebar. B slice 1 shows three cards at x=186, 549 and 911.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has an 'Our Top Forums' sidebar card with five forum links and post-count and view-count stats. B has no equivalent forum-list component.",
+  "category": "component",
+  "evidence": "A heading_outline H3 'Our Top Forums' lists e.g. '131.7K / 24.8M'. B heading_outline has no such heading.",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's Recommended Communities are a short sidebar list with small 36px avatars. B shows them as three horizontal cards with 64px rounded-square logos and a 'NEW!' cyan badge on the third.",
+  "category": "component",
+  "evidence": "A avatar rects 36x36 at x=1018. B rects 64x64 at y=1886 and a NEW! badge visible in slice 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses a two-column layout: a main feed of about 842px and a sidebar of about 300px. B is a single centered column with 3-column card grids, with content from x=186 to x=1254.",
+  "category": "layout",
+  "evidence": "A cards at x=140-982 with the sidebar at x=1000-1300. B images at x=187, 550 and 912, with a 1068px-wide container. B display_grid 8 versus A display_grid 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a closing call-to-action panel, 'Join now to ask and comment!', with Facebook and Google pill buttons and an 'or sign up with email' link. A's sidebar has a single blue 'Join Community' button, and the social login buttons exist only as hidden or offscreen elements.",
+  "category": "component",
+  "evidence": "B slice 1 shows the panel with a large radius. A has 2 forms and a 'Continue with Google button' image at 16x17 px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a hero button pair: a filled cyan 'Join Community' and an outlined dark 'Browse Forums'. A has one full-width solid blue sidebar button with a person icon.",
+  "category": "component",
+  "evidence": "B slice 0 shows two pill buttons at y≈481. A slice 0 shows 'Join Community' at 1018-1282px wide with a 3px radius feel.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's corner radii are mostly small or none, with a few 8-15px cards and 39 pill elements. B's radii are larger, with 12 elements at 8-15px, 1 at 16px+ (the CTA panel), and pill-shaped buttons.",
+  "category": "decoration",
+  "evidence": "A buckets: 0=891, 1_7=115, 8_15=25, pill=39; primary_button radius 3px. B buckets: 0=104, 8_15=12, 16+=1, pill=13; primary_button radius 999px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses drop shadows widely on cards and tiles. B has none, and uses 1px borders and subtle tonal panels for separation.",
+  "category": "decoration",
+  "evidence": "A box_shadows 37. B box_shadows 0. B screenshot shows bordered dark cards.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a subtle radial cyan glow behind the hero, a translucent sticky-style header with backdrop blur and a gradient CTA panel. A uses gradients mainly as image scrims and has no blur.",
+  "category": "decoration",
+  "evidence": "B backdrop_blur 1, rgba(11,17,24,0.85) background on the header, gradient_backgrounds 2. A backdrop_blur 0, gradient_backgrounds 8.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A defines one animation and 11 transitions. B has no animations and 15 transitions.",
+  "category": "decoration",
+  "evidence": "A animations 1, transitions 11. B animations 0, transitions 15.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Copy volume differs a lot: A has about 643 words of live forum content (about 25 thread titles with authors and replies). B has about 225 words of marketing-style copy and section subtitles.",
+  "category": "copy",
+  "evidence": "A text_stats words 643, exclamations 6. B words 225, exclamations 2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B adds explanatory subtitles under each section heading ('See what members are talking about right now.', 'The members keeping the conversation going.', 'More places to geek out with fellow enthusiasts.'). A's headings have none.",
+  "category": "copy",
+  "evidence": "B slices 0-1 show grey one-line subtitles under the H2s. A headings are followed directly by content or 'View All' links.",
+  "which_side": "B"
+ },
+ {
+  "observation": "B shows reply counts as text ('9 replies', '2 replies'), while A shows them as a comment-bubble icon with a number in a grey chip. A also shows timestamps ('a moment ago') and last-replier info that B omits.",
+  "category": "copy",
+  "evidence": "A slice 0 rows: 'Mario · a moment ago · retepsnikrep replied a moment ago' with a chip '2'. B card footers: 'Bobhpete 9 replies'. A tag_counts time 25.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is a solid dark charcoal band with white links, an RSS icon, a legal paragraph and Fora and BBB logos on the right. B's footer shares the dark page background, separated by a thin top border, with muted grey links and legal text, and no logos.",
+  "category": "component",
+  "evidence": "A footer color rgb(35,35,36) x3 bg; slice 2 shows the 'fora' and 'BBB Accredited Business' logos. B footer text is the same legal copy in muted rgb(148,163,184) with a ul of 7 li links.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A relies on icon glyphs (Font Awesome: search, user, list, kebab, comment bubbles, eye icons, arrow chevrons). B uses almost no icon glyphs and relies on text and initials.",
+  "category": "decoration",
+  "evidence": "A fonts 'font awesome 5 pro' on 5 elements, 'brands' on 1; i tags 7. B i tags 5 (italic initials) and no icon fonts.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A holds interactive form elements and chrome (2 forms, 14 inputs, 2 buttons, 2 iframes). B has none, and its controls are plain anchors.",
+  "category": "dom-structure",
+  "evidence": "A tag_counts form 2, input 14, button 2, iframe 2. B tag_counts has no form, input, button or iframe; buttons 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page height is greater in A than in B because of the long feed, though both render at 1440px width.",
+  "category": "layout",
+  "evidence": "A page_height 3333; B page_height 2737; both page_width 1440.",
+  "which_side": "both"
+ }
+]

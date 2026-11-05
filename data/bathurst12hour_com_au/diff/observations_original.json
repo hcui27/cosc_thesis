@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "The page uses a near-black dark theme throughout. The body background is rgb(20,20,20) and the body text is light grey rgb(204,204,204). Panels and footer bands step through slightly lighter greys.",
+  "category": "color",
+  "evidence": "facts colors.body_bg rgb(20,20,20), body_color rgb(204,204,204); top_backgrounds rgb(34,34,34)x12, rgb(52,52,52)x6, rgb(58,58,58), rgb(47,47,47)"
+ },
+ {
+  "observation": "Links and accents use a light sky blue (rgb(119,191,255)) on the dark ground. It is the second most common text colour, on 90 elements. Dates, footer links, nav items and the 'Featured News' tag all use it.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(119,191,255) count 90; screenshot shows blue nav, dates 'Feb 04, 2020' and footer links"
+ },
+ {
+  "observation": "A saturated red (rgb(237,28,36)) is the secondary accent. It marks the active 'HOME' nav item with an underline, and it appears as a small vertical bar before section headings like 'FOLLOW US' and 'LINKS'.",
+  "category": "color",
+  "evidence": "primary_button color rgb(237,28,36); screenshot shows red HOME underline and red bar before FOLLOW US / LINKS"
+ },
+ {
+  "observation": "The header has a decorative diagonal band. Red and blue carbon-fibre-textured wedges sweep from the top right across a dark background. This echoes the Liqui-Moly logo colours and gives the header a motorsport feel.",
+  "category": "decoration",
+  "evidence": "Slice 0 header region at y~82-320 shows red/blue angled shapes; gradient_backgrounds is 0, so the effect is image-based"
+ },
+ {
+  "observation": "The header holds a large logo at left (135x156) and, beside it, an all-caps title lockup. The title is bold white, with a lighter-weight tagline under it and a bold date line under that. The result is three stacked tiers of text.",
+  "category": "typography",
+  "evidence": "headerlogo.png rect 135x156 at x160,y72; text 'LIQUI-MOLY BATHURST 12 HOUR', 'AUSTRALIA'S INTERNATIONAL ENDURANCE RACE', '31 JANUARY – 2 FEBRUARY 2020'"
+ },
+ {
+  "observation": "The single h1 renders at 50px, weight 700, in Montserrat, white, left-aligned. Its text content is empty in the DOM, so the visible title is probably an image or a pseudo-element.",
+  "category": "typography",
+  "evidence": "facts h1 font_size 50px, font_weight 700, font_family Montserrat; h1.text ''; heading_outline level 1 text ''"
+ },
+ {
+  "observation": "Open Sans is the dominant typeface, on 354 elements. Montserrat is used on only 3 elements, FontAwesome on 6 and Material Icons on 1. Body text is 14px with a 21px line-height.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Open Sans 354, FontAwesome 6, Montserrat 3, Material Icons 1; body_font_size 14px, line_height 21px"
+ },
+ {
+  "observation": "The heading outline is almost empty. It has one empty h1, one h4 ('FOLLOW US') and two h5 tags, with no h2 or h3. Story titles are not headings in the outline, and the hierarchy skips levels.",
+  "category": "semantic",
+  "evidence": "heading_outline lists only level1 '' and level4 'FOLLOW US'; tag_counts h4:1, h5:2; h2 null"
+ },
+ {
+  "observation": "The primary nav is a single horizontal bar of six uppercase, bold, blue links: HOME, NEWS, VIDEO, THE EVENT, THE RACE, BUSHFIRES APPEAL. The current item is red with an underline. The bar is a dark panel (~1120px wide) inset below the header.",
+  "category": "component",
+  "evidence": "Slice 0 nav at y~268-328; nav count 1; ul 7"
+ },
+ {
+  "observation": "A search icon button sits in the top-right corner, in a square dark grey tile. It uses a Material Icons glyph, not an SVG.",
+  "category": "component",
+  "evidence": "Slice 0 at x~1367-1427,y~22-82; Material Icons font on 1 element; svgs count 0"
+ },
+ {
+  "observation": "Facebook and Twitter icons appear twice: small ones in the header top right and larger ones in a 'Social Media' sidebar card. They are FontAwesome font glyphs, not SVGs.",
+  "category": "component",
+  "evidence": "FontAwesome 6 elements; svgs 0; screenshot icons at (1220,129),(1260,129) and (978,686),(1018,686)"
+ },
+ {
+  "observation": "The main content is a two-column layout. A ~743px news column sits at left and a ~357px sidebar at right (x≈928-1285). The sidebar holds a blank dark box, the 'FOLLOW US' heading and a social card.",
+  "category": "layout",
+  "evidence": "Image rect x155 w743; sidebar boxes at x928 w357 in slice 0; display_grid 0"
+ },
+ {
+  "observation": "The top of the sidebar is an empty dark rectangle with no visible content, probably a failed or blank ad/widget slot. Below it is an unused dark gap.",
+  "category": "layout",
+  "evidence": "Slice 0 box at x928-1285,y378-434 has no content; iframe count 2"
+ },
+ {
+  "observation": "The lead story is a large hero tile of 743x463. It shows a full-bleed race photo, a blue 'Featured News' label chip at the top left, and a white bold headline overlaid at the bottom ('Bathurst 12 Hour to return in 2022').",
+  "category": "component",
+  "evidence": "Bath12Hr-2020-MH3_1458-770x480.jpg rect 743x463 at y372; screenshot label and caption"
+ },
+ {
+  "observation": "Below the hero are two half-width image tiles (372px wide each) with bold white headlines overlaid on a darkened photo, set at the lower left. The two tiles differ in height: 250px and 294px. The left tile is shorter and leaves a dark gap beneath it.",
+  "category": "layout",
+  "evidence": "Bushfireappeal.jpg rect 372x250; M20_0362_fine rect 372x294; headlines 'More than $74,000 raised via #B12hr Bushfire...' and 'MotorActive matches massive donation to Bushfire relief'"
+ },
+ {
+  "observation": "Smaller story cards form a 2-column grid of horizontal cards, each with a ~195x154 thumbnail at left and a bold white title and blue date at right. The titles are truncated with an ellipsis ('Bushfire...', 'honour', 'breakthrough 12...').",
+  "category": "component",
+  "evidence": "Thumbnails 195x154 at x155 and x527; 7 article tags and 7 time tags; text 'First major do-nation lodged for B12hr Bushfire...' with 'Feb 04, 2020'"
+ },
+ {
+  "observation": "Headline text in the small cards is hyphenated mid-word ('do-nation', 'perfor-mance'). In one card the ellipsis of the clamped title collides with the date line ('12...' overlapping 'Feb 03, 2020').",
+  "category": "typography",
+  "evidence": "Slice 1 top: 'Gounon hails M-Sport perfor-mance after breakthrough 12...' overlapping 'Feb 03, 2020'"
+ },
+ {
+  "observation": "The card images are natural 385x305 JPGs scaled down to 195x154 or 372x294. The hero is a 770x480 file shown at 743x463. The first half-width tile uses a 2500x1683 source shrunk to 372x250, which is a very large source.",
+  "category": "imagery",
+  "evidence": "images list: Bushfireappeal.jpg natural 2500x1683 rect 372x250; thumbnails natural 385x305"
+ },
+ {
+  "observation": "The editorial images are photographic motorsport shots: cars on track, a podium, and a volunteer group. Most carry a dark gradient or overlay under the white text. Their alt attributes are empty strings, but no alt is missing.",
+  "category": "imagery",
+  "evidence": "alt '' for 6 of the story images; counts.alt_missing 0"
+ },
+ {
+  "observation": "The page is flat and sharp-cornered. Nearly all elements have 0px border radius (362 elements), with only 2 pill-shaped ones. There are just 3 box shadows and no gradients or backdrop blur.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 362, bucket_pill 2; box_shadows 3; gradient_backgrounds 0; backdrop_blur 0"
+ },
+ {
+  "observation": "Most interactive elements have transitions (125), and there are 2 animations and 7 transforms. This suggests hover effects on cards and links.",
+  "category": "decoration",
+  "evidence": "effects transitions 125, animations 2, transforms 7"
+ },
+ {
+  "observation": "There is a large empty dark area, about 600px tall, between the last story row and the footer. The story list ends around y≈1440 and the footer begins around y≈1800. The sidebar also ends early, leaving the right column blank.",
+  "category": "layout",
+  "evidence": "Slice 1 shows empty #141414 space from y≈141 to ≈750; page_height 3080"
+ },
+ {
+  "observation": "The footer is a stack of bands in different greys. The first band (rgb(34,34,34)) holds a 'LINKS' column. The second, lighter band (rgb(47,47,47)) holds the sponsor logos. A copyright strip sits at the bottom.",
+  "category": "layout",
+  "evidence": "Slice 1 backgrounds change at y≈750 and y≈1047; footer count 8"
+ },
+ {
+  "observation": "The 'LINKS' list has four blue text links (Contacts, Media, Privacy Policy, Terms & Conditions). They are separated by thin horizontal rules in a ~240px column, left aligned. The heading is bold uppercase with a red bar to its left.",
+  "category": "component",
+  "evidence": "Slice 1 y≈808-990; 'LINKS' preceded by red bar"
+ },
+ {
+  "observation": "The sponsor area is a rigid grid of 100x60 logos. Each row has 6 logos, at x=160,340,520,700,880,1060, a regular 180px pitch. There are 5 rows, and the last row holds only 2 logos (7 News, 7 Mate). All logos are white or monochrome on the grey band.",
+  "category": "imagery",
+  "evidence": "Footer images all natural 100x60; y values 2397,2492,2587,2682,2777; 32 sponsor logos listed from LiquiMoly.png to 2018-B12HR-Sponsor-7-Mate.png"
+ },
+ {
+  "observation": "Sponsor logo PNGs have descriptive alt text (e.g. 'NSW Government', 'Pirelli', 'Fox Sports'). This is unlike the editorial images, which have empty alt.",
+  "category": "semantic",
+  "evidence": "alt values 'Liqui-Moly','NSW Government','Meguiar's','Fox Sports'; counts alt_missing 0"
+ },
+ {
+  "observation": "The footer ends with a thin divider rule, a small 72x83 logo and a one-line copyright, '© 2021 LIQUI-MOLY Bathurst 12 Hour. All Rights Reserved'. This contrasts with the 2020 event dates in the header.",
+  "category": "copy",
+  "evidence": "footerlogo.png rect 72x83; slice 2 copyright text at y~413"
+ },
+ {
+  "observation": "The copy is short and news-driven. Titles are sentence-case headlines, dates use a 'Feb 04, 2020' format, and the page has 129 words with no exclamation marks or em-dashes. The only dash in the header is an en dash in the date range.",
+  "category": "copy",
+  "evidence": "text_stats words 129, exclamations 0, em_dashes 0; '31 JANUARY – 2 FEBRUARY 2020'"
+ },
+ {
+  "observation": "The sidebar 'Social Media' card has a medium-weight white title and a small grey paragraph ('Stay up-to-date with the latest #B12HR news via Facebook and Twitter.'). Two white icons sit below, in a mid-grey card (rgb(34,34,34)).",
+  "category": "component",
+  "evidence": "Slice 0 y≈527-755 card; hashtag text visible"
+ },
+ {
+  "observation": "Markup relies on many generic wrappers. There are 122 divs, 95 anchors and 8 header and 8 footer elements, which is a high count for one page. It also has 7 article, 5 aside and 2 section tags. Only 1 main and 1 nav are present.",
+  "category": "semantic",
+  "evidence": "tag_counts div 122, a 95, header 8, footer 8, article 7, aside 5, section 2, main 1, nav 1"
+ },
+ {
+  "observation": "Class naming is custom or theme-based, not utility-based. There are 480 class uses across 174 unique names, and the Tailwind-like fraction is 0.004. Inline style attributes appear 10 times.",
+  "category": "semantic",
+  "evidence": "classes total 480, unique 174, tailwind_like_fraction 0.004; inline_style_attrs 10"
+ },
+ {
+  "observation": "The page loads heavy tooling: 48 scripts, 13 stylesheets, 25 link tags and 4 style blocks. It also carries 1 JSON-LD block and a full set of OG/Twitter/robots metadata. The html lang is en-AU.",
+  "category": "semantic",
+  "evidence": "counts scripts 48, stylesheets 13; jsonld_blocks 1; meta_names include og:*, twitter:card, robots; lang en-AU"
+ },
+ {
+  "observation": "Display flex is used on only 4 elements and grid on none. Layout is mostly done with floats or inline-block and fixed pixel widths on a 1440px canvas, with content between about x=155 and x=1285.",
+  "category": "layout",
+  "evidence": "layout display_flex 4, display_grid 0, page_width 1440; content rects x155–1285"
+ },
+ {
+  "observation": "The title string 'Liqui-Moly Bathurst 12 Hour - Australia's International Endurance Race' is long and descriptive. The page has 2 iframes, one probably for the sidebar social or ad widget. The sidebar's top box is empty, consistent with that.",
+  "category": "semantic",
+  "evidence": "facts title; tag_counts iframe 2; empty sidebar box in screenshot"
+ },
+ {
+  "observation": "Text hierarchy on the cards relies on weight and colour contrast alone: bold white titles (~14-16px), with the date in regular blue. Overlay headlines on the large tiles are about 20px bold, with tight line spacing.",
+  "category": "typography",
+  "evidence": "Slice 0 headline sizes; white text count 122 vs blue 90"
+ },
+ {
+  "observation": "Section headings are flat, bold, uppercase white text with a short red vertical tick as a leading mark ('FOLLOW US', 'LINKS'). This is a repeated motif and the only ornament apart from the header wedge.",
+  "category": "decoration",
+  "evidence": "Slice 0 y≈492 and slice 1 y≈808 headings with red tick at left"
+ }
+]

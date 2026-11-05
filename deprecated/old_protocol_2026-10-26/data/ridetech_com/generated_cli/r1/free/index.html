@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ridetech | Performance Suspension Specialist</title>
+<meta name="description" content="Ridetech manufactures air suspension, coil-overs, shocks, control arms and sway bars for muscle cars, trucks, Corvettes and hot rods.">
+<link rel="icon" href="images/ridetech-logo-red-black-icon.png">
+<style>
+:root{--red:#e31d3c;--red-d:#b8132d;--ink:#15171a;--ink2:#23262b;--mute:#6b7078;--line:#e4e6e9;--bg:#fff;--soft:#f5f6f7;--r:10px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:.9rem;padding:.85em 1.6em;border-radius:6px;border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--red-d)}
+.btn.ghost{background:transparent;border:2px solid #fff}
+.btn.ghost:hover{background:#fff;color:var(--ink)}
+
+/* top bar */
+.topbar{background:var(--ink);color:#d7d9dc;font-size:.85rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:7px;padding-bottom:7px}
+.topbar nav{display:flex;gap:20px;flex-wrap:wrap}
+.topbar a:hover{color:#fff}
+.topbar .cta{color:#fff;font-weight:600}
+
+/* header */
+header.main{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+header.main .wrap{display:flex;align-items:center;gap:24px;min-height:72px}
+.logo img{height:46px;width:auto}
+.menu{display:flex;gap:4px;margin-left:auto;align-items:center}
+.menu>li{list-style:none;position:relative}
+.menu>li>a{display:block;padding:26px 14px;font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.05em}
+.menu>li:hover>a,.menu>li:focus-within>a{color:var(--red)}
+.drop{position:absolute;left:0;top:100%;min-width:260px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);box-shadow:0 14px 30px rgba(0,0,0,.12);padding:8px 0;display:none;max-height:75vh;overflow:auto}
+.menu>li:hover .drop,.menu>li:focus-within .drop{display:block}
+.drop a{display:block;padding:7px 18px;font-size:.92rem}
+.drop a:hover{background:var(--soft);color:var(--red)}
+.tools{display:flex;gap:14px;align-items:center;font-size:.9rem;font-weight:600}
+.tools a:hover{color:var(--red)}
+.cart{background:var(--soft);padding:.4em .8em;border-radius:6px}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:1rem;cursor:pointer}
+
+/* hero */
+.hero{position:relative;background:var(--ink);overflow:hidden}
+.slides{display:flex;transition:transform .6s ease}
+.slide{min-width:100%;position:relative;aspect-ratio:16/6;max-height:560px}
+.slide img{width:100%;height:100%;object-fit:cover}
+.dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:10px}
+.dots button{width:12px;height:12px;border-radius:50%;border:2px solid #fff;background:transparent;cursor:pointer;padding:0}
+.dots button[aria-current=true]{background:var(--red);border-color:var(--red)}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:0;width:44px;height:44px;border-radius:50%;font-size:1.4rem;cursor:pointer}
+.arrow:hover{background:var(--red)}
+.arrow.prev{left:14px}.arrow.next{right:14px}
+
+.ship{background:var(--red);color:#fff;text-align:center;padding:16px 20px}
+.ship h3{font-size:1.2rem;letter-spacing:.14em}
+.ship p{font-size:.95rem;opacity:.95;text-transform:capitalize}
+
+section{padding:72px 0}
+h2.title{font-size:clamp(1.6rem,3vw,2.2rem);text-transform:uppercase;letter-spacing:.06em;text-align:center;margin-bottom:8px}
+h2.title::after{content:"";display:block;width:56px;height:4px;background:var(--red);margin:12px auto 40px}
+
+/* vehicles */
+.vehicles{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.vehicle{background:var(--ink);border-radius:var(--r);padding:22px 10px 18px;text-align:center;color:#fff;font-weight:700;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column;justify-content:space-between;gap:8px}
+.vehicle img{width:100%;aspect-ratio:16/9;object-fit:contain}
+.vehicle:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(227,29,60,.3)}
+.vehicle:hover span{color:#ff6b82}
+
+/* products */
+.products{background:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.1);border-color:var(--red)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover}
+.card span{padding:14px 16px;font-weight:700;font-size:.95rem;line-height:1.35}
+.card.plain{justify-content:center;min-height:90px;border-left:4px solid var(--red)}
+.card.plain span{padding:20px 16px}
+
+/* catalog */
+.catalog{background:linear-gradient(180deg,#3a3d43,#0b0b0c);color:#fff}
+.catalog .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.catalog img{max-width:340px;margin:auto;filter:drop-shadow(0 20px 30px rgba(0,0,0,.6));transition:transform .3s}
+.catalog img:hover{transform:rotate(-2deg) scale(1.03)}
+.catalog h2{font-size:clamp(3rem,7vw,5rem);line-height:1;color:var(--red);letter-spacing:.05em}
+.catalog h3{font-size:1.8rem;margin-bottom:24px;text-transform:uppercase;letter-spacing:.08em}
+.warranty{margin-top:22px;display:inline-block;color:#ff8da0;font-weight:600;border-bottom:1px solid currentColor}
+
+/* news */
+.news{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.news a{border:1px solid var(--line);border-left:4px solid var(--red);border-radius:var(--r);padding:26px;display:block;transition:box-shadow .2s}
+.news a:hover{box-shadow:0 10px 26px rgba(0,0,0,.1)}
+.news h3{margin-bottom:8px;font-size:1.15rem}
+.news p{color:var(--mute);font-size:.95rem}
+.more{text-align:center;margin-top:32px}
+
+/* about */
+.about{position:relative;color:#fff;text-align:center;background:#222 url(images/para-bg.jpg) center/cover fixed}
+.about::before{content:"";position:absolute;inset:0;background:rgba(10,12,16,.72)}
+.about .wrap{position:relative;max-width:860px}
+.about h2{font-size:clamp(2rem,4vw,3rem)}
+.about h4{color:var(--red);text-transform:uppercase;letter-spacing:.2em;margin-bottom:22px;font-size:1rem}
+.about p{font-size:1.1rem;color:#e8eaed;margin-bottom:34px}
+.about h3{font-size:1.2rem;margin-bottom:16px}
+.social{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:26px}
+.social a{border:1px solid rgba(255,255,255,.5);padding:.45em 1.1em;border-radius:99px;font-size:.9rem;font-weight:600}
+.social a:hover{background:var(--red);border-color:var(--red)}
+
+/* newsletter */
+.signup{background:var(--soft);padding:56px 0}
+.signup h2{text-align:center;text-transform:uppercase;letter-spacing:.06em;margin-bottom:22px}
+.signup form{display:grid;grid-template-columns:1fr 1fr 1.4fr auto;gap:12px;max-width:960px;margin:auto}
+.signup input{padding:.8em 1em;border:1px solid #ccd0d4;border-radius:6px;font:inherit;width:100%}
+.signup input:focus{outline:3px solid rgba(227,29,60,.35);border-color:var(--red)}
+
+/* footer */
+footer{background:#0b0b0c url(images/footer-grade-1.jpg) top/100% 100% no-repeat;color:#b9bdc3;padding:64px 0 0;font-size:.92rem}
+footer .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px}
+footer h4{color:#fff;text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px;font-size:.95rem}
+footer li{list-style:none;margin-bottom:7px}
+footer a:hover{color:#fff;text-decoration:underline}
+footer .copy{border-top:1px solid #2a2d32;margin-top:44px;padding:20px 0;display:flex;justify-content:space-between;color:#8a8f96}
+
+@media(max-width:1000px){
+ .menu,.tools .hide-s{display:none}
+ .burger{display:block}
+ .menu.open{display:block;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px 16px;max-height:80vh;overflow:auto}
+ .menu.open>li>a{padding:12px 0;border-bottom:1px solid var(--line)}
+ .menu.open .drop{display:block;position:static;box-shadow:none;border:0;max-height:none;padding:0 0 6px 12px}
+ .vehicles{grid-template-columns:repeat(3,1fr)}
+ footer .cols{grid-template-columns:1fr 1fr}
+ .signup form{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+ section{padding:52px 0}
+ .slide{aspect-ratio:4/3}
+ .vehicles{grid-template-columns:repeat(2,1fr)}
+ .catalog .wrap,.news{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+ .signup form{grid-template-columns:1fr}
+ footer .cols{grid-template-columns:1fr}
+ footer .copy{flex-direction:column;gap:6px}
+ .topbar nav:last-child{display:none}
+ .about{background-attachment:scroll}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body id="top">
+
+<div class="topbar"><div class="wrap">
+ <nav><a href="tel:812.481.4787">📞 812.481.4787</a><a href="#newsletter">Sign Up for News!</a></nav>
+ <nav><a class="cta" href="https://www.ridetech.com/information/free-catalog/">Get a FREE Catalog</a><a href="https://www.ridetech.com/account/">Login / Register</a></nav>
+</div></div>
+
+<header class="main"><div class="wrap">
+ <a class="logo" href="https://www.ridetech.com/" aria-label="Ridetech home"><img src="images/ridetech-logo-red-black-icon.png" alt="Ridetech"></a>
+ <button class="burger" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+ <ul class="menu" id="menu">
+  <li><a href="https://www.ridetech.com/product-category/products/">Products</a>
+   <div class="drop">
+    <a href="https://www.ridetech.com/product-category/products/suspension_packages/">Suspension Packages</a>
+    <a href="https://www.ridetech.com/product-category/products/air_suspension/">– Air Suspension</a>
+    <a href="https://www.ridetech.com/product-category/products/streetgrip/">– StreetGRIP Suspension</a>
+    <a href="https://www.ridetech.com/product-category/products/coil_overs/">– Coil-Over Suspension</a>
+    <a href="https://www.ridetech.com/product-category/products/shocks/">Shock Absorbers</a>
+    <a href="https://www.ridetech.com/product-category/products/air_suspension/air-ride-suspension-control-systems/">RidePRO-E5 Air Suspension Control</a>
+    <a href="https://www.ridetech.com/product-category/products/tubular_control_arms/">Tubular Control Arms</a>
+    <a href="https://www.ridetech.com/product-category/products/4_links/">4-Links</a>
+    <a href="https://www.ridetech.com/product-category/products/sway_bars/">MUSCLEbar Sway Bars</a>
+    <a href="https://www.ridetech.com/product-category/products/components/bushings/">Bushings</a>
+    <a href="https://www.ridetech.com/product-category/products/r_joint/">R-Joint Rod Ends</a>
+    <a href="https://www.ridetech.com/product-category/applications/load_leveling/">Load Leveling</a>
+    <a href="https://www.ridetech.com/product-category/products/tru_turn/">Tru Turn</a>
+    <a href="https://www.ridetech.com/product-category/products/tigercage/">TigerCage</a>
+    <a href="https://www.ridetech.com/product-category/products/components/">Components</a>
+    <a href="https://www.ridetech.com/product-category/products/tools_accessories/">Tools and Accessories</a>
+    <a href="https://www.ridetech.com/product-category/products/steering_and_brakes/">Steering</a>
+    <a href="https://www.ridetech.com/product-category/products/brakes_rear_ends/">Brakes &amp; Rear Ends</a>
+    <a href="https://www.ridetech.com/product-category/products/apparel_and_signs/">Apparel</a>
+   </div></li>
+  <li><a href="https://www.ridetech.com/product-category/applications/">Applications</a>
+   <div class="drop">
+    <a href="https://www.ridetech.com/product-category/applications/musclecars_classics/">Muscle Cars and Classics</a>
+    <a href="https://www.ridetech.com/product-category/applications/streetrods_customs/">Street Rods &amp; Customs</a>
+    <a href="https://www.ridetech.com/product-category/applications/trucks/">Trucks</a>
+    <a href="https://www.ridetech.com/product-category/applications/corvettes/">Corvettes</a>
+    <a href="https://www.ridetech.com/product-category/applications/late-model-musclecars/">Late Model Muscle Cars</a>
+    <a href="https://www.ridetech.com/product-category/applications/load_leveling/">Load Leveling</a>
+   </div></li>
+  <li><a href="https://www.ridetech.com/info/">News</a>
+   <div class="drop">
+    <a href="https://www.ridetech.com/info/">Latest Updates</a>
+    <a href="https://www.ridetech.com/information/about/">About Ridetech</a>
+    <a href="https://www.ridetech.com/calendar/">Event Calendar</a>
+    <a href="https://www.ridetech.com/information/customer-rides/">Customer Rides</a>
+    <a href="https://www.ridetech.com/jobs/">Current Job Openings</a>
+   </div></li>
+  <li><a href="https://www.ridetech.com/tech/">Tech</a>
+   <div class="drop">
+    <a href="https://www.ridetech.com/tech/">Tech Articles</a>
+    <a href="https://www.ridetech.com/tech/ridetech-strongarm-dimensions/">RideTech StrongARM Dimensions</a>
+    <a href="https://www.ridetech.com/tech/spring-rate-calculator/">Spring Rate Calculator</a>
+    <a href="https://www.ridetech.com/tech/vehicle-weights/">Vehicle Weight Database</a>
+    <a href="https://www.ridetech.com/tech/faq/">Frequently Asked Questions</a>
+    <a href="https://www.ridetech.com/tech/1000001-mile-warranty/">1,000,001 Mile Warranty</a>
+    <a href="https://www.ridetech.com/tech/coilover-trade-in/">Shock Absorber Trade-In</a>
+    <a href="https://www.ridetech.com/tech/air-controller-instructions/">Controller Software Downloads</a>
+    <a href="https://www.ridetech.com/category/video/">Videos</a>
+   </div></li>
+  <li><a href="https://www.ridetech.com/dealers/">Dealers</a></li>
+  <li><a href="https://www.ridetech.com/forums/forum/tech-products/">Forum</a></li>
+  <li><a href="https://www.ridetech.com/garage/">Projects</a></li>
+  <li><a href="https://www.ridetech.com/industrial/">Industrial</a></li>
+  <li><a href="https://www.ridetech.com/jobs/">Careers</a></li>
+ </ul>
+ <div class="tools"><a class="cart" href="https://www.ridetech.com/cart/" aria-label="Cart, no products">🛒 $0.00</a></div>
+</div></header>
+
+<main>
+<div class="hero" aria-roledescription="carousel" aria-label="Featured">
+ <div class="slides" id="slides">
+  <a class="slide" href="https://www.ridetech.com/product-category/applications/trucks/2007_2013_gm_silverado/"><img src="images/21-silverado-copy.jpg" alt="Ridetech suspension for 2007–2013 GM Silverado"></a>
+  <a class="slide" href="https://www.ridetech.com/product-category/products/air-suspension/air-ride-suspension-control-systems/"><img src="images/21-ridepro-e5.jpg" alt="RidePRO-E5 air suspension control" loading="lazy"></a>
+  <a class="slide" href="https://www.ridetech.com/new-suspension-tech-for-the-ford-falcon-better-ride-and-handling/"><img src="images/falcon.jpg" alt="New suspension tech for the Ford Falcon" loading="lazy"></a>
+  <a class="slide" href="https://www.ridetech.com/product/camaro-firebird-subframe-connectors/"><img src="images/camaro-subframe-connector-home-page-banner.jpg" alt="Camaro and Firebird subframe connectors" loading="lazy"></a>
+ </div>
+ <button class="arrow prev" aria-label="Previous slide">‹</button>
+ <button class="arrow next" aria-label="Next slide">›</button>
+ <div class="dots" id="dots"></div>
+</div>
+
+<div class="ship">
+ <h3>FREE SHIPPING</h3>
+ <p>Free ground shipping to the continental U.S. for orders of $100 or more</p>
+</div>
+
+<section id="vehicle"><div class="wrap">
+ <h2 class="title">Shop by Vehicle</h2>
+ <div class="vehicles">
+  <a class="vehicle" href="https://www.ridetech.com/product-category/applications/musclecars_classics/"><img src="images/muscle-car.png" alt=""><span>Muscle Cars and Classics</span></a>
+  <a class="vehicle" href="https://www.ridetech.com/product-category/applications/late-model-musclecars/"><img src="images/modern-muscle.png" alt=""><span>Late Model Muscle Cars</span></a>
+  <a class="vehicle" href="https://www.ridetech.com/product-category/applications/trucks/"><img src="images/truck.png" alt=""><span>Trucks</span></a>
+  <a class="vehicle" href="https://www.ridetech.com/product-category/applications/streetrods_customs/"><img src="images/hot-rod.png" alt=""><span>Street Rods and Customs</span></a>
+  <a class="vehicle" href="https://www.ridetech.com/product-category/applications/corvettes/"><img src="images/corvette.png" alt=""><span>Corvettes</span></a>
+ </div>
+</div></section>
+
+<section class="products" id="products"><div class="wrap">
+ <h2 class="title">Shop by Product</h2>
+ <div class="grid">
+  <a class="card" href="https://www.ridetech.com/product-category/products/suspension_packages/"><img src="images/categories-Camaro_coil-over_systemt_r2ik-jd-500x534-1-300x300.jpg" alt="" loading="lazy"><span>Suspension Packages</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/streetgrip/"><img src="images/categories-streetgrip-300x300.jpg" alt="" loading="lazy"><span>Streetgrip Suspension</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/air_suspension/air-ride-suspension-control-systems/"><img src="images/ridepro-e5-cat-scaled-300x300.jpg" alt="" loading="lazy"><span>Air Ride Suspension Control Systems</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/coil_overs/"><img src="images/categories-coilovers-300x300.jpg" alt="" loading="lazy"><span>Coilovers</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/air_suspension/shockwaves/"><img src="images/categories-SKWs-scaled-1-300x300.jpg" alt="" loading="lazy"><span>ShockWave Integrated Air Springs and Shocks</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/shocks/"><img src="images/categories-q-series-300x300.jpg" alt="" loading="lazy"><span>Shock Absorbers</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/r_joint/"><img src="images/products-R-Joint_n8gx-pn-300x300.jpg" alt="" loading="lazy"><span>R-Joint Rod Ends</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/tubular_control_arms/"><img src="images/55_57-upper-arms-pair-scaled-300x300.jpg" alt="" loading="lazy"><span>Tubular Control Arms</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/sway_bars/"><img src="images/products-a_body_front_w_hardware_08q7-74_9ko2-m7_kxvs-qr_qjar-x8-scaled-300x300.jpg" alt="" loading="lazy"><span>MUSCLEbar Sway Bars</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/4_links/"><img src="images/categories-bolt-on-4-link-300x300.jpg" alt="" loading="lazy"><span>4-Links</span></a>
+  <a class="card" href="https://www.ridetech.com/product-category/products/4_links/universal-4-links/"><img src="images/products-4-link_parallel_web-scaled-300x300.jpg" alt="" loading="lazy"><span>Universal 4-Links</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/load_leveling_systems/leveltow-kits/"><span>LevelTow Kits</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/tru_turn/"><span>Tru Turn</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/tigercage/"><span>TigerCage</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/air_suspension/coolride/"><span>CoolRide – Air Spring and Shock Kits</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/components/"><span>Components</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/air_suspension/airoverleaf/"><span>AIRoverLeaf</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/steering_and_brakes/"><span>Steering</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/tools_accessories/tools/"><span>Tools</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/brakes_rear_ends/"><span>Brakes and Rear Ends</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/apparel_and_signs/"><span>Apparel</span></a>
+  <a class="card plain" href="https://www.ridetech.com/product-category/products/components/bushings/"><span>Bushings</span></a>
+ </div>
+</div></section>
+
+<section class="catalog"><div class="wrap">
+ <a href="https://www.ridetech.com/information/free-catalog/"><img src="images/2019-catalog-cover-for-flipbook.png" alt="Ridetech product catalog cover"></a>
+ <div>
+  <h2>FREE</h2>
+  <h3>Product Catalog</h3>
+  <a class="btn" href="https://www.ridetech.com/information/free-catalog/">Request a Catalog</a><br>
+  <a class="warranty" href="https://www.ridetech.com/tech/1000001-mile-warranty/">See our 1,000,001 Mile Warranty →</a>
+ </div>
+</div></section>
+
+<section id="news"><div class="wrap">
+ <h2 class="title">Latest News</h2>
+ <div class="news">
+  <a href="https://www.ridetech.com/salt-lake-city-goodguys-car-show-info-photo-gallery/">
+   <h3>Salt Lake City GoodGuys Car show Info &amp; Photo Gallery.</h3>
+   <p>When: May 21 – 23, 2021 Where: Utah State Fairpark The 2nd RaceDeck GoodGuys […]</p></a>
+  <a href="https://www.ridetech.com/great-times-at-the-c-10-nationals-americas-largest-truck-event/">
+   <h3>Great Times at the C-10 Nationals – America’s Largest truck event!</h3>
+   <p>The C10 Nationals is the world’s largest Chevrolet &amp; GMC Truck &amp; SUV event. Held […]</p></a>
+ </div>
+ <div class="more"><a class="btn" href="https://www.ridetech.com/info/">View all news</a></div>
+</div></section>
+
+<section class="about"><div class="wrap">
+ <h2>ridetech.com</h2>
+ <h4>Performance Suspension Specialist</h4>
+ <p>Ridetech manufactures exciting suspension systems that improve the handling and ride quality of your muscle car, truck, Corvette or hot rod. From restorations and show cars, to high-speed autocross and track day cars, Ridetech offers a wide range of premium products including air suspension systems (air ride), coil-overs, shock absorbers, coil and leaf springs, tubular control arms, roll bars, sway bars and much more.</p>
+ <h3>Don’t see what you’re looking for? Let us know!</h3>
+ <a class="btn" href="mailto:sales@ridetech.com">Email Sales</a>
+ <div class="social">
+  <a href="http://www.facebook.com/ridetech">Facebook</a>
+  <a href="http://instagram.com/ridetechsuspension">Instagram</a>
+  <a href="http://www.youtube.com/ridetechtv/">YouTube</a>
+  <a href="mailto:sales@ridetech.com">Email</a>
+  <a href="tel:812-481-4787">Call</a>
+ </div>
+</div></section>
+
+<div class="signup" id="newsletter"><div class="wrap">
+ <h2>Get Connected</h2>
+ <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks!'">
+  <input name="first" placeholder="First Name" aria-label="First name" autocomplete="given-name">
+  <input name="last" placeholder="Last Name" aria-label="Last name" autocomplete="family-name">
+  <input name="email" type="email" placeholder="Email address" aria-label="Email address" autocomplete="email" required>
+  <button class="btn" type="submit">Sign Up</button>
+ </form>
+</div></div>
+</main>
+
+<footer><div class="wrap">
+ <div class="cols">
+  <div>
+   <h4>Contact Info</h4>
+   <p><strong>Phone:</strong> <a href="tel:812.481.4787">812.481.4787</a><br>
+   <strong>Fax:</strong> 812.634.6632<br>
+   <strong>Hours:</strong> Mon – Fri 8:00am – 6:00pm EST</p><br>
+   <p>350 S. St. Charles St<br>Jasper, Indiana, 47546<br><a href="mailto:sales@ridetech.com">sales@ridetech.com</a></p>
+  </div>
+  <div><h4>Information</h4><ul>
+   <li><a href="https://www.ridetech.com/info/">News</a></li>
+   <li><a href="https://www.ridetech.com/information/about/">About Ridetech</a></li>
+   <li><a href="https://www.ridetech.com/jobs/">Job Openings</a></li>
+   <li><a href="https://www.ridetech.com/dealers/">Dealers</a></li>
+   <li><a href="https://www.ridetech.com/information/general-policies/">General Policies</a></li>
+   <li><a href="https://www.ridetech.com/information/warranties-returns/">Warranties and Returns</a></li>
+   <li><a href="https://www.ridetech.com/privacy-policy/">Privacy &amp; Cookies Policy</a></li>
+   <li><a href="https://www.ridetech.com/information/prop65/">CA Prop 65</a></li></ul></div>
+  <div><h4>Applications</h4><ul>
+   <li><a href="https://www.ridetech.com/product-category/applications/musclecars_classics/">Muscle Cars and Classics</a></li>
+   <li><a href="https://www.ridetech.com/product-category/applications/streetrods_customs/">Street Rods and Customs</a></li>
+   <li><a href="https://www.ridetech.com/product-category/applications/trucks/">Trucks</a></li>
+   <li><a href="https://www.ridetech.com/product-category/applications/corvettes/">Corvettes</a></li>
+   <li><a href="https://www.ridetech.com/product-category/applications/late-model-musclecars/">Late Model Muscle Cars</a></li>
+   <li><a href="https://www.ridetech.com/product-category/applications/load_leveling/">Load Leveling</a></li></ul></div>
+  <div><h4>Your Account</h4><ul>
+   <li><a href="https://www.ridetech.com/account/">My Account</a></li>
+   <li><a href="https://www.ridetech.com/account/orders/">Orders</a></li>
+   <li><a href="https://www.ridetech.com/wishlist/">Wishlist</a></li>
+   <li><a href="https://www.ridetech.com/information/free-catalog/">Free Catalog</a></li></ul></div>
+ </div>
+ <div class="copy"><span>Copyright 2021 © <strong>Ridetech</strong></span><a href="#top">Back to top ↑</a></div>
+</div></footer>
+
+<script>
+(function(){
+ var s=document.getElementById('slides'),n=s.children.length,i=0,d=document.getElementById('dots'),t;
+ for(var k=0;k<n;k++){var b=document.createElement('button');b.setAttribute('aria-label','Slide '+(k+1));(function(k){b.onclick=function(){go(k,true)}})(k);d.appendChild(b)}
+ function go(x,user){i=(x+n)%n;s.style.transform='translateX(-'+i*100+'%)';[].forEach.call(d.children,function(b,j){b.setAttribute('aria-current',j==i)});if(user)restart()}
+ function restart(){clearInterval(t);if(!matchMedia('(prefers-reduced-motion:reduce)').matches)t=setInterval(function(){go(i+1)},5500)}
+ document.querySelector('.prev').onclick=function(){go(i-1,true)};
+ document.querySelector('.next').onclick=function(){go(i+1,true)};
+ go(0);restart();
+ var bg=document.querySelector('.burger'),m=document.getElementById('menu');
+ bg.onclick=function(){var o=m.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+[
+ {
+  "observation": "B's title adds the hero tagline to the brand name. A's title is the brand name alone.",
+  "category": "meta/copy",
+  "evidence": "A title: \"AEP Texas\"; B title: \"AEP Texas | Knowledge Is Power\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a meta description and a charset meta. A has none of these but does have google-site-verification, cache-control and pragma metas.",
+  "category": "meta",
+  "evidence": "A meta_names: google-site-verification, cache-control, pragma, viewport; B: charset, viewport, description",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses semantic landmark elements (header, main, section, aside). A has only nav and footer.",
+  "category": "DOM/semantic structure",
+  "evidence": "A semantic: header 0, main 0, section 0, aside 0; B: header 1, main 1, section 3, aside 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is far larger than B's.",
+  "category": "DOM/semantic structure",
+  "evidence": "div: A 638 vs B 30; a: A 267 vs B 37; li: A 240 vs B 13; ul: A 61 vs B 3",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many external scripts and stylesheets. B has one script and no external stylesheets.",
+  "category": "DOM/semantic structure",
+  "evidence": "scripts: A 26 vs B 1; stylesheets: A 4 vs B 0; style tags: A 3 vs B 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's DOM contains many hidden or utility components, such as a loading overlay, a privacy policy modal, a video loader and a state-handbook selector. None of these appear in B's outline.",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline includes \"Processing your request\", \"Select your state handbook\", \"Loading video...\", \"Privacy Policy for AEP Texas...\", \"Security Code\"",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses a native dialog element, likely for the 'Welcome back!' login modal.",
+  "category": "component choice",
+  "evidence": "B tag_counts dialog: 1; both outlines end with \"Welcome back!\"",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses h6 heavily and also has legacy or nonstandard tags (nobr, noindexfb) plus an iframe. B uses none of these.",
+  "category": "DOM/semantic structure",
+  "evidence": "A tag_counts: h6 30, nobr 9, noindexfb 1, iframe 1, hr 11; absent from B",
+  "which_side": "A"
+ },
+ {
+  "observation": "Heading levels for the feature blocks differ. A tags Meter/Outages/Community as h3, while B promotes them to h2 and makes the three promo cards h3.",
+  "category": "DOM/semantic structure",
+  "evidence": "A outline: h3 'View Your Meter Order Status'; B outline: h2 'View Your Meter Order Status', h3 'GET REVVED UP FOR ELECTRIC CARS'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B includes 'Enroll in outage alerts' as an h2 in its heading outline. In A that title shows visually but does not appear in the heading outline.",
+  "category": "DOM/semantic structure",
+  "evidence": "B outline includes h2 'Enroll in outage alerts'; A outline lacks it although A_slice_01 shows the text",
+  "which_side": "B"
+ },
+ {
+  "observation": "A runs every content image without alt text (alt=\"\"). B gives each image descriptive alt text.",
+  "category": "imagery handling",
+  "evidence": "A images alt \"\" for electric-car, woman, meter-status, etc.; B alts like \"Electric car charging\", \"Community members\"; B alt_missing 0 vs A 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A embeds tracking pixels and a loading GIF. B has no such images.",
+  "category": "imagery handling",
+  "evidence": "A images: animated-bulb-processing.gif, pixel.gif, 'px', a 0x0 tracking-URL image; B has 7 content images only",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses one custom typeface for all text. B uses a system font stack.",
+  "category": "typography",
+  "evidence": "A fonts: din-2014 (1382 elements); B: Helvetica Neue (126), Arial (6)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's base body text is larger and more loosely set than B's.",
+  "category": "typography",
+  "evidence": "body font/line-height: A 20px/30px; B 16px/24.8px",
+  "which_side": "A"
+ },
+ {
+  "observation": "A sets the H1 in all caps in a darker red. B uses sentence case, a slightly larger size and the brighter brand red.",
+  "category": "typography/copy",
+  "evidence": "A h1 'KNOWLEDGE IS POWER.' 66px rgb(175,34,24); B h1 'Knowledge is power.' 72px rgb(218,41,28)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's H2 is larger than A's.",
+  "category": "typography",
+  "evidence": "h2 font_size: A 32px, B 36.8px",
+  "which_side": "B"
+ },
+ {
+  "observation": "A sets section headings in uppercase red (e.g. 'BRING HOME ENERGY SAVINGS'). B uses title case in near-black.",
+  "category": "typography/color",
+  "evidence": "A_slice_00 red uppercase heading; B_slice_00 'Bring Home Energy Savings' dark text; B outline text casing",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's top navigation labels are uppercase and widely spaced. B's are title case, smaller and grouped next to the logo.",
+  "category": "typography/layout",
+  "evidence": "A_slice_00: 'MY ACCOUNT  OUTAGES ...'; B_slice_00: 'My Account Outages Savings ...' beside the logo",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header has a search magnifier icon next to Log In. B's header has no search control.",
+  "category": "component choice",
+  "evidence": "A_slice_00 search icon at top right; absent in B_slice_00",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's utility bar shows 'ESPAÑOL' with a globe icon. B shows plain 'Español' text with no icon.",
+  "category": "component choice",
+  "evidence": "A_slice_00 vs B_slice_00 top bars",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's header ends in a thick red rule under the nav. B uses a thin gray border.",
+  "category": "decoration",
+  "evidence": "A_slice_00 red line at about y=172; B_slice_00 light divider at about y=109",
+  "which_side": "A"
+ },
+ {
+  "observation": "B's header is more compact and its logo renders smaller.",
+  "category": "layout",
+  "evidence": "Logo rect: A 92x70 at y=75; B 68x52 at y=45",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's content runs nearly full width (70px gutters). B uses a narrower centered container (about 160px gutters).",
+  "category": "layout",
+  "evidence": "Image x offsets: A starts at x=70 and ends at about 1370; B starts at x=160 and ends at about 1280",
+  "which_side": "both"
+ },
+ {
+  "observation": "A left-aligns the hero headline over the image. B places it near the center of the hero.",
+  "category": "layout",
+  "evidence": "A_slice_00 headline at x≈70; B_slice_00 headline starts at x≈460",
+  "which_side": "both"
+ },
+ {
+  "observation": "B puts the hero subcopy in a white translucent box with a red left border. A sets the subcopy directly on the image with a red circular arrow icon.",
+  "category": "component/decoration",
+  "evidence": "B_slice_00 boxed callout with red left bar; A_slice_00 plain text plus ▶ circle icon; B has a rgba(255,255,255,0.85) background",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's quick-link strip below the hero has colored circular line icons, vertical dividers and large uppercase labels on a light background. B uses a solid red bar with small white text labels and no icons.",
+  "category": "component choice",
+  "evidence": "A_slice_00 icons (tower, bolt, plug, $); B_slice_00 red strip 'Electric Choice | Report an outage ...'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's quick links use several accent colors (blue, orange, teal, green). B's palette stays mostly red, gray and warm neutrals.",
+  "category": "color",
+  "evidence": "A_slice_00 icon colors; A text colors include rgb(0,120,170); B top colors are reds, grays and rgb(244,242,238)",
+  "which_side": "A"
+ },
+ {
+  "observation": "B places the 'Bring Home Energy Savings' section on a warm off-white band. A keeps it on white.",
+  "category": "color",
+  "evidence": "B backgrounds rgb(244,242,238) and rgb(239,232,216); B_slice_00 beige band; A_slice_00 white",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's LED tip has a green lightbulb illustration with a centered 'See how' outlined button. B shows it as a white card with a red top border, a shadow and a red underlined 'See how →' text link.",
+  "category": "component choice",
+  "evidence": "A_slice_00 bulb icon; B_slice_00 card; B box_shadows 1 vs A 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's secondary CTAs are outlined rectangles with light-weight dark text. B mainly uses solid red buttons with white bold text.",
+  "category": "component choice",
+  "evidence": "A 'Learn about incentives', 'Track your order', 'Get answers' outlined; B the same labels on solid red buttons",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's measured primary button is the red 'LOG IN' with 8px radius. B's detected first button is a transparent '☰' menu toggle with 0 radius.",
+  "category": "component choice",
+  "evidence": "A primary_button LOG IN bg rgb(218,41,28) radius 8px; B primary_button '☰' transparent radius 0px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows the three promos (electric cars, business, new customer) as large image banners with text overlaid. B shows them as three equal bordered cards with the image on top and red uppercase titles underneath.",
+  "category": "layout/imagery handling",
+  "evidence": "A electric car image 1300x449, others 620x335; B all three 355x200 at y=1091 in a row",
+  "which_side": "both"
+ },
+ {
+  "observation": "A overlays text on photos (white or dark text on imagery). B keeps all text off the images.",
+  "category": "imagery handling",
+  "evidence": "A_slice_01 'SOLUTIONS FOR YOUR BUSINESS' over the photo; B_slice_01 text below the images in cards",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's 'Enroll in outage alerts' strip has an orange bolt icon and orange heading between light gray bars, with an outlined button. B uses a solid mid-gray band with white text and a white button with red text.",
+  "category": "component/color",
+  "evidence": "A_slice_01 orange heading; B_slice_01 band rgb(112,115,114) per backgrounds",
+  "which_side": "both"
+ },
+ {
+  "observation": "A arranges the Meter/Outages/Community items as a three-column card row. B lays them out as alternating full-width image/text rows (zig-zag).",
+  "category": "layout",
+  "evidence": "A images 393x278 at y=2345 side by side; B 532x376 at x=160, 748, 160 with y=1756, 2196, 2636",
+  "which_side": "both"
+ },
+ {
+  "observation": "B gives its feature images slightly rounded corners. A's images look square.",
+  "category": "decoration",
+  "evidence": "B_slice_01/02 rounded image corners; radius buckets: B 16 elements at 1-7px of 132 total, A 35 of 1382",
+  "which_side": "B"
+ },
+ {
+  "observation": "B changes the button style for the last CTA ('How we're helping' is outlined in red), so its CTA treatments vary.",
+  "category": "component choice",
+  "evidence": "B_slice_02 outlined red button vs solid red ones in B_slice_01",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has a full-width red band of uppercase footer category links (SAFETY, COMPANY...). B moves these into a dark footer as small title-case links.",
+  "category": "layout/color",
+  "evidence": "A_slice_02 red bar; B_slice_02 dark footer rgb(42,44,45) with 'Safety Company Clean Energy Business'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer is white, with the phone number in an outlined button next to 'Need help? Call us.'. B's footer is dark, with the phone number as large bold white text on the right.",
+  "category": "component choice",
+  "evidence": "A_slice_02 '866.223.8508' button; B_slice_02 right-aligned large number",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows social links as Twitter, Facebook and YouTube glyph icons. B shows them as text labels.",
+  "category": "component choice",
+  "evidence": "A_slice_02 icons bottom right; B_slice_02 'Twitter Facebook YouTube' text",
+  "which_side": "both"
+ },
+ {
+  "observation": "A highlights 'View our Privacy Policy' in red bold. B renders the legal line in uniform muted gray.",
+  "category": "typography/color",
+  "evidence": "A_slice_02 red link; B_slice_02 gray legal text; B text color rgb(214,214,212) count 23",
+  "which_side": "A"
+ },
+ {
+  "observation": "Body text colors differ: A uses a medium gray and B a near-black charcoal.",
+  "category": "color",
+  "evidence": "body_color: A rgb(74,74,74); B rgb(34,36,38)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid. A relies only on flexbox, with many more flex containers.",
+  "category": "layout/CSS",
+  "evidence": "display_grid: A 0, B 6; display_flex: A 235, B 14",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has many more CSS transitions than B.",
+  "category": "decoration/effects",
+  "evidence": "transitions: A 291, B 10; both have 0 animations, gradients and transforms",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's class vocabulary is much larger and partly utility-style. B uses a small set of semantic class names with no utility classes.",
+  "category": "DOM/class stats",
+  "evidence": "classes total/unique: A 1597/294, tailwind_like 0.118; B 46/28, tailwind_like 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses more ARIA attributes and inline styles than B.",
+  "category": "DOM",
+  "evidence": "aria_attrs: A 141 vs B 6; inline_style_attrs: A 26 vs B 3",
+  "which_side": "A"
+ },
+ {
+  "observation": "Copy is almost the same on both: word, emoji, em-dash and exclamation counts nearly match.",
+  "category": "copy",
+  "evidence": "words A 301 vs B 295; emoji 2/2; em_dashes 1/1; exclamations 1/1",
+  "which_side": "both"
+ },
+ {
+  "observation": "A ends inline text links with a red circular play-arrow icon (hero, promo banners). B has no such icon and uses an arrow '→' only on 'See how'.",
+  "category": "decoration",
+  "evidence": "A_slice_00/01 ▶ circle icons after copy; B_slice_00 'See how →'",
+  "which_side": "A"
+ },
+ {
+  "observation": "Page heights are similar at a 1440px width.",
+  "category": "layout",
+  "evidence": "page_height A 3372, B 3343",
+  "which_side": "both"
+ }
+]

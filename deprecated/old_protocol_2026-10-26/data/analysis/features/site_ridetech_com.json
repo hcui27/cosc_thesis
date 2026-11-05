@@ -1,0 +1,590 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "A declares a regional language code and B declares a generic one",
+   "evidence": "A lang='en-US'; B lang='en'",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|00",
+    "ridetech_com|opus|01",
+    "ridetech_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "Neither page has an h1",
+   "evidence": "h1_count=0 on both",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|03"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I2",
+   "text": "B uses nav elements and more section elements, while A has no nav",
+   "evidence": "A semantic nav=0, section=2; B nav=2, section=5",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|04",
+    "ridetech_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B turns the news post titles into h3 headings",
+   "evidence": "B outline includes h3 'Salt Lake City GoodGuys Car show Info & Photo Gallery.' and h3 'Great Times at the C-10 Nationals…'; A outline has no",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|09"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I4",
+   "text": "A uses the Open Sans webfont, while B uses a system-ui font stack",
+   "evidence": "A fonts: Open Sans 1048, Lucida Grande 163, fl-icons 20; B fonts: system-ui 274, Arial 7",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|10",
+    "ridetech_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "Both pages share the same body text size and line height",
+   "evidence": "body_font_size 16px and line_height 25.6px on both",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|13"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I6",
+   "text": "A's body text is mid-grey, while B's is near-black",
+   "evidence": "body_color A rgb(119,119,119); B rgb(21,23,26)",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|14",
+    "ridetech_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "The red accents differ slightly between the pages",
+   "evidence": "A red bg rgb(220,31,38) ×11; B red bg rgb(227,29,60) ×6",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|15",
+    "ridetech_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "B uses near-black rgb(21,23,26) as both its main text color and a recurring background",
+   "evidence": "B top_backgrounds rgb(21,23,26) ×7; vehicle tiles and top utility bar are near-black in B_slice_00",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|17"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I9",
+   "text": "Most of A's elements have no rounding, while B uses more 8–15px rounding",
+   "evidence": "radius buckets A: 0→1186, 8–15→1, pill→17; B: 0→233, 8–15→29, pill→6",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|19",
+    "ridetech_com|opus|21",
+    "ridetech_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "B lays some content out with CSS grid, while A uses only flex",
+   "evidence": "display_grid A 0, B 6; display_flex A 128, B 37",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|22"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I11",
+   "text": "B is the taller page",
+   "evidence": "page_height A 4129px, B 4713px (both 1440 wide)",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|23",
+    "ridetech_com|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "A's content runs nearly full width, while B's sits in a centered container with about 140px side margins",
+   "evidence": "A logo x=15, product images start x=15; B logo x=140, product images start x=141 and end at ~1299",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|24",
+    "ridetech_com|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A puts its navigation in a separate dark bar under the logo row. B puts it inline on the same white row as the logo",
+   "evidence": "A_slice_00: dark grey bar with PRODUCTS…CAREERS centered; B_slice_00: nav links on the white header row between logo and cart",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|27",
+    "ridetech_com|opus|29",
+    "ridetech_com|sonnet|06",
+    "ridetech_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "A's main button is a red pill, while B's detected 'primary button' is a transparent Menu toggle with a 6px radius",
+   "evidence": "A primary_button 'GET A FREE CATALOG' bg rgb(220,31,38), radius 99px; B primary_button '☰ Menu' bg transparent, radius 6px",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|31"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I15",
+   "text": "The hero sliders differ in height, in which slide is visible first, and in their controls",
+   "evidence": "A slides 1440×338 at y=181 showing the RidePRO e5 control-panel slide; B slides 1440×540 at y=111 showing the Silverado 'NEW 2007-2013' slid",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|32",
+    "ridetech_com|sonnet|09",
+    "ridetech_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "B's slider includes a fourth banner image that A lacks, but it reports zero natural size",
+   "evidence": "B image camaro-subframe-connector-home-page-banner.jpg natural [0,0]; A's slider has 21-silverado, 21-ridepro-e5, falcon plus an svg placeho",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|33",
+    "ridetech_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "B's free-shipping strip has a subline, while A's is a single heading",
+   "evidence": "B_slice_00: 'FREE SHIPPING' + 'Free Ground Shipping To The Continental U.S. For Orders Of $100 Or More'; A_slice_00: 'FREE SHIPPING' only. A",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|34",
+    "ridetech_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "The vehicle categories are bare silhouettes with uppercase labels on A and dark rounded tiles on B",
+   "evidence": "A_slice_00: red silhouettes on white with 'MUSCLE CARS AND CLASSICS' etc. in letter-spaced caps; B_slice_00: five near-black rounded cards w",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|35",
+    "ridetech_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "B's heading text is mostly uppercase, while A's headings use title case",
+   "evidence": "B outline: 'SHOP BY VEHICLE', 'SHOP BY PRODUCT', 'LATEST NEWS', 'GET CONNECTED'; A: 'Shop by Vehicle', 'Shop by Product', 'Latest News', 'Ge",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|08",
+    "ridetech_com|opus|12",
+    "ridetech_com|opus|36",
+    "ridetech_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "The product grids use different column counts and card treatments",
+   "evidence": "A: 4 columns of 188px images with no card borders and uppercase centered labels; B: 5 columns of 214px images inside bordered white rounded ",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|37",
+    "ridetech_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "B shows images for only 11 product categories. The rest are text-only cards with a red left border",
+   "evidence": "B images list 11 product thumbnails; B_slice_01: LevelTow Kits, Tru Turn, TigerCage, CoolRide, Components, AIRoverLeaf, Steering, Tools, Bra",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|38",
+    "ridetech_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "A's product images have descriptive alt text, while B's are empty",
+   "evidence": "A alts e.g. 'Shock Absorbers', 'R-Joint Rod Ends', 'Tubular Control Arms'; B product thumbnails alt=''. B hero images have descriptive alts ",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|39",
+    "ridetech_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "A presents the warranty as an image ad, while B makes it a text link",
+   "evidence": "A_slice_01: '1,000,001 MILE WARRANTY / WE GO THE EXTRA MILE' banner image; B_slice_02: underlined pink link 'See our 1,000,001 Mile Warranty",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|42",
+    "ridetech_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "The free catalog block is a sidebar card in A and a full-width dark band in B",
+   "evidence": "A_slice_01: catalog photo with white overlay card 'FREE Product Catalog' and small red 'REQUEST A CATALOG' pill; B_slice_02: dark gradient b",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|43",
+    "ridetech_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "A's news items have photos, while B's news cards are text-only",
+   "evidence": "A has photo34-1-500x375.jpg and IMG_2627-500x333.jpg in the sidebar news; B_slice_02 shows two bordered text cards with a red left edge and ",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|44",
+    "ridetech_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "A's 'VIEW ALL NEWS' button is a full-width bar, while B's is a compact centered button",
+   "evidence": "A_slice_02: red bar spanning ~975–1425px; B_slice_02: small rounded red button centered under the news cards",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|45",
+    "ridetech_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "A's brand-statement section sits on a photo with a notch divider. B uses a flat grey band with a letter-spaced red tagline",
+   "evidence": "A_slice_02: orange Camaro photo background with a white downward triangle notch, text in white; B_slice_02: solid grey band, 'ridetech.com' ",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|46",
+    "ridetech_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "The 'Let us know' call to action is a red band with social icons on A, and on B it is centered text with an EMAIL SALES button",
+   "evidence": "A_slice_02: red strip with 'Don't see what you're looking for? Let us know!' left and circular icon buttons ('Connect With Us:') right; B_sl",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|47",
+    "ridetech_com|opus|48",
+    "ridetech_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "The newsletter form is a stacked sidebar form in A and a horizontal inline row in B",
+   "evidence": "A_slice_00/01: 'Get Connected' with labeled First Name, Last Name, Email fields stacked and a 'SIGN UP' button; B_slice_03: centered 'GET CO",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|49",
+    "ridetech_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "The footer differs between the pages: A shows payment icons and a FREE CATALOG image, while B adds 'Back to top' and lists Free Catalog as a link",
+   "evidence": "A_slice_03: VISA/MasterCard/Discover/AmEx/PayPal icons and red FREE CATALOG graphic, list items separated by rules; B_slice_03: uppercase le",
+   "side": "both",
+   "members": [
+    "ridetech_com|opus|51",
+    "ridetech_com|sonnet|28",
+    "ridetech_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "B's footer column headings are uppercase throughout, while A mixes title-case and uppercase headings",
+   "evidence": "A: 'Contact Info', 'Your Account' bold title case alongside 'INFORMATION', 'APPLICATIONS'; B: 'CONTACT INFO', 'INFORMATION', 'APPLICATIONS',",
+   "side": "generated",
+   "members": [
+    "ridetech_com|opus|52"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "A's page background is transparent and relies on white and light-grey section fills. B sets an explicit white body background and alternates white, light grey (#F5F6F7) and dark bands.",
+   "evidence": "A body_bg rgba(0,0,0,0). B body_bg rgb(255,255,255). B top_backgrounds include rgb(245,246,247) and rgb(21,23,26).",
+   "side": "both",
+   "members": [
+    "ridetech_com|sonnet|03"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "A's slider is laid out as off-screen slides positioned at x offsets of -1200, 0, 1200 and 2400, and slides overlap each other. B lays slides out edge to edge at 1440px steps (0, 1440, 2880, 4320) with no overlap.",
+   "evidence": "A image_overlaps lists 3 overlapping pairs of 81120 px² each. B image_overlaps is empty.",
+   "side": "both",
+   "members": [
+    "ridetech_com|sonnet|11"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "A's product captions are small uppercase, letter-spaced and centred beneath the image. B's captions are bold title-case, left-aligned inside the card.",
+   "evidence": "A: 'SHOCKWAVE INTEGRATED AIR SPRINGS AND SHOCKS'. B: 'ShockWave Integrated Air Springs and Shocks'.",
+   "side": "both",
+   "members": [
+    "ridetech_com|sonnet|17"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "B's product cards come in three treatments: image cards, tall text-only cards with a red left border, and shorter text-only cards, also with a red left border. The grid is therefore uneven.",
+   "evidence": "B_slice_01 rows 3–5 show 215-high and 90-high bordered boxes with a crimson left edge.",
+   "side": "generated",
+   "members": [
+    "ridetech_com|sonnet|19"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "A has a right-hand sidebar column next to the product grid. It stacks a Get Connected signup form, a Free Shipping promo image, a warranty ad, a catalog promo and Latest News with photos. B has no sidebar and stacks full-width sections.",
+   "evidence": "A images at x≈975–1425: free-shipping-500x188.jpg, hp-ad-1.jpg, photo34-1, IMG_2627, free-catalog-copy. B's sections are centred in a 1160px",
+   "side": "both",
+   "members": [
+    "ridetech_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "A uses far heavier DOM markup than B. It has 462 divs, 189 anchors, 2072 class tokens (504 unique), 97 inline style attributes, 32 scripts, 5 stylesheets and 29 style tags. B has 32 divs, 118 anchors, 90 class tokens (35 unique), 4 inline style attributes, 1 script, 0 stylesheets and 1 style tag.",
+   "evidence": "tag_counts and counts in both facts files.",
+   "side": "both",
+   "members": [
+    "ridetech_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I38",
+   "text": "A's heading outline is polluted by hidden or utility headings: 'Sign up', 'Cart', an empty h2 and an empty h4. B's outline shows all-caps section headings, and the news titles are h3s.",
+   "evidence": "A heading_outline includes empty-text h2 and h4 and 'Cart' at h4 and h2. B has h2/h3/h4 populated.",
+   "side": "both",
+   "members": [
+    "ridetech_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I39",
+   "text": "A's heading colors are slate blue-grey (83,104,130) for links and (58,72,86) for dark fills. B's palette is neutral near-black (21,23,26) with white and off-white text (185,189,195).",
+   "evidence": "A top_text_colors rgb(83,104,130) x234; top_backgrounds rgb(58,72,86) x15. B top_text_colors rgb(21,23,26), rgb(185,189,195).",
+   "side": "both",
+   "members": [
+    "ridetech_com|sonnet|40"
+   ],
+   "tier": "A"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Navigation is placed inline on the same light header row as the logo, with the menu toggle styled as a transparent button.",
+   "family": "layout",
+   "items": [
+    "I13",
+    "I14"
+   ]
+  },
+  {
+   "statement": "Content sits in a centered fixed-width container with generous side margins instead of running near full width.",
+   "family": "layout",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Page is a single column of stacked full-width sections with no sidebar.",
+   "family": "layout",
+   "items": [
+    "I36"
+   ]
+  },
+  {
+   "statement": "Page background alternates between white, light grey and dark near-black bands, with an explicit white body background.",
+   "family": "color",
+   "items": [
+    "I32",
+    "I8"
+   ]
+  },
+  {
+   "statement": "Palette is neutral near-black with white and off-white text, avoiding tinted blue-grey, and uses a crimson red accent.",
+   "family": "color",
+   "items": [
+    "I6",
+    "I7",
+    "I39",
+    "I8"
+   ]
+  },
+  {
+   "statement": "Typography uses a system-ui font stack rather than a custom webfont.",
+   "family": "typography",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Section and footer headings are set in all caps.",
+   "family": "typography",
+   "items": [
+    "I19",
+    "I31"
+   ]
+  },
+  {
+   "statement": "Product captions are bold, title-case and left-aligned inside the card rather than small uppercase centered labels.",
+   "family": "typography",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "Cards use moderately rounded corners, with bordered white rounded cards and dark rounded tiles.",
+   "family": "component",
+   "items": [
+    "I9",
+    "I18",
+    "I20"
+   ]
+  },
+  {
+   "statement": "Text-only cards carry a bold red left border accent, creating an uneven grid of image and text cards.",
+   "family": "component",
+   "items": [
+    "I21",
+    "I35",
+    "I25"
+   ]
+  },
+  {
+   "statement": "Calls to action are compact, centered rounded buttons, rather than full-width bars or sidebar cards.",
+   "family": "component",
+   "items": [
+    "I26",
+    "I28"
+   ]
+  },
+  {
+   "statement": "Newsletter signup is a centered horizontal inline form row.",
+   "family": "component",
+   "items": [
+    "I29"
+   ]
+  },
+  {
+   "statement": "Promotional blocks are flat full-width dark or grey bands with plain text, rather than photo backgrounds or image ads.",
+   "family": "decoration",
+   "items": [
+    "I24",
+    "I27",
+    "I23"
+   ]
+  },
+  {
+   "statement": "Layout uses CSS grid for some content and has a clean slider with non-overlapping slides.",
+   "family": "layout",
+   "items": [
+    "I10",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Markup is lean, with few divs, scripts, classes and inline styles, and no external stylesheets.",
+   "family": "semantic_dom",
+   "items": [
+    "I37"
+   ]
+  },
+  {
+   "statement": "Semantic structure uses nav and section elements, and post titles are h3 headings with populated outline.",
+   "family": "semantic_dom",
+   "items": [
+    "I2",
+    "I3",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Promotional banners include a descriptive subline beneath the main heading, and warranty offers appear as text links.",
+   "family": "copy",
+   "items": [
+    "I17",
+    "I23"
+   ]
+  },
+  {
+   "statement": "Product thumbnails have empty alt text while hero images carry descriptive alts.",
+   "family": "imagery",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Footer includes a back-to-top link and lists offers as plain links, without payment icon graphics.",
+   "family": "component",
+   "items": [
+    "I30"
+   ]
+  }
+ ]
+}

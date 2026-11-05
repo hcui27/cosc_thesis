@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "Title and H1 are lowercase, personal-brand phrasing. Title is 'Never Skip Brunch — DIY & Home Design by Cara Newhart'. The single H1 reads 'welcome to never skip brunch.' with a final period.",
+  "category": "copy",
+  "evidence": "facts.json title; h1_count 1; h1 text"
+ },
+ {
+  "observation": "The H1 is set very large (76.8px) in Playfair Display at weight 400. The last word 'brunch.' is italic and hot pink (rgb(232,69,124)) inside an em, which gives a two-tone headline.",
+  "category": "typography",
+  "evidence": "h1 font_size 76.8px, weight 400, Playfair Display; tag_counts em 1; pink text color count 5"
+ },
+ {
+  "observation": "Three typefaces have distinct roles. Montserrat is the body and UI face (173 elements). Playfair Display is the serif for headings (14 elements). Homemade Apple is a handwriting script for small accents such as 'by cara newhart', 'if you...', 'coffee & let's chat' and 'hello.' (5 elements).",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Montserrat 173, Playfair 14, Homemade Apple 5; script labels visible in slices"
+ },
+ {
+  "observation": "Section headings (h2) are 48px, weight 400, lowercase, and end in a period: 'make space', 'fresh off the workbench.', 'fun & fresh videos.', 'let's chat.', 'on instagram.', 'join the newsletter.'. Many sit under a small tracked uppercase eyebrow in pink or grey.",
+  "category": "typography",
+  "evidence": "h2 font_size 48px weight 400; heading_outline; eyebrows 'VISIT THE BLOG', 'NEW ON THE BLOG', '@NEVERSKIPBRUNCH'"
+ },
+ {
+  "observation": "Navigation, buttons, tags and footer headings use small, widely letter-spaced uppercase Montserrat. Body copy is 16px with a 26.4px line height (1.65).",
+  "category": "typography",
+  "evidence": "Nav items BLOG, DECOR & INTERIORS and others; body_font_size 16px, body_line_height 26.4px"
+ },
+ {
+  "observation": "The palette is warm and pastel. The body is cream (255,250,245) with near-black text (28,26,25). Section and card fills are peach (253,230,211), butter yellow (253,238,176) and pink (251,211,222). Pink (232,69,124) and orange (245,154,74) are used as accents.",
+  "category": "color",
+  "evidence": "colors.body_bg, top_backgrounds, top_text_colors"
+ },
+ {
+  "observation": "A pale yellow announcement strip sits above the header. It reads 'fun & fresh home goodies' with an underlined bold 'visit the shop →' link.",
+  "category": "component",
+  "evidence": "Slice 1 top bar; yellow background rgb(253,238,176)"
+ },
+ {
+  "observation": "The header is a sticky-looking bar with a small logo image at left (112x56) and seven uppercase nav links (BLOG, DECOR & INTERIORS, DIY PROJECTS, PODCAST, PLANS + TEMPLATES, WORK WITH ME, ABOUT). Its background is translucent with backdrop blur. There is also a 'Menu' button, which is probably the mobile toggle.",
+  "category": "layout",
+  "evidence": "rgba(255,250,245,0.94) background; backdrop_blur 1; img rect 180,43,112x56; 2 buttons; primary_button text 'Menu'"
+ },
+ {
+  "observation": "The hero is a two-column split with text on the left and an image on the right. The background is a vertical gradient from peach at the top down to cream.",
+  "category": "layout",
+  "evidence": "gradient_backgrounds 1; hero image rect x799 y172 461x614; slice 1"
+ },
+ {
+  "observation": "The hero photo is a portrait image (natural 1334x2048) cropped into an arch shape. It has a rounded top and small bottom corners, and a soft diffuse drop shadow.",
+  "category": "imagery",
+  "evidence": "Image 4Q5A3075.jpg rendered 461x614; box_shadows 1; border_radius bucket_16_plus 6"
+ },
+ {
+  "observation": "Hero CTAs are a pair of pill buttons. One is solid near-black with white uppercase text and an arrow ('ABOUT + LEARN MORE →'). The other is an outlined ghost pill ('BROWSE DIY PROJECTS').",
+  "category": "component",
+  "evidence": "Slice 1; border_radius_buckets bucket_pill 22"
+ },
+ {
+  "observation": "The 'if you . . .' section has two equal-width white cards with hairline borders and large rounded corners. Each has a script 'if you...' label, a serif h3 and grey body text. The h3s complete the sentence started in the h2.",
+  "category": "component",
+  "evidence": "h3 'are an avid DIY-er...' and 'are new or doubting...'; slice 1 cards; 11 grid containers"
+ },
+ {
+  "observation": "Category tag pills sit below the cards: DIY, DECOR & INTERIORS and MAKE SPACE in peach, then a solid dark 'BROWSE ALL POSTS →' pill.",
+  "category": "component",
+  "evidence": "Slice 2 top; peach rgb(253,230,211) pills; dark pill"
+ },
+ {
+  "observation": "The podcast section is a full-width butter-yellow band with a two-column layout. Text is on the left, with a pink eyebrow, serif title, uppercase subtitle 'A HOME DESIGN SHOW' as an h3, a paragraph and a dark pill CTA. A landscape photo is on the right.",
+  "category": "layout",
+  "evidence": "MAKE-SPACE podcast image rect 715,1513 545x279; yellow band in slice 2"
+ },
+ {
+  "observation": "The podcast image has square corners, unlike the arched hero photo and the rounded cards. It is a flat-lay of a phone on a damask-patterned yellow background that blends into the band colour.",
+  "category": "imagery",
+  "evidence": "Slice 2; image 2048x1049 natural; no radius visible"
+ },
+ {
+  "observation": "Blog posts appear as three text-only cards in a 3-column grid. The cards are filled peach, yellow and pink, with no thumbnails. Each has a 'DIY' category label, a serif title and a 'READ →' link anchored at the bottom. Title vertical position varies with title length.",
+  "category": "component",
+  "evidence": "Three h3 post titles; article count 2 but three cards visible; card fills in slice 2"
+ },
+ {
+  "observation": "Pagination shows numbered circle buttons (1 as the dark active state, 2, 3, an ellipsis, 60) and a 'Next Page »' pill. This signals a blog archive of about 60 pages.",
+  "category": "component",
+  "evidence": "Slice 2 pagination row"
+ },
+ {
+  "observation": "A dark near-black section holds the YouTube block. It has an orange eyebrow 'YOUTUBE', a centred white serif heading and an orange pill button 'WATCH ON YOUTUBE'. No video embed or thumbnails are visible, and the lower part of the section is empty dark space.",
+  "category": "layout",
+  "evidence": "rgb(28,26,25) background count 7; orange rgb(245,154,74); slice 3 top"
+ },
+ {
+  "observation": "The 'let's chat' band is a full-bleed photo (1440x505) of an orange patterned armchair under a grey-purple dark overlay. White centred text sits on top, with a yellow script label and a white pill CTA. The image has empty alt text, so it is treated as decorative.",
+  "category": "imagery",
+  "evidence": "tim-wright unsplash image rect 0,2834 1440x505 alt ''; slice 3"
+ },
+ {
+  "observation": "Copy is conversational and brand-voiced. It uses first person ('I'm Cara Newhart — a color & prints obsessed DIY queen'), slang ('grammable'), exclamations and em-dashes, and a question as CTA text ('WANNA GRAB A VIRTUAL COFFEE?').",
+  "category": "copy",
+  "evidence": "text_stats: 514 words, 6 em-dashes, 3 exclamations; slice 1 and slice 3 copy"
+ },
+ {
+  "observation": "The Instagram section is a 4x2 grid of white bordered rounded cards. Each holds only truncated caption text (ending in '...'), and two contain emoji. There are no photos, so they are text placeholders, followed by a centred outlined 'FOLLOW ON INSTAGRAM' pill.",
+  "category": "component",
+  "evidence": "8 cards in slice 3; emoji count 4; '@NEVERSKIPBRUNCH' eyebrow"
+ },
+ {
+  "observation": "The newsletter band has a peach background and a centred layout. A pink script 'hello.' sits above a serif heading, followed by an inline form with a white pill email input and a dark 'SUBSCRIBE' pill.",
+  "category": "component",
+  "evidence": "form 1, label 1, input 1; slice 4"
+ },
+ {
+  "observation": "The footer is dark, with a 4-column grid under uppercase tracked h4 headings (NEVER SKIP BRUNCH, LET'S CONNECT, QUICK LINKS, EXPLORE, SERVICES). Link lists are white. A row of five circular outlined social icons uses inline SVGs. A hairline divider leads into small muted affiliate and copyright text.",
+  "category": "layout",
+  "evidence": "h4 x5; svg 5; footer 1; muted text rgb(217,207,200) count 58; 'Copyright © 2021'"
+ },
+ {
+  "observation": "Corner radii are mixed. Pills (22 elements) are used for buttons, tags and inputs. Cards and images use 8-15px (8 elements) or 16px+ (6 elements) radii. The 156 remaining elements are square.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 156, 8_15 8, 16_plus 6, pill 22"
+ },
+ {
+  "observation": "Decoration is restrained. There is one box-shadow (hero image), one gradient (hero background) and one backdrop blur (header). 18 elements have transitions, with no keyframe animations and no transforms.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 1, gradient_backgrounds 1, backdrop_blur 1, transitions 18, animations 0, transforms 0"
+ },
+ {
+  "observation": "Sections alternate background colours to separate content. Order: cream hero, cream cards, yellow podcast, cream posts, black YouTube, photo overlay chat, cream Instagram, peach newsletter, black footer.",
+  "category": "layout",
+  "evidence": "top_backgrounds list; slices 1-4"
+ },
+ {
+  "observation": "Content is held to a consistent left edge at x=180 and a right edge at x=1260 on the 1440px viewport, giving a 1080px container. Headings are left-aligned in most sections and centred in the YouTube, chat and newsletter bands.",
+  "category": "layout",
+  "evidence": "Image rects end at x=1260; logo x=180; page_width 1440"
+ },
+ {
+  "observation": "The DOM uses semantic landmarks: one header, two navs, one main, eight sections, one footer, two articles and one figure. There is no aside, blockquote or figcaption. The page is 56 anchors and 4 images, with 21 paragraphs.",
+  "category": "structure",
+  "evidence": "semantic counts; tag_counts a 56, img 4, p 21"
+ },
+ {
+  "observation": "The heading outline follows h1 → h2 → h3 within sections. Eyebrows and subtitles such as 'A HOME DESIGN SHOW' are sometimes marked up as headings. Footer column titles skip from h2 to h4.",
+  "category": "structure",
+  "evidence": "heading_outline: h3 'A HOME DESIGN SHOW'; h4 footer headings after h2 'join the newsletter.'"
+ },
+ {
+  "observation": "The CSS is hand-authored, not utility-based. It is a single inline style block with a single stylesheet link, 28 unique semantic class names across 54 class uses, and 0% Tailwind-like. Only 6 inline style attributes are used.",
+  "category": "structure",
+  "evidence": "classes total 54, unique 28, tailwind_like_fraction 0; style 1; inline_style_attrs 6; stylesheets 1"
+ },
+ {
+  "observation": "Page metadata is light: lang='en', charset, viewport and description meta tags, with no JSON-LD blocks. The page has one script and 12 ARIA attributes. All images have alt text (alt_missing 0), with an empty alt on the decorative banner.",
+  "category": "structure",
+  "evidence": "lang en; meta_names; jsonld_blocks 0; scripts 1; aria_attrs 12; alt_missing 0"
+ },
+ {
+  "observation": "The logo is a stamp-style PNG (700x350 natural) shown at 112x56 with tiny script text inside. It is small relative to the nav and reads as a handwritten wordmark.",
+  "category": "imagery",
+  "evidence": "cropped-NSB_logo_stamp_cara_newhart.png rect 112x56"
+ },
+ {
+  "observation": "Eyebrow labels in pink uppercase with wide tracking ('MAKE SPACE PODCAST', 'NEW ON THE BLOG', '@NEVERSKIPBRUNCH') are a repeated pattern above serif headings. Their grey counterpart is 'VISIT THE BLOG'.",
+  "category": "typography",
+  "evidence": "Pink text count 5; slices 1-3"
+ },
+ {
+  "observation": "Arrows (→, ») are used as text glyphs in CTAs and links: 'visit the shop →', 'ABOUT + LEARN MORE →', 'BROWSE ALL POSTS →', 'READ →', 'The NSB Shop →'. A plus sign is also used as a separator ('PLANS + TEMPLATES', 'LISTEN + SUBSCRIBE').",
+  "category": "copy",
+  "evidence": "Visible text across slices"
+ },
+ {
+  "observation": "The page is about 4777px tall at 1440 wide. Imagery is sparse, with only three content images plus the logo. Most visual interest comes from colour blocks and type, not photography.",
+  "category": "imagery",
+  "evidence": "page_height 4777; images array of 4"
+ },
+ {
+  "observation": "The affiliate disclosure and a 2021 copyright line are set in small muted tan-grey text on the dark footer. The tone is casual ('p.s. ... I always share my honest opinion').",
+  "category": "copy",
+  "evidence": "Slice 4 footer; text color rgb(217,207,200)"
+ }
+]

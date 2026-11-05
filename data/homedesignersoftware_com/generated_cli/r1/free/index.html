@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home Designer Software – DIY Home Design Software</title>
+<meta name="description" content="Top-rated 3D interior design, remodeling and home design software for DIY users, from Chief Architect.">
+<style>
+:root{--bg:#fff;--alt:#f3f6f9;--ink:#1b2733;--muted:#566574;--brand:#1f4e79;--brand-d:#143755;--accent:#d9822b;--line:#dde3e9}
+@media (prefers-color-scheme:dark){:root{--bg:#10171e;--alt:#17212b;--ink:#e8eef4;--muted:#9fb0c0;--brand:#6fa8dc;--brand-d:#a9cdf0;--accent:#f0a24f;--line:#2a3846}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--brand)}
+img{max-width:100%;height:auto}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.util{background:var(--brand-d);font-size:14px}
+.util .wrap{display:flex;justify-content:flex-end;gap:20px;padding-top:6px;padding-bottom:6px}
+.util a{color:#fff;text-decoration:none}
+@media (prefers-color-scheme:dark){.util{background:#0a1015}}
+header.site{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;padding-top:12px;padding-bottom:12px}
+.logo{font-weight:700;font-size:20px;color:var(--brand);text-decoration:none}
+.logo small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px 20px;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--ink);font-weight:500;font-size:15px}
+nav a:hover{color:var(--brand)}
+.hero{background:var(--alt);padding:56px 0}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin:0 0 16px;color:var(--brand-d)}
+h2{font-size:clamp(24px,3.5vw,32px);margin:0 0 12px;color:var(--brand-d)}
+h3{margin:0 0 6px;font-size:19px}
+.lead{color:var(--muted);font-size:19px}
+.hero figure{margin:0;text-align:center}
+.hero img{width:260px;box-shadow:0 12px 30px rgba(0,0,0,.25);border-radius:4px}
+.offer{display:inline-block;margin-top:8px;background:var(--accent);color:#1b1206;font-weight:700;padding:8px 14px;border-radius:6px;text-decoration:none}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;background:var(--brand);color:#fff;text-decoration:none;font-weight:600}
+.btn.alt{background:transparent;color:var(--brand);border:2px solid var(--brand);padding:9px 18px}
+@media (prefers-color-scheme:dark){.btn{color:#0b1218}}
+.ctas{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
+.ctas h3{text-transform:uppercase;letter-spacing:.06em;font-size:13px;color:var(--muted);border-bottom:2px solid var(--accent);padding-bottom:6px;display:inline-block}
+.ctas ul{list-style:none;margin:8px 0 0;padding:0}
+.ctas li{padding:3px 0}
+section{padding:60px 0}
+section.alt{background:var(--alt)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:24px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card p{margin:0;color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:28px}
+.product{display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:24px 16px}
+.product img{width:130px;height:184px;margin-bottom:12px}
+.price{font-size:26px;font-weight:700;color:var(--brand-d);margin:6px 0 0}
+.price s{font-size:15px;font-weight:400;color:var(--muted)}
+.product p{margin:4px 0;color:var(--muted);font-size:15px}
+.product .btn{margin-top:auto}
+.product>*:nth-last-child(2){margin-bottom:14px}
+.why{display:grid;grid-template-columns:1fr 280px;gap:40px;align-items:center}
+.why img{border-radius:4px;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.checks{list-style:none;padding:0;margin:16px 0}
+.checks li{padding-left:28px;position:relative;margin:6px 0}
+.checks li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.cols ul{list-style:none;margin:0;padding:0}
+.cols li{margin:4px 0}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:20px 0 0}
+.opts div{border:1px solid var(--line);border-radius:8px;padding:12px 14px;background:var(--bg)}
+.opts b{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+footer{background:var(--brand-d);color:#dbe6f0;padding:48px 0 24px;font-size:15px}
+@media (prefers-color-scheme:dark){footer{background:#0a1015}}
+footer a{color:#fff;text-decoration:none}footer a:hover{text-decoration:underline}
+footer h4{margin:0 0 8px;color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.06em}
+footer ul{list-style:none;margin:0;padding:0}footer li{margin:4px 0}
+.social{display:flex;flex-wrap:wrap;gap:8px 20px;margin:32px 0 16px;padding-top:20px;border-top:1px solid rgba(255,255,255,.2)}
+.legal{font-size:13px;opacity:.85}
+@media (max-width:760px){.hero .wrap,.why{grid-template-columns:1fr}.ctas{grid-template-columns:1fr}.hero figure{order:-1}nav ul{gap:4px 14px}}
+</style>
+</head>
+<body>
+<div class="util"><div class="wrap">
+<a href="https://accounts.chiefarchitect.com/">My Account</a>
+<a href="https://www.homedesignersoftware.com/company/contact.html">Contact Us</a>
+<a href="https://shopping.chiefarchitect.com/hdshop/checkout/cart/">Cart</a>
+</div></div>
+
+<header class="site"><div class="wrap">
+<a class="logo" href="#top">Home Designer® Software<small>by Chief Architect®</small></a>
+<nav aria-label="Main"><ul>
+<li><a href="#products">Products</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#why">Why Home Designer</a></li>
+<li><a href="#purchase">Purchase</a></li>
+<li><a href="https://www.homedesignersoftware.com/support/">Support</a></li>
+<li><a href="https://www.homedesignersoftware.com/videos/">Videos</a></li>
+<li><a href="https://chiefarchitectblog.com/">Blog</a></li>
+<li><a href="https://hometalk.chiefarchitect.com/">HomeTalk Forum</a></li>
+</ul></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Home design software for DIY users</h1>
+<p class="lead">Home Designer Software is the top-rated 3D interior design, remodeling and home design software. Built on technology from Chief Architect's professional architectural software, simplified for DIY users. See why it's the best home design app for visualizing and designing your house project.</p>
+<a class="offer" href="https://shopping.chiefarchitect.com/hdshop/checkout/cart/add/?product=Home%20Designer%20Pro%202021%20Rental&related_product=Home%20Designer%20Pro%202021%20Backup%20and%20Storage%20USB">Home Designer Pro 2021 for $59/mo.</a>
+<div class="btns">
+<a class="btn" href="https://www.homedesignersoftware.com/products/trial.html">Download Trial Version</a>
+<a class="btn alt" href="https://www.homedesignersoftware.com/products/home-designer-pro/">Purchase Software</a>
+</div>
+</div>
+<figure><img src="images/professional_2.png" alt="Home Designer Professional software box showing a large shingle-style house at dusk" width="348" height="492"></figure>
+</div>
+<div class="wrap"><div class="ctas">
+<div><h3>Download</h3><ul>
+<li><a href="https://www.homedesignersoftware.com/products/trial.html">Trial Version</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/home-designer-pro/">Purchase Software</a></li></ul></div>
+<div><h3>Explore</h3><ul>
+<li><a href="https://www.homedesignersoftware.com/homedesign/">Home Design &amp; Remodeling</a></li>
+<li><a href="https://www.homedesignersoftware.com/interior-design/">Interior Design</a></li>
+<li><a href="https://www.homedesignersoftware.com/kitchen-bath/">Kitchens &amp; Baths</a></li>
+<li><a href="https://www.homedesignersoftware.com/landscape-deck/">Decks &amp; Landscaping</a></li></ul></div>
+<div><h3>Learn</h3><ul>
+<li><a href="https://www.homedesignersoftware.com/videos/overview/pro/">Overview Video</a></li>
+<li><a href="https://www.homedesignersoftware.com/videos/">How-To Tutorial Videos</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/training.html#bootcamp">Webinars</a></li></ul></div>
+</div></div>
+</div>
+
+<section id="features"><div class="wrap">
+<h2>Features of the software</h2>
+<div class="features">
+<div class="card"><h3>Roofs, foundations &amp; framing</h3><p>Advanced tools build the structure for you. Drawing walls generates a 3D model automatically. Placing a door or window cuts it into the wall and framing updates automatically. Moving walls updates the roof and foundation as well.</p></div>
+<div class="card"><h3>Materials list &amp; budgeting</h3><p>Everything you add to a design goes into a materials list, allowing cost estimates and budgeting.</p></div>
+<div class="card"><h3>Kitchen &amp; bath remodeling</h3><p>Cabinets are smart objects that snap, bump and conform to walls, available in many types. A Material Painter lets you switch colors and styles quickly to compare options.</p></div>
+<div class="card"><h3>Renovation projects</h3><p>Updating a master bath, modernizing an interior or building a deck? A space planning assistant helps lay out floor plans, and the <a href="https://www.chiefarchitect.com/3d-library/go/?family=Home%20Designer">3D Library</a> holds thousands of paints, materials and furnishings.</p></div>
+<div class="card"><h3>Work in 2D and 3D</h3><p>2D floor plans show room layout and dimensions. 3D offers realistic visualization, including virtual tours, so you can experience a design before it is built.</p></div>
+<div class="card"><h3>Samples Gallery</h3><p>See 3D rendering examples made in Home Designer. <a href="https://www.homedesignersoftware.com/samples.html">Browse the Samples Gallery</a>.</p></div>
+</div>
+</div></section>
+
+<section id="products" class="alt"><div class="wrap">
+<h2>Product lineup</h2>
+<p class="lead">Chief Architect offers three DIY products: Suite, Architectural and Pro. Its professional architectural line covers full residential design.</p>
+<div class="products">
+<div class="product"><img src="images/suite.png" alt="Home Designer Suite box" width="130" height="184">
+<h3>Home Designer Suite</h3><div class="price">$99 <s>$129</s></div><p>Upgrades from $29</p>
+<a class="btn" href="https://www.homedesignersoftware.com/products/home-designer-suite/">Buy Suite</a></div>
+<div class="product"><img src="images/architectural.png" alt="Home Designer Architectural box" width="130" height="184">
+<h3>Home Designer Architectural</h3><div class="price">$199 <s>$249</s></div><p>Upgrades from $39 (regular $49)</p>
+<a class="btn" href="https://www.homedesignersoftware.com/products/home-designer-architectural/">Buy Architectural</a></div>
+<div class="product"><img src="images/professional.png" alt="Home Designer Professional box" width="130" height="184">
+<h3>Home Designer Pro</h3><div class="price">$495 <s>$595</s></div><p>Or rent for $59/mo.</p><p>Upgrades from $99 (regular $119)</p>
+<a class="btn" href="https://www.homedesignersoftware.com/products/home-designer-pro/">Buy or Rent Pro</a></div>
+<div class="product"><img src="images/premier.png" alt="Chief Architect Professional Software box" width="130" height="184">
+<h3>Chief Architect Professional Software</h3><p>Our professional architectural line for full residential design.</p>
+<a class="btn alt" href="https://www.homedesignersoftware.com/chief-architect/">Learn More</a></div>
+</div>
+<p style="margin-top:24px"><a href="https://www.homedesignersoftware.com/products/product-chooser.html"><b>Compare Products →</b></a></p>
+</div></section>
+
+<section id="why"><div class="wrap why">
+<div>
+<h2>Why choose Home Designer</h2>
+<p class="lead">Top-rated DIY home design software.</p>
+<p>Powerful, fun and easy. Chief Architect states it provides the highest quality software, live customer support at no charge, and the best learning resources in the industry (<a href="https://www.homedesignersoftware.com/getting-started/">Getting Started</a>).</p>
+<ul class="checks">
+<li>Runs on Mac or PC, and can be deactivated so it's easy to move between computers.</li>
+<li>All Home Designer products are compatible with the professional <a href="https://www.chiefarchitect.com/">Chief Architect</a> line.</li>
+<li>Share designs with friends and family through the <a href="https://www.chiefarchitect.com/products/3d-viewer/">3D Viewer app</a>.</li>
+<li>Purchase, rent or try any Home Designer product via a <a href="https://www.homedesignersoftware.com/products/trial.html">trial download</a>.</li>
+</ul>
+<a class="btn" href="https://www.homedesignersoftware.com/products/product-chooser.html">Compare Features</a>
+</div>
+<img src="images/professional_2.png" alt="Home Designer Professional 2021 box" width="348" height="492">
+</div></section>
+
+<section class="alt"><div class="wrap">
+<h2>Learn more</h2>
+<div class="cols"><ul>
+<li><a href="https://www.homedesignersoftware.com/products/trial.html">Trial Download</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/product-chooser.html">Compare Products</a></li>
+<li><a href="https://www.homedesignersoftware.com/whats-new/#whats-new-summary">What's New in 2021</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/system-requirements.html">System Requirements</a></li></ul>
+<ul>
+<li><a href="https://www.homedesignersoftware.com/products/guarantee.html">Satisfaction Guarantee</a></li>
+<li><a href="https://www.homedesignersoftware.com/videos/overview/pro/">Overview Video</a></li>
+<li><a href="https://www.homedesignersoftware.com/samples.html">Samples Gallery</a></li>
+<li><a href="https://www.homedesignersoftware.com/software-rental/">Rental Option &amp; FAQ</a></li></ul></div>
+</div></section>
+
+<section id="purchase"><div class="wrap">
+<h2>Purchase options</h2>
+<p>Choose a new purchase or upgrade, and rent or buy.</p>
+<div class="opts">
+<div><b>Product (Mac &amp; PC)</b>Home Designer Pro 2021<br>Home Designer Architectural 2021<br>Home Designer Suite 2021</div>
+<div><b>Media</b>Download or USB</div>
+<div><b>Backup media</b>Backup USB or No Backup USB</div>
+<div><b>Price display</b>Buy price and Sale price</div>
+</div>
+<div class="btns"><a class="btn" href="https://shopping.chiefarchitect.com/hdshop/">Go to Shopping Cart</a>
+<a class="btn alt" href="https://www.homedesignersoftware.com/discounts/">Upgrades &amp; Discounts</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="cols">
+<div><h4>Products</h4><ul>
+<li><a href="https://www.homedesignersoftware.com/#products">Home Designer (DIY) Products</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/home-designer-pro/">Professional</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/home-designer-architectural/">Architectural</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/home-designer-suite/">Suite</a></li>
+<li><a href="https://www.homedesignersoftware.com/chief-architect/">Chief Architect (Pro) Products</a></li>
+<li><a href="https://www.homedesignersoftware.com/#compare">Compare Products</a></li>
+<li><a href="https://www.chiefarchitect.com/products/3d-viewer/">3D Viewer App</a></li>
+<li><a href="https://www.homedesignersoftware.com/discounts/">Upgrades &amp; Discounts</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/trial.html">Trial Download</a></li>
+<li><a href="https://www.chiefarchitect.com/academic/">Academic</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/addon/">Add-on Products</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/system-requirements.html">System Requirements</a></li></ul></div>
+<div><h4>Project Type</h4><ul>
+<li><a href="https://www.homedesignersoftware.com/homedesign/">Home Design &amp; Remodeling</a></li>
+<li><a href="https://www.homedesignersoftware.com/interior-design/">Interior Design</a></li>
+<li><a href="https://www.homedesignersoftware.com/kitchen-bath/">Kitchens &amp; Baths</a></li>
+<li><a href="https://www.homedesignersoftware.com/landscape-deck/">Decks &amp; Landscaping</a></li>
+<li><a href="https://www.homedesignersoftware.com/chief-architect/">Professional Designers</a></li></ul></div>
+<div><h4>User Center</h4><ul>
+<li><a href="https://www.homedesignersoftware.com/getting-started/">Getting Started Resources</a></li>
+<li><a href="https://shopping.chiefarchitect.com/hdshop/">Shopping Cart</a></li>
+<li><a href="https://accounts.chiefarchitect.com/">My Account</a></li>
+<li><a href="https://www.homedesignersoftware.com/videos/">Training Videos</a></li>
+<li><a href="https://www.homedesignersoftware.com/samples.html">Sample Plans &amp; Renderings</a></li>
+<li><a href="https://www.chiefarchitect.com/3d-library/go/?family=Home%20Designer">Catalog &amp; Content Downloads</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/training.html">Webinars</a></li>
+<li><a href="https://www.chiefarchitect.com/usercenter/links.html">Resource Center</a></li>
+<li><a href="https://hometalk.chiefarchitect.com/">HomeTalk User Forum</a></li></ul></div>
+<div><h4>Support</h4><ul>
+<li><a href="https://www.homedesignersoftware.com/support/">Support Resources</a></li>
+<li><a href="https://www.homedesignersoftware.com/support/documentation.html">Documentation</a></li>
+<li><a href="https://www.homedesignersoftware.com/support/database.html">Knowledge Base</a></li>
+<li><a href="https://www.homedesignersoftware.com/videos/">Training Videos</a></li>
+<li><a href="https://www.homedesignersoftware.com/support/updates.html">Program Updates</a></li></ul></div>
+<div><h4>Company</h4><ul>
+<li><a href="https://www.homedesignersoftware.com/company/">About Chief Architect</a></li>
+<li><a href="https://www.chiefarchitect.com/company/careers.html">Careers</a></li>
+<li><a href="https://www.homedesignersoftware.com/company/pressgraphics/">Marketing Graphics</a></li>
+<li><a href="https://www.homedesignersoftware.com/company/newsletters/">Newsletter</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/testimonials.html">Testimonials</a></li>
+<li><a href="https://www.homedesignersoftware.com/products/guarantee.html">Satisfaction Guarantee</a></li>
+<li><a href="https://www.homedesignersoftware.com/affiliate-program/">Affiliate Program</a></li>
+<li><a href="https://www.homedesignersoftware.com/company/contact.html">Contact Us – Social</a></li></ul></div>
+</div>
+<div class="social">
+<a href="https://hometalk.chiefarchitect.com/">HomeTalk</a>
+<a href="https://chiefarchitectblog.com/">Blog</a>
+<a href="https://www.facebook.com/ChiefArchitect">Facebook</a>
+<a href="https://www.youtube.com/user/ChiefArchitectInc">YouTube</a>
+<a href="https://www.instagram.com/chiefarchitectsoftware/">Instagram</a>
+<a href="https://www.houzz.com/pro/chiefarchitect/">Houzz</a>
+<a href="https://www.pinterest.com/chiefarchitect/">Pinterest</a>
+</div>
+<p class="legal">© 2003–2021 Chief Architect, Inc. All rights reserved. <a href="https://www.chiefarchitect.com/company/terms.html">Terms of Use</a> · <a href="https://www.chiefarchitect.com/company/privacy.html">Privacy Policy</a></p>
+</div></footer>
+</body>
+</html>

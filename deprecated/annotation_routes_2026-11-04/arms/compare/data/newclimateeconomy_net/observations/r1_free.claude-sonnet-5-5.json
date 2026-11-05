@@ -1,0 +1,230 @@
+[
+ {
+  "observation": "Page background is saturated orange-red with a faded skyline photo behind the header and hero. B uses a white body with alternating pale grey-green bands.",
+  "category": "color",
+  "evidence": "A body_bg rgb(213,68,39). B body_bg rgb(255,255,255), with rgb(242,245,243) used on 4 section backgrounds.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is orange-red, white and near-black, with a lime green accent. B's palette is deep forest green (11,61,54), teal (31,157,122) and mint-grey.",
+  "category": "color",
+  "evidence": "A top backgrounds: rgb(213,68,39), rgb(156,197,36), rgb(31,31,31). B top backgrounds: rgb(11,61,54) x2, rgb(31,157,122), rgb(242,245,243).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's links, 'Read More' and 'All news ›' are orange-red. B's links and headings are dark green, with teal for the Sign Up button.",
+  "category": "color",
+  "evidence": "A text color rgb(213,68,39) on 24 elements. B text rgb(11,61,54) on 10 elements and rgb(15,122,94) on 5.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's header sits on the orange background photo. The logo is large (524px natural width) and has a tagline underneath. B uses a solid dark green top bar with a smaller logo (262x34).",
+  "category": "layout",
+  "evidence": "A logo rect w:0 (CSS background or hidden). B logo at x190,y21, 262x34, on a rgb(11,61,54) bar about 76px tall.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A stacks the nav links (About, News, Publications, Contact Us) in a row below the logo, in large light-weight text on the left. B puts the nav inline on the right of the same bar, in small bold text.",
+  "category": "layout",
+  "evidence": "A nav at y≈197 below the logo. B nav at y≈38, right-aligned in the header, in the same row as the logo and search.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's search and newsletter are text links with icons, placed top right and underlined by a thin rule. B has a boxed white search input with a magnifier icon and a filled teal 'Sign Up' button.",
+  "category": "component",
+  "evidence": "A has 2 forms and 8 inputs, with 'Search' and 'Get the Newsletter' links. B has 1 form, 1 input, 1 button, and a teal rgb(31,157,122) button.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is a card: the photo sits in the left column at 835x557, with a dark caption panel below it containing the date, headline and orange 'Read More'. The Latest News list is a white sidebar to the right. B's hero is a full-bleed split: the photo runs to the left viewport edge at 864x576 and the headline text sits on a pale panel to the right.",
+  "category": "layout",
+  "evidence": "A image rect x120,y233,835x557. B image rect x0,y76,864x576. A hero caption bg is rgb(31,31,31).",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero headline is a regular-weight sans-serif in white on dark, and 'Read More' follows inline in orange. B's headline is bold dark green, with 'Read More' on its own line as an underlined link.",
+  "category": "typography",
+  "evidence": "A headline is about 30px white on the rgb(31,31,31) panel. B h2 is 30px weight 700 with dark text.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has no main, nav, section or footer elements, and has 6 header elements and 8 articles. B uses one each of header, nav, main and footer, plus 4 sections.",
+  "category": "semantic",
+  "evidence": "A semantic: header 6, nav 0, main 0, section 0, footer 0, article 8. B semantic: header 1, nav 1, main 1, section 4, footer 1, article 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has one h1 with empty text, which holds the logo. B has no h1 at all, and its heading outline starts at h2.",
+  "category": "semantic",
+  "evidence": "A h1_count 1, text ''. B h1_count 0, h1 null.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's section headings are italic Georgia serif labels ('Latest News', 'Video', 'Upcoming Events'), set small over a thin rule inside cards. B's are small uppercase letter-spaced bold sans labels with a heavy dark rule beneath, and a right-aligned 'All ... →' link on the same line.",
+  "category": "typography",
+  "evidence": "A Georgia on 6 elements. B headings 'LATEST NEWS\\nAll news →', 'VIDEO', 'UPCOMING EVENTS\\nSee Past Events →'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's main typeface is proxima-nova, set on 169 elements. B uses -apple-system for UI and Georgia serif for 52 elements, including tweets, empty-state text and body copy.",
+  "category": "typography",
+  "evidence": "A fonts: proxima-nova 169, Georgia 6. B fonts: -apple-system 53, Georgia 52.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text is larger and has looser leading in B.",
+  "category": "typography",
+  "evidence": "A body 16px / line-height 20px. B body 17px / line-height 26.35px.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's h2 is bolder and larger than A's.",
+  "category": "typography",
+  "evidence": "A h2 28px weight 500. B h2 30px weight 700.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Latest News block differs. A makes it a narrow right sidebar of three stacked items, each with a grey date over an orange link ending in '›'. B makes it a full-width three-column row of bold dark headlines under uppercase dates.",
+  "category": "layout",
+  "evidence": "A list inside a white panel at x≈955–1320. B three columns at x≈190, 553 and 915.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A arranges the middle band as three side-by-side cards (Video, Upcoming Events, Tweets), each 365px wide, on the orange background. B stacks them: a full-width Video section, then a two-column Events/Tweets row.",
+  "category": "layout",
+  "evidence": "A cards at x120, 537 and 955. B Video section at y≈950, then Events and Tweets columns at x190 and x744. B has 4 grid displays and A has 0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's video card is dark with a cropped embedded thumbnail. Each playlist entry has a circled chevron icon, and the card is narrow. B shows a large 688x386 thumbnail with two playlist items to the right as white cards with a green left border.",
+  "category": "component",
+  "evidence": "A has no thumbnail image in its facts, and the video is a background. B images include thumbnail.png at 688x386 and 2 playlist cards.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The video thumbnail's embedded player UI (play and volume controls, timestamp 0:56 / 5:16) is visible in both. In B the title overlay is large bold white text that overlaps the controls.",
+  "category": "imagery",
+  "evidence": "B screenshot shows 'Unlocking the Inclusive Growth Story of the 21st Century' over the control bar. A shows the same title in smaller type at the card's lower left.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The empty Upcoming Events panel is a tall blank white card in A with only a 'See Past Events ›' link. B shows italic serif copy, 'No upcoming events at the moment.'",
+  "category": "copy",
+  "evidence": "B text 'No upcoming events at the moment.' is not in A's heading outline or screenshot.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Tweets are plain sans text in A, indented in a narrow card column and with orange links. B sets tweets in Georgia serif with underlined green links and a hairline divider between them.",
+  "category": "typography",
+  "evidence": "A tweet column x1077–1265. B tweet text spans x744–1250, with green underlined '@ClimateHome' and '#NetZero'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The Managing Partner area differs. A is a white card with a duplicated heading ('Managing Partner' appears both as italic h2 and bold h3), a vertical divider and small logos (110x38, 154x34, 154x39). B shows a single uppercase label and larger logos (184x64, 255x56, 220x56) on a grey band.",
+  "category": "component",
+  "evidence": "A heading outline has h2 and h3 both reading 'Managing Partner'. B has one 'MANAGING PARTNER\\nAll partners →' h2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's partner logos have mostly empty alt text. B gives descriptive alt text to all three, including 'Coalition for Urban Transitions' and 'Food and Land Use Coalition'.",
+  "category": "imagery",
+  "evidence": "A customlogo.png and folu.png alt ''. B alt 'Coalition for Urban Transitions' and 'Food and Land Use Coalition'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer differs. In A, 'Careers ›' and 'Connect' with icon-only social glyphs sit directly on the orange background. In B, a footer on white has an underlined 'Careers' link and icon-plus-label social links (YouTube, LinkedIn, Google+, Facebook, Twitter).",
+  "category": "component",
+  "evidence": "B has 5 icons-*.png at 28x21 with text labels, and a footer tag. A has no footer tag and no 'Connect' label in B.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has a skyline background photo, drop shadows and 2 gradients, including the dark fade on the hero caption. B has no box shadows and 1 gradient, and relies on flat bands and rules.",
+  "category": "decoration",
+  "evidence": "A box_shadows 1, gradient_backgrounds 2. B box_shadows 0, gradient_backgrounds 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Radii are almost entirely square on both sides. B has 2 elements with a small 1–7px radius.",
+  "category": "decoration",
+  "evidence": "A bucket_0 180, no other buckets. B bucket_0 109, bucket_1_7 2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The markup is much heavier on A. It has 32 scripts, 6 style blocks, 3 stylesheets, 13 inline style attributes and 267 class uses (112 unique). B has no scripts and no stylesheets, 1 style block, 1 inline style and 34 class uses (21 unique).",
+  "category": "dom",
+  "evidence": "A counts: scripts 32, stylesheets 3, inline_style_attrs 13. B counts: scripts 0, stylesheets 0, inline_style_attrs 1, classes total 34.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's head carries many legacy and meta tags (x-ua-compatible, MobileOptimized, HandheldFriendly, cleartype, description, generator). B's head has only charset and viewport.",
+  "category": "dom",
+  "evidence": "A meta_names has 8 entries. B has 2.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The page title differs. A is 'New Climate Economy | Commission on the Economy and Climate |', with a trailing pipe. B is simply 'New Climate Economy'.",
+  "category": "copy",
+  "evidence": "A_facts title vs B_facts title.",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses ARIA attributes (4) and a labelled button. A has none, and its search heading 'Search form' and 'Sign Up' appear as h2 elements.",
+  "category": "dom",
+  "evidence": "A aria_attrs 0, buttons 0, h2 'Search form', 'Sign Up'. B aria_attrs 4, buttons 1.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A is a 1440x1894 page and B is 1440x2188. B is taller because it stacks sections and uses larger type and spacing. A is more compact.",
+  "category": "layout",
+  "evidence": "layout.page_height A 1894, B 2188.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's content is a fixed-width 1200px column (x120–1320). B's content sits in a narrower 1060px column (x190–1250), except for the hero photo, which bleeds to the edge.",
+  "category": "layout",
+  "evidence": "A card edges x120 and x1320. B section rules x190 to x1250, hero image x0.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses flex in 10 places and no grid. B uses 4 grid containers and 18 flex containers.",
+  "category": "layout",
+  "evidence": "A display_grid 0, display_flex 10. B display_grid 4, display_flex 18.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Both pages carry the same amount of copy, with identical headlines and news items. B adds copy not seen in A: the empty-state sentence, uppercase labels, text social labels, and '→' arrows in place of '›' chevrons.",
+  "category": "copy",
+  "evidence": "Both text_stats words 168. B headings 'All news →', 'All Tweets →'. A links use '›'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Link treatment differs. A's links are unstyled orange text with a trailing chevron. B's utility links are bold, small and underlined (All news →), and its tweet links are underlined green.",
+  "category": "component",
+  "evidence": "A 'All news ›' in orange with no underline. B 'All news →' bold and underlined in the screenshot.",
+  "which_side": "both"
+ },
+ {
+  "observation": "Dividers differ. A uses thin light-grey rules within white cards. B uses 2px dark green rules under each section label and light hairlines between tweets.",
+  "category": "decoration",
+  "evidence": "Visible in the A sidebar rules, and the B rules under 'LATEST NEWS' and 'VIDEO'.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A hides or omits the logo image box (rect 0x0), and the visible logo is likely a background in the header. B renders every logo and icon as an img, 12 in total, against A's 5.",
+  "category": "imagery",
+  "evidence": "A images 5, logo rect {w:0,h:0}. B images 12.",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero photo is the same source image (835x557 natural) on both sides. A shows it at native size with a crop. B scales it to 864x576 and fills the left half.",
+  "category": "imagery",
+  "evidence": "A sb_op-ed_foto.jpg and B sb-op-ed-foto.jpg both have natural 835x557.",
+  "which_side": "both"
+ },
+ {
+  "observation": "A inserts a 'Sign Up' heading as an h2, while the B Sign Up is a button only. A search label is exposed as an h2 'Search form'.",
+  "category": "dom",
+  "evidence": "A heading_outline includes h2 'Search form' and 'Sign Up'. B outline has neither.",
+  "which_side": "both"
+ }
+]

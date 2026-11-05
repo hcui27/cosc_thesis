@@ -1,0 +1,257 @@
+[
+ {
+  "observation": "Page uses a dark theme: near-black body background with off-white body text",
+  "category": "color",
+  "evidence": "body_bg rgb(14,15,18), body_color rgb(236,238,242)"
+ },
+ {
+  "observation": "A single saturated red serves as the accent color, used for eyebrow labels, the date badge, 'READ MORE' links, section divider rules and social button borders",
+  "category": "color",
+  "evidence": "rgb(232,17,45) appears in 9 text colors and 1 background; visible in hero date pill, 'FEATURED NEWS', 'READ MORE →', red horizontal lines under hero and above partners"
+ },
+ {
+  "observation": "Secondary text such as dates and the follow-us blurb uses a muted grey",
+  "category": "color",
+  "evidence": "rgb(154,161,173) is the second-most common text color (28 elements); dates like 'Feb 13, 2020' render grey"
+ },
+ {
+  "observation": "News cards and the follow-us band sit on a slightly lighter charcoal surface than the page background",
+  "category": "color",
+  "evidence": "rgb(23,25,30) background on 8 elements; card bodies and 'FOLLOW US' band visibly lighter than body"
+ },
+ {
+  "observation": "Only one font family is used across the whole page",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: only 'Helvetica Neue' (187 elements); h1 family \"Helvetica Neue\", Arial, sans-serif"
+ },
+ {
+  "observation": "H1 is large, bold, all-caps and set left-aligned beside the logo",
+  "category": "typography",
+  "evidence": "h1 font_size 64px, weight 700, text 'AUSTRALIA’S INTERNATIONAL ENDURANCE RACE', text_align start"
+ },
+ {
+  "observation": "Body text is 16px with 24px line height (1.5 ratio)",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 24px"
+ },
+ {
+  "observation": "H2 section headings are 25.6px bold, rendered in uppercase",
+  "category": "typography",
+  "evidence": "h2 font_size 25.6px weight 700; 'LATEST NEWS', 'FOLLOW US'"
+ },
+ {
+  "observation": "Small uppercase letter-spaced labels act as eyebrows above headings",
+  "category": "typography",
+  "evidence": "'LIQUI-MOLY BATHURST 12 HOUR' red eyebrow above h1; 'FEATURED NEWS' above featured headline; 'OUR PARTNERS' grey tracked label (h4)"
+ },
+ {
+  "observation": "Navigation links are uppercase bold, and several multi-word labels wrap to two lines",
+  "category": "typography",
+  "evidence": "'THE EVENT', 'THE RACE', 'PREVIOUS RACES', 'BUSHFIRES APPEAL' each break onto two lines in the header in slice 0"
+ },
+ {
+  "observation": "Call-to-action links use uppercase text with a trailing arrow character",
+  "category": "copy",
+  "evidence": "'READ MORE →' repeated on all 7 news items"
+ },
+ {
+  "observation": "Header is a horizontal bar with a small logo at left followed by ten nav links",
+  "category": "layout",
+  "evidence": "headerlogo.png rendered 41×48 at x=146,y=8; nav items HOME through BUSHFIRES APPEAL in slice 0"
+ },
+ {
+  "observation": "Header background is a semi-transparent near-black with backdrop blur, implying a fixed/sticky overlay treatment",
+  "category": "decoration",
+  "evidence": "rgba(14,15,18,0.94) background; effects.backdrop_blur 1"
+ },
+ {
+  "observation": "A single 'Menu' button exists in the DOM with transparent background and 4px radius, not visible in the desktop render",
+  "category": "components",
+  "evidence": "primary_button text 'Menu', bg rgba(0,0,0,0), radius 4px, padding 8px 12px; no Menu button seen in slice 0"
+ },
+ {
+  "observation": "Hero pairs a large version of the event logo on the left with eyebrow, H1, location and date badge stacked on the right",
+  "category": "layout",
+  "evidence": "headerlogo.png reused at 150×173 at x=146,y=187; text column starts ~x=336"
+ },
+ {
+  "observation": "The same logo image file is used at two sizes (header and hero)",
+  "category": "imagery",
+  "evidence": "headerlogo.png appears twice: 41×48 and 150×173, natural 270×312"
+ },
+ {
+  "observation": "Hero background contains diagonal red and blue angled stripes on the upper right",
+  "category": "decoration",
+  "evidence": "slice 0 shows dark red and blue diagonal bands behind headline; gradient_backgrounds reports 0, so likely an image or pseudo-element"
+ },
+ {
+  "observation": "Event dates appear in a solid red rectangular badge with white uppercase text",
+  "category": "components",
+  "evidence": "'31 JANUARY – 2 FEBRUARY 2020' on red block; red background count 1"
+ },
+ {
+  "observation": "Hero section is closed by a full-width thin red horizontal rule",
+  "category": "decoration",
+  "evidence": "red line spanning page width at ~y=483 in slice 0"
+ },
+ {
+  "observation": "Section heading 'LATEST NEWS' is followed by a thin grey rule extending to the content edge",
+  "category": "decoration",
+  "evidence": "slice 0: hairline extends right from 'LATEST NEWS' to x≈1293"
+ },
+ {
+  "observation": "Content is held in a fixed-width container of roughly 1147px centred in a 1440px viewport",
+  "category": "layout",
+  "evidence": "content left edge x=146–147, right edge ~1293; page_width 1440"
+ },
+ {
+  "observation": "Featured news item is a wide horizontal card: image on the left (~58%) and text panel on the right",
+  "category": "layout",
+  "evidence": "Bath12Hr-2020-MH3_1458-770x480.jpg rect 668×417 at x=147; text 'FEATURED NEWS' at x≈847"
+ },
+ {
+  "observation": "Remaining six news items are laid out in a 3-column grid of equal cards across two rows",
+  "category": "layout",
+  "evidence": "images at x=147, 538, 928 with w=365 at y=1047 and y=1505; display_grid 3"
+ },
+ {
+  "observation": "News cards have image on top, then bold headline, grey date, and red read-more link, with a thin border",
+  "category": "components",
+  "evidence": "slice 1 cards: headline, 'Feb 04, 2020', 'READ MORE →'; visible 1px outline around each card"
+ },
+ {
+  "observation": "Card images are cropped to a consistent landscape ratio regardless of source size",
+  "category": "imagery",
+  "evidence": "Bushfireappeal.jpg natural 2500×1683 displayed 365×289, matching 385×305 thumbnails also displayed 365×289"
+ },
+ {
+  "observation": "News photography is editorial motorsport content: race cars on track, podium celebrations, and sponsor-branded group photo",
+  "category": "imagery",
+  "evidence": "slices 0–1 show GT cars at Mount Panorama, podium with champagne/flag, team lifting driver"
+ },
+ {
+  "observation": "Dates are marked up with time elements",
+  "category": "semantics",
+  "evidence": "tag_counts time: 7, matching 7 news items"
+ },
+ {
+  "observation": "News headlines are h3 elements under a single h2, giving a regular outline",
+  "category": "semantics",
+  "evidence": "heading_outline: h1, h2 LATEST NEWS, 7×h3, h2 FOLLOW US, h4 OUR PARTNERS"
+ },
+ {
+  "observation": "'OUR PARTNERS' heading jumps to h4 directly after h2, skipping h3 within that branch",
+  "category": "semantics",
+  "evidence": "heading_outline: h2 'FOLLOW US' followed by h4 'OUR PARTNERS'"
+ },
+ {
+  "observation": "Landmark elements present: one each of header, nav, main, section, footer; no article, aside or figure",
+  "category": "semantics",
+  "evidence": "semantic counts header 1, nav 1, main 1, section 1, footer 1, article 0, figure 0"
+ },
+ {
+  "observation": "News cards are built from divs/list items rather than article elements",
+  "category": "semantics",
+  "evidence": "article 0; li 28, div 21, ul 5"
+ },
+ {
+  "observation": "Follow-us band is a full-width strip with heading and blurb at left and two outlined buttons at right",
+  "category": "layout",
+  "evidence": "slice 1: 'FOLLOW US' left, 'FACEBOOK' and 'TWITTER' boxes right-aligned"
+ },
+ {
+  "observation": "Social links are rendered as ghost buttons with red borders and white uppercase text, implemented as anchors",
+  "category": "components",
+  "evidence": "FACEBOOK/TWITTER red outlined boxes; only 1 button element on page (Menu)"
+ },
+ {
+  "observation": "Hashtags appear in copy",
+  "category": "copy",
+  "evidence": "'#B12hr Bushfire Relief', 'latest #B12HR news via Facebook and Twitter'"
+ },
+ {
+  "observation": "Partners area is a grid of 26 white tiles, 8 per row, each holding a 100×60 logo",
+  "category": "layout",
+  "evidence": "26 sponsor images 100×60 at x=163…1177, rows at y=2266, 2360, 2454, 2548; rgb(255,255,255) background count 26"
+ },
+ {
+  "observation": "Most partner logos are nearly invisible on their white tiles, suggesting white/light logo artwork placed on white backgrounds",
+  "category": "imagery",
+  "evidence": "slice 1 tiles mostly blank; only faint Pirelli, AMG, Audi Sport, Porsche, Fox Sports outlines visible"
+ },
+ {
+  "observation": "One partner tile shows plain dark text 'McLaren' instead of a logo image",
+  "category": "components",
+  "evidence": "slice 1 'McLaren' text tile; text color rgb(34,34,34) count 1; no McLaren in image list"
+ },
+ {
+  "observation": "Partner tiles have small rounded corners; overall radii are either 0 or 1–7px with no large or pill shapes",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0→161, 1–7→26, 8–15→0, 16+→0, pill→0; 26 matches tile count"
+ },
+ {
+  "observation": "No box shadows, gradients, CSS animations or transforms are used; depth is created through surface tone and borders",
+  "category": "decoration",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, animations 0, transforms 0"
+ },
+ {
+  "observation": "Many elements carry CSS transitions, implying hover state changes",
+  "category": "decoration",
+  "evidence": "transitions: 34"
+ },
+ {
+  "observation": "Flexbox is the main layout mechanism, with grid used sparingly",
+  "category": "layout",
+  "evidence": "display_flex 48, display_grid 3"
+ },
+ {
+  "observation": "Footer has a hairline top border, small logo and copyright at left, and four plain text links at right",
+  "category": "layout",
+  "evidence": "slice 2: footerlogo.png 56×64 at x=146; 'Contacts', 'Media', 'Privacy Policy', 'Terms & Conditions'"
+ },
+ {
+  "observation": "Copyright year (2021) is later than the event dates shown in the hero (2020)",
+  "category": "copy",
+  "evidence": "'© 2021 LIQUI-MOLY Bathurst 12 Hour' vs '31 JANUARY – 2 FEBRUARY 2020'; featured news 'Oct 19, 2020'"
+ },
+ {
+  "observation": "Brand name is written in different casings across the page",
+  "category": "copy",
+  "evidence": "title 'Liqui-moly Bathurst 12 Hour', eyebrow 'LIQUI-MOLY', footer 'LIQUI-MOLY'"
+ },
+ {
+  "observation": "Page is text-light with images dominating",
+  "category": "copy",
+  "evidence": "words 156, images 35, p 4"
+ },
+ {
+  "observation": "Stylesheet is inline: one style tag, no external stylesheets, one script",
+  "category": "dom",
+  "evidence": "style 1, stylesheets 0, scripts 1, inline_style_attrs 1"
+ },
+ {
+  "observation": "Class naming is sparse and not utility-based",
+  "category": "dom",
+  "evidence": "classes total 56, unique 23, tailwind_like_fraction 0.018"
+ },
+ {
+  "observation": "All images have alt attributes; decorative/duplicate ones use empty alt while sponsor logos carry brand names",
+  "category": "dom",
+  "evidence": "alt_missing 0; news grid thumbnails alt ''; sponsor alts 'Pirelli', 'Audi', etc."
+ },
+ {
+  "observation": "ARIA usage is minimal and there is no structured data",
+  "category": "dom",
+  "evidence": "aria_attrs 3; jsonld_blocks 0; meta only charset, viewport, description"
+ },
+ {
+  "observation": "Anchor count is high relative to text content",
+  "category": "dom",
+  "evidence": "anchors 64 vs 156 words"
+ },
+ {
+  "observation": "Page is moderately short at desktop width",
+  "category": "layout",
+  "evidence": "page_height 2834 at page_width 1440"
+ }
+]

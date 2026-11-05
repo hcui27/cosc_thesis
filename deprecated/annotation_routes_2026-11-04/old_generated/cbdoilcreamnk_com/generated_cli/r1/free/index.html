@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CBD Oil Cream</title>
+<meta name="description" content="CBD drops, edibles, topicals and more, plus the latest news on CBD safety.">
+<style>
+:root{
+  --bg:#faf8f3; --surface:#fff; --text:#26302a; --muted:#66706a;
+  --green:#2f5d46; --green-dark:#1f4130; --accent:#c9a24b; --line:#e5e1d6;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--text);line-height:1.65}
+img{max-width:100%;display:block}
+a{color:var(--green)}
+h1,h2,h3{font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.2;margin:0 0 .5em;color:var(--green-dark)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.sans{font-family:"Helvetica Neue",Arial,sans-serif}
+
+/* top bar + header */
+.topbar{background:var(--green-dark);color:#e9efe9;font:14px "Helvetica Neue",Arial,sans-serif}
+.topbar .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;padding-top:8px;padding-bottom:8px}
+.topbar a{color:#fff;text-decoration:none}
+.topbar a:hover{text-decoration:underline}
+header.site{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:12px;padding-bottom:12px}
+.logo img{height:46px;width:auto}
+nav.main{display:flex;gap:22px;font:600 15px "Helvetica Neue",Arial,sans-serif;flex-wrap:wrap}
+nav.main a{text-decoration:none;color:var(--text)}
+nav.main a:hover{color:var(--green)}
+.cart{font:600 14px "Helvetica Neue",Arial,sans-serif;background:var(--green);color:#fff;border-radius:99px;padding:6px 14px;text-decoration:none;white-space:nowrap}
+
+/* hero */
+.hero{position:relative;background:var(--green-dark) url(images/cbd.jpg) center/cover;color:#fff}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,45,32,.88),rgba(20,45,32,.45))}
+.hero .wrap{position:relative;padding-top:88px;padding-bottom:88px}
+.hero h1{color:#fff;font-size:clamp(2rem,5vw,3.4rem);max-width:15ch}
+.hero p{max-width:46ch;font-size:1.15rem;margin:0 0 1.4em}
+.btn{display:inline-block;font:600 15px "Helvetica Neue",Arial,sans-serif;background:var(--accent);color:#2b2208;padding:12px 24px;border-radius:99px;text-decoration:none}
+.btn:hover{filter:brightness(1.08)}
+.btn.alt{background:transparent;border:2px solid var(--green);color:var(--green)}
+
+section{padding:64px 0}
+.section-title{text-align:center;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:1.4em}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.cats a{border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08);transition:transform .2s}
+.cats a:hover{transform:translateY(-4px)}
+.cats img{width:100%;aspect-ratio:1;object-fit:cover}
+
+/* products */
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:box-shadow .2s}
+.card:hover{box-shadow:0 8px 24px rgba(0,0,0,.1)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover}
+.card div{padding:16px 18px 20px;font-family:"Helvetica Neue",Arial,sans-serif}
+.card h3{font-size:1.1rem;margin-bottom:.3em}
+.price{color:var(--muted);font-size:.95rem}
+.price s{opacity:.7}
+.badge{display:inline-block;background:var(--accent);color:#2b2208;font-size:12px;font-weight:700;border-radius:99px;padding:2px 10px;margin-right:6px}
+
+/* feature rows */
+.features{background:var(--surface);border-block:1px solid var(--line)}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:56px}
+.feature:last-child{margin-bottom:0}
+.feature:nth-child(even) img{order:2}
+.feature img{border-radius:var(--radius);width:100%;box-shadow:0 4px 18px rgba(0,0,0,.12)}
+.feature h2{font-size:clamp(1.5rem,3vw,2.1rem)}
+
+/* news */
+.news{max-width:760px;margin:0 auto}
+.news .kicker{font:700 13px "Helvetica Neue",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.news h2{font-size:clamp(1.6rem,3vw,2.2rem)}
+.news p{font-size:1.08rem}
+
+/* more */
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.more a{border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.more img{width:100%;aspect-ratio:1;object-fit:cover}
+.links-row{text-align:center;margin-bottom:28px;font:600 15px "Helvetica Neue",Arial,sans-serif}
+
+/* join */
+.join{background:var(--green);color:#fff;text-align:center}
+.join h2{color:#fff}
+.join p{margin:0 0 1.4em;opacity:.9}
+.join form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.join input{font:16px "Helvetica Neue",Arial,sans-serif;padding:12px 18px;border-radius:99px;border:0;min-width:min(320px,100%)}
+.join button{border:0;cursor:pointer;font-size:15px}
+.join .msg{margin-top:14px;min-height:1.5em}
+
+/* topics */
+.topics summary{cursor:pointer;font:600 16px "Helvetica Neue",Arial,sans-serif;color:var(--green-dark)}
+.topics ul{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.topics li a{display:block;font:14px "Helvetica Neue",Arial,sans-serif;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:4px 12px;color:var(--text)}
+.topics li a:hover{background:var(--green);color:#fff}
+
+/* footer */
+footer{background:var(--green-dark);color:#dfe7e0;padding:56px 0 28px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:15px}
+footer a{color:#dfe7e0;text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer h3{color:#fff;font-size:1.05rem}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:6px}
+.fcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px}
+.social{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.social a{border:1px solid #5b7a69;border-radius:99px;padding:4px 12px;font-size:13px}
+.legal{border-top:1px solid #3f6150;margin-top:36px;padding-top:20px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px}
+.legal img{background:#fff;border-radius:6px;padding:4px 8px}
+
+@media (max-width:760px){
+  .feature{grid-template-columns:1fr;gap:20px}
+  .feature:nth-child(even) img{order:0}
+  nav.main{display:none}
+  .hero .wrap{padding-top:60px;padding-bottom:60px}
+  section{padding:44px 0}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="https://cbdoilcreamnk.com/">Where To Buy Cbd Cream For Pain</a>
+    <span><a href="#contact">Contact Us</a> &nbsp;·&nbsp; <a href="tel:2089691282">208-969-1282</a></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top"><img src="images/cropped-Z-Logo-CBD.png" alt="CBD Oil logo"></a>
+    <nav class="main" aria-label="Main">
+      <a href="#shop">Shop</a>
+      <a href="#about">About CBD</a>
+      <a href="#news">News</a>
+      <a href="#join">Join</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="cart" href="#shop">Cart (0)</a>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <h1>How To Make Cannabis Oil</h1>
+    <p>Explore full spectrum CBD drops, edibles, topicals and essential oils, with nutritional education to match.</p>
+    <a class="btn" href="#shop">Shop CBD</a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="cats">
+      <a href="#shop"><img src="images/CBD-Drops.jpg" alt="Full spectrum CBD oil drops"></a>
+      <a href="#shop"><img src="images/CBD-edibles.jpg" alt="CBD edibles"></a>
+      <a href="#shop"><img src="images/CBD-Topicals.jpg" alt="CBD topicals"></a>
+    </div>
+  </div>
+</section>
+
+<section id="shop" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="section-title">Cbd For Dogs &amp; Favourites</h2>
+    <div class="products">
+      <a class="card" href="#shop">
+        <img src="images/zaturalcomcbdinfusedlemon13449510715434.jpg" alt="CBD infused lemon" loading="lazy">
+        <div><h3>Cbd For Life</h3><span class="price">From: $14.99</span></div>
+      </a>
+      <a class="card" href="#shop">
+        <img src="images/HoneyB-CBD-450mgF.jpg" alt="CBD honey, 450mg" loading="lazy">
+        <div><h3>Pure Cbd</h3><span class="price">$29.99</span></div>
+      </a>
+      <a class="card" href="#shop">
+        <img src="images/Zatural-top1.jpg" alt="CBD subscription box" loading="lazy">
+        <div><h3>Cbd Oil Amazon</h3><span class="badge">Sale!</span><span class="price">From: $79.00</span></div>
+      </a>
+      <a class="card" href="#shop">
+        <img src="images/zaturalcomaromatherapywoodholidaycbdessentialoilsetwithdiffuser13389487931434.jpg" alt="Holiday CBD essential oil set with diffuser" loading="lazy">
+        <div><h3>Cbd</h3><span class="badge">Sale!</span><span class="price"><s>$59.99</s> $49.99</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="features" id="about">
+  <section>
+    <div class="wrap">
+      <div class="feature">
+        <img src="images/CBD-Statue.png" alt="CBD statue" loading="lazy">
+        <div>
+          <h2>Cbd Vape</h2>
+          <p>Got questions about CBD? We have answers on what it is, how it's used and what to look for in a product.</p>
+          <a class="btn alt" href="#news">More CBD Questions?</a>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="images/AliNOMNOM.png" alt="Charlotte's Web CBD oil" loading="lazy">
+        <div>
+          <h2>Charlotte's Web Cbd Oil</h2>
+          <p>Learn how different CBD oils compare and which might suit you.</p>
+          <a class="btn alt" href="#news">Click Here for More About CBD</a>
+        </div>
+      </div>
+      <div class="feature">
+        <img src="images/CBD-dog-oilPET.png" alt="CBD oil for pets" loading="lazy">
+        <div>
+          <h2>Lazarus Naturals</h2>
+          <p>CBD isn't just for people. Find out about options made for your pets.</p>
+          <a class="btn alt" href="#news">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="news">
+  <div class="wrap">
+    <article class="news">
+      <div class="kicker">In the news</div>
+      <h2>The FSA's warning on CBD</h2>
+      <p>CBD oil is one of those traits that just won’t stay out of our Instagram feeds. It’s inescapable: there’s CBD food, CBD drinks, even CBD beauty products. Derived from the cannabis plant, the cult product is claimed to assist conditions similar to anxiety or pain, giving users the stress-free results of marijuana with none of the, erm, freakier negative effects. But now the Food Standards Agency has spoken out in opposition to the CBD, warning that people on remedy, breastfeeding mothers, and pregnant women should not be eating CBD-infused food.</p>
+      <p>The FSA warned that products may need to be banned from UK outlets if the folks producing the CBD-infused merchandise fail to supply extra detailed data concerning the security of their products. Speaking concerning the warning, FSA Chief Executive Emily Miles instructed that many products obtainable on the high street weren’t properly authorised and have been taking part in a dangerous game.</p>
+      <blockquote style="margin:1.5em 0;padding-left:1.2em;border-left:4px solid var(--accent);font-style:italic">“The CBD industry should present extra information about the security and contents of these merchandise to the regulator earlier than 31 March 2021, or the merchandise will probably be taken off the shelves,” she said, by way of The Guardian. “The actions that we’re taking at the moment are a pragmatic and proportionate step in balancing the safety of public well being with client alternative.</blockquote>
+    </article>
+  </div>
+</section>
+
+<section style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <h2 class="section-title">Cbd Clinic Products</h2>
+    <p class="links-row"><a href="https://cbdoilcreamnk.com/">Hemp Oil Benefits</a> &nbsp;|&nbsp; <a href="https://cbdoilcreamnk.com/">Plus Cbd Oil</a></p>
+    <div class="more">
+      <a href="#shop"><img src="images/CBD-Aroma.jpg" alt="CBD essential oils" loading="lazy"></a>
+      <a href="#news"><img src="images/CBDvsHemp.jpg" alt="CBD vs hemp" loading="lazy"></a>
+      <a href="#news"><img src="images/5ps-of-CBD.jpg" alt="The 5 Ps of CBD" loading="lazy"></a>
+    </div>
+  </div>
+</section>
+
+<section class="join" id="join">
+  <div class="wrap">
+    <h2>Join The Club</h2>
+    <p>Sign Up For Exclusive Deals, New Products and Nutritional Education</p>
+    <form id="signup">
+      <input type="email" required placeholder="Your email address" aria-label="Email address">
+      <button class="btn" type="submit">Sign Up</button>
+    </form>
+    <div class="msg" role="status" id="signup-msg"></div>
+  </div>
+</section>
+
+<section class="topics">
+  <div class="wrap">
+    <details>
+      <summary>Browse popular topics</summary>
+      <ul>
+        <li><a href="https://cbdoilcreamnk.com/">Charlotte Web</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Green Roads Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Edibles</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil For Pain At Walmart</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil 500 Mg 49 Yaa Health Store</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd For Pain</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hemp Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Hemp Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Buy Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Pure</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Just Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil Full Spectrum Yaa Health Store</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Medical Marijuana</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hemp Lotion</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hemp Cigarettes</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Cream Walmart</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hemp Cream For Pain Relief</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Zilis Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbdistillery</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Where To Buy Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Benefits Of Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hemp Oil For Dogs</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Gummies Amazon</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Green Roads Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hemp Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbdistillery Coupon</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil For Pain</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Flower</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Side Effects Of Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil For Sleep</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil For Sale Yaa Health Store</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil 1000 Mg 79 Yaa Health Store</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Online</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hemp Oil Vs Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Pure Kana</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">New Leaf Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil Tincture</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Where Can I Buy</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Amazon Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hempworx Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Isolate</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Best Cbd Oil For Pain</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd For Sale</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">How To Take Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbdoil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Thc Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil Cbd Gummies</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil Walmart</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Water</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Full Spectrum Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Nuleaf Naturals</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Best Cbd Oil And Cbd Oil For Sale</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Charlotte Web Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">New Age Hemp Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Gummies Walmart</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Retailers Near Me</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Vape Juice</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Creams For Arthritis</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Best Rated Cbd Cream For Pain Relief</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">What Is Hemp Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Distillery</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Gummies For Sale</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil For Cats</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Walmart Cbd Products</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Ananda Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Best Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil Reviews</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cannabinol</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hemp Seed Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Level Select Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Is Cbd Oil Safe</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Koi Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Trubliss Cbd Gummies</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Sunmed Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Hempworks</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">What Is Cbd Used For</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Hemp Oil Walmart</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Select Cbd</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Best Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Oil For Anxiety</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd For Cats</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Pure Kana Cbd Oil</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Highest Rated Cbd Oil For Sale</a></li>
+        <li><a href="https://cbdoilcreamnk.com/">Cbd Dog Treats</a></li>
+      </ul>
+    </details>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="https://cbdoilcreamnk.com/">Hemp Gummies</a></li>
+          <li><a href="https://cbdoilcreamnk.com/">Hemp Cbd Oil</a></li>
+          <li><a href="https://cbdoilcreamnk.com/">Best Cbd Oil Reviews</a></li>
+          <li><a href="https://cbdoilcreamnk.com/">Cbd Oil Online Yaa Health Store</a></li>
+          <li><a href="https://cbdoilcreamnk.com/">Nutrax Cbd Oil</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="https://cbdoilcreamnk.com/">Cbd Cream For Pain Relief</a></li>
+          <li><a href="https://cbdoilcreamnk.com/">Buy Cbd Oil</a></li>
+          <li><a href="https://cbdoilcreamnk.com/">How To Use Cbd Oil</a></li>
+          <li><a href="https://cbdoilcreamnk.com/">Cbd Capsules</a></li>
+          <li><a href="https://cbdoilcreamnk.com/">Cbd Oil At Walmart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <ul>
+          <li><strong>Phone:</strong> <a href="tel:2089691282">(208) 969-1282</a></li>
+          <li><strong>Hours:</strong> Monday–Friday 8:00am – 5:00pm MST U.S.</li>
+          <li><strong>Wholesale:</strong> <a href="tel:2083580251">208-358-0251</a></li>
+        </ul>
+        <div class="social">
+          <a href="https://twitter.com/">Twitter</a>
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://www.pinterest.com/">Pinterest</a>
+          <a href="https://www.instagram.com/">Instagram</a>
+          <a href="http://www.youtube.com/">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© CBD Oil 2020</span>
+      <img src="images/payment-icons.png" alt="Accepted payment methods" width="307" height="49">
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('signup').addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('signup-msg').textContent = 'Thanks for joining the club!';
+  this.reset();
+});
+</script>
+</body>
+</html>

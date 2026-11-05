@@ -1,0 +1,177 @@
+[
+ {
+  "observation": "The page is a magazine-style blog homepage titled \"Education Activities\". It has no h1 element, and the site name is shown as large serif display text in the masthead.",
+  "category": "semantics",
+  "evidence": "facts: title 'Education Activities', h1_count 0, 16 h2 and 29 h3. The masthead shows 'Education Activitie' in bold serif."
+ },
+ {
+  "observation": "The top of the page is a dark navy utility bar. It holds the date 'Thu. Jun 17th, 2021' on the left and small links on the right (Education, Financial Aid, Certification, Science, Languages).",
+  "category": "layout",
+  "evidence": "Slice 0 shows the navy bar (rgb(20,33,61) is one of 3 navy backgrounds) with white small text."
+ },
+ {
+  "observation": "A white 'Trending' ticker strip sits under the top bar. It has a red uppercase 'TRENDING' label and three headlines in a row, and the third headline is cut off at the container edge.",
+  "category": "component",
+  "evidence": "Slice 0 shows the red badge and the headline 'Is it worth doing masters in the Netherlands? What are the top' clipped."
+ },
+ {
+  "observation": "The masthead puts a small logo image and a large bold serif site title on the left. On the right is an italic serif tagline in muted grey-blue: 'The aim of education is the knowledge not of facts but of values.'",
+  "category": "typography",
+  "evidence": "Logo Education-activity.png renders at 56x56 from a 280x165 natural size. Georgia is used on 202 elements."
+ },
+ {
+  "observation": "A solid navy band about 44px tall sits below the masthead with no visible content. The nav element is present but its links are not visible in the screenshot.",
+  "category": "layout",
+  "evidence": "Slice 0 shows an empty dark band at y≈174-218. Tag counts show 1 nav and a details/summary element."
+ },
+ {
+  "observation": "The hero is a mosaic. A large 752x732 featured card with a full-bleed cartoon image sits on the left, and two stacked cards sit on the right, each with an image on top and text below. The featured card puts its title over the image on a dark gradient.",
+  "category": "layout",
+  "evidence": "Image rects: 752x732 at x146,y218; two 374x210 images at x919. The hero title is white bold sans over a gradient. facts report 8 gradient backgrounds."
+ },
+ {
+  "observation": "The featured image is a 720x380 source stretched into a roughly square 752x732 box, so it is cropped or scaled and shows cartoon characters at large size.",
+  "category": "imagery",
+  "evidence": "Natural size [720,380] against a rendered rect of 752x732."
+ },
+ {
+  "observation": "Category labels are small red filled uppercase tags with white bold, letter-spaced text and square corners. They appear on every card and on the hero.",
+  "category": "component",
+  "evidence": "Red rgb(180,54,31) is the background on 33 elements. Labels read SCIENCE, EDUCATION, ONLINE EDUCATION and GENERAL."
+ },
+ {
+  "observation": "The palette is a warm off-white page background with white cards, navy bars and a single brick-red accent. Body text is near-black navy, and metadata is grey-blue.",
+  "category": "color",
+  "evidence": "body_bg rgb(246,244,239); card backgrounds rgb(255,255,255) on 42 elements; navy rgb(20,33,61); accent rgb(180,54,31); text rgb(27,31,42), with rgb(102,112,133) on 133 elements."
+ },
+ {
+  "observation": "Two font families are paired. A system-ui sans (rendered like Inter or Helvetica) is used for headings, labels and UI. Georgia serif is used for excerpts, the tagline, the site title and the search placeholder.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 384, Georgia 202. Slice 1 shows excerpts in grey serif."
+ },
+ {
+  "observation": "Each section heading is an uppercase bold sans h2 with a thick dark underline running across the column. A red 'View all →' link is right-aligned on the same row.",
+  "category": "component",
+  "evidence": "h2 is 32px/700 in the facts, though the section headings appear smaller. Slices 0-3 show headings such as SCIENCE, COLLEGE AND UNIVERSITY and EDUCATIONS, each followed by 'View all →'."
+ },
+ {
+  "observation": "The content is split into sections by category. Each has a 3-column grid of cards that wraps, so the last row often holds 2 cards and leaves an empty third column.",
+  "category": "layout",
+  "evidence": "7 section elements and 30 article elements; 17 grid containers. Cards sit at x=147, 424 and 702 with width about 255. Slices 1-3 show empty third slots."
+ },
+ {
+  "observation": "The page uses a two-column layout: a main column about 812px wide (x146-958) and a sidebar about 300px wide (x994-1294) containing Author Info, Popular, Latest Posts, Category, Tags and Search. The sidebar ends well before the main column does.",
+  "category": "layout",
+  "evidence": "Slice 0 shows the AUTHOR INFO heading at x994. The aside count is 1. In slice 2 the sidebar ends at the Search box while main content continues."
+ },
+ {
+  "observation": "Cards are white rectangles with a thin light border and a small corner radius. No box shadows are used. Each card stacks a 255x144 image, a red tag, a bold sans title, a 'By WebEditor · date' meta line and, in some sections, a serif excerpt.",
+  "category": "component",
+  "evidence": "box_shadows 0; border_radius_buckets: 72 elements at 1-7px, 503 at 0. Image rects are 255x144."
+ },
+ {
+  "observation": "Card heights vary with title length. In some rows shorter cards leave empty white space at the bottom, and content is top-aligned.",
+  "category": "layout",
+  "evidence": "Slice 1, 'How to prepare for JEE Advanced 2020?' has a blank lower half, and the sibling cards in that row stretch to the same height."
+ },
+ {
+  "observation": "Only the Science cards carry excerpts, set in grey Georgia and ending with an ellipsis. The cards in other sections show title and meta only.",
+  "category": "copy",
+  "evidence": "Slice 1 shows excerpts like 'US President Donald Trump made an announcement...' in the Science row and in the first College card. Other rows have none."
+ },
+ {
+  "observation": "Several cards have no photo. They use a navy diagonal-gradient placeholder with the category name in white uppercase letter-spaced text centred on it.",
+  "category": "imagery",
+  "evidence": "Slice 3 shows 'SKILLS DEVELOPMENT' and 'GENERAL' panels at 255x144. The facts list no img for these cards, and gradient_backgrounds is 8."
+ },
+ {
+  "observation": "The images are a mixed bag: flat cartoons, stock photos, a Reddit screenshot, a Math 3D word graphic and an infographic. Most are 300x200 or 720x380 sources scaled to a uniform 255x144 (16:9) crop.",
+  "category": "imagery",
+  "evidence": "images list: natural [300,200] and [720,380] sources, rendered at 255x144. Filenames include reddit.jpg, image-07.jpg and pexels-photo.jpeg."
+ },
+ {
+  "observation": "Almost all content images have empty alt text. Only the logo and the author photo have alt values, so 34 imgs show alt_missing 0 but most alts are empty strings.",
+  "category": "semantics",
+  "evidence": "Image list: alt '' for most; 'Education Activitie' for the logo; 'James E. Turner' for the author photo. counts alt_missing 0."
+ },
+ {
+  "observation": "The same images and headlines are reused across components. The Trump/EPA, spaceflight and deionized-water stories appear in both the hero and the Science row. The Digital Marketing, Business English, Netherlands and CBD posts appear in Educations, Popular, Latest Posts and the footer.",
+  "category": "copy",
+  "evidence": "Repeated filenames in images list (Benefits-of-Digital-Marketing.png appears 4 times). The heading_outline repeats the titles."
+ },
+ {
+  "observation": "The Author Info box centres a circular 96px portrait, the name 'James E. Turner' in bold sans and the role 'A Business Expert' in grey serif. It is the only fully round image.",
+  "category": "component",
+  "evidence": "The author image is 96x96 at x1096. border_radius bucket_pill is 1. The heading is an h4."
+ },
+ {
+  "observation": "The Popular list is a numbered ordered list. Red bold numerals 1-5 sit beside a 76x60 thumbnail, a bold title and a grey date, with hairline dividers between items.",
+  "category": "component",
+  "evidence": "1 ol; thumbnails 76x60 at x1026; slice 1 shows red numerals 1-5. The items use h4 headings."
+ },
+ {
+  "observation": "Latest Posts repeats the thumbnail-plus-title-plus-date list pattern but without numerals, and shows 4 items.",
+  "category": "component",
+  "evidence": "Thumbnails at x994 y1900-2189, 76x60; items are h4s."
+ },
+ {
+  "observation": "The Category widget is a plain vertical list of text links separated by thin horizontal rules.",
+  "category": "component",
+  "evidence": "Slices 1-2 list Certification, College and University, Education, Financial Aid, General, Home Schooling, Languages, Online Education, Science, Skills Development."
+ },
+ {
+  "observation": "Tags appear as small white pill-shaped chips with thin borders, wrapping across rows. They carry the same ten names as the category list.",
+  "category": "component",
+  "evidence": "Slice 2 shows chips such as 'Certification' and 'College and University'. The radius bucket_16_plus has 10 elements, matching the ten tags."
+ },
+ {
+  "observation": "The search widget is a text input with a serif 'Search articles' placeholder and a square-cornered red 'Search' button flush against its right edge.",
+  "category": "component",
+  "evidence": "primary_button: text 'Search', bg rgb(180,54,31), radius 0px, padding 0px 14px. 1 form, 1 input, 1 button."
+ },
+ {
+  "observation": "The footer is a dark navy block with three columns (Quick Links, Top Category, Latest Posts). It has white uppercase bold headings and light grey-blue links, and a thin divider above a one-line copyright crediting a 'Daily Magazine by AF themes' theme.",
+  "category": "layout",
+  "evidence": "Slice 4 shows the three columns at x146, 538 and 930. Light text rgb(207,214,228) is on 46 elements. The text reads 'Theme: Daily Magazine by AF themes.'"
+ },
+ {
+  "observation": "The page is link-dense. Nearly every card image, title and category label is a link, and the document is long, about 5,573px high at 1440px wide.",
+  "category": "structure",
+  "evidence": "201 anchors, 39 p, 40 time elements, page_height 5573, page_width 1440, 847 words."
+ },
+ {
+  "observation": "Dates are marked up with time elements and shown in ISO format (YYYY-MM-DD) in muted small sans, after a 'By WebEditor ·' byline. Every card has the same author.",
+  "category": "copy",
+  "evidence": "40 time elements. Slice 1 shows 'By WebEditor · 2018-10-02'."
+ },
+ {
+  "observation": "Headline and body copy reads like auto-spun or machine-translated text, with odd word substitutions. Titles also have clipped fragments such as 'Area Sour' in the outline and a mix of dated posts.",
+  "category": "copy",
+  "evidence": "Headings such as 'Every part You Should Know About The Deionized Water And Ion Change Filter', 'Trump Declares Decide to Lead EPA Chemical Security Workplace' and 'Newest 5 Girls Training Information Price Studying'. Topics range from CBD to treadmills to AED training."
+ },
+ {
+  "observation": "The page is flat in styling. There are no shadows, backdrop blur, animations or transforms. It has 32 transitions, and the only gradients are the hero overlay and the placeholder panels.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 0, backdrop_blur 0, animations 0, transforms 0, transitions 32, gradient_backgrounds 8."
+ },
+ {
+  "observation": "The DOM uses semantic landmarks and a small, hand-written class vocabulary. It has no scripts, one stylesheet, one inline style attribute and no SVGs.",
+  "category": "structure",
+  "evidence": "header 1, nav 1, main 1, aside 1, footer 1; classes unique 33 of 204 total; tailwind_like_fraction 0.029; scripts 0; stylesheets 1; svgs 0; inline_style_attrs 1."
+ },
+ {
+  "observation": "The heading hierarchy skips levels. Article titles are h3 under section h2s, but the sidebar and author widgets jump to h4 under h2 headings. The hero cards use h2 and h3.",
+  "category": "semantics",
+  "evidence": "Outline: h2 'AUTHOR INFO' followed by h4 'James E. Turner'; h2 'POPULAR' followed by h4 items; 10 h4 and 29 h3 in the counts."
+ },
+ {
+  "observation": "Body text is 16px with a 24.8px line height (about 1.55). Card titles are bold sans around 18px, and meta text is about 13px. This makes a clear size contrast between uppercase section heads, card titles and meta.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 24.8px. Slices show title and meta sizes."
+ },
+ {
+  "observation": "The corners are mostly square. The search button, tags' parent and the red labels have square corners or only tiny rounding, and the cards have only slight rounding. The pill shape is reserved for the avatar.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 503, bucket_1_7 72, bucket_8_15 0, bucket_pill 1."
+ }
+]

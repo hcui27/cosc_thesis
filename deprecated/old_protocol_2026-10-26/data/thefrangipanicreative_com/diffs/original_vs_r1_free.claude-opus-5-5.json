@@ -1,0 +1,284 @@
+[
+ {
+  "observation": "A has no h1 element; B has exactly one h1 containing the site name",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 0, h1 null; B h1_count 1, h1 text 'The Frangipani Creative' at 70.4px Fraunces weight 600, white",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's heading outline includes placeholder headings and an empty one ('Main Content', '', 'Before Footer', 'Footer'); B's outline has only content-labelled headings",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline has h2 'Main Content', h2 '', h2 'Before Footer', h2 'Footer'; B outline runs h1 → h2 'The studio of Corinne Rodrigues' → h2/h3 content headings",
+  "which_side": "A"
+ },
+ {
+  "observation": "A marks up section titles as h4 and testimonial client names as h2; B uses h2 for section titles and h3 for post titles",
+  "category": "DOM/semantic structure",
+  "evidence": "A: h4 'Personalized Blog Coaching', h4 'Happy Clients', h2 'Sunita Saldhana', and post titles as h4; B: h2 'Personalized Blog Coaching', h2 'Happy Clients', h2 'From the Blog', and post titles as h3",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses blockquote, cite and figure for testimonials and an address element for the footer; A has no blockquote or cite",
+  "category": "DOM/semantic structure",
+  "evidence": "B blockquote 3, cite 3, figure 3, address 1; A blockquote 0, cite 0, figure 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses article and multiple header elements; B uses neither article nor more than one header",
+  "category": "DOM/semantic structure",
+  "evidence": "A article 7, header 7; B article 0, header 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's DOM is much larger than B's",
+  "category": "DOM/semantic structure",
+  "evidence": "A div 167, span 48, p 33, br 33, total classes 621 (210 unique); B div 30, span 3, p 11, br 4, total classes 46 (24 unique)",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads 49 scripts, 15 stylesheets, 4 iframes and 9 noscript elements; B has no scripts and one stylesheet",
+  "category": "DOM/semantic structure",
+  "evidence": "A scripts 49, stylesheets 15, iframe 4, noscript 9; B scripts 0, stylesheets 1, no iframe",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has a long list of Open Graph and Twitter meta tags (some repeated) plus JSON-LD; B has only charset, viewport and description",
+  "category": "DOM/semantic structure",
+  "evidence": "A meta 35 with og:*, twitter:*, google-site-verification, p:domain_verify, generator, jsonld_blocks 1; B meta_names [charset, viewport, description], jsonld_blocks 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "The page titles and lang attributes differ",
+  "category": "copy treatment",
+  "evidence": "A title 'Home - The Frangipani Creative', lang en-US; B title 'The Frangipani Creative', lang en",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 15 img elements, all 1×1 lazy-load placeholder GIFs; B has no img elements and shows its photos as CSS backgrounds",
+  "category": "imagery handling",
+  "evidence": "A images all named 'yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' with natural size 1×1; B images [] and count 0, but slices show frangipani photos in the hero, coaching band and social band",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's blog post cards show blank 180px image areas above their titles; B's post cards are text only",
+  "category": "imagery handling",
+  "evidence": "A images at y=3030, 180×180, x=300/520/740/960, with empty white space above titles in A_slice_02; B_slice_02 shows bordered cards with only a title and 'By Lux'",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's Instagram feed renders as a very large crimson Instagram glyph (about 750px wide), shown twice, with truncated caption links; B reduces Instagram to one 'Follow on Instagram' link in the footer",
+  "category": "imagery handling",
+  "evidence": "A_slice_03 to A_slice_05 show the giant Instagram SVG icon, link text such as 'How often we get bogged down with the non-essentia', and 'Load More...'; B_slice_03 shows only the 'Follow on Instagram' text link",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has no hero: a centered serif wordmark sits above a centered nav bar. B opens with a full-bleed dark photo hero with the nav overlaid",
+  "category": "layout",
+  "evidence": "A_slice_00 shows the 'The Frangipani Creative' title on white with a centered nav row below; B_slice_00 shows the logo on the left and the nav on the right over a dark flower photo",
+  "which_side": "B"
+ },
+ {
+  "observation": "A places its intro paragraphs directly over a flower photo inside a fixed 880px-wide box; B places the intro below the hero in a two-column 'About' layout",
+  "category": "layout",
+  "evidence": "A_slice_00: black text over a brown blurred photo, box from x=280 to x=1160; B_slice_00: left column with the heading 'The studio of Corinne Rodrigues', right column with paragraph and link cards",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's content stays in a narrow centered column and its Instagram section switches to a left offset of about x=97; B alternates contained sections with full-bleed bands",
+  "category": "layout",
+  "evidence": "A content blocks span x=280–1160, Instagram items at x=97; B coaching band and social band run the full 1440px width",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses CSS grid and A uses none",
+  "category": "layout",
+  "evidence": "B display_grid 5, display_flex 8; A display_grid 0, display_flex 6",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's page is much shorter",
+  "category": "layout",
+  "evidence": "A page_height 7381px; B 4225px (both 1440px wide)",
+  "which_side": "A"
+ },
+ {
+  "observation": "Testimonials: A shows one testimonial with stars over a dark photo and exposes raw schema data; B shows three testimonials side by side in white cards",
+  "category": "component choices",
+  "evidence": "A_slice_01–02 show 'Anil Kumar Margani', then '5', '2019-10-15T11:24:24+05:30', a URL, '5', '3' as visible text; B_slice_01 shows three cards with orange stars, the quote and the client name in serif",
+  "which_side": "both"
+ },
+ {
+  "observation": "A repeats the testimonial body text twice; B shows each quote once",
+  "category": "copy treatment",
+  "evidence": "A_slice_01: the 'I was a lone fish...' paragraph appears above and below an hr; B: one occurrence per card",
+  "which_side": "A"
+ },
+ {
+  "observation": "Blog posts: A shows four columns with centered serif titles and uppercase letter-spaced author bylines; B shows a 2×2 grid of rounded cards with left-aligned titles and sentence-case bylines",
+  "category": "component choices",
+  "evidence": "A_slice_02: 'By LUX', 'By FABIDA ABDULLA' in spaced caps; B_slice_02: 'By Lux', 'By Fabida Abdulla' inside cream bordered cards",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social links: A uses colored brand-specific widget tiles with white Like/Follow buttons; B uses identical outlined pill buttons in white on a photo",
+  "category": "component choices",
+  "evidence": "A top_backgrounds include rgb(24,119,242), rgb(234,36,84), rgb(39,103,177), rgb(230,0,35), rgb(29,161,242), and A_slice_02 shows the Facebook/Instagram/LinkedIn/Pinterest/Twitter tiles; B_slice_02 shows pills such as 'Facebook · Like' and 'Instagram · Follow'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's social widget icons render as stray letters ('k', 'q', 's', 'A', 'N') in place of icon glyphs",
+  "category": "imagery handling",
+  "evidence": "A_slice_02/03: the letters appear at the left of each social tile; A fonts list 'sw-icon-font' (5 elements)",
+  "which_side": "A"
+ },
+ {
+  "observation": "B has multiple pill-shaped call-to-action buttons; A's measured primary button is a square black 'Menu' button, and its content uses text links",
+  "category": "component choices",
+  "evidence": "B primary_button 'Personalized Blog Coaching' bg rgb(194,37,92), radius 999px, bucket_pill 10; B buttons 'Read more', 'More happy clients', 'Visit the blog', and outline 'Why Frangipani?'; A primary_button 'Menu' bg black, radius 0px, bucket_pill 0, 'Read more..' underlined link",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds new sections and CTAs not present in A: a 'From the Blog' heading, 'More happy clients', 'Visit the blog' and 'Why Frangipani?'",
+  "category": "copy treatment",
+  "evidence": "B heading_outline h2 'From the Blog'; B_slice_01/02 buttons; A outline has no such headings",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds small uppercase orange/crimson eyebrow labels above headings; A has none",
+  "category": "typography",
+  "evidence": "B_slice_00/01: 'SECUNDERABAD, INDIA', 'ABOUT', 'COACHING' in letter-spaced caps",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds subtitle lines under section headings",
+  "category": "copy treatment",
+  "evidence": "B: 'Kind words from people who have trained at The Frangipani Creative.', 'Recent posts on writing, focus and creativity.'; no equivalent in A slices",
+  "which_side": "B"
+ },
+ {
+  "observation": "B rewrites the intro into a hero tagline and splits the bio across a heading, an italic serif pull line and link cards; A keeps the bio as continuous paragraphs with inline links",
+  "category": "copy treatment",
+  "evidence": "B hero text 'Training and coaching for writing, blogging and creativity, from the studio of Corinne Rodrigues.' and italic 'A lover of words. A self-acceptance blogger. A book reviewer.'; A_slice_00 has one block of paragraphs with underlined crimson links",
+  "which_side": "both"
+ },
+ {
+  "observation": "B turns the three inline links in the bio into bordered cards, each with a title and a description",
+  "category": "component choices",
+  "evidence": "B_slice_00: cards 'Everyday Gyaan / Writing about life, wellness and relationships', 'CorinneRodrigues.com / Book reviews from an avid reader', 'The Frangipani Creative / Coaching for...'; A shows these as inline underlined links",
+  "which_side": "B"
+ },
+ {
+  "observation": "Font pairing: A uses Open Sans for body and Arbutus Slab for display text plus icon fonts; B uses Inter for body and Fraunces for display text",
+  "category": "typography",
+  "evidence": "A fonts: Open Sans 379, Helvetica 35, Arbutus Slab 23, FontAwesome 20, sw-icon-font 5; B fonts: Inter 119, Fraunces 19",
+  "which_side": "both"
+ },
+ {
+  "observation": "Heading scale and weight: A's h2 is 30px at weight 400; B's h2 is 41.6px at weight 600 and its h1 is 70.4px",
+  "category": "typography",
+  "evidence": "A h2 font_size 30px, weight 400; B h2 41.6px, weight 600; B h1 70.4px",
+  "which_side": "B"
+ },
+ {
+  "observation": "Body text is slightly smaller in B",
+  "category": "typography",
+  "evidence": "A body 18px / 29.25px line height; B 17px / 28.05px",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's footer headings use letter-spaced uppercase; B's footer headings use title-case serif",
+  "category": "typography",
+  "evidence": "A_slice_02: 'FOLLOW ME ON SOCIAL MEDIA', 'LOCATION', 'RECENT POSTS'; B_slice_02: 'Location', 'Recent Posts', '@thefrangipanicreative' in Fraunces",
+  "which_side": "both"
+ },
+ {
+  "observation": "Page background: A is pure white with black text; B is a warm cream with dark brown text",
+  "category": "color",
+  "evidence": "A body_bg rgb(255,255,255), body_color rgb(0,0,0); B body_bg rgb(251,246,241), body_color rgb(43,34,32)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The accent crimson differs: A uses rgb(178,3,50) for links; B uses a pinker rgb(194,37,92) for buttons and rgb(156,26,71) for text accents",
+  "category": "color",
+  "evidence": "A top_text_colors rgb(178,3,50) ×106; B backgrounds rgb(194,37,92) ×4, text rgb(156,26,71) ×7",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a dark footer; A's footer is white with centered copyright",
+  "category": "color",
+  "evidence": "B top_backgrounds rgb(27,21,19), and B_slice_02/03 show a near-black footer with light text rgb(216,204,198); A_slice_05 shows white with '© 2020 - The Frangipani Creative' centered",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses a three-column dark footer for Location, Recent Posts and Instagram; in A these blocks sit in a three-column widget area over a sky photo inside the content column",
+  "category": "layout",
+  "evidence": "B_slice_02/03 footer columns; A_slice_02: Follow/Location/Recent Posts columns over a blue-sky flower photo",
+  "which_side": "both"
+ },
+ {
+  "observation": "B places dark overlay tints on its photo backgrounds and uses gradient backgrounds; A uses no gradients",
+  "category": "decoration/effects",
+  "evidence": "B gradient_backgrounds 3, and the hero/coaching bands appear darkened; A gradient_backgrounds 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "Corner rounding: A is almost entirely square-cornered; B mixes pills with 8–16px+ rounded cards",
+  "category": "decoration/effects",
+  "evidence": "A radius buckets 0:435, 1–7:17, 8–15:5, 16+:5, pill 0; B 0:118, 8–15:7, 16+:3, pill 10",
+  "which_side": "B"
+ },
+ {
+  "observation": "Neither page uses box shadows; A has more transitions and also has animations and transforms",
+  "category": "decoration/effects",
+  "evidence": "box_shadows 0 on both; A transitions 58, animations 1, transforms 5; B transitions 12, animations 0, transforms 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows a cookie consent bar overlaying the content; B has none",
+  "category": "component choices",
+  "evidence": "A_slice_00: 'Privacy & Cookies...' bar with a 'Close and accept' button; not in any B slice",
+  "which_side": "A"
+ },
+ {
+  "observation": "A highlights the active nav item ('Home') in crimson; B's nav items are all white",
+  "category": "component choices",
+  "evidence": "A_slice_00: 'Home' is crimson and the other items black; B_slice_00: all nav links white over the hero",
+  "which_side": "A"
+ },
+ {
+  "observation": "B shortens the nav label 'The Frangipani Creative Podcast' to 'Podcast'",
+  "category": "copy treatment",
+  "evidence": "A_slice_00 nav: 'The Frangipani Creative Podcast'; B_slice_00 nav: 'Podcast'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses an hr divider within the testimonial and between footer areas; B uses thin borders on its cards and section edges",
+  "category": "decoration/effects",
+  "evidence": "A hr 4, with a white rule visible in A_slice_01; B has 0 hr, while a border line between sections and a footer divider are visible in B_slice_02/03",
+  "which_side": "both"
+ },
+ {
+  "observation": "A uses more inline style attributes and ARIA attributes",
+  "category": "DOM/semantic structure",
+  "evidence": "A inline_style_attrs 53, aria_attrs 21; B 5 and 4",
+  "which_side": "A"
+ },
+ {
+  "observation": "The disclosure text appears in different places: A shows it as standalone body-size text with bold 'this page' above the copyright; B shows it as small muted text in the dark footer",
+  "category": "copy treatment",
+  "evidence": "A_slice_05: disclosure paragraph in black with bold link; B_slice_03: small grey disclosure with underlined pink 'this page' followed by '© 2020'",
+  "which_side": "both"
+ },
+ {
+  "observation": "Word counts are similar, with B slightly lower",
+  "category": "copy treatment",
+  "evidence": "A words 622; B 582; both have emoji 1 and exclamations 0",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's star ratings are orange; A's are black",
+  "category": "color",
+  "evidence": "B_slice_01: orange stars in the cards; A_slice_01: black stars above 'Anil Kumar Margani'",
+  "which_side": "both"
+ }
+]

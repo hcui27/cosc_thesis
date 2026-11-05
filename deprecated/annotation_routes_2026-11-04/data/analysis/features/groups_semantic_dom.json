@@ -1,0 +1,269 @@
+{
+ "key": "21b3ebce439b",
+ "groups": [
+  {
+   "name": "Heading hierarchy skips levels or out of order",
+   "definition": "Does the heading outline skip levels or appear out of order (e.g., h2 to h4, h3 before h2, sidebar heading before main heading)?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#0",
+    "alpine8848_com#24",
+    "educationactivities_org#0",
+    "gravityvault_com#1",
+    "homedesignersoftware_com#29",
+    "kanienkeha_net#0",
+    "kneeguru_co_uk#1",
+    "miamidda_com#26",
+    "naturalwellbeing_com#22",
+    "neverskipbrunch_com#31",
+    "nira_org_ng#3",
+    "ridetech_com#1",
+    "seoanalyzer_me#3"
+   ]
+  },
+  {
+   "name": "Page lacks an h1 heading",
+   "definition": "Does the page have no h1 element, with headings starting at h2 or lower?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "bather_com#0",
+    "greatdayimprovements_com#8",
+    "kneeguru_co_uk#0",
+    "newclimateeconomy_net#24"
+   ]
+  },
+  {
+   "name": "Clean ordered heading hierarchy",
+   "definition": "Does the page have one h1, h2 section titles and h3 card titles in orderly, shallow hierarchy without skipped levels?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "h1_count",
+    "op": "==",
+    "value": 1
+   },
+   "members": [
+    "aeptexas_com#24",
+    "bathurst12hour_com_au#1",
+    "cbdoilcreamnk_com#20",
+    "insightcentral_net#20",
+    "merchantsavvy_co_uk#19",
+    "stgpartners_com#1",
+    "tellmebaby_com_au#16",
+    "bluebayou_com#1",
+    "gravityvault_com#2"
+   ]
+  },
+  {
+   "name": "Content images have empty alt text",
+   "definition": "Do content or decorative images (photos, thumbnails, card images) carry empty alt attributes while logos or few others have descriptive alt?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#15",
+    "allstate_jobs#11",
+    "bathurst12hour_com_au#18",
+    "educationactivities_org#4",
+    "flygrant_com#25",
+    "gravityvault_com#13",
+    "insightcentral_net#24",
+    "neverskipbrunch_com#24",
+    "tellmebaby_com_au#17",
+    "bluebayou_com#22",
+    "kneeguru_co_uk#32"
+   ]
+  },
+  {
+   "name": "All images have alt text",
+   "definition": "Do all images have alt attributes present, with descriptive or generic text?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#18",
+    "cbdoilcreamnk_com#21",
+    "greatdayimprovements_com#11",
+    "homedesignersoftware_com#31",
+    "merchantsavvy_co_uk#15",
+    "miamidda_com#25",
+    "fnsouzafoundation_com#24"
+   ]
+  },
+  {
+   "name": "Semantic landmark elements used",
+   "definition": "Does the page use semantic landmark elements such as header, nav, main, section and footer?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "semantic_tag_count",
+    "op": ">=",
+    "value": 4
+   },
+   "members": [
+    "aeptexas_com#18",
+    "alpine8848_com#21",
+    "bather_com#25",
+    "bluebayou_com#2",
+    "educationactivities_org#1",
+    "flygrant_com#26",
+    "greatdayimprovements_com#9",
+    "homedesignersoftware_com#30",
+    "kanienkeha_net#1",
+    "kneeguru_co_uk#31",
+    "naturalwellbeing_com#23",
+    "neverskipbrunch_com#32",
+    "nira_org_ng#19",
+    "ridetech_com#30",
+    "seoanalyzer_me#5",
+    "stgpartners_com#25"
+   ]
+  },
+  {
+   "name": "Sparse non-utility semantic class names",
+   "definition": "Does the markup use few, hand-written semantic class names rather than utility-framework classes?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "tailwind_like_fraction",
+    "op": "<",
+    "value": 0.1
+   },
+   "members": [
+    "aeptexas_com#25",
+    "allstate_jobs#24",
+    "bluebayou_com#24",
+    "cbdoilcreamnk_com#22",
+    "flygrant_com#28",
+    "greatdayimprovements_com#10",
+    "homedesignersoftware_com#32",
+    "miamidda_com#24",
+    "neverskipbrunch_com#34",
+    "seoanalyzer_me#29",
+    "stgpartners_com#26",
+    "thync_com#23",
+    "insightcentral_net#21",
+    "merchantsavvy_co_uk#20"
+   ]
+  },
+  {
+   "name": "Minimal head metadata, no structured data",
+   "definition": "Does the head contain only minimal meta tags (charset, viewport, maybe description) and no JSON-LD structured data?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "jsonld_blocks",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "aeptexas_com#0",
+    "allstate_jobs#25",
+    "cbdoilcreamnk_com#23",
+    "flygrant_com#27",
+    "newclimateeconomy_net#25",
+    "nira_org_ng#23",
+    "seoanalyzer_me#28",
+    "tellmebaby_com_au#26"
+   ]
+  },
+  {
+   "name": "Link-dense page with few buttons",
+   "definition": "Are interactive elements mostly anchors, with many links relative to text and few or no buttons?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "button_count",
+    "op": "==",
+    "value": 0
+   },
+   "members": [
+    "bather_com#29",
+    "bluebayou_com#23",
+    "cbdoilcreamnk_com#27",
+    "educationactivities_org#2",
+    "insightcentral_net#17",
+    "kanienkeha_net#24",
+    "kneeguru_co_uk#30",
+    "newclimateeconomy_net#26"
+   ]
+  },
+  {
+   "name": "Address element for contact details",
+   "definition": "Are contact details marked up with an address element?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#14",
+    "ridetech_com#2",
+    "thefrangipanicreative_com#20"
+   ]
+  },
+  {
+   "name": "Quotes use figure and blockquote",
+   "definition": "Are testimonials or quotes marked up with figure, blockquote and figcaption?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "bather_com#18",
+    "thefrangipanicreative_com#10"
+   ]
+  },
+  {
+   "name": "Article and time elements for items",
+   "definition": "Are repeated items such as news posts or cards marked up as article elements, with time elements for dates?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "bathurst12hour_com_au#0",
+    "educationactivities_org#3",
+    "seoanalyzer_me#4",
+    "thync_com#9"
+   ]
+  },
+  {
+   "name": "Manual line breaks in copy",
+   "definition": "Does the page use br elements for line breaks in copy or address blocks?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "greatdayimprovements_com#27"
+   ]
+  },
+  {
+   "name": "Hidden modal dialog with form",
+   "definition": "Does the page include a hidden modal dialog containing a form such as login?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#23"
+   ]
+  },
+  {
+   "name": "Metric values use b and small elements",
+   "definition": "Are stat values and labels marked up with b and small elements?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "seoanalyzer_me#6"
+   ]
+  },
+  {
+   "name": "Navigation and footer links in lists",
+   "definition": "Are navigation and footer links marked up as ul/li lists?",
+   "detector": "programmatic",
+   "proxy": null,
+   "members": [
+    "thync_com#24"
+   ]
+  },
+  {
+   "name": "Brand-plus-tagline page title",
+   "definition": "Does the page title follow a short brand plus tagline pattern?",
+   "detector": "text",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#0"
+   ]
+  }
+ ]
+}

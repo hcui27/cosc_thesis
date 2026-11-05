@@ -1,0 +1,707 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page title formats differ: A appends the legal company name after an en dash, and B uses an em dash with a shorter brand-only title.",
+   "evidence": "A title: 'Thync | Neurostimulation For Everyone – Thync Global, Inc.'; B title: 'Thync — Neurostimulation For Everyone'",
+   "side": "both",
+   "members": [
+    "thync_com|opus|00",
+    "thync_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "B uses section and article elements, while A uses none.",
+   "evidence": "B semantic: section 5, article 8; A: section 0, article 0",
+   "side": "generated",
+   "members": [
+    "thync_com|opus|05",
+    "thync_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "A's h1 is empty and its visible hero headline is an h2. B's h1 holds the hero headline.",
+   "evidence": "A h1 text '' (18px), heading_outline lists h2 'Neurostimulation For Everyone'; B h1 text 'Neurostimulation For Everyone'",
+   "side": "both",
+   "members": [
+    "thync_com|opus|06",
+    "thync_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "'Our Approach To Science' is an h4 in A and an h2 in B.",
+   "evidence": "A outline level 4; B outline level 2",
+   "side": "both",
+   "members": [
+    "thync_com|opus|09"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I4",
+   "text": "B's footer column titles are h4 headings. A's footer has no such headings in the outline.",
+   "evidence": "B h4: FOLLOW US, EXPLORE, LEGAL, STAY INFORMED ABOUT THYNC; A outline ends at 'Featured In'",
+   "side": "generated",
+   "members": [
+    "thync_com|opus|10",
+    "thync_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A uses the Poppins webfont throughout, and B uses the system-ui font stack.",
+   "evidence": "fonts_by_element_count: A Poppins 346; B system-ui 135 (h1 family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif')",
+   "side": "both",
+   "members": [
+    "thync_com|opus|11",
+    "thync_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "B's body text is larger with more line height than A's.",
+   "evidence": "body font-size/line-height: A 15px/22.5px; B 17px/28.05px",
+   "side": "generated",
+   "members": [
+    "thync_com|opus|12",
+    "thync_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "A's section titles are bold with wide letter spacing. B's section titles are large bold h2s with normal or tight spacing.",
+   "evidence": "A_slice_00 '5 Questions, 5 Answers About Thync' spaced-out letters; B h2 38.4px/700 in B_slice_00",
+   "side": "both",
+   "members": [
+    "thync_com|opus|14",
+    "thync_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "A's hero headline is light-weight Poppins. B's is a heavy 700-weight headline at 70.4px with tight letter spacing.",
+   "evidence": "A_slice_00 thin hero text; B h1 font_size 70.4px, font_weight 700",
+   "side": "both",
+   "members": [
+    "thync_com|opus|13",
+    "thync_com|opus|15",
+    "thync_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "A uses a white background with dark grey text. B uses a dark navy theme with near-white text.",
+   "evidence": "body_bg/color: A rgb(255,255,255)/rgb(58,58,58); B rgb(11,16,32)/rgb(243,245,251)",
+   "side": "both",
+   "members": [
+    "thync_com|opus|16",
+    "thync_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "The accent color is orange in A and teal/mint in B.",
+   "evidence": "A backgrounds rgb(241,126,74) x5; B rgb(77,225,193) x2 and text x10",
+   "side": "both",
+   "members": [
+    "thync_com|opus|17",
+    "thync_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A's hero is a full-bleed photograph of an athlete wearing the device, with a dark overlay. B's hero has no photo, only dark radial glows.",
+   "evidence": "A_slice_00 photo hero; A image 2_new_1_1512x.jpg 1440x810; B_slice_00 navy background with blue and green glows, no images except logos",
+   "side": "both",
+   "members": [
+    "thync_com|opus|20",
+    "thync_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "B leaves out the FAQ illustration images completely.",
+   "evidence": "B images list contains only the 7 press logos and the TRUSTe badge (8 total)",
+   "side": "generated",
+   "members": [
+    "thync_com|opus|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A's paper cards include publication logo images (Nature, bioRxiv, PeerJ), and these appear as broken alt text or a grey box. B's paper cards are text only.",
+   "evidence": "A_slice_02 'thync-published-paper-nature' alt text visible; B_slice_02 cards with text and links only",
+   "side": "both",
+   "members": [
+    "thync_com|opus|23",
+    "thync_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "A's nav is centered and shows FeelZing as an orange filled box. B's nav is right-aligned and all links have the same plain treatment.",
+   "evidence": "A_slice_00 orange 'FeelZing' tab; B_slice_00 four plain grey links at right",
+   "side": "both",
+   "members": [
+    "thync_com|opus|24",
+    "thync_com|opus|25",
+    "thync_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "B's header is translucent with a backdrop blur.",
+   "evidence": "B backgrounds rgba(11,16,32,0.85); backdrop_blur 1",
+   "side": "generated",
+   "members": [
+    "thync_com|opus|26",
+    "thync_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "A's hero CTA is a square orange button with uppercase spaced text. B's is a teal pill button in title case.",
+   "evidence": "A_slice_00 'DISCOVER FEELZING' square; B primary_button bg rgb(77,225,193), radius 999px, text 'Discover Feelzing'",
+   "side": "both",
+   "members": [
+    "thync_com|opus|27",
+    "thync_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "The hero subtitle separator is a hyphen in A and an em dash in B.",
+   "evidence": "A 'Discover our latest innovation - FeelZing Energy Patch'; B 'Discover our latest innovation — FeelZing Energy Patch'; em_dashes A 1, B 2",
+   "side": "both",
+   "members": [
+    "thync_com|opus|28",
+    "thync_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "A lays out the FAQ as a zig-zag two-column pattern, with text alternating left and right next to image slots and large vertical gaps. B stacks the FAQ as full-width bordered cards.",
+   "evidence": "A_slice_00/01 Q1 left, Q2 right, Q3 left, Q4 right; B_slice_00/01 stacked rounded cards",
+   "side": "both",
+   "members": [
+    "thync_com|opus|08",
+    "thync_com|opus|29",
+    "thync_com|opus|30",
+    "thync_com|sonnet|08",
+    "thync_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "B uses CSS grid extensively, while A relies only on flex.",
+   "evidence": "display_grid: A 0, B 13; display_flex: A 27, B 7",
+   "side": "both",
+   "members": [
+    "thync_com|opus|31",
+    "thync_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "A's content container is wider (from about x=144 to 1296). B's is narrower (about x=200 to 1240).",
+   "evidence": "A images at x=144..1296; B logos 216..1224, footer from x=200 in B_slice_02",
+   "side": "both",
+   "members": [
+    "thync_com|opus|33",
+    "thync_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "A's video block is a full-width flat grey rectangle with a small orange play circle. B's is a narrower rounded panel with a navy gradient and a large teal play circle.",
+   "evidence": "A_slice_02 grey 1152px-wide box; A tag counts include iframe 1; B_slice_01 rounded gradient card, roughly 720px wide",
+   "side": "both",
+   "members": [
+    "thync_com|opus|34",
+    "thync_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "A's paper 'Read More' links are small outlined orange rectangular buttons. B's are uppercase teal text links with an arrow.",
+   "evidence": "A_slice_03 outlined 'READ MORE'; B_slice_02 'READ MORE →'",
+   "side": "both",
+   "members": [
+    "thync_com|opus|35",
+    "thync_com|opus|36",
+    "thync_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "B's press logo row includes Mashable, which is not visible in A's row. The facts report A's Mashable logo rect as 0x0.",
+   "evidence": "A mashable rect w 0 h 0, visible row PBS…WSJ (6); B shows 7 logos at 120x65",
+   "side": "both",
+   "members": [
+    "thync_com|opus|37",
+    "thync_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "B places a light-colored band in the middle of the dark page for the press logos.",
+   "evidence": "B_slice_02 'FEATURED IN' strip on light background; B backgrounds include rgb(246,248,252)",
+   "side": "generated",
+   "members": [
+    "thync_com|opus|19",
+    "thync_com|opus|38",
+    "thync_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "The image alt text styles differ: A uses slug-style alts and leaves some blank, while B uses plain brand names.",
+   "evidence": "A alt 'thync-press-validation-pbs', alt_missing 2; B alt 'PBS', 'The Wall Street Journal', alt_missing 0",
+   "side": "both",
+   "members": [
+    "thync_com|opus|39",
+    "thync_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "The 'Featured In' heading is title-case bold dark text in A. In B it is a small uppercase letter-spaced grey label.",
+   "evidence": "A heading 'Featured In'; B heading 'FEATURED IN' in B_slice_02",
+   "side": "both",
+   "members": [
+    "thync_com|opus|40"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I27",
+   "text": "A's footer is light grey, with social icons centered under 'Follow us'. B's footer is dark navy, with social links as text in a four-column grid under uppercase headings.",
+   "evidence": "A_slice_03 grey footer with icon SVGs; B_slice_02 FOLLOW US / EXPLORE / LEGAL / STAY INFORMED columns with 'Facebook, Instagram, YouTube' te",
+   "side": "both",
+   "members": [
+    "thync_com|opus|41",
+    "thync_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "A's email link is underlined in the footer. B lists the email as plain text under 'Stay informed'.",
+   "evidence": "A_slice_03 underlined 'hello@thync.com'; B_slice_02 plain 'hello@thync.com'",
+   "side": "both",
+   "members": [
+    "thync_com|opus|43"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I29",
+   "text": "The TRUSTe badge and copyright swap positions: A has the badge bottom-left and copyright bottom-right, and B has copyright left and badge right, above a divider line.",
+   "evidence": "A TRUSTe rect x 144; B TRUSTe rect x 1140; B_slice_02 divider line above",
+   "side": "both",
+   "members": [
+    "thync_com|opus|44",
+    "thync_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A uses mostly square corners. B uses more rounded corners and pill shapes.",
+   "evidence": "border_radius buckets: A bucket_0 340, 16+ 2, pill 0; B bucket_0 126, 16+ 9, pill 2",
+   "side": "both",
+   "members": [
+    "thync_com|opus|45",
+    "thync_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "A has a few box shadows plus animations and transforms. B has none of these but does use gradients.",
+   "evidence": "A box_shadows 2, animations 2, transforms 1, gradients 0; B box_shadows 0, animations 0, transforms 0, gradients 3",
+   "side": "both",
+   "members": [
+    "thync_com|opus|46",
+    "thync_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "Class usage is minimal in B and extensive in A.",
+   "evidence": "classes total/unique: A 494/210; B 36/18",
+   "side": "both",
+   "members": [
+    "thync_com|opus|48",
+    "thync_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "Apostrophe styles differ in the question 5 heading: A uses a curly apostrophe and B a straight one.",
+   "evidence": "A 'How can I try Thync’s technology?'; B 'How can I try Thync's technology?'",
+   "side": "both",
+   "members": [
+    "thync_com|opus|50"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "Paragraphs in B's FAQ cards span the full card width, so lines are long. A's FAQ text is limited to a half-width column.",
+   "evidence": "B_slice_00 answer lines run about 900px wide; A_slice_00/01 text column about 540px wide",
+   "side": "both",
+   "members": [
+    "thync_com|opus|51"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "B capitalizes the CTA as 'Discover Feelzing', while the subtitle and nav say 'FeelZing'.",
+   "evidence": "B primary_button text 'Discover Feelzing'. The subtitle and nav read 'FeelZing'.",
+   "side": "generated",
+   "members": [
+    "thync_com|sonnet|17"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "A's newsletter area ('Stay Informed About Thync') shows only a title with an empty form area. B shows the title plus the email address.",
+   "evidence": "A has 1 form and 2 inputs, with nothing visible. B has no form and shows hello@thync.com under that heading.",
+   "side": "both",
+   "members": [
+    "thync_com|sonnet|23"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I37",
+   "text": "B's TRUSTe badge sits on a white rounded chip. A's sits directly on the grey footer.",
+   "evidence": "B white background count 1 (rgb(255,255,255)). The badge is visible with a white box in the screenshot.",
+   "side": "generated",
+   "members": [
+    "thync_com|sonnet|25"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I38",
+   "text": "A's DOM is heavily scripted and Shopify-based, with many scripts, styles, noscripts, and cart/drawer remnants. B is a lean static document.",
+   "evidence": "A scripts 54, style 15, noscript 12, meta 18, shopify meta tags, and a 'Just added to your cart' H2. B scripts 0, style 1, meta 3, styleshee",
+   "side": "both",
+   "members": [
+    "thync_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I39",
+   "text": "A has JSON-LD blocks and Open Graph/Twitter metadata. B has none.",
+   "evidence": "A jsonld_blocks 2, og:* and twitter:* meta. B jsonld_blocks 0, meta_names charset/viewport/description.",
+   "side": "both",
+   "members": [
+    "thync_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I40",
+   "text": "Page height is shorter on B because of tighter content and no empty image slots.",
+   "evidence": "A page_height 4675. B page_height 3711. Both are 1440 wide.",
+   "side": "both",
+   "members": [
+    "thync_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I41",
+   "text": "A has much more vertical whitespace between Q&A items, with large empty gaps beside text where images should be. B spaces its cards about 20px apart.",
+   "evidence": "A_slice_01 shows ~300px blank regions. B cards at y≈690–883 and 904–1125.",
+   "side": "both",
+   "members": [
+    "thync_com|sonnet|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I42",
+   "text": "B alternates dark section backgrounds, using a lighter navy for the Q&A cards and the science section and a darker navy for the page. A alternates only white and a light grey footer.",
+   "evidence": "B top backgrounds rgb(18,26,51) ×9 and rgb(11,16,32). A rgb(255,255,255) ×6 and rgb(247,247,247) ×2.",
+   "side": "both",
+   "members": [
+    "thync_com|sonnet|38"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I43",
+   "text": "Inline links are styled differently. A's feelzing.com link is dark with an underline. B's is teal with an underline.",
+   "evidence": "A_slice_01 shows a dark underlined link. B_slice_01 shows a teal underlined link. B teal text rgb(77,225,193) ×10.",
+   "side": "both",
+   "members": [
+    "thync_com|sonnet|39"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I44",
+   "text": "B's body text is secondary muted blue-grey on cards, with white headings, so the text has two tones. A's is mostly a uniform charcoal.",
+   "evidence": "B top text colors rgb(170,179,204) ×54 and rgb(243,245,251) ×51. A rgb(58,58,58) ×217 and rgb(51,50,50) ×98.",
+   "side": "both",
+   "members": [
+    "thync_com|sonnet|40"
+   ],
+   "tier": "A"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page uses system-ui sans-serif font stack instead of a custom webfont.",
+   "family": "typography",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Body text is relatively large (about 17px) with generous line height around 1.65.",
+   "family": "typography",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Headlines and section titles are heavy bold (700), large, with normal or tight letter spacing rather than wide tracking.",
+   "family": "typography",
+   "items": [
+    "I7",
+    "I8"
+   ]
+  },
+  {
+   "statement": "Small uppercase letter-spaced muted labels are used for section headings and eyebrow-style titles.",
+   "family": "typography",
+   "items": [
+    "I26",
+    "I4"
+   ]
+  },
+  {
+   "statement": "Dark navy page theme with near-white text.",
+   "family": "color",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "Single bright teal/mint accent color used for buttons, links and highlights.",
+   "family": "color",
+   "items": [
+    "I10",
+    "I43"
+   ]
+  },
+  {
+   "statement": "Text uses two tones: white headings and muted blue-grey body copy on dark cards.",
+   "family": "color",
+   "items": [
+    "I44"
+   ]
+  },
+  {
+   "statement": "Dark section backgrounds alternate between lighter and darker navy, with cards on a lighter navy surface.",
+   "family": "color",
+   "items": [
+    "I42"
+   ]
+  },
+  {
+   "statement": "A light-colored band interrupts the dark page to hold a logo strip.",
+   "family": "color",
+   "items": [
+    "I24",
+    "I37"
+   ]
+  },
+  {
+   "statement": "Hero has no photograph, only dark background with soft radial color glows and gradients.",
+   "family": "imagery",
+   "items": [
+    "I11",
+    "I31"
+   ]
+  },
+  {
+   "statement": "Page omits illustrative images and uses text-only cards, leaving only logos and badges.",
+   "family": "imagery",
+   "items": [
+    "I12",
+    "I13"
+   ]
+  },
+  {
+   "statement": "Alt text is plain, human-readable brand names, with none missing.",
+   "family": "imagery",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Primary call-to-action is a fully rounded pill button in accent color with title-case text.",
+   "family": "component",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Header is sticky-style translucent with backdrop blur, and nav links are right-aligned with uniform plain styling.",
+   "family": "component",
+   "items": [
+    "I14",
+    "I15"
+   ]
+  },
+  {
+   "statement": "Secondary links are uppercase accent-colored text links with a trailing arrow instead of outlined buttons.",
+   "family": "component",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Content is presented in rounded bordered cards stacked full-width with tight gaps.",
+   "family": "component",
+   "items": [
+    "I18",
+    "I41"
+   ]
+  },
+  {
+   "statement": "Video block is a rounded gradient panel with a large accent-colored play button.",
+   "family": "component",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "Footer is dark with multi-column grid of uppercase headings and plain text links, plus a divider above a bottom bar.",
+   "family": "layout",
+   "items": [
+    "I27",
+    "I28",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Layout relies heavily on CSS grid and a narrower centered content container.",
+   "family": "layout",
+   "items": [
+    "I19",
+    "I20"
+   ]
+  },
+  {
+   "statement": "Long answer paragraphs span the full card width, producing long line lengths.",
+   "family": "layout",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "Page is compact with tighter vertical spacing and no empty image slots.",
+   "family": "layout",
+   "items": [
+    "I40",
+    "I41"
+   ]
+  },
+  {
+   "statement": "Corners are more rounded, with larger radii and pill shapes, and no box shadows or animations.",
+   "family": "decoration",
+   "items": [
+    "I30",
+    "I31"
+   ]
+  },
+  {
+   "statement": "Markup uses semantic section and article elements and a proper h1 holding the hero headline.",
+   "family": "semantic_dom",
+   "items": [
+    "I1",
+    "I2"
+   ]
+  },
+  {
+   "statement": "Heading hierarchy is clean, with section titles as h2 and footer column titles as h4.",
+   "family": "semantic_dom",
+   "items": [
+    "I3",
+    "I4"
+   ]
+  },
+  {
+   "statement": "Document is lean and static, with minimal classes, scripts, metadata and no structured-data blocks.",
+   "family": "semantic_dom",
+   "items": [
+    "I32",
+    "I38",
+    "I39"
+   ]
+  },
+  {
+   "statement": "Page title is short, brand-only, and uses an em dash separator.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Copy uses em dashes and straight apostrophes for punctuation.",
+   "family": "copy",
+   "items": [
+    "I17",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Contact details appear as plain visible text rather than a form.",
+   "family": "copy",
+   "items": [
+    "I36",
+    "I28"
+   ]
+  }
+ ]
+}

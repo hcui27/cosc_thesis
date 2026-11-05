@@ -1,0 +1,456 @@
+{
+ "key": "b358b70de508",
+ "groups": [
+  {
+   "name": "Centered fixed-width content container",
+   "definition": "Is the main content constrained to a centered fixed-width container narrower than the viewport with side margins?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#13",
+    "allstate_jobs#23",
+    "bluebayou_com#20",
+    "cbdoilcreamnk_com#10",
+    "flygrant_com#17",
+    "fnsouzafoundation_com#17",
+    "gravityvault_com#11",
+    "homedesignersoftware_com#10",
+    "insightcentral_net#8",
+    "kanienkeha_net#3",
+    "kneeguru_co_uk#27",
+    "merchantsavvy_co_uk#7",
+    "stgpartners_com#21",
+    "tellmebaby_com_au#8",
+    "thync_com#21",
+    "seoanalyzer_me#7",
+    "greatdayimprovements_com#4",
+    "bathurst12hour_com_au#27"
+   ]
+  },
+  {
+   "name": "Container with full-bleed breakout sections",
+   "definition": "Does content sit in a centered container while hero, photo or color bands run full-bleed to the page edge?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "neverskipbrunch_com#37",
+    "newclimateeconomy_net#9",
+    "ridetech_com#29",
+    "thefrangipanicreative_com#16"
+   ]
+  },
+  {
+   "name": "Uses both CSS grid and flexbox",
+   "definition": "Does the layout combine CSS grid and flexbox containers (without one clearly dominating)?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "grid_count",
+    "op": ">=",
+    "value": 1
+   },
+   "members": [
+    "aeptexas_com#26",
+    "bathurst12hour_com_au#25",
+    "educationactivities_org#23",
+    "merchantsavvy_co_uk#21",
+    "ridetech_com#31",
+    "neverskipbrunch_com#35"
+   ]
+  },
+  {
+   "name": "Grid dominates over flexbox",
+   "definition": "Does the layout rely mainly on CSS grid rather than flexbox?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "grid_count",
+    "op": ">",
+    "value": 5
+   },
+   "members": [
+    "alpine8848_com#25",
+    "flygrant_com#18"
+   ]
+  },
+  {
+   "name": "Flexbox dominates over grid",
+   "definition": "Does the layout rely mainly on flexbox with few grid containers?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "flex_count",
+    "op": ">",
+    "value": 5
+   },
+   "members": [
+    "gravityvault_com#26"
+   ]
+  },
+  {
+   "name": "Little grid or flex, simple block flow",
+   "definition": "Does the page use almost no grid or flex, relying on simple stacked block flow?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "flex_count",
+    "op": "<=",
+    "value": 2
+   },
+   "members": [
+    "greatdayimprovements_com#5"
+   ]
+  },
+  {
+   "name": "Alternating section background bands",
+   "definition": "Do full-width section backgrounds alternate between colors (e.g. white and a tint) to separate content bands?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#6",
+    "bather_com#26",
+    "bluebayou_com#10",
+    "greatdayimprovements_com#3",
+    "homedesignersoftware_com#9",
+    "miamidda_com#9",
+    "ridetech_com#10",
+    "tellmebaby_com_au#4"
+   ]
+  },
+  {
+   "name": "Centered intro with single CTA",
+   "definition": "Is there a minimal centered section with a heading, short text and a single call-to-action button?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#10",
+    "allstate_jobs#19",
+    "naturalwellbeing_com#8"
+   ]
+  },
+  {
+   "name": "Alternating image-text split rows",
+   "definition": "Do image-and-text rows alternate which side the image sits on?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "aeptexas_com#12",
+    "cbdoilcreamnk_com#24"
+   ]
+  },
+  {
+   "name": "Two-column split section, image and text",
+   "definition": "Is there a two-column split section with an image or photo on one side and text/CTA on the other?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#14",
+    "ridetech_com#21",
+    "neverskipbrunch_com#19",
+    "newclimateeconomy_net#10"
+   ]
+  },
+  {
+   "name": "Two-column hero with image or form",
+   "definition": "Is the hero a two-column split with text on one side and an image, photo, form or cards on the other?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#11",
+    "kneeguru_co_uk#11",
+    "neverskipbrunch_com#12",
+    "flygrant_com#10",
+    "educationactivities_org#20",
+    "bluebayou_com#13"
+   ]
+  },
+  {
+   "name": "Left-aligned hero text block",
+   "definition": "Is the hero content left-aligned with a large headline, optional subtitle and a button or tagline?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#9",
+    "cbdoilcreamnk_com#9",
+    "stgpartners_com#13",
+    "thefrangipanicreative_com#18"
+   ]
+  },
+  {
+   "name": "Text-only hero without photo",
+   "definition": "Is the hero text-only with no photograph or imagery?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "naturalwellbeing_com#7"
+   ]
+  },
+  {
+   "name": "Hero with stats row and pill CTA",
+   "definition": "Does the hero show headline, muted description and stats row with a pill CTA on the right?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "insightcentral_net#9"
+   ]
+  },
+  {
+   "name": "Text-only sections with eyebrow and button",
+   "definition": "Are there text-only sections with eyebrow, short heading, subline and button and no imagery?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "stgpartners_com#20"
+   ]
+  },
+  {
+   "name": "Split section with text left, list or cards right",
+   "definition": "Is there a two-column section pairing heading/intro text with a list or card grid on the other side?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#13",
+    "flygrant_com#19",
+    "stgpartners_com#16",
+    "miamidda_com#12"
+   ]
+  },
+  {
+   "name": "Three-column card grid",
+   "definition": "Are cards arranged in a three-column row/grid?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "homedesignersoftware_com#16",
+    "insightcentral_net#10",
+    "newclimateeconomy_net#11",
+    "thync_com#14",
+    "nira_org_ng#12"
+   ]
+  },
+  {
+   "name": "Four-column grid with empty last row",
+   "definition": "Is there a four-column card grid with incomplete rows leaving empty columns?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "allstate_jobs#15",
+    "gravityvault_com#17",
+    "naturalwellbeing_com#9"
+   ]
+  },
+  {
+   "name": "Uneven card heights in a row",
+   "definition": "Do cards in a row have uneven heights leaving blank space beneath shorter ones?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#24",
+    "gravityvault_com#10",
+    "merchantsavvy_co_uk#24",
+    "tellmebaby_com_au#13"
+   ]
+  },
+  {
+   "name": "Equal-height cards in a row",
+   "definition": "Do cards in a row stretch to equal height regardless of text length?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kneeguru_co_uk#20"
+   ]
+  },
+  {
+   "name": "Main column with side sidebar",
+   "definition": "Does the layout have a main content column beside a narrower sidebar?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#8",
+    "educationactivities_org#21",
+    "nira_org_ng#11"
+   ]
+  },
+  {
+   "name": "Multi-column gallery or thumbnail grid",
+   "definition": "Is there a multi-column grid of image thumbnails in framed tiles?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "alpine8848_com#17"
+   ]
+  },
+  {
+   "name": "Three-part header with centered element",
+   "definition": "Is the header split into left, centered and right parts?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#7",
+    "greatdayimprovements_com#6",
+    "naturalwellbeing_com#6"
+   ]
+  },
+  {
+   "name": "Header with logo left and nav right",
+   "definition": "Is the header a bar with logo at left and navigation links (possibly with CTA, dropdowns or utilities) at right?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "insightcentral_net#7",
+    "kneeguru_co_uk#9",
+    "merchantsavvy_co_uk#6",
+    "miamidda_com#7",
+    "seoanalyzer_me#8",
+    "thefrangipanicreative_com#17",
+    "kanienkeha_net#4",
+    "bathurst12hour_com_au#11",
+    "ridetech_com#12",
+    "cbdoilcreamnk_com#7"
+   ]
+  },
+  {
+   "name": "Multi-column dark footer",
+   "definition": "Is the footer a dark multi-column block of links and headings?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "educationactivities_org#22",
+    "homedesignersoftware_com#24",
+    "neverskipbrunch_com#26",
+    "stgpartners_com#24",
+    "thync_com#17"
+   ]
+  },
+  {
+   "name": "Footer with divider and bottom row",
+   "definition": "Does the footer have a thin divider above a bottom row with copyright/legal links and other items?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#16",
+    "gravityvault_com#22",
+    "ridetech_com#28",
+    "naturalwellbeing_com#10",
+    "miamidda_com#22",
+    "bathurst12hour_com_au#21"
+   ]
+  },
+  {
+   "name": "Light or two-column contact footer",
+   "definition": "Is the footer or contact area a light/white two-column block with contact or social details?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "kanienkeha_net#21",
+    "greatdayimprovements_com#7"
+   ]
+  },
+  {
+   "name": "Mixed alignment and shifting edges",
+   "definition": "Do alignment edges, heading alignment and container widths shift between sections rather than following one grid?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#20",
+    "bather_com#27"
+   ]
+  },
+  {
+   "name": "Tiles anchored text and edge-to-edge",
+   "definition": "Do split tiles run edge to edge with text anchored at the bottom left?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "bather_com#13",
+    "bather_com#14"
+   ]
+  },
+  {
+   "name": "Narrow paragraph measure leaving empty side",
+   "definition": "Are prose paragraphs or intro text constrained to a narrower width than the container, leaving the other side empty?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "flygrant_com#20",
+    "merchantsavvy_co_uk#11",
+    "seoanalyzer_me#24",
+    "fnsouzafoundation_com#19"
+   ]
+  },
+  {
+   "name": "Section header with eyebrow or split subtitle",
+   "definition": "Do section headers use an eyebrow label or place heading and subtitle on a split row?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "cbdoilcreamnk_com#14",
+    "fnsouzafoundation_com#16",
+    "merchantsavvy_co_uk#13"
+   ]
+  },
+  {
+   "name": "Generous vertical section spacing",
+   "definition": "Is there generous vertical padding between sections?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "fnsouzafoundation_com#18",
+    "nira_org_ng#26",
+    "seoanalyzer_me#25",
+    "stgpartners_com#22"
+   ]
+  },
+  {
+   "name": "Long vertically stacked page",
+   "definition": "Is the page long, spanning several viewport heights with many sequential sections or entries?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "page_height",
+    "op": ">=",
+    "value": 4000
+   },
+   "members": [
+    "neverskipbrunch_com#38",
+    "tellmebaby_com_au#25",
+    "kanienkeha_net#12"
+   ]
+  },
+  {
+   "name": "Link-dense page",
+   "definition": "Does the page have many anchors and list items relative to body text?",
+   "detector": "programmatic",
+   "proxy": {
+    "key": "anchor_count",
+    "op": ">=",
+    "value": 60
+   },
+   "members": [
+    "ridetech_com#3"
+   ]
+  },
+  {
+   "name": "Media section with large thumbnail and list",
+   "definition": "Does a section pair one large video/image thumbnail with a stacked list of smaller cards?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#12"
+   ]
+  },
+  {
+   "name": "Side-by-side secondary sections",
+   "definition": "Do secondary sections sit side by side in two columns?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "newclimateeconomy_net#13"
+   ]
+  },
+  {
+   "name": "Stacked FAQ cards in narrow column",
+   "definition": "Is FAQ content shown as stacked expanded cards in a narrow centered column?",
+   "detector": "vision",
+   "proxy": null,
+   "members": [
+    "thync_com#8"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+#billboard {
+	position: relative;
+	width: 980px;
+	height: 409px;
+	margin: 10px 20px 30px;
+	padding: 0;
+	border-bottom: 6px solid #ee1c24;
+	background: #fff;
+	box-shadow: 0px 10px 13px #222;
+}
+	#slideshow {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		width: 960px;
+		height: 376px;
+		overflow: hidden;
+	}
+		#slideshow-slides {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 960px;
+			height: 325px;
+			overflow: hidden;
+		}
+			#slideshow-slides .slide {
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 960px;
+				height: 325px;
+				overflow: hidden;
+			}
+				#slideshow-slides .slide .overlay {
+					position: absolute;
+					z-index: 800;
+					left: 0px; /* Original Design: 30px; */
+					top: 0;
+					width: 320px;
+					height: 245px;
+					margin: 0;
+					padding: 40px;
+				}
+					#slideshow-slides .slide .overlay h1 {
+						margin: 0 0 10px;
+						padding: 0;
+						font: bold 44px/44px Arial, sans-serif;
+						color: #EA3A47;
+					}
+					#slideshow-slides .slide .overlay p {
+						margin: 10px 0;
+						padding: 0;
+						font: normal 14px/21px Arial, sans-serif;
+						color: #f1f1f1;
+					}
+						#slideshow-slides .slide .overlay p.action {
+							margin-bottom: 0;
+						}
+							#slideshow-slides .slide .overlay p.action a {
+								font-weight: bold;
+								color: #f1f1f1;
+								text-decoration: none;
+								text-transform: uppercase;
+							}
+				#slideshow-slides .slide .overlay-bg {
+					position: absolute;
+					z-index: 799;
+					left: 0px; /* Original Design: 30px; */
+					top: 0;
+					width: 400px;
+					height: 325px;
+					background: #000;
+					opacity: 0.65;
+					-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+					filter: alpha(opacity=65);
+				}
+		ul#slideshow-nav {
+			position: absolute;
+			top: 328px;
+			left: 0;
+			width: 965px; /* goes a little wider... */
+			height: 48px;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+			ul#slideshow-nav li {
+				display: table;
+				float: left;
+				height: 45px;
+				overflow: hidden;
+				margin: 0 3px 0 0;
+				padding: 0;
+				background: #EBEBEB;
+				font: bold 15px/normal Arial, sans-serif;
+				color: #0D63A8;
+				text-align: center;
+				text-transform: uppercase;
+				text-decoration: none;
+				cursor: pointer;
+			}
+				ul#slideshow-nav li div {
+					display: table-cell;
+					vertical-align: middle;
+					text-align: center;
+				}
+				ul#slideshow-nav li.active {
+					border-bottom: 3px solid #0D63A8;
+					background: #CFCFCF;
+				}

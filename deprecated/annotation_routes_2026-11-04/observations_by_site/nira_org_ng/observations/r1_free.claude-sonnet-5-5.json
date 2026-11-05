@@ -1,0 +1,167 @@
+[
+ {
+  "observation": "Page is a registry homepage titled 'NiRA – Nigeria Internet Registration Association' with a single h1 'Welcome to the .ng Domain Registry website.' set at 44px/700 in white on a green hero.",
+  "category": "semantic structure",
+  "evidence": "facts.json title, h1_count 1, h1 font_size 44px, color rgb(255,255,255)"
+ },
+ {
+  "observation": "Palette is monochrome green plus white and off-white: dark green (7,74,40) and mid green (11,107,58) backgrounds, body background rgb(246,248,246), and near-black green text rgb(28,36,32).",
+  "category": "color",
+  "evidence": "colors.top_backgrounds; body_color; body_bg"
+ },
+ {
+  "observation": "Green is the only accent. Links, the Switchto.ng button, the Subscribe button and the calendar nav links all use the same green (11,107,58), and no secondary hue appears in the UI chrome.",
+  "category": "color",
+  "evidence": "top_text_colors includes rgb(11,107,58) x25; screenshot links and buttons"
+ },
+ {
+  "observation": "The hero has a diagonal dark-to-lighter green gradient. The left-aligned text block takes about 55% of the width and the right side is empty.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds: 1; slice 1 hero y≈143–640"
+ },
+ {
+  "observation": "The hero has no imagery. It holds the h1, two paragraphs and two CTA buttons: a solid white 'Whois Search' button and an outlined white 'Register a .ng Domain' button.",
+  "category": "component",
+  "evidence": "Screenshot hero; images list has no hero image"
+ },
+ {
+  "observation": "A thin dark-green utility bar sits above the header. Social text links (Facebook, Twitter, Google+, YouTube, LinkedIn) are on the left, and a phone number '0700CALLNIRA' and an email are on the right.",
+  "category": "layout",
+  "evidence": "Slice 1 top bar y 0–38"
+ },
+ {
+  "observation": "The header is white with the logo image (80x57) and a two-line wordmark, 'NiRA' in bold over a small grey 'Nigeria Internet Registration Association'. The horizontal nav links sit to the right.",
+  "category": "layout",
+  "evidence": "images[0] logo.png rect x180,y62; screenshot header"
+ },
+ {
+  "observation": "The nav has 8 text links, and a filled green 'Switchto.ng' button wraps onto a second row beneath them, so the nav is uneven.",
+  "category": "component",
+  "evidence": "Screenshot: Switchto.ng button at y≈112 under Home…Support row; nav tag count 1"
+ },
+ {
+  "observation": "The type system is a single system-ui stack (system-ui, -apple-system, Segoe UI, Roboto, sans-serif) with no webfonts and no stylesheet files. Body text is 16px on a 25.6px line height (1.6).",
+  "category": "typography",
+  "evidence": "fonts_by_element_count system-ui 207; body_font_size 16px; stylesheets 0"
+ },
+ {
+  "observation": "The type hierarchy is shallow. The h1 is 44px, h2s are 24px/700, and the card h3s are smaller bold headings, with the Register and Policies cards looking larger than the Registrars, Support and Quick menu cards.",
+  "category": "typography",
+  "evidence": "h2 font_size 24px; heading_outline; screenshot card titles"
+ },
+ {
+  "observation": "The heading outline skips from h2 to a run of h3s. Sidebar widgets (Quick menu, NiRA Calendar, Newsletter, Facebook) and the footer's 'Follow us on:' are all h3, so the footer label sits at the same level as the content cards.",
+  "category": "semantic structure",
+  "evidence": "heading_outline: 2 h2, 8 h3"
+ },
+ {
+  "observation": "Content is arranged as a two-column grid. A main area of 3 card columns holds a 2-card top row and a 3-card second row, and a 300px sidebar of stacked cards sits on the right. The content column is about 1080px wide and centered on the 1440px canvas.",
+  "category": "layout",
+  "evidence": "display_grid: 3; page_width 1440; cards span x180–1260"
+ },
+ {
+  "observation": "The top row has two wide cards (Register a .ng Domain, NiRA Policies) and the second row has three narrower cards (Registrars, Policy Compliance, Support). The column edges do not line up between rows.",
+  "category": "layout",
+  "evidence": "Screenshot: card edges at x 180/564/928 vs 180/436/692/928"
+ },
+ {
+  "observation": "Cards are white with a thin light border and rounded corners of roughly 8–12px, and have no box-shadow. Separation comes from the border and the off-white page background.",
+  "category": "decoration",
+  "evidence": "box_shadows: 0; bucket_8_15: 11; top_backgrounds white x17"
+ },
+ {
+  "observation": "The page uses no transitions, animations or transforms, and no backdrop blur. It is flat and static.",
+  "category": "decoration",
+  "evidence": "transitions 0, animations 0, transforms 0, backdrop_blur 0"
+ },
+ {
+  "observation": "The icons in the two feature cards are rendered at distorted or tiny sizes. The ngReg.png (natural 149x155) shows as 28x29, and policy.png (natural 100x100) renders at 24x100, so it appears squeezed into a narrow vertical ellipse.",
+  "category": "imagery",
+  "evidence": "images[1] rect w28 h29; images[2] rect w24 h100; slice 1 policy icon"
+ },
+ {
+  "observation": "Feature card body text wraps in a narrow column beside a small floated icon, producing short ragged lines. Inline 'Read More.' links in green end the paragraphs.",
+  "category": "copy",
+  "evidence": "Screenshot of Register and Policies cards"
+ },
+ {
+  "observation": "Link lists inside the cards (Registrars, Policy Compliance, Support, Quick menu) are plain green text links with no icons. The Quick menu items are separated by thin horizontal rules.",
+  "category": "component",
+  "evidence": "ul count 7; li 29; a 48; screenshot Quick menu"
+ },
+ {
+  "observation": "The sidebar includes a month-view calendar built as a real table with a caption and thead. It shows May 2021 with Mon–Sun columns, grey weekend dates, and 'Previous Month / Next Month' and 'Previous Year / Next Year' text links.",
+  "category": "component",
+  "evidence": "table 1, caption 1, th 7, td 42; 'May 2021' in screenshot"
+ },
+ {
+  "observation": "The calendar is stale, showing May 2021, and has no highlighted events or today marker. The footer reads '© 2019'.",
+  "category": "copy",
+  "evidence": "Screenshot calendar header; footer text"
+ },
+ {
+  "observation": "The calendar's height pushes the sidebar well below the main column. The second slice has a large empty off-white area to the left of the sidebar's Newsletter and Facebook cards.",
+  "category": "layout",
+  "evidence": "Slice 2: empty region x0–930 beside sidebar cards; page_height 1932"
+ },
+ {
+  "observation": "The newsletter widget is a form with a single email input (placeholder 'Your email') and a solid green 'Subscribe' button, the only form on the page.",
+  "category": "component",
+  "evidence": "form 1, input 1; slice 2 y≈140–240"
+ },
+ {
+  "observation": "The Facebook widget is only a text link, 'Follow NiRA on Facebook', with no embedded feed.",
+  "category": "component",
+  "evidence": "Slice 2 Facebook card; h3 'Facebook'"
+ },
+ {
+  "observation": "The footer is a dark green band with a bold 'Follow us on:' label and five circular social icons (facebook, twitter, youtube, google, instagram, 28px). A divider line separates them from a copyright line, and a 'Webmail' link sits at the right.",
+  "category": "component",
+  "evidence": "images 3–7 at y1814, 28x28; footer tag 1; slice 2"
+ },
+ {
+  "observation": "The social icons are 32px raster PNGs with empty alt text. They are multicolor and clash with the green-only UI. The same networks also appear as text links in the top bar.",
+  "category": "imagery",
+  "evidence": "images[3–7] alt ''; natural 32x32; top bar links"
+ },
+ {
+  "observation": "Semantic landmarks are used: header, nav, main, aside, footer, and 10 section elements. There are no article, figure or blockquote elements. All images have alt attributes (alt_missing 0).",
+  "category": "semantic structure",
+  "evidence": "semantic counts; counts.alt_missing 0"
+ },
+ {
+  "observation": "The CSS is minimal and hand-written, with a single inline style block, 47 class usages across 23 unique classes, and almost no Tailwind-style classes (0.021). Only 2 inline style attributes are used.",
+  "category": "DOM structure",
+  "evidence": "tag_counts style 1; classes total 47 unique 23; tailwind_like_fraction 0.021; inline_style_attrs 2"
+ },
+ {
+  "observation": "The page is short, with about 255 words, 48 anchors and 8 images over 1932px. Copy is institutional, with no emoji, exclamation marks or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats words 255, emoji 0, exclamations 0, em_dashes 0; page_height 1932"
+ },
+ {
+  "observation": "There are two 'Menu' buttons in the DOM (mobile toggles, not visible on desktop), and the first has a transparent background, black text, a 6px radius and 8px 12px padding.",
+  "category": "component",
+  "evidence": "buttons: 2; primary_button text 'Menu', bg rgba(0,0,0,0), radius 6px, padding 8px 12px"
+ },
+ {
+  "observation": "Buttons share one visual language. The primary and secondary CTAs and the Switchto.ng and Subscribe buttons are solid or outlined with bold white or green text, small-to-medium radii (about 4–6px), and generous padding.",
+  "category": "component",
+  "evidence": "Screenshot hero buttons, Switchto.ng, Subscribe; border_radius_buckets bucket_1_7: 55"
+ },
+ {
+  "observation": "Spacing is generous. The hero is about 500px tall, cards have about 24px of inner padding and gaps of about 20px, and the footer has a large amount of padding.",
+  "category": "layout",
+  "evidence": "Hero y143–640; card gaps ~20px in screenshot; top_backgrounds"
+ },
+ {
+  "observation": "Flexbox is the main layout mechanism (19 elements) and grid is used for 3 containers. Most elements (136) have no border radius, with a few pill shapes (5), likely the social icons and buttons.",
+  "category": "layout",
+  "evidence": "display_flex 19, display_grid 3; border_radius_buckets bucket_0 136, bucket_pill 5"
+ },
+ {
+  "observation": "Heading and body text in the cards is near-black, while link text is green. The secondary grey rgb(90,102,96) is used for the logo subtitle, the placeholder and the calendar weekend dates.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(90,102,96) x18; screenshot"
+ }
+]

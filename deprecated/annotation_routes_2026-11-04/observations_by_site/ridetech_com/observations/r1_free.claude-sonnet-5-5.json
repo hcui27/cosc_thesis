@@ -1,0 +1,177 @@
+[
+ {
+  "observation": "The document has no h1. The heading outline starts with an h3 ('FREE SHIPPING') and then uses h2 for section titles. The h3 and h4 levels are mixed in without a consistent hierarchy.",
+  "category": "semantic-structure",
+  "evidence": "h1_count: 0; heading_outline begins with level 3 'FREE SHIPPING' then level 2 'SHOP BY VEHICLE'; h4 'PERFORMANCE SUSPENSION SPECIALIST' follows h2 'RIDETECH.COM'"
+ },
+ {
+  "observation": "The top of the page has a thin near-black utility bar. It holds a phone number on the left and three links on the right: Sign Up for News!, Get a FREE Catalog and Login / Register.",
+  "category": "layout",
+  "evidence": "Slice 1 top bar, background rgb(20,20,20); '☎ 812.481.4787' at left; links right-aligned"
+ },
+ {
+  "observation": "The main header is a white bar. It has the red-and-black Ridetech logo, four uppercase bold nav links (Products, Applications, News, Tech), a bordered search input and a plain-text 'Cart $0.00'. All of it sits in a left-aligned container that starts near x=136.",
+  "category": "component",
+  "evidence": "Logo rect x:136,y:52,w:197,h:44; nav count 1, header count 1; 'Cart $0.00' text; a 'Menu' button also exists in the DOM"
+ },
+ {
+  "observation": "A full-bleed hero strip directly under the header is made of four equal tiles, each 360x240. These are banner graphics with large baked-in typography, and the text in each is cropped at the tile edges. They work as promotional links rather than a single slideshow.",
+  "category": "imagery",
+  "evidence": "Images silverado-copy.jpg, ridepro-e5.jpg, falcon.jpg and camaro-subframe-connector-page.jpg at x=0/360/720/1080, each 1920x450 natural size shown at 360x240; slice 1 shows clipped letters like 'BFRAM' and 'TROL'"
+ },
+ {
+  "observation": "The banner images are 1920x450 sources displayed at 360x240. They are cropped with a cover-style fit instead of being scaled to their natural ratio, so each shows only a fragment of its artwork.",
+  "category": "imagery",
+  "evidence": "Natural [1920,450] vs rect 360x240; visible truncation of headline text in slice 1"
+ },
+ {
+  "observation": "A solid red full-width promo band carries the free-shipping message. It has a condensed Impact-style heading with a bold uppercase sub-line in white, centered.",
+  "category": "component",
+  "evidence": "Background rgb(215,25,32); h3 'FREE SHIPPING'; text 'FREE GROUND SHIPPING TO THE CONTINENTAL U.S. FOR ORDERS OF $100 OR MORE'"
+ },
+ {
+  "observation": "The type system pairs two families. Helvetica Neue is used for nearly everything. Impact is reserved for display headings, in a compressed, heavy, uppercase style.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Helvetica Neue 333, Impact 9; h2 32px weight 700; headings render condensed and tight in screenshots"
+ },
+ {
+  "observation": "Section h2 headings are left-aligned, uppercase and set in condensed Impact. Each has a short red underline bar beneath it, and the pattern repeats for Shop by Vehicle, Shop by Product, Latest News and Get Connected.",
+  "category": "typography",
+  "evidence": "h2 32px/700; red underline visible under 'SHOP BY VEHICLE', 'SHOP BY PRODUCT', 'LATEST NEWS', 'GET CONNECTED'"
+ },
+ {
+  "observation": "The palette is tightly limited: white, light gray (#f4f4f4), near-black (#141414) and one saturated red (rgb(215,25,32)). Red is used for the promo band, the heading underlines, card bottom borders, CTA buttons and text links.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 38, rgb(244,244,244) 13, rgb(20,20,20) 3, rgb(215,25,32) 3; text colors rgb(20,20,20) 245, rgb(215,25,32) 3"
+ },
+ {
+  "observation": "Section backgrounds alternate between white and light gray. Vehicle is white, Product is gray, Catalog is white, News is gray, then a dark photo band, a white form section and a black footer.",
+  "category": "layout",
+  "evidence": "rgb(255,255,255) vs rgb(244,244,244) bands visible across slices; 6 section elements"
+ },
+ {
+  "observation": "Shop by Vehicle is a row of five equal cards. Each shows a flat red car silhouette on white with a red bottom rule, and a centered uppercase label below. The silhouettes have empty alt text.",
+  "category": "component",
+  "evidence": "muscle-car.png, modern-muscle.png, truck.png, hot-rod.png, corvette.png each 216x121; alt ''; labels 'MUSCLE CARS AND CLASSICS', 'TRUCKS', 'CORVETTES' etc."
+ },
+ {
+  "observation": "Shop by Product is a 4-column grid of thin-bordered cards. Each card has a square product photo cropped to about 275x206, a red rule, and a centered uppercase label. Cards on the same row have equal heights.",
+  "category": "layout",
+  "evidence": "Image rects 275x206 at x=137/434/731/1028; 300x300 natural; display_grid: 7"
+ },
+ {
+  "observation": "The product grid mixes cards that have images with text-only cards. The imageless ones (Leveltow Kits, Tru Turn, Tigercage, Components, Airoverleaf, Steering, Tools, Brakes and Rear Ends, Apparel, Bushings and others) are shorter gray boxes with a centered label. The last row has only two cards, which leaves an empty area on the right.",
+  "category": "component",
+  "evidence": "Only 11 category images in the grid; slice 2 shows gray label-only tiles and an incomplete final row with APPAREL and BUSHINGS"
+ },
+ {
+  "observation": "Most images have empty alt text. Only the logo, the four hero banners and the catalog cover have descriptive alt. The 5 vehicle and 11 product category images use alt=\"\", with their labels serving as link text.",
+  "category": "semantic-structure",
+  "evidence": "counts.alt_missing 0 but images list shows alt '' for 16 of 22 images"
+ },
+ {
+  "observation": "A catalog promo block puts a book-cover image on the left and a text column on the right. The text has a red Impact 'Free' headline, a black 'PRODUCT CATALOG' subtitle, a solid red 'REQUEST A CATALOG' button and a red '1,000,001 Mile Warranty →' link.",
+  "category": "component",
+  "evidence": "catalog-cover-for-flipbook.png at x:236,y:2275,w:360,h:288; red button in slice 2"
+ },
+ {
+  "observation": "Buttons and cards use square corners. Most elements have 0 radius, and the rest fall in the 1–7px range. There are no box shadows, gradients or blur effects, so the page stays flat and relies on borders and color blocks.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 304, bucket_1_7 38, bucket_8_15 0; box_shadows 0; gradient_backgrounds 0; backdrop_blur 0; primary button radius 0px"
+ },
+ {
+  "observation": "The Latest News section has two side-by-side text-only cards with a thick red left border, a bold title and a gray truncated excerpt ending in '[…]'. There are no thumbnails. A right-aligned red 'View all news →' link sits below.",
+  "category": "component",
+  "evidence": "h3 titles 'Salt Lake City GoodGuys Car show…' and 'Great Times at the C-10 Nationals…'; excerpt text 'RaceDeck GoodGuys […]'"
+ },
+ {
+  "observation": "The news excerpts look auto-generated. They are truncated mid-sentence with '[...]', and the visible copy dates to May 2021.",
+  "category": "copy",
+  "evidence": "'When: May 21 – 23, 2021 Where : Utah State Fairpark The 2nd RaceDeck GoodGuys […]'; footer 'Copyright 2021'"
+ },
+ {
+  "observation": "A full-width dark photo band shows a muted, darkened photo of an orange Camaro on a track. White text is centered over it: an Impact 'RIDETECH.COM' heading, a pink-red letter-spaced subheading, a paragraph and outlined social buttons.",
+  "category": "imagery",
+  "evidence": "Slice 3 shows an overlay on a car photo; h2 'RIDETECH.COM'; h4 'PERFORMANCE SUSPENSION SPECIALIST'; no gradients are reported, so the dimming is likely a flat overlay"
+ },
+ {
+  "observation": "Social and contact links in the photo band are outlined, transparent, square-cornered white-bordered buttons in a centered row. They are Facebook, Instagram, Email, Call and YouTube. They are labeled with text, not icons.",
+  "category": "component",
+  "evidence": "svgs: 0; text labels 'Facebook', 'Instagram', 'Email', 'Call', 'YouTube' with 1px white borders"
+ },
+ {
+  "observation": "The page uses no SVGs or icon fonts. The visible icons are the ☎ glyph in the top bar and text arrows (→, ↑). Decorative graphics are raster PNG/JPG images.",
+  "category": "imagery",
+  "evidence": "svgs: 0; emoji count 1; '→' in 'View all news →'; '↑' in 'Back to top'"
+ },
+ {
+  "observation": "The 'Get Connected' newsletter form has three labeled inputs in a single row (First Name, Last Name, Email address:) and a solid red 'SIGN UP' button. Labels are small bold text above each field, and the fields are empty with thin gray borders.",
+  "category": "component",
+  "evidence": "form count 2, input count 4, label count 3; slice 3 form row"
+ },
+ {
+  "observation": "The footer is a near-black, four-column link list. Its headings are CONTACT INFO, INFORMATION, APPLICATIONS and YOUR ACCOUNT, all h4. The text is light gray. A thin divider separates it from a bottom bar with the copyright on the left and 'Back to top ↑' on the right.",
+  "category": "layout",
+  "evidence": "footer count 1; four h4 headings; text color rgb(204,204,204) appears 59 times; 'Copyright 2021 © Ridetech'"
+ },
+ {
+  "observation": "Contact details are marked up with an address element and bold run-in labels (Phone:, Fax:, Hours:), then a postal address and email.",
+  "category": "semantic-structure",
+  "evidence": "address: 1; strong: 4; '350 S. St. Charles St, Jasper, Indiana, 47546', 'sales@ridetech.com'"
+ },
+ {
+  "observation": "The page is link-heavy. There are 115 anchors against 7 paragraphs and 92 list items, and nearly all content is navigation to categories and applications. Ten ul elements hold the lists.",
+  "category": "semantic-structure",
+  "evidence": "tag_counts a:115, li:92, ul:10, p:7, button:2"
+ },
+ {
+  "observation": "Content is held in a centered container about 1168px wide, with left edge near x=136 and right edge near x=1304 on the 1440px viewport. The hero banners and color bands run full-bleed.",
+  "category": "layout",
+  "evidence": "Cards start at x=136–137 and end near 1304; page_width 1440; hero images from x=0 to 1440"
+ },
+ {
+  "observation": "Spacing is generous. Sections have roughly 60–80px vertical padding, and the grids have about 20px gutters. Body text is 16px with a 25.6px (1.6) line height.",
+  "category": "layout",
+  "evidence": "body_font_size 16px; body_line_height 25.6px; card gaps ~20px between 275px cards (137→434)"
+ },
+ {
+  "observation": "Card labels and nav links use bold uppercase Helvetica with slight tracking. Body, excerpt and footer text is sentence case in regular weight. The two registers are clearly separated.",
+  "category": "typography",
+  "evidence": "Labels like 'SUSPENSION PACKAGES' and 'PRODUCTS / APPLICATIONS / NEWS / TECH' uppercase bold; news excerpt and footer links in mixed case"
+ },
+ {
+  "observation": "The CSS is minimal and uses semantic class names, not utility classes. There is one stylesheet, one script, 29 unique class names across 83 class usages and only 4 inline style attributes. 31 elements carry transitions and there are no animations or transforms.",
+  "category": "dom-structure",
+  "evidence": "classes total 83, unique 29, tailwind_like_fraction 0; stylesheets 1; scripts 1; inline_style_attrs 4; transitions 31; animations 0; transforms 0"
+ },
+ {
+  "observation": "Accessibility markup is sparse. Only 3 ARIA attributes appear in the DOM. A single nav element and a single main element are present, and the page has 6 sections but no articles or figures.",
+  "category": "semantic-structure",
+  "evidence": "aria_attrs 3; nav 1; main 1; section 6; article 0; figure 0"
+ },
+ {
+  "observation": "Copy is short and direct. It uses commerce labels (Free Shipping, Request a Catalog, Sign Up), all-caps headings, a few exclamation marks and a promotional warranty line ('1,000,001 Mile Warranty'). One longer brand paragraph in the dark band is the only extended prose.",
+  "category": "copy",
+  "evidence": "text_stats words 342, exclamations 3; paragraph 'Ridetech manufactures exciting suspension systems…'; 'DON’T SEE WHAT YOU’RE LOOKING FOR? LET US KNOW!'"
+ },
+ {
+  "observation": "The meta set is minimal: charset, viewport and description. The title is 'Ridetech | Performance Suspension Specialist'. There is no structured data.",
+  "category": "semantic-structure",
+  "evidence": "meta_names: charset, viewport, description; jsonld_blocks 0; lang 'en'; title as given"
+ },
+ {
+  "observation": "Navigation and search sit in a single row with generous spacing. The search field has gray placeholder 'Search' text and no visible submit button.",
+  "category": "component",
+  "evidence": "form count 2 (one is search); input count 4; slice 1 shows 'Search' box next to 'Cart $0.00'"
+ },
+ {
+  "observation": "Product and vehicle cards all follow the same pattern: a 1px light gray border on a white background, then a 2–3px red rule between image and label. This repeats the red-accent motif that also appears in the news card left borders and the heading underlines.",
+  "category": "decoration",
+  "evidence": "Red rule above labels in slices 1–2; news cards with red left border in slice 3; heading underline bars"
+ },
+ {
+  "observation": "The page is about 4222px tall, with seven stacked horizontal bands. They are utility bar, header, banner row, promo band, vehicle row, product grid, catalog promo, news, brand band, newsletter and footer. Each has one purpose and the page keeps a single-column vertical flow.",
+  "category": "layout",
+  "evidence": "page_height 4222; 4 slices; sections visible in order"
+ }
+]

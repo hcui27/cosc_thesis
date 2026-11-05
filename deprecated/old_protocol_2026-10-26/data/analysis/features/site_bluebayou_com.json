@@ -1,0 +1,647 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Document titles differ: A uses a location-based title, B uses a tagline-based title with an em dash separator",
+   "evidence": "A title: \"Blue Bayou Waterpark & Dixie Landin' | Baton Rouge, LA\"; B title: \"Blue Bayou Water Park & Dixie Landin' — Play Your Day Away\"",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|00",
+    "bluebayou_com|opus|01",
+    "bluebayou_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A uses h5/h6 tags; B uses h4 tags for its footer column headings",
+   "evidence": "A tag_counts: h5 4, h6 3; B tag_counts: h4 4 (PARKS, PLAN, TICKETS, MORE)",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|05",
+    "bluebayou_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B uses header, section and footer landmark elements; A uses none of them and relies on divs and nav",
+   "evidence": "A semantic: header 0, section 0, footer 0, nav 4; B semantic: header 1, section 7, footer 1, nav 1",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|06",
+    "bluebayou_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B structures its link groups as lists; A has no list elements",
+   "evidence": "B ul 6, li 30; A tag_counts has no ul or li",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|08",
+    "bluebayou_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "A all-empty image alt text vs B descriptive alt text on most images",
+   "evidence": "All 13 A images have alt \"\"; B images have alts like \"Blue Bayou Water Park\", \"Guests splashing at Blue Bayou Water Park\", \"Coca-Cola can\" (",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A uses two custom brand fonts (Brandongrotesque for text, Handyhandy brush script for display) plus icon fonts; B uses only the system font Trebuchet MS",
+   "evidence": "A fonts: Brandongrotesque 167, Handyhandy 14, Social icons 6, webflow-icons 4; B fonts: Trebuchet MS 166",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|13",
+    "bluebayou_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "The hero h1 is a hand-drawn script at weight 400 and 120px in A, and a heavy sans-serif at weight 900 and 104px in B",
+   "evidence": "A h1: Handyhandy, 120px, weight 400; B h1: \"Trebuchet MS\", 104px, weight 900",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|14",
+    "bluebayou_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "A's hero headline is all white and set on a tilt; B's is horizontal and split into two colors, with 'DAY AWAY' in yellow",
+   "evidence": "A_slice_00: rotated white brush lettering 'PLAY YOUR DAY AWAY'; B_slice_00: straight 'PLAY YOUR' in white over 'DAY AWAY' in yellow",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|15",
+    "bluebayou_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "Section display titles (TICKETS, THRILLS, GETAWAY, etc.) are in brush script in A and in bold sans-serif caps in B",
+   "evidence": "A_slice_00/01/02 show Handyhandy brush titles; B_slice_00/01/02 show sans-serif 'TICKETS', 'THRILLS', 'GETAWAY'",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|17",
+    "bluebayou_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "Footer column headings are orange brush-script title case in A and small, tracked white uppercase sans in B",
+   "evidence": "A_slice_03: orange 'Parks', 'Plan', 'Tickets', 'More' in script; B_slice_03: white 'PARKS', 'PLAN', 'TICKETS', 'MORE' in small caps",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|18",
+    "bluebayou_com|opus|19",
+    "bluebayou_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "The palettes differ: A centers on bright blue, burnt orange, red and gold; B centers on navy, medium blue, yellow, red and purple",
+   "evidence": "A top backgrounds: rgb(0,152,255), rgb(219,77,35), rgb(244,0,9), rgb(242,181,14), rgb(0,226,200); B: rgb(255,198,41), rgb(6,57,95), rgb(10,1",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|20",
+    "bluebayou_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "B uses a pale blue as a secondary text color; A's secondary text colors are orange and blue",
+   "evidence": "B top_text_colors include rgb(207,227,242) ×48; A includes rgb(219,77,35) ×36 and rgb(0,152,255) ×33",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|21",
+    "bluebayou_com|opus|22",
+    "bluebayou_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "The primary button is a square white button with orange text in A and a yellow pill with navy text in B",
+   "evidence": "A primary_button: 'START THE EXCITEMENT', bg white, color rgb(219,77,35), radius 0px; B: 'GET A SEASON PASS', bg rgb(255,198,41), color rgb(",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|23",
+    "bluebayou_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "Corners are square throughout A; B adds rounded corners and pill shapes",
+   "evidence": "A radius buckets: 0 → 190, 8-15 → 0, 16+ → 0, pill → 1; B: 0 → 149, 8-15 → 6, 16+ → 5, pill → 6",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|24",
+    "bluebayou_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "Secondary 'OR BUY TICKETS' links are bare text in A and outlined pill buttons in B",
+   "evidence": "A_slice_01: 'OR BUY TICKETS' as plain tracked text beside the button; B_slice_01: white-outlined pill 'OR BUY TICKETS'",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|25"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I15",
+   "text": "A uses more box shadows, transitions and transforms; B uses more gradients",
+   "evidence": "A box_shadows 9, transitions 61, transforms 10, gradients 1; B box_shadows 3, transitions 17, transforms 0, gradients 3",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|26",
+    "bluebayou_com|sonnet|24",
+    "bluebayou_com|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "Layout uses flexbox only in A; B adds CSS grid",
+   "evidence": "A display_grid 0, display_flex 14; B display_grid 5, display_flex 9",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|27"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I17",
+   "text": "A's header has logos only, in the far corners; B has a navy nav bar with text links (HOME, ATTRACTIONS, TICKETS, PLAN, CALENDAR, JOBS) between smaller logos",
+   "evidence": "A logos at x=10 and x=1162, 70px tall, with no text nav visible; B logos at x=180 and x=1114, 44px tall; B_slice_00 shows the nav link row",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|29",
+    "bluebayou_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "The opening-day notice is a centered red modal-style box with a close X in A and a full-width yellow strip under the nav in B",
+   "evidence": "A_slice_00: red box with 'OPENING DAY MAY 29, 2021' heading and an 'X'; B_slice_00: yellow strip with the notice text partly hidden under th",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|30",
+    "bluebayou_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A's hero is a full-bleed photo split into teal and gold tinted halves; B's hero is a blue gradient with two rounded photo cards captioned by park name",
+   "evidence": "A_slice_00: duotone teal (slide) and gold (Ferris wheel) halves; B_slice_00: 530×353 cards with captions 'BLUE BAYOU WATER PARK' and 'DIXIE ",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|31",
+    "bluebayou_com|sonnet|16",
+    "bluebayou_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "The three promo cards (Tickets, Passes, Parties) are all orange with centered text and white CTA bars in A; in B each card has its own color, left-aligned text and an arrow text link",
+   "evidence": "A_slice_00: three orange rgb(219,77,35) cards overlapping the brush edge, with white button bars; B_slice_00: blue, red and purple rounded c",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|32",
+    "bluebayou_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Land of the Giants is a two-column block (inset photo, text on white) in A and a full-bleed photo with a dark blue overlay and white text in B",
+   "evidence": "A image landofthegiants-p-1080.jpeg at 734×490, x=82; B landofthegiants.jpg at 1440×620, x=0, with the logo overlapping (B_slice_01)",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|33",
+    "bluebayou_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "The Thrills section has a warm orange gradient over the photo with text right of center in A, and a dark red overlay with left-aligned text in B",
+   "evidence": "A_slice_01: orange gradient, copy starting near x=800; B_slice_01: maroon overlay, copy at x=180 (Thrills.jpg 1440×539)",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|34",
+    "bluebayou_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "'Summer is waiting for you' is large water-textured lettering on white in A and a smaller navy stencil inside a light box on a navy band in B",
+   "evidence": "A_slice_02: large blue water-texture graphic on white; B_slice_02: 560×315 stencil-summeriswaiting.png on a light panel against navy",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|36",
+    "bluebayou_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "Stay Up To Date is on a bright blue band with tracked caps links in A, and on navy with underlined yellow links in B",
+   "evidence": "A_slice_02: rgb(0,152,255) band, 'FACEBOOK' and 'NEWSLETTER' in caps; B_slice_02: navy, 'Facebook' and 'newsletter' underlined in yellow",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|37",
+    "bluebayou_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "The Getaway panel is bright blue with plain uppercase link text in A, and cream with rounded bordered link tiles in B",
+   "evidence": "A_slice_02: blue panel with links like 'PARK MAPS', 'HOTELS'; B_slice_02: rgb(255,248,230) panel with bordered tiles 'Park Maps', 'Groups', ",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|38",
+    "bluebayou_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "The Getaway CTAs are a square gold button plus a text link in A, and blue and yellow pill buttons side by side in B",
+   "evidence": "A_slice_03: gold square 'GET A SEASON PASS' plus text 'OR BUY TICKETS'; B_slice_02: blue pill 'GET A SEASON PASS' and yellow pill 'OR BUY TI",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|39",
+    "bluebayou_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "The Getaway link lists differ: A shows five links; B shows six, including 'Groups'",
+   "evidence": "A_slice_02: Park Maps, Hotels, Directions, Corporate Events, Food & Concessions; B_slice_02 adds Groups",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|40"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I28",
+   "text": "In the Coca-Cola band, A places the logo at left with the can overlapping the brush edge; B puts the can first, then the logo, with a small yellow 'SAVE $5' above a large white headline",
+   "evidence": "A: coke-white at x=72, can at x=421 overlapping brush (overlap 10500px²); B: can at x=189, logo at x=336; B_slice_02 shows yellow 'SAVE $5' ",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|41",
+    "bluebayou_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "The footer is white with social icon squares in A, and dark navy with social links as text in B",
+   "evidence": "A_slice_03: white footer with blue Facebook, Twitter and YouTube icon squares; B_slice_03: rgb(4,36,61) footer with Facebook, Twitter, YouTu",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|42",
+    "bluebayou_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "B's footer has more links (Birthday Parties, Groups) and a divider rule above the copyright; A's copyright is centered gray text",
+   "evidence": "B_slice_03: PLAN column lists 7 items, thin rule, left-aligned copyright; A_slice_03: Plan split into two columns of 3 and 2, centered gray ",
+   "side": "generated",
+   "members": [
+    "bluebayou_com|opus|43"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I31",
+   "text": "Image assets differ: A has no hero/Thrills/Summer photos as img tags but uses -p- resized variants; B adds hero photos, Thrills and the stencil as img tags at full resolution",
+   "evidence": "A files: landofthegiants-p-1080.jpeg, coke-white-p-500.png; B files: shutterstock_138243329.jpg (1500×1000), DL.jpg, Thrills.jpg, stencil-su",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|44",
+    "bluebayou_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "Both pages keep the same section order and the same core copy (Buy Tickets, Season Passes, Birthday Parties, Land of the Giants, Thrills, Stay Up To Date, Getaway, Save $5)",
+   "evidence": "Both heading_outlines list BUY/TICKETS, SEASON/PASSES, BIRTHDAY/PARTIES, LAND OF THE GIANTS, THRILLS, STAY UP TO DATE, GETAWAY, SAVE $5",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|45",
+    "bluebayou_com|opus|46",
+    "bluebayou_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "Neither page uses button elements, svg elements, JSON-LD, main or article tags",
+   "evidence": "Both: buttons 0, svgs 0, jsonld_blocks 0, main 0, article 0",
+   "side": "both",
+   "members": [
+    "bluebayou_com|opus|47"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "A has four h1 elements (hero, Land of the Giants, Thrills, Getaway), and its h2s are used for small eyebrow labels such as 'BUY', 'SEASON' and 'BIRTHDAY'. B has a single h1, and its section titles are h2.",
+   "evidence": "A h1_count 4; B h1_count 1; B outline has LAND OF THE GIANTS, THRILLS and GETAWAY at level 2",
+   "side": "both",
+   "members": [
+    "bluebayou_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "A loads 15 scripts, 3 stylesheets and 3 style tags, and its head carries Open Graph and Twitter meta tags. B has no scripts or external stylesheets, one style tag, and only charset, viewport and description meta.",
+   "evidence": "A scripts 15, stylesheets 3, meta 9 with og:/twitter:; B scripts 0, stylesheets 0, meta 3",
+   "side": "both",
+   "members": [
+    "bluebayou_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "A uses a custom Webflow-style class vocabulary with 254 class tokens and 86 unique, about 40% tailwind-like. B uses 62 tokens and 35 unique, about 2% tailwind-like.",
+   "evidence": "A classes total 254, unique 86, tailwind_like_fraction 0.398; B total 62, unique 35, 0.016",
+   "side": "both",
+   "members": [
+    "bluebayou_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "A relies on more inline styles and ARIA attributes (9 inline style attrs, 20 aria attrs, including Webflow nav widgets). B has 1 inline style attr and 2 aria attrs.",
+   "evidence": "A inline_style_attrs 9, aria_attrs 20; B 1 and 2",
+   "side": "both",
+   "members": [
+    "bluebayou_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I38",
+   "text": "Base text is larger in A, at 18px body size and 28px line height with h2 at 22px. B uses 16px body, 25.6px line height and 17.6px h2.",
+   "evidence": "A body_font_size 18px, h2 22px; B 16px, 17.6px",
+   "side": "both",
+   "members": [
+    "bluebayou_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I39",
+   "text": "The hand-painted brush-stroke SVG divider (brush-2.svg) is a recurring motif in both. A uses it 6 times, at hero top and bottom, around the Thrills photo, above Stay Up To Date and under the Coke banner, tinted to each section's color. B uses it once, under the hero.",
+   "evidence": "A images list shows brush-2.svg at y=-35, 780, 1541, 2352, 3073 and 4280; B shows it once at y=888",
+   "side": "both",
+   "members": [
+    "bluebayou_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I40",
+   "text": "A's page is taller than B's. A's page_height is 4793 px against 4379 px for B, both at width 1440.",
+   "evidence": "layout.page_height A 4793, B 4379",
+   "side": "both",
+   "members": [
+    "bluebayou_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I41",
+   "text": "Content is held in a constrained container in B (content edges align at x=180 and x=1260 for nav, hero cards, sections and footer). A mixes full-bleed elements with different margins (promo tiles at x≈29, content at x≈82, text at x=800–838, footer at x=82).",
+   "evidence": "B image rects x=180/730 w=530, logos x=180; A rects x=10, 82, 800, 838; A_slice_00",
+   "side": "both",
+   "members": [
+    "bluebayou_com|sonnet|35"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Document title uses a tagline-style phrase with an em dash separator rather than a location.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Uses semantic landmark elements (header, section, footer) and a single h1 with section titles as h2, giving a clean heading hierarchy.",
+   "family": "semantic_dom",
+   "items": [
+    "I2",
+    "I34"
+   ]
+  },
+  {
+   "statement": "Link groups are marked up as ul/li lists, and footer column headings use a consistent heading level.",
+   "family": "semantic_dom",
+   "items": [
+    "I3",
+    "I1"
+   ]
+  },
+  {
+   "statement": "Images carry descriptive alt text rather than empty alt attributes.",
+   "family": "semantic_dom",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Typography uses a single system sans-serif font (Trebuchet MS) with no custom web fonts or icon fonts.",
+   "family": "typography",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Headlines and section titles are heavy-weight (900) bold sans-serif uppercase rather than script lettering.",
+   "family": "typography",
+   "items": [
+    "I6",
+    "I8"
+   ]
+  },
+  {
+   "statement": "Hero headline is horizontal and split into two colors, with the final phrase highlighted in yellow.",
+   "family": "typography",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Footer column headings are small, letter-spaced white uppercase sans-serif.",
+   "family": "typography",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "Base body text is a standard 16px with compact line height and small h2 sizes.",
+   "family": "typography",
+   "items": [
+    "I38"
+   ]
+  },
+  {
+   "statement": "Palette centers on navy, medium blue, bright yellow, red and purple, with pale blue as secondary text color.",
+   "family": "color",
+   "items": [
+    "I10",
+    "I11"
+   ]
+  },
+  {
+   "statement": "Primary call-to-action buttons are fully rounded yellow pills with dark navy text.",
+   "family": "component",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Rounded corners and pill shapes are used widely across cards, buttons and tiles.",
+   "family": "component",
+   "items": [
+    "I13",
+    "I20"
+   ]
+  },
+  {
+   "statement": "Secondary actions are outlined pill buttons, and paired CTAs appear as side-by-side colored pills.",
+   "family": "component",
+   "items": [
+    "I14",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Link collections are presented as rounded bordered tiles on a cream panel.",
+   "family": "component",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Header is a solid navy nav bar with text links between small logos.",
+   "family": "component",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Announcements appear as a full-width colored strip under the nav rather than a modal box.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Promo cards each have their own distinct color, left-aligned text and an arrow text link.",
+   "family": "component",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Footer is dark navy with text social links, a divider rule above a left-aligned copyright, and extended link columns.",
+   "family": "layout",
+   "items": [
+    "I29",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Content sits in a constrained centered container with consistent left and right edges across sections.",
+   "family": "layout",
+   "items": [
+    "I41"
+   ]
+  },
+  {
+   "statement": "Layout uses CSS grid alongside flexbox.",
+   "family": "layout",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Hero is a blue gradient with rounded photo cards captioned by name.",
+   "family": "imagery",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Feature sections use full-bleed photos with dark color overlays and left-aligned white text.",
+   "family": "imagery",
+   "items": [
+    "I21",
+    "I22"
+   ]
+  },
+  {
+   "statement": "Visual effects favor gradients over shadows, transitions and transforms; decorative dividers are minimal.",
+   "family": "decoration",
+   "items": [
+    "I15",
+    "I39"
+   ]
+  },
+  {
+   "statement": "Dark navy bands with light panels and underlined yellow links are used for secondary content sections.",
+   "family": "color",
+   "items": [
+    "I23",
+    "I24"
+   ]
+  },
+  {
+   "statement": "Page is lean: no scripts or external stylesheets, minimal meta tags, few classes and almost no inline styles or ARIA.",
+   "family": "semantic_dom",
+   "items": [
+    "I35",
+    "I36",
+    "I37"
+   ]
+  }
+ ]
+}

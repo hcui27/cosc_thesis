@@ -1,0 +1,630 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page title differs: A uses a short site name, B adds a tagline and a brand suffix",
+   "evidence": "A title 'Honda Insight Forum'; B title 'Honda Insight Forum Since 2003 | InsightCentral'",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|00",
+    "insightcentral_net|opus|03",
+    "insightcentral_net|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A has no h1; B has a single h1 hero headline",
+   "evidence": "h1_count: A 0, B 1 ('The ultimate Honda Insight forum')",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|04"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I2",
+   "text": "A's heading outline is just two h3s in the sidebar; B has a full h1→h2→h3 hierarchy",
+   "evidence": "A outline: h3 'Our Top Forums', h3 'Top Contributors this Month'; B outline: h1, four h2s ('Latest conversations', 'Top Contributors this Mo",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|05",
+    "insightcentral_net|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B uses nav and main landmarks and more sections; A has neither nav nor main",
+   "evidence": "semantic: A nav 0, main 0, section 1; B nav 1, main 1, section 4",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|06",
+    "insightcentral_net|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "Alt text handling differs: A has 5 images missing alt; B has none missing but leaves most alt values empty",
+   "evidence": "alt_missing: A 5, B 0; B image alts are '' for thread photos, avatars and community icons; A gives alts such as 'Mario' and 'Community avata",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|13",
+    "insightcentral_net|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "Font stack differs: A uses Helvetica Neue with Arial and Font Awesome icon fonts; B uses only system-ui",
+   "evidence": "A fonts: helvetica neue 983, arial 81, font awesome 5 pro 5, font awesome 5 brands 1; B: system-ui 131",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|14",
+    "insightcentral_net|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "B has a slightly larger body text size and line height",
+   "evidence": "body font-size/line-height: A 15px/22.5px, B 16px/25.6px",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|15"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I7",
+   "text": "B uses an uppercase, letter-spaced eyebrow label in a pill outline above the h1",
+   "evidence": "B_slice_00: 'HONDA INSIGHT FORUM · SINCE 2003' in a rounded outlined chip",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|16",
+    "insightcentral_net|opus|17",
+    "insightcentral_net|sonnet|04",
+    "insightcentral_net|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "The accent colors differ: A uses a blue link color, B uses a cyan accent",
+   "evidence": "A top text color rgb(0,95,217)×129; B accent rgb(39,209,255) as text ×8 and as background ×5",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|19",
+    "insightcentral_net|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "The color scheme is inverted: A is a light theme, B is a dark theme",
+   "evidence": "A main backgrounds rgb(255,255,255)×36 and rgb(240,243,245)×28, text rgb(56,58,59); B body bg rgb(11,17,24), text rgb(232,238,245)",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|18",
+    "insightcentral_net|opus|20",
+    "insightcentral_net|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "The primary button differs: B's is a cyan pill labeled 'Login / Join'; A's detected primary button is a transparent, textless 3px-radius control",
+   "evidence": "B primary_button bg rgb(39,209,255), color rgb(4,34,44), radius 999px, padding 7.2px 16px; A bg transparent, radius 3px, text ''",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|22"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I11",
+   "text": "A's 'Join Community' is a full-width rectangular blue button in the sidebar; B pairs a cyan 'Join Community' pill with an outlined 'Browse Forums' pill in the hero",
+   "evidence": "A_slice_00 sidebar blue square-cornered button; B_slice_00 two pill buttons centered under the subtitle",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|23",
+    "insightcentral_net|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "The header treatment differs: A puts the logo, search bar and icons over a full-width car photo banner; B uses a slim dark sticky-style bar with text nav links",
+   "evidence": "A image insightcentral_net_banner_2880w.jpg rect 1440×180 overlapping the logo (overlap 9405px²); B logo at 130×28 with 'What's New' and 'Fo",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|24",
+    "insightcentral_net|sonnet|02",
+    "insightcentral_net|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A uses a two-column layout (main feed and right sidebar); B uses a single centered column of stacked full-width sections",
+   "evidence": "A sidebar cards at x≈1000–1300 ('Honda Insight Forum', 'Our Top Forums', etc.); B sections span x 186–1254 one after another",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|27",
+    "insightcentral_net|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "Site stats placement differs: A shows them in a sidebar card with a divider; B shows three centered stats in the hero, adding '2003 and still going'",
+   "evidence": "A_slice_00: '414K posts | 180.3K members'; B_slice_00: '414K posts', '180.3K members', '2003 and still going'",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|28",
+    "insightcentral_net|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Featured thread cards differ: A overlays white titles on darkened photos; B puts square photos above the text in dark cards",
+   "evidence": "A first three photos rendered at 269×269, 269×358 and 269×479 with text overlaid; B renders the same images at 341×341 each, with title, aut",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|29",
+    "insightcentral_net|sonnet|18",
+    "insightcentral_net|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "Top Contributors are a vertical sidebar list in A and a three-card row in B",
+   "evidence": "A_slice_00 sidebar list (hondarider90, mudder, Joule); B_slice_01 three bordered cards side by side with a pill 'View All' on the right",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|33",
+    "insightcentral_net|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "Avatar sizes and styling differ: A uses solid colored square letter avatars; B uses small circular dark avatars with italic cyan initials",
+   "evidence": "A mudder avatar 28×28, letter tiles colored (e.g. purple H); B mudder avatar 48×48, and 'H'/'J' in italic cyan inside dark circles (B_slice_",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|34",
+    "insightcentral_net|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "Recommended Communities are a compact sidebar list in A and a three-card row with larger icons in B",
+   "evidence": "community icons are 36×36 in A and 64×64 in B (e.g. diyelectriccar_com_profile.png)",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|35",
+    "insightcentral_net|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "B adds explanatory subheading copy under each section heading",
+   "evidence": "B: 'See what members are talking about right now.', 'The members keeping the conversation going.', 'More places to geek out with fellow enth",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|36",
+    "insightcentral_net|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "B has a dedicated sign-up CTA panel with social login buttons; A shows a Google sign-in element only in DOM facts",
+   "evidence": "B h2 'Join now to ask and comment!' with 'Continue with Facebook' and 'Continue with Google' pills and 'or sign up with email'; A image 'Con",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|opus|37",
+    "insightcentral_net|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Hero copy differs: A uses a sidebar blurb, B rewrites it as a centered subtitle",
+   "evidence": "A: 'We're the ultimate Honda Insight forum to talk about Honda's hybrid car and its fuel economy and specs!'; B: 'Talk about Honda's hybrid ",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|38",
+    "insightcentral_net|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "Border radius usage differs: A is mostly square with small radii; B uses larger card radii and pills",
+   "evidence": "A buckets: 0→891, 1–7→115, 8–15→25, 16+→0, pill 39; B: 0→104, 1–7→1, 8–15→12, 16+→1, pill 13",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|41",
+    "insightcentral_net|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "B's hero has a subtle radial teal glow; A uses 8 gradient backgrounds (e.g. image overlays)",
+   "evidence": "gradient_backgrounds: A 8, B 2; B_slice_00 shows a teal glow behind the hero top",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|26",
+    "insightcentral_net|opus|42",
+    "insightcentral_net|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "A has one animation; B has none but slightly more transitions",
+   "evidence": "animations A 1, B 0; transitions A 11, B 15",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|43",
+    "insightcentral_net|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "Flex and grid usage differ: A is heavily flex-based, B uses more grid",
+   "evidence": "display_flex A 175 vs B 34; display_grid A 1 vs B 8",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|44"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I26",
+   "text": "Footer differs: A has a dark charcoal footer with fora and BBB logos; B continues the page's dark background with muted text links and no logos",
+   "evidence": "A background rgb(35,35,36) and logos at right (A_slice_02); B footer separated by a thin border line, links in gray, RSS as text rather than",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|46",
+    "insightcentral_net|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "The 'NEW!' badge on Royal Enfield Forum appears in both pages but is styled differently",
+   "evidence": "A_slice_01: blue rectangular 'NEW!' badge below the name; B_slice_01: cyan pill 'NEW!' before the name",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|48"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I28",
+   "text": "B uses inline emphasis tags (b, strong, small); A uses time elements for timestamps",
+   "evidence": "B tag_counts b 3, strong 6, small 9; A time 25, sup 1",
+   "side": "both",
+   "members": [
+    "insightcentral_net|opus|50"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I29",
+   "text": "A's DOM is deeply nested and div/span heavy, with many scripts, link tags, iframes and inline styles. B's DOM is minimal, with no scripts, no stylesheets and no inline style attributes.",
+   "evidence": "A: div 445, span 219, a 260, script 55, stylesheets 23, inline_style_attrs 73, iframe 2. B: div 23, span 16, a 26, scripts 0, stylesheets 0,",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A's head carries rich metadata (og, twitter, fb:app_id, theme-color, origin-trial tags, JSON-LD). B's head carries only charset, viewport and description.",
+   "evidence": "A meta_names has 27 entries and jsonld_blocks 1. B meta_names is charset, viewport, description; jsonld_blocks 0.",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "B is styled with semantic or utility-free short class names, only 50 class uses across 21 unique classes. A has 1199 class uses across 254 unique classes, a framework-style naming system.",
+   "evidence": "A classes total 1199, unique 254, tailwind_like_fraction 0.042. B total 50, unique 21, tailwind_like_fraction 0.",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "B's headline typography is large and hierarchical, with a 64px H1 and 25.6px H2s. A's heading text is small. Its sidebar card title 'Honda Insight Forum' renders around 24px, and thread titles are bold blue about 18px.",
+   "evidence": "B h1 font_size 64px and h2 font_size 25.6px. A has no H1 or H2 (h1/h2 null), and its titles are visible as bold blue links in slice 0.",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|12"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I33",
+   "text": "B uses object-fit-style square cropping on images whose natural ratios differ. The 700x700, 525x700 and 393x700 images all render at 341x341.",
+   "evidence": "B images natural [700,700], [525,700], [393,700] with rects 341x341.",
+   "side": "generated",
+   "members": [
+    "insightcentral_net|sonnet|19"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "A uses drop shadows widely on cards and tiles. B has none, and uses 1px borders and subtle tonal panels for separation.",
+   "evidence": "A box_shadows 37. B box_shadows 0. B screenshot shows bordered dark cards.",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "Copy volume differs a lot: A has about 643 words of live forum content (about 25 thread titles with authors and replies). B has about 225 words of marketing-style copy and section subtitles.",
+   "evidence": "A text_stats words 643, exclamations 6. B words 225, exclamations 2.",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "B shows reply counts as text ('9 replies', '2 replies'), while A shows them as a comment-bubble icon with a number in a grey chip. A also shows timestamps ('a moment ago') and last-replier info that B omits.",
+   "evidence": "A slice 0 rows: 'Mario · a moment ago · retepsnikrep replied a moment ago' with a chip '2'. B card footers: 'Bobhpete 9 replies'. A tag_coun",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I37",
+   "text": "A relies on icon glyphs (Font Awesome: search, user, list, kebab, comment bubbles, eye icons, arrow chevrons). B uses almost no icon glyphs and relies on text and initials.",
+   "evidence": "A fonts 'font awesome 5 pro' on 5 elements, 'brands' on 1; i tags 7. B i tags 5 (italic initials) and no icon fonts.",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I38",
+   "text": "A holds interactive form elements and chrome (2 forms, 14 inputs, 2 buttons, 2 iframes). B has none, and its controls are plain anchors.",
+   "evidence": "A tag_counts form 2, input 14, button 2, iframe 2. B tag_counts has no form, input, button or iframe; buttons 0.",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I39",
+   "text": "Page height is greater in A than in B because of the long feed, though both render at 1440px width.",
+   "evidence": "A page_height 3333; B page_height 2737; both page_width 1440.",
+   "side": "both",
+   "members": [
+    "insightcentral_net|sonnet|40"
+   ],
+   "tier": "A"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page uses a dark theme with near-black navy background and light off-white text.",
+   "family": "color",
+   "items": [
+    "I9"
+   ]
+  },
+  {
+   "statement": "A single bright cyan accent color is used for buttons, initials, badges and highlights.",
+   "family": "color",
+   "items": [
+    "I8",
+    "I17"
+   ]
+  },
+  {
+   "statement": "Primary and secondary buttons are fully rounded pills, in a filled accent and outlined pairing.",
+   "family": "component",
+   "items": [
+    "I10",
+    "I11"
+   ]
+  },
+  {
+   "statement": "Hero has an uppercase, letter-spaced eyebrow label inside a rounded outlined chip above the headline.",
+   "family": "component",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Large single H1 hero headline with centered subtitle and centered stats row beneath.",
+   "family": "typography",
+   "items": [
+    "I32",
+    "I14"
+   ]
+  },
+  {
+   "statement": "Clear h1→h2→h3 heading hierarchy with a large H1 and smaller H2s.",
+   "family": "semantic_dom",
+   "items": [
+    "I1",
+    "I2"
+   ]
+  },
+  {
+   "statement": "Uses semantic landmarks (nav, main, multiple sections) and minimal DOM with few wrappers, scripts and inline styles.",
+   "family": "semantic_dom",
+   "items": [
+    "I3",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Typography uses only the system-ui font stack, with slightly larger 16px body text and looser line height.",
+   "family": "typography",
+   "items": [
+    "I5",
+    "I6"
+   ]
+  },
+  {
+   "statement": "Layout is a single centered column of stacked full-width sections, with grid used for card rows.",
+   "family": "layout",
+   "items": [
+    "I13",
+    "I25"
+   ]
+  },
+  {
+   "statement": "Content is presented as rows of three equal bordered cards with larger icons or avatars.",
+   "family": "component",
+   "items": [
+    "I16",
+    "I18"
+   ]
+  },
+  {
+   "statement": "Cards place square-cropped images above text, with uniform sizing regardless of natural aspect ratio.",
+   "family": "imagery",
+   "items": [
+    "I15",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Avatars are circular dark discs with italic accent-colored initials, not photos or square tiles.",
+   "family": "component",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Larger card radii and pill shapes are used instead of square corners.",
+   "family": "decoration",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Separation relies on 1px borders and tonal panels, with no drop shadows.",
+   "family": "decoration",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "Hero has a subtle radial colored glow as the only gradient decoration.",
+   "family": "decoration",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "Each section heading is followed by a short explanatory subheading line.",
+   "family": "copy",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Copy is concise and marketing-style, with rewritten taglines and a low word count.",
+   "family": "copy",
+   "items": [
+    "I21",
+    "I35",
+    "I0"
+   ]
+  },
+  {
+   "statement": "Dedicated sign-up call-to-action panel with social login pill buttons and an email alternative.",
+   "family": "component",
+   "items": [
+    "I20"
+   ]
+  },
+  {
+   "statement": "Interface uses almost no icon glyphs, relying on text labels and initials; metadata like reply counts is plain text.",
+   "family": "component",
+   "items": [
+    "I37",
+    "I36"
+   ]
+  },
+  {
+   "statement": "Header is a slim dark bar with a small logo and text navigation links, without a banner image.",
+   "family": "layout",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Footer continues the dark page background with a thin top border and muted gray text links.",
+   "family": "layout",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Images mostly have empty alt attributes, even for content photos, avatars and icons.",
+   "family": "semantic_dom",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Badges such as 'NEW!' are rendered as small accent-colored pills placed before the name.",
+   "family": "component",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Styling uses few semantic class names, with no utility-framework classes or external stylesheets.",
+   "family": "semantic_dom",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "Head metadata is minimal, with only charset, viewport and description tags.",
+   "family": "semantic_dom",
+   "items": [
+    "I30"
+   ]
+  },
+  {
+   "statement": "Inline emphasis and small text tags (b, strong, small) are used for secondary text.",
+   "family": "semantic_dom",
+   "items": [
+    "I28"
+   ]
+  }
+ ]
+}

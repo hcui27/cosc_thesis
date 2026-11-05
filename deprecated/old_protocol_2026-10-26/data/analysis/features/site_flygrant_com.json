@@ -1,0 +1,612 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page titles differ. A has a long, keyword-heavy title. B has a short title in the form brand – tagline.",
+   "evidence": "A title: 'Scheduled, Charter & Cargo Flights throughout Alaska - Grant Aviation, Alaska, Flights - Grant Aviation'; B title: 'Grant Aviation",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|00",
+    "flygrant_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "B uses a fuller set of semantic landmark elements, including main, aside, article and time. A has none of these.",
+   "evidence": "A semantic: main 0, section 1, article 0, aside 0; B: main 1, section 4, article 2, aside 1, time 2",
+   "side": "generated",
+   "members": [
+    "flygrant_com|opus|03",
+    "flygrant_com|sonnet|35"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "The typefaces differ. A uses Open Sans for body text and Raleway for headings. B uses system-ui for body text and Georgia serif for headings.",
+   "evidence": "A fonts: open sans 568, Raleway 38; B fonts: system-ui 170, Georgia 11; B h1 font_family 'Georgia, \"Times New Roman\", serif'; A h1 'Raleway,",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|06",
+    "flygrant_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "The H1 text differs. A's H1 contains both the brand name and the tagline in uppercase. B's H1 is just 'Grant Aviation' in title case, with the tagline in a separate paragraph below and an eyebrow line above.",
+   "evidence": "A h1 text 'GRANT AVIATION\\nALASKAN-OWNED AND OPERATED'; B h1 'Grant Aviation'; B screenshot shows small letter-spaced 'FLY EASY, FLY GRANT' ",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|07",
+    "flygrant_com|opus|08",
+    "flygrant_com|sonnet|04",
+    "flygrant_com|sonnet|42"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "The H2 sizes and weights differ. A's H2s are 30px at weight 400. B's H2s are 22.4px at weight 700.",
+   "evidence": "A h2 30px/400; B h2 22.4px/700",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|10",
+    "flygrant_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "The accent red differs. A uses a brighter red, rgb(210,60,51). B uses a darker rust red, rgb(181,65,44).",
+   "evidence": "A top_backgrounds includes rgb(210,60,51); B top_backgrounds includes rgb(181,65,44), and B's primary button bg is rgb(181,65,44)",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|13",
+    "flygrant_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "A's header is taller and its logo is shown larger, next to a two-tone 'GRANTAVIATION' wordmark. B uses a smaller logo inside a rounded red tile, with a bold 'Grant Aviation' text label.",
+   "evidence": "A logo rect 80x57 at y 23; B logo rect 62x44 at y 12; screenshots show the different wordmarks",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|14",
+    "flygrant_com|opus|15",
+    "flygrant_com|sonnet|00",
+    "flygrant_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "The logo alt text differs.",
+   "evidence": "A alt 'Grant Aviation'; B alt 'Grant Aviation owl logo'",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|16"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I8",
+   "text": "B shows the phone number in the nav as a red pill-shaped button. A shows it as a plain link with a phone icon.",
+   "evidence": "B_slice_00 '888-359-4726' in a red rounded pill; B border_radius bucket_pill 1; A_slice_00 phone link with icon",
+   "side": "generated",
+   "members": [
+    "flygrant_com|opus|18",
+    "flygrant_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "The hero layouts differ. In A the flight search card sits under the headline on the left side of the hero. In B the headline is on the left and the search card is on the right, in two columns.",
+   "evidence": "A_slice_00: H1 at top-left, form card below it from x≈170–978; B_slice_00: H1 at left, form card on the right at x≈820–1260",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|19",
+    "flygrant_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "The search card styling differs. A's card is white with square corners. B's card is cream with rounded corners.",
+   "evidence": "A_slice_00 white card with sharp corners; B_slice_00 cream card with rounded corners; A radius bucket_0 632 vs B bucket_8_15 15",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A's passenger counts use minus/plus stepper widgets. B uses native select dropdowns.",
+   "evidence": "A_slice_00 shows −/+ buttons around 1/0/0; B_slice_00 shows select chevrons; button count A 9 vs B 1; option counts A 61 vs B 23",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|21",
+    "flygrant_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "The date fields differ. A uses text inputs with 'Departure Date' and 'Return Date' placeholders. B uses native date inputs showing mm/dd/yyyy with calendar icons.",
+   "evidence": "A_slice_00 placeholders; B_slice_00 'mm/dd/yyyy' with calendar glyphs",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|22",
+    "flygrant_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "A's trip-type radios are custom styled with uppercase labels. B uses native radios with sentence-case labels.",
+   "evidence": "A 'RETURN TRIP / ONE WAY' with custom circles; B 'Return Trip / One Way' native radios",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|23"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I14",
+   "text": "B's location inputs have 'City or airport' placeholders. A's location inputs are empty, and the 'Traveling to' label is grayed out.",
+   "evidence": "B_slice_00 placeholders 'City or airport'; A_slice_00 empty inputs, light-gray 'Traveling to' label",
+   "side": "generated",
+   "members": [
+    "flygrant_com|opus|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "The primary button styling differs. A's button has square corners and less padding. B's button has an 8px radius and larger padding.",
+   "evidence": "A primary_button radius 0px, padding 0px 20px; B radius 8px, padding 13px 22px, bg rgb(181,65,44)",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|25",
+    "flygrant_com|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "The Agent Login link is placed differently. A right-aligns it next to the search button with a chevron. B centers it under the button and underlines it.",
+   "evidence": "A_slice_00 'Agent Login »' at right; B_slice_00 'Agent Login' centered and underlined",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|26",
+    "flygrant_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "The COVID notice is treated differently. A shows it as bold, justified white text on black highlighted lines in a dark panel. B places it in a white card with a red left border and a red 'COVID-19 Travel Updates' heading.",
+   "evidence": "A_slice_00/01 bold justified text with black line highlights; B_slice_00 white card with red left border and heading",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|27",
+    "flygrant_com|opus|28",
+    "flygrant_com|sonnet|17",
+    "flygrant_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "The quick-links grid differs. A shows it as white tiles with red icons above the labels, in a 4x2 grid. B shows outlined text-only buttons on a black band, in rows of 6 and 2.",
+   "evidence": "A_slice_00/01 white tiles with calendar, plane, pin and chat icons; B_slice_01 outlined dark buttons with no icons",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|29",
+    "flygrant_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A uses a boxed, centered content container with drop shadows, overlapping a dark band. B's sections are full-width color bands with no boxed wrapper.",
+   "evidence": "A_slice_00–02 content box at x≈105–1335 with shadow on the sides; B sections span the full 1440px width",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|11",
+    "flygrant_com|opus|12",
+    "flygrant_com|opus|30",
+    "flygrant_com|sonnet|12",
+    "flygrant_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "A shows the charter and communities content as open columns. B wraps each in a rounded white card with a shadow.",
+   "evidence": "A_slice_01 plain columns on white; B_slice_01 two white rounded cards on cream",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|32",
+    "flygrant_com|opus|33",
+    "flygrant_com|opus|34",
+    "flygrant_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "The reservation CTA band differs. A uses a pale gray-blue band with a large red '888-Fly-Grant', a faint plane graphic and a red 'Book online' button. B uses a solid rust-red band with a white serif heading and a black 'Book online' button.",
+   "evidence": "A_slice_01/02 light band with a plane watermark; B_slice_01 red band with a black button",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|35",
+    "flygrant_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "In A, the phone numbers sit inside the H2. In B, the H2 contains only the headline, and the numbers are in separate text.",
+   "evidence": "A H2 'Make a Reservation Today!\\n888-Fly-Grant or 888-359-4726'; B H2 'Make a Reservation Today!'",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I23",
+   "text": "A has a 'Lets get Social' section with an empty column. B reduces this to a single inline link next to the Recent News heading.",
+   "evidence": "A_slice_02 'Lets get Social' heading with blank area below; B_slice_01 'Let's get social: Grant Aviation on Facebook' link",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|37",
+    "flygrant_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "The footer column order and heading style differ. A puts LEGAL first, in four columns of larger uppercase headings, plus a second row. B uses five columns with small letter-spaced headings and puts LEGAL last, under CONTACT US.",
+   "evidence": "A_slice_02 LEGAL / FOLLOW US / CONTACT US / QUICK LINKS; B_slice_02 CONTACT US / QUICK LINKS / FOLLOW US / PHOTOS / NEWSLETTER, with LEGAL b",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|43",
+    "flygrant_com|sonnet|27",
+    "flygrant_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "A's footer shows the email address 'res@flygrant.com' in full. B shows 'Email us' as the link text.",
+   "evidence": "A_slice_02 'res@flygrant.com'; B_slice_02 'Email us'",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|44"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I26",
+   "text": "A's copyright bar is a separate, darker strip, with 'Grant Aviation' and 'Staff Login' in red. B's copyright line sits under a divider in the same black footer, in gray text.",
+   "evidence": "A_slice_03 darker bar with red links; B_slice_02 gray text after a hairline",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|45",
+    "flygrant_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "A uses no flex or grid layout. B uses CSS grid and flexbox extensively.",
+   "evidence": "A display_grid 0, display_flex 0; B display_grid 14, display_flex 15",
+   "side": "generated",
+   "members": [
+    "flygrant_com|opus|46"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I28",
+   "text": "B uses more medium border radii (8–15px). Almost all of A's radii are 0.",
+   "evidence": "A buckets: 0→632, 1–7→7, 8–15→0; B: 0→159, 1–7→8, 8–15→15",
+   "side": "generated",
+   "members": [
+    "flygrant_com|opus|48",
+    "flygrant_com|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "A's Recent News is a bordered card showing a single uppercase newsletter title, a clock-icon date and a long raw URL that overflows the card. B shows two article columns with top rules and dates, and uses a 'Download the newsletter (PDF)' link.",
+   "evidence": "A_slice_02 shows a full 'https://www.flygrant.com/uploads/pdf/...' URL running past the card edge; B_slice_01/02 shows two articles with 'Do",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|38",
+    "flygrant_com|opus|52",
+    "flygrant_com|sonnet|25",
+    "flygrant_com|sonnet|40",
+    "flygrant_com|sonnet|43"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "B pairs input labels with form fields more explicitly, using more label elements.",
+   "evidence": "A label 3, input 9; B label 9, input 6",
+   "side": "generated",
+   "members": [
+    "flygrant_com|opus|53"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I31",
+   "text": "A's hero shows the owl artwork bright and only lightly darkened. B's hero darkens the artwork heavily so it reads as a dim background.",
+   "evidence": "A_slice_00 owl face and wings appear bright; B_slice_00 the same artwork is noticeably dimmed",
+   "side": "both",
+   "members": [
+    "flygrant_com|opus|54",
+    "flygrant_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "A's 'Tell Us Your Story!' is an h2 heading outside the news block in outline; B makes both news titles h3 under h2 'Recent News', giving a nested hierarchy.",
+   "evidence": "heading_outline A vs B",
+   "side": "both",
+   "members": [
+    "flygrant_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "Footer icons: A shows social/contact links with small icon squares (Facebook, Twitter, envelope, headset, plane, calendar); B shows plain text links with no icons, and 'Email us' replaces the visible email address.",
+   "evidence": "A_slice_02 icon squares; B_slice_02 text only",
+   "side": "both",
+   "members": [
+    "flygrant_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "Image count: A has 9 img elements (logo, large shp.png 1338x561 at y=1142, PDF-as-image, six thumbnails); B has a single img (logo).",
+   "evidence": "counts images A 9, B 1",
+   "side": "both",
+   "members": [
+    "flygrant_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I35",
+   "text": "Head metadata: A has 10 meta tags incl. Keywords, og:title, og:description, og:url, og:image, author and 23 link tags, a <base>, 34 scripts; B has only charset, viewport, description, and no scripts or stylesheets.",
+   "evidence": "meta_names; tag_counts script 34 vs 0; link 23 vs 0; counts stylesheets 18 vs 0",
+   "side": "both",
+   "members": [
+    "flygrant_com|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I36",
+   "text": "DOM weight: A has 128 divs, 144 spans, 116 anchors and 116 li; B has 27 divs, 2 spans, 38 anchors and 26 li.",
+   "evidence": "tag_counts",
+   "side": "both",
+   "members": [
+    "flygrant_com|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "Class use: A has 598 class tokens (153 unique); B has 41 (25 unique). A has 25 inline style attrs and 125 aria attributes; B has 8 inline styles and 3 aria attributes.",
+   "evidence": "classes and counts blocks",
+   "side": "both",
+   "members": [
+    "flygrant_com|sonnet|37"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I38",
+   "text": "Effects: A has 9 box shadows, 4 gradients, 58 transitions, 29 transforms; B has 4 shadows, no gradients, 11 transitions, no transforms.",
+   "evidence": "effects blocks",
+   "side": "both",
+   "members": [
+    "flygrant_com|sonnet|39"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I39",
+   "text": "Letter-spaced uppercase labels (eyebrow style) such as 'FLY EASY, FLY GRANT' and 'WELCOME TO' are used in B; the eyebrow 'FLY EASY, FLY GRANT' text does not appear in A's hero.",
+   "evidence": "B_slice_00 hero eyebrow; A h1 text",
+   "side": "generated",
+   "members": [
+    "flygrant_com|sonnet|41"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page title is short, in the form 'brand – tagline', rather than a long keyword-stuffed string.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Uses a full set of semantic landmarks (main, aside, article, time, several sections) and nested heading hierarchy (h3 under h2).",
+   "family": "semantic_dom",
+   "items": [
+    "I1",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Headings use a Georgia-style serif face while body text uses the system-ui font stack.",
+   "family": "typography",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "H1 is short title-case brand text, with the tagline moved to a separate paragraph and a small eyebrow line above.",
+   "family": "typography",
+   "items": [
+    "I3",
+    "I39"
+   ]
+  },
+  {
+   "statement": "H2 headings are small (about 22px) and bold at weight 700, giving modest heading scale.",
+   "family": "typography",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Accent color is a muted, darker rust red used for buttons and CTA bands, on cream and black backgrounds.",
+   "family": "color",
+   "items": [
+    "I5",
+    "I21"
+   ]
+  },
+  {
+   "statement": "Header uses a compact small logo in a rounded colored tile beside a bold text brand label.",
+   "family": "component",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "Header phone number appears as a filled accent-colored pill button in the navigation.",
+   "family": "component",
+   "items": [
+    "I8"
+   ]
+  },
+  {
+   "statement": "Hero is a two-column grid with headline on the left and a form card on the right.",
+   "family": "layout",
+   "items": [
+    "I9",
+    "I27"
+   ]
+  },
+  {
+   "statement": "Cards are cream or white with rounded corners and soft shadows, wrapping content groups.",
+   "family": "decoration",
+   "items": [
+    "I10",
+    "I20",
+    "I28",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Form uses native controls (selects, date inputs, radios) with sentence-case labels, explicit label elements and helpful placeholders.",
+   "family": "component",
+   "items": [
+    "I11",
+    "I12",
+    "I13",
+    "I14",
+    "I30"
+   ]
+  },
+  {
+   "statement": "Primary buttons have an 8px radius and generous padding in the accent color.",
+   "family": "component",
+   "items": [
+    "I15",
+    "I21"
+   ]
+  },
+  {
+   "statement": "Secondary links, such as agent login, are centered under the main button and underlined.",
+   "family": "component",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Notices appear as white cards with an accent-colored left border and an accent-colored heading.",
+   "family": "component",
+   "items": [
+    "I17"
+   ]
+  },
+  {
+   "statement": "Quick links are plain outlined text-only buttons on a dark band, without icons.",
+   "family": "component",
+   "items": [
+    "I18",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Sections are full-width color bands without a boxed, shadowed wrapper.",
+   "family": "layout",
+   "items": [
+    "I19"
+   ]
+  },
+  {
+   "statement": "Contact details are shown as short link text such as 'Email us' rather than raw addresses or URLs, and long headings keep numbers in separate text.",
+   "family": "copy",
+   "items": [
+    "I22",
+    "I25",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Footer has multiple columns with small letter-spaced uppercase headings, and a gray copyright line below a hairline in the same dark footer.",
+   "family": "layout",
+   "items": [
+    "I24",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Hero background artwork is heavily darkened so it reads as a dim backdrop behind the text.",
+   "family": "imagery",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "Page is lightweight, with minimal images, few scripts, minimal metadata and lean markup with few classes.",
+   "family": "other",
+   "items": [
+    "I34",
+    "I35",
+    "I36",
+    "I37"
+   ]
+  },
+  {
+   "statement": "Social content is reduced to a single inline link, and news is shown as simple dated article columns with top rules.",
+   "family": "component",
+   "items": [
+    "I23",
+    "I29"
+   ]
+  }
+ ]
+}

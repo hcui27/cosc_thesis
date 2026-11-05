@@ -1,0 +1,302 @@
+[
+ {
+  "observation": "Document titles use different wording and separators",
+  "category": "metadata",
+  "evidence": "A title: 'Thync | Neurostimulation For Everyone – Thync Global, Inc.'; B title: 'Thync – Neurostimulation For Everyone'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has many more meta tags, including Open Graph, Twitter and Shopify ones; B has only charset, viewport and description",
+  "category": "metadata",
+  "evidence": "A meta_names: 17 entries (og:*, twitter:*, shopify-*); B meta_names: 3",
+  "which_side": "A"
+ },
+ {
+  "observation": "A includes structured data blocks and B has none",
+  "category": "metadata",
+  "evidence": "jsonld_blocks: A=2, B=0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A is script-heavy, while B has no scripts or external stylesheets",
+  "category": "DOM structure",
+  "evidence": "scripts: A=54, B=0; stylesheets: A=4, B=0; style tags: A=15, B=1",
+  "which_side": "A"
+ },
+ {
+  "observation": "The H1 is empty in A, and the hero title is styled as an H2. In B the H1 holds the hero title",
+  "category": "semantic structure",
+  "evidence": "A h1 text '' (18px), heading_outline shows h2 'Neurostimulation For Everyone'; B h1 'Neurostimulation For Everyone' at 64px/700",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's heading outline starts with a cart-drawer H2 and an empty H3; B has no cart-related headings",
+  "category": "semantic structure",
+  "evidence": "A outline begins 'Just added to your cart' (h2), then an empty h3; B outline begins with the h1",
+  "which_side": "A"
+ },
+ {
+  "observation": "The five FAQ questions are H2s in A and H3s in B, with the number in its own line or element in B",
+  "category": "semantic structure",
+  "evidence": "A h2 '1. What does Thync do?'; B h3 '1\\nWhat does Thync do?'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses section and article elements; A uses none",
+  "category": "semantic structure",
+  "evidence": "section: A=0, B=4; article: A=0, B=5",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds H5 headings for the footer column titles",
+  "category": "semantic structure",
+  "evidence": "B tag_counts h5=4; footer shows 'Follow us', 'Explore', 'More', 'Stay Informed About Thync' as headings",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's DOM is much larger, with far more divs and classes",
+  "category": "DOM structure",
+  "evidence": "div: A=150, B=21; classes total/unique: A 494/210, B 30/17",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has buttons, a form, inputs, an iframe and SVG icons; B has none of these",
+  "category": "DOM structure",
+  "evidence": "A buttons=10, form=1, input=2, iframe=1, svg=15; B buttons=0, svgs=0, no form/iframe",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses many ARIA attributes, while B uses only a few",
+  "category": "DOM structure",
+  "evidence": "aria_attrs: A=55, B=2",
+  "which_side": "A"
+ },
+ {
+  "observation": "Every image in B has alt text; A is missing alt text on some images",
+  "category": "imagery",
+  "evidence": "alt_missing: A=2, B=0; B alts like 'Mashable', 'The Wall Street Journal'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A sets type in Poppins; B uses the system UI font stack",
+  "category": "typography",
+  "evidence": "A fonts: Poppins 346 elements; B: system-ui 130 elements (system-ui, -apple-system, Segoe UI, Roboto)",
+  "which_side": "both"
+ },
+ {
+  "observation": "B has a larger body font size and line height",
+  "category": "typography",
+  "evidence": "body: A 15px/22.5px; B 17px/28.05px",
+  "which_side": "B"
+ },
+ {
+  "observation": "The hero headline is light-weight and normally spaced in A, but bold with tight tracking in B",
+  "category": "typography",
+  "evidence": "A slice 0: thin Poppins 'Neurostimulation For Everyone' with text shadow; B slice 0: heavy, condensed-tracking 64px/700 heading",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's section headings are small, bold and widely letter-spaced; B's are large, bold and tightly tracked",
+  "category": "typography",
+  "evidence": "A slice 0/2: '5 Questions, 5 Answers About Thync', 'Our Approach To Science' with wide tracking; B h2 36.8px/700, tight spacing",
+  "which_side": "both"
+ },
+ {
+  "observation": "The hero background is a full-bleed photo of an athlete wearing the device in A, and a dark navy-to-purple gradient with no photo in B",
+  "category": "imagery",
+  "evidence": "A slice 0 photo hero with dark overlay (rgba(0,0,0,0.4)); B slice 0 gradient hero; B gradient_backgrounds=2",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's hero is taller than B's",
+  "category": "layout",
+  "evidence": "A hero spans roughly y=80–730; B hero spans roughly y=70–509",
+  "which_side": "A"
+ },
+ {
+  "observation": "The logo is an image wordmark in A and a text wordmark with a purple dot in B",
+  "category": "branding",
+  "evidence": "A img Thync-Logo-Colour_1_180x.png at x=55; B slice 0 shows text 'thync.' at x≈220",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's nav sits near the center and highlights FeelZing as a filled orange tab; B's nav is right-aligned with all links styled the same",
+  "category": "navigation",
+  "evidence": "A slice 0: nav centered around x≈530–915, orange FeelZing box; B slice 0: links at right edge ending x≈1220",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's header uses a semi-transparent background with backdrop blur",
+  "category": "decoration/effects",
+  "evidence": "B backgrounds include rgba(255,255,255,0.92); backdrop_blur=1; A backdrop_blur=0",
+  "which_side": "B"
+ },
+ {
+  "observation": "The primary CTA is a square, uppercase orange button in A and a cyan pill button in sentence case in B",
+  "category": "components",
+  "evidence": "A slice 0 'DISCOVER FEELZING' on orange rgb(241,126,74), square corners; B primary_button bg rgb(25,195,214), radius 999px, text 'Discover Feelzing'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The accent colors differ: orange in A, purple and cyan in B",
+  "category": "color",
+  "evidence": "A accent rgb(241,126,74) (5 backgrounds, 6 text); B text rgb(91,61,245) (10), bg rgb(25,195,214)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Body text is neutral dark gray in A and dark navy in B",
+  "category": "color",
+  "evidence": "body_color: A rgb(58,58,58); B rgb(14,19,48)",
+  "which_side": "both"
+ },
+ {
+  "observation": "The FAQ is laid out as alternating two-column rows with images in A, and as stacked single-column bordered cards in B",
+  "category": "layout",
+  "evidence": "A slices 0–1: Q1 left, Q2 right, Q3 left, Q4 right, with image slots opposite; B slices 0–1: centered cards about 680px wide",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows the FAQ numbers as separate purple numerals; A writes them inline as '1.'",
+  "category": "copy treatment",
+  "evidence": "B slice 0 purple '1' beside the bold question; A '1. What does Thync do?'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's FAQ illustrations do not render: they show broken alt text or empty gray placeholders. B leaves these images out entirely",
+  "category": "imagery",
+  "evidence": "A slice 0 shows alt text 'thync-improves-brain-function-with-electricity'; A slice 1 has an empty gray block next to Q4; A images like neuron/graf/device have natural size 0×0; B has only 8 images, all logos",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has large vertical gaps between FAQ items",
+  "category": "layout",
+  "evidence": "A slice 1: roughly 150–200px of whitespace between Q2, Q3, Q4 and Q5; B cards sit about 20px apart",
+  "which_side": "A"
+ },
+ {
+  "observation": "The FAQ link is underlined dark gray in A and underlined purple in B",
+  "category": "color",
+  "evidence": "A slice 1 'feelzing.com' dark underline; B slice 1 'feelzing.com' purple underline",
+  "which_side": "both"
+ },
+ {
+  "observation": "B places the science/video section on a pale lavender-gray band",
+  "category": "color",
+  "evidence": "B background rgb(243,245,250) (5 uses) behind 'Our Approach To Science' and 'Featured In'; A sections are on white",
+  "which_side": "B"
+ },
+ {
+  "observation": "The video area is a wide, flat gray box with an orange play button in A, and a narrower rounded gradient card with a translucent white play circle in B",
+  "category": "components",
+  "evidence": "A slice 2 gray block x=144–1296 with an orange circular play icon; B slice 1 rounded card x=360–1080 with navy-purple gradient",
+  "which_side": "both"
+ },
+ {
+  "observation": "A embeds the video as an iframe; B uses a static placeholder",
+  "category": "DOM structure",
+  "evidence": "A iframe=1; B has no iframe",
+  "which_side": "A"
+ },
+ {
+  "observation": "The science subtitle runs on one line in A and wraps across two lines in B",
+  "category": "layout",
+  "evidence": "A slice 2 single line at 1185px width; B slice 1 two centered lines",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows paper logos (two broken, one a gray placeholder) above short excerpts; B shows text-only cards with a purple top border",
+  "category": "components",
+  "evidence": "A slice 2 alt text 'thync-published-paper-nature'/'biorxiv' plus a gray box; B slice 2 three cards on rgb(243,245,250) with a purple top border",
+  "which_side": "both"
+ },
+ {
+  "observation": "'Read more' is an outlined orange box button in A and a bold purple text link with an arrow in B",
+  "category": "components",
+  "evidence": "A slice 3 'READ MORE' in a bordered orange box; B slice 2 'READ MORE →' in purple",
+  "which_side": "both"
+ },
+ {
+  "observation": "The press logo strip shows six logos in A and seven in B, which also shows Mashable",
+  "category": "imagery",
+  "evidence": "A Mashable img rect 0×0 (hidden), so PBS through WSJ visible at 150×81; B shows Mashable through WSJ at 100×54",
+  "which_side": "B"
+ },
+ {
+  "observation": "The press logos render at 150×81 in A and smaller, at 100×54, in B",
+  "category": "imagery",
+  "evidence": "A logo rects w=150,h=81; B logo rects w=100,h=54",
+  "which_side": "both"
+ },
+ {
+  "observation": "The footer is light gray with dark text in A and dark navy with white text in B",
+  "category": "color",
+  "evidence": "A slice 3 light rgb(246,246,246) footer; B slice 2 navy rgb(14,19,48) footer, light text rgb(196,200,228)",
+  "which_side": "both"
+ },
+ {
+  "observation": "Social links are a centered row of Facebook, Instagram and YouTube icons in A, and a text list in a footer column in B",
+  "category": "components",
+  "evidence": "A slice 3 three SVG icons under 'Follow us'; B slice 2 'Facebook', 'Instagram', 'YouTube' as text links",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's footer has four labelled columns (Follow us, Explore, More, Stay Informed); A's footer columns have no labels",
+  "category": "layout",
+  "evidence": "B slice 2 column headings; A slice 3 unlabelled link columns",
+  "which_side": "B"
+ },
+ {
+  "observation": "The footer email address and signup area differ: A shows a 'Stay Informed About Thync' area with no visible field, while B places hello@thync.com under that heading",
+  "category": "copy treatment",
+  "evidence": "A slice 3: hello@thync.com underlined in column 3, 'Stay Informed' heading on its own; B slice 2: email under 'Stay Informed About Thync'",
+  "which_side": "both"
+ },
+ {
+  "observation": "The TRUSTe badge and copyright swap sides",
+  "category": "layout",
+  "evidence": "A TRUSTe at x=144 (left), copyright at right; B TRUSTe at x=1123 (right), copyright at left above a divider line",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a narrower content container than A",
+  "category": "layout",
+  "evidence": "A content x=144–1296; B header and footer content x≈220–1220, FAQ cards x≈380–1060",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses CSS grid for layout; A uses only flex",
+  "category": "layout",
+  "evidence": "display_grid: A=0, B=8; display_flex: A=27, B=12",
+  "which_side": "B"
+ },
+ {
+  "observation": "Border radii: A is almost all square corners, while B has more large-radius and pill-shaped elements",
+  "category": "decoration/effects",
+  "evidence": "A buckets 0:340, 16+:2, pill:0; B 0:118, 16+:9, pill:2",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses box shadows, animations and transforms; B has none of these but does use gradients",
+  "category": "decoration/effects",
+  "evidence": "A box_shadows=2, animations=2, transforms=1, gradients=0; B box_shadows=0, animations=0, transforms=0, gradients=2",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's page is taller than B's",
+  "category": "layout",
+  "evidence": "page_height: A=4675, B=3869",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses inline style attributes; B uses none",
+  "category": "DOM structure",
+  "evidence": "inline_style_attrs: A=20, B=0",
+  "which_side": "A"
+ },
+ {
+  "observation": "The hero subtitle joins its phrases with a hyphen in A and an en dash in B",
+  "category": "copy treatment",
+  "evidence": "A 'Discover our latest innovation - FeelZing Energy Patch'; B '…innovation – FeelZing Energy Patch'",
+  "which_side": "both"
+ }
+]

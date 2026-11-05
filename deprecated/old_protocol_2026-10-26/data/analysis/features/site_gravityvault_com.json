@@ -1,0 +1,548 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Page titles differ: A's title includes the state list and the word 'Climbing'; B's is a shorter brand-only title",
+   "evidence": "A title 'The Gravity Vault | Indoor Rock Climbing Gyms | NJ, NY & PA'; B title 'The Gravity Vault Indoor Rock Gyms'",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|00",
+    "gravityvault_com|opus|01",
+    "gravityvault_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A's heading outline begins at H4 (the feature cards) and then uses H3 for states; B uses an ordered H1→H2→H3→H4 hierarchy",
+   "evidence": "A outline: h4 Gift Cards...h4 Franchising, then h3 California...; B: h1, h2 Start climbing, h3 cards, h2 Our locations, h3 states, h4 cities",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|04",
+    "gravityvault_com|opus|05",
+    "gravityvault_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B uses a <main> landmark; A has none",
+   "evidence": "semantic.main A 0, B 1",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|06",
+    "gravityvault_com|sonnet|01"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B uses CSS grid and flexbox for layout; A uses neither",
+   "evidence": "display_grid A 0 / B 11; display_flex A 0 / B 29",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|11",
+    "gravityvault_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "Typeface: A sets everything in Roboto plus the FontAwesome icon font; B uses the system-ui stack with some Arial",
+   "evidence": "fonts A Roboto 425, FontAwesome 10; B system-ui 222, Arial 9",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|12",
+    "gravityvault_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "Body text color differs: A uses mid-gray, B uses near-black navy",
+   "evidence": "body_color A rgb(99,99,99) vs B rgb(28,36,48)",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|13",
+    "gravityvault_com|opus|15",
+    "gravityvault_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "A's accent is a medium blue used on the nav bar, headings and links; B's accent is orange-red, used on CTAs, links and underlines",
+   "evidence": "A top bg rgb(1,96,153) x19, text rgb(1,96,153) x66; B top bg rgb(232,83,43) x6; B slice_00 orange buttons and 'Buy a gift card →' links",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|16",
+    "gravityvault_com|opus|17",
+    "gravityvault_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "B uses dark navy bands (top utility bar, hero, mission block, footer); A uses a blue nav strip and blue/darker-blue footer bars",
+   "evidence": "B bgs rgb(29,53,87) x5, rgb(18,35,60) x2; A bgs rgb(1,96,153), rgb(1,64,102), rgb(51,51,51)",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|19"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I8",
+   "text": "A's corners are almost all square; B rounds cards, inputs and buttons",
+   "evidence": "border radius bucket_0 A 431 vs B 190; bucket_8_15 A 0 vs B 33; primary button radius A 0px vs B 8px",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|20",
+    "gravityvault_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "B has one gradient background (the hero area); A has none",
+   "evidence": "gradient_backgrounds A 0 / B 1; B slice_00 hero navy shading",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|21",
+    "gravityvault_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "B has a large bold white hero headline at 54.4px; A has no headline text in the hero, only a photo slider",
+   "evidence": "B h1 54.4px weight 700 color white; A slice_00 hero is an image with carousel dots",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|14",
+    "gravityvault_com|opus|22",
+    "gravityvault_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A uses bright red for its 'Coming Soon!' ribbons; B renders 'COMING SOON!' as orange pill badges",
+   "evidence": "A bg rgb(237,31,36) x3, ribbon flags on image corners (A slice_01/02); B uppercase pill badges above city names (B slice_03), pill bucket 8",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|18",
+    "gravityvault_com|opus|25",
+    "gravityvault_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "A's four intro feature blocks open with photos; B's 'Start climbing' cards have no images and use numbered badges 1-4 instead",
+   "evidence": "A slice_00 four 305×178 photos above the headings; B slice_00 navy squares numbered 1, 2, 3, 4 on white cards",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|26",
+    "gravityvault_com|sonnet|12"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "B adds an arrow link at the bottom of each feature card; A's feature blocks have no explicit link text",
+   "evidence": "B 'Buy a gift card →', 'Choose your gym →', 'Read our policies →', 'Learn about ownership →'; A slice_00 shows only paragraphs",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|27",
+    "gravityvault_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "B has hero copy and dual CTAs that A does not",
+   "evidence": "B slice_00: subtitle 'Indoor rock climbing for everyone — young or old...' with 'Find a Location' (filled orange) and 'Options to Climb' (ou",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|29",
+    "gravityvault_com|sonnet|10",
+    "gravityvault_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "A places the location selector and search box in the header; B moves 'Find a Location' to its own bar below the hero, with an orange Search button and no free-text search",
+   "evidence": "A slice_00 header has 'Select a State' dropdown and 'Search' input; B slice_00 strip with label, select and 'Search' button; input A 8 vs B ",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|30",
+    "gravityvault_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "A's main nav is a full-width blue bar of white links separated by '|'; B's nav sits inline beside the logo on white, in navy text, with a highlighted 'Home' pill",
+   "evidence": "A slice_00 blue strip 'Options to Climb | Locations | ...'; B slice_00 white header with 'Home' in a light-gray rounded background",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|31",
+    "gravityvault_com|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "Utility links differ: A shows underlined 'Gift Cards'/'Contact Us' at top right of the white header; B puts them in a thin dark navy top bar",
+   "evidence": "A slice_00 underlined blue links; B slice_00 white links on navy strip",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|32",
+    "gravityvault_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "B's header region shows a blank off-white band between the top bar and the nav, and the sticky nav overlaps the hero headline in the screenshot",
+   "evidence": "B slice_00: empty gray band y≈40-115; 'Reach new heights,' clipped under the nav bar",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|33",
+    "gravityvault_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A presents the mission statement as bold gray text beside a 'Links' sidebar column with a very large logo; B centers it in white on a dark navy band with a smaller logo",
+   "evidence": "A logo rect 817×176 at y1141, Links list left (slice_00/01); B logo 298×64 centered at y1350, navy section (slice_01)",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|34",
+    "gravityvault_com|sonnet|20",
+    "gravityvault_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "A has a 'Links' sidebar nav list (Options to Climb, Find a Location, FAQs, About Us...) mid-page; B moves those links into a multi-column footer",
+   "evidence": "A slice_00/01 'Links' column; B slice_04 footer columns with FAQs, About Us, Careers, etc.",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|35",
+    "gravityvault_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "B adds an 'Our locations' H2 section title; A goes straight from the mission block to state headings",
+   "evidence": "B outline h2 'Our locations'; A outline has no such heading",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|36",
+    "gravityvault_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "A separates state groups with thin horizontal divider lines; B underlines each state heading with a short orange bar",
+   "evidence": "A slice_01/02 light rule above 'New Jersey', 'New York', 'Pennsylvania'; B slice_01-03 orange underline under the state names",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|37",
+    "gravityvault_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "A's location items are bare images with a thin border and text below on white; B's are white rounded cards that hold the image and text together",
+   "evidence": "A slice_01 bordered photo + gray caption; B slice_02 rounded white cards with 1px borders on gray background",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|38",
+    "gravityvault_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "City-name styling differs: A uses regular-weight gray captions; B uses bold navy names",
+   "evidence": "A slice_01 'Brick, NJ' gray regular; B slice_02 'Brick, NJ' bold navy",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|39"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I25",
+   "text": "Both lay out locations in a 3-column grid with roughly 353px-wide images at the same x positions",
+   "evidence": "A image rects x 170/543/917 w353; B x 171/544/918 w351",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|40",
+    "gravityvault_com|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "B's page is about 1,080px taller",
+   "evidence": "page_height A 4323 vs B 5404",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|opus|41",
+    "gravityvault_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "A's newsletter signup is a compact strip in the blue footer bar with an envelope icon, a bordered e-mail input and a check-icon submit; B gives it a white section with an H2, a rounded input and an orange 'Sign up' pill",
+   "evidence": "A slice_03 blue bar 'Signup for our Newsletter!'; B slice_03 H2 'Signup for our Newsletter!' with 'Your email address' and 'Sign up'",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|42",
+    "gravityvault_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "A's footer is two thin bars; B's is a tall dark navy footer with a logo, link columns, a divider and a bottom legal row",
+   "evidence": "A slice_03 two bars ~45px each; B slice_04 navy footer with logo, columns, rule, copyright row",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|43",
+    "gravityvault_com|opus|44",
+    "gravityvault_com|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "Alt text: B gives the logo and hero image descriptive alt text and leaves the location thumbnails with empty alt; A's alts are all empty, and one image has no alt attribute",
+   "evidence": "B alt 'Climbers' view of a Gravity Vault gym...', alt_missing 0; A alt '' throughout, alt_missing 1",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|10",
+    "gravityvault_com|opus|46",
+    "gravityvault_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "Both pages have the same number of article elements and exclamation marks, and B has slightly more words",
+   "evidence": "article 15 each; exclamations 19 each; words A 569 vs B 640",
+   "side": "both",
+   "members": [
+    "gravityvault_com|opus|47"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I31",
+   "text": "Both pages carry the same location copy (descriptions for Chatham, Flemington, Hoboken and others) and the same footer copyright, '© 2021 Gravity Vault'. Some location cards have no description in either version.",
+   "evidence": "Both: 'The second Gravity Vault location to open, Chatham...'; Brick, Montclair, Marin without text. Exclamations: both 19.",
+   "side": "both",
+   "members": [
+    "gravityvault_com|sonnet|25"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "B's markup is much leaner: a single inline style block, 1 script and no external stylesheets. A has 17 scripts, 3 stylesheets, a base tag and 31 inline style attributes.",
+   "evidence": "A script 17, link 4, base 1, inline_style_attrs 31. B script 1, stylesheets 0, inline_style_attrs 2.",
+   "side": "both",
+   "members": [
+    "gravityvault_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "A has 151 divs, 84 anchors and 140 unique classes. B has 49 divs, 58 anchors and 26 unique classes.",
+   "evidence": "A tag_counts div 151, a 84; classes unique 140. B div 49, a 58; classes unique 26.",
+   "side": "both",
+   "members": [
+    "gravityvault_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "B has a 'Menu' button, which is hidden at this width, plus two other buttons. A has 2 buttons.",
+   "evidence": "B button count 3; primary_button 'Menu' bg transparent, radius 8px. A buttons 2; primary 'Go To My Gym'.",
+   "side": "generated",
+   "members": [
+    "gravityvault_com|sonnet|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "A's header has a 'Go To My Gym' primary button with a blue fill, 0 radius and 3px 15px 4px padding, in square-corner styling. B's CTAs are larger pill buttons in orange with bold white text.",
+   "evidence": "A primary_button bg rgb(1,96,153), padding '3px 15px 4px'. B pills with radius, orange rgb(232,83,43).",
+   "side": "both",
+   "members": [
+    "gravityvault_com|sonnet|36"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "The footer link text in B is plain white-ish, rgb(201,212,227), on navy. A's links are blue and bold on white in the body, with white on blue/dark-blue strips at the bottom.",
+   "evidence": "B top_text_colors rgb(201,212,227) x35. A rgb(1,96,153) x66 text, with footer bg rgb(1,64,102).",
+   "side": "both",
+   "members": [
+    "gravityvault_com|sonnet|37"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Layout relies on CSS grid and flexbox, with card grids and inline flex rows.",
+   "family": "layout",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "Heading hierarchy is orderly, running H1→H2→H3→H4, with a descriptive H2 section title before groups.",
+   "family": "semantic_dom",
+   "items": [
+    "I1",
+    "I21"
+   ]
+  },
+  {
+   "statement": "Uses a <main> landmark and lean, minimal markup with few divs, classes, scripts and no external stylesheets.",
+   "family": "semantic_dom",
+   "items": [
+    "I2",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Typography uses the system-ui font stack rather than a webfont.",
+   "family": "typography",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Body text is near-black navy rather than mid-gray.",
+   "family": "color",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Accent color is orange-red, used on CTAs, links, badges and underline bars.",
+   "family": "color",
+   "items": [
+    "I6",
+    "I11",
+    "I22"
+   ]
+  },
+  {
+   "statement": "Dark navy bands anchor the top bar, hero, mission block and tall footer, with pale-blue link text.",
+   "family": "color",
+   "items": [
+    "I7",
+    "I28",
+    "I36",
+    "I19"
+   ]
+  },
+  {
+   "statement": "Cards, inputs and buttons have rounded corners, roughly 8px or more, including pill-shaped badges and buttons.",
+   "family": "component",
+   "items": [
+    "I8",
+    "I35",
+    "I11"
+   ]
+  },
+  {
+   "statement": "Hero has a gradient navy background with a large bold white headline, subtitle and dual CTAs, one filled and one outlined.",
+   "family": "decoration",
+   "items": [
+    "I9",
+    "I10",
+    "I14"
+   ]
+  },
+  {
+   "statement": "Feature cards are image-free, using numbered badges and an arrow-suffixed text link at the bottom.",
+   "family": "component",
+   "items": [
+    "I12",
+    "I13"
+   ]
+  },
+  {
+   "statement": "Location items are white rounded bordered cards containing image and text on a gray background, with bold navy names.",
+   "family": "component",
+   "items": [
+    "I23",
+    "I24"
+   ]
+  },
+  {
+   "statement": "Navigation sits inline beside the logo on white, with a highlighted pill for the current page, and utility links in a thin top bar.",
+   "family": "component",
+   "items": [
+    "I16",
+    "I17"
+   ]
+  },
+  {
+   "statement": "Location search is a dedicated bar below the hero, with a select and an orange Search button.",
+   "family": "component",
+   "items": [
+    "I15"
+   ]
+  },
+  {
+   "statement": "Newsletter signup is a standalone white section with an H2, a rounded input and an orange pill button.",
+   "family": "component",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Footer holds multi-column link lists, a logo, a divider and a bottom legal row.",
+   "family": "layout",
+   "items": [
+    "I20",
+    "I28"
+   ]
+  },
+  {
+   "statement": "Images carry descriptive alt text for logo and hero, with decorative thumbnails given empty alt.",
+   "family": "semantic_dom",
+   "items": [
+    "I29"
+   ]
+  },
+  {
+   "statement": "Page title is short and brand-only.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  }
+ ]
+}

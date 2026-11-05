@@ -1,0 +1,302 @@
+[
+ {
+  "observation": "A renders as an unstyled document using the browser default serif font, while B uses a styled sans-serif stack throughout",
+  "category": "typography",
+  "evidence": "A fonts_by_element_count: Times New Roman 161, FontAwesome 8; B: Helvetica Neue 128 (h1 font_family \"Helvetica Neue\", Helvetica, Arial, sans-serif)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's first h1 is the 'STG' logo link, in default link blue at 32px bold; B's only h1 is the hero headline in white at 64px light weight",
+  "category": "typography",
+  "evidence": "A h1: text 'STG', 32px, weight 700, color rgb(0,0,238); B h1: 'Partners for Business Transformation', 64px, weight 300, color rgb(255,255,255)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has three h1 elements (logo, headline, footer logo); B has exactly one",
+  "category": "DOM/semantic structure",
+  "evidence": "A h1_count 3 (STG, Partners for Business Transformation, STG); B h1_count 1",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses no h2 at all and jumps from h1 to h3; B adds four h2 section headings",
+  "category": "DOM/semantic structure",
+  "evidence": "A h2: null, tag_counts has no h2; B h2 count 4 at 42px weight 300 (e.g. 'Built around people and long-term growth')",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds new descriptive section headlines that A does not have, e.g. 'Latest from STG and our companies' for News",
+  "category": "copy treatment",
+  "evidence": "B heading_outline h2s: 'Built around people and long-term growth', 'Building strategic value for market leading companies', 'Business builders with deep sector expertise', 'Latest from STG and our companies'; A uses short h3s like 'Portfolio', 'News'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A's news headlines are h4; B's are h3",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline: news items level 4; B: news items level 3",
+  "which_side": "both"
+ },
+ {
+  "observation": "A contains an empty h3 heading",
+  "category": "DOM/semantic structure",
+  "evidence": "A heading_outline includes {level 3, text ''}",
+  "which_side": "A"
+ },
+ {
+  "observation": "B wraps content in a main element; A has none",
+  "category": "DOM/semantic structure",
+  "evidence": "semantic.main: A 0, B 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "A has more section and nav elements than B",
+  "category": "DOM/semantic structure",
+  "evidence": "A section 8, nav 4; B section 4, nav 2",
+  "which_side": "A"
+ },
+ {
+  "observation": "B uses list markup for navigation and links; A uses no lists",
+  "category": "DOM/semantic structure",
+  "evidence": "B tag_counts ul 3, li 16; A has no ul/li",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a 'Menu' button element; A has no buttons",
+  "category": "component choices",
+  "evidence": "B counts.buttons 1, primary_button text 'Menu', radius 3px, padding 8px 14px; A buttons 0",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses ARIA attributes; A uses none",
+  "category": "DOM/semantic structure",
+  "evidence": "aria_attrs: A 0, B 6",
+  "which_side": "B"
+ },
+ {
+  "observation": "B sets the document language; A does not",
+  "category": "DOM/semantic structure",
+  "evidence": "lang: A '', B 'en'",
+  "which_side": "B"
+ },
+ {
+  "observation": "The page titles differ: A is just 'STG', B adds the tagline",
+  "category": "copy treatment",
+  "evidence": "A title 'STG'; B title 'STG Partners — Partners for Business Transformation'",
+  "which_side": "both"
+ },
+ {
+  "observation": "A includes extensive SEO/social metadata and JSON-LD; B has only charset, viewport and description",
+  "category": "DOM/semantic structure",
+  "evidence": "A meta_names include og:*, twitter:card, robots, msapplication-TileImage; jsonld_blocks 1. B meta_names 3, jsonld_blocks 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A loads many external scripts and stylesheets; B is self-contained, with 1 script and no external stylesheets",
+  "category": "DOM/semantic structure",
+  "evidence": "A scripts 27, stylesheets 8, link 18; B scripts 1, stylesheets 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's page background is transparent with black text; B has a white body with dark navy text",
+  "category": "color",
+  "evidence": "A body_bg rgba(0,0,0,0), body_color rgb(0,0,0); B body_bg rgb(255,255,255), body_color rgb(26,36,51)",
+  "which_side": "both"
+ },
+ {
+  "observation": "A's palette is only black text and default link blue; B uses a navy/light-gray/cyan palette",
+  "category": "color",
+  "evidence": "A top_text_colors: rgb(0,0,0), rgb(0,0,238); B backgrounds rgb(14,27,46) x8, rgb(245,247,250), and text colors rgb(199,209,222) and accent rgb(63,167,214)",
+  "which_side": "B"
+ },
+ {
+  "observation": "B has a full-width dark navy hero band behind the nav, headline and CTA; A has no background color",
+  "category": "layout",
+  "evidence": "B_slice_00 shows a navy band with white text; A_slice_00 shows plain black text on white; A top_backgrounds empty",
+  "which_side": "B"
+ },
+ {
+  "observation": "B shows a large full-bleed team photo with descriptive alt text; A has no such photo",
+  "category": "imagery handling",
+  "evidence": "B images: image-01.png, 1440x630 at y 562, alt 'The STG Partners leadership team standing together in a bright office'; A images are only 6 SVG icons",
+  "which_side": "B"
+ },
+ {
+  "observation": "The B team photo has a dark blue tint over it",
+  "category": "decoration/effects",
+  "evidence": "B_slice_00: the photo appears desaturated or blue-shaded compared with a natural office photo",
+  "which_side": "B"
+ },
+ {
+  "observation": "A shows icons at natural size, stacked at the left edge (x=8); B normalizes all icons to 52x52 inside cards",
+  "category": "imagery handling",
+  "evidence": "A icn_noun_speed rect 100x59 at x 8, icn_entrepreneurs 39x63; B every icon rect w 52, h 52 at x 711 or 1004",
+  "which_side": "both"
+ },
+ {
+  "observation": "Most of A's icons are not visible in the render (white icons on white); only the growth arrow shows faintly",
+  "category": "imagery handling",
+  "evidence": "A_slice_00: empty gaps above 'Customer Centric', 'Engaged Partners', 'Accelerators' and 'Experts'; a faint circle-arrow above 'Committed to Growth'",
+  "which_side": "A"
+ },
+ {
+  "observation": "A leaves alt attributes missing on all images; B gives the icons empty alt text and the photo descriptive alt text",
+  "category": "DOM/semantic structure",
+  "evidence": "alt_missing: A 6, B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "A uses no grid or flex layout and everything flows in a single left-aligned column; B uses grid and flex",
+  "category": "layout",
+  "evidence": "layout display_grid/display_flex: A 0/0, B 9/6",
+  "which_side": "both"
+ },
+ {
+  "observation": "B uses a centered content container (about 196px to 1244px) inside a 1440 viewport; A content starts at x=8 with default body margin",
+  "category": "layout",
+  "evidence": "B_slice_00 logo and headline start at about x 196, nav ends about 1244; A images rect x 8",
+  "which_side": "B"
+ },
+ {
+  "observation": "B shows the approach pillars as a 2x2 grid of dark navy cards beside a left-column heading; A lists them sequentially as plain text",
+  "category": "component choices",
+  "evidence": "B_slice_01: four navy cards (Customer Centric, Committed to Growth, Engaged Partners, Accelerators) in two columns; A_slice_00 shows them as stacked h3 + paragraph",
+  "which_side": "B"
+ },
+ {
+  "observation": "A places the Portfolio block between 'Committed to Growth' and 'Engaged Partners'; B moves Portfolio into its own section after all four pillars",
+  "category": "layout",
+  "evidence": "A heading_outline order: Customer Centric, Committed to Growth, Portfolio, Engaged Partners; B: four pillars, then the Portfolio h2",
+  "which_side": "both"
+ },
+ {
+  "observation": "B alternates section backgrounds (white, then light gray #F5F7FA for Portfolio and News)",
+  "category": "color",
+  "evidence": "B top_backgrounds rgb(245,247,250) x2; B_slice_01/02 show gray bands for Portfolio and News",
+  "which_side": "B"
+ },
+ {
+  "observation": "B places small uppercase, letter-spaced cyan eyebrow labels above section headings",
+  "category": "typography",
+  "evidence": "B_slice_01/02: 'OUR APPROACH', 'PORTFOLIO', 'WHO WE ARE', 'NEWS' in rgb(63,167,214)",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's navigation is uppercase, letter-spaced and right-aligned against a left logo; A's nav links run together inline with no spacing",
+  "category": "typography",
+  "evidence": "B_slice_00: 'OUR APPROACH PORTFOLIO WHO WE ARE NEWS CONTACT' on the right; A_slice_00: 'Our ApproachPortfolioWho We AreNewsContact' run together",
+  "which_side": "both"
+ },
+ {
+  "observation": "A shows FontAwesome social icons (Facebook, Twitter, LinkedIn) in the header and footer; B has no social icons",
+  "category": "component choices",
+  "evidence": "A fonts FontAwesome 8, tag i 10; A_slice_00 shows the f/twitter/in icons under the nav, and A_slice_01 adds an @ in the footer; none in the B slices",
+  "which_side": "A"
+ },
+ {
+  "observation": "A's links are default underlined blue/purple text; B turns the CTAs into outlined rectangular buttons with uppercase text",
+  "category": "component choices",
+  "evidence": "A_slice_00: 'Our Approach', 'View Our Work', 'Read More' as underlined links; B_slice_00/01/02: bordered 'OUR APPROACH', 'VIEW OUR WORK', 'READ MORE' boxes",
+  "which_side": "B"
+ },
+ {
+  "observation": "The McAfee announcement is a plain link with a '+' icon in A and a centered navy strip with an arrow in B",
+  "category": "component choices",
+  "evidence": "A_slice_00: underlined link ending in a ✚ glyph; B_slice_00: dark band below the photo with the text and a cyan → arrow",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's News section is a ruled list: date in one column, title in the middle, cyan 'READ MORE' on the right; A stacks month, day, title and link vertically",
+  "category": "layout",
+  "evidence": "B_slice_02: rows separated by horizontal rules with JUN/01 etc.; A_slice_01: 'Jun' / '01' / bold title / 'Read More' stacked",
+  "which_side": "both"
+ },
+ {
+  "observation": "B shows news dates with a small uppercase month over a large light-weight day number",
+  "category": "typography",
+  "evidence": "B_slice_02: 'JUN' small above a large '01'; A: 'Jun' and '01' at the same body size",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's footer is a dark navy band with the logo, uppercase nav, a divider rule and the copyright/Terms row; A's footer is unstyled inline text",
+  "category": "layout",
+  "evidence": "B_slice_02/03: navy footer with STG, HOME…CONTACT, a rule, '© 2021 STG Partners, LLC' left and 'Terms Of Use' right; A_slice_01: 'HomeOur Approach…' run together, and '© 2021 STG Partners, LLCTerms Of Use'",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's logo 'STG' is white, bold, letter-spaced, with no underline; A's logo is an underlined serif link",
+  "category": "typography",
+  "evidence": "B_slice_00 top-left 'STG' wide-tracked white; A_slice_00 underlined blue 'STG' h1, purple (visited) in the footer",
+  "which_side": "both"
+ },
+ {
+  "observation": "B's header has a semi-transparent background with backdrop blur",
+  "category": "decoration/effects",
+  "evidence": "B top_backgrounds rgba(14,27,46,0.96); effects.backdrop_blur 1",
+  "which_side": "B"
+ },
+ {
+  "observation": "B defines CSS transitions; A has no transitions, animations or transforms",
+  "category": "decoration/effects",
+  "evidence": "effects.transitions: A 0, B 8",
+  "which_side": "B"
+ },
+ {
+  "observation": "B uses small border radii (1–7px) on some elements; A has only square corners",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets bucket_1_7: A 0, B 9; B card corners look slightly rounded in B_slice_01",
+  "which_side": "B"
+ },
+ {
+  "observation": "Neither page uses box shadows or gradients",
+  "category": "decoration/effects",
+  "evidence": "box_shadows 0 and gradient_backgrounds 0 on both",
+  "which_side": "both"
+ },
+ {
+  "observation": "B sets a fixed line height; A uses the browser default",
+  "category": "typography",
+  "evidence": "body_line_height: A 'normal', B '25.6px' (1.6 × 16px)",
+  "which_side": "B"
+ },
+ {
+  "observation": "B's page is much taller because of its spacing, hero and photo",
+  "category": "layout",
+  "evidence": "page_height: A 2237, B 3931 (both 1440 wide)",
+  "which_side": "B"
+ },
+ {
+  "observation": "B adds and edits some copy, e.g. a period after the hero subtitle and the Portfolio subline 'Software, data and analytics.'",
+  "category": "copy treatment",
+  "evidence": "B_slice_00 subtitle ends 'mid-market.'; A ends 'mid-market' with no period. A Portfolio text 'Building strategic value for market leading companies in software, data and analytics' vs. B's split h2 + 'Software, data and analytics.'",
+  "which_side": "B"
+ },
+ {
+  "observation": "A uses many more class attributes than B",
+  "category": "DOM/semantic structure",
+  "evidence": "classes total/unique: A 149/57, B 50/21; tailwind_like_fraction 0 for both",
+  "which_side": "A"
+ },
+ {
+  "observation": "A has more anchors, divs and spans, plus br and u tags; B uses b tags",
+  "category": "DOM/semantic structure",
+  "evidence": "A a 33, div 41, span 17, br 5, u 1; B a 24, div 27, span 8, b 5",
+  "which_side": "both"
+ },
+ {
+  "observation": "A has 3 inline style attributes; B has none",
+  "category": "DOM/semantic structure",
+  "evidence": "inline_style_attrs: A 3, B 0",
+  "which_side": "A"
+ },
+ {
+  "observation": "Body text in B's cards is light gray-blue on navy, while A's body text is black",
+  "category": "color",
+  "evidence": "B text colors rgb(199,209,222) x21 and rgb(185,197,212) x6, visible in the B_slice_01 card descriptions; A text rgb(0,0,0) x112",
+  "which_side": "B"
+ },
+ {
+  "observation": "Word counts are similar, and A's text contains one emoji-like glyph",
+  "category": "copy treatment",
+  "evidence": "text_stats words: A 213, B 237; emoji A 1, B 0",
+  "which_side": "both"
+ }
+]

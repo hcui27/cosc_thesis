@@ -1,0 +1,635 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "Document titles differ: A has a long welcome sentence with the full organisation name, while B has a short 'brand – full name' title",
+   "evidence": "A title: 'Welcome to the .ng Domain Registry website - Nigeria internet Registration Association (NiRA)'; B title: 'NiRA – Nigeria Internet ",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|00",
+    "nira_org_ng|sonnet|34"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I1",
+   "text": "A's h1 is empty, while B's h1 holds the welcome sentence",
+   "evidence": "A h1 text '' and the welcome text is an h2; B h1 text 'Welcome to the .ng Domain Registry website.'",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|03",
+    "nira_org_ng|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "B uses header, nav, main and aside landmarks; A has none of these and uses article elements instead",
+   "evidence": "A semantic: header 0, nav 0, main 0, aside 0, article 3; B: header 1, nav 1, main 1, aside 1, article 0",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|04",
+    "nira_org_ng|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "B uses twice as many section elements",
+   "evidence": "A section 5; B section 10",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|05"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I4",
+   "text": "A has no ARIA attributes or button elements; B has 9 ARIA attributes and 2 buttons",
+   "evidence": "A aria_attrs 0, buttons 0; B aria_attrs 9, buttons 2",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|01",
+    "nira_org_ng|opus|02",
+    "nira_org_ng|opus|09",
+    "nira_org_ng|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "A uses web fonts Open Sans and ABeeZee plus icon fonts; B uses only the system-ui font stack",
+   "evidence": "A fonts: Open Sans 412, ABeeZee 233, FontAwesome 9, iCicons 4; B fonts: system-ui 207",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|11",
+    "nira_org_ng|sonnet|06"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I6",
+   "text": "B's body text is larger, with a taller line height",
+   "evidence": "A body 14px / 24px; B body 16px / 25.6px",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|12",
+    "nira_org_ng|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I7",
+   "text": "h2 size is the same on both sides, but the weight differs",
+   "evidence": "A h2 24px/600; B h2 24px/700",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|13",
+    "nira_org_ng|opus|14",
+    "nira_org_ng|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "B shows 'Switchto.ng' as a filled green button that wraps onto a second row below the nav; in A it is an ordinary nav item",
+   "evidence": "B slice 0: green rounded 'Switchto.ng' button under 'Who Are We'; A: 'SWITCHTO.NG ⌄' inline",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|17",
+    "nira_org_ng|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "A's top bar is near-black, with a site name and social icon glyphs; B's top bar is dark green, with the social networks as text links",
+   "evidence": "A bg rgb(29,29,29), with icons f, twitter, g+, youtube, in; B: text 'Facebook Twitter Google+ YouTube LinkedIn' on dark green",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|18",
+    "nira_org_ng|sonnet|10"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "B shows a text wordmark 'NiRA' and the full organisation name next to the logo; A shows the logo alone",
+   "evidence": "B slice 0: 'NiRA / Nigeria Internet Registration Association' beside the .ng logo; A: only logo.png at x=150",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|20",
+    "nira_org_ng|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "A's hero is a full-width image slider with arrow controls; B's hero is a text block on a green gradient",
+   "evidence": "A images sch.jpg, gov.jpg, 8.jpg, etc., each 1440×432 and overlapping at x=1440, with arrows at the screen edges; B gradient_backgrounds 1 a",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|22",
+    "nira_org_ng|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "B's hero has two call-to-action buttons; A has no hero buttons",
+   "evidence": "B slice 0: a solid white 'Whois Search' button and an outlined 'Register a .ng Domain' button",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|24",
+    "nira_org_ng|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "B puts the welcome intro paragraphs inside the hero in white text; in A they sit in the middle column below the slider, partly hidden by the modal",
+   "evidence": "B slice 0: two white paragraphs under the h1; A slice 0: 'NiRA is a Not-for-Profit…' in gray text below the hero",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|25"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I14",
+   "text": "A uses a three-column body (left Quick Menu and Calendar, center content, right Newsletter, News and Video); B uses card columns with the sidebar on the right",
+   "evidence": "A slice 0: Quick Menu at x≈150, content at x≈443, newsletter at x≈1028; B: Register and Policies cards on the left, a Quick menu card on the",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|26",
+    "nira_org_ng|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "B places content in white, bordered, rounded cards on an off-white page background; A has no visible card containers",
+   "evidence": "B body_bg rgb(246,248,246), border radius 8–15px on 11 elements; A body_bg white, 8–15px radius on only 1 element",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|27",
+    "nira_org_ng|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "B uses flex and grid layouts; A uses neither",
+   "evidence": "A display_grid 0, display_flex 0; B grid 3, flex 19",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|29",
+    "nira_org_ng|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "A embeds a video player; B has no video and instead has a Facebook card with a text link",
+   "evidence": "A tag_counts video 1, iframe 1, with a player showing 0:00 / 3:04; B: 'Facebook' card with 'Follow NiRA on Facebook'",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|32",
+    "nira_org_ng|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "A's newsletter area is a single green 'Subscribe' link; B has an email input and a filled Subscribe button in a form",
+   "evidence": "A slice 0: 'Subscribe' text link; B tag_counts form 1, input 1, with a 'Your email' field and a green button",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|33",
+    "nira_org_ng|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "A's calendar is a bordered widget with arrow buttons and a highlighted current day; B's calendar is a plain table with text 'Previous/Next Month/Year' links and a caption",
+   "evidence": "A slice 0: «, ‹, ›, » buttons, '25' boxed; B: '‹ Previous Month', 'Next Month ›', '« Previous Year', and a caption element",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|34",
+    "nira_org_ng|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "B's calendar shows weekend dates in a muted gray",
+   "evidence": "B slice 0: 8, 9, 15, 16, 22, 23, 29, 30 are lighter than the weekdays",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I21",
+   "text": "A's Quick Menu links are dark gray with '›' chevrons; B's are green with no chevrons",
+   "evidence": "A '› Whois Search' in dark text; B 'Whois Search' in green rgb(11,107,58)",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|36",
+    "nira_org_ng|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "The section icons are scaled differently: A shows them at about 55px, while B shrinks them and distorts the policy icon's aspect ratio",
+   "evidence": "A ngReg 55×57, policy 55×55; B ngReg 28×29, policy 24×100 (natural size 100×100)",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|37",
+    "nira_org_ng|sonnet|24"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "A's footer is a near-black four-column link area plus a green copyright bar; B puts the link groups in light cards inside main, and its footer is a single dark-green band",
+   "evidence": "A slice 0/1: dark footer with Registrars, Policy Compliance, Support and Follow us, then a rgb(0,102,0) bar; B: Registrars, Policy Complianc",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|38",
+    "nira_org_ng|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "The social icons differ in size and position: A uses 32px icons at the right of the footer, while B uses 28px icons on the left next to the label",
+   "evidence": "A icons at x≈1029–1170, 32×32; B at x≈318–526, 28×28 with white circle backgrounds",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|39",
+    "nira_org_ng|opus|40",
+    "nira_org_ng|opus|41",
+    "nira_org_ng|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "The text color palettes differ: A's is neutral gray with a bright green accent, while B's is green-tinted dark text with a deep green accent",
+   "evidence": "A body color rgb(51,51,51), accent rgb(43,182,115), gray rgb(153,153,153); B body rgb(28,36,32), accent rgb(11,107,58), muted rgb(90,102,96)",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|42",
+    "nira_org_ng|sonnet|12",
+    "nira_org_ng|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I26",
+   "text": "The first button-like element differs: A's is the calendar's 'Previous Year' control, while B's is a 'Menu' button with larger padding and radius",
+   "evidence": "A primary_button 'Previous Year', radius 3px, padding 2px 0; B 'Menu', radius 6px, padding 8px 12px",
+   "side": "both",
+   "members": [
+    "nira_org_ng|opus|45"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I27",
+   "text": "Most of A's elements have square corners; B uses small radii more often",
+   "evidence": "A radius buckets: 0 → 619, 1–7 → 36; B: 0 → 136, 1–7 → 55, 8–15 → 11",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|46",
+    "nira_org_ng|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "B leaves a large empty area to the left of the right sidebar's lower cards",
+   "evidence": "B slice 1: empty off-white space at x≈180–930 next to the Newsletter and Facebook cards",
+   "side": "generated",
+   "members": [
+    "nira_org_ng|opus|30",
+    "nira_org_ng|opus|49",
+    "nira_org_ng|sonnet|33"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "A's hero slides are text-in-image, such as 'here you. .sch.ng Domains' over a photo of an apple and books. B's hero is live HTML text, an h1 and paragraphs on solid green.",
+   "evidence": "A h1 text is empty ('') with 36px color rgb(43,182,115). B h1 'Welcome to the .ng Domain Registry website.' is 44px, white.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "A is heavy in markup and assets: 167 anchors, 43 scripts, 12 stylesheets, 120 inline style attributes. B is minimal: 48 anchors, 1 script, 0 external stylesheets, 1 style block, 2 inline style attributes.",
+   "evidence": "A counts: anchors 167, scripts 43, stylesheets 12, inline_style_attrs 120. B counts: anchors 48, scripts 1, stylesheets 0, inline_style_attr",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "A's section headings in the main column are mixed-case, light and large, such as 'Register a .ng Domain' (24px, 600). A's sidebar headings are uppercase and small ('QUICK MENU', 'NIRA CALENDAR', 'SUBSCRIBE TO OUR NEWSLETTER'). B uses sentence/title-case bold headings throughout ('Quick menu', 'NiRA Calendar').",
+   "evidence": "A outline: 'QUICK MENU', 'NIRA CALENDAR', 'SUBSCRIBE TO OUR NEWSLETTER', 'NEWS UPDATE'. B outline: 'Quick menu', 'NiRA Calendar', 'Subscribe",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I32",
+   "text": "A has two tables (38 td) and 8 th across the page. B has one table with a caption (42 td).",
+   "evidence": "A table 2, td 38, th 7. B table 1, caption 1, td 42, th 7.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "A has 189 transitions, 25 box shadows and 1 animation, so it has hover, slider and modal effects. B has 0 shadows, 0 transitions and 0 animations. Its only decoration is 1 gradient background, which is the hero.",
+   "evidence": "A effects transitions 189, box_shadows 25, animations 1, gradient 0. B transitions 0, box_shadows 0, gradient 1.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I34",
+   "text": "A link text colours: footer links are mint green on black, and body 'Read More' links are green. B's links are dark green (rgb(11,107,58)) on white cards, used 25 times as text colour.",
+   "evidence": "A top_text_colors rgb(43,182,115) x57. B rgb(11,107,58) x25.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|32"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I35",
+   "text": "B has an extra 'Registrars' sentence-case label on the nav and shows the text 'Google+' and 'LinkedIn' in the top bar. A shows these as small icon glyphs with no visible text.",
+   "evidence": "B slice 1 top bar text links. A slice 1 top bar glyphs; A has 9 FontAwesome elements.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|35"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I36",
+   "text": "A word count of 324 against B's 255, and A has one exclamation mark and one emoji or symbol that B lacks.",
+   "evidence": "A text_stats words 324, emoji 1, exclamations 1. B words 255, emoji 0, exclamations 0.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|36"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I37",
+   "text": "A uses a mini base-less structure with 'noscript' blocks (2), a base tag and 15 link tags. B has no noscript or base, and its single script tag is likely used for the menu toggle.",
+   "evidence": "A noscript 2, base 1, link 15. B has neither, script 1.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|37"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I38",
+   "text": "A's header region is a light grey (about #d9d9d9) bar, and the slider image starts directly beneath it. B's header is white, with a 1px-looking separation from the hero.",
+   "evidence": "A slice 1 shows a grey header band y50-137; B slice 1 shows a white band y38-143.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|38"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I39",
+   "text": "Card content in A is laid out as an icon floated left, with text wrapping around and below it ('Register a .ng Domain', 'NiRA Policies'). B uses the same icon-left text pattern, but it sits within a bordered card with bold 24px headings, and the text is larger (16px).",
+   "evidence": "A slice 1 icon at x443,y910 with wrapped text. B slice 1 icon at x205,y747 in a card.",
+   "side": "both",
+   "members": [
+    "nira_org_ng|sonnet|39"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page uses a concise document title in 'brand – full name' form rather than a long welcome sentence.",
+   "family": "copy",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "The main welcome message is marked up as the page's h1 heading.",
+   "family": "semantic_dom",
+   "items": [
+    "I1",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Uses HTML5 landmark elements (header, nav, main, aside) and more section elements instead of generic article blocks.",
+   "family": "semantic_dom",
+   "items": [
+    "I2",
+    "I3"
+   ]
+  },
+  {
+   "statement": "Includes ARIA attributes and real button elements for interactive controls such as a menu toggle.",
+   "family": "semantic_dom",
+   "items": [
+    "I4",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Typography uses only the system-ui font stack, with no web fonts or icon fonts.",
+   "family": "typography",
+   "items": [
+    "I5"
+   ]
+  },
+  {
+   "statement": "Body text is 16px with a roomy 1.6 line height; headings are bold at 700.",
+   "family": "typography",
+   "items": [
+    "I6",
+    "I7"
+   ]
+  },
+  {
+   "statement": "Headings use sentence or title case in bold, consistently, rather than small uppercase sidebar labels.",
+   "family": "typography",
+   "items": [
+    "I31"
+   ]
+  },
+  {
+   "statement": "A call-to-action link is shown as a filled green rounded button, separate from the ordinary nav links.",
+   "family": "component",
+   "items": [
+    "I8"
+   ]
+  },
+  {
+   "statement": "Top bar is dark green and shows social networks as plain text links rather than icon glyphs.",
+   "family": "component",
+   "items": [
+    "I9",
+    "I35"
+   ]
+  },
+  {
+   "statement": "Header pairs a text wordmark and full organisation name with the logo, on a white background.",
+   "family": "component",
+   "items": [
+    "I10",
+    "I38"
+   ]
+  },
+  {
+   "statement": "Hero is live HTML text on a green gradient, with a large white h1 and intro paragraphs.",
+   "family": "layout",
+   "items": [
+    "I11",
+    "I13",
+    "I29"
+   ]
+  },
+  {
+   "statement": "Hero has two side-by-side CTA buttons: one solid white and one outlined.",
+   "family": "component",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Body content is arranged in card columns with a sidebar on the right.",
+   "family": "layout",
+   "items": [
+    "I14",
+    "I28"
+   ]
+  },
+  {
+   "statement": "Content sits in white, bordered, rounded cards on an off-white page background.",
+   "family": "decoration",
+   "items": [
+    "I15",
+    "I27",
+    "I39"
+   ]
+  },
+  {
+   "statement": "Layout is built with flexbox and CSS grid.",
+   "family": "layout",
+   "items": [
+    "I16"
+   ]
+  },
+  {
+   "statement": "Newsletter signup is a real form with an email input and a filled green submit button.",
+   "family": "component",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Calendar is a plain captioned table with text Previous/Next navigation links and muted gray weekend dates.",
+   "family": "component",
+   "items": [
+    "I19",
+    "I20",
+    "I32"
+   ]
+  },
+  {
+   "statement": "Links are deep green text with no chevron markers, used consistently across white cards.",
+   "family": "color",
+   "items": [
+    "I21",
+    "I34"
+   ]
+  },
+  {
+   "statement": "Color palette is green-tinted dark text with a deep green accent and muted green-gray secondary text.",
+   "family": "color",
+   "items": [
+    "I25"
+   ]
+  },
+  {
+   "statement": "Footer is a single dark-green band, with link groups placed in light cards above it.",
+   "family": "layout",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "Small circular social icons sit on the left next to their label.",
+   "family": "component",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Page is minimal and flat, with no shadows, transitions or animations; the only decoration is one hero gradient.",
+   "family": "decoration",
+   "items": [
+    "I33"
+   ]
+  },
+  {
+   "statement": "Markup is lean: few anchors, one script, no external stylesheets, almost no inline styles.",
+   "family": "other",
+   "items": [
+    "I30",
+    "I37"
+   ]
+  },
+  {
+   "statement": "Copy is plain and concise, with fewer words and no exclamation marks or emoji.",
+   "family": "copy",
+   "items": [
+    "I36"
+   ]
+  },
+  {
+   "statement": "Small images are scaled down in cards and can be distorted in aspect ratio.",
+   "family": "imagery",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Media embeds such as video players are replaced with text-link cards.",
+   "family": "imagery",
+   "items": [
+    "I17"
+   ]
+  }
+ ]
+}

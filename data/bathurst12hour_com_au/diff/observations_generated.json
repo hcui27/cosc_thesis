@@ -1,0 +1,412 @@
+[
+ {
+  "observation": "The page uses a dark theme throughout. The body background is rgb(17,17,18) with near-white text rgb(242,242,242). Panels step up to rgb(27,27,29) and rgb(34,34,34), and the footer drops to rgb(11,11,12).",
+  "category": "color",
+  "evidence": "facts.json colors.body_bg rgb(17,17,18), body_color rgb(242,242,242); top_backgrounds include rgb(27,27,29) x11 and rgb(11,11,12)",
+  "element_ids": [
+   "e13",
+   "e23",
+   "e178"
+  ]
+ },
+ {
+  "observation": "Red rgb(228,32,46) is the main accent. It appears on the '12 HOUR' span in the h1, the primary CTA, the FEATURED badge, the Go button, the hero's bottom rule, and the heading underlines.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(228,32,46) x4; top_text_colors include red x1; screenshot shows red '12 HOUR', red LATEST NEWS button, red FEATURED tag",
+  "element_ids": [
+   "e16",
+   "e20",
+   "e30",
+   "e12"
+  ]
+ },
+ {
+  "observation": "A blue rgb(59,139,224) is used for text links and eyebrow labels. It covers the '#B12HR' kicker, 'Read more →', Facebook/Twitter links, 'Featured News →' and 'BUSHFIRES APPEAL'. It appears on 24 elements.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(59,139,224) x24",
+  "element_ids": [
+   "e14",
+   "e25",
+   "e34",
+   "e35",
+   "e43",
+   "e121"
+  ]
+ },
+ {
+  "observation": "The palette is red, blue and charcoal, echoing the Liqui-Moly logo. The red/blue pairing recurs as a short two-tone underline beneath each h2 and as alternating red and blue top borders on the Plan Your Visit cards.",
+  "category": "color",
+  "evidence": "Screenshot: short red/blue bar under NEWS, PLAN YOUR VISIT and SPONSORS & PARTNERS; card top borders alternate red, blue, red, blue",
+  "element_ids": [
+   "e24",
+   "e92",
+   "e126",
+   "e93",
+   "e96",
+   "e99",
+   "e102"
+  ]
+ },
+ {
+  "observation": "A single system-font stack is used for everything: -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial. 283 elements use -apple-system. There are no webfonts and no linked stylesheets, only one inline style block.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count -apple-system 283; counts.stylesheets 0; tag_counts style 1",
+  "element_ids": []
+ },
+ {
+  "observation": "The h1 is very large and heavy at 70.4px / weight 900, in uppercase. It sits on two lines with a forced br, and 'LIQUI-MOLY' and 'BATHURST' are white while '12 HOUR' is wrapped in a red span.",
+  "category": "typography",
+  "evidence": "h1 font_size 70.4px, weight 900, color rgb(242,242,242); br count 1; span e16 '12 HOUR'",
+  "element_ids": [
+   "e15",
+   "e16"
+  ]
+ },
+ {
+  "observation": "Section h2s (NEWS, PLAN YOUR VISIT, SPONSORS & PARTNERS) are uppercase bold at 28.8px, left-aligned, and each carries a small two-tone underline bar.",
+  "category": "typography",
+  "evidence": "h2 font_size 28.8px weight 700; heading_outline h2 x3",
+  "element_ids": [
+   "e24",
+   "e92",
+   "e126"
+  ]
+ },
+ {
+  "observation": "Small meta text such as '#B12HR', 'EVENT DATES SHOWN', the date stamps and 'BUSHFIRES APPEAL' is uppercase with wide letter-spacing. The weights are lighter or smaller than the headings. This makes a label/eyebrow tier.",
+  "category": "typography",
+  "evidence": "Screenshot shows spaced caps for '19 OCT 2020', '#B12HR', 'EVENT DATES SHOWN'; small tag e18",
+  "element_ids": [
+   "e14",
+   "e18",
+   "e29",
+   "e40",
+   "e121"
+  ]
+ },
+ {
+  "observation": "The body is 16px with a 25.6px line-height (1.6). Secondary copy such as card excerpts and sub-labels is grey rgb(166,166,171), used on 61 elements.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px; top_text_colors rgb(166,166,171) x61",
+  "element_ids": [
+   "e19",
+   "e33",
+   "e123",
+   "e95"
+  ]
+ },
+ {
+  "observation": "The hero is a left-aligned text block with a large logo on the right. It has a carbon-fibre-textured dark background with red and blue diagonal wedges in the top right. A 3px-style red rule separates it from the news section.",
+  "category": "layout",
+  "evidence": "e13 spans 0,73,1440,574; screenshot shows diagonal red/blue shapes and carbon weave; logo e22 at 1030,203 260x299",
+  "element_ids": [
+   "e13",
+   "e22",
+   "e15"
+  ]
+ },
+ {
+  "observation": "The hero has a clear hierarchy: kicker, h1, a date block with a red left border, a one-line tagline, then two side-by-side CTAs. The first CTA is a solid red fill and the second is an outlined white-border ghost button.",
+  "category": "component",
+  "evidence": "e17 date block with left border; e20 LATEST NEWS solid red 159x51; e21 RACE INFORMATION outlined 205x51",
+  "element_ids": [
+   "e14",
+   "e17",
+   "e19",
+   "e20",
+   "e21"
+  ]
+ },
+ {
+  "observation": "The hero's hashtag, date and tagline text is set in a left column about 840px wide, while the logo is pinned to the right edge of the 1140px container. The right half stays empty apart from the logo.",
+  "category": "layout",
+  "evidence": "e14/e15 width 840 at x150; e22 at x1030 w260; container 150–1290",
+  "element_ids": [
+   "e14",
+   "e15",
+   "e22"
+  ]
+ },
+ {
+  "observation": "Content sits in a centered 1140px container (x150 to x1290) on a 1440px canvas. All sections share the same left and right edges.",
+  "category": "layout",
+  "evidence": "e26 150–1290; e92 x150; e197 150,w1140; page_width 1440",
+  "element_ids": [
+   "e26",
+   "e92",
+   "e118",
+   "e197"
+  ]
+ },
+ {
+  "observation": "The header has the logo on the left, a 5-item uppercase nav (HOME, NEWS, VIDEO, THE EVENT, THE RACE) and a search form on the right. The input is dark with a red 'Go' button. Backdrop blur is present once and a semi-transparent bar background is used, rgba(17,17,18,0.94).",
+  "category": "component",
+  "evidence": "e1 header 1440x73; nav links e5–e9; form e10 input e11 button e12; backdrop_blur 1",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e10",
+   "e12"
+  ]
+ },
+ {
+  "observation": "The news section opens with a horizontal featured card. A 586px image fills the left half, with a text panel on the right holding date, a red FEATURED badge, h3, an excerpt, and a link row pinned to the bottom.",
+  "category": "component",
+  "evidence": "e26 article 1140x367; img e28 586x365; badge e30; links e34–e36 at y1117",
+  "element_ids": [
+   "e26",
+   "e28",
+   "e30",
+   "e31",
+   "e34"
+  ]
+ },
+ {
+  "observation": "Six smaller news cards follow in a 3-column, 2-row grid. Each card has a 363x227 image, a small date, an h3 title and a footer row with 'Read more →' on the left and Facebook/Twitter links on the right. The columns are about 24px apart.",
+  "category": "layout",
+  "evidence": "articles e37,e46,e55 at y1194 and e64,e73,e82 at y1592, each 365x376; x 150/537/925",
+  "element_ids": [
+   "e37",
+   "e46",
+   "e55",
+   "e64",
+   "e73",
+   "e82"
+  ]
+ },
+ {
+  "observation": "The cards have a 1px border, a slightly lighter surface than the page, and small radii (about 4px). The images are cropped flush to the card top. The page has no box-shadows.",
+  "category": "decoration",
+  "evidence": "box_shadows 0; border_radius_buckets bucket_1_7 47, bucket_8_15 0; card backgrounds rgb(27,27,29)",
+  "element_ids": [
+   "e26",
+   "e37",
+   "e46"
+  ]
+ },
+ {
+  "observation": "Corner radii are small and uniform. 47 elements have 1–7px radii, 237 have none, and none have pill or large rounding. The Menu button has a 4px radius.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0→237, 1_7→47, others 0; primary_button radius 4px",
+  "element_ids": [
+   "e12",
+   "e20",
+   "e21"
+  ]
+ },
+ {
+  "observation": "The page uses no gradients, no animations and no transforms. It has 33 transitions, which suggests hover states, and 0 svgs. Arrows (→) are text characters.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 0, animations 0, transforms 0, transitions 33, svgs 0; 'Read more →' text",
+  "element_ids": [
+   "e25",
+   "e34"
+  ]
+ },
+ {
+  "observation": "The news photos are real editorial motorsport photographs. They are cropped to a uniform 363x227 frame (object-fit style) from sources of varied natural size (2500x1683 down to 385x305). The same Bushfireappeal.jpg appears twice, in a news card and in the appeal banner.",
+  "category": "imagery",
+  "evidence": "images list: Bushfireappeal.jpg at 363x227 and 569x383; others natural 385x305 rendered 363x227",
+  "element_ids": [
+   "e39",
+   "e48",
+   "e57",
+   "e66",
+   "e119"
+  ]
+ },
+ {
+  "observation": "Most images have empty alt text. The news thumbnails and the hero logo copy have alt=''. The header logo and the sponsor logos have descriptive alt text.",
+  "category": "semantic",
+  "evidence": "images list alts '' for news images and footerlogo; counts.alt_missing 0; header logo alt 'Liqui-Moly Bathurst 12 Hour'",
+  "element_ids": [
+   "e22",
+   "e28",
+   "e39",
+   "e119",
+   "e3"
+  ]
+ },
+ {
+  "observation": "News card titles are links inside h3, and a separate empty-text anchor wraps each image. The image links are therefore duplicates of the title links.",
+  "category": "semantic",
+  "evidence": "e27 empty a > img and e32 a in h3; same for e38/e42, e47/e51",
+  "element_ids": [
+   "e27",
+   "e32",
+   "e38",
+   "e42",
+   "e47",
+   "e51"
+  ]
+ },
+ {
+  "observation": "Plan Your Visit is a 4x2 grid of 273x104 link tiles. Each has an uppercase bold title with a one-line grey descriptor and a 2px coloured top border that alternates red and blue. The surface is darker than the section background.",
+  "category": "component",
+  "evidence": "e93–e114 tiles at x150/439/728/1017, y2200 and 2320; strong titles + span descriptions",
+  "element_ids": [
+   "e93",
+   "e96",
+   "e99",
+   "e102",
+   "e105",
+   "e114"
+  ]
+ },
+ {
+  "observation": "The section backgrounds alternate between near-black rgb(17,17,18) and charcoal rgb(27,27,29), with thin horizontal divider lines. The tone shifts mark the News, Plan, Appeal and Sponsors bands. The footer is the darkest, topped by a blue rule.",
+  "category": "layout",
+  "evidence": "sections e23 (0,647), e91 (0,2041), e117 (0,2498), e125 (0,3027), footer e178 (0,3663); background counts",
+  "element_ids": [
+   "e23",
+   "e91",
+   "e117",
+   "e125",
+   "e178"
+  ]
+ },
+ {
+  "observation": "The Bushfires Appeal banner is a split card, with a 569px image on the left half and a text panel on the right. The panel holds a blue eyebrow, an h3, a grey blurb and a solid red button whose label repeats the eyebrow, 'BUSHFIRES APPEAL'.",
+  "category": "component",
+  "evidence": "e118 1140x385; img e119 569x383; e121 label and e124 button both read BUSHFIRES APPEAL",
+  "element_ids": [
+   "e118",
+   "e119",
+   "e120",
+   "e122",
+   "e124"
+  ]
+ },
+ {
+  "observation": "The bushfire news story is repeated three ways: as a news card, as the Appeal banner (the same h3 and the same image), and in the heading outline twice. That repetition makes the h3 text duplicate.",
+  "category": "copy",
+  "evidence": "heading_outline h3 'More than $74,000 raised via #B12hr Bushfire Relief efforts' appears twice",
+  "element_ids": [
+   "e41",
+   "e122",
+   "e119",
+   "e39"
+  ]
+ },
+ {
+  "observation": "The sponsor wall is a 7-column grid of white 153x92 tiles, each holding a 100x60 logo. There are 26 logo images in 4 rows, and the last row has 5 tiles. The tiles use a white background (26 elements).",
+  "category": "imagery",
+  "evidence": "e127–e177 anchors 153x92 at x150…1137; images 100x60 each; top_backgrounds rgb(255,255,255) x26",
+  "element_ids": [
+   "e127",
+   "e129",
+   "e137",
+   "e139",
+   "e176"
+  ]
+ },
+ {
+  "observation": "Many sponsor logos are white or light artwork on white tiles, so most tiles look blank. Only Pirelli, AMG, Audi, Porsche and Fox Sports faintly show. McLaren renders as bold black text instead of an image because its tile has no img.",
+  "category": "imagery",
+  "evidence": "Screenshot slice 3: mostly empty white tiles; e149 anchor with text 'MCLAREN' and no img",
+  "element_ids": [
+   "e149",
+   "e136",
+   "e138",
+   "e140",
+   "e153",
+   "e173"
+  ]
+ },
+ {
+  "observation": "Sponsor logos are all rendered at a fixed 100x60 box (natural 100x60), regardless of brand, and each is a link. The logo grid has no captions.",
+  "category": "imagery",
+  "evidence": "images list: all sponsor entries natural [100,60] rect 100x60",
+  "element_ids": [
+   "e128",
+   "e130",
+   "e132",
+   "e134",
+   "e142"
+  ]
+ },
+ {
+  "observation": "The footer has a small logo and two link columns, INFO (Contacts, Media, Privacy Policy, Terms & Conditions) and FOLLOW #B12HR (Facebook, Twitter) with a short blurb. A thin rule and a copyright line follow. The copyright is on the left and the domain link on the right.",
+  "category": "component",
+  "evidence": "e179 logo 70x80; h4 e180, e190; ul e181, e191; e197 © 2021 … bathurst12hour.com.au",
+  "element_ids": [
+   "e179",
+   "e180",
+   "e181",
+   "e190",
+   "e196",
+   "e197"
+  ]
+ },
+ {
+  "observation": "The document uses a clear semantic outline: one header, one nav, one main, 4 sections, 7 article elements for news cards, one footer, a single h1 and h2 → h3 → h4 headings. There are no aside, figure or blockquote elements and no JSON-LD.",
+  "category": "semantic",
+  "evidence": "semantic header 1, nav 1, main 1, section 4, article 7, footer 1; h1_count 1; jsonld_blocks 0; figure 0",
+  "element_ids": [
+   "e1",
+   "e23",
+   "e91",
+   "e117",
+   "e125",
+   "e178"
+  ]
+ },
+ {
+  "observation": "The markup is compact. The page has 104 anchors and 36 images in 54 divs, with only 38 unique classes across 123 class uses. There are no utility-class (Tailwind-like) names, and only 3 inline style attributes. Only 5 aria attributes appear.",
+  "category": "semantic",
+  "evidence": "counts anchors 104, images 36; classes total 123 unique 38 tailwind_like_fraction 0; inline_style_attrs 3; aria_attrs 5",
+  "element_ids": []
+ },
+ {
+  "observation": "The page is long and vertical at 3954px high, with a single-column flow of full-width bands. The content is sparse at about 251 words, so images and link tiles dominate over prose. No emoji, em dashes or exclamation marks are used.",
+  "category": "copy",
+  "evidence": "page_height 3954; words 251; emoji 0; em_dashes 0; exclamations 0",
+  "element_ids": []
+ },
+ {
+  "observation": "The copy is short and informational. Card titles are headline-style, excerpts are one line, and the tile descriptors are sentence fragments such as 'Where to stay' and 'Who's racing'. The hero's date range is labelled 'EVENT DATES SHOWN' and reads 31 January – 2 February 2020, while the footer says © 2021.",
+  "category": "copy",
+  "evidence": "e17 text; e19 tagline; e95, e98, e101 descriptors; e198 © 2021",
+  "element_ids": [
+   "e17",
+   "e19",
+   "e95",
+   "e198"
+  ]
+ },
+ {
+  "observation": "Links are consistently marked with a trailing arrow glyph (→) in the 'Featured News →' and 'Read more →' links. The social links are plain text 'Facebook' and 'Twitter' with no icons, repeated on all 7 news cards.",
+  "category": "component",
+  "evidence": "e25, e34, e43; e35/e36, e44/e45 etc.; svgs 0",
+  "element_ids": [
+   "e25",
+   "e34",
+   "e35",
+   "e36",
+   "e43",
+   "e44"
+  ]
+ },
+ {
+  "observation": "Layout is built with flexbox (64 elements) plus a smaller number of grids (6 elements). Grids drive the card rows, the plan tiles and the logo wall, while flex handles the header, hero and card footers.",
+  "category": "layout",
+  "evidence": "layout display_flex 64, display_grid 6",
+  "element_ids": [
+   "e4",
+   "e37",
+   "e91",
+   "e125"
+  ]
+ },
+ {
+  "observation": "The buttons are uppercase bold, sharp-cornered, with generous padding. A solid red fill is the primary style and a white outline is the secondary. The Menu toggle (a button) is transparent with 8px 12px padding and a 4px radius, and is presumably hidden at desktop width.",
+  "category": "component",
+  "evidence": "primary_button Menu bg rgba(0,0,0,0), radius 4px, padding 8px 12px; buttons 2; e20, e21, e124",
+  "element_ids": [
+   "e20",
+   "e21",
+   "e124",
+   "e12"
+  ]
+ }
+]

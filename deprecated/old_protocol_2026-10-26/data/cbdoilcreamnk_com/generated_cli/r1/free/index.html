@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CBD Oil</title>
+<meta name="description" content="Where to buy CBD cream for pain: CBD oil, edibles, topicals, essential oils and pet products.">
+<style>
+:root{
+  --bg:#fbfaf6; --surface:#fff; --ink:#1f2a24; --muted:#5d6a62;
+  --brand:#2f6b45; --brand-dark:#22503a; --accent:#e9efe3; --line:#dfe5da;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#121714; --surface:#1a211d; --ink:#eef3ee; --muted:#a3b0a7; --brand:#6fbf8a; --brand-dark:#8fd3a6; --accent:#202a24; --line:#2c3730;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em;font-family:Georgia,"Times New Roman",serif;font-weight:700}
+h2{font-size:clamp(1.6rem,3vw,2.2rem)}
+section{padding:64px 0}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:12px 24px;border-radius:999px;font-weight:600;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:var(--brand-dark)}
+.btn.ghost{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+.btn.ghost:hover{background:var(--brand);color:#fff}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:24px;height:68px}
+.bar .logo img{height:40px;width:auto}
+nav{margin-left:auto;display:flex;gap:22px;align-items:center;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--brand)}
+nav .tel{color:var(--brand);font-weight:600}
+@media(max-width:760px){nav a:not(.tel){display:none}}
+
+/* hero */
+.hero{padding:0}
+.hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center;padding:56px 0}
+.hero h1{font-size:clamp(2rem,4.5vw,3.3rem)}
+.hero p{color:var(--muted);font-size:1.1rem;max-width:30em}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.hero img{border-radius:var(--radius);width:100%;aspect-ratio:7/3;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr;padding:36px 0}}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cat{position:relative;border-radius:var(--radius);overflow:hidden;background:var(--surface);border:1px solid var(--line);display:block}
+.cat img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .4s}
+.cat:hover img{transform:scale(1.04)}
+@media(max-width:700px){.cats{grid-template-columns:1fr}}
+
+/* products */
+.products{background:var(--accent)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 8px 24px rgba(0,0,0,.1);transform:translateY(-2px)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover}
+.card .body{padding:16px}
+.card h3{font-size:1.1rem;margin:0 0 6px}
+.price{color:var(--brand);font-weight:700}
+.badge{display:inline-block;font-size:.75rem;background:var(--brand);color:#fff;padding:2px 10px;border-radius:999px;margin-right:6px;vertical-align:middle}
+s{color:var(--muted);font-weight:400}
+@media(max-width:960px){.grid4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.grid4{grid-template-columns:1fr}}
+
+/* features */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:36px 0}
+.feature:nth-child(even) .pic{order:2}
+.feature img{border-radius:var(--radius);width:100%;aspect-ratio:1;object-fit:cover;max-width:460px;margin:0 auto}
+.feature .eyebrow{color:var(--brand);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem}
+@media(max-width:760px){.feature{grid-template-columns:1fr;gap:20px}.feature:nth-child(even) .pic{order:0}}
+
+/* news */
+.news .box{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,4vw,48px);max-width:820px;margin:0 auto}
+.news p{color:var(--muted);margin:0}
+.news h2{margin-bottom:.8em}
+
+/* guides */
+.guides{background:var(--accent)}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
+.pills a{padding:6px 16px;border:1px solid var(--brand);border-radius:999px;color:var(--brand);text-decoration:none;font-size:.9rem}
+.pills a:hover{background:var(--brand);color:#fff}
+
+/* signup */
+.signup{text-align:center}
+.signup form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.signup input{padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:1rem;min-width:min(320px,100%)}
+.signup p{color:var(--muted)}
+.ok{display:none;margin-top:16px;color:var(--brand);font-weight:600}
+.ok img{display:inline;vertical-align:middle;margin-right:6px}
+
+/* footer */
+footer{background:#18221c;color:#d8e2da;padding:56px 0 28px;font-size:.95rem}
+footer a{text-decoration:none;color:#d8e2da}
+footer a:hover{text-decoration:underline}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:32px}
+footer h3{font-size:1rem;color:#fff;font-family:inherit}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+footer p{margin:0 0 8px}
+.legal{border-top:1px solid #2f3d34;margin-top:36px;padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+.legal img{background:#fff;border-radius:6px;padding:4px 8px}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.fgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top"><img src="images/cropped-Z-Logo-CBD.png" alt="CBD Oil"></a>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#featured">Featured</a>
+      <a href="#news">News</a>
+      <a href="#guides">Guides</a>
+      <a href="#contact">Contact Us</a>
+      <a class="tel" href="tel:208-969-1282">208-969-1282</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Where To Buy CBD Cream For Pain</h1>
+        <p>CBD oil, edibles, topicals and more. Sign up for exclusive deals, new products and nutritional education.</p>
+        <div class="cta">
+          <a class="btn" href="#shop">Shop CBD</a>
+          <a class="btn ghost" href="#signup">Join The Club</a>
+        </div>
+      </div>
+      <img src="images/slider-1-cbd-700x300.jpg" alt="CBD products">
+    </div>
+  </section>
+
+  <section id="shop" style="padding-top:24px">
+    <div class="wrap">
+      <div class="cats">
+        <a class="cat" href="#"><img src="images/CBD_Drops-2.jpg" alt="Full spectrum CBD oil drops" loading="lazy"></a>
+        <a class="cat" href="#"><img src="images/CBD_edibles-2.jpg" alt="CBD edibles" loading="lazy"></a>
+        <a class="cat" href="#"><img src="images/CBD_Topicals-2.jpg" alt="CBD topicals" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="wrap">
+      <h2>Cbd For Dogs</h2>
+      <div class="grid4">
+        <a class="card" href="#">
+          <img src="images/zaturalcomcbdinfusedlemon13449510715434-360x360.jpg" alt="Cbd For Life" loading="lazy">
+          <div class="body"><h3>Cbd For Life</h3><span class="price">From: $14.99</span></div>
+        </a>
+        <a class="card" href="#">
+          <img src="images/HoneyB_CBD_450mgF-360x360.jpg" alt="Pure Cbd" loading="lazy">
+          <div class="body"><h3>Pure Cbd</h3><span class="price">$29.99</span></div>
+        </a>
+        <a class="card" href="#">
+          <img src="images/Zatural_top1-360x360.jpg" alt="Cbd Oil Amazon" loading="lazy">
+          <div class="body"><h3>Cbd Oil Amazon</h3><span class="badge">Sale!</span><span class="price">From: $79.00</span></div>
+        </a>
+        <a class="card" href="#">
+          <img src="images/zaturalcomaromatherapywoodholidaycbdessentialoilsetwithdiffuser13389487931434-360x360.jpg" alt="Cbd" loading="lazy">
+          <div class="body"><h3>Cbd</h3><span class="badge">Sale!</span><s>$59.99</s> <span class="price">$49.99</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured">
+    <div class="wrap">
+      <div class="feature">
+        <div class="pic"><img src="images/CBD_Statue.png" alt="Cbd Vape" loading="lazy"></div>
+        <div>
+          <h2>Cbd Vape</h2>
+          <a class="btn" href="#">More CBD Questions?</a>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="pic"><img src="images/AliNOMNOM.png" alt="Charlotte's Web Cbd Oil" loading="lazy"></div>
+        <div>
+          <h2>Charlotte's Web Cbd Oil</h2>
+          <a class="btn" href="#">Click Here for More About CBD</a>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="pic"><img src="images/CBD_dog_oilPET_1500x.png" alt="Lazarus Naturals" loading="lazy"></div>
+        <div>
+          <h2>Lazarus Naturals</h2>
+          <a class="btn" href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news" style="background:var(--accent)">
+    <div class="wrap">
+      <div class="box">
+        <h2>CBD in the news</h2>
+        <p>CBD oil is one of those traits that just won’t stay out of our Instagram feeds. It’s inescapable: there’s CBD food, CBD drinks, even CBD beauty products. Derived from the cannabis plant, the cult product is claimed to assist conditions similar to anxiety or pain, giving users the stress-free results of marijuana with none of the, erm, freakier negative effects. But now the Food Standards Agency has spoken out in opposition to the CBD, warning that people on remedy, breastfeeding mothers, and pregnant women should not be eating CBD-infused food. The FSA warned that products may need to be banned from UK outlets if the folks producing the CBD-infused merchandise fail to supply extra detailed data concerning the security of their products. Speaking concerning the warning, FSA Chief Executive Emily Miles instructed that many products obtainable on the high street weren’t properly authorised and have been taking part in a dangerous game. “The CBD industry should present extra information about the security and contents of these merchandise to the regulator earlier than 31 March 2021, or the merchandise will probably be taken off the shelves,” she said, by way of The Guardian. “The actions that we’re taking at the moment are a pragmatic and proportionate step in balancing the safety of public well being with client alternative.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="guides" id="guides" style="background:var(--bg)">
+    <div class="wrap">
+      <h2>Cbd Clinic Products</h2>
+      <div class="pills">
+        <a href="#">Hemp Oil Benefits</a>
+        <a href="#">Plus Cbd Oil</a>
+      </div>
+      <div class="cats">
+        <a class="cat" href="#"><img src="images/CBD_Aroma.jpg" alt="CBD essential oils" loading="lazy"></a>
+        <a class="cat" href="#"><img src="images/CBDvsHemp.jpg" alt="CBD vs hemp" loading="lazy"></a>
+        <a class="cat" href="#"><img src="images/5ps_of_CBD.jpg" alt="The 5 Ps of CBD" loading="lazy"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="signup" style="background:var(--accent)">
+    <div class="wrap">
+      <h2>Join The Club</h2>
+      <p>Sign Up For Exclusive Deals, New Products and Nutritional Education</p>
+      <form onsubmit="event.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'">
+        <input type="email" required placeholder="Your email address" aria-label="Email address">
+        <button class="btn" type="submit">Sign Up</button>
+      </form>
+      <div class="ok" id="ok"><img src="images/correct.png" alt="" width="16" height="16">Thanks, you're on the list.</div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img src="images/cropped-Z-Logo-CBD.png" alt="CBD Oil" style="height:40px;width:auto;margin-bottom:16px;filter:brightness(0) invert(1)">
+        <p>Where To Buy Cbd Cream For Pain</p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">Hemp Gummies</a></li>
+          <li><a href="#">Hemp Cbd Oil</a></li>
+          <li><a href="#">Best Cbd Oil Reviews</a></li>
+          <li><a href="#">Cbd Oil Online Yaa Health Store</a></li>
+          <li><a href="#">Nutrax Cbd Oil</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Cbd Cream For Pain Relief</a></li>
+          <li><a href="#">Buy Cbd Oil</a></li>
+          <li><a href="#">How To Use Cbd Oil</a></li>
+          <li><a href="#">Cbd Capsules</a></li>
+          <li><a href="#">Cbd Oil At Walmart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p><strong>Phone:</strong> <a href="tel:2089691282">(208)969-1282</a></p>
+        <p><strong>Hours:</strong> Monday-Friday 8:00am – 5:00pm MST U.S.</p>
+        <p><strong>Wholesale:</strong> <a href="tel:208-358-0251">208-358-0251</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© CBD Oil 2020</span>
+      <img src="images/payment_icons.png" alt="Accepted payment methods" height="32" style="height:32px;width:auto">
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

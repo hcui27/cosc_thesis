@@ -1,0 +1,157 @@
+[
+ {
+  "observation": "The page uses a dark theme: body background is near-black rgb(14,15,18) and body text is off-white rgb(236,238,242). Cards sit on a slightly lighter charcoal, rgb(24,26,31).",
+  "category": "color",
+  "evidence": "facts colors.body_bg rgb(14,15,18); body_color rgb(236,238,242); 7 elements with bg rgb(24,26,31)"
+ },
+ {
+  "observation": "A single saturated red, rgb(228,0,43), is the only accent. It fills the date badge and the 'Featured News' tag. It also colors the 'LATEST NEWS' label and the 'READ MORE →' links.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(228,0,43) ×2; top_text_colors rgb(228,0,43) ×8; visible red badges and links"
+ },
+ {
+  "observation": "Secondary text such as dates, share links and footer copy is a muted gray, rgb(154,160,173). It is clearly lower in contrast than the off-white headings.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(154,160,173) ×31; screenshot dates 'Feb 13, 2020'"
+ },
+ {
+  "observation": "Type is a single system font stack with no web fonts loaded. All 209 counted elements use system-ui, with -apple-system, Segoe UI and Roboto as fallbacks.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['system-ui',209]]; h1 font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'"
+ },
+ {
+  "observation": "The h1 is very large, bold and uppercase. It is 67.2px at weight 700 and tightly set, and it spans most of the content width on one line.",
+  "category": "typography",
+  "evidence": "h1 font_size 67.2px, font_weight 700, text 'LIQUI-MOLY BATHURST 12 HOUR'"
+ },
+ {
+  "observation": "The h2 'LATEST NEWS' is only 14px bold. It works as a small letter-spaced red eyebrow label, so it is far smaller than the h3 article titles. The heading hierarchy is inverted in visual scale.",
+  "category": "typography",
+  "evidence": "h2 font_size 14px weight 700; h3 titles are visibly larger; red spaced caps in screenshot"
+ },
+ {
+  "observation": "Small uppercase, letter-spaced bold labels recur across the page. They appear in the nav items, the 'FEATURED NEWS' tag, the 'READ MORE →' links and the footer h4s 'FOLLOW US' and 'LINKS'.",
+  "category": "typography",
+  "evidence": "Nav text 'HOME NEWS VIDEO…'; h4 'FOLLOW US', 'LINKS'; 'READ MORE' links"
+ },
+ {
+  "observation": "The header holds a logo, a horizontal uppercase nav and two circular social icon buttons (Facebook, Twitter). Some nav labels wrap onto two lines ('THE EVENT', 'THE RACE', 'PREVIOUS RACES', 'BUSHFIRES APPEAL'), which shows fixed-width nav items.",
+  "category": "layout",
+  "evidence": "header 1, nav 1; screenshot shows wrapped nav labels; pill-radius bucket 4"
+ },
+ {
+  "observation": "The header has a translucent near-black background with backdrop blur. A thin bottom border separates it from the hero.",
+  "category": "decoration",
+  "evidence": "backdrop_blur 1; background rgba(14,15,18,0.95); box_shadows 0"
+ },
+ {
+  "observation": "The hero is text-only, with the h1, the tagline 'Australia's International Endurance race' and a red date badge '31 JANUARY – 2 FEBRUARY 2020'. A carbon-fibre texture with red and blue diagonal wedges fills the top-right. The graphic is a background rather than an img element, and the text is left-aligned in a narrower column than the header.",
+  "category": "imagery",
+  "evidence": "Screenshot hero; gradient_backgrounds 0; h1 text_align start; p count 2"
+ },
+ {
+  "observation": "The hero text block starts at about x=212, while the header, news grid and footer start at x=136. This creates two different left edges.",
+  "category": "layout",
+  "evidence": "Screenshot: h1 left ≈212px vs logo/cards at x=136 (image rects x:136/137)"
+ },
+ {
+  "observation": "The news section opens with a wide featured card. A 643×401 image fills the left roughly 55%, and a dark text panel on the right holds a red 'FEATURED NEWS' tag, a large headline, the date, share links and a bottom-anchored 'READ MORE →'.",
+  "category": "components",
+  "evidence": "image rect x137 y653 w643 h401; screenshot featured card; 'Share on Facebook' 'Tweet'"
+ },
+ {
+  "observation": "Below the featured card, six news cards sit in a 3-column grid with equal widths of about 374px and gaps of about 22px. Each card has a 374×234 image on top, then a title, a date and a red 'READ MORE →' link.",
+  "category": "layout",
+  "evidence": "image rects x 137/533/929, w374 h234, rows y1076 and y1472; article 7"
+ },
+ {
+  "observation": "News card images are cropped to a uniform 374×234 box. Their natural sizes vary widely, from 385×305 to 2500×1683 for Bushfireappeal.jpg, and all are presented at one ratio.",
+  "category": "imagery",
+  "evidence": "images natural [2500,1683] vs [385,305], all rendered 374×234"
+ },
+ {
+  "observation": "All 7 news photos have empty alt text, while the logos have descriptive alt text. The photos are treated as decorative.",
+  "category": "semantics",
+  "evidence": "images alt '' for Bath12Hr-MH3.jpg, Bushfireappeal.jpg, M20-fine.jpg etc.; counts.alt_missing 0"
+ },
+ {
+  "observation": "The cards are flat. They have a 1px subtle border, a slightly lighter fill, square or near-square corners and no shadows. The radius is mostly 0, with 26 elements in the 1–7px bucket and 4 pills.",
+  "category": "decoration",
+  "evidence": "box_shadows 0; border_radius_buckets bucket_0 179, bucket_1_7 26, bucket_pill 4; no gradients"
+ },
+ {
+  "observation": "The primary 'Menu' button is a transparent button with a 6px radius and 8px 12px padding. It is probably the mobile nav toggle and is not visible at desktop width. It is the only button on the page.",
+  "category": "components",
+  "evidence": "primary_button text 'Menu', bg rgba(0,0,0,0), radius 6px, padding 8px 12px; buttons 1"
+ },
+ {
+  "observation": "Each news item is an article with an h3 title and a time element. This gives 7 article, 7 h3 and 7 time elements, and the dates use a 'Mon DD, YYYY' text format.",
+  "category": "semantics",
+  "evidence": "tag_counts article 7, h3 7, time 7; 'Oct 19, 2020', 'Feb 13, 2020'"
+ },
+ {
+  "observation": "The document has a clean semantic skeleton. It has one header, one nav, one main, one section and one footer, plus a single h1 and a heading outline that runs h1 → h2 → h3 → h4. There are no aside, figure or blockquote elements.",
+  "category": "semantics",
+  "evidence": "semantic counts; h1_count 1; heading_outline"
+ },
+ {
+  "observation": "The footer's upper area has two columns. 'FOLLOW US' holds a short blurb and two round social icons, and 'LINKS' holds a vertical list (Contacts, Media, Privacy Policy, Terms & Conditions) in gray text. It is separated from the news by a full-width hairline.",
+  "category": "components",
+  "evidence": "h4 'FOLLOW US', 'LINKS'; screenshot footer; ul 5"
+ },
+ {
+  "observation": "A sponsor logo wall of 26 tiles (100×60 images) sits in a grid of about 9 columns and 3 rows. Each tile is a white rounded rectangle on the dark page, and the last row is incomplete.",
+  "category": "imagery",
+  "evidence": "images 100×60 at y 2160/2238/2316, x spacing ≈131px; 26 white backgrounds in top_backgrounds"
+ },
+ {
+  "observation": "Many sponsor logos are nearly invisible. White or light logo artwork is placed on white tiles, so most tiles look blank. Only a few (Pirelli, AMG, McLaren, Porsche, Fox Sports) show faint marks.",
+  "category": "imagery",
+  "evidence": "Screenshot sponsor grid mostly blank white; rgb(255,255,255) bg ×26; alt texts like 'Liqui Moly', 'Audi' on blank tiles"
+ },
+ {
+  "observation": "The footer ends with a small logo and a copyright line, '© 2021 LIQUI-MOLY Bathurst 12 Hour. All Rights Reserved'. The copyright year is later than the 2020 content dates.",
+  "category": "copy",
+  "evidence": "footerlogo.png 42×48 at y2439; screenshot copyright text; dates 2020"
+ },
+ {
+  "observation": "The page is a 1440px-wide, 2511px-tall single column. The content container runs from about x=136 to x=1304, roughly 1168px wide, with generous vertical gaps between hero, news and footer.",
+  "category": "layout",
+  "evidence": "page_width 1440, page_height 2511; image rects span x137–1303"
+ },
+ {
+  "observation": "Grid is the dominant layout primitive: 33 elements use display grid against 21 using flex. Grid probably drives the cards, the sponsor wall and the footer columns.",
+  "category": "layout",
+  "evidence": "layout display_grid 33, display_flex 21"
+ },
+ {
+  "observation": "The CSS is a single inline style block with no external stylesheets. Only 20 unique class names appear across 49 class uses, and none are Tailwind-like. The class names are hand-authored and semantic-ish.",
+  "category": "structure",
+  "evidence": "stylesheets 0, tag style 1; classes total 49, unique 20, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "The page is link- and image-heavy. It has 82 anchors and 34 images against only 161 words of text. It has one script, 4 inline SVGs (probably the social icons and arrows) and one inline style attribute.",
+  "category": "structure",
+  "evidence": "counts anchors 82, images 34, words 161; svg 4; script 1; inline_style_attrs 1"
+ },
+ {
+  "observation": "Interaction polish is limited to CSS transitions. 40 elements have transitions, but there are no keyframe animations or transforms, and no shadows.",
+  "category": "decoration",
+  "evidence": "transitions 40, animations 0, transforms 0, box_shadows 0"
+ },
+ {
+  "observation": "Copy is terse and editorial. News headlines are sentence case with hashtags and dollar figures, such as '#B12hr' and '$74,000'. There are no exclamation marks, emoji or em dashes. The date badge uses an en dash.",
+  "category": "copy",
+  "evidence": "text_stats emoji 0, em_dashes 0, exclamations 0; h3 texts"
+ },
+ {
+  "observation": "The 'READ MORE →' links use a text arrow glyph in red caps. The featured card's link sits at the bottom of its panel, far below the date and share links, which leaves a large empty gap inside the panel.",
+  "category": "components",
+  "evidence": "Screenshot featured card: share links at y≈843, READ MORE at y≈1011"
+ },
+ {
+  "observation": "The only title in head is 'Liqui-Moly Bathurst 12 Hour'. The meta set is minimal, with charset, viewport and description, and there are no JSON-LD blocks.",
+  "category": "semantics",
+  "evidence": "title; meta_names charset, viewport, description; jsonld_blocks 0"
+ }
+]

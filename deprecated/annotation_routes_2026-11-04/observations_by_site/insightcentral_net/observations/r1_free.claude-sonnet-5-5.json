@@ -1,0 +1,177 @@
+[
+ {
+  "observation": "Dark theme throughout: near-black navy body background with off-white text and a single cyan accent used for the CTA buttons, the second line of the H1, links and avatar initials.",
+  "category": "color",
+  "evidence": "body_bg rgb(14,20,25); body_color rgb(232,238,243); accent rgb(39,209,255) used as the background of 4 elements and as the colour of 5 text elements"
+ },
+ {
+  "observation": "The surface palette has three tonal steps: page, card/header/footer fill, and a lighter inner fill. Depth comes from these steps and thin borders, not from shadows.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(23,31,39) x12, rgb(31,41,51) x10, rgb(14,20,25) x1; box_shadows 0"
+ },
+ {
+  "observation": "Secondary text is muted grey-blue. It is used for the hero blurb, stat labels, reply counts, member counts and the footer.",
+  "category": "color",
+  "evidence": "rgb(147,161,174) is the text colour on 40 elements; rgb(232,238,243) on 70"
+ },
+ {
+  "observation": "The H1 is large and bold, split over two lines. The second line, 'Since 2003', is coloured cyan while 'Honda Insight Forum' stays off-white.",
+  "category": "typography",
+  "evidence": "h1 52px / 700; screenshot shows 'Since 2003' in cyan; heading text 'Honda Insight Forum Since 2003'"
+ },
+ {
+  "observation": "A single system-ui font stack is used on every element, with no webfont or external stylesheet. The rendered face looks like Inter or San Francisco.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 119; stylesheets 0; font_family 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'"
+ },
+ {
+  "observation": "The type scale is compact. The H1 is 52px, section H2s are 20px bold, body text is 16px/24px, and small labels (stat captions, footer) are smaller.",
+  "category": "typography",
+  "evidence": "h1 52px; h2 20px 700; body_font_size 16px; body_line_height 24px"
+ },
+ {
+  "observation": "The header is a slim bar with the logo on the left and the nav on the right, separated from the page by a hairline border. Nav items are plain muted text links plus a cyan pill 'Login / Join' button.",
+  "category": "layout",
+  "evidence": "header 1, nav 1; primary_button 'Login / Join' bg rgb(39,209,255), radius 999px, padding 8px 16px; logo rect x196 y17 139x30"
+ },
+ {
+  "observation": "The logo is an SVG image in a stylised italic condensed cyan wordmark, 'InsightCentral.net'. It has alt text.",
+  "category": "imagery",
+  "evidence": "img insightcentral-net.svg alt 'Insight Central', natural 300x65, rendered 139x30"
+ },
+ {
+  "observation": "The hero is left-aligned with a text stack: H1, short description, then a stats row. A 'Join Community' pill button sits at the far right, vertically aligned with the stats. The right half of the hero is empty.",
+  "category": "layout",
+  "evidence": "h1 text_align start; screenshot shows 'Join Community' at x~1085-1243 and the stats at x~196-370"
+ },
+ {
+  "observation": "The stats row shows two figures, 414K posts and 180.3K members. Each is a bold number over a small muted label.",
+  "category": "component",
+  "evidence": "visible '414K posts' and '180.3K members'; small tag count 2"
+ },
+ {
+  "observation": "Content is held in a centred column about 1048px wide (x196 to x1244) on a 1440px viewport, with wide empty margins on both sides.",
+  "category": "layout",
+  "evidence": "page_width 1440; image rects start at x197 and the last ends at 1243; header and footer content share the left edge x196"
+ },
+ {
+  "observation": "'Latest threads' is a three-column card grid. Each card has a tall portrait photo on top and a title and author row below.",
+  "category": "layout",
+  "evidence": "3 images 337x700 at x197, 552 and 906, y497; display_grid 8; h3 count 3"
+ },
+ {
+  "observation": "The thread images are user-submitted photos (car underbody shields, a Honda armrest/console, a red Insight coupe). They are cropped to a uniform 337x700 box from natural sizes of 700x700, 525x700 and 393x700. They are cropped, not letterboxed.",
+  "category": "imagery",
+  "evidence": "images natural [700,700], [525,700], [393,700] all rendered at 337x700; alt is empty on all three"
+ },
+ {
+  "observation": "Thread titles are truncated with a literal '...' in the text itself. Examples: '50% off pick n pull this last weekend, new arm res...' and 'SOLD For sale- 2001 Red Generation 1 Insight in Mi...'.",
+  "category": "copy",
+  "evidence": "h3 text in the heading_outline ends in '...'"
+ },
+ {
+  "observation": "Each thread card footer has a small circular letter avatar, the username, and a reply count right-aligned. The avatars are initials (B, N, K) in cyan on a dark circle.",
+  "category": "component",
+  "evidence": "screenshot shows 'B Bobhpete 9', 'N NewOwner 2', 'K kickstop.5 3'; pill radius bucket 12"
+ },
+ {
+  "observation": "Below the thread grid is a 'Top Contributors this Month' section with a right-aligned cyan 'View All' text link. It holds three bordered horizontal cards, each with an avatar, a bold username and a muted reply count.",
+  "category": "component",
+  "evidence": "h2 'Top Contributors this Month'; cards hondarider90 183 Replies, mudder 102 Replies, Joule 82 Replies"
+ },
+ {
+  "observation": "Avatar handling is mixed. One contributor ('mudder') has a real photo thumbnail. The others get a letter-initial placeholder circle (H, J).",
+  "category": "imagery",
+  "evidence": "image-05.jpg 48x48 rendered 44x44 at x568 y1430; the H and J avatars are not images"
+ },
+ {
+  "observation": "'Recommended Communities' is another three-column row of cards. Each has a rounded-square logo (64x64), a name, and a muted member count. One card carries a cyan 'NEW!' pill badge.",
+  "category": "component",
+  "evidence": "images diyelectriccar-com-profile.png, snowmobileworld-com-profile.png and royalenfieldforum-com-profile.png at 64x64 (natural 360x360); 'NEW!' badge on Royal Enfield Forum"
+ },
+ {
+  "observation": "The three-column rhythm is repeated across the thread, contributor and community sections. All use the same column x-positions and about 16px gutters.",
+  "category": "layout",
+  "evidence": "contributor cards at x~196, 551, 905; community cards at the same x positions; thread cards at x197, 552, 906"
+ },
+ {
+  "observation": "The sign-up call to action is a large bordered, rounded panel with a centred H2 that ends in an exclamation mark. Below it are two dark outlined pill buttons for Facebook and Google, the word 'or', and a filled cyan 'Sign up with email' pill.",
+  "category": "component",
+  "evidence": "h2 'Join now to ask and comment!'; exclamations 3; the screenshot shows three pills"
+ },
+ {
+  "observation": "The button hierarchy relies on fill: cyan fill with dark teal text for primary actions, and dark fill with a light border for secondary ones. All buttons are pill-shaped.",
+  "category": "component",
+  "evidence": "primary_button color rgb(4,34,44) on rgb(39,209,255), radius 999px; border_radius pill bucket 12"
+ },
+ {
+  "observation": "The actions are anchors, not button elements, even though they look like buttons.",
+  "category": "structure",
+  "evidence": "counts buttons 0, anchors 25"
+ },
+ {
+  "observation": "Corner radii fall into two groups. Most elements are square (92 with radius 0). Cards are medium-rounded (14 in the 8-15px bucket), one large panel is 16px or more, and 12 elements are fully pill-shaped.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:92, 8_15:14, 16_plus:1, pill:12"
+ },
+ {
+  "observation": "There are no shadows, gradients, blurs, animations or transforms. The only motion CSS is 6 transitions, probably hover states. Decoration is limited to borders and fills.",
+  "category": "decoration",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, transitions 6"
+ },
+ {
+  "observation": "The footer has a slightly lighter band with a top border. It holds a row of plain text links (Home, About Us, Terms of Use, Privacy Policy, Help, Contact us, RSS) and then small muted legal paragraphs. The company address is Toronto, Canada.",
+  "category": "component",
+  "evidence": "footer 1; footer text 'VerticalScope Inc., 111 Peter Street, Suite 901, Toronto...'"
+ },
+ {
+  "observation": "Footer copy includes a platform credit and an independence disclaimer: 'The Fora platform includes forum software by XenForo' and 'not in any way affiliated with Honda Motor Company'.",
+  "category": "copy",
+  "evidence": "footer paragraphs visible in slice 2; p count 4"
+ },
+ {
+  "observation": "The markup is semantic but shallow: one header, nav, main, three sections and a footer. Headings follow a clean H1, H2 and H3 outline. There are no article, aside or figure elements, even though the thread cards look like articles.",
+  "category": "structure",
+  "evidence": "semantic header 1, nav 1, main 1, section 3, footer 1, article 0, figure 0; h1_count 1; h2 4; h3 3"
+ },
+ {
+  "observation": "The page ships with minimal technical weight. It has one inline style block, no scripts, no linked stylesheets and no inline style attributes. Class use is small and custom (20 unique classes, 0% Tailwind-like).",
+  "category": "structure",
+  "evidence": "style 1, scripts 0, stylesheets 0, inline_style_attrs 0; classes total 39, unique 20, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "Layout is built with flex and grid. Flexbox is used on 23 elements and grid on 8, probably the three-column card sections and the hero.",
+  "category": "structure",
+  "evidence": "display_flex 23, display_grid 8"
+ },
+ {
+  "observation": "Accessibility hooks are sparse but present. All 8 images have an alt attribute, but 7 of them are empty strings, including the content photos. There are 5 aria attributes, and the page has lang='en'.",
+  "category": "structure",
+  "evidence": "alt_missing 0; image alts '' for 7 of 8; aria_attrs 5; lang 'en'"
+ },
+ {
+  "observation": "The meta head is minimal: charset, viewport and description only. The title is 'Insight Central – Honda Insight Forum Since 2003'. There is no JSON-LD.",
+  "category": "structure",
+  "evidence": "meta_names charset, viewport, description; jsonld_blocks 0; the title uses an en dash"
+ },
+ {
+  "observation": "Vertical spacing is generous. Large gaps separate the hero, the thread grid and the sections below. The 700px-tall thread images take over the first scroll, and the page is 2190px tall at 1440px wide.",
+  "category": "layout",
+  "evidence": "page_height 2190; thread images y497 to 1197; section headings at roughly 180px spacing"
+ },
+ {
+  "observation": "The page is short on copy and works as a landing or aggregator page for a forum. There is one sentence of hero description and no long paragraphs. The text is mostly labels, usernames and counts.",
+  "category": "copy",
+  "evidence": "words 186; p count 4; emoji 0; em_dashes 0"
+ },
+ {
+  "observation": "Section headings are all left-aligned, 20px bold and off-white, except the centred CTA heading. The cards under them have no per-card icons.",
+  "category": "typography",
+  "evidence": "h2 20px 700; 'Join now to ask and comment!' is centred in the panel while the other H2s sit at x196"
+ },
+ {
+  "observation": "Cross-promotion of other VerticalScope forums (DIY Electric Car, Snowmobile World, Royal Enfield Forum) is presented in the same card style as the site's own content, with member counts such as '85K+', '213K+' and '20+'.",
+  "category": "copy",
+  "evidence": "Recommended Communities cards with '85K+ members', '213K+ members', '20+ members'"
+ }
+]

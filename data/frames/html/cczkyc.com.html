@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>é¿æ¥ä¸­ç§è¿åæ±½è½¦ææ¯å¼åæéå¬å¸</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<script src='js/jquery.js'></script>
+	<script src='js/superslide.js'></script>
+	<script>
+	var maxHeight = 400;
+    $(function(){
+
+    $(".dropdown > li").hover(function() {
+    
+         var $container = $(this),
+             $list = $container.find("ul"),
+             $anchor = $container.find("a"),
+             height = $list.height() * 1.1,       // make sure there is enough room at the bottom
+             multiplier = height / maxHeight;     // needs to move faster if list is taller
+        
+        // need to save height here so it can revert on mouseout            
+        $container.data("origHeight", $container.height());
+        
+        // so it can retain it's rollover color all the while the dropdown is open
+        $anchor.addClass("hover");
+        
+        // make sure dropdown appears directly below parent list item    
+		$list
+            .show()
+            .css({
+                paddingTop: 29
+            });
+        
+        // don't do any animation if list shorter than max
+        if (multiplier > 1) {
+            $container
+                .css({
+                    height: maxHeight,
+                    overflow: "hidden"
+                })
+                .mousemove(function(e) {
+                    var offset = $container.offset();
+                    var relativeY = ((e.pageY - offset.top) * multiplier) - ($container.data("origHeight") * multiplier);
+                    if (relativeY > $container.data("origHeight")) {
+                        $list.css("top", -relativeY + $container.data("origHeight"));
+                    };
+                });
+        }
+        
+    }, function() {
+    
+        var $el = $(this);
+        
+        // put things back to normal
+        $el
+            .height($(this).data("origHeight"))
+            .find("ul")
+            .css({ top: 0 })
+            .hide()
+            .end()
+            .find("a")
+            .removeClass("hover");
+    
+    });  
+    
+});
+	
+	</script>
+</head>
+	<header style="height:120px;">
+		<div class="centent">
+		<div class="logo">
+			<img src="images/logo.png">
+		</div>
+		<nav class="nav">
+		<p><img src="images/phone.jpg"></p>
+			<ul class="dropdown">
+				<li><a href="/index.html">é¦é¡µ</a></li>
+				<li><a>å³äºä¸­ç§è¿å</a>
+				   <ul>
+				    <li><a href="/about.html">ä¸­ç§è¿åç®ä»</a></li>
+					<li><a href="/customer.html">æä»¬çå®¢æ·</a></li>
+					<li><a href="/cooperate.html">åä½ä¼ä¼´</a></li>
+					<li><a href="/team.html">æä»¬çå¢é</a></li>
+					<li><a href="/job.html">æèä¸èä¸</a></li>
+				   </ul>
+				</li>
+				<li><a>æä»¬çæå¡</a>
+				   <ul>
+				    <li><a href="/test_product.html">æµè¯ä¸éªè¯</a></li>
+					<li><a href="/newmaterial_product.html">æ°ææå¼åä¸å¶é </a></li>
+					<li><a href="/servo_product.html">ä¼ºææ§å¶ç³»ç»å¼å</a></li>
+					<li><a href="/industryauto_product.html">èªå¨åè®¾å¤ç³»ç»éæ</a></li>
+				   </ul>				
+				</li>
+				<li><a>æ°é»èµè®¯</a>
+				   <ul>
+				    <li><a href="/company_news.html">å¬å¸å¨æ</a></li>
+					<li><a href="/industry_news.html">è¡ä¸èµè®¯</a></li>
+					<li><a href="/technology_news.html">ç§æåæ°</a></li>
+				   </ul>
+				</li>
+				<li><a href="contact.html">èç³»æä»¬</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<hr color="#333">
+
+<!--flash-->
+<div class="flash">
+  <div id="slideBox" class="slideBox">
+    <div class="bd">
+	<ul>
+
+	   <li><a href="http://www.cczkyc.com" target="_blank" title="ç½ç«ä¸çº¿"><img src="/upload/image/20160922/2016092221580624624.jpg" alt="ç½ç«ä¸çº¿"></a></li>
+
+	   <li><a href="http://www.cczkyc.com/news_14.html" target="_blank" title="æ¸©åº¦ç®±å¯ç¨"><img src="/upload/image/20170912/2017091220430579579.png" alt="æ¸©åº¦ç®±å¯ç¨"></a></li>
+
+	   <li><a href="http://www.cczkyc.com/news_12.html" target="_blank" title="è·å¾å¥é¡¹"><img src="/upload/image/20170913/20170913094387278727.png" alt="è·å¾å¥é¡¹"></a></li>
+
+        </ul>
+     </div>
+			<div class="hd">
+				<ul>
+
+				<li class="on"></li>
+
+				<li class="on"></li>
+
+				<li class="on"></li>
+
+				</ul>
+			</div>
+		</div>
+		<script id="jsID" type="text/javascript">
+jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,delayTime:1000});
+		</script>
+</div>
+<!--flash end-->
+
+	<section style="height:270px;width:1000px;margin:auto;text-align:left;margin-top:20px;margin-bottom: 20px">
+		<div style="float:left;width:49%;border:1px solid #CCCCCC;height:270px">
+			<div style="width:95%;height:30px;font-size:20px;line-height: 30px;margin:5px 10px 5px 10px;border-bottom:1px solid #CCCCCC;background-color: #31BCFC;">å¬å¸å¨æ <i>Company News</i></div>
+			<ul class="newlist">
+
+<li><a href="news_17.html"><span style="float:left">>2019å¹´èç§°è¯å®¡è¯åå¬ç¤º</span> <span style="float:right">[2019å¹´5æ30æ¥]</span></a></li>
+
+<li><a href="news_16.html"><span style="float:left">>å¾·å½æé©¬(IMAT)éªè¯æ»çGuenth...</span> <span style="float:right">[2017å¹´9æ16æ¥]</span></a></li>
+
+<li><a href="news_14.html"><span style="float:left">>ä¸­ç§è¿åç¬¬ä¸å°æ¸©åº¦ç®±å¯ç¨</span> <span style="float:right">[2017å¹´9æ12æ¥]</span></a></li>
+
+<li><a href="news_12.html"><span style="float:left">>æå¬å¸è·å¾2017âåå®¢ä¸­å½âåæçåæ°...</span> <span style="float:right">[2017å¹´8æ23æ¥]</span></a></li>
+
+<li><a href="news_8.html"><span style="float:left">>å¬å¸ç½ç«ä¸çº¿</span> <span style="float:right">[2016å¹´8æ7æ¥]</span></a></li>
+
+			</ul>
+		</div>
+		<div style="float:right;width:49%;border:1px solid #CCCCCC;height:270px">
+			<div style="width:95%;height:30px;font-size:20px;line-height: 30px;margin:5px 10px 5px 10px;border-bottom:1px solid #CCCCCC;background-color: #31BCFC;">è¡ä¸èµè®¯ <i>Industry News</i></div>
+			<ul class="newlist">
+
+<li>><a href="news_13.html">æºè½å¶é ââââä¸­å½å¶é 2025âçä¸»æ»æ¹å</a></li>
+
+<li>><a href="news_9.html">2016æªæ¥æ±½è½¦å¼åèå¤§ä¼å¹´åº¦TOP10æ­æï¼çå¼åèä»¬å¦ä½...</a></li>
+
+			</ul>
+		</div>
+	</section>
+	<section style="width:1000px;margin:auto;text-align:left;margin-top:20px;margin-bottom: 20px">
+		<ul class="friendlink">
+		  <li><b>åæé¾æ¥:</b></li> 
+		  <li><a href="http://www.baidu.com" rel="nofollow" target="_blank">ç¾åº¦</a></li>
+		  <li><a href="http://www.sae-china.org/" rel="nofollow" target="_blank">ä¸­å½æ±½è½¦å·¥ç¨å­¦ä¼</a></li>
+		  <li><a href="http://www.faw.com.cn/" rel="nofollow"  target="_blank">ä¸­å½ç¬¬ä¸æ±½è½¦éå¢å¬å¸</a></li>
+		</ul>
+	</section>
+	<footer>
+		<div class="centent footer" style="margin-top:20px;">
+
+			 <b style="font-family:microsoft Yahei">&copy;</b>é¿æ¥ä¸­ç§è¿åæ±½è½¦ææ¯å¼åæéå¬å¸   çæææ å¹¶ä¿çæææå©<br/>
+             å°åï¼åæçé¿æ¥å¸.    ICPå¤æ¡ï¼åICPå¤16005011å· 
+            <br/>
+			<script type="text/javascript" src="http://www.ccgswljg.gov.cn//scripts/businessLicense.js?id=412880715e97cab3015f04f850440066"></script>
+
+		</div>	
+	</footer>
+</body>
+</html>

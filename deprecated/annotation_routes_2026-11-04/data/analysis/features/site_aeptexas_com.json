@@ -1,0 +1,597 @@
+{
+ "items": [
+  {
+   "id": "I0",
+   "text": "The page is titled 'AEP Texas | Knowledge Is Power' and declares lang='en'. Its head has only two meta tags: charset and viewport.",
+   "evidence": "facts.title, facts.lang, meta_names: ['charset','viewport']",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|00"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I1",
+   "text": "The page has a single h1, 'KNOWLEDGE IS POWER.', set in all caps with a trailing period.",
+   "evidence": "h1_count: 1; h1.text 'KNOWLEDGE IS POWER.'",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|01",
+    "aeptexas_com|sonnet|00"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I2",
+   "text": "Helvetica Neue is the dominant typeface on 121 elements. Arial appears on 6 elements and is also the declared fallback.",
+   "evidence": "fonts_by_element_count: Helvetica Neue 121, Arial 6; h1 font_family '\"Helvetica Neue\", Arial, sans-serif'",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|03",
+    "aeptexas_com|sonnet|17"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I3",
+   "text": "Body text is 16px with a line height of 24.8px, a ratio of about 1.55.",
+   "evidence": "body_font_size 16px, body_line_height 24.8px",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|04",
+    "aeptexas_com|sonnet|18"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I4",
+   "text": "A red, rgb(218,41,28), is the single accent color. It is used for buttons, the alert banner, the outage-alert band, card titles and inline links.",
+   "evidence": "top_backgrounds rgb(218,41,28) x8; top_text_colors rgb(218,41,28) x8; primary_button bg",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|07",
+    "aeptexas_com|sonnet|04"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I5",
+   "text": "Body text is a near-black, rgb(29,31,32), rather than pure black. The same color is used for the dark quick-link bar and the footer background.",
+   "evidence": "body_color rgb(29,31,32); top_backgrounds rgb(29,31,32) x2; slices 00 and 02",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|08"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I6",
+   "text": "Section backgrounds alternate between white and a very light gray, rgb(244,245,245). This separates bands without using divider lines.",
+   "evidence": "top_backgrounds rgb(244,245,245) x4; slices 00–02 show alternating white and gray bands",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|09"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I7",
+   "text": "A thin light-gray utility bar at the very top holds a single underlined 'Español' link, right-aligned.",
+   "evidence": "slice_00 top strip with 'Español'",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|10",
+    "aeptexas_com|sonnet|05"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I8",
+   "text": "The logo is an SVG file loaded through an img tag, rendered at 74×56px from a natural size of 197×150. It has the alt text 'AEP Texas'.",
+   "evidence": "images[0] TEXAS-Primary-RGB-RG.svg rect 74x56, alt 'AEP Texas'",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|13",
+    "aeptexas_com|sonnet|07"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I9",
+   "text": "The hero image (phone.jpg) spans the full 1440px width at 440px high. It shows a smiling woman on a phone, darkened or washed out so the white headline stays readable.",
+   "evidence": "images[1] rect w1440 h440, natural 2000x576; slice_00 hero",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|02",
+    "aeptexas_com|opus|14",
+    "aeptexas_com|sonnet|01",
+    "aeptexas_com|sonnet|02"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I10",
+   "text": "Below the hero headline is a solid red rectangular callout in bold white text about pandemic scams.",
+   "evidence": "slice_00: 'Due to the pandemic, scams have been on the rise...' in red box",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|15",
+    "aeptexas_com|sonnet|03"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I11",
+   "text": "Directly under the hero, a dark bar splits into four equal columns of quick links separated by thin vertical dividers.",
+   "evidence": "slice_00: Electric Choice | Report an outage | Start, Stop, Move service | Rates & Tariffs",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|16",
+    "aeptexas_com|sonnet|08"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I12",
+   "text": "The 'Bring Home Energy Savings' section is center-aligned: a heading, a paragraph of about four lines, and one red CTA, 'Learn about incentives'.",
+   "evidence": "slice_00 centered section",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|17",
+    "aeptexas_com|opus|18",
+    "aeptexas_com|sonnet|09"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I13",
+   "text": "Each card image is wider in its source than its rendered 357×223 box (the electric-car image is 1302×450), so the images are cropped to a uniform aspect ratio.",
+   "evidence": "images[2] natural 1302x450 vs rect 357x223; images[3] 630x340",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|21",
+    "aeptexas_com|sonnet|11"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I14",
+   "text": "A full-width red band promotes outage alerts. An underlined white heading-style link and description sit on the left; a white button with red text, 'Sign up today', sits on the right.",
+   "evidence": "slice_01 red band 'Enroll in outage alerts' / 'Sign up today'",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|22",
+    "aeptexas_com|sonnet|13"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I15",
+   "text": "Three image-and-text feature rows alternate sides: meter image left, outages image right, community image left.",
+   "evidence": "images meter-status x160, outages-faq x744, community x160; slices 01–02",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|24",
+    "aeptexas_com|sonnet|14"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I16",
+   "text": "In each feature row the image is 536×357 and sits in a column at x=160 or x=744. The text column is vertically centered against the image.",
+   "evidence": "images[5..7] rect w536 h357; slice_01/02 centered text",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|25",
+    "aeptexas_com|sonnet|15"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I17",
+   "text": "The white 'Sign up today' button reverses the primary button's colors (white background, red text) so it shows against the red band.",
+   "evidence": "slice_01 white button with red label on red background",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|11",
+    "aeptexas_com|opus|12",
+    "aeptexas_com|opus|23",
+    "aeptexas_com|opus|26",
+    "aeptexas_com|sonnet|06",
+    "aeptexas_com|sonnet|19"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I18",
+   "text": "Content is held in a container about 1120px wide (x=160 to 1280) on a 1440px page, leaving 160px side margins.",
+   "evidence": "images x160 and right edges at 1280 (923+357; 744+536); page_width 1440",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|27",
+    "aeptexas_com|sonnet|29"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I19",
+   "text": "Photographs show people and everyday scenes: a woman on a phone, a woman on a laptop, a smiling man, a utility worker at a meter, a suburban house under a dark sky, and children on bikes.",
+   "evidence": "image filenames and slice content",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|28",
+    "aeptexas_com|opus|29",
+    "aeptexas_com|sonnet|30"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I20",
+   "text": "Every content image has an empty alt attribute (alt=''); only the logo has descriptive alt text. No alt attributes are missing.",
+   "evidence": "images[1..7] alt ''; alt_missing 0",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|30",
+    "aeptexas_com|sonnet|28"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I21",
+   "text": "Corners are mostly square: 110 elements have a 0 radius, 17 fall in the 1–7px bucket, and none are 8px or more or pill-shaped.",
+   "evidence": "border_radius_buckets: 0:110, 1_7:17, 8_15:0, 16_plus:0, pill:0",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|31",
+    "aeptexas_com|sonnet|16"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I22",
+   "text": "Decorative effects are minimal: 3 box shadows, 3 transitions, and no gradients, backdrop blur, animations or transforms.",
+   "evidence": "effects: box_shadows 3, transitions 3, gradient 0, backdrop_blur 0, animations 0, transforms 0",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|32",
+    "aeptexas_com|sonnet|20"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I23",
+   "text": "Semantic landmarks are header, nav, main, footer and 5 sections. There are no article, aside, figure or blockquote elements.",
+   "evidence": "semantic: header1, nav1, main1, section5, footer1, article0, aside0, figure0",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|34",
+    "aeptexas_com|sonnet|23"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I24",
+   "text": "The DOM includes a dialog element containing a form with 3 labeled inputs. Its h2 'Welcome back!' suggests a login modal that does not appear in the screenshot.",
+   "evidence": "tag_counts dialog1, form1, label3, input3; heading_outline 'Welcome back!'",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|35",
+    "aeptexas_com|sonnet|25"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I25",
+   "text": "Layout uses both CSS grid (5 elements) and flexbox (10 elements).",
+   "evidence": "layout display_grid 5, display_flex 10",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|37"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I26",
+   "text": "The footer has a near-black background. It holds a bold white nav row (Safety, Company, Clean Energy, Business) and a 'Need help? Call us.' line with a large bold phone number, 866.223.8508.",
+   "evidence": "slice_02 footer",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|38",
+    "aeptexas_com|sonnet|21"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I27",
+   "text": "Lower footer links and legal text are small and light gray. Some items are separated by pipe characters, and social links (Twitter, Facebook, YouTube) are plain text rather than icons.",
+   "evidence": "slice_02; top_text_colors rgb(211,213,213) x15; svgs 0",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|39",
+    "aeptexas_com|opus|40",
+    "aeptexas_com|sonnet|22"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I28",
+   "text": "The copy is brief and conversational, about 298 words in total, with one em dash ('Stay in the loop—get email...') and one exclamation mark ('Welcome to the AEP Family!').",
+   "evidence": "text_stats words 298, em_dashes 1, exclamations 1; slice_01 text",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|41",
+    "aeptexas_com|sonnet|31"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I29",
+   "text": "The cards are white with a subtle shadow and small rounded corners, set on the light-gray band. Each has an image on top, a red uppercase title and a short description.",
+   "evidence": "slice_01 cards; box_shadows 3; border_radius bucket_1_7: 17",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|05",
+    "aeptexas_com|opus|06",
+    "aeptexas_com|opus|19",
+    "aeptexas_com|opus|20",
+    "aeptexas_com|opus|42",
+    "aeptexas_com|sonnet|10",
+    "aeptexas_com|sonnet|32"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I30",
+   "text": "The page has 38 anchors, 3 buttons and only 3 ARIA attributes.",
+   "evidence": "counts anchors 38, buttons 3, aria_attrs 3",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|43",
+    "aeptexas_com|sonnet|26"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I31",
+   "text": "The page is 3501px tall at a width of 1440px, with 8 images and 1 script.",
+   "evidence": "layout page_height 3501, page_width 1440; counts images 8, scripts 1",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|44"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I32",
+   "text": "Class usage is sparse: 44 class attributes with 24 unique names, none of them Tailwind-style utility classes.",
+   "evidence": "classes total 44, unique 24, tailwind_like_fraction 0",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|opus|33",
+    "aeptexas_com|opus|36",
+    "aeptexas_com|opus|45",
+    "aeptexas_com|sonnet|27"
+   ],
+   "tier": "A"
+  },
+  {
+   "id": "I33",
+   "text": "The card copy is short, and the cards have uneven text lengths, so the white card bodies carry empty space below the shorter copy.",
+   "evidence": "Card 1 wraps to 3 lines; cards 2 and 3 to 2 lines, with the same card height",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|sonnet|12"
+   ],
+   "tier": "B"
+  },
+  {
+   "id": "I34",
+   "text": "The heading hierarchy is orderly, with one H1, five H2s and three H3s. The H3s are the card titles and the H2s are the section titles.",
+   "evidence": "heading_outline: h1 ×1, h2 ×5 incl. 'Welcome back!' in a dialog, h3 ×3",
+   "side": "generated",
+   "members": [
+    "aeptexas_com|sonnet|24"
+   ],
+   "tier": "B"
+  }
+ ],
+ "features": [
+  {
+   "statement": "Page title is a short brand-plus-tagline phrase, with lang declared and minimal head metadata (charset and viewport only).",
+   "family": "semantic_dom",
+   "items": [
+    "I0"
+   ]
+  },
+  {
+   "statement": "Hero headline is a single H1 set in all caps with a trailing period.",
+   "family": "typography",
+   "items": [
+    "I1"
+   ]
+  },
+  {
+   "statement": "A single neutral sans-serif family (Helvetica Neue with Arial fallback) is used across nearly all elements.",
+   "family": "typography",
+   "items": [
+    "I2"
+   ]
+  },
+  {
+   "statement": "Body text is 16px with generous line height of about 1.55.",
+   "family": "typography",
+   "items": [
+    "I3"
+   ]
+  },
+  {
+   "statement": "One saturated red accent color is used consistently for buttons, banners, card titles and links.",
+   "family": "color",
+   "items": [
+    "I4"
+   ]
+  },
+  {
+   "statement": "Text and dark bars use near-black instead of pure black, including body text, quick-link bar and footer background.",
+   "family": "color",
+   "items": [
+    "I5",
+    "I26"
+   ]
+  },
+  {
+   "statement": "Section bands alternate white and very light gray to separate content without divider lines.",
+   "family": "color",
+   "items": [
+    "I6"
+   ]
+  },
+  {
+   "statement": "A thin utility bar at the very top holds a single right-aligned underlined link.",
+   "family": "component",
+   "items": [
+    "I7"
+   ]
+  },
+  {
+   "statement": "Full-width hero photo with darkened overlay keeps the white headline readable, with a solid colored callout box beneath.",
+   "family": "imagery",
+   "items": [
+    "I9",
+    "I10"
+   ]
+  },
+  {
+   "statement": "A dark bar below the hero splits quick links into equal columns separated by thin vertical dividers.",
+   "family": "component",
+   "items": [
+    "I11"
+   ]
+  },
+  {
+   "statement": "Intro sections are center-aligned: heading, short paragraph, and one accent-colored call-to-action button.",
+   "family": "layout",
+   "items": [
+    "I12"
+   ]
+  },
+  {
+   "statement": "Full-width accent-colored promo band pairs a left-aligned text link and description with a right-side inverted button.",
+   "family": "component",
+   "items": [
+    "I14",
+    "I17"
+   ]
+  },
+  {
+   "statement": "Image-and-text feature rows alternate image side, with text column vertically centered against the image.",
+   "family": "layout",
+   "items": [
+    "I15",
+    "I16"
+   ]
+  },
+  {
+   "statement": "Content sits in a centered container about 1120px wide with 160px side margins on a 1440px page.",
+   "family": "layout",
+   "items": [
+    "I18"
+   ]
+  },
+  {
+   "statement": "Photography depicts real people and everyday scenes, cropped to uniform aspect ratios.",
+   "family": "imagery",
+   "items": [
+    "I19",
+    "I13"
+   ]
+  },
+  {
+   "statement": "Content images have empty alt text; only the logo carries descriptive alt text.",
+   "family": "semantic_dom",
+   "items": [
+    "I20",
+    "I8"
+   ]
+  },
+  {
+   "statement": "Corners are mostly square, with only small radii and no pill shapes.",
+   "family": "decoration",
+   "items": [
+    "I21"
+   ]
+  },
+  {
+   "statement": "Decoration is minimal: few shadows and transitions, with no gradients, blur, animations or transforms.",
+   "family": "decoration",
+   "items": [
+    "I22"
+   ]
+  },
+  {
+   "statement": "Semantic landmarks (header, nav, main, footer, sections) are used, while article, aside and figure are absent.",
+   "family": "semantic_dom",
+   "items": [
+    "I23"
+   ]
+  },
+  {
+   "statement": "A hidden dialog with a labeled form, such as a login modal, is present in the DOM.",
+   "family": "component",
+   "items": [
+    "I24"
+   ]
+  },
+  {
+   "statement": "Footer is dark with a bold white nav row and a prominent bold phone-number help line.",
+   "family": "component",
+   "items": [
+    "I26"
+   ]
+  },
+  {
+   "statement": "Lower footer links and legal text are small and light gray, pipe-separated, with plain-text social links instead of icons.",
+   "family": "component",
+   "items": [
+    "I27"
+   ]
+  },
+  {
+   "statement": "Copy is brief and conversational, with sparing punctuation flourishes such as an occasional exclamation mark or em dash.",
+   "family": "copy",
+   "items": [
+    "I28",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Cards are white with subtle shadow and small radii, stacking image, red uppercase title and short description.",
+   "family": "component",
+   "items": [
+    "I29",
+    "I33"
+   ]
+  },
+  {
+   "statement": "Heading hierarchy is orderly: one H1, H2 section titles, H3 card titles.",
+   "family": "semantic_dom",
+   "items": [
+    "I34"
+   ]
+  },
+  {
+   "statement": "Class naming is sparse and semantic, with no utility-class framework patterns.",
+   "family": "semantic_dom",
+   "items": [
+    "I32"
+   ]
+  },
+  {
+   "statement": "Layout combines CSS grid and flexbox.",
+   "family": "layout",
+   "items": [
+    "I25"
+   ]
+  }
+ ]
+}
