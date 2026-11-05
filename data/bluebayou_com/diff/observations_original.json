@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "The page title names both parks and the city, and it is the only branded title element.",
+  "category": "copy",
+  "evidence": "title: 'Blue Bayou Waterpark & Dixie Landin' | Baton Rouge, LA'; meta names include description, og:title, twitter:card."
+ },
+ {
+  "observation": "There are four h1 elements, one per major band, instead of a single page title. Heading levels jump around: an h2 comes first, and h3 pairs follow h2 labels.",
+  "category": "semantic structure",
+  "evidence": "h1_count 4: 'PLAY YOUR DAY AWAY', 'LAND OF THE GIANTS', 'THRILLS', 'GETAWAY'; outline starts with h2 'OPENING DAY MAY 29, 2021'."
+ },
+ {
+  "observation": "The card headings are split into two lines of different types. A small h2 eyebrow (BUY, SEASON, BIRTHDAY) sits above a large h3 in the brush font (TICKETS, PASSES, PARTIES).",
+  "category": "typography",
+  "evidence": "Outline: h2 'BUY' / h3 'TICKETS', h2 'SEASON' / h3 'PASSES', h2 'BIRTHDAY' / h3 'PARTIES'."
+ },
+ {
+  "observation": "The page uses no landmark elements. Structure is built from divs and anchors, with four navs.",
+  "category": "semantic structure",
+  "evidence": "semantic: header 0, main 0, section 0, footer 0; div 99, a 58, nav 4."
+ },
+ {
+  "observation": "The display font is a hand-painted brush face, used in white for the hero. It is rotated and sits over the photos.",
+  "category": "typography",
+  "evidence": "h1 font 'Handyhandy', 120px, weight 400, white, centered; slice 0 shows the slanted 'PLAY YOUR DAY AWAY'."
+ },
+ {
+  "observation": "A geometric sans (Brandon Grotesque) carries nearly all text. It appears in uppercase with wide letter-spacing for labels, buttons and footer links.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Brandongrotesque 167, Handyhandy 14; body 18px/28px; 'START THE EXCITEMENT' and footer links are spaced caps."
+ },
+ {
+  "observation": "Two icon fonts are present: a social icon font for the three footer glyphs and Webflow's icon font. There are no inline SVGs.",
+  "category": "imagery",
+  "evidence": "fonts 'Social icons' 6, 'webflow-icons' 4; counts.svgs 0; Facebook, Twitter and YouTube squares in the footer."
+ },
+ {
+  "observation": "The hero is a split-screen: a teal-tinted water photo on the left and a mustard-tinted Ferris wheel photo on the right, with a hard seam at the center.",
+  "category": "layout",
+  "evidence": "Slice 0 shows the color change at x=720; backgrounds rgba(0,226,200,0.8) and rgba(242,181,14,0.8)."
+ },
+ {
+  "observation": "Both hero photos are color-washed with semi-transparent overlays, so the photography shows in a single hue per side.",
+  "category": "imagery",
+  "evidence": "top_backgrounds include rgba(0, 226, 200, 0.8) and rgba(242, 181, 14, 0.8)."
+ },
+ {
+  "observation": "A red announcement banner is pinned over the top center of the hero. It has a bold white centered title, body copy and an X close control.",
+  "category": "component",
+  "evidence": "Red rgb(244,0,9) panel at x≈360–1080 in slice 0; h2 'OPENING DAY MAY 29, 2021'; slight rounded bottom corners."
+ },
+ {
+  "observation": "The only pill-shaped radius on the page is that one element; the other 190 elements have 0 radius. The result is a square-cornered look for buttons and cards.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 190, bucket_pill 1, all other buckets 0; primary button radius 0px."
+ },
+ {
+  "observation": "A repeated brush-stroke SVG torn-edge divider separates the sections. It is stretched to full width (1440×175) and reused in the header, hero, thrills, summer, getaway and footer bands.",
+  "category": "decoration",
+  "evidence": "brush-2.svg appears 6 times at y=-35, 780, 1541, 2352, 3073, 4280, each w1440 h175."
+ },
+ {
+  "observation": "Three equal orange cards overlap the bottom of the hero. Each has a small caps label, a large brush heading and a white full-width button.",
+  "category": "component",
+  "evidence": "Cards rgb(219,77,35), about 420px wide, with shadows at y≈736–935; primary button bg white, color rgb(219,77,35), padding 10px 20px."
+ },
+ {
+  "observation": "The call-to-action buttons all use small bold uppercase text, but in different fills: white, teal, yellow. The secondary action is a plain text link ('OR BUY TICKETS') beside a solid button.",
+  "category": "component",
+  "evidence": "'GET A SEASON PASS' teal on white and yellow rgb(242,181,14) on dark; 'OR BUY TICKETS' text links in blue and white."
+ },
+ {
+  "observation": "The palette is saturated and tied to the brand: aqua blue (0,152,255), burnt orange (219,77,35), yellow (242,181,14), Coca-Cola red (244,0,9), teal and white. Body text is dark gray (51,51,51).",
+  "category": "color",
+  "evidence": "top_backgrounds and top_text_colors; body_color rgb(51,51,51); text colors orange 36, blue 33 elements."
+ },
+ {
+  "observation": "Blue is the main link color on white, and orange is used for footer column headings. Both come from the brand palette instead of a neutral gray.",
+  "category": "color",
+  "evidence": "Footer links 'PARK MAPS' in rgb(0,152,255); 'Parks', 'Plan', 'Tickets', 'More' in rgb(219,77,35)."
+ },
+ {
+  "observation": "The 'Land of the Giants' band is an image-and-text split. A 734×490 slide photo is on the left, with the logo, eyebrow, large brush heading, copy and buttons on the right.",
+  "category": "layout",
+  "evidence": "landofthegiants jpeg rect x82 y1037 w734 h490; Blue Bayou logo at x838; 'ENTER THE' eyebrow."
+ },
+ {
+  "observation": "Each brand section opens with its logo, then a small caps eyebrow ('ENTER THE', 'EXPERIENCE THE', 'PLAN YOUR SUMMER'), then a big brush heading.",
+  "category": "copy",
+  "evidence": "Slices 0–2 show this stack for LAND OF THE GIANTS, THRILLS and GETAWAY."
+ },
+ {
+  "observation": "The 'Thrills' band is a full-width photo with an orange gradient wash that fades from transparent on the left to solid on the right. White text sits on the right half.",
+  "category": "imagery",
+  "evidence": "gradient_backgrounds 1; slice 1 shows a laughing rider photo turning into orange (219,77,35); Dixie Landin' logo at x800."
+ },
+ {
+  "observation": "The Dixie Landin' closure notice appears as body copy in the Thrills band. It is a plain paragraph, not a banner.",
+  "category": "copy",
+  "evidence": "'Due to Covid-19 Dixie Landin' Theme Park will remain closed throughout the 2021 Season. We will see you in 2022.'"
+ },
+ {
+  "observation": "The 'Summer is waiting for you' wordmark is a large artwork with a pool-water texture inside the lettering. It sits alone on white with a lot of empty space around it.",
+  "category": "imagery",
+  "evidence": "Slices 1–2 show the textured blue and yellow lettering centered at about x400–1060. It is not in the alt-listed images, so it is probably a CSS background."
+ },
+ {
+  "observation": "A full-width blue band holds a centered 'STAY UP TO DATE' heading. Below it is one line of text with inline small-caps links for Facebook and Newsletter.",
+  "category": "component",
+  "evidence": "h3 'STAY UP TO DATE'; text 'Follow us on FACEBOOK or sign up for our NEWSLETTER.' on rgb(0,152,255)."
+ },
+ {
+  "observation": "The getaway area is a two-column block of equal halves separated by thin white gutters. A soft-serve cone photo is on the left and a blue panel with a two-column link list is on the right.",
+  "category": "layout",
+  "evidence": "Slice 2 shows the photo at x0–715 and the blue panel at x725–1440; links PARK MAPS, HOTELS, DIRECTIONS, CORPORATE EVENTS, FOOD & CONCESSIONS."
+ },
+ {
+  "observation": "The getaway panel repeats the yellow 'GET A SEASON PASS' button and the 'OR BUY TICKETS' link. A small fine-print paragraph about the second-day return follows.",
+  "category": "copy",
+  "evidence": "Slice 3 top shows 'If you pay the full daily admission price...' in small white text."
+ },
+ {
+  "observation": "A Coca-Cola sponsor band is red with a white logo. A product can image extends up out of the band and over the photo above it, and it overlaps the brush edge.",
+  "category": "imagery",
+  "evidence": "coke-can-full.png at y4071 h279 overlaps brush-2.svg; coke-white png 324×108; image_overlaps lists the can with the brush."
+ },
+ {
+  "observation": "The sponsor headline repeats 'SAVE $5' at two sizes. The heading hierarchy runs from h3 to h2.",
+  "category": "copy",
+  "evidence": "h3 'SAVE $5' and h2 'SAVE $5 WITH ANY COCA-COLA CAN'."
+ },
+ {
+  "observation": "The footer is a set of link columns under orange brush-font headings, with uppercase blue links. Spacing between columns is uneven, and the Plan column splits into two sub-columns.",
+  "category": "layout",
+  "evidence": "Headings 'Parks', 'Plan', 'Tickets', 'More' at x82, 406, 946, 1162; 'CORPORATE EVENTS' and 'CALENDAR' at x666."
+ },
+ {
+  "observation": "The social icons are three solid blue squares in the footer, centered above a small light-gray copyright line.",
+  "category": "component",
+  "evidence": "Facebook, Twitter and YouTube squares at about y785; '© Blue Bayou / Dixie Landin'. All Rights Reserved.' in rgb(189,189,189)."
+ },
+ {
+  "observation": "All 13 images carry empty alt text. This includes the logos and content photos, but alt is not missing.",
+  "category": "semantic structure",
+  "evidence": "alt_missing 0, and every image entry in images has alt ''."
+ },
+ {
+  "observation": "The page is long and divided into color bands that alternate between white and saturated fills. It uses flexbox but no CSS grid.",
+  "category": "layout",
+  "evidence": "page_height 4793, width 1440; display_flex 14, display_grid 0."
+ },
+ {
+  "observation": "Shadows are used lightly. The orange cards and the colored buttons have drop shadows, and there is no backdrop blur and no keyframe animation.",
+  "category": "decoration",
+  "evidence": "box_shadows 9, backdrop_blur 0, animations 0, transitions 61, transforms 10."
+ },
+ {
+  "observation": "Class names look like a Webflow export. About 40% of the classes resemble utility classes, and the page has 86 unique classes across 254 uses. Inline style attributes are few.",
+  "category": "DOM",
+  "evidence": "tailwind_like_fraction 0.398; classes total 254, unique 86; inline_style_attrs 9; webflow-icons font; image names with Webflow-style ID prefixes."
+ },
+ {
+  "observation": "The header is a white strip with the Blue Bayou logo at the far left and the Dixie Landin' logo at the far right. It has no visible text menu. The red banner fills the space between them.",
+  "category": "layout",
+  "evidence": "Logos at x10 (194×70) and x1162 (232×70); slice 0 shows the banner covering the center."
+ },
+ {
+  "observation": "Copy is short and promotional. The page has about 251 words, one emoji, no exclamation marks and no em dashes. Headings are all caps.",
+  "category": "copy",
+  "evidence": "text_stats words 251, emoji 1, em_dashes 0, exclamations 0; headings like 'PLAY YOUR DAY AWAY'."
+ },
+ {
+  "observation": "The page uses two logo files repeatedly. Each logo shows up in the header and again as the section marker for its park.",
+  "category": "imagery",
+  "evidence": "Blue Bayou Logo.svg at y10 and y1037; Dixie Landin Logo.svg at y10 and y1833."
+ },
+ {
+  "observation": "Page content is centered in a container with large side margins. The hero text and cards span nearly the full width, but the feature rows start at x82.",
+  "category": "layout",
+  "evidence": "Cards start at x≈29; the giants photo at x82; footer columns at x82."
+ }
+]

@@ -1,0 +1,453 @@
+[
+ {
+  "observation": "The page uses a single font stack, Helvetica Neue/Helvetica/Arial sans-serif, on 307 of 308 elements. Hierarchy comes from size and weight, not from a second typeface.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Helvetica Neue 307, Arial 1; no webfont stylesheets (stylesheets: 0)",
+  "element_ids": []
+ },
+ {
+  "observation": "The H1 is very large (70.4px, weight 700, white) and left-aligned over the hero photo. The phrase “Epicenter of the Americas.” is wrapped in an em and rendered in amber/yellow, so one headline carries two colors.",
+  "category": "typography",
+  "evidence": "h1 font_size 70.4px, weight 700, color white; em inside h1 at 426,323; screenshot shows yellow text",
+  "element_ids": [
+   "e16",
+   "e17"
+  ]
+ },
+ {
+  "observation": "The hero is a full-width night skyline photo with a dark navy gradient overlay on the left. A diagonal white wedge (triangle.svg, 1440x171) cuts the bottom edge of the hero into the next section.",
+  "category": "imagery",
+  "evidence": "img triangle.svg at 0,637,1440,171 with empty alt; gradient_backgrounds: 1; hero section 680px tall",
+  "element_ids": [
+   "e14",
+   "e20"
+  ]
+ },
+ {
+  "observation": "The hero text block is indented to x=426. Every other section aligns to a 1080px container starting at x=180, so the hero copy sits inset from the page grid.",
+  "category": "layout",
+  "evidence": "e15/e16/e18/e19 x=426 vs section content x=180 width 1080",
+  "element_ids": [
+   "e15",
+   "e16",
+   "e18",
+   "e19"
+  ]
+ },
+ {
+  "observation": "Small uppercase, letter-spaced eyebrow labels sit above headings throughout the page. Their colors vary by section: yellow in the hero and contact blocks, coral on the Engage and Living sections, gray-blue on Who We Are.",
+  "category": "typography",
+  "evidence": "Text: MIAMI DOWNTOWN DEVELOPMENT AUTHORITY, WHO WE ARE, THREE WAYS IN, LIVING IN DOWNTOWN MIAMI, GET IN TOUCH; each is a 21px-high p",
+  "element_ids": [
+   "e15",
+   "e22",
+   "e46",
+   "e64",
+   "e138"
+  ]
+ },
+ {
+  "observation": "The palette is dark navy plus a coral-red accent (rgb 255,90,79), with amber and light blue as secondary accents. Navy fills the top bar, header, engage section, contact band and footer. Pale blue (233,241,251) is used for stat tiles and the Follow The Sun band.",
+  "category": "color",
+  "evidence": "top_backgrounds: rgb(10,31,68) x5, rgb(233,241,251) x4, rgb(255,90,79) x3, rgb(6,20,45) x3; body text rgb(22,33,58)",
+  "element_ids": [
+   "e45",
+   "e84",
+   "e137",
+   "e157"
+  ]
+ },
+ {
+  "observation": "The primary call to action is a coral pill button with white bold text, repeated for 'Discover the Possibilities', 'Click Here' and 'Subscribe'. Secondary actions use outlined navy pills with a 2px border and transparent fill.",
+  "category": "components",
+  "evidence": "Buttons at e19 (240x52), e89, e155 are coral; e44 'Contact us', e119 'View All News', e136 'View All Events' are outlined; bucket_pill radius count 17",
+  "element_ids": [
+   "e19",
+   "e89",
+   "e155",
+   "e44",
+   "e119",
+   "e136"
+  ]
+ },
+ {
+  "observation": "A thin dark utility bar sits above the header. It has two text links on the left, plus a search input and a language select on the right. The select has 16 options (Afrikaans, Albanian, Arabic, Chinese and others).",
+  "category": "components",
+  "evidence": "e1 0,0,1440,47; form e4 contains input e5 and select e6; tag_counts option: 16",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e5",
+   "e6"
+  ]
+ },
+ {
+  "observation": "The main navigation has three button elements with dropdown carets (Focus Areas, Explore Downtown, About Us), right-aligned in the header. A small animated GIF logo (44x64) is on the left. The header is a navy bar, 80px high.",
+  "category": "navigation",
+  "evidence": "nav e10 with buttons e11–e13; img logo-animated.gif 215x315 natural displayed 44x64; header 0,170,1440,80",
+  "element_ids": [
+   "e7",
+   "e9",
+   "e10",
+   "e11",
+   "e12",
+   "e13"
+  ]
+ },
+ {
+  "observation": "The header sits at y=170 in the element list while the hero section starts at y=127. The header therefore appears to overlay the top of the hero, and the top bar is stacked above it.",
+  "category": "layout",
+  "evidence": "header y=170 h=80; section e14 y=127; screenshot shows header at ~47–127",
+  "element_ids": [
+   "e7",
+   "e14"
+  ]
+ },
+ {
+  "observation": "Three stat tiles (1967 Established, 15 Board members, 2 Square miles) are built as dl/dt/dd. They are pale-blue rounded cards with large bold navy numerals and small gray labels, placed beside the intro copy.",
+  "category": "components",
+  "evidence": "tag_counts dl:1, dd:3, dt:3; tiles 139x114 at x=811, 966, 1121; bg rgb(233,241,251)",
+  "element_ids": [
+   "e30",
+   "e33",
+   "e36",
+   "e31",
+   "e34"
+  ]
+ },
+ {
+  "observation": "The 'Who We Are' section is a two-column split. The left column holds the H2, two paragraphs and a Governance note. The right column holds the stats, a 'Districts we serve' pill list and a Contact us button.",
+  "category": "layout",
+  "evidence": "left col x=180 w=583; right col x=811 w=449; display_grid count 8",
+  "element_ids": [
+   "e21",
+   "e23",
+   "e26",
+   "e30",
+   "e38",
+   "e44"
+  ]
+ },
+ {
+  "observation": "The Governance block is a blockquote-style callout: a coral vertical rule on its left edge, indented text, and an h3 heading. It is a div, not a blockquote element.",
+  "category": "components",
+  "evidence": "e26 div 180,1210,583,225 with h3 at x=203; blockquote count 0; screenshot shows coral left border",
+  "element_ids": [
+   "e26",
+   "e27",
+   "e28",
+   "e29"
+  ]
+ },
+ {
+  "observation": "The districts are shown as outlined pill chips (rounded-full, navy border, bold navy text) in a ul. They wrap to two lines of different widths.",
+  "category": "components",
+  "evidence": "li e40 233x38, e41 297x38, e42 84x38 in ul e39",
+  "element_ids": [
+   "e39",
+   "e40",
+   "e41",
+   "e42"
+  ]
+ },
+ {
+  "observation": "The 'Engage' section is a full-bleed dark navy band with a centered eyebrow and H2. Below them are three equal rounded cards in a 3-column grid. Each card has a 4px colored top edge (coral, amber, sky blue), a '01/02/03' numeral, an h3, a short paragraph and an underlined arrow link.",
+  "category": "components",
+  "evidence": "articles e48, e53, e58 each 344x305 at x=180/548/916; links text 'Resources for residents →', 'Business support →', 'Explore →'",
+  "element_ids": [
+   "e45",
+   "e48",
+   "e53",
+   "e58",
+   "e49",
+   "e52"
+  ]
+ },
+ {
+  "observation": "The card descriptions are 17px light-blue/gray text on the navy cards, and the headings are white bold. This is a dark-surface variant of the same card pattern used elsewhere on the page in a light version.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(159,180,217) x59; rgb(255,255,255) x69; card bg rgb(16,44,92)",
+  "element_ids": [
+   "e48",
+   "e50",
+   "e51"
+  ]
+ },
+ {
+  "observation": "The 'Living in Downtown Miami' section has a left-aligned H2 and an intro paragraph limited to about 736px. Below them is a 4-column grid of small link cards, each with a bold label and a coral right arrow. The cards have thin borders and radius, with no fill.",
+  "category": "components",
+  "evidence": "ul e67 180,2369,1080,292; cards 260x89 at x=180/453/726/1000; 10 tiles",
+  "element_ids": [
+   "e67",
+   "e68",
+   "e69",
+   "e71",
+   "e73",
+   "e75"
+  ]
+ },
+ {
+  "observation": "The link-card grid has uneven card heights and a few anchors placed directly in the ul without an li wrapper. Cards with two-line labels are taller (89px) than single-line ones (61px). Rows therefore look ragged, and the last row has 2 cards in a 4-column grid.",
+  "category": "layout",
+  "evidence": "e68, e69, e76, e83 are a directly under ul with h=89, while e71, e73 inside li have a h=61",
+  "element_ids": [
+   "e68",
+   "e69",
+   "e71",
+   "e76",
+   "e83"
+  ]
+ },
+ {
+  "observation": "The two promo cards sit on a pale-blue band. The left is a white card with a PNG logo, h3, copy and a coral button. The right is a yellow-orange gradient card with a 'FOR KIDS' label and two buttons: an outlined one and a solid navy one. Both have soft shadows.",
+  "category": "components",
+  "evidence": "articles e85 and e90 each 528x383; box_shadows: 3; gradient_backgrounds: 1; band bg rgb(233,241,251)",
+  "element_ids": [
+   "e84",
+   "e85",
+   "e86",
+   "e90",
+   "e94",
+   "e95"
+  ]
+ },
+ {
+  "observation": "The Follow The Sun logo is a 1267x717 PNG scaled down to 230x130. It is the only product-style imagery inside the cards; the amber card has no image and leaves a large empty gap between its text and its buttons.",
+  "category": "imagery",
+  "evidence": "img FollowtheSun-logo.png natural 1267x717 rect 230x130; e93 ends y≈2942 while buttons start y=3092",
+  "element_ids": [
+   "e86",
+   "e90",
+   "e93",
+   "e94"
+  ]
+ },
+ {
+  "observation": "A full-width photo band (1440x520) of a sunset skyline with palm trees interrupts the text sections. It has no overlay text and uses a figure/figcaption. The caption is a thin navy strip with small white centered text and underlined credit links (photo title, Flickr user, CC BY-SA 2.0).",
+  "category": "imagery",
+  "evidence": "figure e96 0,3244,1440,560; img skyline.jpg 2048x954 shown at 1440x520; figcaption 40px high with 3 links",
+  "element_ids": [
+   "e96",
+   "e97",
+   "e98",
+   "e99",
+   "e100",
+   "e101"
+  ]
+ },
+ {
+  "observation": "The news and events section is a two-column layout under the headings 'Latest news' and 'Upcoming events'. Each heading is a large bold H2 with a thick navy rule beneath it. Items are separated by thin hairlines.",
+  "category": "layout",
+  "evidence": "h2 e103 at x=180 w=516; e120 at x=744 w=516; articles e104/e109/e114 and e121/e126/e131",
+  "element_ids": [
+   "e103",
+   "e120",
+   "e104",
+   "e121"
+  ]
+ },
+ {
+  "observation": "The news items have a small uppercase gray source label (WSVN 7 NEWS, TELEMUNDO 51 · EN ESPAÑOL) and a coral date in a time element. They also have a bold h3 headline and an underlined 'Read More' link. One headline is in Spanish, with no lang attribute visible in the facts.",
+  "category": "copy",
+  "evidence": "time count 6; e105 'WSVN 7 NEWS', e110 'TELEMUNDO 51 · EN ESPAÑOL', e112 Spanish headline",
+  "element_ids": [
+   "e104",
+   "e105",
+   "e106",
+   "e107",
+   "e109",
+   "e112"
+  ]
+ },
+ {
+  "observation": "The event items lead with a coral date (6.3.21, 6.14.21, 6.17.21) in a time element. They follow with a bold title, a gray location line and an underlined 'See Details' link. Dates are in 2021 and the footer says © 2019, so the content is dated.",
+  "category": "copy",
+  "evidence": "e122 '6.3.21', e127 '6.14.21', e132 '6.17.21'; e207 '© 2019 Miami Downtown Development Authority'",
+  "element_ids": [
+   "e121",
+   "e122",
+   "e123",
+   "e124",
+   "e125",
+   "e207"
+  ]
+ },
+ {
+  "observation": "In-card and list links are plain text links, bold and underlined ('Read More', 'See Details', 'Resources for residents →'). Standalone actions use pill buttons. So the page has two separate link treatments.",
+  "category": "components",
+  "evidence": "e108, e113, e118, e125 are 77–79px wide text anchors; e52, e57, e62 end in →",
+  "element_ids": [
+   "e108",
+   "e113",
+   "e125",
+   "e130",
+   "e52",
+   "e57"
+  ]
+ },
+ {
+  "observation": "The contact band is a dark navy two-column section. The left column has a yellow eyebrow, a white H2, an email link and an @downtownmia handle, five outlined social pills (Instagram, Twitter, YouTube, Facebook, LinkedIn) and a translucent 'Public records notice' box. The right column has the newsletter signup.",
+  "category": "components",
+  "evidence": "section e137 0,4595,1440,473; ul e143 with 5 anchors; notice e149 115px high; rgba(255,255,255,0.08) background x2",
+  "element_ids": [
+   "e137",
+   "e140",
+   "e143",
+   "e144",
+   "e149",
+   "e153"
+  ]
+ },
+ {
+  "observation": "The subscribe form pairs a wide white pill input (381x55) with an attached coral 'Subscribe' pill button. A translucent legal note about Florida public records sits underneath.",
+  "category": "components",
+  "evidence": "form e153 744,4776,516,55; input e154 381x55; button e155 125x55; note e156",
+  "element_ids": [
+   "e153",
+   "e154",
+   "e155",
+   "e156"
+  ]
+ },
+ {
+  "observation": "The Public records disclaimer is repeated in two places: a left-side notice and a right-side note under the form. Both are small text in rounded translucent panels.",
+  "category": "copy",
+  "evidence": "e149 'Public records notice: Under Florida law…' and e156 'Under Florida law, email addresses are public records…'",
+  "element_ids": [
+   "e149",
+   "e156"
+  ]
+ },
+ {
+  "observation": "The footer is a very dark navy block (rgb 6,20,45) with four equal columns, each with an h4 heading and a ul of muted light-blue links. It ends with a hairline rule and a copyright row with credits left and right.",
+  "category": "layout",
+  "evidence": "h4 x=180/458/736/1014 w=246; footer 0,5069,1440,362; e206 holds © 2019 and 'ADA Compliance · Website made by Pacific54'",
+  "element_ids": [
+   "e157",
+   "e158",
+   "e170",
+   "e178",
+   "e192",
+   "e206"
+  ]
+ },
+ {
+  "observation": "The columns have different link counts (5, 3, 6, 6), so the footer column heights vary. Long labels such as 'Business Support + Economic Development' wrap to two lines.",
+  "category": "layout",
+  "evidence": "ul e159 162px high, e171 81px, e179 167px; e162 48px high two-line item",
+  "element_ids": [
+   "e159",
+   "e171",
+   "e179",
+   "e162"
+  ]
+ },
+ {
+  "observation": "The semantic structure is fairly rich: one header, one nav, one main, 7 sections, 11 articles, one footer, one figure/figcaption, and time elements for dates. There are no aside or blockquote elements and no JSON-LD.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 7, article 11, footer 1, figure 1; jsonld_blocks 0",
+  "element_ids": []
+ },
+ {
+  "observation": "There is exactly one H1, and h2 and h3 follow it in order. The footer headings jump to h4 with no h5, so the outline stays shallow. The hero eyebrow is a p rather than a heading.",
+  "category": "structure",
+  "evidence": "h1_count 1; heading_outline: 7 h2, 13 h3, 4 h4",
+  "element_ids": [
+   "e16",
+   "e23",
+   "e158"
+  ]
+ },
+ {
+  "observation": "The styling is hand-written CSS in a single inline style block, with no external stylesheets and a single script. Class use is light: 94 class attributes with 43 unique names, and only 3% look like Tailwind utilities. 11 elements carry inline style attributes.",
+  "category": "structure",
+  "evidence": "style tag 1, stylesheets 0, scripts 1; classes total 94 unique 43 tailwind_like_fraction 0.032; inline_style_attrs 11",
+  "element_ids": []
+ },
+ {
+  "observation": "Corner radii vary by role. About 246 elements have square corners. The cards use roughly 16px or larger radii. Buttons, chips and inputs are fully pill-shaped (17 elements). The Menu button has an 8px radius.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:246, 1–7:22, 8–15:15, 16+:8, pill:17; primary_button radius 8px",
+  "element_ids": [
+   "e48",
+   "e85",
+   "e90",
+   "e19"
+  ]
+ },
+ {
+  "observation": "Effects are restrained. There are only 3 box shadows (on the promo cards), one gradient, no backdrop blur, no animations and no transforms. There are 18 transitions, which suggests hover states on links and buttons.",
+  "category": "decoration",
+  "evidence": "box_shadows 3, gradient_backgrounds 1, backdrop_blur 0, animations 0, transforms 0, transitions 18",
+  "element_ids": []
+ },
+ {
+  "observation": "Body text is 17px with a 28.05px line height (about 1.65), in muted slate (rgb 22,33,58 and 86,98,122) on white. H2s are 38.4px bold with tight leading. Paragraph measure is capped around 583–736px.",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 28.05px; h2 38.4px/700; e24 w=583, e66 w=736",
+  "element_ids": [
+   "e23",
+   "e24",
+   "e66"
+  ]
+ },
+ {
+  "observation": "Background colors alternate by section to create bands: a photo hero, white, navy, white, pale blue, a full-width photo, white, navy and a darker navy. The content is capped at 1080px (x 180–1260) on a 1440px viewport.",
+  "category": "layout",
+  "evidence": "sections e14, e21, e45, e63, e84, e96, e102, e137, e157 all full-width 1440; content x=180–1260",
+  "element_ids": [
+   "e14",
+   "e21",
+   "e45",
+   "e63",
+   "e84",
+   "e96",
+   "e102",
+   "e137",
+   "e157"
+  ]
+ },
+ {
+  "observation": "Text-only links and arrows are used as icons. There are no SVG elements (svgs: 0). Directional cues are '→' text characters, and the nav carets appear to be CSS or text glyphs. Social links are text pills with no logos.",
+  "category": "decoration",
+  "evidence": "svgs 0; link text 'Business support →'; social anchors e144–e148 text only",
+  "element_ids": [
+   "e52",
+   "e68",
+   "e144",
+   "e145",
+   "e146"
+  ]
+ },
+ {
+  "observation": "The page has 4 images in total, and all have alt text (alt_missing 0). The decorative triangle uses an empty alt. Imagery is limited to the logo, a divider shape, one program logo and one photo, and the hero photo is likely applied as a CSS background.",
+  "category": "imagery",
+  "evidence": "images count 4; triangle.svg alt ''; hero photo not in images list",
+  "element_ids": [
+   "e9",
+   "e20",
+   "e86",
+   "e97"
+  ]
+ },
+ {
+  "observation": "The copy has a civic-agency tone and some promotional lines. It uses an informal term, 'DWNTWNRs', in two near-duplicate link labels ('Message to Our DWNTWNRs' and 'Message to DWNTWNRs'). The text stats show no emoji, no exclamation marks and no em dashes, with 687 words overall.",
+  "category": "copy",
+  "evidence": "e76 and e83 labels; text_stats words 687, emoji 0, exclamations 0, em_dashes 0",
+  "element_ids": [
+   "e76",
+   "e83"
+  ]
+ },
+ {
+  "observation": "Two link tiles in the living grid duplicate the same destination wording. 'Small Business & Loan Assistance' and 'Small Business Assistance' sit next to each other, and the 'Engage' card for business repeats the same theme. Several topics are repeated across the engage cards, link grid and footer.",
+  "category": "copy",
+  "evidence": "e68 and e69 adjacent; footer 'Business Support + Economic Development' e163",
+  "element_ids": [
+   "e68",
+   "e69",
+   "e57",
+   "e163"
+  ]
+ }
+]

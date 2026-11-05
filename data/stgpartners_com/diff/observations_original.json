@@ -1,0 +1,147 @@
+[
+ {
+  "observation": "The page renders as unstyled browser-default HTML. Its stylesheets did not visibly apply: the body is black Times New Roman text on a transparent/white background, with no layout CSS in effect.",
+  "category": "overall",
+  "evidence": "fonts_by_element_count: Times New Roman 161 elements; body_bg rgba(0,0,0,0); body_color rgb(0,0,0); body font-size 16px; line-height normal"
+ },
+ {
+  "observation": "All content sits in a single left-aligned column flush against the left edge at x=8, which is the default body margin. The right ~60% of the 1440px viewport is empty.",
+  "category": "layout",
+  "evidence": "image rects all x=8; page_width 1440; screenshot shows text hugging the left edge"
+ },
+ {
+  "observation": "No flex or grid layout is in use. Every block stacks vertically in normal flow, so there are no columns, cards or side-by-side regions.",
+  "category": "layout",
+  "evidence": "display_grid 0, display_flex 0"
+ },
+ {
+  "observation": "The page is short, about 2237px tall, and consists of vertically stacked sections with no visible container width or max-width.",
+  "category": "layout",
+  "evidence": "page_height 2237; 2 slices"
+ },
+ {
+  "observation": "The title and first h1 is the bare text 'STG', rendered as a 32px bold Times link in default link blue and underlined. It acts as a logo placeholder, with no visible image logo.",
+  "category": "typography",
+  "evidence": "h1: text 'STG', font_size 32px, weight 700, color rgb(0,0,238); title 'STG'"
+ },
+ {
+  "observation": "The page has three h1 elements: the logo 'STG' in the header, 'Partners for Business Transformation' as the hero headline, and 'STG' again in the footer. No h2 exists, so the outline jumps from h1 to h3.",
+  "category": "semantic structure",
+  "evidence": "h1_count 3; h2 null; heading_outline levels 1,1,3×10,4×5,1"
+ },
+ {
+  "observation": "Section titles such as Customer Centric, Portfolio and Who We Are use h3. The five news headlines use h4, which gives a flat two-tier hierarchy below the h1. One h3 is empty.",
+  "category": "semantic structure",
+  "evidence": "h3 count 10, h4 count 5; heading_outline has an h3 with text ''"
+ },
+ {
+  "observation": "The primary nav is a row of links with no spacing, separators or padding. The labels run together as 'Our ApproachPortfolioWho We AreNewsContact', each in default blue and underlined.",
+  "category": "components",
+  "evidence": "slice 1 nav row; nav count 4; top_text_colors rgb(0,0,238) 57 elements"
+ },
+ {
+  "observation": "The footer repeats the nav with a 'Home' link added, again with unspaced underlined links. A copyright line and a 'Terms Of Use' link are jammed together on one line.",
+  "category": "components",
+  "evidence": "footer count 1; text '© 2021 STG Partners, LLCTerms Of Use'"
+ },
+ {
+  "observation": "Social icons (Facebook, Twitter, LinkedIn, plus an @ in the footer) render as small FontAwesome glyphs in purple. This is a visited-link color. They sit at the left under the nav and in the footer.",
+  "category": "imagery",
+  "evidence": "fonts_by_element_count FontAwesome 8; 10 <i> elements; slice 1 purple icons at y≈105"
+ },
+ {
+  "observation": "The hero is only a headline and a one-line description, 'A private equity firm focused on fueling innovative software, data, and analytics market leaders in the mid-market'. It is followed by an 'Our Approach' link and a news-ticker style link, with no background image or visual treatment.",
+  "category": "copy",
+  "evidence": "slice 1 y 155-240; box_shadows 0; gradient_backgrounds 0"
+ },
+ {
+  "observation": "A promotional announcement link reads 'McAfee Announces Sale of Enterprise Business to Symphony Technology Group for $4.0 Billion' and ends in a blue FontAwesome plus glyph.",
+  "category": "components",
+  "evidence": "slice 1 y≈240; plus icon in blue"
+ },
+ {
+  "observation": "Six SVG icons are left-aligned above or beside the value-proposition headings, at natural sizes from 39×63 to 100×59. Most icons appear blank or near-invisible in the render. The first is a faint circle with an arrow, almost white on white.",
+  "category": "imagery",
+  "evidence": "images: icn_customer_centric.svg 79×68, icn_growth.svg 59×59, icn_engaged.svg, icn_noun_speed.svg, icn_additional.svg, icn_entrepreneurs.svg; slice 1 shows only one faint circle icon"
+ },
+ {
+  "observation": "No image has alt text. Every img has an empty or missing alt, and the icons are decorative line art.",
+  "category": "semantic structure",
+  "evidence": "alt_missing 6; images alt ''; aria_attrs 0"
+ },
+ {
+  "observation": "The page has no real photography or hero imagery, and no inline SVG. The only imagery is six external SVG icon files plus icon-font glyphs.",
+  "category": "imagery",
+  "evidence": "svgs 0; img 6; all .svg filenames"
+ },
+ {
+  "observation": "Short two-part blocks recur in the same order: an h3 heading plus a one-line tagline. Examples are 'Customer Centric / Building companies that put the customer first' and 'Engaged Partners / Flexible and creative collaborators'. Large vertical gaps separate some of them, apparently empty section space.",
+  "category": "copy",
+  "evidence": "h3 count 10; p count 25; slice 1 gaps around y 250-340, 800-900"
+ },
+ {
+  "observation": "Calls to action are plain underlined links with generic labels and no button styling: 'View Our Work', 'Read More' (used 6 times), 'Learn more.' and 'Our Approach'.",
+  "category": "components",
+  "evidence": "buttons 0; primary_button text '' bg transparent radius 0px padding 0px; slice text"
+ },
+ {
+  "observation": "The news list shows each date as two stacked lines of month and day ('Jun' over '01', 'May' over '26'). A bold h4 headline and a 'Read More' link follow. The date block is not styled as a badge.",
+  "category": "components",
+  "evidence": "slice 2 dates Jun 01, May 26, May 19, May 04, May 04; h4 count 5"
+ },
+ {
+  "observation": "News headlines are bold serif h4s at body-like size, some of them long. Examples are 'Symphony Talent Announces Distinctive Research Partnership with Aptitude Research and Talent Board' and 'Extenda Retail signs … to roll out WMS solution'. Each runs on a single line with no wrapping.",
+  "category": "typography",
+  "evidence": "slice 2 y 590-725; heading_outline h4 entries"
+ },
+ {
+  "observation": "The color palette is just default black text, default link blue rgb(0,0,238), and visited purple. There are no brand colors, backgrounds or accent fills.",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(0,0,0) 112, rgb(0,0,238) 57; top_backgrounds []"
+ },
+ {
+  "observation": "No decorative effects are present: no radii, shadows, gradients, blur, transitions, animations or transforms.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 169, all others 0; box_shadows 0; transitions 0; animations 0; transforms 0"
+ },
+ {
+  "observation": "The typographic scale is the browser default only: 32px h1, bold h3 and h4 in Times New Roman, and 16px body text. There is no custom web font, letter-spacing or weight variation beyond bold.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count has Times New Roman only (plus FontAwesome); body_font_size 16px"
+ },
+ {
+  "observation": "The DOM has header, four nav and eight section elements plus a footer, but no main, article, aside or figure. News items are not marked up as articles.",
+  "category": "semantic structure",
+  "evidence": "semantic: header 1, nav 4, section 8, footer 1, main 0, article 0, figure 0"
+ },
+ {
+  "observation": "Markup is div-heavy, and class names are custom rather than utility-based. There are no Tailwind-style classes, and the page has a handful of inline style attributes.",
+  "category": "semantic structure",
+  "evidence": "div 41; classes total 149, unique 57, tailwind_like_fraction 0; inline_style_attrs 3"
+ },
+ {
+  "observation": "The head carries a lot of metadata and assets: Open Graph and Twitter card tags, a JSON-LD block, 27 scripts, 8 stylesheets and 18 link tags. The visible page is bare, so these resources do not appear to affect the render. The lang attribute is empty.",
+  "category": "semantic structure",
+  "evidence": "meta_names include og:title, twitter:card, msapplication-TileImage; jsonld_blocks 1; script 27; stylesheets 8; lang ''; title tag count 2"
+ },
+ {
+  "observation": "The page is about 213 words of copy. The tone is corporate private-equity messaging with short taglines: 'Business builders with deep sector expertise', 'Deep software, data and analytics expertise'. It has no exclamation marks or em dashes.",
+  "category": "copy",
+  "evidence": "words 213; exclamations 0; em_dashes 0; emoji 1"
+ },
+ {
+  "observation": "The 'Accelerators' section is the only one with an inline link inside body copy. 'Learn more.' ends the sentence about talent and offshore teams.",
+  "category": "copy",
+  "evidence": "slice 1 y≈949"
+ },
+ {
+  "observation": "The tagline sequence of Customer Centric, Committed to Growth, Engaged Partners, Experts and Innovators appears to be a set of value pillars, interleaved with sections for Portfolio, Accelerators, Who We Are and News. There is no visual differentiation between pillars and section headers because every heading is the same h3.",
+  "category": "layout",
+  "evidence": "heading_outline h3 sequence: Customer Centric, Committed to Growth, Portfolio, Engaged Partners, Accelerators, '', Who We Are, Experts, Innovators, News"
+ },
+ {
+  "observation": "There are no form controls or buttons anywhere. The page has 33 anchors and no search or contact form, so all interaction is link navigation.",
+  "category": "components",
+  "evidence": "buttons 0; anchors 33"
+ }
+]

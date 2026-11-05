@@ -1,0 +1,329 @@
+[
+ {
+  "observation": "The page uses a single system-ui font stack for nearly everything (154 elements). Only one element uses Arial. No web fonts or external stylesheets are loaded: stylesheets=0, scripts=0, and there is one inline <style> block.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 154, Arial 1; counts.stylesheets 0, scripts 0; tag_counts.style 1",
+  "element_ids": []
+ },
+ {
+  "observation": "The h1 'Knowledge is power.' is very large (57.6px) and bold (700), in white, left-aligned over a dark-blue gradient hero. It is the largest type on the page and is tightly set.",
+  "category": "typography",
+  "evidence": "h1 font_size 57.6px, weight 700, color rgb(255,255,255); element e17 at 567x63",
+  "element_ids": [
+   "e17",
+   "e16"
+  ]
+ },
+ {
+  "observation": "Type hierarchy is bold navy headings over grey-toned body copy. Section h2s are large (the 'Services for you' h2 is 42px tall), card h3s are about 29px tall, and footer h4s are small. Body text is 16px with a 25.6px line-height (1.6).",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px; heading_outline h1/h2/h3/h4; text colors rgb(11,42,74) 13 and rgb(90,103,117) 9",
+  "element_ids": [
+   "e38",
+   "e47",
+   "e51",
+   "e55",
+   "e84"
+  ]
+ },
+ {
+  "observation": "The palette is a restrained utility-company scheme: brand blue rgb(0,91,159), deep navy rgb(11,42,74) and near-black navy rgb(7,25,44), a pale blue tint rgb(232,241,249), and one amber accent rgb(242,169,0). White is the dominant background (15 elements).",
+  "category": "color",
+  "evidence": "top_backgrounds: white 15, rgb(0,91,159) 8, rgb(11,42,74) 2, rgb(232,241,249) 1, rgb(242,169,0) 1, rgb(7,25,44) 1",
+  "element_ids": []
+ },
+ {
+  "observation": "The hero is a full-width dark blue gradient band (navy to brighter blue toward the lower right) with a two-column layout. Headline, alert and quick links sit on the left, and a white login card sits on the right.",
+  "category": "layout",
+  "evidence": "e16 0,111,1440,542; gradient_backgrounds 1; screenshot hero diagonal gradient",
+  "element_ids": [
+   "e16",
+   "e17",
+   "e24"
+  ]
+ },
+ {
+  "observation": "A login form is placed in the hero as a white card with rounded corners and a soft shadow. It holds an h2 'Welcome back!', two labeled inputs, a remember checkbox, a full-width blue 'Log in' button, and three underlined text links in one row.",
+  "category": "component",
+  "evidence": "e24 form 473x430; labels 3, inputs 3, button 1; primary_button Log in bg rgb(0,91,159) radius 6px padding 12px 22px; box_shadows 3",
+  "element_ids": [
+   "e24",
+   "e25",
+   "e28",
+   "e30",
+   "e32",
+   "e33"
+  ]
+ },
+ {
+  "observation": "A scam alert is shown inline under the h1 as a translucent white-tinted box with an amber left border. The link text inside it is underlined and bold.",
+  "category": "component",
+  "evidence": "e18 p 567x72 on rgba(255,255,255,0.12) background; amber left border visible; link e19",
+  "element_ids": [
+   "e18",
+   "e19"
+  ]
+ },
+ {
+  "observation": "Quick-link tiles in a 2x2 grid of white buttons carry bold navy labels and blue trailing arrow glyphs (→). They are the same size (279x54) and sit on the dark hero.",
+  "category": "component",
+  "evidence": "e20–e23 each 279x54 at x=180/469, y=411/475; text 'Electric Choice', 'Report an outage', etc.",
+  "element_ids": [
+   "e20",
+   "e21",
+   "e22",
+   "e23"
+  ]
+ },
+ {
+  "observation": "The header is a white bar with the AEP Texas logo SVG at the left (63x48) and five plain-text nav links at the right, held in a <ul> inside a <nav>. Above it is a dark navy utility strip with Visit AEP.com / Investors / Careers on the left and Español and the phone number on the right.",
+  "category": "layout",
+  "evidence": "e1 0,0,1440,38 navy; e7 header 0,38,1440,73; e10 ul with e11–e15; tag_counts nav 1, header 1",
+  "element_ids": [
+   "e1",
+   "e7",
+   "e8",
+   "e10",
+   "e11",
+   "e15"
+  ]
+ },
+ {
+  "observation": "Content is held to a consistent 1080px column from x=180 to x=1260 inside the 1440px viewport. Sections span full width with alternating backgrounds.",
+  "category": "layout",
+  "evidence": "Elements start at x=180 and end at x=1260 across header, hero, sections and footer; page_width 1440",
+  "element_ids": [
+   "e1",
+   "e36",
+   "e50",
+   "e83"
+  ]
+ },
+ {
+  "observation": "The home-energy-savings section puts an image on the left and text on the right. The following EV section flips this, with text on the left and the image on the right, so the two-column feature rows zigzag.",
+  "category": "layout",
+  "evidence": "e37 img x=180 vs e38 text x=744; e46 img x=744 vs e47 text x=180",
+  "element_ids": [
+   "e37",
+   "e38",
+   "e46",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The feature images are wide, short crops (516x149 and 516x178) with rounded corners and a soft drop shadow. The phone image shows a visibly blown-out, washed-out left half.",
+  "category": "imagery",
+  "evidence": "phone.jpg natural 2000x576 at 516x149; electric-car 1302x450 at 516x178; box_shadows 3; screenshot",
+  "element_ids": [
+   "e37",
+   "e46"
+  ]
+ },
+ {
+  "observation": "The tip callout inside the savings section uses an amber left border, a bold 'Tip:' label made with <strong>, and an outlined (ghost) 'See how' button. This contrasts with the solid blue buttons elsewhere.",
+  "category": "component",
+  "evidence": "e41 div 516x117; e43 strong; e44 a 109x50 with blue outline",
+  "element_ids": [
+   "e41",
+   "e43",
+   "e44"
+  ]
+ },
+ {
+  "observation": "The EV section has a pale blue tint background (rgb(232,241,249)) that separates it from the white sections around it.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(232,241,249) 1; e45 0,1195,1440,306",
+  "element_ids": [
+   "e45"
+  ]
+ },
+ {
+  "observation": "'Services for you' is a three-column card grid of <article> elements. Each card has a full-bleed top photo (342x228), an h3, a one-line description and a solid blue button. The cards have a thin light border and rounded corners, and all are the same height (420).",
+  "category": "component",
+  "evidence": "e53, e58, e63 each 344x420 at x=180/548/916; article count 5; images 342x228",
+  "element_ids": [
+   "e53",
+   "e58",
+   "e63",
+   "e54",
+   "e55",
+   "e57"
+  ]
+ },
+ {
+  "observation": "The call-to-action buttons are solid blue with white bold text, about 50px tall, and sized to their labels with no full-width stretching. Examples are 'Learn about incentives', 'Explore electric cars', 'Business solutions', 'Register' and 'Track your order'. Their labels are short verb phrases.",
+  "category": "component",
+  "evidence": "e40 220x50; e49 202x50; e57 189x50; e62 109x50; e67 172x50; border-radius 6px",
+  "element_ids": [
+   "e40",
+   "e49",
+   "e57",
+   "e62",
+   "e67"
+  ]
+ },
+ {
+  "observation": "The outage-alert band is a full-width navy block with centered white h2 and paragraph. Its single amber 'Sign up today' button has dark text. This is the only centered text block and the only amber-filled button.",
+  "category": "component",
+  "evidence": "e68 0,2153,1440,292; e69 h2 centered across 1080; e70 p 560 wide at x=440; e71 bg rgb(242,169,0)",
+  "element_ids": [
+   "e68",
+   "e69",
+   "e70",
+   "e71"
+  ]
+ },
+ {
+  "observation": "A two-column card row near the bottom ('Confused About Outages?' and 'Caring for Our Community') reuses the card pattern with larger images (526x351). The outage photo is darkened, with a stormy sky over a suburban street.",
+  "category": "layout",
+  "evidence": "e73 and e78 each 528x543; images 526x351 at x=181/733",
+  "element_ids": [
+   "e73",
+   "e78",
+   "e74",
+   "e79"
+  ]
+ },
+ {
+  "observation": "The footer is a very dark navy block with four equal columns (246px wide on a 278px pitch), each with an h4 heading. It lists underlined white links and shows the phone number in a larger bold size. A thin rule separates the legal lines below.",
+  "category": "component",
+  "evidence": "e83 0,3116,1440,337 bg rgb(7,25,44); h4 at x=180/458/736/1014; e85 phone link; e112 legal block",
+  "element_ids": [
+   "e83",
+   "e84",
+   "e85",
+   "e86",
+   "e96",
+   "e104",
+   "e112"
+  ]
+ },
+ {
+  "observation": "The legal footer gives copyright text '© 1996-2021 American Electric Power' and a notice that using the site means accepting the Terms and Privacy Policy, in small text with underlined links.",
+  "category": "copy",
+  "evidence": "e113 and e116 text; e114, e115 links",
+  "element_ids": [
+   "e113",
+   "e114",
+   "e115",
+   "e116"
+  ]
+ },
+ {
+  "observation": "The heading structure has one h1, five h2s, five h3s and four h4s, with no skipped levels. The 'Services for you' h2 sits above h3 card titles. The footer uses h4s directly under the h3 sections, with no footer h2.",
+  "category": "structure",
+  "evidence": "h1_count 1; heading_outline; tag_counts h2 5, h3 5, h4 4",
+  "element_ids": [
+   "e17",
+   "e51",
+   "e55",
+   "e84"
+  ]
+ },
+ {
+  "observation": "The DOM uses landmark elements: one header, one nav, one main, four sections, five articles and one footer. There is no aside, figure or blockquote. There are few ARIA attributes (2) and no JSON-LD.",
+  "category": "structure",
+  "evidence": "semantic counts; counts.aria_attrs 2; jsonld_blocks 0",
+  "element_ids": [
+   "e7",
+   "e10",
+   "e83"
+  ]
+ },
+ {
+  "observation": "Styling is hand-authored with semantic class names. There are 58 class usages over 25 unique classes, a tailwind-like fraction of 0, and 4 inline style attributes. Grid is used in 7 places and flex in 15.",
+  "category": "structure",
+  "evidence": "classes total 58 unique 25 tailwind_like_fraction 0; inline_style_attrs 4; display_grid 7; display_flex 15",
+  "element_ids": []
+ },
+ {
+  "observation": "Corner rounding is modest. Most elements have no radius (124), 18 sit in 1–7px (buttons at 6px) and 13 in 8–15px (cards and images). No pills and nothing at 16px or above.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:124, 1_7:18, 8_15:13, 16_plus:0, pill:0",
+  "element_ids": [
+   "e24",
+   "e32",
+   "e53"
+  ]
+ },
+ {
+  "observation": "Effects are minimal: 3 box shadows (login card and feature images), one gradient (hero), 4 transitions, and no animations, transforms or backdrop blur.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 3, gradient_backgrounds 1, transitions 4, animations 0, transforms 0, backdrop_blur 0",
+  "element_ids": [
+   "e24",
+   "e37",
+   "e46"
+  ]
+ },
+ {
+  "observation": "Imagery is all raster photography with descriptive alt text, apart from the SVG logo. There are 8 images and none lack alt. They show people, a utility worker, a house and an EV charger, and no illustrations or icons are used. There are 0 inline SVGs, so the arrows are text glyphs.",
+  "category": "imagery",
+  "evidence": "images array alts; counts.images 8, alt_missing 0, svgs 0",
+  "element_ids": [
+   "e9",
+   "e37",
+   "e46",
+   "e54",
+   "e59",
+   "e64",
+   "e74",
+   "e79"
+  ]
+ },
+ {
+  "observation": "The copy is short and action-oriented, with direct address ('Services for you', 'Welcome back!', 'Are you new to AEP Texas?'). Heading text uses sentence case mixed with some Title Case ('Get Revved up for Electric Cars', 'View Your Meter Order Status'). The page has only 301 words and 2 exclamation marks, and no emoji.",
+  "category": "copy",
+  "evidence": "text_stats words 301, exclamations 2, emoji 0; heading_outline",
+  "element_ids": [
+   "e25",
+   "e47",
+   "e58",
+   "e65"
+  ]
+ },
+ {
+  "observation": "The page is organized as stacked full-width bands whose backgrounds alternate: navy strip, white header, blue gradient hero, white, pale blue, white, navy alert band, white, near-black footer. The 3452px page uses roughly 64px vertical padding per band.",
+  "category": "layout",
+  "evidence": "e16 y=111, e36 y=653, e45 y=1195, e50 y=1501, e68 y=2153, e72 y=2445, e83 y=3116; page_height 3452",
+  "element_ids": [
+   "e16",
+   "e36",
+   "e45",
+   "e50",
+   "e68",
+   "e83"
+  ]
+ },
+ {
+  "observation": "Links and form controls are underlined and coloured by context: white underlined links on dark navy, blue underlined links in the login card, and no underline on the nav links. The utility strip links are small white text.",
+  "category": "component",
+  "evidence": "e33–e35 blue underlined; e87/e97/e105 footer link lists white underlined; e11–e15 plain",
+  "element_ids": [
+   "e33",
+   "e34",
+   "e35",
+   "e89",
+   "e11"
+  ]
+ },
+ {
+  "observation": "Text colors are limited: near-black navy rgb(28,39,51) for body (56 elements), white (45), pale grey-blue rgb(200,211,222) (23), navy rgb(11,42,74) (13) and slate grey rgb(90,103,117) (9). The slate grey is used for lead paragraphs under headings.",
+  "category": "color",
+  "evidence": "top_text_colors list; body_color rgb(28,39,51)",
+  "element_ids": [
+   "e39",
+   "e48",
+   "e52",
+   "e56"
+  ]
+ },
+ {
+  "observation": "The utility strip and the page title carry a brand tagline ('Knowledge is power.') in both the <title> ('AEP Texas | Knowledge is power.') and the h1. The hero heading is a brand slogan, not a descriptive headline.",
+  "category": "copy",
+  "evidence": "title 'AEP Texas | Knowledge is power.'; h1 text",
+  "element_ids": [
+   "e17"
+  ]
+ }
+]

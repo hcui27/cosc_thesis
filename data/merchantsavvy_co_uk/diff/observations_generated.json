@@ -1,0 +1,345 @@
+[
+ {
+  "observation": "Single-column content container about 1040px wide, left-aligned at x=200 on a 1440px canvas. Headings, paragraphs and card grids all share this left edge, leaving wide white side margins.",
+  "category": "layout",
+  "evidence": "Elements e11, e12, e29, e31 and e66 all start at x=200 with w=1040. page_width is 1440.",
+  "element_ids": [
+   "e11",
+   "e12",
+   "e29",
+   "e31",
+   "e66"
+  ]
+ },
+ {
+  "observation": "The page is a short landing/hub page of six sections stacked vertically: hero, stats strip, Payment Processing links, Finance & Banking links, Research, and an accepted-payments strip. It has no testimonials, pricing tables or forms.",
+  "category": "layout",
+  "evidence": "6 section tags. Page height is 2902px, word count is 226, and h2 headings are 'Payment Processing', 'Finance & Banking' and 'Research & Statistics'.",
+  "element_ids": [
+   "e10",
+   "e18",
+   "e28",
+   "e65",
+   "e89",
+   "e108"
+  ]
+ },
+ {
+  "observation": "The header is a sticky-looking white bar 65px tall with a hairline bottom border. The logo sits on the left and the nav links plus a filled CTA button sit on the right. The header background is a semi-transparent white with backdrop blur.",
+  "category": "component",
+  "evidence": "Header e2 is 0,0,1440,65. top_backgrounds includes rgba(255,255,255,0.95) and backdrop_blur is 1.",
+  "element_ids": [
+   "e2",
+   "e3",
+   "e5",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The nav has only three text links in 16px medium-weight dark text, followed by a solid indigo 'Get a quote' button with 8px radius and 8px 16px padding.",
+  "category": "component",
+  "evidence": "primary_button is bg rgb(43,44,145), white text, radius 8px, padding 8px 16px. Nav links e6, e7 and e8 sit at y=20.",
+  "element_ids": [
+   "e6",
+   "e7",
+   "e8",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The hero starts with a small uppercase, letter-spaced indigo eyebrow label above the headline.",
+  "category": "typography",
+  "evidence": "e11 reads 'INDEPENDENT COMPARISON & ADVICE' in small caps-style bold indigo text with wide tracking.",
+  "element_ids": [
+   "e11"
+  ]
+ },
+ {
+  "observation": "The H1 is very large (60px, weight 700) with tight tracking and wraps onto two lines. The parenthetical '(& Cheaper)' is in its own span coloured indigo, giving two-tone emphasis within the headline.",
+  "category": "typography",
+  "evidence": "h1 font_size 60px, weight 700, colour rgb(28,29,46). e13 is a span at y=241 holding '(& Cheaper)' in indigo.",
+  "element_ids": [
+   "e12",
+   "e13"
+  ]
+ },
+ {
+  "observation": "The type system uses a single system-ui sans-serif stack throughout, rendering as an Inter-like grotesque. Hierarchy comes only from size and weight, at 60px H1, 36px H2 and 16px body, with body line-height 25.6px.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count lists only system-ui (170). body_font_size 16px, h2 36px/700.",
+  "element_ids": []
+ },
+ {
+  "observation": "The hero subhead is a single line of grey-slate text at roughly 20px, in a lighter tone than the headline.",
+  "category": "typography",
+  "evidence": "e14 is 720px wide and 32px tall. top_text_colors includes rgb(90,92,117) for secondary text.",
+  "element_ids": [
+   "e14"
+  ]
+ },
+ {
+  "observation": "The hero background is a faint lavender-to-white gradient that fades out at the right and bottom. It stops abruptly at y≈595, which is visible as a hard edge on the left near the stat cards.",
+  "category": "color",
+  "evidence": "gradient_backgrounds is 1. The section e10 spans y=65 to 595 and the gradient tint ends at that boundary in the screenshot.",
+  "element_ids": [
+   "e10"
+  ]
+ },
+ {
+  "observation": "Two hero CTAs sit side by side: a solid indigo 'Compare quotes' button and an outlined 'Explore topics' button with a 2px indigo border. Both are 56px tall with rounded corners, so the primary/secondary pairing is clear.",
+  "category": "component",
+  "evidence": "e15 is 182x56 and e16 is 164x56, at y=390. e16 has indigo text and a border with a white fill.",
+  "element_ids": [
+   "e15",
+   "e16"
+  ]
+ },
+ {
+  "observation": "A row of payment-scheme logos (Visa, Mastercard, Pay, Apple Pay, contactless) appears below the hero buttons. It is rendered pale and low-contrast grey at about 300x50, which reads as a faded trust strip.",
+  "category": "imagery",
+  "evidence": "e17 is a PNG, 300x50 natural and rendered, alt 'Visa, Mastercard, Android Pay, Apple Pay and contactless'.",
+  "element_ids": [
+   "e17"
+  ]
+ },
+ {
+  "observation": "Three stat cards sit in a row with a large indigo bold figure or phrase ('90%', '1 route', '0 sales agents') and grey body text. They are white, bordered, and softly shadowed with rounded corners. They overlap the end of the hero background.",
+  "category": "component",
+  "evidence": "Cards e19, e22 and e25 are each about 333x169 at y=567. They sit in section e18 (180,567,1080,169). box_shadows count is 3, with radius in the 8-15 bucket.",
+  "element_ids": [
+   "e18",
+   "e19",
+   "e22",
+   "e25",
+   "e20"
+  ]
+ },
+ {
+  "observation": "The stat-card copy uses a numeral-led pattern in which the metric is the heading and the description is below. The wording is an offbeat 'No sales agents and no multiple call centres', and the page spells in British English ('centres', lang en-GB).",
+  "category": "copy",
+  "evidence": "e20 '90%', e23 '1 route', e26 '0 sales agents'. e27 text includes 'multiple call centres'.",
+  "element_ids": [
+   "e20",
+   "e23",
+   "e26",
+   "e27"
+  ]
+ },
+ {
+  "observation": "The link groups use one repeated tile component: a white rounded-rectangle with a thin grey border, a 16px medium-weight label on the left and a small right-arrow SVG icon on the right. The tiles sit in a 3-column grid with about 14px gaps.",
+  "category": "component",
+  "evidence": "Tiles such as e32, e35 and e38 are each 337x60 at x=200, 551 and 903. Each contains a span plus an 18x18 svg. 20 svgs and 33 anchors in total.",
+  "element_ids": [
+   "e32",
+   "e35",
+   "e38",
+   "e41",
+   "e44",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The tile grids have uneven last rows. Payment Processing ends with 2 tiles in a 3-column grid, leaving an empty third cell. A longer label ('Charity & Community Bank Accounts') wraps to two lines and makes that tile taller (85px vs 60px).",
+  "category": "layout",
+  "evidence": "e59 and e62 are the last row, with nothing at x=903. e86 is 337x85 against the 60px standard, and e87 is 51px tall.",
+  "element_ids": [
+   "e59",
+   "e62",
+   "e86",
+   "e87"
+  ]
+ },
+ {
+  "observation": "Link tiles are the dominant content type: 24 of the 33 anchors are navigation tiles whose labels are topic names. Few paragraphs explain them, and only a one- or two-line intro sits under each H2.",
+  "category": "copy",
+  "evidence": "The section paragraphs e30, e67 and e91 are 640px wide. Tile lists e31 (12 tiles), e68 (6) and e98 (3) are shown as ul.",
+  "element_ids": [
+   "e30",
+   "e31",
+   "e67",
+   "e68",
+   "e91",
+   "e98"
+  ]
+ },
+ {
+  "observation": "Section headings are large 36px bold dark navy with a short grey intro paragraph constrained to about 640px. The same heading, intro and grid pattern repeats in every section.",
+  "category": "typography",
+  "evidence": "h2 font_size 36px/700. e30, e67 and e91 each have w=640.",
+  "element_ids": [
+   "e29",
+   "e30",
+   "e66",
+   "e67",
+   "e90",
+   "e91"
+  ]
+ },
+ {
+  "observation": "Section rhythm is set by background alternation. Payment Processing and Research are on white, Finance & Banking is on a full-bleed pale lavender band (rgb(241,241,250)) with white tiles, and the footer is deep indigo.",
+  "category": "color",
+  "evidence": "e65 is 0,1305,1440,448, using rgb(241,241,250). The footer e111 uses rgb(30,34,140). The body is white.",
+  "element_ids": [
+   "e65",
+   "e111"
+  ]
+ },
+ {
+  "observation": "The colour palette is restrained to one hue: indigo/navy (rgb(43,44,145)) as the accent for buttons, eyebrow, stat numbers and link colour, near-black navy (28,29,46) for text, grey-violet (90,92,117) for secondary text, and tinted lavender backgrounds.",
+  "category": "color",
+  "evidence": "top_text_colors: 28,29,46 (137), 223,224,255 (11), 43,44,145 (9), 90,92,117 (8). top_backgrounds includes 43,44,145 and 241,241,250.",
+  "element_ids": []
+ },
+ {
+  "observation": "The Research section uses two large image cards side by side (about 508x339 images with 54px caption bars). The images are an isometric blue data-illustration and a flat cartoon hooded-hacker illustration, which differ in style and palette. The captions 'UK SMEs' and 'Payment Fraud' are bold labels under the images.",
+  "category": "imagery",
+  "evidence": "e93 charts.jpg (201,1945,508,339) and e96 payment-fraud-stats.jpg (731,1945,508,339). Natural size is 600x400, so the images are scaled up about 0.85 wide. Captions e94 and e97 are spans.",
+  "element_ids": [
+   "e92",
+   "e93",
+   "e94",
+   "e95",
+   "e96",
+   "e97"
+  ]
+ },
+ {
+  "observation": "The whole image card is a single anchor containing an img and a caption span, with a thin border and rounded corners that clip the image. The result is a clickable card rather than a figure/figcaption, as the page has 0 figure elements.",
+  "category": "semantic",
+  "evidence": "e92 is an a with 510x394 containing e93 img and e94 span. The semantic count for figure is 0.",
+  "element_ids": [
+   "e92",
+   "e95"
+  ]
+ },
+ {
+  "observation": "A 3-tile row of text links (Mobile Payments, Mobile Ecommerce, Remote Working) follows the image cards in the Research section. It mixes the photographic card pattern and the plain tile pattern within one section.",
+  "category": "layout",
+  "evidence": "List e98 is at y=2358 and uses the same 337x60 tiles as the others.",
+  "element_ids": [
+   "e98",
+   "e99",
+   "e102",
+   "e105"
+  ]
+ },
+ {
+  "observation": "A centered 'Accepted payment types' strip sits between the main content and footer. A small grey caption is followed by a 528x23 logo row (Verified by Visa, Mastercard, JCB, Amex, Discover, Diners, Apple Pay, PayPal). It is separated by a hairline top border.",
+  "category": "component",
+  "evidence": "Section e108 is 0,2490,1440,128. e109 is centered text, e110 is an img at x=456 with 528x23.",
+  "element_ids": [
+   "e108",
+   "e109",
+   "e110"
+  ]
+ },
+ {
+  "observation": "The footer is a full-width deep indigo block with a white logo variant, company registration text, address, underlined website link, and Privacy Policy and Terms links right-aligned. A thin divider sits above a small '© All rights reserved 2021.' line.",
+  "category": "component",
+  "evidence": "Footer e111 is 0,2618,1440,284 using rgb(30,34,140). e112 is the logo, e113 company text, e114 address, e117 a ul of two links, and e122 the copyright at x=180 w=1080.",
+  "element_ids": [
+   "e111",
+   "e112",
+   "e113",
+   "e114",
+   "e117",
+   "e122"
+  ]
+ },
+ {
+  "observation": "The same SVG logo file is used in the header (149x34) and footer (140x32), with the footer showing a white version. The logo is a purple 'M' mark with outlined 'MERCHANT SAVVY' text.",
+  "category": "imagery",
+  "evidence": "Both images list merchant-savvy-purple.svg, with alt 'Merchant Savvy'.",
+  "element_ids": [
+   "e4",
+   "e112"
+  ]
+ },
+ {
+  "observation": "The footer uses semantic markup: an address element for the street address, a ul/li list for legal links, and a footer landmark. The page also has a header, nav and main, and each content block is a section.",
+  "category": "semantic",
+  "evidence": "Counts: header 1, nav 1, main 1, section 6, footer 1, address 1. e114 is an address.",
+  "element_ids": [
+   "e2",
+   "e5",
+   "e111",
+   "e114",
+   "e117"
+  ]
+ },
+ {
+  "observation": "A skip-to-content link is positioned off-screen at x=-999 as the first element in the DOM, and 22 aria attributes are present. The heading outline is a clean h1 followed by three h2 elements with no h3.",
+  "category": "semantic",
+  "evidence": "e1 'Skip to content' is at -999,0. aria_attrs is 22, h1_count is 1, and alt_missing is 0.",
+  "element_ids": [
+   "e1"
+  ]
+ },
+ {
+  "observation": "Corner radii are modest and consistent: 28 elements fall in the 8–15px bucket (buttons, tiles, cards) and none are pill-shaped or 16px+. The other 142 elements are square.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 142, bucket_8_15 28, bucket_pill 0. The button radius is 8px.",
+  "element_ids": []
+ },
+ {
+  "observation": "Decoration is minimal. Three soft box shadows (on the stat cards), one gradient and one backdrop blur, plus 20 hover transitions are the only effects, with no animations or transforms. Tiles rely on borders rather than shadows.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 3, gradient_backgrounds 1, backdrop_blur 1, transitions 20, animations 0, transforms 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "The CSS is compact and hand-written with semantic-style classes, not utility-driven. The page has 23 unique classes with only 5.2% Tailwind-like naming, one stylesheet, no scripts and no inline style attributes.",
+  "category": "structure",
+  "evidence": "classes total 58, unique 23, tailwind_like_fraction 0.052. stylesheets 1, scripts 0, inline_style_attrs 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "Layout uses a mix of flexbox (24 elements) and CSS grid (5 elements). The grid serves the 3-column stat and tile layouts and the 2-column image cards, while flex serves the header, tiles and buttons.",
+  "category": "structure",
+  "evidence": "layout: display_flex 24, display_grid 5.",
+  "element_ids": [
+   "e18",
+   "e31",
+   "e68",
+   "e98"
+  ]
+ },
+ {
+  "observation": "There are only 6 raster or vector images on the page. The imagery is limited to logos, payment-scheme icons and two illustrations, with no photography of people or products, and the hero is text-only with no visual on the right.",
+  "category": "imagery",
+  "evidence": "images count 6. The hero section e10 has only e17 as an image, and the right side of the hero at x>920 is empty.",
+  "element_ids": [
+   "e10",
+   "e17"
+  ]
+ },
+ {
+  "observation": "The copy tone is plain and benefit-led with short sentences. It uses no exclamation marks, emoji or em dashes (an en dash appears in the card text) and describes itself as 'independent' advice.",
+  "category": "copy",
+  "evidence": "text_stats: emoji 0, em_dashes 0, exclamations 0. The title includes 'Payment Processing Made Simple (& Cheaper)'.",
+  "element_ids": [
+   "e11",
+   "e14",
+   "e27"
+  ]
+ },
+ {
+  "observation": "The page title and h1 are nearly identical, with the title adding the brand prefix ('Merchant Savvy – Payment Processing Made Simple (& Cheaper)'). The document declares a meta description, viewport and lang en-GB, and has no JSON-LD.",
+  "category": "semantic",
+  "evidence": "title in facts.json, meta_names charset/viewport/description, jsonld_blocks 0.",
+  "element_ids": [
+   "e12"
+  ]
+ },
+ {
+  "observation": "Vertical spacing is generous. About 70px of padding sits above each H2 and about 80px of whitespace between sections, while tile rows have 14px gaps, so the page reads as airy blocks with tight inner grids.",
+  "category": "layout",
+  "evidence": "H2 e29 at y=808 follows the cards ending at y=736. e66 sits 72px below the section top at y=1305. Row y-positions of 953, 1027, 1100 and 1174 show about 74px steps.",
+  "element_ids": [
+   "e29",
+   "e66",
+   "e90",
+   "e31"
+  ]
+ }
+]

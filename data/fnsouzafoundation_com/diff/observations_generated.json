@@ -1,0 +1,377 @@
+[
+ {
+  "observation": "Dark theme throughout: near-black warm body background with warm off-white text. This is a single-mode palette with no light sections.",
+  "category": "color",
+  "evidence": "body_bg rgb(18,17,16), body_color rgb(238,232,223); section/card backgrounds rgb(27,25,23).",
+  "element_ids": []
+ },
+ {
+  "observation": "One burnt-orange accent colour is used for the short heading underlines, outlined button borders, text links, and the news card's left border. It is the only chromatic UI colour.",
+  "category": "color",
+  "evidence": "top_text_colors include rgb(226,102,58) on 17 elements. Orange rules appear under every h2. The news card has an orange left border.",
+  "element_ids": [
+   "e17",
+   "e21",
+   "e35",
+   "e46",
+   "e49",
+   "e70"
+  ]
+ },
+ {
+  "observation": "Muted grey-beige secondary text is used for form labels, footer text and the brand tagline, which sets it apart from the primary off-white.",
+  "category": "color",
+  "evidence": "rgb(163,155,143) on 11 elements. Labels such as Name/Email and the footer copyright are dimmer than the headings.",
+  "element_ids": [
+   "e3",
+   "e53",
+   "e55",
+   "e78"
+  ]
+ },
+ {
+  "observation": "The type system pairs a serif for headings and content with a sans-serif system font for UI chrome. Georgia is on 54 elements and system-ui on 62.",
+  "category": "typography",
+  "evidence": "h1 font-family is Georgia, \"Times New Roman\", serif. fonts_by_element_count: system-ui 62, Georgia 54, Arial 1. The nav, buttons and labels render in sans-serif.",
+  "element_ids": [
+   "e13",
+   "e17",
+   "e18",
+   "e5"
+  ]
+ },
+ {
+  "observation": "The h1 is large, centred, light-weight serif text that wraps onto two lines across nearly the full viewport width.",
+  "category": "typography",
+  "evidence": "h1 is 52px, weight 400, text-align center, box 1408×120 at x=16.",
+  "element_ids": [
+   "e13"
+  ]
+ },
+ {
+  "observation": "All h2s share one size and weight (34px, 400) and are left-aligned. Each is followed by a short orange underline bar, which makes a repeated section-title pattern.",
+  "category": "typography",
+  "evidence": "h2 font_size 34px, weight 400; six h2s in the outline. The orange dashes under 'Photo Gallery', 'Artworks', 'News' and 'Contacts' are visible in the screenshot.",
+  "element_ids": [
+   "e17",
+   "e21",
+   "e35",
+   "e46",
+   "e51",
+   "e60"
+  ]
+ },
+ {
+  "observation": "The hero subtitle is small, uppercase and widely letter-spaced sans-serif in a peach tint, set under the large serif h1. This contrasts scale and letterform.",
+  "category": "typography",
+  "evidence": "'HISTORY & WORKS' at 1408×18, colour rgb(243,195,168), visibly tracked-out caps.",
+  "element_ids": [
+   "e14"
+  ]
+ },
+ {
+  "observation": "The brand mark is a text-only wordmark. It has bold, tracked uppercase 'F N SOUZA FOUNDATION' over a small grey 'History & Works' tagline, and uses no logo image or SVG.",
+  "category": "typography",
+  "evidence": "e2 anchor contains a small element e3. svgs count is 0.",
+  "element_ids": [
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "observation": "The body copy is 17px with a loose 28px line-height. Paragraphs are set in serif at a comfortable reading measure of about 650px.",
+  "category": "typography",
+  "evidence": "body_font_size 17px, line_height 28.05px. The about paragraph is 658px wide.",
+  "element_ids": [
+   "e18"
+  ]
+ },
+ {
+  "observation": "The artwork list items are italic serif titles with hairline dividers.",
+  "category": "typography",
+  "evidence": "Items such as 'Ciudad En Esapana' and 'Last Supper' render italic. Each li is 45px tall with a bottom border.",
+  "element_ids": [
+   "e36",
+   "e37",
+   "e44"
+  ]
+ },
+ {
+  "observation": "A sticky or fixed-style top header is a 65px bar with a translucent dark background (backdrop blur) and a bottom hairline. The brand sits at the left and a horizontal nav at the right.",
+  "category": "layout",
+  "evidence": "header 0,0,1440,65. Background rgba(18,17,16,0.94). backdrop_blur count is 1.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4"
+  ]
+ },
+ {
+  "observation": "The nav is a ul of 7 plain text items. Two of them, 'Family History ▾' and 'Available For Sale ▾', are buttons with dropdown carets. The others are anchors, with no active-state styling visible.",
+  "category": "components",
+  "evidence": "e7 and e9 are button tags and the rest are a tags. The nav spans x=551–1254.",
+  "element_ids": [
+   "e4",
+   "e7",
+   "e9",
+   "e5"
+  ]
+ },
+ {
+  "observation": "The content sits in a centred column about 1068px wide (x=186 to 1254) inside the 1440px viewport. The hero is the only full-bleed element apart from the section dividers.",
+  "category": "layout",
+  "evidence": "Section children share x=186, w=1068. The footer paragraphs are also 1068 wide.",
+  "element_ids": [
+   "e21",
+   "e22",
+   "e36",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The hero is a full-width 340px band with a dark, painterly abstract background image (smoky blue, green and orange texture) behind the centred title. A dark overlay keeps the text legible. It has no CTA button.",
+  "category": "imagery",
+  "evidence": "e12 div 0,65,1440,340 with no img element in the image list, so the picture is a CSS background. The screenshot shows swirling dark paint.",
+  "element_ids": [
+   "e12",
+   "e13",
+   "e14"
+  ]
+ },
+ {
+  "observation": "The intro section is a two-column split. A portrait photo sits left (370×275) and the h2, paragraph and 'Read more' button sit right, which makes an image-left, text-right media block.",
+  "category": "layout",
+  "evidence": "img at x=186, w=370. Text column at x=596, w=658.",
+  "element_ids": [
+   "e16",
+   "e17",
+   "e18",
+   "e19"
+  ]
+ },
+ {
+  "observation": "The portrait has slightly rounded corners and a soft edge. It keeps its natural pixel size, so it is not scaled.",
+  "category": "imagery",
+  "evidence": "natural 370×275 equals rect 370×275. About 18 elements have a 1–7px radius.",
+  "element_ids": [
+   "e16"
+  ]
+ },
+ {
+  "observation": "The photo gallery is a loose grid of thumbnails of different widths (387, 183, 183, 251 on the first row; 320 and 183 on the second). All are 300px tall, and the images are cropped or scaled to a common height. The second row leaves visible empty cells.",
+  "category": "imagery",
+  "evidence": "Image rects share h=300 with varied w. Row 2 has only chess (x=186) and mother-child (x=794), leaving gaps at x≈520–790 and 990–1254. Each image sits in a wider anchor (e.g. 394 and 596 wide).",
+  "element_ids": [
+   "e24",
+   "e26",
+   "e28",
+   "e30",
+   "e32",
+   "e34"
+  ]
+ },
+ {
+  "observation": "Gallery thumbnails are wrapped in empty-text anchors, so each image is a link with no caption. The images have alt text such as 'Last Supper' and 'Chess'.",
+  "category": "components",
+  "evidence": "e23, e25, e27, e29, e31 and e33 are anchors with empty text containing an img. alt_missing is 0. There is no figure or figcaption (both 0).",
+  "element_ids": [
+   "e23",
+   "e25",
+   "e27",
+   "e29",
+   "e31",
+   "e33"
+  ]
+ },
+ {
+  "observation": "The artwork imagery is the main source of colour on the page. It includes saturated blues, yellows and reds against the dark neutral ground, with little UI chrome around it. The thumbnails have no frames or shadows.",
+  "category": "imagery",
+  "evidence": "box_shadows 0. The thumbnails sit directly on the background.",
+  "element_ids": [
+   "e24",
+   "e26",
+   "e28",
+   "e30",
+   "e32",
+   "e34"
+  ]
+ },
+ {
+  "observation": "The Artworks section is a plain two-column text list of 8 titles in a ul. It uses a CSS grid with a gap between columns, and divider lines separate the rows. There are no thumbnails or prices.",
+  "category": "components",
+  "evidence": "ul 1068×180 with 8 li of 526×45 each, split at x=186 and x=729. The list is italic text only.",
+  "element_ids": [
+   "e36",
+   "e37",
+   "e41"
+  ]
+ },
+ {
+  "observation": "The list contains the spelling oddity 'Ciudad En Esapana', and it mixes title-cased art names such as 'God, Sex & The City'. The copy is untouched placeholder-like content.",
+  "category": "copy",
+  "evidence": "The li text reads 'Ciudad En Esapana'.",
+  "element_ids": [
+   "e37",
+   "e40"
+  ]
+ },
+ {
+  "observation": "The news item is a single card with a slightly lighter background, a 1px border, and a thick orange left accent bar. It holds one sentence and an outlined button.",
+  "category": "components",
+  "evidence": "e47 div 1068×170 with bg rgb(27,25,23). The orange left edge is visible in the screenshot.",
+  "element_ids": [
+   "e47",
+   "e48",
+   "e49"
+  ]
+ },
+ {
+  "observation": "Buttons are rectangular outlined (ghost) buttons with a thin border, transparent or dark fill, and small sans text. They have square or near-square corners. 'Read more', 'Read the statement', 'Send message', 'Log in' and the social sign-ins share this look.",
+  "category": "components",
+  "evidence": "Each is about 39px tall, for example e19 123×39 and e59 151×39. The border colour is orange on some and light on others.",
+  "element_ids": [
+   "e19",
+   "e49",
+   "e59",
+   "e67",
+   "e75",
+   "e76"
+  ]
+ },
+ {
+  "observation": "The default unstyled 'Menu' button is in the DOM with a light-grey (239,239,239) background and 0 radius. It is the only element in the page with browser-default button styling, probably a hidden mobile toggle.",
+  "category": "components",
+  "evidence": "primary_button is text 'Menu', bg rgb(239,239,239), color black, padding 1px 6px. It has no matching element among the visible nodes.",
+  "element_ids": []
+ },
+ {
+  "observation": "Two forms sit side by side in the final section. A contact form (Name, Email, Message textarea, Send) is on the left and a login form (Username, Password, Remember me, Log in) is on the right. Both columns are 510px wide, with a 48px gap.",
+  "category": "layout",
+  "evidence": "Forms at x=186 and x=744, each w=510. h2s 'Contacts' and 'Login or Register' share a baseline. 2 forms, 5 inputs, 1 textarea.",
+  "element_ids": [
+   "e52",
+   "e61",
+   "e51",
+   "e60"
+  ]
+ },
+ {
+  "observation": "The form fields are dark filled boxes (slightly lighter than the page) with thin borders and slight radius, and stacked labels above them in muted grey. They have no placeholders and no visible focus styling.",
+  "category": "components",
+  "evidence": "Inputs are 510×42 and the textarea is 510×114. The labels are 66px-tall wrappers around the inputs, so each label wraps its input.",
+  "element_ids": [
+   "e53",
+   "e54",
+   "e57",
+   "e58",
+   "e62",
+   "e63"
+  ]
+ },
+ {
+  "observation": "Account helper links are underlined orange text in a vertical list. A pair of social sign-in buttons ('Sign in with Facebook', 'Sign in with Google +') follow, with a dated 'Google +' brand reference.",
+  "category": "copy",
+  "evidence": "Create an account, Forgot your username? and Forgot your password? are each 17px-tall rows. The Facebook button is 204×39 and the Google button is 200×39.",
+  "element_ids": [
+   "e68",
+   "e70",
+   "e72",
+   "e74",
+   "e75",
+   "e76"
+  ]
+ },
+ {
+  "observation": "A login and registration form sits on a page about an art foundation, with a contact form next to it. This puts account functions in the same row as the contact function, with no separate page.",
+  "category": "copy",
+  "evidence": "The h2 'Login or Register' sits next to 'Contacts' in the same section e50.",
+  "element_ids": [
+   "e50",
+   "e60",
+   "e51"
+  ]
+ },
+ {
+  "observation": "The footer is centred, small, muted text. It has a © 2021 line with an underlined 'Privacy Policy' link and a credit line, 'More Art Gallery Templates at TemplateMonster.com', which shows a template origin.",
+  "category": "copy",
+  "evidence": "Footer 0,3037,1440,110. The two p elements are 17px tall and centred. The orange links are Privacy Policy and TemplateMonster.com.",
+  "element_ids": [
+   "e77",
+   "e78",
+   "e79",
+   "e80",
+   "e81"
+  ]
+ },
+ {
+  "observation": "Vertical rhythm is regular. Sections are separated by hairline full-width borders and about 64px of top padding. Each h2 is followed by an orange rule and then the content, so the sections look alike.",
+  "category": "layout",
+  "evidence": "Section tops at y=405, 852, 2063, 2456, with h2s at about +64px from each section top (916, 2127, 2520). The page is 3147px tall.",
+  "element_ids": [
+   "e15",
+   "e20",
+   "e45",
+   "e50"
+  ]
+ },
+ {
+  "observation": "The page is short and single-scroll. It has about 201 words in total, so imagery and headings carry most of it. Only one paragraph of real description appears, in the intro.",
+  "category": "copy",
+  "evidence": "text_stats words 201, 7 p elements, 8 imgs.",
+  "element_ids": []
+ },
+ {
+  "observation": "The page has little decoration. There are no box shadows, no gradients, no animations and no transforms, only 6 transitions and one backdrop blur. Radius is mostly 0, with 99 elements at 0 and 18 at 1–7px.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 0, gradient_backgrounds 0, animations 0, transforms 0, transitions 6, border_radius_buckets bucket_0 99 and bucket_1_7 18.",
+  "element_ids": []
+ },
+ {
+  "observation": "The DOM uses landmark elements: one header, nav, main and footer, plus 4 section elements. There is a single h1 and six h2s, with no h3. There are no article, figure or aside elements.",
+  "category": "structure",
+  "evidence": "semantic counts: header 1, nav 1, main 1, section 4, footer 1, h1_count 1. heading_outline is h1 then six h2.",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e15",
+   "e20",
+   "e45",
+   "e50",
+   "e77"
+  ]
+ },
+ {
+  "observation": "The CSS is a single embedded style block with no external stylesheets. It uses semantic class names (17 unique, about 3.6% Tailwind-like), and 8 elements carry inline styles. Layout uses grid on 11 elements and flex on 5.",
+  "category": "structure",
+  "evidence": "stylesheets 0, tag style 1, classes total 28, unique 17, inline_style_attrs 8, display_grid 11, display_flex 5, tailwind_like_fraction 0.036.",
+  "element_ids": []
+ },
+ {
+  "observation": "The page is minimal on interactivity and accessibility markup. There is one script, 7 aria attributes, and the images all have alt text. The dropdown nav items are buttons, but no submenus are visible in the screenshot.",
+  "category": "structure",
+  "evidence": "scripts 1, aria_attrs 7, alt_missing 0, buttons 5.",
+  "element_ids": [
+   "e7",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The meta description is present, and the title is 'F N Souza Foundation — History & Works', which repeats the wordmark and tagline. The lang attribute is 'en'. There is no JSON-LD (0 blocks).",
+  "category": "structure",
+  "evidence": "meta_names: charset, viewport, description. jsonld_blocks 0. lang en.",
+  "element_ids": []
+ },
+ {
+  "observation": "The page has a clear top-to-bottom order: hero, intro, gallery, artwork list, news, contact/login, footer. The sections are all left-aligned except the centred hero title and footer.",
+  "category": "layout",
+  "evidence": "Element y positions run e12 (65), e15 (405), e20 (852), e45 (2063), e50 (2456), e77 (3037). Section h2s all start at x=186.",
+  "element_ids": [
+   "e12",
+   "e15",
+   "e20",
+   "e45",
+   "e50",
+   "e77"
+  ]
+ }
+]

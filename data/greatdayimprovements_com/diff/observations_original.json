@@ -1,0 +1,167 @@
+[
+ {
+  "observation": "The page has no h1. Its heading outline is two h2 elements, \"What's new at Great Day Improvements\" and \"HOME IMPROVEMENT RESOURCE CENTER\". Most visible 'headings' are images.",
+  "category": "semantic structure",
+  "evidence": "facts.json h1_count 0; heading_outline has 2 h2 entries; h2 is 21px, weight 400"
+ },
+ {
+  "observation": "The DOM has no HTML5 landmark elements. The page is built from 148 divs, 101 spans and 104 anchors.",
+  "category": "semantic structure",
+  "evidence": "semantic header/nav/main/section/footer/article all 0; div 148, span 101, a 104"
+ },
+ {
+  "observation": "The title is a keyword-style string, 'Home Improvement & Additions Contractors | Great Day Improvements'. The html lang attribute is empty, and there are no JSON-LD blocks.",
+  "category": "semantic structure",
+  "evidence": "title in facts.json; lang ''; jsonld_blocks 0"
+ },
+ {
+  "observation": "Layout is a fixed-width centered column of about 980px on a 1440px canvas. A left ribbon sidebar sits beside a main content column, and wide empty margins surround them. The blue background with decorative swirls shows only beside the hero.",
+  "category": "layout",
+  "evidence": "page_width 1440; logo x=266; hero images span x≈539–1215; screenshot shows side swirls near the hero"
+ },
+ {
+  "observation": "Layout uses floats or positioning, not grid. Only one flex container exists, and there is no CSS grid.",
+  "category": "layout",
+  "evidence": "display_grid 0, display_flex 1"
+ },
+ {
+  "observation": "The header has a large logo on the left. Next to it, three small brand logos (GDI, Patio Enclosures, Stanek Windows) are separated by a thin divider. At right is a yellow-orange tab-like call-to-action box.",
+  "category": "components",
+  "evidence": "images at x=266 (215x130), 678, 772, 852 (72x44, 70x36, 70x36); screenshot top"
+ },
+ {
+  "observation": "The yellow phone panel hangs from the top edge. It holds a script 'Improve your home today!' line, the phone number 800-230-8301, a blue 'Schedule Your FREE In-Home Design Consultation Today' button with a chevron, and a 'Find Your Location' zip input with an arrow button.",
+  "category": "components",
+  "evidence": "screenshot top right; input count 30; one form"
+ },
+ {
+  "observation": "The main navigation is a dark-blue band with six small white text links: Products & Services, Photo Gallery, Home Improvement Tips, About Us, Specials, Customer Service. It has a bright top edge and is not a nav element.",
+  "category": "components",
+  "evidence": "screenshot y≈158–200; nav count 0; white text count 26"
+ },
+ {
+  "observation": "The hero is a horizontal rotator of five 676x301 slides laid side by side offscreen. Slide x-positions run from -137 to 2567, and only one is visible. A semi-transparent white bar over it reads 'Sunrooms | Windows | Doors | And More'. The slide text is baked into the images.",
+  "category": "imagery",
+  "evidence": "images hp-rotator-* at x -137, 539, 1215, 1891, 2567, all y=202; screenshot hero"
+ },
+ {
+  "observation": "The left sidebar is a pale-blue ribbon with a notched bottom and drop shadow. It contains an illustrated house rendering, bullet lists grouped by brand logo, dotted blue dividers, and a yellow 'Book Your FREE No Obligation In-Home Consultation' box with a 'Schedule Now' button.",
+  "category": "components",
+  "evidence": "screenshot x≈233–540, y≈205–990; ul count 15, li 65; HP-PE.jpg and HP-Stanek.jpg thumbnails at 92px wide"
+ },
+ {
+  "observation": "Headings and labels are mostly raster images or script webfonts, not live text. Examples are 'Our Products & Services', 'Get Inspired!', 'Have questions?', 'Corporate Office', 'Site Map' and 'Back to top'. The script faces are hand-lettered.",
+  "category": "typography",
+  "evidence": "images Get-Inspired.jpg, Have-questions.png, Corporate-Office.png, Site-Map.png; screenshot"
+ },
+ {
+  "observation": "The type system is almost entirely Arial-family. Arial applies to 345 elements, Helvetica Neue W01 55 Roman to 104, and Helvetica Neue W01 75 Bold to 6. The body is 16px with line-height 'normal'.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count; body_font_size 16px; body_line_height normal"
+ },
+ {
+  "observation": "The intro paragraph is small grey text on white, with the registered mark as a superscript. It is left-aligned in a narrow column about 620px wide.",
+  "category": "typography",
+  "evidence": "text color rgb(77,79,81) used 106 times; sup count 1; screenshot y≈535"
+ },
+ {
+  "observation": "The 'What's new at Great Day Improvements' heading is blue, with 'What's new' in bold and the rest in regular weight. It sits between dotted horizontal rules.",
+  "category": "typography",
+  "evidence": "h2 weight 400; strong count 3; screenshot y≈670"
+ },
+ {
+  "observation": "Colors are dominated by a mid blue (rgb 74,144,231), a pale blue (209,228,242), a navy (22,93,159) and a cream (244,232,218). The yellow-orange of the CTA boxes comes from images and gradients. Text is black, grey (77,79,81) or dark blue links (4,63,118).",
+  "category": "color",
+  "evidence": "top_backgrounds list; top_text_colors list; screenshot"
+ },
+ {
+  "observation": "The page background is a sky-blue to white vertical gradient, and a navy block with a radial glow closes the page. The glow sits behind a 'Back to top' script label with an orange roof-shaped line.",
+  "category": "color",
+  "evidence": "gradient_backgrounds 2; screenshot bottom slice; body_bg transparent"
+ },
+ {
+  "observation": "Two promo tiles (284x194) sit side by side as images. One is a silver 'NEW FINANCING OPTIONS / 0 INTEREST PAYMENT' tile. The other is a blue 'SAVE BIG' tile with a gold star ribbon and the phone number. Their metallic and bevelled looks are baked into the images.",
+  "category": "imagery",
+  "evidence": "gdi_whatsnew_new-finance_0515.jpg and whats_new_save_big.jpg at 284x194; screenshot y≈700–890"
+ },
+ {
+  "observation": "The 'Home Improvement Resource Center' banner is a wood-textured image with a hammer, on a cream rounded panel. The panel holds a 3x2 grid of article cards with 191x136 photos and pale-blue caption strips, each ending in a blue chevron.",
+  "category": "components",
+  "evidence": "six images 191x136 at x=586/791/996 and y=1035/1238; cream bg rgb(244,232,218); screenshot"
+ },
+ {
+  "observation": "The article card captions are short titles such as 'How Much Insulation Do I Need In My Attic?' and 'Asphalt vs. Concrete Driveways Comparison'. Each is an entire linked block with a blue arrow icon on the right.",
+  "category": "copy",
+  "evidence": "image alts; screenshot y≈1180–1220 and 1385"
+ },
+ {
+  "observation": "Two glossy blue button images, 'Ideas & Tips Blog' and 'View Photo Gallery', sit side by side. They have chevron icons, subtext, and a reflected shadow underneath.",
+  "category": "components",
+  "evidence": "screenshot slice 2 y≈222–270; box_shadows count 1"
+ },
+ {
+  "observation": "The 'Have questions?' block uses a yellow speech-bubble graphic, a script title image and a bold phone line, 'Call Us Today at 888-468-0700'. A different number from the header's 800-230-8301. Hours are listed below in small text.",
+  "category": "copy",
+  "evidence": "Conversation-Bubbles.png alt 'Call Us Today at 888-468-0700'; screenshot slice 2"
+ },
+ {
+  "observation": "The footer is split into a Corporate Office address block and a Site Map of underlined text links in three columns. The columns are Patio Enclosures / Stanek Windows / Backyard Solutions / Commercial Solutions; Photo Gallery / Ideas & Tips Blog / Current Specials / About Us; Customer Service / Site Map / Terms of Use / Privacy Policy. It sits between grey-blue horizontal rules.",
+  "category": "components",
+  "evidence": "screenshot slice 2 y≈500–620; Corporate-Office.png and Site-Map.png headings"
+ },
+ {
+  "observation": "The fine print is a dense block of state contractor license numbers (CT, DC, IN, MA, MI, NC, NJ, NY, OH, PA, RI, TN, VA, WI). A row of accreditation logos (Energy Star, EPA Lead-Safe, NFRC, ICC, Qualified Remodeler Top 500) sits beside it as a single 366x47 image. The copyright line credits a web agency.",
+  "category": "copy",
+  "evidence": "gdi-footer-logos.png 366x47; screenshot slice 2 y≈640–720"
+ },
+ {
+  "observation": "The page uses almost no rounded corners. 443 elements have a radius of 0 and 12 have a radius of 1–7px. There are no large radii or pill shapes. The primary 'Accept and Close' button, probably a cookie banner, has a 5px radius.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets; primary_button radius 5px, bg rgb(22,93,159), padding 9px 12px 11px"
+ },
+ {
+  "observation": "Skeuomorphic effects are drawn in the images: bevelled buttons, drop shadows, ribbons, a wood texture, a metallic gradient and a glossy gloss on buttons. CSS shadows are few (1 box-shadow). There are no backdrop blurs, animations or transforms.",
+  "category": "decoration",
+  "evidence": "box_shadows 1; backdrop_blur 0; animations 0; transforms 0; screenshot"
+ },
+ {
+  "observation": "Many transition declarations exist, 111 in all. Most are probably hover states on links and buttons, though no CSS animations are defined.",
+  "category": "decoration",
+  "evidence": "transitions 111; animations 0"
+ },
+ {
+  "observation": "Styling relies on a classic stylesheet approach: 371 class uses across 107 unique names, none Tailwind-like. 82 inline style attributes are also present.",
+  "category": "DOM structure",
+  "evidence": "classes total 371, unique 107, tailwind_like_fraction 0; inline_style_attrs 82"
+ },
+ {
+  "observation": "The page is image-heavy at 25 images and no inline SVGs. Three images lack alt text, and the other decorative thumbnails use empty alt. Its alt text is descriptive for most, for example 'Wood vs. Composite Decks Photo'.",
+  "category": "imagery",
+  "evidence": "images 25, svgs 0, alt_missing 3; HP-PE.jpg, HP-Stanek.jpg, Get-Inspired.jpg have alt ''"
+ },
+ {
+  "observation": "The page loads 28 scripts and 7 stylesheets, and has 13 meta tags including msvalidate and google-site-verification. It has aria attributes on only 7 elements.",
+  "category": "DOM structure",
+  "evidence": "script 28; stylesheets 7; meta 13; aria_attrs 7"
+ },
+ {
+  "observation": "The page is brief and mostly graphical, with 258 words, 2 emoji, no exclamation marks in the DOM text, and no em dashes. The copy is marketing-led, with repeated 'FREE' and 'No Obligation' calls to action and a phone number in several places.",
+  "category": "copy",
+  "evidence": "text_stats words 258, emoji 2, exclamations 0, em_dashes 0; phone numbers at header, promo tile, footer"
+ },
+ {
+  "observation": "The page is roughly 2228px tall at 1440px wide. The first screen is crowded with logo, nav, hero, sidebar and promotional elements. The lower section is sparse, with a lot of empty space left of the resource center.",
+  "category": "layout",
+  "evidence": "page_height 2228, page_width 1440; screenshot slice 2 left blank area"
+ },
+ {
+  "observation": "The page has only 1 button element and 104 anchors, so almost all CTAs are links styled as buttons, such as 'Schedule Now' and the blog and gallery images. It has one form and 30 inputs, mostly hidden, with the zip lookup being the visible one.",
+  "category": "components",
+  "evidence": "button 1, a 104, form 1, input 30"
+ },
+ {
+  "observation": "The dotted-line dividers recur as separators: between the intro and 'What's new', under the promo tiles, and between sidebar brand groups. They use a blue or grey dotted style in contrast to the solid grey-blue footer rules.",
+  "category": "decoration",
+  "evidence": "screenshot y≈638, 919, 656, 747, footer rules y≈500, 620 in slice 2"
+ }
+]

@@ -1,0 +1,353 @@
+[
+ {
+  "observation": "A thin teal announcement bar sits at the top of the page with centered white text about free US shipping above $50. It sits above the header.",
+  "category": "layout",
+  "evidence": "e1 at 0,0,1440,42 on a teal background (rgb(26,138,147) is one of the top backgrounds).",
+  "element_ids": [
+   "e1"
+  ]
+ },
+ {
+  "observation": "The header is a single white row. The logo is on the left, a five-link text nav is centered, and Search, Account and Cart are plain text links on the right. There are no icons or SVGs; the SVG count is 0.",
+  "category": "component",
+  "evidence": "e2 header 0,61,1440,73; nav ul e5 with Shop, Collections, Our Approach, Support and Contact; e16, e17 and e18 are text links.",
+  "element_ids": [
+   "e2",
+   "e3",
+   "e5",
+   "e16",
+   "e17",
+   "e18"
+  ]
+ },
+ {
+  "observation": "The hero is a two-column split. Left: an eyebrow label, a large serif H1, a grey paragraph and two pill buttons. Right: a rounded photo of supplements and herbs with a soft shadow. The hero background is a pale teal-to-cream diagonal gradient.",
+  "category": "layout",
+  "evidence": "e19 hero 0,115,1440,492; H1 at x=180; image e26 at 796,206,464,310; facts record 1 gradient background and 1 box shadow.",
+  "element_ids": [
+   "e19",
+   "e21",
+   "e25",
+   "e26"
+  ]
+ },
+ {
+  "observation": "Headings use a serif/sans pairing. The H1 and H2s are Georgia at weight 400, and the body, nav and buttons are Helvetica Neue. The H1 is 51.2px and the H2s are 35.2px. Georgia is on 23 elements and Helvetica Neue on 243.",
+  "category": "typography",
+  "evidence": "facts h1 font_family Georgia, font_size 51.2px, weight 400; h2 35.2px weight 400; fonts_by_element_count.",
+  "element_ids": [
+   "e21",
+   "e29",
+   "e71",
+   "e129"
+  ]
+ },
+ {
+  "observation": "Small uppercase, letter-spaced eyebrow labels in dark teal appear above every section heading (NATURAL WELLBEING, FEATURED PRODUCTS, SHOP BY NEED, OUR APPROACH, PROGRAMS AND SUPPORT, NEWSLETTER).",
+  "category": "typography",
+  "evidence": "p elements e20, e28, e70, e128, e141 and e156, each 20px high above an H2.",
+  "element_ids": [
+   "e20",
+   "e28",
+   "e70",
+   "e128",
+   "e141",
+   "e156"
+  ]
+ },
+ {
+  "observation": "The palette is teal-based: teal buttons and bars, dark teal headings and links (rgb 18,106,114), and charcoal text (43,52,55). Backgrounds alternate between white, warm cream (250,248,244), pale aqua (230,243,244), deep teal and near-black (31,42,45).",
+  "category": "color",
+  "evidence": "facts top_backgrounds and top_text_colors; sections e27, e69, e127, e140 and e155 alternate backgrounds.",
+  "element_ids": [
+   "e27",
+   "e69",
+   "e140",
+   "e155",
+   "e164"
+  ]
+ },
+ {
+  "observation": "The primary buttons are solid teal pills with white bold text, 12px 26px padding and 999px radius. The secondary buttons are outlined teal pills with teal text on a transparent fill. The two are shown side by side in the hero.",
+  "category": "component",
+  "evidence": "primary_button Shop All bg rgb(26,138,147) radius 999px; e23 Shop All and e24 Wellness Kits; e30 View all is also an outlined pill.",
+  "element_ids": [
+   "e23",
+   "e24",
+   "e30",
+   "e146",
+   "e150",
+   "e154"
+  ]
+ },
+ {
+  "observation": "The Customer favorites section is a 4-column grid of 12 text-only product cards. Each card has a bold sans name at top and a bold teal price at the bottom. There are no product images. Each card is an article with an H3.",
+  "category": "component",
+  "evidence": "Articles e31 to e66 are each 257x150 and use H3s; the section has no img elements; rows start at y=798, 966 and 1134.",
+  "element_ids": [
+   "e31",
+   "e34",
+   "e38",
+   "e41",
+   "e44",
+   "e66"
+  ]
+ },
+ {
+  "observation": "The price copy shows 'from' in a small element for variable-priced items (Hair Essentials, Bladder Control Plus), as a lighter, smaller prefix before the bold price.",
+  "category": "typography",
+  "evidence": "small elements e37 and e62 (29x16) inside p e36 and e61.",
+  "element_ids": [
+   "e36",
+   "e37",
+   "e61",
+   "e62"
+  ]
+ },
+ {
+  "observation": "The product cards have a thin light-grey 1px border, a small rounded corner and a white fill. They carry no shadow. Of the border-radius elements, 22 fall in the 8-15px bucket.",
+  "category": "decoration",
+  "evidence": "Screenshot shows outlined cards; border_radius_buckets bucket_8_15 = 22; box_shadows total 1.",
+  "element_ids": [
+   "e31",
+   "e34",
+   "e44"
+  ]
+ },
+ {
+  "observation": "The Product collections section sits on a cream background. It has four photo cards in a row (Life Boosters, Life Glow, Life Essentials, Life Transitions) and a fifth card (Wellness Bundles) alone on a second row, leaving the rest of that row empty.",
+  "category": "layout",
+  "evidence": "e69 section 0,1356,1440,1382; articles e72, e84, e95 and e108 at y=1530; e118 at y=2142 with x=180 only.",
+  "element_ids": [
+   "e72",
+   "e84",
+   "e95",
+   "e108",
+   "e118"
+  ]
+ },
+ {
+  "observation": "Each collection card stacks a top-cropped lifestyle photo, a small colored icon (orange, green, teal or pink) beside a serif collection title, a bulleted product list and a bold teal 'Shop … →' link at the bottom. The Wellness Bundles card has no icon.",
+  "category": "component",
+  "evidence": "Images e73, e85, e96, e109 (250x267) and icons e74, e86, e97, e110 (44x44, alt empty); ul e76, e88, e99, e112; links e83, e94, e107, e117; e118 has only e119 and e120.",
+  "element_ids": [
+   "e73",
+   "e74",
+   "e76",
+   "e83",
+   "e118",
+   "e120"
+  ]
+ },
+ {
+  "observation": "Imagery is lifestyle photography of women and a child exercising, smiling and using a laptop, plus a product still life of capsules and herbs. The still life is reused as the hero image and as the Wellness Bundles card image, from the same file NWB-Collection-On-Sale.png.",
+  "category": "imagery",
+  "evidence": "images list: NWB-Collection-On-Sale.png at e26 and e119; jpg photos with alt such as 'Woman exercising with a kettlebell'.",
+  "element_ids": [
+   "e26",
+   "e73",
+   "e85",
+   "e96",
+   "e109",
+   "e119"
+  ]
+ },
+ {
+  "observation": "The collection lists are uneven in length, from 4 to 7 items, so the cards share equal heights (588px) with empty space below the shorter lists. The 'Hair Essentials + Fo-Ti Combo' item wraps to two lines.",
+  "category": "layout",
+  "evidence": "ul heights 146, 146, 170 and 97; articles are all 588px high; li e91 is 49px high.",
+  "element_ids": [
+   "e76",
+   "e99",
+   "e112",
+   "e91"
+  ]
+ },
+ {
+  "observation": "The Wellness Bundles link wraps its arrow onto a second line. The link box is 76px high, against 49px for the other 'Shop … →' links.",
+  "category": "layout",
+  "evidence": "e126 at 181,2588,250,76 versus e83 at 250x49.",
+  "element_ids": [
+   "e126",
+   "e83"
+  ]
+ },
+ {
+  "observation": "The Our Approach section is three text columns of serif teal H3s with grey paragraphs and underlined teal text links (Explore wellness kits, Learn More, Shop All). It has no imagery. The middle H3 repeats the H2 text, 'Inspired by nature, refined by science'.",
+  "category": "copy",
+  "evidence": "e130, e133 and e136 H3s; links e132, e135 and e138; heading_outline shows the duplicate text at levels 2 and 3.",
+  "element_ids": [
+   "e129",
+   "e130",
+   "e133",
+   "e136",
+   "e132",
+   "e135"
+  ]
+ },
+ {
+  "observation": "A centered serif teal tagline closes the Our Approach section as a standalone pull line, with no quote markup.",
+  "category": "typography",
+  "evidence": "e139 p at 406,3224,627,36 'A vibrant mind and healthy body make life's journey best.'; blockquote count is 0.",
+  "element_ids": [
+   "e139"
+  ]
+ },
+ {
+  "observation": "The support section uses a pale aqua band holding three white cards with no border. Each card has a serif title, a short paragraph and a teal pill button. The buttons sit at different heights because the paragraphs differ in length.",
+  "category": "component",
+  "evidence": "e140 section 0,3332,1440,496; cards e143, e147 and e151 are 344x250; button y values are 3674, 3647 and 3647.",
+  "element_ids": [
+   "e143",
+   "e147",
+   "e151",
+   "e146",
+   "e150",
+   "e154"
+  ]
+ },
+ {
+  "observation": "The newsletter band is deep teal with centered content: an eyebrow, a serif H2, a light paragraph and an inline form with a pill email input and a white pill Subscribe button. The input has a visually hidden label positioned at x=-9999.",
+  "category": "component",
+  "evidence": "e155 section 0,3827,1440,430 on rgb(18,106,114); form e159 480,4075,480,47; label e160 at -9999; input e161 337x47; button e162 133x47.",
+  "element_ids": [
+   "e155",
+   "e157",
+   "e159",
+   "e160",
+   "e161",
+   "e162"
+  ]
+ },
+ {
+  "observation": "The newsletter band has a lot of empty space below the form. An empty paragraph (e163, 26px high) sits under the form, and the dark teal extends about 135px past the button.",
+  "category": "layout",
+  "evidence": "e163 empty p at 414,4136,612,26; section ends at y=4257 while the form ends at 4122.",
+  "element_ids": [
+   "e163",
+   "e159"
+  ]
+ },
+ {
+  "observation": "The footer is near-black with four columns: a brand column (logo in a white rounded chip, address text, social links), ABOUT, HELP and CONTACT. H4s are uppercase bold white and links are underlined light grey.",
+  "category": "layout",
+  "evidence": "e164 footer 0,4257,1440,474 on rgb(31,42,45); h4 e174, e188 and e200; link text color rgb(201,211,213) used 44 times.",
+  "element_ids": [
+   "e164",
+   "e165",
+   "e174",
+   "e188",
+   "e200"
+  ]
+ },
+ {
+  "observation": "A row of nine payment-method logo SVGs (Amex, Apple Pay, Diners, Discover, JCB, Mastercard, PayPal, Venmo, Visa) sits at the footer base, each in a white rounded chip. The Apple Pay icon renders as a mostly empty outline on its white chip.",
+  "category": "imagery",
+  "evidence": "images e210 to e218, each 47x28 at y=4570 with 55px spacing; the slice shows the Apple Pay chip as a bare curve.",
+  "element_ids": [
+   "e210",
+   "e211",
+   "e212",
+   "e213",
+   "e214",
+   "e218"
+  ]
+ },
+ {
+  "observation": "The footer ends with a small grey FDA disclaimer and a '© 2021' copyright line below a thin divider.",
+  "category": "copy",
+  "evidence": "e219 div with p e220 (FDA statement) and p e221 '© 2021 Natural Wellbeing Distribution, Inc.'",
+  "element_ids": [
+   "e219",
+   "e220",
+   "e221"
+  ]
+ },
+ {
+  "observation": "The page has one H1 and five H2s, one per section. H3s are product or card titles (23 of them). The footer column titles jump to H4, skipping no levels.",
+  "category": "structure",
+  "evidence": "facts h1_count 1; tag_counts h2 5, h3 23, h4 3; heading_outline.",
+  "element_ids": [
+   "e21",
+   "e29",
+   "e71",
+   "e129",
+   "e142",
+   "e157"
+  ]
+ },
+ {
+  "observation": "The semantic structure uses header, nav, main, footer, 5 sections and 17 articles. The articles are used for product cards and collection cards. There are no aside, figure or blockquote elements, and the JSON-LD block count is 0.",
+  "category": "structure",
+  "evidence": "facts semantic: header 1, nav 1, main 1, section 5, article 17, aside 0, figure 0; jsonld_blocks 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "Page-wide content is constrained to a 1080px column from x=180 to x=1260 inside a 1440px viewport. Sections use generous vertical padding of about 70px above eyebrows.",
+  "category": "layout",
+  "evidence": "Section content spans x=180–1260; e28 eyebrow at y=679 in a section starting at y=607; e70 at 1428 after a section start of 1356.",
+  "element_ids": [
+   "e27",
+   "e69",
+   "e127",
+   "e140"
+  ]
+ },
+ {
+  "observation": "Styling is one inline style block with no external stylesheets and a small set of semantic class names (97 class uses, 33 unique, 2.1% Tailwind-like). There are only 2 inline style attributes and 1 script.",
+  "category": "structure",
+  "evidence": "facts counts stylesheets 0, inline_style_attrs 2; classes tailwind_like_fraction 0.021; tag_counts style 1.",
+  "element_ids": []
+ },
+ {
+  "observation": "There is almost no motion or effect styling: 0 transitions, 0 animations, 0 transforms and 0 backdrop blurs. The only shadow is the soft one on the hero image.",
+  "category": "decoration",
+  "evidence": "facts effects: transitions 0, animations 0, transforms 0, backdrop_blur 0, box_shadows 1, gradient_backgrounds 1.",
+  "element_ids": [
+   "e25",
+   "e26"
+  ]
+ },
+ {
+  "observation": "The body copy is 17px Helvetica Neue with a 27.2px line height (1.6), set in a mid-grey (95,108,112) for paragraphs and list items against charcoal headings and product names.",
+  "category": "typography",
+  "evidence": "facts body_font_size 17px, body_line_height 27.2px; top_text_colors includes rgb(95,108,112) 40 times.",
+  "element_ids": [
+   "e22",
+   "e131",
+   "e134",
+   "e137"
+  ]
+ },
+ {
+  "observation": "The copy is brand-focused and calm. It has no exclamation marks and no emoji, and the 504 words are mostly short phrases. Wellness language dominates ('Mindfully', 'plant-based', 'clinical herbalists'). The only trust cues are 'made in the USA' and 'GMP-certified'.",
+  "category": "copy",
+  "evidence": "text_stats exclamations 0, emoji 0, words 504; e22 and e134 text.",
+  "element_ids": [
+   "e22",
+   "e134"
+  ]
+ },
+ {
+  "observation": "Most elements have square corners: 227 of the radius elements are 0. Rounding is concentrated in the pill buttons (8 at pill radius) and the cards and images (8–15px bucket).",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 227, bucket_8_15 22, bucket_pill 8, bucket_16_plus 0.",
+  "element_ids": [
+   "e23",
+   "e24",
+   "e26",
+   "e143"
+  ]
+ },
+ {
+  "observation": "The footer logo is a second, smaller PNG (110x36, nwb-logo_2.png) placed on a white rounded chip. The header logo is a 140x46 PNG. Both are raster images with alt text 'Natural Wellbeing'. The 44x44 collection icons have empty alts, so they are treated as decorative.",
+  "category": "imagery",
+  "evidence": "images nwb-logo.png 140x46 and nwb-logo_2.png 110x36; icons alt ''; counts alt_missing 0.",
+  "element_ids": [
+   "e4",
+   "e165",
+   "e74",
+   "e86"
+  ]
+ }
+]

@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "The page title is '.:Alpine Everest Expedition & Trek :.', which uses a dotted-colon decoration style typical of older sites. The html lang attribute is empty.",
+  "category": "copy",
+  "evidence": "facts.title='.:Alpine Everest Expedition & Trek :.'; lang=''"
+ },
+ {
+  "observation": "The layout is a fixed-width centered column of about 980px (x≈230–1210) on a 1440px viewport. A scenic background of teal sky gradient, black grass silhouettes and a sandy bottom fills the sides.",
+  "category": "layout",
+  "evidence": "page_width 1440; white header block spans x 230–1210 in slice 0; grass silhouettes at the left and right edges"
+ },
+ {
+  "observation": "The page is built with tables, floats and absolute positioning rather than grid or flex. There are 0 grid and 0 flex elements, 2 tables, and 44 divs.",
+  "category": "structure",
+  "evidence": "display_grid 0, display_flex 0, table 2, div 44"
+ },
+ {
+  "observation": "There are no HTML5 semantic landmarks: header, nav, main, section, article, aside and footer are all 0. Navigation is built from ul and li, with 13 ul and 45 li.",
+  "category": "structure",
+  "evidence": "semantic all 0; ul 13; li 45"
+ },
+ {
+  "observation": "The page has three h1 elements and no h2. 'Namaste, Welcome to Alpine Everest', 'Gallery' and 'Products' are all level 1. Each renders at about 16px bold, so they read as small section labels.",
+  "category": "structure",
+  "evidence": "h1_count 3; heading_outline all level 1; h1 font_size 16px, weight 700"
+ },
+ {
+  "observation": "The first h1 is two-tone: 'Namaste,' is navy and 'Welcome to Alpine Everest' is olive green.",
+  "category": "typography",
+  "evidence": "h1 color rgb(39,66,120); slice 0 shows green text for the second half"
+ },
+ {
+  "observation": "Typography is almost entirely Verdana, with an Arial/Helvetica fallback and one Times New Roman element. Body font-size is 16px with line-height 'normal', but the visible body copy is much smaller, about 11px.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Verdana 195, verdana 41, Arial 4, Times New Roman 1; body_font_size 16px"
+ },
+ {
+  "observation": "The intro paragraph is small gray justified text. It is wrapped in a block of about 480px beside a cluster of photos.",
+  "category": "typography",
+  "evidence": "top_text_colors rgb(102,102,102) ×85; slice 0 shows justified paragraph lines at x 530–1010"
+ },
+ {
+  "observation": "The palette is dark navy text (rgb 22,38,74), mid gray (102,102,102), cyan link blue (0,153,204), white panels, and pale teal (162,212,213) for form inputs and the sky. It is cool-toned throughout.",
+  "category": "color",
+  "evidence": "top_backgrounds white ×6, rgb(162,212,213) ×4; text colors listed"
+ },
+ {
+  "observation": "The body background is black, with a scenic background image on top. The sides show a teal-to-sand vertical gradient with black grass silhouettes, and the footer area is black.",
+  "category": "color",
+  "evidence": "body_bg rgb(0,0,0); slice 1 shows black center and sand-colored edges"
+ },
+ {
+  "observation": "The header holds a large logo with the 'Alpine Everest Group' text, a red mountain graphic, and green and slate serif tagline lines ('Expedition & Trek', 'Import & Export'). The rest of the header is empty white, with a broken image icon at its top left.",
+  "category": "imagery",
+  "evidence": "aimg2.jpg and aimg7.jpg natural size 0×0, rendered 16×16 at (510,8), overlapping by 256px²"
+ },
+ {
+  "observation": "Two image slots in the header (aimg2.jpg and aimg7.jpg) fail to load and stack on each other, leaving a roughly 700×290px blank white area.",
+  "category": "imagery",
+  "evidence": "image_overlaps aimg2.jpg/aimg7.jpg 256; natural [0,0]"
+ },
+ {
+  "observation": "The top navigation has four text links (Home, About Us, Testimonials, Contact Us). Each has a thick blue-violet underline, and they sit centered on a light patterned band narrower than the content column.",
+  "category": "components",
+  "evidence": "slice 0 nav at y≈329 with x 535–905; band spans x 299–1143"
+ },
+ {
+  "observation": "The left sidebar has a link list with hairline dividers: Adventure Activities, Destination, Special Packages, Services, Gallery, Plan a trip. A second list under a 'Products' label holds Pashmina, Garments and Handicrafts.",
+  "category": "components",
+  "evidence": "slice 0 sidebar list items at y 480–620 and 707–763 with gray separator lines"
+ },
+ {
+  "observation": "Sidebar section titles ('Featured Tours', 'Contact Information') are images, not text. Each is a yellow torn-paper banner with a leaf motif, 248×94px natural size.",
+  "category": "imagery",
+  "evidence": "featured-tours.png 248×94 alt 'Featured Tours'; contact-information.png 248×94 alt 'Contact Information'"
+ },
+ {
+  "observation": "The sidebar 'Products' label is plain purple-blue link-style text. It does not match the navy bold h1 headings in the main column.",
+  "category": "typography",
+  "evidence": "slice 0 'Products' at (234,685) in small violet text"
+ },
+ {
+  "observation": "A 'Recommend this site to a Friend' form has three pale-teal inputs with small gray labels and a small 'Send' button with a default system look.",
+  "category": "components",
+  "evidence": "form 1, input 4, buttons 0; teal rgb(162,212,213) backgrounds; slice 0 at y 817–965"
+ },
+ {
+  "observation": "The Send control is an input, not a button element. It has a thin dark border and a teal fill.",
+  "category": "components",
+  "evidence": "counts.buttons 0, input 4; primary_button null"
+ },
+ {
+  "observation": "The contact block is plain small text on white. It gives address, phone, Skype, MSN and email on separate lines, with no icons or link styling visible.",
+  "category": "copy",
+  "evidence": "slice 0 lines y 1085–1229; br 29"
+ },
+ {
+  "observation": "The welcome section has a cluster of three overlapping, rotated photos of trekkers on the right. They are baked into a single 176×260 image.",
+  "category": "imagery",
+  "evidence": "welcome-img.jpg 176×260 at (1012,387), alt 'Alpine everest'"
+ },
+ {
+  "observation": "The Gallery strip is a horizontal row of 150×150 thumbnails in a thin-bordered box. It is laid out for 10 images starting at x=365, but only four are visible before the box clips at x≈1183.",
+  "category": "layout",
+  "evidence": "images 20.jpg…18.jpg at x 365→1850 spaced 165px, all y 664; slice 0 shows four visible"
+ },
+ {
+  "observation": "The gallery is a scrolling or carousel widget with overflow clipped. A cyan 'more' link sits below its right edge.",
+  "category": "components",
+  "evidence": "thumbnails x up to 2000 beyond the 1210 container; 'more' link at (1167,823)"
+ },
+ {
+  "observation": "Gallery thumbnails have no alt text and are loaded from URLs with resize query strings (&mw=150&mh=150&fix).",
+  "category": "imagery",
+  "evidence": "alt '' on gallery images; counts.alt_missing 20; filenames contain '&mw=150&mh=150&fix'"
+ },
+ {
+  "observation": "Two embedded plugin areas, built with object, param and embed (likely Flash), render as blank space with the grey bold text \"Couldn't load plugin.\" This leaves a large empty band between Gallery and Products.",
+  "category": "imagery",
+  "evidence": "object 2, param 6, embed 2; slice 0 text at y≈979 on both; empty space y≈830–1140"
+ },
+ {
+  "observation": "The Products strip repeats the thumbnail pattern: portrait-oriented product photos of tops and skirts, with blue caption bars ('Skirt -03', 'Skirt -01'). Two slots show broken-image icons or blanks, and the strip is again clipped.",
+  "category": "imagery",
+  "evidence": "images 23.jpg…16.jpg at y 1165; 19.jpg and 17.jpg natural 0×0 at 16×16; slice 1 blue labels"
+ },
+ {
+  "observation": "The products strip is not aligned to a grid. Images vary in width (96, 113, 109, 132px) and are positioned at irregular offsets within roughly 165px slots.",
+  "category": "layout",
+  "evidence": "natural widths 96,113,109,109,132,113; x positions 392,549,716,881,1199,1539"
+ },
+ {
+  "observation": "Another cyan 'more' link sits at the bottom right of the products box. This repeats the link treatment of the Gallery block.",
+  "category": "components",
+  "evidence": "slice 1 'more' at (1181,24); cyan rgb(0,153,204) ×42 text elements"
+ },
+ {
+  "observation": "The footer is a single line of small white text, 'Copyright © Alpine Everest Expedition & Trek 2010. All rights reserved.' It sits on black, left-aligned with the content column's left edge, and is not in a footer element.",
+  "category": "copy",
+  "evidence": "slice 1 at (230,55); footer count 0; body_bg black"
+ },
+ {
+  "observation": "There is no decorative CSS. All 241 measured elements have square corners, and there are no shadows, gradients, transitions, animations or transforms. Depth comes only from raster images such as the torn-paper banners and the soft-edged panel borders.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 241; box_shadows 0; gradient 0; transitions 0; animations 0; transforms 0"
+ },
+ {
+  "observation": "Styling is mostly inline and legacy. There are 38 inline style attributes, a font element and 89 class uses across only 9 unique class names. None are Tailwind-like.",
+  "category": "structure",
+  "evidence": "inline_style_attrs 38; font 1; classes total 89 unique 9; tailwind_like_fraction 0"
+ },
+ {
+  "observation": "No accessibility markup is present: 0 aria attributes, 20 of 23 images lack alt text, and there are 67 anchors but 0 button elements.",
+  "category": "structure",
+  "evidence": "aria_attrs 0; alt_missing 20; images 23; anchors 67; buttons 0"
+ },
+ {
+  "observation": "The head carries very little metadata: only Content-Type and google-site-verification meta tags, no JSON-LD, and 16 script tags with 4 linked stylesheets.",
+  "category": "structure",
+  "evidence": "meta_names ['Content-Type','google-site-verification']; jsonld_blocks 0; script 16; link 4"
+ },
+ {
+  "observation": "The page is about 1363px tall and carries about 192 words. Content is a short welcome blurb plus image strips, with one emoji-like character counted.",
+  "category": "copy",
+  "evidence": "page_height 1363; words 192; emoji 1"
+ },
+ {
+  "observation": "The copy has a personal, travel-brand tone ('Namaste', 'at your service'). It mixes tourism (treks, tours) and trade (pashmina, garments, handicrafts) under one brand.",
+  "category": "copy",
+  "evidence": "h1 'Namaste, Welcome to Alpine Everest'; sidebar lists Adventure Activities…Plan a trip and Pashmina/Garments/Handicrafts; logo tagline 'Import & Export'"
+ },
+ {
+  "observation": "The sidebar and main content are two columns. The left column is about 270px wide and the right about 660px. A faint panel edge, a soft vertical shadow-like image, frames the main column.",
+  "category": "layout",
+  "evidence": "sidebar x 235–495; main content x 521–1183; slice 0 faint vertical edge at x≈1150"
+ },
+ {
+  "observation": "The sidebar's white background stops at about y=1290, where a black bar starts. The main column's white continues to the footer, so the two columns end at different heights.",
+  "category": "layout",
+  "evidence": "slice 0 black strip at y≈1295 under x 230–507; slice 1 white panel x 507–1210 down to y≈47"
+ }
+]

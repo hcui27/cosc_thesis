@@ -1,0 +1,353 @@
+[
+ {
+  "observation": "Headings, nav, buttons, labels and eyebrows use Helvetica Neue/Arial sans-serif. Body copy, list items and inputs use Georgia serif. The page pairs a sans display face with a serif text face.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Georgia 127, Helvetica Neue 73, Arial 2. h1 font_family is \"Helvetica Neue\", Arial, sans-serif.",
+  "element_ids": [
+   "e13",
+   "e14",
+   "e48",
+   "e52"
+  ]
+ },
+ {
+  "observation": "The h1 is a 64px bold sans in cream (rgb 244,236,220) over a dark hero photo. It is left-aligned at x=180 and is the largest type on the page. There is exactly one h1.",
+  "category": "typography",
+  "evidence": "h1 font_size 64px, weight 700, color rgb(244,236,220); h1_count 1; rect 180,219,896x67.",
+  "element_ids": [
+   "e13"
+  ]
+ },
+ {
+  "observation": "Every section opens with a small uppercase, letter-spaced eyebrow label above a 32px bold h2. The eyebrows are rust red on light sections, peach on the dark destinations section, and orange-tan in the hero.",
+  "category": "typography",
+  "evidence": "Eyebrow texts: OWNED AND OPERATED BY ALASKANS, FLIGHT SEARCH AND BOOKING, WELCOME, FLYING WITH US, DESTINATIONS, NEWS, NEWSLETTER, CAREERS, CONTACT US. h2 is 32px/700. Text color rgb(240,181,143) appears 3 times.",
+  "element_ids": [
+   "e12",
+   "e22",
+   "e46",
+   "e57",
+   "e80",
+   "e93"
+  ]
+ },
+ {
+  "observation": "The palette is warm and restrained: cream/off-white page background, near-black ink, near-black section bands, and one rust-red accent (rgb 168,52,31). The accent is used for buttons, eyebrows, links and arrows.",
+  "category": "color",
+  "evidence": "body_bg rgb(251,247,239); body_color rgb(29,26,23); backgrounds rgb(11,10,12) ×4 and rgb(168,52,31) ×3; text rgb(168,52,31) ×27; secondary text rgb(95,88,80).",
+  "element_ids": []
+ },
+ {
+  "observation": "The hero is a full-width dark band holding a photograph of a carved owl mask. Its left side is darkened so the text stays readable. The image is a CSS background, since the only <img> is the logo.",
+  "category": "imagery",
+  "evidence": "e11 is a div at 0,64,1440x486 and the screenshot shows the owl mask at right. images lists only Logo.gif (40x28, alt empty). gradient_backgrounds is 0.",
+  "element_ids": [
+   "e11"
+  ]
+ },
+ {
+  "observation": "Hero content is left-aligned in a column about 626px wide. It stacks an eyebrow, h1, serif lead paragraph and two CTAs. The photo subject sits to the right and is not overlapped by text.",
+  "category": "layout",
+  "evidence": "e12 at 180,160 w626; e14 at 180,312 w626; the owl is at about x=990–1290.",
+  "element_ids": [
+   "e12",
+   "e13",
+   "e14",
+   "e15",
+   "e16"
+  ]
+ },
+ {
+  "observation": "The hero has a filled primary CTA and an outlined secondary CTA side by side. The primary is a rust-red fill with white text and 6px radius. The secondary is a transparent button with a white border.",
+  "category": "components",
+  "evidence": "primary_button 'Book a flight' bg rgb(168,52,31), radius 6px, padding 12px 22.4px. e16 'Flight schedule & status' at 334,400 232x54 is outlined.",
+  "element_ids": [
+   "e15",
+   "e16"
+  ]
+ },
+ {
+  "observation": "The header is a dark bar with the small logo and brand text on the left and a six-link inline nav on the right. Content is held to a 1080px column starting at x=180 on a 1440px page.",
+  "category": "layout",
+  "evidence": "e1 header 0,15,1440x64; logo at x180; nav e4 spans 821–1260 with 6 links; section content widths are 1080 (e22, e23).",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4"
+  ]
+ },
+ {
+  "observation": "The logo is a small 83x59 GIF rendered at 40x28 with empty alt text, next to a text brand link. It is the only raster image in the DOM.",
+  "category": "imagery",
+  "evidence": "images: Logo.gif alt '', natural [83,59], rect 40x28; counts images 1, svgs 0.",
+  "element_ids": [
+   "e3"
+  ]
+ },
+ {
+  "observation": "A full-width tan notice band sits directly under the hero for a COVID-19 update. It uses a bold lead-in, serif text and an underlined rust link, in a markup <aside>.",
+  "category": "components",
+  "evidence": "e17 aside 0,550,1440x87, background rgb(233,223,200); strong 'COVID-19 update:'; link 'Read the full notice'. Semantic aside count is 1.",
+  "element_ids": [
+   "e17",
+   "e18",
+   "e19",
+   "e20"
+  ]
+ },
+ {
+  "observation": "The booking form is a white card with a 1px border, rounded corners and one soft shadow. It contains Return/One way radios, a 5-column field row and a second row of three fields. It is the page's only shadowed element.",
+  "category": "components",
+  "evidence": "e24 form 180,783,1080x329; box_shadows count 1; 6 inputs, 3 selects, 9 labels, 1 button.",
+  "element_ids": [
+   "e24",
+   "e25",
+   "e26",
+   "e28",
+   "e36"
+  ]
+ },
+ {
+  "observation": "The form grid is uneven. Five fields fill the first row (location, destination, two dates, adults). Children and Infants sit alone on the second row, leaving the right two-thirds empty. Inputs use serif placeholders, native date pickers and native selects.",
+  "category": "layout",
+  "evidence": "e37 and e39 at y=949 with x=209 and 416 only. Placeholders 'e.g. Anchorage' and 'e.g. Bethel'. mm/dd/yyyy date inputs.",
+  "element_ids": [
+   "e28",
+   "e30",
+   "e32",
+   "e34",
+   "e38",
+   "e40"
+  ]
+ },
+ {
+  "observation": "Form labels are small bold sans text above each field. The submit button is a rust fill, with an inline sentence beside it holding a travel agent login link and a phone-reservation link.",
+  "category": "components",
+  "evidence": "e41 'Search flights' at 209,1040 150x43; e42 text 'Travel agent login · Reserve by phone: 888-Fly-Grant (888-359-4726)' with two anchors.",
+  "element_ids": [
+   "e41",
+   "e42",
+   "e43",
+   "e44"
+  ]
+ },
+ {
+  "observation": "The Welcome section is a two-column split. The left column has the eyebrow, h2 and a short paragraph with a bold phrase. The right column has an h3 and a bulleted list of COVID rules. The left column is much shorter than the right.",
+  "category": "layout",
+  "evidence": "e46–e49 at x=180 w520; e50 and e51 at x=740 w520; ul height 272 against p height 54.",
+  "element_ids": [
+   "e47",
+   "e48",
+   "e50",
+   "e51"
+  ]
+ },
+ {
+  "observation": "The 'More ways to fly' section is a card grid with 3 cards in the first row and 2 in the second, which leaves one empty cell. Cards are white with a thin border and rounded corners on a cream-tint band. Each has an h3, a gray serif blurb and an underlined rust link ending in an arrow.",
+  "category": "components",
+  "evidence": "e59, e63, e67 at y=1786 (344x253 each); e71 and e75 at y=2063 (344x172); links 'View schedule →', 'Charter details →', 'Freight & cargo →', 'Learn more →', 'Read the FAQs →'.",
+  "element_ids": [
+   "e59",
+   "e63",
+   "e67",
+   "e71",
+   "e75",
+   "e62"
+  ]
+ },
+ {
+  "observation": "Card heights are stretched to match the tallest card in each row. Short blurbs leave empty space below the link in the Flight schedule and Freight cards, while the Charters card fills its height.",
+  "category": "layout",
+  "evidence": "First row cards are all 253px tall. The Charters paragraph is 136px against 54px in the other two.",
+  "element_ids": [
+   "e59",
+   "e63",
+   "e67"
+  ]
+ },
+ {
+  "observation": "The Destinations section inverts to a near-black band with cream text. The eight town names are in outlined, bold sans tiles on a 5-column grid, with a peach underlined 'More about destinations →' link. The tiles are plain list items with no links.",
+  "category": "components",
+  "evidence": "e79 background rgb(11,10,12) at 0,2299,1440x370; li tiles 208x45 at x=180,398,616,834,1052; 8 li items; 5+3 wrap.",
+  "element_ids": [
+   "e79",
+   "e82",
+   "e83",
+   "e87",
+   "e91"
+  ]
+ },
+ {
+  "observation": "The News column is a bordered list of dated entries. Each has a small gray date in a <time> element, a bold sans h3 title and serif links separated by a middle dot. The 2018 and 2016 entries differ in structure: one has an excerpt and the other has a PDF link.",
+  "category": "components",
+  "evidence": "e96 and e101 are li items; time elements e97 and e102; links 'Read the article · PDF'; footer links 'All news · More photos'; 2 time tags.",
+  "element_ids": [
+   "e95",
+   "e97",
+   "e98",
+   "e99",
+   "e100",
+   "e106"
+  ]
+ },
+ {
+  "observation": "The News and Newsletter blocks sit side by side in two 520px columns. The newsletter column has only a short paragraph, a rust CTA and a social line, so it ends well above the news column.",
+  "category": "layout",
+  "evidence": "e94 at x=180 w520; e110 at x=740 w520; e112 button-style link 237x50 at y=2860; e113 'Follow us on Facebook and Twitter.'",
+  "element_ids": [
+   "e110",
+   "e111",
+   "e112",
+   "e113"
+  ]
+ },
+ {
+  "observation": "The newsletter CTA is an <a> styled as a rust-filled button, the same treatment as the hero 'Book a flight'. The page has only one real <button>, in the form.",
+  "category": "components",
+  "evidence": "e112 'Sign up to our newsletter' is an anchor with 237x50 size; e15 is also an anchor; counts.buttons is 1.",
+  "element_ids": [
+   "e112",
+   "e15"
+  ]
+ },
+ {
+  "observation": "The Careers section is a single short paragraph under an h2, capped at about 680px wide, with no link or CTA. The right side of the section is empty.",
+  "category": "copy",
+  "evidence": "e119 at 180,3427 w680 h82; section e116 is 312px tall and holds only p, h2, p.",
+  "element_ids": [
+   "e116",
+   "e118",
+   "e119"
+  ]
+ },
+ {
+  "observation": "Contact details use a description list with small gray bold sans terms (Phone, Facebook, Twitter, Website, Online) beside serif underlined links, in a two-column key/value layout.",
+  "category": "components",
+  "evidence": "dl count 1, dt 5, dd 5; dt at x=180 w64, values at x=264; tag_counts show dl/dt/dd.",
+  "element_ids": [
+   "e123",
+   "e124",
+   "e126",
+   "e127",
+   "e132",
+   "e133"
+  ]
+ },
+ {
+  "observation": "Section backgrounds alternate down the page: dark hero, tan notice, cream form, white welcome, cream-tint cards, black destinations, cream news, white careers, cream contact, black footer. Hairline borders separate the light bands.",
+  "category": "color",
+  "evidence": "Section y ranges: e21 637–1176, e45 1176–1640, e56 1640–2299, e79 2299–2669, e92 2669–3279, e116 3278–3590, e120 3590–3968. Backgrounds include rgb(255,255,255) ×15.",
+  "element_ids": [
+   "e21",
+   "e45",
+   "e56",
+   "e79",
+   "e92",
+   "e116",
+   "e120"
+  ]
+ },
+ {
+  "observation": "The footer is a slim dark band. A copyright line with the range 2015–2021 sits on the left and four underlined cream links sit on the right in a horizontal list.",
+  "category": "components",
+  "evidence": "e134 footer 0,3968,1440x104; e135 text '© 2015–2021 Grant Aviation. All rights reserved.'; e136 ul with 4 li links.",
+  "element_ids": [
+   "e134",
+   "e135",
+   "e136"
+  ]
+ },
+ {
+  "observation": "Links in body content are underlined serif text in rust red. Link text uses a consistent set of patterns: trailing '→' on card links, '·' separators between inline links, and a parenthetical phone alias.",
+  "category": "copy",
+  "evidence": "'View schedule →', 'Read the article · PDF', 'All news · More photos', '888-359-4726 (888-Fly-Grant)'.",
+  "element_ids": [
+   "e20",
+   "e62",
+   "e99",
+   "e100",
+   "e107",
+   "e125"
+  ]
+ },
+ {
+  "observation": "Corners are mostly square with small rounding where used. Cards, form and buttons use radii of about 6–12px, there are no pill shapes, and the page has no gradients, blur, transitions, animations or transforms.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0→176, 1–7→20, 8–15→6, 16+→0, pill→0; gradient_backgrounds 0; backdrop_blur 0; transitions 0; animations 0; transforms 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "Semantic structure is fairly complete. The page has header, nav, main, aside, footer and seven sections, with no articles or figures. Headings run h1, then h2 sections, then h3 items, with no skipped levels.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 7, aside 1, footer 1, article 0, figure 0. Outline: 1 h1, 8 h2, 8 h3.",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e17",
+   "e21",
+   "e134"
+  ]
+ },
+ {
+  "observation": "Styling is mostly from a single inline <style> block with few classes. There are no external stylesheets, 22 unique classes, almost no utility-class patterns, and 13 inline style attributes.",
+  "category": "structure",
+  "evidence": "counts.stylesheets 0, tag style 1, classes total 58 unique 22, tailwind_like_fraction 0.017, inline_style_attrs 13.",
+  "element_ids": []
+ },
+ {
+  "observation": "Body text is 17px with a 27.2px line height (1.6). Page copy is short, about 511 words across a 4072px page, with 1 exclamation mark, no emoji and no em dashes.",
+  "category": "typography",
+  "evidence": "body_font_size 17px, body_line_height 27.2px; text_stats words 511, emoji 0, em_dashes 0, exclamations 1.",
+  "element_ids": []
+ },
+ {
+  "observation": "Some content is dated or inconsistent. COVID-19 messaging is prominent in both the banner and the Welcome section. News items are from 2018 and 2016, and the footer copyright reads 2015–2021. 'Quyana Rewards' is described with British spelling ('programme').",
+  "category": "copy",
+  "evidence": "e17 and e50 COVID text; e97 'Jun 12, 2018'; e102 'Mar 25, 2016'; e135 '© 2015–2021'; e73 'Our loyalty programme.'",
+  "element_ids": [
+   "e17",
+   "e50",
+   "e97",
+   "e102",
+   "e135",
+   "e73"
+  ]
+ },
+ {
+  "observation": "The brand voice is regional and plain: 'Owned and operated by Alaskans', 'Fly Easy, Fly Grant.', and 'Quyana Rewards', a Yup'ik word. Headings are short, and one is a question ('Where are you headed?').",
+  "category": "copy",
+  "evidence": "e12 eyebrow; h1 'Fly Easy, Fly Grant.'; h2 'Where are you headed?'; h3 'Quyana Rewards'.",
+  "element_ids": [
+   "e12",
+   "e13",
+   "e23",
+   "e72"
+  ]
+ },
+ {
+  "observation": "Nav links are small plain sans text in cream with no underline, buttons or active state. The 'Book' link is styled like the others, not as a CTA.",
+  "category": "components",
+  "evidence": "e5–e10 are 24px-high anchors with similar widths, from 35 to 92px, spaced about 17–19px apart.",
+  "element_ids": [
+   "e5",
+   "e6",
+   "e7",
+   "e8",
+   "e9",
+   "e10"
+  ]
+ },
+ {
+  "observation": "Vertical rhythm is generous and regular. Sections are 300–660px tall, with about 64px of top padding before each eyebrow. Eyebrow, h2 and content follow a fixed spacing sequence in every section.",
+  "category": "layout",
+  "evidence": "Eyebrow y offsets from section tops: e22 64, e46 65, e57 64, e80 64, e93 64, e117 65, e121 64. h2 sits about 29px below each eyebrow.",
+  "element_ids": [
+   "e22",
+   "e46",
+   "e57",
+   "e80",
+   "e93",
+   "e117"
+  ]
+ }
+]

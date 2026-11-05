@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "The page title is 'Tell Me Baby | Australia's Biggest Baby Product Review Website'. The html lang is en-AU. The copy repeatedly names Australian parents, and the footer reads '© Tell Me Media Pty Ltd 2021'.",
+  "category": "copy",
+  "evidence": "facts.title, facts.lang='en-AU', h1 'Baby product reviews by Australian parents', footer slice"
+ },
+ {
+  "observation": "The type is a single family, Montserrat. It is applied to 889 elements and no secondary or serif face appears. Body text is 16px on a 24px line height.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['Montserrat',889]], body_font_size 16px, body_line_height 24px"
+ },
+ {
+  "observation": "The h1 is 55px at weight 400, white and left-aligned. It sits over the hero photo, so it reads as light, large text rather than a bold headline. The h1 count is 1.",
+  "category": "typography",
+  "evidence": "h1 font_size 55px, font_weight 400, color rgb(255,255,255), text_align left; h1_count 1"
+ },
+ {
+  "observation": "Section titles such as 'Baby product review categories', 'How Tell Me Baby works', 'Trending baby product reviews', 'Recent reviews' and 'Recent articles' are centred, regular-weight, large black Montserrat. Each one repeats the same centred-heading pattern down the page.",
+  "category": "typography",
+  "evidence": "Slices 0-5 show centred headings; h2 font_size 24px weight 500 in facts, though the visible section headings render larger"
+ },
+ {
+  "observation": "The heading outline is irregular. The h1 is followed directly by h3s (footer accordions 'TELL ME BABY', 'BRANDS', 'COMMUNITY', 'HERE TO HELP', and the newsletter), then h2s for modal forms (Login, Sign up, Forgot password). The visible section titles like 'Trending baby product reviews' are not in the heading outline, so they are probably styled non-heading elements.",
+  "category": "semantic-structure",
+  "evidence": "heading_outline: h1, five h3, then h2 Login/Sign up/Forgot password; h2 count 3, h3 count 5"
+ },
+ {
+  "observation": "The DOM is div-heavy: 528 divs, 138 anchors and 66 list items. There is no main element, and article, aside, figure and blockquote are all absent. There are 7 header elements, 12 sections, 1 nav and 1 footer. Reviews and quotes are not marked up with blockquote or article.",
+  "category": "semantic-structure",
+  "evidence": "tag_counts div 528; semantic main 0, article 0, aside 0, figure 0, blockquote 0, header 7, section 12, nav 1, footer 1"
+ },
+ {
+  "observation": "The palette is a peach/salmon and soft teal pair on white. Peach rgb(255,170,145) is the background on 46 elements and teal rgb(125,196,204) is the text colour on 307. Body text is black. There is a navy for the award ribbons and a Facebook blue rgb(59,89,152) on 2 elements.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 64, rgb(255,170,145) 46, rgb(125,196,204) 10, rgb(59,89,152) 2; top_text_colors teal 307"
+ },
+ {
+  "observation": "Teal is used for the pill CTAs ('View all categories', 'Join TMB Rewards', 'Read more reviews', 'Read more'), the Signup button, the 'Highest rated …' category labels and the article links. Peach is used for the star ratings and the logo's 'me'.",
+  "category": "color",
+  "evidence": "Teal pill buttons in slices 0-5; peach stars; rgb(125,196,204) text 307 elements; logo 'tellmebaby' with peach 'me'"
+ },
+ {
+  "observation": "The top bar is white with a 150x40 SVG logo at the left, a small pill-shaped search field and dropdown menus (Browse reviews, Our community, Tools, Articles) with caret indicators. On the right are an outlined pill 'Login' and a filled teal pill 'Signup'. The bar is about 75px tall and has a faint shadow.",
+  "category": "navigation",
+  "evidence": "Logo rect x25 y18 w150 h40; hero image starts at y=75; slice 0 header; nav count 1"
+ },
+ {
+  "observation": "The hero is a full-width 1440x540 WebP photo of a smiling baby held by a parent. It is darkened by an overlay (8 elements use rgba(0,0,0,0.5)). The h1 sits at the left and a 'Find baby product reviews' label with a large white pill search field sits at the right.",
+  "category": "imagery",
+  "evidence": "image background-1440x540.jpg.webp rect 0,75,1440x540, alt ''; rgba(0,0,0,0.5) backgrounds 8; slice 0"
+ },
+ {
+  "observation": "The search field appears twice. A small one is in the header and a large rounded one is in the hero, both with a magnifier icon. The header placeholder is clipped ('Search for product revi').",
+  "category": "component",
+  "evidence": "Slice 0: header input 'Search for product revi|' and hero 'Search for reviews' pill; 25 inputs and 6 forms in facts"
+ },
+ {
+  "observation": "The category grid has 8 photo tiles in two rows of four, each with a white line icon and a bold white label centred on a dark-overlaid photo. The rows are offset, with the second row shifted horizontally. The second-row tiles (Sleep & nap time and Health & safety) sit flush against each other while the others have gaps, so the rhythm is uneven.",
+  "category": "layout",
+  "evidence": "Slice 0: Out & about, Car travel, Bath time, Feeding; Change time, Sleep & nap time, Health & safety, Just for mum; tiles ~265x200"
+ },
+ {
+  "observation": "Category tiles are square-cornered rectangles with no rounding or border. The tile imagery is stock-style lifestyle photography, with a pictogram icon above each label.",
+  "category": "imagery",
+  "evidence": "Slice 0 tiles; border_radius_buckets bucket_0 856 of 889"
+ },
+ {
+  "observation": "The 'How Tell Me Baby works' section shows four short text steps, scattered irregularly. Expected icons or images are blank, so the steps float as lone small black lines at different vertical offsets. A teal 'Join TMB Rewards' pill sits underneath.",
+  "category": "component",
+  "evidence": "Slice 1: 'Search for a product, brand or category', 'Read reviews from real parents like you', 'Buy the product that's right for your family', 'Join the community & leave a review'"
+ },
+ {
+  "observation": "A 728x90 leaderboard ad ('SunRice – Kissed by Aussie sunshine') is centred between sections. A second ad image (Sudocrem mobile banner) has 0x0 size and is hidden at desktop width.",
+  "category": "imagery",
+  "evidence": "images: sunrice-ros-leaderboard.jpg rect 356,1754,728x90, alt 'SunRice Advertisement'; sudocrem-ros-mobile-banner.jpg rect 0x0"
+ },
+ {
+  "observation": "Trending product cards are white rectangles with a soft shadow. Each has a product image, a centred product name, half-star peach ratings and a grey review count ('618 reviews', '94 reviews'). The three cards start at the left edge, with the first card flush at x=0 and clipped, and leave the right third of the row empty. This looks like a carousel that did not initialise.",
+  "category": "layout",
+  "evidence": "Slice 1: cards at x≈0-320, 355-675, 710-1030; the first card's image area is blank; box_shadows 50"
+ },
+ {
+  "observation": "Many product-card images are blank white. In the Trending, Recent reviews and Award grids, most card image areas show only whitespace, with a few images (Sudocrem, Bugaboo, Pigeon, Britax, Cerelac, MooGoo, Fisher-Price) rendered. The product images appear to be lazy-loaded and unloaded in the capture.",
+  "category": "imagery",
+  "evidence": "Slices 1-5: large empty card tops above star rows; only 11 img elements in the DOM"
+ },
+ {
+  "observation": "The Recent reviews row has three equal white cards with a soft shadow. Each has a large empty image area at the top, a star row, a product title, a quoted excerpt in straight quotes and a round author avatar with a name. The avatars are the same placeholder 'user-avatar.jpg' (100x100, shown at 53px).",
+  "category": "component",
+  "evidence": "images user-avatar.jpg x4 alt 'Author profile photo' at 178/560/942, y3380, 53x53; slice 2 cards Mikala Peschek, Kaitlin Littlewood, Sheila Kimpo"
+ },
+ {
+  "observation": "The review excerpts are truncated with an ellipsis inside quote marks (e.g. 'Full breastfeeding mum this is the...'). Star ratings mix filled peach stars with outlined stars in a thin yellow stroke, including the 1-star and 4-star reviews.",
+  "category": "copy",
+  "evidence": "Slice 2: quoted excerpts ending in '...'; stars for Cherub review 1 filled + 4 outlined"
+ },
+ {
+  "observation": "The '2021 Tell Me Baby Award Winners' grid has four cards per row over roughly 5 rows (about 20 winners). Each card carries a category label in small teal text ('Highest rated baby bottle', 'Highest rated baby car seat') above a black product name, plus a navy ribbon badge on the image corner for some. The leftmost column is clipped at the viewport edge, so its labels read 'ighest rated…'.",
+  "category": "layout",
+  "evidence": "Slices 2-5: 'Highest rated baby bottle/capsule/car seat/cereal…'; cards at x≈0-305, 340-660, 695-1015, 1050-1370; ribbon badge on Pigeon, Britax, Cerelac, MooGoo, Fisher-Price"
+ },
+ {
+  "observation": "The award grid ends with a short last row: two cards ('MooGoo Natural Mini Moo Bubbly Wash', 'Bellamy's Organic Step 3') followed by empty space. Card heights vary with title length, and some titles wrap to three lines.",
+  "category": "layout",
+  "evidence": "Slice 5: last row has two cards at x≈0-305 and 340-660; titles like 'Tommee Tippee Closer to Nature Essentials Starter Kit' wrap to 3 lines"
+ },
+ {
+  "observation": "Cards use a single light drop shadow and no border. The facts count 50 box-shadow elements. The cards are square-cornered, while the pill buttons (4 pill-radius elements) and avatars (17 elements at 16px+) are the only rounded shapes.",
+  "category": "decoration",
+  "evidence": "box_shadows 50; border_radius buckets: bucket_0 856, bucket_1_7 12, bucket_16_plus 17, bucket_pill 4"
+ },
+ {
+  "observation": "Pill-shaped buttons share one style: teal fill, white bold text, fully rounded, centred below each section. This includes 'View all categories', 'Join TMB Rewards', 'Read more reviews' and 'Read more'. A single outlined teal-bordered pill is used for Login. The first button in the DOM, 'Reset', has a transparent background and 0px radius, so button styling is inconsistent.",
+  "category": "component",
+  "evidence": "primary_button text 'Reset' bg rgba(0,0,0,0) radius 0px; teal pills in slices 0,1,2,5"
+ },
+ {
+  "observation": "The 'Recent articles' list is a column of plain teal text links with no thumbnails or dates ('Win 1 of 10 Mamas & Papas silver rattles', 'How to express and store colostrum antenatally'). They are left-aligned at x≈165, in contrast to the centred section titles. A 'Read more' pill sits very close under the last link.",
+  "category": "component",
+  "evidence": "Slices 5-6: five article links in teal, left aligned; Read more button at y≈185 in slice 6"
+ },
+ {
+  "observation": "A text-only SEO block, 'Baby product reviews by parents, for parents', has three left-aligned paragraphs about searching, reviewing and earning rewards. After it comes a centred 'Join TMB Rewards today!' promo naming Kmart, Coles & Target vouchers and a bold 'Join now' link. The block has no imagery and large gaps between its parts.",
+  "category": "copy",
+  "evidence": "Slice 6 copy; text_stats words 798, exclamations 3"
+ },
+ {
+  "observation": "The footer link groups are collapsed accordions: 'TELL ME BABY', 'BRANDS', 'COMMUNITY' and 'HERE TO HELP' in uppercase with a + icon and a hairline divider. They sit in a 2x2 layout. The h3 headings hold the toggles, and the link lists inside are not visible.",
+  "category": "navigation",
+  "evidence": "Slice 6 and heading_outline h3 'TELL ME BABY','BRANDS','COMMUNITY','HERE TO HELP'; ul count 17"
+ },
+ {
+  "observation": "The footer is sparse and has rough alignment. The social icons (Facebook, Instagram, YouTube) are stacked vertically with visible list bullets, and the logo and copyright line sit side by side, crowded together. The footer's decorative images, a peach dots PNG and a 'footer_right_bottom' PNG, have 0 natural size and don't show. The footer logo is the same 150x40 SVG as the header.",
+  "category": "decoration",
+  "evidence": "Slice 6 bullets beside social icons; images tmb_dots_peach.png natural 0x0, footer_right_bottom_picture_alt.png natural 0x0, w 0; footer logo rect 451,9037,150x40"
+ },
+ {
+  "observation": "Hidden UI is present in the DOM: Login, Sign up and Forgot password h2s for modal or dialog forms, a 'Sign up to the TMB Newsletter' h3, 6 forms and 25 inputs. None of these show in the screenshot.",
+  "category": "component",
+  "evidence": "heading_outline h2 Login/Sign up/Forgot password, h3 newsletter; tag_counts form 6, input 25, button 21, fieldset 1"
+ },
+ {
+  "observation": "The page is about 9077px tall and 1455px wide. It is built almost entirely on flex, with 0 grid elements and 40 flex elements. The content width is about 1140px, centred, with a full-bleed hero.",
+  "category": "layout",
+  "evidence": "layout page_height 9077, page_width 1455, display_grid 0, display_flex 40; category grid spans x≈151-1289"
+ },
+ {
+  "observation": "Styling is a mix of custom class names and inline styles. There are 1407 class uses across 383 unique classes, only about 10.9% Tailwind-like. 140 elements carry inline style attributes, and there are 4 style elements.",
+  "category": "semantic-structure",
+  "evidence": "classes total 1407, unique 383, tailwind_like_fraction 0.109; inline_style_attrs 140; style 4"
+ },
+ {
+  "observation": "Motion and effects are minimal. There are no transitions or animations, no backdrop blur and one gradient background. There are 20 transform uses, probably for icons and centring. Depth comes from the shadows and the photo overlays.",
+  "category": "decoration",
+  "evidence": "effects transitions 0, animations 0, backdrop_blur 0, gradient_backgrounds 1, transforms 20"
+ },
+ {
+  "observation": "The head carries heavy third-party and SEO scaffolding. There are 52 scripts, 37 meta tags (11 origin-trial, Open Graph, Twitter card, Facebook, Google and Pinterest verification), 2 JSON-LD blocks, 2 iframes and 3 noscript blocks. The pages are generator-tagged, which suggests a CMS.",
+  "category": "semantic-structure",
+  "evidence": "tag_counts script 52, meta 37, iframe 2, noscript 3; jsonld_blocks 2; meta_names include og:*, twitter:*, generator, origin-trial x11"
+ },
+ {
+  "observation": "Image alt text is present on every image with a non-empty purpose (alt_missing 0). Decorative images, the hero and dots, use empty alt. There are only 11 img elements and 8 svg elements, and the logo and star icons are vector. ARIA attributes number 38.",
+  "category": "semantic-structure",
+  "evidence": "counts alt_missing 0, images 11, svgs 8, aria_attrs 38; hero alt ''; logo alt 'Tell Me Baby'"
+ },
+ {
+  "observation": "The page is white-dominant with generous vertical whitespace between sections. Large empty gaps occur around the 'How it works' steps, below the Recent reviews cards and before the footer. Sections are separated by spacing only, with no background colour bands.",
+  "category": "layout",
+  "evidence": "body_bg rgb(255,255,255); white backgrounds 64 elements; slices 1, 2, 6 show large blank spans"
+ },
+ {
+  "observation": "The copy is friendly and consumer-oriented, in an Australian voice: 'mum', 'nappy', 'dummy', 'pram', 'Aussie sunshine', and retailer names Kmart, Coles and Target. Product category labels follow a repeated 'Highest rated baby X' template.",
+  "category": "copy",
+  "evidence": "Slices 0-6 text: 'Just for mum', 'Highest rated nappy', 'Highest rated dummy', 'Highest rated pram > $1000'"
+ },
+ {
+  "observation": "The only emoji-like or pictographic decoration is the line-icon set on the category tiles (pram, car, bottle, nappy, onesie, face, mother) and the star ratings. The facts list one emoji in the text.",
+  "category": "decoration",
+  "evidence": "Slice 0 tile icons; text_stats emoji 1"
+ }
+]

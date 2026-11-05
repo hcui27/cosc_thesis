@@ -1,0 +1,1213 @@
+{
+ "site": "merchantsavvy_co_uk",
+ "n_observations": 44,
+ "observations": [
+  {
+   "id": "c01",
+   "observation": "Top of the page: on the original, the first ~1300px screenshot slice is blank white and no header or nav is visible. The AI-built page has a visible 65px white header bar with a hairline bottom border, semi-transparent white (rgba 255,255,255,0.95) and backdrop blur, with the logo on the left and nav plus CTA on the right.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O1"
+   ],
+   "generated_ids": [
+    "G3"
+   ],
+   "element_ids": [
+    "e2",
+    "e3",
+    "e5",
+    "e9"
+   ],
+   "tags": [
+    {
+     "attribute": "header",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: blank top becomes slim white bar with blur",
+     "page_wide": false
+    },
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: backdrop blur on header",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c02",
+   "observation": "Logo: on the original, merchant_savvy_purple.svg renders tiny (48×11 at x=419) and a 250px variant is hidden at 0×0. The AI-built page uses the same purple SVG logo at 149×34 in the header and a white version at 140×32 in the footer.",
+   "category": "branding",
+   "status": "changed",
+   "original_ids": [
+    "O29"
+   ],
+   "generated_ids": [
+    "G25"
+   ],
+   "element_ids": [
+    "e4",
+    "e112"
+   ],
+   "tags": [
+    {
+     "attribute": "logo",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: tiny purple svg logo becomes larger header logo",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c03",
+   "observation": "H1: the original's only h1 has empty text (38px, weight 600, Open Sans, navy rgb(0,37,58)). The AI-built h1 reads 'Payment Processing Made Simple (& Cheaper)' at 60px weight 700 in system-ui, near-black rgb(28,29,46), with '(& Cheaper)' in an indigo span for two-tone emphasis.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O2"
+   ],
+   "generated_ids": [
+    "G6"
+   ],
+   "element_ids": [
+    "e12",
+    "e13"
+   ],
+   "tags": [
+    {
+     "attribute": "h1 heading",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: empty h1 becomes large two-tone bold heading",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c04",
+   "observation": "Heading outline: the original runs empty h1, then two h3s with template-like labels ('Desktop - Organic (+ types)', 'Mobile - IMS with Types'), then three h2s. The AI-built page has a clean h1 followed by three h2s and no h3. Both share the h2 topics Payment Processing and Finance & Banking; the third is 'Research & Stats' on the original and 'Research & Statistics' on the AI-built page.",
+   "category": "structure",
+   "status": "changed",
+   "original_ids": [
+    "O3"
+   ],
+   "generated_ids": [
+    "G27"
+   ],
+   "element_ids": [
+    "e1"
+   ],
+   "tags": [
+    {
+     "attribute": "heading hierarchy",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: empty h1 and template h3s becomes structured h1 h2",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c05",
+   "observation": "Semantic markup: the original is built from generic containers (405 divs, 15 sections, 4 navs) with no header, main or footer element, and its footer text is not in a footer landmark. The AI-built page uses header, one nav, main, 6 sections, footer and an address element.",
+   "category": "structure",
+   "status": "changed",
+   "original_ids": [
+    "O4",
+    "O21"
+   ],
+   "generated_ids": [
+    "G26"
+   ],
+   "element_ids": [
+    "e2",
+    "e5",
+    "e111",
+    "e114",
+    "e117"
+   ],
+   "tags": [
+    {
+     "attribute": "landmark elements",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: generic divs become header nav main sections footer",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c06",
+   "observation": "Hidden form controls: the original DOM has 174 inputs, 113 labels, 5 selects with 55 options, 3 forms and 3 iframes, none of them visible. The AI-built page has no forms.",
+   "category": "content",
+   "status": "original_only",
+   "original_ids": [
+    "O5"
+   ],
+   "generated_ids": [
+    "G2"
+   ],
+   "element_ids": [
+    "e10",
+    "e18",
+    "e28",
+    "e65",
+    "e89",
+    "e108"
+   ],
+   "tags": [
+    {
+     "attribute": "forms and inputs",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: hidden inputs forms and iframes",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c07",
+   "observation": "Code weight: the original ships 95 scripts, 44 stylesheets, 9 style blocks and 304 inline style attributes, with page-builder classes (416 unique, 0.002 tailwind-like). The AI-built page has 0 scripts, 1 stylesheet, 0 inline styles and 23 unique hand-written semantic classes (0.052 tailwind-like).",
+   "category": "code",
+   "status": "changed",
+   "original_ids": [
+    "O6"
+   ],
+   "generated_ids": [
+    "G30"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: page-builder heavy markup becomes minimal markup",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c08",
+   "observation": "Body text: the original sets it at 14px with a 25.2px line-height in mid-grey rgb(146,146,146). The AI-built page sets it at 16px with a 25.6px line-height in near-black rgb(28,29,46).",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O7"
+   ],
+   "generated_ids": [
+    "G7"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "body text size and line height",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: 14px 1.8 becomes 16px 1.6",
+     "page_wide": true
+    },
+    {
+     "attribute": "text and link colors",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: mid-grey body text becomes near-black with grey meta",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c09",
+   "observation": "Font families: the original mixes Open Sans (534), roboto/Roboto (438/140, inconsistent casing) and calibri (134), plus the icon fonts Font Awesome 5 Free and eicons. The AI-built page uses a single system-ui sans stack (170 elements) and no icon fonts.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O8",
+    "O31"
+   ],
+   "generated_ids": [
+    "G7"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "body typeface",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: open sans and roboto become system-ui stack",
+     "page_wide": true
+    },
+    {
+     "attribute": "icons",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: icon fonts for social and ui glyphs",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "observation": "Section h2s: the original sets them at 28px weight 500 in a lighter dark-grey. The AI-built page sets them at 36px weight 700 in dark navy.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O9"
+   ],
+   "generated_ids": [
+    "G17"
+   ],
+   "element_ids": [
+    "e29",
+    "e30",
+    "e66",
+    "e67",
+    "e90",
+    "e91"
+   ],
+   "tags": [
+    {
+     "attribute": "section headings",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: lighter 28px h2s become bolder 36px navy h2s",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "observation": "Link-section layout: on the original, the heading and paragraph sit in a left column (x≈160–515) with two link columns beside them at x≈540 and x≈920. On the AI-built page, the h2 and a ~640px intro sit above a 3-column grid of tiles with ~14px gaps.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O10"
+   ],
+   "generated_ids": [
+    "G14",
+    "G17"
+   ],
+   "element_ids": [
+    "e32",
+    "e35",
+    "e38",
+    "e41",
+    "e44",
+    "e47",
+    "e29",
+    "e30"
+   ],
+   "tags": [
+    {
+     "attribute": "link list",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: side text and link columns become intro above three-column tile grid",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "observation": "Link styling: the original uses plain cyan rgb(19,175,240) text links with Font Awesome chevron-right bullets and tight ~25px spacing. The AI-built page uses white rounded tiles (337×60) with thin grey borders, a 16px medium label and an 18×18 right-arrow SVG.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O11"
+   ],
+   "generated_ids": [
+    "G14"
+   ],
+   "element_ids": [
+    "e32",
+    "e35",
+    "e38",
+    "e41",
+    "e44",
+    "e47"
+   ],
+   "tags": [
+    {
+     "attribute": "link list",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: cyan chevron text links become bordered arrow tiles",
+     "page_wide": false
+    },
+    {
+     "attribute": "link affordance",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: chevron bullets become svg right arrows",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "observation": "On both pages, the content is mainly a directory-like hub of keyword-style topical links (e.g. Merchant Account Providers, Card Readers & Machines) with only a short descriptive paragraph per section.",
+   "category": "content",
+   "status": "general",
+   "original_ids": [
+    "O12"
+   ],
+   "generated_ids": [
+    "G16"
+   ],
+   "element_ids": [
+    "e30",
+    "e31",
+    "e67",
+    "e68",
+    "e91",
+    "e98"
+   ],
+   "tags": [
+    {
+     "attribute": "content and dates",
+     "family": "copy",
+     "action": "kept",
+     "value": "kept: directory hub of keyword topical links",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "observation": "The AI-built tile grids have uneven last rows: Payment Processing ends with 2 tiles in a 3-column grid, and the long 'Charity & Community Bank Accounts' label wraps, making that tile 85px tall against the 60px standard.",
+   "category": "layout",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G15"
+   ],
+   "element_ids": [
+    "e59",
+    "e62",
+    "e86",
+    "e87"
+   ],
+   "tags": [
+    {
+     "attribute": "link card grid",
+     "family": "component",
+     "action": "added",
+     "value": "added: uneven last row and wrapped tall tile",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "observation": "Background palette: the original is mostly white, with pale blue-grey rgb(218,228,232) and accent fills in green rgb(69,187,92), violet-blue rgb(71,55,255) and orange-red rgb(249,66,19) that are not visible in the screenshots. The AI-built page uses a single-hue indigo scheme: rgb(43,44,145) accent, lavender rgb(241,241,250) tint and deep indigo rgb(30,34,140).",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O13"
+   ],
+   "generated_ids": [
+    "G19"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "color palette",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: white with multi-color fills becomes single-hue indigo",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "observation": "Text colours: the original uses mid grey rgb(146,146,146) and darker grey rgb(105,105,105) for most text, with cyan rgb(19,175,240) links and a little navy. The AI-built page uses near-black navy rgb(28,29,46) for text, grey-violet rgb(90,92,117) for secondary text, and indigo rgb(43,44,145) as the link/accent colour.",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O14"
+   ],
+   "generated_ids": [
+    "G19",
+    "G8"
+   ],
+   "element_ids": [
+    "e14"
+   ],
+   "tags": [
+    {
+     "attribute": "text and link colors",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: grey text and cyan links become navy text with indigo links",
+     "page_wide": true
+    },
+    {
+     "attribute": "accent color",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: cyan link accent becomes indigo accent",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "observation": "Visible section backgrounds: the original shows only white, with no colour blocks. The AI-built page alternates white sections with a full-bleed pale lavender band for Finance & Banking and a deep indigo footer.",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O36"
+   ],
+   "generated_ids": [
+    "G18"
+   ],
+   "element_ids": [
+    "e65",
+    "e111"
+   ],
+   "tags": [
+    {
+     "attribute": "section backgrounds",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: plain white becomes white lavender and indigo bands",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "observation": "Research section image cards: the original shows small 208×139 thumbnails (charts.jpg 'UK SMEs', payment-fraud-stats.jpg 'Payment Fraud') with small grey captions in a horizontal row. The AI-built page shows the same two illustrations, one isometric and one hooded-hacker, as large ~508×339 bordered, rounded cards with bold caption bars.",
+   "category": "imagery",
+   "status": "changed",
+   "original_ids": [
+    "O15"
+   ],
+   "generated_ids": [
+    "G20"
+   ],
+   "element_ids": [
+    "e92",
+    "e93",
+    "e94",
+    "e95",
+    "e96",
+    "e97"
+   ],
+   "tags": [
+    {
+     "attribute": "promo cards",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: small thumbnails become large bordered rounded cards",
+     "page_wide": false
+    },
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: small thumbnails become large rounded cropped images",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "observation": "On the AI-built page, each research card is a single anchor wrapping the img and a caption span, with a border and rounded corners that clip the image. Neither page uses figure/figcaption.",
+   "category": "components",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G21"
+   ],
+   "element_ids": [
+    "e92",
+    "e95"
+   ],
+   "tags": [
+    {
+     "attribute": "card links",
+     "family": "semantic_dom",
+     "action": "added",
+     "value": "added: whole card wrapped in single link",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "observation": "Mobile Payments, Remote Working and Mobile Ecommerce: on the original these are image cards whose images are broken, with alt text spilling and captions displaced far down the page. On the AI-built page they are a row of three plain text link tiles below the image cards.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O16",
+    "O18"
+   ],
+   "generated_ids": [
+    "G22"
+   ],
+   "element_ids": [
+    "e98",
+    "e99",
+    "e102",
+    "e105"
+   ],
+   "tags": [
+    {
+     "attribute": "product cards",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: broken image cards become text link tiles",
+     "page_wide": false
+    },
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: broken thumbnail images with alt text",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "observation": "The original's stat images are unloaded but keep 1024px-wide boxes on a 228px step, so they overlap heavily (up to 546,852 px²). The AI-built page has no image overlaps.",
+   "category": "imagery",
+   "status": "original_only",
+   "original_ids": [
+    "O17"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "dropped",
+     "value": "dropped: overlapping unloaded image boxes",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "observation": "The original has a ~500px blank vertical gap between the Research & Stats cards and the footer, caused by broken image boxes reserving height.",
+   "category": "spacing",
+   "status": "original_only",
+   "original_ids": [
+    "O19"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "page length",
+     "family": "layout",
+     "action": "dropped",
+     "value": "dropped: empty gap above footer",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "observation": "Footer: the original's footer is a plain small grey legal block on white (copyright 2021, company number, Reading address) with cyan Privacy/Terms links, left at x≈150. The AI-built footer is a full-width deep indigo rgb(30,34,140) block with a white logo, company and address text, right-aligned Privacy/Terms links, a divider and a '© All rights reserved 2021.' line.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O20",
+    "O21"
+   ],
+   "generated_ids": [
+    "G24"
+   ],
+   "element_ids": [
+    "e111",
+    "e112",
+    "e113",
+    "e114",
+    "e117",
+    "e122"
+   ],
+   "tags": [
+    {
+     "attribute": "footer",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: plain grey legal block becomes dark indigo multi-part footer",
+     "page_wide": false
+    },
+    {
+     "attribute": "footer legal text",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: copyright line",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "observation": "Payment-method logo strip (528×23 image): on the original it closes the page at the bottom left (x=171) in greyscale. On the AI-built page it sits centred in its own section with an 'Accepted payment types' caption and a hairline top border, above the footer.",
+   "category": "imagery",
+   "status": "changed",
+   "original_ids": [
+    "O22"
+   ],
+   "generated_ids": [
+    "G23"
+   ],
+   "element_ids": [
+    "e108",
+    "e109",
+    "e110"
+   ],
+   "tags": [
+    {
+     "attribute": "payment logos",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: bottom-left strip becomes centered captioned section",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "observation": "The AI-built hero has an extra pale 300×50 payment-scheme logo row (Visa, Mastercard, Apple Pay, contactless) below the CTA buttons.",
+   "category": "imagery",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G11"
+   ],
+   "element_ids": [
+    "e17"
+   ],
+   "tags": [
+    {
+     "attribute": "payment logos",
+     "family": "imagery",
+     "action": "added",
+     "value": "added: payment scheme logo row in hero",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "observation": "Corner radius: the original is mostly square (1179 at 0, 81 at 1–7px, 6 at 8–15px). The AI-built page has 142 square elements and 28 at 8–15px (8px buttons, tiles, cards). Neither has pill shapes.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O23"
+   ],
+   "generated_ids": [
+    "G28"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "corner radius",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: mostly square corners become small rounding",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "observation": "Effects: the original has 12 box-shadows, 2 gradients, no blur, 377 transitions and 6 transforms. The AI-built page has 3 shadows (on the stat cards), 1 gradient, 1 backdrop blur, 20 transitions and 0 transforms. Neither page uses animations.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O23"
+   ],
+   "generated_ids": [
+    "G29"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: many transitions become fewer transitions",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "observation": "Layout technique: the original uses only flexbox (179 flex, 0 grid). The AI-built page mixes flex (24) with CSS grid (5) for the stat, tile and image-card layouts.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O24"
+   ],
+   "generated_ids": [
+    "G31"
+   ],
+   "element_ids": [
+    "e18",
+    "e31",
+    "e68",
+    "e98"
+   ],
+   "tags": [
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: flexbox-only becomes flex plus grid columns",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "observation": "Calls to action: the original has no button-styled CTAs (primary_button null) and uses chevron text links. The AI-built page has a solid indigo 'Get a quote' header button (8px radius, 8px 16px padding) and hero CTAs: a solid 'Compare quotes' and an outlined 'Explore topics' (56px tall). Both pages have 0 <button> elements.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O25"
+   ],
+   "generated_ids": [
+    "G4",
+    "G10"
+   ],
+   "element_ids": [
+    "e6",
+    "e7",
+    "e8",
+    "e9",
+    "e15",
+    "e16"
+   ],
+   "tags": [
+    {
+     "attribute": "call-to-action button",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: chevron text links become filled and outline buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "observation": "Navigation: the original has 4 nav elements, 105 anchors and 227 li, but none of the menus are visible. The AI-built page has one visible nav with three text links plus the CTA, and 33 anchors in total.",
+   "category": "navigation",
+   "status": "changed",
+   "original_ids": [
+    "O32"
+   ],
+   "generated_ids": [
+    "G4"
+   ],
+   "element_ids": [
+    "e6",
+    "e7",
+    "e8",
+    "e9"
+   ],
+   "tags": [
+    {
+     "attribute": "primary navigation",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: hidden menus become visible simple nav with cta",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c31",
+   "observation": "Image count: the original has 66 img tags, most hidden or unloaded at 0×0 (carrier logos, terminals, forms). The AI-built page has 6 images: logos, payment strips and two illustrations. Its hero is text-only.",
+   "category": "imagery",
+   "status": "changed",
+   "original_ids": [
+    "O26"
+   ],
+   "generated_ids": [
+    "G32"
+   ],
+   "element_ids": [
+    "e10",
+    "e17"
+   ],
+   "tags": [
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: many hidden images become few images with text hero",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c32",
+   "observation": "Alt text: both pages have no missing alt. The original's alts are generic or builder-prefixed ('Homepage (New Design) retail', 'Terminal 5 300x262 1'). The AI-built page's alts are descriptive ('Visa, Mastercard, Android Pay, Apple Pay and contactless', 'Merchant Savvy').",
+   "category": "accessibility",
+   "status": "changed",
+   "original_ids": [
+    "O27"
+   ],
+   "generated_ids": [
+    "G11",
+    "G25"
+   ],
+   "element_ids": [
+    "e17",
+    "e4",
+    "e112"
+   ],
+   "tags": [
+    {
+     "attribute": "image alt text",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: generic builder alts become descriptive alts",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c33",
+   "observation": "ARIA and skip link: the original has 96 aria attributes. The AI-built page has 22 aria attributes plus an off-screen 'Skip to content' link as its first element.",
+   "category": "accessibility",
+   "status": "changed",
+   "original_ids": [
+    "O33"
+   ],
+   "generated_ids": [
+    "G27"
+   ],
+   "element_ids": [
+    "e1"
+   ],
+   "tags": [
+    {
+     "attribute": "aria attributes",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: heavy aria becomes minimal aria",
+     "page_wide": false
+    },
+    {
+     "attribute": "skip link",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: off-screen skip-to-content link",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c34",
+   "observation": "Head metadata: the original has a full OG/Twitter/robots set, 1 JSON-LD block, a generator meta and the title 'Payment Processing & Merchant Services'. The AI-built page has only charset, viewport and description, no JSON-LD, and the title 'Merchant Savvy – Payment Processing Made Simple (& Cheaper)', which mirrors its h1.",
+   "category": "metadata",
+   "status": "changed",
+   "original_ids": [
+    "O28"
+   ],
+   "generated_ids": [
+    "G34"
+   ],
+   "element_ids": [
+    "e12"
+   ],
+   "tags": [
+    {
+     "attribute": "page metadata",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: rich social and json-ld meta becomes minimal meta",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c35",
+   "observation": "Both pages declare lang en-GB. The AI-built copy uses British spelling ('centres').",
+   "category": "metadata",
+   "status": "general",
+   "original_ids": [
+    "O28"
+   ],
+   "generated_ids": [
+    "G13",
+    "G34"
+   ],
+   "element_ids": [
+    "e20",
+    "e23",
+    "e26",
+    "e27",
+    "e12"
+   ],
+   "tags": [
+    {
+     "attribute": "page metadata",
+     "family": "semantic_dom",
+     "action": "kept",
+     "value": "kept: lang en-gb",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c36",
+   "observation": "Copy volume and tone: the original has 131 visible words of short descriptive copy with no slogan. The AI-built page has 226 words with a benefit-led headline ('Made Simple (& Cheaper)') and 'independent' positioning.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O30"
+   ],
+   "generated_ids": [
+    "G33"
+   ],
+   "element_ids": [
+    "e11",
+    "e14",
+    "e27"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: short descriptive copy becomes benefit-led headline copy",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c37",
+   "observation": "Neither page uses exclamation marks or em dashes. The original has 1 emoji-class character; the AI-built page has 0.",
+   "category": "content",
+   "status": "general",
+   "original_ids": [
+    "O30"
+   ],
+   "generated_ids": [
+    "G33"
+   ],
+   "element_ids": [
+    "e11",
+    "e14",
+    "e27"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "kept",
+     "value": "kept: no emoji or em dashes",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c38",
+   "observation": "Canvas and content column: the original's content starts at x=160 on a 1868px canvas, spans to x≈1450 and leaves the right third empty. The AI-built page uses a ~1040px left-aligned container at x=200 on a 1440px canvas with even side margins.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O34",
+    "O10"
+   ],
+   "generated_ids": [
+    "G1"
+   ],
+   "element_ids": [
+    "e11",
+    "e12",
+    "e29",
+    "e31",
+    "e66"
+   ],
+   "tags": [
+    {
+     "attribute": "content column width",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: wide offset column becomes centered 1040px column",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c39",
+   "observation": "Both pages have generous vertical rhythm with large white padding between section blocks: about 204px between section starts on the original, and about 70–80px between sections on the AI-built page.",
+   "category": "spacing",
+   "status": "general",
+   "original_ids": [
+    "O35"
+   ],
+   "generated_ids": [
+    "G35"
+   ],
+   "element_ids": [
+    "e29",
+    "e66",
+    "e90",
+    "e31"
+   ],
+   "tags": [
+    {
+     "attribute": "spacing rhythm",
+     "family": "layout",
+     "action": "kept",
+     "value": "kept: generous vertical whitespace",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c40",
+   "observation": "Page structure: the original has no hero or banner; visible content begins directly with the link sections. The AI-built page opens with a hero (eyebrow, h1, subhead, CTAs) and a stats strip before the link sections, giving six stacked sections.",
+   "category": "structure",
+   "status": "changed",
+   "original_ids": [
+    "O36"
+   ],
+   "generated_ids": [
+    "G2"
+   ],
+   "element_ids": [
+    "e10",
+    "e18",
+    "e28",
+    "e65",
+    "e89",
+    "e108"
+   ],
+   "tags": [
+    {
+     "attribute": "hero area",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: text hero with eyebrow h1 subhead and ctas",
+     "page_wide": false
+    },
+    {
+     "attribute": "site statistics",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: hero stats strip",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c41",
+   "observation": "The AI-built hero has a small uppercase, letter-spaced indigo eyebrow label: 'INDEPENDENT COMPARISON & ADVICE'.",
+   "category": "typography",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G5"
+   ],
+   "element_ids": [
+    "e11"
+   ],
+   "tags": [
+    {
+     "attribute": "section eyebrow labels",
+     "family": "typography",
+     "action": "added",
+     "value": "added: uppercase letterspaced eyebrow above headings",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c42",
+   "observation": "The AI-built hero has a single-line ~20px grey-slate subhead below the headline.",
+   "category": "typography",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G8"
+   ],
+   "element_ids": [
+    "e14"
+   ],
+   "tags": [
+    {
+     "attribute": "section subtitles",
+     "family": "copy",
+     "action": "added",
+     "value": "added: muted subtitle paragraph under h1",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c43",
+   "observation": "The AI-built hero background is a faint lavender-to-white gradient that ends with a hard edge at y≈595.",
+   "category": "color",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G9"
+   ],
+   "element_ids": [
+    "e10"
+   ],
+   "tags": [
+    {
+     "attribute": "hero area",
+     "family": "layout",
+     "action": "added",
+     "value": "added: faint lavender gradient hero background",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c44",
+   "observation": "The AI-built page has a row of three white, bordered, softly shadowed stat cards that lead with an indigo figure ('90%', '1 route', '0 sales agents') above grey description text. The cards overlap the end of the hero.",
+   "category": "components",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G12",
+    "G13"
+   ],
+   "element_ids": [
+    "e18",
+    "e19",
+    "e22",
+    "e25",
+    "e20",
+    "e23",
+    "e26",
+    "e27"
+   ],
+   "tags": [
+    {
+     "attribute": "site statistics",
+     "family": "component",
+     "action": "added",
+     "value": "added: three shadowed stat cards overlapping hero",
+     "page_wide": false
+    },
+    {
+     "attribute": "content cards",
+     "family": "component",
+     "action": "added",
+     "value": "added: uniform bordered rounded white cards",
+     "page_wide": false
+    }
+   ]
+  }
+ ]
+}

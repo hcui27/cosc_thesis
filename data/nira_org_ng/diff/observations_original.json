@@ -1,0 +1,142 @@
+[
+ {
+  "observation": "A modal popup with a 500x500 promo image (Promo_ads.jpg, 463px rendered) is centered over the page. A grey dimming overlay covers the page and a circular close button sits at its top-right corner. The popup hides part of the hero and the intro heading.",
+  "category": "decoration/effects",
+  "evidence": "Promo_ads.jpg rect x488 y213 w463 h463; the screenshot shows a white box with a round grey X; content behind it is greyed out"
+ },
+ {
+  "observation": "The page opens with a dark top utility bar. The organisation name and social icon glyphs are on the left. A phone number '0700CALLNIRA' and an email address are on the right in green.",
+  "category": "layout",
+  "evidence": "Background rgb(29,29,29) appears once in top_backgrounds; text rgb(43,182,115) is used 57 times; FontAwesome is used on 9 elements"
+ },
+ {
+  "observation": "The header is a light grey band with the 80x57 logo on the left. A horizontal main menu of uppercase items sits to its right: HOME, WHO ARE WE, EVENTS, MEDIA, LEGAL, JOIN US, REGISTRARS, SUPPORT, SWITCHTO.NG. Most items carry small dropdown chevrons. The active HOME item is green. Thin vertical dividers separate the items.",
+  "category": "component",
+  "evidence": "logo.png at x150 y70 80x57; menu items visible in the screenshot"
+ },
+ {
+  "observation": "A full-width hero slider shows .ng domain-category banners (sch, gov, 8, name_zone, mobi, edu, i_ng). The banners are 1500x450 JPGs rendered at 1440x432 and stacked horizontally off-canvas at x=1440. Only sch.jpg is visible, with faint prev/next arrows at the edges.",
+  "category": "imagery",
+  "evidence": "image_overlaps list sch/gov/8/name_zone/mobi/edu/i_ng with identical 622080px² overlaps; sch.jpg rect x0 y137 w1440 h433"
+ },
+ {
+  "observation": "The visible hero slide is a stock-style photo of a green apple on books. Large black bold text on the right reads 'here you. .sch.ng Domains'. The photo and its text are baked into the raster image rather than live HTML text.",
+  "category": "imagery",
+  "evidence": "sch.jpg alt is empty; the h1 text is empty (h1.text ''); the headline text appears only inside the image"
+ },
+ {
+  "observation": "The single h1 is empty and styled 36px, weight 800, green rgb(43,182,115), in Open Sans. The page has no visible h1 text. The visible title is an h2.",
+  "category": "semantic structure",
+  "evidence": "h1_count 1, h1.text '', heading_outline first entry level 1 text ''"
+ },
+ {
+  "observation": "The heading hierarchy jumps between levels. After the empty h1 come h3 'QUICK MENU' and 'NIRA CALENDAR', then h2s for the welcome, register and policies sections. An h3 for the newsletter and an h4 'NEWS UPDATE' follow, then h3 footer headings.",
+  "category": "semantic structure",
+  "evidence": "heading_outline: h1, h3, h3, h2, h2, h2, h3, h4, h3, h3, h3, h3, h3"
+ },
+ {
+  "observation": "The body is built mostly from generic div wrappers and links. It has no header, nav, main or aside elements, only 5 section, 3 article and 1 footer. The count is 242 divs against 167 anchors and 121 list items.",
+  "category": "semantic structure",
+  "evidence": "semantic: header 0, nav 0, main 0, aside 0, section 5, article 3, footer 1; tag_counts div 242, a 167, li 121"
+ },
+ {
+  "observation": "Layout is a 4-column grid of about 292px columns inside a roughly 1140px centred container, starting at x≈150. The columns are left sidebar (Quick Menu and Calendar), main content, a second content column, and a right sidebar (newsletter, news, video). It is built without CSS grid or flex.",
+  "category": "layout",
+  "evidence": "display_grid 0, display_flex 0; column starts at x150, 443, 735, 1028 in the screenshot; footer headings align at the same x positions"
+ },
+ {
+  "observation": "The left sidebar 'QUICK MENU' is a list of four links with small chevron/arrow bullets (Whois Search, Registrars, Search, Contact Us). Thin horizontal hairline dividers separate the rows.",
+  "category": "component",
+  "evidence": "h3 'QUICK MENU'; four list rows visible with separators; iCicons font used on 4 elements"
+ },
+ {
+  "observation": "A small month-view calendar widget showing 'May 2021' has double-arrow and single-arrow nav buttons. It has Mon-Sun column headers, and day 25 is highlighted in a bordered box. It has a rounded grey outer border and sits in a sidebar under the 'NIRA CALENDAR' heading. The date is stale compared to the current date.",
+  "category": "component",
+  "evidence": "2 tables, 7 th, 38 td; primary_button text 'Previous Year' radius 3px; screenshot calendar"
+ },
+ {
+  "observation": "The type system pairs Open Sans (412 elements) with ABeeZee (233 elements). Body text is 14px on a 24px line height. The h2 is 24px at weight 600. Section titles like 'Register a .ng Domain' render large and medium-weight in dark grey.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Open Sans 412, ABeeZee 233; body_font_size 14px; body_line_height 24px; h2 font_size 24px weight 600"
+ },
+ {
+  "observation": "The palette is restrained: white body background (rgb(255,255,255)), dark grey text rgb(51,51,51), and a single green accent rgb(43,182,115) for links, active nav, and headings. Grey rgb(153,153,153) and near-black footer rgb(15,10,10) round it out, with a darker pure green rgb(0,102,0) for the copyright bar.",
+  "category": "color",
+  "evidence": "body_color rgb(51,51,51); top_text_colors green 57, grey 46, rgb(242,242,242) 45; top_backgrounds include rgb(15,10,10) and rgb(0,102,0)"
+ },
+ {
+  "observation": "News headlines in the right sidebar are set in bold uppercase green text, stacked as three lines in a ticker-style box with small prev/next arrow buttons above them: 'PANTAMI INAUGURATES NCC EMERGENCY COMMUNICATION CENTRES IN ENUGU, OGUN'.",
+  "category": "typography",
+  "evidence": "h4 'NEWS UPDATE'; green uppercase bold text in the screenshot; small grey arrow controls at x1250-1285"
+ },
+ {
+  "observation": "The newsletter block shows an uppercase heading 'SUBSCRIBE TO OUR NEWSLETTER' with a single centred green text link 'Subscribe' beneath it, rather than a form field or button.",
+  "category": "component",
+  "evidence": "h3 'SUBSCRIBE TO OUR NEWSLETTER'; counts buttons 0; screenshot shows a plain green 'Subscribe' link"
+ },
+ {
+  "observation": "The 'Register a .ng Domain' and 'NiRA Policies' blocks each pair a small icon (ngReg.png at 55x57, policy.png at 55x55) floated left with a paragraph that wraps around it. Each paragraph ends in a green inline 'Read More.' link.",
+  "category": "component",
+  "evidence": "ngReg.png at x443 y910; policy.png at x735 y910; 'Read More' links in green; 3 article tags"
+ },
+ {
+  "observation": "A native HTML5 video player is embedded in the right sidebar. It has default browser controls and a 3:04 duration. The poster frame is a dark gradient with the .ng logo and a ring of orange dots. The video is 300px wide.",
+  "category": "imagery",
+  "evidence": "tag_counts video 1, source 1; screenshot shows controls with '0:00 / 3:04' at x1028-1328"
+ },
+ {
+  "observation": "The intro copy under the welcome h2 describes NiRA as a not-for-profit, non-governmental self-regulating body. It uses plain paragraph text at 14px/24px with a muted grey tone. The popup covers its first lines.",
+  "category": "copy",
+  "evidence": "h2 'Welcome to the .ng Domain Registry website.'; text visible 'NiRA is a Not-for-Profit, Non-Governmental Self-Regulating body...'; words 324"
+ },
+ {
+  "observation": "The footer is a near-black panel with four columns (Registrars, Policy Compliance, Support, Follow us on :). Column headings are large white Open Sans text at about 24px. Beneath each is a vertical stack of green text links with generous spacing.",
+  "category": "layout",
+  "evidence": "footer 1; h3 headings Registrars, Policy Compliance, Support, 'Follow us on :'; background rgb(15,10,10)"
+ },
+ {
+  "observation": "Social icons in the footer are glossy, full-colour raster 32px PNGs in a tight row: Facebook, Twitter, YouTube, Google, Instagram. They are separate from the line-glyph icons in the top bar. The alt text is empty on four of them and misspelled ('instragram') on the last.",
+  "category": "imagery",
+  "evidence": "facebook_32.png, twitter_32.png, youtube_32.png, google_32.png, instragram.png at y1215, 32x32; alt_missing 8; instragram alt 'instragram'"
+ },
+ {
+  "observation": "A bottom copyright strip is a solid dark green band (rgb(0,102,0)) with centred white text '© 2019 Nigeria Internet Registration Association (NiRA). All Rights Reserved.' and a black 'Webmail' link that has low contrast against the green.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(0,102,0); slice 2 text and black 'Webmail' link"
+ },
+ {
+  "observation": "Styling relies heavily on legacy-style CSS. There are 155 unique classes across 607 class uses, with a tailwind-like fraction of 0.003. There are also 120 inline style attributes, 6 style blocks and 12 stylesheets, which suggests a CMS/template-driven build.",
+  "category": "semantic structure",
+  "evidence": "classes total 607, unique 155, tailwind_like_fraction 0.003; inline_style_attrs 120; stylesheets 12; meta generator present"
+ },
+ {
+  "observation": "The page is script-heavy. It has 43 script tags, a base tag, noscript fallbacks and an iframe. Accessibility metadata is absent: zero ARIA attributes, and 8 of 17 images have missing alt.",
+  "category": "semantic structure",
+  "evidence": "script 43, base 1, noscript 2, iframe 1; aria_attrs 0; alt_missing 8"
+ },
+ {
+  "observation": "Decoration is subtle. Most elements have square corners (619 with radius 0), a few have small radii (36 in the 1-7px range), and 6 are pill or circular, such as the popup close button and social icons. There are 25 box-shadows, 189 transitions and 1 animation, with no gradients or backdrop blur.",
+  "category": "decoration/effects",
+  "evidence": "border_radius_buckets bucket_0 619, bucket_1_7 36, bucket_pill 6; box_shadows 25; transitions 189; gradient_backgrounds 0; backdrop_blur 0"
+ },
+ {
+  "observation": "Page height is only 1388px at 1440px wide, so the whole home page is short. It stacks a utility bar, header, hero, a single content row, a footer and a copyright strip, with no further sections below.",
+  "category": "layout",
+  "evidence": "page_height 1388, page_width 1440; 2 slices; sections visible in order"
+ },
+ {
+  "observation": "Navigation and sidebar labels use uppercase, letter-spaced small caps-style text (e.g. 'QUICK MENU', 'NIRA CALENDAR', 'SWITCHTO.NG'), set in a lighter regular weight. This contrasts with the bolder mixed-case h2s.",
+  "category": "typography",
+  "evidence": "h3 texts 'QUICK MENU', 'NIRA CALENDAR'; nav items uppercase in screenshot"
+ },
+ {
+  "observation": "The document is declared lang 'en-gb' with a long descriptive title: 'Welcome to the .ng Domain Registry website - Nigeria internet Registration Association (NiRA)'. The page carries no JSON-LD structured data.",
+  "category": "semantic structure",
+  "evidence": "lang en-gb; title in facts; jsonld_blocks 0"
+ },
+ {
+  "observation": "Copy tone is institutional and informational: acronyms (NiRA, ccTLD, 3R model), policy and registrar terminology, and a single exclamation mark across the page. There is one emoji-class character, likely an icon glyph.",
+  "category": "copy",
+  "evidence": "text_stats words 324, exclamations 1, emoji 1; texts 'NiRA operates a 3R model of operation', 'Policy Compliance'"
+ }
+]

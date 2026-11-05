@@ -1,0 +1,378 @@
+[
+ {
+  "observation": "The page is a magazine-style blog homepage. It has a dark navy top utility bar, a logo header, two stacked nav bars, a featured-story block, a 4-column article card grid, an author box and a dark footer. All content sits in a centered column about 1128px wide (x=156 to 1284) on a 1440px viewport.",
+  "category": "layout",
+  "evidence": "facts.layout page_width 1440; sections e27 and e136 are 1128px wide starting at x=156; page_height 2377",
+  "element_ids": [
+   "e1",
+   "e6",
+   "e27",
+   "e60",
+   "e141"
+  ]
+ },
+ {
+  "observation": "The heading outline has no h1. The only h2 is 'BROWSE ARTICLES'. The 26 h3 elements cover every article title, category label and the author name. The footer uses h4 for column titles.",
+  "category": "dom-semantics",
+  "evidence": "h1_count 0; tag_counts h2 1, h3 26, h4 3; the brand name is an img inside a link, not a heading",
+  "element_ids": [
+   "e60",
+   "e32",
+   "e138",
+   "e142"
+  ]
+ },
+ {
+  "observation": "The semantic landmarks are fairly rich: one header, two nav, one main, nine section, 18 article and one footer. Every story card is an article containing a time element. There is no aside, figure or figcaption.",
+  "category": "dom-semantics",
+  "evidence": "semantic counts: header 1, nav 2, main 1, section 9, article 18, footer 1, figure 0; time 18",
+  "element_ids": [
+   "e28",
+   "e36",
+   "e64",
+   "e10",
+   "e16"
+  ]
+ },
+ {
+  "observation": "The top bar is a 40px full-width navy strip. It holds the date 'Thursday, June 17, 2021' on the left and a search form with a text input and a red 'Search' button on the right.",
+  "category": "component",
+  "evidence": "e1 0,0,1440,40; background rgb(20,33,61) is one of two navy elements; primary_button Search bg rgb(179,38,30), radius 3px, padding 6px 12px",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e3",
+   "e4",
+   "e5"
+  ]
+ },
+ {
+  "observation": "The header row sets a small logo image at left and an italic serif quote at right on the off-white page background. The quote is 'Education should aim at teaching values rather than mere facts.' The center of the row is empty. A thin red rule closes the header at its bottom edge.",
+  "category": "layout",
+  "evidence": "logo img e8 119x70 at x=156; quote p e9 at x=864 w=420; body_bg rgb(246,244,239); screenshot shows red line at y≈150",
+  "element_ids": [
+   "e6",
+   "e8",
+   "e9"
+  ]
+ },
+ {
+  "observation": "Navigation has two tiers. The primary row (HOME, ABOUT US, BLOG, PRIVACY POLICY, CONTACT US) is uppercase, bold sans-serif on white, and the active HOME item is red with a red underline. The second row lists ten category links in smaller, gray, sentence-case type on a light band.",
+  "category": "navigation",
+  "evidence": "nav e10 at y=150 h=45, nav e16 at y=195 h=33; HOME is red in the screenshot; the secondary links are gray (107,107,112)",
+  "element_ids": [
+   "e10",
+   "e11",
+   "e16",
+   "e17",
+   "e22"
+  ]
+ },
+ {
+  "observation": "The hero is a bento-style layout. One large featured article (680x382 image with the title below) fills the left two-thirds. Three horizontal cards stack on the right, each with a thumbnail of about 161px on the left and text on the right.",
+  "category": "layout",
+  "evidence": "e28 article 682x501 at x=156; e36, e44 and e52 are 426px wide at x=858 with 161px image links; display_grid count 5",
+  "element_ids": [
+   "e28",
+   "e36",
+   "e44",
+   "e52",
+   "e30"
+  ]
+ },
+ {
+  "observation": "The featured article title is the largest text on the page. It is a bold serif at roughly 28px in near-black. The side-card and grid-card titles are smaller bold serifs, which sets up a clear size hierarchy.",
+  "category": "typography",
+  "evidence": "h3 e32 height 33px with width 648; side h3 e40 is 239px wide wrapping to 3 lines; Georgia on 218 elements",
+  "element_ids": [
+   "e32",
+   "e40",
+   "e48",
+   "e68"
+  ]
+ },
+ {
+  "observation": "Typography pairs Georgia (serif) with system-ui (sans-serif). Georgia is used for headlines, the quote, the author bio and the summary. System sans is used for navigation, meta lines, category labels, buttons and the footer.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Georgia 218, system-ui 148, Arial 1; body font size 16px, line-height 24.8px",
+  "element_ids": [
+   "e32",
+   "e9",
+   "e139",
+   "e143",
+   "e2"
+  ]
+ },
+ {
+  "observation": "Category labels above each title are tiny uppercase sans-serif in bold red with wide letter-spacing, for example 'ONLINE EDUCATION', 'EDUCATION' and 'COLLEGE AND UNIVERSITY'. Each is a link, and the pattern repeats on all 18 cards.",
+  "category": "typography",
+  "evidence": "e31, e39, e67 are about 13px tall; text color rgb(179,38,30) is used on 33 elements",
+  "element_ids": [
+   "e31",
+   "e39",
+   "e47",
+   "e67",
+   "e98",
+   "e122"
+  ]
+ },
+ {
+  "observation": "The palette has three roles. The base is warm off-white (246,244,239) with white cards. Deep navy (20,33,61) is used on the top bar and footer. A single brick red (179,38,30) is the accent for the nav underline, category labels, buttons and header rule. Text is near-black (29,29,31) with gray (107,107,112) for meta.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 23, (227,223,214) 18, red 3, navy 2, off-white 1; text colors (29,29,31) 207, (107,107,112) 85, red 33",
+  "element_ids": [
+   "e1",
+   "e5",
+   "e141",
+   "e135",
+   "e61"
+  ]
+ },
+ {
+  "observation": "The 'BROWSE ARTICLES' h2 is a small (14px), bold, uppercase, letter-spaced label with a solid dark rule underneath. It is much smaller than the card headlines, so it works as a section divider and not as a headline.",
+  "category": "typography",
+  "evidence": "h2 font_size 14px, weight 700; e60 is 1128x25 at y=765",
+  "element_ids": [
+   "e60"
+  ]
+ },
+ {
+  "observation": "Filter tabs (Latest, Popular, By Category) are pill-shaped buttons. The active 'Latest' is filled red with white text. The other two are white with a thin border and dark text. They are rendered as button elements with no visible panel behavior.",
+  "category": "component",
+  "evidence": "buttons e61 (70x32), e62 (79x32), e63 (108x32); border_radius pill bucket 1; 4 button tags in total",
+  "element_ids": [
+   "e61",
+   "e62",
+   "e63"
+  ]
+ },
+ {
+  "observation": "The article grid is four equal columns of about 267px with 20px gutters. Cards are white with a thin light border and tiny radius, with a 166px-tall image on top and 16px padded text below. Cards in a row share the same height whatever their title length.",
+  "category": "layout",
+  "evidence": "articles e64, e72, e80, e87 at x=156/443/730/1017, w=267, h=345; row two h=375; border_radius_buckets bucket_1_7: 22",
+  "element_ids": [
+   "e64",
+   "e72",
+   "e80",
+   "e87",
+   "e95"
+  ]
+ },
+ {
+  "observation": "The grid has 9 cards, so the last row holds a single orphan card at left (the JEE Advanced card). Three columns beside it are empty and leave a large blank area.",
+  "category": "layout",
+  "evidence": "e126 at x=156,y=1612 is the only card in its row; the page is empty from x=443 to 1284 at that y",
+  "element_ids": [
+   "e126"
+  ]
+ },
+ {
+  "observation": "The cards are inconsistent. The Reddit card includes a 'Summary:' excerpt paragraph and no other card does. The 'General' card has a placeholder tile showing the letter 'G' instead of a photo. The masters card's title is a direct link with no h3 wrapper.",
+  "category": "component",
+  "evidence": "p e101 'Summary: Reddit gives writers…'; e121 anchor text 'G' with no img; e84 is an a directly under the article while the others have h3 e32/e40; 19 img total",
+  "element_ids": [
+   "e101",
+   "e121",
+   "e123",
+   "e84"
+  ]
+ },
+ {
+  "observation": "Photos are cropped to fixed aspect boxes. Source files are 300x200 (one is 50x50) and are scaled up to 680x382 in the hero, so the hero looks soft. The masters image (image-01.jpg, 50x50 natural) is visibly blurry and pixelated at 265x166.",
+  "category": "imagery",
+  "evidence": "images list: Benefits-of-Digital-Marketing.png natural 300x200 rendered 680x382; image-01.jpg natural 50x50 rendered 161x161 and 265x166",
+  "element_ids": [
+   "e30",
+   "e46",
+   "e82",
+   "e66"
+  ]
+ },
+ {
+  "observation": "Images are repeated. The same four photos (digital marketing, business English, masters, CBD) appear in both the hero block and the first grid row. The facts list five more img elements with 0x0 rects, which are hidden duplicates.",
+  "category": "imagery",
+  "evidence": "images list repeats Benefits-of-Digital-Marketing.png, What-is-Business-English.jpg, image-01.jpg and cannabis-oil-explained.jpg; entries 14-18 have rect w=0,h=0",
+  "element_ids": [
+   "e30",
+   "e38",
+   "e66",
+   "e74",
+   "e82",
+   "e89"
+  ]
+ },
+ {
+  "observation": "The imagery is mostly generic stock photography: a coffee cup with a line-art tech doodle, a business handshake, a student outdoors, cannabis leaves, a Reddit screenshot, a lab, 3D 'Math' letters and a gears-on-blackboard graphic. The pictures have no unified color treatment.",
+  "category": "imagery",
+  "evidence": "screenshot slice 1 hero and grid thumbnails; alt text is empty for 17 of 19 images",
+  "element_ids": [
+   "e30",
+   "e54",
+   "e97",
+   "e114",
+   "e128"
+  ]
+ },
+ {
+  "observation": "Alt text is sparse. The logo has alt 'Education Activities' and the author photo has 'James E. Turner'. Every article thumbnail has an empty alt, and the thumbnails are wrapped in links with no other text.",
+  "category": "dom-semantics",
+  "evidence": "counts alt_missing 0 but images list shows alt '' for the card images; aria_attrs 3",
+  "element_ids": [
+   "e8",
+   "e137",
+   "e29",
+   "e37",
+   "e65"
+  ]
+ },
+ {
+  "observation": "Meta lines are small gray sans-serif text in the form 'By WebEditor · May 24, 2021', with the date in a time element. Every card has the same byline. The middle-dot separator and the identical author make the cards read the same.",
+  "category": "copy",
+  "evidence": "18 time elements; e34 'By WebEditor · May 24, 2021', e42, e50 and the rest follow the same pattern",
+  "element_ids": [
+   "e34",
+   "e42",
+   "e50",
+   "e70",
+   "e102"
+  ]
+ },
+ {
+  "observation": "The dates are inconsistent with the site. The top bar shows 'Thursday, June 17, 2021', which looks like a fixed date. Articles run from February 2020 to May 2021 in reverse-chronological order, though the grid order is not strictly by date.",
+  "category": "copy",
+  "evidence": "e2 text; time values May 24, 2021 down to February 1, 2020",
+  "element_ids": [
+   "e2",
+   "e35",
+   "e133"
+  ]
+ },
+ {
+  "observation": "Copy is placeholder-like and mixed in topic: digital marketing, CBD, Reddit, treadmills and JEE prep all sit under an education brand. One title is lightly garbled ('No Improved Way to pick out Your Physical fitness Tools'). Title casing is also inconsistent ('The Importance Of Primary School Mathematics' against 'The Importance of Learning…').",
+  "category": "copy",
+  "evidence": "h3 outline entries; total text is only 332 words",
+  "element_ids": [
+   "e123",
+   "e116",
+   "e56",
+   "e99"
+  ]
+ },
+ {
+  "observation": "The 'View all articles' call to action is a single small red button with white bold text, centered under the grid. It is the only centered element in the main content and is the same color as the Search button.",
+  "category": "component",
+  "evidence": "p e134 spans 1128px but the link e135 is 123x28 at x=658; red bg (179,38,30)",
+  "element_ids": [
+   "e134",
+   "e135",
+   "e5"
+  ]
+ },
+ {
+  "observation": "An author box sits above the footer as a white bordered panel. It has a circular 84px portrait, a bold serif name 'James E. Turner' and a one-line serif bio linking 'WebEditor'. The portrait is a celebrity-style headshot whose filename comes from a 'sexiest men' listicle.",
+  "category": "component",
+  "evidence": "img e137 84x84 round (border_radius 16+ bucket); filename sexiest-men-over-george-clooney-…jpg; section e136 1128x122",
+  "element_ids": [
+   "e136",
+   "e137",
+   "e138",
+   "e139",
+   "e140"
+  ]
+ },
+ {
+  "observation": "The footer is full-bleed navy with three equal columns of about 360px: Quick Links, Top Categories and an 'Education Activities' blurb. Links are white sans-serif lists (ul/li), with a thin divider and a small copyright line below crediting the 'Daily Magazine' theme by AF themes.",
+  "category": "layout",
+  "evidence": "h4 at x=156, 540 and 924, each 360 wide; ul e143 and e155 hold 5 li each; copyright div e168 at y=2323",
+  "element_ids": [
+   "e141",
+   "e142",
+   "e154",
+   "e166",
+   "e168",
+   "e169"
+  ]
+ },
+ {
+  "observation": "The footer repeats the header navigation. 'Quick Links' duplicates the primary nav (Home, About Us, Blog, Privacy Policy, Contact us) and 'Top Categories' lists the first five categories from the secondary nav. The footer blurb reads 'An online magazine-style blog…'.",
+  "category": "copy",
+  "evidence": "e143 list items vs nav e10 links; e155 list items vs e17–e21",
+  "element_ids": [
+   "e143",
+   "e155",
+   "e167",
+   "e10",
+   "e16"
+  ]
+ },
+ {
+  "observation": "Decoration is minimal. There is one box-shadow in total, no gradients, no backdrop blur and no transitions, animations or transforms. Separation comes from 1px borders, white-on-beige contrast and flat color blocks.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 1, gradient_backgrounds 0, backdrop_blur 0, transitions 0, animations 0, transforms 0",
+  "element_ids": []
+ },
+ {
+  "observation": "Corners are almost all square. 341 elements have zero radius, 22 have 1–7px (cards, search button and input), and 3 are 16px or more (the round avatar and the pill tabs). The result is a flat, editorial look.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:341, 1_7:22, 8_15:0, 16_plus:3, pill:1",
+  "element_ids": [
+   "e5",
+   "e61",
+   "e137",
+   "e64"
+  ]
+ },
+ {
+  "observation": "The markup is built on a small set of semantic-ish class names. There are 128 class usages and 28 unique classes, and only 1.6% look Tailwind-like, so styling comes from a theme stylesheet. There is one linked stylesheet, one script and one inline style attribute.",
+  "category": "dom-semantics",
+  "evidence": "classes total 128, unique 28, tailwind_like_fraction 0.016; stylesheets 1, scripts 1, inline_style_attrs 1",
+  "element_ids": []
+ },
+ {
+  "observation": "The page is link-heavy. There are 122 anchors for about 330 words, because each card has separate image, category and title links. The same destination is therefore reachable through up to three adjacent links.",
+  "category": "dom-semantics",
+  "evidence": "counts anchors 122; e29/e31/e33 in one article; e65/e67/e69 in another",
+  "element_ids": [
+   "e29",
+   "e31",
+   "e33",
+   "e65",
+   "e67",
+   "e69"
+  ]
+ },
+ {
+  "observation": "Layout uses flex (25 elements) and grid (5 elements). Spacing is generous and regular, with roughly 20px gaps between cards, 16px inner card padding and 40–60px between sections. A 1128px content width leaves 156px side margins on the 1440px page.",
+  "category": "layout",
+  "evidence": "display_flex 25, display_grid 5; cards at 267px with x-gaps of 20px; e60 at y=765 after the hero ends at y=729",
+  "element_ids": [
+   "e27",
+   "e64",
+   "e72",
+   "e80",
+   "e87"
+  ]
+ },
+ {
+  "observation": "Page-wide text is dark on light with the sans meta text in mid-gray. The nav, labels and footer link text are small, mostly 12–15px. The footer text is near-white (200,200,208) on navy, and the footer blurb is white sans on navy.",
+  "category": "color",
+  "evidence": "top_text_colors (200,200,208) on 31 elements; (255,255,255) on 6; footer bg (20,33,61)",
+  "element_ids": [
+   "e141",
+   "e143",
+   "e167",
+   "e168"
+  ]
+ },
+ {
+  "observation": "The featured hero card is visually separated from the page by a 1px border and white fill, and the three side cards use the same treatment. Nothing overlaps: image_overlaps is empty, and text is never set over images.",
+  "category": "imagery",
+  "evidence": "image_overlaps []; text blocks sit below or beside images, e.g. e32 at y=656 below the image ending at y=611",
+  "element_ids": [
+   "e28",
+   "e36",
+   "e44",
+   "e52"
+  ]
+ }
+]

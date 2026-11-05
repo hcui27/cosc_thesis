@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "The page renders essentially unstyled: the theme CSS appears not to have applied. Default browser bullets, underlined blue/black links, and stacked block flow are visible, and the layout stays single-column, left-aligned, and full-width at 1440px.",
+  "category": "layout",
+  "evidence": "facts: display_grid 0, display_flex 0, page_width 1440, page_height 16632. Slices show bullet lists and default underlined links."
+ },
+ {
+  "observation": "The whole page uses one typeface, Andada (a serif). It is applied to about 1325 elements, with no secondary or monospace font.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: [[\"Andada\",1325]]"
+ },
+ {
+  "observation": "Body text is 16px in a mid-grey (rgb 96,96,96) with line-height 'normal'. Grey is the dominant text colour, used on about 899 elements, with near-black link colours (27,27,27) on 268.",
+  "category": "typography",
+  "evidence": "body_font_size 16px; body_line_height 'normal'; top_text_colors 96,96,96 ×899 and 27,27,27 ×268"
+ },
+ {
+  "observation": "There is no h1 on the page. The heading outline starts at h3 (post titles) and uses h2 for section labels such as 'College and University', 'Educations', 'Education Activities', 'Science', 'Latest Posts'. 50 h3s and 12 h2s make it h3-heavy.",
+  "category": "semantic structure",
+  "evidence": "h1_count 0; tag_counts h3 50, h2 12, h4 1; heading_outline begins with level 3"
+ },
+ {
+  "observation": "Section h2s are 24px bold grey serif, and they render as simple left-aligned text labels with no rules or background.",
+  "category": "typography",
+  "evidence": "facts h2 font_size 24px, weight 700; slice 1 'College and University' heading"
+ },
+ {
+  "observation": "A single red accent (rgb 244,67,54) is used for category labels, the Primary Menu button, and the Search buttons. It is the top background colour, on 17 elements, and also colours link text on 37 elements.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(244,67,54) ×17; top_text_colors rgb(244,67,54) ×37; primary_button bg rgb(244,67,54)"
+ },
+ {
+  "observation": "A saturated blue bar (rgb 30,115,190) holds the top navigation: the date 'Thu. Jun 17th, 2021' sits in a dark grey tab above a bullet list (Education, Financial Aid, Certification, Science, Languages).",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(30,115,190) ×1, rgb(80,80,80) ×1; slice 0 header"
+ },
+ {
+  "observation": "The primary navigation is an unstyled nested bullet list (Home, Certification › Skills Development/Languages, College and University › Financial Aid/Science, General, Education › Online Education/Home Schooling, Blog, Contact us). It is exposed in full, with a 'Primary Menu' toggle button visible above it.",
+  "category": "component",
+  "evidence": "tag_counts nav 1, ul 14, li 64, button 1; primary_button text 'Primary Menu'; slice 0"
+ },
+ {
+  "observation": "The Primary Menu button has sharp corners, a red fill, black text and default 1px 6px padding, which gives a browser-default look. Almost nothing on the page is rounded.",
+  "category": "decoration",
+  "evidence": "primary_button radius 0px, padding '1px 6px', color rgb(0,0,0); border_radius_buckets bucket_0 1324, bucket_1_7 1, others 0"
+ },
+ {
+  "observation": "Effects are almost absent: no gradients, no backdrop blur, no animations, no transforms. There are 4 box-shadows and 1 transition.",
+  "category": "decoration",
+  "evidence": "effects: gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, box_shadows 4, transitions 1"
+ },
+ {
+  "observation": "The top area has broken images: a carousel/ticker whose thumbnails collapse to inline alt text ('5 Big Benefits of Digital Marketing Career', 'The Importance of Learning Business English…'). They render as 19px-high text links, with 0×0 natural size, next to one 50×50 thumbnail.",
+  "category": "imagery",
+  "evidence": "images[0..1] natural [0,0], rect h 19; images[2] 9-50x50.jpg 50×50; slice 0 shows alt text links"
+ },
+ {
+  "observation": "The same broken-image pattern repeats near the bottom. Four 720×380 featured images show natural size 0×0 at 19px height, so their alt text shows instead of the picture.",
+  "category": "imagery",
+  "evidence": "images at y 14142–14594: Benefits-of-Digital-Marketing-Banner-720x262.png, What-is-Business-English-720x380.jpg, 9-720x380.jpg, cannabis-oil…-720x380.jpg, all natural [0,0] and h 19"
+ },
+ {
+  "observation": "The logo is a raster blue/grey swoosh with italic 'Education Activity' wordmark at 280×165, placed top-left above the menu and not inline with the navigation. Its alt text is 'Education Activitie'.",
+  "category": "imagery",
+  "evidence": "images[3] Education-activity.png 280×165, alt 'Education Activitie'; slice 0"
+ },
+ {
+  "observation": "Post thumbnails are consistently 300×200 JPG/PNG. They sit left-indented in lists, with stock-style photos (students, badminton, campus lawn, cannabis oil). The list is vertical with no grid, and each image is followed by a red category link, title, and byline.",
+  "category": "imagery",
+  "evidence": "images 300x200 at x 48/88, y spaced ~336px apart; slices 1–2"
+ },
+ {
+  "observation": "Large 720×380 featured images appear in the Science block. They are clip-art/illustrations (cartoon scientists, chemistry flasks) shown cropped, with their lower portions cut off, and they are left-aligned at x 48.",
+  "category": "imagery",
+  "evidence": "images 720x380 at x 48, y 6670–8863; slice 5 shows clipped flasks illustration"
+ },
+ {
+  "observation": "15 images have missing alt attributes, and many 300×200 images in the Latest/related lists have empty alt strings. This is a high share of the 42 images.",
+  "category": "semantic structure",
+  "evidence": "counts alt_missing 15, images 42; images list with alt \"\" from y 9485 onward"
+ },
+ {
+  "observation": "Post cards repeat one structure: red category label link, a linked h3 title, then a byline 'By WebEditor / date' in ISO format (e.g. 2018-10-02). Excerpts appear only on some posts, such as 'Introduction Reddit provides a platform…' and the truncated 'US President Donald Trump made an announcement…'.",
+  "category": "component",
+  "evidence": "slices 0–5 byline pattern; h3 count 50; figure 45, figcaption 13"
+ },
+ {
+  "observation": "Category labels have two renderings. In the hero list they are red-highlighted text on a full-width dark grey bar (rgb 96,96,96). In the lower lists they are plain red underlined links.",
+  "category": "component",
+  "evidence": "slice 0 'Science' on grey bar vs. slice 1 'College and University' red links; top_backgrounds 96,96,96 ×16"
+ },
+ {
+  "observation": "Headlines in the top feature list are shown as dark text on a translucent white (rgba 255,255,255,0.75) strip over a dark grey block, with a lighter grey byline strip beneath. This looks like leftover overlay styling from image-based cards whose images are missing.",
+  "category": "decoration",
+  "evidence": "top_backgrounds rgba(255,255,255,0.75) ×6; slice 0 post blocks"
+ },
+ {
+  "observation": "The same few posts recur across sections: '5 Big Benefits of Digital Marketing Career' appears 4 times in the heading outline, and 'The Importance of Learning Business English…', 'Is it worth doing masters…', 'Easy Ways of Adapting CBD…' and 'Writing Subreddits on Reddit' each appear 3 times.",
+  "category": "copy",
+  "evidence": "heading_outline repeats of these h3 titles under Science, Latest Posts and carousel lists"
+ },
+ {
+  "observation": "Copy shows machine-spun or paraphrased text with synonym substitutions, and the topics are off-theme for education (CBD, treadmills, toner). Examples: 'Trump Declares Decide to Lead EPA Chemical Security Workplace', 'Every part You Should Know…', 'Area Sources', 'Newest 5 Girls Training Information Price Studying'.",
+  "category": "copy",
+  "evidence": "heading_outline items; h3 'Treadmill Critiques – No Improved Way to pick out Your Physical fitness Tools'; image filename Have-to-Buy-Dell-2330-Toner… alt 'Buy college essays online'"
+ },
+ {
+  "observation": "The page title is truncated/typo'd as 'Home - Education Activitie'. The site is set to lang en-US, has a skip link ('Skip to content'), and carries og/twitter meta plus one JSON-LD block.",
+  "category": "semantic structure",
+  "evidence": "title 'Home - Education Activitie'; lang en-US; meta_names og:*, twitter:card; jsonld_blocks 1; slice 0 'Skip to content'"
+ },
+ {
+  "observation": "Semantic landmarks are present, one each of header, nav, main, aside and footer, plus 5 sections. There are 0 article elements, even though about 50 post items exist. Posts are built with 508 divs, 273 spans and 45 figures instead.",
+  "category": "semantic structure",
+  "evidence": "semantic header 1, nav 1, main 1, section 5, article 0, aside 1, footer 1, figure 45; div 508"
+ },
+ {
+  "observation": "The DOM is heavy relative to the visible content, with 271 anchors, 37 scripts, 31 link tags, 16 stylesheets and 5 style blocks. There are 1,653 class usages across 278 unique classes, and Tailwind-style utility classes are only 3.6%, so this is a theme-driven class naming system.",
+  "category": "DOM",
+  "evidence": "tag_counts a 271, script 37, link 31, style 5; counts stylesheets 16; classes total 1653, unique 278, tailwind_like_fraction 0.036"
+ },
+ {
+  "observation": "The page is long, about 16,632px tall, with only about 1,049 words. Most of the height comes from single-column stacked lists with large images and repeated blocks.",
+  "category": "layout",
+  "evidence": "page_height 16632; text_stats words 1049; images spaced ~304–336px apart"
+ },
+ {
+  "observation": "Content is organised as stacked category blocks, each headed by an h2: College and University, Educations, Education Activities, Science, then Latest Posts. Each has about 5 posts.",
+  "category": "layout",
+  "evidence": "heading_outline order of h2s; slices 1–5"
+ },
+ {
+  "observation": "The footer area stacks several link lists vertically with h2 headings: Category, Quick Links, Top Category, Author Info, TAGS, Search, Latest Posts. Home/About Us/Blog/Privacy Policy/Contact us appears twice.",
+  "category": "component",
+  "evidence": "h2 'Quick Links', 'Top Category', 'Author Info', 'TAGS', 'Search', 'Latest Posts'; slice 12 duplicated menu lists"
+ },
+ {
+  "observation": "The tag cloud uses inline links at varying font sizes (Education and General are largest; Languages and Financial Aid are smallest), all in the same serif and on one line.",
+  "category": "component",
+  "evidence": "slice 12 TAGS row: 'Education' and 'General' larger than 'Languages', 'Financial Aid'"
+ },
+ {
+  "observation": "The Author Info widget has an h4 'James E. Turner' and a 300×173 portrait of a man with no alt text. The image filename refers to a celebrity-list article, and it sits above the tags with large blank space.",
+  "category": "imagery",
+  "evidence": "h4 'James E. Turner'; last image 300×173 alt \"\" with the 'sexiest-men-over-50-george-clooney' filename; slice 12"
+ },
+ {
+  "observation": "The search form appears twice, in the header and in the footer widget area. Both are default-looking: a 'Search for:' label, a small text input with 'Search …' placeholder, and a red 'Search' submit button.",
+  "category": "component",
+  "evidence": "tag_counts form 2, input 4, label 2; slice 0 and slice 12 search forms"
+ },
+ {
+  "observation": "The footer ends with a plain one-line credit, 'Copyright © All rights reserved. | Theme: Daily Magazine by AF themes.' It is left-aligned grey text with no background band or divider.",
+  "category": "copy",
+  "evidence": "slice 12 last line; footer count 1"
+ },
+ {
+  "observation": "A partially visible reCAPTCHA-style badge box (white with a border) appears fixed at the right edge near y≈830, and the page includes an iframe and a textarea, which are likely hidden widget parts.",
+  "category": "component",
+  "evidence": "tag_counts iframe 1, textarea 1; slice 0 box at right edge x≈1370"
+ },
+ {
+  "observation": "The blue top-bar 'Education / Financial Aid / Certification / Science / Languages' list is repeated as a 'Top Category' list in the footer, so the same five terms appear in header and footer.",
+  "category": "copy",
+  "evidence": "slice 0 top bar list; slice 12 'Top Category' list with identical five items"
+ },
+ {
+  "observation": "Bylines use a fixed pattern 'By WebEditor / YYYY-MM-DD' with an underlined author link in dark text and a grey date. Every post shows the same author, 'WebEditor'.",
+  "category": "copy",
+  "evidence": "slices 0–5 byline lines; author link text 'WebEditor' repeated"
+ },
+ {
+  "observation": "Title links stay at near-body size (about 18–20px, from the slice rendering). Headings and post titles therefore don't differ much in scale from body text, which gives a flat typographic hierarchy.",
+  "category": "typography",
+  "evidence": "h2 24px vs 16px body; slice 1–2 titles appear about the same visual size as excerpts, all underlined"
+ },
+ {
+  "observation": "Indentation is inconsistent: some lists are indented 48px with bullets suppressed, others sit at x=8, and images alternate between x=48 and x=88. This suggests unstyled list containers with browser-default padding.",
+  "category": "layout",
+  "evidence": "images rect x 88 (y 1676–2684), x 48 (y 3186+), x 8 (header); slice 1 vs slice 2 left edges"
+ }
+]

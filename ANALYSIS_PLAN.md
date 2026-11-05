@@ -2,6 +2,19 @@
 
 *Drafted 2026-10-18; updated 2026-10-23 (Stages 1-4 and the attribute-and-value route have run on the 28 seed sites; results are summarised in "Status" below and in DESIGN_DECISIONS.md 3.8-3.10).* Applies to the 28 generations and their judge observations. The goal (see PLAN.md) is to learn what an agent naturally builds on less-popular sites, and which features are **inherent to vibe-coded sites** (they recur regardless of the source site) versus **site-specific** (they depend on the original, its category, or run-to-run noise). Nothing is judged for quality.
 
+> **Status note, 2026-11-04.** The annotation pipeline was redesigned. The stages below (judge pair, tiers, LLM feature catalog, embedding merge, attribute-and-value codebook, detection matrix) are the **earlier routes**, archived in `deprecated/annotation_routes_2026-11-04/`; their scripts are no longer in `pipeline/3_annotate/` (except `agree.py`, `measurements.py`, `spotcheck.py`, `contamination_probe.py`, `element_map.py`, `evidence_galleries.py`, `feature_collages.py`). The current analysis is the section **"Current analysis"** directly below; the rest is kept as the record of what was done and why, and for the stages marked *Later* that still apply.
+
+## Current analysis (2026-11-04): diff lists, master list, seed match
+![The three pipelines](pipeline_diagram.png)
+
+Per site (28 sites, one run each): **observe** the original alone and the vibe-coded page alone (Sonnet, two separate judges; the generated judge cites numbered elements from `element_map.py`) -> **combine** (Opus) into the site's **diff list** with status general / changed / generated_only / original_only -> **tag** each item with an attribute (UI/UX feature), a value (`<action>: <what happens>`; action kept / changed / added / dropped, forced to match the status), a family and a page-wide flag, using a shared vocabulary (`data/diff_vocab.json`). Across sites: **master list** (`build_master.py`): embedding pre-grouping of attributes within each family (BGE-small, cosine distance < 0.30, groups > 40 re-split, packs of <= 60 attributes per LLM call), LLM merge and summary, family summaries; output family -> attribute -> value with sites, generated and original sides, status counts, examples and element ids. Then **galleries** (crops of cited elements per attribute value), **collages** (one per attribute, one tile per vibe-coded site, located by a vision call), and the **seed match** at the very end (`match_seed.py`: the 120-item v1.3 seed list against the master list; each master attribute is `is_item`, `property_of_item` or `none`). Reporting: `plot_distribution.py` (prevalence histogram and top attributes), `build_viewer.py` (`data/master/viewer.html`).
+
+**What the analysis reports.** (1) **Prevalence** of each attribute: the number of sites whose vibe-coded page shows it (any kept, changed or added value), with the caution that n = 28 gives intervals of about +/-18 points. (2) **What happens to it**: the values under each attribute and the share of sites for each (this is where the style is). (3) **Status mix** per attribute (general, changed, generated_only, original_only): general or kept = a feature the original already had; added = new on the vibe-coded page; dropped = lost. (4) **Seed corroboration**: how many seed items the master list matches (at least one site, >= 2 sites, >= half), and the share of master attributes that no seed item covers (the added share). (5) **Evidence**: galleries and collages for what common values look like.
+
+**Results (2026-11-04, 28 sites):** 1,274 diff items (changed 72%); 133 attributes in 9 families; 11 attributes on all 28 vibe-coded pages and 95 on >= 2, bimodal; seed match 39 of 120 items, 49% of attributes not about any seed item. Cost about $22.98. See PLAN.md, pipeline 3, and DESIGN_DECISIONS.md 3.11 for the numbers and caveats.
+
+**Not done (current analysis):** lift against the originals as a separate prevalence comparison (the diff list already records what the original had, but the originals are not coded independently), run-to-run noise, human validation (SURVEY_DESIGN.md), contamination probe, signature thresholds, seed-list culling, spot-check of the "changed" label, sensitivity of the master list to the grouping threshold.
+
 ## These sites are the seed set
 The 28 usable sites (the 30-site draw lost 2 to failed checks: Real Estate had none and Vehicles ended with 1) are the **seed set**: the features we look for later are *discovered from them*. The analysis therefore has two linked goals: (1) build a feature catalog from what these sites show, and (2) use the **variation in observations between just these sites** to decide how much more feature engineering is needed before the catalog is trusted or applied to a larger sample. Everything in Stage 3 and the new Stage 3b serves that decision.
 
@@ -87,7 +100,7 @@ Stage 3b's discovery/hold-out adequacy test still applies to the LLM feature cat
 ## Deliverables
 Feature catalog (CSV/JSON with definitions, detectors, prevalence, CI, category breakdown; lift against the originals added later), the site x feature matrices, figures (prevalence bars, lift plot, clustered heatmap, original-versus-generated paired plots), a data dictionary, and a short write-up with the limitations above.
 
-## Scripts (pipeline 3: all in `pipeline/3_annotate/`, shared helpers in `pipeline/shared/`; built 2026-10-18)
+## Scripts of the earlier routes (built 2026-10-18 to 2026-10-23; archived in `deprecated/annotation_routes_2026-11-04/` except where noted)
 Run them in this order, or all at once with `python pipeline/3_annotate/run_annotation.py` (`--dry-run`, `--stages`; stages: judge, collate, tier, features, merge, collage, codebook, elements, code, attributes, galleries, detect, adequacy, analyze). The runner also performs the judging step, which comes before Stage 1 (judge.py, about $0.65 per site).
 | Stage | Script | Notes |
 |---|---|---|
@@ -106,7 +119,7 @@ Run them in this order, or all at once with `python pipeline/3_annotate/run_anno
 | 6 | `contamination_probe.py` | built, not run (Later) |
 Shared: `measurements.py` (50 programmatic page measurements), `llm.py`, `ledger.py`. Outputs land in `data/analysis/`.
 
-## Status (2026-10-23)
+## Status of the earlier routes (2026-10-23; archived)
 - Stages 1-4 and 3b ran: tiers A 2,263 / B 303 / C 26 of 2,592 observations; LLM catalog 188 features (36% singletons); hold-out coverage 0.897 (0.817-0.984) but the discovery curve has not plateaued (about 2.8 new features per added site over the last 8).
 - Stage 3c ran: 28 pages x 278 attributes, evidence cited on 96% of non-absence codes, 9,472 gallery crops in 610 galleries. Bands 118 shared / 116 split / 44 varied (58 shared presence, 60 shared absence/other); page-pair structure beyond independent coding (SD 0.047 vs null 0.027).
 - Coding noise (two runs, same model, different prompts): 83% of cells agree, 80% of attributes keep their band, shared-set Jaccard 0.74; so quote the intersection of the runs, not one run. Coder-vs-judge agreement 72% (copy 56%, imagery 55%).

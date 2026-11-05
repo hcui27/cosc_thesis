@@ -1,0 +1,393 @@
+[
+ {
+  "observation": "The page has a single h1 and a clear heading hierarchy: six h2 sections ('Shop by category', 'Cbd For Dogs collection', 'Featured topics', the FSA news heading, 'Popular searches', 'Join The Club') and twelve h3s for card titles and footer column headings.",
+  "category": "semantic structure",
+  "evidence": "facts.json h1_count=1, tag_counts h2=6, h3=12; heading_outline",
+  "element_ids": [
+   "e22",
+   "e27",
+   "e45",
+   "e70",
+   "e96",
+   "e107"
+  ]
+ },
+ {
+  "observation": "The page uses landmark and sectioning tags: one header, nav, main and footer, plus 7 sections and 8 articles. Product and topic cards are articles. There are no aside, figure or blockquote elements.",
+  "category": "semantic structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 7, article 8, footer 1, figure 0, aside 0",
+  "element_ids": [
+   "e5",
+   "e9",
+   "e20",
+   "e46",
+   "e204"
+  ]
+ },
+ {
+  "observation": "A dark green utility bar sits above the header. It holds business hours at the left and an underlined phone number and 'Contact Us' link at the right, both within the 176–1264px content column.",
+  "category": "layout",
+  "evidence": "e1 0,0,1440,39; e3 and e4 at x=1082–1264; the bar's background is rgb(31,65,48)",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e3",
+   "e4"
+  ]
+ },
+ {
+  "observation": "The header is white. It holds a logo image next to a text site name ('Where To Buy Cbd Cream For Pain'), a five-link nav, and a search form with an input and a green square-edged icon button. The Cart (0) link wraps onto a second row below the logo as an outlined box.",
+  "category": "component",
+  "evidence": "e6 at 176,51; e9 nav at 717; e15 form at 1076,53; e19 Cart at 176,115,79x40",
+  "element_ids": [
+   "e6",
+   "e9",
+   "e15",
+   "e17",
+   "e19"
+  ]
+ },
+ {
+  "observation": "The content is held in a fixed column about 1088px wide (x=176 to 1264) on a 1440px canvas. Sections, grids and footer all align to these edges, which leaves wide empty side margins.",
+  "category": "layout",
+  "evidence": "h2s at 176,w=1088; card grids end at x=1264; page_width 1440",
+  "element_ids": [
+   "e27",
+   "e45",
+   "e70",
+   "e108"
+  ]
+ },
+ {
+  "observation": "The hero is a two-column band on a dark green background (the screenshot shows a green gradient, and facts count one gradient background). The left column holds an eyebrow, the h1, a paragraph and a gold CTA. The right column holds a photo, and the text sits left-aligned.",
+  "category": "layout",
+  "evidence": "e20 0,167,1440,455; e22 at x=176; e25 img at 761,225,503x340; gradient_backgrounds=1",
+  "element_ids": [
+   "e20",
+   "e21",
+   "e22",
+   "e23",
+   "e24",
+   "e25"
+  ]
+ },
+ {
+  "observation": "The h1 is large white bold system sans at 51.2px, set tight on two lines on the dark green. An uppercase, letter-spaced eyebrow ('CBD OILS · EDIBLES · TOPICALS') sits above it in a muted green-grey.",
+  "category": "typography",
+  "evidence": "h1 font_size 51.2px, weight 700, color rgb(255,255,255); e21 eyebrow",
+  "element_ids": [
+   "e21",
+   "e22"
+  ]
+ },
+ {
+  "observation": "The only typeface is a system-ui stack (system-ui, -apple-system, Segoe UI, sans-serif) on 370 elements, with Arial on 2 (likely form controls). Body text is 16px on a 25.6px line height (1.6), and h2s are 27.2px bold. No web fonts are loaded.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count system-ui 370, Arial 2; body_font_size 16px; body_line_height 25.6px; h2 27.2px/700",
+  "element_ids": []
+ },
+ {
+  "observation": "The palette is deep forest green (rgb(31,65,48), rgb(47,93,67)), a gold accent (rgb(201,162,75)), a warm off-white body background (rgb(250,248,243)), white cards and near-black green text (rgb(31,42,36)). A pale cream (rgb(255,244,214)) is used in one callout.",
+  "category": "color",
+  "evidence": "colors.body_bg rgb(250,248,243); top_backgrounds include rgb(201,162,75) x4, rgb(31,65,48) x2, rgb(47,93,67), rgb(255,244,214), rgb(17,23,19)",
+  "element_ids": []
+ },
+ {
+  "observation": "Gold (rgb(201,162,75)) marks the action and highlight elements: the hero 'Shop categories' button, the 'Sign up' button, the 'On sale' pills and the bullet markers in the news list. The hero button has dark text and a small corner radius.",
+  "category": "color",
+  "evidence": "4 elements with gold background; e24 button at 176,517,170x50; e203 Sign up; e58 and e64 On sale badges",
+  "element_ids": [
+   "e24",
+   "e58",
+   "e64",
+   "e203"
+  ]
+ },
+ {
+  "observation": "The 'Shop by category' grid has four equal-width cards (about 257px wide, 20px gaps). Each has a top photo with a caption bar beneath it, and white rounded cards with thin borders sit on the off-white page. The photos are cropped to 255x191, so some baked-in text is cut off, such as 'CBD OILS' at the top and the 'CLICK HERE TO LEARN...' banner at the bottom.",
+  "category": "component",
+  "evidence": "e28/e32/e36/e40 at x=176/453/730/1007, w=257; imgs 255x191 from 800x800 sources",
+  "element_ids": [
+   "e28",
+   "e30",
+   "e32",
+   "e36",
+   "e40"
+  ]
+ },
+ {
+  "observation": "The product row is another four-column card grid. Each card has a 255x255 square photo, an h3 brand-style title, a grey descriptor and a bold price. Prices show 'From $14.99' or a single value. Sale items add a gold pill badge ('On sale') and a strikethrough old price ($49.99 next to s-tagged $59.99).",
+  "category": "component",
+  "evidence": "e46–e67; e58 and e64 On sale spans; e68 is the s element; card height 425",
+  "element_ids": [
+   "e46",
+   "e56",
+   "e58",
+   "e62",
+   "e68"
+  ]
+ },
+ {
+  "observation": "The section titled 'Cbd For Dogs collection' holds general CBD products (lemon, honey, subscription box, essential oil set). Titles like 'Cbd For Life', 'Pure Cbd', 'Cbd Oil Amazon' and 'Cbd' are SEO-style keyword phrases in title case, and do not match the product descriptors beneath them.",
+  "category": "copy",
+  "evidence": "h3 text e48 'Cbd For Life' with p 'CBD-infused lemon'; e59 'Cbd Oil Amazon' with 'CBD subscription box'",
+  "element_ids": [
+   "e45",
+   "e48",
+   "e53",
+   "e59",
+   "e65"
+  ]
+ },
+ {
+  "observation": "The 'Featured topics' area uses a three-column card grid, and a fourth card wraps alone onto a second row, leaving the right two-thirds of that row empty. Cards have a photo, an h3 and one or two underlined green text links ('More CBD Questions?', 'Click Here for More About CBD', 'Learn More', 'Hemp Oil Benefits · Plus Cbd Oil').",
+  "category": "layout",
+  "evidence": "e71/e75/e79 at y=1601, e83 at 176,1940; nothing at x>525 for y 1940–2258",
+  "element_ids": [
+   "e71",
+   "e75",
+   "e79",
+   "e83",
+   "e74",
+   "e86"
+  ]
+ },
+ {
+  "observation": "The fourth featured card uses a washed-out, low-opacity cannabis leaf image (overlay.png, 1000x438). It looks faded against the other full-colour photos in the row.",
+  "category": "imagery",
+  "evidence": "e84 overlay.png 347x217; the slice shows a pale translucent leaf",
+  "element_ids": [
+   "e83",
+   "e84"
+  ]
+ },
+ {
+  "observation": "Two wide linked image cards, 'CBD versus hemp' and 'The 5 Ps of CBD', sit side by side (about 534px each). Each uses a 532x299 crop of an 800x800 source with a dark navy strip and a bold caption below. The images contain baked-in marketing text (PURITY / PLACE / PRICE, 'HEMP OIL') that is clipped at the crop edges.",
+  "category": "imagery",
+  "evidence": "e88 176,2278,534x355; e91 730,2278; imgs 532x299 from 800x800; both have alt=\"\"",
+  "element_ids": [
+   "e88",
+   "e89",
+   "e91",
+   "e92"
+  ]
+ },
+ {
+  "observation": "Most images arrive as square 800x800 or 360x360 files and are cropped into landscape or square frames with object-fit style cropping. Several photos carry embedded overlay text from the original graphics ('QUALITY. RESULTS ZATURA', 'CBD Topicals', '#KeepingItZatural'), so the text is cut or truncated by the frames.",
+  "category": "imagery",
+  "evidence": "images list: CBD-Drops 800x800 shown at 255x191; hero cbd.jpg 700x300 shown at 503x340",
+  "element_ids": [
+   "e25",
+   "e30",
+   "e34",
+   "e38",
+   "e42"
+  ]
+ },
+ {
+  "observation": "Image alt text is present on the hero, category and product images. The decorative or editorial images in the featured-topics and wide cards have empty alt text. A tiny 16x16 'correct.png' sits at 0x0 and is not visible. In total 19 images, 0 missing alt attributes.",
+  "category": "imagery",
+  "evidence": "counts alt_missing 0; featured imgs alt=\"\"; correct.png rect 0,0,0,0",
+  "element_ids": [
+   "e25",
+   "e72",
+   "e76",
+   "e80",
+   "e84"
+  ]
+ },
+ {
+  "observation": "The news section 'CBD and the UK Food Standards Agency' is a text block capped at about 800px wide and left-aligned, with the right side empty. It has an uppercase small eyebrow ('IN THE NEWS'), an h2, a grey intro paragraph and a five-item list with gold dot bullets. The editorial copy is long-form, with dates and named quotes, and differs from the commerce copy elsewhere.",
+  "category": "layout",
+  "evidence": "e95 eyebrow; e97 736px wide; e98 ul 800px wide, 330 tall; 5 li",
+  "element_ids": [
+   "e95",
+   "e96",
+   "e97",
+   "e98"
+  ]
+ },
+ {
+  "observation": "A pale yellow callout box (cream fill, gold border, rounded corners) holds a bold 'Deadline:' label and the date 31 March 2021. The date is past relative to today, so the copy reads as dated.",
+  "category": "component",
+  "evidence": "e104 176,3282,800x81; e105 strong; bg rgb(255,244,214)",
+  "element_ids": [
+   "e104",
+   "e105"
+  ]
+ },
+ {
+  "observation": "The 'Popular searches' area shows about 23 keyword chips as links in wrapped rows. Each chip has a white fill, a thin border and a full-pill radius, with 13px-ish text. Many of the phrases are retailer or brand-keyword strings ('Cbd Oil 500 Mg 49 Yaa Health Store', 'Cbd Cream Walmart').",
+  "category": "component",
+  "evidence": "e108 ul with a at y=3522/3562/3602/3641, h=32; the chips are links",
+  "element_ids": [
+   "e108",
+   "e109",
+   "e114",
+   "e121",
+   "e125"
+  ]
+ },
+ {
+  "observation": "A native details/summary disclosure, 'Show all topics' with a green bold summary and the default triangle marker, hides a second chip list of about 62 more links. The list is empty of visible text in the extracted elements (anchors e136–e197 have no text) and renders collapsed.",
+  "category": "component",
+  "evidence": "e133 details 176,3691; e134 summary; e135 ul 350 tall with text-less a elements",
+  "element_ids": [
+   "e133",
+   "e134",
+   "e135",
+   "e136"
+  ]
+ },
+ {
+  "observation": "The page has many links and list items: 124 anchors and 110 li, most of them keyword chips and footer links. The content is link-dense, with few paragraphs (9 p) and about 512 words in total.",
+  "category": "semantic structure",
+  "evidence": "tag_counts a 124, li 110, p 9; text_stats words 512",
+  "element_ids": [
+   "e108",
+   "e135",
+   "e214",
+   "e226"
+  ]
+ },
+ {
+  "observation": "A full-bleed dark green 'Join The Club' band splits into two columns: a white h2 and light paragraph at the left, and a newsletter form at the right (a wide white email input with a gold 'Sign up' button). The two share one row, and the input and button have rounded corners.",
+  "category": "component",
+  "evidence": "e198 0,3785,1440x228; e201 form 736,3874,528x50; e203 button 98x50",
+  "element_ids": [
+   "e198",
+   "e199",
+   "e200",
+   "e201",
+   "e202",
+   "e203"
+  ]
+ },
+ {
+  "observation": "The footer is near-black green (rgb(17,23,19)) with four equal columns (Contact, Company, Support, Follow us), each with a bold white h3 and a list of muted light-grey links (rgb(196,206,199)). A thin divider line leads to a bottom row with '© CBD Oil 2020' at the left and a payment-icons image on a white rounded plate at the right.",
+  "category": "layout",
+  "evidence": "e204 0,4013,1440x322; h3s at x=176/456/736/1016; e250 copyright; e251 payment-icons.png 162x28",
+  "element_ids": [
+   "e204",
+   "e205",
+   "e213",
+   "e225",
+   "e237",
+   "e249",
+   "e251"
+  ]
+ },
+ {
+  "observation": "The page has no box shadows, transitions, animations, transforms or backdrop blur. Depth comes from 1px borders, flat color fills and rounded corners, along with one background gradient in the hero.",
+  "category": "decoration",
+  "evidence": "effects box_shadows 0, transitions 0, animations 0, transforms 0, backdrop_blur 0, gradient_backgrounds 1",
+  "element_ids": []
+ },
+ {
+  "observation": "Corner rounding is mixed. Cards and chips are rounded (88 elements at 16px+, 19 at 8–15px). The primary green search button, along with many structural blocks, is square (262 elements at 0). The pill bucket reads 0, yet chips look fully round.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 262, bucket_1_7 3, bucket_8_15 19, bucket_16_plus 88, bucket_pill 0; primary_button radius 0px",
+  "element_ids": [
+   "e17",
+   "e28",
+   "e104",
+   "e109"
+  ]
+ },
+ {
+  "observation": "Styling is mostly semantic, with a custom stylesheet in one inline style block. There are 82 class attributes in total, 31 unique, and only about 5% look like Tailwind utilities. There are 7 inline style attributes, no external stylesheets and 1 script.",
+  "category": "semantic structure",
+  "evidence": "classes total 82, unique 31, tailwind_like_fraction 0.049; counts stylesheets 0, inline_style_attrs 7; tag_counts style 1, script 1",
+  "element_ids": []
+ },
+ {
+  "observation": "Section rhythm alternates between the off-white page background and white or tinted bands: the hero is green, the category and product areas are off-white, the news section is white with hairline top and bottom borders, popular searches are off-white again, then a green band and a dark footer. Vertical padding between sections is roughly 50–70px.",
+  "category": "layout",
+  "evidence": "e20 0–622; e26 622–1027; e94 white 2689–3420; e106 3420–3785; e198 3785–4013; e204 4013–4335; page_height 4335",
+  "element_ids": [
+   "e20",
+   "e94",
+   "e106",
+   "e198",
+   "e204"
+  ]
+ },
+ {
+  "observation": "The primary nav is a plain row of five text links with no active state or dropdown indicator, placed in the centre of the header. Link text is dark on white at about 16px with generous gaps.",
+  "category": "component",
+  "evidence": "e9 nav 717,62,343x26 with Shop, Products, Learn, News, Contact Us",
+  "element_ids": [
+   "e9",
+   "e10",
+   "e11",
+   "e12",
+   "e13",
+   "e14"
+  ]
+ },
+ {
+  "observation": "Contact details recur in three places: the top bar (hours and phone), the header nav ('Contact Us') and the footer Contact column (phone, email via the form, hours, wholesale number). The footer Email line says 'via the Contact Us form' and has no address.",
+  "category": "copy",
+  "evidence": "e2/e3/e4; e205–e212",
+  "element_ids": [
+   "e2",
+   "e3",
+   "e4",
+   "e206",
+   "e211"
+  ]
+ },
+ {
+  "observation": "There is a mismatch between the site's brand and its text. The logo reads 'ATURAL' (Zatural), the site name span says 'Where To Buy Cbd Cream For Pain', the footer says '© CBD Oil 2020', and the title carries the same keyword phrase. The page title and header text are keyword-style, so the brand name is mostly carried by the logo image.",
+  "category": "copy",
+  "evidence": "title 'Where To Buy CBD Cream For Pain'; e7 logo alt 'CBD logo'; e8 span; e250 '© CBD Oil 2020'",
+  "element_ids": [
+   "e7",
+   "e8",
+   "e250"
+  ]
+ },
+ {
+  "observation": "Body copy uses neutral secondary greys for supporting text: product descriptors, the news intro and some links render in a lighter grey, rgb(93,107,99) for 7 elements, against the primary dark text on 281 elements. Footer link text is pale green-grey (rgb(196,206,199)) on 50 elements, and white appears on 18 elements.",
+  "category": "color",
+  "evidence": "top_text_colors: 31,42,36 x281; 196,206,199 x50; 255,255,255 x18; 93,107,99 x7; 232,239,233 x6",
+  "element_ids": [
+   "e49",
+   "e54",
+   "e97",
+   "e214"
+  ]
+ },
+ {
+  "observation": "Link treatment differs by context: the top-bar and in-card text links are underlined (green in cards), the nav and footer links are not underlined, the chips are bordered pills, and whole cards act as links (the category and wide image cards wrap the image and caption in a single a).",
+  "category": "component",
+  "evidence": "e29 a wraps img+span; e88 a wraps img+div; e74/e78/e82 underlined green links; e3 underlined",
+  "element_ids": [
+   "e29",
+   "e74",
+   "e88",
+   "e91",
+   "e3"
+  ]
+ },
+ {
+  "observation": "The page makes no use of icon fonts or SVG (svgs: 0). The only icons are two small raster PNGs: a 16x16 search magnifier in the search button and the payment-methods strip in the footer. The magnifier is white on a green square.",
+  "category": "imagery",
+  "evidence": "counts svgs 0; search.png 16x16 at 1237,67; payment-icons.png 307x49 shown at 162x28",
+  "element_ids": [
+   "e18",
+   "e251"
+  ]
+ },
+ {
+  "observation": "Cards and sections use consistent internal padding, with card text inset about 16px from the card edge (x=193 in a card starting at x=177). Titles are bold about 17–18px, and descriptor and price lines stack in short blocks with small vertical gaps.",
+  "category": "typography",
+  "evidence": "e48 at 193,1346 inside e46 at 176; e49 at y=1368; e50 at y=1399",
+  "element_ids": [
+   "e46",
+   "e48",
+   "e49",
+   "e50"
+  ]
+ }
+]

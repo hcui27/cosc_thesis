@@ -1,0 +1,192 @@
+[
+ {
+  "observation": "Page title is a brand name plus an all-caps tagline, and the same tagline appears under the logo.",
+  "category": "copy",
+  "evidence": "title 'KNEEguru | YOUR SOURCE OF KNEE INFORMATION'; logo caption 'YOUR SOURCE OF KNEE INFORMATION'"
+ },
+ {
+  "observation": "The page has no h1. The heading outline starts at an h2 'Knee Guru' and then uses h3, h4, h5 and h6 in a loose hierarchy. The first two entries are h3 'Content Group' and 'Bullet Points'.",
+  "category": "dom-semantics",
+  "evidence": "h1_count 0; heading_outline begins h2 'Knee Guru', h3 'Content Group', h3 'Bullet Points'; h4 count 16"
+ },
+ {
+  "observation": "Semantic landmarks are limited to header, nav and footer. There is no main, section, article, aside or figure, and the structure is div-heavy.",
+  "category": "dom-semantics",
+  "evidence": "semantic main 0, section 0, article 0; div 217; header 1, nav 1, footer 1"
+ },
+ {
+  "observation": "The layout is a fixed-width centered column of about 1140px (x=150 to 1290) on a 1440px canvas. White margins sit on either side.",
+  "category": "layout",
+  "evidence": "page_width 1440; hero image rect x=150; grey panel and hr span 150–1290 in the screenshot"
+ },
+ {
+  "observation": "There is no CSS grid or flexbox. The columns and rows are built with floats or table-style layout, which is consistent with a Bootstrap-era theme.",
+  "category": "layout",
+  "evidence": "display_grid 0, display_flex 0; 187 unique classes, tailwind_like_fraction 0"
+ },
+ {
+  "observation": "A light-grey strip at the very top holds a centered 'Banner - Hide this banner' line with an external-link icon. The strip is mostly empty and about 130px tall.",
+  "category": "component",
+  "evidence": "Screenshot top; background rgb(239,239,239) appears once in top_backgrounds"
+ },
+ {
+  "observation": "The header places a large two-tone logo (teal 'KNEE' with an olive 'guru' script) at the left. A square search input with a blue icon button sits at the right, with four circular social icons below it (Twitter, Facebook, YouTube, Pinterest).",
+  "category": "component",
+  "evidence": "Screenshot slice 0 header; search button bg rgb(0,136,204); 8 pill-radius elements; FontAwesome used on 29 elements"
+ },
+ {
+  "observation": "The primary navigation is a right-aligned row of small bold uppercase blue links. Dropdown carets appear on Learning Portfolio, Community and Product Reviews.",
+  "category": "navigation",
+  "evidence": "Items ABOUT, LEARNING PORTFOLIO, DICTIONARY, COMMUNITY, SPECIALISTS, CLINICS, PRODUCT REVIEWS, THE TEAM; nav count 1; link color rgb(0,136,204)"
+ },
+ {
+  "observation": "The hero is a square 570×570 photo of a man drawing a knee on a whiteboard, left-aligned under the nav. An olive-grey translucent overlay panel covers its lower portion and extends past the photo's right edge to about x=1258.",
+  "category": "imagery",
+  "evidence": "hero_06a.jpg rect x150 y309 w570 h570, alt empty; background rgb(62,62,47) appears twice"
+ },
+ {
+  "observation": "The hero overlay carries a light-weight 'Learn about knees…' h2 in white. Below it is a two-column list of six white action phrases, each with a dotted-arrow bullet image: look up a topic, anatomy, forum, rehab exercises, locate a surgeon, book a consultation.",
+  "category": "copy",
+  "evidence": "h2 'Learn about knees...'; h2 font-weight 300; screenshot slice 0 lines at y≈590–654"
+ },
+ {
+  "observation": "The hero has no headline in the usual sense and no prominent CTA button. The calls to action are plain text list items inside the overlay.",
+  "category": "component",
+  "evidence": "Overlay contains only the h2 and six lines; primary_button text is empty"
+ },
+ {
+  "observation": "A pale grey panel (about #EBEBEB) holds a 3×2 grid of category tiles. Each tile has a flat colored SVG icon sitting above a white label card with an all-caps name, with a short description below on the grey. The tiles are PRIMERS, COURSES, EBOOKS, EXPERT VIEWS, GENERAL ARTICLES and JOURNAL INTERPRETATIONS.",
+  "category": "component",
+  "evidence": "background rgb(235,235,235); six h4 headings; icons primers_icon.svg … journal_icon.svg at x≈295/660/1036 and y≈823/1112"
+ },
+ {
+  "observation": "The category icons use unrelated flat colors: grey, orange, cyan, mid-blue, navy and black. Each is an SVG at roughly 100–120px wide and each overlaps the top edge of its white label card.",
+  "category": "imagery",
+  "evidence": "Screenshot slice 0 icons; icon rects y 823–943 vs. card top ≈ 911"
+ },
+ {
+  "observation": "All six category icons share the same alt text 'Primers', which does not match their actual content. They sit on a 570px hero image that has an empty alt.",
+  "category": "dom-semantics",
+  "evidence": "images list: courses_icon.svg, eBooks_icon.svg, expert_views_icon.svg etc. all alt 'Primers'; hero alt ''"
+ },
+ {
+  "observation": "The icons overlap the hero image's bounding box slightly. This is a minor layout intrusion; the hero's 570px height pushes into the tile panel.",
+  "category": "layout",
+  "evidence": "image_overlaps hero_06a.jpg with primers_icon.svg (5488 px²) and courses_icon.svg (3360 px²)"
+ },
+ {
+  "observation": "The type is a single sans family, Open Sans, on 410 of 452 counted elements. Body text is 16px/24px in mid-grey, and FontAwesome supplies icons.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Open Sans 410, FontAwesome 29; body_font_size 16px; body_color rgb(119,119,119)"
+ },
+ {
+  "observation": "Section headings (h2) are large, thin-weight and sentence case, in near-black. 'Latest Content' and 'Our Sponsors' left-align at about 35px weight 300.",
+  "category": "typography",
+  "evidence": "h2 font_size 35.2px, weight 300; text color rgb(29,33,39) used on 21 elements"
+ },
+ {
+  "observation": "A handwritten script face, Shadows Into Light, is used sparingly, in the 'More about us…' tab in the footer. The tab is a blue label with a small folded-corner triangle and sits on the footer edge. The script contrasts with the Open Sans used elsewhere.",
+  "category": "typography",
+  "evidence": "Shadows Into Light on 2 elements; slice 2 blue tab at x150–318, y166–209"
+ },
+ {
+  "observation": "Latest Content is a plain vertical list of ten entries. Each has a large blue h4 link title and a one-line grey summary, with a thin grey rule between entries. There are no thumbnails or dates.",
+  "category": "component",
+  "evidence": "ten h4 titles from 'All about arthrofibrosis of the knee' to 'Arthrofibrosis and rheumatoid arthritis'; slice 1 rules at y≈273, 361, 449"
+ },
+ {
+  "observation": "Inline glossary-style links inside the summaries are green with a dotted underline (meniscus, MRI, knee surgeon, knee replacement, medial meniscus, rheumatoid arthritis, arthrofibrosis). They are distinct from the blue title links.",
+  "category": "typography",
+  "evidence": "Slice 1 green dotted-underline links; link color rgb(0,136,204) used on 42 elements for the other links"
+ },
+ {
+  "observation": "The palette is mainly white and grey, with one saturated blue accent (rgb(0,136,204)) for links, nav, the search button and the footer tab. Olive-brown (62,62,47) is used for the hero overlay, and the footer is near-black.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 20, rgb(0,136,204) 3, rgb(62,62,47) 2, rgb(14,14,14) 1; text colors grey 308, blue 42, white 38"
+ },
+ {
+  "observation": "Body copy is mid-grey (#777) on white throughout the main content, which gives a muted, low-contrast reading tone. Titles and h2s are darker.",
+  "category": "color",
+  "evidence": "body_color rgb(119,119,119) on 308 elements; h2 rgb(29,33,39)"
+ },
+ {
+  "observation": "Corners are almost entirely square. Of the elements, 417 have 0 radius, 15 have 1–7px and 8 are pills (the social icons). The primary button has 0 radius.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 417, bucket_1_7 15, bucket_pill 8; primary_button radius 0px"
+ },
+ {
+  "observation": "Decoration is light: nine box shadows, one gradient background, no backdrop blur and no animations. 26 transitions and 16 transforms are likely hover effects.",
+  "category": "decoration",
+  "evidence": "box_shadows 9, gradient_backgrounds 1, backdrop_blur 0, animations 0, transitions 26, transforms 16"
+ },
+ {
+  "observation": "The sponsors section is a short paragraph of dark body text followed by two small logos centered side by side: the Joint Operations logo (green/yellow) and an Össur logo with a thin black border.",
+  "category": "imagery",
+  "evidence": "joint-operations-logo.jpg 84×119 at x582 y2551; Össur image 120×60 at x734; alt 'Orthotics for Hard and Soft Tissue Injuries. Ossur.'"
+ },
+ {
+  "observation": "A thick rounded grey bar (about 8px) closes the sponsors section above the footer. It acts as a divider or carousel-track-like element.",
+  "category": "decoration",
+  "evidence": "Slice 2 bar at y≈106–116 spanning x150–1290; hr count 1"
+ },
+ {
+  "observation": "The footer is a near-black full-bleed band with white text and four columns of different widths: Professional Standards, Corporate Details, Stay in touch and Your safety. Its headings are light-weight white, echoing the main h2 style.",
+  "category": "layout",
+  "evidence": "background rgb(14,14,14); h2s 'Professional Standards', 'Corporate Details', 'Stay in touch', 'Your safety'; footer count 1"
+ },
+ {
+  "observation": "The footer carries trust and compliance content: a HONcode certification badge with a 'Verify here' external link, company registration details and a registered address, and a medical-information disclaimer in dimmer grey.",
+  "category": "copy",
+  "evidence": "honconduct712243_s.jpg 49×72 alt 'This website is certified by Health On the Net Foundation…'; text 'company number 2893459'; disclaimer text in grey"
+ },
+ {
+  "observation": "A circular black RSS icon with a white glyph sits under the HON badge. It uses an SVG file rendered as an img at 60×54.",
+  "category": "imagery",
+  "evidence": "feed.svg alt 'RSS' rect x150 y3061 w60 h54; svgs inline 0"
+ },
+ {
+  "observation": "The newsletter form has two light-grey input fields (First Name, Email Address) stacked above a full-width darker blue 'Subscribe' button. The button has square corners and is centered within a roughly 325px column.",
+  "category": "component",
+  "evidence": "Slice 2 inputs at y≈412–500, button rgb(13,109,184); form count 3, input 13, button 4"
+ },
+ {
+  "observation": "The footer's legal and policy links are stacked bold uppercase white text with no bullets: Mission Statement, Privacy Policy, Cookies Policy, Terms and Conditions, Funding Advertising & Sponsorship Policy, Make a One-Off Donation.",
+  "category": "navigation",
+  "evidence": "Slice 2 right column at x≈1125, y 305–537"
+ },
+ {
+  "observation": "The bottom-right of the footer has three 'A' icons of increasing size, a text-size control. The icons are blue-outlined squares.",
+  "category": "component",
+  "evidence": "Slice 2 at x≈1208–1290, y≈733–758"
+ },
+ {
+  "observation": "The page ends with a nearly empty black strip below the footer content. This is likely a sub-footer with no visible text.",
+  "category": "layout",
+  "evidence": "Slice 2 y≈823–893 pure black; page_height 3493"
+ },
+ {
+  "observation": "The markup relies heavily on inline styles and on many scripts and stylesheets: 31 inline style attributes, 37 script tags, 4 style blocks and 10 stylesheets. Only 7 ARIA attributes are present, and there is no JSON-LD.",
+  "category": "dom-semantics",
+  "evidence": "inline_style_attrs 31, scripts 37, style 4, stylesheets 10, aria_attrs 7, jsonld_blocks 0"
+ },
+ {
+  "observation": "The page is link-dense: 84 anchors against 570 words and 27 paragraphs. Most are nav, list and footer links. Eight origin-trial meta tags are present in the head, suggesting third-party or ad scripts.",
+  "category": "dom-semantics",
+  "evidence": "anchors 84, words 570, p 27; meta_names include 8 'origin-trial'"
+ },
+ {
+  "observation": "Vertical rhythm is generous. Large gaps separate the nav, hero, tile panel, content list and footer. The content list is tightly spaced with ~88px per entry.",
+  "category": "layout",
+  "evidence": "page_height 3493; hero y309–759, tile panel starts ≈791; list rules every ~88px"
+ },
+ {
+  "observation": "The copy is informational and medical, in British spelling and tone ('rehabilitation', 'physiotherapists', a UK limited company). The category descriptions are short, grey, left-aligned and two lines each.",
+  "category": "copy",
+  "evidence": "Descriptions such as 'ABCs for beginners wanting to understand the basics about knees'; address 'Dudley, West Midlands, United Kingdom'"
+ },
+ {
+  "observation": "Capitalization varies by role: all caps for nav, tile labels and footer policy links; sentence case for h2s and article titles; title case for the footer h2s.",
+  "category": "typography",
+  "evidence": "h4 'PRIMERS', 'COURSES'; h2 'Latest Content'; nav 'LEARNING PORTFOLIO'"
+ }
+]

@@ -1,0 +1,172 @@
+[
+ {
+  "observation": "The page title is 'Home - The Frangipani Creative' and the document has zero h1 elements. The visible site name is centered text at the top, and the heading outline starts at an h2 reading 'Main Content'.",
+  "category": "semantic structure",
+  "evidence": "facts.json h1_count: 0; heading_outline[0] = h2 'Main Content'; title 'Home - The Frangipani Creative'"
+ },
+ {
+  "observation": "The heading hierarchy is irregular. It mixes h2, h4 and h3, jumps from h2 straight to h4, includes an empty h2, and has headings with placeholder-like text such as 'Main Content', 'Before Footer' and 'Footer'. The 'FOLLOW ME ON SOCIAL MEDIA' text appears as both an h3 and an h4.",
+  "category": "semantic structure",
+  "evidence": "heading_outline: h2 'Main Content', h4 'Personalized Blog Coaching', h2 '', h2 'Before Footer', h2 'Footer', h3 and h4 'FOLLOW ME ON SOCIAL MEDIA'"
+ },
+ {
+  "observation": "The header is a centered serif wordmark in Arbutus Slab on white. A thin horizontal rule separates it from a centered row of bold sans-serif nav links, with 'Home' in crimson as the active item.",
+  "category": "layout",
+  "evidence": "Slice 1 top: 'The Frangipani Creative' centered; nav items Home, Blog, The Frangipani Creative Podcast, Happy Clients, Contact, Archives, Books I Recommend; text color rgb(178,3,50) appears 106 times"
+ },
+ {
+  "observation": "The type system pairs Open Sans for body and UI text with Arbutus Slab for headings and the wordmark. Open Sans is the font on 379 elements and Arbutus Slab on 23. Icon fonts (FontAwesome, sw-icon-font) and Helvetica (on the social buttons) are also present.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Open Sans 379, Helvetica 35, Arbutus Slab 23, FontAwesome 20, sw-icon-font 5"
+ },
+ {
+  "observation": "The body text is large and airy, at 18px with a 29.25px line height (about 1.625). Content paragraphs are left-aligned in a column roughly 880px wide, centered in a 1440px viewport.",
+  "category": "typography",
+  "evidence": "body_font_size 18px; body_line_height 29.25px; content blocks span x=280 to 1160 in screenshots; page_width 1440"
+ },
+ {
+  "observation": "Section headings such as 'Personalized Blog Coaching', 'Happy Clients' and the blog post titles are centered, small, bold-looking serif headings. The h2 style is 30px at weight 400, and the client name headings are larger serif text that is left-aligned.",
+  "category": "typography",
+  "evidence": "h2 font_size 30px, font_weight 400; slice 2 centered 'Personalized Blog Coaching' and 'Happy Clients'; 'Anil Kumar Margani' left-aligned serif"
+ },
+ {
+  "observation": "The palette is mostly white and black with a single crimson accent. Crimson is used for every link, the active nav item and the Instagram icon, and body text is pure black on white. Links are underlined in crimson throughout.",
+  "category": "color",
+  "evidence": "colors.body_bg rgb(255,255,255); body_color rgb(0,0,0); top_text_colors rgb(178,3,50) x106; slice 1 and slice 4 underlined crimson links"
+ },
+ {
+  "observation": "Full-width brand-colored social buttons form a second palette: Facebook blue, Instagram pink-red, LinkedIn blue, Pinterest red and Twitter light blue. Each is a rounded block with an icon glyph, a Helvetica label and a white 'Like' or 'Follow' pill.",
+  "category": "components",
+  "evidence": "top_backgrounds rgb(24,119,242), rgb(234,36,84), rgb(39,103,177), rgb(230,0,35), rgb(29,161,242); slice 3 buttons 'Facebook Like', 'Instagram Follow', 'Linkedin Follow', 'Pinterest Follow'; slice 4 'Twitter Follow'"
+ },
+ {
+  "observation": "The social button icon glyphs render as stray letters (k, q, s, A, N) because the icon font is not mapped to its glyphs. The buttons read as text characters rather than brand icons.",
+  "category": "imagery",
+  "evidence": "Slice 3 and 4: letters 'k', 'q', 's', 'A', 'N' beside Facebook, Instagram, Linkedin, Pinterest and Twitter labels; sw-icon-font used on 5 elements"
+ },
+ {
+  "observation": "The intro section sits on a large blurred brown bokeh background image with a pink frangipani flower at lower right. Black text is placed directly on the dark photo, which gives low contrast. The section is tall, with a big empty area between the text and the 'Read this' link.",
+  "category": "imagery",
+  "evidence": "Slice 1: image area x=280–1160, y≈203–1300+, text 'The Frangipani Creative is the studio of Corinne Rodrigues' in black on dark brown; crimson links on brown"
+ },
+ {
+  "observation": "The testimonial section uses a very dark, nearly black floral photo as a full-width background, with black text over it and a white hairline divider. The text is largely illegible against the flowers.",
+  "category": "imagery",
+  "evidence": "Slice 2: 'Happy Clients' section at y≈673 onward with dark plumeria background; black testimonial text over white and pink petals; white 1px rule beneath quote"
+ },
+ {
+  "observation": "The testimonial block exposes raw structured-data fields as visible text: reviewer name, company, rating '5', an ISO timestamp '2019-10-15T11:24:24+05:30', a duplicated quote, the testimonial URL and the numbers '5' and '3'. This is plugin or schema output rendered unstyled.",
+  "category": "copy",
+  "evidence": "Slice 2 and 3 lines: 'Anil Kumar Margani / The Frangipani Creative / 5 / 2019-10-15T11:24:24+05:30', 'https://thefrangipanicreative.com/testimonials/anil-kumar-margani/', '5', '3'; heading_outline lists Sunita Saldhana, Madhavi Mahadev and Anil Kumar Margani as h2"
+ },
+ {
+  "observation": "The testimonial is introduced by a row of five black star glyphs above the name, in the FontAwesome icon style.",
+  "category": "components",
+  "evidence": "Slice 2: five black stars at y≈829 above 'Anil Kumar Margani'; FontAwesome on 20 elements; 25 <i> tags"
+ },
+ {
+  "observation": "The page's images are lazy-load placeholders. All 15 img elements point to a 1x1 transparent GIF data URI, so the images have no loaded content. The rendered photos come from CSS backgrounds and the blog-post thumbnail area is blank.",
+  "category": "imagery",
+  "evidence": "images[].file 'yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' with natural [1,1]; rects such as 680x680 at (300,572) and 180x180 at y=3030; slice 3 empty area above post titles"
+ },
+ {
+  "observation": "The blog coaching card has a 300x300 image slot centered above its title, which renders as blank white space. The slot is followed by a short teaser ending with an inline crimson 'Read more..' link.",
+  "category": "imagery",
+  "evidence": "images[1] alt 'blog coaching' rect 570,1477 300x300; slice 2 blank region then 'Looking to start a blog? ... Read more..'"
+ },
+ {
+  "observation": "The four recent-post cards sit in a four-column row, each about 180px wide. Titles are centered serif text, and a byline in the form 'By NAME' uses italic 'By' with spaced uppercase bold gray author names. Post thumbnails are empty.",
+  "category": "components",
+  "evidence": "Image rects at x=300, 520, 740, 960, each 180x180 at y=3030; slice 3 titles 'Writer’s Healthy Diet and Lifestyle', '12 Productivity Hacks for Writing' etc.; bylines 'By LUX', 'By FABIDA ABDULLA'; text color rgb(90,99,108)"
+ },
+ {
+  "observation": "A footer-like widget band has three columns (social follow, location, recent posts) over a pale blue sky photo with pink frangipani blossoms. Column headings are small, bold, letter-spaced uppercase labels. The 'FOLLOW ME ON SOCIAL MEDIA' heading is serif uppercase and the others are sans.",
+  "category": "layout",
+  "evidence": "Slice 3: columns at x≈300, 593 and 886; 'LOCATION' and 'RECENT POSTS' in spaced uppercase sans; 'FOLLOW ME ON SOCIAL MEDIA' in serif uppercase; background rgb(243,243,243) also present"
+ },
+ {
+  "observation": "The location column is plain address text with a postal address in Secunderabad plus mobile and landline numbers. The recent-posts column is a list of underlined crimson links, one of which is '20 Quotes To Encourage You To Be A Fearless Writer'.",
+  "category": "copy",
+  "evidence": "Slice 3: 'Shop #4, AWHO Colony Sector ‘A’, Gautam Enclave Secunderabad – 500 009 India Mobile : 91- 8886034647 Landline : 91-40-29560398'; Recent Posts links"
+ },
+ {
+  "observation": "A cookie consent bar is overlaid near the top of the first screenshot slice as a fixed white strip with a thin border. It has small text with a 'Cookie Policy' link and a gray 'Close and accept' button with letter-spaced text.",
+  "category": "components",
+  "evidence": "Slice 1 at y≈830–880: 'Privacy & Cookies: This site uses cookies...' and button 'Close and accept' at x≈1247–1415"
+ },
+ {
+  "observation": "The Instagram feed block renders broken. A giant crimson Instagram glyph SVG, about 745px wide, appears twice. Between the glyphs there is a list of truncated post captions, shown as left-aligned underlined links cut mid-word (e.g. 'non-essentia', 'taking stoc', 'Conta'). These are the image alt texts.",
+  "category": "components",
+  "evidence": "Slice 4: large crimson Instagram icon at x≈97–840; links 'How often we get bogged down with the non-essentia', 'Looking back is only good when you are taking stoc', 'Conta'; 2 svg elements; images alt text contains the caption text; 'Load More...' link and 'Follow on Instagram' link"
+ },
+ {
+  "observation": "The Instagram section is left-aligned at x≈92–97, outside the centered 880px column. This breaks the page's centered alignment, and the section carries the h3 'thefrangipanicreative' with the tagline 'Training/Coaching for writing, blogging and creativity' as crimson underlined serif and sans links.",
+  "category": "layout",
+  "evidence": "Slice 4: 'thefrangipanicreative' at x=97; images[6..13] rect x=97; content column elsewhere x=280–1160"
+ },
+ {
+  "observation": "The final area has a small disclosure paragraph about affiliate links, with a bold 'this page' link. A hairline rule follows, and a centered '© 2020 - The Frangipani Creative' sits on a white footer with no background color.",
+  "category": "copy",
+  "evidence": "Slice 5: 'Disclosure: Please note that all posts and pages may contain affiliate links...' at x=100; 'this page' bold; '© 2020 - The Frangipani Creative' centered at y≈813"
+ },
+ {
+  "observation": "Visual decoration is minimal. There are no box shadows, gradients or backdrop blurs. Border radii are 0 on nearly all elements (435 of 462 buckets), with a small number of rounded elements (the social buttons).",
+  "category": "decoration",
+  "evidence": "effects.box_shadows 0; gradient_backgrounds 0; backdrop_blur 0; border_radius_buckets bucket_0 435, bucket_1_7 17, bucket_8_15 5, bucket_16_plus 5; primary_button radius 0px"
+ },
+ {
+  "observation": "The 'Menu' button (black background, white text, 16px 24px padding, square corners) is the only button element. It is a mobile menu toggle that is hidden on desktop, while the nav is visible as a link row.",
+  "category": "components",
+  "evidence": "primary_button text 'Menu', bg rgb(0,0,0), color rgb(255,255,255), radius 0px; counts.buttons 1; nav count 1"
+ },
+ {
+  "observation": "Layout relies on floats and block flow rather than modern layout. There are zero grid elements and only 6 flex containers, and the DOM is div-heavy at 167 divs against 13 sections and 7 articles.",
+  "category": "layout",
+  "evidence": "layout.display_grid 0; display_flex 6; tag_counts div 167, section 13, article 7"
+ },
+ {
+  "observation": "The page is a long single-column scroll of about 7,381px at 1440px wide. The sections run in this order: intro, coaching card, testimonials, recent posts, social/location widgets, Instagram feed and the footer disclosure.",
+  "category": "layout",
+  "evidence": "layout.page_height 7381; 6 slices; section order seen across slices 1–6"
+ },
+ {
+  "observation": "The markup is WordPress-style with many tags in the head and a lot of inline styling. There are 49 scripts, 35 meta tags, 15 stylesheets, 11 style blocks, 53 inline style attributes and 4 iframes. There is one JSON-LD block, plus Open Graph and Twitter meta tags and generator meta tags.",
+  "category": "semantic structure",
+  "evidence": "tag_counts script 49, meta 35, style 11, iframe 4; counts.stylesheets 15, inline_style_attrs 53; jsonld_blocks 1; meta_names include og:*, twitter:*, generator"
+ },
+ {
+  "observation": "The class vocabulary is custom and theme-based, with no utility-class framework. There are 621 class usages across 210 unique classes, and the Tailwind-like fraction is 1.3%.",
+  "category": "semantic structure",
+  "evidence": "classes.total 621, unique 210, tailwind_like_fraction 0.013"
+ },
+ {
+  "observation": "Semantic landmarks are present but mixed. There are 7 header elements (some per article or section), a single nav, a single main and a single footer. There are no asides, even though sidebar-style widgets exist, and one figure with a figcaption.",
+  "category": "semantic structure",
+  "evidence": "semantic: header 7, nav 1, main 1, footer 1, aside 0, figure 1, figcaption 1, article 7, section 13"
+ },
+ {
+  "observation": "Accessibility attributes are partially present. All images have an alt attribute (alt_missing 0), but many alts are empty strings or hold very long caption text, and there are 21 aria attributes. Instagram images carry full post captions as alt text.",
+  "category": "semantic structure",
+  "evidence": "counts.alt_missing 0; aria_attrs 21; images[0,2,3,4] alt ''; images[6..13] alt contains multi-sentence captions"
+ },
+ {
+  "observation": "The page is copy-light and personal in tone. It uses first-person sentences from a writing coach and blogger, a short fragmented bio ('A lover of words. A self-acceptance blogger. A book reviewer.'), and CTAs such as 'Read this', 'Read more..' and 'Load More...'. There are few exclamation marks and no em dashes.",
+  "category": "copy",
+  "evidence": "text_stats words 622, exclamations 0, em_dashes 0, emoji 1; slice 1 intro copy; slice 2 'Read more..'"
+ },
+ {
+  "observation": "Several interaction effects are defined. There are 58 transition declarations, 1 animation and 5 transforms. Only the 'Load More...' link and the social 'Like'/'Follow' pills look interactive.",
+  "category": "decoration",
+  "evidence": "effects.transitions 58, animations 1, transforms 5"
+ },
+ {
+  "observation": "Navigation labels are short title-case phrases in bold 15–16px sans text, spaced about 44px apart, with no underline or dividers. The active 'Home' item is colored crimson, which is the only state differentiation visible.",
+  "category": "components",
+  "evidence": "Slice 1 nav y≈132: Home (crimson) vs Blog, The Frangipani Creative Podcast, Happy Clients, Contact, Archives, Books I Recommend in black"
+ },
+ {
+  "observation": "The outer page is white with a lot of empty margin on both sides of the centered column, and background-image sections are boxed to the 880px column rather than running full-bleed. The footer rule and copyright are the only full-width elements.",
+  "category": "layout",
+  "evidence": "Image-backed sections span x=280–1160 in slices 1–3; footer hairline at y≈744 in slice 5 spans x=0–1440; top_backgrounds rgb(255,255,255) x18"
+ }
+]

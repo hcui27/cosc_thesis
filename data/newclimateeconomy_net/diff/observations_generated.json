@@ -1,0 +1,388 @@
+[
+ {
+  "observation": "The page uses a single system-ui font stack, with no webfont loaded. 107 elements use system-ui and only 2 use Arial. Hierarchy comes from weight and size alone.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 107, Arial 2; h1 font-family 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif'",
+  "element_ids": []
+ },
+ {
+  "observation": "The h1 is a 35.2px bold headline in near-black dark teal. It sits in the featured hero beside the photo and wraps to three lines in a ~490px column.",
+  "category": "typography",
+  "evidence": "h1 font_size 35.2px, weight 700, color rgb(21,41,43); e19 is 490x127",
+  "element_ids": [
+   "e19"
+  ]
+ },
+ {
+  "observation": "Type sizes step down in a short scale. The body is 16px with a 25.6px line-height (1.6). The h2 is 25.6px bold. The h3 article titles are bold and smaller, at about 18-20px by their rendered look.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px, h2 25.6px/700",
+  "element_ids": [
+   "e22",
+   "e27",
+   "e38"
+  ]
+ },
+ {
+  "observation": "A small uppercase, letter-spaced green eyebrow label, 'FEATURED COMMENTARY', sits above the date and headline. 'MANAGING PARTNER' uses the same treatment in grey in the partner card.",
+  "category": "typography",
+  "evidence": "e17 text 'FEATURED COMMENTARY'; e67 small 'MANAGING PARTNER'",
+  "element_ids": [
+   "e17",
+   "e67"
+  ]
+ },
+ {
+  "observation": "The palette is restrained: white, a pale mint-grey (238,244,241), a deep green (11,107,85) and a dark teal-black (21,41,43). Green marks interactive elements, and no other accent hue appears in the UI.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 11, rgb(238,244,241) 4, rgb(11,107,85) 3, rgb(21,41,43) 1; text colors include rgb(11,107,85) x16",
+  "element_ids": []
+ },
+ {
+  "observation": "Section backgrounds alternate between white and pale mint (hero, Videos, Partners) to separate bands. No borders or shadows are used for this.",
+  "category": "layout",
+  "evidence": "e15 0-516 tinted, e21 white, e37 tinted, e47 white, e63 tinted, e73 white; box_shadows 0",
+  "element_ids": [
+   "e15",
+   "e21",
+   "e37",
+   "e47",
+   "e63",
+   "e73"
+  ]
+ },
+ {
+  "observation": "The page is flat. It has no box shadows, gradients, backdrop blur, transitions, animations or transforms. Depth comes only from 1px hairlines and color blocks.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 0, gradient_backgrounds 0, backdrop_blur 0, transitions 0, animations 0, transforms 0",
+  "element_ids": []
+ },
+ {
+  "observation": "Corners are mostly square. 95 elements have radius 0, 9 have small radii of 1-7px (buttons, cards, hero image) and 5 are pill or circle shapes (social icons).",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:95, 1_7:9, 8_15:0, 16_plus:0, pill:5; primary_button radius 0px",
+  "element_ids": [
+   "e16",
+   "e20",
+   "e14",
+   "e80",
+   "e82"
+  ]
+ },
+ {
+  "observation": "The header is a single row. The logo sits at left (186,12), and the nav links, the search form and the green Sign Up button are grouped to the right. A thin bottom border separates it from the hero.",
+  "category": "layout",
+  "evidence": "e2 at x186 w401; e4 nav at x611; e9 form at x981; e14 Sign Up at x1171",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4",
+   "e9",
+   "e14"
+  ]
+ },
+ {
+  "observation": "The logo image is 401x52, scaled from a 524x68 PNG. Its left edge aligns to the 186px content margin. In the screenshot the logo area looks blank or very light.",
+  "category": "imagery",
+  "evidence": "logo.png rect 186,12,401,52; alt 'New Climate Economy'",
+  "element_ids": [
+   "e3"
+  ]
+ },
+ {
+  "observation": "The search form has a visually hidden label, positioned at x=-9999, and an icon-only button holding a 16px magnifier PNG. The input shows 'Search' placeholder text and the button has a tinted background.",
+  "category": "component",
+  "evidence": "e10 label at x -9999; e13 icons-search.png 16x16 with empty alt",
+  "element_ids": [
+   "e9",
+   "e10",
+   "e11",
+   "e12",
+   "e13"
+  ]
+ },
+ {
+  "observation": "The hero is a two-column split. A 538x359 photo sits at left and a text stack (eyebrow, date, h1, Read More button) is vertically centered at right, on a tinted band.",
+  "category": "layout",
+  "evidence": "e16 186,117,538,359; text column at x764; section e15 height 439",
+  "element_ids": [
+   "e15",
+   "e16",
+   "e17",
+   "e19",
+   "e20"
+  ]
+ },
+ {
+  "observation": "The hero photo is a documentary-style image of a protester holding a red 'Asijiki!' sign. It has slightly rounded corners and is rendered at 538x359 from an 835x557 source, a roughly 3:2 ratio.",
+  "category": "imagery",
+  "evidence": "sb-op-ed-foto.jpg natural 835x557, rect 538x359; alt 'Featured commentary photo'",
+  "element_ids": [
+   "e16"
+  ]
+ },
+ {
+  "observation": "Solid green rectangular buttons with white bold text are used for 'Read More', 'Sign Up' and 'View careers'. They have square or near-square corners and no shadow.",
+  "category": "component",
+  "evidence": "e14, e20, e75 render with rgb(11,107,85) background; e20 119x45, e75 136x45",
+  "element_ids": [
+   "e14",
+   "e20",
+   "e75"
+  ]
+ },
+ {
+  "observation": "Latest News is a three-column grid in a semantic ul/li list. Each card has a 3px green top rule, a small grey date in a time element, and a bold h3 headline linked by an anchor. There are no thumbnails.",
+  "category": "component",
+  "evidence": "e24 ul with three li (340x90, x186/550/914); time elements e26, e30, e34; h3 e27, e31, e35",
+  "element_ids": [
+   "e24",
+   "e25",
+   "e26",
+   "e27",
+   "e29",
+   "e33"
+  ]
+ },
+ {
+  "observation": "Section headers pair a left-aligned h2 with a right-aligned green text link ending in an arrow ('All news →', 'All partners →'). The links are plain text without button styling.",
+  "category": "component",
+  "evidence": "e23 'All news →' at x1172; e65 'All partners →' at x1147; both end at x≈1254",
+  "element_ids": [
+   "e22",
+   "e23",
+   "e64",
+   "e65"
+  ]
+ },
+ {
+  "observation": "Content sits in a centered column about 1068px wide, with margins at x=186 and x=1254 on a 1440px viewport. Section backgrounds run full-bleed while inner content stays within this width.",
+  "category": "layout",
+  "evidence": "e24 186→1254; e21 section 170,w1100 with 16px padding; page_width 1440",
+  "element_ids": [
+   "e21",
+   "e24",
+   "e37",
+   "e63"
+  ]
+ },
+ {
+  "observation": "The Videos section has a large 586px thumbnail at left and a short two-item text list at right, separated by hairline rules. The thumbnail is a YouTube-player screenshot with a baked-in play bar and a talking-head frame, and the caption sits below in bold.",
+  "category": "imagery",
+  "evidence": "e40 thumbnail.png 586x329 (natural 638x358); e42 list at x804 w450; e41 span caption",
+  "element_ids": [
+   "e39",
+   "e40",
+   "e41",
+   "e42",
+   "e43",
+   "e45"
+  ]
+ },
+ {
+  "observation": "The video thumbnail is a static PNG wrapped in an anchor, not an iframe or video element. The player controls (progress bar, timestamp 0:56/5:16, CC, fullscreen) are part of the picture.",
+  "category": "imagery",
+  "evidence": "e39 a contains e40 img thumbnail.png alt 'Video thumbnail'; scripts count 0",
+  "element_ids": [
+   "e39",
+   "e40"
+  ]
+ },
+ {
+  "observation": "The video column is unbalanced. The right list is only about 121px tall against a 368px thumbnail, which leaves empty space below it.",
+  "category": "layout",
+  "evidence": "e42 ul h=121 vs e39 h=368",
+  "element_ids": [
+   "e39",
+   "e42"
+  ]
+ },
+ {
+  "observation": "Events and Recent Tweets are laid out as two unequal columns, with Events at x186 and Tweets at x677. The Events column is mostly empty, holding one grey line, 'No upcoming events at the moment.', and a link.",
+  "category": "layout",
+  "evidence": "e48 x186 w443; e51 x677 w577; e49 text; e50 'See Past Events →'",
+  "element_ids": [
+   "e47",
+   "e48",
+   "e49",
+   "e50",
+   "e51"
+  ]
+ },
+ {
+  "observation": "The tweets are static text in a ul list with hairline dividers. They have inline underlined green links for the handle and t.co URLs, and grey relative timestamps like '2 days 21 hours ago'. No avatars or embed widgets are used.",
+  "category": "component",
+  "evidence": "e52 ul with 2 li; links e55, e56, e60; spans e57, e61; no img in the section",
+  "element_ids": [
+   "e52",
+   "e53",
+   "e54",
+   "e55",
+   "e56",
+   "e57"
+  ]
+ },
+ {
+  "observation": "The partners are shown as three bordered white logo cards of different widths (260, 377 and 334px) on a tinted band. The first card carries a 'MANAGING PARTNER' label. The logos are full-color PNGs scaled to about 70px high.",
+  "category": "component",
+  "evidence": "e66 260x138, e69 377x138, e71 334x138; images wri-logo-4c.png, customlogo.png, folu.png at h70",
+  "element_ids": [
+   "e66",
+   "e69",
+   "e71",
+   "e68",
+   "e70",
+   "e72"
+  ]
+ },
+ {
+  "observation": "The partner logos are not equal in size or treatment. WRI is 202 wide, the Coalition banner is a blue rectangle at 319 wide and FOLU is 276 wide. The row is left-aligned and leaves empty space to the right of the third card.",
+  "category": "imagery",
+  "evidence": "image rects: 202x70, 319x70, 276x70; third card ends at x1196 vs content edge 1254",
+  "element_ids": [
+   "e68",
+   "e70",
+   "e72"
+  ]
+ },
+ {
+  "observation": "The Careers block is the only centered section. It is a centered h2 above a single centered green button, with no body copy.",
+  "category": "layout",
+  "evidence": "e74 h2 w1068 at x186 (text centered); e75 button at x652 w136 centered on 720",
+  "element_ids": [
+   "e73",
+   "e74",
+   "e75"
+  ]
+ },
+ {
+  "observation": "The footer is a dark teal-black band holding a copyright line with an underlined white handle link at left. At right are five white circular social icon badges: YouTube, LinkedIn, G+, Facebook and Twitter.",
+  "category": "component",
+  "evidence": "e76 bg rgb(21,41,43) 1440x84; e79 ul with 5 a at 36x36; images 24x24 PNG with empty alt",
+  "element_ids": [
+   "e76",
+   "e77",
+   "e78",
+   "e79",
+   "e80",
+   "e86"
+  ]
+ },
+ {
+  "observation": "The footer social icons are raster PNGs (400x300 source) shown at 24x24, with empty alt text. The page has no inline SVGs.",
+  "category": "imagery",
+  "evidence": "icons-*.png natural 400x300, rect 24x24; svgs 0; alt '' on icons",
+  "element_ids": [
+   "e81",
+   "e83",
+   "e85",
+   "e87",
+   "e89"
+  ]
+ },
+ {
+  "observation": "The page has one h1, six h2 sections and three h3 article titles, in a clean outline: Latest News, Videos, Events, Recent Tweets, Partners and Careers. The h1 is the featured commentary headline rather than the site name.",
+  "category": "structure",
+  "evidence": "h1_count 1; heading_outline lists h1 then h2/h3; title 'New Climate Economy'",
+  "element_ids": [
+   "e19",
+   "e22",
+   "e38",
+   "e48",
+   "e51",
+   "e64",
+   "e74"
+  ]
+ },
+ {
+  "observation": "The markup is semantic: one header, nav, main and footer, plus six section elements. It has no article, aside, figure or blockquote elements, so news items are li rather than article.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 6, article 0, figure 0; tag_counts li 12",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e15",
+   "e76"
+  ]
+ },
+ {
+  "observation": "Dates use the time element (4 instances), in a long format such as 'April 14, 2021'. They are set in smaller grey text above headlines.",
+  "category": "copy",
+  "evidence": "tag_counts time 4; e18, e26, e30, e34",
+  "element_ids": [
+   "e18",
+   "e26",
+   "e30",
+   "e34"
+  ]
+ },
+ {
+  "observation": "Styling is light. The page has 54 class attributes (32 unique), no utility-framework classes (tailwind_like_fraction 0), one stylesheet, zero scripts and one inline style attribute.",
+  "category": "structure",
+  "evidence": "classes total 54, unique 32, tailwind_like_fraction 0; stylesheets 1, scripts 0, inline_style_attrs 1",
+  "element_ids": []
+ },
+ {
+  "observation": "The layout uses both flexbox (17 elements) and CSS grid (4 elements), and the grid likely drives the three-column card and partner rows.",
+  "category": "layout",
+  "evidence": "display_flex 17, display_grid 4",
+  "element_ids": [
+   "e24",
+   "e42"
+  ]
+ },
+ {
+  "observation": "Copy is short and editorial in tone. It has a mix of title-case section labels and sentence-case headlines, 171 words in total, with no emoji, exclamation marks or em dashes. The arrows (→) are used as the link affordance.",
+  "category": "copy",
+  "evidence": "text_stats words 171, emoji 0, exclamations 0, em_dashes 0; links 'All news →', 'See Past Events →'",
+  "element_ids": [
+   "e23",
+   "e50",
+   "e62",
+   "e65"
+  ]
+ },
+ {
+  "observation": "All images have alt text or an explicit empty alt. Content images carry descriptive alts and decorative icons use alt=''. 12 images are on the page and none are missing alt.",
+  "category": "structure",
+  "evidence": "alt_missing 0; images 12; aria_attrs 7",
+  "element_ids": [
+   "e3",
+   "e16",
+   "e40",
+   "e68"
+  ]
+ },
+ {
+  "observation": "Link styling differs by context. Nav links are dark bold with no underline, and section links are green bold with an arrow. Inline tweet links are green and underlined, and the footer handle is white and underlined.",
+  "category": "component",
+  "evidence": "nav e5-e8 dark; e23 green; e55/e56 underlined green; e78 underlined white",
+  "element_ids": [
+   "e5",
+   "e23",
+   "e55",
+   "e56",
+   "e78"
+  ]
+ },
+ {
+  "observation": "Vertical rhythm is regular. Each section has about 40-48px of padding above its heading, and the h2 headings all sit at the same left margin (x=186). The hero, news, video and partner bands run 439, 232, 511 and 281px high.",
+  "category": "layout",
+  "evidence": "e22 y564 (section y516); e38 y796 (section y748); e48 y1307 (section y1259); e64 y1695",
+  "element_ids": [
+   "e22",
+   "e38",
+   "e48",
+   "e64"
+  ]
+ },
+ {
+  "observation": "The page is short. At 1440x2199 it holds about six content bands in a single-column flow, and the only visual weight is the hero photo and the video thumbnail.",
+  "category": "layout",
+  "evidence": "page_height 2199, page_width 1440; images e16 and e40 are the largest",
+  "element_ids": [
+   "e16",
+   "e40"
+  ]
+ }
+]

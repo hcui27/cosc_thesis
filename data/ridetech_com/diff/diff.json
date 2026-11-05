@@ -1,0 +1,1511 @@
+{
+ "site": "ridetech_com",
+ "n_observations": 55,
+ "observations": [
+  {
+   "id": "c01",
+   "observation": "Heading hierarchy: the original has no h1. Its outline starts at h3 'Sign up' and h4 'Cart', jumps between h2–h5, and includes empty headings. The AI-built page has one h1 ('Performance suspension, built to drive.'), with 8 h2 section titles and 29 h3 card titles beneath it.",
+   "category": "semantics",
+   "status": "changed",
+   "original_ids": [
+    "O1"
+   ],
+   "generated_ids": [
+    "G8"
+   ],
+   "element_ids": [
+    "e26",
+    "e32",
+    "e54",
+    "e78"
+   ],
+   "tags": [
+    {
+     "attribute": "heading hierarchy",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: flat irregular outline becomes structured h1 h2 h3",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c02",
+   "observation": "Semantic landmarks: the original is div-heavy (462 divs) with 1 header, 1 main, 2 sections, 1 footer and no nav or article. The AI-built page has 88 divs, 1 header, 1 nav, 1 main, 8 sections, 2 articles and 1 footer.",
+   "category": "semantics",
+   "status": "changed",
+   "original_ids": [
+    "O2"
+   ],
+   "generated_ids": [
+    "G8"
+   ],
+   "element_ids": [
+    "e26",
+    "e32",
+    "e54",
+    "e78"
+   ],
+   "tags": [
+    {
+     "attribute": "landmark elements",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: divs and articles become header nav main sections footer",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c03",
+   "observation": "Code footprint: the original looks like a WordPress/Flatsome theme, with 32 scripts, 29 style tags, 45 noscript tags, 5 stylesheets, 97 inline style attributes and 504 unique custom classes. The AI-built page uses a single inline style element with no stylesheets, 1 script, 8 inline style attributes and 44 unique semantic class names. Both have a low Tailwind-like fraction (0.042 vs 0.019).",
+   "category": "implementation",
+   "status": "changed",
+   "original_ids": [
+    "O3"
+   ],
+   "generated_ids": [
+    "G28"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: cms heavy markup becomes minimal markup",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c04",
+   "observation": "Layout technique: the original uses flexbox only (128 flex, 0 grid). The AI-built page combines flex (59) and CSS grid (9).",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O4"
+   ],
+   "generated_ids": [
+    "G28"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: flexbox-only becomes flex plus grid columns",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c05",
+   "observation": "A white cookie-consent banner with a shadow, a green 'Cookie settings' link and a black 'ACCEPT' button is pinned across the top of the viewport and covers the header.",
+   "category": "components",
+   "status": "original_only",
+   "original_ids": [
+    "O5"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "cookie consent banner",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: fixed cookie consent bar",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c06",
+   "observation": "A thin black utility bar above the header shows shipping text on the left and phone (in bold), hours and email on the right, in small white text.",
+   "category": "components",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G2"
+   ],
+   "element_ids": [
+    "e2",
+    "e3",
+    "e4",
+    "e6"
+   ],
+   "tags": [
+    {
+     "attribute": "utility bar",
+     "family": "component",
+     "action": "added",
+     "value": "added: thin black bar with shipping and contact info",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c07",
+   "observation": "Both headers place a red-and-black Ridetech logo image at the left.",
+   "category": "branding",
+   "status": "general",
+   "original_ids": [
+    "O6"
+   ],
+   "generated_ids": [
+    "G3"
+   ],
+   "element_ids": [
+    "e8",
+    "e11",
+    "e17",
+    "e18",
+    "e21"
+   ],
+   "tags": [
+    {
+     "attribute": "logo",
+     "family": "imagery",
+     "action": "kept",
+     "value": "kept: red and black logo image at left",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c08",
+   "observation": "Header controls: the original has a search field with a magnifier button and a pill-shaped cart showing $0.00. The AI-built page has a search form with a square black 'Go' button and plain 'Cart' and 'Login' text links.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O6"
+   ],
+   "generated_ids": [
+    "G3"
+   ],
+   "element_ids": [
+    "e8",
+    "e11",
+    "e17",
+    "e18",
+    "e21"
+   ],
+   "tags": [
+    {
+     "attribute": "search control",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: search with icon button becomes input with square go button",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c09",
+   "observation": "Primary navigation: the original has a full-width dark slate (rgb 58,72,86) menu bar with ten uppercase, letter-spaced items and chevron dropdowns. The AI-built page has a six-link text nav inside the header that wraps, pushing 'Contact' onto a second row.",
+   "category": "navigation",
+   "status": "changed",
+   "original_ids": [
+    "O6"
+   ],
+   "generated_ids": [
+    "G3"
+   ],
+   "element_ids": [
+    "e8",
+    "e11",
+    "e17",
+    "e18",
+    "e21"
+   ],
+   "tags": [
+    {
+     "attribute": "primary navigation",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: full-width slate bar becomes wrapping six-link text nav in header",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "observation": "Hero: the original has a full-width image slider (1440x338) whose headline and logo are baked into the raster image (red 'NEW TOUCH SCREEN CONTROL PANEL', RidePro e5). The AI-built page has a 609px-tall full-bleed photo under a dark overlay, with live left-aligned text: a 60.8px/700 white h1, a paragraph and buttons.",
+   "category": "hero",
+   "status": "changed",
+   "original_ids": [
+    "O7"
+   ],
+   "generated_ids": [
+    "G4"
+   ],
+   "element_ids": [
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27"
+   ],
+   "tags": [
+    {
+     "attribute": "hero area",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: baked-text slider becomes full-bleed dark overlay photo hero with live text",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "observation": "The hero has a small, letter-spaced, uppercase salmon-red eyebrow reading 'JASPER, INDIANA'.",
+   "category": "typography",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G5"
+   ],
+   "element_ids": [
+    "e25"
+   ],
+   "tags": [
+    {
+     "attribute": "section eyebrow labels",
+     "family": "typography",
+     "action": "added",
+     "value": "added: uppercase letterspaced eyebrow above headings",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "observation": "The hero has two square-cornered 56px CTAs: a solid red primary button and a transparent secondary button with a white outline.",
+   "category": "components",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G6"
+   ],
+   "element_ids": [
+    "e28",
+    "e29"
+   ],
+   "tags": [
+    {
+     "attribute": "call-to-action button",
+     "family": "component",
+     "action": "added",
+     "value": "added: red solid and outline hero buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "observation": "The promotional banners (Silverado, RidePRO-E5, Falcon) are full-width hero slider slides in the original. In the AI-built page they are cropped to 270x169 as the images of a four-column 'Featured' row of cards, which cuts off their baked-in text.",
+   "category": "imagery",
+   "status": "changed",
+   "original_ids": [
+    "O7"
+   ],
+   "generated_ids": [
+    "G10"
+   ],
+   "element_ids": [
+    "e33",
+    "e35",
+    "e38",
+    "e43",
+    "e48"
+   ],
+   "tags": [
+    {
+     "attribute": "promo cards",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: slider slides become cropped cards in four-column row",
+     "page_wide": false
+    },
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: differing frames become uniform cropped frames",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "observation": "The slider uses lazy-load placeholders: zero-size inline SVG data URIs and a 1x1 GIF.",
+   "category": "implementation",
+   "status": "original_only",
+   "original_ids": [
+    "O8"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "responsive slider images",
+     "family": "imagery",
+     "action": "dropped",
+     "value": "dropped: lazy-load placeholder images in slider",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "observation": "Below the hero, a full-width solid red band carries the free-shipping message in centred, bold white text.",
+   "category": "components",
+   "status": "general",
+   "original_ids": [
+    "O9"
+   ],
+   "generated_ids": [
+    "G7"
+   ],
+   "element_ids": [
+    "e30",
+    "e3"
+   ],
+   "tags": [
+    {
+     "attribute": "announcement bar",
+     "family": "component",
+     "action": "kept",
+     "value": "kept: full-width red free shipping band",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "observation": "Palette: both are neutral with a single saturated red accent (original rgb 220,31,38; AI-built rgb 215,25,32). The original adds slate blue-grey (58,72,86) surfaces, cool light-grey panels (243,245,247) and grey text. The AI-built page uses near-black text (20,20,20), white, warm grey (244,244,242) and black bands.",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O10"
+   ],
+   "generated_ids": [
+    "G24"
+   ],
+   "element_ids": [
+    "e28",
+    "e30",
+    "e140",
+    "e215"
+   ],
+   "tags": [
+    {
+     "attribute": "color palette",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: slate and grey with red becomes near-black and warm grey with red",
+     "page_wide": true
+    },
+    {
+     "attribute": "accent color",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: single saturated red accent",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "observation": "Body text: both use 16px with a 25.6px line height. The original sets it in Open Sans in mid-grey #777, with Lucida Grande on 163 elements and the fl-icons icon font. The AI-built page sets it in a system-ui sans stack in near-black rgb(20,20,20) and uses no web fonts.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O11"
+   ],
+   "generated_ids": [
+    "G23"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "body typeface",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: open sans becomes system-ui stack",
+     "page_wide": true
+    },
+    {
+     "attribute": "text and link colors",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: mid-grey body text becomes near-black with grey meta",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "observation": "Section headings: the original's h2s are 25.6px/700 Open Sans, centred over the shop columns and left-aligned in the sidebar. The AI-built page's h2s are 33.6px/700 system sans, each with a short red underline bar and a red right-aligned arrow link opposite.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O12"
+   ],
+   "generated_ids": [
+    "G9"
+   ],
+   "element_ids": [
+    "e32",
+    "e54",
+    "e55",
+    "e79",
+    "e144"
+   ],
+   "tags": [
+    {
+     "attribute": "section headings",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: centered h2 becomes larger h2 with red underline bar and arrow link",
+     "page_wide": false
+    },
+    {
+     "attribute": "section action links",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: red right-aligned arrow link beside heading",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "observation": "Tile labels: the original uses small, bold, uppercase, letter-spaced grey text, centred and wrapping to 2–4 lines. The AI-built cards use bold sentence/title-case labels.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O13"
+   ],
+   "generated_ids": [
+    "G12"
+   ],
+   "element_ids": [
+    "e53",
+    "e56",
+    "e58",
+    "e72",
+    "e76"
+   ],
+   "tags": [
+    {
+     "attribute": "card text hierarchy",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: uppercase letterspaced labels become sentence-case bold labels",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "observation": "'Shop by Vehicle' shows five equal columns, each with a red car-silhouette PNG (muscle-car.png, truck.png and others) above its label.",
+   "category": "imagery",
+   "status": "general",
+   "original_ids": [
+    "O14"
+   ],
+   "generated_ids": [
+    "G12"
+   ],
+   "element_ids": [
+    "e53",
+    "e56",
+    "e58",
+    "e72",
+    "e76"
+   ],
+   "tags": [
+    {
+     "attribute": "category tiles",
+     "family": "component",
+     "action": "kept",
+     "value": "kept: five-column vehicle silhouettes above labels",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "observation": "Shop by Vehicle presentation: in the original the silhouettes sit unframed on white. The AI-built page puts them in 214x235 cards on a light-grey band and adds a 'Load Leveling' pill link below.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O14"
+   ],
+   "generated_ids": [
+    "G12"
+   ],
+   "element_ids": [
+    "e53",
+    "e56",
+    "e58",
+    "e72",
+    "e76"
+   ],
+   "tags": [
+    {
+     "attribute": "category tiles",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: unframed silhouettes become cards on grey band",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "observation": "A thick, empty near-black band about 60px tall separates the vehicle row from the product section.",
+   "category": "layout",
+   "status": "original_only",
+   "original_ids": [
+    "O15"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "section dividers",
+     "family": "decoration",
+     "action": "dropped",
+     "value": "dropped: thick empty dark band between sections",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "observation": "Shop by Product grid: the original is a four-column grid of 18 square 188x188 tiles whose last row holds two items. The AI-built page is a five-column grid of 11 cards whose last row holds a single orphan ('Universal 4-Links').",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O16"
+   ],
+   "generated_ids": [
+    "G14"
+   ],
+   "element_ids": [
+    "e77",
+    "e80",
+    "e82"
+   ],
+   "tags": [
+    {
+     "attribute": "product cards",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: four-column tile grid becomes five-column grid with orphan card",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "observation": "Product photos are catalogue cutouts on white in both. The original shows them unframed with no card styling. The AI-built page wraps them in thin-bordered cards with light rounded corners, each card a single anchor.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O17"
+   ],
+   "generated_ids": [
+    "G11",
+    "G14",
+    "G29"
+   ],
+   "element_ids": [
+    "e33",
+    "e34",
+    "e36",
+    "e37",
+    "e77",
+    "e80",
+    "e82",
+    "e24"
+   ],
+   "tags": [
+    {
+     "attribute": "product cards",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: shadowed cards become bordered cards with descriptor line",
+     "page_wide": false
+    },
+    {
+     "attribute": "card links",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: whole card wrapped in single link",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "observation": "A 'MORE CATEGORIES' label in small uppercase grey text introduces a wrapping cluster of rounded pill links (LevelTow Kits, Tru Turn and others).",
+   "category": "components",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G15"
+   ],
+   "element_ids": [
+    "e124",
+    "e125",
+    "e128",
+    "e133",
+    "e135"
+   ],
+   "tags": [
+    {
+     "attribute": "suggested searches",
+     "family": "component",
+     "action": "added",
+     "value": "added: popular searches keyword pill chips",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "observation": "Overall layout: the original has two columns, a main column about 930px wide plus a sidebar about 450px wide. The AI-built page is a single column inside a centred container about 1148px wide (x 146–1294) with full-bleed section backgrounds.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O18"
+   ],
+   "generated_ids": [
+    "G1"
+   ],
+   "element_ids": [
+    "e31",
+    "e53",
+    "e77",
+    "e204"
+   ],
+   "tags": [
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: two-column with sidebar becomes single centered column",
+     "page_wide": true
+    },
+    {
+     "attribute": "content column width",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: mixed widths become centered 1060px column",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "observation": "Catalog and warranty promos: the original stacks raster banners in the sidebar (FREE Shipping graphic, 1,000,001 MILE WARRANTY banner, FREE Product Catalog tile with a shadowed white card and a red pill 'REQUEST A CATALOG' button). The AI-built page uses a two-column catalog band with a shadowed cover image, a live h2, a paragraph, a red CTA and a text link, and mentions the warranty as a text link.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O19"
+   ],
+   "generated_ids": [
+    "G16",
+    "G19"
+   ],
+   "element_ids": [
+    "e136",
+    "e137",
+    "e138",
+    "e140",
+    "e141",
+    "e204",
+    "e205",
+    "e207"
+   ],
+   "tags": [
+    {
+     "attribute": "upload notes promo",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: sidebar widget becomes full section",
+     "page_wide": false
+    },
+    {
+     "attribute": "promo cards",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: raster banners become live text catalog band",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "observation": "Sign-up form: the original's form sits in the sidebar in a bordered white box, with First Name, Last Name and Email fields, bold labels, thin-bordered square inputs and a red 'SIGN UP' button. The AI-built page uses a black split band with a white h2 on the left and, on the right, dark-grey inputs (first and last name sharing a row) with bold labels above them, a full-width red submit button and an empty status paragraph.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O20"
+   ],
+   "generated_ids": [
+    "G19",
+    "G20"
+   ],
+   "element_ids": [
+    "e204",
+    "e205",
+    "e207",
+    "e208",
+    "e215",
+    "e209",
+    "e211",
+    "e213"
+   ],
+   "tags": [
+    {
+     "attribute": "newsletter signup",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: footer column form becomes full-bleed dark band",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "observation": "Latest News: the original has two sidebar entries, each with a 450x253 photo, a bold centred caption, a divider and a '[…]' excerpt, closed by a red 'VIEW ALL NEWS' button. The AI-built page has two image-less article cards with a thick red left border and a red 'Read more →' link, followed by a row of pill links.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O21"
+   ],
+   "generated_ids": [
+    "G17"
+   ],
+   "element_ids": [
+    "e145",
+    "e149",
+    "e148",
+    "e153",
+    "e157"
+   ],
+   "tags": [
+    {
+     "attribute": "news list",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: sidebar photo entries become image-less bordered cards",
+     "page_wide": false
+    },
+    {
+     "attribute": "card accent border",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: category-coded colored left border",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "observation": "News photos are cropped from 500x375 and 500x333 to the same 450x253 box and have empty alt text.",
+   "category": "imagery",
+   "status": "original_only",
+   "original_ids": [
+    "O22"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "dropped",
+     "value": "dropped: cropped news photos",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c31",
+   "observation": "Buttons: the original's primary 'GET A FREE CATALOG' button is red with a 99px pill radius, and the other buttons are red rectangles with uppercase text. The AI-built page's measured primary button is the black square 'Go' (radius 0, padding 8px 12px), and its red CTAs are also square-cornered.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O23"
+   ],
+   "generated_ids": [
+    "G6",
+    "G25"
+   ],
+   "element_ids": [
+    "e28",
+    "e29"
+   ],
+   "tags": [
+    {
+     "attribute": "button style",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: red pill and rectangles become square black and red buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c32",
+   "observation": "Corner radii: both are mostly square. The original has 1186 elements at 0 and 17 at pill radius, with very little mid-range rounding. The AI-built page has 264 at 0, 21 at 8–15px, 17 at 16px or more and none at pill radius.",
+   "category": "shape",
+   "status": "changed",
+   "original_ids": [
+    "O23"
+   ],
+   "generated_ids": [
+    "G25"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "corner radius",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: mostly square corners become small rounding",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c33",
+   "observation": "Neither page uses gradient backgrounds, backdrop blur or keyframe animations.",
+   "category": "effects",
+   "status": "general",
+   "original_ids": [
+    "O24"
+   ],
+   "generated_ids": [
+    "G25"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "kept",
+     "value": "kept: no gradients blur or animations",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c34",
+   "observation": "Depth and motion: the original has 16 box shadows, 372 elements with transitions and 21 with transforms. The AI-built page has 1 box shadow (on the catalog cover), 20 transitions and 0 transforms, and gets depth mainly from 1px borders and background shifts.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O24"
+   ],
+   "generated_ids": [
+    "G26"
+   ],
+   "element_ids": [
+    "e137"
+   ],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: shadows and transitions become thin borders",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c35",
+   "observation": "A black strip with a downward-pointing triangle notch at its centre introduces the about section.",
+   "category": "decoration",
+   "status": "original_only",
+   "original_ids": [
+    "O25"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "section dividers",
+     "family": "decoration",
+     "action": "dropped",
+     "value": "dropped: black strip with notch before about",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c36",
+   "observation": "Both pages use the darkened orange muscle-car-on-track photo behind white text. In the original it is the background of a mid-page about section ('ridetech.com' h2, a subheading and a paragraph of about 70 words). In the AI-built page it is the hero background behind the h1.",
+   "category": "imagery",
+   "status": "changed",
+   "original_ids": [
+    "O26"
+   ],
+   "generated_ids": [
+    "G4"
+   ],
+   "element_ids": [
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27"
+   ],
+   "tags": [
+    {
+     "attribute": "about section",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: mid-page about photo background becomes hero background",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c37",
+   "observation": "A red call-to-action strip reads 'Don't see what you're looking for? Let us know!' in bold white, with 'Connect With Us:' at the right.",
+   "category": "components",
+   "status": "original_only",
+   "original_ids": [
+    "O27"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "repeated calls to action",
+     "family": "copy",
+     "action": "dropped",
+     "value": "dropped: red let us know strip",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c38",
+   "observation": "Social links: the original shows five circular white-outline icon-font icons. The AI-built page shows small bordered rectangular text buttons in its contact section.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O27"
+   ],
+   "generated_ids": [
+    "G21"
+   ],
+   "element_ids": [
+    "e217",
+    "e221",
+    "e224",
+    "e225",
+    "e228"
+   ],
+   "tags": [
+    {
+     "attribute": "social links",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: icon tiles become text buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c39",
+   "observation": "Four-column link lists with thin divider lines: in the original these form the footer (Contact Info, Information, Applications, Your Account) on a dark grey fill. In the AI-built page they form a 'Technical Resources' section (TECH, SUPPORT, COMMUNITY, YOUR ACCOUNT), and the near-black footer is reduced to a logo, policy links and copyright.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O28"
+   ],
+   "generated_ids": [
+    "G18",
+    "G22"
+   ],
+   "element_ids": [
+    "e158",
+    "e160",
+    "e161",
+    "e174",
+    "e192",
+    "e231",
+    "e233",
+    "e234"
+   ],
+   "tags": [
+    {
+     "attribute": "footer",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: link columns footer becomes minimal near-black footer with resources section",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c40",
+   "observation": "Link-column headings: the original mixes bold title-case ('Contact Info', 'Your Account') with uppercase letter-spaced headings ('INFORMATION', 'APPLICATIONS'). The AI-built page uses uppercase letter-spaced h3s for every column.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O29"
+   ],
+   "generated_ids": [
+    "G18"
+   ],
+   "element_ids": [
+    "e158",
+    "e160",
+    "e161",
+    "e174",
+    "e192"
+   ],
+   "tags": [
+    {
+     "attribute": "sidebar section labels",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: mixed heading styles become uniform uppercase letterspaced",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c41",
+   "observation": "Contact details: the original lists them in a footer column with bold run-in labels ('Phone:', 'Fax:', 'Hours:') and plain-text address and email. The AI-built page gives them a three-column section (Visit, Call or write, Hours) with h3s, a semantic address element and red underlined phone and email links.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O30"
+   ],
+   "generated_ids": [
+    "G21"
+   ],
+   "element_ids": [
+    "e217",
+    "e221",
+    "e224",
+    "e225",
+    "e228"
+   ],
+   "tags": [
+    {
+     "attribute": "contact section",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: footer icon lines become dl contact section",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c42",
+   "observation": "The free-catalog offer appears several times on each page: in the original in the primary button, the sidebar tile and a footer 'FREE CATALOG' image; in the AI-built page in the hero button, the catalog section CTA and an arrow link.",
+   "category": "content",
+   "status": "general",
+   "original_ids": [
+    "O31",
+    "O33"
+   ],
+   "generated_ids": [
+    "G16",
+    "G31"
+   ],
+   "element_ids": [
+    "e136",
+    "e137",
+    "e138",
+    "e140",
+    "e141",
+    "e26",
+    "e29",
+    "e205"
+   ],
+   "tags": [
+    {
+     "attribute": "repeated calls to action",
+     "family": "copy",
+     "action": "kept",
+     "value": "kept: free catalog offer repeated",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c43",
+   "observation": "Both pages include the copyright line 'Copyright 2021 © Ridetech'.",
+   "category": "content",
+   "status": "general",
+   "original_ids": [
+    "O32",
+    "O34"
+   ],
+   "generated_ids": [
+    "G22"
+   ],
+   "element_ids": [
+    "e231",
+    "e233",
+    "e234",
+    "e243"
+   ],
+   "tags": [
+    {
+     "attribute": "footer legal text",
+     "family": "copy",
+     "action": "kept",
+     "value": "kept: copyright line",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c44",
+   "observation": "The bottom bar shows muted payment-card icons (Visa, Mastercard, Discover, American Express, PayPal) next to the copyright on a lighter grey fill.",
+   "category": "components",
+   "status": "original_only",
+   "original_ids": [
+    "O32"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "payment logos",
+     "family": "imagery",
+     "action": "dropped",
+     "value": "dropped: payment card icons in bottom bar",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c45",
+   "observation": "The footer shows the logo on a white rounded tile and four small grey policy links aligned right, above a hairline rule.",
+   "category": "components",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G22"
+   ],
+   "element_ids": [
+    "e231",
+    "e233",
+    "e234",
+    "e243"
+   ],
+   "tags": [
+    {
+     "attribute": "footer",
+     "family": "component",
+     "action": "added",
+     "value": "added: logo tile and right-aligned policy links",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c46",
+   "observation": "Both pages use product-led commercial copy that repeats the free shipping on orders over $100 offer (the original in its hero band and sidebar; the AI-built page in its utility bar and red banner).",
+   "category": "content",
+   "status": "general",
+   "original_ids": [
+    "O33"
+   ],
+   "generated_ids": [
+    "G7",
+    "G31"
+   ],
+   "element_ids": [
+    "e30",
+    "e3",
+    "e26",
+    "e29",
+    "e140",
+    "e141",
+    "e205"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "kept",
+     "value": "kept: product-led free shipping messaging",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c47",
+   "observation": "Copy length and punctuation: the original has 486 words, 3 exclamation marks, 0 em dashes and 1 emoji. The AI-built page has 450 words, 1 exclamation mark, 2 em dashes and no emoji, with short label-style headings and a slogan h1.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O33"
+   ],
+   "generated_ids": [
+    "G31"
+   ],
+   "element_ids": [
+    "e26",
+    "e29",
+    "e140",
+    "e141",
+    "e205"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: short label-style headings and slogan h1",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c48",
+   "observation": "Promotional messaging: in the original most of it is baked into raster JPG/PNG banners. In the AI-built page it is live HTML text (h1, banner text, catalog section).",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O34"
+   ],
+   "generated_ids": [
+    "G4",
+    "G7",
+    "G16"
+   ],
+   "element_ids": [
+    "e23",
+    "e24",
+    "e25",
+    "e26",
+    "e27",
+    "e30",
+    "e3",
+    "e136"
+   ],
+   "tags": [
+    {
+     "attribute": "image text overlay",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: baked-in banner text becomes live html text",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c49",
+   "observation": "Images: the original has 43 img elements, 2 missing alt and 10 SVGs. The AI-built page has 24 img elements, none missing alt, no SVGs, and an empty alt on the decorative hero.",
+   "category": "accessibility",
+   "status": "changed",
+   "original_ids": [
+    "O35"
+   ],
+   "generated_ids": [
+    "G29"
+   ],
+   "element_ids": [
+    "e24",
+    "e35",
+    "e58",
+    "e82",
+    "e137"
+   ],
+   "tags": [
+    {
+     "attribute": "image alt text",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: missing alts become descriptive alts",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c50",
+   "observation": "Metadata: the original has a JSON-LD block, Open Graph and Twitter tags, a robots tag, the title 'Ridetech Home - Ridetech' and lang en-US. The AI-built page has only charset, viewport and description meta tags, no JSON-LD, the title 'Ridetech | Performance Suspension Systems' and lang en.",
+   "category": "metadata",
+   "status": "changed",
+   "original_ids": [
+    "O36"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "page metadata",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: rich social and json-ld meta becomes minimal meta",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c51",
+   "observation": "Page length: the original is 1440x4129, with an empty area beside the taller sidebar after the product grid ends. The AI-built page is 1440x5191, a sequential stack of 8 sections with about 64px of vertical padding each.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O37"
+   ],
+   "generated_ids": [
+    "G1",
+    "G32"
+   ],
+   "element_ids": [
+    "e31",
+    "e53",
+    "e77",
+    "e204",
+    "e136",
+    "e142",
+    "e158",
+    "e217"
+   ],
+   "tags": [
+    {
+     "attribute": "page length",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: shorter page becomes much taller stacked page",
+     "page_wide": true
+    },
+    {
+     "attribute": "spacing rhythm",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: regular gutters and section padding",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c52",
+   "observation": "The DOM contains hidden or off-canvas content that is not visible on screen: 5 tables with 96 td (likely a mini-cart), 4 forms and 7 buttons.",
+   "category": "implementation",
+   "status": "original_only",
+   "original_ids": [
+    "O38"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "forms and inputs",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: hidden mini-cart tables forms and buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c53",
+   "observation": "Section backgrounds alternate in a regular rhythm between white and light grey (rgb 244,244,242), with black for the signup band and footer.",
+   "category": "color",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G13"
+   ],
+   "element_ids": [
+    "e53",
+    "e136",
+    "e158",
+    "e204",
+    "e231"
+   ],
+   "tags": [
+    {
+     "attribute": "section backgrounds",
+     "family": "color",
+     "action": "added",
+     "value": "added: alternating off-white and pale blue bands",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c54",
+   "observation": "Links follow a consistent system: bold dark nav links, bold red section links ending in '→', and underlined red inline contact links.",
+   "category": "typography",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G27"
+   ],
+   "element_ids": [
+    "e55",
+    "e79",
+    "e144",
+    "e148",
+    "e207"
+   ],
+   "tags": [
+    {
+     "attribute": "link affordance",
+     "family": "copy",
+     "action": "added",
+     "value": "added: trailing arrow on read more links",
+     "page_wide": false
+    },
+    {
+     "attribute": "text and link colors",
+     "family": "color",
+     "action": "added",
+     "value": "added: underlined body and footer text links",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c55",
+   "observation": "An off-screen 'Skip to content' link is the first element in the DOM. Overall ARIA use is light (3 attributes, compared with 60 on the original).",
+   "category": "accessibility",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G30"
+   ],
+   "element_ids": [
+    "e1"
+   ],
+   "tags": [
+    {
+     "attribute": "skip link",
+     "family": "semantic_dom",
+     "action": "added",
+     "value": "added: off-screen skip-to-content link",
+     "page_wide": false
+    },
+    {
+     "attribute": "aria attributes",
+     "family": "semantic_dom",
+     "action": "added",
+     "value": "added: heavy aria becomes minimal aria",
+     "page_wide": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,329 @@
+[
+ {
+  "observation": "The page is a fixed-width centered container of about 1068px (x=186 to 1254) on a 1440px viewport. It is a white card with rounded corners that sits over a full-bleed scenic background.",
+  "category": "layout",
+  "evidence": "e11 is 186,154,1068x1448 on a page_width of 1440; the screenshot shows the white panel with rounded bottom corners.",
+  "element_ids": [
+   "e11"
+  ]
+ },
+ {
+  "observation": "The page background is a vertical sky-to-grass image. It runs from slate blue at the top through teal and pale aqua to sand, then black silhouetted grass blades. The footer sits on a near-black band below it.",
+  "category": "imagery",
+  "evidence": "body_bg is rgb(13,15,14); the screenshots show the teal-to-tan scene with black grass at the bottom edge of slice 2.",
+  "element_ids": [
+   "e1",
+   "e110"
+  ]
+ },
+ {
+  "observation": "The layout is two columns inside the card. A 260px left sidebar (aside) holds navigation, a form and contact details. The main column of about 736px holds the welcome copy and image grids.",
+  "category": "layout",
+  "evidence": "e12 is 210,178,260x1400; the main content starts at x=494 with a width of 736 (e66, e90).",
+  "element_ids": [
+   "e12",
+   "e61",
+   "e66",
+   "e90"
+  ]
+ },
+ {
+  "observation": "The header is a dark slate band. It holds a logo, the brand name with a tagline, and a tab-style top nav aligned to the bottom right.",
+  "category": "component",
+  "evidence": "e1 is 0,0,1440x154; e2 holds the logo and the text; e6 is a ul at 824,110.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e6"
+  ]
+ },
+ {
+  "observation": "The top nav links look like folder tabs. They are light grey-white boxes with rounded top corners, bold sans text and no gap beneath them, so they join the white card below.",
+  "category": "component",
+  "evidence": "e7-e10 are 44px tall and end at y=154, where the card begins; the screenshot shows grey tabs with rounded tops.",
+  "element_ids": [
+   "e7",
+   "e8",
+   "e9",
+   "e10"
+  ]
+ },
+ {
+  "observation": "The brand lockup pairs a serif name in white with a small uppercase, letter-spaced tagline that has a middle-dot separator. The tagline is a small element inside a span.",
+  "category": "typography",
+  "evidence": "e4 span contains e5 small, 'EXPEDITION & TREKS · KATHMANDU, NEPAL'; the screenshot shows the tagline tracked out in caps.",
+  "element_ids": [
+   "e4",
+   "e5"
+  ]
+ },
+ {
+  "observation": "The logo is a raster JPG of about 130x134 placed on a white tile that overhangs the header edge by a few pixels. It is a bitmap with its own red/green lettering and does not match the teal UI palette.",
+  "category": "imagery",
+  "evidence": "businessname.jpg, natural 268x277, rendered at 186,20,130x134.",
+  "element_ids": [
+   "e3"
+  ]
+ },
+ {
+  "observation": "Typography pairs two families. Georgia serif is used for the h1, h2s, intro paragraphs and brand. system-ui sans is used for the nav, sidebar links, form and contact details.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Georgia 103, system-ui 41; h1 font-family is Georgia, 'Times New Roman', serif.",
+  "element_ids": [
+   "e62",
+   "e63",
+   "e64",
+   "e17",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The h1 is the quoted greeting “Namaste”. It is 32px bold Georgia in dark teal, left aligned, with curly quotes. It is not the site name.",
+  "category": "typography",
+  "evidence": "h1 font_size 32px, weight 700, color rgb(31,76,88); h1_count is 1.",
+  "element_ids": [
+   "e62"
+  ]
+ },
+ {
+  "observation": "A lead line under the h1, 'Welcome to Alpine Everest.', is set in italic serif in a muted grey-teal. The body paragraphs below it are serif at about 16px with roomy line height.",
+  "category": "typography",
+  "evidence": "body_line_height is 26.4px (1.65); e63 renders italic in the screenshot.",
+  "element_ids": [
+   "e63",
+   "e64",
+   "e65"
+  ]
+ },
+ {
+  "observation": "The heading hierarchy is irregular. Two empty h2 elements come first in DOM order (probably the sidebar headings that are images), then the h1, then h2 'Gallery' and 'Products'. The h2s are 16px bold, but the visible section titles look larger.",
+  "category": "semantics",
+  "evidence": "heading_outline: h2 '', h2 '', h1 '“Namaste”', h2 'Gallery', h2 'Products'; the h2 font_size in facts is 16px.",
+  "element_ids": [
+   "e62",
+   "e67",
+   "e91"
+  ]
+ },
+ {
+  "observation": "Sidebar section titles are text baked into images. 'Featured Tours' and 'Contact Information' are 248x94 PNGs of white handwriting on a torn yellow paper strip. This gives a collage look that differs from the page's clean typography.",
+  "category": "imagery",
+  "evidence": "featured-tours.png and contact-information.png, rendered 226x86, with alt text matching the titles.",
+  "element_ids": [
+   "e14",
+   "e45"
+  ]
+ },
+ {
+  "observation": "'PRODUCTS' and 'REFER A FRIEND' are small, bold, tracked uppercase labels in teal. They are plain p elements rather than headings.",
+  "category": "typography",
+  "evidence": "e29 and e38 are p tags, 13px tall; the screenshot shows spaced caps.",
+  "element_ids": [
+   "e29",
+   "e38"
+  ]
+ },
+ {
+  "observation": "The sidebar is made of separate rounded panel boxes. Each has a thin pale border, a faint diagonal-stripe or hatch texture, and a soft off-white fill.",
+  "category": "decoration",
+  "evidence": "Boxes at e13 (210,178), e28 (210,590), e37 (210,799) and e44 (210,1058) are stacked with small gaps; the screenshot shows a subtle hatch pattern.",
+  "element_ids": [
+   "e13",
+   "e28",
+   "e37",
+   "e44"
+  ]
+ },
+ {
+  "observation": "Sidebar link lists use a small triangular bullet in teal. Each item has a hairline divider below it and is about 43px tall. The links are sans-serif in dark teal text.",
+  "category": "component",
+  "evidence": "li elements e16-e26 and e31-e35 are 43px tall; the screenshot shows ▲ markers and rules.",
+  "element_ids": [
+   "e16",
+   "e18",
+   "e20",
+   "e31",
+   "e33"
+  ]
+ },
+ {
+  "observation": "The Refer a Friend form has three full-width text inputs with placeholders ('Your name', 'Friend's name', 'Friend's email'). Each has a thin border and a small radius. They have no visible labels and sit above a solid teal 'Send' button.",
+  "category": "component",
+  "evidence": "e40-e42 are 226x40; e43 is the button, bg rgb(47,111,126), white text, radius 5px.",
+  "element_ids": [
+   "e39",
+   "e40",
+   "e41",
+   "e42",
+   "e43"
+  ]
+ },
+ {
+  "observation": "The Contact Information block is a definition list. Bold teal dt labels (P.O. Box, Address, Tel/Fax, Cell, Skype, MSN, Email) are paired with dd values. The business name is a strong element above the list, and the email is the only underlined link.",
+  "category": "semantics",
+  "evidence": "tag_counts dl 1, dt 7, dd 7; e44 also holds an address element; e60 is an a tag.",
+  "element_ids": [
+   "e44",
+   "e46",
+   "e47",
+   "e48",
+   "e60"
+  ]
+ },
+ {
+  "observation": "The welcome image is a small collage of three tilted, overlapping trekker photos with transparent corners. It floats left of the intro text, giving a scrapbook look.",
+  "category": "imagery",
+  "evidence": "welcome-img.jpg, 176x260, at 494,178; the screenshot shows the rotated photos.",
+  "element_ids": [
+   "e61"
+  ]
+ },
+ {
+  "observation": "The intro text sits in a right-hand column next to the collage and shares its top edge. The result is a side-by-side image and text block, with the text 536px wide.",
+  "category": "layout",
+  "evidence": "e62 starts at x=694,y=178, level with e61 at y=178; e64 and e65 are 536 wide.",
+  "element_ids": [
+   "e61",
+   "e62",
+   "e64",
+   "e65"
+  ]
+ },
+ {
+  "observation": "Gallery and Products are each a section with an h2, a thumbnail grid and a trailing text link. A horizontal hairline rule above each heading separates the blocks.",
+  "category": "layout",
+  "evidence": "e66 and e90 are section elements at 494,599 and 494,1052, both 736x419; the rules show at y~599 and ~1052 in the screenshot.",
+  "element_ids": [
+   "e66",
+   "e90",
+   "e67",
+   "e91"
+  ]
+ },
+ {
+  "observation": "Thumbnails are laid out in a 6-column grid with roughly 12px gaps, wrapping to four items in the second row of the Gallery and two in the second row of Products. The incomplete last rows leave empty space to their right.",
+  "category": "layout",
+  "evidence": "Image x positions 497, 622, 746, 871, 996, 1120; Gallery rows at y=674 and 834; Products rows at y=1127 and 1287. display_grid count is 5.",
+  "element_ids": [
+   "e68",
+   "e92",
+   "e70",
+   "e82",
+   "e106"
+  ]
+ },
+ {
+  "observation": "All 20 gallery and product thumbnails use the same file, thumb.png (113x150), which shows a brown pashmina shawl with white embroidery. Gallery and Products are visually identical. The alt text differs only by a number ('Gallery photo 20', 'Product 23').",
+  "category": "imagery",
+  "evidence": "Every img in e70-e108 has file thumb.png; alts such as 'Gallery photo 14' and 'Product 19'.",
+  "element_ids": [
+   "e70",
+   "e72",
+   "e94",
+   "e96",
+   "e106"
+  ]
+ },
+ {
+  "observation": "Each thumbnail is wrapped in an anchor and framed like a photo print, with a white border and a soft drop shadow. The cells are 113x148 and the images are 107x142.",
+  "category": "decoration",
+  "evidence": "e69 is 113x148 and its img e70 is 107x142 inset by 3px; box_shadows count is 19.",
+  "element_ids": [
+   "e69",
+   "e70",
+   "e71",
+   "e93"
+  ]
+ },
+ {
+  "observation": "The 'More photos →' and 'More products →' links are small bold teal text, underlined, with an arrow glyph. They sit left aligned under their grids.",
+  "category": "component",
+  "evidence": "e89 and e109 hold text with →; underline visible in the screenshot.",
+  "element_ids": [
+   "e89",
+   "e109"
+  ]
+ },
+ {
+  "observation": "The palette is a monochrome teal family. The h1, h2s and links use dark teal rgb(31,76,88); the button, tab accents and labels use mid teal rgb(47,111,126). Body text is a dark blue-grey rgb(36,50,58). Surfaces are white, rgba(255,255,255,0.92) and pale blue-white rgb(245,250,251). The only warm accents are the yellow paper strips and the sand and brown in the background and photos.",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(36,50,58) x70, rgb(31,76,88) x62; top_backgrounds list white, rgba white 0.92, rgb(245,250,251), rgb(47,111,126).",
+  "element_ids": []
+ },
+ {
+  "observation": "Corner rounding is small and applies to only some elements. 113 elements have 0 radius, 23 have 1-7px (inputs, the button, thumbnails), and 8 have 8-15px (panels, the card). No pills or large radii appear.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:113, 1_7:23, 8_15:8, 16_plus:0, pill:0.",
+  "element_ids": [
+   "e11",
+   "e43",
+   "e40"
+  ]
+ },
+ {
+  "observation": "Effects are restrained: soft box shadows on thumbnails and panels, 18 transitions (likely hover states on links and tabs), and no gradients in CSS, backdrop blur, animations or transforms. The page has zero scripts and no external stylesheets, so all CSS is in one style element.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 0, backdrop_blur 0, transitions 18, animations 0, scripts 0, stylesheets 0, style tag count 1.",
+  "element_ids": []
+ },
+ {
+  "observation": "The markup is semantic and compact. It has one header, three nav elements, one main, one aside, two sections and one footer. There are no articles or figures, and only 23 class uses (14 unique) with no utility-class naming.",
+  "category": "semantics",
+  "evidence": "semantic counts: header 1, nav 3, main 1, section 2, aside 1, footer 1; tailwind_like_fraction 0; classes total 23, unique 14.",
+  "element_ids": [
+   "e1",
+   "e12",
+   "e66",
+   "e90",
+   "e110"
+  ]
+ },
+ {
+  "observation": "Every image has alt text (alt_missing 0). Most of it is generic and numbered ('Gallery photo 20'). There are 8 aria attributes and 4 inline style attributes.",
+  "category": "semantics",
+  "evidence": "counts: alt_missing 0, aria_attrs 8, inline_style_attrs 4; 22 images.",
+  "element_ids": [
+   "e70",
+   "e94"
+  ]
+ },
+ {
+  "observation": "The footer is a single centered line of small white sans text on a near-black band, with a 2010 copyright notice for 'Alpine Everest Expedition & Trek'. It sits outside the white card.",
+  "category": "component",
+  "evidence": "e110 is 0,1602,1440x74; its text is '© Alpine Everest Expedition & Trek 2010, all rights reserved.'",
+  "element_ids": [
+   "e110"
+  ]
+ },
+ {
+  "observation": "The copy is short and first-person plural ('our', 'we'), with a service-quality tone. It has about 183 words, no emoji, no exclamation marks and a single em dash. The contact details include dated channels such as Skype and MSN.",
+  "category": "copy",
+  "evidence": "text_stats: words 183, emoji 0, exclamations 0, em_dashes 1; e64 and e65 text; e55 to e58 contact entries.",
+  "element_ids": [
+   "e64",
+   "e65",
+   "e57",
+   "e58"
+  ]
+ },
+ {
+  "observation": "The nav label set is plain and conventional. The top nav has 4 items (Home, About Us, Testimonials, Contact Us). The sidebar nav lists tour categories, and a second sidebar nav lists product categories (Pashmina, Garments, Handicrafts). Nothing marks an active state.",
+  "category": "component",
+  "evidence": "e7-e10; e17-e27; e32-e36; all links share similar styling in the screenshot.",
+  "element_ids": [
+   "e6",
+   "e15",
+   "e30"
+  ]
+ },
+ {
+  "observation": "The sidebar is much taller than the content it sits beside, at about 1400px against the main column's roughly 1290px. The main column ends with empty white space beside the last contact panel, and the grids occupy only the left part of their rows in the last row.",
+  "category": "layout",
+  "evidence": "e12 height 1400 (to y=1578); e109 ends at about y=1469; the white area right of the last Products row is empty in slice 2.",
+  "element_ids": [
+   "e12",
+   "e109",
+   "e44"
+  ]
+ }
+]

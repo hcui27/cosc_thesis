@@ -1,0 +1,320 @@
+[
+ {
+  "observation": "Single centered content column about 1040px wide (x=200 to 1240) on a 1440px canvas. Every section aligns to the same left edge, and the page is 4294px tall.",
+  "category": "layout",
+  "evidence": "Hero, FAQ, video, cards, press and footer all start at x=200 with w=1040; page_width 1440",
+  "element_ids": [
+   "e12",
+   "e35",
+   "e54",
+   "e74"
+  ]
+ },
+ {
+  "observation": "The header is a slim bar with a bold wordmark 'THYNC.' on the left and four plain text links on the right. The trailing period in the wordmark is teal. The header background is a translucent off-white with backdrop blur.",
+  "category": "component",
+  "evidence": "header 0,36,1440,65; nav ul at x=893; backdrop_blur 1; background color(srgb 0.9686 0.9765 0.9882 / 0.88)",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "observation": "The hero uses a very large bold left-aligned H1 of 60.8px, weight 700, in near-black navy. It wraps onto two lines. There is no hero image, so the headline carries the section.",
+  "category": "typography",
+  "evidence": "h1 font_size 60.8px, weight 700, color rgb(16,24,40), text_align start; box 1040x146",
+  "element_ids": [
+   "e14"
+  ]
+ },
+ {
+  "observation": "The hero background is a soft gradient with a lavender wash at the top right and a mint-teal wash at the bottom left, fading into the off-white body colour.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 4; visible lavender and teal glows in slice 1; body_bg rgb(247,249,252)",
+  "element_ids": [
+   "e12"
+  ]
+ },
+ {
+  "observation": "Small uppercase, letter-spaced teal eyebrow labels sit above the section headings. They repeat in the same style across sections.",
+  "category": "typography",
+  "evidence": "'THYNC GLOBAL, INC.', 'NEWEST PRODUCT', 'ABOUT THYNC', 'APPROACH TO SCIENCE', 'PRESS COVERAGE'; teal rgb(11,156,133) used on 13 text elements",
+  "element_ids": [
+   "e13",
+   "e27",
+   "e36",
+   "e55",
+   "e75"
+  ]
+ },
+ {
+  "observation": "The palette is restrained: a single teal accent (rgb(11,156,133)) against a navy-black text colour, slate grey secondary text, white cards and pale blue-grey section bands.",
+  "category": "color",
+  "evidence": "top_text_colors 16,24,40 (122 elements), 86,97,118 (25), teal (13); backgrounds white (16), teal (4), 238,242,249 (3)",
+  "element_ids": []
+ },
+ {
+  "observation": "Section backgrounds alternate between off-white (247,249,252) and a pale blue-grey (238,242,249). This separates sections with flat colour bands rather than borders or dividers.",
+  "category": "color",
+  "evidence": "Product section 712–1150 and the science/press block 1877–3560 sit on the blue-grey; the hero, FAQ, newsletter and footer sit on off-white",
+  "element_ids": [
+   "e26",
+   "e54",
+   "e74"
+  ]
+ },
+ {
+  "observation": "The primary CTA is a solid teal pill button with white bold text. It appears twice with identical copy, in the hero and in the product section.",
+  "category": "component",
+  "evidence": "primary_button bg rgb(11,156,133), radius 999px, padding 14px 26px, text 'Discover Feelzing'; 195x56 at both locations",
+  "element_ids": [
+   "e16",
+   "e32"
+  ]
+ },
+ {
+  "observation": "The hero ends with a row of three stat blocks. Each has a large bold figure over a small grey caption and a teal vertical rule on its left edge.",
+  "category": "component",
+  "evidence": "'2010 Founded', '10+ years Developing and testing', '2,000+ Stimulation sessions in safety study'; b + span structure",
+  "element_ids": [
+   "e17",
+   "e20",
+   "e23"
+  ]
+ },
+ {
+  "observation": "The type is the system-ui stack throughout, with no web fonts or stylesheet files loaded. Body text is 17px on a roughly 1.65 line height. Headings are tightly tracked and heavy.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count system-ui 169; stylesheets 0; body_font_size 17px, line_height 28.05px; h2 35.2px weight 700",
+  "element_ids": []
+ },
+ {
+  "observation": "The product section is a two-column split. Copy sits on the left (about 496px wide). On the right is a ring-shaped 'FEELZING' badge with a blue-to-teal gradient and a soft glow, standing in for a product image.",
+  "category": "imagery",
+  "evidence": "div 928,867,128,128 with strong 'FEELZING'; the text in the screenshot overruns the ring edges; box_shadows 1",
+  "element_ids": [
+   "e33",
+   "e34",
+   "e29"
+  ]
+ },
+ {
+  "observation": "The product 'image' is a CSS gradient circle with text rather than a photo, and the wordmark overlaps the ring stroke. No product photography appears anywhere on the page.",
+  "category": "imagery",
+  "evidence": "Only 8 img elements: 7 press logos and a trust badge; svgs 0",
+  "element_ids": [
+   "e33"
+  ]
+ },
+ {
+  "observation": "The inline link 'feelzing.com' is teal and underlined within a sentence of body copy.",
+  "category": "component",
+  "evidence": "a inside p at 490,981,97,20",
+  "element_ids": [
+   "e30",
+   "e31"
+  ]
+ },
+ {
+  "observation": "The FAQ is built from native details/summary accordions. They are white rounded cards with a 1px border and a teal +/– indicator on the right. The first is open, showing grey answer text, and the other four are closed.",
+  "category": "component",
+  "evidence": "details 5, summary 5; heights 144 vs 70; the screenshot shows '−' on the first and '+' on the others",
+  "element_ids": [
+   "e38",
+   "e41",
+   "e44",
+   "e47",
+   "e50"
+  ]
+ },
+ {
+  "observation": "The FAQ answers are mostly empty in the DOM for the collapsed items, and the last answer holds only an anchor with no text.",
+  "category": "copy",
+  "evidence": "e43, e46, e49 and e52 have empty text; e53 is an a with no text",
+  "element_ids": [
+   "e43",
+   "e46",
+   "e49",
+   "e52",
+   "e53"
+  ]
+ },
+ {
+  "observation": "The 'video' is a large empty rounded panel with a pale gradient fill. It has a centred teal circular play button and a caption in the bottom left, and no poster image.",
+  "category": "imagery",
+  "evidence": "figure 200,2126,1040,585; button 84x84 '▶'; figcaption 'Dr. Jonathan Charlesworth, Lead Scientist'",
+  "element_ids": [
+   "e58",
+   "e59",
+   "e60"
+  ]
+ },
+ {
+  "observation": "The science papers appear as three equal white cards in a row. Each has an h3 title, a short summary and a teal 'Read more →' link with an arrow glyph. The gutters are about 20px.",
+  "category": "component",
+  "evidence": "article x=200/553/907, w=333, h=224; h3 ×3; links 'Read more'",
+  "element_ids": [
+   "e62",
+   "e66",
+   "e70",
+   "e65"
+  ]
+ },
+ {
+  "observation": "Press logos are shown as seven equal white rounded tiles. Each holds a greyscale logo at 96x96 and a small caption naming the outlet.",
+  "category": "imagery",
+  "evidence": "figure ×7 at 135x172; imgs 96x96 (natural 150x81); alt text present on all (alt_missing 0); figcaptions repeat the outlet names",
+  "element_ids": [
+   "e77",
+   "e80",
+   "e83",
+   "e86",
+   "e89",
+   "e92"
+  ]
+ },
+ {
+  "observation": "The WSJ logo tile sits 5px higher than the others, and its caption wraps to two lines ('The Wall Street Journal').",
+  "category": "layout",
+  "evidence": "WSJ img y=3330 vs 3335 for the others; figcaption h=42 vs 21",
+  "element_ids": [
+   "e95",
+   "e96",
+   "e97"
+  ]
+ },
+ {
+  "observation": "The newsletter block is a large bordered rounded card with a subtle gradient. Heading and blurb sit on the left. A pill-shaped email input and a teal pill 'Sign up' button sit side by side on the right.",
+  "category": "component",
+  "evidence": "div 200,3632,1040,184; form 736,3677,459,58; input 340x58, button 109x58; placeholder 'you@example.com'",
+  "element_ids": [
+   "e99",
+   "e100",
+   "e102",
+   "e103",
+   "e104"
+  ]
+ },
+ {
+  "observation": "The footer is a four-column grid. A brand column holds the wordmark, tagline and email. Three link columns follow, headed with small uppercase letter-spaced h3s: EXPLORE, FOLLOW and LEGAL.",
+  "category": "layout",
+  "evidence": "footer 0,3888,1440,406; columns at x=200, 610, 830, 1051; display_grid 18",
+  "element_ids": [
+   "e105",
+   "e110",
+   "e124",
+   "e132"
+  ]
+ },
+ {
+  "observation": "The footer's bottom row is separated by a thin rule. It holds a copyright and 'Powered by Shopify' on the left and a TRUSTe 'Verified' badge on the right. The badge is the only raster in the footer, and it looks low-resolution.",
+  "category": "imagery",
+  "evidence": "img 147x44 from a 100x27 source; '© 2021 Thync Global, Inc. · Powered by Shopify'",
+  "element_ids": [
+   "e140",
+   "e143"
+  ]
+ },
+ {
+  "observation": "Corner rounding is used heavily on containers. FAQ items, the video panel, article cards, press tiles and the newsletter card have large radii, and buttons, inputs and the badge are pills. Most other elements have none.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0→147, 8–15→12, 16+→5, pill→6",
+  "element_ids": [
+   "e38",
+   "e58",
+   "e62",
+   "e77",
+   "e99"
+  ]
+ },
+ {
+  "observation": "Effects are minimal. There is one box shadow (the glow on the badge), a few transitions and no animations or transforms. Cards are defined by thin borders rather than shadows.",
+  "category": "decoration",
+  "evidence": "box_shadows 1, transitions 3, animations 0, transforms 0",
+  "element_ids": [
+   "e33"
+  ]
+ },
+ {
+  "observation": "The DOM is semantic. It has one header, nav, main and footer, and six sections, each with an h2. It also has three articles, eight figure/figcaption pairs, and native details/summary and form elements. The page has a single H1.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 6, article 3, figure 8, figcaption 8; h1_count 1; details 5",
+  "element_ids": [
+   "e1",
+   "e12",
+   "e26",
+   "e35",
+   "e54",
+   "e74"
+  ]
+ },
+ {
+  "observation": "The heading hierarchy runs H1 → H2 sections → H3 cards. The footer column headings also use H3, so the outline reads as 'EXPLORE', 'FOLLOW', 'LEGAL' under 'Stay Informed About Thync'.",
+  "category": "structure",
+  "evidence": "heading_outline: 1 h1, 6 h2, 6 h3",
+  "element_ids": [
+   "e63",
+   "e110",
+   "e124",
+   "e132"
+  ]
+ },
+ {
+  "observation": "The CSS is hand-written. There is one inline style block and no external stylesheet. The class vocabulary is small (24 unique across 42 uses), with almost none Tailwind-like (0.024) and 6 inline style attributes.",
+  "category": "structure",
+  "evidence": "classes total 42, unique 24, tailwind_like_fraction 0.024; stylesheets 0; style tag 1; inline_style_attrs 6",
+  "element_ids": []
+ },
+ {
+  "observation": "The copy is short and declarative. It carries concrete figures (2010, 10+ years, 2,000+ sessions) and a mission statement, and the writing has no emoji, exclamation marks or em dashes. The page has about 309 words.",
+  "category": "copy",
+  "evidence": "text_stats words 309, emoji 0, exclamations 0, em_dashes 0",
+  "element_ids": [
+   "e15",
+   "e17",
+   "e20",
+   "e23"
+  ]
+ },
+ {
+  "observation": "Section spacing is generous. Each section has about 70px of top padding before its eyebrow, and the sections are tall relative to their content. Text blocks are capped at 640–680px, narrower than the 1040px container.",
+  "category": "layout",
+  "evidence": "e15 w=640, e57 w=680; eyebrows at y=161, 784, 1222 and 1949, about 70px below each section's top edge",
+  "element_ids": [
+   "e15",
+   "e57",
+   "e29"
+  ]
+ },
+ {
+  "observation": "The nav and footer link lists hold the same destinations (Neurostimulation, Company, Blog, FeelZing). The footer adds Careers and Patents.",
+  "category": "structure",
+  "evidence": "nav ul 4 li vs footer EXPLORE ul 6 li",
+  "element_ids": [
+   "e3",
+   "e111"
+  ]
+ },
+ {
+  "observation": "The nav links are small, regular-weight and slate grey with no button treatment. The only CTA in the header area is the 'FeelZing' text link, so the primary action is not repeated in the nav.",
+  "category": "component",
+  "evidence": "nav li a at y=59, h=18; no styled button in the header",
+  "element_ids": [
+   "e5",
+   "e7",
+   "e9",
+   "e11"
+  ]
+ },
+ {
+  "observation": "The footer and newsletter copy hints at a Shopify store ('Powered by Shopify', © 2021). The copyright text is the link text itself, so the notice is wrapped in an anchor.",
+  "category": "copy",
+  "evidence": "e141 a '© 2021 Thync Global, Inc.', e142 a 'Powered by Shopify'",
+  "element_ids": [
+   "e140",
+   "e141",
+   "e142"
+  ]
+ }
+]

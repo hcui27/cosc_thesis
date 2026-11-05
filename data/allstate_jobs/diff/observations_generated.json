@@ -1,0 +1,353 @@
+[
+ {
+  "observation": "The header is a 63px-tall white bar. The Allstate logo sits at the left (x=160) and a single inline nav of six anchors is right-aligned, ending at x=1280. The links are Why Allstate, Discover, Career areas, Our people, Growth and Events, in bold dark text. The nav items are in-page section jumps.",
+  "category": "layout",
+  "evidence": "header e2 0,0,1440,63; nav e5 746,19,534,24 with 6 anchors e6-e11; logo e3 at 160,10",
+  "element_ids": [
+   "e2",
+   "e3",
+   "e5",
+   "e6",
+   "e11"
+  ]
+ },
+ {
+  "observation": "A hidden 'Skip to content' link is positioned off-screen at x=-999, placed before the header.",
+  "category": "structure",
+  "evidence": "e1 a at -999,0,116,27 'Skip to content'",
+  "element_ids": [
+   "e1"
+  ]
+ },
+ {
+  "observation": "The hero is split in two. The left half is a flat navy panel with a large white headline in which the phrase 'define your future with Allstate' is cyan. The right half is a photo of two smiling colleagues. The text and photo are baked into one 2104x654 JPG scaled to 1440x448, and the image's alt text carries the headline copy.",
+  "category": "imagery",
+  "evidence": "img Allstate-jobs.jpg 0,63,1440,448 alt 'Your next career is here, define your future with Allstate. Two colleagues smiling at a desk.'; navy rgb(14,26,75)",
+  "element_ids": [
+   "e12",
+   "e13"
+  ]
+ },
+ {
+  "observation": "The hero headline is lowercase, sentence-style text inside the raster image. It is not live text and is not the h1. The page's real h1 is further down, so the visual first message and the semantic first heading differ.",
+  "category": "typography",
+  "evidence": "h1_count 1: 'Every employee matters to the good we do.' at y=669, below the hero image; hero text exists only in img e13",
+  "element_ids": [
+   "e13",
+   "e19"
+  ]
+ },
+ {
+  "observation": "A blue search card (bg rgb(0,51,160)) overlaps the bottom edge of the hero. It is 860px wide and centered, and it contains a bold white label, a wide white select and a cyan 'Search jobs' button. It carries the page's only box-shadow, and its corners are rounded.",
+  "category": "component",
+  "evidence": "form e14 290,477,860,128; box_shadows: 1; label e15, select e16 656x53, button e17 144x53",
+  "element_ids": [
+   "e14",
+   "e15",
+   "e16",
+   "e17"
+  ]
+ },
+ {
+  "observation": "The primary button is cyan (rgb(63,180,229)) with navy text (rgb(14,26,75)), a 6px radius and 12px 24px padding. The cyan matches the hero accent text, and the navy text on cyan is the opposite of the white-on-blue 'View all future events' button.",
+  "category": "color",
+  "evidence": "primary_button bg rgb(63,180,229), color rgb(14,26,75), radius 6px; e17",
+  "element_ids": [
+   "e17",
+   "e189"
+  ]
+ },
+ {
+  "observation": "The department select is a native form control with 22 option elements. It has a custom blue chevron and shows 'All Departments' as its default. It is paired with a visible label, and the form has an aria attribute (aria_attrs: 1).",
+  "category": "component",
+  "evidence": "tag_counts select 1, option 22; select e16 656x53; label e15",
+  "element_ids": [
+   "e15",
+   "e16"
+  ]
+ },
+ {
+  "observation": "The intro block is centered in a narrow 780px column. A 42px bold navy h1 wraps to two lines, with a centered 17px paragraph under it. This is the only centered body text apart from the Events section.",
+  "category": "typography",
+  "evidence": "h1 font_size 42px weight 700 color rgb(14,26,75) text-align center; section e18 330,605,780,313; p e20 740 wide",
+  "element_ids": [
+   "e18",
+   "e19",
+   "e20"
+  ]
+ },
+ {
+  "observation": "The page uses a single font family, Helvetica Neue with an Arial/sans-serif fallback. All 287 text elements use it, and hierarchy comes only from size, weight and color. Body text is 17px on a 27.2px line height (1.6).",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['Helvetica Neue',287]]; body_font_size 17px; body_line_height 27.2px",
+  "element_ids": []
+ },
+ {
+  "observation": "The type scale is: h1 42px bold, h2 24px bold, h3 as card titles. Section h2s are left-aligned at x=160 in navy. The 'Events' h2 and its text are centered. The h2s are in Title/sentence case, while the card h2s 'Good Work', 'Good Life' and 'Good Hands' are blue.",
+  "category": "typography",
+  "evidence": "h2 font_size 24px weight 700; e35, e52, e68 at x=160; e187 Events centered; e24, e28, e32 blue",
+  "element_ids": [
+   "e24",
+   "e35",
+   "e52",
+   "e68",
+   "e187"
+  ]
+ },
+ {
+  "observation": "The palette is a restrained set of navy (14,26,75), royal blue (0,51,160), cyan (63,180,229), near-white blue-gray (242,245,251) and white. Text is mostly dark slate (28,34,51), with muted gray (90,98,117) for secondary text. There are no gradients.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 35, rgb(0,51,160) 5, rgb(242,245,251) 3, cyan 1, navy 1; gradient_backgrounds 0",
+  "element_ids": []
+ },
+ {
+  "observation": "The three pillar cards (Good Work, Good Life, Good Hands) sit in a 3-column grid. Each is a bordered article with a rounded edge-to-edge photo on top, a blue h2 and a paragraph. The cards are 355px wide with about 28px gutters, and they carry no links or buttons.",
+  "category": "component",
+  "evidence": "articles e22, e26, e30 at x=160/543/925, 355x469; imgs 353x235",
+  "element_ids": [
+   "e22",
+   "e26",
+   "e30",
+   "e23",
+   "e27",
+   "e31"
+  ]
+ },
+ {
+  "observation": "The pillar-card photos have alt=\"\" and are treated as decorative. The Discover card images and the three testimonial images use the same 353px-wide crop pattern.",
+  "category": "imagery",
+  "evidence": "images e23, e27, e31 alt ''; Content-Isolated-Image-* alt ''",
+  "element_ids": [
+   "e23",
+   "e27",
+   "e31",
+   "e37",
+   "e42",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The 'Discover Allstate' section has three more cards with the same layout, using h3 titles. Each ends in a 'Visit Page — …' link, where the em dash and title repeat the card heading. These links are 120px wide, so the label is probably truncated or hidden visually. The three cards reuse the 353x235 image slots.",
+  "category": "copy",
+  "evidence": "links e40, e45, e50 text 'Visit Page — Explore Inclusive Diversity' etc. at 120x47; em_dashes: 3",
+  "element_ids": [
+   "e36",
+   "e40",
+   "e45",
+   "e50"
+  ]
+ },
+ {
+  "observation": "The Career areas section is a two-column split. The left column holds an h2 and two paragraphs, and the right column is a stack of 11 full-width link rows. Each row has a bordered white box, a cyan left accent bar and bold blue text. The rows are 536x51 with about 8px gaps. The left column is empty below the paragraphs, so a large blank area sits beside the long list.",
+  "category": "layout",
+  "evidence": "ul e55 744,2241,536,643; anchors e56-e66 each 536x51; paragraphs e53/e54 at 160,2261 w536",
+  "element_ids": [
+   "e51",
+   "e53",
+   "e55",
+   "e56",
+   "e66"
+  ]
+ },
+ {
+  "observation": "The page alternates background bands. White is the default, 'The people behind Allstate' and 'In their words' sit on a pale blue-gray (242,245,251) band, and the footer is solid navy. Band edges are full-bleed (0 to 1440), while the content sits in a 1120px column from x=160 to x=1280.",
+  "category": "layout",
+  "evidence": "section e67 0,2948,1440,852; section e166 0,4974,1440,729; footer e200 0,6405,1440,151; content width 160-1280",
+  "element_ids": [
+   "e67",
+   "e166",
+   "e200"
+  ]
+ },
+ {
+  "observation": "'The people behind Allstate' is a 4+3 grid of profile cards. Each card is a figure with a 260x195 photo, a bold name, a role line and a gray location in a small tag. The second row leaves the fourth cell empty. Card heights differ, 327px in row 1 and 303px in row 2, because of role-text wrapping.",
+  "category": "component",
+  "evidence": "figures e69, e74, e79, e84 (327 high), e89, e94, e99 (303 high); strong/span/small structure",
+  "element_ids": [
+   "e69",
+   "e74",
+   "e84",
+   "e89",
+   "e99"
+  ]
+ },
+ {
+  "observation": "The profile cards use a name/role/location pattern (strong, span, small) inside figure elements. Seven of the ten figures have figcaptions, and the name text is bold dark rather than a heading, so none of the seven appears in the heading outline.",
+  "category": "structure",
+  "evidence": "figure 10, figcaption 7, strong 10, small 7; e71 strong, e72 span, e73 small",
+  "element_ids": [
+   "e69",
+   "e71",
+   "e72",
+   "e73"
+  ]
+ },
+ {
+  "observation": "The 'Career growth' section holds three tall article columns, one each for Xiomara R., Shelby C. and Bridget R. Each has a portrait, an h3 name, a 'N years with Allstate' line and an ordered list of past roles. Every list item has a bold title and a small date · city line. The columns have unequal heights (846, 671 and 776px) because of the different list lengths.",
+  "category": "component",
+  "evidence": "articles e108 (846h), e131 (671h), e148 (776h); ol e112, e135, e153; li with b + span",
+  "element_ids": [
+   "e108",
+   "e131",
+   "e148",
+   "e112",
+   "e135",
+   "e153"
+  ]
+ },
+ {
+  "observation": "Career timelines use ordered lists (3 ol), and the dates are written in a consistent 'YYYY–YYYY · City, ST' format. The list order is reverse chronological, showing a career path as semantic ordered content.",
+  "category": "copy",
+  "evidence": "e115 '2020 · Charlotte, NC'; e118 '2018–2020 · Charlotte, NC'; e156 '2019–Present · Chicago, IL'",
+  "element_ids": [
+   "e112",
+   "e115",
+   "e118",
+   "e153"
+  ]
+ },
+ {
+  "observation": "The 'In their words' section has three testimonial figures, each with a photo and a blockquote. The quote paragraph is followed by a footer with a bold first name and role, for example 'Lisa, Senior Lead Internal Auditor'. The quotes are paraphrased in third person ('She is proud…') with no quotation marks. The section's h2 'In their words' promises direct speech.",
+  "category": "copy",
+  "evidence": "blockquote 3; e171, e177, e183 paragraphs; footer e172 'Lisa, Senior Lead Internal Auditor'; e177 'She is proud of having built…'",
+  "element_ids": [
+   "e168",
+   "e170",
+   "e172",
+   "e177",
+   "e178"
+  ]
+ },
+ {
+  "observation": "The Events section is a short centered block with an h2, one sentence and a single solid royal-blue button, 'View all future events'. It sits on a white band and is the only centered CTA on the page.",
+  "category": "component",
+  "evidence": "section e186 140,5767,1160,235; link e189 599,5881,243,57",
+  "element_ids": [
+   "e186",
+   "e187",
+   "e188",
+   "e189"
+  ]
+ },
+ {
+  "observation": "'On Instagram' is a row of four 268px square thumbnails on an 16px-ish gutter. The sources are tiny (about 214x202) and are upscaled to 268x268, and each is wrapped in an anchor. Their alt text is generic ('Allstate Careers Instagram post 1'). The section has no caption or handle.",
+  "category": "imagery",
+  "evidence": "imgs Social1-4.png natural 214x202 rect 268x268; anchors e192, e194, e196, e198",
+  "element_ids": [
+   "e191",
+   "e192",
+   "e194",
+   "e196",
+   "e198"
+  ]
+ },
+ {
+  "observation": "The footer is a navy band that has the Allstate logo on a white rounded chip at the left. A 'Follow Allstate Careers' label sits above a row of five 44px social icons (Facebook, Instagram, Twitter, YouTube, LinkedIn), right-aligned in a ul. The icons are JPG images, not SVG (svgs: 0), and they are circular, in blue and white.",
+  "category": "component",
+  "evidence": "footer e200 0,6405,1440,151; e201 logo 103x42; ul e203; icons e205-e213 100x96 JPG at 44x44",
+  "element_ids": [
+   "e200",
+   "e201",
+   "e202",
+   "e203",
+   "e205"
+  ]
+ },
+ {
+  "observation": "The page uses a lot of images, 31 imgs in all, and zero inline SVGs. Every image has alt text (alt_missing 0), though about nine are empty by design. Photos are real-people portraits and workplace shots, with consistent rounded corners.",
+  "category": "imagery",
+  "evidence": "counts images 31, svgs 0, alt_missing 0",
+  "element_ids": []
+ },
+ {
+  "observation": "The corner radii are mixed. Most elements (240) have no radius. 18 have small radii (1-7px), 24 have medium radii (8-15px) and 5 are pill-shaped. There are no large radii (16px and above). Cards, the search box and list rows use modest rounding.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:240, 1_7:18, 8_15:24, 16_plus:0, pill:5",
+  "element_ids": [
+   "e14",
+   "e22",
+   "e69",
+   "e56"
+  ]
+ },
+ {
+  "observation": "The decoration is minimal. There is one box-shadow (the search card), no gradients, no backdrop blur, and no transitions, animations or transforms. The cards use thin light-gray borders instead of shadows.",
+  "category": "decoration",
+  "evidence": "box_shadows 1; gradient_backgrounds 0; backdrop_blur 0; transitions 0; animations 0; transforms 0",
+  "element_ids": [
+   "e14"
+  ]
+ },
+ {
+  "observation": "The page's semantic structure is rich. It has one header, one nav, one main, 10 sections, 9 articles, 10 figures, 3 blockquotes and 4 footers. The 4 footers include the 3 blockquote footers, so only one is a page footer. There is one h1, 10 h2s and 6 h3s, with an orderly outline.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 10, article 9, figure 10, blockquote 3, footer 4; heading_outline",
+  "element_ids": [
+   "e2",
+   "e5",
+   "e12",
+   "e200"
+  ]
+ },
+ {
+  "observation": "The page is a single-page, anchor-nav scroll of about 6556px at 1440 wide. It has zero scripts and a single stylesheet. It has no inline style attributes, and it uses 99 class usages across only 34 unique classes. Only about 5% of the classes look Tailwind-like, so the CSS is hand-written semantic class naming.",
+  "category": "structure",
+  "evidence": "scripts 0; stylesheets 1; inline_style_attrs 0; classes total 99 unique 34 tailwind_like_fraction 0.051; page_height 6556",
+  "element_ids": []
+ },
+ {
+  "observation": "Layout relies on CSS grid (15 elements) much more than flex (5). Main content is held in a 1120px centered column, with 4-, 3- and 2-column grids for different sections. The grid snaps to gutters at x=160, 543 and 925 for 3-up and x=160/446/732/1018 for 4-up.",
+  "category": "layout",
+  "evidence": "display_grid 15, display_flex 5; articles at x=160/543/925; figures at x=160/446/732/1018",
+  "element_ids": [
+   "e21",
+   "e34",
+   "e67",
+   "e104"
+  ]
+ },
+ {
+  "observation": "The copy is corporate and third-person. Most prose is 'Allstate believes…', 'The company is committed…', and the sentences are short. It uses British 'recognise' in one testimonial. There are no exclamation marks or emoji, and the page has about 726 words.",
+  "category": "copy",
+  "evidence": "text_stats words 726, emoji 0, exclamations 0; e183 'Leaders recognise…'; e25 'Allstate believes good work…'",
+  "element_ids": [
+   "e25",
+   "e29",
+   "e183"
+  ]
+ },
+ {
+  "observation": "The section rhythm has large vertical gaps. Sections sit about 64px from the next section's h2 to its first row, and about 70px between the h2 and its content. The padded white and tinted bands are tall, and 'Career areas' and 'Career growth' have large unused areas. The content blocks are widely separated.",
+  "category": "layout",
+  "evidence": "h2 e52 y=2171, content y=2241; h2 e68 y=3012, cards y=3083; section heights 656, 778, 852, 1109, 729",
+  "element_ids": [
+   "e34",
+   "e51",
+   "e67",
+   "e104",
+   "e166"
+  ]
+ },
+ {
+  "observation": "Link and CTA labels follow a consistent text pattern. Nav items are short nouns, the career-area links are department names and the 'Visit Page' links repeat card titles. The only strongly worded action buttons are 'Search jobs' and 'View all future events'. The linked areas are the only large clickable lists on the page.",
+  "category": "copy",
+  "evidence": "e6-e11 nav labels; e56-e66 department names; e17 'Search jobs'; e189 'View all future events'",
+  "element_ids": [
+   "e6",
+   "e17",
+   "e56",
+   "e189"
+  ]
+ },
+ {
+  "observation": "Secondary metadata (locations, role lines, quote attributions) is set smaller in a muted gray (90,98,117). The role line is regular and the name is bold, and this gives three levels inside one card without extra font families.",
+  "category": "typography",
+  "evidence": "top_text_colors rgb(90,98,117) 28 elements; small e73 'Woodridge, IL'; footer e172",
+  "element_ids": [
+   "e71",
+   "e72",
+   "e73",
+   "e172"
+  ]
+ }
+]

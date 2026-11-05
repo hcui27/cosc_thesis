@@ -1,0 +1,157 @@
+[
+ {
+  "observation": "The title is 'Home Designer | Home Design Software for DIY'. There is one h1, 'Home Design Software for DIY', set in white on a light-blue band. The page lang is 'en'.",
+  "category": "semantic structure",
+  "evidence": "facts.json title, h1_count 1, h1 color rgb(255,255,255), lang 'en'"
+ },
+ {
+  "observation": "A single typeface, Open Sans, is used almost everywhere, and headings use a light weight of 300. The h1 is 27px and h2 is 37px, so the h2s are larger than the h1.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Open Sans 591; h1 font_size 27px weight 300; h2 font_size 37px weight 300"
+ },
+ {
+  "observation": "An icon font, 'caicon', is applied to 18 elements. Its glyphs fail to render and show as empty boxes in the search field, the Rent and Buy buttons, the Compare Features button, the external-link marks and the footer social row.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count caicon 18; tofu squares visible in the search box, 'Rent $59/mo.', 'Compare Features' and the footer social row"
+ },
+ {
+  "observation": "Several images fail to load. Three alt-text links ('3D rendering of an exterior home design at night', 'glass-house wire-frame', 'framing view') appear as broken-image text overlapping the 'Download' heading. The comparison matrix image is also broken and shows only alt text inside a large empty blue area.",
+  "category": "imagery",
+  "evidence": "images entries with file '' and natural [0,0]; broken alt text at y≈905-980 overlapping 'Download'; 'Home Designer comparison matrix' rect 406x369 empty"
+ },
+ {
+  "observation": "The hero is a 1000x563 watercolor-style 3D house render with a large white circular play icon and a 'Watch Time Lapse Design Video' caption box at the bottom right. The image is centered in the page, with white margins on either side.",
+  "category": "imagery",
+  "evidence": "image '1-water-color-1000x563.jpg' rect x220 y340 w1000 h563; play button and caption visible in slice 1"
+ },
+ {
+  "observation": "The light-blue color rgb(96,195,231) is the dominant brand color. It fills the intro band, the Buy and Rent buttons, the comparison section, and the large 'Learn More / Purchase Options' band.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(96,195,231) ×10; blue bands at y≈137-340, ~2300-2750 and ~3000-3700"
+ },
+ {
+  "observation": "Light grays dominate the element backgrounds. Light gray rgb(241,241,241) is the most common background (64 elements). The Download/Explore/Learn strip, the DIY products panel and the footer are gray, and the page is otherwise white.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(241,241,241) 64, rgb(221,221,221) 5, rgb(229,229,229) 3; gray strip at y≈903-1100 and gray footer"
+ },
+ {
+  "observation": "A lime-green panel (rgb(159,196,62)) sits beside the gray DIY products block and holds the Chief Architect Professional Software box. It is the only use of green, and it contrasts with the blue and gray elsewhere.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(159,196,62) ×1; green panel at right of the product row in slice 2"
+ },
+ {
+  "observation": "Link text is a saturated blue, rgb(3,151,214). Body text is near-black, rgb(34,34,34). Links in running copy are not underlined and are distinguished by color only.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(3,151,214) ×43; body_color rgb(34,34,34); inline links 'Suite', 'Architectural', '3D Library' in blue without underline"
+ },
+ {
+  "observation": "Corners are square throughout. 608 elements have a 0px radius and only one has a small radius. There are no gradients, backdrop blurs, animations or transforms, and only 2 box shadows. The look is flat and rectangular.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 608, bucket_1_7 1; gradient_backgrounds 0; box_shadows 2; animations 0; transforms 0"
+ },
+ {
+  "observation": "The header has a large logo-like text lockup, 'Home Designer® Software by Chief Architect®', at the top left. A search bar with an 'All Content' select sits at the top right. Small utility links (My Account | Contact Us | Cart) sit below the search bar, separated by pipes.",
+  "category": "component",
+  "evidence": "slice 1 top; header count 1; select count 8; sub and sup tags present"
+ },
+ {
+  "observation": "The primary navigation is a row of four plain text items: Products, Project Type, User Center, Support. It has no visible background or button styling.",
+  "category": "component",
+  "evidence": "nav count 1; slice 1 y≈114"
+ },
+ {
+  "observation": "The intro band places a left-aligned h1 and a paragraph on a sky-blue background. A product box shot (Home Designer Professional) and an outlined white 'Rent $59/mo.' button are stacked at the right edge. The button has a transparent background, a white border, white text and 2px 10px padding.",
+  "category": "layout",
+  "evidence": "primary_button bg rgba(0,0,0,0), color white, radius 0px, padding '2px 10px'; image rect x1079 y106 119x168"
+ },
+ {
+  "observation": "Below the hero, a three-column gray strip carries centered headings (Download, Explore, Learn) over short stacked link lists in small blue text. The broken images overlap the first column and obscure the 'Download' heading.",
+  "category": "layout",
+  "evidence": "h3 Download/Explore/Learn; slice 1 y≈903-1100; alt-text links overlapping 'Download'"
+ },
+ {
+  "observation": "Section headings are large and light-weight, with an h2 'Home Designer Products' over long left-aligned paragraphs. The text sits in a narrow column of about 970px, centered on a 1440px page. Line height is generous at 24px base, and body paragraphs appear about 26px.",
+  "category": "typography",
+  "evidence": "body_line_height 24px; page_width 1440; text x≈235-1205 in slice 1-2"
+ },
+ {
+  "observation": "Heading levels are used out of sequence. The outline goes h1 then h3 (Download, Explore, Learn) before the first h2, and an h4 'Top-rated DIY home design software' appears under an h2. The footer and product sections use h5s (9 on the page).",
+  "category": "semantic structure",
+  "evidence": "heading_outline h1→h3→h3→h3→h2…h4; h5 count 9"
+ },
+ {
+  "observation": "Product cards show a 130x184 box-shot image, a centered product name, and a row of blue buy/rent buttons. Prices appear as struck-through list price next to sale price (e.g., $129 → $99; $249 → $199; $595 → $495). Upgrade price lines sit below ('Upgrades from $29').",
+  "category": "component",
+  "evidence": "images suite/architectural/professional-130x184.png at y1610; slice 2 pricing buttons and 'Upgrades from $49 $39'"
+ },
+ {
+  "observation": "The product row is split into two unequal panels. A wide gray panel holds the three DIY products, and a narrower green panel holds the Chief Architect Premier product with a small white 'LEARN MORE' button. A thin white gap separates them.",
+  "category": "layout",
+  "evidence": "slice 2 y≈200-668; gray panel x0-970, green panel x975-1440"
+ },
+ {
+  "observation": "The comparison section is a blue band with a white 'Home Designer®' light-weight heading and a 'Top-rated DIY home design software' subhead. A dark gray 'Compare Features' button sits below them. The right half is empty because the matrix image failed. The band runs about 2300-2750 px with a large blank blue stretch at the bottom.",
+  "category": "layout",
+  "evidence": "h2 'Home Designer', h4 'Top-rated DIY home design software'; slice 2 y≈995 to slice 3 y≈160; image rect 406x369 broken"
+ },
+ {
+  "observation": "The 'Compare Features' button is a flat dark gray (~rgb(110,110,110)) rectangle with large light-weight white text and a missing icon glyph.",
+  "category": "component",
+  "evidence": "slice 2 y≈1190-1265; tofu box after text"
+ },
+ {
+  "observation": "The 'Learn More' block is a blue band with a large box-shot image on the left, a vertical list of eight black text links in the middle (Trial Download, Compare Products, What's New in 2021…), and a white 'Purchase Options' card at the right.",
+  "category": "layout",
+  "evidence": "slice 3 y≈520-1015; image professional-348x492.png rect 323x456; 'LEARN MORE' h3"
+ },
+ {
+  "observation": "The Purchase Options card has New and Upgrade tabs, with 'New' active (white) and 'Upgrade' on gray. Below are labeled select dropdowns: Product (Mac & PC) is active, while Media and Backup Media are greyed and disabled. The lower part of the card is empty white space.",
+  "category": "component",
+  "evidence": "select count 8, label count 18, form count 3; slice 3 card at x801-1204 y514-1016"
+ },
+ {
+  "observation": "The copy is promotional and product-focused, with phrases such as 'top-rated', 'Powerful, Fun and Easy Software' and 'Get started on your design project today!'. It includes pricing and rental offers. The page has 733 words, 2 exclamation marks and 3 em dashes.",
+  "category": "copy",
+  "evidence": "text_stats words 733, exclamations 2, em_dashes 3; headings and paragraphs in slices 1-3"
+ },
+ {
+  "observation": "Footer content sits on a gray background in five link columns (Products, Project Type, User Center, Support, Company). Column headings are light-weight and links are small, about 12px. Some links carry external-link icons. The bottom has a row of seven social icons that render as empty boxes, then a centered copyright line '© 2003–2021 Chief Architect, Inc.' with Terms of Use and Privacy Policy links.",
+  "category": "component",
+  "evidence": "footer count 1; slice 3 y≈1093+ and slice 4; ul count 15, li count 98"
+ },
+ {
+  "observation": "The page contains 144 anchors and no button elements. Controls such as Rent/Buy and Compare Features are anchors styled as buttons, and the DOM has no ARIA attributes at all.",
+  "category": "semantic structure",
+  "evidence": "counts anchors 144, buttons 0, aria_attrs 0"
+ },
+ {
+  "observation": "The page uses no <main> element. Layout is built from 118 divs and 10 sections, flex appears on only 8 elements, and grid is not used. The page has 6 noscript blocks, 25 scripts and 9 inline style attributes, a legacy-style stack.",
+  "category": "semantic structure",
+  "evidence": "semantic main 0; div 118; section 10; display_flex 8; display_grid 0; noscript 6; script 25; inline_style_attrs 9"
+ },
+ {
+  "observation": "Class naming is mostly custom, not utility-based. There are 432 class uses across 148 unique classes, and about 8% look Tailwind-like.",
+  "category": "semantic structure",
+  "evidence": "classes total 432, unique 148, tailwind_like_fraction 0.081"
+ },
+ {
+  "observation": "There is an iframe, probably for the video, and a base tag. Meta tags include description, theme-color and google-site-verification. No JSON-LD is present.",
+  "category": "semantic structure",
+  "evidence": "iframe 1; base 1; meta_names list; jsonld_blocks 0"
+ },
+ {
+  "observation": "Imagery is mostly small product box shots at identical 130x184 dimensions. Only the hero and the large Professional box shot are big. All 11 images have alt text, and the alt text is descriptive.",
+  "category": "imagery",
+  "evidence": "alt_missing 0; images list with 130x184 natural sizes; hero 1000x563"
+ },
+ {
+  "observation": "The page uses 21 CSS transitions but no keyframe animations. The page is 4284px tall at 1440px wide.",
+  "category": "decoration",
+  "evidence": "transitions 21, animations 0; page_height 4284, page_width 1440"
+ },
+ {
+  "observation": "The content is arranged in horizontal full-width bands of alternating background colors (white, light blue, gray, green, blue, white, blue, gray). The text inside them is held in a ~1000px centered container.",
+  "category": "layout",
+  "evidence": "slices 1-3 show stacked color bands; hero image width 1000 at x220"
+ }
+]

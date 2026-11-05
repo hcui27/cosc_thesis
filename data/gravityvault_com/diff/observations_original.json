@@ -1,0 +1,152 @@
+[
+ {
+  "observation": "The page has no h1 and no h2. The heading outline starts at h4 (Gift Cards, Waivers, Visiting Us During This Time, Franchising) and then moves to h3 for the state names (California, New Jersey, New York, Pennsylvania). The 17 h5 elements are not in the outline listing.",
+  "category": "semantic structure",
+  "evidence": "facts.json h1_count 0, h1 null, h2 null; heading_outline levels 4 then 3; tag_counts h5 17, h4 4, h3 4"
+ },
+ {
+  "observation": "The brand logo is the main identity element. A small version sits top-left in the header, and a very large one (817x176) is repeated mid-page above the mission text. The logo is dark navy wordmark type with a mountain mark, and the page has no text h1.",
+  "category": "imagery",
+  "evidence": "images logo.png rect 300x64 at (170,35) and 817x176 at (453,1141); slice 1 and 2"
+ },
+ {
+  "observation": "The header is white and split into two zones. The logo is on the left. On the right are two underlined utility links (Gift Cards, Contact Us), a 'Find a Location' state select and a search input with a magnifier icon.",
+  "category": "layout",
+  "evidence": "slice 1 top; tag_counts select 2, optgroup 2, input 8; header 1"
+ },
+ {
+  "observation": "A full-width solid blue nav bar (rgb(1,96,153)) holds seven white text links separated by thin vertical pipe dividers: Options to Climb, Locations, Covid-19 Updates, About, Franchising, Contact, Careers. The links are centered and the bar has no dropdown visible.",
+  "category": "component",
+  "evidence": "top_backgrounds rgb(1,96,153) 19; slice 1 nav bar at y≈132-172; nav count 2"
+ },
+ {
+  "observation": "The hero is a single large photo of a climbing wall with green and yellow holds and a ghosted brand logo. It is 1310x442 and inset with 65px side margins. It has no overlaid headline or CTA, and two small carousel dots sit near its bottom center.",
+  "category": "imagery",
+  "evidence": "image rect x65 y172 w1310 h442 (1600x540 natural); duplicate image entries overlap by 579020 px²; slice 1"
+ },
+ {
+  "observation": "The hero is a carousel. A second header image is present but hidden (0x0 rect), and the dots show the first slide active in cyan rgb(76,198,219) with the second hollow.",
+  "category": "component",
+  "evidence": "images MAIN_WEBSITE_Header_for_Brick__1_ rect 0x0; colors top_backgrounds rgb(76,198,219) 1; image_overlaps pair"
+ },
+ {
+  "observation": "Below the hero is a four-column promo row. Each card is a 305x178 photo, a bold blue heading, a thin gray rule and a light gray paragraph. The cards are Gift Cards, Waivers, Visiting Us During This Time and Franchising. The columns have uneven text lengths, so the card bottoms don't align.",
+  "category": "layout",
+  "evidence": "images at x65/400/735/1070, y642, 305x178; h4 headings; slice 1"
+ },
+ {
+  "observation": "Card headings are bold Roboto in the brand blue rgb(1,96,153). Body copy is light-weight Roboto in mid-gray rgb(99,99,99) at 16px/24px. The result is a two-tone blue and gray text scheme.",
+  "category": "typography",
+  "evidence": "body_color rgb(99,99,99); body_font_size 16px, line_height 24px; top_text_colors blue 66"
+ },
+ {
+  "observation": "Roboto is the only text font, applied to 425 elements. FontAwesome is used on 10 elements for icons (select chevron, search, envelope, check, social icons). There are no inline SVGs.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Roboto 425, FontAwesome 10; svgs 0; i tag 10"
+ },
+ {
+  "observation": "Section headings use a darker navy (rgb(28,53,83)) bold Roboto. These are the state names and the 'Links' label, set in a larger size than the location names.",
+  "category": "typography",
+  "evidence": "top_text_colors rgb(28,53,83) 6; slice 2 'California', 'New Jersey' headings"
+ },
+ {
+  "observation": "The 'Links' sidebar is a vertical list of blue bold links (Options to Climb, Find a Location, FAQs, About Us, Franchising, Careers, Gift Cards, Contact Us). It sits left of the large logo and bold mission paragraph, and a thin rule runs under the 'Links' label. This is a two-column intro block.",
+  "category": "component",
+  "evidence": "slice 1 bottom and slice 2 top; ul count 11"
+ },
+ {
+  "observation": "The mission statement is set in bold gray text under the large logo, a long paragraph of about 5 lines. It uses a heavier weight than the light body copy elsewhere.",
+  "category": "copy",
+  "evidence": "slice 2 paragraph 'The Gravity Vault Indoor Rock Gyms' mission is…'; p count 5"
+ },
+ {
+  "observation": "Locations are grouped by state under h3 headings (California, New Jersey, New York, Pennsylvania), with a thin pale-blue horizontal rule between groups. Each group is a left-aligned three-column grid of cards, and the last row often has fewer than three cards, so it leaves an empty space on the right.",
+  "category": "layout",
+  "evidence": "images at x170/543/917, 353x253; 15 article elements; slice 2-4; California has a single card"
+ },
+ {
+  "observation": "Each location card has a 353x253 photo with a thin dark border, then a gray 'City, ST' name and an optional short light-gray description. Description length varies: Brick and Montclair have none, while Melville has a 7-line paragraph. Card heights and text blocks are uneven.",
+  "category": "component",
+  "evidence": "article 15; location images 350x250 natural; slice 2-3 Melville description vs. Brick"
+ },
+ {
+  "observation": "Unopened locations get a red 'Coming Soon!' ribbon overlaid on the top-left of the photo, with a notched right end. It appears on California (Marin), Nassau County, Lehigh Valley and Philadelphia. The red is rgb(237,31,36), used 3 times as a background.",
+  "category": "decoration",
+  "evidence": "top_backgrounds rgb(237,31,36) 3; slices 2-4 red banners"
+ },
+ {
+  "observation": "Several location photos are marketing renderings or placeholders rather than real gym photos: the California cutout, the Montclair building render with an arrow and logo overlay, and the Lehigh Valley and Philadelphia logo-on-wall images. The mix of real photos and graphics is inconsistent.",
+  "category": "imagery",
+  "evidence": "slices 2 and 4 images GV_Marin_350x250, Montclair_350x250, Pic_For_Phila; image 'Untitled_design__3_'"
+ },
+ {
+  "observation": "All images are served through a resizer with fixed w/h/fit parameters (e.g. '&w=350&h=250&r=fit', '&w=600&h=350&r=fit'). Upscaling is visible, because 350px natural images render at 353px wide and one is 326x233. The images have empty alt text, and one has a missing alt attribute.",
+  "category": "imagery",
+  "evidence": "image file names; counts alt_missing 1; all alt ''"
+ },
+ {
+  "observation": "The page has almost no border radius. 431 elements have a radius of 0, 2 have 1-7px and 2 are pills (likely the carousel dots). The primary button, 'Go To My Gym', is a rectangle with 0px radius, blue fill, white text and tiny padding (3px 15px 4px).",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 431, bucket_pill 2; primary_button radius 0px, padding '3px 15px 4px'"
+ },
+ {
+  "observation": "The color palette is a limited set. White is the background, brand blue rgb(1,96,153) is used for the nav and footer, dark navy is used for the footer base, and red rgb(237,31,36) is the accent. A gray rgb(51,51,51) background appears on 5 elements and the text is gray.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 19, blue 19, rgb(51,51,51) 5, red 3, rgb(1,64,102) 1; no gradients (gradient_backgrounds 0)"
+ },
+ {
+  "observation": "Effects are minimal. There are 4 box shadows, 10 transitions, and no animations, transforms, gradients or backdrop blur. The decoration is flat, apart from a subtle shadow under the nav bar.",
+  "category": "decoration",
+  "evidence": "effects box_shadows 4, transitions 10, animations 0, transforms 0, gradient_backgrounds 0, backdrop_blur 0"
+ },
+ {
+  "observation": "The footer is two stacked blue bands. The upper band (brand blue) has a newsletter signup (envelope icon, label, centered 'e-mail' input, check-circle submit) and five white social icons (Facebook, Instagram, Twitter, LinkedIn, Pinterest). The lower, darker navy band has copyright, Privacy Policy, Terms of Use, Site Map, and a right-aligned small credit link 'Lform Design | NJ Web Design Company'.",
+  "category": "component",
+  "evidence": "slice 4; top_backgrounds rgb(1,64,102) 1; footer 1; form 6; i 10"
+ },
+ {
+  "observation": "Layout is built with floats or tables rather than modern CSS. No element uses display:grid or display:flex, and the page is table or float driven with div-heavy markup (151 divs). The content width is about 1100px (x170-1270) for the location area, but the hero and promo row run wider at 1310px (x65-1375).",
+  "category": "layout",
+  "evidence": "layout display_grid 0, display_flex 0; div 151; image rects x170-1270 vs x65-1375; page_width 1440"
+ },
+ {
+  "observation": "The DOM is semantically thin. There are 5 sections, 15 articles (one per location), 2 navs, 1 header and 1 footer. There is no main element, no aside, no figure and no aria attributes. The html has an empty lang, and there is a base tag.",
+  "category": "semantic structure",
+  "evidence": "semantic main 0, aside 0, figure 0; aria_attrs 0; lang ''; tag base 1"
+ },
+ {
+  "observation": "Styling is mostly class-based but legacy in style. There are 377 class uses across 140 unique classes, with a very low utility-class share (tailwind_like_fraction 0.04). There are 31 inline style attributes and 2 style blocks, with 17 scripts.",
+  "category": "semantic structure",
+  "evidence": "classes total 377, unique 140, tailwind_like_fraction 0.04; inline_style_attrs 31; style 2; script 17"
+ },
+ {
+  "observation": "The copy is friendly, with 19 exclamation marks, as in 'Give the gift of climbing!' and 'Now open!'. It is community-oriented ('your home away from home'), and one stale nav item, 'Covid-19 Updates', sits next to 'Visiting Us During This Time'. The footer shows © 2021.",
+  "category": "copy",
+  "evidence": "text_stats exclamations 19, words 569; nav label 'Covid-19 Updates'; footer '© 2021 Gravity Vault'"
+ },
+ {
+  "observation": "The page is long and image-heavy: 4323px tall at 1440 wide, with 26 img elements and only 569 words. The long scroll is mostly location cards, with 14 unique location photos.",
+  "category": "layout",
+  "evidence": "layout page_height 4323, page_width 1440; counts images 26; words 569"
+ },
+ {
+  "observation": "The links are blue, bold and unadorned in the sidebar. The two top-right utility links (Gift Cards, Contact Us) have gray underlines, while nav links are plain white. Link styles therefore vary by region. The page has 84 anchors but only 2 buttons.",
+  "category": "component",
+  "evidence": "counts anchors 84, buttons 2; slice 1 header links underlined vs sidebar"
+ },
+ {
+  "observation": "The form controls are plain: a native-style select with a blue chevron and a search input with a thin blue border, and an unrounded email field with centered placeholder text in the footer. The labels are small (about 12px) gray text ('Find a Location', 'Search').",
+  "category": "component",
+  "evidence": "tag select 2, input 8, label 4; slice 1 and 4"
+ },
+ {
+  "observation": "The page title is a long keyword-style string, 'The Gravity Vault | Indoor Rock Climbing Gyms | NJ, NY & PA', and the meta set includes description, keywords, author and a google-site-verification entry. There are no JSON-LD blocks.",
+  "category": "semantic structure",
+  "evidence": "title; meta_names list; jsonld_blocks 0"
+ },
+ {
+  "observation": "There is one emoji or special glyph in the text. Whitespace is generous between sections (about 50px gaps below the promo row and between location rows), and the region groups are divided by thin hairline rules.",
+  "category": "layout",
+  "evidence": "text_stats emoji 1; slice 2-3 rules above 'New Jersey' and 'New York'"
+ }
+]

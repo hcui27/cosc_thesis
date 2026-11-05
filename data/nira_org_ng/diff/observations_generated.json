@@ -1,0 +1,337 @@
+[
+ {
+  "observation": "Palette is a single green hue family on near-white. Body bg is rgb(246,249,247), body text is dark green-black rgb(28,43,36), and the brand green rgb(0,135,81) fills the nav bar, hero and Subscribe button. Link and heading text uses a darker green, rgb(0,95,57).",
+  "category": "color",
+  "evidence": "facts.json colors: body_bg rgb(246,249,247), top_text_colors rgb(0,95,57) x28, top_backgrounds rgb(0,135,81) x2",
+  "element_ids": [
+   "e8",
+   "e19",
+   "e154"
+  ]
+ },
+ {
+  "observation": "The header has two rows. A white top strip holds the logo at left and a right-aligned contact block (phone, email, Webmail). Below it is a full-width solid green nav bar with white text links.",
+  "category": "layout",
+  "evidence": "e1 header 0,0,1440,130; e4 contact block at x1067; e8 nav 0,77,1440,50 with green bg",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4",
+   "e8"
+  ]
+ },
+ {
+  "observation": "The primary nav has 8 left-aligned text links (Home, Who Are We, Events, Media, Legal, Join Us, Registrars, Support). 'Switchto.ng' is set apart at the far right of the same ul. The links are plain text with no visible dropdown or icons.",
+  "category": "component",
+  "evidence": "e10–e17 left cluster; e18 at x1123 within e9 ul 196–1244",
+  "element_ids": [
+   "e10",
+   "e11",
+   "e17",
+   "e18"
+  ]
+ },
+ {
+  "observation": "The hero is a full-width green band with a diagonal gradient from darker green at upper left to lighter at lower right. It has no image. It holds a white H1, a short white paragraph and a single white button, all left-aligned to the content column at x=196.",
+  "category": "decoration",
+  "evidence": "e19 0,130,1440,321; gradient_backgrounds: 1; h1 color rgb(255,255,255)",
+  "element_ids": [
+   "e19",
+   "e20",
+   "e21",
+   "e22"
+  ]
+ },
+ {
+  "observation": "The H1 is 44.8px, weight 700, in the system-ui stack, white on green. It is the only H1 on the page: 'Welcome to the .ng Domain Registry'. The sentence-style copy is plain and descriptive.",
+  "category": "typography",
+  "evidence": "facts h1 font_size 44.8px, weight 700; h1_count 1",
+  "element_ids": [
+   "e20"
+  ]
+ },
+ {
+  "observation": "The hero CTA is an inverted button: white fill, dark green text rgb(0,95,57), 6px radius, 10px 20px padding. Its label 'Who are we' duplicates a nav item.",
+  "category": "component",
+  "evidence": "primary_button bg white, color rgb(0,95,57), radius 6px; e22 128x46",
+  "element_ids": [
+   "e22",
+   "e11"
+  ]
+ },
+ {
+  "observation": "Three carousel-style indicator dots (one filled, two outlined) sit at the far left edge of the hero at x≈0–50. They sit outside the content column. There is only one slide of visible content, and the dots look like leftover slider chrome.",
+  "category": "component",
+  "evidence": "Screenshot at y≈419 shows dots at left edge; hero has only one text block",
+  "element_ids": [
+   "e19"
+  ]
+ },
+ {
+  "observation": "A secondary quick-link bar sits directly under the hero. It is a white strip with 4 green bold text links (Whois Search, Registrars, Search, Contact Us) and a thin bottom border. It repeats the footer Quick links.",
+  "category": "component",
+  "evidence": "e23 0,451,1440,51; e24 ul; footer e176–e179 same four labels",
+  "element_ids": [
+   "e23",
+   "e24",
+   "e26",
+   "e176"
+  ]
+ },
+ {
+  "observation": "Content is held in a centered column about 1048px wide, from x=196 to x=1244, inside a 1440px page. Header logo and top contact block use a slightly wider span, 180–1260. All page backgrounds stay full-bleed.",
+  "category": "layout",
+  "evidence": "e9, e24, e34, e150 all x=196 w=1048; e3 logo x=180",
+  "element_ids": [
+   "e9",
+   "e34",
+   "e150",
+   "e3"
+  ]
+ },
+ {
+  "observation": "The 'About NiRA' intro is a section with a green H2 and a single paragraph capped at about 760px wide (about 80 characters per line). It sits on the page background with no card around it.",
+  "category": "layout",
+  "evidence": "e33 section; e35 760x102; e34 h2 1048 wide",
+  "element_ids": [
+   "e33",
+   "e34",
+   "e35"
+  ]
+ },
+ {
+  "observation": "Heading hierarchy has 1 H1, 3 H2s and 11 H3s. Most H3s are card titles and footer column titles. The heading outline puts 'Registering a .ng domain' and other card titles under the 'About NiRA' H2. The facts record the H2 size as 44.8px, equal to the H1, but the screenshot shows the About NiRA H2 rendering noticeably smaller.",
+  "category": "semantic",
+  "evidence": "heading_outline; h2 font_size 44.8px reported; e34 height 41",
+  "element_ids": [
+   "e34",
+   "e39",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The content cards share one style: white fill, thin light border, rounded corners of roughly 8–12px, and no box-shadow (box_shadows: 0). Depth comes only from the border against the off-white page bg.",
+  "category": "decoration",
+  "evidence": "box_shadows 0; border_radius bucket_8_15: 9; cards e37, e45, e51, e108, e122, e131, e140, e150",
+  "element_ids": [
+   "e37",
+   "e45",
+   "e51",
+   "e108"
+  ]
+ },
+ {
+  "observation": "Two equal-width article cards (514px each, 20px gutter) sit side by side as a 2-column grid. Each has an image at left and text at right. Registering a .ng domain pairs with the accredited-registrar badge, 149x155. Policy development pairs with a 100x100 circular green icon.",
+  "category": "layout",
+  "evidence": "e37 196,753,514,262; e45 730,753,514,262; img e38 149x155, e46 100x100",
+  "element_ids": [
+   "e37",
+   "e45",
+   "e38",
+   "e46"
+  ]
+ },
+ {
+  "observation": "Inline emphasis in the 3R copy: 'Registry', 'Registrar' and 'Registrant' are wrapped in spans, set bold and colored brand green. They sit within running body text.",
+  "category": "typography",
+  "evidence": "e41, e42, e43 spans inside e40 paragraph; green bold in screenshot",
+  "element_ids": [
+   "e41",
+   "e42",
+   "e43",
+   "e40"
+  ]
+ },
+ {
+  "observation": "Card links are underlined green text with an appended arrow glyph ('Learn more →', 'Read the policy development document (PDF) →'). In the second, the arrow wraps onto its own line, an orphan.",
+  "category": "copy",
+  "evidence": "e44 'Learn more →'; e49 333x44 with wrapped arrow",
+  "element_ids": [
+   "e44",
+   "e49"
+  ]
+ },
+ {
+  "observation": "The events calendar is a real HTML table with a thead of 7 th cells (Mon–Sun) and 42 td cells. May 2021 starts on Saturday, so there are 5 empty leading cells. Cells are about 67x47 with thin gray gridlines. The header row has a pale green fill, 'Mon' is the first column, and day numbers are centered with no event markers or highlights.",
+  "category": "component",
+  "evidence": "table e58 219,1155,468,323; th e59–e65; td count 42; tag_counts table 1, th 7, td 42",
+  "element_ids": [
+   "e58",
+   "e59",
+   "e65",
+   "e71"
+  ]
+ },
+ {
+  "observation": "The calendar is stale and unlinked. Its title reads 'Events calendar · May 2021' against a © 2019 footer. Navigation is text links with typographic glyphs ('« Year', '‹ Month', 'Month ›', 'Year »') separated by middle dots.",
+  "category": "copy",
+  "evidence": "e52 h3 text; e54–e57 links; e180 '© 2019'",
+  "element_ids": [
+   "e52",
+   "e54",
+   "e55",
+   "e56",
+   "e57",
+   "e180"
+  ]
+ },
+ {
+  "observation": "The 'News updates' card contains placeholder-looking copy: three list items labeled 'News item 1/2/3'. Each has the same 32x32 'bc-lr.png' image with empty alt. The image shows a small gray prev/next arrow sprite. Items are separated by hairline dividers.",
+  "category": "copy",
+  "evidence": "e111–e119; img bc-lr.png alt '' x3 at 32x32",
+  "element_ids": [
+   "e110",
+   "e112",
+   "e115",
+   "e118",
+   "e113"
+  ]
+ },
+ {
+  "observation": "A native <video> element with default browser controls and no poster, shown as a black rounded rectangle (468x150, 0:00), sits at the bottom of the news card. Its 6px-ish corner radius matches the cards. It leaves empty space below it inside the card.",
+  "category": "imagery",
+  "evidence": "e120 video 753,1265,468,150; tag_counts video 1",
+  "element_ids": [
+   "e120",
+   "e108"
+  ]
+ },
+ {
+  "observation": "The news card and calendar card are equal height, 443px, in a two-column grid. The news column has extra empty space below the video because the calendar is taller.",
+  "category": "layout",
+  "evidence": "e51 and e108 both h=443; display_grid: 4",
+  "element_ids": [
+   "e51",
+   "e108"
+  ]
+ },
+ {
+  "observation": "A row of three equal cards (336px wide, about 20px gaps) carries link lists: Registrar resources, Policy compliance documents, Support. Each has an H3 and three underlined green links separated by hairline rules. The three-column row follows the two-column rows above it.",
+  "category": "layout",
+  "evidence": "e122, e131, e140 each 336x199 at x=196/552/908; li e125–e147",
+  "element_ids": [
+   "e122",
+   "e131",
+   "e140",
+   "e124"
+  ]
+ },
+ {
+  "observation": "Links are underlined green text throughout the body. The same treatment is used for card links, list links, the calendar nav and the footer (white underlined). The underline is the main link cue, rather than buttons or icons.",
+  "category": "component",
+  "evidence": "screenshot shows underlines on e126, e135, e144, e54; 49 anchors",
+  "element_ids": [
+   "e126",
+   "e135",
+   "e144",
+   "e54"
+  ]
+ },
+ {
+  "observation": "The newsletter section is a full-width single-row card. It has an H3 and a form with a wide email input (877x48) and a solid green 'Subscribe' button (117x48) beside it. The input shows a placeholder, 'Your email address'. The form has one label and one input.",
+  "category": "component",
+  "evidence": "e152 form; e153 input 877x48; e154 button 117x48; tag_counts form 1, label 1, input 1",
+  "element_ids": [
+   "e150",
+   "e152",
+   "e153",
+   "e154"
+  ]
+ },
+ {
+  "observation": "The footer is a dark green-black block (rgb(28,43,36)) with three columns: Contact, Follow NiRA, Quick links. Headings are white bold H3s and links are white and underlined. A thin rule separates a small copyright line, '© 2019 Nigeria Internet Registration Association (NiRA). All Rights Reserved.'",
+  "category": "layout",
+  "evidence": "e155 footer 0,1963,1440,229; e157, e161, e175 h3; e180",
+  "element_ids": [
+   "e155",
+   "e157",
+   "e161",
+   "e175",
+   "e180"
+  ]
+ },
+ {
+  "observation": "The social icons are five 32x32 raster PNGs (Facebook, Twitter, Google Plus, YouTube, Instagram). They are glossy, multi-color, dated-looking icons at 42px spacing, followed by a text link 'LinkedIn' and a separate 'NiRA on Facebook' text link. The page has no inline SVG (svgs: 0). Alt text is present on all images.",
+  "category": "imagery",
+  "evidence": "e163–e171 imgs; facebook.png 32x32; counts svgs 0, alt_missing 0",
+  "element_ids": [
+   "e163",
+   "e165",
+   "e167",
+   "e169",
+   "e171",
+   "e172"
+  ]
+ },
+ {
+  "observation": "Typography uses a single system-ui stack (system-ui, -apple-system, 'Segoe UI', sans-serif) on 229 elements, with Arial on 3. Body is 16px on a 25.6px line height (1.6). Weights are mostly 400 or 600–700 for headings, nav and links. There is no web font loading.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count system-ui 229, Arial 3; body_font_size 16px; line_height 25.6px",
+  "element_ids": []
+ },
+ {
+  "observation": "The page uses almost no decoration beyond flat fills and thin borders: 0 box shadows, 0 backdrop blur, 0 transitions, 0 transforms and 1 gradient (the hero). One animation is present. Most elements (210) have 0 radius, with a minority of rounded cards, buttons and pills.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 0, transitions 0, animations 1, gradient_backgrounds 1; radius bucket_0 210, bucket_8_15 9, pill 3",
+  "element_ids": []
+ },
+ {
+  "observation": "The DOM uses landmark elements: 1 header, 1 nav, 1 main, 5 sections, 2 articles, 1 footer, and no aside. Class use is modest (55 class attributes, 25 unique, 5.5% Tailwind-like), so it looks like hand-written CSS in one stylesheet. 9 inline style attributes are present.",
+  "category": "semantic",
+  "evidence": "semantic counts; classes total 55, unique 25, tailwind_like_fraction 0.055; stylesheets 1; inline_style_attrs 9",
+  "element_ids": [
+   "e1",
+   "e8",
+   "e33",
+   "e36",
+   "e155"
+  ]
+ },
+ {
+  "observation": "The 3 top-level sections between hero and footer follow a consistent vertical rhythm with about 20–45px gaps. Gaps are 20px between paired cards and about 45px between card rows. Section backgrounds alternate subtly between page bg rgb(246,249,247), white cards and rgb(250,252,251) surfaces.",
+  "category": "layout",
+  "evidence": "e37 ends y1015, e50 starts 1058; e51 ends 1501, e121 starts 1545; top_backgrounds rgb(250,252,251) x11",
+  "element_ids": [
+   "e36",
+   "e50",
+   "e121",
+   "e149"
+  ]
+ },
+ {
+  "observation": "The page is information-dense. It is text-heavy and link-heavy (49 anchors, 304 words, 11 images) with no large photography. Visual weight comes from the green hero, the calendar grid and the black video box, while the rest is small cards. Copy is institutional: registry, policy, compliance, accredited registrars.",
+  "category": "copy",
+  "evidence": "counts anchors 49, images 11; text_stats words 304; page_height 2193",
+  "element_ids": []
+ },
+ {
+  "observation": "The logo is a small 80x57 PNG ('.ng Your Nigerian identity online') placed top-left at x=180. It is wrapped in a link with descriptive alt text, and sits in the white strip above the green nav.",
+  "category": "imagery",
+  "evidence": "e3 img logo.png 80x57, alt 'NiRA .ng – Your Nigerian identity online'",
+  "element_ids": [
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "observation": "The header contact block is two right-aligned lines. 'Phone: 0700CALLNIRA' has muted gray label text and a green number. 'admin@nira.org.ng · Webmail' sits on the line below, with a middle-dot separator. The contact details repeat in the footer.",
+  "category": "copy",
+  "evidence": "e4 193x46; e5, e6, e7 anchors; footer e158–e160",
+  "element_ids": [
+   "e4",
+   "e5",
+   "e6",
+   "e7",
+   "e158"
+  ]
+ },
+ {
+  "observation": "There are 4 buttons in the DOM, but visually only two read as buttons: the hero CTA and the Subscribe button. The Subscribe button is brand-green filled with white bold text and a rounded radius. The others are probably the video's controls or the carousel dots.",
+  "category": "component",
+  "evidence": "tag_counts button 4; e154 117x48 green; e22 white",
+  "element_ids": [
+   "e22",
+   "e154"
+  ]
+ }
+]

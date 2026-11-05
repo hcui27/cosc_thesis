@@ -1,0 +1,152 @@
+[
+ {
+  "observation": "The page background is a saturated red-orange, with a duotone skyline photo (Shanghai tower and city) tinted into it behind the header and top of the hero. The tint fades to flat orange below about y=900.",
+  "category": "color",
+  "evidence": "facts body_bg rgb(213,68,39); slice 1 shows the tinted skyline behind the logo and nav; gradient_backgrounds: 2"
+ },
+ {
+  "observation": "The palette is essentially three colors: red-orange, white and near-black. A lime green (156,197,36) appears in the backgrounds list once. Body text is dark grey #333, with #666 used for dates.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 8, rgb(213,68,39) 1, rgb(156,197,36) 1, rgb(31,31,31) 1; top_text_colors: #333 127, orange 24, #666 6"
+ },
+ {
+  "observation": "The same orange is reused as link text on white cards, as the 'Read More' accent on the dark hero caption, and as the page background. Link color therefore matches the brand background.",
+  "category": "color",
+  "evidence": "top_text_colors rgb(213,68,39) count 24; 'Read More' in orange on the dark caption; news links orange on white"
+ },
+ {
+  "observation": "The page is a fixed-width content column of about 1200px (x=120 to 1320) centered in a 1440px viewport. White and dark rectangular modules sit on the orange field.",
+  "category": "layout",
+  "evidence": "page_width 1440; hero image rect x=120; the white partners band spans 120–1320 in slice 2"
+ },
+ {
+  "observation": "The top hero is a two-column block. A large photo with a dark caption takes about 835px on the left. A white 'Latest News' sidebar of about 365px sits on the right, flush with the image.",
+  "category": "layout",
+  "evidence": "hero image rect x120 y233 w835 h557; sidebar white panel from x955 to 1320 in slice 1"
+ },
+ {
+  "observation": "A row of three equal-width cards sits below the hero: a dark Video card, a white Upcoming Events card and a white Recent Tweets card, with gutters between them. The Upcoming Events card is mostly empty white space under its heading and 'See Past Events' link.",
+  "category": "layout",
+  "evidence": "cards at x120–485, 537–903, 955–1320; the Upcoming Events card is blank below y≈1100 and runs to about y=250 in slice 2"
+ },
+ {
+  "observation": "The hero photo is a cropped image of a protester holding a red 'Asijiki!' sign. A dark gradient fades into a solid #1f1f1f caption panel carrying the date, headline and 'Read More'. The image has empty alt text.",
+  "category": "imagery",
+  "evidence": "sb_op-ed_foto.jpg 835x557 with alt ''; dark bar with 'April 14, 2021' and headline in slice 1; rgb(31,31,31) background"
+ },
+ {
+  "observation": "The logo is a text-style wordmark in white caps with mixed weights: 'NEW' and 'ECONOMY' are bold, and 'THE' and 'CLIMATE' are light. An underline rule and a lighter tagline follow. The logo img is reported at 0x0 rect, so it is probably swapped or hidden via CSS.",
+  "category": "typography",
+  "evidence": "logo.png 524x68, rect w0 h0; slice 1 shows the wordmark at about x120,y88 and the tagline 'The Global Commission on the Economy and Climate'"
+ },
+ {
+  "observation": "The h1 is empty. It has 32px/700 styling but no text, so the page has no readable top-level heading. The visible logo is the only title-like element.",
+  "category": "semantic",
+  "evidence": "h1_count 1, h1.text ''; heading_outline level 1 text ''"
+ },
+ {
+  "observation": "The primary typeface is proxima-nova, a geometric sans, used on 169 elements. Georgia italic is used for module headings ('Latest News', 'Video', 'Upcoming Events', 'Recent Tweets', 'Managing Partner'), giving a sans/serif pairing.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: proxima-nova 169, Georgia 6; italic serif headings visible in slice 1"
+ },
+ {
+  "observation": "The module headings are italic serif and small in the screenshot. The h2 size is reported as 28px/500, and 14 h2s are in the outline, so many h2s are teaser or hidden headings. Teaser titles such as the 'Commentary:' items are real h2s.",
+  "category": "typography",
+  "evidence": "h2 font_size 28px, weight 500; 14 h2 entries; h3 count 2"
+ },
+ {
+  "observation": "The main nav is large, unbolded 22px-ish sans text in white: About, News, Publications, Contact Us, spaced widely in a horizontal row. It is built without a nav element.",
+  "category": "component",
+  "evidence": "slice 1 nav at y≈197; semantic nav: 0, main: 0, footer: 0"
+ },
+ {
+  "observation": "A utility area at top right holds a Search field and a 'Get the Newsletter' link. Each has a small grey line icon, and a thin underline sits under the search input. The Search form heading and Sign Up are h2s.",
+  "category": "component",
+  "evidence": "heading_outline 'Search form', 'Sign Up'; forms: 2; input: 8; slice 1 at x955–1320"
+ },
+ {
+  "observation": "The Latest News sidebar lists three items. Each has a grey date above an orange headline link ending in a '›' chevron, with hairline dividers between items. 'All news ›' is pinned at the bottom after a gap.",
+  "category": "component",
+  "evidence": "dates April 6, 2021 / March 10, 2021 / November 30, 2020 in #666; time tags: 6; 'All news ›' at y≈872"
+ },
+ {
+  "observation": "Arrow-in-circle outline icons mark the video items. The featured video has a large white ring and chevron over a dark video thumbnail showing an embedded player control bar. Two further video links in the card use smaller grey rings.",
+  "category": "component",
+  "evidence": "slice 1 white circle at (200,1115); slice 2 grey ring icons beside 'Landscape restoration…' and 'Seizing the Global Opportunity'"
+ },
+ {
+  "observation": "The Recent Tweets card shows a plain text feed. Tweet text is grey with orange @mentions, hashtags and t.co links, and relative timestamps like '2 days 21 hours ago'. An empty left indent suggests avatar slots that did not render.",
+  "category": "component",
+  "evidence": "slice 1 '@ClimateHome', '#NetZero', 'https://t.co/UwoYc6zL8B'; text indented to x≈1077; 'All Tweets ›' link"
+ },
+ {
+  "observation": "A white partners band shows a 'Managing Partner' block: an italic serif label overlapping a bold sans 'Managing Partner' heading, with the WRI logo. A vertical divider separates it from the other partner logos (Coalition for Urban Transitions, Food and Land Use Coalition) and an 'All partners ›' link. The two heading texts overlap visibly.",
+  "category": "component",
+  "evidence": "slice 2 y≈340–527; wri_logo 110x38 at (277,1752); customlogo.png 154x34; folu.png 154x39; h2 and h3 both 'Managing Partner'"
+ },
+ {
+  "observation": "The footer is minimal and sits directly on the orange background. 'Careers ›' is at the left. 'Connect' at the right is followed by dark brown social glyphs: YouTube, LinkedIn, Google+, Facebook, Twitter. There is no footer element.",
+  "category": "component",
+  "evidence": "slice 2 y≈559; semantic footer: 0; svgs: 0, so the icons are raster or font glyphs"
+ },
+ {
+  "observation": "The page uses a flat, sharp-cornered visual language. No element has a border radius, there is one box shadow, no transitions or animations, and no transforms. The screenshot shows square cards, a square hero and hairline dividers.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0: 180, all other buckets 0; box_shadows 1; transitions 0; animations 0; transforms 0"
+ },
+ {
+  "observation": "The hero caption headline is white at about 30px and regular weight. It is followed inline by an orange 'Read More' in the same size, so the call to action reads as part of the sentence. The date above is grey and smaller.",
+  "category": "copy",
+  "evidence": "slice 1 caption 'Commentary: Defeating the Inequality Disease Must Become a Global Rallying Call Read More'; date 'April 14, 2021' in grey"
+ },
+ {
+  "observation": "Link text is sentence-case with a trailing '›' glyph as the arrow affordance: 'All news ›', 'See Past Events ›', 'All Tweets ›', 'All partners ›', 'Careers ›'. There are no filled buttons.",
+  "category": "copy",
+  "evidence": "primary_button: null; buttons: 0; chevron-suffixed links across slices 1 and 2"
+ },
+ {
+  "observation": "Headlines use a repeated 'Commentary:' prefix, so the news items read as an opinion series. Dates are written in long form ('April 6, 2021').",
+  "category": "copy",
+  "evidence": "headings 'Commentary: Defeating…', 'Commentary: The Climate Change Battle…', 'Commentary: A New Path…', 'Commentary: We must give women…'"
+ },
+ {
+  "observation": "The DOM is div-heavy and has few landmarks. It has 69 divs, 6 header elements and 8 articles, but zero nav, main, section, aside and footer. Teasers are wrapped in article and time tags.",
+  "category": "semantic",
+  "evidence": "tag_counts div 69, header 6, article 8, time 6; semantic nav/main/section/aside/footer all 0"
+ },
+ {
+  "observation": "The page has no ARIA attributes and no SVGs. All 5 images have an alt attribute, though three have empty alt (the hero and two partner logos). The heading outline carries several h2s that are hidden or utility labels such as 'Search form'.",
+  "category": "semantic",
+  "evidence": "aria_attrs 0; svgs 0; alt_missing 0; three images with alt ''"
+ },
+ {
+  "observation": "The CSS is class-based, not utility-based, with some inline styles. There are 112 unique classes across 267 class usages and 13 inline style attributes. The page loads 3 stylesheets, 6 style blocks and 32 scripts, which suggests a CMS (a generator meta tag is present).",
+  "category": "semantic",
+  "evidence": "classes total 267, unique 112, tailwind_like_fraction 0; inline_style_attrs 13; stylesheets 3; script 32; meta names include 'generator'"
+ },
+ {
+  "observation": "Layout relies on flexbox in about 10 places, with no CSS grid. The page is short: 1894px tall at 1440px wide, with only 168 words. It is image- and module-led more than text-heavy.",
+  "category": "layout",
+  "evidence": "display_flex 10, display_grid 0, page_height 1894, words 168"
+ },
+ {
+  "observation": "Body text is 16px with a tight 20px line height. Tweet text and small links use smaller sizes (~14–15px) in grey, while news links are about 17–18px.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 20px; slice 1 sidebar and tweet text sizes"
+ },
+ {
+  "observation": "The page title is a long brand string that ends with a trailing pipe and no page name: 'New Climate Economy | Commission on the Economy and Climate |'. The meta tags include MobileOptimized, HandheldFriendly and cleartype, which are legacy mobile-era tags.",
+  "category": "semantic",
+  "evidence": "title in facts.json; meta_names list; lang 'en'"
+ },
+ {
+  "observation": "The vertical rhythm has large blank bands of orange. These are about 80px between the hero and the card row and about 90px between the cards and the partners band. The modules float as discrete boxes on the background.",
+  "category": "layout",
+  "evidence": "hero ends at y≈913 and cards start at y≈993; cards end at about y=1551 (slice 2 y=251) and the partners band starts at about y=1641 (slice 2 y=341)"
+ },
+ {
+  "observation": "The dark #1f1f1f treatment appears in the hero caption and the Video card, giving two dark modules against the white ones. The Video card heading is white italic serif on the dark ground.",
+  "category": "color",
+  "evidence": "rgb(31,31,31) in top_backgrounds; slice 1 'Video' heading at (198,1030) on dark"
+ }
+]

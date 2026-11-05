@@ -1,0 +1,177 @@
+[
+ {
+  "observation": "The page title is just the brand name 'AEP Texas'. The document has lang='en' and no JSON-LD blocks.",
+  "category": "semantic structure",
+  "evidence": "facts.title='AEP Texas'; lang='en'; jsonld_blocks=0"
+ },
+ {
+  "observation": "Semantic landmarks are sparse: one nav and one footer, with no main, header, section, article or aside. The page is built from 638 divs and 267 anchors.",
+  "category": "semantic structure",
+  "evidence": "semantic: nav 1, footer 1, main 0, header 0, section 0; tag_counts div 638, a 267"
+ },
+ {
+  "observation": "There is exactly one h1, 'KNOWLEDGE IS POWER.', but the heading outline is irregular. It begins with an h2 'Processing your request' (a hidden loader) and has 30 h6 elements. Hidden modal headings such as 'Loading video...', the privacy policy and 'Welcome back!' appear in the outline.",
+  "category": "semantic structure",
+  "evidence": "h1_count=1; heading_outline starts with h2 'Processing your request'; h6 count 30; h4 'Scope', 'Consent'"
+ },
+ {
+  "observation": "The page carries a lot of hidden functional markup: a login form with 9 inputs and 9 buttons, an iframe, 26 scripts, and tracking pixels. The login form, privacy policy and video modal content are not visible in the screenshot.",
+  "category": "semantic structure",
+  "evidence": "tag_counts form 1, input 9, button 9, iframe 1, script 26; images 'px', 'pixel.gif' at 0x0 or 1x1"
+ },
+ {
+  "observation": "Legacy and non-standard elements appear in the markup, such as nobr (9), noindexfb, and hr (11).",
+  "category": "semantic structure",
+  "evidence": "tag_counts nobr 9, noindexfb 1, hr 11"
+ },
+ {
+  "observation": "A single typeface, din-2014, is used on all 1,382 counted elements. It has an Arial/Roboto/sans-serif fallback. The page shows a condensed, DIN-style geometric sans in both bold uppercase headings and light body text.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count [['din-2014',1382]]; h1 font_family 'din-2014, Arial, Roboto, sans-serif'"
+ },
+ {
+  "observation": "The hero h1 is large, bold, uppercase and brick red, left-aligned over the photo. The subcopy below it is light-weight dark gray.",
+  "category": "typography",
+  "evidence": "h1 66px, weight 700, rgb(175,34,24), text_align left; hero text visible in slice 1"
+ },
+ {
+  "observation": "The body text is large for body copy, with generous line height.",
+  "category": "typography",
+  "evidence": "body_font_size 20px, line_height 30px; body_color rgb(74,74,74)"
+ },
+ {
+  "observation": "Headings are set in uppercase bold in several places, in contrast to the light-weight sentence-case body. Examples are the main nav, the quick-link tiles, 'BRING HOME ENERGY SAVINGS', and the card titles on the image banners.",
+  "category": "typography",
+  "evidence": "Nav labels MY ACCOUNT/OUTAGES/SAVINGS; h2 'BRING HOME ENERGY SAVINGS' at 32px/700; 'SOLUTIONS FOR YOUR BUSINESS'"
+ },
+ {
+  "observation": "The lower three cards use sentence/title-case bold h3 headings, not uppercase. 'Enroll in outage alerts' is set in orange bold.",
+  "category": "typography",
+  "evidence": "h3 'View Your Meter Order Status', 'Confused About Outages?'; orange 'Enroll in outage alerts' in slice 2"
+ },
+ {
+  "observation": "Red is the dominant brand accent. It appears on the login button, the hero h1, the rule under the header, the footer band, the circular play-arrow icons, and the privacy link. Everything else is white, light gray and dark gray.",
+  "category": "color",
+  "evidence": "primary_button bg rgb(218,41,28); top_backgrounds rgb(218,41,28) x4; h1 rgb(175,34,24); top_text_colors rgb(218,41,28) x53"
+ },
+ {
+  "observation": "Neutrals dominate: a white body background, rgb(74,74,74) text on 1,222 elements, and light gray rgb(243,243,243) for the top utility bar and the separator bands.",
+  "category": "color",
+  "evidence": "body_bg rgb(255,255,255); body_color rgb(74,74,74); top_backgrounds rgb(243,243,243) x13"
+ },
+ {
+  "observation": "The quick-link icons each use a different accent color: blue for Electric Choice, orange for Report an Outage, teal for Start/Stop/Move Service, and green for Rates & Tariffs. The LED lightbulb icon is green and the outage-alert icon is orange. Links are blue rgb(0,120,170).",
+  "category": "color",
+  "evidence": "Icon strokes visible in slice 1 quick-link strip; top_text_colors rgb(0,120,170) x18"
+ },
+ {
+  "observation": "A thin gray utility bar sits at the top with a right-aligned 'ESPAÑOL' link and a globe icon. The main header below it holds the logo at left and the nav at right, with a thick red rule underneath.",
+  "category": "layout",
+  "evidence": "Slice 1: gray bar with ESPAÑOL at x~1250-1350; logo rect x70,y75,92x70; red line at y~172"
+ },
+ {
+  "observation": "The primary nav has five uppercase text links (My Account, Outages, Savings, Community, Contact). A solid red 'LOG IN' button with 8px radius follows them, then a magnifier search icon.",
+  "category": "component",
+  "evidence": "primary_button text 'LOG IN', radius 8px, padding 0 27px; nav count 1"
+ },
+ {
+  "observation": "The hero is a full-bleed photo of a smiling woman on a phone. A cream/white wash fades the left side so the red headline and dark text stay readable over the image. The text is left-aligned and the subject sits on the right.",
+  "category": "imagery",
+  "evidence": "Slice 1 hero y~175-620; no gradient backgrounds counted (gradient_backgrounds 0), so the wash is probably baked into the image"
+ },
+ {
+  "observation": "A semi-transparent white strip below the hero holds four quick-link tiles. Each pairs a circular outline icon with a two-line uppercase label, and thin vertical dividers separate them.",
+  "category": "component",
+  "evidence": "Slice 1 y~620-750: ELECTRIC CHOICE, REPORT AN OUTAGE, START, STOP, MOVE SERVICE, RATES & TARIFFS; rgba(255,255,255,0.23) x7 backgrounds"
+ },
+ {
+  "observation": "The 'Bring home energy savings' block is a two-column split. At left are a red h2, a paragraph and an outlined 'Learn about incentives' button. At right are a centered green lightbulb icon, a bold line of text and an outlined 'See how' button.",
+  "category": "layout",
+  "evidence": "Slice 1 y~810-1080; h2 32px/700; 'Learn about incentives' button x70-375, 'See how' x1112-1264"
+ },
+ {
+  "observation": "Secondary calls to action are consistent outlined buttons. They have a thin dark border, white fill, dark light-weight text and a small radius. Labels include Learn about incentives, See how, Sign up today, Track your order, Get answers, and How we're helping.",
+  "category": "component",
+  "evidence": "border_radius_buckets bucket_1_7 = 35; buttons visible across slices 1-3"
+ },
+ {
+  "observation": "The page uses almost no rounding. 1,346 elements have 0 radius, 35 have 1-7px, and only 1 has 8-15px (the Log In button). There are no pills.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets {0:1346, 1_7:35, 8_15:1, pill:0}"
+ },
+ {
+  "observation": "The page has no box shadows, gradients, backdrop blur, animations or transforms. Flat fills, borders and photography carry all the depth. There are 291 transitions, which suggest hover states.",
+  "category": "decoration",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, backdrop_blur 0, animations 0, transforms 0, transitions 291"
+ },
+ {
+  "observation": "The page uses flexbox for layout and no CSS grid. Content sits in a centered column roughly 1300px wide, with a 70px left margin on a 1440px viewport.",
+  "category": "layout",
+  "evidence": "display_flex 235, display_grid 0; page_width 1440; image rects x=70 to 1370"
+ },
+ {
+  "observation": "A wide promo banner with a text overlay spans the full content width. Its title is 'GET REVVED UP FOR ELECTRIC CARS', with the line 'What you should know before you buy electric' below. White text sits over a slate-blue tint on the left of the EV charger photo. The image's alt text is empty.",
+  "category": "imagery",
+  "evidence": "electric-car-image-aep-texas.jpg 1302x450 rendered at x70,y1137,1300x449; alt ''"
+ },
+ {
+  "observation": "Two half-width promo cards sit side by side with text overlaid on photographs. 'Solutions for your business' has white text on a dark laptop area. 'Are you new to AEP Texas' has dark text on a light living-room photo. Each card ends with a red circular play-arrow icon.",
+  "category": "component",
+  "evidence": "woman-in-white-blouse-on-laptop.jpg at x70,y1646,620x335; new-service.jpg at x750,y1646,620x337"
+ },
+ {
+  "observation": "The same red circular arrow icon works as an inline link affordance at the end of promo and hero copy. It appears after the hero sentence, the EV banner and both promo cards.",
+  "category": "component",
+  "evidence": "Red circle play icons visible after 'your family safe.', 'buy electric', 'and more.', 'new account here.'"
+ },
+ {
+  "observation": "A horizontal alert strip is framed above and below by thick light-gray bands. It has an orange lightning-bolt icon, an orange heading, one line of gray copy, and an outlined 'Sign up today' button at right.",
+  "category": "component",
+  "evidence": "Slice 2 y~743-985; gray bands rgb(243,243,243); 'Enroll in outage alerts'"
+ },
+ {
+  "observation": "A three-column card row follows. Each card has a photo, an h3, a short paragraph and an outlined button. The photos are all 393x278 and evenly spaced, and each is scaled down from a 515x364 source.",
+  "category": "layout",
+  "evidence": "meter-status.jpg x70, outages-faq.jpg x523, community.jpg x977, all y2345 w393 h278; natural 515x364"
+ },
+ {
+  "observation": "The photography is stock-style, with real people and places: a lineworker at a meter, a suburban house under a stormy sky, kids on bikes, and people on laptops and phones. Only the logo is SVG. There are 0 inline svgs, so the icons are probably image or font based.",
+  "category": "imagery",
+  "evidence": "counts svgs 0, images 11; TEXAS_Primary_RGB_RG.svg is the logo; JPG filenames"
+ },
+ {
+  "observation": "Alt text is mostly empty on the content photos. Only the logo ('Aep Texas') and the loader gif ('Loading...') have descriptive alt, and one image has no alt attribute.",
+  "category": "imagery",
+  "evidence": "alt_missing 1; alt '' on electric-car, woman-in-white-blouse, new-service, meter-status, outages-faq and community images"
+ },
+ {
+  "observation": "A full-width solid red band sits above the footer. It holds four centered bold uppercase white links: Safety, Company, Clean Energy, Business.",
+  "category": "component",
+  "evidence": "Slice 3 y~390-470; background rgb(218,41,28); text white"
+ },
+ {
+  "observation": "The footer starts with the large phrase 'Need help? Call us.' next to an outlined phone-number button, 866.223.8508. Below it are a globe 'ESPAÑOL' toggle and pipe-separated bold uppercase links (Visit AEP.com | Investors | Careers).",
+  "category": "component",
+  "evidence": "Slice 3 y~515-670"
+ },
+ {
+  "observation": "Footer legal text is small, with a bold red 'View our Privacy Policy' link and a 1996-2021 copyright line. Twitter, Facebook and YouTube glyph icons sit right-aligned in dark gray.",
+  "category": "copy",
+  "evidence": "Slice 3 '© 1996-2021 American Electric Power'; social icons at x~1250-1370"
+ },
+ {
+  "observation": "The copy is utility-service and informational. It is brief and imperative, with CTAs like 'Learn about incentives', 'Track your order' and 'Get answers'. The hero uses a pandemic scam-awareness message ('Due to the pandemic, scams have been on the rise'). The text is about 301 words in total.",
+  "category": "copy",
+  "evidence": "text_stats words 301, exclamations 1, em_dashes 1; hero and card copy"
+ },
+ {
+  "observation": "Vertical rhythm is airy. There are large gaps between sections, generous padding inside the banners, and 30px body line height. Content is arranged in left-aligned stacks, with centered text only in the LED block and the footer band.",
+  "category": "layout",
+  "evidence": "page_height 3372; slice spacing between sections ~60px; body line_height 30px"
+ },
+ {
+  "observation": "There is heavy ARIA use and a large list structure for a page with so little visible content. The markup has 141 ARIA attributes, 61 ul, 240 li and 26 inline style attributes. The class system is custom, with 294 unique classes and few utility classes.",
+  "category": "semantic structure",
+  "evidence": "aria_attrs 141; ul 61; li 240; inline_style_attrs 26; classes unique 294, tailwind_like_fraction 0.118"
+ }
+]

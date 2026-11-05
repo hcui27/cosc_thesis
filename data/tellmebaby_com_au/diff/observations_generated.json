@@ -1,0 +1,353 @@
+[
+ {
+  "observation": "The whole page sits in a fixed content column. Content runs from x=180 to x=1260 (1080px wide) inside a 1440px viewport, with equal side gutters. Headers, grids, the hero image and the footer all share these edges.",
+  "category": "layout",
+  "evidence": "Element x/w values: h1 180,1080; category cards start at 180 and end at 1260; footer links end at 1260; page_width 1440.",
+  "element_ids": [
+   "e12",
+   "e19",
+   "e43",
+   "e92",
+   "e233"
+  ]
+ },
+ {
+  "observation": "The header is a single bar 65px tall. The logo is on the left, the nav links follow it, and Login plus a pill 'Sign up' button are pushed to the right edge. A thin bottom border separates it from the hero.",
+  "category": "layout",
+  "evidence": "e1 0,0,1440,65; logo at x=180; nav at x=354; Login at x=1107; Sign up at 1163,9,97,46 with a 999px radius.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4",
+   "e9",
+   "e10"
+  ]
+ },
+ {
+  "observation": "The hero is centred. A very large bold H1 wraps onto two lines, with a one-line subtitle and a pill-shaped search form below it. The H1 is 54.4px, weight 700, centre-aligned, in dark slate rgb(32,39,44).",
+  "category": "typography",
+  "evidence": "facts h1 font_size 54.4px, text_align center; e12 is 120px tall (two lines); e13 subtitle at y=253.",
+  "element_ids": [
+   "e12",
+   "e13",
+   "e14"
+  ]
+ },
+ {
+  "observation": "The hero background is a soft peach-to-white vertical gradient (the one gradient background in the facts). A full-width-of-column photo sits on top of it and fades into the gradient at its edges.",
+  "category": "color",
+  "evidence": "gradient_backgrounds: 1; the hero div e11 is 0,65,1440,728; the screenshot shows pale pink fading to white behind the photo.",
+  "element_ids": [
+   "e11",
+   "e18"
+  ]
+ },
+ {
+  "observation": "The search form is a single pill. It has a dark 2px outline, a placeholder input, and a peach 'Search' button that is flush against the right end. The label is present but moved off-screen at x=-9999.",
+  "category": "component",
+  "evidence": "e14 420,305,600,51; e15 label at x=-9999; e17 button 913,307,105,47 in peach rgb(255,170,145).",
+  "element_ids": [
+   "e14",
+   "e15",
+   "e16",
+   "e17"
+  ]
+ },
+ {
+  "observation": "The hero photo is a wide 1440×540 lifestyle image of a mum holding a smiling baby's hand. It is scaled to 1080×405 and has soft or feathered edges with a faint rounded top. It is the only large photo above the fold, and its alt text is descriptive.",
+  "category": "imagery",
+  "evidence": "images[1] image-02.jpg natural 1440x540, rect 1080x405, alt 'A mum holding her smiling baby's hand'.",
+  "element_ids": [
+   "e18"
+  ]
+ },
+ {
+  "observation": "The palette is restrained and built from a few colours. Dark slate (32,39,44) is the text colour and the dark section background. Peach (255,170,145) is the accent for buttons, step badges and eyebrow labels. A pale blush (255,241,236) fills tinted bands. A burnt orange-red (196,71,42) is used for numbers, links and pills.",
+  "category": "color",
+  "evidence": "top_text_colors: 32,39,44 ×127; 255,170,145 ×38; 196,71,42 ×10; top_backgrounds include 255,241,236 ×6 and 255,170,145 ×5.",
+  "element_ids": []
+ },
+ {
+  "observation": "Typography uses only a system font stack (system-ui, -apple-system, Segoe UI, Roboto, sans-serif). There are no web fonts, no stylesheets and no scripts. All styling is in one inline <style> block.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count system-ui 274, Arial 2; stylesheets 0; scripts 0; tag_counts style 1.",
+  "element_ids": []
+ },
+ {
+  "observation": "Headings are consistently heavy and tightly tracked. H2s are 33.6px bold, left-aligned, and each is followed by a short grey one-line subtitle. The heading + subtitle pattern repeats across sections.",
+  "category": "typography",
+  "evidence": "h2 font_size 33.6px weight 700; subtitles 'Eight places to start.', 'Four simple steps.', 'What parents are reading and reviewing right now.', 'Fresh opinions from the community.'",
+  "element_ids": [
+   "e20",
+   "e21",
+   "e41",
+   "e42",
+   "e54",
+   "e55",
+   "e69",
+   "e70"
+  ]
+ },
+ {
+  "observation": "Body text is 16px on a 25.6px line height (1.6). Secondary text such as subtitles and review bylines is in mid-grey rgb(91,101,108).",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px; grey 91,101,108 used 10 times.",
+  "element_ids": [
+   "e21",
+   "e76",
+   "e81"
+  ]
+ },
+ {
+  "observation": "The category browser uses emoji as icons, not SVG or image icons. Eight white cards with a hairline border and rounded corners each hold a centred emoji above a bold label. They fill a six-column row, and the last two cards are left-aligned on the next row, leaving empty space on the right.",
+  "category": "component",
+  "evidence": "emoji count 8; svgs 0; cards e22–e36 are 168×112; row 1 has six cards at y=972 and row 2 has two at y=1098.",
+  "element_ids": [
+   "e22",
+   "e24",
+   "e26",
+   "e32",
+   "e34",
+   "e36"
+  ]
+ },
+ {
+  "observation": "Rounded corners are used almost everywhere. Cards sit in the 8–15px and 16px+ radius buckets. Buttons are fully rounded pills. No box-shadows are used, so depth comes from 1px borders and background tints.",
+  "category": "decoration",
+  "evidence": "box_shadows 0; border_radius buckets: 8_15 ×38, 16_plus ×22, pill ×9; primary button radius 999px.",
+  "element_ids": [
+   "e10",
+   "e17",
+   "e39",
+   "e49",
+   "e230"
+  ]
+ },
+ {
+  "observation": "Primary CTAs share one pill treatment: peach fill, dark bold text, and generous padding. They are 'Sign up', 'Search', 'View all categories', 'Join TMB Rewards' and 'Join now'. The two centred CTAs sit under card grids as standalone buttons.",
+  "category": "component",
+  "evidence": "primary_button bg rgb(255,170,145), color rgb(32,39,44), radius 999px, padding 10.64px 21.28px; e39 625,1229,191,48 centred; e49 626,1747,187,48 centred.",
+  "element_ids": [
+   "e10",
+   "e39",
+   "e49",
+   "e230"
+  ]
+ },
+ {
+  "observation": "The 'How it works' section is a full-bleed blush band holding an ordered list of four equal cards. Each card has a peach circular number badge and a short instruction. The band is followed by a centred CTA.",
+  "category": "layout",
+  "evidence": "e40 0,1357,1440,518 in blush rgb(255,241,236); ol e43 with four li at x=180/455/730/1005, each 255×179; badges are peach circles.",
+  "element_ids": [
+   "e40",
+   "e43",
+   "e44",
+   "e45",
+   "e46",
+   "e47"
+  ]
+ },
+ {
+  "observation": "A sponsored leaderboard banner (728×90) sits centred between sections. It has a tiny, letter-spaced uppercase 'SPONSORED' label above it and a generic alt text, 'Sponsored promotion'. It is the only third-party advertising on the page.",
+  "category": "imagery",
+  "evidence": "e50 small 'SPONSORED' at y=1903; e52 sunrice-ros-leaderboard.jpg 728×90 at x=356, wrapped in a link e51 that is 1080 wide.",
+  "element_ids": [
+   "e50",
+   "e51",
+   "e52"
+  ]
+ },
+ {
+  "observation": "The trending products section is a four-column row of cards. Each card has a large burnt-orange rank numeral, a bold product name, and a small pale-pink pill showing the review count in burnt-orange text. Only text is used in these cards, with no product imagery.",
+  "category": "component",
+  "evidence": "Cards e56, e59, e62 and e65 are 257×202; counts '119 reviews', '618 reviews', '94 reviews', '73 reviews' are spans of about 100×27; the numerals use rgb(196,71,42).",
+  "element_ids": [
+   "e56",
+   "e59",
+   "e62",
+   "e65",
+   "e58"
+  ]
+ },
+ {
+  "observation": "The 'Recent reviews' header is split on one row. The heading and subtitle sit on the left, and an underlined burnt-orange 'More reviews →' link is pushed to the right edge. The arrow is a text glyph.",
+  "category": "layout",
+  "evidence": "e69 at 180,2492,259 wide; e71 at 1138,2553,122,26 aligned to x=1260.",
+  "element_ids": [
+   "e69",
+   "e70",
+   "e71"
+  ]
+ },
+ {
+  "observation": "Recent reviews are four <article> cards in a three-column grid. The fourth card wraps alone onto a second row, leaving the right two columns empty. Each card has an underlined h3 link title, a short review excerpt, and a grey 'Review by Name' byline. There are no thumbnails or star ratings.",
+  "category": "component",
+  "evidence": "article count 4; e72, e77 and e82 at y=2607 with x=180/546/912; e87 at 180,2871; h3 count 5 including 'TMB Rewards'.",
+  "element_ids": [
+   "e72",
+   "e77",
+   "e82",
+   "e87",
+   "e74",
+   "e76"
+  ]
+ },
+ {
+  "observation": "The award winners section inverts to a dark slate band (rgb 32,39,44) with white text, and it holds the densest content on the page. It contains 31 cards in a four-column grid, with a slightly lighter slate fill and a thin border on each card. The band is about 1645px tall, over a quarter of the 6029px page.",
+  "category": "layout",
+  "evidence": "e92 0,3155,1440,1645; cards are 261px wide at x=180/453/726/999; background colours 'rgb(32,39,44)' ×2.",
+  "element_ids": [
+   "e92",
+   "e95",
+   "e98",
+   "e101",
+   "e104"
+  ]
+ },
+ {
+  "observation": "Each award card has two lines. A small, bold, letter-spaced uppercase category label in peach sits above a bold white product name. Card heights vary (109–149px) with the amount of text. Long labels wrap to two or three lines, for example 'BABY VITAMINS AND SUPPLEMENTS (INCLUDING PROBIOTICS)'. The last row has only two cards.",
+  "category": "typography",
+  "evidence": "e96 'BABY BOTTLE' 223×20; e132 label 223×60 (three lines); card heights 135/149/109/129; final row e203, e206 at y=4627.",
+  "element_ids": [
+   "e96",
+   "e97",
+   "e132",
+   "e147",
+   "e153",
+   "e203"
+  ]
+ },
+ {
+  "observation": "The award cards are text-only links with no product photos, badges or trophies. The 'Award' idea is carried only by the section heading ('2021 Tell Me Baby Award Winners') and the category labels. The 2021 date stays in a page whose footer is also dated 2021.",
+  "category": "copy",
+  "evidence": "e93 heading; footer e236 '© Tell Me Media Pty Ltd 2021'; no img elements inside e92.",
+  "element_ids": [
+   "e93",
+   "e236",
+   "e95"
+  ]
+ },
+ {
+  "observation": "'Recent articles' is a plain <ul> of five full-width rows. Each row is a text link ending in a '→' glyph, separated from the next by a hairline rule. The headline is the only content, with no thumbnails, dates or excerpts. A 'Read more →' link is right-aligned to the heading.",
+  "category": "component",
+  "evidence": "ul e212 180,4954,1080,299; five li of about 60px; link texts such as 'Competition: win 1 of 10 Mamas & Papas silver rattles →'; e211 'Read more →'.",
+  "element_ids": [
+   "e209",
+   "e211",
+   "e212",
+   "e214",
+   "e222"
+  ]
+ },
+ {
+  "observation": "The About section is a two-column split. Copy and a blush 'TMB Rewards' callout card are on the left (516px wide). A group photo with a decorative dotted peach overlay is on the right. The overlay image (110×79) overlaps the photo's top-right corner by about 5500px² in area. The photo has a curved-cut left edge and a navy backdrop.",
+  "category": "layout",
+  "evidence": "e224–e227 at x=180 width 516; e232 picture-alt.png 775,5405,454,295; e231 tmb-dots-peach.png 1129,5381,110,79; image_overlaps area 5500.",
+  "element_ids": [
+   "e225",
+   "e227",
+   "e231",
+   "e232"
+  ]
+ },
+ {
+  "observation": "The TMB Rewards callout is a rounded blush card. It has an h3 (the only h3 outside the review cards), a short paragraph naming the retailers Kmart, Coles and Target, and a peach 'Join now' pill. It repeats the rewards pitch made earlier by 'Join TMB Rewards'.",
+  "category": "component",
+  "evidence": "e227 180,5580,516,207; e228 h3 'TMB Rewards'; e229 text; e230 'Join now' 114×48; e49 'Join TMB Rewards'.",
+  "element_ids": [
+   "e227",
+   "e228",
+   "e229",
+   "e230",
+   "e49"
+  ]
+ },
+ {
+  "observation": "The footer is a dark slate band with the logo and copyright on the left and three underlined white social text links (Facebook, Instagram, YouTube) on the right. The SVG logo is placed on a white rectangle on the dark background. It is the same 150×40 file as in the header and has not been recoloured for the dark ground.",
+  "category": "imagery",
+  "evidence": "e233 0,5852,1440,178; e235 logo 150×40; links e237–e239 at y=5929; TellMeBaby-logo.svg is used twice.",
+  "element_ids": [
+   "e233",
+   "e234",
+   "e235",
+   "e237",
+   "e238",
+   "e239"
+  ]
+ },
+ {
+  "observation": "The page uses native semantic landmarks: one header, one nav, one main, seven sections each with an h2, four articles, and one footer. There is exactly one H1, and the outline runs h1 → h2 → h3 without skipping levels. There are no aside, figure or blockquote elements.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 7, article 4, footer 1, aside 0, figure 0; h1_count 1; heading_outline.",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e19",
+   "e72",
+   "e233"
+  ]
+ },
+ {
+  "observation": "Class use is small and mostly semantic. There are 211 class instances across 42 unique classes, and only about 1% look Tailwind-like. Most of the page is built from flex (58 elements) and grid (6 elements) containers, with few inline style attributes (4).",
+  "category": "structure",
+  "evidence": "classes total 211, unique 42, tailwind_like_fraction 0.009; display_flex 58, display_grid 6; inline_style_attrs 4.",
+  "element_ids": []
+ },
+ {
+  "observation": "Interaction polish is limited to CSS transitions (55 elements). There are no animations, transforms or backdrop blur. Images carry full alt text (alt_missing 0), and the decorative dots image has an empty alt. About 15 aria attributes are present.",
+  "category": "decoration",
+  "evidence": "transitions 55, animations 0, transforms 0, backdrop_blur 0; alt_missing 0; images[3] alt ''; aria_attrs 15.",
+  "element_ids": [
+   "e231"
+  ]
+ },
+ {
+  "observation": "The page is a long single scroll (6029px) of alternating background bands: white, blush, white, white, dark slate, white. Each band is a full-width section with generous vertical padding of roughly 64px above the h2. Dark and tinted bands mark the major content breaks.",
+  "category": "layout",
+  "evidence": "Sections at y=793, 1357, 2046, 2492, 3155, 4800, 5317; page_height 6029; h2 sits about 64px below each section top (e.g. e19 y=793, e20 y=857).",
+  "element_ids": [
+   "e19",
+   "e40",
+   "e53",
+   "e68",
+   "e92",
+   "e209",
+   "e223"
+  ]
+ },
+ {
+  "observation": "The copy is plain and friendly, written in Australian English. Examples are 'mum', 'dummies', 'prams', 'Moisturiser' and 'Steriliser'. It is short and declarative, with no exclamation marks or em dashes. Subtitles are brief fragments such as 'Eight places to start.' and 'Four simple steps.'",
+  "category": "copy",
+  "evidence": "lang en-AU; text_stats exclamations 0, em_dashes 0, words 760; title 'Baby product reviews by Australian parents'.",
+  "element_ids": [
+   "e13",
+   "e21",
+   "e42",
+   "e225"
+  ]
+ },
+ {
+  "observation": "Navigation and link styling vary by context. Header nav links are bold, dark and undecorated. Review titles and 'More reviews →' / 'Read more →' links are underlined, and the latter two are burnt-orange. Footer social links are underlined white. There are 76 anchors in total, and many are whole-card links (category tiles, trending cards, award tiles).",
+  "category": "component",
+  "evidence": "a count 76; e5–e8 nav; e74 h3 anchor; e71 and e211 orange underlined; cards e22, e56 and e95 are anchors wrapping spans/strong.",
+  "element_ids": [
+   "e5",
+   "e74",
+   "e71",
+   "e211",
+   "e237",
+   "e22"
+  ]
+ },
+ {
+  "observation": "The dark award section uses the same card shape as the white sections (rounded corners and a thin border) but inverts the fill to a slightly lighter slate. The component vocabulary stays consistent across light and dark bands: bordered rounded tiles with 23px internal padding.",
+  "category": "decoration",
+  "evidence": "White category cards e22 are 168×112 and dark award cards e95 are 261×135; text sits 19–23px inside the card edge (e96 x=199 vs card x=180; e23 offset 23px in the review articles, e73 x=203 vs 180).",
+  "element_ids": [
+   "e22",
+   "e56",
+   "e72",
+   "e95"
+  ]
+ }
+]

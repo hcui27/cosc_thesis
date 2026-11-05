@@ -1,0 +1,431 @@
+[
+ {
+  "observation": "Single-column marketing page with a fixed ~1068px content column (x=186 to 1254) centered in a 1440px viewport. Every section aligns to the same left edge at x=186.",
+  "category": "layout",
+  "evidence": "Section headings, cards and footer columns all start at x=186 and end at 1254; page_width 1440.",
+  "element_ids": [
+   "e26",
+   "e58",
+   "e80",
+   "e113",
+   "e128",
+   "e148"
+  ]
+ },
+ {
+  "observation": "A thin dark-navy utility bar sits above the header. It holds right-aligned small links (My Account, Contact Us, Cart).",
+  "category": "component",
+  "evidence": "e1 is 1440x34 with background rgb(20,55,85) (a top-background colour used twice). Links sit at x≈1037–1254.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e3",
+   "e4"
+  ]
+ },
+ {
+  "observation": "The header is a white bar with a text-only wordmark on the left and a horizontal nav list on the right. There is no logo image. The wordmark has a smaller 'by Chief Architect®' line in a <small> tag.",
+  "category": "component",
+  "evidence": "header e5 is 76px tall. e6 holds the text wordmark and e7 is a <small>. nav ul e8 has 8 items (Products … HomeTalk Forum) at x 528–1254. svgs count is 0.",
+  "element_ids": [
+   "e5",
+   "e6",
+   "e7",
+   "e8"
+  ]
+ },
+ {
+  "observation": "The hero uses a two-column split. Left: h1, paragraph, promo badge, two buttons and three link lists. Right: a single product box image with a soft shadow. The hero sits on a pale grey-blue band (rgb(243,246,249)).",
+  "category": "layout",
+  "evidence": "e25 spans 0,111,1440x767. The text column is 600px wide. The figure e31 is at x=826 with a 260x368 image. box_shadows count is 2.",
+  "element_ids": [
+   "e25",
+   "e26",
+   "e31",
+   "e32"
+  ]
+ },
+ {
+  "observation": "The h1 is large, bold and dark navy, wrapping onto two lines. It is the only h1 on the page.",
+  "category": "typography",
+  "evidence": "h1 font_size 46px, weight 700, color rgb(20,55,85). h1_count 1, text 'Home design software for DIY users'.",
+  "element_ids": [
+   "e26"
+  ]
+ },
+ {
+  "observation": "One system-ui sans-serif stack is used throughout, with no webfont or serif contrast. Hierarchy comes from size and weight only.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count lists only system-ui (292 elements). stylesheets 0. Body is 17px with 27.2px line height (1.6). h2 is 32px bold.",
+  "element_ids": []
+ },
+ {
+  "observation": "The hero paragraph is set in muted grey-blue at a slightly larger size than the body. It uses a generous line height and reads as a lead-in.",
+  "category": "typography",
+  "evidence": "e27 is 600x152 for 5 lines. Rendered colour is grey (rgb(86,101,116) appears among the top text colours).",
+  "element_ids": [
+   "e27"
+  ]
+ },
+ {
+  "observation": "An orange filled badge/link, 'Home Designer Pro 2021 for $59/mo.', is the only warm-coloured filled element. It sits above the buttons with dark text.",
+  "category": "color",
+  "evidence": "e28 is 330x43. The background rgb(217,130,43) appears once in top_backgrounds.",
+  "element_ids": [
+   "e28"
+  ]
+ },
+ {
+  "observation": "The CTA pair uses a filled navy primary button beside an outlined secondary button. Both have a 6px radius and bold text.",
+  "category": "component",
+  "evidence": "primary_button 'Download Trial Version' bg rgb(31,78,121), white text, radius 6px, padding 11px 20px. e30 'Purchase Software' is outlined at x=418.",
+  "element_ids": [
+   "e29",
+   "e30"
+  ]
+ },
+ {
+  "observation": "The same filled/outlined button pairing repeats down the page: Buy buttons vs Learn More, Compare Features, and Go to Shopping Cart vs Upgrades & Discounts.",
+  "category": "component",
+  "evidence": "e88, e95, e103 and e125 are filled. e108 and e159 are outlined. e158 is filled.",
+  "element_ids": [
+   "e88",
+   "e95",
+   "e103",
+   "e108",
+   "e125",
+   "e158"
+  ]
+ },
+ {
+  "observation": "Beneath the hero CTAs are three mini link columns (DOWNLOAD / EXPLORE / LEARN). Their small uppercase letter-spaced h3 labels carry an orange underline accent. The links below are underlined blue.",
+  "category": "component",
+  "evidence": "h3 e33, e39 and e49 sit at y=619 and x=186, 394 and 602. Each list is 184px wide with underlined links.",
+  "element_ids": [
+   "e33",
+   "e39",
+   "e49",
+   "e34",
+   "e40",
+   "e50"
+  ]
+ },
+ {
+  "observation": "Heading levels skip and mix. After the h1, the hero label columns use h3 with no h2. Footer column titles use h4 with no h3 above them. The heading outline has 13 h3s, 5 h2s and 5 h4s.",
+  "category": "semantic",
+  "evidence": "heading_outline runs h1, h3, h3, h3, h2, h3 …, then h4 ×5 in the footer.",
+  "element_ids": [
+   "e33",
+   "e39",
+   "e49",
+   "e161"
+  ]
+ },
+ {
+  "observation": "Section backgrounds alternate white and pale grey-blue (rgb(243,246,249)) bands: hero grey, features white, product lineup grey, why-choose white, learn-more grey, purchase white. A dark navy footer closes the page.",
+  "category": "color",
+  "evidence": "The 3 pale backgrounds in top_backgrounds correspond to sections e25, e79 and e127. Footer e160 is navy.",
+  "element_ids": [
+   "e25",
+   "e57",
+   "e79",
+   "e112",
+   "e127",
+   "e147",
+   "e160"
+  ]
+ },
+ {
+  "observation": "Palette is a restrained navy-blue family plus one orange accent. Headings and links are navy or blue, and orange appears only in the badge, label underlines and checkmarks.",
+  "category": "color",
+  "evidence": "Colours: rgb(20,55,85), rgb(31,78,121), rgb(217,130,43), body text rgb(27,39,51), white text rgb(219,230,240) in the footer.",
+  "element_ids": [
+   "e28",
+   "e33",
+   "e118"
+  ]
+ },
+ {
+  "observation": "The Features section is a 3x2 grid of bordered white cards. Each has an h3 title and a grey paragraph. Cards in a row share equal height, so shorter text leaves empty space at the bottom.",
+  "category": "layout",
+  "evidence": "Six cards at 343x269 or 343x242, x=186, 549 and 911, 20px gutters. e62 has an 82px paragraph inside a 269px card.",
+  "element_ids": [
+   "e59",
+   "e62",
+   "e65",
+   "e68",
+   "e72",
+   "e75"
+  ]
+ },
+ {
+  "observation": "The feature cards are text-only with no icons or images. Two contain inline links ('3D Library', 'Browse the Samples Gallery').",
+  "category": "imagery",
+  "evidence": "The feature divs contain only h3 and p. Links e71 and e78 sit inside paragraphs.",
+  "element_ids": [
+   "e60",
+   "e71",
+   "e78"
+  ]
+ },
+ {
+  "observation": "The feature cards use thin light borders and a small radius with no shadow.",
+  "category": "decoration",
+  "evidence": "Border radius buckets: 12 elements at 1–7px and 14 at 8–15px. Only 2 box shadows exist, both on product images.",
+  "element_ids": [
+   "e59",
+   "e62",
+   "e65"
+  ]
+ },
+ {
+  "observation": "The product lineup is a four-column card row. Each card is centered and holds a box-shot image, a product name, a price and a CTA pinned at the same baseline.",
+  "category": "layout",
+  "evidence": "Cards are 252x477 at x=186, 458, 730 and 1002. All CTAs sit at y=2225, even though the h3 and price positions differ.",
+  "element_ids": [
+   "e82",
+   "e89",
+   "e96",
+   "e104"
+  ]
+ },
+ {
+  "observation": "Prices are shown as a large bold current price beside a smaller struck-through list price. The <s> tag marks the old price.",
+  "category": "typography",
+  "evidence": "Three <s> elements: $129, $249 and $595. Shown as '$99 $129', '$199 $249' and '$495 $595'.",
+  "element_ids": [
+   "e85",
+   "e86",
+   "e92",
+   "e93",
+   "e99",
+   "e100"
+  ]
+ },
+ {
+  "observation": "The fourth card breaks the pattern. It has no price and an outlined 'Learn More' button instead of a filled buy button. Its description is a smaller paragraph.",
+  "category": "component",
+  "evidence": "e104 contains h3, p e107 and outlined button e108. The other three cards have prices and filled buttons.",
+  "element_ids": [
+   "e104",
+   "e107",
+   "e108"
+  ]
+ },
+ {
+  "observation": "The product box images are small raster PNGs shown at their natural 130x184 size. The hero and 'Why choose' images are the same 348x492 file scaled to 260x368 and 280x396.",
+  "category": "imagery",
+  "evidence": "images list: suite.png, architectural.png, professional.png and premier.png at 130x184 natural. professional_2.png is used twice.",
+  "element_ids": [
+   "e83",
+   "e90",
+   "e97",
+   "e105",
+   "e32",
+   "e126"
+  ]
+ },
+ {
+  "observation": "Imagery is limited to six product box shots, with no photography, illustration or icons. All images have alt text. The hero and 'Why choose' images carry a soft drop shadow.",
+  "category": "imagery",
+  "evidence": "counts: images 6, svgs 0, alt_missing 0. Shadows are on the 260x368 and 280x396 images (box_shadows 2).",
+  "element_ids": [
+   "e32",
+   "e126"
+  ]
+ },
+ {
+  "observation": "The card names wrap unevenly. 'Home Designer Architectural' and 'Chief Architect Professional Software' take two lines (61px high) and push the price and body text lower than the one-line cards.",
+  "category": "layout",
+  "evidence": "h3 e91 and e106 are 61px tall. e84 and e98 are 30px. Price blocks are at y=2085 for Suite and Pro, and y=2116 for Architectural.",
+  "element_ids": [
+   "e84",
+   "e91",
+   "e98",
+   "e106"
+  ]
+ },
+ {
+  "observation": "A bold, underlined 'Compare Products →' text link follows the cards, left-aligned, with an arrow glyph.",
+  "category": "component",
+  "evidence": "e110 and e111 (<b> inside <a>) at 186,2326, 172x20.",
+  "element_ids": [
+   "e109",
+   "e110",
+   "e111"
+  ]
+ },
+ {
+  "observation": "'Why choose Home Designer' is a two-column block. A text column of 748px holds a lead line, a paragraph and a checkmark list. The product box image floats at the right, 280px wide.",
+  "category": "layout",
+  "evidence": "h2 e113 is 748 wide. The image e126 is at x=974, y=2487, 280x396.",
+  "element_ids": [
+   "e113",
+   "e114",
+   "e115",
+   "e117",
+   "e126"
+  ]
+ },
+ {
+  "observation": "The benefit list uses orange checkmark bullets in place of default discs. Inline links in the items are underlined blue.",
+  "category": "decoration",
+  "evidence": "Four li items (e118–e123) with orange ✓ markers in the screenshot. Links e120, e122 and e124.",
+  "element_ids": [
+   "e117",
+   "e118",
+   "e119",
+   "e121",
+   "e123"
+  ]
+ },
+ {
+  "observation": "'Learn more' is just two columns of underlined text links on a grey band, with four links per column. There are no icons or descriptions.",
+  "category": "component",
+  "evidence": "ul e129 and e138 are each 520px wide, with 4 li each at 31–32px spacing.",
+  "element_ids": [
+   "e127",
+   "e129",
+   "e138"
+  ]
+ },
+ {
+  "observation": "The 'Purchase options' section uses four equal bordered info boxes. Each has a small uppercase bold label and a value text. They read as static descriptors rather than interactive controls.",
+  "category": "component",
+  "evidence": "e150, e152, e154 and e156 are 258x156 at x=186, 456, 726 and 996. Labels are <b> tags (PRODUCT (MAC & PC), MEDIA, BACKUP MEDIA, PRICE DISPLAY). counts: buttons 0.",
+  "element_ids": [
+   "e150",
+   "e152",
+   "e154",
+   "e156"
+  ]
+ },
+ {
+  "observation": "Small uppercase, letter-spaced labels are a recurring typographic device. They appear in the hero link columns, the purchase boxes and the footer headings.",
+  "category": "typography",
+  "evidence": "h3 DOWNLOAD / EXPLORE / LEARN, <b> labels in e151–e157, h4 PRODUCTS / PROJECT TYPE / USER CENTER / SUPPORT / COMPANY.",
+  "element_ids": [
+   "e33",
+   "e151",
+   "e161",
+   "e187"
+  ]
+ },
+ {
+  "observation": "Section headings (h2) share a pattern: left-aligned, navy, 32px bold, with about 60px of padding above. Sections have uniform vertical rhythm and no decorative dividers.",
+  "category": "typography",
+  "evidence": "h2 e58, e80, e113, e128 and e148 sit about 60px below each section top, e.g. section at y=877 with h2 at y=937. h2 is 32px, weight 700.",
+  "element_ids": [
+   "e58",
+   "e80",
+   "e113",
+   "e128",
+   "e148"
+  ]
+ },
+ {
+  "observation": "The footer is a navy block with five link columns. Four columns sit in a 4-up row at x=186, 460, 734 and 1008, and COMPANY wraps to a second row. Links are white or pale text, and the long lists make the footer tall (848px).",
+  "category": "layout",
+  "evidence": "footer e160 is 0,3715,1440x848. h4 at y=3763 (x=186, 460, 734, 1008) and e231 COMPANY at y=4157. Products ul has 12 items.",
+  "element_ids": [
+   "e160",
+   "e161",
+   "e187",
+   "e199",
+   "e219",
+   "e231"
+  ]
+ },
+ {
+  "observation": "The footer ends with a hairline divider, an inline row of social/community text links with no icons, and a small copyright line. Terms and Privacy are inline links in it.",
+  "category": "component",
+  "evidence": "e249 has 7 text links (HomeTalk … Pinterest) at y=4465. Copyright p e257 reads '© 2003–2021 Chief Architect, Inc.'",
+  "element_ids": [
+   "e249",
+   "e250",
+   "e257",
+   "e258",
+   "e259"
+  ]
+ },
+ {
+  "observation": "The page is link-dense. Many destinations repeat across the nav, hero, body and footer, such as Compare Products, Trial Download, Samples Gallery and Training/Overview Videos.",
+  "category": "copy",
+  "evidence": "94 anchors against 68 li. 'Compare Products' appears in e110, e132, e174; 'Satisfaction Guarantee' appears in e140 and e244.",
+  "element_ids": [
+   "e110",
+   "e132",
+   "e174",
+   "e140",
+   "e244"
+  ]
+ },
+ {
+  "observation": "The copy is feature-and-price oriented. It uses plain declarative sentences with no exclamations, emoji or em dashes, and repeated superlatives such as 'top-rated', 'best' and 'highest quality'. A '2021' version and an old copyright date mark it as a dated product page.",
+  "category": "copy",
+  "evidence": "text_stats: words 640, emoji 0, em_dashes 0, exclamations 0. Hero text says 'top-rated 3D interior design…', and purchase labels say 'Home Designer Pro 2021'.",
+  "element_ids": [
+   "e27",
+   "e114",
+   "e115"
+  ]
+ },
+ {
+  "observation": "Links in body content are underlined blue by default. This is the main link style outside the nav and footer, which are not underlined.",
+  "category": "decoration",
+  "evidence": "Underlined links in e36, e38, e42–e56, e71, e116, e131 and similar. Nav links e10–e24 are plain dark text.",
+  "element_ids": [
+   "e36",
+   "e42",
+   "e71",
+   "e116",
+   "e10"
+  ]
+ },
+ {
+  "observation": "The page is sparse in effects. It has no gradients, blur, transitions, animations or transforms. The only depth cues are two image shadows and thin card borders.",
+  "category": "decoration",
+  "evidence": "effects: gradient_backgrounds 0, backdrop_blur 0, transitions 0, animations 0, transforms 0, box_shadows 2.",
+  "element_ids": []
+ },
+ {
+  "observation": "Most elements are square-cornered. Only buttons, cards and the badge are rounded, at 6px and about 8–12px.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 266, bucket_1_7 12, bucket_8_15 14, bucket_16_plus 0, pill 0. The primary button radius is 6px.",
+  "element_ids": [
+   "e29",
+   "e59",
+   "e82",
+   "e150"
+  ]
+ },
+ {
+  "observation": "The DOM is semantic and hand-authored. It has header, nav, main, five section elements and footer, a figure for the hero image (with no figcaption), and nested ul/li lists. There are no scripts or external stylesheets, one <style> block and a single inline style attribute. Class usage is small (22 unique classes) with no Tailwind-like utilities.",
+  "category": "semantic",
+  "evidence": "semantic: header 1, nav 1, main 1, section 5, footer 1, figure 1, figcaption 0. scripts 0, stylesheets 0, inline_style_attrs 1, tailwind_like_fraction 0, aria_attrs 1.",
+  "element_ids": [
+   "e5",
+   "e8",
+   "e31",
+   "e57",
+   "e160"
+  ]
+ },
+ {
+  "observation": "Layout is built with CSS grid and flex: 9 grid and 10 flex containers. They drive the 3-column feature grid, the 4-column product and purchase rows and the footer columns.",
+  "category": "layout",
+  "evidence": "layout: display_grid 9, display_flex 10. Equal column offsets of 363px (feature cards) and 272px (product cards).",
+  "element_ids": [
+   "e57",
+   "e79",
+   "e147",
+   "e160"
+  ]
+ },
+ {
+  "observation": "The document has a descriptive title ('Home Designer Software – DIY Home Design Software') and a meta description. It declares lang=en and has no JSON-LD.",
+  "category": "semantic",
+  "evidence": "facts: title as quoted, meta_names include description, lang 'en', jsonld_blocks 0.",
+  "element_ids": []
+ }
+]

@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "The first screenshot slice (about 1300px tall) is entirely blank white. The page top, including the header and nav, shows no visible content. The facts list 4 nav elements and an h1, but the h1 text is empty.",
+  "category": "layout",
+  "evidence": "slice_slice_00.png is plain white; facts.json h1.text is \"\" with h1_count 1"
+ },
+ {
+  "observation": "The only h1 has empty text, so the document has no visible primary heading. It is styled at 38px, weight 600, Open Sans, dark navy rgb(0,37,58).",
+  "category": "typography",
+  "evidence": "facts.json h1: text \"\", font_size 38px, font_weight 600, color rgb(0,37,58)"
+ },
+ {
+  "observation": "The heading outline is irregular. It has an empty h1, then two h3s whose text reads like internal template labels ('Desktop - Organic (+ types)', 'Mobile - IMS with Types'), then three h2s: Payment Processing, Finance & Banking, Research & Stats.",
+  "category": "semantic-structure",
+  "evidence": "heading_outline in facts.json: h1, h3, h3, h2, h2, h2"
+ },
+ {
+  "observation": "The page is built almost entirely from generic containers. It has 405 divs and 188 spans, against 15 sections and 4 navs. There is no header, main, footer, article, aside or figure element.",
+  "category": "semantic-structure",
+  "evidence": "tag_counts div 405, span 188, section 15; semantic header 0, main 0, footer 0, figure 0"
+ },
+ {
+  "observation": "The markup is heavy with form controls that are not visible in the screenshots. It has 174 inputs, 113 labels, 5 selects with 55 options, and 3 forms, plus 3 iframes. These are probably hidden or collapsed multi-step lead-quote forms.",
+  "category": "component",
+  "evidence": "tag_counts input 174, label 113, select 5, option 55, form 3, iframe 3"
+ },
+ {
+  "observation": "The page ships with a large amount of script and style weight. It has 95 script tags, 62 link tags, 44 stylesheets, 9 style blocks and 304 inline style attributes. The class names look like a page-builder's, not utility-first: 416 unique classes and a tailwind-like fraction of 0.002.",
+  "category": "dom-structure",
+  "evidence": "counts scripts 95, stylesheets 44, inline_style_attrs 304; classes unique 416, tailwind_like_fraction 0.002"
+ },
+ {
+  "observation": "The body copy is small and grey: 14px with a 25.2px line-height (1.8) in mid-grey rgb(146,146,146). The section descriptions ('Compare merchant accounts…') render as light grey paragraphs.",
+  "category": "typography",
+  "evidence": "body_font_size 14px, body_line_height 25.2px, body_color rgb(146,146,146)"
+ },
+ {
+  "observation": "Several font families are in use. Open Sans is on the most elements (534), then roboto (438) and Roboto (140), calibri (134), Font Awesome 5 Free (18) and eicons (2). The lowercase 'roboto' next to 'Roboto' suggests inconsistent declarations.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Open Sans 534, roboto 438, Roboto 140, calibri 134, Font Awesome 5 Free 18, eicons 2"
+ },
+ {
+  "observation": "Section headings (h2) are about 28px at weight 500, in a lighter dark-grey. Each sits in a left column beside its description.",
+  "category": "typography",
+  "evidence": "h2 font_size 28px, font_weight 500; 'Payment Processing' and 'Finance & Banking' h2s sit at x≈160 in slice 2"
+ },
+ {
+  "observation": "The Payment Processing and Finance & Banking blocks use a three-column row. Heading and paragraph sit on the left (x≈160–515), and two link columns sit at x≈540 and x≈920. The right third of the 1868px canvas is empty.",
+  "category": "layout",
+  "evidence": "slice 2: headings at x=160, link columns at x=540 and x=920, nothing right of x≈1200; page_width 1868"
+ },
+ {
+  "observation": "The link lists use small chevron-right icons as bullets. The links are in a bright cyan-blue, which matches the 154 elements coloured rgb(19,175,240). Each list has 3–4 items with tight spacing of about 25px.",
+  "category": "component",
+  "evidence": "top_text_colors rgb(19,175,240) 154; Font Awesome 5 Free on 18 elements; slice 2 shows '›' icons before each link"
+ },
+ {
+  "observation": "The link labels are plain, keyword-style navigation text such as Merchant Account Providers, Card Readers & Machines, Credit Card Processing Fees and Virtual Terminals. They are laid out as a directory-like hub of topical links.",
+  "category": "copy",
+  "evidence": "slice 2 link lists under Payment Processing and Finance & Banking"
+ },
+ {
+  "observation": "The palette is mostly white. Backgrounds are rgb(255,255,255) on 62 elements, with a pale blue-grey rgb(218,228,232) on 18. Accent fills are green rgb(69,187,92) on 16, violet-blue rgb(71,55,255) on 3 and orange-red rgb(249,66,19) on 2. In the screenshots only white, grey and cyan are visible.",
+  "category": "color",
+  "evidence": "colors.top_backgrounds list in facts.json"
+ },
+ {
+  "observation": "Text is split into a few tones. Mid grey rgb(146,146,146) is on 638 elements, darker grey rgb(105,105,105) on 406, cyan on 154, white on 32 and navy rgb(0,37,58) on 17. White text on 32 elements sits on backgrounds that don't show, which points to hidden coloured components.",
+  "category": "color",
+  "evidence": "colors.top_text_colors; screenshots show no coloured blocks"
+ },
+ {
+  "observation": "The Research & Stats row is a row of thumbnail cards laid out horizontally. Only two images load: a blue isometric analytics illustration (208×139, labelled 'UK SMEs') and a hooded-hacker illustration (208×139, labelled 'Payment Fraud'). Each has a small grey caption underneath.",
+  "category": "imagery",
+  "evidence": "images charts.jpg rect 160,1891 208×139; payment-fraud-stats.jpg rect 1072,1891 208×139; captions in slice 2"
+ },
+ {
+  "observation": "The two middle stat images are broken. They render as broken-image icons, with their alt text ('mobile proximity payment statistics', 'remote working statistics', 'Homepage (New…') spilling over each other in cyan link colour at around y≈604.",
+  "category": "imagery",
+  "evidence": "slice 2 shows broken-image icons at x≈388 and x≈616 and overlapping alt text; natural size [0,0] for proximity-payments, Mobile-Ecommerce and remote-working images"
+ },
+ {
+  "observation": "Four stat images are laid out with a 228px step (x=160, 388, 616, 844, 1072) but the measured rectangles are 1024px wide. The images therefore overlap heavily, with overlap areas of 386,808 to 546,852 px². The oversized dimensions come from unloaded images at their intrinsic 1024-wide attributes.",
+  "category": "layout",
+  "evidence": "image_overlaps: proximity vs Mobile-Ecommerce 542076 px²; rects w 1024 at x 388, 616, 844"
+ },
+ {
+  "observation": "The captions ('Mobile Payments', 'Remote Working', 'Mobile Ecommerce') are staggered, and some are pushed far down the page. They sit about 530px below the image row, with 'Mobile Ecommerce' at x≈616 in the footer slice, because the broken images keep their large layout height.",
+  "category": "layout",
+  "evidence": "slice 2 bottom 'Mobile Payments' at y≈1295; slice 3 'Remote Working' and 'Mobile Ecommerce' at y≈6 and y≈86"
+ },
+ {
+  "observation": "There is a large vertical gap of empty white space, about 500px, between the Research & Stats cards and the footer text. It comes from image boxes reserving height but showing nothing.",
+  "category": "layout",
+  "evidence": "slice 2 y≈780–1290 blank; rects of 681–769px height for stat images; page_height 2877"
+ },
+ {
+  "observation": "The footer is plain. It has a small grey legal block (copyright 2021, company number 09017066, Reading address) with tight line spacing of about 14px. Privacy Policy and Terms Of Use links sit below it in cyan.",
+  "category": "copy",
+  "evidence": "slice 3 text 'Copyright © ALL RIGHTS RESERVED 2021 / Merchant Savvy is a division of VUBO Ltd… Address: Spaces, 9 Greyfriars Rd, Reading, RG1 1NU'"
+ },
+ {
+  "observation": "The footer is not wrapped in a footer element. Its text is left-aligned at x≈150, which doesn't match the x=160 content edge above.",
+  "category": "semantic-structure",
+  "evidence": "semantic footer 0; slice 3 legal text at x=150 vs slice 2 headings at x=160"
+ },
+ {
+  "observation": "A strip of payment-method logos closes the page (Verified by Visa, Mastercard SecureCode, Maestro, JCB, Amex, Discover, Diners Club, contactless, Apple Pay, Android Pay, PayPal). It is a single 528×23 image, 'payment-types-top.png', shown in greyscale.",
+  "category": "imagery",
+  "evidence": "image payment-types-top.png rect 171,2834 528×23; visible at the bottom of slice 3"
+ },
+ {
+  "observation": "The page has little decoration. 1179 elements have no border radius and 81 have 1–7px. Only 6 have 8–15px and none are pill-shaped. There are 12 box-shadows, 2 gradient backgrounds, no backdrop blur and no animations. There are 377 transition declarations and 6 transforms.",
+  "category": "decoration",
+  "evidence": "effects: border_radius_buckets bucket_0 1179, bucket_1_7 81, bucket_8_15 6; box_shadows 12; gradient_backgrounds 2; animations 0; transitions 377"
+ },
+ {
+  "observation": "The page uses flexbox rather than grid. 179 elements are display:flex and none are display:grid.",
+  "category": "layout",
+  "evidence": "layout display_flex 179, display_grid 0"
+ },
+ {
+  "observation": "There are no buttons. The counts show 0 button elements and no primary button was detected. Calls to action are text links with chevrons.",
+  "category": "component",
+  "evidence": "counts.buttons 0; primary_button null"
+ },
+ {
+  "observation": "The facts list many images that are not rendered: 66 img tags, most with natural size 0×0 and a 0-sized rect. Many are hidden or lazy-loaded and show up in duplicate sets. They include carrier logos (Worldpay, Barclaycard, First Data, Elavon, AIB, EVO), a terminal, MOTO and e-com forms, green tick and red cross icons, business-type icons (retail, hotel, pubs, restaurant, cafe), and Square and Zettle readers.",
+  "category": "imagery",
+  "evidence": "images list: worldpay-logo-small, barlcaycard-logo-small, retail.png, hotel.png, square-reader-4.jpg, zettle-logo; natural [0,0] rect 0×0"
+ },
+ {
+  "observation": "Alt text is applied programmatically, with none missing but most of it generic. Many alts are prefixed with the page-builder name ('Homepage (New Design) retail', 'Homepage (New Design) hotel'). Some are derived from the filenames, for example 'Terminal 5 300x262 1'.",
+  "category": "copy",
+  "evidence": "counts.alt_missing 0; alt values 'Homepage (New Design) …' across the images list"
+ },
+ {
+  "observation": "The head has a full social and SEO metadata set. It has OG tags (title, description, image with width, height, alt and type), twitter:card, a robots tag and 1 JSON-LD block. The generator and an ir-site-verification-token meta suggest a CMS-built site. The lang is en-GB.",
+  "category": "dom-structure",
+  "evidence": "meta_names list; jsonld_blocks 1; lang en-GB; title 'Payment Processing & Merchant Services'"
+ },
+ {
+  "observation": "The brand logo is an SVG image (merchant_savvy_purple.svg, natural 300×69) rendered tiny, at 48×11 and positioned at x=419, y=24. A second 250px variant has a 0-size rect, so it is hidden. The visible header is not captured in the screenshot.",
+  "category": "imagery",
+  "evidence": "images[0] rect x 419, y 24, w 48, h 11; merchant_savvy_purple_250.svg rect 0×0; slice 1 blank"
+ },
+ {
+  "observation": "There are only 131 visible words and one emoji-class character. The text has no em dashes and no exclamation marks. The copy is short, descriptive and informational, with no promotional slogan visible.",
+  "category": "copy",
+  "evidence": "text_stats words 131, emoji 1, em_dashes 0, exclamations 0"
+ },
+ {
+  "observation": "The icon fonts are Font Awesome 5 Free (18 elements) and eicons (2, the Elementor icon font). The 20 `<i>` elements correspond to the chevron bullets and similar icons.",
+  "category": "component",
+  "evidence": "fonts_by_element_count Font Awesome 5 Free 18, eicons 2; tag_counts i 20"
+ },
+ {
+  "observation": "Navigation exists in the DOM (4 nav elements, 56 ul, 227 li, 105 anchors) but none of it is visible in the screenshots. Menus are probably collapsed, off-canvas or failed to render. The listed links total fewer than 20, so most of the lists are hidden.",
+  "category": "component",
+  "evidence": "tag_counts nav 4, ul 56, li 227, a 105; screenshot shows only 14 visible link-list items and 2 footer links"
+ },
+ {
+  "observation": "Accessibility attributes are used: 96 aria attributes. That is significant given the page's mostly hidden component set.",
+  "category": "dom-structure",
+  "evidence": "counts.aria_attrs 96"
+ },
+ {
+  "observation": "Content is left-weighted within a wide 1868px canvas. The main column starts at x=160 and the content spans roughly to x≈1450, leaving a right margin of about 400px.",
+  "category": "layout",
+  "evidence": "page_width 1868; slice 2 content x 160–1450"
+ },
+ {
+  "observation": "Vertical rhythm is airy. Payment Processing starts at y≈186 and Finance & Banking at y≈390, about 204px apart. Research & Stats follows at y≈548, with large white padding around each block.",
+  "category": "layout",
+  "evidence": "slice 2 h2 positions y≈186, 390, 548"
+ },
+ {
+  "observation": "Text and images are left-aligned throughout, with no centred hero or banner. The visible content has no call-to-action fills, no colour blocks and no photography, apart from the two illustrations.",
+  "category": "layout",
+  "evidence": "slice 2 and 3 alignment; blank slice 1"
+ }
+]

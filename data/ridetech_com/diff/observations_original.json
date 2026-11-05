@@ -1,0 +1,192 @@
+[
+ {
+  "observation": "The page has no h1. The heading outline starts at h3 ('Sign up') and h4 ('Cart'), then moves between h2, h3, h4 and h5 with no clear hierarchy. Two headings are empty.",
+  "category": "semantic structure",
+  "evidence": "facts.json h1_count 0; heading_outline starts with level 3 'Sign up'; empty h2 and h4 entries; 29 h5 elements"
+ },
+ {
+  "observation": "The DOM is div-heavy with little semantic markup. It has one header, one main, two sections and one footer, and no nav, article or aside, even though the page has a large menu bar.",
+  "category": "semantic structure",
+  "evidence": "div 462; semantic nav 0, article 0, aside 0, section 2; a 189"
+ },
+ {
+  "observation": "The page reads as a WordPress/Flatsome-style theme with a heavy plugin footprint. It has 29 style tags, 32 scripts, 45 noscript tags and 97 inline style attributes. Class names are mostly custom, not utility-style.",
+  "category": "DOM structure",
+  "evidence": "style 29; script 32; noscript 45; inline_style_attrs 97; classes unique 504, tailwind_like_fraction 0.042; fl-icons font"
+ },
+ {
+  "observation": "Layout is built with flexbox only. There is no CSS grid, and the many multi-column rows are laid out with flex.",
+  "category": "layout",
+  "evidence": "display_grid 0; display_flex 128; page 1440x4129"
+ },
+ {
+  "observation": "A cookie consent banner is pinned across the top of the viewport. It is white with a drop shadow and covers the logo and search bar. It has a green 'Cookie settings' link and a black 'ACCEPT' button.",
+  "category": "component",
+  "evidence": "Slice 1 top: cookie text, 'Cookie settings', 'ACCEPT'; logo cut off at y≈90; logo-cookieyes.svg in the images list"
+ },
+ {
+  "observation": "The header has a red-and-black logo at the left (200x45) and a search field with a magnifier button. A pill-shaped cart showing $0.00 sits at the right. Below it is a full-width dark slate menu bar with uppercase, letter-spaced items, some with chevron dropdown indicators.",
+  "category": "component",
+  "evidence": "Logo rect x15 y69 200x45; menu PRODUCTS, APPLICATIONS, NEWS, TECH, VIDEOS, DEALERS, FORUM, PROJECTS, INDUSTRIAL, CAREERS; bg rgb(58,72,86) used by 15 elements"
+ },
+ {
+  "observation": "A full-width hero slider carries product advertising baked into the image. It has a red 'NEW TOUCH SCREEN CONTROL PANEL' headline, the RidePro e5 logo, and a photo of a hand on a touchscreen. Slides sit side by side, offset by 1200px, and are cropped to the viewport.",
+  "category": "imagery",
+  "evidence": "21-ridepro-e5.jpg 1440x338 at x0 y181; neighbours at x -1200 and 1200; image_overlaps listed between adjacent slides; slides have empty alt"
+ },
+ {
+  "observation": "The slider uses lazy-load placeholder images, so several images are tiny inline SVG data URIs with zero rendered size. A 1x1 GIF placeholder is also present.",
+  "category": "imagery",
+  "evidence": "Multiple 'svg%3E' images at rect 0x0, naturals 300x138, 250x150; a 1x1 data-GIF"
+ },
+ {
+  "observation": "A solid red 'FREE SHIPPING' band sits under the hero. It uses white, bold, uppercase, widely tracked text, centred.",
+  "category": "component",
+  "evidence": "Slice 1 y≈520–565; red rgb(220,31,38) used by 11 elements; h3 'FREE SHIPPING'"
+ },
+ {
+  "observation": "The palette is mostly neutral: white and light grey (rgb 243,245,247) panels, slate blue-grey, black and grey text. Red (220,31,38) is the only saturated accent, used for the primary button, banners, the sign-up button and the footer CTA strip.",
+  "category": "color",
+  "evidence": "top_backgrounds: 243,245,247 x37; 255,255,255 x21; 58,72,86 x15; 220,31,38 x11; text colours 119,119,119 and 83,104,130"
+ },
+ {
+  "observation": "Body copy is mid-grey (#777) on white at 16px with a 25.6px line height. The family is Open Sans throughout, with fallback Lucida Grande on 163 elements and a custom icon font.",
+  "category": "typography",
+  "evidence": "body_color rgb(119,119,119); body_font_size 16px; body_line_height 25.6px; fonts_by_element_count Open Sans 1048, Lucida Grande 163, fl-icons 20"
+ },
+ {
+  "observation": "Section headings are centred, bold, dark-grey Open Sans at 25.6px. 'Shop by Vehicle' and 'Shop by Product' are centred in their columns. 'Get Connected' and 'Latest News' are left-aligned in the sidebar.",
+  "category": "typography",
+  "evidence": "h2 font_size 25.6px, font_weight 700; h2 texts 'Shop by Vehicle', 'Shop by Product', 'Get Connected', 'Latest News'"
+ },
+ {
+  "observation": "Category labels under tiles use small, bold, uppercase, letter-spaced grey text, centred. They wrap to 2–4 lines when the names are long.",
+  "category": "typography",
+  "evidence": "Labels such as 'SHOCKWAVE INTEGRATED AIR SPRINGS AND SHOCKS' (4 lines), 'MUSCLE CARS AND CLASSICS' (2 lines)"
+ },
+ {
+  "observation": "The 'Shop by Vehicle' row has five equal columns. Each has a red car-silhouette illustration over an uppercase label. The images have no borders or cards and sit on white.",
+  "category": "component",
+  "evidence": "muscle-car.png, modern-muscle.png, truck.png, hot-rod.png, corvette.png each 268x151 at y638, x 10/298/586/874/1162"
+ },
+ {
+  "observation": "A thick, empty near-black band (about 60px tall) separates the vehicle row from the product section. It has no content.",
+  "category": "layout",
+  "evidence": "Slice 1 y≈905–965, dark #262626-like fill; rgb(0,0,0) backgrounds x4"
+ },
+ {
+  "observation": "'Shop by Product' is a four-column grid of square 188x188 product photos with centred uppercase captions. It has 18 tiles over 5 rows, and the last row holds only two items (Apparel, Bushings), leaving a wide empty area at the right of the main column.",
+  "category": "layout",
+  "evidence": "Images 300x300 natural rendered 188x188 at x 15/263/510/758; y 1105, 1412, 1738, 2026, 2332, 2620; last row has x15 and x263 only"
+ },
+ {
+  "observation": "The product photos are catalogue-style cutouts on white or light backgrounds. They are cropped to squares and unframed, with no hover or card styling visible.",
+  "category": "imagery",
+  "evidence": "Tile alt texts such as Coilovers, Shock Absorbers, R-Joint Rod Ends; screenshot shows products on white"
+ },
+ {
+  "observation": "The page has two columns. A wide main column about 930px wide holds the shop grid. A sidebar about 450px wide at x≈975–1425 holds the sign-up form, banners and news.",
+  "category": "layout",
+  "evidence": "Sidebar images x975–1425 width 450; main tiles span x15–946"
+ },
+ {
+  "observation": "The sidebar stacks promotional images: a 'FREE Shipping' graphic with a mixed script and sans lettering, a '1,000,001 MILE WARRANTY' banner, and a 'FREE Product Catalog' tile. The catalog tile has a white card with a shadow over a catalog photo and a small red pill button 'REQUEST A CATALOG'.",
+  "category": "component",
+  "evidence": "free-shipping-500x188.jpg 387x146; hp-ad-1.jpg alt 'shock warranty' 410x178; free-catalog-copy-500x188.png; box_shadows 16"
+ },
+ {
+  "observation": "The sidebar sign-up form ('Get Connected') has First Name, Last Name and Email fields with bold labels, square-cornered inputs with thin borders, and a red 'SIGN UP' button with slightly rounded corners. The form sits in a bordered white box.",
+  "category": "component",
+  "evidence": "Slice 1–2 form; form 4, input 27, label 15; h3 'Sign up'"
+ },
+ {
+  "observation": "The 'Latest News' sidebar has two entries. Each has a photo of about 450x253, a small bold centred caption, a short divider and a grey excerpt ending in '[…]'. A full-width red 'VIEW ALL NEWS' button closes the section.",
+  "category": "component",
+  "evidence": "photo34-1-500x375.jpg and IMG_2627-500x333.jpg at 450x253; excerpt text 'Held […]'; red button at slice 3 y≈480–517"
+ },
+ {
+  "observation": "News photos are cropped from 500x375 and 500x333 to the same 450x253 box. The news images have empty alt text.",
+  "category": "imagery",
+  "evidence": "images list: rect 450x253 for both; alt ''"
+ },
+ {
+  "observation": "Buttons are mostly rectangular red with white uppercase text. The primary 'GET A FREE CATALOG' button uses a 99px pill radius with padding 0 13.968px. Most elements have a radius of 0.",
+  "category": "component",
+  "evidence": "primary_button bg rgb(220,31,38), radius 99px; border_radius_buckets bucket_0 1186, pill 17"
+ },
+ {
+  "observation": "Visual effects are limited. There are no gradients, no backdrop blur and no keyframe animations. There are 372 elements with transitions and 16 box shadows, which suggests hover and slider behaviour, and 21 with transforms.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 0; backdrop_blur 0; animations 0; transitions 372; transforms 21"
+ },
+ {
+  "observation": "A black strip with a downward-pointing triangle notch at the centre introduces the about section. This is the page's one decorative divider shape.",
+  "category": "decoration",
+  "evidence": "Slice 3 y≈522–550, notch at x≈720"
+ },
+ {
+  "observation": "A full-width about section uses a darkened photo of an orange muscle car on a track as background. A centred white 'ridetech.com' h2, a bold subheading and a paragraph of about 70 words sit over it with a text shadow. The paragraph is long and runs over a busy part of the image.",
+  "category": "imagery",
+  "evidence": "Slice 3 y≈550–970; h2 'ridetech.com'; h4 'Performance Suspension Specialist'"
+ },
+ {
+  "observation": "A red call-to-action strip says 'Don't see what you're looking for? Let us know!' in bold white. At right is 'Connect With Us:' followed by five circular outline icons: Facebook, Instagram, email, phone, YouTube.",
+  "category": "component",
+  "evidence": "h3 text; icons are circles with white outline; fl-icons font on 20 elements; bucket_pill 17"
+ },
+ {
+  "observation": "The footer has four columns on a dark grey vertical gradient-like fill: Contact Info, Information, Applications and Your Account. Link lists use thin divider lines, and small short rules sit under the column headings.",
+  "category": "layout",
+  "evidence": "Slice 3–4 footer columns at x 15/375/735/1095; text colour rgb(241,241,241) on 121 elements"
+ },
+ {
+  "observation": "Footer column headings are inconsistent. 'Contact Info' and 'Your Account' are bold title-case, while 'INFORMATION' and 'APPLICATIONS' are uppercase and letter-spaced.",
+  "category": "typography",
+  "evidence": "Slice 3 footer headings; h3 'Contact Info', h3 'Your Account'"
+ },
+ {
+  "observation": "The Contact Info block uses bold run-in labels ('Phone:', 'Fax:', 'Hours:') followed by regular-weight values. It gives a street address and a sales email in plain text.",
+  "category": "copy",
+  "evidence": "Phone: 812.481.4787; Fax: 812.634.6632; Hours: Mon – Fri 8:00am 6:00pm EST; 350 S. St. Charles St, Jasper, Indiana; strong 7"
+ },
+ {
+  "observation": "A red 'FREE CATALOG' image or button sits at the bottom of the Your Account column. It is cut across the slice boundary and appears to be a second catalog call to action.",
+  "category": "component",
+  "evidence": "free-catalog-copy-500x188.png rect x1095 y3849 330x124; red block at slice 3/4 boundary"
+ },
+ {
+  "observation": "A lighter grey bottom bar holds 'Copyright 2021 © Ridetech' at left and five muted payment-card icons (Visa, Mastercard, Discover, American Express, PayPal) at right. The text is low-contrast grey on grey.",
+  "category": "component",
+  "evidence": "Slice 4 y≈155–229; copyright text, payment icons"
+ },
+ {
+  "observation": "Copy is commercial and product-led. Key messages are 'FREE SHIPPING', free shipping on orders over $100, a free catalog and a 1,000,001 mile warranty. They repeat across the hero band, the sidebar and the footer. Exclamation marks are used 3 times and there are no em dashes.",
+  "category": "copy",
+  "evidence": "text_stats exclamations 3, em_dashes 0, emoji 1, words 486; images and headings with FREE SHIPPING / FREE catalog"
+ },
+ {
+  "observation": "The content is dated. The footer reads 'Copyright 2021' and the news items refer to May 2021 events. Most promotional messages are baked into raster images, not live text.",
+  "category": "copy",
+  "evidence": "Footer text; news 'When: May 21 – 23, 2021'; hero and sidebar banners are JPG/PNG"
+ },
+ {
+  "observation": "Imagery is the main content. There are 43 img elements, with the shop grid and the sidebar banners making up most of the page. Only 2 images lack an alt attribute, and several decorative or news images have an empty alt.",
+  "category": "imagery",
+  "evidence": "counts images 43, alt_missing 2; alt texts like 'Muscle Cars and Classics', 'Tru Turn'"
+ },
+ {
+  "observation": "Metadata is complete for sharing. It has a JSON-LD block, Open Graph and Twitter card tags, and a robots tag. The title is 'Ridetech Home - Ridetech' and the language is en-US.",
+  "category": "semantic structure",
+  "evidence": "jsonld_blocks 1; meta_names og:*, twitter:*, robots; title 'Ridetech Home - Ridetech'; lang en-US"
+ },
+ {
+  "observation": "The page is long and mostly vertical. It is 4129px tall at 1440px wide and has a large 3-item feature strip at the top. It also has a wide empty gap to the left of the sidebar after the product grid ends, because the sidebar is taller than the grid.",
+  "category": "layout",
+  "evidence": "page_height 4129; slice 3 shows the grid ending at y≈250 while the sidebar continues to y≈520"
+ },
+ {
+  "observation": "Tables are present in the DOM (5 tables, 96 td) but none appear in the screenshot, so they are probably hidden mini-cart or off-canvas content. The page also has 4 forms, 7 buttons and 1 ordered list that are not clearly visible.",
+  "category": "DOM structure",
+  "evidence": "tag_counts table 5, thead 5, td 96, form 4; no visible tables in slices"
+ }
+]

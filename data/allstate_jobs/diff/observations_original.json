@@ -1,0 +1,202 @@
+[
+ {
+  "observation": "The page has no h1. The headings are 20 h2 and 26 h3, and many of the h3s are empty strings.",
+  "category": "semantic structure",
+  "evidence": "facts.json h1_count 0, h1 null; heading_outline lists h3 entries with empty text."
+ },
+ {
+  "observation": "The page content appears twice in the DOM. The headings repeat in the same order, and there are 2 header, 2 main, 2 nav, 2 form and 2 title elements.",
+  "category": "semantic structure",
+  "evidence": "tag_counts header 2, main 2, nav 2, form 2, title 2; the heading outline repeats from 'Discover Allstate' to 'See What We're Up To'."
+ },
+ {
+  "observation": "Content sits in a centered column about 952px wide, from x=244 to x=1196, inside a 1440px viewport. The side margins are white and empty.",
+  "category": "layout",
+  "evidence": "Image rects at x=244 with w=952 for the banner; page_width 1440."
+ },
+ {
+  "observation": "Layout uses flexbox only, and there are no grid containers. Three-up card rows are about 297px wide each, with gaps of about 30px.",
+  "category": "layout",
+  "evidence": "display_grid 0, display_flex 31; card images at x=244, 571 and 899, each w=297."
+ },
+ {
+  "observation": "The header is a plain white strip. The Allstate logo is at the left and the nav links are right-aligned: Career Areas and Life @ Allstate (each with a small down-arrow image), then Application Status and Job Search. The nav links are in the brand blue.",
+  "category": "components",
+  "evidence": "Logo rect x=244, y=56, 193x70; Down-Arrow.png at 12x7; slice 0 shows the nav in blue text."
+ },
+ {
+  "observation": "The hero is a single wide banner image of 2104x654 shown at 952x296. A dark navy panel on the left holds a lowercase headline, 'your next career is here, define your future with Allstate'. The second half of the headline is in light cyan. A photo of two smiling women fills the right half.",
+  "category": "imagery",
+  "evidence": "Allstate.jobs-Banner_2104x654.jpg, alt empty; headline text baked into the image, visible in slice 0."
+ },
+ {
+  "observation": "The hero headline is raster text inside the banner image, not live HTML text. The banner has an empty alt, and there is no h1 in the DOM.",
+  "category": "imagery",
+  "evidence": "alt '' on the banner image; h1_count 0."
+ },
+ {
+  "observation": "A separate 2104x1310 banner variant is in the DOM but hidden, with a 0x0 rect. This looks like a responsive image swap.",
+  "category": "imagery",
+  "evidence": "Allstate.jobs-Banner_2104x1310.jpg rect w=0, h=0."
+ },
+ {
+  "observation": "The job search form has a text input with placeholder 'Enter a Job or Keyword', an 'All Departments' select with a blue chevron, and a solid blue 'SEARCH JOBS' button. The inputs have light gray borders and a subtle shadow.",
+  "category": "components",
+  "evidence": "slice 0; the DOM has 2 select elements and 44 option elements."
+ },
+ {
+  "observation": "Thin light-cyan horizontal rules about 1px high separate every major section at the same column width.",
+  "category": "decoration",
+  "evidence": "Rules visible across slices 0-3, at the top of 'Discover Allstate', 'Career Areas', 'Grow Your Career', 'Testimonials' and 'Future Events'."
+ },
+ {
+  "observation": "The intro paragraph is larger than body text, left-aligned, in near-black. Body copy is set at 18px with a line height of 29.7px, a 1.65 ratio.",
+  "category": "typography",
+  "evidence": "body_font_size 18px, body_line_height 29.7px; slice 0 intro paragraph."
+ },
+ {
+  "observation": "The page uses one custom sans family, Allstate Sans, in four weights. Regular is on 1198 elements, bold on 78, light on 70 and medium on 2. The regular weight carries nearly everything.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: allstatesansw-regul 1198, -bold 78, -light 70, -medium 2."
+ },
+ {
+  "observation": "Section headings are h2 at 36px and weight 600, in near-black. They are left-aligned with a tight gap to the paragraph below.",
+  "category": "typography",
+  "evidence": "h2 font_size 36px, font_weight 600; 'Discover Allstate', 'Career Areas at Allstate' and others in slices 1-3."
+ },
+ {
+  "observation": "The first row of three cards, Good Work, Good Life and Good Hands, has a photo on top and an uppercase centered title. Centered body text sits below it. The cards have a light gray border and a soft drop shadow, with no CTA button.",
+  "category": "components",
+  "evidence": "Images 297x208 at y=878; card titles 'GOOD WORK', 'GOOD LIFE' and 'GOOD HANDS' in slice 0; box_shadows 24."
+ },
+ {
+  "observation": "The second card row, under 'Discover Allstate', uses the same three-card pattern. Each card has a 297x175 photo, a bold centered title, a short description and a full-width solid blue 'VISIT PAGE' bar fixed to the bottom of the card. The bars line up even though the description lengths differ.",
+  "category": "components",
+  "evidence": "Content-Isolated-Image_* at 297x175; slice 1 shows the blue bars at the same y."
+ },
+ {
+  "observation": "The palette is mainly white, near-black text and one saturated royal blue. Blue (0,51,160) is the background of 82 elements, and a secondary blue (37,71,168) is the background of 14. Text colors are near-black (25,25,25) on 742 elements and white on 348. Links and accents are blue.",
+  "category": "color",
+  "evidence": "top_backgrounds and top_text_colors in facts.json."
+ },
+ {
+  "observation": "Body text color is a computed gray, rgb(68,68,68). The gray (107,119,137) appears on 48 elements, probably for placeholders and secondary text.",
+  "category": "color",
+  "evidence": "body_color rgb(68,68,68); top_text_colors."
+ },
+ {
+  "observation": "Corners are mostly square. Buttons have a 3px radius, and 52 elements have a radius of 1-7px. Twelve elements have 8-15px, and none have 16px or more or are pill-shaped.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 1284, bucket_1_7 52, bucket_8_15 12, bucket_16_plus 0, bucket_pill 0; primary_button radius 3px."
+ },
+ {
+  "observation": "The page uses no gradients, backdrop blur or keyframe animations. There are 106 transition declarations and 16 transforms, so hover and carousel states are likely transition-driven.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 0, backdrop_blur 0, animations 0, transitions 106, transforms 16."
+ },
+ {
+  "observation": "The 'Career Areas at Allstate' section has two paragraphs. Under them is a three-column list of 11 underlined blue text links, from Claims to Technology. The columns are uneven in length and the items wrap onto two lines.",
+  "category": "components",
+  "evidence": "slice 1 shows the links in blue underline, e.g. 'Continuous Improvement & Industrial Engineering' wrapping."
+ },
+ {
+  "observation": "The em dash in 'around the corner—no matter which department' is unspaced. The body copy is plain marketing prose about opportunity and growth.",
+  "category": "copy",
+  "evidence": "text_stats em_dashes 2, words 1629, exclamations 0; slice 1 text."
+ },
+ {
+  "observation": "The 'Meet the People Behind Allstate' section renders as a large empty white area of about 800px. The 7 empty h3s and the images, with alt text such as 'Maureen D.' and 'Eric G.', have 0x0 rects. A carousel or slider did not render its content.",
+  "category": "imagery",
+  "evidence": "maureen.jpg, eric.jpg, paul.jpg, joe.jpg, dana.jpg, brooke.jpg and mylthili.jpg all have rect 0x0; slice 2 shows blank space under the heading."
+ },
+ {
+  "observation": "The 'Grow Your Career With Allstate' section has an intro paragraph with blank space around it. Its three carousel photos (Xiomara R., Shelby C., Bridget) are stacked at the same 282x339 position, so only one can show at a time. The screenshot shows them blank.",
+  "category": "imagery",
+  "evidence": "Images at x=248, y=3706, 282x339, with overlap areas of about 95k px; slice 2 and slice 3 show a blank area."
+ },
+ {
+  "observation": "Carousels use three small dot pagination indicators. The active dot is filled blue and the other two are gray outlined circles, centered at about x=766. A dot set appears at both the Grow Your Career and Testimonials carousels.",
+  "category": "components",
+  "evidence": "slice 3 dots at y≈310 and y≈884."
+ },
+ {
+  "observation": "The Testimonials carousel holds three full-width slides (Lisa, Xiomara, Kelly) with a desktop and a mobile image each. All desktop slides sit at the same 476x377 position, so they overlap. The slides render as an empty region under the 'Testimonials' heading. The mobile variants have 0x0 rects.",
+  "category": "imagery",
+  "evidence": "Testimonials-Generic-0X images at x=244, y=4459, 476x377; mobile images rect 0; h3 'Lisa', 'Xiomara' and 'Kelly'; 6 blockquote elements."
+ },
+ {
+  "observation": "Testimonial slides use blockquote and figure/figcaption markup. The page has 14 figures and 14 figcaptions, and 0 cite elements.",
+  "category": "semantic structure",
+  "evidence": "semantic figure 14, figcaption 14, blockquote 6, cite 0."
+ },
+ {
+  "observation": "The 'Future Events' section shows only a heading and a full-width blue 'VIEW ALL FUTURE EVENTS' bar button at 952px wide. No event listings render above the button, so the events list is empty or failed to load. The page includes tec-api meta tags, which suggest an events-calendar plugin.",
+  "category": "components",
+  "evidence": "slice 3; meta_names include tec-api-version and tec-api-origin."
+ },
+ {
+  "observation": "The 'See What We're Up To' section is a row of four square-ish Instagram-style thumbnails of about 185x175 with a light shadow, evenly spaced with gaps of about 70px. Each has descriptive alt text prefixed 'Instagram - ...'.",
+  "category": "imagery",
+  "evidence": "Social1-4.png at y=5354, w=185, h=175, x=244, 500, 755 and 1010."
+ },
+ {
+  "observation": "'Follow Us' is a small bold centered label above five square blue icon buttons, for Facebook, Instagram, Twitter, YouTube and LinkedIn. The icons are JPG images of 52x50 with white glyphs on blue. The page has no inline SVGs.",
+  "category": "components",
+  "evidence": "Social-Icons-*.jpg 52x50 at y=5613; svgs 0."
+ },
+ {
+  "observation": "The footer is a full-width solid blue block with small centered white text. It holds long legal and EEO notices, with inline underlined 'here' links, a link row (WEB ACCESSIBILITY | PRIVACY & SECURITY | RECRUITMENT FRAUD NOTICE | SITEMAP) and a copyright line. There is no footer element, and the copyright line appears twice, with a set of empty underlined link stubs between the two.",
+  "category": "components",
+  "evidence": "semantic footer 0; slice 4 shows '© 2021 Allstate Insurance Company' twice and short empty link underlines."
+ },
+ {
+  "observation": "The footer text is about 11px, much smaller than the 18px body. It is centered in a narrow-measure block.",
+  "category": "typography",
+  "evidence": "slice 4 footer paragraphs, small white text on blue (0,51,160)."
+ },
+ {
+  "observation": "The page mixes presentation and structure. It has 87 inline style attributes, 366 unique classes across 2635 class uses, and only 3.3% of class names look Tailwind-like. The class names appear to come from a CMS or page-builder theme.",
+  "category": "semantic structure",
+  "evidence": "inline_style_attrs 87; classes total 2635, unique 366, tailwind_like_fraction 0.033."
+ },
+ {
+  "observation": "The page is heavy on markup and resources: 620 divs, 236 spans, 155 script tags, 78 link tags and 42 stylesheets. Two JSON-LD blocks are present. Anchors number 162 and images 75.",
+  "category": "semantic structure",
+  "evidence": "tag_counts div 620, span 236, script 155, link 78; counts stylesheets 42; jsonld_blocks 2."
+ },
+ {
+  "observation": "The head carries Open Graph metadata (og:title, og:image with width and height, and so on) and a description. The page language is en-US. The meta block is duplicated, matching the duplicated DOM. The title is 'Allstate Careers'.",
+  "category": "semantic structure",
+  "evidence": "meta_names list og:* twice; lang 'en-US'; title 'Allstate Careers'."
+ },
+ {
+  "observation": "The page is about 6206px tall. Roughly 1600px of it, across the people, grow and testimonial blocks, is blank white space where content failed to render.",
+  "category": "layout",
+  "evidence": "page_height 6206; slices 2 and 3 are mostly empty white."
+ },
+ {
+  "observation": "Alt handling is mixed. No images lack the alt attribute, but many content photos have an empty alt, including the hero and all six card photos, and some staff photos (paul, dana, brooke, mylthili) have empty alt. The others have descriptive alt text, such as 'Lisa, Senior Lead Internal Auditor'.",
+  "category": "imagery",
+  "evidence": "alt_missing 0; images list shows alt '' for the banner, GoodWork and Content-Isolated images."
+ },
+ {
+  "observation": "The primary button style, as measured, is a white background with blue text, a 3px radius and 15px 20px padding, on the 'COVID-19 Hiring Practices' link. The visible CTAs are the reverse: white uppercase text on solid blue.",
+  "category": "components",
+  "evidence": "primary_button text 'COVID-19 Hiring Practices', bg white, color rgb(0,51,160), radius 3px; visible 'SEARCH JOBS' and 'VISIT PAGE' blue buttons."
+ },
+ {
+  "observation": "Buttons and card titles use uppercase bold labels such as 'SEARCH JOBS', 'VISIT PAGE', 'VIEW ALL FUTURE EVENTS' and 'GOOD WORK'. Section headings stay in title case.",
+  "category": "copy",
+  "evidence": "slices 0, 1 and 3."
+ },
+ {
+  "observation": "Card photos are cropped to a fixed aspect ratio. The 688x482 sources display at 297x208 and the 712x494 sources at 297x175, with object cropping that cuts off parts of the subjects, for example 'BRING OUT TH' on a shirt in the Good Life card.",
+  "category": "imagery",
+  "evidence": "natural 688x482 vs rendered 297x208; natural 712x494 vs rendered 297x175."
+ },
+ {
+  "observation": "The page has 118 li across 19 ul lists, 41 paragraphs and 38 section elements. Sections are the main structural wrapper, but there are no article or aside elements.",
+  "category": "semantic structure",
+  "evidence": "tag_counts li 118, ul 19, p 41, section 38; semantic article 0, aside 0."
+ }
+]

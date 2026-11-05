@@ -1,4 +1,6 @@
-# Human baseline survey: rough design (draft, 2026-10-31)
+# Human baseline survey: rough design (draft, 2026-10-31; note added 2026-11-04)
+
+> **Note 2026-11-04.** The annotation pipeline was redesigned (see PLAN.md, pipeline 3): the codebook and the observation-only / comparison arms mentioned below are archived. The human instrument should now be compared with the **master list** (attributes and values, family -> attribute -> value) and the 120-item **seed list v1.3**, not with the old 278-attribute codebook or the 79-item v1.1 list. Where the text says "codebook attribute" read "master-list attribute", and "79 (v1.1)" read "120 (v1.3)". The G1 / G2 groups correspond to the new observe-alone and combine steps. Nothing here has been run.
 
 Purpose: a second, human instrument for the same question the pipeline answers, **which visual features are inherent to vibe-coded websites**. Humans produce their own feature signature of the 28 vibe-coded pages; it is compared with the LLM signature (observation-only arm, comparison arm). It is a baseline, not a grader of the pipeline. Nothing here is run yet; no human subjects work starts before CPHS review.
 
@@ -34,7 +36,7 @@ Purpose: a second, human instrument for the same question the pipeline answers, 
 
 **Part B. Closed checklist (per page, about 3 minutes; sees the same page again after finishing Part A, so free text is never primed).**
 - 12 attributes from the codebook, drawn so each family appears at least once and the three bands (shared, split, varied) are all represented. Each attribute shows its definition and its value list, with "not present" and "can't tell" options. Choose one.
-- Seed items: 15 items from the 79 (v1.1), tick all present. Includes 3 that the judges never mention, as a check.
+- Seed items: 15 items from the 120 (v1.3), tick all present. Includes 3 that the judges never mention, as a check.
 - Attribute and item draws are rotated across reviewers so every attribute is answered for each page by at least 3 reviewers.
 
 **Part C. Confidence and cues (G3 only).** "How AI-made does this look?" (forced choice AI / human), confidence 1 to 5 (1 guessing, 2 slight lean, 3 moderate, 4 fairly sure, 5 certain), and "what made you think so?" free text. G1 and G2 never see this part, so it can't prime them.

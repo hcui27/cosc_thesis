@@ -1,0 +1,338 @@
+[
+ {
+  "observation": "The page uses a navy (rgb 29,53,87), orange (228,87,46) and white palette, with a pale blue-gray (242,245,249) for alternating sections. Orange is reserved for CTAs, underlines and badges.",
+  "category": "color",
+  "evidence": "top_backgrounds: white x23, orange x3, peach (253,232,225) x3, navy x2, pale gray x2. Body text is rgb(22,32,46) and headings are navy.",
+  "element_ids": [
+   "e19",
+   "e22",
+   "e113",
+   "e119"
+  ]
+ },
+ {
+  "observation": "Every element uses one system-ui font stack (system-ui, -apple-system, Segoe UI, Roboto, sans-serif). There is no web font and no serif or display contrast. Hierarchy comes from size and weight alone.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 185. h1 is 51.2px/700, h2 is 35.2px/700, body is 17px with a 27.2px line height.",
+  "element_ids": [
+   "e20",
+   "e26",
+   "e21"
+  ]
+ },
+ {
+  "observation": "The hero is a full-width navy band with a two-column split. A white h1, a light paragraph and two buttons sit on the left. A rounded, shadowed photo sits on the right.",
+  "category": "layout",
+  "evidence": "e19 spans 0,65,1440x364. The h1 is at x=190 and the image at x=764 (486x233). The h1 is white at 51.2px.",
+  "element_ids": [
+   "e19",
+   "e20",
+   "e21",
+   "e24"
+  ]
+ },
+ {
+  "observation": "The hero has a paired CTA. The primary 'Find a gym' is a filled orange pill. The secondary 'Buy a gift card' is an outlined white pill on the navy background.",
+  "category": "components",
+  "evidence": "primary_button: bg rgb(228,87,46), radius 999px, padding 12px 22px. The secondary button has a visible white outline in the screenshot.",
+  "element_ids": [
+   "e22",
+   "e23"
+  ]
+ },
+ {
+  "observation": "The hero photo is the only photographic image. It has rounded corners and a soft drop shadow, the only box-shadow on the page. It is a small source (326x233) shown at 486x233.",
+  "category": "imagery",
+  "evidence": "effects.box_shadows is 1. The image natural size is [326,233] and its rect is 486x233. Alt text is descriptive.",
+  "element_ids": [
+   "e24"
+  ]
+ },
+ {
+  "observation": "The header holds a raster PNG logo on the left and a horizontal nav of 7 text links on the right. It is a white bar with no visible fill on the links and sits above the navy hero.",
+  "category": "components",
+  "evidence": "Logo img is 205x44 (natural 1024x220). The ul e4 holds 7 li items from x=632 to 1250. The header is 65px tall.",
+  "element_ids": [
+   "e2",
+   "e3",
+   "e4",
+   "e6",
+   "e18"
+  ]
+ },
+ {
+  "observation": "Content is held in a centered column about 1060px wide, with left and right edges at x=190 and x=1250 on the 1440px canvas. Header, hero, sections and footer all align to it.",
+  "category": "layout",
+  "evidence": "The h2s, form and footer all have x=190 and w=1060. page_width is 1440.",
+  "element_ids": [
+   "e26",
+   "e45",
+   "e117",
+   "e155"
+  ]
+ },
+ {
+  "observation": "The 'Options to Climb' section is a 4-up grid of bordered white cards. Each has an h3, a short paragraph and an underlined text link. Card heights are equal, so the shorter ones leave empty space at the bottom.",
+  "category": "components",
+  "evidence": "Cards are 250x344 at x=190, 460, 730 and 1000. Links sit at different y values (775, 901, 876, 793).",
+  "element_ids": [
+   "e28",
+   "e32",
+   "e36",
+   "e40"
+  ]
+ },
+ {
+  "observation": "The card h3 'Visiting during Covid-19' wraps onto two lines and breaks at the hyphen ('Covid-' / '19'). That pushes this card's body down relative to its neighbours.",
+  "category": "typography",
+  "evidence": "e37 is 59px tall against 29px for the other h3s. The paragraph starts at y=698 against 669.",
+  "element_ids": [
+   "e37",
+   "e38"
+  ]
+ },
+ {
+  "observation": "Section backgrounds alternate: white (hero-adjacent options), pale gray (Locations), white (About/Franchising), pale gray (newsletter), navy (footer). This gives a banded vertical rhythm. Each section has about 64px of top padding.",
+  "category": "layout",
+  "evidence": "Sections run at y=429, 1014, 2624 and 3009. The h2s start at y=493, 1078, 2688 and 3073, all 64px below the section top.",
+  "element_ids": [
+   "e25",
+   "e44",
+   "e107",
+   "e114",
+   "e120"
+  ]
+ },
+ {
+  "observation": "Each h2 sits above a one-line muted gray subtitle paragraph, and this pattern repeats across sections. The h2 is navy at 35.2px bold, and the subtitle is gray (86,98,117) and narrower, at 680px.",
+  "category": "typography",
+  "evidence": "Pairs e26/e27, e45/e46 and e115/e116. The subtitle paragraphs are 680px wide against 1060px for the h2.",
+  "element_ids": [
+   "e26",
+   "e27",
+   "e45",
+   "e46",
+   "e115",
+   "e116"
+  ]
+ },
+ {
+  "observation": "The Locations section has a native select with a visually hidden label for a state filter. The label is positioned off-screen at x=-9999. The select is a 220x46 white rounded box.",
+  "category": "components",
+  "evidence": "e47 label is at -9999,1192. e48 select has 5 options (All states plus 4 states).",
+  "element_ids": [
+   "e47",
+   "e48"
+  ]
+ },
+ {
+  "observation": "Locations are grouped by state under h3 headings that have a short orange underline. Gym cards follow in a 3-column grid. States are in a fixed order (California, New Jersey, New York, Pennsylvania).",
+  "category": "layout",
+  "evidence": "h3s e49, e53, e84 and e96 have an orange underline in the screenshot. Cards are 343px wide at x=190, 549 and 907 with a 16px gap.",
+  "element_ids": [
+   "e49",
+   "e53",
+   "e84",
+   "e96",
+   "e54"
+  ]
+ },
+ {
+  "observation": "Location cards use an underlined navy h4 link as the title, with an optional gray description paragraph. Some cards (Marin, Brick, Montclair) have a title only. Others have 1 to 7 lines of text. Cards in a row stretch to equal height, so there is uneven empty space.",
+  "category": "components",
+  "evidence": "Brick e54 is 173px tall with only a title. Melville e88 is 246px with a long paragraph. The h4s contain anchors.",
+  "element_ids": [
+   "e50",
+   "e54",
+   "e73",
+   "e88",
+   "e57"
+  ]
+ },
+ {
+  "observation": "Unopened gyms get a 'COMING SOON' pill badge in peach with dark orange uppercase letter-spaced text. These titles are plain bold text, not links, which sets them apart from the linked cards.",
+  "category": "components",
+  "evidence": "Spans e86 and e98 are 116x23 with a peach (253,232,225) background. Nassau, Lehigh Valley and Philadelphia h4s have no anchor.",
+  "element_ids": [
+   "e85",
+   "e86",
+   "e97",
+   "e98",
+   "e100",
+   "e101"
+  ]
+ },
+ {
+  "observation": "The border-radius scale is simple. 22 elements sit in the 8–15px bucket (cards, select, input, image). 7 are pills (buttons, badges). The remaining 156 elements are square. No gradients, blur, transitions, animations or transforms are used.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 156, bucket_8_15 22, bucket_pill 7. gradient_backgrounds 0, transitions 0, animations 0, transforms 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "Cards use a thin light-gray border on a white fill with no shadow. They stand out from the pale gray section background through the border and fill contrast.",
+  "category": "decoration",
+  "evidence": "Only 1 box-shadow exists, on the hero image. The cards appear as white boxes with a hairline border on the gray Locations section.",
+  "element_ids": [
+   "e50",
+   "e54",
+   "e57",
+   "e28"
+  ]
+ },
+ {
+  "observation": "The About Us and Franchising blocks sit side by side in two 510px columns. Their headings are at different y offsets (2688 vs 2712), so the columns are not top-aligned. The Franchising column has an orange pill 'Get in touch' button.",
+  "category": "layout",
+  "evidence": "h2 e108 is at y=2688 and e111 at y=2712. The columns start at x=190 and x=740. The button is 142x51.",
+  "element_ids": [
+   "e108",
+   "e111",
+   "e113",
+   "e109",
+   "e112"
+  ]
+ },
+ {
+  "observation": "About Us and Franchising body copy is dark near-black text (22,32,46) at 17px. Card and subtitle copy elsewhere is lighter gray, so body text has two tonal levels.",
+  "category": "color",
+  "evidence": "top_text_colors: (22,32,46) x69 and (86,98,117) x16. The screenshot shows darker copy in the About section than in the card descriptions.",
+  "element_ids": [
+   "e109",
+   "e110",
+   "e112",
+   "e30"
+  ]
+ },
+ {
+  "observation": "The newsletter is a single-row form. A wide email input (945px) is paired with an orange pill 'Sign up' button (105x51). Both are 51px tall. The input shows only a placeholder, 'Email address'.",
+  "category": "components",
+  "evidence": "The form e117 is 1060x51. Input e118 is 190,3186,945x51. Button e119 is at x=1145. There is one input and one button.",
+  "element_ids": [
+   "e117",
+   "e118",
+   "e119"
+  ]
+ },
+ {
+  "observation": "The footer is a navy block with three equal columns (Explore, Follow, Legal). Each has a bold white h5 heading and a list of white underlined links. A hairline divider and a small copyright line sit below, with a credit link to the web agency.",
+  "category": "components",
+  "evidence": "h5s are at x=190, 554 and 918. The columns are 332px wide. Links are underlined. The © 2021 text sits at y=3597 and e156 'Lform Design' is a link.",
+  "element_ids": [
+   "e120",
+   "e121",
+   "e135",
+   "e147",
+   "e155",
+   "e156"
+  ]
+ },
+ {
+  "observation": "Links are consistently underlined in navy on light backgrounds and in white in the footer. Card links and location titles are bold and underlined, while the header nav links are not underlined.",
+  "category": "typography",
+  "evidence": "42 anchors in total. In the screenshot, 'Buy a gift card', 'Learn more', the location names and the footer links are underlined. The nav items are plain.",
+  "element_ids": [
+   "e31",
+   "e35",
+   "e52",
+   "e124",
+   "e6"
+  ]
+ },
+ {
+  "observation": "The document outline has one h1 ('New heights, together.'), five h2s, eight h3s and fifteen h4s. h4s are used for individual gym names inside h3 state groups. The footer uses h5 for column labels, which skips level 4.",
+  "category": "structure",
+  "evidence": "The heading_outline lists 1 h1 and 5 h2. The tag_counts show h3 8, h4 15 and h5 3.",
+  "element_ids": [
+   "e20",
+   "e26",
+   "e49",
+   "e51",
+   "e121"
+  ]
+ },
+ {
+  "observation": "The semantics are basic landmarks: one header, one nav, one main, 4 sections and one footer. There are no articles, asides, figures or blockquotes. Cards are plain divs. The hero is a div rather than a section.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 4, article 0, figure 0. The hero e19 is a div. Cards are divs. There are 42 divs in total.",
+  "element_ids": [
+   "e1",
+   "e19",
+   "e25",
+   "e28",
+   "e120"
+  ]
+ },
+ {
+  "observation": "The CSS is minimal. There is one inline style block, no external stylesheet and no utility-class pattern. There are 51 class uses across 18 unique class names, and 2 inline style attributes. There is one script and 2 aria attributes.",
+  "category": "structure",
+  "evidence": "counts.stylesheets 0, classes.total 51, unique 18, tailwind_like_fraction 0. tag_counts show style 1 and script 1.",
+  "element_ids": []
+ },
+ {
+  "observation": "The copy is plain and informational. Taglines are short ('New heights, together.', 'Stay in the loop'). Location blurbs include specific figures (17,500 sq ft, 13,500 sq ft, 100 rope stations). There are no emoji, em dashes or exclamation marks. The footer shows a 2021 copyright.",
+  "category": "copy",
+  "evidence": "text_stats: 560 words, emoji 0, em_dashes 0, exclamations 0. Footer: '© 2021 Gravity Vault'.",
+  "element_ids": [
+   "e21",
+   "e60",
+   "e64",
+   "e91",
+   "e155"
+  ]
+ },
+ {
+  "observation": "The page is long and text-led, at 3674px tall. The locations directory takes up about 1,600px, or roughly 44% of the page. The only photo is in the hero. The location cards have no thumbnails.",
+  "category": "imagery",
+  "evidence": "page_height 3674. The Locations section e44 is 1610px tall. images count is 2 (the logo and the hero).",
+  "element_ids": [
+   "e44",
+   "e24"
+  ]
+ },
+ {
+  "observation": "The page content includes legacy Covid-19 material. It has a nav item 'Covid-19', an options card titled 'Visiting during Covid-19', and a footer copyright of 2021.",
+  "category": "copy",
+  "evidence": "Nav e10 'Covid-19'. Card e37 'Visiting during Covid-19'. The footer says © 2021.",
+  "element_ids": [
+   "e10",
+   "e37",
+   "e38",
+   "e39",
+   "e155"
+  ]
+ },
+ {
+  "observation": "The vertical spacing is generous and consistent. Cards use about 25px internal padding with a 16–20px gap. Sections are separated by roughly 64px padding, and card text uses a 1.6 line-height.",
+  "category": "layout",
+  "evidence": "Option cards are at x=190/460/730/1000 (20px gap), location cards have a 16px gap, and the body line height is 27.2px for 17px text.",
+  "element_ids": [
+   "e28",
+   "e32",
+   "e36",
+   "e40",
+   "e54"
+  ]
+ },
+ {
+  "observation": "Two different CTA treatments recur: orange filled pills for buttons (Find a gym, Get in touch, Sign up) and underlined text links inside cards (Buy a gift card, Learn more, Choose your gym).",
+  "category": "components",
+  "evidence": "Orange background is used 3 times (e22, e113, e119). Card links e31, e35, e39 and e43 are underlined, unfilled anchors.",
+  "element_ids": [
+   "e22",
+   "e113",
+   "e119",
+   "e31",
+   "e43"
+  ]
+ },
+ {
+  "observation": "The nav is a flat list of seven items in bold-ish navy text with no dropdowns, icons or highlighted CTA. Items repeat the section names that appear again in the footer 'Explore' list.",
+  "category": "components",
+  "evidence": "Header ul e4 has li items for Options to Climb, Locations, Covid-19, About, Franchising, Contact and Gift Cards. The footer Explore list repeats Options to Climb, Locations, About Us and Franchising.",
+  "element_ids": [
+   "e4",
+   "e5",
+   "e17",
+   "e122"
+  ]
+ }
+]

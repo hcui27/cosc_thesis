@@ -1,0 +1,371 @@
+[
+ {
+  "observation": "Page is a single-file build with one inline <style> block and zero external stylesheets. It has only 36 unique classes across 75 class uses, and a tailwind-like fraction of 0.027, so styling is hand-written semantic CSS.",
+  "category": "dom-structure",
+  "evidence": "counts.stylesheets=0, tag_counts.style=1, classes.total=75, unique=36, tailwind_like_fraction=0.027",
+  "element_ids": []
+ },
+ {
+  "observation": "Semantic landmarks are used: one header, two navs, one main, five sections, two articles and one footer. There are no aside, figure or blockquote elements. Div count is modest at 25.",
+  "category": "dom-structure",
+  "evidence": "semantic: header 1, nav 2, main 1, section 5, article 2, footer 1, figure 0; tag_counts.div=25",
+  "element_ids": [
+   "e1",
+   "e54",
+   "e55",
+   "e63",
+   "e102"
+  ]
+ },
+ {
+  "observation": "Heading outline is clean: a single h1 'Play Your Day Away' followed by eight h2s and no h3+ levels. Three of the h2s sit inside the quick-link cards (Buy Tickets, Season Passes, Birthday parties).",
+  "category": "dom-structure",
+  "evidence": "h1_count=1; heading_outline lists 1 h1 and 8 h2 entries",
+  "element_ids": [
+   "e40",
+   "e46",
+   "e49",
+   "e52",
+   "e59"
+  ]
+ },
+ {
+  "observation": "The dropdown navigation uses native <details>/<summary> elements for Tickets, Parks, Plan and More. Home and Attractions are plain links. There is no JS-driven menu markup, apart from a single 'Menu ☰' button that is presumably a mobile toggle.",
+  "category": "component",
+  "evidence": "tag_counts.details=4, summary=4, button=1; primary_button text 'Menu ☰'; nav ul at 829,21 with details items",
+  "element_ids": [
+   "e6",
+   "e9",
+   "e10",
+   "e14",
+   "e20",
+   "e31"
+  ]
+ },
+ {
+  "observation": "Typography is a single family: Trebuchet MS, with Segoe UI and system-ui fallbacks, applied across 168 elements. There is no webfont or serif pairing. Hierarchy comes from size and weight only, with body at 16px and 25.6px line-height (1.6).",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Trebuchet MS 168; body_font_size 16px; body_line_height 25.6px",
+  "element_ids": []
+ },
+ {
+  "observation": "The hero h1 is 80px, bold 700, white and centered, with a visible text shadow over a photo. The h2s are much smaller at 22.4px bold, so the scale jumps from 80px to about 22px with no intermediate level.",
+  "category": "typography",
+  "evidence": "h1 font_size 80px, weight 700, color rgb(255,255,255), text_align center; h2 font_size 22.4px",
+  "element_ids": [
+   "e40",
+   "e46",
+   "e59"
+  ]
+ },
+ {
+  "observation": "The hero is a full-bleed water-slide photograph with a blue tint. The headline, a centered subtitle and two pill buttons are stacked over it. The hero block spans 0,137 to 1440x632.",
+  "category": "layout",
+  "evidence": "div e39 at 0,137,1440,632; h1 at 160,307; p at 374,415,691x61; buttons at y=505",
+  "element_ids": [
+   "e39",
+   "e40",
+   "e41",
+   "e42",
+   "e43"
+  ]
+ },
+ {
+  "observation": "A rough white brush-stroke SVG (300x36 natural, stretched to 1440x175) forms a torn-edge divider at the bottom of the hero. It is an image with empty alt and overlaps the hero's lower edge.",
+  "category": "decoration",
+  "evidence": "img brush.svg rect 0,595,1440,175, alt ''",
+  "element_ids": [
+   "e44"
+  ]
+ },
+ {
+  "observation": "A dark indigo announcement banner sits under the header. It carries a cyan bold lead-in ('Opening Day: May 29, 2021.') followed by white body text that wraps to two centered lines. It spans the full width at 69px high.",
+  "category": "component",
+  "evidence": "div e37 at 0,68,1440,69; bg rgb(41,34,88); strong at 18,81",
+  "element_ids": [
+   "e37",
+   "e38"
+  ]
+ },
+ {
+  "observation": "The color palette is built on deep indigo (rgb 41,34,88), a cyan accent (37,193,241), a pale blue tint (244,249,253), and ink navy text (28,35,64). Mint, cream and Coca-Cola red (200,16,46) appear as one-off tints.",
+  "category": "color",
+  "evidence": "top_backgrounds: 255/255/255 x10, 244/249/253 x10, 41/34/88 x6, 37/193/241 x1, 217/246/230, 255/241/214, 200/16/46; body_color 28,35,64",
+  "element_ids": []
+ },
+ {
+  "observation": "Link and heading text in the cards and the plan list uses a mid-blue (16,118,189), while the primary body text is navy. Footer links and copyright are a pale lavender (195,200,224) on a near-black purple background.",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(16,118,189) x9, rgb(195,200,224) x17",
+  "element_ids": [
+   "e46",
+   "e84",
+   "e106",
+   "e111"
+  ]
+ },
+ {
+  "observation": "Buttons share one pill-shaped system with two variants. The solid variants are cyan (hero Buy Tickets) or indigo (card and section CTAs). The outline variants have a navy or white border with a transparent fill. All are about 54px tall and carry a bold label.",
+  "category": "component",
+  "evidence": "pill radius bucket count 14; anchors e42/e43 at 54px height; e61/e62, e69/e70, e77-e80 all h=54",
+  "element_ids": [
+   "e42",
+   "e43",
+   "e61",
+   "e62",
+   "e77",
+   "e78"
+  ]
+ },
+ {
+  "observation": "The same CTA pair ('Get a Season Pass' and 'Buy Tickets') is repeated in both product cards and again in the Plan section. 'Buy Tickets' also appears as a hero button and as a quick-link card. The copy is repeated rather than varied.",
+  "category": "copy",
+  "evidence": "e61/e62, e69/e70, e90/e91 text pairs; e42 'Buy Tickets', e46 'Buy Tickets'",
+  "element_ids": [
+   "e42",
+   "e61",
+   "e62",
+   "e90",
+   "e91",
+   "e46"
+  ]
+ },
+ {
+  "observation": "Three quick-link cards overlap the hero's bottom edge. Each is a single anchor containing an h2 and a span with an arrow suffix ('Start the Excitement →'). They have a pale blue fill, a light border and rounded corners, and they sit in a three-column row.",
+  "category": "component",
+  "evidence": "anchors e45/e48/e51 at 160/539/919,748,361x125; bg rgb(244,249,253)",
+  "element_ids": [
+   "e45",
+   "e48",
+   "e51",
+   "e46",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The two main park cards form a two-column grid with a 28px gutter. Each has a full-width photo on top, a colored status pill, a park logo, an h2, a short paragraph and two CTAs. Both cards are 546x702 and have rounded corners and a soft drop shadow.",
+  "category": "layout",
+  "evidence": "articles e55 at 160,950,546x702 and e63 at 734,950,546x702; box_shadows 8; radius bucket_8_15 count 42",
+  "element_ids": [
+   "e55",
+   "e63",
+   "e56",
+   "e64"
+  ]
+ },
+ {
+  "observation": "Status badges are small pill chips in tinted fills: mint green for 'Opening May 29, 2021' and cream/amber for 'Closed for 2021 · Returning 2022'. They carry bold dark text and use a middle dot separator.",
+  "category": "component",
+  "evidence": "backgrounds rgb(217,246,230) and rgb(255,241,214); spans at 184,1338 and 758,1338",
+  "element_ids": [
+   "e57",
+   "e65"
+  ]
+ },
+ {
+  "observation": "The park logos are repeated as SVGs in the header, inside each card, and in the footer, where they sit on white rounded chips against the dark background. The same three files are reused across 6 of the 13 image instances.",
+  "category": "imagery",
+  "evidence": "images list: Blue Bayou Logo.svg x4, Dixie Landin Logo.svg x4 (counting header, card, footer)",
+  "element_ids": [
+   "e3",
+   "e5",
+   "e58",
+   "e66",
+   "e103",
+   "e104"
+  ]
+ },
+ {
+  "observation": "The card logos are shown at 498x56 and centered, so the 300px-wide SVG leaves wide empty space on either side. They are centered while the headings and paragraphs below them are left-aligned.",
+  "category": "imagery",
+  "evidence": "img rect 184,1380,498,56 vs natural 300x108; h2 at x=184 left aligned",
+  "element_ids": [
+   "e58",
+   "e66",
+   "e59"
+  ]
+ },
+ {
+  "observation": "A full-bleed pool-water photo band (1440x600) holds a 640x360 white-background PNG that reads 'Summer is waiting for you'. The graphic is not transparent, so a hard white rectangle sits over the textured photo. The section has no text content beyond the image alt.",
+  "category": "imagery",
+  "evidence": "section e71 0,1708,1440x600; img png 1600x900 natural at 400,1828,640x360; alt 'Summer is waiting'",
+  "element_ids": [
+   "e71",
+   "e72",
+   "e73"
+  ]
+ },
+ {
+  "observation": "The 'Stay Connected' section has a centered h2 and a one-line paragraph. Below them is a row of four pill buttons: one solid (Facebook) and three outlined (Newsletter, Twitter, YouTube). It sits on the pale blue tint background.",
+  "category": "layout",
+  "evidence": "section e74 0,2308,1440x278; buttons at y=2477 with widths 199/260/107/115",
+  "element_ids": [
+   "e74",
+   "e75",
+   "e76",
+   "e77",
+   "e78",
+   "e79",
+   "e80"
+  ]
+ },
+ {
+  "observation": "The 'Plan Your Summer Getaway' section is a two-column split. A text column holds a 2x3 grid of pale link tiles (Park Maps, Directions, Food & Concessions, Groups, Hotels, Corporate Events) and the CTA pair. A rounded ice-cream-cone photo with a shadow fills the right column.",
+  "category": "layout",
+  "evidence": "ul e83 160,2725,568x169; tiles 279x50; img e92 764,2642,516x344",
+  "element_ids": [
+   "e82",
+   "e83",
+   "e84",
+   "e86",
+   "e90",
+   "e92"
+  ]
+ },
+ {
+  "observation": "The plan links are blue-text tiles with pale-blue fill and rounded corners, placed in a grid with no icons. They hold short noun-phrase labels. The list is a ul of 6 anchors.",
+  "category": "component",
+  "evidence": "anchors e84-e89 each 279x50; text color rgb(16,118,189)",
+  "element_ids": [
+   "e84",
+   "e85",
+   "e86",
+   "e87",
+   "e88",
+   "e89"
+  ]
+ },
+ {
+  "observation": "A dark indigo promo band holds two equal cards. The left card is a translucent white-8% panel with a cyan h2 'Come back tomorrow, free' and a paragraph. The right card is solid Coca-Cola red with a can image, a white wordmark and 'Save $5' in bold. The left card has a large empty area under its text.",
+  "category": "component",
+  "evidence": "section e93 0,3042,1440x455; e94 bg rgba(255,255,255,0.08) 546x343; e97 bg rgb(200,16,46); text ends ~y=3265 in a card running to 3441",
+  "element_ids": [
+   "e93",
+   "e94",
+   "e95",
+   "e96",
+   "e97",
+   "e98",
+   "e99",
+   "e100"
+  ]
+ },
+ {
+  "observation": "The Coca-Cola card shows a third-party sponsor with two separate image assets (a full can PNG and a white script wordmark). The can image is 150x279. The 'Save $5' offer is bolded within a sentence.",
+  "category": "imagery",
+  "evidence": "img coke-can-full.png 150x279; coke-white.png 150x50; strong e101 'Save $5'",
+  "element_ids": [
+   "e98",
+   "e99",
+   "e100",
+   "e101"
+  ]
+ },
+ {
+  "observation": "The footer is near-black purple. It has two logo chips centered, a single row of five text links (Contact, Jobs, FAQs, Calendar, Newsletter) and a one-line centered copyright. There are no columns or social icons.",
+  "category": "layout",
+  "evidence": "footer e102 0,3497,1440x201; ul e105 five links; p e111 at y=3627",
+  "element_ids": [
+   "e102",
+   "e103",
+   "e104",
+   "e105",
+   "e111"
+  ]
+ },
+ {
+  "observation": "Section backgrounds alternate in a rhythm: white nav, indigo banner, photo hero, white/blue-tint cards, photo band, pale blue, white, indigo, then near-black footer. Content stays inside a 1120px container at x=160 to 1280.",
+  "category": "layout",
+  "evidence": "containers at x=160,w=1120 (h1, e75, cards); page_width 1440; top_backgrounds white x10, 244/249/253 x10",
+  "element_ids": [
+   "e54",
+   "e71",
+   "e74",
+   "e81",
+   "e93",
+   "e102"
+  ]
+ },
+ {
+  "observation": "The header holds the two park logos at left (52px tall) and a right-aligned five-item text nav in 16px-ish semibold navy. It has no search, CTA button or visible dropdown indicator such as a caret.",
+  "category": "layout",
+  "evidence": "header e1 0,10,1440,68; logos at x=160 and 318; ul e6 829-1280 at y=21",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4",
+   "e6"
+  ]
+ },
+ {
+  "observation": "Effects are restrained: 8 box-shadows (soft shadows on cards and photos), 2 gradients, 15 transitions, and no animations, transforms or backdrop blur.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 8, gradient_backgrounds 2, transitions 15, animations 0, transforms 0, backdrop_blur 0",
+  "element_ids": [
+   "e55",
+   "e63",
+   "e92"
+  ]
+ },
+ {
+  "observation": "Border-radius is mixed: 112 elements are square (0), 42 sit at 8-15px (cards, tiles, photos), and 14 are fully pill-shaped (buttons and badges). There is nothing in the 1-7px or 16px+ non-pill ranges.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 112, bucket_8_15 42, bucket_pill 14, bucket_1_7 0, bucket_16_plus 0",
+  "element_ids": [
+   "e45",
+   "e55",
+   "e84",
+   "e42"
+  ]
+ },
+ {
+  "observation": "Copy is concise and promotional, with a friendly, family-oriented tone ('Bring your floaties, apply sunscreen…'). The page has 257 words, no emoji and no exclamation marks. It has one em dash, used in the title and in the free-return paragraph. Time-sensitive 2021 COVID and opening-date notices are in the banner, the badges and the card text.",
+  "category": "copy",
+  "evidence": "text_stats: words 257, emoji 0, exclamations 0, em_dashes 1; e37, e60, e68 text",
+  "element_ids": [
+   "e37",
+   "e60",
+   "e68",
+   "e96"
+  ]
+ },
+ {
+  "observation": "Images carry alt text for all content images (alt_missing=0). The brush divider and the ice-cream photo use empty alt. There are 13 images and 0 inline SVG elements, with the logos loaded as external .svg files. aria attributes appear 8 times, and 3 inline style attributes are used.",
+  "category": "dom-structure",
+  "evidence": "counts: images 13, svgs 0, alt_missing 0, aria_attrs 8, inline_style_attrs 3",
+  "element_ids": [
+   "e44",
+   "e92",
+   "e3"
+  ]
+ },
+ {
+  "observation": "Document metadata is minimal: lang='en', a viewport meta, a description meta and a title in the form 'Blue Bayou Water Park & Dixie Landin' — Play Your Day Away'. There are no JSON-LD blocks and one script.",
+  "category": "dom-structure",
+  "evidence": "meta_names charset, viewport, description; jsonld_blocks 0; script 1; title in facts.json",
+  "element_ids": []
+ },
+ {
+  "observation": "Photography is warm and consumer-lifestyle: a girl on a slide tube, a yellow-purple slide funnel, friends on a coaster, a floating ring in a pool, and an ice-cream cone against the sky. The images are not cropped into circles or masked and are laid out as rectangular blocks. The card photos have rounded top corners.",
+  "category": "imagery",
+  "evidence": "images landofthegiants.jpg 1200x800, Thrills.jpg 1200x675, shutterstock.jpg 1500x997 shown at 546x364 and 516x344",
+  "element_ids": [
+   "e56",
+   "e64",
+   "e92",
+   "e72"
+  ]
+ },
+ {
+  "observation": "The page is 1440 wide and 3698 tall, with a heavy vertical spacing rhythm. The sections are 600-814px tall and the gutters between components are about 20-28px.",
+  "category": "layout",
+  "evidence": "page_height 3698; section heights 814, 600, 278, 456, 455; display_grid 5, display_flex 19",
+  "element_ids": [
+   "e54",
+   "e71",
+   "e74",
+   "e81",
+   "e93"
+  ]
+ }
+]

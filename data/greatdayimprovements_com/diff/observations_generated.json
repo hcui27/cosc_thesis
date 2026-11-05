@@ -1,0 +1,357 @@
+[
+ {
+  "observation": "Document has a clean semantic skeleton: one header, one nav, one main, four sections, one footer, and a single h1. There are no article, aside or figure elements.",
+  "category": "dom-semantics",
+  "evidence": "semantic counts: header 1, nav 1, main 1, section 4, footer 1, article 0, figure 0; h1_count 1",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e16",
+   "e31",
+   "e49",
+   "e58",
+   "e71"
+  ]
+ },
+ {
+  "observation": "Heading outline is orderly: h1, then five h2 section titles, with h3 card titles under Explore and What's new, and an h4 in the footer.",
+  "category": "dom-semantics",
+  "evidence": "heading_outline: h1 hero, h2 Our brands/Explore/What's new/Call.../Visit us, 7 h3, 1 h4",
+  "element_ids": [
+   "e11",
+   "e17",
+   "e32",
+   "e36",
+   "e50",
+   "e74"
+  ]
+ },
+ {
+  "observation": "Typography uses a single system-ui stack for all text, with no webfonts and no stylesheets. The page has one inline style block and no scripts.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 116; stylesheets 0; scripts 0; style tag 1",
+  "element_ids": []
+ },
+ {
+  "observation": "The h1 is large and bold at 48px, set in dark slate. It wraps to four left-aligned lines in a narrow column, with 'custom-made' hyphen-broken across lines.",
+  "category": "typography",
+  "evidence": "h1 font_size 48px, weight 700, color rgb(31,42,51); box 534x221",
+  "element_ids": [
+   "e11"
+  ]
+ },
+ {
+  "observation": "The type scale is simple. Body text is 17px on a 27.2px line-height (1.6). H2s are 30.4px bold. Subtitle paragraphs under each h2 are in a muted grey.",
+  "category": "typography",
+  "evidence": "body_font_size 17px, line_height 27.2px; h2 30.4px/700; muted text rgb(90,103,114)",
+  "element_ids": [
+   "e17",
+   "e18",
+   "e32",
+   "e33",
+   "e50",
+   "e51"
+  ]
+ },
+ {
+  "observation": "The palette is restrained: white and pale blue-grey (243,246,248) section backgrounds, dark slate text, a deep blue (11,92,142) for the primary accent, and an amber/gold (232,163,23) for the CTA.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 10, rgb(243,246,248) 3, rgb(11,92,142) 1, rgb(232,163,23) 1, rgb(20,32,42) 1",
+  "element_ids": [
+   "e10",
+   "e13",
+   "e9"
+  ]
+ },
+ {
+  "observation": "Section backgrounds alternate between tinted and white bands as the page scrolls: hero tinted, Brands white, Explore tinted, What's new white, Call/Visit tinted, footer dark navy.",
+  "category": "layout",
+  "evidence": "section y-ranges 80–616, 616–1038, 1038–1741, 1741–2281, 2281–2703; footer bg rgb(20,32,42)",
+  "element_ids": [
+   "e10",
+   "e16",
+   "e31",
+   "e49",
+   "e58",
+   "e71"
+  ]
+ },
+ {
+  "observation": "The header is a white bar 80px tall with a thin bottom border. The small logo sits on the left and a right-aligned nav holds four text links plus a phone number styled as a filled blue button.",
+  "category": "component",
+  "evidence": "header 0,0,1440,80; nav at x757; phone link e9 141x40 with blue bg and white text",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The phone number is repeated as the header button, the hero 'Call today' button, and the large blue text link in the Call section. This makes the phone call the recurring conversion action.",
+  "category": "copy",
+  "evidence": "'888-468-0700' in e9 and e60; 'Call today' in e14",
+  "element_ids": [
+   "e9",
+   "e14",
+   "e60"
+  ]
+ },
+ {
+  "observation": "The hero is a two-column split. Text, a paragraph and two buttons sit on the left, and a large logo image sits centered in the right column. There is no photographic hero imagery.",
+  "category": "layout",
+  "evidence": "h1 at x190 w534; img Great-Day-Improvements-Logo.png at 857,257,300x181; hero 1440x537",
+  "element_ids": [
+   "e10",
+   "e11",
+   "e15"
+  ]
+ },
+ {
+  "observation": "The hero has a solid amber primary button (dark text, 6px radius, 12px 24px padding) next to an outlined blue secondary button that has a blue border and blue text.",
+  "category": "component",
+  "evidence": "primary_button 'Our story' bg rgb(232,163,23), color rgb(27,27,27), radius 6px; e14 'Call today' outlined",
+  "element_ids": [
+   "e13",
+   "e14"
+  ]
+ },
+ {
+  "observation": "The content column is fixed at about 1060px, with 190px left and right margins on the 1440px canvas. Section headers and card grids all align to this container.",
+  "category": "layout",
+  "evidence": "h2 boxes 190,…,1060 wide; cards end at x1250",
+  "element_ids": [
+   "e17",
+   "e32",
+   "e50"
+  ]
+ },
+ {
+  "observation": "Each section opens with a left-aligned h2 and a one-line muted subtitle before its card grid. This repeats the same section-intro pattern.",
+  "category": "component",
+  "evidence": "h2 + p pairs: 'Our brands'/'One manufacturer...', 'Explore'/'Find the solution...', 'What's new'/'Latest from...'",
+  "element_ids": [
+   "e17",
+   "e18",
+   "e32",
+   "e33",
+   "e50",
+   "e51"
+  ]
+ },
+ {
+  "observation": "The Our brands section is a three-column grid of equal bordered white cards. Each card centers a logo, a bold brand name and a muted subline (a URL, or 'Home'). Each whole card is one anchor.",
+  "category": "component",
+  "evidence": "cards 340x194 at x190/550/910; anchors e19, e23, e27 contain img, strong and span",
+  "element_ids": [
+   "e19",
+   "e23",
+   "e27",
+   "e21",
+   "e22"
+  ]
+ },
+ {
+  "observation": "Cards use thin light-grey borders and rounded corners of about 8–15px, with no box-shadows at all. Depth comes from borders and background tint only.",
+  "category": "decoration",
+  "evidence": "box_shadows 0; border_radius bucket_8_15: 10, bucket_1_7: 4; gradient_backgrounds 0",
+  "element_ids": [
+   "e19",
+   "e34",
+   "e52"
+  ]
+ },
+ {
+  "observation": "The Explore section uses a 3-column grid of image cards with five items, so the second row has two cards and an empty third slot. Each card has an image on top and a bold h3 title with a blue right-arrow at the right edge.",
+  "category": "layout",
+  "evidence": "cards at 190/551/913 x y1210; second row e43, e46 at y1474 only; arrow glyphs in slice 2",
+  "element_ids": [
+   "e34",
+   "e37",
+   "e40",
+   "e43",
+   "e46"
+  ]
+ },
+ {
+  "observation": "Explore card images are marketing banners with text baked into the image ('Create a shaded space.', 'Leave a lasting impression.'). They are 676x301 files shown at 335x149 and cropped on top. The alt text is empty on all of them.",
+  "category": "imagery",
+  "evidence": "hp-rotator-*.jpg natural 676x301, rect 335x149, alt ''",
+  "element_ids": [
+   "e35",
+   "e38",
+   "e41",
+   "e44",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The card title is the only text the card carries. The h3 inside each anchor is the link label, and the card heights vary (the Patio card's two-line title makes it 240px high against 211px for the others).",
+  "category": "component",
+  "evidence": "e42 h3 height 88 vs 60 for e36/e39; anchor heights 240 vs 211",
+  "element_ids": [
+   "e36",
+   "e39",
+   "e42",
+   "e45",
+   "e48"
+  ]
+ },
+ {
+  "observation": "The What's new section has two wider image cards (366x250 images) in a row spanning only about two-thirds of the container. Both are promotional graphics: a gray financing badge and a blue 'SAVE BIG' badge with a phone number embedded in the image.",
+  "category": "imagery",
+  "evidence": "gdi-whatsnew-new-finance.jpg and whats-new-save-big.jpg at 366x250; cards x190–950, container ends 1250",
+  "element_ids": [
+   "e52",
+   "e53",
+   "e55",
+   "e56"
+  ]
+ },
+ {
+  "observation": "The Call/Visit section is two columns. The left column has an h2, a large blue phone link and an hours table with hairline row dividers. The right column has an h2 and an address.",
+  "category": "layout",
+  "evidence": "h2 at x190 w510 and x740 w510; table with 3 tr / 6 td; address e69",
+  "element_ids": [
+   "e59",
+   "e60",
+   "e62",
+   "e68",
+   "e69"
+  ]
+ },
+ {
+  "observation": "Opening hours use a real table of day/time pairs, with times right-aligned within a 420px width. The table has no header row.",
+  "category": "dom-semantics",
+  "evidence": "table 1, tr 3, td 6; td x190 w267 and x457 w153",
+  "element_ids": [
+   "e62",
+   "e63",
+   "e64",
+   "e65",
+   "e66",
+   "e67"
+  ]
+ },
+ {
+  "observation": "The phone number in the Call section is set as large bold blue text, around 32px, and acts as a link. It works as an oversized inline CTA without a button background.",
+  "category": "typography",
+  "evidence": "e60 box 243x51; blue color rgb(11,92,142) in text colors (4 uses)",
+  "element_ids": [
+   "e60"
+  ]
+ },
+ {
+  "observation": "The address block uses a semantic address element. The 'Corporate Office' label is a script-lettered PNG image rather than live text.",
+  "category": "imagery",
+  "evidence": "address e69 contains Corporate-Office.png 184x38 alt 'Corporate office'",
+  "element_ids": [
+   "e69",
+   "e70"
+  ]
+ },
+ {
+  "observation": "The footer is dark navy with light text. It starts with a white rounded plate holding a certification-badge strip (Energy Star, EPA Lead-Safe, Remodeler awards) as a single raster image.",
+  "category": "imagery",
+  "evidence": "footer bg rgb(20,32,42); gdi-logos.png 366x47 inside div 394x67; alt names Great Day Improvements, Patio Enclosures and Stanek Windows logos",
+  "element_ids": [
+   "e71",
+   "e72",
+   "e73"
+  ]
+ },
+ {
+  "observation": "The image alt text on the footer badge strip describes three brand logos, but the visible image shows certification and award badges.",
+  "category": "imagery",
+  "evidence": "alt 'Great Day Improvements, Patio Enclosures and Stanek Windows logos' vs visible Energy Star/EPA/Remodeler badges",
+  "element_ids": [
+   "e73"
+  ]
+ },
+ {
+  "observation": "Contractor licence numbers are a single ul of 17 li items flowed into three columns, filled column-first (6/6/5). They are set in small light-grey text under a bold h4.",
+  "category": "component",
+  "evidence": "ul 1060x155; li at x190/548/906 each 344 wide; 17 li; text colour rgb(201,211,218) appears 23 times",
+  "element_ids": [
+   "e74",
+   "e75",
+   "e76",
+   "e82",
+   "e88"
+  ]
+ },
+ {
+  "observation": "The footer copyright line credits the web agency, with the credit as a white underlined link. Underlining appears here, while nav and card links are not underlined.",
+  "category": "copy",
+  "evidence": "'Website built by Evolve Creative Group.' with link e94",
+  "element_ids": [
+   "e93",
+   "e94"
+  ]
+ },
+ {
+  "observation": "Copy is short and declarative, with no emoji, exclamation marks or em dashes. Only 198 words appear on the page, and the tone is informational.",
+  "category": "copy",
+  "evidence": "text_stats words 198, emoji 0, em_dashes 0, exclamations 0",
+  "element_ids": []
+ },
+ {
+  "observation": "The page is lean in markup, with 35 class uses across 17 unique class names and no utility-class (Tailwind-style) naming. Layout uses 12 flex and 5 grid containers.",
+  "category": "dom-semantics",
+  "evidence": "classes total 35, unique 17, tailwind_like_fraction 0; display_flex 12, display_grid 5",
+  "element_ids": []
+ },
+ {
+  "observation": "Interaction polish is minimal: 10 elements have CSS transitions, and there are no animations, transforms, backdrop blur or gradients.",
+  "category": "decoration",
+  "evidence": "transitions 10, animations 0, transforms 0, backdrop_blur 0, gradient_backgrounds 0",
+  "element_ids": []
+ },
+ {
+  "observation": "Logos are reused across the page: the small GDI logo appears in the header and in the brand card, and a larger version in the hero. Brand-card logos are 115–135px wide and centered.",
+  "category": "imagery",
+  "evidence": "logo-gdi-small.png used twice (96x59 and 115x70); Great-Day-Improvements-Logo.png 300x181; PE/ST 135x70",
+  "element_ids": [
+   "e3",
+   "e15",
+   "e20",
+   "e24",
+   "e28"
+  ]
+ },
+ {
+  "observation": "The body has a lot of vertical whitespace. Sections are about 420–700px tall with roughly 56px top padding before each h2, and the whole page is 3126px at 1440px wide.",
+  "category": "layout",
+  "evidence": "page_height 3126; h2 y offsets 56px below section tops (672 vs 616, 1094 vs 1038)",
+  "element_ids": [
+   "e16",
+   "e17",
+   "e31",
+   "e32"
+  ]
+ },
+ {
+  "observation": "Accessibility attributes are sparse: only one aria attribute is present. Images carry alt text, but the 7 content photos and promo images have empty alt.",
+  "category": "dom-semantics",
+  "evidence": "aria_attrs 1, alt_missing 0, 7 imgs with alt ''",
+  "element_ids": [
+   "e35",
+   "e38",
+   "e41",
+   "e44",
+   "e47",
+   "e53",
+   "e56"
+  ]
+ },
+ {
+  "observation": "Most elements have square corners (102 at radius 0). Rounding applies only to cards, buttons, inputs-like containers and the badge plate, with none at 16px or above and no pills.",
+  "category": "decoration",
+  "evidence": "bucket_0 102, bucket_1_7 4, bucket_8_15 10, bucket_16_plus 0, bucket_pill 0",
+  "element_ids": [
+   "e13",
+   "e19",
+   "e72"
+  ]
+ }
+]

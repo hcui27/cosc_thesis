@@ -1,0 +1,177 @@
+[
+ {
+  "observation": "Page title is the generic 'Home'; html lang is 'en-gb'. Only 3 meta names (content-type, description, generator), no JSON-LD blocks.",
+  "category": "semantics",
+  "evidence": "facts.json: title 'Home', lang 'en-gb', jsonld_blocks 0"
+ },
+ {
+  "observation": "Heading structure is unusual: 27 h1 elements, because the 9 slider slide titles are repeated three times (likely cloned carousel slides). The h2s are only the three section labels.",
+  "category": "semantics",
+  "evidence": "h1_count 27; heading_outline repeats 'CIUDAD EN ESAPANA' … 'MODERN & CONTEMPORARY ART' three times; 3 h2s"
+ },
+ {
+  "observation": "A full-bleed painting hero fills the top ~900px. A slide caption in 60px bold white Cabin sits bottom-left over the artwork, with no overlay or shadow behind it.",
+  "category": "hero",
+  "evidence": "h1 60px/700 Cabin rgb(255,255,255) left-aligned; slice 1 shows 'CIUDAD EN ESAPANA' at x≈135,y≈620"
+ },
+ {
+  "observation": "The slide titles are a different color from the nav and carry a typo ('ESAPANA'). The caption is hard to read where it crosses the pale parts of the painting.",
+  "category": "copy",
+  "evidence": "h1 text 'CIUDAD EN ESAPANA'; white text on the multi-colour painting"
+ },
+ {
+  "observation": "A row of 9 hollow circular pagination bullets sits under the slide caption. The first is a filled/ringed active state.",
+  "category": "components",
+  "evidence": "slice 1 bullets at y≈720; 9 slide titles; pill radius bucket 11"
+ },
+ {
+  "observation": "The header block is a semi-transparent grey-white band laid over the top of the hero image, with centred content. The painting shows through the band.",
+  "category": "layout",
+  "evidence": "top_backgrounds includes rgba(1,1,0,0.53); band spans y≈67–317 in slice 1"
+ },
+ {
+  "observation": "The brand title is set in wide, extended Krona One uppercase in white across two lines, with an 'Arizonia' script tagline 'History & Works' under it, flanked by thin rules.",
+  "category": "typography",
+  "evidence": "fonts: Krona One 66 elements, Arizonia 1; slice 1 header"
+ },
+ {
+  "observation": "The nav is a centred horizontal row of uppercase Cabin links with wide spacing. The active 'HOME' item is red and low-contrast against the image.",
+  "category": "navigation",
+  "evidence": "slice 1 nav at y≈221; accent rgb(232,43,24); 2 nav elements"
+ },
+ {
+  "observation": "A long uppercase announcement line sits directly under the nav, wrapping to two lines in the same style as the nav links. It reads as a news ticker or banner.",
+  "category": "copy",
+  "evidence": "slice 1 text 'F. N. SOUZA EXONERATES SON AND SOLE HEIR…WITH FORGERIES'"
+ },
+ {
+  "observation": "A small red square with a white user icon is pinned to the top-right corner, outside the main nav. It is the only strong red UI block in the first view.",
+  "category": "components",
+  "evidence": "slice 1 at x≈1400–1440,y≈0–40; rgb(232,43,24) in backgrounds; FontAwesome 5 elements"
+ },
+ {
+  "observation": "Section intros use geometric black shapes containing centred white or black labels: a black rectangle frame with a white inner box, a solid black circle, and a black ring with a white centre. Each shape is a different form.",
+  "category": "decoration",
+  "evidence": "slices 1–3: 'FRANCIS NEWTON SOUZA' in a black/white box, 'PHOTO GALLERY' in a black circle, 'CONTACT FORM' in a ring; h2 20px/700"
+ },
+ {
+  "observation": "The h2 labels are small (20px) bold, uppercase and line-broken into two lines, so the heading is a small text label inside a large shape. The shape is much bigger than the text.",
+  "category": "typography",
+  "evidence": "h2 font_size 20px weight 700; text 'FRANCIS\\nNEWTON SOUZA'"
+ },
+ {
+  "observation": "The artist intro is a small bordered portrait (176×131) floated left of a centred serif paragraph in book antiqua. It has a 'Read More' underlined inline link.",
+  "category": "layout",
+  "evidence": "fnsouza.jpg rect 176×131 at x205; 'book antiqua' 4 elements; slice 2 text"
+ },
+ {
+  "observation": "The intro paragraph's serif face and centred alignment differ from the rest of the page, which is Open Sans/Cabin. The serif is the only text block set in a different family.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Open Sans 302, Cabin 155, book antiqua 4"
+ },
+ {
+  "observation": "Body text is 16px Open Sans in grey rgb(88,88,88) on white, with a generous 30px line-height.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 30px, body_color rgb(88,88,88), body_bg white"
+ },
+ {
+  "observation": "A one-line centred caption, 'Explore a significant collection of the latest works.', sits between the gallery circle and the image grid. It is the only descriptive copy for the gallery.",
+  "category": "copy",
+  "evidence": "slice 2 text at y≈710; p count 1"
+ },
+ {
+  "observation": "The gallery is an irregular masonry-style grid of 6 painting thumbnails in two rows with varied widths (570, 270, 270; 370, 471, 270) at a constant 442px height. Gaps are about 30px and the images are cropped to fill.",
+  "category": "layout",
+  "evidence": "images rects: landscape_tb 570×442, last_supper_tb 270×442, villagescape_tb 270×442, abstract_hed_tb 370×442, chess_tb 471×442, mother_child_tb 270×442"
+ },
+ {
+  "observation": "The gallery images have no captions, text overlays or visible hover states in the static render. Each is wrapped in an article/figure (6 each), with no figcaption.",
+  "category": "imagery",
+  "evidence": "article 6, figure 6, figcaption 0; slice 2–3"
+ },
+ {
+  "observation": "The thumbnails are saturated expressionist paintings, which provide most of the page's colour. The surrounding UI stays neutral (black, white, grey), with one red accent.",
+  "category": "color",
+  "evidence": "top_backgrounds: red 232,43,24; grey 246,246,246; white; black; slices 2–3"
+ },
+ {
+  "observation": "All 7 images have alt attributes, but they are empty strings, so the alt is present but carries no description.",
+  "category": "semantics",
+  "evidence": "alt_missing 0; images[].alt all ''"
+ },
+ {
+  "observation": "The contact form is a two-column layout: three stacked single-line fields (Name, Email Address, Phone) on the left and a tall Message textarea on the right. The fields are flat light-grey (246,246,246) with no borders, and placeholder-only labels.",
+  "category": "forms",
+  "evidence": "slice 3; form 2, input 11, textarea 1, fieldset 1, label 2; rgb(246,246,246) backgrounds ×7"
+ },
+ {
+  "observation": "The submit button is an outlined, square-cornered white button with small bold uppercase 'SEND MESSAGE', centred under the form with a thin dark border.",
+  "category": "components",
+  "evidence": "primary_button bg rgb(255,255,255), color rgb(1,1,0), radius 0px, padding 17.5px 30px"
+ },
+ {
+  "observation": "Corners are almost entirely square: 520 elements have 0 radius. Rounded shapes appear only as pills or circles (11 pill, 2 at 16+).",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 520, bucket_pill 11, bucket_16_plus 2"
+ },
+ {
+  "observation": "There are no box shadows, gradients or backdrop blurs. Depth comes from image overlap and a semi-transparent band. Motion is limited to transitions (75), one animation and 11 transforms, consistent with a slider and hover effects.",
+  "category": "effects",
+  "evidence": "box_shadows 0, gradient_backgrounds 0, backdrop_blur 0, transitions 75, animations 1, transforms 11"
+ },
+ {
+  "observation": "Layout is built from div/span soup (196 divs, 187 spans) with float/inline positioning. Flex is used on only 1 element and grid on none.",
+  "category": "structure",
+  "evidence": "display_grid 0, display_flex 1; div 196, span 187"
+ },
+ {
+  "observation": "The semantic landmarks are partial: 1 main, 3 header, 2 nav, 1 section and 6 articles, but no footer element. The black footer is built from non-semantic elements.",
+  "category": "semantics",
+  "evidence": "semantic: footer 0, aside 0, main 1, header 3"
+ },
+ {
+  "observation": "There is heavy inline styling and a large class vocabulary. Classes are not utility-style (tailwind_like_fraction 0), suggesting a template-framework origin.",
+  "category": "structure",
+  "evidence": "inline_style_attrs 60; 1104 class uses, 221 unique; tailwind_like_fraction 0; generator meta present"
+ },
+ {
+  "observation": "Asset loading is heavy for a one-page layout: 29 scripts, 21 stylesheets and 24 link tags, plus a base element.",
+  "category": "structure",
+  "evidence": "script 29, stylesheets 21, link 24, base 1"
+ },
+ {
+  "observation": "The footer is a solid black band with a centred '© 2021 | PRIVACY POLICY' in small bold white uppercase, separated by a thin vertical rule. Below it, a dim grey template credit line, 'More Art Gallery Templates at TemplateMonster.com', is left-aligned and offset from the centred content.",
+  "category": "footer",
+  "evidence": "slice 4; rgb(0,0,0) background; text 'More Art Gallery Templates at TemplateMonster.com'"
+ },
+ {
+  "observation": "The page is centred in a roughly 1170px column (content from x≈135 to x≈1305) inside a 1440px viewport. The page is 4120px tall and has a vertical rhythm of large empty gaps between sections.",
+  "category": "layout",
+  "evidence": "page_width 1440, page_height 4120; image rects span x135–1306; whitespace between slices 1–2"
+ },
+ {
+  "observation": "There are only 227 words on the whole page. It is image-led, with a single paragraph of prose and short labels elsewhere.",
+  "category": "copy",
+  "evidence": "text_stats words 227; p count 1"
+ },
+ {
+  "observation": "Navigation is sparse and global: 43 anchors, 30 list items and 10 ul. Gallery and contact content are on the same single home page, with section labels that echo the nav items.",
+  "category": "navigation",
+  "evidence": "anchors 43, li 30, ul 10; nav items Home, About F N Souza, Family History, Gallery, Available for Sale, News, Contacts"
+ },
+ {
+  "observation": "Type is dominated by uppercase. The nav, announcement line, headings, button, footer and slide titles are all caps, while only the intro paragraph and the form placeholders are sentence case.",
+  "category": "typography",
+  "evidence": "slice 1–4 text; h1 outline all caps"
+ },
+ {
+  "observation": "The palette is restricted to black, white and grey with a single red accent (232,43,24) used for the active nav link and the user icon box. A Facebook-blue (59,89,152) and a red-orange (223,74,50) appear once each, likely social buttons.",
+  "category": "color",
+  "evidence": "top_backgrounds rgb(232,43,24) ×7, rgb(59,89,152) ×1, rgb(223,74,50) ×1"
+ },
+ {
+  "observation": "The page uses an emoji or icon-font glyph sparingly. There are 3 <i> elements and 5 elements with FontAwesome, and no SVGs.",
+  "category": "imagery",
+  "evidence": "svgs 0, i 3, FontAwesome 5, emoji 1"
+ }
+]

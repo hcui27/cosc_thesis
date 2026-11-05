@@ -1,0 +1,316 @@
+[
+ {
+  "observation": "Single-font system: every styled element uses Helvetica Neue (stack Helvetica, Arial, sans-serif). No serif or display face is mixed in.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Helvetica Neue 127; h1 font_family \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+  "element_ids": []
+ },
+ {
+  "observation": "The h1 is large and bold, set white and left-aligned over the hero photo. It wraps to two lines at a 864px box width.",
+  "category": "typography",
+  "evidence": "h1 57.6px, weight 600, rgb(255,255,255), text_align start; e12 190,173,864x138",
+  "element_ids": [
+   "e12"
+  ]
+ },
+ {
+  "observation": "The h2 headings are all one size and weight: 35.2px at 600. Each is left-aligned and preceded by a small eyebrow label.",
+  "category": "typography",
+  "evidence": "h2 font_size 35.2px, weight 600; five h2 elements; eyebrow ps e21, e35, e40, e45, e58",
+  "element_ids": [
+   "e22",
+   "e36",
+   "e41",
+   "e46",
+   "e59"
+  ]
+ },
+ {
+  "observation": "Eyebrow labels are small uppercase, letter-spaced, bold text in blue. They are light blue on dark sections and mid blue on light sections. They name each section (CORE VALUES AND APPROACH, ACCELERATORS, PORTFOLIO, WHO WE ARE, NEWS).",
+  "category": "typography",
+  "evidence": "Text is all caps with wide tracking in the screenshot; accent rgb(47,128,200) appears 9 times in text colors",
+  "element_ids": [
+   "e21",
+   "e35",
+   "e40",
+   "e45",
+   "e58"
+  ]
+ },
+ {
+  "observation": "The palette is restrained: navy backgrounds, white, pale grey and one mid-blue accent. Navy rgb(14,34,56) is the most common background. Page-wide text is dark slate rgb(27,39,51).",
+  "category": "color",
+  "evidence": "top_backgrounds: rgb(14,34,56) x7, rgb(244,246,248) x2, white x1, rgb(22,50,79) x1; accent rgb(47,128,200)",
+  "element_ids": []
+ },
+ {
+  "observation": "Sections alternate dark navy, white and light grey bands. The sequence is hero, grey featured strip, navy values, white accelerators, navy portfolio, white who-we-are, grey news, navy footer.",
+  "category": "layout",
+  "evidence": "Section y-ranges: e15 grey 584-693, e20 navy 693-1159, e32 white, e39 navy 1558-1889, e44 white, e57 grey 2453-3069, e81 navy footer",
+  "element_ids": [
+   "e15",
+   "e20",
+   "e32",
+   "e39",
+   "e44",
+   "e57",
+   "e81"
+  ]
+ },
+ {
+  "observation": "The hero is a full-width team photograph (1440x520) with a dark navy tint overlay. White headline, subhead and an outlined button sit on top at the left.",
+  "category": "imagery",
+  "evidence": "img e11 0,64,1440,520, alt 'The STG leadership team standing together in a bright office'; h1 white on the tinted photo",
+  "element_ids": [
+   "e10",
+   "e11",
+   "e12",
+   "e13",
+   "e14"
+  ]
+ },
+ {
+  "observation": "The top header is a solid navy bar 64px tall. The letter-spaced 'STG' text wordmark sits at the left and a horizontal nav list of six text links at the right. There are no buttons or dropdown controls.",
+  "category": "components",
+  "evidence": "header e1 0,0,1440,64; nav ul e3 with 6 anchors; counts.buttons 0",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "observation": "Content is confined to a centred column from x=190 to x=1250 (1060px) inside a 1440px viewport. Headings, text and buttons all align to the left edge at x=190.",
+  "category": "layout",
+  "evidence": "e21, e22, e40, e41, e45, e46, e58, e59 all x=190 w=1060",
+  "element_ids": [
+   "e22",
+   "e41",
+   "e46",
+   "e59"
+  ]
+ },
+ {
+  "observation": "All buttons are rectangular outlined (ghost) buttons with square corners and a thin border. The hero and portfolio buttons use white text and border on navy. The Learn more and Read More buttons use dark text and border on white.",
+  "category": "components",
+  "evidence": "primary_button bg rgba(0,0,0,0), radius 0px, padding 10.64px 22.8px; border_radius bucket_0 = 127 of 127",
+  "element_ids": [
+   "e14",
+   "e38",
+   "e43",
+   "e56"
+  ]
+ },
+ {
+  "observation": "The design has no rounded corners, box shadows, gradients or backdrop blur anywhere. The look is flat and sharp-edged.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 127, all others 0; box_shadows 0; gradient_backgrounds 0; backdrop_blur 0",
+  "element_ids": []
+ },
+ {
+  "observation": "Motion is minimal. There are 4 transitions and no animations or transforms. There are no scripts and no external stylesheets, only one inline style block.",
+  "category": "decoration",
+  "evidence": "transitions 4, animations 0, transforms 0, scripts 0, stylesheets 0, tag_counts.style 1",
+  "element_ids": []
+ },
+ {
+  "observation": "A pale grey 'Featured' announcement strip sits directly under the hero. It has a bold 'Featured:' lead-in, a one-line news sentence with an inline time date, and an underlined blue 'Read the announcement →' link.",
+  "category": "components",
+  "evidence": "e15 0,584,1440,109 bg rgb(244,246,248); strong e17; time e18 '(8 March 2021)'; link e19 with arrow glyph",
+  "element_ids": [
+   "e15",
+   "e16",
+   "e17",
+   "e18",
+   "e19"
+  ]
+ },
+ {
+  "observation": "Core values are a three-column row on navy. Each column has a thin-line white icon, an h3 and a short one or two-line description. The columns are 332px wide, spaced about 364px apart.",
+  "category": "layout",
+  "evidence": "icons e23, e26, e29 at x=190, 554, 918; h3s e24, e27, e30 at y=992 w=332; display_grid count 8",
+  "element_ids": [
+   "e23",
+   "e26",
+   "e29",
+   "e24",
+   "e27",
+   "e30"
+  ]
+ },
+ {
+  "observation": "Icons are outline-style SVG line drawings of varying natural size (39–110px) with empty alt text. They are decorative. The values icons sit directly on the navy section. The Who We Are icons sit inside small navy tiles.",
+  "category": "imagery",
+  "evidence": "images: icn-*.svg all alt ''; sizes 79x68, 59x59, 55x54, 110x65, 64x62, 39x63; wrappers e47 104x88 and e51 79x88",
+  "element_ids": [
+   "e23",
+   "e26",
+   "e29",
+   "e47",
+   "e48",
+   "e51",
+   "e52"
+  ]
+ },
+ {
+  "observation": "The Accelerators section is a two-column split. The left column is a 506x240 flat navy-blue block with one centred white line icon and no photo. The right column holds the eyebrow, h2, paragraph and 'Learn more' button.",
+  "category": "layout",
+  "evidence": "e33 190,1239,506x240 bg rgb(22,50,79); e34 icon 110x65; text column at x=744 w=506",
+  "element_ids": [
+   "e33",
+   "e34",
+   "e35",
+   "e36",
+   "e37",
+   "e38"
+  ]
+ },
+ {
+  "observation": "The Portfolio section is text-only on navy. It has an eyebrow, h2, a single-sentence paragraph and one outlined button, with no portfolio logos or images.",
+  "category": "copy",
+  "evidence": "e39 0,1558,1440,331: elements e40–e43 only; no img children",
+  "element_ids": [
+   "e39",
+   "e40",
+   "e41",
+   "e42",
+   "e43"
+  ]
+ },
+ {
+  "observation": "The Who We Are section is two columns, Experts and Innovators. Each has an icon tile, an h3 and a short paragraph. A single 'Read More' button sits below, left-aligned, spanning neither column.",
+  "category": "layout",
+  "evidence": "h3 e49 x=190 w=514; e53 x=736 w=514; button e56 at 190,2316",
+  "element_ids": [
+   "e47",
+   "e49",
+   "e50",
+   "e51",
+   "e53",
+   "e54",
+   "e56"
+  ]
+ },
+ {
+  "observation": "The news list is a bordered ul with five rows. Each row is a three-part line: a bold grey date in a fixed-width column, a headline in a flexible column, and a right-aligned blue bold 'Read More' link. Rows are separated by thin hairline dividers on a grey background.",
+  "category": "components",
+  "evidence": "ul e60 190,2632,1060x365; li rows ~68px tall; time x=190 w=110, span x=320 w=826, link x=1166 w=84",
+  "element_ids": [
+   "e60",
+   "e61",
+   "e62",
+   "e63",
+   "e64"
+  ]
+ },
+ {
+  "observation": "The five news links share the same 'Read More' text, so they cannot be told apart by link text. The headline sits in a span next to the link, not inside the anchor. Dates use semantic time elements.",
+  "category": "copy",
+  "evidence": "e64, e68, e72, e76, e80 all 'Read More'; tag_counts.time 6; span 6",
+  "element_ids": [
+   "e64",
+   "e68",
+   "e72",
+   "e76",
+   "e80"
+  ]
+ },
+ {
+  "observation": "News dates are written in long day-month-year form ('1 June 2021', '4 May 2021') in small bold slate-grey text. They are visually subordinate to the headlines.",
+  "category": "typography",
+  "evidence": "time elements e62, e66, e70, e74, e78; text color rgb(91,105,120) appears 5 times",
+  "element_ids": [
+   "e62",
+   "e66",
+   "e70",
+   "e74",
+   "e78"
+  ]
+ },
+ {
+  "observation": "The footer is a single-row navy bar. The copyright sits at the left and a horizontal link list at the right repeats the primary nav and adds 'Terms Of Use'. Text is soft light blue-grey.",
+  "category": "components",
+  "evidence": "footer e81 0,3069,1440,103; span e82 '© 2021 STG Partners, LLC'; ul e83 with 7 li; text color rgb(195,207,219) x18",
+  "element_ids": [
+   "e81",
+   "e82",
+   "e83",
+   "e96"
+  ]
+ },
+ {
+  "observation": "The document structure is semantic and shallow. It has one header, one nav, one main, five sections and one footer. There is exactly one h1, then h2s per section and h3s for sub-items. There are no articles, asides or figures.",
+  "category": "structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 5, footer 1, article 0, figure 0; h1_count 1; h2 5, h3 5",
+  "element_ids": [
+   "e1",
+   "e10",
+   "e20",
+   "e81"
+  ]
+ },
+ {
+  "observation": "The CSS is hand-written with few classes. There are 45 class uses across 16 unique names, none Tailwind-like. There are only 5 inline style attributes, 2 aria attributes and no JSON-LD.",
+  "category": "structure",
+  "evidence": "classes total 45, unique 16, tailwind_like_fraction 0; inline_style_attrs 5; aria_attrs 2; jsonld_blocks 0",
+  "element_ids": []
+ },
+ {
+  "observation": "Body text is 16px at a 25.6px line height (1.6). On the dark sections it is set in a dimmed light blue-grey, while headings are pure white.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.6px; rgb(195,207,219) vs rgb(255,255,255) in value-section paragraphs and headings",
+  "element_ids": [
+   "e25",
+   "e28",
+   "e31",
+   "e42"
+  ]
+ },
+ {
+  "observation": "Vertical rhythm is generous and uniform. Each section has roughly 70–80px of padding above its eyebrow, and the content blocks are stacked in simple single-direction flow. The page is 3172px tall for about 275 words.",
+  "category": "layout",
+  "evidence": "e20 starts y=693, eyebrow y=765; e39 starts 1558, eyebrow 1630; e44 starts 1890, eyebrow 1962; page_height 3172; words 275",
+  "element_ids": [
+   "e20",
+   "e39",
+   "e44",
+   "e57"
+  ]
+ },
+ {
+  "observation": "The copy is concise and corporate. Section titles are declarative claims ('Business builders with deep sector expertise'). Value items are one-line descriptions. There are no exclamation marks, emoji or em dashes.",
+  "category": "copy",
+  "evidence": "text_stats: emoji 0, em_dashes 0, exclamations 0; headings in outline",
+  "element_ids": [
+   "e12",
+   "e36",
+   "e41",
+   "e46"
+  ]
+ },
+ {
+  "observation": "The nav and the CTAs have no highlighted active state and no filled primary button. The only filled accents are the blue text links ('Read the announcement →', 'Read More'). Calls to action are otherwise white or navy outlines.",
+  "category": "components",
+  "evidence": "primary_button bg transparent; link color rgb(47,128,200) x9; header nav e4–e9 same style",
+  "element_ids": [
+   "e4",
+   "e5",
+   "e19",
+   "e64"
+  ]
+ },
+ {
+  "observation": "Only the hero uses photography. All other imagery is simple monochrome line iconography, so the page has one photo and six icons.",
+  "category": "imagery",
+  "evidence": "images: 1 PNG (image-01.png 1439x630) and 6 SVG icons; total img 7",
+  "element_ids": [
+   "e11",
+   "e23",
+   "e26",
+   "e29",
+   "e34",
+   "e48",
+   "e52"
+  ]
+ }
+]

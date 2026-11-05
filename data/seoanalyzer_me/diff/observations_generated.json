@@ -1,0 +1,331 @@
+[
+ {
+  "observation": "Single centered 1040px content column (x 200–1240) on a 1440px canvas, with every section aligned to the same left edge. Headings and body copy sit flush left, except the hero, which is centered.",
+  "category": "layout",
+  "evidence": "e18, e33, e111 and e114 all start at x=200 with w=1040. The h1 has text-align center. page_width is 1440.",
+  "element_ids": [
+   "e8",
+   "e18",
+   "e33",
+   "e111",
+   "e114"
+  ]
+ },
+ {
+  "observation": "The page is a stack of full-width bands: header, hero, Features, Recently listed sites, About us, Contact, footer. About us has a white background, while Contact and the footer sit on the pale grey-blue page background. Thin horizontal rules separate the lower bands.",
+  "category": "layout",
+  "evidence": "4 section elements, with 1 header, 1 main and 1 footer. About us section is at y=2018, h=308. Body bg is rgb(247,248,252) and white (255,255,255) appears on 14 elements.",
+  "element_ids": [
+   "e17",
+   "e32",
+   "e110",
+   "e113",
+   "e119"
+  ]
+ },
+ {
+  "observation": "The hero h1 is very large and bold. A blue italic-tagged phrase ('your SEO problems') contrasts with the dark navy rest of the headline. The `em` is rendered in the accent blue, not in italics.",
+  "category": "typography",
+  "evidence": "h1 is 51.2px, weight 700, color rgb(27,32,51), centered. The em e9 holds 'your SEO problems'. The accent is rgb(56,86,224).",
+  "element_ids": [
+   "e8",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The only typeface is the system UI stack. Hierarchy comes from size and weight alone: h1 51.2px, h2 28.8px, body 16px at 1.6 line-height.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: system-ui 158. body_font_size 16px, line_height 25.6px. h2 is 28.8px/700.",
+  "element_ids": []
+ },
+ {
+  "observation": "The palette is restrained: near-white blue-grey background, navy text, grey secondary text, and a single royal-blue accent used for the CTA, the logo, links, the em phrase and outlined buttons. Amber, green and red appear only as score colours.",
+  "category": "color",
+  "evidence": "Top text colours: navy 106, grey rgb(91,99,121) 36, blue rgb(56,86,224) 9, amber rgb(183,121,31) 3, green rgb(26,143,76) 2. Primary button bg is rgb(56,86,224).",
+  "element_ids": [
+   "e11",
+   "e9",
+   "e40",
+   "e53",
+   "e77"
+  ]
+ },
+ {
+  "observation": "The hero has two side-by-side CTAs. The primary is a solid blue fill with white text and the secondary is an outlined blue ghost button. Both have a rounded rectangle shape and are native anchors, not button elements.",
+  "category": "components",
+  "evidence": "Primary button: bg rgb(56,86,224), radius 8px, padding 12px 24px. e11 is 182x54 and e12 is 209x54. counts.buttons is 0.",
+  "element_ids": [
+   "e11",
+   "e12"
+  ]
+ },
+ {
+  "observation": "A 'REVIEW' label in small blue letter-spaced caps sits beside pill-shaped chips that link to example domains. It works as a quick-start sample row under the CTAs.",
+  "category": "components",
+  "evidence": "e13 is the 'REVIEW' span. Pills e14–e16 are h-supertools.com, booksandmore.blog and L-ink.me. border_radius pill bucket is 7.",
+  "element_ids": [
+   "e13",
+   "e14",
+   "e15",
+   "e16"
+  ]
+ },
+ {
+  "observation": "The header is a slim white bar with a wordmark that has two weights or colours ('Seo' in navy, 'Analyzer' in blue). The right side has a small nav (Home, Site vs Site) and a bordered 'EN' language chip. It is not sticky-styled and has no shadow.",
+  "category": "components",
+  "evidence": "header e1 is 1440x61 and the nav sits at x=1040. e3 is the 'Analyzer' span. box_shadows is 0. The EN chip e7 is 40x28.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e3",
+   "e4",
+   "e7"
+  ]
+ },
+ {
+  "observation": "The Features section is a 3-column grid of equal white cards. Each card has a small rounded icon tile holding an emoji or symbol (∞, 🔍, ⚖), then an h3 and a short paragraph. The icon tiles are grey-lavender rounded squares.",
+  "category": "components",
+  "evidence": "Cards e20, e24 and e28 are each 333x244 at x=200, 553 and 907. Icon boxes e21, e25 and e29 are 40x40. Emoji count is 2.",
+  "element_ids": [
+   "e20",
+   "e24",
+   "e28",
+   "e21",
+   "e25",
+   "e29"
+  ]
+ },
+ {
+  "observation": "Cards are defined by a thin light border and rounded corners on a white fill. They have no box-shadow, so depth comes from contrast between the white card and the tinted page.",
+  "category": "decoration",
+  "evidence": "box_shadows 0, gradients 0, backdrop_blur 0. border_radius bucket_8_15 count is 33, and cards are white against rgb(247,248,252).",
+  "element_ids": [
+   "e20",
+   "e35",
+   "e48"
+  ]
+ },
+ {
+  "observation": "The 'Recently listed sites' section is a 3x2 grid of article cards. Each has a 4:3 website screenshot at the top, a bold domain-name heading that is a link, and a row of three stat tiles.",
+  "category": "layout",
+  "evidence": "6 article elements, each 333x392. Rows are at y=1077 and y=1488. Images are 331x248 (natural 600x450).",
+  "element_ids": [
+   "e35",
+   "e48",
+   "e60",
+   "e72",
+   "e84",
+   "e96"
+  ]
+ },
+ {
+  "observation": "Each screenshot thumbnail is cropped flush to the top of its card, edge to edge, with the card's rounded corners clipping it. The 600x450 sources are shown at a 4:3 ratio, so there is no visible distortion. Alt text follows the pattern 'Screenshot of <domain>'.",
+  "category": "imagery",
+  "evidence": "img rect e.g. 201,1078,331,248 inside article 200,1077,333,392. 5 images, alt_missing 0.",
+  "element_ids": [
+   "e36",
+   "e49",
+   "e61",
+   "e73",
+   "e85"
+  ]
+ },
+ {
+  "observation": "The screenshots are heterogeneous and uncontrolled. They show a bot-check pattern captcha, a teal homework blog, a mostly black herbal-supplements page with raw blue links, a washed-out truck photo and a dark shutter site. This gives the card row a visually inconsistent look against the uniform UI.",
+  "category": "imagery",
+  "evidence": "Visible in slices at the card thumbnails, including e36, e49, e61, e73 and e85.",
+  "element_ids": [
+   "e36",
+   "e49",
+   "e61",
+   "e73",
+   "e85"
+  ]
+ },
+ {
+  "observation": "The sixth card has no image. It uses a flat lavender-grey placeholder block with centered 'No preview' text in the same size as the thumbnails, so the grid stays aligned.",
+  "category": "imagery",
+  "evidence": "e97 is a div, 331x249, text 'No preview'. It sits where the other cards have img elements.",
+  "element_ids": [
+   "e97",
+   "e96"
+  ]
+ },
+ {
+  "observation": "Stats appear as three small tiles per card, each with a large bold value over a small grey label (Score, Global rank, Page speed). The tiles have a light grey fill and rounded corners. They are built from b and small elements, 18 of each.",
+  "category": "components",
+  "evidence": "Tiles are 93x68, e.g. e39, e42 and e45. Counts: b 18, small 18. Backgrounds of rgb(227,230,240) appear on 13 elements.",
+  "element_ids": [
+   "e39",
+   "e42",
+   "e45",
+   "e40",
+   "e41",
+   "e44"
+  ]
+ },
+ {
+  "observation": "Score values are colour-coded: green for 72, amber for 63 and 69, and red for 45. Rank and speed values stay navy. This is colour status coding on the number text only.",
+  "category": "color",
+  "evidence": "Visible: 72/100 green, 63/100 and 69/100 amber, 45/100 red. Colour stats show amber 3 and green 2.",
+  "element_ids": [
+   "e40",
+   "e53",
+   "e65",
+   "e77",
+   "e89",
+   "e101"
+  ]
+ },
+ {
+  "observation": "Several cards show placeholder-like data: 'Global rank 0' and 'Page speed 0%' appear on 4 of the 6 cards. Zero values are rendered the same way as real values.",
+  "category": "copy",
+  "evidence": "e55/e57, e67, e79/e81 and e91/e93 read '0' and '0%'. Only Bulktrkr and Portal have non-zero rank.",
+  "element_ids": [
+   "e55",
+   "e57",
+   "e79",
+   "e81",
+   "e91",
+   "e93"
+  ]
+ },
+ {
+  "observation": "Domain headings are capitalised first-letter versions of the hostnames (e.g. 'Bulktrkr.com', 'Goldcoastshuttersolutions.com.au'), and each is an h3 wrapping an anchor. Heading text is not truncated and long names fit within the 295px width.",
+  "category": "copy",
+  "evidence": "h3 e37, e50, e62, e74, e86 and e98 each contain an a. e87 is 280px wide.",
+  "element_ids": [
+   "e37",
+   "e50",
+   "e62",
+   "e74",
+   "e86",
+   "e98"
+  ]
+ },
+ {
+  "observation": "A centered outlined 'View More' button sits below the card grid. It uses the same ghost style as the hero secondary CTA.",
+  "category": "components",
+  "evidence": "e109 is 132x54 at x=654, centered on the 1440 page. It has a blue border and text.",
+  "element_ids": [
+   "e109"
+  ]
+ },
+ {
+  "observation": "Section intros pair a bold h2 with a one-line grey subtitle paragraph. This repeats for Features and Recently listed sites. The two later sections do not use a subtitle.",
+  "category": "typography",
+  "evidence": "e18 'Features' then e19 'Everything you need…'. e33 then e34. h2 count is 4, all 28.8px/700.",
+  "element_ids": [
+   "e18",
+   "e19",
+   "e33",
+   "e34"
+  ]
+ },
+ {
+  "observation": "The About us body is a single left-aligned paragraph limited to a 720px measure, so it uses only the left two-thirds of the column. It is set in navy at the full body colour, darker than the grey paragraphs elsewhere.",
+  "category": "typography",
+  "evidence": "e112 is 720x113 within the 1040px container. Text colour is dark navy.",
+  "element_ids": [
+   "e112",
+   "e110"
+  ]
+ },
+ {
+  "observation": "Contact is marked up as a description list. Bold dt labels (Address, Email) sit in a left column and dd values sit in a right column. The email is an underlined blue mailto-style link.",
+  "category": "semantic",
+  "evidence": "dl 1, dt 2, dd 2. e115 and e117 are the dts at x=200, and values start at x=283. e118 is the link.",
+  "element_ids": [
+   "e115",
+   "e116",
+   "e117",
+   "e118"
+  ]
+ },
+ {
+  "observation": "The footer has copyright text on the left. On the right are four small circular social buttons that use text letters (f, t, in, ig) instead of SVG icons. They are spans, not links.",
+  "category": "components",
+  "evidence": "e121–e124 are spans of 32x32 at x=1082–1208, with a pill/circle radius. svgs is 0. The copyright is 'Copyright © 2020, H-educate. All rights reserved.'",
+  "element_ids": [
+   "e119",
+   "e120",
+   "e121",
+   "e122",
+   "e123",
+   "e124"
+  ]
+ },
+ {
+  "observation": "The semantic structure is sound. There is one h1 and four h2s with nine h3s in order, plus header, nav, main, 4 sections, 6 articles and a footer. It has no aside, figure or blockquote. Only 6 ARIA attributes are used.",
+  "category": "semantic",
+  "evidence": "h1_count 1. semantic: header 1, nav 1, main 1, section 4, article 6, footer 1, figure 0. aria_attrs 6.",
+  "element_ids": [
+   "e1",
+   "e4",
+   "e17",
+   "e32",
+   "e35",
+   "e119"
+  ]
+ },
+ {
+  "observation": "Styling is delivered through a single inline style block with a small bespoke class vocabulary, not a utility framework. There are no external stylesheets and one script.",
+  "category": "structure",
+  "evidence": "classes total 71, unique 28, tailwind_like_fraction 0.028. stylesheets 0, tag style 1, script 1, inline_style_attrs 2.",
+  "element_ids": []
+ },
+ {
+  "observation": "Layout is built mostly with CSS grid (17 elements), with flex on 6. The card grids, stat tiles and contact list are grid-based.",
+  "category": "layout",
+  "evidence": "layout display_grid 17, display_flex 6.",
+  "element_ids": [
+   "e17",
+   "e32",
+   "e35"
+  ]
+ },
+ {
+  "observation": "Flat styling throughout. The page has no shadows, gradients, blur, transitions, animations or transforms. Rounding is used mainly at 8–15px on cards, tiles and buttons, with pills for chips.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 0, gradient_backgrounds 0, transitions 0, animations 0, transforms 0. radius buckets: 0px 117, 8–15 33, pill 7, 16+ 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "Vertical rhythm uses generous whitespace. The hero ends around y=425 and Features starts at y=553. The section gaps are about 60–100px, and about 21px of gutter lies between cards.",
+  "category": "layout",
+  "evidence": "Cards are at x=200/553/907 with w=333, which leaves 20–21px gaps. Features h2 at y=553 and recent sites h2 at y=965. About us is at y=2018.",
+  "element_ids": [
+   "e17",
+   "e32",
+   "e110"
+  ]
+ },
+ {
+  "observation": "The copy is short, functional marketing text in English, in a feature-and-benefit voice. It has no exclamation marks or em dashes, and totals about 258 words. The page leans on generic claims such as 'thousands of small-business owners'. The footer is dated 2020 and is credited to H-educate.",
+  "category": "copy",
+  "evidence": "text_stats: words 258, exclamations 0, em_dashes 0. The About text is in e112 and the footer in e120.",
+  "element_ids": [
+   "e10",
+   "e112",
+   "e120"
+  ]
+ },
+ {
+  "observation": "The hero is centered, with a two-line grey subtitle at about 620px wide under the headline. CTAs and sample chips are stacked and centered beneath it, which contrasts with the left-aligned sections below.",
+  "category": "layout",
+  "evidence": "e10 is 620x59 at x=410. e11 and e12 are at y=311. Chips are at y=388. The h1 is centered.",
+  "element_ids": [
+   "e8",
+   "e10",
+   "e11",
+   "e12",
+   "e14"
+  ]
+ },
+ {
+  "observation": "The page title uses a dash separator format ('Seo Analyzer – Instant analysis of your SEO problems'). There is a description meta, the lang is en, and no JSON-LD blocks.",
+  "category": "semantic",
+  "evidence": "title as in facts; meta_names charset, viewport and description; jsonld_blocks 0; lang en.",
+  "element_ids": []
+ }
+]

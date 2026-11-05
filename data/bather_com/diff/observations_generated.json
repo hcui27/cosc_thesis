@@ -1,0 +1,361 @@
+[
+ {
+  "observation": "The page has a single h1, 'SPRING/SUMMER '21', set at 72px, weight 700, uppercase, in near-black rgb(17,17,17). It wraps onto two lines, with \"'21\" alone on the second line, inside a 623px-wide column.",
+  "category": "typography",
+  "evidence": "facts.h1 font_size 72px, weight 700; e19 box 168,278,623x166",
+  "element_ids": [
+   "e19"
+  ]
+ },
+ {
+  "observation": "The whole page uses one font family, Helvetica Neue with Helvetica, Arial and sans-serif fallbacks. It appears on all 204 counted elements. Hierarchy comes from size, weight, case and letter-spacing, not from a second typeface.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Helvetica Neue 204; body 16px / 25.6px line-height",
+  "element_ids": []
+ },
+ {
+  "observation": "A thin dark-navy announcement bar sits at the very top. It holds centered white uppercase text, 'FREE SHIPPING ON ORDERS OVER $150 USD', wrapped in a link.",
+  "category": "component",
+  "evidence": "e1 0,0,1440x38; background rgb(29,58,74) appears in the top backgrounds; slice 0 shows it",
+  "element_ids": [
+   "e1",
+   "e2"
+  ]
+ },
+ {
+  "observation": "The header is a three-part layout. A small script-style PNG logo (95x34) is on the left. A centered list of four uppercase, letter-spaced links (SHOP, ABOUT, JOURNAL, STOCKISTS) is in the middle. Plain-text SEARCH and CART links are on the right. There are no icons.",
+  "category": "layout",
+  "evidence": "e4/e5 at x168; e6 ul at x532; e15, e16 at x1145 and x1230; svgs count 0",
+  "element_ids": [
+   "e3",
+   "e4",
+   "e6",
+   "e15",
+   "e16"
+  ]
+ },
+ {
+  "observation": "The hero is a two-column split on a warm beige (rgb(244,241,236)) band. Text is on the left, with a small grey 'NEW ARRIVALS' eyebrow, the h1, a grey paragraph and two CTAs. A tall 441x552 image is on the right. In the screenshot the image shows as a flat grey rectangle, with no photo visible.",
+  "category": "layout",
+  "evidence": "e17 section 0,107,1440x648; e23 img 831,155,441x552 natural 1x1",
+  "element_ids": [
+   "e17",
+   "e18",
+   "e19",
+   "e23"
+  ]
+ },
+ {
+  "observation": "The hero has two CTA styles side by side. The primary is a solid black rectangular 'SHOP NOW' button with white text, 13px 28px padding and 0px radius. The secondary is 'SHOP THE FULL COLLECTION', a bold uppercase text link with an underline.",
+  "category": "component",
+  "evidence": "primary_button bg rgb(17,17,17), radius 0px; e21 142x48; e22 text link",
+  "element_ids": [
+   "e21",
+   "e22"
+  ]
+ },
+ {
+  "observation": "Most images are placeholder-like. Their natural size is 1x1 px, and they render as flat color blocks: grey in the hero, pale off-white in the sustainability section, tan in the Made in Canada section, a muted brown in the gift-card section and slate in the ethos section. The 'photography' is carried by solid fills, not real pictures.",
+  "category": "imagery",
+  "evidence": "images list: DSC05403, recycling.jpg, Bather-Hawaii..., Bather-Gift-Card.jpg, Bather-resized.jpg all natural [1,1]; slices show flat fills",
+  "element_ids": [
+   "e23",
+   "e58",
+   "e64",
+   "e70",
+   "e112"
+  ]
+ },
+ {
+  "observation": "Eyebrow labels sit above headings throughout. They are small, uppercase, letter-spaced and grey, with text such as NEW ARRIVALS, BROWSE THE LATEST PRODUCTS, SUSTAINABILITY, MADE IN CANADA, GIFT CARDS and OUR ETHOS. They set up a consistent label, then heading, then body, then CTA pattern.",
+  "category": "typography",
+  "evidence": "e18, e25, e54, e60, e66, e113 are p elements with uppercase text; top text color rgb(102,102,102) used 25 times",
+  "element_ids": [
+   "e18",
+   "e25",
+   "e54",
+   "e60",
+   "e66",
+   "e113"
+  ]
+ },
+ {
+  "observation": "Links across the page use one uppercase, letter-spaced, bold, underlined style: SHOP ACCESSORIES, VIEW ALL, SHOP ALL, LEARN MORE, READ, READ MORE, ALL POSTS, PRESS, MEMBER DIRECTORY and OUR PROFILE. Solid buttons are used only for a few primary actions.",
+  "category": "component",
+  "evidence": "e29, e33, e37, e40, e57, e63, e73, e77, e88, e110, e120, e121",
+  "element_ids": [
+   "e29",
+   "e33",
+   "e40",
+   "e63",
+   "e73",
+   "e88"
+  ]
+ },
+ {
+  "observation": "Three 'browse the latest products' category tiles sit in an equal-width row on a white background. Each is a beige box with no image and no border. Each holds an h3, a one-line description and an underlined link. The text is bottom-weighted inside a 220px-tall tile.",
+  "category": "component",
+  "evidence": "e26, e30, e34 each 355x220 at y858; h3 at y932; section e24 height 395",
+  "element_ids": [
+   "e26",
+   "e30",
+   "e34",
+   "e27",
+   "e31",
+   "e35"
+  ]
+ },
+ {
+  "observation": "The featured products section sits on a beige band. Its heading is 'Featured products' (h2, 38.4px bold), with a 'SHOP ALL' link right-aligned on the same row. Below it are three 352x453 product cards with thin 1px light borders and no shadow.",
+  "category": "layout",
+  "evidence": "e39 h2; e40 link at x1194; cards e41, e45, e49 at y1300 352x453; box_shadows 0",
+  "element_ids": [
+   "e38",
+   "e39",
+   "e40",
+   "e41",
+   "e45",
+   "e49"
+  ]
+ },
+ {
+  "observation": "Product cards use solid color squares as stand-ins for product photos: tan (CAMP SHIRT), orange rgb(217,105,43) (SWIM TRUNK) and near-black (SWIM TRUNK). A small white uppercase category label is centered in each square. Under each square are a tiny uppercase attribute tag (MADE IN CANADA, 100% RECYCLED POLYESTER, ULTRA SOFT MESH LINING) and a bold h3 product name. No prices are shown.",
+  "category": "imagery",
+  "evidence": "e42, e46, e50 294x294; e43, e47, e51 spans; e44, e48, e52 h3",
+  "element_ids": [
+   "e42",
+   "e46",
+   "e50",
+   "e43",
+   "e44",
+   "e48"
+  ]
+ },
+ {
+  "observation": "The sustainability section is a full-width dark-navy band (rgb(29,58,74)) with white text. It has a white h2, light grey body copy, and a white-filled 'LEARN MORE' button with dark text. This inverts the black-button style used elsewhere. A pale 524x393 image block sits on the right.",
+  "category": "color",
+  "evidence": "e53 section 0,1825,1440x537; e55 h2; e57 button 158x48; e58 img",
+  "element_ids": [
+   "e53",
+   "e55",
+   "e57",
+   "e58"
+  ]
+ },
+ {
+  "observation": "Image-and-text sections alternate sides down the page. The image is on the right in sustainability, on the left in Made in Canada, on the right in gift cards, and on the left in ethos. The backgrounds also alternate: navy, white, beige, then white. All sit in a 1104px content column from x168 to x1272.",
+  "category": "layout",
+  "evidence": "e58 x748; e64 x168; e70 x748; e112 x168; sections e53, e59, e65, e111",
+  "element_ids": [
+   "e58",
+   "e64",
+   "e70",
+   "e112"
+  ]
+ },
+ {
+  "observation": "The page uses a restrained, mostly neutral palette: white, warm beige rgb(244,241,236), near-black rgb(17,17,17) and navy rgb(29,58,74). Orange rgb(217,105,43) appears only in one product swatch, and tan and sand tones appear in the image placeholders.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 12, beige 11, rgb(207,216,214) 5, black 4, navy 2, orange 1",
+  "element_ids": []
+ },
+ {
+  "observation": "Corners are square throughout. 196 elements have 0 radius and only 8 have a small 1–7px radius. There are no box shadows, gradients, backdrop blurs, animations or transforms. Separation comes from flat color bands and 1px hairlines.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0 196, bucket_1_7 8; box_shadows 0; gradient_backgrounds 0; animations 0; transforms 0",
+  "element_ids": []
+ },
+ {
+  "observation": "The Journal section has a heading row with a right-aligned 'READ' link. Below it are three article columns, each topped by a 2px black rule, with an h3, a grey excerpt and a 'READ MORE' link. Only the middle article has a date and location eyebrow ('TORONTO, ON · APRIL 15, 2021'). That shifts its title down, so the headings do not line up across the row.",
+  "category": "component",
+  "evidence": "e74, e78, e83 articles 352x174; e79 span at y3606; h3 y: e75 3606, e80 3635, e84 3606",
+  "element_ids": [
+   "e74",
+   "e78",
+   "e83",
+   "e79",
+   "e73"
+  ]
+ },
+ {
+  "observation": "Journal articles are text-only, with no thumbnails. The 'ALL POSTS' link is a separate left-aligned underlined link below the grid.",
+  "category": "layout",
+  "evidence": "article elements e74, e78, e83 contain no img; e87/e88 ALL POSTS at 168,3792",
+  "element_ids": [
+   "e74",
+   "e78",
+   "e83",
+   "e88"
+  ]
+ },
+ {
+  "observation": "The press section is a 3x2 grid of figure/blockquote pairs on beige. Each has a grayscale logo image (140x105 PNG), centered, above an italic grey quote in curly quotation marks. The section heading 'In the press' is centered, unlike the left-aligned headings elsewhere. A centered 'PRESS' link closes it.",
+  "category": "component",
+  "evidence": "figures e91, e94, e97, e100, e103, e106; imgs 140x105 natural 300x225; e90 h2 spans 1104 width; e110",
+  "element_ids": [
+   "e90",
+   "e91",
+   "e94",
+   "e97",
+   "e100",
+   "e106"
+  ]
+ },
+ {
+  "observation": "The press quotes are semantic: 6 figure elements each wrap an img and a blockquote. There are no figcaption or cite elements, so attribution is carried only by the logo images and their alt text, for example 'GQ' and 'The New York Times'.",
+  "category": "structure",
+  "evidence": "semantic: figure 6, blockquote 6, figcaption 0, cite 0",
+  "element_ids": [
+   "e93",
+   "e96",
+   "e99",
+   "e102",
+   "e105",
+   "e108"
+  ]
+ },
+ {
+  "observation": "The ethos section pairs a placeholder image on the left with an h2 and a bulleted list of three paragraph-length items on the right. This is the only bulleted body-copy list on the page. Below it are a small '1% for the Planet' badge (72x54, which crops the logo) and two stacked underlined links.",
+  "category": "component",
+  "evidence": "e115 ul with li e116, e117, e118; e119 img natural 288x360 rendered 72x54; e120, e121 links",
+  "element_ids": [
+   "e115",
+   "e116",
+   "e119",
+   "e120",
+   "e121"
+  ]
+ },
+ {
+  "observation": "The newsletter band is centered on beige. It has an h2 ('Get 10% off your first order'), a one-line paragraph and an inline form. The form has a 333px email input with a 1px black border joined to a black 'SUBSCRIBE' button, together 480px wide, centered on the page. The input has no visible label, only placeholder text.",
+  "category": "component",
+  "evidence": "e122 section 0,5137,1440x311; e125 form 480,5321,480x54; e126 input; e127 button",
+  "element_ids": [
+   "e122",
+   "e123",
+   "e125",
+   "e126",
+   "e127"
+  ]
+ },
+ {
+  "observation": "The footer is a near-black block with three columns: a brand blurb with social text links, CUSTOMER links, and MORE links. Column headings are small bold uppercase h4s in white, and links are light grey. A hairline divider, a row of eight payment-method SVG badges and a copyright line follow.",
+  "category": "layout",
+  "evidence": "e128 footer 0,5447,1440x393; h4 e129, e140, e150; e160 with imgs e161–e168 47x28; e169 © 2021",
+  "element_ids": [
+   "e128",
+   "e129",
+   "e140",
+   "e150",
+   "e160",
+   "e169"
+  ]
+ },
+ {
+  "observation": "The social links (Facebook, Instagram, Pinterest, Lifestyle) are plain text in a horizontal list, with no icons. The page has zero inline SVGs. Payment logos are external SVG img files with alt text.",
+  "category": "component",
+  "evidence": "e131 ul with li e132, e134, e136, e138; counts svgs 0; payment images are .svg files",
+  "element_ids": [
+   "e131",
+   "e161",
+   "e162",
+   "e168"
+  ]
+ },
+ {
+  "observation": "The heading hierarchy is not strictly sequential. The h1 is followed directly by h3s (Bandana towels, Camp shirts, SS21) before the first h2. Eight h2s and three h4s in the footer follow. Content is wrapped in 10 section elements, which sit alongside header, nav, main and footer landmarks.",
+  "category": "structure",
+  "evidence": "heading_outline starts h1 then h3; semantic: header 1, nav 1, main 1, section 10, footer 1, article 3; h1_count 1",
+  "element_ids": [
+   "e27",
+   "e31",
+   "e35",
+   "e39"
+  ]
+ },
+ {
+  "observation": "The markup is fairly lean. There are 40 anchors, 21 images, 21 paragraphs and 39 divs, but only 82 class attributes using 33 unique class names, none of them Tailwind-like. There are 9 inline style attributes, 0 scripts and 1 stylesheet. Layout relies on 13 grid and 21 flex containers.",
+  "category": "structure",
+  "evidence": "classes total 82, unique 33, tailwind_like_fraction 0; inline_style_attrs 9; scripts 0; display_grid 13; display_flex 21",
+  "element_ids": []
+ },
+ {
+  "observation": "Copy is short and declarative, in brand-voice fragments: 'Available now.', 'New bandana towels.' and 'Gift cards are available now.'. The page has 464 words in total, 0 emoji, 0 exclamation marks and 1 em dash, in the hero line 'SS21 is here — shop the full collection.'",
+  "category": "copy",
+  "evidence": "text_stats words 464, emoji 0, exclamations 0, em_dashes 1; e20, e28, e36, e68",
+  "element_ids": [
+   "e20",
+   "e28",
+   "e36",
+   "e68"
+  ]
+ },
+ {
+  "observation": "Copy is dated to 2021. It includes 'SPRING/SUMMER '21', a lookbook dated APRIL 15, 2021, a footer '© 2021' and a 'since 2013' history. This signals Toronto-based, Canadian brand positioning, repeated in MADE IN CANADA tags and the 'Made in Canada' section.",
+  "category": "copy",
+  "evidence": "e79 'TORONTO, ON · APRIL 15, 2021'; e169 '© 2021 Bather Trunk Company'; e130 'since 2013'; e43 'MADE IN CANADA'",
+  "element_ids": [
+   "e79",
+   "e130",
+   "e169",
+   "e43",
+   "e60"
+  ]
+ },
+ {
+  "observation": "Section headings are bold h2s at 38.4px with tight tracking, and they run to two lines in the half-width columns, for example 'Made with 100% recycled materials' and 'Slow fashion at an affordable price'. Body paragraphs are mid-grey rgb(102,102,102) on white or beige, while headings are near-black. This gives a two-tone text hierarchy.",
+  "category": "typography",
+  "evidence": "h2 font_size 38.4px, weight 700; e55 and e114 each 524x88; top_text_colors rgb(102,102,102) 25",
+  "element_ids": [
+   "e55",
+   "e61",
+   "e114",
+   "e56"
+  ]
+ },
+ {
+  "observation": "Vertical rhythm comes from full-width section bands about 400–675px tall, with generous padding of roughly 70–100px above and below content. The page is 5841px tall by 1440px wide. Content is held in a centered column of about 1104px with 168px side margins.",
+  "category": "layout",
+  "evidence": "page_height 5841, page_width 1440; sections e24 395, e38 675, e53 537, e59 537, e65 537; content x 168–1272",
+  "element_ids": [
+   "e24",
+   "e38",
+   "e53",
+   "e59",
+   "e65"
+  ]
+ },
+ {
+  "observation": "The hero uses a taller, 72px type scale against 38.4px h2s and about 24px card h3s. Small text, such as eyebrows and tags, is about 12px with wide letter-spacing. Together these make a large step between display type and micro-labels.",
+  "category": "typography",
+  "evidence": "h1 72px; h2 38.4px; e27 h3 box 28px tall; e18, e43 small uppercase text",
+  "element_ids": [
+   "e19",
+   "e39",
+   "e27",
+   "e18",
+   "e43"
+  ]
+ },
+ {
+  "observation": "Interaction is minimal. There are 7 CSS transitions and no animations. The only form control is the single email input and button, and the only ARIA usage is 3 attributes. Navigation is a plain ul inside a single nav, with no dropdown or mega-menu markup.",
+  "category": "structure",
+  "evidence": "transitions 7, animations 0; aria_attrs 3; buttons 1; nav 1, ul 5",
+  "element_ids": [
+   "e6",
+   "e125"
+  ]
+ },
+ {
+  "observation": "Text alignment mixes left and center. Most section copy is left-aligned in half-width columns. The announcement bar, press section and newsletter band are center-aligned, and the footer is left-aligned in three columns.",
+  "category": "layout",
+  "evidence": "e90 h2 and e109/e110 centered over 1104px; e123/e124 centered; h1 text_align start",
+  "element_ids": [
+   "e90",
+   "e109",
+   "e123",
+   "e124",
+   "e1"
+  ]
+ }
+]

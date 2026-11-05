@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "The page title is a long brand-plus-descriptor string, 'Bather | Quality Men's Surf and Swimwear | Made in Canada'. Head metadata is heavy: 25 meta tags, 3 JSON-LD blocks, og: and twitter: tags, and Shopify wallet/checkout tags.",
+  "category": "semantic structure",
+  "evidence": "facts.title; meta_names list; jsonld_blocks: 3"
+ },
+ {
+  "observation": "The hero image and the logo images fail to render. A broken-image icon shows at the top-left of the hero and above the centered logo position. The hero area is a blank white 1440x856 box with only a small 'SHOP NOW' text link at left.",
+  "category": "imagery",
+  "evidence": "Slice 0 broken-image icons at (0,45) and (663,62); header_1600x.jpg rect 1440x856 at y=44; natural size 0x0"
+ },
+ {
+  "observation": "A thin light-grey announcement bar sits above the header with centered, uppercase, letter-spaced text about free shipping over $150 USD.",
+  "category": "component",
+  "evidence": "Slice 0 top bar, background rgb(239,239,239) appears in top_backgrounds; text 'FREE SHIPPING ON ORDERS OVER $150 USD'"
+ },
+ {
+  "observation": "The header is overlaid on the hero. A centered logo (115px wide) and a pale cart icon at the far right are layered on the hero image. The white logo variant and the dark logo variant occupy the same rect, so they swap with the transparent/solid header state.",
+  "category": "layout",
+  "evidence": "Bather_Logo_115x.png and Bather_Logo_White both at x=663,y=62; image_overlaps with header_1600x.jpg"
+ },
+ {
+  "observation": "The h1 is empty and its computed style is 15px, weight 400, white, so the main heading is invisible and carries no text. The h1 count is 1.",
+  "category": "semantic structure",
+  "evidence": "h1.text '' ; h1.font_size 15px; color rgb(255,255,255); h1_count 1"
+ },
+ {
+  "observation": "The heading outline is irregular. After the empty h1, an h3 eyebrow label comes before each h2, so the h3 sits before the h2 it pairs with. There are 19 h2s and 9 h3s.",
+  "category": "semantic structure",
+  "evidence": "heading_outline: h3 'NEW ARRIVALS' then h2 'SPRING/SUMMER '21 AVAILABLE NOW'; tag_counts h2:19, h3:9"
+ },
+ {
+  "observation": "Typography uses a single family, Calibre, with a sans-serif fallback stack (system-ui, avenir next, helvetica). Calibre is on 621 elements. The rendered glyphs look like a neutral grotesque.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Calibre 621; h1 font_family 'Calibre, -apple-system, system-ui, avenir next...'"
+ },
+ {
+  "observation": "Headings are all uppercase with wide letter-spacing, at light weight 400. The h2 is 23px. This gives a spaced, editorial label style that is repeated for section titles, eyebrows and buttons.",
+  "category": "typography",
+  "evidence": "h2 font_size 23px weight 400; 'SS21 AVAILABLE NOW', 'BROWSE THE LATEST', 'OUR ETHOS' in slices"
+ },
+ {
+  "observation": "Body text is small and plain: 15px with a 24.75px line-height (1.65). Paragraphs are sentence case and sit in narrow columns.",
+  "category": "typography",
+  "evidence": "body_font_size 15px; body_line_height 24.75px; slice 1 paragraph 'In addition to being locally-made...'"
+ },
+ {
+  "observation": "The palette is mostly neutral. The body background is white, body text is near-black rgb(28,27,27), secondary text is grey rgb(106,106,106), and the footer is light grey. The only saturated color comes from product photography (lime green recycled garments).",
+  "category": "color",
+  "evidence": "colors.body_bg rgb(255,255,255); body_color rgb(28,27,27); top_text_colors rgb(106,106,106) 141; green garments in slice 0/1"
+ },
+ {
+  "observation": "The 'Browse the latest' section has three equal square-ish tiles in muted solid colors (slate grey, taupe, tan). The photo backgrounds did not load, so the tiles show flat fills with white centered text and white button rectangles.",
+  "category": "imagery",
+  "evidence": "Slice 2 tiles at x=30-470, 500-940, 970-1410, y≈646-1146; SUSTAINABILITY, GIFT CARDS, EXCELLENT ADVENTURES"
+ },
+ {
+  "observation": "Each tile stacks the same elements: a small uppercase eyebrow (MADE IN CANADA / AVAILABLE NOW / JOURNAL), a larger uppercase title, and a white rectangular button (LEARN MORE / BUY NOW / READ). All of it is centered near the bottom of the tile.",
+  "category": "component",
+  "evidence": "Slice 2 tile text; h3 'MADE IN CANADA', 'AVAILABLE NOW', 'JOURNAL' in the outline"
+ },
+ {
+  "observation": "Buttons and cards are square-cornered. Nearly every element has radius 0. Only 9 elements are pill-shaped and 1 is in the 1-7px bucket.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets bucket_0: 622, bucket_pill: 9; primary_button radius 0px"
+ },
+ {
+  "observation": "The primary button is a solid near-black rectangle with white, letter-spaced uppercase text, used for 'ALL POSTS' and 'SUBSCRIBE'. The other CTAs are plain text links, either underlined or ghost-style.",
+  "category": "component",
+  "evidence": "Slice 4 'ALL POSTS' 645-796 px wide, dark fill; SUBSCRIBE; rgb(28,27,27) in top_backgrounds"
+ },
+ {
+  "observation": "Text links like 'LEARN MORE', 'SHOP THE FULL COLLECTION' and 'Read more' use a thin underline (a border-bottom style) instead of button chrome. 'LEARN MORE' is grey and the others are dark.",
+  "category": "component",
+  "evidence": "Slice 1 'LEARN MORE', 'SHOP THE FULL COLLECTION'; slice 4 'Read more' x3"
+ },
+ {
+  "observation": "The sustainability feature is a two-column split. A large recycling-triangle image of lime-green garments sits on the left, and an eyebrow, heading, one sentence and a link sit on the right, vertically offset from the image.",
+  "category": "layout",
+  "evidence": "Slice 0-1 image at x≈215-675 and text at x=780; recycling_homepage_1000x.jpg natural 1000x1000"
+ },
+ {
+  "observation": "A product trio (beige hula girl camp shirt, orange Hawaiian swim trunk, black bandana swim trunk) renders only as 'VIEW' labels at three column centers. The images and product titles are not visible, leaving large blank vertical gaps of about 500px.",
+  "category": "imagery",
+  "evidence": "Slice 1 'VIEW' at x=250, 720, 1190; h2 outline entries for the three products; SS21-Featured-Images 750x960 crop files with rect 0x0"
+ },
+ {
+  "observation": "Large empty white bands appear between sections wherever images are missing. Slices 1-2 and 3 show roughly 300-500px of whitespace.",
+  "category": "layout",
+  "evidence": "Slice 1 y≈700-1000; slice 2 y≈0-300; slice 3 y≈800-1100; many images with rect 0x0"
+ },
+ {
+  "observation": "The 'SS21 Available Now' block is a centered h2 with a centered underlined link 'SHOP THE FULL COLLECTION'. Below it come two more centered uppercase labels, 'SHOP ACCESSORIES' and 'VIEW ALL', for the Bandana Towels and Camp Shirts items.",
+  "category": "layout",
+  "evidence": "Slice 1 y≈1026-1075; slice 2 'SHOP ACCESSORIES' x=541, 'VIEW ALL' x=1290"
+ },
+ {
+  "observation": "A single pull-quote appears in plain, larger sentence-case type, centered, with a straight-quote glyph and a dash attribution to Business Insider. It does not use blockquote or cite markup.",
+  "category": "copy",
+  "evidence": "Slice 2 bottom '\"These are the best swim trunks for summer.\"'; slice 3 '— Business Insider'; semantic blockquote 0, cite 0"
+ },
+ {
+  "observation": "The press-logo strip is a row of six logos (Highsnobiety, GQ, NYT, Well Spent, Business Insider, Globe and Mail) at 150x113 each on a 240px pitch. Most are desaturated grey, and the Business Insider logo is solid black.",
+  "category": "imagery",
+  "evidence": "Images at y=4051, x=45/285/525/765/1005/1245, 150x113; slice 3 logos"
+ },
+ {
+  "observation": "The press logos have empty alt attributes, so they carry no accessible names. Only 1 image is flagged with missing alt, but many images have alt ''.",
+  "category": "semantic structure",
+  "evidence": "counts.alt_missing 1; images list alt '' for Highsnobiety, GQ, NYT etc."
+ },
+ {
+  "observation": "'Our Ethos' is a full-width slate blue-grey band with centered white text, a text shadow, and a narrow measure of about 380px across two paragraphs. The background image seems absent, leaving a flat color.",
+  "category": "color",
+  "evidence": "Slice 3 band y≈344-794, color approx slate grey; text-shadow visible on white body copy"
+ },
+ {
+  "observation": "The journal section is a three-column article row (3 article tags). Each column has an uppercase heading, a truncated excerpt ending in '...', and an underlined 'Read more'. The thumbnails (380x224) are blank.",
+  "category": "component",
+  "evidence": "tag_counts article: 3; images at y=4774 with x=90/530/970 and w=380,h=224; excerpts end 'As a par...'"
+ },
+ {
+  "observation": "Journal excerpts carry editorial copy with dateline and em-dashes ('Toronto, ON — April 15, 2021 —'). Copy includes seasonal references like 'SS21' and 'Spring 2021'.",
+  "category": "copy",
+  "evidence": "Slice 3 'Toronto, ON — April 15, 2021 —'; text_stats em_dashes: 10"
+ },
+ {
+  "observation": "The footer is a light-grey (239) band with four columns: About Bather text with social icons, a '1% for the Planet' badge image, a 'More Info' link list, and a 'Let's be friends' email signup. Column headings are small uppercase letter-spaced, and body text is grey.",
+  "category": "layout",
+  "evidence": "Slice 4 footer; Member_VerticalLogo_Black.png 120x150 at x=578; headings ABOUT BATHER, MORE INFO, LET'S BE FRIENDS"
+ },
+ {
+  "observation": "The footer signup has a bordered white input with placeholder text and a black SUBSCRIBE button stacked below it. The input is square-cornered with a hairline border.",
+  "category": "component",
+  "evidence": "Slice 4 input 'Enter your email address' at x≈1065-1360; form count 3, input count 7"
+ },
+ {
+  "observation": "The footer bottom row has a left-aligned uppercase copyright and a right-aligned row of eight payment-method icons (Amex, Apple Pay, Diners, Discover, Mastercard, PayPal, Shop Pay, Visa). The social links are four small grey SVG glyphs (Facebook, Instagram, Pinterest, Tumblr).",
+  "category": "component",
+  "evidence": "Slice 4 '© 2021 BATHER TRUNK COMPANY'; payment icons y≈803; svg count 26"
+ },
+ {
+  "observation": "The layout width is 1440px and the page height is 6069px. Content spans full-bleed for the hero and tiles (30px margins), while the editorial sections are inset. Margins vary: 90px for journal cards, 80px for the footer, 215px for the sustainability image.",
+  "category": "layout",
+  "evidence": "layout page_width 1440, page_height 6069; tile x=30; journal image x=90; footer text x=80"
+ },
+ {
+  "observation": "Flexbox does most of the layout work, with only one grid. The markup is div-heavy, with 203 divs against 12 sections, 15 headers, 1 main, 1 footer, 4 navs and 3 articles.",
+  "category": "semantic structure",
+  "evidence": "layout display_flex 20, display_grid 1; tag_counts div 203, section 12, header 15, nav 4"
+ },
+ {
+  "observation": "The CSS uses semantic named classes, not utilities. There are 958 class uses across 265 unique names and a tailwind-like fraction of 0. 74 inline style attributes and 16 style tags are present, typical of a themed Shopify build.",
+  "category": "semantic structure",
+  "evidence": "classes.total 958, unique 265, tailwind_like_fraction 0; inline_style_attrs 74; style 16"
+ },
+ {
+  "observation": "The page is script-heavy and carries a lot of motion infrastructure for its static look. It has 90 script tags, 184 transitions, 7 animations and 25 transforms. Only 5 box-shadows and no gradient backgrounds or backdrop blur are present.",
+  "category": "decoration",
+  "evidence": "tag_counts script 90; effects transitions 184, animations 7, transforms 25, box_shadows 5, gradient_backgrounds 0, backdrop_blur 0"
+ },
+ {
+  "observation": "A mega-menu is present in the DOM. It holds 296x184 images (SS21 Style Guide) at the top right, positioned at x=769 and 1094 and overlapping the hero. It is hidden, with only the fixed-position image rects reported.",
+  "category": "component",
+  "evidence": "images[0..1] rects at y=169, 296x184; Mega-Menu-SS21-Style-Guide_370x230@2x.jpg"
+ },
+ {
+  "observation": "Responsive imagery is used: 9 picture elements and 10 source tags, with lazy-load placeholders such as header_1x1.jpg. Crops are fixed to 750x960 portrait with crop_center/crop_left suffixes. Images are served via Shopify CDN-style size suffixes (_115x, _300x, _1600x).",
+  "category": "imagery",
+  "evidence": "tag_counts picture 9, source 10; file names header_1x1.jpg, *_750x960_crop_center.jpg"
+ },
+ {
+  "observation": "Navigation is minimal in the visible render. The header shows just the logo and a cart icon, with no visible menu links in the screenshot. 84 anchors exist overall, and the footer link list is plain grey text with no bullets.",
+  "category": "component",
+  "evidence": "Slice 0 header; counts.anchors 84; nav 4; slice 4 'Contact, FAQ, Sizing, Shipping & Returns...'"
+ },
+ {
+  "observation": "Copy is brand-voice and sustainability-led: 'MADE WITH 100% RECYCLED MATERIALS', 'MADE IN CANADA', '100% RECYCLED POLYESTER', a 1% for the Planet membership, and a 10% off signup offer. There are no exclamation marks and about 508 words on the page.",
+  "category": "copy",
+  "evidence": "heading_outline; text_stats exclamations 0, words 508; slice 4 'Sign up... enjoy 10% off'"
+ }
+]

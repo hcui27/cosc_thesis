@@ -1,0 +1,1333 @@
+{
+ "site": "allstate_jobs",
+ "n_observations": 47,
+ "observations": [
+  {
+   "id": "c01",
+   "observation": "Heading structure differs. The original has no h1, only 20 h2s and 26 h3s, and many of the h3s are empty. The AI-built page has one h1 ('Every employee matters to the good we do.'), 10 h2s and 6 h3s, and its outline is orderly.",
+   "category": "semantics",
+   "status": "changed",
+   "original_ids": [
+    "O1"
+   ],
+   "generated_ids": [
+    "G4",
+    "G28"
+   ],
+   "element_ids": [
+    "e13",
+    "e19",
+    "e2",
+    "e5",
+    "e12",
+    "e200"
+   ],
+   "tags": [
+    {
+     "attribute": "heading hierarchy",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: flat empty outline becomes structured h1 h2 h3",
+     "page_wide": true
+    },
+    {
+     "attribute": "h1 heading",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: absent h1 becomes large bold navy h1",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c02",
+   "observation": "The original's content appears twice in the DOM: 2 header, 2 main, 2 nav and 2 title elements, with the heading outline and meta block repeated. The AI-built page has a single header, nav and main.",
+   "category": "semantics",
+   "status": "original_only",
+   "original_ids": [
+    "O2"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "dropped",
+     "value": "dropped: duplicated header main nav elements",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c03",
+   "observation": "Content column width differs. The original centers a column about 952px wide (x=244 to 1196) with empty white margins. The AI-built page uses a 1120px column (x=160 to 1280) inside full-bleed background bands.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O3"
+   ],
+   "generated_ids": [
+    "G16",
+    "G30"
+   ],
+   "element_ids": [
+    "e67",
+    "e166",
+    "e200",
+    "e21",
+    "e34",
+    "e104"
+   ],
+   "tags": [
+    {
+     "attribute": "content column width",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: narrower 952px column becomes 1120px column in full-bleed bands",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c04",
+   "observation": "Layout mechanism differs. The original uses flexbox only (31 flex, 0 grid), with 297px three-up cards and gaps of about 30px. The AI-built page relies mainly on CSS grid (15 grid, 5 flex), with 3-, 4- and 2-column grids and 355px three-up cards.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O4"
+   ],
+   "generated_ids": [
+    "G30",
+    "G12"
+   ],
+   "element_ids": [
+    "e21",
+    "e34",
+    "e67",
+    "e104",
+    "e22",
+    "e26",
+    "e30",
+    "e23"
+   ],
+   "tags": [
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: flexbox-only becomes flex plus grid columns",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c05",
+   "observation": "Both headers are a white strip with the Allstate logo at the left and right-aligned nav links, but the links differ. The original has Career Areas and Life @ Allstate with down-arrow images, then Application Status and Job Search, in brand blue. The AI-built page has a 63px bar with six in-page jump links (Why Allstate, Discover, Career areas, Our people, Growth, Events) in bold dark text.",
+   "category": "navigation",
+   "status": "changed",
+   "original_ids": [
+    "O5"
+   ],
+   "generated_ids": [
+    "G1"
+   ],
+   "element_ids": [
+    "e2",
+    "e3",
+    "e5",
+    "e6",
+    "e11"
+   ],
+   "tags": [
+    {
+     "attribute": "primary navigation",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: dropdown links become six in-page jump links",
+     "page_wide": false
+    },
+    {
+     "attribute": "header",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: white strip with logo left",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c06",
+   "observation": "The AI-built page has an off-screen 'Skip to content' link (x=-999) placed before the header.",
+   "category": "accessibility",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G2"
+   ],
+   "element_ids": [
+    "e1"
+   ],
+   "tags": [
+    {
+     "attribute": "skip link",
+     "family": "semantic_dom",
+     "action": "added",
+     "value": "added: off-screen skip-to-content link",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c07",
+   "observation": "Both heroes use the same 2104x654 banner: a navy left panel with a lowercase headline, 'your next career is here, define your future with Allstate', where the second phrase is cyan, and a photo of two smiling women on the right. The headline is raster text baked into the image, not live HTML.",
+   "category": "hero",
+   "status": "general",
+   "original_ids": [
+    "O6",
+    "O7"
+   ],
+   "generated_ids": [
+    "G3",
+    "G4"
+   ],
+   "element_ids": [
+    "e12",
+    "e13",
+    "e19"
+   ],
+   "tags": [
+    {
+     "attribute": "image text overlay",
+     "family": "imagery",
+     "action": "kept",
+     "value": "kept: baked-in banner text in raster image",
+     "page_wide": false
+    },
+    {
+     "attribute": "hero area",
+     "family": "layout",
+     "action": "kept",
+     "value": "kept: same navy banner with photo",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c08",
+   "observation": "Hero display size differs. The original shows the banner at 952x296 inside its centered column. The AI-built page scales it full-width to 1440x448.",
+   "category": "hero",
+   "status": "changed",
+   "original_ids": [
+    "O6"
+   ],
+   "generated_ids": [
+    "G3"
+   ],
+   "element_ids": [
+    "e12",
+    "e13"
+   ],
+   "tags": [
+    {
+     "attribute": "hero area",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: column-width banner becomes full-width banner",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c09",
+   "observation": "Hero image alt text differs. The original's banner has an empty alt. The AI-built page gives it descriptive alt text that includes the headline and a description of the photo.",
+   "category": "accessibility",
+   "status": "changed",
+   "original_ids": [
+    "O7",
+    "O36"
+   ],
+   "generated_ids": [
+    "G3"
+   ],
+   "element_ids": [
+    "e12",
+    "e13"
+   ],
+   "tags": [
+    {
+     "attribute": "image alt text",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: empty hero alt becomes descriptive alt",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "observation": "The original has a hidden 2104x1310 banner variant (0x0 rect) in the DOM, which looks like a responsive image swap.",
+   "category": "hero",
+   "status": "original_only",
+   "original_ids": [
+    "O8"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "responsive slider images",
+     "family": "imagery",
+     "action": "dropped",
+     "value": "dropped: hidden responsive banner variant",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "observation": "The job search form differs. The original has a keyword text input ('Enter a Job or Keyword'), an 'All Departments' select with a blue chevron and a solid blue 'SEARCH JOBS' button, with gray-bordered inputs. The AI-built page has a centered 860px blue card overlapping the bottom of the hero, holding a visible white label, an 'All Departments' select with a blue chevron (no text input) and a cyan 'Search jobs' button. It also has 22 options against the original's 44.",
+   "category": "forms",
+   "status": "changed",
+   "original_ids": [
+    "O9"
+   ],
+   "generated_ids": [
+    "G5",
+    "G7"
+   ],
+   "element_ids": [
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ],
+   "tags": [
+    {
+     "attribute": "search control",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: keyword input and select become blue card with select",
+     "page_wide": false
+    },
+    {
+     "attribute": "button style",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: solid blue button becomes cyan button",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "observation": "Section separation differs. The original uses thin 1px light-cyan horizontal rules at column width between major sections. The AI-built page alternates full-bleed background bands instead: white, pale blue-gray (242,245,251), and a navy footer.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O10"
+   ],
+   "generated_ids": [
+    "G16"
+   ],
+   "element_ids": [
+    "e67",
+    "e166",
+    "e200"
+   ],
+   "tags": [
+    {
+     "attribute": "section backgrounds",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: white page becomes alternating white pale blue and navy bands",
+     "page_wide": true
+    },
+    {
+     "attribute": "section dividers",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: thin light-cyan horizontal rules",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "observation": "The intro block differs. The original's intro paragraph is enlarged, left-aligned and near-black, with no h1. The AI-built page centers it in a narrow 780px column, under a 42px bold navy h1 that wraps to two lines.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O11"
+   ],
+   "generated_ids": [
+    "G8"
+   ],
+   "element_ids": [
+    "e18",
+    "e19",
+    "e20"
+   ],
+   "tags": [
+    {
+     "attribute": "h1 heading",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: absent h1 becomes large bold navy h1",
+     "page_wide": false
+    },
+    {
+     "attribute": "text column width",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: left-aligned intro becomes centered narrow column",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "observation": "Body text size differs: the original uses 18px on a 29.7px line height (1.65), and the AI-built page uses 17px on 27.2px (1.6).",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O11"
+   ],
+   "generated_ids": [
+    "G9"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "body text size and line height",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: 18px 1.65 becomes 17px 1.6",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "observation": "Font family differs. The original uses the custom Allstate Sans in four weights (regular 1198, bold 78, light 70, medium 2). The AI-built page uses only Helvetica Neue with an Arial/sans-serif fallback, on 287 elements.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O12"
+   ],
+   "generated_ids": [
+    "G9"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "body typeface",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: custom allstate sans becomes helvetica neue stack",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "observation": "Section h2 styling differs. The original's are 36px, weight 600, near-black and left-aligned. The AI-built page's are 24px, weight 700 and navy, left-aligned at x=160 except for a centered Events h2, and its pillar-card h2s are blue.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O13"
+   ],
+   "generated_ids": [
+    "G10"
+   ],
+   "element_ids": [
+    "e24",
+    "e35",
+    "e52",
+    "e68",
+    "e187"
+   ],
+   "tags": [
+    {
+     "attribute": "section headings",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: large near-black h2s become smaller navy h2s",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "observation": "Both pages have a three-card Good Work / Good Life / Good Hands row with a photo on top, a title and a paragraph, and no CTA. Card styling differs. The original uses uppercase centered titles, centered text, a light gray border and a soft drop shadow, with 297x208 photos. The AI-built page uses bordered articles with blue h2 titles, rounded edge-to-edge 353x235 photos and no shadow.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O14"
+   ],
+   "generated_ids": [
+    "G12"
+   ],
+   "element_ids": [
+    "e22",
+    "e26",
+    "e30",
+    "e23",
+    "e27",
+    "e31"
+   ],
+   "tags": [
+    {
+     "attribute": "product cards",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: shadowed centered cards become bordered cards with blue titles",
+     "page_wide": false
+    },
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: shadows become thin borders",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "observation": "Both pages have three Discover Allstate cards (Inclusive Diversity, Veterans, Benefits), but the CTA differs. The original ends each card in a full-width solid blue uppercase 'VISIT PAGE' bar aligned to the card bottom. The AI-built page ends each in a 120px 'Visit Page — <card title>' link and uses h3 titles.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O15"
+   ],
+   "generated_ids": [
+    "G14"
+   ],
+   "element_ids": [
+    "e36",
+    "e40",
+    "e45",
+    "e50"
+   ],
+   "tags": [
+    {
+     "attribute": "call-to-action button",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: full-width blue bar becomes short text link",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "observation": "Palette differs. The original is dominated by royal blue (0,51,160) backgrounds on 82 elements, plus a secondary blue (37,71,168) on 14, against white. The AI-built page is mostly white (35 elements), with royal blue on only 5 and added navy (14,26,75), cyan (63,180,229) and pale blue-gray (242,245,251).",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O16"
+   ],
+   "generated_ids": [
+    "G11"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "color palette",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: royal blue dominant becomes white with navy and cyan",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "observation": "Text colors differ. The original's body color is gray rgb(68,68,68), most text is near-black (25,25,25) on 742 elements, and secondary text is gray (107,119,137). The AI-built page uses dark slate (28,34,51) for text and muted gray (90,98,117) for secondary metadata such as locations, role lines and attributions.",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O16",
+    "O17"
+   ],
+   "generated_ids": [
+    "G11",
+    "G34"
+   ],
+   "element_ids": [
+    "e71",
+    "e72",
+    "e73",
+    "e172"
+   ],
+   "tags": [
+    {
+     "attribute": "text and link colors",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: near-black text becomes dark slate with muted grey",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "observation": "Corner radii differ. The original is mostly square (1284 elements at 0, 52 at 1-7px, 12 at 8-15px, no pills) and its button radius is 3px. The AI-built page has 240 at 0, 18 at 1-7px, 24 at 8-15px and 5 pill-shaped, with modest rounding on cards, the search box, list rows and photos.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O18"
+   ],
+   "generated_ids": [
+    "G26",
+    "G25"
+   ],
+   "element_ids": [
+    "e14",
+    "e22",
+    "e69",
+    "e56"
+   ],
+   "tags": [
+    {
+     "attribute": "corner radius",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: mostly square corners become small rounding and pills",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "observation": "Neither page uses gradients, backdrop blur or keyframe animations.",
+   "category": "effects",
+   "status": "general",
+   "original_ids": [
+    "O19"
+   ],
+   "generated_ids": [
+    "G11",
+    "G27"
+   ],
+   "element_ids": [
+    "e14"
+   ],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "kept",
+     "value": "kept: no gradients blur or keyframe animations",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "observation": "Motion differs. The original has 106 transitions and 16 transforms, consistent with hover and carousel states. The AI-built page has no transitions or transforms.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O19"
+   ],
+   "generated_ids": [
+    "G27"
+   ],
+   "element_ids": [
+    "e14"
+   ],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: many transitions become none",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "observation": "Shadow use differs. The original has 24 box-shadows, including soft shadows on cards and Instagram thumbnails. The AI-built page has 1, on the search card, and uses thin gray borders on its cards instead.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O14",
+    "O19",
+    "O28"
+   ],
+   "generated_ids": [
+    "G5",
+    "G27"
+   ],
+   "element_ids": [
+    "e14",
+    "e15",
+    "e16",
+    "e17"
+   ],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: shadows become thin borders",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "observation": "Both Career Areas sections have two paragraphs and 11 department links, laid out differently. The original puts a three-column list of underlined blue text links of uneven length under the paragraphs. The AI-built page uses a two-column split, with the text on the left and, on the right, a stack of 536x51 bordered rows with a cyan left accent bar and bold blue text.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O20"
+   ],
+   "generated_ids": [
+    "G15"
+   ],
+   "element_ids": [
+    "e51",
+    "e53",
+    "e55",
+    "e56",
+    "e66"
+   ],
+   "tags": [
+    {
+     "attribute": "link list",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: three-column text links become two-column text and bordered link rows",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "observation": "Copy differs in length and voice. The original has about 1629 words of marketing prose about opportunity and growth, with an unspaced em dash inside prose. The AI-built page has about 726 words of short third-person corporate sentences ('Allstate believes…'), with its em dashes in the 'Visit Page — …' link labels. Neither page uses exclamation marks.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O21"
+   ],
+   "generated_ids": [
+    "G31",
+    "G14"
+   ],
+   "element_ids": [
+    "e25",
+    "e29",
+    "e183",
+    "e36",
+    "e40",
+    "e45",
+    "e50"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: marketing prose becomes short third-person sentences",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "observation": "The AI-built copy uses the British spelling 'recognise' in one testimonial.",
+   "category": "content",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G31"
+   ],
+   "element_ids": [
+    "e25",
+    "e29",
+    "e183"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "added",
+     "value": "added: british spelling in testimonial",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "observation": "The people section differs. In the original, 'Meet the People Behind Allstate' renders as about 800px of empty white space: the carousel's 7 staff images have 0x0 rects and the h3s are empty. The AI-built page's 'The people behind Allstate' shows a visible 4+3 grid of figure cards, each with a 260x195 photo, a bold name, a role and a gray location, on a pale blue-gray band.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O22"
+   ],
+   "generated_ids": [
+    "G17",
+    "G18"
+   ],
+   "element_ids": [
+    "e69",
+    "e74",
+    "e84",
+    "e89",
+    "e99",
+    "e71",
+    "e72",
+    "e73"
+   ],
+   "tags": [
+    {
+     "attribute": "people section",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: empty carousel space becomes visible card grid",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "observation": "The career growth section differs. In the original, 'Grow Your Career With Allstate' is a carousel with three photos (Xiomara R., Shelby C., Bridget) stacked at the same 282x339 position, and it renders blank. The AI-built page's 'Career growth' shows three tall article columns, each with a portrait, an h3 name, a tenure line and an ordered list of past roles.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O23"
+   ],
+   "generated_ids": [
+    "G19"
+   ],
+   "element_ids": [
+    "e108",
+    "e131",
+    "e148",
+    "e112",
+    "e135",
+    "e153"
+   ],
+   "tags": [
+    {
+     "attribute": "career growth section",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: blank carousel becomes three article columns",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "observation": "The AI-built career timelines use ordered lists (3 ol) in reverse chronological order, each item a bold role title with a 'YYYY–YYYY · City, ST' line.",
+   "category": "content",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G20"
+   ],
+   "element_ids": [
+    "e112",
+    "e115",
+    "e118",
+    "e153"
+   ],
+   "tags": [
+    {
+     "attribute": "career timeline lists",
+     "family": "component",
+     "action": "added",
+     "value": "added: ordered role lists with date and city",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c31",
+   "observation": "The original's carousels use three dot pagination indicators: the active dot is filled blue and the others are gray outlines, shown at the Grow Your Career and Testimonials carousels. The AI-built page has no carousels.",
+   "category": "components",
+   "status": "original_only",
+   "original_ids": [
+    "O24"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "hero carousel",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: carousel dot pagination indicators",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c32",
+   "observation": "Testimonials differ. The original has a carousel of three slides (Lisa, Xiomara, Kelly) that overlap at 476x377 and render as an empty region under 'Testimonials', with 0x0 mobile variants. The AI-built page's 'In their words' shows three static figures on a tinted band, each with a photo, a blockquote paraphrased in third person and a footer attribution ('Lisa, Senior Lead Internal Auditor').",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O25"
+   ],
+   "generated_ids": [
+    "G21"
+   ],
+   "element_ids": [
+    "e168",
+    "e170",
+    "e172",
+    "e177",
+    "e178"
+   ],
+   "tags": [
+    {
+     "attribute": "testimonials section",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: empty carousel becomes three static figures on tinted band",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c33",
+   "observation": "Both pages mark up people and testimonials with figure and blockquote and use no cite. Counts differ: the original has 14 figures, 14 figcaptions and 6 blockquotes. The AI-built page has 10 figures, 7 figcaptions and 3 blockquotes, with blockquote footers and strong/span/small name, role and location lines.",
+   "category": "semantics",
+   "status": "changed",
+   "original_ids": [
+    "O26"
+   ],
+   "generated_ids": [
+    "G18",
+    "G21"
+   ],
+   "element_ids": [
+    "e69",
+    "e71",
+    "e72",
+    "e73",
+    "e168",
+    "e170",
+    "e172",
+    "e177"
+   ],
+   "tags": [
+    {
+     "attribute": "landmark elements",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: more figures and blockquotes become fewer with footers",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c34",
+   "observation": "Both pages have an events section ending in a royal-blue 'view all future events' button. In the original it is a heading with no rendered event listings and a full-width 952px uppercase bar button. In the AI-built page it is a centered block with an h2, one sentence and a 243px sentence-case button.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O27"
+   ],
+   "generated_ids": [
+    "G22"
+   ],
+   "element_ids": [
+    "e186",
+    "e187",
+    "e188",
+    "e189"
+   ],
+   "tags": [
+    {
+     "attribute": "call-to-action button",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: full-width uppercase bar becomes centered sentence-case button",
+     "page_wide": false
+    },
+    {
+     "attribute": "events module",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: empty events heading becomes centered block with sentence",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c35",
+   "observation": "Both pages have a row of four Instagram thumbnails (Social1-4.png). In the original they are 185x175 with a light shadow, gaps of about 70px and descriptive 'Instagram - …' alt text, under the heading 'See What We're Up To'. In the AI-built page they are 268x268, upscaled from 214x202 sources, wrapped in anchors, with generic alt text ('Allstate Careers Instagram post 1'), under 'On Instagram'.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O28"
+   ],
+   "generated_ids": [
+    "G23"
+   ],
+   "element_ids": [
+    "e191",
+    "e192",
+    "e194",
+    "e196",
+    "e198"
+   ],
+   "tags": [
+    {
+     "attribute": "instagram feed",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: small shadowed thumbnails become larger linked tiles",
+     "page_wide": false
+    },
+    {
+     "attribute": "image alt text",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: descriptive alts become generic alts",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c36",
+   "observation": "Both pages show five social icons (Facebook, Instagram, Twitter, YouTube, LinkedIn) as JPG images, not SVGs (svgs 0).",
+   "category": "components",
+   "status": "general",
+   "original_ids": [
+    "O29"
+   ],
+   "generated_ids": [
+    "G24"
+   ],
+   "element_ids": [
+    "e200",
+    "e201",
+    "e202",
+    "e203",
+    "e205"
+   ],
+   "tags": [
+    {
+     "attribute": "icons",
+     "family": "imagery",
+     "action": "kept",
+     "value": "kept: raster social icons rather than svg",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c37",
+   "observation": "Social icon placement differs. The original shows 52x50 icons under a small bold centered 'Follow Us' label above the footer. The AI-built page right-aligns 44px icons in a ul inside the footer, under 'Follow Allstate Careers'.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O29"
+   ],
+   "generated_ids": [
+    "G24"
+   ],
+   "element_ids": [
+    "e200",
+    "e201",
+    "e202",
+    "e203",
+    "e205"
+   ],
+   "tags": [
+    {
+     "attribute": "social links",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: centered icons above footer become right-aligned footer icons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c38",
+   "observation": "The footer differs. The original's is a full-width royal-blue (0,51,160) block of small, about 11px, centered white text: long legal and EEO notices, a link row and a copyright line, with no footer element. The AI-built page's is a 151px navy footer element with the logo on a white rounded chip and the social icons, and no legal text.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O30",
+    "O31"
+   ],
+   "generated_ids": [
+    "G24"
+   ],
+   "element_ids": [
+    "e200",
+    "e201",
+    "e202",
+    "e203",
+    "e205"
+   ],
+   "tags": [
+    {
+     "attribute": "footer",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: royal blue legal text block becomes slim navy logo footer",
+     "page_wide": false
+    },
+    {
+     "attribute": "footer legal text",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: long legal and eeo notices",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c39",
+   "observation": "Styling approach differs. The original has 87 inline style attributes and 366 unique classes across 2635 uses (3.3% Tailwind-like), consistent with a CMS theme. The AI-built page has no inline styles and 34 unique classes across 99 uses (5.1% Tailwind-like).",
+   "category": "code",
+   "status": "changed",
+   "original_ids": [
+    "O32"
+   ],
+   "generated_ids": [
+    "G29"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: cms heavy markup becomes minimal markup",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c40",
+   "observation": "Resource weight differs. The original has 155 scripts, 42 stylesheets, 620 divs, 162 anchors and 75 images. The AI-built page has 0 scripts, 1 stylesheet, 25 divs, 32 anchors and 31 images.",
+   "category": "code",
+   "status": "changed",
+   "original_ids": [
+    "O33"
+   ],
+   "generated_ids": [
+    "G29",
+    "G25"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: many scripts and stylesheets become single inline style",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c41",
+   "observation": "Head metadata differs, though both pages are titled 'Allstate Careers'. The original carries Open Graph tags, tec-api event-plugin meta and 2 JSON-LD blocks, with lang en-US, all duplicated. The AI-built page has only charset, viewport and description, no JSON-LD, and lang 'en'.",
+   "category": "metadata",
+   "status": "changed",
+   "original_ids": [
+    "O34",
+    "O27"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "page metadata",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: rich social and json-ld meta becomes minimal meta",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c42",
+   "observation": "Page height and vertical whitespace differ. The original is about 6206px tall, and roughly 1600px of it is blank where the people, growth and testimonial content failed to render. The AI-built page is about 6556px tall and fully rendered, with large padded gaps of about 64-70px between headings and content, and tall bands.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O35"
+   ],
+   "generated_ids": [
+    "G32"
+   ],
+   "element_ids": [
+    "e34",
+    "e51",
+    "e67",
+    "e104",
+    "e166"
+   ],
+   "tags": [
+    {
+     "attribute": "page length",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: blank gaps become fully rendered taller page",
+     "page_wide": true
+    },
+    {
+     "attribute": "spacing rhythm",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: large blank gaps become regular section padding",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c43",
+   "observation": "On both pages every image has an alt attribute (alt_missing 0), and the content card photos use empty alt text as decorative.",
+   "category": "accessibility",
+   "status": "general",
+   "original_ids": [
+    "O36"
+   ],
+   "generated_ids": [
+    "G13",
+    "G25"
+   ],
+   "element_ids": [
+    "e23",
+    "e27",
+    "e31",
+    "e37",
+    "e42",
+    "e47"
+   ],
+   "tags": [
+    {
+     "attribute": "image alt text",
+     "family": "semantic_dom",
+     "action": "kept",
+     "value": "kept: alt on every image with empty decorative alts",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c44",
+   "observation": "The measured primary button differs. The original's is the 'COVID-19 Hiring Practices' link: white background, blue (0,51,160) text, 3px radius, 15px 20px padding. The AI-built page's is 'Search jobs': cyan background (63,180,229), navy text, 6px radius, 12px 24px padding.",
+   "category": "components",
+   "status": "changed",
+   "original_ids": [
+    "O37"
+   ],
+   "generated_ids": [
+    "G6"
+   ],
+   "element_ids": [
+    "e17",
+    "e189"
+   ],
+   "tags": [
+    {
+     "attribute": "button style",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: white blue-text button becomes cyan navy-text rounded button",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c45",
+   "observation": "Button and label case differs. The original uses bold uppercase labels such as 'SEARCH JOBS', 'VISIT PAGE', 'VIEW ALL FUTURE EVENTS' and 'GOOD WORK'. The AI-built page uses sentence or title case, such as 'Search jobs', 'View all future events' and 'Good Work', with short noun nav labels.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O38"
+   ],
+   "generated_ids": [
+    "G33",
+    "G6"
+   ],
+   "element_ids": [
+    "e6",
+    "e17",
+    "e56",
+    "e189"
+   ],
+   "tags": [
+    {
+     "attribute": "letterspaced uppercase text",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: all-caps buttons become sentence case buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c46",
+   "observation": "Card photo crops differ. The original crops its sources to 297x208 and 297x175, which cuts off parts of the subjects. The AI-built page uses a consistent 353x235 crop with rounded corners.",
+   "category": "imagery",
+   "status": "changed",
+   "original_ids": [
+    "O39"
+   ],
+   "generated_ids": [
+    "G13",
+    "G25"
+   ],
+   "element_ids": [
+    "e23",
+    "e27",
+    "e31",
+    "e37",
+    "e42",
+    "e47"
+   ],
+   "tags": [
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: varied crops become uniform rounded crops",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c47",
+   "observation": "Structural elements differ. The original uses 38 sections, 19 ul and 118 li, with no article or aside. The AI-built page uses 10 sections, 9 articles, 4 footers, 3 ol and 2 ul.",
+   "category": "semantics",
+   "status": "changed",
+   "original_ids": [
+    "O40"
+   ],
+   "generated_ids": [
+    "G28"
+   ],
+   "element_ids": [
+    "e2",
+    "e5",
+    "e12",
+    "e200"
+   ],
+   "tags": [
+    {
+     "attribute": "landmark elements",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: many sections and lists become articles and ordered lists",
+     "page_wide": true
+    }
+   ]
+  }
+ ]
+}

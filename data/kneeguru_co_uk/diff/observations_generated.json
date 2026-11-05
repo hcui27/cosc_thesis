@@ -1,0 +1,423 @@
+[
+ {
+  "observation": "Single-column content frame about 1068px wide (x=186 to 1254) centred in a 1440px viewport. Every section aligns to this same left edge, and the header, hero, card grids, list and footer all share it.",
+  "category": "layout",
+  "evidence": "Elements e2, e44, e49, e65, e92 and e180 all start at x=186. Section content widths are 1068.",
+  "element_ids": [
+   "e2",
+   "e44",
+   "e49",
+   "e65",
+   "e92",
+   "e180"
+  ]
+ },
+ {
+  "observation": "The header has two rows. The top row holds the wordmark on the left and three small image buttons on the right. The bottom row is a horizontal nav list, separated from the content below by a thin bottom border.",
+  "category": "layout",
+  "evidence": "Header e1 is 102px tall. Logo e2 is at y=10, buttons e4, e6 and e8 are at y=19, and nav ul e10 is at y=61 with h=40.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e4",
+   "e10"
+  ]
+ },
+ {
+  "observation": "The logo is plain text, not an image. 'KNEE' is dark navy and the 'guru' span is blue, in a heavy, tightly tracked sans-serif.",
+  "category": "typography",
+  "evidence": "e2 contains span e3 'guru'. There are no svgs on the page. The wordmark is rendered as text.",
+  "element_ids": [
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "observation": "Three tiny GIF buttons (-A, A, +A) act as text-size controls. The images are about 14px, with 23–28px natural sizes. They sit in bordered, rounded buttons at the top right.",
+  "category": "component",
+  "evidence": "Images aSmall.gif, a-reset.gif and aBig.gif with alts '-A', 'A' and '+A'. They are in button elements e4, e6 and e8, each about 36x24px.",
+  "element_ids": [
+   "e4",
+   "e6",
+   "e8",
+   "e5",
+   "e7",
+   "e9"
+  ]
+ },
+ {
+  "observation": "The main nav uses native details/summary disclosure elements for the dropdowns (Learning Portfolio, Community, Product Reviews). Each has a small caret marker. Dropdown panels are 230px wide link lists. The other items are plain links.",
+  "category": "component",
+  "evidence": "There are 3 details and 3 summary elements. ul e14 is 230x289, e25 is 230x328 and e38 is 230x131. Links About, Dictionary, Specialists, Clinics and The Team are plain a elements.",
+  "element_ids": [
+   "e12",
+   "e13",
+   "e23",
+   "e36",
+   "e14",
+   "e25"
+  ]
+ },
+ {
+  "observation": "The hero is a two-column split. Left: h1, a lead paragraph and one CTA. Right: a large square photo. The text block is vertically centred against the 460px image.",
+  "category": "layout",
+  "evidence": "Section e43 is 540px tall. h1 e44 is at x=186, y=238. img e47 is at x=789, y=150, 460x460.",
+  "element_ids": [
+   "e43",
+   "e44",
+   "e45",
+   "e46",
+   "e47"
+  ]
+ },
+ {
+  "observation": "The h1 is large and bold with tight letter-spacing, in dark navy. It wraps onto two lines and is the only h1 on the page.",
+  "category": "typography",
+  "evidence": "h1 is 51.2px, weight 700, colour rgb(29,43,58), system-ui stack. h1_count is 1. e44 is 565x113.",
+  "element_ids": [
+   "e44"
+  ]
+ },
+ {
+  "observation": "The hero lead paragraph is larger than body text and set in a muted slate grey. It is three lines long with generous line height.",
+  "category": "typography",
+  "evidence": "e45 is 565x92. Text colour rgb(82,101,122) appears on 44 elements. Body size is 16px with a 25.6px line height.",
+  "element_ids": [
+   "e45"
+  ]
+ },
+ {
+  "observation": "The only solid-filled call to action in the hero is a dark-blue rounded button with white bold text. Its label is a task phrase, 'Look up a knee topic'.",
+  "category": "component",
+  "evidence": "e46 is 198x48. Background rgb(11,92,138) is used on 2 elements and white text on 2. The other filled blue element is the Sign up button.",
+  "element_ids": [
+   "e46",
+   "e176"
+  ]
+ },
+ {
+  "observation": "The hero photo is a square portrait of a man seen from behind, drawing a knee diagram on a whiteboard. It has rounded corners and no caption, and the alt text is descriptive. The photo is the page's only photographic content.",
+  "category": "imagery",
+  "evidence": "06a.jpg, natural size 695x695 shown at 460x460. Alt: 'A man in a blue striped shirt drawing a knee joint on a whiteboard and labelling the patella'. There are no figure or figcaption elements.",
+  "element_ids": [
+   "e47"
+  ]
+ },
+ {
+  "observation": "The colour palette is restrained and cool. The page background is a pale blue-grey. Cards are white, links and accents are mid blue, and text is navy or slate. The sponsors band uses a slightly deeper light blue.",
+  "category": "color",
+  "evidence": "body_bg rgb(246,249,252). Top backgrounds: white on 27 elements, rgb(11,92,138) on 2, rgb(232,242,249) on 1. Text colours: rgb(29,43,58) on 175 elements, rgb(11,92,138) on 43. No gradients.",
+  "element_ids": []
+ },
+ {
+  "observation": "The page uses system fonts only. One family stack, system-ui with -apple-system, Segoe UI and Roboto, covers all text. Hierarchy comes from weight and size, not from font pairing.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count lists only system-ui (264). The h1 stack is 'system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif'. There are no stylesheets and 1 inline style block.",
+  "element_ids": []
+ },
+ {
+  "observation": "The heading scale has clear steps. The h1 is 51.2px, h2s are 27.2px bold, and h3s are card or list titles. The h2 headings are left-aligned with a short muted subtitle paragraph beneath each.",
+  "category": "typography",
+  "evidence": "h2 font_size 27.2px, weight 700. Pairs: e49 with e50, e65 with e66, e92 with e93, each subtitle about 26px tall.",
+  "element_ids": [
+   "e49",
+   "e50",
+   "e65",
+   "e66",
+   "e92",
+   "e93"
+  ]
+ },
+ {
+  "observation": "The 'Ways to learn about knees' section is a 3x2 grid of equal white tiles with thin borders and rounded corners. Each holds a centred, bold, single-line task label and a small dotted-arrow image at the left of the tile.",
+  "category": "component",
+  "evidence": "ul e51 contains six links, each 348x56, in columns at x=186, 546 and 906. dottedArrow.png is shown at 28x25 with empty alt.",
+  "element_ids": [
+   "e51",
+   "e52",
+   "e54",
+   "e56",
+   "e58",
+   "e60"
+  ]
+ },
+ {
+  "observation": "The Learning Portfolio is a 3x2 card grid. Each card is a whole-card link with an icon on the left, then a blue h3 title and a grey description. The cards are the same size and have rounded corners, a hairline border and white fill.",
+  "category": "component",
+  "evidence": "Anchors e67, e71, e75, e79, e83 and e87 are each about 345x148. They have h3s and descriptions of 49 to 73px height. Icons are 52x52.",
+  "element_ids": [
+   "e67",
+   "e71",
+   "e75",
+   "e79",
+   "e83",
+   "e87"
+  ]
+ },
+ {
+  "observation": "The portfolio card icons are SVG files shown at 52x52, with natural sizes between 123 and 194 wide by 150 high. They are multi-colour flat pictograms (grey, orange, blue, navy) and are decorative, with empty alt text. They are loaded as img, not inline svg.",
+  "category": "imagery",
+  "evidence": "primers-icon.svg, courses-icon.svg, eBooks-icon.svg, expert-views-icon.svg, general-articles-icon.svg and journal-icon.svg. counts.svgs is 0 and the alt is ''.",
+  "element_ids": [
+   "e68",
+   "e72",
+   "e76",
+   "e80",
+   "e84",
+   "e88"
+  ]
+ },
+ {
+  "observation": "Card descriptions wrap to 2–3 lines. Card heights are fixed by the grid row, so shorter cards have empty space at the bottom.",
+  "category": "layout",
+  "evidence": "p heights are 49px (e70, e86) or 73px (e74, e78, e82, e90) inside 148px cards.",
+  "element_ids": [
+   "e70",
+   "e74",
+   "e86",
+   "e67",
+   "e83"
+  ]
+ },
+ {
+  "observation": "'Latest content' is one bordered, rounded white panel holding a divided list of 10 entries. Each entry has a bold blue title link and a one-line grey summary. Hairline rules separate the rows.",
+  "category": "component",
+  "evidence": "ul e94 is 1068x883. It contains 10 li elements of about 88px each (e95, e99, e105, e110, e117, e122 and others), each with an h3 and a p.",
+  "element_ids": [
+   "e94",
+   "e95",
+   "e99",
+   "e105",
+   "e110"
+  ]
+ },
+ {
+  "observation": "Years sit inline as small grey spans next to titles ('2020', '2017'). In the DOM the year runs straight into the heading text with no separator. One title instead has the year at the front.",
+  "category": "copy",
+  "evidence": "The heading outline reads 'Online Consultations and Second Opinions2020'. Spans e108, e113, e120 and e125 are about 35x17. Title e135 begins '2017 - Primary repair...'.",
+  "element_ids": [
+   "e106",
+   "e108",
+   "e113",
+   "e120",
+   "e135"
+  ]
+ },
+ {
+  "observation": "Inline keyword links in article summaries (meniscus, MRI, knee surgeon, knee replacement, rheumatoid arthritis, arthrofibrosis) are underlined blue. Titles are bold and not underlined, so two link styles are used.",
+  "category": "copy",
+  "evidence": "Links e103, e104, e115, e116, e127, e133, e148 and e149 sit inside p elements. Title links such as e97 and e101 sit inside h3.",
+  "element_ids": [
+   "e103",
+   "e104",
+   "e115",
+   "e116",
+   "e148",
+   "e149"
+  ]
+ },
+ {
+  "observation": "Content list titles are links nested inside h3 headings. The h3 is 27px tall and the anchor is 20px, so the link text is smaller than the heading box. Some titles are very long and truncated in the outline, for example the metal allergy and meniscus webinar titles.",
+  "category": "dom-structure",
+  "evidence": "h3 e96 contains a e97. h3 e111 contains a e112 (690px wide). The li elements hold no article tags (article count is 0).",
+  "element_ids": [
+   "e96",
+   "e97",
+   "e111",
+   "e112",
+   "e123",
+   "e124"
+  ]
+ },
+ {
+  "observation": "The page has a full-bleed light-blue band for Sponsors, with left-aligned h2, a funding paragraph, a row of three logo tiles and an underlined 'More about us...' link. The band's colour makes it stand out from the surrounding pale page.",
+  "category": "layout",
+  "evidence": "Section e150 is 0,2468,1440x344 with background rgb(232,242,249). Anchors e153, e155 and e157 are sized 120x96, 154x90 and 217x90.",
+  "element_ids": [
+   "e150",
+   "e151",
+   "e152",
+   "e153",
+   "e155",
+   "e157"
+  ]
+ },
+ {
+  "observation": "The sponsor tiles are small white rounded boxes of different widths. Two have raster logos (Joint Operations at 49x70, Össur at 120x60, with a thin black frame inside it). The third, 'The Regenerative Clinic', is only bold text with no logo. The treatment is inconsistent.",
+  "category": "imagery",
+  "evidence": "Images joint-operations-logo.jpg (84x119 natural) and image-10 (120x60). e157 has text and no img.",
+  "element_ids": [
+   "e153",
+   "e154",
+   "e155",
+   "e156",
+   "e157"
+  ]
+ },
+ {
+  "observation": "A two-up row of bordered white cards follows: 'Professional standards' (HONcode badge, links, RSS) and 'Stay in touch' (mailing-list form). They are equal width (524px) and equal height (258px), with a 20px gap.",
+  "category": "layout",
+  "evidence": "e160 is at 186,2849,524x258. e170 is at 730,2849,524x258. They are h3-led cards within section e159.",
+  "element_ids": [
+   "e159",
+   "e160",
+   "e170",
+   "e161",
+   "e171"
+  ]
+ },
+ {
+  "observation": "The signup form has a visible label, a placeholder-prefilled email input, and a solid blue 'Sign up' button inline on the same row. The input is 376x48 and has a light grey fill. The button is 98x48.",
+  "category": "component",
+  "evidence": "form e173 contains label e174 'Email address', input e175 (placeholder 'you@example.com') and button e176 'Sign up'. counts.aria_attrs is 5.",
+  "element_ids": [
+   "e173",
+   "e174",
+   "e175",
+   "e176"
+  ]
+ },
+ {
+  "observation": "The medical disclaimer is a full-width white strip with a thick red left border. It has a bold lead-in ('Medical disclaimer.') followed by one sentence. It is the only use of red as a UI colour.",
+  "category": "component",
+  "evidence": "p e177 is 1068x58 at y=3127. strong e178 'Medical disclaimer.'. In the screenshot the left edge is a red bar.",
+  "element_ids": [
+   "e177",
+   "e178"
+  ]
+ },
+ {
+  "observation": "The HONcode certification badge is a small raster JPG (34x50, natural 49x72) next to a short statement. An RSS link with a small icon sits beneath it. Both are trust and utility elements in the first card.",
+  "category": "imagery",
+  "evidence": "honconduct712243-s.jpg, alt 'HONcode certified'. Link e168 'Subscribe via RSS' with feed.svg at 20x18.",
+  "element_ids": [
+   "e162",
+   "e163",
+   "e164",
+   "e168",
+   "e169"
+  ]
+ },
+ {
+  "observation": "The footer is a white band with a top rule and three columns (340px wide each) with small h4 headings: company address and registration, a Policies link list, and Follow us social links. Body text is smaller and grey. Links are underlined blue.",
+  "category": "layout",
+  "evidence": "footer e179 is 0,3236,1440x298. h4s e180, e183 and e197 are at x=186, 550 and 914. Policies ul e184 has 6 items. Social links are Twitter, Facebook, YouTube and Pinterest.",
+  "element_ids": [
+   "e179",
+   "e180",
+   "e183",
+   "e197",
+   "e184",
+   "e198"
+  ]
+ },
+ {
+  "observation": "Social links in the footer are plain text links inline with each other, with no icons. The footer address block includes company-registration copy (company number, incorporation date, domain registration date) in a legal register.",
+  "category": "copy",
+  "evidence": "Links e198–e201 are 47–65px wide text anchors on one row. p e182: 'A UK limited company, number 2893459, incorporated 1 February 1994. Domain first registered 4 February 1997.'",
+  "element_ids": [
+   "e198",
+   "e199",
+   "e200",
+   "e201",
+   "e181",
+   "e182"
+  ]
+ },
+ {
+  "observation": "The copy is plain and informational, with a direct, sentence-case tone and British spelling (en-GB lang). Section subtitles are short and declarative ('Pick the route that suits you.'). No exclamation marks, emoji or em dashes appear.",
+  "category": "copy",
+  "evidence": "lang is en-GB. text_stats: 560 words, 0 emoji, 0 em_dashes, 0 exclamations. The title is 'Knee Guru – the place to go for information about knees'.",
+  "element_ids": [
+   "e45",
+   "e50",
+   "e66",
+   "e93"
+  ]
+ },
+ {
+  "observation": "Corner rounding is used throughout on cards, buttons, inputs and the hero image. Most elements stay square: 210 have radius 0, 29 have 1–7px (buttons, inputs), 24 have 8–15px (cards) and 1 has 16px or more. There are no pills.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0:210, 1–7:29, 8–15:24, 16+:1, pill:0. The primary_button radius is 6px.",
+  "element_ids": [
+   "e47",
+   "e67",
+   "e94",
+   "e160"
+  ]
+ },
+ {
+  "observation": "Decoration is minimal. There are only 3 box-shadows, 0 gradients, 0 backdrop blurs, 0 transitions, 0 animations and 0 transforms. Cards are defined by hairline borders and fill contrast, not depth.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 3, gradient_backgrounds 0, backdrop_blur 0, transitions 0, animations 0, transforms 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "Vertical rhythm is regular. Sections sit one after another, separated by about 36px of padding, with h2, subtitle and then content in the same pattern. The page is 3534px tall, and the sections are stacked and uniform.",
+  "category": "layout",
+  "evidence": "Section heights: e48 292, e64 482, e91 1052, e150 344, e159 424. h2 offsets from section top are all about 36px (678-642, 971-935, 1452-1416).",
+  "element_ids": [
+   "e48",
+   "e64",
+   "e91",
+   "e150",
+   "e159"
+  ]
+ },
+ {
+  "observation": "The DOM is semantic. It has one header, one nav, one main, 6 sections and one footer, with a clean heading outline (h1, then h2s, h3s and h4s). No article, aside, figure or blockquote is used. Lists are used for the nav, the tiles and the content list.",
+  "category": "dom-structure",
+  "evidence": "semantic: header 1, nav 1, main 1, section 6, footer 1, article 0, aside 0. h1:1, h2:4, h3:18, h4:3. ul:7, li:48.",
+  "element_ids": [
+   "e1",
+   "e10",
+   "e43",
+   "e48",
+   "e64",
+   "e91",
+   "e179"
+  ]
+ },
+ {
+  "observation": "The styling is a small, hand-written CSS set rather than a utility framework. It uses one inline style block, 25 unique classes across 52 class uses, and almost no Tailwind-style class names. There are 6 inline style attributes. Layout mixes flex (29 elements) and grid (5).",
+  "category": "dom-structure",
+  "evidence": "classes: total 52, unique 25, tailwind_like_fraction 0.019. tag_counts.style is 1. counts.stylesheets is 0 and inline_style_attrs is 6. display_flex 29, display_grid 5.",
+  "element_ids": []
+ },
+ {
+  "observation": "Link treatment depends on context. Nav links are bold dark navy with no underline. Card and list titles are bold blue with no underline. Inline body links and footer or policy links are blue and underlined. Blue is the link colour throughout.",
+  "category": "color",
+  "evidence": "rgb(11,92,138) is used for 43 text elements. In the screenshots, the nav and titles are not underlined, while the 'More about us...', 'Verify here' and footer links are.",
+  "element_ids": [
+   "e11",
+   "e69",
+   "e97",
+   "e158",
+   "e186"
+  ]
+ },
+ {
+  "observation": "The page has 74 anchors and 20 images, and every image has alt text. Decorative images have empty alts, with 0 missing alts. Sponsor logos and the HONcode badge have descriptive alts. Nearly all interactive elements are links, with 4 buttons (the three text-size controls plus Sign up).",
+  "category": "dom-structure",
+  "evidence": "counts: anchors 74, images 20, alt_missing 0, buttons 4. dottedArrow and the icon images have alt ''.",
+  "element_ids": [
+   "e53",
+   "e68",
+   "e154",
+   "e163"
+  ]
+ },
+ {
+  "observation": "The nav dropdown links (e15–e21, e26–e33, e39–e41) have no visible text in the extracted elements. The dropdown panels are closed by default, so the page's first view shows only the top-level nav labels, with 7, 8 and 3 hidden links respectively.",
+  "category": "component",
+  "evidence": "Anchors e15–e21 are 216x38 with empty text. Panels e14 (289 tall), e25 (328) and e38 (131) sit under the summaries at y=101.",
+  "element_ids": [
+   "e14",
+   "e15",
+   "e25",
+   "e26",
+   "e38",
+   "e39"
+  ]
+ }
+]

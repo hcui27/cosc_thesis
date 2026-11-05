@@ -1,0 +1,202 @@
+[
+ {
+  "observation": "The page renders essentially unstyled. The browser's default serif face (Times New Roman) covers 920 elements and Arial covers 77 (form controls). There is no custom brand typography.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Times New Roman 920, Arial 77, FontAwesome 1; body_font_size 16px; body_line_height 'normal'"
+ },
+ {
+  "observation": "The page has a single h1, 'Natural Wellbeing', at 32px bold black in default Times. It is the browser-default h1 size and is left-aligned.",
+  "category": "typography",
+  "evidence": "h1_count 1; h1 font_size 32px, weight 700, family 'Times New Roman', color rgb(0,0,0), text_align start"
+ },
+ {
+  "observation": "The hero h2 'For Women Like You' is 80px bold serif, left-aligned at the page edge. It is far larger than the h1. It sits over a plain white background with no hero image behind it.",
+  "category": "typography",
+  "evidence": "h2 font_size 80px weight 700; slice_09 shows 'For Women / Like You' at x≈8px"
+ },
+ {
+  "observation": "The heading hierarchy is h1, then three h2s, then three h3s, then one h4. Headings are 'Renew Yourself, Naturally', 'Life is best traveled…', 'Wellbeing Rewards', 'Meet Our Team', 'Ask An Expert' and the h4 'WHAT'S YOUR EMAIL?'. Outline levels are in order with no skips.",
+  "category": "structure",
+  "evidence": "heading_outline lists 1 h1, 3 h2, 3 h3, 1 h4"
+ },
+ {
+  "observation": "Links use the browser-default blue (rgb(0,0,238)) with underlines. About 390 elements carry that blue, and the rest of the text is black. No brand palette is applied.",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(0,0,0) 606, rgb(0,0,238) 390, rgb(255,255,255) 2; slices show underlined blue links"
+ },
+ {
+  "observation": "The palette is monochrome apart from the default link blue. The page background is white or transparent. The only other backgrounds are the default button grey (239,239,239) and white.",
+  "category": "color",
+  "evidence": "body_bg rgba(0,0,0,0); top_backgrounds rgb(239,239,239) ×20, rgb(255,255,255) ×3"
+ },
+ {
+  "observation": "The only colors that are not black or white or grey or link blue are the payment-badge logos (Amex blue, Mastercard red/orange, Venmo blue, PayPal). They appear as small icons in the footer.",
+  "category": "color",
+  "evidence": "slice_17 payment icon list: AMEX, Apple Pay, Diners, Discover, JCB, Mastercard, PayPal, Venmo, Visa"
+ },
+ {
+  "observation": "The page has no flexbox or grid and no box-shadows, gradients, backdrop blur, or animations. Every one of 998 measured elements has a 0 border-radius. The layout is plain block flow.",
+  "category": "decoration",
+  "evidence": "display_flex 0, display_grid 0, box_shadows 0, gradient_backgrounds 0, animations 0, border_radius bucket_0 998; transitions 1, transforms 2"
+ },
+ {
+  "observation": "The full-page height is about 22,740px at a 1442px width. Most of that is vertical stacking of single-column content, plus several huge unconstrained SVG icons.",
+  "category": "layout",
+  "evidence": "page_height 22740, page_width 1442; slices show content hugging the left edge"
+ },
+ {
+  "observation": "Inline SVG icons have no size constraints and render at viewport scale. A user silhouette, a Pinterest logo, a Facebook icon and an Instagram glyph each fill about 1000px+ of height. They dominate whole screenshot slices in dark grey (#444) or black.",
+  "category": "imagery",
+  "evidence": "41 svg elements; slice_00 shows a ~900px black user silhouette, slice_03 and slice_06 a giant Pinterest 'P' in rgb(68,68,68); slice_09 a huge black cart outline"
+ },
+ {
+  "observation": "The user/account silhouette icon appears at least twice at full scale, next to 'Log in' links. These are likely the mobile and desktop header variants both shown.",
+  "category": "imagery",
+  "evidence": "slice_00 and slice_09 show the oversized silhouette; 'Log in' link text appears near the top of slice_01 and bottom of slice_09"
+ },
+ {
+  "observation": "The 'Skip to content' link is the very first element, rendered as a plain blue underlined link at the top-left.",
+  "category": "structure",
+  "evidence": "slice_00 top-left 'Skip to content'"
+ },
+ {
+  "observation": "Navigation is a deeply nested bulleted list with default disc, circle and square markers. It has a Shop top item with four category sub-lists (Life Boosters, Life Glow, Life Essentials, Life Transitions, Wellness Bundles) and about 25 product links. There are also plain links for Our Story, The Natural Wellbeing Difference, Health Journal and a phone number.",
+  "category": "components",
+  "evidence": "slice_01 shows nested ul/li markers; ul 19, li 95"
+ },
+ {
+  "observation": "The nav is not wrapped in a nav element. Dropdown toggles are empty small grey bordered default buttons next to each category link, and a 'Close menu' button sits above the list. That button is the page's detected 'primary button': grey background, 0 radius, padding 1px 6px.",
+  "category": "components",
+  "evidence": "semantic.nav 0; primary_button text 'Close menu', bg rgb(239,239,239), radius 0px, padding '1px 6px'; slice_01"
+ },
+ {
+  "observation": "The responsive and off-canvas menu, search drawer and cart drawer are all visible in the flow. Their hidden states are not applied, so overlay UI shows as static content.",
+  "category": "components",
+  "evidence": "slice_09 shows 'Cart', a Search button with filled circle icon, a 'Search our store' input and a '\"Close (esc)\"' button inline; slice_01 shows 'Close menu'"
+ },
+ {
+  "observation": "Buttons use the browser default look: light grey fill (239,239,239) and a thin grey border. They have square corners and no custom styling. Some have text labels drawn in quote marks, such as '\"Close (esc)\"'.",
+  "category": "components",
+  "evidence": "20 buttons; border_radius all 0; slice_09, slice_12"
+ },
+ {
+  "observation": "The search input is an unstyled default text field with the placeholder 'Search our store', placed beside a default-styled Search button.",
+  "category": "components",
+  "evidence": "slice_09; inputs 8, forms 3"
+ },
+ {
+  "observation": "The announcement/promo copy is plain unstyled lines: 'Free Shipping on all US orders over $50' and 'All-Natural Supplements'. They sit stacked with no banner background.",
+  "category": "copy",
+  "evidence": "slice_09 text lines at y≈592-610"
+ },
+ {
+  "observation": "The hero is a rotating slider of text only. The h2 is followed by the tagline 'Mindfully Participate in Your Everyday Wellness' and a 'Shop All' link. Slider images exist in the DOM but measure 0×0, so no hero imagery shows.",
+  "category": "imagery",
+  "evidence": "images list: NWB_Slider_Mockup_01–05 (2000×400) and Mobile_01–05 (600×400) all with rect w/h 0 and empty alt"
+ },
+ {
+  "observation": "The page ships separate desktop (2000×400) and mobile (600×400) slider asset sets. Each slide is duplicated (for example Mockup_04, 05, 01, 02 and 03 appear twice), which suggests clone slides for a carousel.",
+  "category": "imagery",
+  "evidence": "images array contains repeated NWB_Slider_Mockup_* and Mobile_* files"
+ },
+ {
+  "observation": "The product images (Adaptogenic Stress Relief, Hair Essentials, Kids Attention Gold, Golden Milk Bliss, Marine Collagen Plus, Mushroom Cocoa Bliss, Female Libido, Immune Sure, Sleep Essentials) are in the DOM at 0×0 and with empty alt text. Product cards therefore show only text link and price.",
+  "category": "imagery",
+  "evidence": "images entries with natural [0,0] and rect 0 for Front_*.png files; alt ''; slice_09 lists names with prices"
+ },
+ {
+  "observation": "The product list is stacked plain text: linked product name, then price linked in blue (such as $39.95, 'from $29.95', $44.95, $52.95, $47.95). There are no cards, grid or buttons.",
+  "category": "components",
+  "evidence": "slice_09: 'Adaptogenic Stress Relief $39.95', 'Hair Essentials from $29.95', 'Kids' Attention Gold $44.95', 'Marine Collagen Plus $52.95', 'Mushroom Cocoa Bliss $47.95'"
+ },
+ {
+  "observation": "Five of 40 images lack an alt attribute. Most visible images carry empty alt, while the two logos have alt 'Natural Wellbeing'. Four 70×70 life-stage icons (life_boosters, glow, essentials, transitions) are the only sized content images.",
+  "category": "imagery",
+  "evidence": "alt_missing 5; images nwb_icon-life_* rects w70 h70 at y≈17237–17558"
+ },
+ {
+  "observation": "The logo appears in two sizes, 140×46 and 110×36. They sit side by side at roughly y=10830 in the page's middle, not at the top. This looks like the sticky or mobile header variants rendered in flow.",
+  "category": "imagery",
+  "evidence": "nwb_logo_140x.png rect x267 y10830; nwb_logo_110x.png rect x415 y10840"
+ },
+ {
+  "observation": "The mid-page promo block has three short value-prop blocks. Each is an h3, a one-sentence paragraph and a link CTA: Wellbeing Rewards → 'Get Rewarded', Meet Our Team → 'Say Hello', Ask An Expert → 'Have a Question?'. They are stacked in one column.",
+  "category": "copy",
+  "evidence": "slice_12 text; h3 ×3, p 23"
+ },
+ {
+  "observation": "Copy is warm and wellness-oriented and second-person: 'For Women Like You', 'Renew Yourself, Naturally', 'Our empathetic team of caring support staff are dedicated to helping you'. CTAs are short link phrases, not styled buttons.",
+  "category": "copy",
+  "evidence": "heading_outline; slice_12; text_stats words 636, exclamations 3"
+ },
+ {
+  "observation": "The footer uses collapsible-section patterns, rendered open. A text label (Shop / Learn More / Contact Us / SIGN UP AND SAVE) is repeated with a button of the same name that holds a large chevron-down SVG outline. The doubled labels read as repeated text.",
+  "category": "components",
+  "evidence": "slice_12 shows 'Shop' + button 'Shop' with chevron, 'Learn More', 'Contact Us', 'SIGN UP AND SAVE'"
+ },
+ {
+  "observation": "The footer link lists are plain bullet lists. Shop has 5 category links. Learn More has 9: Our Story, Ask An Expert, FAQ, Our Guarantee, Rewards, Giving Back, Shipping, Returns, Affiliate Program and Wholesale & Partnership. Contact lists phone, email and hours.",
+  "category": "components",
+  "evidence": "slice_12 lists"
+ },
+ {
+  "observation": "Contact info is plain paragraphs with linked phone (+1-800-536-9353) and email (info@naturalwellbeing.com). Hours are given for Mon–Fri 8–6 PT, Sat–Sun 8–5 PT and Holidays 8–5 PT.",
+  "category": "copy",
+  "evidence": "slice_12 text"
+ },
+ {
+  "observation": "The email newsletter capture sits under an h4 'WHAT'S YOUR EMAIL?' with a 'SIGN UP AND SAVE' heading. It is part of the footer form set, and one label element and 8 inputs exist in total.",
+  "category": "components",
+  "evidence": "heading_outline h4; label 1; input 8; slice_12 'SIGN UP AND SAVE'"
+ },
+ {
+  "observation": "Social links (Pinterest, Facebook, Instagram) are a bulleted list. Each has an icon-less li holding an oversized grey SVG, followed by a small blue text link label.",
+  "category": "components",
+  "evidence": "slice_03 'Pinterest' label, slice_06 'Facebook', slice_15 'Instagram' under huge icons"
+ },
+ {
+  "observation": "The FDA disclaimer and copyright are centered plain text in a narrow block, in contrast to the otherwise left-aligned content. The copyright reads '© 2021 Natural Wellbeing Distribution, Inc.'",
+  "category": "copy",
+  "evidence": "slice_17: '*These statements have not been evaluated by the FDA…' centered at x≈20–707; '© 2021 Natural Wellbeing Distribution, Inc.'"
+ },
+ {
+  "observation": "Payment methods appear as a vertical bulleted list of nine small logo icons (about 38px wide) with default list markers beside them. They are the only correctly sized, brand-colored graphics on the page.",
+  "category": "imagery",
+  "evidence": "slice_17: Amex, Apple Pay, Diners, Discover, JCB, Mastercard, PayPal, Venmo, Visa stacked vertically"
+ },
+ {
+  "observation": "Semantic landmarks are minimal: one header, one main and one footer. There are no nav, section, article, aside or figure elements. The DOM is div-heavy at 385 divs against 169 anchors.",
+  "category": "structure",
+  "evidence": "semantic: header 1, main 1, footer 1, nav 0, section 0; tag_counts div 385, a 169"
+ },
+ {
+  "observation": "The page head is Shopify-style. It has shopify-digital-wallet and shopify-checkout-api-token meta tags plus Open Graph and Twitter card tags. It has no JSON-LD structured data. The title is 'Holistic Health Supplements – Natural Wellbeing'.",
+  "category": "structure",
+  "evidence": "meta_names include shopify-digital-wallet, og:*, twitter:*; jsonld_blocks 0; title; lang 'en'"
+ },
+ {
+  "observation": "The page is script- and style-heavy for its rendered output. It has 96 script tags, 27 style tags, 11 noscript blocks and 4 iframes. There are 96 inline style attributes and 8 stylesheets, yet little of the CSS visibly applies.",
+  "category": "structure",
+  "evidence": "tag_counts script 96, style 27, noscript 11, iframe 4; counts inline_style_attrs 96, stylesheets 8"
+ },
+ {
+  "observation": "Class use is heavy but not utility-framework style. There are 1190 class tokens across 316 unique names, and only about 17% look Tailwind-like. The naming is theme-specific.",
+  "category": "structure",
+  "evidence": "classes total 1190, unique 316, tailwind_like_fraction 0.168"
+ },
+ {
+  "observation": "ARIA use is moderate, with 81 aria attributes. 10 picture elements with source children serve responsive images. A single tracking pixel (pixel.png, 1×1) and an FontAwesome-font element are present.",
+  "category": "structure",
+  "evidence": "aria_attrs 81; picture 10, source 10; images pixel.png natural [1,1]; fonts FontAwesome 1; i tag 1"
+ },
+ {
+  "observation": "The page has 2 emoji characters and 3 exclamation marks, no em dashes, and 20 buttons. Product and brand text stays in sentence/title case, and the all-caps 'SIGN UP AND SAVE' and 'WHAT'S YOUR EMAIL?' are the exceptions.",
+  "category": "copy",
+  "evidence": "text_stats emoji 2, em_dashes 0, exclamations 3; heading 'WHAT'S YOUR EMAIL?'"
+ },
+ {
+  "observation": "Content is left-aligned and flush to the left edge with the default ~8px body margin. The right 50–90% of the 1442px viewport is empty, and there are no containers, max-width wrappers or columns.",
+  "category": "layout",
+  "evidence": "slices 01, 09, 12 show all text at x≈8–650 with no content to the right"
+ }
+]

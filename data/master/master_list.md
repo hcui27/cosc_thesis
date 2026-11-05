@@ -1,162 +1,513 @@
-# Master list over 4 sites (common = on >= 2 sites)
+# Master list over 28 sites (common = on >= 2 sites)
 
 
-## color: AI-built pages typically departed from the original color treatment, swapping backgrounds, text and link colors, and often the overall palette (sometimes promoting a minor accent to the main one), though one kept the original brand palette and one had dark text on a dark ground that hurt readability.
-5 attributes (3 on >= 2 sites)
-
-- **text and link colors** (4 sites): Across all four sites the link and text colors were altered, most often by shifting link hues or styles, with some pages also adding a grey secondary text color or underlined links.
-    - changed: link colors shift to a different hue or role scheme: 3 sites
-    - added: new text or link styling: 2 sites
-- **color palette** (4 sites): Most AI-built pages changed the overall palette to a different scheme, such as navy and cyan, monochrome green or cream with burnt orange, while one kept the original brand palette.
-    - changed: palette replaced with a different scheme: 4 sites
-    - kept: original brand palette: 1 sites
-- **background colors** (3 sites): Where background treatment is reported, the AI-built pages replaced the original grounds with different ones, using alternating cream, peach or dark section bands or an off-white page ground.
-    - changed: section backgrounds become alternating banded colors: 2 sites
-    - changed: page background becomes off-white: 1 sites
-
-## component: AI-built pages typically flattened and simplified component-level elements relative to the originals: sidebar widgets, promo banners, search, form inputs and secondary link rows were relocated, rebuilt in plain CSS or dropped, while navigation, social links, calls to action, content feeds, footers and feature sections were restyled into plainer text links, pill buttons, uniform card grids, simpler columns and centered or two-column layouts.
-9 attributes (9 on >= 2 sites)
-
-- **primary navigation** (4 sites): All four sites changed primary navigation into plainer, flatter text-link headers (often translucent), and nav decorations like active highlights and carets were dropped.
-    - changed: navigation simplified into flat or translucent header nav: 4 sites
-    - dropped: nav decoration (active highlight or carets): 2 sites
-    - added: menu toggle button: 1 sites
-- **content feed and cards** (4 sites): Content feeds were typically converted into uniform card grids or otherwise restyled, with some auxiliary elements like timestamps, labels and load-more buttons dropped.
-    - changed: content list becomes card grid: 4 sites
-    - changed: content list restyled: 4 sites
-    - dropped: content list or feed element: 1 sites
-    - added: archive line: 1 sites
-- **buttons and calls to action** (4 sites): Calls to action were commonly converted into rounded pill or filled and outline buttons, with new CTA panels or card grids added in some places.
-    - changed: buttons become rounded pill or filled/outline buttons: 3 sites
-    - added: hero or section CTA buttons: 3 sites
-- **footer** (4 sites): Footers were typically restructured into simpler columns or plain colored bands while keeping credit text, and secondary link rows were dropped.
-    - changed: footer restructured into columns or plain band: 4 sites
-    - kept: footer credits: 2 sites
-    - dropped: secondary footer links: 1 sites
-    - changed: logo grid restyled as white tiles: 1 sites
-    - added: white logo tiles: 1 sites
-- **sidebar widgets (relocated or dropped)** (3 sites): Sidebar widgets were mostly moved out of the sidebar into headers, hero areas, full-width sections or the footer, and a few were dropped entirely.
-    - changed: sidebar widget becomes main-content or header element: 3 sites
-    - dropped: sidebar widget: 2 sites
-- **search and forms** (3 sites): Search features were either restyled into fuller or chip-based controls or removed along with other form inputs.
-    - changed: search control restyled: 2 sites
-    - dropped: search or form inputs: 2 sites
-- **social links** (3 sites): Social links and prompts were generally restyled as plain text links, pill buttons or simple tiles rather than icon glyphs or images.
-    - changed: social links restyled as text or pill links: 3 sites
-    - changed: social links restyled with photo and icon links: 1 sites
-    - changed: instagram feed becomes text-only tiles: 1 sites
-- **announcement and promo banners** (2 sites): Promotional and announcement bands were either dropped or rebuilt or added as simple CSS or split image-text banners.
-    - dropped: promo or announcement band: 1 sites
-    - added: promo banner: 1 sites
-    - changed: promo banner rebuilt in CSS: 1 sites
-- **about and feature sections** (2 sites): Individual feature sections were reorganized into two-column or centered layouts with simpler backgrounds.
-    - changed: section restructured into two-column or centered layout: 2 sites
-    - changed: flush-left headshot becomes dark two-column band with pull-quote: 1 sites
-
-## copy: Across most sites, AI-built pages rewrite the original's casual, emoji-laden or user-generated copy into short, plain, sentence-case text, while adding small changes such as bold terms with parenthetical glosses, separate male and female occupation cards, trailing arrows on read-more links and posted-by lines with reply counts, and keeping the Mohawk orthography unchanged.
-6 attributes (1 on >= 2 sites)
-
-- **copy tone** (4 sites): On most sites the AI-built pages rewrite the original's casual, exclamatory, emoji-laden or user-generated copy into short, plain, sentence-case sentences, and on one site the already clean tone is kept.
-    - changed: plain sentence-case copy without em dashes, emoji or exclamations: 3 sites
-    - changed: user-generated titles become short factual sentences: 1 sites
-    - kept: no emoji or em dashes: 1 sites
-
-## decoration: AI-built pages typically rounded corners and flattened visual effects (swapping shadows for thin borders and using fewer transitions, with one site adding gradients, blur and more transitions), while on the single sites observed they kept the textured header background, added hairline section dividers with generous padding, and gave cards a category-coded colored left border.
-5 attributes (2 on >= 2 sites)
-
-- **corner radius** (4 sites): On all four sites the AI-built pages changed corner radii, typically moving from square or small radii to rounder corners (small, medium, large or pill).
-    - changed: square corners become small rounding: 2 sites
-    - changed: small radii become larger radii: 1 sites
-    - changed: mixed small radii become medium radii and pills: 1 sites
-    - changed: square corners become pills and large radii: 1 sites
-- **visual effects** (4 sites): Visual effects changed on all four sites, most often with shadows replaced by thin borders or flatter styling and fewer transitions, though one site gained gradients, blur and more transitions.
-    - changed: shadows become thin borders: 2 sites
-    - changed: transitions and animations are reduced or flattened: 2 sites
-    - added: backdrop blur on header: 1 sites
-    - changed: shadows, gradients, transitions and animations altered: 1 sites
-    - changed: few effects become gradients, backdrop blur and many transitions: 1 sites
-
-## imagery: In AI-built pages, imagery was generally simplified: logos became smaller, plainer wordmarks or stamps, photos were mostly cropped into uniform frames, decorative and overlay images were dropped, supporting images were moved or added on individual sites, and avatars were restyled into uniform navy circles.
-5 attributes (3 on >= 2 sites)
-
-- **image treatment** (4 sites): Image treatment was most commonly moved toward uniform cropped frames, with some sites keeping the original photo or illustration style and others dropping broken or responsive image markup.
-    - changed: photos become uniform cropped frames: 1 sites
-    - kept: photography style: 1 sites
-    - kept: photos cropped to uniform frames: 1 sites
-    - dropped: broken thumbnails: 1 sites
-    - dropped: responsive picture elements: 1 sites
-- **logo** (3 sites): In all three sites the logo was replaced with a smaller, simpler wordmark or stamp, often moved to the left.
-    - changed: logo becomes smaller wordmark or stamp: 3 sites
-- **decorative and overlay images** (2 sites): Each of these decorative or overlay images, such as text-over-photo headlines, spacer images and a large social glyph, was dropped from the AI-built page.
-    - dropped: text overlaid on photos: 1 sites
-    - dropped: spacer image: 1 sites
-    - dropped: large instagram glyph: 1 sites
-
-## layout: AI-built pages typically restructured layout relative to the originals, collapsing multi-column sidebar or feed arrangements into single centered or stacked sections, recomposing photo- or logo-led heroes into text-led or two-column designs, rewriting overlapping long text to wrap within taller cards, substantially changing overall page height (about as often taller as shorter), and keeping a wrapped two-row navigation.
-5 attributes (3 on >= 2 sites)
-
-- **page layout** (4 sites): Most AI-built pages replaced two-column sidebar or feed layouts with a single centered or stacked full-width section flow, while others moved to flex-plus-grid structures, narrower centered columns or half-width text columns.
-    - changed: sidebar/two-column layout becomes single-column stacked full-width sections: 3 sites
-    - changed: older float/flex layout becomes flex plus grid: 2 sites
-    - changed: forum feed with widgets becomes landing page sections: 1 sites
-    - changed: unstyled flush-left flow becomes centered fixed-width grid/flex layout: 1 sites
-    - changed: narrower centered content column with wider side margins: 1 sites
-- **page length** (4 sites): Overall page height changed substantially on most sites, with equal numbers becoming much taller or much shorter, and one empty gap above the footer removed.
-    - changed: page becomes much taller: 2 sites
-    - changed: page becomes much shorter: 2 sites
-    - dropped: empty dark gap above footer: 1 sites
-- **hero area** (3 sites): All three observed hero areas were recomposed, typically moving from photo or logo-led banners to text-led or two-column designs.
-    - changed: hero redesigned with different composition: 3 sites
-
-## semantic_dom: Compared with the original pages, AI-built pages generally simplify markup into leaner DOM with fewer classes, reorganize headings into clear h1–h4 hierarchies, consolidate or introduce semantic landmarks, strip rich social and JSON-LD metadata down to minimal meta tags (sometimes rewriting titles), mostly replace missing or poor alt text with descriptive alts, and (in the one site observed) keep call-to-action controls as styled anchors while adding an off-screen skip-to-content link.
+## color: AI-built pages almost always replace the original's color scheme with a different one (most often navy/blue or teal/green, with muted or deeper accent hues, off-white backgrounds, and darker, cooler text and link colors), usually organizing the page into alternating full-width tinted or dark section bands, with only isolated cases of added score coloring or dark-on-dark text that hides content.
 7 attributes (5 on >= 2 sites)
 
-- **dom structure** (4 sites): Most AI-built pages replace heavy, div- or plugin-laden markup with minimal markup and far fewer class names, with isolated changes to entry-list and card link markup.
-    - changed: heavy div markup becomes minimal markup: 4 sites
-    - changed: many class names become few custom classes: 1 sites
-    - kept: semantic class names with smaller scale: 1 sites
-    - changed: article entries become list anchors with spans: 1 sites
+- **color palette** (28 sites): Nearly every AI-built page changes the overall palette, most often to a navy/blue family, with teal/green, warm cream with orange or rust accents, and dark near-black schemes as the other common outcomes, and only one keeping the original brand palette.
+    - changed: palette becomes navy or blue family: 12 sites
+    - changed: palette becomes teal or green family: 7 sites
+    - changed: palette becomes warm cream/off-white with navy, orange or rust accents: 6 sites
+    - changed: palette becomes dark or near-black: 3 sites
+    - kept: original brand palette: 1 sites
+- **text and link colors** (25 sites): AI-built pages commonly standardise text and links, most often turning mid-grey or near-black body text into a darker, cooler tone with grey secondary copy, and making links underlined or recolored.
+    - changed: body text recolored to dark slate/navy/teal-black with grey secondary: 7 sites
+    - changed: mid-grey body text becomes near-black with grey meta: 6 sites
+    - changed: links become underlined: 5 sites
+    - added: underlined links: 4 sites
+    - changed: links become context-varied styles: 3 sites
+- **section backgrounds** (23 sites): Most AI-built pages break the page into alternating full-width section bands, typically white or cream alternating with pale tints or dark navy/slate bands, replacing plain white or the original's differing banding.
+    - changed: alternating bands including dark sections: 8 sites
+    - changed: alternating bands including navy sections: 7 sites
+    - changed: alternating light tinted bands: 4 sites
+    - added: alternating light tinted bands: 3 sites
+    - added: alternating bands including navy sections: 1 sites
+- **accent color** (13 sites): Most AI-built pages swap the original's accent hue for a different, usually more muted or deeper one (burnt orange, teal, indigo, gold), with a few reassigning or consolidating the accent role.
+    - changed: red accent replaced by a different hue (blue, orange, brick, gold, teal, indigo, green): 10 sites
+    - changed: accent role reassigned or consolidated into a single saturated accent: 3 sites
+- **page background** (5 sites): Page backgrounds mostly shift to off-white or white from darker or saturated grounds, while a couple keep the original background.
+    - changed: background becomes off-white or white: 3 sites
+    - kept: original background: 2 sites
+
+## component: AI-built pages generally rebuild original components into simpler, more uniform structures (slim solid bars, bordered card grids, two-column or centered bands, pill buttons and chips, plain text links) while dropping many popups, banners, sidebars, carousels, social icons and other secondary widgets, and keeping only a few components unchanged.
+56 attributes (49 on >= 2 sites)
+
+- **footer** (28 sites): Nearly every footer is rebuilt, most commonly into a dark (navy, near-black or green) footer that is either a three- or four-column link layout or a slim single band, with a few legal-text footers kept as they were.
+    - changed: slim dark footer band: 14 sites
+    - changed: dark multi-column footer: 12 sites
+    - kept: legal or credit text: 3 sites
+    - changed: centered text footer: 2 sites
+    - kept: footer repeats navigation links: 2 sites
+- **buttons and calls to action** (28 sites): Buttons and calls to action were changed on nearly every site, most often into rounded pill buttons in a new color, commonly as a filled and outline pair, and sometimes from text links into solid buttons.
+    - changed: button becomes rounded pill: 13 sites
+    - changed: button becomes filled and outline pair: 6 sites
+    - changed: button recolored: 4 sites
+    - added: filled and outline hero buttons: 4 sites
+    - changed: button becomes ghost or outline button: 3 sites
+- **primary navigation** (27 sites): Primary navigation is almost always rebuilt as a simple single-row set of plain text links inside the header, typically right-aligned (sometimes translucent/blurred or on a solid bar), with only a few left unchanged.
+    - changed: plain text links in header: 7 sites
+    - changed: right-aligned header text links: 7 sites
+    - changed: restyled solid bar or tab nav: 6 sites
+    - changed: translucent blurred header nav: 5 sites
+    - changed: single-row header links: 4 sites
+- **social links** (21 sites): Social icons are most often replaced by plain text links or text pill buttons, with some restyled as circular badges and a few dropped entirely.
+    - changed: icons become plain text links: 8 sites
+    - changed: icons restyled as badges or relocated icons: 5 sites
+    - changed: icons become pill or text buttons: 5 sites
+    - dropped: social icons: 4 sites
+- **product cards** (14 sites): Product and brand cards are commonly rebuilt as bordered, uniform or equal-height cards, often swapping images for text, with a few kept and a few added.
+    - changed: becomes uniform or equal-height grid: 7 sites
+    - changed: shadowed or plain cards become bordered cards: 6 sites
+    - changed: image cards become text-only bordered cards: 3 sites
+    - kept: product cards: 2 sites
+    - added: bordered cards: 2 sites
+- **newsletter signup** (12 sites): Newsletter signups are commonly lifted out of the footer into a centered full-width band or card with a single email field and pill-style button.
+    - changed: footer form becomes centered full-width band: 6 sites
+    - changed: text link becomes button or card: 3 sites
+    - changed: form becomes single email row with pill button: 3 sites
+    - added: bordered signup card: 1 sites
+    - added: extra empty space below form: 1 sites
+- **search control** (11 sites): Search controls are mostly restyled into a plain input with a square or labeled button, or moved/repurposed elsewhere, and two header searches are dropped.
+    - changed: search restyled as input with button or card: 6 sites
+    - changed: search relocated or repurposed: 4 sites
+    - dropped: header search: 2 sites
+- **content section layout** (11 sites): Content sections were usually rebuilt into more structured layouts such as columns, cards, bands or accordions, and a few were kept or newly added.
+    - changed: stacked text becomes multi-column layout with icons: 1 sites
+    - changed: stacked text becomes multi-column layout with tagline: 1 sites
+    - changed: centered text band becomes split with bulleted list: 1 sites
+    - changed: navy centered news band becomes mid-page in the news list: 1 sites
+    - changed: white two-column split becomes dark navy band: 1 sites
+- **navigation menu controls** (11 sites): Navigation controls were generally simplified, with recolored active items, redrawn carets and menu toggles, and hidden mega-menus and drawers dropped.
+    - changed: dropdown carets on nav items: 3 sites
+    - changed: active home item recolored: 2 sites
+    - added: transparent menu toggle button: 2 sites
+    - dropped: orange-red active item with chevron: 1 sites
+    - dropped: broken icon-font carets on nav items: 1 sites
+- **forms and inputs** (11 sites): Forms were either restyled with clearer labels and real buttons or, when hidden or secondary, dropped, and only a few were kept as they were.
+    - changed: inputs and forms restyled: 6 sites
+    - dropped: hidden or secondary forms and inputs: 5 sites
+    - changed: hidden inputs become visible forms: 1 sites
+    - kept: same flight search fields: 1 sites
+    - dropped: greyed disabled field label: 1 sites
+- **about section** (10 sites): Most AI-built about sections are rebuilt as a two-column layout pairing text with a photo, stats or card, with a few instead restyled as a paragraph, band or background.
+    - changed: becomes two-column about layout: 6 sites
+    - changed: intro text restyled as capped paragraph: 1 sites
+    - changed: about photo repositioned as background: 1 sites
+    - changed: about content moves into full-width band: 1 sites
+    - added: two-column about with bio list: 1 sites
+- **blog post feed** (9 sites): Blog feeds are most often rebuilt as uniform card grids, frequently text-only and bordered, with some content dropped and a few added placeholder or orphan tiles.
+    - changed: becomes uniform card grid: 4 sites
+    - dropped: thumbnails or article content: 3 sites
+    - changed: image articles become text-only bordered cards: 2 sites
+    - kept: article row: 1 sites
+    - added: heading link and rule: 1 sites
+- **category tiles** (9 sites): Category and link tiles are mostly converted into white or neutral bordered cards, sometimes with added fixed-height or uneven-row artifacts.
+    - changed: tiles become bordered or neutral cards: 5 sites
+    - added: bordered link card grid: 3 sites
+    - added: fixed-height cards with empty space: 1 sites
+    - kept: silhouette tiles: 1 sites
+    - added: uneven last row or wrapped tile: 1 sites
+- **promo cards, callouts and badges** (9 sites): Promo strips, notices and ribbons were typically recast as cards, bands or pill badges in the new palette, with a few dropped or kept.
+    - changed: plain text or ribbon becomes pill badge or callout: 3 sites
+    - changed: hidden or plain promo becomes visible card: 1 sites
+    - changed: fine print becomes translucent card on indigo band: 1 sites
+    - changed: grey strip becomes centered navy band with amber button: 1 sites
+    - kept: cream gold-bordered deadline callout: 1 sites
+- **announcement bar** (8 sites): Announcement bars are most often restyled into thin solid-color strips or cards, while a couple are dropped and one is kept unchanged.
+    - changed: becomes solid colored top strip: 3 sites
+    - dropped: top announcement banner: 2 sites
+    - changed: announcement becomes card or labeled strip: 2 sites
+    - kept: full-width announcement band: 1 sites
+- **header** (8 sites): All observed headers become a slimmer solid bar, usually white or dark, with a smaller logo and simple links.
+    - changed: slim white or dark header bar: 8 sites
+- **sidebar widgets** (8 sites): Sidebar widgets are mostly pulled out of the sidebar into full-width sections, grids or footer text, with occasional restyling or dropping.
+    - changed: sidebar widget becomes full-width section or grid: 3 sites
+    - changed: sidebar content moves to footer or text line: 2 sites
+    - kept: sidebar link lists: 1 sites
+    - changed: sidebar links restyled: 1 sites
+    - dropped: sidebar: 1 sites
+- **news list** (8 sites): News lists are usually recast as bordered or hairline-ruled entry lists, with a couple becoming card grids and one kept.
+    - changed: becomes bordered or hairline list of entries: 6 sites
+    - changed: becomes card grid: 2 sites
+    - kept: ruled entry list: 1 sites
+- **utility bar** (8 sites): Utility bars are usually rebuilt as a thin dark navy or green bar carrying links, search or contact details.
+    - changed: becomes dark utility bar with links, search or contact: 5 sites
+    - changed: header utility controls regrouped: 1 sites
+    - changed: becomes white strip with logo and contact: 1 sites
+    - added: thin black bar with shipping and contact info: 1 sites
+- **feature section** (7 sites): One-off feature sections with photos are generally reworked into two-column or card layouts instead of full-bleed photo bands.
+    - changed: photo band becomes two-column or card layout: 5 sites
+    - changed: photo banner or card becomes full-width or two-column layout: 1 sites
+    - added: css gradient badge instead of photo: 1 sites
+- **section action links** (7 sites): Section action links are converted either into right-aligned underlined text links or into outlined pill buttons, with one kept as is.
+    - changed: becomes right-aligned underlined link: 4 sites
+    - changed: becomes outlined pill or button: 2 sites
+    - kept: underlined text links: 1 sites
+- **content cards** (7 sites): Content blocks are turned into uniform bordered white card grids, usually three columns and often text-only.
+    - changed: becomes bordered card grid: 4 sites
+    - added: uniform bordered cards: 3 sites
+- **link list** (6 sites): Plain text link lists are typically restyled with new link colors, hairline rules or bordered rows and tiles.
+    - changed: restyled link list: 3 sites
+    - changed: text links become bordered rows or tiles: 2 sites
+    - added: separated authors and links line: 1 sites
+- **logo band** (6 sites): Logo bands are typically converted from bare logo rows into white or bordered tiles on a tinted band, occasionally producing tile artifacts, and one is dropped.
+    - changed: logos become tiles on tinted band: 5 sites
+    - added: tile artifacts (hidden logos or misaligned captions): 2 sites
+    - dropped: press logo strip: 1 sites
+- **site statistics** (6 sites): Statistics are typically presented as separate stat cards, tiles or hero-area blocks rather than the original's inline or oversized-number formats.
+    - changed: stats become stat cards or tiles: 3 sites
+    - changed: stats become hero stat strip or blocks: 2 sites
+    - added: stat cards or blocks in hero: 2 sites
+    - kept: zero values rendered like real values: 1 sites
+- **promo cards** (6 sites): Promo imagery is reworked into image-top, text-below or bordered cards laid out in a row, replacing overlays, sliders and banners.
+    - changed: becomes image-top text-below or bordered cards: 3 sites
+    - changed: becomes larger tiles or cards in a row: 2 sites
+    - added: shadowed promo cards on tinted band: 1 sites
+    - changed: raster banners become live text band: 1 sites
+- **quick links** (6 sites): Quick links are generally converted into bordered text cards or button grids, replacing icon tiles, overlays or sidebar menus.
+    - changed: icon tiles become bordered text cards or buttons: 5 sites
+    - changed: sidebar menu becomes horizontal strip: 1 sites
+- **header utilities and misc widgets** (6 sites): Small utility elements were mostly dropped or redrawn as pills and text links, and third-party badges and broken plugin blocks did not carry over.
+    - dropped: search form under nav: 1 sites
+    - added: outlined cart link wrapping to second row: 1 sites
+    - dropped: red square user icon in corner: 1 sites
+    - changed: sidebar flags become header pill switchers: 1 sites
+    - changed: footer a icons become header gif buttons: 1 sites
+- **contact section** (5 sites): Contact information is pulled out of footers or widgets into its own structured section, often two-column or built as a definition list.
+    - changed: footer contact lines become structured contact section: 2 sites
+    - changed: graphic contact block becomes two-column contact section: 2 sites
+    - changed: footer contact becomes separate section: 1 sites
+- **hero carousel** (5 sites): The rotating hero sliders were generally simplified, with several reduced to a single slide with indicator dots or lost their pagination.
+    - changed: rotating slider: 2 sites
+    - dropped: carousel dot pagination indicators: 1 sites
+    - changed: nine-slide image carousel with bullets: 1 sites
+    - changed: rotating slider becomes indicator dots with one slide: 1 sites
+- **sidebar widgets** (5 sites): Sidebar widgets such as post lists, tag clouds, ad slots and side panels were consistently dropped.
+    - dropped: sidebar widget: 5 sites
+- **suggested searches** (4 sites): Suggested searches appear as rounded chips, either newly added keyword pills or converted from a text link line.
+    - added: popular searches keyword pill chips: 2 sites
+    - changed: text link line becomes chips: 2 sites
+- **value pillars** (4 sites): Value propositions are mostly laid out as three-column card or icon rows on a colored band.
+    - changed: becomes three-column card or icon row: 3 sites
+    - added: two-column checkmark list with image: 1 sites
+- **video module** (4 sites): Video modules were usually restructured or restyled into different containers or placeholders, with one site dropping the empty embed entirely.
+    - changed: video module restyled or restructured: 3 sites
+    - dropped: video embed: 1 sites
+- **cookie consent banner** (3 sites): In every observed case the cookie consent banner is dropped from the AI-built page.
+    - dropped: cookie consent banner: 3 sites
+- **post category labels** (3 sites): Category bars are usually reduced to small uppercase colored kicker labels, with one label dropped.
+    - changed: category bar becomes uppercase kicker label: 2 sites
+    - dropped: category label: 1 sites
+- **instagram feed** (3 sites): Instagram feeds are rebuilt as grids of tiles, mostly text-only where the original images were broken.
+    - changed: broken images become text-only tiles: 2 sites
+    - changed: becomes larger linked tiles: 1 sites
+- **events section** (3 sites): Events areas were split between being kept nearly as-is and being enlarged into a centered block or card.
+    - kept: events calendar or heading largely unchanged: 2 sites
+    - changed: events widget becomes larger card or centered block: 2 sites
+- **timestamps** (3 sites): Timestamps were mostly converted to or kept as long-form dates in time elements, with one site dropping relative timestamps.
+    - dropped: relative time stamps: 1 sites
+    - kept: long-form dates in time elements: 1 sites
+    - changed: stacked month day becomes long-form time element: 1 sites
+- **districts presentation** (2 sites): Districts are turned from icon lists or map panels into outlined tiles or pill chips.
+    - changed: districts become outlined tiles or chips: 2 sites
+- **sponsor block** (2 sites): Sponsor blocks are simplified into flatter cards or labeled ads.
+    - changed: sponsor band becomes plain card: 1 sites
+    - changed: ad gains sponsored label: 1 sites
+- **empty-carousel content sections** (2 sites): Carousel areas that rendered blank in the originals were typically replaced with visible static columns, cards or figures, usually three of them.
+    - changed: blank carousel becomes static content columns or cards: 1 sites
+    - changed: text over dark photo becomes three white cards: 1 sites
+- **careers link** (2 sites): A careers entry was promoted from a plain footer link to its own section with a paragraph or button.
+    - added: careers section with short paragraph: 1 sites
+    - changed: footer text link becomes dedicated section with green button: 1 sites
+- **footer link bands** (2 sites): Extra colored link bands and rows around the footer were left out.
+    - dropped: extra footer link bands and rows: 2 sites
+- **load more / pagination controls** (2 sites): The two observed paging controls were each altered once, one load-more button removed and one pagination bar restyled with rounded boxes on a colored strip.
+    - dropped: load more button: 1 sites
+    - changed: pagination restyled: 1 sites
+- **login form** (2 sites): Login forms were either surfaced as a visible hero card or newly added with social sign-in next to contact content, so the form became more prominent in both cases.
+    - changed: hidden login form becomes visible hero card: 1 sites
+    - added: login form with social sign-in beside contact: 1 sites
+- **promotional popup** (2 sites): Both sites with a modal discount popup and dimming overlay had it removed on the AI-built page.
+    - dropped: modal discount popup with dimming overlay: 2 sites
+- **sign-up / call-to-action band** (2 sites): The sign-up band was split between one site dropping a large phone reservation band and another gaining a dark centered CTA panel with pill buttons.
+    - dropped: reservation or sign-up band: 1 sites
+    - added: dark centered cta panel with pill buttons: 1 sites
+- **star ratings** (2 sites): Star ratings were either removed along with excerpts or kept but rendered as amber text-glyph stars instead of icons.
+    - dropped: star ratings and quoted excerpts: 1 sites
+    - changed: icon stars become amber text glyph stars: 1 sites
+
+## copy: Across the sites, AI-built pages usually keep the original's content, dates and labels but rework how copy is presented, restyling meta lines and footer text into smaller quieter forms, adding muted section subtitles and trailing-arrow links, restructuring contact details, and often flattening the tone into short, plain text, with occasional one-site additions, drops or duplications.
+18 attributes (8 on >= 2 sites)
+
+- **copy tone** (28 sites): Copy tone was either kept close to the original or flattened into short, plain, sentence-case, non-exclamatory and often third-person text, with no emoji or em dashes.
+    - kept: original tone and voice: 9 sites
+    - changed: exclamations, emoji and urgency become plain sentences: 7 sites
+    - changed: headings and titles become sentence case or short factual text: 6 sites
+    - kept: no emoji or em dashes: 6 sites
+    - changed: marketing or first-person copy becomes short third-person or informational sentences: 4 sites
+- **footer legal text** (12 sites): Footer legal text was kept as a copyright line on about half the sites, while the rest shortened, rewrote or restyled it into a small line.
+    - kept: copyright line: 4 sites
+    - changed: copyright line: 3 sites
+    - changed: footer text restyled as small grey or inline line: 2 sites
+    - changed: long legal and eeo notices: 1 sites
+    - added: web agency credit link: 1 sites
+- **link affordance** (11 sites): Link affordances were commonly changed to use trailing arrows, often text arrows on underlined links or on read more links.
+    - changed: link becomes underlined link with text arrow: 3 sites
+    - changed: icon or chevron links become text or svg arrow links: 3 sites
+    - added: trailing arrow on read more links: 2 sites
+    - dropped: red play-arrow icon after links: 1 sites
+    - changed: trailing arrow on card titles: 1 sites
+- **content and dates** (9 sites): The AI-built pages almost always keep the original's content items, dates, repeated posts, registration details and labels unchanged.
+    - kept: same dated items and copyright notice: 4 sites
+    - kept: directory hub of keyword topical links: 1 sites
+    - kept: same posts repeated across sections: 1 sites
+    - kept: generic read more link text: 1 sites
+    - kept: company number and address legal register: 1 sites
+- **post meta line** (5 sites): Post meta lines were restyled or reformatted on each of the five sites, usually into smaller, quieter bylines, eyebrows or date labels, with no single common pattern.
+    - changed: em-dash dateline becomes uppercase dot eyebrow: 1 sites
+    - changed: underlined author and iso date become small grey byline with time element: 1 sites
+    - changed: timestamp reply line becomes posted by and reply count: 1 sites
+    - added: small grey year spans beside titles: 1 sites
+    - changed: gray and pink dates become source labels and coral dates: 1 sites
+- **section subtitles** (5 sites): On all five sites the AI-built pages have a muted subtitle paragraph under section headings (mostly h2, once h1), usually newly added.
+    - added: muted subtitle paragraph under headings: 4 sites
+    - changed: muted subtitle paragraph under headings: 1 sites
+- **contact details** (5 sites): Contact details were most often restructured, either into labelled definition lists with email links or repeated across header, footer and other places, and in one case dropped.
+    - changed: plain text lines become dl with labels and email link: 2 sites
+    - added: contact details repeated in multiple places: 1 sites
+    - dropped: phone email and hours listing: 1 sites
+    - changed: contact details repeated in multiple places: 1 sites
+- **repeated calls to action** (4 sites): Repeated calls to action were either kept as in the original (two of four sites) or altered, simplified or dropped on the others.
+    - kept: same repeated cta: 2 sites
+    - changed: two phone numbers become one repeated number: 1 sites
+    - added: informal labels and near-duplicate link topics: 1 sites
+    - dropped: red let us know strip: 1 sites
+
+## decoration: Relative to the originals, AI-built pages generally soften and flatten decoration: square corners become small rounded ones (often pill-shaped buttons or tags), transitions, shadows and gradients are reduced or replaced by flat styling and thin borders, and thick, dotted, torn-edge or banded section dividers and header rules are dropped or cut to hairlines, while a few sites gain extras such as colored card left borders, bordered rounded sidebar panels or header backdrop blur, and one keeps its textured header but loses its dark caption and video panels.
+8 attributes (5 on >= 2 sites)
+
+- **corner radius** (28 sites): Most AI-built pages change the original's square corners to small rounding (often with pill shapes on buttons or tags), while a few go to larger radii and only two keep square corners.
+    - changed: square corners become small rounding: 14 sites
+    - changed: square corners become small rounding and pills: 7 sites
+    - changed: square corners become pills and large radii: 4 sites
+    - kept: square corners everywhere: 2 sites
+    - changed: small radii become larger radii or pills: 1 sites
+- **visual effects** (28 sites): The AI-built pages mostly reduce effects, with many original transitions cut back or removed and shadows or gradients swapped for flat styling and thin borders, though about a quarter keep an already minimal effect set and a few add header backdrop blur or other effects.
+    - changed: many transitions become fewer or none: 14 sites
+    - changed: shadows become thin borders or flat: 12 sites
+    - kept: flat with no or minimal effects: 10 sites
+    - changed: flat becomes some added effects: 6 sites
+    - added: backdrop blur on header: 4 sites
+- **section dividers** (10 sites): Original thick, dotted, torn-edge or banded dividers were commonly dropped or reduced to hairline rules and spacing, with a couple of sites adding hairline rules where none existed.
+    - changed: decorative dividers become hairline or simplified rules: 5 sites
+    - dropped: decorative dividers or bands: 4 sites
+    - added: hairline rules: 2 sites
+- **card accent border** (3 sites): On the few sites with this feature, cards gained or altered a border treatment, typically a category-coded colored left border or a thin grey outline.
+    - added: card border or accent: 1 sites
+    - added: category-coded colored left border: 1 sites
+    - changed: category-coded colored left border: 1 sites
+- **header rule** (2 sites): The rule under the header was either removed or altered in the two sites that had one.
+    - dropped: thick red rule under header: 1 sites
+    - changed: thin red rule under header: 1 sites
+
+## imagery: AI-built pages typically reinterpret imagery rather than reproduce it, normalizing photos into uniform rounded or framed crops, shrinking or restyling logos, swapping icons for emoji or text glyphs, substituting placeholders for broken or missing images, and repositioning or dropping banner, badge and responsive-variant images, while keeping a fair share of raster images as they were.
+11 attributes (10 on >= 2 sites)
+
+- **image treatment** (25 sites): Photos are commonly normalized into uniform, rounded or framed crops, with broken or missing images replaced by flat placeholders or dropped and many-image layouts reduced to a few images, though a fair number of raster photos are kept as is.
+    - kept: raster photos: 10 sites
+    - changed: photos become uniform or rounded crops: 10 sites
+    - dropped: broken or placeholder images: 6 sites
+    - changed: many images reduced to few or one: 6 sites
+    - changed: images become placeholders or flat blocks: 3 sites
+- **logo** (22 sites): Logos are most often shrunk or turned into styled text wordmarks, with a minority kept as the original image and a few repositioned.
+    - changed: large logo becomes smaller logo: 7 sites
+    - changed: logo becomes text wordmark: 5 sites
+    - changed: logo repositioned or restyled: 4 sites
+    - kept: logo image: 4 sites
+    - changed: logo becomes smaller or text-accompanied: 1 sites
+- **icons** (19 sites): Across many sites, icon fonts and inline SVG icons are replaced by emoji, text glyphs or raster images, or dropped, while some raster icons are kept as they were.
+    - changed: icons become text or emoji glyphs: 7 sites
+    - changed: icon fonts for social and ui glyphs: 6 sites
+    - kept: raster icons: 4 sites
+    - dropped: icon fonts for social and ui glyphs: 2 sites
+    - dropped: decorative or stray icons: 2 sites
+- **section and banner images** (7 sites): These one-off banner, illustration and decorative images are mostly repositioned or resized into their own sections, with a few added or dropped.
+    - changed: banner or image moved or resized into a section: 5 sites
+    - dropped: large decorative illustrations or glyphs: 2 sites
+    - added: new logos, illustrations or progress images: 2 sites
+    - kept: yellow torn-paper png banners as titles: 1 sites
+- **payment logos** (4 sites): Payment logos are mostly re-laid out into horizontal rows or centered sections, with single cases of being kept, added or dropped.
+    - changed: payment logos re-laid out as a row or section: 2 sites
+    - kept: payment badge row: 1 sites
+    - added: payment logo row in hero: 1 sites
+    - dropped: payment card icons: 1 sites
+- **product images** (4 sites): Where product images were broken or missing, the AI pages typically substitute labeled placeholders or cards rather than real photos.
+    - changed: missing product images become placeholders: 2 sites
+    - kept: product listing without images: 1 sites
+    - changed: product images placed in cards: 1 sites
+- **certification badge** (4 sites): Certification badges are split between being kept as raster images and being moved or enlarged.
+    - changed: badge moved or upscaled: 2 sites
+    - kept: badge as raster image: 2 sites
+- **avatars** (3 sites): On all three sites where avatars appear, the AI-built page renders them as circles.
+    - changed: avatar becomes circular: 3 sites
+- **image text overlay** (3 sites): Text over images is handled differently on each site, with baked-in text kept, converted to live HTML, or overlay headlines removed.
+    - kept: baked-in banner text in raster image: 1 sites
+    - dropped: headline text overlaid on photos: 1 sites
+    - changed: baked-in banner text becomes live html text: 1 sites
+- **responsive slider images** (3 sites): All three sites lose the slider's responsive, hidden or lazy-load image variants.
+    - dropped: responsive slider image variants: 3 sites
+
+## layout: AI-built pages typically replace the original layout with a regular flex-and-grid structure in a centered column of roughly 1040–1120px, turning full-bleed photo heroes into two-column text-and-image heroes, collapsing sidebars into stacked sections, evening out spacing and often shortening very tall pages, while footers, galleries and text alignment are reworked inconsistently from site to site.
+9 attributes (8 on >= 2 sites)
+
+- **page layout** (28 sites): Most AI-built pages move to a flex-plus-grid layout, replacing floats, flexbox-only or tables, and many collapse sidebar layouts into single-column or stacked full-width sections.
+    - changed: flexbox-only becomes flex plus grid: 13 sites
+    - changed: floats, tables or fixed widths become flex plus grid: 9 sites
+    - changed: sidebar layout becomes single-column or stacked sections: 5 sites
+    - changed: unstyled or block flow becomes flex plus grid: 4 sites
+    - changed: restructured into landing-page style sections: 4 sites
+- **hero area** (26 sites): The most common outcome is that full-bleed photo or slider heroes are rebuilt as two-column text-and-image heroes, often with gradient or tinted backgrounds, while a few banners are kept and others become overlay or text-led heroes.
+    - changed: photo or slider hero becomes two-column hero: 10 sites
+    - changed: becomes full-bleed or overlay photo hero: 5 sites
+    - changed: banner or hero adjusted in width or tint: 4 sites
+    - changed: text or logo arrangement rebuilt: 4 sites
+    - kept: hero banner retained: 3 sites
+- **content column width** (25 sites): Most AI-built pages place content in a centered column of about 1040–1120px, often with full-bleed bands, whatever the original width or alignment.
+    - changed: wide column becomes narrower centered column: 10 sites
+    - changed: varying or mixed widths become centered ~1060-1104px column: 5 sites
+    - changed: flush-left column becomes centered ~1060-1080px column: 4 sites
+    - changed: column becomes centered ~1060px column: 3 sites
+    - changed: narrower column becomes wider centered column: 2 sites
+- **page length** (23 sites): Page height changes on most sites, most often with a very tall page becoming much shorter, while a smaller group becomes taller and a few lose empty gaps above the footer.
+    - changed: shorter page becomes taller page: 10 sites
+    - changed: taller page becomes shorter page: 10 sites
+    - dropped: empty gap above footer: 2 sites
+    - changed: blank gaps become fully rendered taller page: 1 sites
+    - dropped: white strip at right edge: 1 sites
+- **spacing rhythm** (16 sites): Spacing is usually made more regular, with large gaps, inconsistent indents or crowding replaced or supplemented by consistent gutters and section padding, while a few sites keep their generous whitespace.
+    - changed: irregular spacing becomes regular gutters and section padding: 9 sites
+    - added: regular gutters and section or row spacing: 3 sites
+    - kept: generous vertical whitespace: 3 sites
+    - changed: generous vertical whitespace: 1 sites
+- **text alignment and column width** (6 sites): In these few cases, text blocks are re-aligned, most often from centered to left-aligned columns or sections, with isolated changes to intro, hero and wrapped text.
+    - changed: centered content becomes left-aligned columns or sections: 2 sites
+    - changed: left-aligned intro becomes centered narrow column: 1 sites
+    - added: left-aligned half-width text columns: 1 sites
+    - added: hero text indented off container alignment: 1 sites
+    - dropped: centered narrow intro copy with blank gap: 1 sites
+- **footer link columns** (4 sites): Footer link columns are handled differently in each of the few sites, being dropped, turned into cards or accordions, or given uneven column heights.
+    - dropped: three-column site map links: 1 sites
+    - added: uneven column heights with wrapped labels: 1 sites
+    - changed: footer link columns become bordered body cards: 1 sites
+    - changed: link columns become collapsed accordions: 1 sites
+- **gallery grid** (3 sites): Gallery grids are reworked into wrapping grids or shorter rows, or dropped, with no single pattern across the three sites.
+    - changed: strip becomes wrapping grid: 1 sites
+    - dropped: footer photo thumbnails: 1 sites
+    - changed: tall rows become shorter rows with empty cells: 1 sites
+
+## other: On the few sites where it was observed, AI-built pages consistently contain fewer links (anchors) than the originals, usually while having more words and, in one case, more images.
+1 attributes (1 on >= 2 sites)
+
+- **link and image counts** (3 sites): On the few sites where this was observed, AI-built pages consistently have fewer anchors than the originals, most often alongside more words and in one case alongside more images.
+    - changed: fewer anchors and more words: 2 sites
+    - changed: fewer anchors and more images: 1 sites
+
+## semantic_dom: AI-built pages typically slim down and standardize semantic markup relative to the originals, replacing heavy CMS markup, rich metadata and heavy aria with minimal DOM, a single-h1 heading hierarchy, descriptive alt text, semantic landmarks, and often a reworked skip link, while card links, entry lists, calls to action, legacy elements and menu-label headings change in smaller, site-specific ways.
+12 attributes (9 on >= 2 sites)
+
+- **dom structure** (28 sites): On nearly all sites the DOM is slimmed from heavy CMS, plugin or div-laden markup to minimal markup with few custom classes and a single inline stylesheet in place of many scripts and stylesheets.
+    - changed: heavy generated markup becomes minimal markup: 23 sites
+    - changed: many scripts and stylesheets become single inline style: 12 sites
+    - changed: many class names become few custom classes: 7 sites
+    - kept: custom class names rather than utility classes: 6 sites
+    - dropped: duplicated header main nav elements: 1 sites
+- **heading hierarchy** (28 sites): Almost all AI-built pages replace flat, irregular or empty heading outlines with a single-h1 structured hierarchy, most often h1–h3 and sometimes h1–h4, with only two sites keeping an out-of-order outline.
+    - changed: irregular or flat outline becomes structured h1-h3 outline: 15 sites
+    - changed: irregular or flat outline becomes structured h1-h4 outline: 9 sites
+    - changed: irregular or flat outline becomes structured h1-h2 outline: 2 sites
+    - kept: non-sequential outline with h3 before h2: 2 sites
+- **landmark elements** (28 sites): Most AI-built pages swap generic divs for semantic landmarks (header, nav, main, sections, often footer or articles), while others consolidate repeated headers, navs and sections into single instances.
+    - changed: landmark and section elements consolidated or reduced: 9 sites
+    - changed: divs become header, nav, main and sections with articles: 8 sites
+    - changed: divs become header, nav, main, sections and footer: 7 sites
+    - changed: sections, figures and lists become sections and articles: 4 sites
+    - changed: divs become header, nav, main and sections: 2 sites
+- **image alt text** (27 sites): The most common outcome is that missing, empty or generic alt text is replaced with descriptive alts, often with empty alts reserved for decorative images.
+    - changed: missing or empty alts become descriptive alts: 19 sites
+    - changed: alts become empty or removed: 5 sites
+    - changed: alts become descriptive with empty decorative alts: 4 sites
+    - kept: alt on every image with descriptive or decorative-empty alts: 3 sites
+    - changed: descriptive alts become generic alts: 1 sites
+- **page metadata** (27 sites): The dominant pattern is that rich social, JSON-LD and platform meta tags are cut to a minimal set, with titles shortened or simplified and empty lang attributes set to en.
+    - changed: rich meta becomes minimal meta: 21 sites
+    - changed: title becomes branded title: 5 sites
+    - kept: lang attribute retained: 4 sites
+    - changed: title simplified and lang set: 4 sites
+    - changed: empty lang becomes lang en: 4 sites
+- **aria attributes** (8 sites): Where aria usage was notable, most AI-built pages reduce heavy aria to a minimal set, while a few keep light usage or change aria on components.
+    - changed: heavy aria becomes minimal aria: 5 sites
+    - changed: aria attributes on components: 2 sites
+    - kept: light aria usage: 1 sites
+- **card links** (7 sites): Card links vary across the seven sites, with wrapping the whole card in a single link being the most frequent change.
+    - added: whole card wrapped in single link: 3 sites
     - added: duplicate image link beside title link: 1 sites
-- **heading hierarchy** (4 sites): All four AI-built pages turn a flat or irregular heading outline into a structured h1-h3 or h1-h4 hierarchy, and one drops headings used for menu labels.
-    - changed: flat or irregular outline becomes structured h1-h4 hierarchy: 2 sites
-    - changed: flat or irregular outline becomes structured h1-h3 hierarchy: 2 sites
-    - dropped: menu labels marked up as h3: 1 sites
-- **landmark elements** (4 sites): All four AI-built pages change their landmark usage, generally consolidating repeated headers, asides and footers into a single header with fewer sections or introducing semantic landmarks in place of generic divs.
-    - changed: many headers and asides become single header and sections: 1 sites
-    - changed: generic divs become header nav main sections articles: 1 sites
-    - changed: articles and aside become sections and blockquote: 1 sites
-    - changed: many headers sections and footers become single header and fewer sections: 1 sites
-- **page metadata** (4 sites): All four AI-built pages drop rich social and JSON-LD metadata in favor of minimal meta tags, and some also rewrite the page title.
-    - changed: rich social and json-ld meta becomes minimal meta: 4 sites
-    - changed: descriptive page title becomes short hashtag title: 1 sites
-    - changed: plain page title becomes branded title: 1 sites
-- **image alt text** (4 sites): Three of four AI-built pages replace missing, empty or wrong alt text with descriptive alts, while one keeps its existing mix of empty editorial and descriptive logo alts.
-    - changed: missing or empty alts become descriptive alts: 3 sites
-    - kept: empty editorial alts and descriptive logo alts: 1 sites
+    - changed: duplicate image link beside title link: 1 sites
+    - changed: article figure wrappers become plain anchors: 1 sites
+    - changed: whole card wrapped in single link: 1 sites
+- **skip link** (6 sites): Most of the six sites with skip links gain or rework an off-screen skip-to-content link, and only one drops it.
+    - added: off-screen skip-to-content link: 3 sites
+    - changed: skip-to-content link: 2 sites
+    - dropped: skip-to-content link: 1 sites
+- **entry list markup** (2 sites): On the two sites where it appears, entry list markup is simplified into plain links with spans or links nested in h3.
+    - changed: entry markup simplified: 2 sites
 
-## typography: AI-built pages typically replaced the original body typefaces and nudged body text to a slightly larger size (16–17px) with a roomier line height (about 1.6–1.65), turned empty or hidden h1s into large visible headings, and simplified section headings and wide-tracked uppercase text into plainer size-, case- or font-based hierarchies, while post-title treatment varied and the single handwritten script eyebrow was kept.
-8 attributes (6 on >= 2 sites)
+## typography: AI-built pages typically re-set typography to a uniform, system-ui-style convention (16–17px body at about 1.6 line height, replaced body typefaces) while making headings larger, bolder and more contrasted, converting much all-caps text to sentence case, and adding uppercase letterspaced eyebrow labels, with card text and post titles restyled in site-specific ways.
+11 attributes (9 on >= 2 sites)
 
-- **body text size and line height** (4 sites): On all four sites body text was changed to a slightly larger size (16–17px) with a line height of about 1.6–1.65.
-    - changed: 14px 1.5 becomes 16px 1.6: 1 sites
-    - changed: 15px 1.5 becomes 16px 1.6: 1 sites
-    - changed: 16px 1.5 becomes 17px 1.65: 1 sites
-    - changed: 16px 2.0 becomes 17px 1.65: 1 sites
-- **body typeface** (4 sites): All four sites had their original body typefaces replaced, most often by a system-ui stack or a different sans/serif pairing.
-    - changed: open sans and montserrat become system-ui stack: 1 sites
-    - changed: helvetica neue becomes system-ui stack: 1 sites
-    - changed: verdana and open sans become georgia and helvetica: 1 sites
-    - changed: poppins mix becomes inter with playfair and caveat: 1 sites
-- **h1 heading** (4 sites): On all four sites the original empty, hidden or absent h1 became a large, visible, text-bearing heading.
-    - changed: empty or absent h1 becomes large visible h1: 4 sites
-- **section headings** (4 sites): All four sites changed their section headings, typically swapping decorative markers, uppercase or two-tone styling for simpler size-, case- or font-based hierarchy.
-    - changed: decorative heading marker or case replaced by simpler styling: 2 sites
-    - changed: weight and color hierarchy becomes size contrast: 1 sites
-    - changed: huge two-tone sans headings become bold serif h2s and h3s: 1 sites
-- **post titles** (3 sites): Post title treatment varied across the three sites: one dropped the awkward truncation, one kept ellipsis truncation, and one restyled titles into sentence-case serif headings.
+- **body typeface** (28 sites): Body typefaces were replaced on every site, most commonly with a system-ui stack and otherwise with Georgia plus a sans pairing or a Helvetica stack.
+    - changed: web font becomes system-ui stack: 17 sites
+    - changed: font becomes georgia and system-ui or helvetica pairing: 6 sites
+    - changed: custom or default font becomes helvetica stack: 3 sites
+    - changed: fonts become other web font pairing: 2 sites
+- **body text size and line height** (27 sites): Body text was almost always normalized to 16–17px with a 1.6–1.65 line height regardless of the original size or spacing.
+    - changed: body text becomes 16px at 1.6 line height: 13 sites
+    - changed: body text becomes 17px at 1.6 line height: 6 sites
+    - changed: body text becomes 17px at 1.65 line height: 6 sites
+    - changed: body text becomes 16px at 1.65 line height: 1 sites
+    - kept: 16px 1.6 body text: 1 sites
+- **h1 heading** (26 sites): The h1 was usually changed, most often from an absent, empty, hidden or small heading into a large, bold, visible h1 (frequently white or navy, sentence case, sometimes serif).
+    - changed: absent or empty h1 becomes large visible h1: 9 sites
+    - changed: small or light h1 becomes larger bold or serif h1: 7 sites
+    - changed: uppercase or colored h1 becomes sentence-case h1 with new color: 6 sites
+    - kept: h1 retained: 3 sites
+    - added: large bold h1 in hero: 2 sites
+- **section headings** (25 sites): Section headings were changed on nearly every site, typically toward bolder, navy-colored or size-contrasted h2s, with some becoming left-aligned or live text and some gaining underline bars.
+    - changed: heading font or size changed: 8 sites
+    - changed: heading color changed to navy or teal: 7 sites
+    - changed: uppercase or letterspaced headings become sentence-case: 4 sites
+    - changed: hierarchy becomes size and weight contrast: 4 sites
+    - changed: decorative marker becomes underline bar: 3 sites
+- **section eyebrow labels** (13 sites): AI-built pages most often added uppercase letterspaced eyebrow labels above section headings, while handwritten script eyebrows were kept on one site and dropped on another.
+    - added: uppercase letterspaced eyebrow above headings: 8 sites
+    - changed: uppercase letterspaced eyebrow above headings: 2 sites
+    - kept: uppercase letterspaced eyebrow above headings: 1 sites
+    - dropped: handwritten script eyebrow: 1 sites
+    - kept: handwritten script eyebrows above headings: 1 sites
+- **letterspaced uppercase text** (12 sites): Letterspaced uppercase text was commonly altered, with all-caps headings, buttons and nav converted to sentence case while wide-tracked uppercase was kept only for eyebrow labels.
+    - changed: all-caps becomes sentence case: 5 sites
+    - changed: wide-tracked uppercase eyebrow labels: 3 sites
+    - changed: wide-tracked uppercase nav and body text: 2 sites
+    - dropped: wide-tracked uppercase nav and body text: 1 sites
+    - added: wide-tracked uppercase eyebrow labels: 1 sites
+- **card text hierarchy** (6 sites): Card text hierarchies were mostly restyled in small, site-specific ways (e.g., new title, date, excerpt or label styling), with only a couple kept as in the original.
+    - kept: bold title case h3 card titles: 1 sites
+    - changed: bold title with blue date becomes date title grey excerpt: 1 sites
+    - changed: eyebrow h2 plus brush h3 becomes single h2: 1 sites
+    - kept: category link then title then byline: 1 sites
+    - changed: grey city name becomes underlined navy h4 link: 1 sites
+- **post titles** (3 sites): Post titles were handled differently on each of the few sites, with truncation dropped or kept and one restyle into sentence-case serif h3s.
     - dropped: truncated hyphenated titles overlapping dates: 1 sites
     - kept: long titles truncated with ellipsis: 1 sites
     - changed: lowercase letterspaced orange h2s become sentence-case serif h3s: 1 sites
-- **letterspaced uppercase text** (2 sites): Wide-tracked uppercase text was either altered (eyebrow labels) or removed (nav and body text) on the two sites where it appeared.
-    - changed: wide-tracked uppercase eyebrow labels: 1 sites
-    - dropped: wide-tracked uppercase nav and body text: 1 sites
+- **inline emphasis** (2 sites): A couple of AI-built pages added colored or bold inline emphasis on key terms or a heading phrase.
+    - added: colored or bold inline emphasis: 2 sites

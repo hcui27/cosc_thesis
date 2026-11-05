@@ -1,0 +1,1174 @@
+{
+ "site": "bluebayou_com",
+ "n_observations": 42,
+ "observations": [
+  {
+   "id": "c01",
+   "observation": "Document title and metadata differ. The original's title names both parks and the city ('Blue Bayou Waterpark & Dixie Landin' | Baton Rouge, LA'), includes og:/twitter: meta tags and has an empty lang. The AI-built page's title is 'Blue Bayou Water Park & Dixie Landin' — Play Your Day Away', with only charset, viewport and description meta and lang='en'. Neither page has JSON-LD.",
+   "category": "metadata",
+   "status": "changed",
+   "original_ids": [
+    "O1"
+   ],
+   "generated_ids": [
+    "G32"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "page metadata",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: rich social and json-ld meta becomes minimal meta",
+     "page_wide": true
+    },
+    {
+     "attribute": "page metadata",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: empty lang becomes lang en",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c02",
+   "observation": "Heading hierarchy differs. The original has four h1s ('PLAY YOUR DAY AWAY', 'LAND OF THE GIANTS', 'THRILLS', 'GETAWAY'), its outline starts with an h2, and levels jump between h2 and h3. The AI-built page has a single h1 'Play Your Day Away' followed by eight h2s and no h3.",
+   "category": "structure",
+   "status": "changed",
+   "original_ids": [
+    "O2"
+   ],
+   "generated_ids": [
+    "G3"
+   ],
+   "element_ids": [
+    "e40",
+    "e46",
+    "e49",
+    "e52",
+    "e59"
+   ],
+   "tags": [
+    {
+     "attribute": "heading hierarchy",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: multiple h1s and no h2 becomes structured h1 h2 h3",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c03",
+   "observation": "Original uses no landmark elements: 0 header, main, section and footer, with 99 divs and 4 navs. The AI-built page uses landmarks: 1 header, 2 navs, 1 main, 5 sections, 2 articles, 1 footer and 25 divs.",
+   "category": "structure",
+   "status": "changed",
+   "original_ids": [
+    "O4"
+   ],
+   "generated_ids": [
+    "G2"
+   ],
+   "element_ids": [
+    "e1",
+    "e54",
+    "e55",
+    "e63",
+    "e102"
+   ],
+   "tags": [
+    {
+     "attribute": "landmark elements",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: generic divs become header nav main sections articles",
+     "page_wide": true
+    },
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: heavy div markup becomes minimal markup",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c04",
+   "observation": "Hero headline type differs. The original sets it in the hand-painted brush face Handyhandy at 120px, weight 400, white and centered, slanted over the photos. The AI-built page sets it in Trebuchet MS at 80px, weight 700, white and centered, with a text shadow.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O5"
+   ],
+   "generated_ids": [
+    "G6"
+   ],
+   "element_ids": [
+    "e40",
+    "e46",
+    "e59"
+   ],
+   "tags": [
+    {
+     "attribute": "h1 heading",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: brush display h1 becomes smaller bold sans h1 with shadow",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c05",
+   "observation": "Text typeface differs. The original sets nearly all text (167 elements) in the geometric sans Brandon Grotesque at 18px/28px, with wide-tracked uppercase for labels, buttons and footer links, and pairs it with a brush display face. The AI-built page uses a single family, Trebuchet MS (168 elements), at 16px/25.6px, with no webfont or display pairing.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O6"
+   ],
+   "generated_ids": [
+    "G5"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "body typeface",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: din web font becomes system-ui stack",
+     "page_wide": true
+    },
+    {
+     "attribute": "body text size and line height",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: 18px 1.5 becomes 16px 1.6",
+     "page_wide": true
+    },
+    {
+     "attribute": "letterspaced uppercase text",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: wide-tracked uppercase nav and body text",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c06",
+   "observation": "h2 elements are about 22px bold on both pages (22px/700 on the original, 22.4px/700 on the AI-built page).",
+   "category": "typography",
+   "status": "general",
+   "original_ids": [],
+   "generated_ids": [
+    "G6"
+   ],
+   "element_ids": [
+    "e40",
+    "e46",
+    "e59"
+   ],
+   "tags": [
+    {
+     "attribute": "section headings",
+     "family": "typography",
+     "action": "kept",
+     "value": "kept: bold h2 at about 22px",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c07",
+   "observation": "Original loads two icon fonts: 'Social icons' for the footer glyphs and 'webflow-icons'. The AI-built page uses no icon fonts. Neither page has inline SVGs.",
+   "category": "iconography",
+   "status": "original_only",
+   "original_ids": [
+    "O7"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "icons",
+     "family": "imagery",
+     "action": "dropped",
+     "value": "dropped: icon fonts for social and ui glyphs",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c08",
+   "observation": "Hero composition differs. The original is a split screen: a teal-washed water photo on the left and a mustard-washed Ferris wheel photo on the right, with overlays at rgba(0,226,200,0.8) and rgba(242,181,14,0.8) and a hard seam at the center. The AI-built page uses a single full-bleed, blue-tinted water-slide photo with the headline, subtitle and two pill buttons stacked over it.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O8",
+    "O9"
+   ],
+   "generated_ids": [
+    "G7"
+   ],
+   "element_ids": [
+    "e39",
+    "e40",
+    "e41",
+    "e42",
+    "e43"
+   ],
+   "tags": [
+    {
+     "attribute": "hero area",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: split two-photo hero becomes single full-bleed tinted photo hero",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c09",
+   "observation": "Opening-day announcement differs. The original has a red (244,0,9) panel pinned over the top center of the hero, with a bold white h2 title, body copy and an X close control. The AI-built page has a full-width, 69px dark indigo (41,34,88) strip under the header, with a cyan bold lead-in and white text.",
+   "category": "component",
+   "status": "changed",
+   "original_ids": [
+    "O10"
+   ],
+   "generated_ids": [
+    "G9"
+   ],
+   "element_ids": [
+    "e37",
+    "e38"
+   ],
+   "tags": [
+    {
+     "attribute": "announcement bar",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: red overlay panel becomes full-width indigo strip",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "observation": "Corner radius differs. On the original, 190 elements have 0 radius and one is pill-shaped, so buttons and cards are square. On the AI-built page, 112 elements are square, 42 have an 8–15px radius (cards, tiles, photos) and 14 are pills (buttons, badges).",
+   "category": "shape",
+   "status": "changed",
+   "original_ids": [
+    "O11"
+   ],
+   "generated_ids": [
+    "G29"
+   ],
+   "element_ids": [
+    "e45",
+    "e55",
+    "e84",
+    "e42"
+   ],
+   "tags": [
+    {
+     "attribute": "corner radius",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: square corners become pills and large radii",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "observation": "A brush-stroke SVG torn-edge divider is stretched to 1440×175 on both pages. The original reuses it six times across the header, hero, thrills, summer, getaway and footer bands. The AI-built page uses it once, at the bottom of the hero.",
+   "category": "decoration",
+   "status": "changed",
+   "original_ids": [
+    "O12"
+   ],
+   "generated_ids": [
+    "G8"
+   ],
+   "element_ids": [
+    "e44"
+   ],
+   "tags": [
+    {
+     "attribute": "section dividers",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: brush torn-edge divider used six times becomes used once",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "observation": "Three quick-link cards overlap the bottom of the hero on both pages, but they are styled differently. The original's cards are solid burnt orange (219,77,35) with shadows, a small caps label, a large brush heading and a full-width white button ('START THE EXCITEMENT'). The AI-built page's cards are pale blue (244,249,253) with a light border and rounded corners, and each is a single link containing an h2 and an arrow text ('Start the Excitement →').",
+   "category": "component",
+   "status": "changed",
+   "original_ids": [
+    "O13"
+   ],
+   "generated_ids": [
+    "G14"
+   ],
+   "element_ids": [
+    "e45",
+    "e48",
+    "e51",
+    "e46",
+    "e47"
+   ],
+   "tags": [
+    {
+     "attribute": "quick links",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: orange shadowed cards become pale blue bordered link cards",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "observation": "Card headings differ. The original splits each one into a small h2 eyebrow (BUY, SEASON, BIRTHDAY) above a large brush-font h3 (TICKETS, PASSES, PARTIES). The AI-built page uses a single h2 per card ('Buy Tickets', 'Season Passes', 'Birthday parties').",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O3"
+   ],
+   "generated_ids": [
+    "G3"
+   ],
+   "element_ids": [
+    "e40",
+    "e46",
+    "e49",
+    "e52",
+    "e59"
+   ],
+   "tags": [
+    {
+     "attribute": "card text hierarchy",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: eyebrow h2 plus brush h3 becomes single h2",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "observation": "Button styling differs. The original's buttons are square, with small bold uppercase text, solid fills that vary (white, teal, yellow) and padding of 10px 20px, and the secondary action is a plain text link ('OR BUY TICKETS'). The AI-built page uses one pill system about 54px tall, with solid cyan or indigo buttons and outline buttons with a navy or white border.",
+   "category": "component",
+   "status": "changed",
+   "original_ids": [
+    "O14"
+   ],
+   "generated_ids": [
+    "G12"
+   ],
+   "element_ids": [
+    "e42",
+    "e43",
+    "e61",
+    "e62",
+    "e77",
+    "e78"
+   ],
+   "tags": [
+    {
+     "attribute": "button style",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: square uppercase buttons become pill buttons filled and outline",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "observation": "Both pages repeat the same 'Get a Season Pass' / 'Buy Tickets' call-to-action pair in several sections instead of varying the copy.",
+   "category": "content",
+   "status": "general",
+   "original_ids": [
+    "O14",
+    "O24"
+   ],
+   "generated_ids": [
+    "G13"
+   ],
+   "element_ids": [
+    "e42",
+    "e61",
+    "e62",
+    "e90",
+    "e91",
+    "e46"
+   ],
+   "tags": [
+    {
+     "attribute": "repeated calls to action",
+     "family": "copy",
+     "action": "kept",
+     "value": "kept: same ticket and pass cta pair repeated",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "observation": "Palette differs. The original uses saturated brand colors: aqua blue (0,152,255), burnt orange (219,77,35), yellow (242,181,14), red (244,0,9) and teal, with dark gray (51,51,51) body text. The AI-built page is built on deep indigo (41,34,88), a cyan accent (37,193,241) and a pale blue tint (244,249,253), with navy (28,35,64) text and one-off mint, cream and Coca-Cola red (200,16,46).",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O15"
+   ],
+   "generated_ids": [
+    "G10"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "color palette",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: saturated multi-color brand becomes indigo and cyan",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "observation": "Link colors differ. On the original, links are aqua blue (0,152,255) on white and footer column headings are orange (219,77,35). On the AI-built page, links are mid-blue (16,118,189) and footer links are pale lavender (195,200,224) on a near-black purple background.",
+   "category": "color",
+   "status": "changed",
+   "original_ids": [
+    "O16"
+   ],
+   "generated_ids": [
+    "G11"
+   ],
+   "element_ids": [
+    "e46",
+    "e84",
+    "e106",
+    "e111"
+   ],
+   "tags": [
+    {
+     "attribute": "text and link colors",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: light sky blue links become mid blue",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "observation": "Park feature presentation differs. On the original, 'Land of the Giants' is a full band with a 734×490 photo on the left and the logo, heading, copy and buttons on the right. On the AI-built page, both parks are 546×702 rounded, shadowed article cards in a two-column grid with a 28px gutter, each with a photo on top, a status pill, the logo, an h2, a paragraph and two buttons.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O17"
+   ],
+   "generated_ids": [
+    "G15"
+   ],
+   "element_ids": [
+    "e55",
+    "e63",
+    "e56",
+    "e64"
+   ],
+   "tags": [
+    {
+     "attribute": "park feature section",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: full photo and text band becomes two rounded article cards",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "observation": "Section heading stack differs. The original opens each section with its logo, then a small caps eyebrow ('ENTER THE', 'EXPERIENCE THE'), then a large brush heading. The AI-built page puts the logo above a single combined h2 ('Enter the Land of the Giants', 'Experience the Thrills').",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O18"
+   ],
+   "generated_ids": [
+    "G15"
+   ],
+   "element_ids": [
+    "e55",
+    "e63",
+    "e56",
+    "e64"
+   ],
+   "tags": [
+    {
+     "attribute": "section headings",
+     "family": "typography",
+     "action": "changed",
+     "value": "changed: logo eyebrow and brush heading becomes single combined h2",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "observation": "Original's 'Thrills' band is a full-width photo with an orange gradient wash that fades from transparent to solid, with white text on the right half. The AI-built page has no comparable band; Dixie Landin' is shown as one of the cards.",
+   "category": "layout",
+   "status": "original_only",
+   "original_ids": [
+    "O19"
+   ],
+   "generated_ids": [],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "thrills band",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: full-width photo band with orange gradient",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "observation": "Status notices differ. The original states the Dixie Landin' 2021 closure as a plain body paragraph. The AI-built page shows park status as small pill badges in tinted fills: mint for 'Opening May 29, 2021' and cream for 'Closed for 2021 · Returning 2022'.",
+   "category": "component",
+   "status": "changed",
+   "original_ids": [
+    "O20"
+   ],
+   "generated_ids": [
+    "G16"
+   ],
+   "element_ids": [
+    "e57",
+    "e65"
+   ],
+   "tags": [
+    {
+     "attribute": "status notices",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: plain paragraph becomes tinted pill badges",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "observation": "'Summer is waiting for you' wordmark differs. On the original, it is large artwork with a pool-water texture inside the lettering, alone on white with ample space around it. On the AI-built page, it is a 640×360 PNG with a white background placed over a full-bleed 1440×600 pool photo band, so a hard white rectangle sits on the photo.",
+   "category": "imagery",
+   "status": "changed",
+   "original_ids": [
+    "O21"
+   ],
+   "generated_ids": [
+    "G19"
+   ],
+   "element_ids": [
+    "e71",
+    "e72",
+    "e73"
+   ],
+   "tags": [
+    {
+     "attribute": "summer wordmark",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: wordmark on white becomes white rectangle over photo band",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "observation": "Social follow section differs. The original has a full-width aqua blue band with a centered 'STAY UP TO DATE' h3 and one line of text with inline small-caps Facebook and Newsletter links. The AI-built page has a pale blue 'Stay Connected' section with an h2, a paragraph and a row of four pill buttons (Facebook, Newsletter, Twitter, YouTube).",
+   "category": "component",
+   "status": "changed",
+   "original_ids": [
+    "O22"
+   ],
+   "generated_ids": [
+    "G20"
+   ],
+   "element_ids": [
+    "e74",
+    "e75",
+    "e76",
+    "e77",
+    "e78",
+    "e79",
+    "e80"
+   ],
+   "tags": [
+    {
+     "attribute": "social links",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: aqua band with inline links becomes row of pill buttons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "observation": "Getaway section differs. The original has equal halves with thin white gutters: a cone photo on the left and a blue panel with a two-column uppercase link list on the right. The AI-built page has a text column on the left with a 2×3 grid of pale blue rounded link tiles plus the buttons, and a rounded, shadowed cone photo on the right.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O23"
+   ],
+   "generated_ids": [
+    "G21",
+    "G22"
+   ],
+   "element_ids": [
+    "e82",
+    "e83",
+    "e84",
+    "e86",
+    "e90",
+    "e92",
+    "e85",
+    "e87"
+   ],
+   "tags": [
+    {
+     "attribute": "getaway section",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: split photo and link panel becomes link tile grid and photo",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "observation": "The second-day return offer differs. On the original, it is small white fine print inside the blue getaway panel. On the AI-built page, it is a translucent card on a dark indigo band with a cyan h2 'Come back tomorrow, free', a paragraph and a large empty area below the text.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O24"
+   ],
+   "generated_ids": [
+    "G23"
+   ],
+   "element_ids": [
+    "e93",
+    "e94",
+    "e95",
+    "e96",
+    "e97",
+    "e98",
+    "e99",
+    "e100"
+   ],
+   "tags": [
+    {
+     "attribute": "return offer",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: fine print becomes translucent card on indigo band",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "observation": "Coca-Cola sponsor block differs. On the original, it is a full red band with a white wordmark, and the can image extends upward over the brush edge (the image overlap is recorded). On the AI-built page, it is a solid red card beside the free-return card in an indigo band, holding the can and the white wordmark with no overlap.",
+   "category": "component",
+   "status": "changed",
+   "original_ids": [
+    "O25"
+   ],
+   "generated_ids": [
+    "G23",
+    "G24"
+   ],
+   "element_ids": [
+    "e93",
+    "e94",
+    "e95",
+    "e96",
+    "e97",
+    "e98",
+    "e99",
+    "e100"
+   ],
+   "tags": [
+    {
+     "attribute": "sponsor block",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: full red band with overlapping can becomes red card without overlap",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "observation": "Sponsor offer copy differs. The original repeats 'SAVE $5' as an h3 and again in an h2 ('SAVE $5 WITH ANY COCA-COLA CAN'). The AI-built page bolds 'Save $5' inside a sentence.",
+   "category": "typography",
+   "status": "changed",
+   "original_ids": [
+    "O26"
+   ],
+   "generated_ids": [
+    "G24"
+   ],
+   "element_ids": [
+    "e98",
+    "e99",
+    "e100",
+    "e101"
+   ],
+   "tags": [
+    {
+     "attribute": "sponsor offer copy",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: repeated headings become bold inline phrase",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "observation": "Footer differs. The original's footer is white, with link columns under orange brush-font headings (Parks, Plan, Tickets, More), uppercase blue links, uneven column spacing and a light gray copyright line. The AI-built page's footer is near-black purple, with two centered logo chips, a single row of five links and a centered copyright line, with no columns.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O27",
+    "O28"
+   ],
+   "generated_ids": [
+    "G25"
+   ],
+   "element_ids": [
+    "e102",
+    "e103",
+    "e104",
+    "e105",
+    "e111"
+   ],
+   "tags": [
+    {
+     "attribute": "footer",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: white four-column footer becomes dark centered single-row footer",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "observation": "Original's footer has three solid blue social icon squares (Facebook, Twitter, YouTube). The AI-built footer has no social icons.",
+   "category": "iconography",
+   "status": "original_only",
+   "original_ids": [
+    "O28"
+   ],
+   "generated_ids": [
+    "G25"
+   ],
+   "element_ids": [
+    "e102",
+    "e103",
+    "e104",
+    "e105",
+    "e111"
+   ],
+   "tags": [
+    {
+     "attribute": "social links",
+     "family": "component",
+     "action": "dropped",
+     "value": "dropped: footer social icons",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "observation": "Both pages have 13 images with alt_missing 0. On the original, every image has empty alt. On the AI-built page, content images carry alt text (e.g. 'Summer is waiting'), and the brush divider and cone photo have empty alt.",
+   "category": "accessibility",
+   "status": "changed",
+   "original_ids": [
+    "O29"
+   ],
+   "generated_ids": [
+    "G31"
+   ],
+   "element_ids": [
+    "e44",
+    "e92",
+    "e3"
+   ],
+   "tags": [
+    {
+     "attribute": "image alt text",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: empty alts become descriptive alts",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c31",
+   "observation": "The two pages use ARIA attributes and inline style attributes in different numbers: the original has 20 ARIA attributes and 9 inline styles, the AI-built page 8 and 3.",
+   "category": "code",
+   "status": "changed",
+   "original_ids": [],
+   "generated_ids": [
+    "G31"
+   ],
+   "element_ids": [
+    "e44",
+    "e92",
+    "e3"
+   ],
+   "tags": [
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: heavy aria and list markup becomes minimal markup",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c32",
+   "observation": "Page length and layout method differ. The original is 4793px tall, divided into alternating white and saturated color bands, and uses flex (14) with no grid. The AI-built page is 3698px tall, alternates white, pale blue tint and indigo sections, and uses grid (5) and flex (19).",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O30"
+   ],
+   "generated_ids": [
+    "G26",
+    "G34"
+   ],
+   "element_ids": [
+    "e54",
+    "e71",
+    "e74",
+    "e81",
+    "e93",
+    "e102"
+   ],
+   "tags": [
+    {
+     "attribute": "page layout",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: flexbox-only becomes flex plus grid columns",
+     "page_wide": true
+    },
+    {
+     "attribute": "page length",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: very tall page becomes much shorter page",
+     "page_wide": true
+    },
+    {
+     "attribute": "section backgrounds",
+     "family": "color",
+     "action": "changed",
+     "value": "changed: plain white becomes alternating navy white and grey bands",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c33",
+   "observation": "Both pages use shadows sparingly: 9 on the original (orange cards, buttons) and 8 on the AI-built page (cards, photos). Neither page has backdrop blur or keyframe animations.",
+   "category": "effects",
+   "status": "general",
+   "original_ids": [
+    "O31"
+   ],
+   "generated_ids": [
+    "G28"
+   ],
+   "element_ids": [
+    "e55",
+    "e63",
+    "e92"
+   ],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "kept",
+     "value": "kept: sparing shadows and no blur",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c34",
+   "observation": "Motion properties differ: the original has 61 transitions and 10 transforms, while the AI-built page has 15 transitions and 0 transforms.",
+   "category": "effects",
+   "status": "changed",
+   "original_ids": [
+    "O31"
+   ],
+   "generated_ids": [
+    "G28"
+   ],
+   "element_ids": [
+    "e55",
+    "e63",
+    "e92"
+   ],
+   "tags": [
+    {
+     "attribute": "visual effects",
+     "family": "decoration",
+     "action": "changed",
+     "value": "changed: many transitions become fewer transitions",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c35",
+   "observation": "Code origin differs. The original looks like a Webflow export: 3 external stylesheets, 15 scripts, 254 class uses with 86 unique and a tailwind-like fraction of 0.398. The AI-built page is a single file with one inline style block, 0 stylesheets, 1 script, 75 class uses with 36 unique and a fraction of 0.027.",
+   "category": "code",
+   "status": "changed",
+   "original_ids": [
+    "O32"
+   ],
+   "generated_ids": [
+    "G1"
+   ],
+   "element_ids": [],
+   "tags": [
+    {
+     "attribute": "dom structure",
+     "family": "semantic_dom",
+     "action": "changed",
+     "value": "changed: many scripts and stylesheets become single inline style",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c36",
+   "observation": "Header differs. The original's header is a white strip with the Blue Bayou logo at the far left, the Dixie Landin' logo at the far right and no visible text menu, with the red banner filling the center. The AI-built page's header has both logos together at the left and a right-aligned five-item text navigation.",
+   "category": "navigation",
+   "status": "changed",
+   "original_ids": [
+    "O33"
+   ],
+   "generated_ids": [
+    "G27"
+   ],
+   "element_ids": [
+    "e1",
+    "e2",
+    "e4",
+    "e6"
+   ],
+   "tags": [
+    {
+     "attribute": "primary navigation",
+     "family": "component",
+     "action": "changed",
+     "value": "changed: split logos with no menu becomes left logos and right text nav",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c37",
+   "observation": "AI-built navigation uses native details/summary dropdowns (4) for Tickets, Parks, Plan and More, plus a 'Menu ☰' button. The original's header shows no comparable text menu.",
+   "category": "navigation",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G4"
+   ],
+   "element_ids": [
+    "e6",
+    "e9",
+    "e10",
+    "e14",
+    "e20",
+    "e31"
+   ],
+   "tags": [
+    {
+     "attribute": "primary navigation",
+     "family": "component",
+     "action": "added",
+     "value": "added: details summary dropdowns and menu button",
+     "page_wide": false
+    },
+    {
+     "attribute": "menu toggle button",
+     "family": "component",
+     "action": "added",
+     "value": "added: transparent menu toggle button",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c38",
+   "observation": "Both pages have short promotional copy of about 250 words (251 vs 257) with no exclamation marks. The original uses all-caps headings, 1 emoji and 0 em dashes. The AI-built page uses title or sentence case, 0 emoji and 1 em dash.",
+   "category": "content",
+   "status": "changed",
+   "original_ids": [
+    "O34"
+   ],
+   "generated_ids": [
+    "G30"
+   ],
+   "element_ids": [
+    "e37",
+    "e60",
+    "e68",
+    "e96"
+   ],
+   "tags": [
+    {
+     "attribute": "copy tone",
+     "family": "copy",
+     "action": "changed",
+     "value": "changed: all-caps headings become sentence case headings",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c39",
+   "observation": "Both pages reuse the two park logo SVGs. On the original, each logo appears in the header and again as its park's section marker. On the AI-built page, each appears in the header, in its park card and on white rounded chips in the footer.",
+   "category": "imagery",
+   "status": "changed",
+   "original_ids": [
+    "O35"
+   ],
+   "generated_ids": [
+    "G17"
+   ],
+   "element_ids": [
+    "e3",
+    "e5",
+    "e58",
+    "e66",
+    "e103",
+    "e104"
+   ],
+   "tags": [
+    {
+     "attribute": "logo",
+     "family": "imagery",
+     "action": "changed",
+     "value": "changed: park logos as section markers become card and footer chips",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c40",
+   "observation": "AI-built card logos are displayed at 498×56 and centered, which leaves wide empty space on either side, while the text below them is left-aligned.",
+   "category": "imagery",
+   "status": "generated_only",
+   "original_ids": [],
+   "generated_ids": [
+    "G18"
+   ],
+   "element_ids": [
+    "e58",
+    "e66",
+    "e59"
+   ],
+   "tags": [
+    {
+     "attribute": "card logos",
+     "family": "imagery",
+     "action": "added",
+     "value": "added: centered wide logos above left-aligned text",
+     "page_wide": false
+    }
+   ]
+  },
+  {
+   "id": "c41",
+   "observation": "Content width differs. The original has no consistent container: the cards start at x≈29 and the feature rows and footer columns start at x82. The AI-built page keeps its content in a 1120px container from x=160 to x=1280.",
+   "category": "layout",
+   "status": "changed",
+   "original_ids": [
+    "O36"
+   ],
+   "generated_ids": [
+    "G26"
+   ],
+   "element_ids": [
+    "e54",
+    "e71",
+    "e74",
+    "e81",
+    "e93",
+    "e102"
+   ],
+   "tags": [
+    {
+     "attribute": "content column width",
+     "family": "layout",
+     "action": "changed",
+     "value": "changed: flush-left column becomes centered 1060px column",
+     "page_wide": true
+    }
+   ]
+  },
+  {
+   "id": "c42",
+   "observation": "Both pages use lifestyle photography of rides, riders and an ice-cream cone against the sky, laid out as rectangular blocks.",
+   "category": "imagery",
+   "status": "general",
+   "original_ids": [
+    "O17",
+    "O19",
+    "O23"
+   ],
+   "generated_ids": [
+    "G33"
+   ],
+   "element_ids": [
+    "e56",
+    "e64",
+    "e92",
+    "e72"
+   ],
+   "tags": [
+    {
+     "attribute": "image treatment",
+     "family": "imagery",
+     "action": "kept",
+     "value": "kept: stock raster photos and svg logo",
+     "page_wide": true
+    }
+   ]
+  }
+ ]
+}

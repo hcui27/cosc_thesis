@@ -1,0 +1,132 @@
+[
+ {
+  "observation": "Page is a Shopify-style marketing site for Thync with title 'Thync | Neurostimulation For Everyone – Thync Global, Inc.'; structure is header, one main, footer, two navs, and zero section/article elements.",
+  "category": "dom-structure",
+  "evidence": "facts.json semantic: header 1, nav 2, main 1, footer 1, section 0, article 0; shopify meta tags present"
+ },
+ {
+  "observation": "Div-heavy markup: 150 divs against 31 anchors and 20 paragraphs. Only 7.3% of classes are Tailwind-like, with 210 unique classes across 494 uses, so styling is theme-specific class naming.",
+  "category": "dom-structure",
+  "evidence": "tag_counts div 150; classes total 494, unique 210, tailwind_like_fraction 0.073"
+ },
+ {
+  "observation": "Heading outline is irregular. The h1 text is empty (18px, weight 400), the first h2 is a hidden cart notice 'Just added to your cart', and an empty h3 sits ahead of the h1. 'Neurostimulation For Everyone' is an h2, and the visible Q&A headings are h2s. 'Our Approach To Science' is an h4.",
+  "category": "dom-structure",
+  "evidence": "heading_outline: h2 'Just added to your cart', h3 '', h1 '', h2 'Neurostimulation For Everyone', h4 'Our Approach To Science'; h1 font_size 18px"
+ },
+ {
+  "observation": "Single typeface, Poppins, is used on 346 elements, with Arial and HelveticaNeue as marginal fallbacks. The geometric sans is set light/regular for body and headings.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count Poppins 346, Arial 2, HelveticaNeue 1; body 15px/22.5px"
+ },
+ {
+  "observation": "The hero headline is large, light-weight white Poppins, centered over the photo, with a smaller subtitle below and a text shadow.",
+  "category": "typography",
+  "evidence": "Slice 1: 'Neurostimulation For Everyone' at about 50px with subtitle 'Discover our latest innovation - FeelZing Energy Patch'"
+ },
+ {
+  "observation": "Section titles ('5 Questions, 5 Answers About Thync', 'Our Approach To Science', 'Highlighted Scientific Papers', 'Featured In', 'Follow us') are bold, widely letter-spaced, and centered. They contrast with the lighter left-aligned Q&A headings.",
+  "category": "typography",
+  "evidence": "Slices 1-4: bold tracked headings centered; Q&A headings like '1. What does Thync do?' regular weight at about 24px"
+ },
+ {
+  "observation": "Body copy is short paragraphs in dark gray (rgb 58,58,58) on white, at about 15–16px with relaxed line height, in narrow columns of about 540px.",
+  "category": "typography",
+  "evidence": "body_color rgb(58,58,58); body_bg white; line-height 22.5px; text wraps near x=680 in slice 1"
+ },
+ {
+  "observation": "Palette is restrained: white and light gray (#f7f7f7 / #f6f6f6) surfaces, charcoal text, and a single orange accent (rgb 241,126,74) for the nav CTA, hero button, play icon, outlined buttons and 6 text elements.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 6, rgb(241,126,74) 5, rgb(247,247,247) 2; top_text_colors include rgb(241,126,74) 6"
+ },
+ {
+  "observation": "The hero is a full-bleed 1440px photo of an athlete wearing an ear-mounted device, darkened by an overlay. It has a centered headline stack and a single orange CTA, 'DISCOVER FEELZING', in uppercase with small tracking.",
+  "category": "imagery",
+  "evidence": "Image 2_new_1_1512x.jpg natural 1440x810; rgba(0,0,0,0.4) background present; slice 1 hero ~650px tall"
+ },
+ {
+  "observation": "The header is a white bar with the logo at left (100x43) and a centered nav of three text links plus 'FeelZing' as an orange filled button-like link. A thin shadow separates it from the hero.",
+  "category": "layout",
+  "evidence": "Logo rect x55,y18,w100,h43; slice 1 nav items Neurostimulation, Company, Blog, FeelZing; box_shadows 2"
+ },
+ {
+  "observation": "The Q&A section alternates text and image in a zigzag two-column layout on a roughly 1150px container (x 144–1296). Text sits left on items 1, 3 and 5 and right on 2 and 4.",
+  "category": "layout",
+  "evidence": "Image rects at x144/720 with w576; headings at x144 and x755 in slices 1-2"
+ },
+ {
+  "observation": "Several content images fail to render. The brain image shows broken-image alt text, 'thync-improves-brain-function-with-electricity', and the Nature and bioRxiv paper thumbnails also show alt text. This leaves large empty white areas beside the Q&A text.",
+  "category": "imagery",
+  "evidence": "Image natural [0,0] for brain/nature/biorxiv; rect heights 23 or 0; slice 1 shows broken-image alt text"
+ },
+ {
+  "observation": "Some image slots render as flat light-gray placeholder blocks (#f2f2f2) with no content: one beside item 4 and one for the third paper card.",
+  "category": "imagery",
+  "evidence": "Slice 2 gray rectangle x144–720; slice 3 gray block at x932; images with empty file/natural 0"
+ },
+ {
+  "observation": "Image alt text is inconsistent. Many are empty, such as neuron, graf, device and digitaltrends, while others are hyphenated slugs like 'thync-press-validation-cnn'. Two images lack alt entirely.",
+  "category": "imagery",
+  "evidence": "counts alt_missing 2; alt values 'thync-published-paper-nature', alt '' on several"
+ },
+ {
+  "observation": "A video block ('Our Approach To Science') is a large flat gray 1152x650 rectangle with a centered orange circular play icon. It is an iframe/lazy facade with no thumbnail rendered.",
+  "category": "component",
+  "evidence": "Slice 3 gray box y310–960 with orange play circle; tag_counts iframe 1"
+ },
+ {
+  "observation": "The paper cards form a three-column row with image, short summary and an outlined orange 'READ MORE' button in small uppercase text. The buttons have square corners and a thin orange border.",
+  "category": "component",
+  "evidence": "Slice 4 READ MORE buttons with 1px orange border; primary_button radius 0px; border radius mostly bucket_0 (340)"
+ },
+ {
+  "observation": "The 'Featured In' strip shows six grayscale press logos (PBS, TechCrunch, Digital Trends, Inc., CNN, WSJ) in an evenly spaced single row. Each is a 150x81 image.",
+  "category": "imagery",
+  "evidence": "Images at y4160, x 175–1115, 150x81; slice 4 monochrome gray logos"
+ },
+ {
+  "observation": "The footer is a light gray (#f6f6f6) band with a centered 'Follow us' label and three black social icons (Facebook, Instagram, YouTube). Below it are four columns: nav links, company links, a privacy notice with email, and a 'Stay Informed About Thync' column that appears to hold an empty newsletter form.",
+  "category": "layout",
+  "evidence": "Slice 4 footer; tag_counts form 1, input 2, svg 15; background rgb(246,246,246)"
+ },
+ {
+  "observation": "Footer links are plain text with no bullets. The email 'hello@thync.com' and the inline 'feelzing.com' link are underlined, and a small TRUSTe badge sits bottom-left with '© 2021 Thync Global, Inc.' at right in small type.",
+  "category": "component",
+  "evidence": "Slice 4 text; e-trust image 100x27 at x144,y4595; tag small 2"
+ },
+ {
+  "observation": "Visual effects are minimal: no gradients, no backdrop blur, 2 box shadows, 10 transitions, 2 animations, 1 transform. Radii are almost all 0, with a few small ones and 2 at 16px or more, likely the circular play icon.",
+  "category": "decoration",
+  "evidence": "effects: gradient_backgrounds 0, backdrop_blur 0, box_shadows 2, transitions 10, animations 2; radius buckets 340 / 7 / 0 / 2 / 0"
+ },
+ {
+  "observation": "The page is a long, mostly single-column scroll about 4675px tall at 1440px wide. Generous vertical gaps of around 150–300px separate Q&A blocks, producing sparse whitespace. Layout uses flex (27 elements) and no CSS grid.",
+  "category": "layout",
+  "evidence": "page_height 4675; display_flex 27; display_grid 0; whitespace in slices 1-2"
+ },
+ {
+  "observation": "Copy is a first-person-plural FAQ ('We build devices...', 'Our product research team...') in numbered question headings. The text is brief, with about 386 words total, one em dash and no exclamation marks.",
+  "category": "copy",
+  "evidence": "text_stats words 386, em_dashes 1, exclamations 0; headings '1. What does Thync do?' through '5. How can I try...'"
+ },
+ {
+  "observation": "The only commerce signals are the hidden cart-notification h2 and the Shopify wallet/checkout meta tags. Visible content funnels to FeelZing through the nav pill, the hero CTA and an inline text link, rather than a product grid.",
+  "category": "component",
+  "evidence": "heading 'Just added to your cart'; meta shopify-digital-wallet; 'feelzing.com' link in item 5"
+ },
+ {
+  "observation": "Metadata is complete for sharing: description, Open Graph (title, type, image, description, url, site_name) and Twitter card tags, two JSON-LD blocks and a theme-color. Scripts are heavy, with 54 script tags and 12 noscript elements.",
+  "category": "dom-structure",
+  "evidence": "meta_names list; jsonld_blocks 2; tag_counts script 54, noscript 12"
+ },
+ {
+  "observation": "The page has 55 ARIA attributes, 10 buttons, 20 inline style attributes and 15 inline SVGs. Social and UI icons are inline SVG, while the logo and press logos are raster PNGs.",
+  "category": "dom-structure",
+  "evidence": "counts aria_attrs 55, buttons 10, inline_style_attrs 20, svgs 15"
+ },
+ {
+  "observation": "The nav and CTA labels are short Title Case words, and the buttons use small uppercase tracked labels (DISCOVER FEELZING, READ MORE). The only emoji in the text is a single one, which is not visible in the render.",
+  "category": "copy",
+  "evidence": "slices 1 and 4 button text; text_stats emoji 1"
+ }
+]

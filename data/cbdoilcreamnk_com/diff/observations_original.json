@@ -1,0 +1,187 @@
+[
+ {
+  "observation": "A modal popup overlays the top of the page, covering the header and part of the hero. It has a white box, a stock photo of oil bottles and capsules, red heading text and a blue 'Get My Discount!' button. The page behind it is dimmed by a semi-transparent dark overlay.",
+  "category": "component",
+  "evidence": "Slice 0 shows a centered white box about 800px wide. It contains the 'HOW TO BUY CBD ONLINE' image and 'Hurry up! We are now offering discount for new customers!'. Facts list an h2 with that text and a rgba(0,0,0,0.4) background."
+ },
+ {
+  "observation": "The popup headline is in saturated red at large size, set in a rounded sans face. The CTA is a flat bright-blue button with a light outline.",
+  "category": "color",
+  "evidence": "Slice 0 shows red 'Hurry up!' text and a blue button (rgb(48,133,214) in the top backgrounds). The popup is in the h2 outline."
+ },
+ {
+  "observation": "The top of the page opens with a dark navy band holding a long, centered, unstructured paragraph about CBD oil news. The text is light, it runs full viewport width, and the popup partly hides it.",
+  "category": "copy",
+  "evidence": "Slice 0 shows serif white text on rgb(21,42,81) navy. It begins 'CBD oil is one of those traits that just won't stay out of our Instagram feeds…'. Navy is the second most common background, with 9 elements."
+ },
+ {
+  "observation": "The page has no h1. The heading outline begins with an h4 ('Cbd Oil For Pain Walmart'), followed by ten h2s. Many headings read as keyword phrases such as 'Cbd Oil Amazon' and 'Charlotte's Web Cbd Oil', in title case.",
+  "category": "semantic",
+  "evidence": "h1_count is 0. The heading_outline lists h4 first, then h2s: 'Cbd For Dogs', 'Cbd For Life', 'Pure Cbd', 'Cbd Vape', 'Lazarus Naturals' and others."
+ },
+ {
+  "observation": "Image alt text is keyword-style, and often unrelated to what the image shows. A honey-bear bottle is alt 'Charlottes Web', and a statue photo is alt 'Medterra Cbd'. Only one image has no alt, and the payment icons use an empty alt.",
+  "category": "imagery",
+  "evidence": "Facts list alts such as 'Where Can I Buy Cbd Oil ', 'Justcbd ' and 'Cbd Distributors '. alt_missing is 1, and payment_icons.png has alt ''."
+ },
+ {
+  "observation": "A hero slider holds three stacked 700x300 images that are scaled up to a 1440x617 full-width area. The visible slide is a 'GIFT 1' banner with 'CLICK HERE FOR DETAILS' text baked into the image. The banner looks slightly soft because it is upscaled about 2x.",
+  "category": "imagery",
+  "evidence": "slider-1-cbd, B1Gift1-Banner-1 and NATURAL-ingredients-copy are each 700x300 natural size. Each has rect w 1440 h 617 at y 564, and image_overlaps shows 888480 px of mutual overlap."
+ },
+ {
+  "observation": "There is a visible horizontal color seam across the hero at about y=900 of slice 0. The lower portion looks lighter, as if a transition or overlay is mid-state.",
+  "category": "decoration",
+  "evidence": "Slice 0 shows a brighter band starting around y≈900 over the 'GIFT' lettering. The facts list 206 transitions and 1 animation."
+ },
+ {
+  "observation": "The header is a light-gray strip. It holds a left logo, a top utility line with a phone number, an email link and a 'Contact Us' link, and a rounded search field at right. A thin green line separates the main nav row from a second nav row.",
+  "category": "layout",
+  "evidence": "Slice 0 shows 'Cbd Cream For Pain | Contact Us', an envelope icon with 'Info@cbdoilm…', a 'Search products…' pill and a green rule. A header element and a nav element are each present once."
+ },
+ {
+  "observation": "The nav items are long, keyword-laden labels such as 'How To Make Cannabis' and 'Cbd Dog Treats'. They are in a small serif face and look like a multi-row menu. A 'Menu' button also exists, with a left-heavy 36px padding for an icon.",
+  "category": "copy",
+  "evidence": "Slice 0 shows 'How To Make Cannabis' and 'Cbd Dog Treats'. primary_button is 'Menu', white with navy text, radius 2px, padding 8.65px 12.25px 8.65px 36.65px."
+ },
+ {
+  "observation": "The logo is a full-color circular badge with a script 'Z' mark and green leaf. It sits at the left of the header at 325x97, and its alt is 'Buy Cbd Oil Online'.",
+  "category": "imagery",
+  "evidence": "cropped-Z-Logo-CBD-1536x460.png has rect x135 y333 w325 h97 and natural size 1439x431."
+ },
+ {
+  "observation": "Three category tiles sit side by side in a row, each with a different solid color (green, amber-brown, deep blue). Each has a ghosted large word behind the title, a product jar photo and a white pill 'SHOP NOW' label. The titles are inconsistent in case ('CBD OILS', 'CBD EDIBLES', 'CBD Topicals').",
+  "category": "component",
+  "evidence": "Slice 0 and slice 1 show tiles at x≈135–1305, each about 356px wide with a navy border. They are 346px square images with 800x800 natural size (CBD_Drops-2, CBD_edibles-2, CBD_Topicals-2)."
+ },
+ {
+  "observation": "The content column is about 1170px wide, with margins of about 135px on each side of the 1440px canvas. Section content aligns on that left edge, for example x=135/140 for images and headings.",
+  "category": "layout",
+  "evidence": "Image rects start at x=140 and end near 1300. The logo is at x=135. page_width is 1440."
+ },
+ {
+  "observation": "The layout uses almost no grid. Flexbox appears on only 12 elements. Columns come from floated or width-based blocks, which is consistent with a legacy WordPress/WooCommerce theme.",
+  "category": "layout",
+  "evidence": "display_grid 0, display_flex 12. Class stats show 1300 class uses and 368 unique, with tailwind_like_fraction 0.01. The meta list includes 'generator' twice."
+ },
+ {
+  "observation": "Section headings ('Cbd For Dogs', 'Cbd Vape') are large navy text at 36px, weight 600, set in a rounded humanist face. They are left-aligned with no decorative underline.",
+  "category": "typography",
+  "evidence": "h2 font_size 36px, font_weight 600. Text color rgb(21,42,81) is used on 454 elements."
+ },
+ {
+  "observation": "The product row has four white cards with soft low shadows and small corner radii. Each shows a centered product photo, a title link and a price. The first and second cards show a plain price line ('From: $14.99', '$29.99'). The titles are keyword phrases that don't match the products ('Pure Cbd' for a honey bear).",
+  "category": "component",
+  "evidence": "Slice 1 shows cards at x≈135–1300 with 'Cbd For Life From: $14.99', 'Pure Cbd $29.99', 'Cbd Oil Amazon From: $79.00' and 'Cbd $59.99 $49.99'. Facts list 10 box shadows and 9 figure elements."
+ },
+ {
+  "observation": "The sale price is marked up with strike-through old price and a new price. Two cards also carry a green 'SALE!' ribbon in the top-left with a notched, arrow-like edge.",
+  "category": "component",
+  "evidence": "The tag_counts include del 1 and ins 1. Slice 1 shows the '$59.99' struck through and '$49.99', with green flags reading 'SALE!' (green rgb(47,126,60) appears in 2 backgrounds)."
+ },
+ {
+  "observation": "A product photo set is mixed. Some cards use white-background product shots, and one uses a gift-box lifestyle photo that fills its card edge to edge. Products are 259x259 from 360x360 sources.",
+  "category": "imagery",
+  "evidence": "Four images in the row at y=1683, each rect w259 h259, natural 360x360 (e.g. HoneyB_CBD_450mgF-360x360.jpg)."
+ },
+ {
+  "observation": "A repeating alternating two-column block puts a large square image (549px) in the left column. In the right column, a white card holds an h2, a pill button and a very large empty area. The cards stretch to match the image height, so most of each card is blank white.",
+  "category": "layout",
+  "evidence": "Slice 1–3 show 'Cbd Vape', 'Charlotte's Web Cbd Oil' and 'Lazarus Naturals' cards with only a heading and one button. The images are 549x549 at y 2137, 2749 and 3361, from 800x800 sources."
+ },
+ {
+  "observation": "Buttons in the content cards are navy pills with white small serif text and generous horizontal padding. The labels are varied: 'More CBD Questions?', 'Click Here for More About CBD', 'Learn More'.",
+  "category": "component",
+  "evidence": "Slice 1–2 show navy pills at x≈770. border_radius_buckets has bucket_pill 7. The button background is the navy rgb(21,42,81)."
+ },
+ {
+  "observation": "The large images are lifestyle photos with overlaid baked-in white lettering ('ZATURAL', 'FULL SPECTRUM', 'PET CBD'). The text is cropped or rotated at the image edge, so it works as image-based headings that no DOM text carries.",
+  "category": "imagery",
+  "evidence": "Slice 2 shows 'FULL SPECTRUM' vertically along the right edge, and 'ZATURAL' and 'PET CBD' cut off at the bottom. The files are CBD_Statue.png, AliNOMNOM.png and CBD_dog_oilPET_1500x.png."
+ },
+ {
+  "observation": "A mid-page banner has a faded cannabis-leaf photo background (a washed-out, light overlay) with a centered title and two large underlined links. A thin vertical divider separates the links.",
+  "category": "decoration",
+  "evidence": "Slice 3 shows 'Cbd Clinic Products' (h2) over leaf pattern, with 'Hemp Oil Benefits |' and 'Plus Cbd Oil' underlined in navy at about 36px."
+ },
+ {
+  "observation": "The bottom tile row has three navy-framed image tiles, with the caption text baked into the images in all-caps serif (e.g. 'CBD AROMATHERAPY', 'CBD VS HEMP', 'PROFESSIONAL GRADE / POTENCY / PURITY / PLACE / PRICE'). The tiles echo the category tiles at the top.",
+  "category": "imagery",
+  "evidence": "Slice 3 tiles at x 135–1305, each about 356px wide and 356px tall, from CBD_Aroma.jpg, CBDvsHemp.jpg and 5ps_of_CBD.jpg at 346x346 (800x800 natural)."
+ },
+ {
+  "observation": "The palette is dominated by deep navy, with white and off-white. Green is the accent. Navy is used for text (454 elements), headings, buttons, the footer and tile frames. The body background is a faint lavender-tinted off-white.",
+  "category": "color",
+  "evidence": "body_bg rgb(249,249,252). top_text_colors: rgb(21,42,81) 454, black 93, white 92, green rgb(47,126,60) 58. Top backgrounds are white (40) and navy (9)."
+ },
+ {
+  "observation": "The type system combines several faces. A Cooper-like rounded serif ('Conv_CooperLtBT-Regular') is on 601 elements. Alegreya Sans and Alegreya appear in smaller counts. JudgemeStar and Lucida Grande appear as minor faces. Font Awesome Brands is used for the social icons.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Conv_CooperLtBT-Regular 601, Alegreya Sans 63, Alegreya 22, JudgemeStar 20, Conv_LucidaGrande 15, Font Awesome 5 Brands 5."
+ },
+ {
+  "observation": "Body copy is 16px black with a ~25.9px line height (about 1.62 ratio). The opening paragraph is centered and set larger than the body.",
+  "category": "typography",
+  "evidence": "body_font_size 16px, body_line_height 25.888px, body_color rgb(0,0,0). Slice 0 shows centered paragraph text at about 20px."
+ },
+ {
+  "observation": "Most elements have square corners. Radii are present on fewer than 10% of elements. The rest are small or pill-shaped.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 677, bucket_1_7 37, bucket_8_15 1, bucket_16_plus 9, bucket_pill 7."
+ },
+ {
+  "observation": "Effects are limited. There are no gradients, no backdrop blur and few shadows. 206 elements carry transitions, and 11 carry transforms.",
+  "category": "decoration",
+  "evidence": "gradient_backgrounds 0, backdrop_blur 0, box_shadows 10, transitions 206, animations 1, transforms 11."
+ },
+ {
+  "observation": "The footer is a navy four-column block: 'Join The Club' (newsletter form plus social icons), 'Company' links, 'Support' links and 'Contact Us' details in bold. Each column heading has a faint underline rule.",
+  "category": "layout",
+  "evidence": "Slice 3 shows the headings in white bold. The links include 'Hemp Gummies', 'Cbd Oil At Walmart', 'Phone: (208)969-1282' and 'Wholesale: 208-358-0251'. footer count is 1, form count 3."
+ },
+ {
+  "observation": "The newsletter field is a white pill input with a placeholder email and a faint check icon. Below it is a row of five white-outline circular social buttons (Twitter, Facebook, Pinterest, Instagram, YouTube).",
+  "category": "component",
+  "evidence": "Slice 3 shows the pill field 'email@example.com' and circles at x≈155–345. Font Awesome 5 Brands is on 5 elements."
+ },
+ {
+  "observation": "A light copyright strip sits below the footer, with '© CBD Oil 2020' at the left and a row of payment-card logos (Amex, Diners, Discover, JCB, Mastercard, Visa) at the right.",
+  "category": "component",
+  "evidence": "Slice 3 shows the bottom bar. payment_icons.png is 307x49 at x998 y4928, with empty alt."
+ },
+ {
+  "observation": "The page is link-dense and markup-heavy. It has 241 anchors, 206 list items and 34 lists, and 116 divs against only 17 paragraphs and 391 words of text. There are 52 inline style attributes and 23 style tags.",
+  "category": "semantic",
+  "evidence": "counts anchors 241, tag_counts li 206, ul 34, div 116, p 17, style 23. text_stats words 391. inline_style_attrs 52."
+ },
+ {
+  "observation": "The page loads many assets and scripts: 54 script tags, 31 stylesheets and 41 link tags. This is typical of a plugin-heavy CMS theme.",
+  "category": "semantic",
+  "evidence": "tag_counts script 54, link 41; counts stylesheets 31."
+ },
+ {
+  "observation": "Landmarks are used only partly. There is one header, nav, main and footer, plus 8 sections and 1 article. There are no aside elements, and figures have no figcaptions. The 9 figure elements wrap images without captions. JSON-LD is absent.",
+  "category": "semantic",
+  "evidence": "semantic: header 1, nav 1, main 1, section 8, article 1, aside 0, figure 9, figcaption 0. jsonld_blocks 0."
+ },
+ {
+  "observation": "The head carries social metadata (Open Graph and Twitter cards), a robots tag and a keywords meta. The title reads as a keyword list: 'CBD Oil & Cream - CBD Products - CBD Store'. The language is en-US.",
+  "category": "semantic",
+  "evidence": "meta_names include robots, keywords, og:title, og:description, twitter:card, twitter:image. title is 'CBD Oil & Cream - CBD Products - CBD Store'. lang 'en-US'."
+ },
+ {
+  "observation": "Copy is mixed. Promotional lines use exclamation marks and urgency ('Hurry up!', 'Get My Discount!'). Product titles are SEO phrases, and the lead paragraph is long-form editorial text about CBD regulation and UK food standards.",
+  "category": "copy",
+  "evidence": "text_stats exclamations 5. Slice 0 quotes 'FSA Chief Executive Emily Miles' and a 31 March 2021 deadline. The page copyright reads 2020."
+ },
+ {
+  "observation": "The page is tall and has long stretches of whitespace. This comes from the stretched text-card columns and gaps of about 60px between the stacked blocks. The overall page is 1440x4987.",
+  "category": "layout",
+  "evidence": "page_height 4987, page_width 1440. Slice 2 shows white cards about 580px tall holding only a heading and a button."
+ },
+ {
+  "observation": "Forms and controls are present in small numbers. There are 16 buttons, 14 inputs, 1 select, 1 textarea and 4 labels. Some are probably hidden, in the search box and newsletter form or in a hidden form.",
+  "category": "component",
+  "evidence": "tag_counts button 16, input 14, select 1, textarea 1, label 4, form 3, output 1. The search field and email field are visible in the slices."
+ }
+]

@@ -1,0 +1,182 @@
+[
+ {
+  "observation": "The page opens with a full-width hot-pink announcement bar. It holds one underlined, centered COVID-19 link in small white text.",
+  "category": "layout",
+  "evidence": "Top of slice 1: pink strip (rgb(235,82,157) is the 2nd most common background, 12 elements) with text 'For the latest local updates on COVID-19, please click here'."
+ },
+ {
+  "observation": "The hero is a full-bleed dusk Miami skyline photo. A dark-blue gradient-like overlay sits behind a transparent header. The bottom edge is cut diagonally by a white triangle shape.",
+  "category": "imagery",
+  "evidence": "Slice 1; triangle.svg is placed at x:-25, y:629, 1490x177 as a diagonal white wedge. facts report 0 CSS gradient backgrounds, so the darkening comes from the image or overlay."
+ },
+ {
+  "observation": "The header sits over the hero. It has a logo at the left, two text links (Media and Press Center, Public Meetings) next to it, and Translate and Social dropdowns plus a magnifier Search at the right. All nav text is white and small.",
+  "category": "component",
+  "evidence": "Slice 1 y≈80. The logo is logo-animated.gif at 24x35 plus a wordmark. There are 0 <nav> elements and 1 <header>."
+ },
+ {
+  "observation": "The hero headline uses a wide, thin, uppercase geometric display face ('DOWNTOWN MIAMI'). A lighter sentence-case tagline sits below it, then a teal CTA button.",
+  "category": "typography",
+  "evidence": "Slice 1: 'DOWNTOWN MIAMI', 'Epicenter of the Americas', and the button 'Discover the Possibilities' (bg rgb(0,181,204), white text, radius 3px, padding 12px 36px)."
+ },
+ {
+  "observation": "A promo card in the hero's upper left holds an event teaser: a teal 'More information…' tag, a white centered title, and a pink 'Register for class' button. It sits on a semi-transparent navy panel.",
+  "category": "component",
+  "evidence": "Slice 1, x≈43–418, y≈180–365. Text is 'Friday Forums: Fundamentals of Digital Transformation Class'. Pink and teal appear as the top backgrounds (235,82,157 and 24,182,205)."
+ },
+ {
+  "observation": "Three tall category tiles (Living, Doing Business, Exploring) have angled, slanted tops. Each has a duotone color wash over a photo (navy, teal, magenta) and a bold uppercase white label with a small 'DOWNTOWN MIA' subline. They overlap the hero's bottom edge.",
+  "category": "component",
+  "evidence": "Slice 1 y≈410–805. The H1 'LIVING' is 32px, weight 700, white, centered. The tiles are rounded slightly at the bottom and the middle tile is taller."
+ },
+ {
+  "observation": "The heading structure is unusual. There are 8 H1s, and the three tile titles each appear twice in different case ('LIVING' and 'Living', and so on). Two stray H1s read 'Original text', apparently from translation widgets. H2s are only used for later sections.",
+  "category": "semantic",
+  "evidence": "facts h1_count: 8; heading_outline lists LIVING, Living, DOING BUSINESS, Doing Business, EXPLORING, Exploring, then 'Original text' twice."
+ },
+ {
+  "observation": "Semantic landmarks are sparse. The page has 1 header, 1 footer and 11 sections, but 0 nav, 0 main, 0 article and 0 aside. It is built mostly from divs and list items.",
+  "category": "semantic",
+  "evidence": "semantic counts; tag_counts div 182, li 182, a 135, ul 19."
+ },
+ {
+  "observation": "A dark-gray cookie consent banner spans the width below the hero. It has white bold text, an underlined 'settings' link, and a pill-shaped dark-blue 'Accept' button.",
+  "category": "component",
+  "evidence": "Slice 1 y≈838–900; button bg rgb(12,77,162); border_radius pill bucket = 2. The cookie plugin uses a 'moovegdpr' font on 3 elements."
+ },
+ {
+  "observation": "Intro copy is centered in a narrow column, in light-weight small text. The last paragraph is bold. Below it is a very large blank white gap of roughly 300px or more.",
+  "category": "layout",
+  "evidence": "Slice 1 y≈930–1040 text, then empty space to the end of the slice and the top of slice 2 (≈ y 1040–1500). body font 14px, line-height 17.5px."
+ },
+ {
+  "observation": "The 'What is the Miami DDA?' block is a two-column layout. The left has a large black logo and an embedded YouTube video. The right has a large H2, small body paragraphs, a bold commitment line, and a row of three stats.",
+  "category": "layout",
+  "evidence": "Slice 2 y≈260–725. The H2 is 36px, weight 700. 5 iframes and 3 forms are on the page. The video title is 'We Are Downtown Miami (full version) with ca…'."
+ },
+ {
+  "observation": "The stats row has oversized teal numerals (1967, 15, 2) with small uppercase teal captions under them.",
+  "category": "typography",
+  "evidence": "Slice 2: '1967 WE WERE ESTABLISHED', '15 MEMBER BOARD', '2 SQUARE MILES' in cyan (≈rgb(24,182,205))."
+ },
+ {
+  "observation": "The Latest News section sits on a flat light-gray band. A small photo-credit chip, '@joiseyshowaa · Twilight Miami Skyline · CC BY-SA 2.0', sits at the top right. The band presumably held a background image that did not render. The centered white 'Latest News' heading is low-contrast against the gray.",
+  "category": "color",
+  "evidence": "Slice 2 y≈775–1100, background rgb(204,204,204) (3 elements). White H2 'Latest News' on gray."
+ },
+ {
+  "observation": "The news cards are white, with a thin light border and ~8–10px radius. They sit in a 3-column row with no visible shadow and straddle the gray band edge. Each has a large bold title, a small gray date, and a teal 'Read More →' link. Card heights are equal, but link positions vary with title length.",
+  "category": "component",
+  "evidence": "Slice 2 y≈1025–1280, x 190–1250. Dates are '5.17.21' and '5.19.21'. Titles come from outlets (WSVN 7 News, Telemundo 51). Border-radius bucket 8–15 = 12 elements."
+ },
+ {
+  "observation": "The 'View All News' and 'View All Events' links are centered, underlined, bold black text links. They differ from the teal arrow links inside the cards.",
+  "category": "component",
+  "evidence": "Slice 3 y≈38 and y≈562."
+ },
+ {
+  "observation": "The Upcoming Events cards repeat the news-card pattern. Each has a black title, a pink date (6.3.21, 6.14.21, 6.17.21) directly under it, a small excerpt ending in an ellipsis, and a teal 'See Details →' link.",
+  "category": "component",
+  "evidence": "Slice 3 y≈200–505. The pink date is rgb(235,82,157)-like. Excerpts are truncated with '…'."
+ },
+ {
+  "observation": "The accent palette is a pink/teal/navy triad on white. Pink marks dates and CTAs, teal marks links, buttons and stats, and navy marks the footer areas and the Subscribe button.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 28, pink 235,82,157 ×12, cyan 24,182,205 ×7, 0,181,204 ×3, navy 36,35,88 ×2, 12,77,162 ×3."
+ },
+ {
+  "observation": "Link colors are inconsistent. The computed styles include default browser blue for 62 text elements, a custom blue (24,132,184) for 134, and navy (35,35,87) for 27. Most visible links are teal or black.",
+  "category": "color",
+  "evidence": "top_text_colors: rgb(0,0,238) 62, rgb(24,132,184) 134, rgb(35,35,87) 27, black 269, white 180."
+ },
+ {
+  "observation": "The districts section is a full-width map panel. It has a large left-aligned H2 ('Proudly Serving Downtown Miami…') and a one-line subhead over a desaturated gray street map. Colored district polygons (navy, cyan, pink) sit at the right with a small legend.",
+  "category": "imagery",
+  "evidence": "Slice 3 y≈625–1300 and slice 4 y≈0–355. The legend reads Arts & Entertainment, Central Business District, Brickell. The map is an iframe/embed; an img with alt 'Map' has 0x0 size."
+ },
+ {
+  "observation": "The social section is a tall solid dark-indigo band with only a centered white '@DOWNTOWNMIA' heading. The area under it is empty, so the social feed embed did not render.",
+  "category": "layout",
+  "evidence": "Slice 4 y≈357–808, bg rgb(36,35,88); the H4 '@DOWNTOWNMIA' is followed by about 380px of blank space."
+ },
+ {
+  "observation": "The newsletter strip is hot pink and uses an inline row. It has a white bold 'Get Downtown Updates' label, a wide white email input with placeholder text, and a navy 'Subscribe' button. A small centered legal disclaimer sits below.",
+  "category": "component",
+  "evidence": "Slice 4 y≈810–955. Includes a textarea and 11 inputs in total. The disclaimer begins 'Under Florida law, e-mail addresses and contact information are public records…'."
+ },
+ {
+  "observation": "The footer is a near-black navy bar. It has a white logo at the left and, at the right, a 'Made with ♥ by Pacific54' credit, a '© 2019' notice, and two outlined small links (ADA Compliance, Annual Report) with thin white borders and small radius.",
+  "category": "component",
+  "evidence": "Slice 4 y≈955–1045. 1 footer element. The pink heart icon is the single emoji-like glyph (emoji count 1)."
+ },
+ {
+  "observation": "A single typeface family, Nunito, dominates. Roboto appears on the hero tagline, buttons or nav, and Arial on some elements. A wide display face (probably a custom font) is used for the 'DOWNTOWN MIAMI' hero text.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Nunito 674, Roboto 33, arial 28, moovegdpr 3. The h1 font stack is 'Nunito, Arial, sans-serif'."
+ },
+ {
+  "observation": "The type scale has large jumps. Body copy is 14px, card titles are around 24px, H2s are 36px, and the stat numerals are about 60px. Headings are bold and weights in body copy are light.",
+  "category": "typography",
+  "evidence": "body_font_size 14px; h2 36px/700; h1 32px; slice 2 stat numerals appear about 55–60px tall."
+ },
+ {
+  "observation": "Corners are mostly square. 692 elements have zero radius. The rounded ones are the cards, the buttons (3px), the cookie Accept pill and the footer link outlines.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: 0 → 692, 1–7px → 27, 8–15px → 12, 16+ → 5, pill → 2."
+ },
+ {
+  "observation": "Decoration is restrained. There are only 8 box shadows, no gradients and no backdrop blur. The slanted shapes, duotone overlays and the diagonal SVG wedge supply the visual interest.",
+  "category": "decoration",
+  "evidence": "effects: box_shadows 8, gradient_backgrounds 0, backdrop_blur 0, transforms 29."
+ },
+ {
+  "observation": "Interactivity is declared widely. 222 elements have transitions and 4 have animations, yet there are only 6 buttons. The logo is an animated GIF.",
+  "category": "decoration",
+  "evidence": "effects transitions 222, animations 4; logo-animated.gif; counts buttons 6."
+ },
+ {
+  "observation": "The layout is built on flexbox, not grid. 37 elements use flex and 0 use grid. Content sits in a ~1060px column (x 190–1250) on a 1440px page, and the hero is full-bleed.",
+  "category": "layout",
+  "evidence": "layout display_flex 37, display_grid 0, page_width 1440, page_height 4945; cards span x 190–1250."
+ },
+ {
+  "observation": "A thin white strip is visible at the right edge of the page, about 1440px wide against a slightly wider capture. Full-width bands such as the pink bar, the cookie bar and the gray sections stop short of the right edge.",
+  "category": "layout",
+  "evidence": "Slices 1–4 show colored bands ending at x≈1440 with a white margin on the right, such as the dark footer and the pink bar."
+ },
+ {
+  "observation": "Class naming is semantic and custom. Only about 1% of classes look Tailwind-like. There are 626 class uses across 210 unique classes, plus 48 inline style attributes. The WordPress stack shows in meta tags such as the Events Calendar and 'et-api' entries.",
+  "category": "semantic",
+  "evidence": "classes tailwind_like_fraction 0.011, total 626, unique 210; inline_style_attrs 48; meta names include tec-api-version and et-api-version."
+ },
+ {
+  "observation": "The page is script- and embed-heavy. It has 67 scripts, 20 stylesheets, 5 iframes, 30 inline SVGs (many are icons) and 3 forms. There are 8 images, of which 3 lack an alt attribute.",
+  "category": "semantic",
+  "evidence": "counts: scripts 67, stylesheets 20, svgs 30, alt_missing 3; tag_counts iframe 5, form 3."
+ },
+ {
+  "observation": "The document has two title elements, and the title is a keyword-style string: 'Miami DDA - Economic Development Miami – Tourism Miami | Miami DDA'. The head also carries Open Graph and Twitter card tags and one JSON-LD block.",
+  "category": "semantic",
+  "evidence": "title tag count 2; meta_names include og:title, og:image, twitter:card; jsonld_blocks 1; lang en-US."
+ },
+ {
+  "observation": "Copy mixes registers. Marketing language in the hero ('Epicenter of the Americas', 'Truly electrifying and uniquely refreshing') sits next to dense civic and legal language (board composition, public-records disclaimer). The news cards mix English with a Spanish Telemundo headline. Dates are in M.D.YY format and refer to 2021.",
+  "category": "content",
+  "evidence": "Hero and intro text in slice 1, the About paragraphs and disclaimer in slices 2 and 4, and the Telemundo 51 card in slice 2; the footer says © 2019."
+ },
+ {
+  "observation": "The cards use two heading levels without a clear hierarchy. News and event titles are H3s, and the section titles 'Latest News' and 'Upcoming Events' are H2s. The tile H1s and hero promo title are not tied to a heading outline. There are also 13 H3s, 4 H4s, 6 H6s and 1 H5.",
+  "category": "semantic",
+  "evidence": "heading_outline: H3s for each card title, H2 'Latest News', 'Upcoming Events'; tag_counts h3 13, h4 4, h6 6, h5 1."
+ },
+ {
+  "observation": "Teal carries link emphasis. 'Read More', 'See Details' and the stat figures are all in cyan. Arrow glyphs follow the link text as inline SVG icons.",
+  "category": "component",
+  "evidence": "Slices 2–3: 'Read More →', 'See Details →' in teal; svg count 30; stats 1967/15/2 in the same cyan."
+ },
+ {
+  "observation": "The 'Follow the Sun' promo image (FollowtheSun_logo_225.png, alt 'Book', 556x315 at x 177, y 1269) and its heading 'Making Miami Your Forever Home- 'Follow The Sun'' are in the DOM. They do not appear in the visible render, which leaves blank space between the intro and the About section.",
+  "category": "imagery",
+  "evidence": "images[] lists the file at rect y 1269, and the H2 'Making Miami Your Forever Home' is in heading_outline. Slices 1–2 show an empty white area around that position."
+ }
+]

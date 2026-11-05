@@ -1,0 +1,364 @@
+[
+ {
+  "observation": "The hero is a full-bleed dark-overlaid frangipani photo, 756px tall. A 96px white Cormorant Garamond h1 breaks over three lines ('The / Frangipani / Creative') and sits in a narrow column offset from the left content edge.",
+  "category": "layout",
+  "evidence": "e9 is 1440x756. e11 h1 is 96px, weight 600, white, at x=491 w=458, h=317. The h1 column starts at x=491, while other sections start at x=200.",
+  "element_ids": [
+   "e9",
+   "e11"
+  ]
+ },
+ {
+  "observation": "The page pairs a high-contrast serif for display text (Cormorant Garamond) with a humanist sans (Nunito Sans) for body and UI. The sans accounts for most elements.",
+  "category": "typography",
+  "evidence": "fonts_by_element_count: Nunito Sans 148, Cormorant Garamond 25. The h1 font-family is Cormorant Garamond, Georgia, serif.",
+  "element_ids": [
+   "e11",
+   "e17",
+   "e18"
+  ]
+ },
+ {
+  "observation": "Headings are large and tightly set. The h2s are 46.4px at weight 600, and the h1 is 96px. Body copy is 17px with a loose 28px line-height (about 1.65).",
+  "category": "typography",
+  "evidence": "h2 font_size 46.4px weight 600; body_font_size 17px; body_line_height 28.05px.",
+  "element_ids": [
+   "e17",
+   "e34",
+   "e39",
+   "e63"
+  ]
+ },
+ {
+  "observation": "Every section starts with a small letter-spaced uppercase eyebrow label above the h2. The eyebrows are crimson on light sections and amber on dark ones.",
+  "category": "typography",
+  "evidence": "Eyebrow divs: ABOUT, SERVICE, HAPPY CLIENTS, BLOG, INSTAGRAM, SOCIAL MEDIA, CONTACT, SECUNDERABAD, INDIA. They are 21px-tall divs, not headings. Amber (232,163,61) appears on the hero, service and contact sections, and crimson (194,37,92) on the light sections.",
+  "element_ids": [
+   "e10",
+   "e16",
+   "e33",
+   "e38",
+   "e62",
+   "e120"
+  ]
+ },
+ {
+  "observation": "The palette is warm. It uses a cream page background, near-black plum text and sections, blush pink panels, a crimson accent for buttons and links, and an amber secondary accent. The colors echo the frangipani photography.",
+  "category": "color",
+  "evidence": "body_bg rgb(253,248,243); body text rgb(43,34,38); dark sections rgb(23,18,20); pink rgb(249,223,230); crimson rgb(194,37,92); amber rgb(232,163,61).",
+  "element_ids": []
+ },
+ {
+  "observation": "The sticky/overlaid header is a translucent cream bar with backdrop blur. It sits on top of the hero image, offset 181px from the top of the page, and holds a serif wordmark on the left and a 5-link nav on the right.",
+  "category": "component",
+  "evidence": "e1 header at y=181 h=65, background color(srgb .992 .973 .953 / 0.9); backdrop_blur count 1. In the screenshot, cream space sits above the hero at the top. Nav links are About, Coaching, Happy Clients, Blog, Contact.",
+  "element_ids": [
+   "e1",
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "observation": "The brand name is plain text in a link, set in the serif. It is not an image or SVG logo.",
+  "category": "imagery",
+  "evidence": "e2 is an anchor containing text 'The Frangipani Creative'. counts.images 0 and svgs 0.",
+  "element_ids": [
+   "e2"
+  ]
+ },
+ {
+  "observation": "The hero has two pill-shaped CTAs side by side: a solid crimson primary button and an outlined white-border secondary button.",
+  "category": "component",
+  "evidence": "primary_button bg rgb(194,37,92), radius 99px, padding 12.75px 25.5px. e13 is 266x54 and e14 is 151x58, with a visible white outline.",
+  "element_ids": [
+   "e13",
+   "e14"
+  ]
+ },
+ {
+  "observation": "The page uses no <img> or SVG elements. Imagery comes entirely from CSS backgrounds: the hero photo, the service banner photo and the wide rounded flower banner. Image-like Instagram tiles are plain colored divs.",
+  "category": "imagery",
+  "evidence": "counts.images 0, svgs 0, images []. Photos are visible in the screenshots at e9, e32 and e92.",
+  "element_ids": [
+   "e9",
+   "e32",
+   "e92"
+  ]
+ },
+ {
+  "observation": "The Instagram grid is 8 square tiles in 4 columns. Each is a flat color (pink, near-black or amber) with a serif caption pinned to the bottom-left, standing in for post photos.",
+  "category": "component",
+  "evidence": "e96–e103 are each 248x248 at x=200/464/728/992. Captions include 'Diary writing in the past' and 'Handling your inner critic'. Fill colors cycle pink, dark, amber, pink.",
+  "element_ids": [
+   "e96",
+   "e97",
+   "e98",
+   "e99",
+   "e100",
+   "e101",
+   "e102",
+   "e103"
+  ]
+ },
+ {
+  "observation": "A wide rounded banner photo of frangipani blossoms against a blue sky sits above the Instagram section heading. It has no text overlay and breaks the cream/dark palette with a cool blue.",
+  "category": "imagery",
+  "evidence": "e92 is an empty div, 1040x260, with large rounded corners, at y=3564.",
+  "element_ids": [
+   "e92"
+  ]
+ },
+ {
+  "observation": "The About section is a two-column layout. The left column holds the eyebrow, h2, two paragraphs and a pink note box. The right column is a list of five bio items separated by hairline rules, each with a small crimson flower-glyph bullet.",
+  "category": "layout",
+  "evidence": "e17 etc. are at x=200, w=469. ul e22 is at x=725, w=515, with 5 li items. Bullet glyphs are visible in the screenshot; the 15 emoji/glyph count in text_stats likely includes these and the stars.",
+  "element_ids": [
+   "e15",
+   "e22",
+   "e23",
+   "e24",
+   "e28"
+  ]
+ },
+ {
+  "observation": "A pale pink rounded callout carries a 'coming soon' note about programs and events. It is a plain div with no heading or icon.",
+  "category": "component",
+  "evidence": "e21 is 469x82 with a rgb(249,223,230) background and a visible rounded radius. Text: 'Details of programs, courses, training and other offline events are coming soon.'",
+  "element_ids": [
+   "e21"
+  ]
+ },
+ {
+  "observation": "Body links are underlined and crimson, with link text that reads as natural prose ('Corinne Rodrigues', 'Everyday Gyaan', 'why she chose it'). Link color appears 20 times as a text color.",
+  "category": "copy",
+  "evidence": "Anchors e19, e25, e27, e29, e31 sit inside paragraphs and list items. top_text_colors shows rgb(194,37,92) on 20 elements.",
+  "element_ids": [
+   "e19",
+   "e25",
+   "e27",
+   "e29",
+   "e31"
+  ]
+ },
+ {
+  "observation": "The service section is a dark photo banner with left-aligned content. It has a short eyebrow, a white serif h2, a one-sentence description and a single crimson 'Read more' pill.",
+  "category": "layout",
+  "evidence": "e32 is 1440x559 and starts at y=1380. e34 h2 is 480 wide, e35 is the paragraph and e36 is the 136x54 button. The right half is left to the photo.",
+  "element_ids": [
+   "e32",
+   "e34",
+   "e35",
+   "e36"
+  ]
+ },
+ {
+  "observation": "Testimonials are three equal cards in a row. Each card is white with a thin border and large radius, and holds amber star glyphs, a small date, body text, a serif name as h3, and two small underlined links.",
+  "category": "component",
+  "evidence": "e40, e47 and e53 are each 331x505 at x=200/555/909. Each has a star div, a date '15 October 2019', a paragraph, an h3 and links like 'Her blog' and 'Testimonial'. There are 3 articles and 3 h3s.",
+  "element_ids": [
+   "e40",
+   "e47",
+   "e53",
+   "e41",
+   "e44"
+  ]
+ },
+ {
+  "observation": "The star ratings are text glyphs ('★★★★★') in amber, not images. Every card shows the same five stars and the same date.",
+  "category": "copy",
+  "evidence": "e41, e48 and e54 text is '★★★★★'. e42, e49 and e55 all read '15 October 2019'.",
+  "element_ids": [
+   "e41",
+   "e48",
+   "e54",
+   "e42",
+   "e49",
+   "e55"
+  ]
+ },
+ {
+  "observation": "Testimonial text is third-person paraphrase ('She had long struggled…', 'He felt like a lone fish…') rather than quoted first-person speech. The cards use no blockquote or cite elements.",
+  "category": "copy",
+  "evidence": "semantic blockquote 0, cite 0. Paragraphs e43, e50 and e56 start with 'She'/'He'.",
+  "element_ids": [
+   "e43",
+   "e50",
+   "e56"
+  ]
+ },
+ {
+  "observation": "The blog list is a divided list of five rows. Each row is a full-width link with the title in serif on the left and an author name in small gray sans on the right. A thin horizontal rule separates the rows.",
+  "category": "component",
+  "evidence": "ul e64 is 1040 wide. li rows are 72px tall and each contains a span title (about 31px high) and an author span ('by Lux', 'by Fabida Abdulla', 'Recent post').",
+  "element_ids": [
+   "e64",
+   "e65",
+   "e67",
+   "e68",
+   "e84"
+  ]
+ },
+ {
+  "observation": "A small line of text links, 'Authors: Lux · Fabida Abdulla · Blog · Archives · Podcast', sits under the blog list. It uses a middot separator and underlined crimson links.",
+  "category": "copy",
+  "evidence": "p e85 holds anchors e86–e90. The text contains ' · ' separators.",
+  "element_ids": [
+   "e85",
+   "e86",
+   "e87",
+   "e90"
+  ]
+ },
+ {
+  "observation": "Sections alternate between cream, white and dark backgrounds, with 1px hairline borders between some light sections. The blog section has a white background against the cream page.",
+  "category": "color",
+  "evidence": "top_backgrounds: white 9 elements, dark rgb(23,18,20) 6, cream 1. The screenshot shows a thin rule above and below the blog section (y≈2775 and y≈3484).",
+  "element_ids": [
+   "e37",
+   "e61",
+   "e91",
+   "e119"
+  ]
+ },
+ {
+  "observation": "Content is held to a 1040px centered column (x=200 to 1240) on a 1440px canvas. Almost every section aligns to this column, except the hero text at x=491.",
+  "category": "layout",
+  "evidence": "Most elements have x=200 and w≤1040. The footer inner div is 180–1260 wide with 200 padding. page_width 1440.",
+  "element_ids": [
+   "e15",
+   "e37",
+   "e61",
+   "e91",
+   "e119"
+  ]
+ },
+ {
+  "observation": "The social links are five outline pills. Each pairs a platform name in sans with a smaller muted action word ('Like', 'Follow') in a nested <small>.",
+  "category": "component",
+  "evidence": "e109, e111, e113, e115 and e117 are about 50px tall. Their <small> children (e110, e112 etc.) hold 'Like' or 'Follow'. tag_counts small is 5.",
+  "element_ids": [
+   "e109",
+   "e111",
+   "e113",
+   "e115",
+   "e117",
+   "e110"
+  ]
+ },
+ {
+  "observation": "The contact section is dark, with a two-column layout. The left holds the h2 and an <address>. The right holds a <dl> of small uppercase labels (MOBILE, LANDLINE, ONLINE, READING LIST) with pink underlined links beneath.",
+  "category": "layout",
+  "evidence": "e122 is an address element. dt/dd count is 4 each. Links e124, e126, e128 and e130 are at x=744. Link text is light pink on rgb(23,18,20).",
+  "element_ids": [
+   "e119",
+   "e122",
+   "e123",
+   "e124",
+   "e126",
+   "e130"
+  ]
+ },
+ {
+  "observation": "The footer is a continuation of the dark band. It has a hairline divider, a copyright line, an affiliate disclosure with an underlined link, and a row of six underlined text links.",
+  "category": "component",
+  "evidence": "footer e131 is 159px high. Text: '© 2020 – The Frangipani Creative'. Nav e136 has Home, Blog, Podcast, Happy Clients, Contact, Archives.",
+  "element_ids": [
+   "e131",
+   "e133",
+   "e134",
+   "e136"
+  ]
+ },
+ {
+  "observation": "The DOM uses semantic landmarks and a clean heading hierarchy: 1 h1, 7 h2, 3 h3, 1 header, 1 main, 7 sections, 3 articles, 2 navs, 1 footer, and address/dl for contact. The page has no aside, figure or schema markup.",
+  "category": "structure",
+  "evidence": "semantic counts: header 1, nav 2, main 1, section 7, article 3, footer 1. jsonld_blocks 0. The heading outline runs from h1 to h2 to h3 without skipping levels.",
+  "element_ids": []
+ },
+ {
+  "observation": "The CSS is small and hand-written. It has 30 unique class names across 71 class uses, almost none Tailwind-like (1.4%). Only 1 stylesheet is used, with 1 inline <style> and 2 inline style attributes, and there are no scripts.",
+  "category": "structure",
+  "evidence": "classes total 71, unique 30, tailwind_like_fraction 0.014. counts.scripts 0, stylesheets 1, inline_style_attrs 2.",
+  "element_ids": []
+ },
+ {
+  "observation": "Rounding is used throughout the page, with 22 elements at 16px or more (cards, tiles, pills, callouts) and 150 elements at 0. There are no box-shadows and no gradient backgrounds, so depth comes from color blocks and thin borders.",
+  "category": "decoration",
+  "evidence": "border_radius_buckets: bucket_0 150, bucket_8_15 1, bucket_16_plus 22. box_shadows 0, gradient_backgrounds 0.",
+  "element_ids": [
+   "e40",
+   "e47",
+   "e53",
+   "e96",
+   "e21",
+   "e92"
+  ]
+ },
+ {
+  "observation": "The page has very little motion. There are 10 transitions (likely hover states on links and buttons) and no animations or transforms.",
+  "category": "decoration",
+  "evidence": "effects: transitions 10, animations 0, transforms 0.",
+  "element_ids": []
+ },
+ {
+  "observation": "Section spacing is generous. Vertical gaps of about 80px sit above each eyebrow and below content. The page is 5546px tall for about 546 words.",
+  "category": "layout",
+  "evidence": "page_height 5546; text_stats words 546. Eyebrows sit about 80px below their section tops (e16 at y=901 vs section top 821; e62 at 2856 vs 2775).",
+  "element_ids": [
+   "e15",
+   "e32",
+   "e37",
+   "e61"
+  ]
+ },
+ {
+  "observation": "The hero, service, testimonial and contact sections all use left-aligned text. Nothing is centered except the content inside the Instagram tiles and social pills.",
+  "category": "layout",
+  "evidence": "h1 text_align is start. Section text starts at x=200 in e17, e34, e39 and e63. The main-content width is 1040px.",
+  "element_ids": [
+   "e11",
+   "e17",
+   "e34",
+   "e39"
+  ]
+ },
+ {
+  "observation": "The copy is warm and first-person-adjacent. It uses short, plain sentences about a named coach, and it gives the place name 'Secunderabad, India' as an eyebrow. The page has no exclamation marks and no em dashes, though the footer uses en dashes.",
+  "category": "copy",
+  "evidence": "text_stats exclamations 0, em_dashes 0. e10 reads 'SECUNDERABAD, INDIA'. Footer reads '© 2020 – …'.",
+  "element_ids": [
+   "e10",
+   "e12",
+   "e18"
+  ]
+ },
+ {
+  "observation": "CTA labels are lowercase-sentence pills in semibold sans: 'Personalized blog coaching', 'Get in touch', 'Read more', 'All happy clients', 'Follow on Instagram'. 'All happy clients' uses the outline variant, and the others are solid crimson.",
+  "category": "component",
+  "evidence": "e13, e14, e36, e60 and e105 are all ~54–58px tall pills. e60 is 188x58 with a crimson outline, and e105 is 214x54 solid.",
+  "element_ids": [
+   "e13",
+   "e14",
+   "e36",
+   "e60",
+   "e105"
+  ]
+ },
+ {
+  "observation": "The footer and contact text mixes white, muted gray-pink (244,235,230) and light pink link colors on the dark background. The labels are small uppercase with letter-spacing.",
+  "category": "color",
+  "evidence": "top_text_colors include rgb(244,235,230) on 12 elements and rgb(107,92,98) on 13 elements (muted gray, used on dates and bylines). dt labels MOBILE and LANDLINE are about 21px high.",
+  "element_ids": [
+   "e123",
+   "e125",
+   "e133",
+   "e134"
+  ]
+ },
+ {
+  "observation": "The page has few ARIA attributes (4) and no buttons. All interactive controls are anchors (46 of them) styled as pills or text links. There are no forms.",
+  "category": "structure",
+  "evidence": "counts: aria_attrs 4, buttons 0, anchors 46. tag_counts has no form or input.",
+  "element_ids": []
+ }
+]

@@ -1,0 +1,55 @@
+[start] Wed Nov  4 21:06:21 EST 2026
+[galleries] 28 sites
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/evidence_galleries.py --min-sites 2
+361 galleries; 1063 of 1063 (page, value) pairs with evidence (100%); 4882 instance crops; sheets in data/master/galleries
+[collages] 28 sites
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/feature_collages.py --min-sites 2 --workers 4
+85 shared observations across 28 sites; 28 locator calls to run (llm)
+  located aeptexas_com
+  located allstate_jobs
+  located alpine8848_com
+  located bather_com
+  located bathurst12hour_com_au
+  FAILED bluebayou_com ValueError min() arg is an empty sequence
+  located cbdoilcreamnk_com
+  located educationactivities_org
+  located flygrant_com
+  located fnsouzafoundation_com
+  located gravityvault_com
+  located greatdayimprovements_com
+  located homedesignersoftware_com
+  located insightcentral_net
+  located kanienkeha_net
+  FAILED kneeguru_co_uk ValueError min() arg is an empty sequence
+  located merchantsavvy_co_uk
+  located miamidda_com
+  located naturalwellbeing_com
+  located neverskipbrunch_com
+  located newclimateeconomy_net
+  located nira_org_ng
+  located ridetech_com
+  located seoanalyzer_me
+  located stgpartners_com
+  located tellmebaby_com_au
+  located thefrangipanicreative_com
+  located thync_com
+84 collages written to data/master/collages (752 crops of 915 possible; 1 features with no located crop)
+[seed] 28 sites
+  /opt/anaconda3/envs/vibecode-thesis/bin/python /Users/helencui/Documents/Documents - helen’s MacBook Pro/COSC THESIS/pipeline/3_annotate/match_seed.py --seed v1_3 --min-sites 2
+# Master list vs seed list v1_3
+120 seed items, 133 master attributes over 28 sites. Nothing culled.
+
+## Seed items corroborated by the observations
+- with at least one matched master attribute: 39 of 120; AI-built page shows it on >= 1 site: 38, >= 2: 29, >= half the sites: 10; no match: 81
+- by kind (matched): component 30/107, page_section 9/13
+
+## What the observations add beyond the seed list
+- master attributes about a seed item: 67 (36 the item itself, 31 a property of it)
+- ADDED (not about any seed item): 66 of 133 (49%); of those on >= 2 sites: 49; of all attributes on >= 2 sites: 104
+- by family (is_item / property_of_item / none): color: 0/1/6; component: 26/12/18; copy: 5/3/10; decoration: 0/4/4; imagery: 2/2/7; layout: 2/3/4; other: 0/0/1; semantic_dom: 1/2/9; typography: 0/4/7
+
+## Seed items never matched (81): Breadcrumbs, Button group, Checkbox, Color picker, Combobox, Date input, Datepicker, Drawer, Dropdown menu, Empty state, Fieldset, File, File upload, Label, Popover, Progress bar, Progress indicator, Radio button, Rich text editor, Segmented control, Select, Skeleton, Slider, Spinner, Stack, Stepper, Text input, Textarea, Toast, Toggle, Tooltip, Tree view, Visually hidden, text, checkbox group, comment, listbox, feed, Pricing Sections, Bento Grids, Team Sections, Content Sections, Close button, Figure, Media object, Menu, Input group, Floating label, Box, Section, Level, Icon link, Focus ring, Scrollspy, Sticky, Drilldown menu, Accordion menu, 2D-Matrix Input Control, Anchor Link, Back-to-Top Button, Bottom Sheet, Contextual Menu, Control, Expandable Menu, Floating Button, Input Control, Input Stepper, Knob, Lightbox, Megamenu, Menu Bar, Overlay, Picker, Pie Menu, Popup Tip, Ribbon, Scrollbar, Split Button, State-Switch Control, Submenu, Wheel Picker
+
+## Added attributes seen on the most sites
+- color palette (color, 28 sites): Nearly every AI-built page changes the overall palette, most often to a navy/blue family, with teal/green, warm cream with orange or rust accents, and dark near-black schemes as the other common outcomes, and only one keeping the original brand palette.
+[done] Wed Nov  4 21:11:02 EST 2026
